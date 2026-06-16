@@ -1,0 +1,16 @@
+# secrets
+.env
+
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# generated images (dev)
+static/*.svg
+static/*.png
+static/*.jpg
+static/*.webp
+
+# pytest
+.pytest_cache/

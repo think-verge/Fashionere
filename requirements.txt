@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+pydantic>=2
+httpx
+python-dotenv
+pytest
+pytest-asyncio
+# real providers (optional at runtime):
+anthropic
+openai
+fal-client
+replicate
+google-genai
