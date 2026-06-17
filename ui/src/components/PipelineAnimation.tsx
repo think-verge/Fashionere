@@ -10,7 +10,6 @@ function BriefContent() {
   const [text, setText] = useState("");
   const full = "SS27 luxury resort — fluid silhouettes, sustainable fabrics...";
   useEffect(() => {
-    setText("");
     let i = 0;
     const id = setInterval(() => {
       i++;
@@ -58,7 +57,6 @@ function AIContent() {
 function TrendsContent() {
   const [progress, setProgress] = useState(0);
   useEffect(() => {
-    setProgress(0);
     const id = setInterval(() => setProgress((p) => Math.min(p + 2, 100)), 20);
     return () => clearInterval(id);
   }, []);
@@ -98,7 +96,6 @@ function MoodboardContent() {
   const [revealed, setRevealed] = useState(0);
   const colors = ["#a93533", "#241918", "#e8d9c5", "#006c4d", "#ff746d", "#c4b5fd"];
   useEffect(() => {
-    setRevealed(0);
     let i = 0;
     const id = setInterval(() => {
       i++;
@@ -134,7 +131,6 @@ function CostContent() {
   const [val, setVal] = useState(0);
   const target = 1440;
   useEffect(() => {
-    setVal(0);
     const id = setInterval(() => {
       setVal((v) => {
         const next = v + 30;
@@ -243,7 +239,6 @@ const CONTENT_MAP: Record<StepKey, () => React.ReactElement> = {
 function Connector({ active }: { active: boolean }) {
   const [pos, setPos] = useState(0);
   useEffect(() => {
-    setPos(0);
     if (!active) return;
     const id = setInterval(() => {
       setPos((p) => {

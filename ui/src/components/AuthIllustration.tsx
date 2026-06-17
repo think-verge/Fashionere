@@ -19,11 +19,7 @@ const FEATURES = [
   },
 ];
 
-interface Props {
-  variant?: "login" | "signup";
-}
-
-export function AuthIllustration(_props: Props) {
+export function AuthIllustration() {
   return (
     <Box
       sx={{

@@ -1,21 +1,10 @@
-import { useState, useEffect } from "react";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
-  Box,
-  Paper,
-  Typography,
-  Tabs,
-  Tab,
-  TextField,
-  Button,
-  Alert,
-  MenuItem,
-  Select,
-  FormControl,
-  InputLabel,
-  LinearProgress,
+  Box, Typography, Button, Chip, Grid, LinearProgress,
 } from "@mui/material";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
+import AddIcon from "@mui/icons-material/Add";
 import { PageShell } from "../../components/PageShell";
 import { PageHeader } from "../../components/PageHeader";
 import { MoodboardViewer } from "../../components/MoodboardViewer";
@@ -24,39 +13,29 @@ import type { Moodboard } from "../../lib/api/generated/model";
 
 const api = getCentoireAPI();
 
+const TREND_FILTERS = ["All Trends", "Sustainability", "Tech-Forward", "Bio-Organic", "Extreme Fluidity"];
+
+const CONCEPT_PLACEHOLDERS = [
+  { match: 94, label: "Liquid Metal Collection" },
+  { match: 89, label: "Structured Sheer" },
+  { match: 78, label: "Bio-Sequins" },
+];
+
 export function StudioPage() {
   const navigate = useNavigate();
-  const [searchParams] = useSearchParams();
-  const preloadCatalogueId = searchParams.get("catalogueItemId");
-
-  const [tab, setTab] = useState(preloadCatalogueId ? 1 : 0);
   const [query, setQuery] = useState("");
-  const [catalogueItemId, setCatalogueItemId] = useState(preloadCatalogueId ?? "");
-  const [imageUrl, setImageUrl] = useState("");
-  const [catalogueItems, setCatalogueItems] = useState<{ catalogue_item_id: string; name: string }[]>([]);
+  const [activeFilter, setActiveFilter] = useState("All Trends");
   const [moodboard, setMoodboard] = useState<Moodboard | null>(null);
   const [polling, setPolling] = useState(false);
   const [error, setError] = useState("");
 
-  useEffect(() => {
-    api.getApiV1Catalogue().then((items) => {
-      setCatalogueItems(items as { catalogue_item_id: string; name: string }[]);
-    });
-  }, []);
-
   async function handleCreate() {
+    if (!query.trim()) return;
     setError("");
     setMoodboard(null);
     setPolling(true);
     try {
-      let doc: Moodboard;
-      if (tab === 0) {
-        doc = await api.postApiV1MoodboardsFromQuery({ query });
-      } else if (tab === 1) {
-        doc = await api.postApiV1MoodboardsFromCatalogue({ catalogue_item_id: catalogueItemId });
-      } else {
-        doc = await api.postApiV1MoodboardsFromImage({ image_url: imageUrl });
-      }
+      const doc = await api.postApiV1MoodboardsFromQuery({ query });
       setMoodboard(doc);
       pollStatus(doc._id);
     } catch (err) {
@@ -81,11 +60,6 @@ export function StudioPage() {
     }, 2500);
   }
 
-  const canSubmit =
-    (tab === 0 && query.trim().length > 2) ||
-    (tab === 1 && catalogueItemId.length > 0) ||
-    (tab === 2 && imageUrl.trim().length > 0);
-
   return (
     <PageShell title="Studio">
       <PageHeader
@@ -93,93 +67,124 @@ export function StudioPage() {
         heading="Inspiration Engine"
         description="Generate AI-powered design concepts from text, catalogue items, or image references."
       />
-      <Box sx={{ maxWidth: 900, mx: "auto" }}>
 
-        <Paper sx={{ mb: 3 }}>
-          <Tabs value={tab} onChange={(_, v) => setTab(v)} sx={{ borderBottom: "1px solid", borderColor: "divider", px: 2 }}>
-            <Tab label="Text Query" />
-            <Tab label="Catalogue Item" />
-            <Tab label="Image URL" />
-          </Tabs>
-          <Box sx={{ p: 3 }}>
-            {tab === 0 && (
-              <TextField
-                label="Describe your collection"
-                placeholder="e.g. minimalist beachwear for summer 2025, earthy tones"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                fullWidth
-                multiline
-                minRows={3}
-              />
-            )}
-            {tab === 1 && (
-              <FormControl fullWidth>
-                <InputLabel>Select Catalogue Item</InputLabel>
-                <Select
-                  value={catalogueItemId}
-                  label="Select Catalogue Item"
-                  onChange={(e) => setCatalogueItemId(e.target.value)}
-                >
-                  {catalogueItems.map((item) => (
-                    <MenuItem key={item.catalogue_item_id} value={item.catalogue_item_id}>
-                      {item.name}
-                    </MenuItem>
-                  ))}
-                </Select>
-              </FormControl>
-            )}
-            {tab === 2 && (
-              <TextField
-                label="Image URL"
-                placeholder="https://..."
-                value={imageUrl}
-                onChange={(e) => setImageUrl(e.target.value)}
-                fullWidth
-                helperText="Provide a URL to an image of a garment or design reference"
-              />
-            )}
-            <Box sx={{ mt: 2, display: "flex", gap: 2, alignItems: "center" }}>
-              <Button
-                variant="contained"
-                size="large"
-                startIcon={<AutoAwesomeIcon />}
-                onClick={handleCreate}
-                disabled={!canSubmit || polling}
-              >
-                {polling ? "Generating…" : "Generate Moodboard"}
-              </Button>
-              {moodboard?.status === "done" && (
-                <Button variant="outlined" onClick={() => navigate(`/moodboards/${moodboard._id}`)}>
-                  View Full Board
-                </Button>
-              )}
-            </Box>
-          </Box>
-        </Paper>
+      {/* Input area */}
+      <Box sx={{ maxWidth: 800, mb: 5 }}>
+        <Typography sx={{ fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.18em", color: "text.secondary", mb: 1.5 }}>
+          Describe Your Vision
+        </Typography>
+        <Box
+          component="textarea"
+          value={query}
+          onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setQuery(e.target.value)}
+          placeholder="e.g. minimalist beachwear for summer 2025, earthy tones and organic textures..."
+          rows={4}
+          sx={{
+            width: "100%", border: "1px solid", borderColor: "divider", borderRadius: "12px",
+            p: 2.5, fontSize: 15, lineHeight: 1.6, resize: "vertical", minHeight: 100,
+            fontFamily: "inherit", color: "text.primary", bgcolor: "#fff",
+            outline: "none", "&:focus": { borderColor: "primary.main" },
+            boxSizing: "border-box", display: "block",
+          }}
+        />
+        {error && (
+          <Typography sx={{ color: "error.main", fontSize: 13, mt: 1 }}>{error}</Typography>
+        )}
+        <Box sx={{ display: "flex", gap: 1.5, mt: 1.5 }}>
+          <Button
+            variant="contained"
+            onClick={handleCreate}
+            disabled={!query.trim() || polling}
+            startIcon={<AutoAwesomeIcon sx={{ fontSize: 16 }} />}
+            sx={{ flex: 3, py: 1.25, fontSize: 14, fontWeight: 600, borderRadius: "10px" }}
+          >
+            {polling ? "Generating…" : "Generate Concepts"}
+          </Button>
+          <Button
+            variant="outlined"
+            startIcon={<AddIcon sx={{ fontSize: 16 }} />}
+            sx={{ flex: 2, py: 1.25, fontSize: 14, fontWeight: 600, borderRadius: "10px", borderColor: "divider", color: "text.secondary" }}
+          >
+            Add References
+          </Button>
+        </Box>
+      </Box>
 
-        {error && <Alert severity="error" sx={{ mb: 3 }}>{error}</Alert>}
+      {/* Filter chips */}
+      <Box sx={{ mb: 5 }}>
+        <Typography sx={{ fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.18em", color: "text.secondary", mb: 1.5 }}>
+          Filter by Trend
+        </Typography>
+        <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
+          {TREND_FILTERS.map((f) => (
+            <Chip
+              key={f}
+              label={f}
+              onClick={() => setActiveFilter(f)}
+              variant={activeFilter === f ? "filled" : "outlined"}
+              sx={{
+                borderRadius: "8px",
+                fontWeight: 500,
+                ...(activeFilter === f
+                  ? { bgcolor: "#241918", color: "#fff", "&:hover": { bgcolor: "#3a2724" } }
+                  : { borderColor: "divider", color: "text.secondary", "&:hover": { borderColor: "#dfbfbc" } }),
+              }}
+            />
+          ))}
+        </Box>
+      </Box>
+
+      {/* Generated concepts */}
+      <Box>
+        <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 3 }}>
+          <Typography sx={{ fontSize: 22, fontWeight: 700 }}>Generated Concepts</Typography>
+          {moodboard?.status === "done" && (
+            <Button variant="outlined" size="small" onClick={() => navigate(`/moodboards/${moodboard._id}`)}>
+              View Full Board
+            </Button>
+          )}
+        </Box>
 
         {polling && moodboard?.status !== "done" && (
-          <Paper sx={{ p: 3, mb: 3 }}>
+          <Box sx={{ mb: 3 }}>
             <Typography variant="body2" color="text.secondary" sx={{ mb: 1.5 }}>
-              Generating your moodboard — this takes about 30–60 seconds…
+              Generating your concepts — this takes about 30–60 seconds…
             </Typography>
             <LinearProgress color="primary" />
-          </Paper>
-        )}
-
-        {moodboard?.status === "done" && moodboard.moodboard && (
-          <Box>
-            <Typography variant="subtitle1" fontWeight={600} sx={{ mb: 2 }}>
-              Your Moodboard
-            </Typography>
-            <MoodboardViewer data={moodboard.moodboard as Parameters<typeof MoodboardViewer>[0]["data"]} />
           </Box>
         )}
 
-        {moodboard?.status === "error" && (
-          <Alert severity="error">Moodboard generation failed: {moodboard.error}</Alert>
+        {moodboard?.status === "done" && moodboard.moodboard ? (
+          <MoodboardViewer data={moodboard.moodboard as Parameters<typeof MoodboardViewer>[0]["data"]} />
+        ) : (
+          <Grid container spacing={2.5}>
+            {CONCEPT_PLACEHOLDERS.map((c) => (
+              <Grid key={c.label} size={{ xs: 12, sm: 4 }}>
+                <Box
+                  sx={{
+                    position: "relative", borderRadius: "12px", overflow: "hidden",
+                    border: "1px solid", borderColor: "divider", cursor: "pointer",
+                    "&:hover": { borderColor: "primary.main" }, transition: "border-color 0.15s",
+                  }}
+                >
+                  <Box sx={{ height: 220, bgcolor: "#fff0ef" }} />
+                  <Box
+                    sx={{
+                      position: "absolute", top: 12, right: 12,
+                      bgcolor: "#241918", color: "#fff", fontSize: 12, fontWeight: 700,
+                      px: 1.25, py: 0.5, borderRadius: "6px",
+                    }}
+                  >
+                    {c.match}% match
+                  </Box>
+                  <Box sx={{ p: 2, bgcolor: "#fff" }}>
+                    <Typography sx={{ fontSize: 14, fontWeight: 600, color: "text.primary" }}>{c.label}</Typography>
+                    <Typography sx={{ fontSize: 12, color: "text.secondary", mt: 0.25 }}>Click to explore concept</Typography>
+                  </Box>
+                </Box>
+              </Grid>
+            ))}
+          </Grid>
         )}
       </Box>
     </PageShell>

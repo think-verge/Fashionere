@@ -1,153 +1,235 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
-  Box,
-  Grid,
-  Paper,
-  Typography,
-  Chip,
-  Alert,
-  Skeleton,
-  Select,
-  MenuItem,
-  FormControl,
-  InputLabel,
-  LinearProgress,
-  Tooltip,
+  Box, Typography, Paper, TextField, IconButton, LinearProgress,
 } from "@mui/material";
+import SendIcon from "@mui/icons-material/Send";
+import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import { PageShell } from "../../components/PageShell";
-import { PageHeader } from "../../components/PageHeader";
-import { TrendBadge } from "../../components/TrendBadge";
-import { getCentoireAPI } from "../../lib/api/generated/client";
 
-const api = getCentoireAPI();
-
-interface Trend {
-  trend_id: string;
-  type: string;
-  label: string;
-  descriptor: string;
-  lifecycle_stage: string;
-  confidence_score: number;
-  context: { category: string; season?: string; market?: string };
-  attributes: Record<string, unknown>;
-  sources: string[];
+interface Message {
+  role: "user" | "ai";
+  text: string;
 }
 
+const SEED_MESSAGES: Message[] = [
+  {
+    role: "ai",
+    text: "Welcome to Conversational Intelligence. Ask me about color palettes, emerging silhouettes, or market trends for your upcoming collection.",
+  },
+  {
+    role: "user",
+    text: "What are the top fabric trends for SS27?",
+  },
+  {
+    role: "ai",
+    text: "For SS27, three materials are dominating early runway signals:\n\n• Liquid Metal (94% confidence) — Reflective woven fabrics from Lurex blends, strong in evening and occasion wear.\n• Structured Sheer (89%) — Double-layered organza and tulle with built-in boning, crossing into ready-to-wear.\n• Bio-Sequins (78%) — Plant-based PLA alternatives gaining adoption in sustainable luxury.",
+  },
+];
+
+const RADAR_TRENDS = [
+  { label: "Liquid Metal", value: 94 },
+  { label: "Structured Sheer", value: 89 },
+  { label: "Bio-Sequins", value: 78 },
+];
+
 export function TrendsPage() {
-  const [trends, setTrends] = useState<Trend[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
-  const [filterCategory, setFilterCategory] = useState("");
-  const [filterLifecycle, setFilterLifecycle] = useState("");
-  const [filterType, setFilterType] = useState("");
+  const [messages, setMessages] = useState<Message[]>(SEED_MESSAGES);
+  const [input, setInput] = useState("");
+  const [thinking, setThinking] = useState(false);
 
-  async function fetchTrends() {
-    setLoading(true);
-    try {
-      const params: Record<string, string> = {};
-      if (filterCategory) params.category = filterCategory;
-      if (filterLifecycle) params.lifecycle = filterLifecycle;
-      if (filterType) params.type = filterType;
-      const data = await api.getApiV1Trends(params);
-      setTrends(data as unknown as Trend[]);
-    } catch {
-      setError("Failed to load trends");
-    } finally {
-      setLoading(false);
-    }
+  function send() {
+    const text = input.trim();
+    if (!text || thinking) return;
+    setInput("");
+    setMessages((prev) => [...prev, { role: "user", text }]);
+    setThinking(true);
+    setTimeout(() => {
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "ai",
+          text: "I'm analyzing current runway data and trend signals for your query. Sustainability-led construction (+34% YoY), tech-forward materials, and bio-innovative textiles are the dominant macro narratives for SS27. Liquid Metal finishes remain the highest-confidence individual trend at 94%.",
+        },
+      ]);
+      setThinking(false);
+    }, 1800);
   }
-
-  useEffect(() => { fetchTrends(); }, [filterCategory, filterLifecycle, filterType]);
 
   return (
     <PageShell title="Trends">
-      <PageHeader
-        eyebrow="Trend Analysis"
-        heading="Market Intelligence"
-        description="Real-time signals from runway, retail, and social to inform your next collection."
-      />
-      <Box sx={{ display: "flex", gap: 2, mb: 3, flexWrap: "wrap" }}>
-        <FormControl size="small" sx={{ minWidth: 160 }}>
-          <InputLabel>Category</InputLabel>
-          <Select value={filterCategory} label="Category" onChange={(e) => setFilterCategory(e.target.value)}>
-            <MenuItem value="">All</MenuItem>
-            {["dresses", "denim", "t-shirts", "swimwear"].map((c) => (
-              <MenuItem key={c} value={c}>{c}</MenuItem>
-            ))}
-          </Select>
-        </FormControl>
-        <FormControl size="small" sx={{ minWidth: 160 }}>
-          <InputLabel>Lifecycle</InputLabel>
-          <Select value={filterLifecycle} label="Lifecycle" onChange={(e) => setFilterLifecycle(e.target.value)}>
-            <MenuItem value="">All</MenuItem>
-            {["emerging", "rising", "peaking", "fading"].map((l) => (
-              <MenuItem key={l} value={l}>{l}</MenuItem>
-            ))}
-          </Select>
-        </FormControl>
-        <FormControl size="small" sx={{ minWidth: 160 }}>
-          <InputLabel>Type</InputLabel>
-          <Select value={filterType} label="Type" onChange={(e) => setFilterType(e.target.value)}>
-            <MenuItem value="">All</MenuItem>
-            {["color", "silhouette", "material", "aesthetic", "pattern", "item_style"].map((t) => (
-              <MenuItem key={t} value={t}>{t}</MenuItem>
-            ))}
-          </Select>
-        </FormControl>
+      {/* Custom header with live indicator */}
+      <Box sx={{ mb: 6 }}>
+        <Typography sx={{ color: "primary.main", fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.2em", mb: 2 }}>
+          Trend Analysis
+        </Typography>
+        <Box sx={{ display: "flex", alignItems: "center", gap: 2, mb: 2.5 }}>
+          <Typography sx={{ fontSize: { xs: 32, md: 48 }, fontWeight: 700, letterSpacing: "-0.02em", lineHeight: 1.1, color: "text.primary" }}>
+            Conversational Intelligence
+          </Typography>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 0.75, flexShrink: 0 }}>
+            <Box sx={{ width: 8, height: 8, borderRadius: "50%", bgcolor: "#006c4d", animation: "pulse 2s infinite", "@keyframes pulse": { "0%,100%": { opacity: 1 }, "50%": { opacity: 0.4 } } }} />
+            <Typography sx={{ fontSize: 11, fontWeight: 600, color: "#006c4d", textTransform: "uppercase", letterSpacing: "0.1em" }}>Live</Typography>
+          </Box>
+        </Box>
+        <Typography sx={{ fontFamily: "'Literata', Georgia, serif", fontSize: 17, lineHeight: 1.7, color: "text.secondary", maxWidth: 560 }}>
+          Real-time signals from runway, retail, and social to inform your next collection.
+        </Typography>
       </Box>
 
-      {error && <Alert severity="error" sx={{ mb: 2 }}>{error}</Alert>}
-
-      <Typography variant="caption" color="text.secondary" sx={{ mb: 2, display: "block" }}>
-        {loading ? "Loading…" : `${trends.length} trends`}
-      </Typography>
-
-      <Grid container spacing={2}>
-        {loading
-          ? Array.from({ length: 12 }).map((_, i) => (
-              <Grid key={i} size={{ xs: 12, sm: 6, md: 4 }}>
-                <Skeleton variant="rectangular" height={140} sx={{ borderRadius: 2 }} />
-              </Grid>
-            ))
-          : trends.map((trend) => (
-              <Grid key={trend.trend_id} size={{ xs: 12, sm: 6, md: 4 }}>
-                <Paper sx={{ p: 2 }}>
-                  <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", mb: 1 }}>
-                    <Typography variant="subtitle2" fontWeight={600}>
-                      {trend.label}
-                    </Typography>
-                    <TrendBadge lifecycle={trend.lifecycle_stage} />
+      <Box sx={{ display: "flex", gap: 4, height: "calc(100vh - 380px)", minHeight: 460 }}>
+        {/* Chat area */}
+        <Box sx={{ flex: 1, display: "flex", flexDirection: "column", minWidth: 0 }}>
+          {/* Messages */}
+          <Box sx={{ flex: 1, overflow: "auto", display: "flex", flexDirection: "column", gap: 2, pb: 2 }}>
+            {messages.map((msg, i) => (
+              <Box
+                key={i}
+                sx={{ display: "flex", justifyContent: msg.role === "user" ? "flex-end" : "flex-start", gap: 1.5 }}
+              >
+                {msg.role === "ai" && (
+                  <Box
+                    sx={{
+                      width: 32, height: 32, borderRadius: "10px", bgcolor: "#241918",
+                      display: "flex", alignItems: "center", justifyContent: "center",
+                      flexShrink: 0, mt: 0.5,
+                    }}
+                  >
+                    <AutoAwesomeIcon sx={{ fontSize: 15, color: "#ff9b8a" }} />
                   </Box>
-                  <Typography variant="caption" color="text.secondary" sx={{ display: "block", mb: 1.5, lineHeight: 1.5 }}>
-                    {trend.descriptor}
+                )}
+                <Paper
+                  elevation={0}
+                  sx={{
+                    maxWidth: "72%", p: 2,
+                    ...(msg.role === "user"
+                      ? { bgcolor: "#a93533", color: "#fff", borderRadius: "16px 16px 4px 16px" }
+                      : { bgcolor: "#fff", borderRadius: "4px 16px 16px 16px" }),
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      fontSize: 14, lineHeight: 1.6, whiteSpace: "pre-line",
+                      color: msg.role === "user" ? "#fff" : "text.primary",
+                    }}
+                  >
+                    {msg.text}
                   </Typography>
-                  <Box sx={{ mb: 1 }}>
-                    <Box sx={{ display: "flex", justifyContent: "space-between", mb: 0.5 }}>
-                      <Typography variant="caption" color="text.secondary">Confidence</Typography>
-                      <Typography variant="caption" fontWeight={600}>{trend.confidence_score}%</Typography>
-                    </Box>
-                    <Tooltip title={`${trend.confidence_score}% confidence`}>
-                      <LinearProgress
-                        variant="determinate"
-                        value={trend.confidence_score}
-                        sx={{ height: 4, borderRadius: 2 }}
-                        color={trend.confidence_score > 70 ? "success" : trend.confidence_score > 40 ? "warning" : "error"}
-                      />
-                    </Tooltip>
-                  </Box>
-                  <Box sx={{ display: "flex", gap: 0.5, flexWrap: "wrap" }}>
-                    <Chip label={trend.type} size="small" variant="outlined" sx={{ fontSize: 10, height: 18 }} />
-                    {trend.context.category && (
-                      <Chip label={trend.context.category} size="small" variant="outlined" sx={{ fontSize: 10, height: 18 }} />
-                    )}
-                    {trend.context.season && (
-                      <Chip label={trend.context.season} size="small" variant="outlined" sx={{ fontSize: 10, height: 18 }} />
-                    )}
-                  </Box>
                 </Paper>
-              </Grid>
+              </Box>
             ))}
-      </Grid>
+            {thinking && (
+              <Box sx={{ display: "flex", gap: 1.5 }}>
+                <Box sx={{ width: 32, height: 32, borderRadius: "10px", bgcolor: "#241918", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                  <AutoAwesomeIcon sx={{ fontSize: 15, color: "#ff9b8a" }} />
+                </Box>
+                <Paper elevation={0} sx={{ p: 2, borderRadius: "4px 16px 16px 16px", minWidth: 80 }}>
+                  <LinearProgress sx={{ width: 60, height: 3, borderRadius: 2, bgcolor: "#f0e4e2", "& .MuiLinearProgress-bar": { bgcolor: "#a93533" } }} />
+                </Paper>
+              </Box>
+            )}
+          </Box>
+
+          {/* Input bar */}
+          <Paper
+            elevation={0}
+            sx={{ p: 0.5, display: "flex", alignItems: "center", border: "1px solid", borderColor: "divider", borderRadius: "12px" }}
+          >
+            <TextField
+              fullWidth
+              variant="standard"
+              placeholder="Ask for color palettes, trends, silhouettes..."
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && !e.shiftKey) {
+                  e.preventDefault();
+                  send();
+                }
+              }}
+              sx={{ px: 1.5, "& .MuiInput-root::before, & .MuiInput-root::after": { display: "none" } }}
+            />
+            <IconButton
+              onClick={send}
+              disabled={!input.trim() || thinking}
+              sx={{
+                width: 40, height: 40, bgcolor: "primary.main", color: "#fff",
+                borderRadius: "8px", mr: 0.5,
+                "&:hover": { bgcolor: "#7d1f1d" },
+                "&.Mui-disabled": { bgcolor: "#f0e4e2", color: "#bbb" },
+              }}
+            >
+              <SendIcon sx={{ fontSize: 16 }} />
+            </IconButton>
+          </Paper>
+        </Box>
+
+        {/* Right sidebar — Macro Analysis */}
+        <Paper
+          elevation={0}
+          sx={{ width: 300, flexShrink: 0, p: 3, display: "flex", flexDirection: "column", overflow: "auto" }}
+        >
+          <Typography sx={{ fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.18em", color: "text.secondary", mb: 0.5 }}>
+            Macro Analysis
+          </Typography>
+          <Typography sx={{ fontSize: 16, fontWeight: 700, mb: 3 }}>Trend Radar SS27</Typography>
+
+          {/* Radar visual */}
+          <Box sx={{ position: "relative", width: 140, height: 140, mx: "auto", mb: 3 }}>
+            {[140, 100, 60].map((size) => (
+              <Box
+                key={size}
+                sx={{
+                  position: "absolute", top: "50%", left: "50%",
+                  transform: "translate(-50%,-50%)",
+                  width: size, height: size, borderRadius: "50%", border: "1px solid #f0e4e2",
+                }}
+              />
+            ))}
+            {RADAR_TRENDS.map((t, i) => {
+              const angle = (i * 120 - 90) * (Math.PI / 180);
+              const r = 54 * (t.value / 100);
+              return (
+                <Box
+                  key={t.label}
+                  sx={{
+                    position: "absolute", top: "50%", left: "50%",
+                    transform: `translate(-50%,-50%) translate(${+(r * Math.cos(angle)).toFixed(1)}px, ${+(r * Math.sin(angle)).toFixed(1)}px)`,
+                    width: 10, height: 10, borderRadius: "50%", bgcolor: "primary.main",
+                  }}
+                />
+              );
+            })}
+            <Box sx={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", textAlign: "center" }}>
+              <Typography sx={{ fontSize: 16, fontWeight: 700, lineHeight: 1 }}>91</Typography>
+              <Typography sx={{ fontSize: 9, color: "text.secondary" }}>sentiment</Typography>
+            </Box>
+          </Box>
+
+          <Typography sx={{ fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", color: "text.secondary", mb: 2 }}>
+            Radar Legend
+          </Typography>
+          {RADAR_TRENDS.map((t) => (
+            <Box key={t.label} sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mb: 1.5 }}>
+              <Typography sx={{ fontSize: 13, color: "text.primary" }}>{t.label}</Typography>
+              <Typography sx={{ fontSize: 13, fontWeight: 700, color: "primary.main" }}>{t.value}%</Typography>
+            </Box>
+          ))}
+
+          <Box sx={{ mt: 2, pt: 2, borderTop: "1px solid #f0e4e2" }}>
+            <Box sx={{ display: "flex", justifyContent: "space-between", mb: 0.75 }}>
+              <Typography sx={{ fontSize: 11, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "text.secondary" }}>
+                Sustainability
+              </Typography>
+              <Typography sx={{ fontSize: 12, color: "#006c4d", fontWeight: 700 }}>+34%</Typography>
+            </Box>
+            <LinearProgress
+              variant="determinate"
+              value={72}
+              sx={{ height: 4, borderRadius: 2, bgcolor: "#f0e4e2", "& .MuiLinearProgress-bar": { bgcolor: "#006c4d" } }}
+            />
+          </Box>
+        </Paper>
+      </Box>
     </PageShell>
   );
 }

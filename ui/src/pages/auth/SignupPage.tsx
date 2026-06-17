@@ -236,7 +236,7 @@ export function SignupPage() {
     <Box sx={{ minHeight: "100vh", display: "flex" }}>
       {/* Left: illustration panel */}
       <Box sx={{ display: { xs: "none", md: "flex" }, width: "50%", maxWidth: 600 }}>
-        <AuthIllustration variant="signup" />
+        <AuthIllustration />
       </Box>
 
       {/* Right: form */}
