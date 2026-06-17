@@ -228,20 +228,33 @@ export function PageShell({ title, children }: Props) {
             backdropFilter: "blur(20px)",
             WebkitBackdropFilter: "blur(20px)",
             borderBottom: "1px solid #f0e4e2",
+            borderRadius: 0,
             color: "text.primary",
           }}
         >
-          <Toolbar sx={{ px: { xs: 3, sm: 5 } }}>
-            <Typography variant="h6" fontWeight={600} sx={{ letterSpacing: "-0.01em" }}>
+          <Toolbar sx={{ px: { xs: 3, sm: 5 }, gap: 1 }}>
+            <Typography
+              variant="body2"
+              sx={{ color: "#999999", fontWeight: 400, fontSize: 13 }}
+            >
+              Studio Workspace
+            </Typography>
+            <Typography sx={{ color: "#dfbfbc", fontSize: 13 }}>/</Typography>
+            <Typography
+              variant="body2"
+              sx={{ color: "text.primary", fontWeight: 500, fontSize: 13 }}
+            >
               {title}
             </Typography>
           </Toolbar>
         </AppBar>
         <Box
           component="main"
-          sx={{ flex: 1, px: { xs: 3, sm: 5 }, py: 5, bgcolor: "background.default" }}
+          sx={{ flex: 1, px: { xs: 3, sm: 5 }, py: 6, bgcolor: "background.default" }}
         >
-          {children}
+          <Box sx={{ maxWidth: 1280, mx: "auto" }}>
+            {children}
+          </Box>
         </Box>
       </Box>
     </Box>

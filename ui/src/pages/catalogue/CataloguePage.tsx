@@ -12,6 +12,7 @@ import {
 } from "@mui/material";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import { PageShell } from "../../components/PageShell";
+import { PageHeader } from "../../components/PageHeader";
 import { getCentoireAPI } from "../../lib/api/generated/client";
 
 const api = getCentoireAPI();
@@ -40,9 +41,11 @@ export function CataloguePage() {
 
   return (
     <PageShell title="Catalogue">
-      <Typography color="text.secondary" variant="body2" sx={{ mb: 3 }}>
-        Browse garment types and launch AI moodboard generation directly from any item.
-      </Typography>
+      <PageHeader
+        eyebrow="Garment Library"
+        heading="Design Catalogue"
+        description="Browse garment types and launch AI moodboard generation directly from any item."
+      />
 
       {error && <Alert severity="error" sx={{ mb: 2 }}>{error}</Alert>}
 

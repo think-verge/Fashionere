@@ -56,6 +56,7 @@ export const theme = createTheme({
         root: {
           backgroundImage: "none",
           border: "1px solid #f0e4e2",
+          borderRadius: 16,
           boxShadow: "none",
         },
       },
@@ -65,6 +66,7 @@ export const theme = createTheme({
         root: {
           backgroundImage: "none",
           border: "1px solid #f0e4e2",
+          borderRadius: 16,
           boxShadow: "none",
         },
       },
@@ -97,6 +99,7 @@ export const theme = createTheme({
           backgroundImage: "none",
           boxShadow: "none",
           borderBottom: "1px solid #f0e4e2",
+          borderRadius: 0,
         },
       },
     },
@@ -106,6 +109,7 @@ export const theme = createTheme({
           backgroundImage: "none",
           boxShadow: "none",
           borderRight: "1px solid #f0e4e2",
+          borderRadius: 0,
         },
       },
     },

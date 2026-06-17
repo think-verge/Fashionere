@@ -19,6 +19,7 @@ import AddIcon from "@mui/icons-material/Add";
 import FolderIcon from "@mui/icons-material/Folder";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { PageShell } from "../../components/PageShell";
+import { PageHeader } from "../../components/PageHeader";
 import { getCentoireAPI } from "../../lib/api/generated/client";
 import type { Project } from "../../lib/api/generated/model";
 
@@ -69,6 +70,11 @@ export function ProjectsPage() {
 
   return (
     <PageShell title="Projects">
+      <PageHeader
+        eyebrow="Studio Workspace"
+        heading="Design Projects"
+        description="Organise your mood boards, trend analyses, and concepts into collections."
+      />
       <Box sx={{ display: "flex", justifyContent: "flex-end", mb: 3 }}>
         <Button variant="contained" startIcon={<AddIcon />} onClick={() => setDialogOpen(true)}>
           New Project

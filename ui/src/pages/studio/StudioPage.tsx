@@ -17,6 +17,7 @@ import {
 } from "@mui/material";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import { PageShell } from "../../components/PageShell";
+import { PageHeader } from "../../components/PageHeader";
 import { MoodboardViewer } from "../../components/MoodboardViewer";
 import { getCentoireAPI } from "../../lib/api/generated/client";
 import type { Moodboard } from "../../lib/api/generated/model";
@@ -87,13 +88,12 @@ export function StudioPage() {
 
   return (
     <PageShell title="Studio">
+      <PageHeader
+        eyebrow="Creative Tools"
+        heading="Inspiration Engine"
+        description="Generate AI-powered design concepts from text, catalogue items, or image references."
+      />
       <Box sx={{ maxWidth: 900, mx: "auto" }}>
-        <Typography variant="h5" fontWeight={700} sx={{ mb: 0.5 }}>
-          Moodboard Studio
-        </Typography>
-        <Typography color="text.secondary" variant="body2" sx={{ mb: 3 }}>
-          Generate AI-powered fashion moodboards from text, catalogue items, or images
-        </Typography>
 
         <Paper sx={{ mb: 3 }}>
           <Tabs value={tab} onChange={(_, v) => setTab(v)} sx={{ borderBottom: "1px solid", borderColor: "divider", px: 2 }}>

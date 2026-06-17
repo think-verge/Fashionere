@@ -15,6 +15,7 @@ import {
   Tooltip,
 } from "@mui/material";
 import { PageShell } from "../../components/PageShell";
+import { PageHeader } from "../../components/PageHeader";
 import { TrendBadge } from "../../components/TrendBadge";
 import { getCentoireAPI } from "../../lib/api/generated/client";
 
@@ -60,6 +61,11 @@ export function TrendsPage() {
 
   return (
     <PageShell title="Trends">
+      <PageHeader
+        eyebrow="Trend Analysis"
+        heading="Market Intelligence"
+        description="Real-time signals from runway, retail, and social to inform your next collection."
+      />
       <Box sx={{ display: "flex", gap: 2, mb: 3, flexWrap: "wrap" }}>
         <FormControl size="small" sx={{ minWidth: 160 }}>
           <InputLabel>Category</InputLabel>

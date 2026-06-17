@@ -13,6 +13,7 @@ import {
 import AddIcon from "@mui/icons-material/Add";
 import SearchIcon from "@mui/icons-material/Search";
 import { PageShell } from "../../components/PageShell";
+import { PageHeader } from "../../components/PageHeader";
 import { MoodboardCard } from "../../components/MoodboardCard";
 import { getCentoireAPI } from "../../lib/api/generated/client";
 import type { MoodboardSummary } from "../../lib/api/generated/model";
@@ -40,6 +41,11 @@ export function MoodboardsPage() {
 
   return (
     <PageShell title="Moodboards">
+      <PageHeader
+        eyebrow="Creative Tools"
+        heading="Mood Board Creator"
+        description="Build visual narratives with AI-enhanced templates and customizable palettes."
+      />
       <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mb: 3 }}>
         <TextField
           size="small"

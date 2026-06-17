@@ -16,6 +16,7 @@ import {
 } from "@mui/material";
 import CalculateIcon from "@mui/icons-material/Calculate";
 import { PageShell } from "../../components/PageShell";
+import { PageHeader } from "../../components/PageHeader";
 import { getCentoireAPI } from "../../lib/api/generated/client";
 import type { CostEstimate, CostInput, CostInputComplexity, CostInputMarket } from "../../lib/api/generated/model";
 
@@ -56,9 +57,11 @@ export function CostCalculatorPage() {
 
   return (
     <PageShell title="Cost Calculator">
-      <Typography color="text.secondary" variant="body2" sx={{ mb: 3 }}>
-        Estimate production costs for your garment designs based on category, fabric, and market tier.
-      </Typography>
+      <PageHeader
+        eyebrow="Production Tools"
+        heading="Cost Calculator"
+        description="Estimate production costs for your garment designs based on category, fabric, and market tier."
+      />
 
       <Grid container spacing={3} sx={{ maxWidth: 900 }}>
         <Grid size={{ xs: 12, md: 6 }}>
