@@ -1,0 +1,199 @@
+name: test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+defaults:
+  run:
+    shell: bash
+
+permissions:
+  contents: read
+
+jobs:
+  projects-matrix:
+    name: Detect changes in projects
+    runs-on: ubuntu-latest
+    concurrency:
+      group: matrix-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+      cancel-in-progress: true
+    outputs:
+      projects_with_test: ${{ steps.filter-projects.outputs.projects_with_test }}
+      projects_with_lint: ${{ steps.filter-projects.outputs.projects_with_lint }}
+    env:
+      projects_with_test: "ui backend agent"
+      projects_with_lint: "ui backend agent"
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get list of changed files
+        if: github.event_name == 'pull_request'
+        id: get-changes
+        env:
+          PR_BASE_REF: ${{ github.event.pull_request.base.ref }}
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set +e
+          git fetch --no-tags origin "${PR_BASE_REF}"
+          CHANGED_FILES=$(git diff --name-only "${PR_BASE_SHA}" "${PR_HEAD_SHA}" | cut -d/ -f1 | sort -u | tr "\n" " ")
+          DIFF_EXIT_CODE=$?
+          set -e
+
+          if [ $DIFF_EXIT_CODE -ne 0 ]; then
+            echo "Failed to compute changed files from base=${PR_BASE_REF} (${PR_BASE_SHA}) head=${PR_HEAD_SHA}."
+            echo "Falling back to all projects."
+            CHANGED_FILES=""
+          fi
+
+          echo "Changed projects: $CHANGED_FILES"
+          echo "changed_files=$CHANGED_FILES" >> "$GITHUB_OUTPUT"
+
+      - name: Filter projects based on changes
+        id: filter-projects
+        run: |
+          PROJECTS_WITH_TEST=($projects_with_test)
+          PROJECTS_WITH_LINT=($projects_with_lint)
+          CHANGED_FILES="${{ steps.get-changes.outputs.changed_files }}"
+
+          FILTERED_TEST_PROJECTS=()
+          FILTERED_LINT_PROJECTS=()
+
+          for PROJECT in "${PROJECTS_WITH_TEST[@]}"; do
+            if [ -z "$CHANGED_FILES" ] || echo "$CHANGED_FILES" | grep -qw "$PROJECT"; then
+              FILTERED_TEST_PROJECTS+=("$PROJECT")
+            fi
+          done
+
+          for PROJECT in "${PROJECTS_WITH_LINT[@]}"; do
+            if [ -z "$CHANGED_FILES" ] || echo "$CHANGED_FILES" | grep -qw "$PROJECT"; then
+              FILTERED_LINT_PROJECTS+=("$PROJECT")
+            fi
+          done
+
+          JSON_PROJECTS_TEST=$(printf '%s\n' "${FILTERED_TEST_PROJECTS[@]}" | jq -R . | jq -s . | tr -d "\n ")
+          echo "projects_with_test=$JSON_PROJECTS_TEST" >> "$GITHUB_OUTPUT"
+          JSON_PROJECTS_LINT=$(printf '%s\n' "${FILTERED_LINT_PROJECTS[@]}" | jq -R . | jq -s . | tr -d "\n ")
+          echo "projects_with_lint=$JSON_PROJECTS_LINT" >> "$GITHUB_OUTPUT"
+
+  lint:
+    needs: projects-matrix
+    name: Lint / ${{ matrix.project }}
+    runs-on: ubuntu-latest
+    concurrency:
+      group: lint-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}-${{ matrix.project }}
+      cancel-in-progress: true
+    strategy:
+      fail-fast: false
+      matrix:
+        project: ${{ fromJson(needs.projects-matrix.outputs.projects_with_lint) }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # ── Node setup (ui / backend) ──────────────────────────────────────────
+      - uses: actions/setup-node@v4
+        if: matrix.project == 'ui' || matrix.project == 'backend'
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: ${{ matrix.project }}/package-lock.json
+
+      - name: Install Node dependencies
+        if: matrix.project == 'ui' || matrix.project == 'backend'
+        working-directory: ${{ matrix.project }}
+        run: npm ci
+
+      # ── Python setup (agent) ───────────────────────────────────────────────
+      - uses: actions/setup-python@v5
+        if: matrix.project == 'agent'
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: agent/requirements.txt
+
+      - name: Install Python dependencies
+        if: matrix.project == 'agent'
+        working-directory: agent
+        run: pip install -r requirements.txt
+
+      # ── Lint steps ─────────────────────────────────────────────────────────
+      - name: Lint and typecheck UI
+        if: matrix.project == 'ui'
+        working-directory: ui
+        run: |
+          npm run lint
+          npm run typecheck
+
+      - name: Typecheck backend
+        if: matrix.project == 'backend'
+        working-directory: backend
+        run: npm run typecheck
+
+      - name: Syntax check agent
+        if: matrix.project == 'agent'
+        working-directory: agent
+        run: python -m compileall app/ -q
+
+  test:
+    needs: [projects-matrix, lint]
+    name: Test / ${{ matrix.project }}
+    runs-on: ubuntu-latest
+    concurrency:
+      group: test-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}-${{ matrix.project }}
+      cancel-in-progress: true
+    strategy:
+      fail-fast: false
+      matrix:
+        project: ${{ fromJson(needs.projects-matrix.outputs.projects_with_test) }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # ── Node setup (ui / backend) ──────────────────────────────────────────
+      - uses: actions/setup-node@v4
+        if: matrix.project == 'ui' || matrix.project == 'backend'
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: ${{ matrix.project }}/package-lock.json
+
+      - name: Install Node dependencies
+        if: matrix.project == 'ui' || matrix.project == 'backend'
+        working-directory: ${{ matrix.project }}
+        run: npm ci
+
+      # ── Python setup (agent) ───────────────────────────────────────────────
+      - uses: actions/setup-python@v5
+        if: matrix.project == 'agent'
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: agent/requirements.txt
+
+      - name: Install Python dependencies
+        if: matrix.project == 'agent'
+        working-directory: agent
+        run: pip install -r requirements.txt
+
+      # ── Test steps ─────────────────────────────────────────────────────────
+      - name: Build UI
+        if: matrix.project == 'ui'
+        working-directory: ui
+        run: npm run build
+        env:
+          VITE_API_BASE_URL: ""
+
+      - name: Test backend
+        if: matrix.project == 'backend'
+        working-directory: backend
+        run: npm run test
+
+      - name: Test agent
+        if: matrix.project == 'agent'
+        working-directory: agent
+        run: pytest -v

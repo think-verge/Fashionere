@@ -1,0 +1,36 @@
+name: fast-forward
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  fast_forward_job:
+    name: Fast Forward
+    if: github.event.issue.pull_request != '' && contains(github.event.comment.body, '/ff')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fast Forward PR
+        id: ff-action
+        uses: endre-spotlab/fast-forward-js-action@2.1
+        with:
+          GITHUB_TOKEN: ${{ github.token }}
+          failure_message: |-
+            Unable to fast forward. Please make sure:
+            * Your branch is rebased on top of the current target branch
+
+                git fetch origin main
+                git rebase origin/main
+                git push --force
+
+            * All required status checks have passed
+            * The PR has the required approvals
+            * Your commits satisfy any required signing rules
+          production_branch: main
