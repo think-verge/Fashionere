@@ -1,19 +1,62 @@
 import { useState } from "react";
 import { useNavigate, Link as RouterLink } from "react-router-dom";
-import {
-  Box,
-  Paper,
-  Typography,
-  TextField,
-  Button,
-  Alert,
-  Link,
-  InputAdornment,
-  IconButton,
-} from "@mui/material";
+import { Box, Typography, TextField, Button, Alert, Link } from "@mui/material";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
+import IconButton from "@mui/material/IconButton";
+import InputAdornment from "@mui/material/InputAdornment";
 import { useAuth } from "../../lib/auth-context";
+import { AuthIllustration } from "../../components/AuthIllustration";
+
+function LabeledInput({
+  label,
+  type = "text",
+  value,
+  onChange,
+  placeholder,
+  required,
+  autoComplete,
+  endAdornment,
+}: {
+  label: string;
+  type?: string;
+  value: string;
+  onChange: (v: string) => void;
+  placeholder?: string;
+  required?: boolean;
+  autoComplete?: string;
+  endAdornment?: React.ReactNode;
+}) {
+  return (
+    <Box>
+      <Typography
+        sx={{ fontSize: 14, fontWeight: 500, color: "text.primary", mb: 1 }}
+      >
+        {label}
+      </Typography>
+      <TextField
+        type={type}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        placeholder={placeholder}
+        required={required}
+        fullWidth
+        autoComplete={autoComplete}
+        InputProps={{ endAdornment }}
+        sx={{
+          "& .MuiOutlinedInput-root": {
+            bgcolor: "#ffffff",
+            "& fieldset": { borderColor: "#f0e4e2" },
+            "&:hover fieldset": { borderColor: "#dfbfbc" },
+            "&.Mui-focused fieldset": { borderColor: "#a93533" },
+          },
+          "& .MuiInputBase-input::placeholder": { color: "#999999", opacity: 1 },
+        }}
+      />
+    </Box>
+  );
+}
 
 export function LoginPage() {
   const navigate = useNavigate();
@@ -39,78 +82,144 @@ export function LoginPage() {
   }
 
   return (
-    <Box
-      sx={{
-        minHeight: "100vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        bgcolor: "background.default",
-        p: 2,
-      }}
-    >
-      <Box sx={{ width: "100%", maxWidth: 400 }}>
-        <Box sx={{ textAlign: "center", mb: 4 }}>
+    <Box sx={{ minHeight: "100vh", display: "flex" }}>
+      {/* Left: illustration panel */}
+      <Box sx={{ display: { xs: "none", md: "flex" }, width: "50%", maxWidth: 600 }}>
+        <AuthIllustration variant="login" />
+      </Box>
+
+      {/* Right: form */}
+      <Box
+        sx={{
+          flex: 1,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          bgcolor: "#fff8f7",
+          p: { xs: 3, sm: 6 },
+          position: "relative",
+          overflow: "hidden",
+        }}
+      >
+        {/* Decorative blobs */}
+        <Box
+          sx={{
+            position: "absolute",
+            top: 80,
+            right: -80,
+            width: 240,
+            height: 240,
+            borderRadius: "50%",
+            bgcolor: "rgba(169,53,51,0.05)",
+            filter: "blur(60px)",
+            pointerEvents: "none",
+          }}
+        />
+        <Box
+          sx={{
+            position: "absolute",
+            bottom: 80,
+            left: -80,
+            width: 240,
+            height: 240,
+            borderRadius: "50%",
+            bgcolor: "rgba(0,108,77,0.03)",
+            filter: "blur(60px)",
+            pointerEvents: "none",
+          }}
+        />
+
+      <Box sx={{ width: "100%", maxWidth: 400, position: "relative" }}>
+        {/* Header */}
+        <Box sx={{ textAlign: "center", mb: 5 }}>
           <Typography
-            variant="h4"
-            fontWeight={700}
-            sx={{ color: "primary.main", mb: 0.5, fontFamily: "Georgia, serif" }}
+            sx={{
+              fontFamily: "'Literata', Georgia, serif",
+              fontSize: 36,
+              fontWeight: 700,
+              color: "text.primary",
+              lineHeight: 1,
+              mb: 1,
+            }}
           >
             CENTOIRE
           </Typography>
-          <Typography color="text.secondary" variant="body2">
-            Fashion Intelligence Platform
+          <Typography sx={{ color: "primary.main", fontWeight: 500, fontSize: 15 }}>
+            Welcome Back
           </Typography>
         </Box>
 
-        <Paper sx={{ p: 4 }}>
-          <Typography variant="h6" fontWeight={600} sx={{ mb: 3 }}>
-            Welcome back
-          </Typography>
-          {error && (
-            <Alert severity="error" sx={{ mb: 2 }}>
-              {error}
-            </Alert>
-          )}
-          <Box component="form" onSubmit={handleSubmit} sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-            <TextField
-              label="Email"
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              fullWidth
-              autoComplete="email"
-            />
-            <TextField
-              label="Password"
-              type={showPassword ? "text" : "password"}
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-              fullWidth
-              autoComplete="current-password"
-              InputProps={{
-                endAdornment: (
-                  <InputAdornment position="end">
-                    <IconButton onClick={() => setShowPassword((v) => !v)} edge="end" size="small">
-                      {showPassword ? <VisibilityOffIcon /> : <VisibilityIcon />}
-                    </IconButton>
-                  </InputAdornment>
-                ),
-              }}
-            />
-            <Button type="submit" variant="contained" fullWidth size="large" disabled={loading}>
-              {loading ? "Signing in…" : "Sign in"}
-            </Button>
-          </Box>
-          <Typography variant="body2" color="text.secondary" sx={{ mt: 2, textAlign: "center" }}>
-            Don't have an account?{" "}
-            <Link component={RouterLink} to="/signup" color="primary">
-              Sign up
-            </Link>
-          </Typography>
-        </Paper>
+        {error && <Alert severity="error" sx={{ mb: 2.5 }}>{error}</Alert>}
+
+        <Box component="form" onSubmit={handleSubmit} sx={{ display: "flex", flexDirection: "column", gap: 2.5 }}>
+          <LabeledInput
+            label="Email Address"
+            type="email"
+            value={email}
+            onChange={setEmail}
+            placeholder="creative@studio.com"
+            required
+            autoComplete="email"
+          />
+          <LabeledInput
+            label="Password"
+            type={showPassword ? "text" : "password"}
+            value={password}
+            onChange={setPassword}
+            placeholder="••••••••"
+            required
+            autoComplete="current-password"
+            endAdornment={
+              <InputAdornment position="end">
+                <IconButton
+                  onClick={() => setShowPassword((v) => !v)}
+                  edge="end"
+                  size="small"
+                  sx={{ color: "#999999" }}
+                >
+                  {showPassword ? <VisibilityOffIcon fontSize="small" /> : <VisibilityIcon fontSize="small" />}
+                </IconButton>
+              </InputAdornment>
+            }
+          />
+
+          <Button
+            type="submit"
+            variant="contained"
+            fullWidth
+            disabled={loading}
+            endIcon={<ArrowForwardIcon sx={{ transition: "transform 0.2s" }} />}
+            sx={{
+              py: 1.5,
+              fontSize: 15,
+              fontWeight: 600,
+              borderRadius: "10px",
+              mt: 0.5,
+              boxShadow: "0 4px 14px rgba(169,53,51,0.25)",
+              "&:hover": {
+                boxShadow: "0 6px 20px rgba(169,53,51,0.35)",
+                "& .MuiButton-endIcon svg": { transform: "translateX(3px)" },
+              },
+            }}
+          >
+            {loading ? "Signing in…" : "Sign In"}
+          </Button>
+        </Box>
+
+        <Typography
+          variant="body2"
+          sx={{ mt: 4, textAlign: "center", color: "#999999" }}
+        >
+          Don't have an account?{" "}
+          <Link
+            component={RouterLink}
+            to="/signup"
+            sx={{ color: "primary.main", fontWeight: 500, textDecoration: "none", "&:hover": { textDecoration: "underline" } }}
+          >
+            Sign up
+          </Link>
+        </Typography>
+      </Box>
       </Box>
     </Box>
   );
