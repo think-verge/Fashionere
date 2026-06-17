@@ -1,2 +1,16 @@
-@import "@fontsource-variable/geist/index.css";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,700;1,7..72,400&display=swap');
 @import "@fontsource/geist-mono/index.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fff8f7;
+  color: #241918;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

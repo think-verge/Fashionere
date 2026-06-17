@@ -54,12 +54,7 @@ export function LoginPage() {
           <Typography
             variant="h4"
             fontWeight={700}
-            sx={{
-              background: "linear-gradient(135deg, #C9A84C 0%, #9B7B29 100%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              mb: 0.5,
-            }}
+            sx={{ color: "primary.main", mb: 0.5, fontFamily: "Georgia, serif" }}
           >
             CENTOIRE
           </Typography>
