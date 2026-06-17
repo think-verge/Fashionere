@@ -26,8 +26,15 @@ interface MoodboardData {
   keywords?: string[];
   palette?: PaletteSwatch[];
   trend_badges?: TrendBadgeData[];
+  badges?: TrendBadgeData[];
   generated_images?: GeneratedImage[];
   hero_images?: GeneratedImage[];
+  silhouettes?: GeneratedImage[];
+  textures?: GeneratedImage[];
+  patterns?: GeneratedImage[];
+  details?: GeneratedImage[];
+  styling?: GeneratedImage[];
+  colorways?: GeneratedImage[];
   category?: string;
 }
 
@@ -36,9 +43,17 @@ interface Props {
 }
 
 export function MoodboardViewer({ data }: Props) {
-  const images = data.generated_images ?? data.hero_images ?? [];
-  const heroImages = images.filter((img) => img.kind === "hero" || !img.kind);
-  const otherImages = images.filter((img) => img.kind && img.kind !== "hero");
+  const heroImages = data.hero_images ?? data.generated_images?.filter((img) => img.kind === "hero" || !img.kind) ?? [];
+  const otherImages = [
+    ...(data.silhouettes ?? []),
+    ...(data.textures ?? []),
+    ...(data.patterns ?? []),
+    ...(data.details ?? []),
+    ...(data.styling ?? []),
+    ...(data.colorways ?? []),
+    ...(data.generated_images?.filter((img) => img.kind && img.kind !== "hero") ?? []),
+  ];
+  const badges = data.badges ?? data.trend_badges ?? [];
 
   return (
     <Box>
@@ -108,14 +123,14 @@ export function MoodboardViewer({ data }: Props) {
           </Grid>
         )}
 
-        {data.trend_badges && data.trend_badges.length > 0 && (
+        {badges.length > 0 && (
           <Grid size={{ xs: 12, md: 6 }}>
             <Paper sx={{ p: 2.5 }}>
               <Typography variant="subtitle2" fontWeight={600} sx={{ mb: 1.5 }}>
                 Trend Signals
               </Typography>
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
-                {data.trend_badges.map((badge, i) => (
+                {badges.map((badge, i) => (
                   <TrendBadge key={i} lifecycle={badge.lifecycle_stage} label={badge.label} />
                 ))}
               </Box>
