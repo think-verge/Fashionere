@@ -104,6 +104,10 @@ jobs:
           cache: npm
           cache-dependency-path: ${{ matrix.project }}/package-lock.json
 
+      - name: Upgrade npm
+        if: matrix.project == 'ui' || matrix.project == 'backend'
+        run: npm install -g npm@latest
+
       - name: Install Node dependencies
         if: matrix.project == 'ui' || matrix.project == 'backend'
         working-directory: ${{ matrix.project }}
@@ -161,6 +165,10 @@ jobs:
           node-version: "22"
           cache: npm
           cache-dependency-path: ${{ matrix.project }}/package-lock.json
+
+      - name: Upgrade npm
+        if: matrix.project == 'ui' || matrix.project == 'backend'
+        run: npm install -g npm@latest
 
       - name: Install Node dependencies
         if: matrix.project == 'ui' || matrix.project == 'backend'
