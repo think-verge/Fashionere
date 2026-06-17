@@ -1,7 +1,14 @@
-.PHONY: agent backend ui api-refresh
+SHELL := /bin/bash
+AGENT_VENV := agent/.venv
 
-agent:
-	cd agent && uvicorn app.main:app --reload --port 8001
+.PHONY: agent agent-install backend ui api-refresh
+
+agent-install:
+	test -d $(AGENT_VENV) || python3 -m venv $(AGENT_VENV)
+	$(AGENT_VENV)/bin/pip install -r agent/requirements.txt
+
+agent: agent-install
+	cd agent && . .venv/bin/activate && uvicorn app.main:app --reload --port 8001
 
 backend:
 	cd backend && npm run dev
