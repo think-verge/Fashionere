@@ -7,10 +7,22 @@ __pycache__/
 *.pyc
 
 # generated images (dev)
-static/*.svg
-static/*.png
-static/*.jpg
-static/*.webp
+agent/static/*.svg
+agent/static/*.png
+agent/static/*.jpg
+agent/static/*.webp
 
 # pytest
 .pytest_cache/
+
+# node
+node_modules/
+dist/
+*.local
+
+# editor
+.DS_Store
+.idea/
+.vscode/
+
+# generated OpenAPI (committed intentionally; exclude runtime artifacts only)
