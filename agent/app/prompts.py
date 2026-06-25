@@ -12,6 +12,14 @@ STYLE_ANCHOR = (
 )
 
 
+def build_style_anchor(aesthetic: str | None) -> str:
+    """Build a query-specific style anchor that frames every image prompt."""
+    base = "editorial fashion photography, soft natural light, minimal seamless background, sharp detail, no text, no logo"
+    if not aesthetic:
+        return base
+    return f"{aesthetic} aesthetic, {base}"
+
+
 # ---------- Image prompts (one per kind) ----------
 
 def hero_prompt(category, color_desc, silhouette_desc, material_desc, aesthetic_desc, style_anchor=STYLE_ANCHOR):
@@ -95,8 +103,8 @@ def narrative_user(category, season, market, trends) -> str:
 # ---------- Resolver prompts ----------
 
 QUERY_PARSE_SYSTEM = (
-    "You parse a short fashion request. Extract the garment category and, if present, "
-    "the season and market. Return ONLY valid JSON, no markdown."
+    "You are a fashion creative analyst. Parse a short fashion request and extract structured "
+    "intent. Return ONLY valid JSON, no markdown, no explanation."
 )
 
 
@@ -104,8 +112,14 @@ def query_parse_user(query: str) -> str:
     return (
         f'Request: "{query}"\n\n'
         "Return JSON exactly:\n"
-        '{ "category": "<single garment category, e.g. swimwear|dresses|denim|t-shirts>", '
-        '"season": "<e.g. SS27 or null>", "market": "<e.g. womenswear or null>" }'
+        "{\n"
+        '  "category": "<single garment category, e.g. swimwear|dresses|denim|t-shirts>",\n'
+        '  "season": "<e.g. SS27 or null>",\n'
+        '  "market": "<e.g. womenswear or null>",\n'
+        '  "aesthetic": "<the dominant style or era, e.g. \'90s minimalist\' | \'Y2K glamour\' | \'coastal casual\' or null>",\n'
+        '  "style_keywords": ["<6-10 concise style descriptors that capture the mood, silhouette, fabric feel, and era — used to match relevant trends>"\n'
+        "  ]\n"
+        "}"
     )
 
 

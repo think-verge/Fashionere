@@ -68,6 +68,62 @@ class LocalStorage:
             return url
 
 
+class SupabaseStorage:
+    """Uploads images to a Supabase Storage bucket and returns permanent public URLs."""
+
+    def __init__(self, supabase_url: str, service_key: str, bucket: str) -> None:
+        from supabase import create_client
+        self._client = create_client(supabase_url, service_key)
+        self._bucket = bucket
+
+    async def localize(self, url: str) -> str:
+        if not url:
+            return url
+        if "supabase.co/storage" in url:
+            return url
+        try:
+            image_bytes, content_type = await self._fetch_bytes(url)
+        except Exception as e:  # noqa: BLE001
+            log.warning("could not fetch image bytes: %s — keeping original URL", e)
+            return url
+
+        suffix = _suffix_for(content_type, url)
+        key = hashlib.sha1(url.encode("utf-8")).hexdigest()[:16] + suffix
+
+        import asyncio
+        for attempt in range(3):
+            try:
+                await asyncio.get_event_loop().run_in_executor(
+                    None,
+                    lambda: self._client.storage.from_(self._bucket).upload(
+                        key, image_bytes, {"content-type": content_type, "upsert": "true"}
+                    ),
+                )
+                public_url = self._client.storage.from_(self._bucket).get_public_url(key)
+                log.info("uploaded image to Supabase: %s", public_url)
+                return public_url
+            except Exception as e:  # noqa: BLE001
+                log.warning("Supabase upload attempt %d failed: %s", attempt + 1, e)
+                if attempt < 2:
+                    await asyncio.sleep(1.5 ** attempt)  # 0s, 1.5s between retries
+
+        log.error("all Supabase upload attempts failed — keeping original URL")
+        return url
+
+    async def _fetch_bytes(self, url: str) -> tuple[bytes, str]:
+        """Return (bytes, content_type) from either a data URI or an HTTP URL."""
+        if url.startswith("data:"):
+            # data:[<mediatype>][;base64],<data>
+            import base64
+            header, _, data = url.partition(",")
+            content_type = header.split(";")[0].removeprefix("data:") or "image/png"
+            return base64.b64decode(data), content_type
+        async with httpx.AsyncClient(follow_redirects=True, timeout=30.0) as client:
+            resp = await client.get(url)
+            resp.raise_for_status()
+        return resp.content, resp.headers.get("content-type", "image/png")
+
+
 def _suffix_for(content_type: str, url: str) -> str:
     ct = content_type.split(";")[0].strip().lower()
     if ct in _CT_SUFFIX:

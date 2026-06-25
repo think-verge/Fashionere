@@ -66,11 +66,25 @@ class Settings:
         self.static_dir: Path = _path(os.getenv("STATIC_DIR", "./static"))
         self.public_base_url: str = os.getenv("PUBLIC_BASE_URL", "http://localhost:8000").rstrip("/")
 
-        # Storage backend for re-hosting images (local | none)
+        # Storage backend for re-hosting images (local | supabase | none)
         self.storage: str = os.getenv("STORAGE", "local").lower()
+
+        # Supabase (used when STORAGE=supabase)
+        self.supabase_url: str | None = os.getenv("SUPABASE_URL") or None
+        self.supabase_service_key: str | None = os.getenv("SUPABASE_SERVICE_KEY") or None
+        self.supabase_bucket: str = os.getenv("SUPABASE_BUCKET", "moodboards")
+
+        # MongoDB collections for persistence
+        self.moodboards_collection: str = os.getenv("MOODBOARDS_COLLECTION", "moodboards")
+        self.elements_collection: str = os.getenv("ELEMENTS_COLLECTION", "elements")
 
         # Data
         self.data_dir: Path = _path(os.getenv("DATA_DIR", "./data"))
+
+        # MongoDB (used by trends_mongo provider)
+        self.mongodb_uri: str | None = os.getenv("MONGODB_URI") or None
+        self.mongodb_db: str = os.getenv("MONGODB_DB", "centoire")
+        self.trends_collection: str = os.getenv("TRENDS_COLLECTION", "trend_records")
 
         # Job store
         self.job_store: str = os.getenv("JOB_STORE", "memory").lower()

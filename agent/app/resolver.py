@@ -95,8 +95,14 @@ async def resolve(
     if mode == "query":
         assert isinstance(payload, QueryRequest)
         parsed = await parse_query(payload.query, text_provider)
+        attributes: dict = {}
+        if aesthetic := _clean(parsed.get("aesthetic")):
+            attributes["aesthetic"] = aesthetic
+        if keywords := parsed.get("style_keywords"):
+            attributes["style_keywords"] = [str(k) for k in keywords if k]
         return Target(
             category=parsed["category"],
+            attributes=attributes,
             season=_clean(parsed.get("season")),
             market=_clean(parsed.get("market")),
             raw_query=payload.query,

@@ -40,6 +40,59 @@ _FALLBACKS = {
 }
 
 
+# ---------- relevance scoring ----------
+
+_TOP_TRENDS = 12  # max trends to pass into bucketing after scoring
+
+
+def _score_trend(trend: TrendObject, style_keywords: list[str]) -> int:
+    """Count how many style_keywords appear in the trend's label or descriptor."""
+    haystack = (trend.label + " " + trend.descriptor).lower()
+    return sum(1 for kw in style_keywords if kw.lower() in haystack)
+
+
+def _filter_by_relevance(
+    trends: list[TrendObject], target: Target
+) -> list[TrendObject]:
+    """Keep only the most relevant trends to the query aesthetic.
+
+    Scores each trend against style_keywords from the parsed query. Trends with
+    zero score are kept only if there are not enough scored ones to fill each type
+    bucket (ensures silhouette/color/material slots are never empty).
+    """
+    style_keywords: list[str] = (target.attributes or {}).get("style_keywords", [])
+    if not style_keywords:
+        return trends[:_TOP_TRENDS]
+
+    scored = [(t, _score_trend(t, style_keywords)) for t in trends]
+    scored.sort(key=lambda x: (-x[1], -x[0].confidence_score))
+
+    # Always keep at least one trend per type so all image slots have something.
+    seen_types: set[str] = set()
+    result: list[TrendObject] = []
+    zero_score_fallbacks: list[TrendObject] = []
+
+    for trend, score in scored:
+        if score > 0:
+            result.append(trend)
+        elif trend.type not in seen_types:
+            zero_score_fallbacks.append(trend)
+        seen_types.add(trend.type)
+
+    # Append fallbacks for types not covered by scored trends.
+    covered_types = {t.type for t in result}
+    for trend in zero_score_fallbacks:
+        if trend.type not in covered_types:
+            result.append(trend)
+            covered_types.add(trend.type)
+
+    log.info(
+        "relevance filter: %d -> %d trends (keywords=%s)",
+        len(trends), len(result), style_keywords,
+    )
+    return result[:_TOP_TRENDS]
+
+
 # ---------- bucketing & descriptor selection ----------
 
 def _bucket(trends: list[TrendObject]) -> dict[str, list[TrendObject]]:
@@ -80,7 +133,8 @@ def _detail_desc(buckets) -> str:
 
 def cohesion(target: Target, trends: list[TrendObject]) -> tuple[str, int]:
     """A shared style anchor + one deterministic seed for the whole board."""
-    style_anchor = prompts.STYLE_ANCHOR
+    aesthetic = target.attributes.get("aesthetic") if target.attributes else None
+    style_anchor = prompts.build_style_anchor(aesthetic)
     basis = target.category + "|" + "|".join(t.trend_id for t in trends)
     seed = zlib.crc32(basis.encode("utf-8")) & 0x7FFFFFFF
     return style_anchor, seed
@@ -244,17 +298,19 @@ async def generate_moodboard(
 ) -> Moodboard:
     # 1. trends
     trends = await trend_provider.get_trends(target)
-    # 2. buckets
+    # 2. relevance filter — keep only trends stylistically consistent with the query
+    trends = _filter_by_relevance(trends, target)
+    # 3. buckets
     buckets = _bucket(trends)
-    # 3-4. pulled
+    # 4-5. pulled
     palette = composer.build_palette(buckets.get("color", []))
     badges = composer.build_badges(trends)
-    # 5. cohesion
+    # 6. cohesion (builds aesthetic-aware style anchor)
     style_anchor, seed = cohesion(target, trends)
-    # 6. image tasks  +  7. text task
+    # 7. image tasks  +  8. text task
     image_tasks = _plan_image_tasks(image_provider, target, buckets, style_anchor, seed, timeout_s, storage, tiles)
     text_task = _run_text(text_provider, target, trends, timeout_s=timeout_s)
-    # 8. PARALLEL
+    # 9. PARALLEL
     results = await asyncio.gather(*image_tasks, text_task)
     image_results = [r for r in results[:-1] if isinstance(r, GeneratedImage)]
     text_result = results[-1]

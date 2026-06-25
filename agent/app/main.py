@@ -15,7 +15,7 @@ from fastapi.staticfiles import StaticFiles
 from app import pipeline, resolver
 from app.config import Settings, get_settings
 from app.jobs import JobStore, make_job_store
-from app.storage import LocalStorage, Storage
+from app.storage import LocalStorage, Storage, SupabaseStorage
 from app.models import (
     CatalogueItem,
     CatalogueRequest,
@@ -33,15 +33,29 @@ log = logging.getLogger("inspiration_engine")
 
 # ---------- provider factory ----------
 
+def build_storage(s: Settings) -> Storage | None:
+    if s.storage == "supabase":
+        if not s.supabase_url or not s.supabase_service_key:
+            raise RuntimeError("STORAGE=supabase requires SUPABASE_URL and SUPABASE_SERVICE_KEY")
+        return SupabaseStorage(s.supabase_url, s.supabase_service_key, s.supabase_bucket)
+    if s.storage == "local":
+        return LocalStorage(s.static_dir, s.public_base_url)
+    return None
+
+
 def build_trend_provider(s: Settings) -> TrendProvider:
-    # Only a mock implementation exists in MVP1; the real Trend Agent slots in
-    # behind this same interface later (Phase 2).
+    if s.trend_provider == "mongo":
+        if not s.mongodb_uri:
+            raise RuntimeError("TREND_PROVIDER=mongo requires MONGODB_URI to be set in .env")
+        from app.providers.trends_mongo import TrendsMongoProvider
+
+        return TrendsMongoProvider(s.mongodb_uri, s.mongodb_db, s.trends_collection)
     from app.providers.trends_mock import TrendsMockProvider
 
     return TrendsMockProvider(s.mock_trends_path)
 
 
-def build_image_provider(s: Settings, storage: LocalStorage | None) -> ImageProvider:
+def build_image_provider(s: Settings, storage: Storage | None) -> ImageProvider:
     if s.image_provider == "fal":
         from app.providers.image_fal import FalImageProvider
 
@@ -96,7 +110,7 @@ container = Container()
 async def lifespan(app: FastAPI):
     s = get_settings()
     container.settings = s
-    container.storage = None if s.storage == "none" else LocalStorage(s.static_dir, s.public_base_url)
+    container.storage = build_storage(s)
     container.job_store = make_job_store(s.job_store, s.redis_url)
     container.trend_provider = build_trend_provider(s)
     container.image_provider = build_image_provider(s, container.storage if isinstance(container.storage, LocalStorage) else None)
@@ -130,6 +144,17 @@ async def _run_job(job_id: str, target: Target) -> None:
             timeout_s=container.settings.provider_timeout_s,
         )
         await store.set_done(job_id, moodboard)
+        # Persist elements + moodboard to MongoDB if configured.
+        s = container.settings
+        if s.mongodb_uri:
+            from app.persistence import save_moodboard
+            await save_moodboard(
+                moodboard,
+                mongodb_uri=s.mongodb_uri,
+                db_name=s.mongodb_db,
+                moodboards_collection=s.moodboards_collection,
+                elements_collection=s.elements_collection,
+            )
     except Exception as e:  # noqa: BLE001
         log.exception("job %s failed", job_id)
         await store.set_error(job_id, f"{type(e).__name__}: {e}")
