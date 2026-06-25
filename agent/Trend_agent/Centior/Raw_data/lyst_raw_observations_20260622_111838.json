@@ -1,0 +1,484 @@
+{
+  "observations": [
+    {
+      "observation_id": "4e5b3c67-24b6-41ed-9e48-f042fd0527d3",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.822739",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Chanel",
+        "ranking_list": "Lyst Index Hottest Brands Q1-26",
+        "rank": 1,
+        "movement": "new"
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Chanel ranked number 1 in the Lyst Index Hottest Brands for Q1-26."
+    },
+    {
+      "observation_id": "e210fa44-e058-4b7f-9c53-9ef98e7b3432",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.822839",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Saint Laurent",
+        "ranking_list": "Lyst Index Hottest Brands Q1-26",
+        "rank": 2,
+        "movement": "-1"
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Saint Laurent ranked number 2 in the Lyst Index Hottest Brands for Q1-26, moving down 1 spot."
+    },
+    {
+      "observation_id": "bef29ee5-85a5-48e4-8eaa-980e010a25fd",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.822865",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Dior",
+        "ranking_list": "Lyst Index Hottest Brands Q1-26",
+        "rank": 3,
+        "movement": "new"
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Dior ranked number 3 in the Lyst Index Hottest Brands for Q1-26 as a new entry."
+    },
+    {
+      "observation_id": "8f48c339-2eb5-416e-909a-59f3a8616634",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.822885",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Miu Miu",
+        "ranking_list": "Lyst Index Hottest Brands Q1-26",
+        "rank": 4,
+        "movement": "-2"
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Miu Miu ranked number 4 in the Lyst Index Hottest Brands for Q1-26, moving down 2 spots."
+    },
+    {
+      "observation_id": "999e3c2a-05f8-4c88-8296-f71af2ab8fd6",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.822921",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Gucci",
+        "ranking_list": "Lyst Index Hottest Brands Q1-26",
+        "rank": 5,
+        "movement": "+4"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Gucci ranked number 5 in the Lyst Index Hottest Brands for Q1-26, climbing 4 places."
+    },
+    {
+      "observation_id": "64abd132-6091-4c1f-97b5-f7e892b7ed2c",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.822937",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Ralph Lauren",
+        "ranking_list": "Lyst Index Hottest Brands Q1-26",
+        "rank": 6,
+        "movement": "-2"
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Ralph Lauren ranked number 6 in the Lyst Index Hottest Brands for Q1-26, moving down 2 spots."
+    },
+    {
+      "observation_id": "4cb0a02f-8066-4fab-b998-46e3577e99f7",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.822953",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Prada",
+        "ranking_list": "Lyst Index Hottest Brands Q1-26",
+        "rank": 7,
+        "movement": "-2"
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Prada ranked number 7 in the Lyst Index Hottest Brands for Q1-26, moving down 2 spots."
+    },
+    {
+      "observation_id": "6d88c93d-b98a-4d8d-855e-9577271f15a1",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.822969",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Coach",
+        "ranking_list": "Lyst Index Hottest Brands Q1-26",
+        "rank": 8,
+        "movement": "-2"
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Coach ranked number 8 in the Lyst Index Hottest Brands for Q1-26, moving down 2 spots."
+    },
+    {
+      "observation_id": "c5e07e09-7395-4012-991e-b00733892542",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.822985",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Burberry",
+        "ranking_list": "Lyst Index Hottest Brands Q1-26",
+        "rank": 9,
+        "movement": "-1"
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Burberry ranked number 9 in the Lyst Index Hottest Brands for Q1-26, moving down 1 spot."
+    },
+    {
+      "observation_id": "2dd2f6a6-9f22-45d0-a859-2e5a3ebb34a1",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823011",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "COS",
+        "ranking_list": "Lyst Index Hottest Brands Q1-26",
+        "rank": 10,
+        "movement": "-7"
+      },
+      "demand_direction": "fading",
+      "raw_text": "COS ranked number 10 in the Lyst Index Hottest Brands for Q1-26, moving down 7 spots."
+    },
+    {
+      "observation_id": "aadbe165-e304-48a4-bb8e-caf41df8c873",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823028",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Saint Laurent",
+        "product_name": "Stand-Collar Jacket",
+        "ranking_list": "Lyst Index Hottest Products Q1-26",
+        "rank": 1
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Saint Laurent Stand-Collar Jacket is the number 1 hottest product."
+    },
+    {
+      "observation_id": "c452de93-9c3c-45f1-b5b6-49e372fb76cc",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823044",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Chanel",
+        "product_name": "Pumps",
+        "ranking_list": "Lyst Index Hottest Products Q1-26",
+        "rank": 2
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Chanel Pumps are the number 2 hottest product."
+    },
+    {
+      "observation_id": "686016da-7718-420b-9877-5a55517b0e44",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823059",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Adidas",
+        "product_name": "Chinese Style Track Top",
+        "ranking_list": "Lyst Index Hottest Products Q1-26",
+        "rank": 3
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Adidas Chinese Style Track Top is the number 3 hottest product."
+    },
+    {
+      "observation_id": "252d5501-33e3-462e-963f-4ec74d9b9bc1",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823073",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Celine",
+        "product_name": "Ballet Lace-up Shoes",
+        "ranking_list": "Lyst Index Hottest Products Q1-26",
+        "rank": 4
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Celine Ballet Lace-up Shoes are the number 4 hottest product."
+    },
+    {
+      "observation_id": "2641d91f-d17d-4bf9-ac8a-e361bf95bd23",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823088",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Vivienne Westwood",
+        "product_name": "Long Fond Gown",
+        "ranking_list": "Lyst Index Hottest Products Q1-26",
+        "rank": 5
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Vivienne Westwood Long Fond Gown is the number 5 hottest product."
+    },
+    {
+      "observation_id": "4fe294b8-2dcb-4ee8-aa72-6cb0bb4ab65d",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823104",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Chanel",
+        "product_name": "Maxi Flap Bag",
+        "ranking_list": "Lyst Index Hottest Products Q1-26",
+        "rank": 6
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Chanel Maxi Flap Bag is the number 6 hottest product."
+    },
+    {
+      "observation_id": "6ab1b4fb-40c0-4cce-911e-9ac29c4ec53e",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823120",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Saint Laurent",
+        "product_name": "Butterfly Sunglasses",
+        "ranking_list": "Lyst Index Hottest Products Q1-26",
+        "rank": 7
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Saint Laurent Butterfly Sunglasses are the number 7 hottest product."
+    },
+    {
+      "observation_id": "2c6b3fd9-ba09-4b47-b06e-738c8c5e4384",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823139",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Trader Joe's",
+        "product_name": "Tote Bag",
+        "ranking_list": "Lyst Index Hottest Products Q1-26",
+        "rank": 8
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Trader Joe’s Tote Bag is the number 8 hottest product."
+    },
+    {
+      "observation_id": "cd1630ec-1bfd-4d9e-825f-ee5a460de620",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823157",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Village pm",
+        "product_name": "1PM Sneakers",
+        "ranking_list": "Lyst Index Hottest Products Q1-26",
+        "rank": 9
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Village pm 1PM Sneakers are the number 9 hottest product."
+    },
+    {
+      "observation_id": "f12cc86b-2810-465b-b6c5-7c66de5cfcd6",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823171",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Kangol",
+        "product_name": "Tropic 504 Flat Cap",
+        "ranking_list": "Lyst Index Hottest Products Q1-26",
+        "rank": 10
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Kangol Tropic 504 Flat Cap is the number 10 hottest product."
+    },
+    {
+      "observation_id": "ac8b72fb-a5cf-48f8-b4cf-a06f62ae4db9",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823189",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Coach",
+        "metric": "year-on-year demand increase",
+        "value": "332%",
+        "year": "2024"
+      },
+      "demand_direction": "rising",
+      "raw_text": "The year on year increase in demand for Coach in 2024 is 332%."
+    },
+    {
+      "observation_id": "c2fafac8-3ccd-4443-8e8a-0d9250318fa3",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823205",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Gucci",
+        "metric": "day-on-day lift",
+        "value": "12%",
+        "event": "Demna's debut show"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Momentum is building around Demna’s debut, with a 12% day-on-day lift following the show."
+    },
+    {
+      "observation_id": "01d2c90e-4e4d-453e-8a03-5fb991cfafd4",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823222",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Zara",
+        "status": "breakout brand",
+        "strategy": "aligning with credible creative voices",
+        "event": "Bad Bunny's Super Bowl presence"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Zara emerges as a breakout not by competing on heritage, but by aligning itself with credible creative voices."
+    },
+    {
+      "observation_id": "7e743804-43e0-46ea-a2b3-07e557188859",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823236",
+      "raw_type": "editorial",
+      "extracted_attributes": {
+        "trend": "'90s minimalism",
+        "influencer": "Carolyn Bessette-Kennedy",
+        "catalyst": "Love Story TV show"
+      },
+      "demand_direction": "rising",
+      "raw_text": "The clearest signal this quarter is the resurgence of ’90s minimalism, catalysed by Love Story and renewed interest in Carolyn Bessette-Kennedy’s style."
+    },
+    {
+      "observation_id": "74665532-278c-4a62-91ff-12563f4b9aaf",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823250",
+      "raw_type": "search_term",
+      "extracted_attributes": {
+        "product_category": "knits",
+        "product_type": "black turtleneck",
+        "metric": "search increase",
+        "value": "217%",
+        "catalyst": "Love Story first episode"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Searches for black turtleneck knits rose 217% after the first episode of Love Story."
+    },
+    {
+      "observation_id": "446b03a2-34df-4ab1-b550-9102c30bf928",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823256",
+      "raw_type": "search_term",
+      "extracted_attributes": {
+        "product_category": "denim",
+        "product_type": "straight-leg denim"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Straight-leg denim demand has climbed steadily on Lyst."
+    },
+    {
+      "observation_id": "faef14b5-6619-4e17-8836-9807e3c8458f",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823262",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Calvin Klein",
+        "metric": "week-on-week lift",
+        "value": "43%",
+        "catalyst": "Love Story finale"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Calvin Klein saw a 43% week-on-week lift following the Love Story finale."
+    },
+    {
+      "observation_id": "a52cc830-23fb-46ff-b6e6-bf4293b598b0",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823268",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Vivienne Westwood",
+        "product_type": "satin dress",
+        "metric": "demand surge",
+        "value": "890%",
+        "catalyst": "Wuthering Heights release and press tour"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Demand for Vivienne Westwood’s satin dress surged by 890%, driven by the release and press tour wardrobe of Wuthering Heights."
+    },
+    {
+      "observation_id": "d8e58daf-45d3-4b51-a81f-6f894c852165",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823274",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Charvet",
+        "metric": "demand increase",
+        "value": "128%",
+        "time_period": "this quarter"
+      },
+      "demand_direction": "rising",
+      "raw_text": "128% increase in demand for charvet on Lyst this quarter."
+    },
+    {
+      "observation_id": "91b74acf-6b19-437e-bc19-6b609968a563",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823279",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Zara",
+        "status": "Brand Moving Fast",
+        "event": "Bad Bunny Super Bowl LX Halftime Show performance",
+        "metric": "viewers",
+        "value": "128.2M"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Zara: 128.2M VIEWERS WATCHED BAD BUNNY PERFORM IN A ZARA SUIT AT THE SUPER BOWL LX HALFTIME SHOW."
+    },
+    {
+      "observation_id": "b32a8b0c-0fba-452e-a7b5-835506d59079",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823286",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Vivienne Westwood",
+        "product_type": "Corset dress",
+        "metric": "Quarter-on-quarter rise in demand",
+        "value": "+88%"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Vivienne Westwood: +88% QuARTER-ON-QUARTER RISE IN DEMAND for VIVIENNE WESTWOOD Corset dress."
+    },
+    {
+      "observation_id": "47e09392-5dbf-4095-9e5d-3afd8ec006f4",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823291",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Calvin Klein",
+        "metric": "rise in weekly searches",
+        "value": "+43%",
+        "catalyst": "Love Story finale"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Calvin Klein: +43% rise in weekly calvin klein searches following the love story finale."
+    }
+  ]
+}
