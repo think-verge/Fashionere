@@ -66,6 +66,35 @@ def build_badges(top_trends: list[TrendObject]) -> list[TrendBadge]:
     return badges
 
 
+def build_palette_from_injection(palette_data: list[dict]) -> list[PaletteSwatch]:
+    """Build palette swatches from LLM-injected color data when no real color trends exist."""
+    swatches: list[PaletteSwatch] = []
+    for i, c in enumerate(palette_data[:_MAX_PALETTE]):
+        hex_val = c.get("hex", "")
+        if not hex_val:
+            continue
+        role = _PALETTE_ROLES[min(i, len(_PALETTE_ROLES) - 1)]
+        swatches.append(PaletteSwatch(
+            name=c.get("name", ""),
+            hex=hex_val,
+            family=c.get("family", ""),
+            role=role,
+        ))
+    return swatches
+
+
+def build_badges_from_injection(aesthetic_label: str, category: str) -> list[TrendBadge]:
+    """Create a synthetic aesthetic badge when no real trend data matched the query."""
+    return [TrendBadge(
+        label=aesthetic_label,
+        type="aesthetic",
+        confidence_score=0,
+        lifecycle_stage="emerging",
+        sources=[],
+        why=f"{aesthetic_label} aesthetic applied to {category} via style knowledge — no matching trend records found.",
+    )]
+
+
 def compose(
     target: Target,
     palette: list[PaletteSwatch],

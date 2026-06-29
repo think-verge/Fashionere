@@ -17,12 +17,16 @@ from app.config import Settings, get_settings
 from app.jobs import JobStore, make_job_store
 from app.storage import LocalStorage, Storage, SupabaseStorage
 from app.models import (
+    ApplyTextureRequest,
     CatalogueItem,
     CatalogueRequest,
+    EditRequest,
+    ElementResponse,
     ImageRequest,
     JobCreated,
     JobStatus,
     QueryRequest,
+    RegenerateRequest,
     Target,
 )
 from app.providers.base import ImageProvider, TextProvider, TrendProvider
@@ -217,3 +221,143 @@ async def get_job(job_id: str) -> JobStatus:
     if status is None:
         raise HTTPException(status_code=404, detail=f"Unknown job_id: {job_id}")
     return status
+
+
+# ---------- element customisation ----------
+
+async def _fetch_element_or_404(element_id: str) -> dict:
+    s = container.settings
+    if not s.mongodb_uri:
+        raise HTTPException(status_code=503, detail="MongoDB not configured")
+    from app.persistence import get_element
+    doc = await get_element(element_id, s.mongodb_uri, s.mongodb_db, s.elements_collection)
+    if not doc:
+        raise HTTPException(status_code=404, detail=f"Element not found: {element_id}")
+    return doc
+
+
+async def _save_variant(original: dict, new_url: str, new_prompt: str) -> dict:
+    import uuid
+    from datetime import datetime, timezone
+    from app.persistence import save_element
+    s = container.settings
+    variant = {
+        **{k: v for k, v in original.items() if k != "_id"},
+        "element_id": f"elem_{uuid.uuid4().hex[:12]}",
+        "url": new_url,
+        "prompt": new_prompt,
+        "parent_element_id": original["element_id"],
+        "created_at": datetime.now(timezone.utc),
+    }
+    if s.mongodb_uri:
+        await save_element(variant, s.mongodb_uri, s.mongodb_db, s.elements_collection)
+    return variant
+
+
+@app.post("/api/element/{element_id}/regenerate", response_model=ElementResponse)
+async def regenerate_element(element_id: str, req: RegenerateRequest) -> ElementResponse:
+    """Regenerate a tile with color/pattern overrides, preserving the original prompt structure."""
+    original = await _fetch_element_or_404(element_id)
+    from app import prompts as _prompts
+    new_prompt = _prompts.swap_prompt_descriptors(
+        original["prompt"], color=req.color, pattern=req.pattern
+    )
+    url = await container.image_provider.generate(new_prompt, aspect_ratio="1:1")
+    if container.storage:
+        url = await container.storage.localize(url)
+    variant = await _save_variant(original, url, new_prompt)
+    return ElementResponse(
+        element_id=variant["element_id"],
+        kind=variant["kind"],
+        url=variant["url"],
+        prompt=variant["prompt"],
+        moodboard_id=variant["moodboard_id"],
+    )
+
+
+@app.post("/api/element/{element_id}/edit", response_model=ElementResponse)
+async def edit_element(element_id: str, req: EditRequest) -> ElementResponse:
+    """Edit a tile in-place: apply color/pattern/fabric changes to the existing image."""
+    if not req.color and not req.pattern and not req.fabric:
+        raise HTTPException(status_code=422, detail="Provide at least one of: color, pattern, fabric")
+    original = await _fetch_element_or_404(element_id)
+    from app import prompts as _prompts
+    from app.providers.image_gemini_edit import GeminiImageEditProvider
+    s = container.settings
+    if not s.gemini_api_key:
+        raise HTTPException(status_code=503, detail="GEMINI_API_KEY not configured")
+    editor = GeminiImageEditProvider(s.gemini_api_key, s.gemini_image_model)
+    instruction = _prompts.build_edit_instruction(req.color, req.pattern, req.fabric)
+    image_bytes, mime_type = await editor.edit(original["url"], instruction)
+    # Upload edited image bytes directly to storage.
+    suffix = {"image/png": ".png", "image/jpeg": ".jpg", "image/webp": ".webp"}.get(mime_type, ".png")
+    if container.storage:
+        import hashlib
+        key = hashlib.sha1(instruction.encode()).hexdigest()[:16] + suffix
+        if hasattr(container.storage, "save_bytes"):
+            url = container.storage.save_bytes(image_bytes, suffix, key=key)
+        else:
+            import base64
+            data_url = f"data:{mime_type};base64,{base64.b64encode(image_bytes).decode()}"
+            url = await container.storage.localize(data_url)
+    else:
+        import base64
+        url = f"data:{mime_type};base64,{base64.b64encode(image_bytes).decode()}"
+    edit_prompt = f"{original['prompt']} [edited: {instruction}]"
+    variant = await _save_variant(original, url, edit_prompt)
+    return ElementResponse(
+        element_id=variant["element_id"],
+        kind=variant["kind"],
+        url=variant["url"],
+        prompt=variant["prompt"],
+        moodboard_id=variant["moodboard_id"],
+    )
+
+
+@app.post("/api/element/{element_id}/apply-texture", response_model=ElementResponse)
+async def apply_texture(element_id: str, req: ApplyTextureRequest) -> ElementResponse:
+    """Apply the exact visual texture/pattern from a source tile onto a target outfit image.
+
+    target  = the hero/styling image to modify  (element_id in the path)
+    source  = the pattern/texture/fabric tile to apply  (source_element_id in body)
+
+    Both images are sent to Gemini together. Gemini transfers the surface appearance
+    of the source tile onto the garment in the target image, preserving pose and background.
+    """
+    target = await _fetch_element_or_404(element_id)
+    source = await _fetch_element_or_404(req.source_element_id)
+
+    s = container.settings
+    if not s.gemini_api_key:
+        raise HTTPException(status_code=503, detail="GEMINI_API_KEY not configured")
+
+    from app.providers.image_gemini_edit import GeminiImageEditProvider
+    editor = GeminiImageEditProvider(s.gemini_api_key, s.gemini_image_model)
+
+    image_bytes, mime_type = await editor.apply_texture(
+        target_url=target["url"],
+        texture_url=source["url"],
+        texture_kind=source["kind"],   # "pattern", "texture", "colorway" etc.
+    )
+
+    suffix = {"image/png": ".png", "image/jpeg": ".jpg", "image/webp": ".webp"}.get(mime_type, ".png")
+    if container.storage:
+        import base64
+        data_url = f"data:{mime_type};base64,{base64.b64encode(image_bytes).decode()}"
+        url = await container.storage.localize(data_url)
+    else:
+        import base64
+        url = f"data:{mime_type};base64,{base64.b64encode(image_bytes).decode()}"
+
+    new_prompt = (
+        f"{target['prompt']} "
+        f"[texture applied from element {source['element_id']} ({source['kind']})]"
+    )
+    variant = await _save_variant(target, url, new_prompt)
+    return ElementResponse(
+        element_id=variant["element_id"],
+        kind=variant["kind"],
+        url=variant["url"],
+        prompt=variant["prompt"],
+        moodboard_id=variant["moodboard_id"],
+    )

@@ -133,3 +133,26 @@ class CatalogueItem(BaseModel):
     name: str
     category: str
     attributes: dict = {}
+
+
+class RegenerateRequest(BaseModel):
+    color: Optional[str] = None
+    pattern: Optional[str] = None
+
+
+class EditRequest(BaseModel):
+    color: Optional[str] = None
+    pattern: Optional[str] = None
+    fabric: Optional[str] = None
+
+
+class ElementResponse(BaseModel):
+    element_id: str
+    kind: str
+    url: str
+    prompt: str
+    moodboard_id: str
+
+
+class ApplyTextureRequest(BaseModel):
+    source_element_id: str          # the pattern/texture/fabric tile to apply from

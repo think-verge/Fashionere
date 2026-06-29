@@ -67,24 +67,9 @@ def _filter_by_relevance(
     scored = [(t, _score_trend(t, style_keywords)) for t in trends]
     scored.sort(key=lambda x: (-x[1], -x[0].confidence_score))
 
-    # Always keep at least one trend per type so all image slots have something.
-    seen_types: set[str] = set()
-    result: list[TrendObject] = []
-    zero_score_fallbacks: list[TrendObject] = []
-
-    for trend, score in scored:
-        if score > 0:
-            result.append(trend)
-        elif trend.type not in seen_types:
-            zero_score_fallbacks.append(trend)
-        seen_types.add(trend.type)
-
-    # Append fallbacks for types not covered by scored trends.
-    covered_types = {t.type for t in result}
-    for trend in zero_score_fallbacks:
-        if trend.type not in covered_types:
-            result.append(trend)
-            covered_types.add(trend.type)
+    # Keep only trends that scored > 0 — zero-score trends are off-aesthetic
+    # and would pollute the board. Empty buckets are filled by aesthetic injection.
+    result = [t for t, score in scored if score > 0]
 
     log.info(
         "relevance filter: %d -> %d trends (keywords=%s)",
@@ -102,10 +87,19 @@ def _bucket(trends: list[TrendObject]) -> dict[str, list[TrendObject]]:
     return buckets
 
 
-def _desc(buckets: dict[str, list[TrendObject]], kind: str, index: int = 0) -> str:
+def _desc(
+    buckets: dict[str, list[TrendObject]],
+    kind: str,
+    index: int = 0,
+    injected: Optional[dict[str, str]] = None,
+) -> str:
     items = buckets.get(kind, [])
     if index < len(items):
         return items[index].descriptor
+    # Middle tier: LLM-injected descriptor from aesthetic knowledge
+    if injected and kind in injected:
+        return injected[kind]
+    # Last resort: generic fallback
     return _FALLBACKS.get(kind, "")
 
 
@@ -117,16 +111,68 @@ def _refs(buckets: dict[str, list[TrendObject]], *kinds: str) -> list[str]:
     return out
 
 
-def _color_desc(buckets, index: int = 0) -> str:
-    return _desc(buckets, "color", index)
+def _color_desc(buckets, index: int = 0, injected: Optional[dict[str, str]] = None) -> str:
+    return _desc(buckets, "color", index, injected)
 
 
-def _detail_desc(buckets) -> str:
-    # Prefer an item_style descriptor as the "construction detail" subject.
+def _detail_desc(buckets, injected: Optional[dict[str, str]] = None) -> str:
     items = buckets.get("item_style", [])
     if items:
         return items[0].descriptor
+    if injected and "item_style" in injected:
+        return injected["item_style"]
     return _FALLBACKS["detail"]
+
+
+# ---------- aesthetic injection ----------
+
+_INJECTABLE_TYPES = ["color", "silhouette", "material", "pattern"]
+
+
+async def _inject_from_aesthetic(
+    buckets: dict[str, list[TrendObject]],
+    target: Target,
+    text_provider: TextProvider,
+    timeout_s: float,
+) -> dict[str, str]:
+    """Ask the LLM to fill descriptor gaps using its aesthetic knowledge.
+
+    Uses the query aesthetic (from target.attributes) as the seed — more reliable
+    than using whatever aesthetic trend happened to be fetched. Only fires when
+    at least one critical type bucket is empty.
+    """
+    # Prefer the query-parsed aesthetic; fall back to any aesthetic trend in buckets.
+    aesthetic_label = (target.attributes or {}).get("aesthetic")
+    if not aesthetic_label:
+        aesthetic_trends = buckets.get("aesthetic", [])
+        if not aesthetic_trends:
+            return {}
+        aesthetic_label = aesthetic_trends[0].label
+
+    missing = [t for t in _INJECTABLE_TYPES if not buckets.get(t)]
+    if not missing:
+        return {}
+
+    log.info("injecting LLM descriptors for missing types %s using aesthetic '%s'", missing, aesthetic_label)
+
+    try:
+        raw = await asyncio.wait_for(
+            text_provider.complete(
+                prompts.AESTHETIC_INJECT_SYSTEM,
+                prompts.aesthetic_inject_user(aesthetic_label, target.category, missing),
+                json_mode=True,
+            ),
+            timeout=timeout_s,
+        )
+        data = json.loads(raw)
+        injected = {k: str(v) for k, v in data.items() if k in missing and v}
+        injected["_palette"] = data.get("palette", [])
+        injected["_aesthetic_label"] = aesthetic_label
+        log.info("injected descriptors: %s", {k: v for k, v in injected.items() if not k.startswith("_")})
+        return injected
+    except Exception as e:  # noqa: BLE001
+        log.warning("aesthetic injection failed: %s", e)
+        return {}
 
 
 # ---------- cohesion ----------
@@ -216,18 +262,19 @@ def _plan_image_tasks(
     timeout_s: float,
     storage: Optional[Storage] = None,
     tiles: Optional[dict[str, int]] = None,
+    injected: Optional[dict[str, str]] = None,
 ):
     tiles = tiles if tiles is not None else FULL_TILES
     cat = target.category
-    color0 = _color_desc(buckets, 0)
-    color1 = _color_desc(buckets, 1) if len(buckets.get("color", [])) > 1 else color0
-    sil0 = _desc(buckets, "silhouette", 0)
-    sil1 = _desc(buckets, "silhouette", 1)
-    mat0 = _desc(buckets, "material", 0)
-    mat1 = _desc(buckets, "material", 1) if len(buckets.get("material", [])) > 1 else mat0
-    aes0 = _desc(buckets, "aesthetic", 0)
-    pat0 = _desc(buckets, "pattern", 0)
-    detail = _detail_desc(buckets)
+    color0 = _color_desc(buckets, 0, injected)
+    color1 = _color_desc(buckets, 1, injected) if len(buckets.get("color", [])) > 1 else color0
+    sil0 = _desc(buckets, "silhouette", 0, injected)
+    sil1 = _desc(buckets, "silhouette", 1, injected)
+    mat0 = _desc(buckets, "material", 0, injected)
+    mat1 = _desc(buckets, "material", 1, injected) if len(buckets.get("material", [])) > 1 else mat0
+    aes0 = _desc(buckets, "aesthetic", 0, injected)
+    pat0 = _desc(buckets, "pattern", 0, injected)
+    detail = _detail_desc(buckets, injected)
 
     color_refs = _refs(buckets, "color")
     sil_refs = _refs(buckets, "silhouette")
@@ -302,13 +349,20 @@ async def generate_moodboard(
     trends = _filter_by_relevance(trends, target)
     # 3. buckets
     buckets = _bucket(trends)
-    # 4-5. pulled
+    # 4. aesthetic injection — fill empty type buckets using LLM fashion knowledge
+    #    only fires when an aesthetic trend exists but color/silhouette/material are sparse
+    injected = await _inject_from_aesthetic(buckets, target, text_provider, timeout_s)
+    # 5-6. pulled — use real trend data where available, injected data as fallback
     palette = composer.build_palette(buckets.get("color", []))
+    if not palette and injected.get("_palette"):
+        palette = composer.build_palette_from_injection(injected["_palette"])
     badges = composer.build_badges(trends)
-    # 6. cohesion (builds aesthetic-aware style anchor)
+    if not badges and injected.get("_aesthetic_label"):
+        badges = composer.build_badges_from_injection(injected["_aesthetic_label"], target.category)
+    # 7. cohesion (builds aesthetic-aware style anchor)
     style_anchor, seed = cohesion(target, trends)
-    # 7. image tasks  +  8. text task
-    image_tasks = _plan_image_tasks(image_provider, target, buckets, style_anchor, seed, timeout_s, storage, tiles)
+    # 8. image tasks  +  9. text task
+    image_tasks = _plan_image_tasks(image_provider, target, buckets, style_anchor, seed, timeout_s, storage, tiles, injected)
     text_task = _run_text(text_provider, target, trends, timeout_s=timeout_s)
     # 9. PARALLEL
     results = await asyncio.gather(*image_tasks, text_task)

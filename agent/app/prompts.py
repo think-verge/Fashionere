@@ -123,6 +123,71 @@ def query_parse_user(query: str) -> str:
     )
 
 
+AESTHETIC_INJECT_SYSTEM = (
+    "You are a fashion creative director with deep knowledge of fashion aesthetics, eras, and movements. "
+    "Given a trending aesthetic and garment category, generate concise image-prompt-ready descriptors "
+    "for missing trend attributes. Each descriptor must be specific, evocative, and 5-15 words. "
+    "Return ONLY valid JSON, no markdown."
+)
+
+
+def aesthetic_inject_user(aesthetic_label: str, category: str, missing_types: list[str]) -> str:
+    type_lines = "\n".join(
+        f'  "{t}": "<5-15 word descriptor specific to {aesthetic_label} for {category}>"'
+        for t in missing_types
+    )
+    return (
+        f'Trending aesthetic: "{aesthetic_label}"\n'
+        f'Garment category: "{category}"\n'
+        f'Missing trend types: {missing_types}\n\n'
+        f'Generate image-prompt-ready descriptors for each missing type, '
+        f'drawn from your knowledge of what "{aesthetic_label}" looks like in fashion.\n'
+        f'Also return a palette of 3-5 colors characteristic of this aesthetic.\n\n'
+        f'Return JSON exactly:\n'
+        f'{{\n'
+        f'{type_lines},\n'
+        f'  "palette": [\n'
+        f'    {{"name": "<color name>", "hex": "<#rrggbb>", "family": "<color family>"}}\n'
+        f'  ]\n'
+        f'}}'
+    )
+
+
+def build_edit_instruction(color: str | None, pattern: str | None, fabric: str | None) -> str:
+    """Build a Gemini edit instruction from the provided overrides."""
+    parts = []
+    if color:
+        parts.append(f"change the garment color to {color}")
+    if pattern:
+        parts.append(f"apply a {pattern} pattern to the garment")
+    if fabric:
+        parts.append(f"change the fabric to {fabric}")
+    if not parts:
+        return ""
+    instruction = ", ".join(parts)
+    return (
+        f"Edit this fashion image: {instruction}. "
+        "Keep the garment silhouette, pose, model, and background exactly the same. "
+        "Only change the specified visual attributes of the garment."
+    )
+
+
+def swap_prompt_descriptors(
+    prompt: str,
+    color: str | None = None,
+    pattern: str | None = None,
+) -> str:
+    """Return a new prompt with color/pattern overrides appended as directives."""
+    overrides = []
+    if color:
+        overrides.append(f"color: {color}")
+    if pattern:
+        overrides.append(f"pattern: {pattern}")
+    if not overrides:
+        return prompt
+    return prompt.rstrip(".") + ". Override: " + ", ".join(overrides) + "."
+
+
 IMAGE_DESCRIBE_SYSTEM = (
     "You are a fashion vision assistant. Describe the uploaded garment image: identify "
     "its category and key attributes. Return ONLY valid JSON, no markdown."

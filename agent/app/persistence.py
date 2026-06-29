@@ -91,3 +91,26 @@ async def save_moodboard(
     log.info("saved moodboard %s to MongoDB", moodboard.moodboard_id)
 
     client.close()
+
+
+async def get_element(
+    element_id: str,
+    mongodb_uri: str,
+    db_name: str,
+    elements_collection: str,
+) -> dict | None:
+    client = motor.motor_asyncio.AsyncIOMotorClient(mongodb_uri)
+    doc = await client[db_name][elements_collection].find_one({"element_id": element_id})
+    client.close()
+    return doc
+
+
+async def save_element(
+    element: dict,
+    mongodb_uri: str,
+    db_name: str,
+    elements_collection: str,
+) -> None:
+    client = motor.motor_asyncio.AsyncIOMotorClient(mongodb_uri)
+    await client[db_name][elements_collection].insert_one(element)
+    client.close()
