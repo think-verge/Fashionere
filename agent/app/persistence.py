@@ -71,6 +71,7 @@ async def save_moodboard(
 
     # 2. Save the moodboard document with element_ids instead of embedding full tile data.
     target = moodboard.target
+    brief = target.brief
     moodboard_doc = {
         "moodboard_id": moodboard.moodboard_id,
         "category": target.category,
@@ -79,6 +80,15 @@ async def save_moodboard(
         "season": target.season,
         "market": target.market,
         "raw_query": target.raw_query,
+        # brief fields — present when query mode resolves a CreativeBrief
+        "brief_gender": brief.gender if brief else None,
+        "brief_age_group": brief.age_group if brief else None,
+        "brief_occasion": brief.occasion if brief else None,
+        "brief_dominant_fabric": brief.dominant_fabric if brief else None,
+        "brief_compatible_materials": brief.compatible_materials if brief else [],
+        "brief_compatible_patterns": brief.compatible_patterns if brief else [],
+        "brief_compatible_silhouettes": brief.compatible_silhouettes if brief else [],
+        "brief_compatible_colors": brief.compatible_colors if brief else [],
         "element_ids": element_ids,
         "palette": [s.model_dump() for s in moodboard.palette],
         "badges": [b.model_dump() for b in moodboard.badges],

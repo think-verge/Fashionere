@@ -45,35 +45,58 @@ _FALLBACKS = {
 _TOP_TRENDS = 12  # max trends to pass into bucketing after scoring
 
 
-def _score_trend(trend: TrendObject, style_keywords: list[str]) -> int:
-    """Count how many style_keywords appear in the trend's label or descriptor."""
+def _score_trend(trend: TrendObject, brief) -> int:
+    """Score a trend against the brief's compatible lists for its specific type.
+
+    Each trend type is scored against the relevant compatible list from the brief,
+    so material trends are scored against compatible_materials (not generic keywords),
+    pattern trends against compatible_patterns, etc.
+    """
+    from app.models import CreativeBrief
     haystack = (trend.label + " " + trend.descriptor).lower()
-    return sum(1 for kw in style_keywords if kw.lower() in haystack)
+
+    if brief is None:
+        return 1  # no brief — let everything through
+
+    if trend.type == "material":
+        keywords = brief.compatible_materials
+    elif trend.type == "pattern":
+        keywords = brief.compatible_patterns
+    elif trend.type == "silhouette":
+        keywords = brief.compatible_silhouettes
+    elif trend.type == "color":
+        keywords = brief.compatible_colors
+    else:
+        # aesthetic / item_style — score against all compatible lists
+        keywords = (
+            brief.compatible_patterns
+            + brief.compatible_silhouettes
+            + brief.compatible_colors
+            + brief.compatible_materials
+        )
+
+    if not keywords:
+        return 1  # brief has no list for this type — allow through
+    return sum(1 for kw in keywords if kw.lower() in haystack)
 
 
 def _filter_by_relevance(
     trends: list[TrendObject], target: Target
 ) -> list[TrendObject]:
-    """Keep only the most relevant trends to the query aesthetic.
+    """Score each trend against the creative brief's compatible lists.
 
-    Scores each trend against style_keywords from the parsed query. Trends with
-    zero score are kept only if there are not enough scored ones to fill each type
-    bucket (ensures silhouette/color/material slots are never empty).
+    Zero-score trends are dropped — brief-aware injection fills the gaps.
+    Falls back to style_keywords scoring when no brief is available.
     """
-    style_keywords: list[str] = (target.attributes or {}).get("style_keywords", [])
-    if not style_keywords:
-        return trends[:_TOP_TRENDS]
+    brief = target.brief
 
-    scored = [(t, _score_trend(t, style_keywords)) for t in trends]
+    scored = [(t, _score_trend(t, brief)) for t in trends]
     scored.sort(key=lambda x: (-x[1], -x[0].confidence_score))
-
-    # Keep only trends that scored > 0 — zero-score trends are off-aesthetic
-    # and would pollute the board. Empty buckets are filled by aesthetic injection.
     result = [t for t, score in scored if score > 0]
 
     log.info(
-        "relevance filter: %d -> %d trends (keywords=%s)",
-        len(trends), len(result), style_keywords,
+        "relevance filter: %d -> %d trends (brief=%s)",
+        len(trends), len(result), brief.category if brief else "none",
     )
     return result[:_TOP_TRENDS]
 
@@ -137,11 +160,10 @@ async def _inject_from_aesthetic(
 ) -> dict[str, str]:
     """Ask the LLM to fill descriptor gaps using its aesthetic knowledge.
 
-    Uses the query aesthetic (from target.attributes) as the seed — more reliable
-    than using whatever aesthetic trend happened to be fetched. Only fires when
-    at least one critical type bucket is empty.
+    When a brief is present, passes its injection_context (full creative direction
+    paragraph) so the LLM generates descriptors that respect gender, category, and
+    occasion constraints. Falls back to the raw aesthetic label when no brief.
     """
-    # Prefer the query-parsed aesthetic; fall back to any aesthetic trend in buckets.
     aesthetic_label = (target.attributes or {}).get("aesthetic")
     if not aesthetic_label:
         aesthetic_trends = buckets.get("aesthetic", [])
@@ -153,13 +175,23 @@ async def _inject_from_aesthetic(
     if not missing:
         return {}
 
-    log.info("injecting LLM descriptors for missing types %s using aesthetic '%s'", missing, aesthetic_label)
+    # Brief injection_context gives richer, contextually-constrained direction.
+    injection_seed = (
+        target.brief.injection_context
+        if target.brief and target.brief.injection_context
+        else aesthetic_label
+    )
+
+    log.info(
+        "injecting LLM descriptors for missing types %s (seed='%s')",
+        missing, injection_seed[:80],
+    )
 
     try:
         raw = await asyncio.wait_for(
             text_provider.complete(
                 prompts.AESTHETIC_INJECT_SYSTEM,
-                prompts.aesthetic_inject_user(aesthetic_label, target.category, missing),
+                prompts.aesthetic_inject_user(injection_seed, target.category, missing),
                 json_mode=True,
             ),
             timeout=timeout_s,
@@ -228,7 +260,7 @@ async def _run_text(
     timeout_s: float = _DEFAULT_TIMEOUT_S,
 ) -> dict:
     system = prompts.NARRATIVE_SYSTEM
-    user = prompts.narrative_user(target.category, target.season, target.market, trends)
+    user = prompts.narrative_user(target.category, target.season, target.market, trends, brief=target.brief)
     fallback = {
         "narrative": f"A {target.category} mood drawn from this season's leading trends.",
         "keywords": [t.label for t in trends[:8]],
@@ -266,6 +298,7 @@ def _plan_image_tasks(
 ):
     tiles = tiles if tiles is not None else FULL_TILES
     cat = target.category
+    gender_modifier = target.brief.prompt_gender_modifier if target.brief else ""
     color0 = _color_desc(buckets, 0, injected)
     color1 = _color_desc(buckets, 1, injected) if len(buckets.get("color", [])) > 1 else color0
     sil0 = _desc(buckets, "silhouette", 0, injected)
@@ -286,26 +319,26 @@ def _plan_image_tasks(
     # (kind, prompt, trend_refs, seed_offset, aspect_ratio)
     plan: list[tuple[ImageKind, str, list[str], int, str]] = [
         # hero x3 — vary aesthetic angle + colour so tiles are distinct
-        ("hero", prompts.hero_prompt(cat, color0, sil0, mat0, aes0, style_anchor), color_refs + sil_refs + mat_refs + aes_refs, 0, "3:4"),
-        ("hero", prompts.hero_prompt(cat, color1, sil1, mat1, aes0, style_anchor), color_refs + sil_refs + mat_refs, 1, "3:4"),
-        ("hero", prompts.hero_prompt(cat, color0, sil0, mat1, aes0 + ", three-quarter view", style_anchor), color_refs + mat_refs, 2, "3:4"),
+        ("hero", prompts.hero_prompt(cat, color0, sil0, mat0, aes0, style_anchor, gender_modifier), color_refs + sil_refs + mat_refs + aes_refs, 0, "3:4"),
+        ("hero", prompts.hero_prompt(cat, color1, sil1, mat1, aes0, style_anchor, gender_modifier), color_refs + sil_refs + mat_refs, 1, "3:4"),
+        ("hero", prompts.hero_prompt(cat, color0, sil0, mat1, aes0 + ", three-quarter view", style_anchor, gender_modifier), color_refs + mat_refs, 2, "3:4"),
         # silhouette x2
-        ("silhouette", prompts.silhouette_prompt(cat, sil0, style_anchor), sil_refs, 10, "1:1"),
-        ("silhouette", prompts.silhouette_prompt(cat, sil1 + ", back view", style_anchor), sil_refs, 11, "1:1"),
+        ("silhouette", prompts.silhouette_prompt(cat, sil0, style_anchor, gender_modifier), sil_refs, 10, "1:1"),
+        ("silhouette", prompts.silhouette_prompt(cat, sil1 + ", back view", style_anchor, gender_modifier), sil_refs, 11, "1:1"),
         # texture x2
-        ("texture", prompts.texture_prompt(mat0, style_anchor), mat_refs, 20, "1:1"),
-        ("texture", prompts.texture_prompt(mat1, style_anchor), mat_refs, 21, "1:1"),
+        ("texture", prompts.texture_prompt(mat0, style_anchor, gender_modifier), mat_refs, 20, "1:1"),
+        ("texture", prompts.texture_prompt(mat1, style_anchor, gender_modifier), mat_refs, 21, "1:1"),
         # pattern x2
-        ("pattern", prompts.pattern_prompt(pat0, color0, style_anchor), pat_refs + color_refs, 30, "1:1"),
-        ("pattern", prompts.pattern_prompt(pat0 + ", larger scale", color1, style_anchor), pat_refs + color_refs, 31, "1:1"),
+        ("pattern", prompts.pattern_prompt(pat0, color0, style_anchor, gender_modifier), pat_refs + color_refs, 30, "1:1"),
+        ("pattern", prompts.pattern_prompt(pat0 + ", larger scale", color1, style_anchor, gender_modifier), pat_refs + color_refs, 31, "1:1"),
         # detail x2
-        ("detail", prompts.detail_prompt(cat, detail, color0, style_anchor), item_refs + color_refs, 40, "1:1"),
-        ("detail", prompts.detail_prompt(cat, detail + ", alternate angle", color1, style_anchor), item_refs + color_refs, 41, "1:1"),
+        ("detail", prompts.detail_prompt(cat, detail, color0, style_anchor, gender_modifier), item_refs + color_refs, 40, "1:1"),
+        ("detail", prompts.detail_prompt(cat, detail + ", alternate angle", color1, style_anchor, gender_modifier), item_refs + color_refs, 41, "1:1"),
         # styling x1
-        ("styling", prompts.styling_prompt(cat, color0, aes0, style_anchor), color_refs + aes_refs, 50, "9:16"),
+        ("styling", prompts.styling_prompt(cat, color0, aes0, style_anchor, gender_modifier), color_refs + aes_refs, 50, "9:16"),
         # colorway x2
-        ("colorway", prompts.colorway_prompt(cat, sil0, color0, style_anchor), sil_refs + color_refs, 60, "3:4"),
-        ("colorway", prompts.colorway_prompt(cat, sil0, color1, style_anchor), sil_refs + color_refs, 61, "3:4"),
+        ("colorway", prompts.colorway_prompt(cat, sil0, color0, style_anchor, gender_modifier), sil_refs + color_refs, 60, "3:4"),
+        ("colorway", prompts.colorway_prompt(cat, sil0, color1, style_anchor, gender_modifier), sil_refs + color_refs, 61, "3:4"),
     ]
 
     # Keep only up to the configured number of tiles per kind.

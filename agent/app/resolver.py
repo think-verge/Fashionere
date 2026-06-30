@@ -15,6 +15,7 @@ from app import prompts
 from app.config import get_settings
 from app.models import (
     CatalogueRequest,
+    CreativeBrief,
     ImageRequest,
     QueryRequest,
     Target,
@@ -66,6 +67,33 @@ def _clean(value) -> Optional[str]:
 
 # ---------- per-mode resolution ----------
 
+async def resolve_brief(query: str, parsed: dict, text_provider: TextProvider) -> Optional[CreativeBrief]:
+    """Build a CreativeBrief from the parsed query. Returns None on failure — pipeline degrades gracefully."""
+    try:
+        raw = await text_provider.complete(
+            prompts.BRIEF_SYSTEM, prompts.brief_user(query, parsed), json_mode=True
+        )
+        data = _loads(raw)
+        return CreativeBrief(
+            category=parsed.get("category", ""),
+            aesthetic=_clean(parsed.get("aesthetic")),
+            gender=_clean(data.get("gender")),
+            age_group=_clean(data.get("age_group")),
+            occasion=_clean(data.get("occasion")),
+            dominant_fabric=_clean(data.get("dominant_fabric")),
+            compatible_materials=[str(m) for m in (data.get("compatible_materials") or []) if m],
+            compatible_patterns=[str(p) for p in (data.get("compatible_patterns") or []) if p],
+            compatible_silhouettes=[str(s) for s in (data.get("compatible_silhouettes") or []) if s],
+            compatible_colors=[str(c) for c in (data.get("compatible_colors") or []) if c],
+            prompt_gender_modifier=str(data.get("prompt_gender_modifier") or ""),
+            injection_context=str(data.get("injection_context") or ""),
+        )
+    except Exception as e:
+        import logging
+        logging.getLogger("inspiration_engine.resolver").warning("brief resolution failed: %s", e)
+        return None
+
+
 async def parse_query(query: str, text_provider: TextProvider) -> dict:
     raw = await text_provider.complete(
         prompts.QUERY_PARSE_SYSTEM, prompts.query_parse_user(query), json_mode=True
@@ -95,6 +123,7 @@ async def resolve(
     if mode == "query":
         assert isinstance(payload, QueryRequest)
         parsed = await parse_query(payload.query, text_provider)
+        brief = await resolve_brief(payload.query, parsed, text_provider)
         attributes: dict = {}
         if aesthetic := _clean(parsed.get("aesthetic")):
             attributes["aesthetic"] = aesthetic
@@ -107,6 +136,7 @@ async def resolve(
             market=_clean(parsed.get("market")),
             raw_query=payload.query,
             source_mode="query",
+            brief=brief,
         )
 
     if mode == "catalogue":

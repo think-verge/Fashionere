@@ -22,28 +22,32 @@ def build_style_anchor(aesthetic: str | None) -> str:
 
 # ---------- Image prompts (one per kind) ----------
 
-def hero_prompt(category, color_desc, silhouette_desc, material_desc, aesthetic_desc, style_anchor=STYLE_ANCHOR):
+def hero_prompt(
+    category, color_desc, silhouette_desc, material_desc, aesthetic_desc,
+    style_anchor=STYLE_ANCHOR, gender_modifier: str = "",
+):
+    subject = f"{gender_modifier} " if gender_modifier else ""
     return (
-        f"A {category} garment, {silhouette_desc}, in {color_desc}, made of {material_desc}, "
+        f"A {subject}{category} garment, {silhouette_desc}, in {color_desc}, made of {material_desc}, "
         f"{aesthetic_desc}. Full garment shown clearly. {style_anchor}."
     )
 
 
-def silhouette_prompt(category, silhouette_desc, style_anchor=STYLE_ANCHOR):
+def silhouette_prompt(category, silhouette_desc, style_anchor=STYLE_ANCHOR, gender_modifier: str = ""):
     return (
         f"Technical fashion flat sketch line drawing of a {category}, {silhouette_desc}. "
         f"Clean black lines on white background, front view, minimal."
     )
 
 
-def texture_prompt(material_desc, style_anchor=STYLE_ANCHOR):
+def texture_prompt(material_desc, style_anchor=STYLE_ANCHOR, gender_modifier: str = ""):
     return (
         f"Extreme close-up macro photograph of {material_desc} fabric. "
         f"Fills the frame, high detail, soft light."
     )
 
 
-def pattern_prompt(pattern_desc, color_desc, style_anchor=STYLE_ANCHOR):
+def pattern_prompt(pattern_desc, color_desc, style_anchor=STYLE_ANCHOR, gender_modifier: str = ""):
     # Framed as a flat-lay photo of printed fabric: conveys the pattern while
     # avoiding image-recitation refusals triggered by "seamless/tileable" stock
     # pattern phrasing.
@@ -53,23 +57,29 @@ def pattern_prompt(pattern_desc, color_desc, style_anchor=STYLE_ANCHOR):
     )
 
 
-def detail_prompt(category, detail_desc, color_desc, style_anchor=STYLE_ANCHOR):
+def detail_prompt(category, detail_desc, color_desc, style_anchor=STYLE_ANCHOR, gender_modifier: str = ""):
     return (
         f"Close-up of a garment construction detail: {detail_desc} on a {category}, "
         f"in {color_desc}. {style_anchor}."
     )
 
 
-def styling_prompt(category, color_desc, aesthetic_desc, style_anchor=STYLE_ANCHOR):
+def styling_prompt(
+    category, color_desc, aesthetic_desc, style_anchor=STYLE_ANCHOR, gender_modifier: str = "",
+):
+    subject = f"{gender_modifier} model" if gender_modifier else "a model"
     return (
-        f"Full-length editorial fashion photo of a model wearing a {category}, "
+        f"Full-length editorial fashion photo of {subject} wearing a {category}, "
         f"in {color_desc}, styled {aesthetic_desc}. {style_anchor}."
     )
 
 
-def colorway_prompt(category, silhouette_desc, alt_color_desc, style_anchor=STYLE_ANCHOR):
+def colorway_prompt(
+    category, silhouette_desc, alt_color_desc, style_anchor=STYLE_ANCHOR, gender_modifier: str = "",
+):
+    subject = f"{gender_modifier} " if gender_modifier else ""
     return (
-        f"A {category}, {silhouette_desc}, in {alt_color_desc}. Full garment. {style_anchor}."
+        f"A {subject}{category}, {silhouette_desc}, in {alt_color_desc}. Full garment. {style_anchor}."
     )
 
 
@@ -81,15 +91,29 @@ NARRATIVE_SYSTEM = (
 )
 
 
-def narrative_user(category, season, market, trends) -> str:
+def narrative_user(category, season, market, trends, brief=None) -> str:
     lines = [
         f"- [{t.type}] {t.label} ({t.lifecycle_stage}, confidence {t.confidence_score}): {t.descriptor}"
         for t in trends
     ]
     trend_block = "\n".join(lines) if lines else "- (no strong trends found)"
+    brief_block = ""
+    if brief:
+        parts = []
+        if brief.gender:
+            parts.append(f"gender={brief.gender}")
+        if brief.age_group:
+            parts.append(f"age_group={brief.age_group}")
+        if brief.occasion:
+            parts.append(f"occasion={brief.occasion}")
+        if brief.aesthetic:
+            parts.append(f"aesthetic={brief.aesthetic}")
+        if parts:
+            brief_block = f"Creative Brief: {', '.join(parts)}\n"
     return (
         f"Category: {category}\n"
         f"Season/Market: {season or 'n/a'} / {market or 'n/a'}\n"
+        f"{brief_block}"
         f"Trends:\n{trend_block}\n\n"
         "Return JSON exactly:\n"
         "{\n"
@@ -119,6 +143,61 @@ def query_parse_user(query: str) -> str:
         '  "aesthetic": "<the dominant style or era, e.g. \'90s minimalist\' | \'Y2K glamour\' | \'coastal casual\' or null>",\n'
         '  "style_keywords": ["<6-10 concise style descriptors that capture the mood, silhouette, fabric feel, and era — used to match relevant trends>"\n'
         "  ]\n"
+        "}"
+    )
+
+
+BRIEF_SYSTEM = (
+    "You are a senior fashion creative director with deep knowledge of gendered fashion conventions. "
+    "Given a parsed fashion query, build a structured creative brief that defines what is contextually "
+    "appropriate for this EXACT combination of category, gender, and occasion. "
+    "Gender is a hard constraint — never suggest silhouettes, garments, or aesthetics that cross "
+    "gender boundaries unless the query explicitly asks for it. "
+    "Be specific — use real garment names, not vague descriptors. "
+    "Return ONLY valid JSON, no markdown."
+)
+
+
+def brief_user(query: str, parsed: dict) -> str:
+    return (
+        f'Raw query: "{query}"\n'
+        f'Parsed category: {parsed.get("category")}\n'
+        f'Parsed aesthetic: {parsed.get("aesthetic")}\n'
+        f'Parsed market: {parsed.get("market")}\n\n'
+        "Build a creative brief. Apply these rules strictly:\n\n"
+        "compatible_materials: list ONLY materials that make sense for this specific category. "
+        "For denim list denim fabrics (stretch denim, raw selvedge, cotton twill), NOT wool or silk. "
+        "For beachwear list quick-dry synthetics, terry, linen — NOT heavy wools or formal fabrics.\n\n"
+        "compatible_silhouettes: list ONLY silhouettes that a real person of this gender would actually wear "
+        "in this specific occasion and culture. Be ruthlessly gender-specific — if gender is male, "
+        "NEVER include feminine silhouettes (kimono, wrap dress, cover-up, sarong, kaftan). "
+        "If gender is female, NEVER include masculine-coded silhouettes. "
+        "For male beachwear: board shorts, swim trunks, short-sleeve shirt, muscle tee, polo. "
+        "For female beachwear: bikini, one-piece, sarong, wrap dress, cover-up. "
+        "Use specific garment names, NOT vague terms like 'relaxed fit' or 'resort wear' "
+        "that could match unrelated trends.\n\n"
+        "compatible_colors: list ONLY colors that are characteristic of this specific aesthetic and location context. "
+        "Be specific about hue and tone — 'coral', 'turquoise', 'neon yellow' not just 'warm tones'. "
+        "For Miami heat / tropical: coral, turquoise, neon yellow, hot pink, ocean blue, sun orange. "
+        "For minimal/quiet luxury: off-white, stone, warm grey, navy. "
+        "For bohemian: earthy terracotta, rust, sage green, sand. "
+        "IMPORTANT: if the query has a strong location/vibe (e.g. Miami, Ibiza, Tokyo street), let that "
+        "define the colors — do NOT default to neutral or generic palettes like white or beige "
+        "unless the query explicitly asks for minimal/clean aesthetics.\n\n"
+        "injection_context should be a single paragraph giving full creative direction for an LLM "
+        "generating fashion image descriptors — include what fits AND explicit exclusions.\n\n"
+        "Return JSON exactly:\n"
+        "{\n"
+        '  "gender": "<male|female|unisex|null>",\n'
+        '  "age_group": "<youth|adult|senior|null>",\n'
+        '  "occasion": "<casual|formal|streetwear|activewear|eveningwear|null>",\n'
+        '  "dominant_fabric": "<the fabric that defines this category, or null if open>",\n'
+        '  "compatible_materials": ["<material>", ...],\n'
+        '  "compatible_patterns": ["<pattern>", ...],\n'
+        '  "compatible_silhouettes": ["<silhouette>", ...],\n'
+        '  "compatible_colors": ["<color family or specific color>", ...],\n'
+        '  "prompt_gender_modifier": "<e.g. \'young male model\' | \'female model\' | \'\'>",\n'
+        '  "injection_context": "<full creative direction paragraph>"\n'
         "}"
     )
 

@@ -41,6 +41,23 @@ class TrendObject(BaseModel):
     last_seen: Optional[date] = None
 
 
+# ---------- Creative Brief ----------
+
+class CreativeBrief(BaseModel):
+    category: str
+    aesthetic: Optional[str] = None
+    gender: Optional[str] = None                # "male" | "female" | "unisex"
+    age_group: Optional[str] = None             # "youth" | "adult" | "senior"
+    occasion: Optional[str] = None              # "casual" | "formal" | "streetwear"
+    dominant_fabric: Optional[str] = None       # "denim" | "leather" — category defines fabric
+    compatible_materials: list[str] = []        # materials that make sense for this context
+    compatible_patterns: list[str] = []
+    compatible_silhouettes: list[str] = []
+    compatible_colors: list[str] = []
+    prompt_gender_modifier: str = ""            # injected into person-facing image prompts
+    injection_context: str = ""                 # full context string for LLM injection call
+
+
 # ---------- Target (the unified input) ----------
 
 class Target(BaseModel):
@@ -48,9 +65,10 @@ class Target(BaseModel):
     attributes: dict = {}
     season: Optional[str] = None
     market: Optional[str] = None
-    reference_image_url: Optional[str] = None   # upload path; unused for generation in MVP1
+    reference_image_url: Optional[str] = None
     raw_query: Optional[str] = None
     source_mode: Literal["query", "catalogue", "image"]
+    brief: Optional[CreativeBrief] = None
 
 
 # ---------- Moodboard elements ----------
