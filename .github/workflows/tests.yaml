@@ -205,3 +205,33 @@ jobs:
         if: matrix.project == 'agent'
         working-directory: agent
         run: pytest -v
+
+  lint-passed:
+    name: Lint / passed
+    needs: [lint]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check lint result
+        run: |
+          result="${{ needs.lint.result }}"
+          if [[ "$result" == "failure" || "$result" == "cancelled" ]]; then
+            echo "Lint failed or was cancelled (result=$result)."
+            exit 1
+          fi
+          echo "Lint passed or was skipped (result=$result)."
+
+  test-passed:
+    name: Test / passed
+    needs: [test]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check test result
+        run: |
+          result="${{ needs.test.result }}"
+          if [[ "$result" == "failure" || "$result" == "cancelled" ]]; then
+            echo "Tests failed or were cancelled (result=$result)."
+            exit 1
+          fi
+          echo "Tests passed or were skipped (result=$result)."
