@@ -1,0 +1,769 @@
+{
+  "source": "heuritech",
+  "captured_date": "2026-06-30T06:27:57.378980+00:00",
+  "observation_count": 38,
+  "observations": [
+    {
+      "observation_id": "f3745394-465c-49f3-afa6-060ca5d9b23d",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "pattern",
+      "extracted_attributes": {
+        "pattern": "Big Dots",
+        "pattern_family": "NA",
+        "scale": "large",
+        "colorway": "NA",
+        "placement": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Big Dots in Europe is forecasted to grow by +55% in visibility during SS26 compared to the year before, and in the US by +33%."
+    },
+    {
+      "observation_id": "6b5598a8-1fc0-4b4b-9583-04e5b86006f0",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Big Dot Dresses",
+        "category": "dress",
+        "key_features": [
+          "big dots",
+          "midi length"
+        ],
+        "gender": "women",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Among women in Europe, Big Dot Dresses (+80%) and Dotted skirts (+47%) are trending in especially midi lengths"
+    },
+    {
+      "observation_id": "9f55e7da-9f40-42db-8e15-5b1daef87685",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Dotted skirts",
+        "category": "bottom",
+        "key_features": [
+          "dots",
+          "midi length"
+        ],
+        "gender": "women",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Among women in Europe, Big Dot Dresses (+80%) and Dotted skirts (+47%) are trending in especially midi lengths"
+    },
+    {
+      "observation_id": "e627b0ac-ac1f-4279-a0fb-c2fb18b663e9",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "material",
+      "extracted_attributes": {
+        "material": "Brut Denim",
+        "material_family": "natural",
+        "texture": "stiff",
+        "finish": "NA",
+        "weight": "NA",
+        "season": "SS26",
+        "keywords": [
+          "raw",
+          "unwashed",
+          "untreated"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "Unwashed and untreated, this denim is all about authenticity, with no distressing, no fades, just pure, stiff cotton in its most natural state."
+    },
+    {
+      "observation_id": "ee1a54f3-9ad3-4aa8-8af4-88757f678bf9",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Fitted denim jacket",
+        "category": "outerwear",
+        "key_features": [
+          "fitted",
+          "denim"
+        ],
+        "gender": "women",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Among women, a more fitted denim jacket (+5%, EU) is gaining popularity, especially in combination with a paired of Flared Bootcut Jeans"
+    },
+    {
+      "observation_id": "02aae090-b904-4b38-8f18-a9120ec0bd28",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Flared Bootcut Jeans",
+        "category": "bottom",
+        "key_features": [
+          "flared",
+          "bootcut"
+        ],
+        "gender": "women",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "a more fitted denim jacket (+5%, EU) is gaining popularity, especially in combination with a paired of Flared Bootcut Jeans (+2%, EU)."
+    },
+    {
+      "observation_id": "d72a7e21-d411-4e35-a1ce-3bd8af7d7fc4",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Lace skirts",
+        "category": "bottom",
+        "key_features": [
+          "lace",
+          "maxi"
+        ],
+        "gender": "women",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Forecasts indicate strong growth for lace skirts, with an expected +20% increase in the EU and +13% in the US, reflecting rising consumer interest in romantic and feminine silhouettes."
+    },
+    {
+      "observation_id": "86003d01-2e1b-47ec-aaac-69237912c7b8",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "material",
+      "extracted_attributes": {
+        "material": "Fine Lace",
+        "material_family": "natural",
+        "texture": "NA",
+        "finish": "NA",
+        "weight": "NA",
+        "season": "SS26",
+        "keywords": [
+          "delicate"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "For the EU during SS26, plain skirts in delicate fabrics such as Fine Lace (+10%) and See-Through (+5%) will emerge."
+    },
+    {
+      "observation_id": "66831ec5-ab96-409c-9a8e-f79699d513e0",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "material",
+      "extracted_attributes": {
+        "material": "See-Through",
+        "material_family": "NA",
+        "texture": "sheer",
+        "finish": "NA",
+        "weight": "NA",
+        "season": "SS26",
+        "keywords": [
+          "delicate"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "For the EU during SS26, plain skirts in delicate fabrics such as Fine Lace (+10%) and See-Through (+5%) will emerge."
+    },
+    {
+      "observation_id": "ad6f73b3-2e1a-47fb-8e37-26de950ecce9",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "pattern",
+      "extracted_attributes": {
+        "pattern": "Gingham",
+        "pattern_family": "check",
+        "scale": "NA",
+        "colorway": "NA",
+        "placement": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "For both men and women in Europe, gingham is forecasted to grow by +17% and +31%, respectively."
+    },
+    {
+      "observation_id": "9c5857ef-b4b4-4527-8d9d-c4aa4d28ca2d",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "pattern",
+      "extracted_attributes": {
+        "pattern": "Prince of Wales",
+        "pattern_family": "check",
+        "scale": "NA",
+        "colorway": "NA",
+        "placement": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Other variations of checks, such as Prince of Wales (+19%) and Windowpane checks (+13%) for women in the EU), are also forecasted to grow."
+    },
+    {
+      "observation_id": "31286a5b-4196-4251-b5b7-2a1e72eb5185",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "pattern",
+      "extracted_attributes": {
+        "pattern": "Windowpane checks",
+        "pattern_family": "check",
+        "scale": "NA",
+        "colorway": "NA",
+        "placement": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Other variations of checks, such as Prince of Wales (+19%) and Windowpane checks (+13%) for women in the EU), are also forecasted to grow."
+    },
+    {
+      "observation_id": "6b80cfcb-5fd7-4565-b1c5-3b132484eda2",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Moccasins",
+        "category": "footwear",
+        "key_features": "NA",
+        "gender": "men",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Among men, it is estimated to grow +7% in the EU and is considered a consistent riser."
+    },
+    {
+      "observation_id": "e74e6500-07f8-4ff4-b1cc-c33c05200471",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "pattern",
+      "extracted_attributes": {
+        "pattern": "Zebra stripes",
+        "pattern_family": "animal",
+        "scale": "NA",
+        "colorway": "NA",
+        "placement": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Zebra stripes are poised to steal the spotlight, with projected growth of +21% in the EU and +17% in the US for Spring 2026"
+    },
+    {
+      "observation_id": "070c39b5-cdad-44ae-9595-33d95622dc83",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "pattern",
+      "extracted_attributes": {
+        "pattern": "Snake prints",
+        "pattern_family": "animal",
+        "scale": "NA",
+        "colorway": "NA",
+        "placement": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "both snake and crocodile prints are projected to achieve +22% growth in the EU over this period."
+    },
+    {
+      "observation_id": "b569fc9c-af92-4360-84b8-778dfd87fb20",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "pattern",
+      "extracted_attributes": {
+        "pattern": "Crocodile prints",
+        "pattern_family": "animal",
+        "scale": "NA",
+        "colorway": "NA",
+        "placement": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "both snake and crocodile prints are projected to achieve +22% growth in the EU over this period."
+    },
+    {
+      "observation_id": "a7c4c234-227e-4973-b2c1-1cb818b184a2",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "pattern",
+      "extracted_attributes": {
+        "pattern": "Cow Print",
+        "pattern_family": "animal",
+        "scale": "NA",
+        "colorway": "NA",
+        "placement": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Finally, among women in the US, Cow Print will be an IT-print with a forecasted growth of +87% during SS26."
+    },
+    {
+      "observation_id": "4b5379d3-0d4c-467a-ac62-c390577c1a3d",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Vanilla Yellow",
+        "hex": "NA",
+        "color_family": "yellow",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Both Vanilla Yellow and Popcorn Yellow are estimated to increase +22% among women in Europe during Spring 2026"
+    },
+    {
+      "observation_id": "77d541f1-8d8c-44b5-becc-36397c18268d",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Popcorn Yellow",
+        "hex": "NA",
+        "color_family": "yellow",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Both Vanilla Yellow and Popcorn Yellow are estimated to increase +22% among women in Europe during Spring 2026, and +8% and +10%, respectively, during the same period in the US."
+    },
+    {
+      "observation_id": "bc5e5245-2b78-48ff-b2d3-35c72b393864",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Vanilla Yellow Dresses",
+        "category": "dress",
+        "key_features": [
+          "vanilla yellow"
+        ],
+        "gender": "women",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Vanilla Yellow Dresses are estimated to grow by +23% during SS26, with a big magnitude among women in Europe."
+    },
+    {
+      "observation_id": "aa34a514-0210-48dc-9c8e-2dadf59b15e9",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Tiered ruffle skirts",
+        "category": "bottom",
+        "key_features": [
+          "tiered",
+          "ruffles"
+        ],
+        "gender": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "tiered ruffle skirts are making a strong comeback among trendy consumers, with forecasted growth of +20% in the EU and +17% in the US."
+    },
+    {
+      "observation_id": "7efafe86-5c9d-4604-a33f-e9add1aaa0e4",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "silhouette",
+      "extracted_attributes": {
+        "silhouette": "Bubble-Hem",
+        "fit": "NA",
+        "volume": "playful volume",
+        "length": "NA",
+        "applies_to": "skirts, sarouel pants",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "draped skirts and bounce bubble hems are also gaining popularity, appearing not only on skirts but increasingly on sarouel pants as well."
+    },
+    {
+      "observation_id": "9df9b98a-741f-4fe0-9780-bbbb9bcc3624",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "silhouette",
+      "extracted_attributes": {
+        "silhouette": "Low-waist",
+        "fit": "low-waist",
+        "volume": "NA",
+        "length": "NA",
+        "applies_to": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "low-waist styles, with a projected increase of +17%."
+    },
+    {
+      "observation_id": "1fc5655a-686e-4a34-a447-beb4080a9189",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Plum",
+        "hex": "NA",
+        "color_family": "purple",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "For womenswear in SS26, shades like Plum and Muted Berry (a grey-purple tone) are projected to grow by +10% in the EU."
+    },
+    {
+      "observation_id": "d677cbf5-35e3-44e8-9324-5bc366a0920d",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Muted Berry",
+        "hex": "NA",
+        "color_family": "purple",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "For womenswear in SS26, shades like Plum and Muted Berry (a grey-purple tone) are projected to grow by +10% in the EU."
+    },
+    {
+      "observation_id": "078c0cb5-39a1-4320-98d6-9c48bf56f9a4",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Mauve",
+        "hex": "NA",
+        "color_family": "purple",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "In the US it is expected to see visibility gains from other hues, with Mauve (+2%) and Sangria Purple (+5%) leading the forecast."
+    },
+    {
+      "observation_id": "dc4f67d5-9f56-40e7-90de-e8e34c73f1aa",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Sangria Purple",
+        "hex": "NA",
+        "color_family": "purple",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "In the US it is expected to see visibility gains from other hues, with Mauve (+2%) and Sangria Purple (+5%) leading the forecast."
+    },
+    {
+      "observation_id": "c6ad5e6e-8611-46c7-a385-95d9ef2abdff",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Eggplant",
+        "hex": "NA",
+        "color_family": "purple",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "For menswear, purple also signals growing relevance. Hues such as Eggplant and Vivid Purple are forecasted to grow by +7% and +5% respectively in the EU."
+    },
+    {
+      "observation_id": "36886f52-e956-42e5-bc52-e1a6e72347e7",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Vivid Purple",
+        "hex": "NA",
+        "color_family": "purple",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "For menswear, purple also signals growing relevance. Hues such as Eggplant and Vivid Purple are forecasted to grow by +7% and +5% respectively in the EU."
+    },
+    {
+      "observation_id": "6ba7b3d1-3162-4110-8ef1-49b872981d0f",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "The New Raw",
+        "mood": "minimalist",
+        "associated_items": [
+          "smart outdoor pieces",
+          "timeless basics",
+          "versatile outerwear"
+        ],
+        "associated_colors": [
+          "green",
+          "yellow"
+        ],
+        "consumer_segment": "urban",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Practicality meets city-ready style in a wardrobe designed for modern urban living. Minimalism is elevated through smart outdoor pieces, timeless basics, and a palette of green and yellow hues."
+    },
+    {
+      "observation_id": "9f30d3c0-58f5-45cd-a477-7f37a04649e7",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Pea Green",
+        "hex": "NA",
+        "color_family": "green",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Pea Green (+13%), Pickled Green (+6%) and Dusty Green (+4%) are some of the green hues we can expect to see more of in 2026"
+    },
+    {
+      "observation_id": "59b0c74a-c62e-41d7-9322-aad22b6783ab",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Pickled Green",
+        "hex": "NA",
+        "color_family": "green",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Pea Green (+13%), Pickled Green (+6%) and Dusty Green (+4%) are some of the green hues we can expect to see more of in 2026"
+    },
+    {
+      "observation_id": "0f829cde-c167-4d18-8170-e0c4e13748f8",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Dusty Green",
+        "hex": "NA",
+        "color_family": "green",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Pea Green (+13%), Pickled Green (+6%) and Dusty Green (+4%) are some of the green hues we can expect to see more of in 2026"
+    },
+    {
+      "observation_id": "1fc7037a-769c-4ef6-a3dd-fa3fc159824f",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Thong Sandals",
+        "category": "footwear",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Adaptable and stylish pieces as Thong Sandals with a growth of +49% during SS26 among women in the EU and +11% in the US."
+    },
+    {
+      "observation_id": "8234a3c4-915d-4e19-b5d9-2321dbe897bb",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "material",
+      "extracted_attributes": {
+        "material": "Opaque Rainproof",
+        "material_family": "synthetic",
+        "texture": "opaque",
+        "finish": "NA",
+        "weight": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "In spring, the fabric Opaque Rainproof is growing by +12% in the EU and +6% in the US among women."
+    },
+    {
+      "observation_id": "51d60f11-2c96-4f69-8c0f-b228791dc14f",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Palazzo pants",
+        "category": "bottom",
+        "key_features": [
+          "balloon-draped hem"
+        ],
+        "gender": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "styled either with a skirt or palazzo pants (+37%) in a balloon-draped hem for a chic city look"
+    },
+    {
+      "observation_id": "5c555a32-1f45-4cbe-8a0d-5714cb550d82",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Mini cycling shorts",
+        "category": "bottom",
+        "key_features": [
+          "cycling"
+        ],
+        "gender": "women",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "or paired with mini cycling shorts (+16%), tube socks, and yellow-green sneakers (+20%) for a cool, sporty vibe."
+    },
+    {
+      "observation_id": "f2cb716d-8c22-4bb9-9290-c70932829ab7",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Yellow-green sneakers",
+        "category": "footwear",
+        "key_features": [
+          "yellow-green"
+        ],
+        "gender": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "or paired with mini cycling shorts (+16%), tube socks, and yellow-green sneakers (+20%) for a cool, sporty vibe."
+    }
+  ]
+}

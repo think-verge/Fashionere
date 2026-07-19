@@ -33,10 +33,21 @@ except ModuleNotFoundError:
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-DEFAULT_TREND_RECORDS_FILE = (
-    SCRIPT_DIR / "Master_data" / "trend_records" / "master_trend_records.json"
-)
+TREND_RECORDS_DIR = SCRIPT_DIR / "Master_data" / "trend_records"
 DEFAULT_BATCH_SIZE = 500
+
+
+def latest_trend_records_file(directory: Path) -> Path:
+    """Newest timestamped trend_records_*.json (names sort chronologically)."""
+    candidates = sorted(directory.glob("trend_records_*.json"))
+    if candidates:
+        return candidates[-1]
+    legacy = directory / "master_trend_records.json"
+    if legacy.exists():
+        return legacy
+    raise FileNotFoundError(
+        f"No trend_records_*.json found in {directory}. Run build_trends_from_raw.py first."
+    )
 
 
 def load_settings() -> Dict[str, str]:
@@ -166,8 +177,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--file",
         type=Path,
-        default=DEFAULT_TREND_RECORDS_FILE,
-        help="Path to master_trend_records.json.",
+        default=None,
+        help="Path to a trend records JSON. Defaults to the latest trend_records_*.json.",
     )
     parser.add_argument(
         "--batch-size",
@@ -188,7 +199,8 @@ def main() -> int:
 
     try:
         settings = load_settings()
-        records = load_trend_records(args.file)
+        trend_file = args.file or latest_trend_records_file(TREND_RECORDS_DIR)
+        records = load_trend_records(trend_file)
         totals = upload_trend_records(
             records=records,
             mongo_uri=settings["mongo_uri"],
@@ -203,7 +215,7 @@ def main() -> int:
 
     mode = "Validated" if args.dry_run else "Uploaded"
     print(
-        f"{mode} {totals['processed']} trend records "
+        f"{mode} {totals['processed']} trend records from {trend_file.name} "
         f"to {settings['database']}.{settings['collection']}."
     )
     if not args.dry_run:
