@@ -1,0 +1,1017 @@
+{
+  "source": "fashionweekdata",
+  "captured_date": "2026-06-30T06:06:50.592991+00:00",
+  "observation_count": 47,
+  "observations": [
+    {
+      "observation_id": "4f32ff60-418f-48a0-88fe-09a463082cca",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Gucci",
+        "rank": "2",
+        "movement": "NA",
+        "ranking_list": "Share of Voice — MFW FW26",
+        "associated_products": [
+          "body-conscious minidresses",
+          "fluid tailored suits",
+          "evening gowns",
+          "Bamboo 1947 bag"
+        ],
+        "associated_aesthetic": "sexuality",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Gucci's Fall 2026 debut — Demna Gvasalia's first runway collection for the house — became the most-discussed show of Milan Fashion Week FW26 in a single hour."
+    },
+    {
+      "observation_id": "1d766d32-4140-4780-bc4c-d34a606af89c",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Gucci",
+        "rank": "2",
+        "movement": "NA",
+        "ranking_list": "Share of Voice — MFW FW26",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Among 153 fashion brands tracked during Milan Fashion Week FW26, Gucci ranked second in overall share of voice with 18.82%"
+    },
+    {
+      "observation_id": "72a4c61e-cbfa-4304-b1f1-aece42efdf47",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Gucci",
+        "rank": "2",
+        "movement": "NA",
+        "ranking_list": "Media Impact Value® (MIV®) — MFW FW26",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Launchmetrics' Media Impact Value® (MIV®) ... placed Gucci at $91 million for the Milan Fashion Week FW26 season, ranking second behind Prada's $117.9 million."
+    },
+    {
+      "observation_id": "c8d22711-f875-4834-b0de-ad23f7d4ffa4",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Gucci",
+        "rank": "2",
+        "movement": "NA",
+        "ranking_list": "Tagwalk fashion month overall",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Tagwalk independently ranked Gucci second in fashion month overall, citing the star-studded cast as a driver of global visibility."
+    },
+    {
+      "observation_id": "3649de6b-5870-4fd3-9328-a7e4acfde6aa",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Demna Gvasalia",
+        "rank": "NA",
+        "movement": "NA",
+        "ranking_list": "NA",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "FW26",
+        "keywords": [
+          "creative director",
+          "Gucci"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Nearly a year after Demna Gvasalia was hired to remake Gucci following his decade-long run at Balenciaga, he made his runway debut at the Palazzo Delle Scintille in Milan."
+    },
+    {
+      "observation_id": "2844b03e-3c52-4d2f-9b79-2932d487df48",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "minidress",
+        "category": "dress",
+        "key_features": [
+          "body-conscious"
+        ],
+        "gender": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "83 looks spanning body-conscious minidresses, fluid tailored suits, and evening gowns"
+    },
+    {
+      "observation_id": "7c677d0a-d918-47da-be34-db1dc1f66f9e",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "silhouette",
+      "extracted_attributes": {
+        "silhouette": "body-conscious",
+        "fit": "body-conscious",
+        "volume": "NA",
+        "length": "NA",
+        "applies_to": "minidress",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "body-conscious minidresses"
+    },
+    {
+      "observation_id": "d0ab637e-3932-4bd1-8ed6-5dba06c9cd29",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "tailored suit",
+        "category": "outerwear",
+        "key_features": [
+          "fluid"
+        ],
+        "gender": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "83 looks spanning body-conscious minidresses, fluid tailored suits, and evening gowns"
+    },
+    {
+      "observation_id": "cc4ce55d-b9b9-4b10-a6f6-1a7588f90d73",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "silhouette",
+      "extracted_attributes": {
+        "silhouette": "fluid",
+        "fit": "NA",
+        "volume": "NA",
+        "length": "NA",
+        "applies_to": "tailored suit",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "fluid tailored suits"
+    },
+    {
+      "observation_id": "f3e28383-7c4b-40ed-8da7-b8c1d70924d5",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "evening gown",
+        "category": "dress",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "83 looks spanning body-conscious minidresses, fluid tailored suits, and evening gowns"
+    },
+    {
+      "observation_id": "4eb093f5-3553-480a-813d-31ca7b20d599",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "sexuality",
+        "mood": "sexy",
+        "associated_items": [
+          "body-conscious minidresses"
+        ],
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "all threaded with the sexuality and cultural ambition that Demna believes defines the Gucci brand."
+    },
+    {
+      "observation_id": "8e290dfe-a901-4b7d-be86-e468da7b2d17",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "glamorous",
+        "mood": "glamorous",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "others declaring it \"glamorous, sexy, dramatic and very intentional.\""
+    },
+    {
+      "observation_id": "340f1d27-329e-4e48-907f-920f9f3f9b8e",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "sexy",
+        "mood": "sexy",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "others declaring it \"glamorous, sexy, dramatic and very intentional.\""
+    },
+    {
+      "observation_id": "f2b943d6-2f03-4a2a-b9d2-70bd500ff6a5",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "dramatic",
+        "mood": "dramatic",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "others declaring it \"glamorous, sexy, dramatic and very intentional.\""
+    },
+    {
+      "observation_id": "05a49f8a-c029-4cdd-91a8-06f122b1656f",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "Tom Ford era",
+        "mood": "sexy",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "The collection's deliberate sexuality and its references to the Tom Ford era gave the internet something to argue about, which is itself a form of brand heat."
+    },
+    {
+      "observation_id": "8fde1ff1-a762-4985-bb3e-42f7210a70a0",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Bamboo 1947 bag",
+        "category": "accessory",
+        "key_features": [
+          "update"
+        ],
+        "gender": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "The Bamboo 1947 bag update and the immediate post-show retail drop suggest the house is already thinking about the runway-to-retail pipeline."
+    },
+    {
+      "observation_id": "1995b21a-5ae3-4963-b988-10884be9ec7b",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Tod's",
+        "rank": "1",
+        "movement": "NA",
+        "ranking_list": "Share of Voice — MFW FW26",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Gucci ranked second in overall share of voice with 18.82% — just 0.29 percentage points behind Tod's, whose Thai celebrity ambassador strategy dominated early-week conversation."
+    },
+    {
+      "observation_id": "7375fd3c-525e-423f-a3ce-69613f26a31b",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Prada",
+        "rank": "1",
+        "movement": "NA",
+        "ranking_list": "Media Impact Value® (MIV®) — MFW FW26",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "placed Gucci at $91 million for the Milan Fashion Week FW26 season, ranking second behind Prada's $117.9 million."
+    },
+    {
+      "observation_id": "c4b069e1-34b7-4513-af7f-a594763213da",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Louis Vuitton",
+        "rank": "1",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "LVMH",
+          "heritage"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Louis Vuitton leads the index with a Heat Score of 91.3, driven by 56 million Instagram followers, 18.1 million monthly web visits, and a search interest ratio that nearly doubles its nearest brand."
+    },
+    {
+      "observation_id": "84dddd78-d96a-421b-a495-fd059a22d025",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Dior",
+        "rank": "2",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "LVMH",
+          "heritage"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Dior, Chanel, and Gucci hold the second through fourth positions, confirming the sustained dominance of the major heritage houses."
+    },
+    {
+      "observation_id": "29af48b3-ecdd-482f-a754-b8a4efb16d41",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Chanel",
+        "rank": "3",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "heritage"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Dior, Chanel, and Gucci hold the second through fourth positions, confirming the sustained dominance of the major heritage houses."
+    },
+    {
+      "observation_id": "6c1e5733-fa47-4c95-9754-660b4bbfa857",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Gucci",
+        "rank": "4",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Kering",
+          "heritage"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "Demand for Gucci rose 12% in the 24 hours following the show, and the brand's Q1 web traffic of 8.4 million monthly visits matched Dior's."
+    },
+    {
+      "observation_id": "c6da3626-3067-463f-81dc-3539888499e1",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Prada",
+        "rank": "5",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Prada Group"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Prada and Hermès round out the top six."
+    },
+    {
+      "observation_id": "57a30762-f0c4-45ff-b405-0fa1c6b7dce7",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Hermès",
+        "rank": "6",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": [
+          "Birkin"
+        ],
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "heritage"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Prada and Hermès round out the top six."
+    },
+    {
+      "observation_id": "df8c9edf-d8e7-4547-b777-ed3a8c240471",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Coach",
+        "rank": "7",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Tapestry Inc.",
+          "accessible luxury"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Coach claims the highest web traffic score in the entire index, ranking seventh overall, a signal that consumer engagement extends well beyond the accessible luxury tier."
+    },
+    {
+      "observation_id": "380ad082-c93d-492d-9531-17e53cae2fa2",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Versace",
+        "rank": "Top 10",
+        "movement": "up",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Capri Holdings"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "Versace is the index's most dramatic momentum story. A +47.9% month-on-month web traffic surge in Q1 2026 — the largest of any brand tracked — propelled the house from a mid-table position into the top ten."
+    },
+    {
+      "observation_id": "7df3c889-e147-4140-8856-fe3ba738e291",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Ralph Lauren",
+        "rank": "Tier II",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "quiet luxury",
+        "season": "Q1-26",
+        "keywords": [
+          "American heritage"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Q1 2026 saw Ralph Lauren benefit from the broader \"quiet luxury\" and \"old money aesthetic\" trend cycles that continued to drive consumer interest in heritage American brands."
+    },
+    {
+      "observation_id": "b6496638-7aff-4608-b5fb-274d97500659",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Balenciaga",
+        "rank": "Tier II",
+        "movement": "down",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Kering"
+        ]
+      },
+      "demand_direction": "fading",
+      "raw_text": "A -4.2% month-on-month web traffic decline and a web score of 22.2 reflect a house in transition."
+    },
+    {
+      "observation_id": "264b4dcd-db27-41b6-9cfc-3f46287d9367",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Burberry",
+        "rank": "Tier III",
+        "movement": "up",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": [
+          "trench coat"
+        ],
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "turnaround"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "The +2.1% month-on-month web traffic growth, while modest, represents a reversal of the declining trend that characterized the brand's 2024 performance."
+    },
+    {
+      "observation_id": "1801c92b-0c01-453d-98d2-cb504f69574d",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "trench coat",
+        "category": "outerwear",
+        "key_features": [
+          "repositioned as luxury statement"
+        ],
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Burberry",
+          "iconic"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Under Daniel Lee, who has now had three full years to reshape the brand's identity, the trench coat — Burberry's most iconic product — has been repositioned as a luxury statement rather than a heritage commodity."
+    },
+    {
+      "observation_id": "10c72dee-337c-41b3-94ea-3dddc74a538c",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Off-White",
+        "rank": "Tier III",
+        "movement": "down",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Virgil Abloh"
+        ]
+      },
+      "demand_direction": "fading",
+      "raw_text": "Revenue declined an estimated 20–50% in 2025, and the brand's web traffic of 772,000 monthly visits is the lowest of any brand in the top 15."
+    },
+    {
+      "observation_id": "6841d1e9-d381-4101-98f8-86614c343672",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Miu Miu",
+        "rank": "13",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": [
+          "micro-skirt"
+        ],
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Prada Group"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Miu Miu's position at #13 in the data-driven index — compared to #4 in platform-based rankings — is the clearest illustration of the gap between editorial perception and public data."
+    },
+    {
+      "observation_id": "2811eebc-610a-420b-9ce4-b7b8d36d3fba",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "micro-skirt",
+        "category": "bottom",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Miu Miu"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "The brand's micro-skirt moment and its status as the critical darling of the past three seasons are real phenomena"
+    },
+    {
+      "observation_id": "dd0ef1bf-d6ed-4cc7-9dea-35126f4a469f",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Jacquemus",
+        "rank": "Tier III",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "independent"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Jacquemus is the independent luxury success story of the past decade — a brand built almost entirely on Simon Porte Jacquemus's personal Instagram presence"
+    },
+    {
+      "observation_id": "7f5a1c23-eec7-450b-9fe6-8b34d911f8aa",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Valentino",
+        "rank": "Tier III",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "maximalist",
+        "season": "Q1-26",
+        "keywords": [
+          "Alessandro Michele"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Valentino's score is driven almost entirely by its social pillar — 18.9 million Instagram followers give it the sixth-largest social following in the index"
+    },
+    {
+      "observation_id": "c17e3213-db76-43e9-9c44-4393e582a744",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Bottega Veneta",
+        "rank": "16",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "quiet luxury",
+        "season": "Q1-26",
+        "keywords": [
+          "Kering",
+          "intrecciato"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Bottega Veneta occupies the sixteenth position in the Q1 2026 Brand Heat Index."
+    },
+    {
+      "observation_id": "45619283-c158-4aad-acb6-d1fc086a4547",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "material",
+      "extracted_attributes": {
+        "material": "intrecciato leather",
+        "material_family": "leather",
+        "texture": "woven",
+        "finish": "NA",
+        "weight": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Bottega Veneta",
+          "craft"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Its intrecciato leather craft and Matthieu Blazy-era design legacy have sustained a loyal, high-value consumer base that operates largely outside conventional digital channels."
+    },
+    {
+      "observation_id": "83988563-8935-4342-9032-7f3553591993",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Saint Laurent",
+        "rank": "17",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "quiet luxury",
+        "season": "Q1-26",
+        "keywords": [
+          "Kering"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Saint Laurent's #17 position in this index — compared to #2 in platform-based rankings — is the most significant divergence in the entire dataset"
+    },
+    {
+      "observation_id": "c6a55d10-9f70-4486-a42b-c33afecbff2c",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Loewe",
+        "rank": "Tier IV",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "LVMH",
+          "Jonathan Anderson"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "The public data, however, reflects a brand that remains relatively niche in terms of raw consumer reach: 2.5 million monthly web visits and 8.1 million Instagram followers are modest by mega-house standards."
+    },
+    {
+      "observation_id": "c0730045-2376-4e4b-bcca-ee46753013de",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Celine",
+        "rank": "Tier IV",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "quiet luxury",
+        "season": "Q1-26",
+        "keywords": [
+          "LVMH"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Under Hedi Slimane, Celine has maintained a deliberately minimal digital presence — 4.0 million Instagram followers and 0.5 million TikTok followers reflect a brand that does not compete for social reach."
+    },
+    {
+      "observation_id": "2370fe69-5418-430f-8f65-dbd2625acc3f",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Fendi",
+        "rank": "Top 20",
+        "movement": "down",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": [
+          "Baguette bag"
+        ],
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "LVMH"
+        ]
+      },
+      "demand_direction": "fading",
+      "raw_text": "Fendi closes the index with a -9.9% month-on-month web traffic decline — the second-largest negative momentum figure in the top 20."
+    },
+    {
+      "observation_id": "1d06d8d1-2a6d-4339-9846-ca0328922340",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Baguette bag",
+        "category": "accessory",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Fendi",
+          "cultural touchstone"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "The Baguette bag remains a cultural touchstone, and the brand's Roman identity...provides a distinctive positioning that the data does not yet fully reflect."
+    },
+    {
+      "observation_id": "45dc9b29-2035-441e-a4e2-a7369fdabc93",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "quiet luxury",
+        "mood": "understated",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Ralph Lauren",
+          "old money"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Brands associated with the 'quiet luxury' aesthetic — Saint Laurent, The Row, Celine, Bottega Veneta — consistently score lower in this index than their editorial profiles suggest."
+    },
+    {
+      "observation_id": "cd8af568-7a5a-4d6e-bd05-57b1ffbfc32f",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "old money aesthetic",
+        "mood": "heritage",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Ralph Lauren"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Q1 2026 saw Ralph Lauren benefit from the broader \"quiet luxury\" and \"old money aesthetic\" trend cycles that continued to drive consumer interest in heritage American brands."
+    },
+    {
+      "observation_id": "2b878d32-1973-4567-a09d-22f0acd92a33",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Birkin",
+        "category": "accessory",
+        "key_features": [
+          "waitlist"
+        ],
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Hermès"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "The Birkin waitlist is not a social media phenomenon. It is a demand signal that shows up in search data, in web traffic, and in the secondary market."
+    },
+    {
+      "observation_id": "ac20fbb4-707e-45fc-8af2-bf53086e6dec",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "maximalist",
+        "mood": "expressive",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Valentino",
+          "Alessandro Michele"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Michele's maximalist aesthetic — which defined Gucci's cultural moment from 2015 to 2022 — is being reinterpreted for a Roman house with different heritage codes."
+    },
+    {
+      "observation_id": "d1779fc8-7b58-4474-8c4e-a0b3f7b1cb2c",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "wearable luxury",
+        "mood": "precise",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Chanel",
+          "Matthieu Blazy"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "The critical response was warm — Blazy's instinct for precise, wearable luxury resonated with a market that had grown weary of spectacle."
+    }
+  ]
+}

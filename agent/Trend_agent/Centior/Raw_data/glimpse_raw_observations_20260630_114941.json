@@ -1,0 +1,379 @@
+{
+  "source": "glimpse",
+  "captured_date": "2026-06-30T06:19:41.017591+00:00",
+  "observation_count": 18,
+  "observations": [
+    {
+      "observation_id": "d47d05e9-a343-401d-90cf-9a09bbc91367",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "athleisure",
+        "mood": "sporty",
+        "associated_items": [
+          "yoga pants",
+          "tights",
+          "sneakers",
+          "leggings",
+          "gym shorts"
+        ],
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Athleisure, the mix of sportswear into everyday fashion, owes itself to the decline of formality in American fashion and the desire to be seen as healthy amid growing fitness trends — yoga pants, tights, sneakers, leggings, gym shorts, and so on."
+    },
+    {
+      "observation_id": "0d25ca4b-c128-4158-87af-d1ef353d9f3d",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "formality",
+        "mood": "formal",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "fading",
+      "raw_text": "Formal fashion declines, athleisure rises"
+    },
+    {
+      "observation_id": "ff122598-71c9-49ed-bba8-a008f47c47a4",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "yoga pants",
+        "category": "bottom",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "yoga pants, tights, sneakers, leggings, gym shorts, and so on."
+    },
+    {
+      "observation_id": "c79d1831-56d8-4173-ac0b-9092ab2de6f1",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "sneakers",
+        "category": "footwear",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "yoga pants, tights, sneakers, leggings, gym shorts, and so on."
+    },
+    {
+      "observation_id": "23e4b107-b7f5-4380-b87b-71876fe12917",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "leggings",
+        "category": "bottom",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "yoga pants, tights, sneakers, leggings, gym shorts, and so on."
+    },
+    {
+      "observation_id": "0b28c2d0-4bd5-4ae9-aae7-aafb741e6a33",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "mini dress",
+        "category": "dress",
+        "key_features": "NA",
+        "gender": "women's",
+        "season": "NA",
+        "keywords": [
+          "bold",
+          "expressive"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "The resurgence of the mini dress highlights a shift toward bold, expressive styles that challenge conventional modesty norms, making it a standout among recent women's fashion trends."
+    },
+    {
+      "observation_id": "298c48ed-69bf-4636-93ae-c6bfa298c1bb",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "modest fashion",
+        "mood": "modest",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "As some demographics increasingly demand more modest fashion choices, others are going the other direction."
+    },
+    {
+      "observation_id": "624e9e81-c691-425d-9aa8-9065b4e6241e",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "access over ownership",
+        "mood": "sustainable",
+        "associated_items": [
+          "clothing rental"
+        ],
+        "associated_colors": "NA",
+        "consumer_segment": "millennials and Gen Z",
+        "season": "NA",
+        "keywords": [
+          "flexibility",
+          "sustainability"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "Amidst rising environmental concerns, clothing rental platforms offer a rotating wardrobe without the waste associated with fast fashion. This model is especially popular among millennials and Gen Z, who prioritize access over ownership"
+    },
+    {
+      "observation_id": "21fb17d5-c615-4e3c-993a-0b97bdef981b",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "sustainable luxury",
+        "mood": "sustainable",
+        "associated_items": [
+          "refillable perfume bottles"
+        ],
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "This trend is also similar to movements towards sustainable luxury as seen in refillable perfume bottles, a top fragrance trend"
+    },
+    {
+      "observation_id": "7c1ada0b-af6f-49e0-aa88-1ad98ffe60a9",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "AI personalization",
+        "mood": "personalized",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "NA",
+        "keywords": [
+          "e-commerce"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "There’s a growing consumer expectation for personalized shopping solutions. Some brands are even starting to let consumers upload selfies and then see their clothing catalogue projected onto the shopper themselves."
+    },
+    {
+      "observation_id": "c2bdc708-322d-44d3-859d-c0d206946d77",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "bows on clothing",
+        "category": "accessory",
+        "key_features": [
+          "bows"
+        ],
+        "gender": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Style on the rise: bows on clothing"
+    },
+    {
+      "observation_id": "1ff3d34f-6a98-4709-84d8-7a7d0ce3ccbe",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "bamboo pajamas",
+        "category": "sleepwear",
+        "key_features": [
+          "moisture wicking",
+          "temperature regulating"
+        ],
+        "gender": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "bamboo clothing, like bamboo pajamas, has more recently started growing in popularity."
+    },
+    {
+      "observation_id": "42b21159-16c6-4123-920c-323bdb92c786",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "material",
+      "extracted_attributes": {
+        "material": "bamboo fabric",
+        "material_family": "natural",
+        "texture": "NA",
+        "finish": "NA",
+        "weight": "NA",
+        "season": "NA",
+        "keywords": [
+          "environmentally friendly",
+          "moisture wicking"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "Bamboo fabric is also pitched as environmentally friendly compared to cotton. Bamboo requires little water, the plants grow back after getting cut down, and they don’t need pesticides."
+    },
+    {
+      "observation_id": "99876bc7-4d71-4ed3-834a-2c33504e9884",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "scrubs",
+        "category": "uniform",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "NA",
+        "keywords": [
+          "medical apparel",
+          "DTC"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "While it may seem like a niche business from the outside, medical apparel is a huge industry that underwent a fundamental shift from B2B to B2C"
+    },
+    {
+      "observation_id": "1457a467-e59c-413c-93b0-1f0b76fb7d3e",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "FIGS",
+        "rank": "NA",
+        "movement": "NA",
+        "ranking_list": "NA",
+        "associated_products": [
+          "scrubs"
+        ],
+        "associated_aesthetic": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "opening it up to the direct-to-consumer model for companies like FIGS and Mandala Scrubs, DTC scrubs brand."
+    },
+    {
+      "observation_id": "c76c92e3-c2ec-4fd5-acb9-9656712fa03a",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Mandala Scrubs",
+        "rank": "NA",
+        "movement": "NA",
+        "ranking_list": "NA",
+        "associated_products": [
+          "scrubs"
+        ],
+        "associated_aesthetic": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "opening it up to the direct-to-consumer model for companies like FIGS and Mandala Scrubs, DTC scrubs brand."
+    },
+    {
+      "observation_id": "f5a5f53e-ba9c-4c9d-bb34-0b64a4745872",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "secondhand fashion",
+        "mood": "sustainable",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "Millennials and Gen Z",
+        "season": "NA",
+        "keywords": [
+          "individuality",
+          "conscious consumption"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "As a backlash to the growing fast-fashion movement, many consumers—especially Millennials and Gen Z—are turning to second-hand clothing."
+    },
+    {
+      "observation_id": "3101362d-0331-4af5-9b25-c06e80cc0220",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "halter tops",
+        "category": "top",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Halter tops reclaim the spotlight"
+    }
+  ]
+}

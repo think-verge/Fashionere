@@ -1,11 +1,13 @@
 """
-Glimpse "Top Fashion & Apparel Trends" scraper  ->  RawObservation records.
+Glimpse "Top Fashion & Apparel Trends" scraper  ->  atomic RawObservation records.
 
 Target: https://meetglimpse.com/trends/fashion-apparel-trends/
 Stack:  Selenium (renders JS) + Google Gemini 2.5 Pro via LangChain (structured output).
 
-The page lists many individual trends, each with its own momentum signal.
-So this produces ONE RawObservation per trend (not per page).
+The page lists many individual trends. Gemini explodes the page into MANY atomic
+observations — one per distinct trend-thing — each tagged with its `group`
+(color/silhouette/pattern/material/item_style/aesthetic/brand) and group-specific
+extracted_attributes. Schema/prompt/save logic is shared via raw_schema.py.
 
 No hallucination:
   * temperature = 0
@@ -24,17 +26,12 @@ Requirements:
 """
 
 import os
-import uuid
-import json
 import time
 from contextlib import suppress
-from datetime import datetime, timezone
-from typing import List, Literal, Union, Dict, Any
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 from dotenv import load_dotenv
-from pydantic import BaseModel, Field
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -45,11 +42,13 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 
-from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_core.prompts import ChatPromptTemplate
+import raw_schema as rs
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 load_dotenv(os.path.join(SCRIPT_DIR, ".env"))
+api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")
+if api_key:
+    os.environ["GOOGLE_API_KEY"] = api_key
 
 
 # --------------------------------------------------------------------------- #
@@ -57,13 +56,10 @@ load_dotenv(os.path.join(SCRIPT_DIR, ".env"))
 # --------------------------------------------------------------------------- #
 TARGET_URL  = "https://meetglimpse.com/trends/fashion-apparel-trends/"
 SOURCE_NAME = "glimpse"                   # provenance label for the `source` field
-
-OUTPUT_FILE = r"C:\Users\JaswanthPall_fnohyb7\Desktop\VS  Code\Centior\Raw_data\raw_observations_20260619_130906.json"
-
 GEMINI_MODEL = "gemini-2.5-pro"
 
-NA = "NA"
-RUN_TIMESTAMP = datetime.now(timezone.utc).isoformat()
+RAW_DATA_DIR  = os.path.join(SCRIPT_DIR, "Raw_data")
+RUN_TIMESTAMP = rs.run_timestamp()
 
 SELENIUM_RETRIES = 3
 PAGE_LOAD_TIMEOUT = 45
@@ -71,88 +67,8 @@ SCRIPT_TIMEOUT = 20
 WAIT_TIMEOUT = 20
 COMMAND_TIMEOUT = 35
 
-
-# --------------------------------------------------------------------------- #
-# Pydantic models
-# --------------------------------------------------------------------------- #
-class ExtractedAttributes(BaseModel):
-    """Normalized fashion attributes. Leave a list EMPTY if not present in the text."""
-    garments:         List[str] = Field(default_factory=list, description="e.g. cargo pants, slip dress, blazer")
-    colors:           List[str] = Field(default_factory=list, description="e.g. butter yellow, burgundy")
-    materials:        List[str] = Field(default_factory=list, description="e.g. leather, linen, denim")
-    patterns:         List[str] = Field(default_factory=list, description="e.g. floral, animal print")
-    silhouettes:      List[str] = Field(default_factory=list, description="e.g. oversized, baggy, tailored")
-    styles:           List[str] = Field(default_factory=list, description="aesthetics e.g. athleisure, coastal, quiet luxury")
-    brands_designers: List[str] = Field(default_factory=list, description="named brands or designers")
-    seasons:          List[str] = Field(default_factory=list, description="e.g. SS26, FW25")
-    keywords:         List[str] = Field(default_factory=list, description="other salient trend keywords")
-
-
-class TrendObservation(BaseModel):
-    """One trend extracted from the article."""
-    raw_text: str = Field(description="The trend name and its short description, verbatim from the page")
-    raw_type: Literal["product", "search_term", "hashtag", "palette", "editorial"] = Field(
-        default="search_term", description="What kind of item this trend is"
-    )
-    demand_direction: Literal["rising", "peaking", "fading", "unknown"] = Field(
-        default="unknown",
-        description="Map ONLY from explicit signals: Exploding/growing->rising, "
-                    "Peaked->peaking, declining/falling->fading, else unknown",
-    )
-    extracted_attributes: ExtractedAttributes = Field(default_factory=ExtractedAttributes)
-
-
-class ExtractionResult(BaseModel):
-    """All trends found on the page."""
-    trends: List[TrendObservation] = Field(default_factory=list)
-
-
-class RawObservation(BaseModel):
-    observation_id: str
-    source: str
-    source_url: str
-    captured_date: str
-    raw_type: str
-    extracted_attributes: Union[Dict[str, Any], str]   # dict of attrs, or "NA"
-    demand_direction: str
-    raw_text: str
-
-
-# --------------------------------------------------------------------------- #
-# Gemini chain (structured output)
-# --------------------------------------------------------------------------- #
-_SYSTEM_PROMPT = (
-    "You extract fashion trends from the provided article text into a structured list. "
-    "Create one entry per distinct trend the article describes. "
-    "STRICT RULES: "
-    "Only use information EXPLICITLY present in the text. Never invent, guess, or infer "
-    "anything that is not stated. "
-    "If an attribute is not mentioned for a trend, leave its list empty. "
-    "Set demand_direction ONLY from explicit momentum wording in the text "
-    "('exploding'/'rising'/'growing' -> rising, 'peaked' -> peaking, "
-    "'declining'/'falling'/'fading' -> fading). If the text does not clearly state "
-    "the momentum for that trend, use 'unknown'. "
-    "Keep raw_text close to the article's own wording for that trend."
-)
-
-llm = ChatGoogleGenerativeAI(model=GEMINI_MODEL, temperature=0)
-structured_llm = llm.with_structured_output(ExtractionResult)
-prompt = ChatPromptTemplate.from_messages([
-    ("system", _SYSTEM_PROMPT),
-    ("human", "Extract all fashion trends from this article:\n\n{text}"),
-])
-extraction_chain = prompt | structured_llm
-
-
-def extract_trends(raw_text: str) -> ExtractionResult:
-    if not raw_text or not raw_text.strip():
-        return ExtractionResult()
-    try:
-        result = extraction_chain.invoke({"text": raw_text[:200000]})
-        return result if isinstance(result, ExtractionResult) else ExtractionResult(**result)
-    except Exception as e:
-        print(f"Warning: extraction failed ({e})")
-        return ExtractionResult()
+# Shared Gemini extraction chain (returns atomic, group-tagged observations).
+extraction_chain = rs.build_extraction_chain(GEMINI_MODEL, api_key=api_key)
 
 
 # --------------------------------------------------------------------------- #
@@ -260,53 +176,6 @@ def render_page_text(url: str) -> str:
 
 
 # --------------------------------------------------------------------------- #
-# NA handling + build + save
-# --------------------------------------------------------------------------- #
-def _na(value):
-    if value is None:
-        return NA
-    if isinstance(value, str) and not value.strip():
-        return NA
-    if isinstance(value, (list, dict)) and len(value) == 0:
-        return NA
-    return value
-
-
-def build_observation(url: str, trend: TrendObservation) -> dict:
-    attrs = {k: _na(v) for k, v in trend.extracted_attributes.model_dump().items()}
-    if all(v == NA for v in attrs.values()):
-        attrs = NA
-
-    obs = RawObservation(
-        observation_id=str(uuid.uuid4()),
-        source=_na(SOURCE_NAME),
-        source_url=_na(url),
-        captured_date=_na(RUN_TIMESTAMP),
-        raw_type=_na(trend.raw_type),
-        extracted_attributes=attrs,
-        demand_direction=_na(trend.demand_direction),
-        raw_text=_na(trend.raw_text),
-    )
-    return obs.model_dump()
-
-
-def append_observations(observations: List[dict]):
-    """Append records into the JSON array file (creates it if missing)."""
-    os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
-    data = []
-    if os.path.exists(OUTPUT_FILE):
-        try:
-            with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
-                loaded = json.load(f)
-            data = loaded if isinstance(loaded, list) else [loaded]
-        except (json.JSONDecodeError, ValueError):
-            data = []
-    data.extend(observations)
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-
-
-# --------------------------------------------------------------------------- #
 # Main
 # --------------------------------------------------------------------------- #
 def main():
@@ -315,16 +184,19 @@ def main():
 
     print(f"Rendering {TARGET_URL} ...")
     raw_text = render_page_text(TARGET_URL)
-    print(f"Got {len(raw_text)} chars of text. Extracting trends with {GEMINI_MODEL} ...")
+    print(f"Got {len(raw_text)} chars of text. Extracting observations with {GEMINI_MODEL} ...")
 
-    result = extract_trends(raw_text)
-    print(f"Extracted {len(result.trends)} trends.")
+    items = rs.run_extraction(extraction_chain, raw_text)
+    print(f"Extracted {len(items)} atomic observations.")
 
-    observations = [build_observation(TARGET_URL, t) for t in result.trends]
+    observations = rs.build_observations(
+        items, source=SOURCE_NAME, source_url=TARGET_URL, captured_date=RUN_TIMESTAMP
+    )
     if observations:
-        append_observations(observations)
-
-    print(f"\nDone! Appended {len(observations)} records to:\n{OUTPUT_FILE}")
+        path = rs.save_observations(observations, source_slug=SOURCE_NAME, raw_data_dir=RAW_DATA_DIR)
+        print(f"\nDone! Wrote {len(observations)} observations to:\n{path}")
+    else:
+        print("\nNo observations produced.")
 
 
 if __name__ == "__main__":

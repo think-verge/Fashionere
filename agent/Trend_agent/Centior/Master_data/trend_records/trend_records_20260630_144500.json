@@ -1,0 +1,3382 @@
+{
+  "generated_at": "2026-06-30T14:51:20.146172+05:30",
+  "trend_count": 106,
+  "trend_records": [
+    {
+      "trend_id": "trend_e2fa9f3d2a4e",
+      "type": "aesthetic",
+      "group": "aesthetic",
+      "label": "90s Minimalism",
+      "attributes": {
+        "keywords": [
+          "minimalist",
+          "90s",
+          "Carolyn Bessette-Kennedy"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "7af456ba-499a-4942-995c-0f0938e883c1",
+        "f30a8860-b135-49aa-ba48-54c2e4c8ef14"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "A resurgent minimalist aesthetic inspired by the 1990s and the style of Carolyn Bessette-Kennedy, featuring items like black turtleneck knits and straight-leg denim.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_a66b839303b5",
+      "type": "aesthetic",
+      "group": "aesthetic",
+      "label": "AI Personalization",
+      "attributes": {
+        "keywords": [
+          "personalized",
+          "e-commerce"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "7c1ada0b-af6f-49e0-aa88-1ad98ffe60a9"
+      ],
+      "first_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "A personalized shopping aesthetic where consumers use technology to see a clothing catalogue projected onto themselves.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_da4f6d3af87c",
+      "type": "aesthetic",
+      "group": "aesthetic",
+      "label": "Athleisure",
+      "attributes": {
+        "keywords": [
+          "athleisure",
+          "sporty"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "d47d05e9-a343-401d-90cf-9a09bbc91367"
+      ],
+      "first_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "A sporty aesthetic that mixes sportswear like yoga pants, tights, sneakers, and leggings into everyday fashion.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_62583ad4dfbc",
+      "type": "aesthetic",
+      "group": "aesthetic",
+      "label": "Conscious Consumption",
+      "attributes": {
+        "keywords": [
+          "sustainable",
+          "secondhand fashion",
+          "access over ownership",
+          "conscious consumption",
+          "individuality"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "624e9e81-c691-425d-9aa8-9065b4e6241e",
+        "21fb17d5-c615-4e3c-993a-0b97bdef981b",
+        "f5a5f53e-ba9c-4c9d-bb34-0b64a4745872"
+      ],
+      "first_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "An aesthetic driven by sustainability and conscious consumption, embracing secondhand clothing, rental platforms, and refillable luxury goods.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_b60e57e3edf3",
+      "type": "aesthetic",
+      "group": "aesthetic",
+      "label": "Formalwear",
+      "attributes": {
+        "keywords": [
+          "formal",
+          "formality"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "fading",
+      "demand_direction": "fading",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "0d25ca4b-c128-4158-87af-d1ef353d9f3d"
+      ],
+      "first_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "A formal fashion aesthetic that is seeing a decline in popularity.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_1c71377ba1c8",
+      "type": "aesthetic",
+      "group": "aesthetic",
+      "label": "Maximalism",
+      "attributes": {
+        "keywords": [
+          "maximalist",
+          "expressive",
+          "Alessandro Michele"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "ac20fbb4-707e-45fc-8af2-bf53086e6dec"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "An expressive and maximalist aesthetic, famously defined by Alessandro Michele, which is being reinterpreted with different heritage codes.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_4bb2ed652e71",
+      "type": "aesthetic",
+      "group": "aesthetic",
+      "label": "Modest Fashion",
+      "attributes": {
+        "keywords": [
+          "modest"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "298c48ed-69bf-4636-93ae-c6bfa298c1bb"
+      ],
+      "first_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "An aesthetic centered on more covered-up and modest fashion choices.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_cea3b6900c5c",
+      "type": "aesthetic",
+      "group": "aesthetic",
+      "label": "Quiet Luxury",
+      "attributes": {
+        "keywords": [
+          "quiet luxury",
+          "old money aesthetic",
+          "understated",
+          "heritage"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "45dc9b29-2035-441e-a4e2-a7369fdabc93",
+        "cd8af568-7a5a-4d6e-bd05-57b1ffbfc32f"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "An understated, heritage-focused aesthetic, also known as the \"old money aesthetic,\" that drives consumer interest in heritage brands.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_fcf50bf3dd1c",
+      "type": "aesthetic",
+      "group": "aesthetic",
+      "label": "Sexy Glamour",
+      "attributes": {
+        "keywords": [
+          "sexy",
+          "glamorous",
+          "dramatic",
+          "sexuality",
+          "Tom Ford era"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "FW26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "4eb093f5-3553-480a-813d-31ca7b20d599",
+        "8e290dfe-a901-4b7d-be86-e468da7b2d17",
+        "340f1d27-329e-4e48-907f-920f9f3f9b8e",
+        "f2b943d6-2f03-4a2a-b9d2-70bd500ff6a5",
+        "05a49f8a-c029-4cdd-91a8-06f122b1656f"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "A glamorous and dramatic aesthetic characterized by deliberate sexuality, referencing the Tom Ford era with items like body-conscious minidresses.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_98f74c3b2675",
+      "type": "aesthetic",
+      "group": "aesthetic",
+      "label": "Urban Minimalism",
+      "attributes": {
+        "keywords": [
+          "minimalist",
+          "The New Raw"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "SS26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "6ba7b3d1-3162-4110-8ef1-49b872981d0f"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "A practical and minimalist aesthetic for modern urban living, featuring smart outdoor pieces and timeless basics in a palette of green and yellow.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_6f01434fbef6",
+      "type": "aesthetic",
+      "group": "aesthetic",
+      "label": "Wearable Luxury",
+      "attributes": {
+        "keywords": [
+          "wearable luxury",
+          "precise"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "d1779fc8-7b58-4474-8c4e-a0b3f7b1cb2c"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "A precise and wearable approach to luxury that resonates with a market that has grown weary of spectacle.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_e535182c2a3f",
+      "type": "brand",
+      "group": "brand",
+      "label": "Balenciaga",
+      "attributes": {
+        "keywords": [
+          "Kering"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "fading",
+      "demand_direction": "fading",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "b6496638-7aff-4608-b5fb-274d97500659"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Balenciaga is a house in transition, reflected by a decline in month-on-month web traffic.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_12faa8065184",
+      "type": "brand",
+      "group": "brand",
+      "label": "Bottega Veneta",
+      "attributes": {
+        "keywords": [
+          "Kering",
+          "intrecciato",
+          "quiet luxury"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 65,
+      "source_count": 2,
+      "sources": [
+        "c17e3213-db76-43e9-9c44-4393e582a744",
+        "7f70704e-aa35-4002-83ba-e06edaa23e49"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Known for its 'quiet luxury' aesthetic and signature intrecciato weave, Bottega Veneta holds a steady position in brand heat indexes.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_b703b6036c19",
+      "type": "brand",
+      "group": "brand",
+      "label": "Burberry",
+      "attributes": {
+        "keywords": [
+          "trench coat",
+          "turnaround"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "rising",
+      "demand_direction": "rising",
+      "confidence_score": 75,
+      "source_count": 2,
+      "sources": [
+        "264b4dcd-db27-41b6-9cfc-3f46287d9367",
+        "bd5d207f-eb63-4bf3-bbc6-6f237fde6085"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Burberry is showing signs of a turnaround with rising web traffic, reversing a previous declining trend.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_e660614a5d6c",
+      "type": "brand",
+      "group": "brand",
+      "label": "Calvin Klein",
+      "attributes": {
+        "keywords": [
+          "’90s minimalism"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "5328d0da-1e82-42b6-aa5f-aa5d57801d96"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Calvin Klein, known for its '90s minimalism aesthetic, saw a significant week-on-week lift in interest.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_37b6f90d7972",
+      "type": "brand",
+      "group": "brand",
+      "label": "Celine",
+      "attributes": {
+        "keywords": [
+          "LVMH",
+          "quiet luxury",
+          "Hedi Slimane"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 65,
+      "source_count": 2,
+      "sources": [
+        "c0730045-2376-4e4b-bcca-ee46753013de",
+        "37bee0d6-e3f2-43e4-bb3e-97f64b6e3ad5"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Under Hedi Slimane, Celine maintains a deliberately minimal digital presence and is associated with the 'quiet luxury' aesthetic.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_713ad7d74927",
+      "type": "brand",
+      "group": "brand",
+      "label": "Chanel",
+      "attributes": {
+        "keywords": [
+          "heritage",
+          "shoes",
+          "classic flap bag"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 65,
+      "source_count": 2,
+      "sources": [
+        "29af48b3-ecdd-482f-a754-b8a4efb16d41",
+        "58284458-a47c-4c30-81f9-bb338c26d1c1",
+        "2ee183a4-71ed-434e-a000-d30e04b65c60"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Chanel is ranked as a top hottest brand, demonstrating the sustained dominance of major heritage houses with key items like shoes and the classic flap bag.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_cda08d940aab",
+      "type": "brand",
+      "group": "brand",
+      "label": "Charvet",
+      "attributes": {
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 55,
+      "source_count": 1,
+      "sources": [
+        "7e441f65-b0e1-42f0-ab31-46ac3f4fbcbb"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Demand for the brand Charvet saw a 128% increase on Lyst during the quarter.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_23cc2bfa4155",
+      "type": "brand",
+      "group": "brand",
+      "label": "Chloé",
+      "attributes": {
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 45,
+      "source_count": 1,
+      "sources": [
+        "5fb1f1c8-d91a-472a-9fd4-747252684926"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Chloé is recognized as one of the hottest brands in the Q1 2026 Lyst Index.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_21cede46ec19",
+      "type": "brand",
+      "group": "brand",
+      "label": "Coach",
+      "attributes": {
+        "keywords": [
+          "Tapestry Inc.",
+          "accessible luxury"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "rising",
+      "demand_direction": "rising",
+      "confidence_score": 75,
+      "source_count": 2,
+      "sources": [
+        "df8c9edf-d8e7-4547-b777-ed3a8c240471",
+        "a2a0c84c-895a-48b3-af49-870c59b0caf2",
+        "14321e42-333d-4cc6-b6f8-2e95d4c9efe9"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Coach demonstrates strong consumer engagement with the highest web traffic score in its index, showing significant year-on-year growth for the accessible luxury brand.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_fb6fd07ae43d",
+      "type": "brand",
+      "group": "brand",
+      "label": "COS",
+      "attributes": {
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 45,
+      "source_count": 1,
+      "sources": [
+        "7ee2fb66-9c54-45ab-b9f9-44020f34f130"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "COS is ranked among the top hottest brands in the Lyst Index for Q1 2026.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_ee909aabe4ae",
+      "type": "brand",
+      "group": "brand",
+      "label": "Dior",
+      "attributes": {
+        "keywords": [
+          "LVMH",
+          "heritage"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 65,
+      "source_count": 2,
+      "sources": [
+        "84dddd78-d96a-421b-a495-fd059a22d025",
+        "fee23e0e-40af-4689-a869-5790539330b6",
+        "e2a8dc03-78fe-492b-b4b7-2e98b9742de9"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "As a dominant heritage house, Dior holds a top position in brand rankings, confirming its sustained industry leadership.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_3e65fc9d84d3",
+      "type": "brand",
+      "group": "brand",
+      "label": "Fendi",
+      "attributes": {
+        "keywords": [
+          "Baguette bag",
+          "LVMH"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "fading",
+      "demand_direction": "fading",
+      "confidence_score": 75,
+      "source_count": 2,
+      "sources": [
+        "2370fe69-5418-430f-8f65-dbd2625acc3f",
+        "fe866a76-55ed-4fa6-9f54-6c749c9c73a1"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Fendi, known for its iconic Baguette bag, is experiencing a decline in web traffic momentum.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_ec2a4eb44ac2",
+      "type": "brand",
+      "group": "brand",
+      "label": "FIGS",
+      "attributes": {
+        "keywords": [
+          "scrubs",
+          "direct-to-consumer"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "1457a467-e59c-413c-93b0-1f0b76fb7d3e"
+      ],
+      "first_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "FIGS is a direct-to-consumer brand specializing in medical scrubs.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_f0c837033290",
+      "type": "brand",
+      "group": "brand",
+      "label": "Gucci",
+      "attributes": {
+        "keywords": [
+          "heritage",
+          "body-conscious minidresses",
+          "fluid tailored suits",
+          "evening gowns",
+          "Bamboo 1947 bag",
+          "sexuality",
+          "creative director",
+          "Demna Gvasalia",
+          "Kering"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "rising",
+      "demand_direction": "rising",
+      "confidence_score": 75,
+      "source_count": 2,
+      "sources": [
+        "4f32ff60-418f-48a0-88fe-09a463082cca",
+        "1d766d32-4140-4780-bc4c-d34a606af89c",
+        "72a4c61e-cbfa-4304-b1f1-aece42efdf47",
+        "c8d22711-f875-4834-b0de-ad23f7d4ffa4",
+        "3649de6b-5870-4fd3-9328-a7e4acfde6aa",
+        "6c1e5733-fa47-4c95-9754-660b4bbfa857",
+        "e345b54f-6312-4b73-92ba-50f4ce74ba3f",
+        "89a08fb9-dd10-4503-9a59-d1ba396294fa"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Under new creative director Demna Gvasalia, Gucci is gaining momentum with a collection featuring body-conscious minidresses, fluid tailored suits, and the iconic Bamboo 1947 bag.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_abb620fafef8",
+      "type": "brand",
+      "group": "brand",
+      "label": "Hermès",
+      "attributes": {
+        "keywords": [
+          "Birkin",
+          "heritage"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "57a30762-f0c4-45ff-b405-0fa1c6b7dce7"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Heritage brand Hermès maintains a top-tier ranking in the Brand Heat Index, with iconic products like the Birkin bag.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_a13a1e31086f",
+      "type": "brand",
+      "group": "brand",
+      "label": "Jacquemus",
+      "attributes": {
+        "keywords": [
+          "independent",
+          "Simon Porte Jacquemus"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "dd0ef1bf-d6ed-4cc7-9dea-35126f4a469f"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Jacquemus stands out as an independent luxury success story, built on the personal Instagram presence of its founder.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_a78a727accc2",
+      "type": "brand",
+      "group": "brand",
+      "label": "Loewe",
+      "attributes": {
+        "keywords": [
+          "LVMH",
+          "Jonathan Anderson"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 65,
+      "source_count": 2,
+      "sources": [
+        "c6a55d10-9f70-4486-a42b-c33afecbff2c",
+        "cf5fce05-22a4-4588-adb1-75c6c9f04f40"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Under Jonathan Anderson, Loewe remains a relatively niche brand in terms of raw consumer reach, with modest web traffic and social media followers.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_924179226f18",
+      "type": "brand",
+      "group": "brand",
+      "label": "Louis Vuitton",
+      "attributes": {
+        "keywords": [
+          "LVMH",
+          "heritage"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "c4b069e1-34b7-4513-af7f-a594763213da"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Heritage house Louis Vuitton leads the Brand Heat Index, driven by its massive social media following and high web traffic.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_97062836dd94",
+      "type": "brand",
+      "group": "brand",
+      "label": "Mandala Scrubs",
+      "attributes": {
+        "keywords": [
+          "scrubs",
+          "DTC"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "c76c92e3-c2ec-4fd5-acb9-9656712fa03a"
+      ],
+      "first_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Mandala Scrubs is a direct-to-consumer (DTC) brand that sells medical scrubs.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_4ff0c2a72db3",
+      "type": "brand",
+      "group": "brand",
+      "label": "Massimo Dutti",
+      "attributes": {
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 45,
+      "source_count": 1,
+      "sources": [
+        "7194c57c-87ca-4b9c-99e8-66c8957af087"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Massimo Dutti is listed as one of the hottest brands in the Q1 2026 Lyst Index.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_728dbd43298c",
+      "type": "brand",
+      "group": "brand",
+      "label": "Miu Miu",
+      "attributes": {
+        "keywords": [
+          "micro-skirt",
+          "Prada Group"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 65,
+      "source_count": 2,
+      "sources": [
+        "6841d1e9-d381-4101-98f8-86614c343672",
+        "34d46312-34d9-420e-ab21-307422d1baf0"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Miu Miu, known for items like the micro-skirt, shows a significant gap between its high editorial perception and its public data rankings.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_9823a8620414",
+      "type": "brand",
+      "group": "brand",
+      "label": "Moncler",
+      "attributes": {
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 45,
+      "source_count": 1,
+      "sources": [
+        "78edb1d9-ae4f-4b43-b42f-5aaf1e700e8d"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Moncler holds a position in the top tier of the Lyst Index for Q1 2026.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_9519c1b60904",
+      "type": "brand",
+      "group": "brand",
+      "label": "Off-White",
+      "attributes": {
+        "keywords": [
+          "Virgil Abloh"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "fading",
+      "demand_direction": "fading",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "10c72dee-337c-41b3-94ea-3dddc74a538c"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Off-White is experiencing fading demand, with declining revenue and the lowest web traffic among the top 15 brands.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_1ec91f3bc5a5",
+      "type": "brand",
+      "group": "brand",
+      "label": "Prada",
+      "attributes": {
+        "keywords": [
+          "Prada Group"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 65,
+      "source_count": 2,
+      "sources": [
+        "7375fd3c-525e-423f-a3ce-69613f26a31b",
+        "c6da3626-3067-463f-81dc-3539888499e1",
+        "bf1dea00-080b-492a-97be-941e40388490"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Prada maintains a top position in the industry, ranking highly in Media Impact Value during Milan Fashion Week and consistently placing in the top tier of brand heat indexes.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_ee31e5d94848",
+      "type": "brand",
+      "group": "brand",
+      "label": "Ralph Lauren",
+      "attributes": {
+        "keywords": [
+          "American heritage",
+          "quiet luxury",
+          "old money aesthetic"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 65,
+      "source_count": 2,
+      "sources": [
+        "7df3c889-e147-4140-8856-fe3ba738e291",
+        "68066df3-039a-4160-a02c-1728acb1f60b"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "American heritage brand Ralph Lauren benefits from the 'quiet luxury' and 'old money aesthetic' trends driving consumer interest.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_6f94442a3f59",
+      "type": "brand",
+      "group": "brand",
+      "label": "Saint Laurent",
+      "attributes": {
+        "keywords": [
+          "Kering",
+          "quiet luxury"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 65,
+      "source_count": 2,
+      "sources": [
+        "83988563-8935-4342-9032-7f3553591993",
+        "0ef3ee83-9183-47ff-88c3-8be21d65c060"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Saint Laurent's 'quiet luxury' appeal results in a significant divergence between its high platform-based rankings and its public data-driven index position.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_f6e9eee4b635",
+      "type": "brand",
+      "group": "brand",
+      "label": "Stone Island",
+      "attributes": {
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 45,
+      "source_count": 1,
+      "sources": [
+        "80ae725a-94d5-4e1e-aea7-352894e4c425"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Stone Island is ranked among the hottest brands in the Lyst Index for Q1 2026.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_678f8a4297d5",
+      "type": "brand",
+      "group": "brand",
+      "label": "The Row",
+      "attributes": {
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 45,
+      "source_count": 1,
+      "sources": [
+        "5a63b104-dbf5-44cc-86cd-e6b2e11d7da4"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "The Row is featured in the Lyst Index of hottest brands for Q1 2026.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_a154126d4222",
+      "type": "brand",
+      "group": "brand",
+      "label": "Tod's",
+      "attributes": {
+        "keywords": [
+          "Thai celebrity ambassador"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "FW26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "1995b21a-5ae3-4963-b988-10884be9ec7b"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Tod's dominated early-week conversation at Milan Fashion Week through a successful Thai celebrity ambassador strategy.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_8f1302fa677e",
+      "type": "brand",
+      "group": "brand",
+      "label": "Valentino",
+      "attributes": {
+        "keywords": [
+          "maximalist",
+          "Alessandro Michele"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "7f5a1c23-eec7-450b-9fe6-8b34d911f8aa"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Maximalist brand Valentino's ranking is driven almost entirely by its large social media following.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_ecca91251707",
+      "type": "brand",
+      "group": "brand",
+      "label": "Versace",
+      "attributes": {
+        "keywords": [
+          "Capri Holdings"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "rising",
+      "demand_direction": "rising",
+      "confidence_score": 75,
+      "source_count": 2,
+      "sources": [
+        "380ad082-c93d-492d-9531-17e53cae2fa2",
+        "5a6fdfbf-7b39-421e-9ba6-427666b7a8bb"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Versace shows dramatic rising momentum, propelled into the top ten of brand rankings by a significant surge in web traffic.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_ff6e5c4a9ec5",
+      "type": "brand",
+      "group": "brand",
+      "label": "Vivienne Westwood",
+      "attributes": {
+        "keywords": [
+          "Corset dress"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "3e70c872-fd8e-4402-92e3-33c099ba76c2"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Vivienne Westwood experienced a significant quarter-on-quarter rise in demand, particularly for its corset dress.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_38275e1b55da",
+      "type": "brand",
+      "group": "brand",
+      "label": "Zara",
+      "attributes": {
+        "keywords": [
+          "creative voices"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "999d45af-f400-4d97-a245-5570f93921a7"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Zara emerges as a breakout brand by aligning itself with credible creative voices rather than competing on heritage.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_a889d8f38063",
+      "type": "color",
+      "group": "color",
+      "label": "Earthy Greens",
+      "attributes": {
+        "colors": [
+          {
+            "name": "Pea Green",
+            "hex": null,
+            "family": "green"
+          },
+          {
+            "name": "Pickled Green",
+            "hex": null,
+            "family": "green"
+          },
+          {
+            "name": "Dusty Green",
+            "hex": null,
+            "family": "green"
+          }
+        ],
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": "SS26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "9f30d3c0-58f5-45cd-a477-7f37a04649e7",
+        "59b0c74a-c62e-41d7-9322-aad22b6783ab",
+        "0f829cde-c167-4d18-8170-e0c4e13748f8"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Earthy green hues like Pea Green, Pickled Green, and Dusty Green are expected to see increased popularity in 2026.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_827a30ba832e",
+      "type": "color",
+      "group": "color",
+      "label": "Purple Hues",
+      "attributes": {
+        "colors": [
+          {
+            "name": "Plum",
+            "hex": null,
+            "family": "purple"
+          },
+          {
+            "name": "Muted Berry",
+            "hex": null,
+            "family": "purple"
+          },
+          {
+            "name": "Mauve",
+            "hex": null,
+            "family": "purple"
+          },
+          {
+            "name": "Sangria Purple",
+            "hex": null,
+            "family": "purple"
+          },
+          {
+            "name": "Eggplant",
+            "hex": null,
+            "family": "purple"
+          },
+          {
+            "name": "Vivid Purple",
+            "hex": null,
+            "family": "purple"
+          }
+        ],
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": "SS26",
+        "market": "EU, US",
+        "gender": "women, men"
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "1fc5655a-686e-4a34-a447-beb4080a9189",
+        "d677cbf5-35e3-44e8-9324-5bc366a0920d",
+        "078c0cb5-39a1-4320-98d6-9c48bf56f9a4",
+        "dc4f67d5-9f56-40e7-90de-e8e34c73f1aa",
+        "c6ad5e6e-8611-46c7-a385-95d9ef2abdff",
+        "36886f52-e956-42e5-bc52-e1a6e72347e7"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "A range of purple hues are gaining relevance for SS26, including Plum and Muted Berry for womenswear in the EU, Mauve and Sangria Purple in the US, and Eggplant and Vivid Purple for menswear in the EU.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_af7d7c69c7f3",
+      "type": "color",
+      "group": "color",
+      "label": "Soft Yellows",
+      "attributes": {
+        "colors": [
+          {
+            "name": "Vanilla Yellow",
+            "hex": null,
+            "family": "yellow"
+          },
+          {
+            "name": "Popcorn Yellow",
+            "hex": null,
+            "family": "yellow"
+          }
+        ],
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": "SS26",
+        "market": "Europe, US",
+        "gender": "women"
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "4b5379d3-0d4c-467a-ac62-c390577c1a3d",
+        "77d541f1-8d8c-44b5-becc-36397c18268d"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Soft shades like Vanilla Yellow and Popcorn Yellow are set to be popular for women in Europe and the US for Spring 2026.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_af201efede50",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Bag Charm",
+      "attributes": {
+        "keywords": [
+          "craze"
+        ]
+      },
+      "context": {
+        "category": "accessory",
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "77c7d492-5634-4af9-a8f3-7cd2b926fbe1"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Bag charms are a rising craze, used to personalize handbags.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_03a426167602",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Baguette Bag",
+      "attributes": {
+        "keywords": [
+          "Fendi",
+          "cultural touchstone"
+        ]
+      },
+      "context": {
+        "category": "accessory",
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "1d06d8d1-2a6d-4339-9846-ca0328922340"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "The Fendi Baguette bag, a cultural touchstone in accessories.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_6ffb536ca333",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Ballet Lace-up Shoes",
+      "attributes": {
+        "keywords": [
+          "ballet",
+          "lace-up",
+          "Celine"
+        ]
+      },
+      "context": {
+        "category": "footwear",
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "6ec454a2-14bb-4b96-af1d-425848500b6d"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Celine's ballet-style shoes with a lace-up design.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_28b720f12b99",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Bamboo 1947 Bag",
+      "attributes": {
+        "keywords": [
+          "update"
+        ]
+      },
+      "context": {
+        "category": "accessory",
+        "season": "FW26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "8fde1ff1-a762-4985-bb3e-42f7210a70a0"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "An updated version of the iconic Bamboo 1947 bag.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_1e39c337fc58",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Bamboo Pajamas",
+      "attributes": {
+        "keywords": [
+          "moisture wicking",
+          "temperature regulating"
+        ]
+      },
+      "context": {
+        "category": "sleepwear",
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "1ff3d34f-6a98-4709-84d8-7a7d0ce3ccbe"
+      ],
+      "first_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Pajamas made from bamboo fabric, known for being moisture-wicking and temperature-regulating.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_1d0078755c80",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Birkin Bag",
+      "attributes": {
+        "keywords": [
+          "Hermès",
+          "waitlist"
+        ]
+      },
+      "context": {
+        "category": "accessory",
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "2b878d32-1973-4567-a09d-22f0acd92a33"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "The Hermès Birkin bag, a symbol of luxury with a significant waitlist.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_1920a31da250",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Bow Embellishments",
+      "attributes": {
+        "keywords": [
+          "bows"
+        ]
+      },
+      "context": {
+        "category": "accessory",
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "c2bdc708-322d-44d3-859d-c0d206946d77"
+      ],
+      "first_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Clothing and accessories adorned with decorative bows.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_6a6e044848ea",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Butterfly Sunglasses",
+      "attributes": {
+        "keywords": [
+          "butterfly",
+          "Saint Laurent"
+        ]
+      },
+      "context": {
+        "category": "accessory",
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "7bbfa93e-b28b-45a4-a228-3891883a2646"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Saint Laurent sunglasses in a butterfly shape.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_1bf6642851cf",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Chanel Flap Bag",
+      "attributes": {
+        "keywords": [
+          "classic",
+          "maxi",
+          "Chanel"
+        ]
+      },
+      "context": {
+        "category": "accessory",
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "35505444-279c-4f6d-94b5-880a1ffc7313",
+        "5489cd5a-60bc-4f5b-a17a-40c7192b7416"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "The iconic Chanel flap bag, seen in classic and reinvented maxi sizes.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_b0f469b1ff65",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Chanel Shoes",
+      "attributes": {
+        "keywords": [
+          "viral",
+          "sold out",
+          "pumps",
+          "Chanel"
+        ]
+      },
+      "context": {
+        "category": "footwear",
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "088cc8a7-8094-436c-953c-ab1976d073fb",
+        "d340f304-d6bf-495a-b5a8-a5209a2a6e16"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Chanel shoes, including pumps, that have gone viral on social media and are consistently sold out.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_98901604c7ec",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Chinese Style Track Top",
+      "attributes": {
+        "keywords": [
+          "Chinese style",
+          "Adidas"
+        ]
+      },
+      "context": {
+        "category": "top",
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "b7f41b18-2514-4799-8548-0c214cf165d0"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "The Adidas track top with Chinese styling details.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_ac81d67fd5dc",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Crew Neck Cardigan",
+      "attributes": {
+        "keywords": [
+          "crew neck"
+        ]
+      },
+      "context": {
+        "category": "top",
+        "season": "Q1-26",
+        "market": null,
+        "gender": "men"
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "cb3d62da-3be0-4952-b948-b8ef7f8ddd53"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "The crew neck cardigan is an ascending trend in menswear.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_d5cc6be6e8db",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Cycling Shorts",
+      "attributes": {
+        "keywords": [
+          "mini",
+          "cycling",
+          "sporty"
+        ]
+      },
+      "context": {
+        "category": "bottom",
+        "season": "SS26",
+        "market": null,
+        "gender": "women"
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "5c555a32-1f45-4cbe-8a0d-5714cb550d82"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Women's mini cycling shorts for a cool, sporty vibe.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_4a5f04789f6c",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Evening Gown",
+      "attributes": {
+        "keywords": []
+      },
+      "context": {
+        "category": "dress",
+        "season": "FW26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 45,
+      "source_count": 1,
+      "sources": [
+        "f3e28383-7c4b-40ed-8da7-b8c1d70924d5"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "An elegant evening gown for formal occasions.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_a9302a08ad2b",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Fitted Denim Jacket",
+      "attributes": {
+        "keywords": [
+          "fitted",
+          "denim"
+        ]
+      },
+      "context": {
+        "category": "outerwear",
+        "season": "SS26",
+        "market": "EU",
+        "gender": "women"
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "ee1a54f3-9ad3-4aa8-8af4-88757f678bf9"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "A fitted denim jacket for women.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_32a1915e356e",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Flared Bootcut Jeans",
+      "attributes": {
+        "keywords": [
+          "flared",
+          "bootcut"
+        ]
+      },
+      "context": {
+        "category": "bottom",
+        "season": "SS26",
+        "market": "EU",
+        "gender": "women"
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "02aae090-b904-4b38-8f18-a9120ec0bd28"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Women's jeans with a flared bootcut silhouette.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_5fde1744c3fc",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Flat Cap",
+      "attributes": {
+        "keywords": [
+          "Kangol",
+          "Tropic 504"
+        ]
+      },
+      "context": {
+        "category": "accessory",
+        "season": "Q1-26",
+        "market": null,
+        "gender": "men"
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "b01e43f8-2578-4c2c-b624-04a542f2c927",
+        "62f39b1f-af8d-4cb2-9241-c503d9e5a211"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "The Kangol flat cap, a trending accessory in menswear.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_3a30d6e2d748",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Halter Top",
+      "attributes": {
+        "keywords": []
+      },
+      "context": {
+        "category": "top",
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 55,
+      "source_count": 1,
+      "sources": [
+        "3101362d-0331-4af5-9b25-c06e80cc0220"
+      ],
+      "first_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "The halter top style is reclaiming the spotlight in fashion.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_d4c6190ecf42",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Lace Skirt",
+      "attributes": {
+        "keywords": [
+          "lace",
+          "maxi",
+          "romantic",
+          "feminine"
+        ]
+      },
+      "context": {
+        "category": "bottom",
+        "season": "SS26",
+        "market": null,
+        "gender": "women"
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "d72a7e21-d411-4e35-a1ce-3bd8af7d7fc4"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "A romantic and feminine maxi skirt made of lace.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_1bfd10bdbc39",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Leggings",
+      "attributes": {
+        "keywords": []
+      },
+      "context": {
+        "category": "bottom",
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 45,
+      "source_count": 1,
+      "sources": [
+        "23e4b107-b7f5-4380-b87b-71876fe12917"
+      ],
+      "first_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Versatile leggings for athletic and casual wear.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_3f4c3e3a13af",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Micro-Skirt",
+      "attributes": {
+        "keywords": [
+          "Miu Miu"
+        ]
+      },
+      "context": {
+        "category": "bottom",
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "2811eebc-610a-420b-9ce4-b7b8d36d3fba"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "The micro-skirt, a key trend moment associated with Miu Miu.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_309b65fe474a",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Minidress",
+      "attributes": {
+        "keywords": [
+          "body-conscious",
+          "bold",
+          "expressive"
+        ]
+      },
+      "context": {
+        "category": "dress",
+        "season": "FW26",
+        "market": null,
+        "gender": "women"
+      },
+      "lifecycle_stage": "rising",
+      "demand_direction": "rising",
+      "confidence_score": 75,
+      "source_count": 2,
+      "sources": [
+        "2844b03e-3c52-4d2f-9b79-2932d487df48",
+        "0b28c2d0-4bd5-4ae9-aae7-aafb741e6a33"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "A bold, expressive, and body-conscious minidress.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_b6980b8a180a",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Moccasins",
+      "attributes": {
+        "keywords": []
+      },
+      "context": {
+        "category": "footwear",
+        "season": "SS26",
+        "market": "EU",
+        "gender": "men"
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 55,
+      "source_count": 1,
+      "sources": [
+        "6b80cfcb-5fd7-4565-b1c5-3b132484eda2"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Men's moccasins are a consistent rising trend.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_cf49b03ccaf8",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Palazzo Pants",
+      "attributes": {
+        "keywords": [
+          "balloon-draped hem"
+        ]
+      },
+      "context": {
+        "category": "bottom",
+        "season": "SS26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "51d60f11-2c96-4f69-8c0f-b228791dc14f"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Palazzo pants featuring a balloon-draped hem for a chic city look.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_bd92679a61f2",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Polka Dot Dress",
+      "attributes": {
+        "keywords": [
+          "big dots",
+          "midi length"
+        ]
+      },
+      "context": {
+        "category": "dress",
+        "season": "SS26",
+        "market": "Europe",
+        "gender": "women"
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "6b5598a8-1fc0-4b4b-9583-04e5b86006f0"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "A women's midi-length dress featuring a big polka dot pattern.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_f2fe1bb502f8",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Polka Dot Skirt",
+      "attributes": {
+        "keywords": [
+          "dots",
+          "midi length"
+        ]
+      },
+      "context": {
+        "category": "bottom",
+        "season": "SS26",
+        "market": "Europe",
+        "gender": "women"
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "9f55e7da-9f40-42db-8e15-5b1daef87685"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "A women's midi-length skirt with a dotted pattern.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_ceeaef645993",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Scrubs",
+      "attributes": {
+        "keywords": [
+          "medical apparel",
+          "DTC"
+        ]
+      },
+      "context": {
+        "category": "uniform",
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "99876bc7-4d71-4ed3-834a-2c33504e9884"
+      ],
+      "first_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Medical scrubs, representing a shift in the apparel industry towards direct-to-consumer models.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_29cd820ae1c4",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Sneakers",
+      "attributes": {
+        "keywords": [
+          "Village pm",
+          "1PM Sneakers"
+        ]
+      },
+      "context": {
+        "category": "footwear",
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 65,
+      "source_count": 2,
+      "sources": [
+        "c79d1831-56d8-4173-ac0b-9092ab2de6f1",
+        "0542268f-e1fd-4175-b8a2-48d3f1d90ef1"
+      ],
+      "first_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Fashionable sneakers, including specific trending styles like the Village pm 1PM.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_22948c7aee73",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Stand-Collar Jacket",
+      "attributes": {
+        "keywords": [
+          "stand-collar",
+          "Saint Laurent"
+        ]
+      },
+      "context": {
+        "category": "outerwear",
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "f51141c4-4b48-4559-b766-1fc93e70c18f"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "The Saint Laurent stand-collar jacket, ranked as a hottest product.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_3013767215bf",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Straight-Leg Denim",
+      "attributes": {
+        "keywords": [
+          "straight-leg"
+        ]
+      },
+      "context": {
+        "category": "bottom",
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "efc2db71-c69b-4e76-a530-1220c66a220b"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Denim jeans with a straight-leg silhouette.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_f46ecf3eaf67",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Tailored Suit",
+      "attributes": {
+        "keywords": [
+          "fluid"
+        ]
+      },
+      "context": {
+        "category": "outerwear",
+        "season": "FW26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "d0ab637e-3932-4bd1-8ed6-5dba06c9cd29"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "A fluid tailored suit.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_2fd6c05b7268",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Thong Sandals",
+      "attributes": {
+        "keywords": []
+      },
+      "context": {
+        "category": "footwear",
+        "season": "SS26",
+        "market": null,
+        "gender": "women"
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 55,
+      "source_count": 1,
+      "sources": [
+        "1fc7037a-769c-4ef6-a3dd-fa3fc159824f"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Adaptable and stylish thong sandals for women.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_08e5871ecc2d",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Tiered Ruffle Skirt",
+      "attributes": {
+        "keywords": [
+          "tiered",
+          "ruffles"
+        ]
+      },
+      "context": {
+        "category": "bottom",
+        "season": "SS26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "aa34a514-0210-48dc-9c8e-2dadf59b15e9"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "A tiered skirt with ruffles is making a strong comeback.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_51dbde6be0f5",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Tote Bag",
+      "attributes": {
+        "keywords": [
+          "Trader Joe's"
+        ]
+      },
+      "context": {
+        "category": "accessory",
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "203f13fd-4173-4198-a1f8-40f192627bb3"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "The highly sought-after Trader Joe's tote bag.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_b633a974c23f",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Trench Coat",
+      "attributes": {
+        "keywords": [
+          "luxury statement",
+          "iconic",
+          "Burberry"
+        ]
+      },
+      "context": {
+        "category": "outerwear",
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "1801c92b-0c01-453d-98d2-cb504f69574d"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "The iconic trench coat, repositioned as a luxury statement piece.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_99252924990c",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Turtleneck Knit",
+      "attributes": {
+        "keywords": [
+          "turtleneck",
+          "knit"
+        ]
+      },
+      "context": {
+        "category": "top",
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "ae2e5f8b-6374-465a-a24f-0a05f3ae8369"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "A black turtleneck knit sweater.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_e8916df1a64e",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Vanilla Yellow Dress",
+      "attributes": {
+        "keywords": [
+          "vanilla yellow"
+        ]
+      },
+      "context": {
+        "category": "dress",
+        "season": "SS26",
+        "market": "Europe",
+        "gender": "women"
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "bc5e5245-2b78-48ff-b2d3-35c72b393864"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "A women's dress in a vanilla yellow color.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_fe565beaa0e4",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Vivienne Westwood Dress",
+      "attributes": {
+        "keywords": [
+          "satin",
+          "corset",
+          "gown",
+          "Vivienne Westwood"
+        ]
+      },
+      "context": {
+        "category": "dress",
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "741c4576-6e66-4625-9a06-4492dcaeba70",
+        "6f5d731b-bbee-477e-a74c-caf3bad813f7",
+        "6e366b49-58d6-42e2-a481-eb8c532cb079"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Dresses by Vivienne Westwood, including satin gowns and corset styles, are seeing a surge in demand.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_306b06717979",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Windbreaker",
+      "attributes": {
+        "keywords": []
+      },
+      "context": {
+        "category": "outerwear",
+        "season": "Q1-26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 55,
+      "source_count": 1,
+      "sources": [
+        "77ab4857-2627-4b2e-8948-421ddffe78ad"
+      ],
+      "first_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_seen": "2026-06-30T11:51:39.203533+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Windbreaker jackets are having a fashion moment.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_6c5749aaf075",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Yellow-Green Sneakers",
+      "attributes": {
+        "keywords": [
+          "yellow-green",
+          "sporty"
+        ]
+      },
+      "context": {
+        "category": "footwear",
+        "season": "SS26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "f2cb716d-8c22-4bb9-9290-c70932829ab7"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Sneakers in a yellow-green color, styled for a cool, sporty vibe.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_1c06af45f9f4",
+      "type": "item_style",
+      "group": "item_style",
+      "label": "Yoga Pants",
+      "attributes": {
+        "keywords": []
+      },
+      "context": {
+        "category": "bottom",
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 45,
+      "source_count": 1,
+      "sources": [
+        "ff122598-71c9-49ed-bba8-a008f47c47a4"
+      ],
+      "first_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Comfortable and versatile yoga pants for athleisure wear.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_88934e109d2d",
+      "type": "material",
+      "group": "material",
+      "label": "Bamboo Fabric",
+      "attributes": {
+        "material": "Bamboo Fabric",
+        "keywords": [
+          "environmentally friendly",
+          "moisture wicking",
+          "natural"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "42b21159-16c6-4123-920c-323bdb92c786"
+      ],
+      "first_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_seen": "2026-06-30T11:49:01.080215+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Environmentally friendly and moisture-wicking bamboo fabric is a rising sustainable material choice.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_54388ab858a2",
+      "type": "material",
+      "group": "material",
+      "label": "Brut Denim",
+      "attributes": {
+        "material": "Denim",
+        "keywords": [
+          "raw",
+          "unwashed",
+          "untreated",
+          "stiff",
+          "brut"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "SS26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "e627b0ac-ac1f-4279-a0fb-c2fb18b663e9"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Brut denim is raw, unwashed, and untreated, offering a stiff texture and an authentic, pure cotton state.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_8f3d76286cb4",
+      "type": "material",
+      "group": "material",
+      "label": "Fine Lace",
+      "attributes": {
+        "material": "Lace",
+        "keywords": [
+          "delicate",
+          "fine"
+        ]
+      },
+      "context": {
+        "category": "Skirts",
+        "season": "SS26",
+        "market": "EU",
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "86003d01-2e1b-47ec-aaac-69237912c7b8"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Delicate and fine lace is an emerging fabric for plain skirts.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_18502a6c2543",
+      "type": "material",
+      "group": "material",
+      "label": "Intrecciato Leather",
+      "attributes": {
+        "material": "Intrecciato Leather",
+        "keywords": [
+          "Bottega Veneta",
+          "craft",
+          "woven"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "SS26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "45619283-c158-4aad-acb6-d1fc086a4547"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Intrecciato leather, a signature woven craft technique, creates a distinctive and luxurious textured material.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_c7cff8fe47f9",
+      "type": "material",
+      "group": "material",
+      "label": "Opaque Rainproof Fabric",
+      "attributes": {
+        "material": "Rainproof Fabric",
+        "keywords": [
+          "opaque",
+          "synthetic"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "SS26",
+        "market": null,
+        "gender": "Women"
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "8234a3c4-915d-4e19-b5d9-2321dbe897bb"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Opaque and rainproof synthetic fabric is a growing trend in womenswear.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_0b49e8ee7f69",
+      "type": "material",
+      "group": "material",
+      "label": "Sheer Fabric",
+      "attributes": {
+        "material": "Sheer",
+        "keywords": [
+          "see-through",
+          "delicate"
+        ]
+      },
+      "context": {
+        "category": "Skirts",
+        "season": "SS26",
+        "market": "EU",
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "66831ec5-ab96-409c-9a8e-f79699d513e0"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Delicate, see-through sheer fabrics are an emerging trend for plain skirts.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_274d186d5039",
+      "type": "pattern",
+      "group": "pattern",
+      "label": "Big Dots",
+      "attributes": {
+        "pattern": "Dot",
+        "keywords": [
+          "Big Dots",
+          "large scale"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "SS26",
+        "market": "US",
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "f3745394-465c-49f3-afa6-060ca5d9b23d"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Large-scale dot patterns are a growing trend for Spring/Summer 2026 in Europe and the US.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_cf3dff131434",
+      "type": "pattern",
+      "group": "pattern",
+      "label": "Cow Print",
+      "attributes": {
+        "pattern": "Cow",
+        "keywords": [
+          "animal"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "SS26",
+        "market": "US",
+        "gender": "Women"
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "a7c4c234-227e-4973-b2c1-1cb818b184a2"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Cow print is forecasted to be an IT-print for women in the US during Spring/Summer 2026.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_445f3182b74b",
+      "type": "pattern",
+      "group": "pattern",
+      "label": "Crocodile Print",
+      "attributes": {
+        "pattern": "Crocodile",
+        "keywords": [
+          "animal",
+          "reptile"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "SS26",
+        "market": "Europe",
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "b569fc9c-af92-4360-84b8-778dfd87fb20"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Crocodile prints are a growing animal pattern trend with projected growth in the EU for Spring/Summer 2026.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_6238140db561",
+      "type": "pattern",
+      "group": "pattern",
+      "label": "Gingham",
+      "attributes": {
+        "pattern": "Gingham",
+        "keywords": [
+          "check"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "SS26",
+        "market": "Europe",
+        "gender": "Women"
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "ad6f73b3-2e1a-47fb-8e37-26de950ecce9"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "The classic gingham check pattern is forecasted to grow for both men and women in Europe for Spring/Summer 2026.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_9f56331c5dc8",
+      "type": "pattern",
+      "group": "pattern",
+      "label": "Prince of Wales Check",
+      "attributes": {
+        "pattern": "Prince of Wales",
+        "keywords": [
+          "check"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "SS26",
+        "market": "Europe",
+        "gender": "Women"
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "9c5857ef-b4b4-4527-8d9d-c4aa4d28ca2d"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "The Prince of Wales check is a growing pattern variation for women in the EU for Spring/Summer 2026.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_4438039cd212",
+      "type": "pattern",
+      "group": "Mango",
+      "label": "Snake Print",
+      "attributes": {
+        "pattern": "dots",
+        "keywords": [
+          "animal",
+          "reptile"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "SS26",
+        "market": "Europe",
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "070c39b5-cdad-44ae-9595-33d95622dc83"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Snake prints are a rising animal pattern trend projected to grow in the EU for Spring/Summer 2026.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_406b120dd3e6",
+      "type": "pattern",
+      "group": "pattern",
+      "label": "Windowpane Check",
+      "attributes": {
+        "pattern": "Windowpane Check",
+        "keywords": [
+          "check"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "SS26",
+        "market": "Europe",
+        "gender": "Women"
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "31286a5b-4196-4251-b5b7-2a1e72eb5185"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Windowpane checks are a rising pattern for women in the EU for Spring/Summer 2026.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_1ddefc1ba010",
+      "type": "pattern",
+      "group": "pattern",
+      "label": "Zebra Print",
+      "attributes": {
+        "pattern": "Zebra",
+        "keywords": [
+          "Zebra stripes",
+          "animal"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "SS26",
+        "market": "US",
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "e74e6500-07f8-4ff4-b1cc-c33c05200471"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Zebra stripes are set to be a key animal print for Spring 2026, with projected growth in the EU and US.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_671d0caeeceb",
+      "type": "silhouette",
+      "group": "silhouette",
+      "label": "Body-Conscious",
+      "attributes": {
+        "silhouette": "body-conscious",
+        "keywords": [
+          "body-conscious",
+          "minidress"
+        ]
+      },
+      "context": {
+        "category": "dresses",
+        "season": "FW26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "7c677d0a-d918-47da-be34-db1dc1f66f9e"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Body-conscious minidresses feature a tight, form-fitting silhouette.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_31511f3b0dbb",
+      "type": "silhouette",
+      "group": "silhouette",
+      "label": "Bubble Hem",
+      "attributes": {
+        "silhouette": "bubble-hem",
+        "keywords": [
+          "bubble-hem",
+          "playful volume",
+          "skirts",
+          "sarouel pants"
+        ]
+      },
+      "context": {
+        "category": "bottoms",
+        "season": "SS26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "7efafe86-5c9d-4604-a33f-e9add1aaa0e4"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Bubble hems create playful volume on garments like skirts and sarouel pants.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_4a3529a834ef",
+      "type": "silhouette",
+      "group": "silhouette",
+      "label": "Fluid Silhouette",
+      "attributes": {
+        "silhouette": "fluid",
+        "keywords": [
+          "fluid",
+          "tailored suit"
+        ]
+      },
+      "context": {
+        "category": "tailoring",
+        "season": "FW26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 50,
+      "source_count": 1,
+      "sources": [
+        "cc4ce55d-b9b9-4b10-a6f6-1a7588f90d73"
+      ],
+      "first_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_seen": "2026-06-30T11:35:43.458633+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Fluid tailored suits feature a flowing and relaxed silhouette.",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_f41c88db46e0",
+      "type": "silhouette",
+      "group": "silhouette",
+      "label": "Low-Waist",
+      "attributes": {
+        "silhouette": "low-waist",
+        "keywords": [
+          "low-waist"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "SS26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 60,
+      "source_count": 1,
+      "sources": [
+        "9df9b98a-741f-4fe0-9780-bbbb9bcc3624"
+      ],
+      "first_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_seen": "2026-06-30T11:57:57.376743+05:30",
+      "last_updated": "2026-06-30T14:45:00.781466+05:30",
+      "descriptor": "Low-waist styles feature a silhouette that sits low on the hips.",
+      "embedding": [],
+      "review_status": "pending"
+    }
+  ]
+}

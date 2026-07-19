@@ -1,0 +1,1012 @@
+{
+  "source": "lyst_index",
+  "captured_date": "2026-06-30T06:21:39.205792+00:00",
+  "observation_count": 50,
+  "observations": [
+    {
+      "observation_id": "58284458-a47c-4c30-81f9-bb338c26d1c1",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "CHANEL",
+        "rank": "01",
+        "movement": "new",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "01 CHANEL new"
+    },
+    {
+      "observation_id": "0ef3ee83-9183-47ff-88c3-8be21d65c060",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "SAINT LAURENT",
+        "rank": "02",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "02 SAINT LAURENT -1"
+    },
+    {
+      "observation_id": "fee23e0e-40af-4689-a869-5790539330b6",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "DIOR",
+        "rank": "03",
+        "movement": "new",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "03 DIOR new"
+    },
+    {
+      "observation_id": "34d46312-34d9-420e-ab21-307422d1baf0",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "MIU MIU",
+        "rank": "04",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "04 MIU MIU -2"
+    },
+    {
+      "observation_id": "e345b54f-6312-4b73-92ba-50f4ce74ba3f",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "GUCCI",
+        "rank": "05",
+        "movement": "up",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "05 GUCCI +4"
+    },
+    {
+      "observation_id": "68066df3-039a-4160-a02c-1728acb1f60b",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "RALPH LAUREN",
+        "rank": "06",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "06 RALPH LAUREN -2"
+    },
+    {
+      "observation_id": "bf1dea00-080b-492a-97be-941e40388490",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "PRADA",
+        "rank": "07",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "07 PRADA -2"
+    },
+    {
+      "observation_id": "a2a0c84c-895a-48b3-af49-870c59b0caf2",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "COACH",
+        "rank": "08",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "08 COACH -2"
+    },
+    {
+      "observation_id": "bd5d207f-eb63-4bf3-bbc6-6f237fde6085",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "BURBERRY",
+        "rank": "09",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "09 BURBERRY -1"
+    },
+    {
+      "observation_id": "7ee2fb66-9c54-45ab-b9f9-44020f34f130",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "COS",
+        "rank": "10",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "10 COS -7"
+    },
+    {
+      "observation_id": "5a63b104-dbf5-44cc-86cd-e6b2e11d7da4",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "THE ROW",
+        "rank": "11",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "11 THE ROW -4"
+    },
+    {
+      "observation_id": "5a6fdfbf-7b39-421e-9ba6-427666b7a8bb",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "VERSACE",
+        "rank": "12",
+        "movement": "up",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "12 VERSACE +2"
+    },
+    {
+      "observation_id": "78edb1d9-ae4f-4b43-b42f-5aaf1e700e8d",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "MONCLER",
+        "rank": "13",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "13 MONCLER -3"
+    },
+    {
+      "observation_id": "5fb1f1c8-d91a-472a-9fd4-747252684926",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "CHLOÉ",
+        "rank": "14",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "14 CHLOÉ -3"
+    },
+    {
+      "observation_id": "7f70704e-aa35-4002-83ba-e06edaa23e49",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "BOTTEGA VENETA",
+        "rank": "15",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "15 BOTTEGA VENETA -3"
+    },
+    {
+      "observation_id": "cf5fce05-22a4-4588-adb1-75c6c9f04f40",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "LOEWE",
+        "rank": "16",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "16 LOEWE -3"
+    },
+    {
+      "observation_id": "80ae725a-94d5-4e1e-aea7-352894e4c425",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "STONE ISLAND",
+        "rank": "17",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "17 STONE ISLAND -2"
+    },
+    {
+      "observation_id": "7194c57c-87ca-4b9c-99e8-66c8957af087",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "MASSIMO DUTTI",
+        "rank": "18",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "18 MASSIMO DUTTI -2"
+    },
+    {
+      "observation_id": "fe866a76-55ed-4fa6-9f54-6c749c9c73a1",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "FENDI",
+        "rank": "19",
+        "movement": "new",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "19 FENDI re-entry"
+    },
+    {
+      "observation_id": "37bee0d6-e3f2-43e4-bb3e-97f64b6e3ad5",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "CELINE",
+        "rank": "20",
+        "movement": "new",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "20 CELINE new"
+    },
+    {
+      "observation_id": "2ee183a4-71ed-434e-a000-d30e04b65c60",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Chanel",
+        "rank": "NA",
+        "movement": "NA",
+        "ranking_list": "NA",
+        "associated_products": [
+          "shoes",
+          "classic flap bag"
+        ],
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Within this framework, Chanel is this quarter’s hottest brand."
+    },
+    {
+      "observation_id": "088cc8a7-8094-436c-953c-ab1976d073fb",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Chanel shoes",
+        "category": "footwear",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "viral",
+          "sold out"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "a pair of shoes that went viral on social media and are now consistently sold out"
+    },
+    {
+      "observation_id": "35505444-279c-4f6d-94b5-880a1ffc7313",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "classic flap bag",
+        "category": "accessory",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Chanel"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "a reinvention of the classic flap bag"
+    },
+    {
+      "observation_id": "14321e42-333d-4cc6-b6f8-2e95d4c9efe9",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Coach",
+        "rank": "NA",
+        "movement": "NA",
+        "ranking_list": "NA",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "332% The year on year increase in demand for Coach in 2024"
+    },
+    {
+      "observation_id": "e2a8dc03-78fe-492b-b4b7-2e98b9742de9",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Dior",
+        "rank": "3",
+        "movement": "NA",
+        "ranking_list": "The Lyst Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Dior, joining the Lyst Index at number three, is operating with similar clarity."
+    },
+    {
+      "observation_id": "89a08fb9-dd10-4503-9a59-d1ba396294fa",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Gucci",
+        "rank": "NA",
+        "movement": "up",
+        "ranking_list": "NA",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Gucci is this quarter’s biggest mover, climbing four places. Momentum is building around Demna’s debut, with a 12% day-on-day lift following the show"
+    },
+    {
+      "observation_id": "999d45af-f400-4d97-a245-5570f93921a7",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Zara",
+        "rank": "NA",
+        "movement": "NA",
+        "ranking_list": "NA",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Zara emerges as a breakout not by competing on heritage, but by aligning itself with credible creative voices."
+    },
+    {
+      "observation_id": "7af456ba-499a-4942-995c-0f0938e883c1",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "’90s minimalism",
+        "mood": "minimalist",
+        "associated_items": [
+          "black turtleneck knits",
+          "straight-leg denim"
+        ],
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Carolyn Bessette-Kennedy"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "The clearest signal this quarter is the resurgence of ’90s minimalism, catalysed by Love Story and renewed interest in Carolyn Bessette-Kennedy’s style."
+    },
+    {
+      "observation_id": "ae2e5f8b-6374-465a-a24f-0a05f3ae8369",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "black turtleneck knits",
+        "category": "top",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "searches for black turtleneck knits rose 217% after the first episode"
+    },
+    {
+      "observation_id": "efc2db71-c69b-4e76-a530-1220c66a220b",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "straight-leg denim",
+        "category": "bottom",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "straight-leg denim demand has climbed steadily on Lyst"
+    },
+    {
+      "observation_id": "5328d0da-1e82-42b6-aa5f-aa5d57801d96",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Calvin Klein",
+        "rank": "NA",
+        "movement": "NA",
+        "ranking_list": "NA",
+        "associated_products": "NA",
+        "associated_aesthetic": "’90s minimalism",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Calvin Klein saw a 43% week-on-week lift following the finale"
+    },
+    {
+      "observation_id": "b01e43f8-2578-4c2c-b624-04a542f2c927",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Kangol flat cap",
+        "category": "accessory",
+        "key_features": "NA",
+        "gender": "men",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "most notably the Kangol flat cap, which ranked tenth among the hottest products and saw a 14% uplift among menswear shoppers"
+    },
+    {
+      "observation_id": "741c4576-6e66-4625-9a06-4492dcaeba70",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Vivienne Westwood’s satin dress",
+        "category": "dress",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "demand for Vivienne Westwood’s satin dress surged by 890%, driven by the release and press tour wardrobe of Wuthering Heights."
+    },
+    {
+      "observation_id": "7e441f65-b0e1-42f0-ab31-46ac3f4fbcbb",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Charvet",
+        "rank": "NA",
+        "movement": "NA",
+        "ranking_list": "NA",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "128% increase in demand for charvet on Lyst this quarter"
+    },
+    {
+      "observation_id": "f51141c4-4b48-4559-b766-1fc93e70c18f",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Stand-Collar Jacket",
+        "category": "outerwear",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Saint Laurent",
+          "Hottest Products"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "01 SAINT LAURENT Stand-Collar Jacket"
+    },
+    {
+      "observation_id": "d340f304-d6bf-495a-b5a8-a5209a2a6e16",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Pumps",
+        "category": "footwear",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Chanel",
+          "Hottest Products"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "02 CHANEL Pumps"
+    },
+    {
+      "observation_id": "b7f41b18-2514-4799-8548-0c214cf165d0",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Chinese Style Track Top",
+        "category": "top",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Adidas",
+          "Hottest Products"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "03 ADIDAS Chinese Style Track Top"
+    },
+    {
+      "observation_id": "6ec454a2-14bb-4b96-af1d-425848500b6d",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Ballet Lace-up Shoes",
+        "category": "footwear",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Celine",
+          "Hottest Products"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "04 CELINE Ballet Lace-up Shoes"
+    },
+    {
+      "observation_id": "6f5d731b-bbee-477e-a74c-caf3bad813f7",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Long Fond Gown",
+        "category": "dress",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Vivienne Westwood",
+          "Hottest Products"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "05 Vivienne Westwood Long Fond Gown"
+    },
+    {
+      "observation_id": "5489cd5a-60bc-4f5b-a17a-40c7192b7416",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Maxi Flap Bag",
+        "category": "accessory",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Chanel",
+          "Hottest Products"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "06 CHANEL Maxi Flap Bag"
+    },
+    {
+      "observation_id": "7bbfa93e-b28b-45a4-a228-3891883a2646",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Butterfly Sunglasses",
+        "category": "accessory",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Saint Laurent",
+          "Hottest Products"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "07 SAINT LAURENT Butterfly Sunglasses"
+    },
+    {
+      "observation_id": "203f13fd-4173-4198-a1f8-40f192627bb3",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Tote Bag",
+        "category": "accessory",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Trader Joe's",
+          "Hottest Products"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "08 TRADER JOE’S Tote Bag"
+    },
+    {
+      "observation_id": "0542268f-e1fd-4175-b8a2-48d3f1d90ef1",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "1PM Sneakers",
+        "category": "footwear",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Village pm",
+          "Hottest Products"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "09 Village pm 1PM Sneakers"
+    },
+    {
+      "observation_id": "62f39b1f-af8d-4cb2-9241-c503d9e5a211",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Tropic 504 Flat Cap",
+        "category": "accessory",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Kangol",
+          "Hottest Products"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "10 KANGOL Tropic 504 Flat Cap"
+    },
+    {
+      "observation_id": "3e70c872-fd8e-4402-92e3-33c099ba76c2",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Vivienne Westwood",
+        "rank": "NA",
+        "movement": "NA",
+        "ranking_list": "NA",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "+88% QuARTER-ON-QUARTER RISE IN DEMAND for VIVIENNE WESTWOOD Corset dress"
+    },
+    {
+      "observation_id": "6e366b49-58d6-42e2-a481-eb8c532cb079",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Corset dress",
+        "category": "dress",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Vivienne Westwood"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "+88% QuARTER-ON-QUARTER RISE IN DEMAND for VIVIENNE WESTWOOD Corset dress"
+    },
+    {
+      "observation_id": "cb3d62da-3be0-4952-b948-b8ef7f8ddd53",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Crew Neck Cardigan",
+        "category": "top",
+        "key_features": "NA",
+        "gender": "men",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Inside the Ascent of the Crew Neck Cardigan"
+    },
+    {
+      "observation_id": "77c7d492-5634-4af9-a8f3-7cd2b926fbe1",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "bag charm",
+        "category": "accessory",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "craze"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "Breaking down thebag charm craze"
+    },
+    {
+      "observation_id": "77ab4857-2627-4b2e-8948-421ddffe78ad",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Windbreakers",
+        "category": "outerwear",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Windbreakers are having a moment."
+    },
+    {
+      "observation_id": "f30a8860-b135-49aa-ba48-54c2e4c8ef14",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "90s",
+        "mood": "NA",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Everyone’s Dressing Like It’s the ‘90s Again"
+    }
+  ]
+}

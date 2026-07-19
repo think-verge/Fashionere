@@ -1,0 +1,3155 @@
+{
+  "generated_at": "2026-06-30T14:45:00.783538+05:30",
+  "observation_count": 153,
+  "observations": [
+    {
+      "observation_id": "4f32ff60-418f-48a0-88fe-09a463082cca",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Gucci",
+        "rank": "2",
+        "movement": "NA",
+        "ranking_list": "Share of Voice — MFW FW26",
+        "associated_products": [
+          "body-conscious minidresses",
+          "fluid tailored suits",
+          "evening gowns",
+          "Bamboo 1947 bag"
+        ],
+        "associated_aesthetic": "sexuality",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Gucci's Fall 2026 debut — Demna Gvasalia's first runway collection for the house — became the most-discussed show of Milan Fashion Week FW26 in a single hour."
+    },
+    {
+      "observation_id": "1d766d32-4140-4780-bc4c-d34a606af89c",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Gucci",
+        "rank": "2",
+        "movement": "NA",
+        "ranking_list": "Share of Voice — MFW FW26",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Among 153 fashion brands tracked during Milan Fashion Week FW26, Gucci ranked second in overall share of voice with 18.82%"
+    },
+    {
+      "observation_id": "72a4c61e-cbfa-4304-b1f1-aece42efdf47",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Gucci",
+        "rank": "2",
+        "movement": "NA",
+        "ranking_list": "Media Impact Value® (MIV®) — MFW FW26",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Launchmetrics' Media Impact Value® (MIV®) ... placed Gucci at $91 million for the Milan Fashion Week FW26 season, ranking second behind Prada's $117.9 million."
+    },
+    {
+      "observation_id": "c8d22711-f875-4834-b0de-ad23f7d4ffa4",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Gucci",
+        "rank": "2",
+        "movement": "NA",
+        "ranking_list": "Tagwalk fashion month overall",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Tagwalk independently ranked Gucci second in fashion month overall, citing the star-studded cast as a driver of global visibility."
+    },
+    {
+      "observation_id": "3649de6b-5870-4fd3-9328-a7e4acfde6aa",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Demna Gvasalia",
+        "rank": "NA",
+        "movement": "NA",
+        "ranking_list": "NA",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "FW26",
+        "keywords": [
+          "creative director",
+          "Gucci"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Nearly a year after Demna Gvasalia was hired to remake Gucci following his decade-long run at Balenciaga, he made his runway debut at the Palazzo Delle Scintille in Milan."
+    },
+    {
+      "observation_id": "2844b03e-3c52-4d2f-9b79-2932d487df48",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "minidress",
+        "category": "dress",
+        "key_features": [
+          "body-conscious"
+        ],
+        "gender": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "83 looks spanning body-conscious minidresses, fluid tailored suits, and evening gowns"
+    },
+    {
+      "observation_id": "7c677d0a-d918-47da-be34-db1dc1f66f9e",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "silhouette",
+      "extracted_attributes": {
+        "silhouette": "body-conscious",
+        "fit": "body-conscious",
+        "volume": "NA",
+        "length": "NA",
+        "applies_to": "minidress",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "body-conscious minidresses"
+    },
+    {
+      "observation_id": "d0ab637e-3932-4bd1-8ed6-5dba06c9cd29",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "tailored suit",
+        "category": "outerwear",
+        "key_features": [
+          "fluid"
+        ],
+        "gender": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "83 looks spanning body-conscious minidresses, fluid tailored suits, and evening gowns"
+    },
+    {
+      "observation_id": "cc4ce55d-b9b9-4b10-a6f6-1a7588f90d73",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "silhouette",
+      "extracted_attributes": {
+        "silhouette": "fluid",
+        "fit": "NA",
+        "volume": "NA",
+        "length": "NA",
+        "applies_to": "tailored suit",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "fluid tailored suits"
+    },
+    {
+      "observation_id": "f3e28383-7c4b-40ed-8da7-b8c1d70924d5",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "evening gown",
+        "category": "dress",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "83 looks spanning body-conscious minidresses, fluid tailored suits, and evening gowns"
+    },
+    {
+      "observation_id": "4eb093f5-3553-480a-813d-31ca7b20d599",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "sexuality",
+        "mood": "sexy",
+        "associated_items": [
+          "body-conscious minidresses"
+        ],
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "all threaded with the sexuality and cultural ambition that Demna believes defines the Gucci brand."
+    },
+    {
+      "observation_id": "8e290dfe-a901-4b7d-be86-e468da7b2d17",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "glamorous",
+        "mood": "glamorous",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "others declaring it \"glamorous, sexy, dramatic and very intentional.\""
+    },
+    {
+      "observation_id": "340f1d27-329e-4e48-907f-920f9f3f9b8e",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "sexy",
+        "mood": "sexy",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "others declaring it \"glamorous, sexy, dramatic and very intentional.\""
+    },
+    {
+      "observation_id": "f2b943d6-2f03-4a2a-b9d2-70bd500ff6a5",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "dramatic",
+        "mood": "dramatic",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "others declaring it \"glamorous, sexy, dramatic and very intentional.\""
+    },
+    {
+      "observation_id": "05a49f8a-c029-4cdd-91a8-06f122b1656f",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "Tom Ford era",
+        "mood": "sexy",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "The collection's deliberate sexuality and its references to the Tom Ford era gave the internet something to argue about, which is itself a form of brand heat."
+    },
+    {
+      "observation_id": "8fde1ff1-a762-4985-bb3e-42f7210a70a0",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Bamboo 1947 bag",
+        "category": "accessory",
+        "key_features": [
+          "update"
+        ],
+        "gender": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "The Bamboo 1947 bag update and the immediate post-show retail drop suggest the house is already thinking about the runway-to-retail pipeline."
+    },
+    {
+      "observation_id": "1995b21a-5ae3-4963-b988-10884be9ec7b",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Tod's",
+        "rank": "1",
+        "movement": "NA",
+        "ranking_list": "Share of Voice — MFW FW26",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Gucci ranked second in overall share of voice with 18.82% — just 0.29 percentage points behind Tod's, whose Thai celebrity ambassador strategy dominated early-week conversation."
+    },
+    {
+      "observation_id": "7375fd3c-525e-423f-a3ce-69613f26a31b",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Prada",
+        "rank": "1",
+        "movement": "NA",
+        "ranking_list": "Media Impact Value® (MIV®) — MFW FW26",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "FW26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "placed Gucci at $91 million for the Milan Fashion Week FW26 season, ranking second behind Prada's $117.9 million."
+    },
+    {
+      "observation_id": "c4b069e1-34b7-4513-af7f-a594763213da",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Louis Vuitton",
+        "rank": "1",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "LVMH",
+          "heritage"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Louis Vuitton leads the index with a Heat Score of 91.3, driven by 56 million Instagram followers, 18.1 million monthly web visits, and a search interest ratio that nearly doubles its nearest brand."
+    },
+    {
+      "observation_id": "84dddd78-d96a-421b-a495-fd059a22d025",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Dior",
+        "rank": "2",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "LVMH",
+          "heritage"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Dior, Chanel, and Gucci hold the second through fourth positions, confirming the sustained dominance of the major heritage houses."
+    },
+    {
+      "observation_id": "29af48b3-ecdd-482f-a754-b8a4efb16d41",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Chanel",
+        "rank": "3",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "heritage"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Dior, Chanel, and Gucci hold the second through fourth positions, confirming the sustained dominance of the major heritage houses."
+    },
+    {
+      "observation_id": "6c1e5733-fa47-4c95-9754-660b4bbfa857",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Gucci",
+        "rank": "4",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Kering",
+          "heritage"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "Demand for Gucci rose 12% in the 24 hours following the show, and the brand's Q1 web traffic of 8.4 million monthly visits matched Dior's."
+    },
+    {
+      "observation_id": "c6da3626-3067-463f-81dc-3539888499e1",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Prada",
+        "rank": "5",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Prada Group"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Prada and Hermès round out the top six."
+    },
+    {
+      "observation_id": "57a30762-f0c4-45ff-b405-0fa1c6b7dce7",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Hermès",
+        "rank": "6",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": [
+          "Birkin"
+        ],
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "heritage"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Prada and Hermès round out the top six."
+    },
+    {
+      "observation_id": "df8c9edf-d8e7-4547-b777-ed3a8c240471",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Coach",
+        "rank": "7",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Tapestry Inc.",
+          "accessible luxury"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Coach claims the highest web traffic score in the entire index, ranking seventh overall, a signal that consumer engagement extends well beyond the accessible luxury tier."
+    },
+    {
+      "observation_id": "380ad082-c93d-492d-9531-17e53cae2fa2",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Versace",
+        "rank": "Top 10",
+        "movement": "up",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Capri Holdings"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "Versace is the index's most dramatic momentum story. A +47.9% month-on-month web traffic surge in Q1 2026 — the largest of any brand tracked — propelled the house from a mid-table position into the top ten."
+    },
+    {
+      "observation_id": "7df3c889-e147-4140-8856-fe3ba738e291",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Ralph Lauren",
+        "rank": "Tier II",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "quiet luxury",
+        "season": "Q1-26",
+        "keywords": [
+          "American heritage"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Q1 2026 saw Ralph Lauren benefit from the broader \"quiet luxury\" and \"old money aesthetic\" trend cycles that continued to drive consumer interest in heritage American brands."
+    },
+    {
+      "observation_id": "b6496638-7aff-4608-b5fb-274d97500659",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Balenciaga",
+        "rank": "Tier II",
+        "movement": "down",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Kering"
+        ]
+      },
+      "demand_direction": "fading",
+      "raw_text": "A -4.2% month-on-month web traffic decline and a web score of 22.2 reflect a house in transition."
+    },
+    {
+      "observation_id": "264b4dcd-db27-41b6-9cfc-3f46287d9367",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Burberry",
+        "rank": "Tier III",
+        "movement": "up",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": [
+          "trench coat"
+        ],
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "turnaround"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "The +2.1% month-on-month web traffic growth, while modest, represents a reversal of the declining trend that characterized the brand's 2024 performance."
+    },
+    {
+      "observation_id": "1801c92b-0c01-453d-98d2-cb504f69574d",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "trench coat",
+        "category": "outerwear",
+        "key_features": [
+          "repositioned as luxury statement"
+        ],
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Burberry",
+          "iconic"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Under Daniel Lee, who has now had three full years to reshape the brand's identity, the trench coat — Burberry's most iconic product — has been repositioned as a luxury statement rather than a heritage commodity."
+    },
+    {
+      "observation_id": "10c72dee-337c-41b3-94ea-3dddc74a538c",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Off-White",
+        "rank": "Tier III",
+        "movement": "down",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Virgil Abloh"
+        ]
+      },
+      "demand_direction": "fading",
+      "raw_text": "Revenue declined an estimated 20–50% in 2025, and the brand's web traffic of 772,000 monthly visits is the lowest of any brand in the top 15."
+    },
+    {
+      "observation_id": "6841d1e9-d381-4101-98f8-86614c343672",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Miu Miu",
+        "rank": "13",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": [
+          "micro-skirt"
+        ],
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Prada Group"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Miu Miu's position at #13 in the data-driven index — compared to #4 in platform-based rankings — is the clearest illustration of the gap between editorial perception and public data."
+    },
+    {
+      "observation_id": "2811eebc-610a-420b-9ce4-b7b8d36d3fba",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "micro-skirt",
+        "category": "bottom",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Miu Miu"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "The brand's micro-skirt moment and its status as the critical darling of the past three seasons are real phenomena"
+    },
+    {
+      "observation_id": "dd0ef1bf-d6ed-4cc7-9dea-35126f4a469f",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Jacquemus",
+        "rank": "Tier III",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "independent"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Jacquemus is the independent luxury success story of the past decade — a brand built almost entirely on Simon Porte Jacquemus's personal Instagram presence"
+    },
+    {
+      "observation_id": "7f5a1c23-eec7-450b-9fe6-8b34d911f8aa",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Valentino",
+        "rank": "Tier III",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "maximalist",
+        "season": "Q1-26",
+        "keywords": [
+          "Alessandro Michele"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Valentino's score is driven almost entirely by its social pillar — 18.9 million Instagram followers give it the sixth-largest social following in the index"
+    },
+    {
+      "observation_id": "c17e3213-db76-43e9-9c44-4393e582a744",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Bottega Veneta",
+        "rank": "16",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "quiet luxury",
+        "season": "Q1-26",
+        "keywords": [
+          "Kering",
+          "intrecciato"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Bottega Veneta occupies the sixteenth position in the Q1 2026 Brand Heat Index."
+    },
+    {
+      "observation_id": "45619283-c158-4aad-acb6-d1fc086a4547",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "material",
+      "extracted_attributes": {
+        "material": "intrecciato leather",
+        "material_family": "leather",
+        "texture": "woven",
+        "finish": "NA",
+        "weight": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Bottega Veneta",
+          "craft"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Its intrecciato leather craft and Matthieu Blazy-era design legacy have sustained a loyal, high-value consumer base that operates largely outside conventional digital channels."
+    },
+    {
+      "observation_id": "83988563-8935-4342-9032-7f3553591993",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Saint Laurent",
+        "rank": "17",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "quiet luxury",
+        "season": "Q1-26",
+        "keywords": [
+          "Kering"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Saint Laurent's #17 position in this index — compared to #2 in platform-based rankings — is the most significant divergence in the entire dataset"
+    },
+    {
+      "observation_id": "c6a55d10-9f70-4486-a42b-c33afecbff2c",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Loewe",
+        "rank": "Tier IV",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "LVMH",
+          "Jonathan Anderson"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "The public data, however, reflects a brand that remains relatively niche in terms of raw consumer reach: 2.5 million monthly web visits and 8.1 million Instagram followers are modest by mega-house standards."
+    },
+    {
+      "observation_id": "c0730045-2376-4e4b-bcca-ee46753013de",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Celine",
+        "rank": "Tier IV",
+        "movement": "NA",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "quiet luxury",
+        "season": "Q1-26",
+        "keywords": [
+          "LVMH"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Under Hedi Slimane, Celine has maintained a deliberately minimal digital presence — 4.0 million Instagram followers and 0.5 million TikTok followers reflect a brand that does not compete for social reach."
+    },
+    {
+      "observation_id": "2370fe69-5418-430f-8f65-dbd2625acc3f",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Fendi",
+        "rank": "Top 20",
+        "movement": "down",
+        "ranking_list": "Brand Heat Index",
+        "associated_products": [
+          "Baguette bag"
+        ],
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "LVMH"
+        ]
+      },
+      "demand_direction": "fading",
+      "raw_text": "Fendi closes the index with a -9.9% month-on-month web traffic decline — the second-largest negative momentum figure in the top 20."
+    },
+    {
+      "observation_id": "1d06d8d1-2a6d-4339-9846-ca0328922340",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Baguette bag",
+        "category": "accessory",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Fendi",
+          "cultural touchstone"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "The Baguette bag remains a cultural touchstone, and the brand's Roman identity...provides a distinctive positioning that the data does not yet fully reflect."
+    },
+    {
+      "observation_id": "45dc9b29-2035-441e-a4e2-a7369fdabc93",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "quiet luxury",
+        "mood": "understated",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Ralph Lauren",
+          "old money"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Brands associated with the 'quiet luxury' aesthetic — Saint Laurent, The Row, Celine, Bottega Veneta — consistently score lower in this index than their editorial profiles suggest."
+    },
+    {
+      "observation_id": "cd8af568-7a5a-4d6e-bd05-57b1ffbfc32f",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "old money aesthetic",
+        "mood": "heritage",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Ralph Lauren"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Q1 2026 saw Ralph Lauren benefit from the broader \"quiet luxury\" and \"old money aesthetic\" trend cycles that continued to drive consumer interest in heritage American brands."
+    },
+    {
+      "observation_id": "2b878d32-1973-4567-a09d-22f0acd92a33",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Birkin",
+        "category": "accessory",
+        "key_features": [
+          "waitlist"
+        ],
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Hermès"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "The Birkin waitlist is not a social media phenomenon. It is a demand signal that shows up in search data, in web traffic, and in the secondary market."
+    },
+    {
+      "observation_id": "ac20fbb4-707e-45fc-8af2-bf53086e6dec",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "maximalist",
+        "mood": "expressive",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Valentino",
+          "Alessandro Michele"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Michele's maximalist aesthetic — which defined Gucci's cultural moment from 2015 to 2022 — is being reinterpreted for a Roman house with different heritage codes."
+    },
+    {
+      "observation_id": "d1779fc8-7b58-4474-8c4e-a0b3f7b1cb2c",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-30T06:05:43.458633+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "wearable luxury",
+        "mood": "precise",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Chanel",
+          "Matthieu Blazy"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "The critical response was warm — Blazy's instinct for precise, wearable luxury resonated with a market that had grown weary of spectacle."
+    },
+    {
+      "observation_id": "d47d05e9-a343-401d-90cf-9a09bbc91367",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "athleisure",
+        "mood": "sporty",
+        "associated_items": [
+          "yoga pants",
+          "tights",
+          "sneakers",
+          "leggings",
+          "gym shorts"
+        ],
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Athleisure, the mix of sportswear into everyday fashion, owes itself to the decline of formality in American fashion and the desire to be seen as healthy amid growing fitness trends — yoga pants, tights, sneakers, leggings, gym shorts, and so on."
+    },
+    {
+      "observation_id": "0d25ca4b-c128-4158-87af-d1ef353d9f3d",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "formality",
+        "mood": "formal",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "fading",
+      "raw_text": "Formal fashion declines, athleisure rises"
+    },
+    {
+      "observation_id": "ff122598-71c9-49ed-bba8-a008f47c47a4",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "yoga pants",
+        "category": "bottom",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "yoga pants, tights, sneakers, leggings, gym shorts, and so on."
+    },
+    {
+      "observation_id": "c79d1831-56d8-4173-ac0b-9092ab2de6f1",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "sneakers",
+        "category": "footwear",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "yoga pants, tights, sneakers, leggings, gym shorts, and so on."
+    },
+    {
+      "observation_id": "23e4b107-b7f5-4380-b87b-71876fe12917",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "leggings",
+        "category": "bottom",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "yoga pants, tights, sneakers, leggings, gym shorts, and so on."
+    },
+    {
+      "observation_id": "0b28c2d0-4bd5-4ae9-aae7-aafb741e6a33",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "mini dress",
+        "category": "dress",
+        "key_features": "NA",
+        "gender": "women's",
+        "season": "NA",
+        "keywords": [
+          "bold",
+          "expressive"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "The resurgence of the mini dress highlights a shift toward bold, expressive styles that challenge conventional modesty norms, making it a standout among recent women's fashion trends."
+    },
+    {
+      "observation_id": "298c48ed-69bf-4636-93ae-c6bfa298c1bb",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "modest fashion",
+        "mood": "modest",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "As some demographics increasingly demand more modest fashion choices, others are going the other direction."
+    },
+    {
+      "observation_id": "624e9e81-c691-425d-9aa8-9065b4e6241e",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "access over ownership",
+        "mood": "sustainable",
+        "associated_items": [
+          "clothing rental"
+        ],
+        "associated_colors": "NA",
+        "consumer_segment": "millennials and Gen Z",
+        "season": "NA",
+        "keywords": [
+          "flexibility",
+          "sustainability"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "Amidst rising environmental concerns, clothing rental platforms offer a rotating wardrobe without the waste associated with fast fashion. This model is especially popular among millennials and Gen Z, who prioritize access over ownership"
+    },
+    {
+      "observation_id": "21fb17d5-c615-4e3c-993a-0b97bdef981b",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "sustainable luxury",
+        "mood": "sustainable",
+        "associated_items": [
+          "refillable perfume bottles"
+        ],
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "This trend is also similar to movements towards sustainable luxury as seen in refillable perfume bottles, a top fragrance trend"
+    },
+    {
+      "observation_id": "7c1ada0b-af6f-49e0-aa88-1ad98ffe60a9",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "AI personalization",
+        "mood": "personalized",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "NA",
+        "keywords": [
+          "e-commerce"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "There’s a growing consumer expectation for personalized shopping solutions. Some brands are even starting to let consumers upload selfies and then see their clothing catalogue projected onto the shopper themselves."
+    },
+    {
+      "observation_id": "c2bdc708-322d-44d3-859d-c0d206946d77",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "bows on clothing",
+        "category": "accessory",
+        "key_features": [
+          "bows"
+        ],
+        "gender": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Style on the rise: bows on clothing"
+    },
+    {
+      "observation_id": "1ff3d34f-6a98-4709-84d8-7a7d0ce3ccbe",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "bamboo pajamas",
+        "category": "sleepwear",
+        "key_features": [
+          "moisture wicking",
+          "temperature regulating"
+        ],
+        "gender": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "bamboo clothing, like bamboo pajamas, has more recently started growing in popularity."
+    },
+    {
+      "observation_id": "42b21159-16c6-4123-920c-323bdb92c786",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "material",
+      "extracted_attributes": {
+        "material": "bamboo fabric",
+        "material_family": "natural",
+        "texture": "NA",
+        "finish": "NA",
+        "weight": "NA",
+        "season": "NA",
+        "keywords": [
+          "environmentally friendly",
+          "moisture wicking"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "Bamboo fabric is also pitched as environmentally friendly compared to cotton. Bamboo requires little water, the plants grow back after getting cut down, and they don’t need pesticides."
+    },
+    {
+      "observation_id": "99876bc7-4d71-4ed3-834a-2c33504e9884",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "scrubs",
+        "category": "uniform",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "NA",
+        "keywords": [
+          "medical apparel",
+          "DTC"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "While it may seem like a niche business from the outside, medical apparel is a huge industry that underwent a fundamental shift from B2B to B2C"
+    },
+    {
+      "observation_id": "1457a467-e59c-413c-93b0-1f0b76fb7d3e",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "FIGS",
+        "rank": "NA",
+        "movement": "NA",
+        "ranking_list": "NA",
+        "associated_products": [
+          "scrubs"
+        ],
+        "associated_aesthetic": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "opening it up to the direct-to-consumer model for companies like FIGS and Mandala Scrubs, DTC scrubs brand."
+    },
+    {
+      "observation_id": "c76c92e3-c2ec-4fd5-acb9-9656712fa03a",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Mandala Scrubs",
+        "rank": "NA",
+        "movement": "NA",
+        "ranking_list": "NA",
+        "associated_products": [
+          "scrubs"
+        ],
+        "associated_aesthetic": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "opening it up to the direct-to-consumer model for companies like FIGS and Mandala Scrubs, DTC scrubs brand."
+    },
+    {
+      "observation_id": "f5a5f53e-ba9c-4c9d-bb34-0b64a4745872",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "secondhand fashion",
+        "mood": "sustainable",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "Millennials and Gen Z",
+        "season": "NA",
+        "keywords": [
+          "individuality",
+          "conscious consumption"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "As a backlash to the growing fast-fashion movement, many consumers—especially Millennials and Gen Z—are turning to second-hand clothing."
+    },
+    {
+      "observation_id": "3101362d-0331-4af5-9b25-c06e80cc0220",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-30T06:19:01.080215+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "halter tops",
+        "category": "top",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Halter tops reclaim the spotlight"
+    },
+    {
+      "observation_id": "f3745394-465c-49f3-afa6-060ca5d9b23d",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "pattern",
+      "extracted_attributes": {
+        "pattern": "Big Dots",
+        "pattern_family": "NA",
+        "scale": "large",
+        "colorway": "NA",
+        "placement": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Big Dots in Europe is forecasted to grow by +55% in visibility during SS26 compared to the year before, and in the US by +33%."
+    },
+    {
+      "observation_id": "6b5598a8-1fc0-4b4b-9583-04e5b86006f0",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Big Dot Dresses",
+        "category": "dress",
+        "key_features": [
+          "big dots",
+          "midi length"
+        ],
+        "gender": "women",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Among women in Europe, Big Dot Dresses (+80%) and Dotted skirts (+47%) are trending in especially midi lengths"
+    },
+    {
+      "observation_id": "9f55e7da-9f40-42db-8e15-5b1daef87685",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Dotted skirts",
+        "category": "bottom",
+        "key_features": [
+          "dots",
+          "midi length"
+        ],
+        "gender": "women",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Among women in Europe, Big Dot Dresses (+80%) and Dotted skirts (+47%) are trending in especially midi lengths"
+    },
+    {
+      "observation_id": "e627b0ac-ac1f-4279-a0fb-c2fb18b663e9",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "material",
+      "extracted_attributes": {
+        "material": "Brut Denim",
+        "material_family": "natural",
+        "texture": "stiff",
+        "finish": "NA",
+        "weight": "NA",
+        "season": "SS26",
+        "keywords": [
+          "raw",
+          "unwashed",
+          "untreated"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "Unwashed and untreated, this denim is all about authenticity, with no distressing, no fades, just pure, stiff cotton in its most natural state."
+    },
+    {
+      "observation_id": "ee1a54f3-9ad3-4aa8-8af4-88757f678bf9",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Fitted denim jacket",
+        "category": "outerwear",
+        "key_features": [
+          "fitted",
+          "denim"
+        ],
+        "gender": "women",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Among women, a more fitted denim jacket (+5%, EU) is gaining popularity, especially in combination with a paired of Flared Bootcut Jeans"
+    },
+    {
+      "observation_id": "02aae090-b904-4b38-8f18-a9120ec0bd28",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Flared Bootcut Jeans",
+        "category": "bottom",
+        "key_features": [
+          "flared",
+          "bootcut"
+        ],
+        "gender": "women",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "a more fitted denim jacket (+5%, EU) is gaining popularity, especially in combination with a paired of Flared Bootcut Jeans (+2%, EU)."
+    },
+    {
+      "observation_id": "d72a7e21-d411-4e35-a1ce-3bd8af7d7fc4",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Lace skirts",
+        "category": "bottom",
+        "key_features": [
+          "lace",
+          "maxi"
+        ],
+        "gender": "women",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Forecasts indicate strong growth for lace skirts, with an expected +20% increase in the EU and +13% in the US, reflecting rising consumer interest in romantic and feminine silhouettes."
+    },
+    {
+      "observation_id": "86003d01-2e1b-47ec-aaac-69237912c7b8",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "material",
+      "extracted_attributes": {
+        "material": "Fine Lace",
+        "material_family": "natural",
+        "texture": "NA",
+        "finish": "NA",
+        "weight": "NA",
+        "season": "SS26",
+        "keywords": [
+          "delicate"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "For the EU during SS26, plain skirts in delicate fabrics such as Fine Lace (+10%) and See-Through (+5%) will emerge."
+    },
+    {
+      "observation_id": "66831ec5-ab96-409c-9a8e-f79699d513e0",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "material",
+      "extracted_attributes": {
+        "material": "See-Through",
+        "material_family": "NA",
+        "texture": "sheer",
+        "finish": "NA",
+        "weight": "NA",
+        "season": "SS26",
+        "keywords": [
+          "delicate"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "For the EU during SS26, plain skirts in delicate fabrics such as Fine Lace (+10%) and See-Through (+5%) will emerge."
+    },
+    {
+      "observation_id": "ad6f73b3-2e1a-47fb-8e37-26de950ecce9",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "pattern",
+      "extracted_attributes": {
+        "pattern": "Gingham",
+        "pattern_family": "check",
+        "scale": "NA",
+        "colorway": "NA",
+        "placement": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "For both men and women in Europe, gingham is forecasted to grow by +17% and +31%, respectively."
+    },
+    {
+      "observation_id": "9c5857ef-b4b4-4527-8d9d-c4aa4d28ca2d",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "pattern",
+      "extracted_attributes": {
+        "pattern": "Prince of Wales",
+        "pattern_family": "check",
+        "scale": "NA",
+        "colorway": "NA",
+        "placement": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Other variations of checks, such as Prince of Wales (+19%) and Windowpane checks (+13%) for women in the EU), are also forecasted to grow."
+    },
+    {
+      "observation_id": "31286a5b-4196-4251-b5b7-2a1e72eb5185",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "pattern",
+      "extracted_attributes": {
+        "pattern": "Windowpane checks",
+        "pattern_family": "check",
+        "scale": "NA",
+        "colorway": "NA",
+        "placement": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Other variations of checks, such as Prince of Wales (+19%) and Windowpane checks (+13%) for women in the EU), are also forecasted to grow."
+    },
+    {
+      "observation_id": "6b80cfcb-5fd7-4565-b1c5-3b132484eda2",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Moccasins",
+        "category": "footwear",
+        "key_features": "NA",
+        "gender": "men",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Among men, it is estimated to grow +7% in the EU and is considered a consistent riser."
+    },
+    {
+      "observation_id": "e74e6500-07f8-4ff4-b1cc-c33c05200471",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "pattern",
+      "extracted_attributes": {
+        "pattern": "Zebra stripes",
+        "pattern_family": "animal",
+        "scale": "NA",
+        "colorway": "NA",
+        "placement": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Zebra stripes are poised to steal the spotlight, with projected growth of +21% in the EU and +17% in the US for Spring 2026"
+    },
+    {
+      "observation_id": "070c39b5-cdad-44ae-9595-33d95622dc83",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "pattern",
+      "extracted_attributes": {
+        "pattern": "Snake prints",
+        "pattern_family": "animal",
+        "scale": "NA",
+        "colorway": "NA",
+        "placement": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "both snake and crocodile prints are projected to achieve +22% growth in the EU over this period."
+    },
+    {
+      "observation_id": "b569fc9c-af92-4360-84b8-778dfd87fb20",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "pattern",
+      "extracted_attributes": {
+        "pattern": "Crocodile prints",
+        "pattern_family": "animal",
+        "scale": "NA",
+        "colorway": "NA",
+        "placement": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "both snake and crocodile prints are projected to achieve +22% growth in the EU over this period."
+    },
+    {
+      "observation_id": "a7c4c234-227e-4973-b2c1-1cb818b184a2",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "pattern",
+      "extracted_attributes": {
+        "pattern": "Cow Print",
+        "pattern_family": "animal",
+        "scale": "NA",
+        "colorway": "NA",
+        "placement": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Finally, among women in the US, Cow Print will be an IT-print with a forecasted growth of +87% during SS26."
+    },
+    {
+      "observation_id": "4b5379d3-0d4c-467a-ac62-c390577c1a3d",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Vanilla Yellow",
+        "hex": "NA",
+        "color_family": "yellow",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Both Vanilla Yellow and Popcorn Yellow are estimated to increase +22% among women in Europe during Spring 2026"
+    },
+    {
+      "observation_id": "77d541f1-8d8c-44b5-becc-36397c18268d",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Popcorn Yellow",
+        "hex": "NA",
+        "color_family": "yellow",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Both Vanilla Yellow and Popcorn Yellow are estimated to increase +22% among women in Europe during Spring 2026, and +8% and +10%, respectively, during the same period in the US."
+    },
+    {
+      "observation_id": "bc5e5245-2b78-48ff-b2d3-35c72b393864",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Vanilla Yellow Dresses",
+        "category": "dress",
+        "key_features": [
+          "vanilla yellow"
+        ],
+        "gender": "women",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Vanilla Yellow Dresses are estimated to grow by +23% during SS26, with a big magnitude among women in Europe."
+    },
+    {
+      "observation_id": "aa34a514-0210-48dc-9c8e-2dadf59b15e9",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Tiered ruffle skirts",
+        "category": "bottom",
+        "key_features": [
+          "tiered",
+          "ruffles"
+        ],
+        "gender": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "tiered ruffle skirts are making a strong comeback among trendy consumers, with forecasted growth of +20% in the EU and +17% in the US."
+    },
+    {
+      "observation_id": "7efafe86-5c9d-4604-a33f-e9add1aaa0e4",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "silhouette",
+      "extracted_attributes": {
+        "silhouette": "Bubble-Hem",
+        "fit": "NA",
+        "volume": "playful volume",
+        "length": "NA",
+        "applies_to": "skirts, sarouel pants",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "draped skirts and bounce bubble hems are also gaining popularity, appearing not only on skirts but increasingly on sarouel pants as well."
+    },
+    {
+      "observation_id": "9df9b98a-741f-4fe0-9780-bbbb9bcc3624",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "silhouette",
+      "extracted_attributes": {
+        "silhouette": "Low-waist",
+        "fit": "low-waist",
+        "volume": "NA",
+        "length": "NA",
+        "applies_to": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "low-waist styles, with a projected increase of +17%."
+    },
+    {
+      "observation_id": "1fc5655a-686e-4a34-a447-beb4080a9189",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Plum",
+        "hex": "NA",
+        "color_family": "purple",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "For womenswear in SS26, shades like Plum and Muted Berry (a grey-purple tone) are projected to grow by +10% in the EU."
+    },
+    {
+      "observation_id": "d677cbf5-35e3-44e8-9324-5bc366a0920d",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Muted Berry",
+        "hex": "NA",
+        "color_family": "purple",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "For womenswear in SS26, shades like Plum and Muted Berry (a grey-purple tone) are projected to grow by +10% in the EU."
+    },
+    {
+      "observation_id": "078c0cb5-39a1-4320-98d6-9c48bf56f9a4",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Mauve",
+        "hex": "NA",
+        "color_family": "purple",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "In the US it is expected to see visibility gains from other hues, with Mauve (+2%) and Sangria Purple (+5%) leading the forecast."
+    },
+    {
+      "observation_id": "dc4f67d5-9f56-40e7-90de-e8e34c73f1aa",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Sangria Purple",
+        "hex": "NA",
+        "color_family": "purple",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "In the US it is expected to see visibility gains from other hues, with Mauve (+2%) and Sangria Purple (+5%) leading the forecast."
+    },
+    {
+      "observation_id": "c6ad5e6e-8611-46c7-a385-95d9ef2abdff",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Eggplant",
+        "hex": "NA",
+        "color_family": "purple",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "For menswear, purple also signals growing relevance. Hues such as Eggplant and Vivid Purple are forecasted to grow by +7% and +5% respectively in the EU."
+    },
+    {
+      "observation_id": "36886f52-e956-42e5-bc52-e1a6e72347e7",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Vivid Purple",
+        "hex": "NA",
+        "color_family": "purple",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "For menswear, purple also signals growing relevance. Hues such as Eggplant and Vivid Purple are forecasted to grow by +7% and +5% respectively in the EU."
+    },
+    {
+      "observation_id": "6ba7b3d1-3162-4110-8ef1-49b872981d0f",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "The New Raw",
+        "mood": "minimalist",
+        "associated_items": [
+          "smart outdoor pieces",
+          "timeless basics",
+          "versatile outerwear"
+        ],
+        "associated_colors": [
+          "green",
+          "yellow"
+        ],
+        "consumer_segment": "urban",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Practicality meets city-ready style in a wardrobe designed for modern urban living. Minimalism is elevated through smart outdoor pieces, timeless basics, and a palette of green and yellow hues."
+    },
+    {
+      "observation_id": "9f30d3c0-58f5-45cd-a477-7f37a04649e7",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Pea Green",
+        "hex": "NA",
+        "color_family": "green",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Pea Green (+13%), Pickled Green (+6%) and Dusty Green (+4%) are some of the green hues we can expect to see more of in 2026"
+    },
+    {
+      "observation_id": "59b0c74a-c62e-41d7-9322-aad22b6783ab",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Pickled Green",
+        "hex": "NA",
+        "color_family": "green",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Pea Green (+13%), Pickled Green (+6%) and Dusty Green (+4%) are some of the green hues we can expect to see more of in 2026"
+    },
+    {
+      "observation_id": "0f829cde-c167-4d18-8170-e0c4e13748f8",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "color",
+      "extracted_attributes": {
+        "color": "Dusty Green",
+        "hex": "NA",
+        "color_family": "green",
+        "finish": "NA",
+        "palette_role": "NA",
+        "pairings": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Pea Green (+13%), Pickled Green (+6%) and Dusty Green (+4%) are some of the green hues we can expect to see more of in 2026"
+    },
+    {
+      "observation_id": "1fc7037a-769c-4ef6-a3dd-fa3fc159824f",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Thong Sandals",
+        "category": "footwear",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Adaptable and stylish pieces as Thong Sandals with a growth of +49% during SS26 among women in the EU and +11% in the US."
+    },
+    {
+      "observation_id": "8234a3c4-915d-4e19-b5d9-2321dbe897bb",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "material",
+      "extracted_attributes": {
+        "material": "Opaque Rainproof",
+        "material_family": "synthetic",
+        "texture": "opaque",
+        "finish": "NA",
+        "weight": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "In spring, the fabric Opaque Rainproof is growing by +12% in the EU and +6% in the US among women."
+    },
+    {
+      "observation_id": "51d60f11-2c96-4f69-8c0f-b228791dc14f",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Palazzo pants",
+        "category": "bottom",
+        "key_features": [
+          "balloon-draped hem"
+        ],
+        "gender": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "styled either with a skirt or palazzo pants (+37%) in a balloon-draped hem for a chic city look"
+    },
+    {
+      "observation_id": "5c555a32-1f45-4cbe-8a0d-5714cb550d82",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Mini cycling shorts",
+        "category": "bottom",
+        "key_features": [
+          "cycling"
+        ],
+        "gender": "women",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "or paired with mini cycling shorts (+16%), tube socks, and yellow-green sneakers (+20%) for a cool, sporty vibe."
+    },
+    {
+      "observation_id": "f2cb716d-8c22-4bb9-9290-c70932829ab7",
+      "source": "heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-30T06:27:57.376743+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Yellow-green sneakers",
+        "category": "footwear",
+        "key_features": [
+          "yellow-green"
+        ],
+        "gender": "NA",
+        "season": "SS26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "or paired with mini cycling shorts (+16%), tube socks, and yellow-green sneakers (+20%) for a cool, sporty vibe."
+    },
+    {
+      "observation_id": "58284458-a47c-4c30-81f9-bb338c26d1c1",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "CHANEL",
+        "rank": "01",
+        "movement": "new",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "01 CHANEL new"
+    },
+    {
+      "observation_id": "0ef3ee83-9183-47ff-88c3-8be21d65c060",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "SAINT LAURENT",
+        "rank": "02",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "02 SAINT LAURENT -1"
+    },
+    {
+      "observation_id": "fee23e0e-40af-4689-a869-5790539330b6",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "DIOR",
+        "rank": "03",
+        "movement": "new",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "03 DIOR new"
+    },
+    {
+      "observation_id": "34d46312-34d9-420e-ab21-307422d1baf0",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "MIU MIU",
+        "rank": "04",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "04 MIU MIU -2"
+    },
+    {
+      "observation_id": "e345b54f-6312-4b73-92ba-50f4ce74ba3f",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "GUCCI",
+        "rank": "05",
+        "movement": "up",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "05 GUCCI +4"
+    },
+    {
+      "observation_id": "68066df3-039a-4160-a02c-1728acb1f60b",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "RALPH LAUREN",
+        "rank": "06",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "06 RALPH LAUREN -2"
+    },
+    {
+      "observation_id": "bf1dea00-080b-492a-97be-941e40388490",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "PRADA",
+        "rank": "07",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "07 PRADA -2"
+    },
+    {
+      "observation_id": "a2a0c84c-895a-48b3-af49-870c59b0caf2",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "COACH",
+        "rank": "08",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "08 COACH -2"
+    },
+    {
+      "observation_id": "bd5d207f-eb63-4bf3-bbc6-6f237fde6085",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "BURBERRY",
+        "rank": "09",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "09 BURBERRY -1"
+    },
+    {
+      "observation_id": "7ee2fb66-9c54-45ab-b9f9-44020f34f130",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "COS",
+        "rank": "10",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "10 COS -7"
+    },
+    {
+      "observation_id": "5a63b104-dbf5-44cc-86cd-e6b2e11d7da4",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "THE ROW",
+        "rank": "11",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "11 THE ROW -4"
+    },
+    {
+      "observation_id": "5a6fdfbf-7b39-421e-9ba6-427666b7a8bb",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "VERSACE",
+        "rank": "12",
+        "movement": "up",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "12 VERSACE +2"
+    },
+    {
+      "observation_id": "78edb1d9-ae4f-4b43-b42f-5aaf1e700e8d",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "MONCLER",
+        "rank": "13",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "13 MONCLER -3"
+    },
+    {
+      "observation_id": "5fb1f1c8-d91a-472a-9fd4-747252684926",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "CHLOÉ",
+        "rank": "14",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "14 CHLOÉ -3"
+    },
+    {
+      "observation_id": "7f70704e-aa35-4002-83ba-e06edaa23e49",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "BOTTEGA VENETA",
+        "rank": "15",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "15 BOTTEGA VENETA -3"
+    },
+    {
+      "observation_id": "cf5fce05-22a4-4588-adb1-75c6c9f04f40",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "LOEWE",
+        "rank": "16",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "16 LOEWE -3"
+    },
+    {
+      "observation_id": "80ae725a-94d5-4e1e-aea7-352894e4c425",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "STONE ISLAND",
+        "rank": "17",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "17 STONE ISLAND -2"
+    },
+    {
+      "observation_id": "7194c57c-87ca-4b9c-99e8-66c8957af087",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "MASSIMO DUTTI",
+        "rank": "18",
+        "movement": "down",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "18 MASSIMO DUTTI -2"
+    },
+    {
+      "observation_id": "fe866a76-55ed-4fa6-9f54-6c749c9c73a1",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "FENDI",
+        "rank": "19",
+        "movement": "new",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "19 FENDI re-entry"
+    },
+    {
+      "observation_id": "37bee0d6-e3f2-43e4-bb3e-97f64b6e3ad5",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "CELINE",
+        "rank": "20",
+        "movement": "new",
+        "ranking_list": "The Lyst Index Hottest Brands",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "20 CELINE new"
+    },
+    {
+      "observation_id": "2ee183a4-71ed-434e-a000-d30e04b65c60",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Chanel",
+        "rank": "NA",
+        "movement": "NA",
+        "ranking_list": "NA",
+        "associated_products": [
+          "shoes",
+          "classic flap bag"
+        ],
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Within this framework, Chanel is this quarter’s hottest brand."
+    },
+    {
+      "observation_id": "088cc8a7-8094-436c-953c-ab1976d073fb",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Chanel shoes",
+        "category": "footwear",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "viral",
+          "sold out"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "a pair of shoes that went viral on social media and are now consistently sold out"
+    },
+    {
+      "observation_id": "35505444-279c-4f6d-94b5-880a1ffc7313",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "classic flap bag",
+        "category": "accessory",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Chanel"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "a reinvention of the classic flap bag"
+    },
+    {
+      "observation_id": "14321e42-333d-4cc6-b6f8-2e95d4c9efe9",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Coach",
+        "rank": "NA",
+        "movement": "NA",
+        "ranking_list": "NA",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "332% The year on year increase in demand for Coach in 2024"
+    },
+    {
+      "observation_id": "e2a8dc03-78fe-492b-b4b7-2e98b9742de9",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Dior",
+        "rank": "3",
+        "movement": "NA",
+        "ranking_list": "The Lyst Index",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Dior, joining the Lyst Index at number three, is operating with similar clarity."
+    },
+    {
+      "observation_id": "89a08fb9-dd10-4503-9a59-d1ba396294fa",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Gucci",
+        "rank": "NA",
+        "movement": "up",
+        "ranking_list": "NA",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Gucci is this quarter’s biggest mover, climbing four places. Momentum is building around Demna’s debut, with a 12% day-on-day lift following the show"
+    },
+    {
+      "observation_id": "999d45af-f400-4d97-a245-5570f93921a7",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Zara",
+        "rank": "NA",
+        "movement": "NA",
+        "ranking_list": "NA",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Zara emerges as a breakout not by competing on heritage, but by aligning itself with credible creative voices."
+    },
+    {
+      "observation_id": "7af456ba-499a-4942-995c-0f0938e883c1",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "’90s minimalism",
+        "mood": "minimalist",
+        "associated_items": [
+          "black turtleneck knits",
+          "straight-leg denim"
+        ],
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Carolyn Bessette-Kennedy"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "The clearest signal this quarter is the resurgence of ’90s minimalism, catalysed by Love Story and renewed interest in Carolyn Bessette-Kennedy’s style."
+    },
+    {
+      "observation_id": "ae2e5f8b-6374-465a-a24f-0a05f3ae8369",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "black turtleneck knits",
+        "category": "top",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "searches for black turtleneck knits rose 217% after the first episode"
+    },
+    {
+      "observation_id": "efc2db71-c69b-4e76-a530-1220c66a220b",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "straight-leg denim",
+        "category": "bottom",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "straight-leg denim demand has climbed steadily on Lyst"
+    },
+    {
+      "observation_id": "5328d0da-1e82-42b6-aa5f-aa5d57801d96",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Calvin Klein",
+        "rank": "NA",
+        "movement": "NA",
+        "ranking_list": "NA",
+        "associated_products": "NA",
+        "associated_aesthetic": "’90s minimalism",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Calvin Klein saw a 43% week-on-week lift following the finale"
+    },
+    {
+      "observation_id": "b01e43f8-2578-4c2c-b624-04a542f2c927",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Kangol flat cap",
+        "category": "accessory",
+        "key_features": "NA",
+        "gender": "men",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "most notably the Kangol flat cap, which ranked tenth among the hottest products and saw a 14% uplift among menswear shoppers"
+    },
+    {
+      "observation_id": "741c4576-6e66-4625-9a06-4492dcaeba70",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Vivienne Westwood’s satin dress",
+        "category": "dress",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "demand for Vivienne Westwood’s satin dress surged by 890%, driven by the release and press tour wardrobe of Wuthering Heights."
+    },
+    {
+      "observation_id": "7e441f65-b0e1-42f0-ab31-46ac3f4fbcbb",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Charvet",
+        "rank": "NA",
+        "movement": "NA",
+        "ranking_list": "NA",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "128% increase in demand for charvet on Lyst this quarter"
+    },
+    {
+      "observation_id": "f51141c4-4b48-4559-b766-1fc93e70c18f",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Stand-Collar Jacket",
+        "category": "outerwear",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Saint Laurent",
+          "Hottest Products"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "01 SAINT LAURENT Stand-Collar Jacket"
+    },
+    {
+      "observation_id": "d340f304-d6bf-495a-b5a8-a5209a2a6e16",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Pumps",
+        "category": "footwear",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Chanel",
+          "Hottest Products"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "02 CHANEL Pumps"
+    },
+    {
+      "observation_id": "b7f41b18-2514-4799-8548-0c214cf165d0",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Chinese Style Track Top",
+        "category": "top",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Adidas",
+          "Hottest Products"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "03 ADIDAS Chinese Style Track Top"
+    },
+    {
+      "observation_id": "6ec454a2-14bb-4b96-af1d-425848500b6d",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Ballet Lace-up Shoes",
+        "category": "footwear",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Celine",
+          "Hottest Products"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "04 CELINE Ballet Lace-up Shoes"
+    },
+    {
+      "observation_id": "6f5d731b-bbee-477e-a74c-caf3bad813f7",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Long Fond Gown",
+        "category": "dress",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Vivienne Westwood",
+          "Hottest Products"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "05 Vivienne Westwood Long Fond Gown"
+    },
+    {
+      "observation_id": "5489cd5a-60bc-4f5b-a17a-40c7192b7416",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Maxi Flap Bag",
+        "category": "accessory",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Chanel",
+          "Hottest Products"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "06 CHANEL Maxi Flap Bag"
+    },
+    {
+      "observation_id": "7bbfa93e-b28b-45a4-a228-3891883a2646",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Butterfly Sunglasses",
+        "category": "accessory",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Saint Laurent",
+          "Hottest Products"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "07 SAINT LAURENT Butterfly Sunglasses"
+    },
+    {
+      "observation_id": "203f13fd-4173-4198-a1f8-40f192627bb3",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Tote Bag",
+        "category": "accessory",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Trader Joe's",
+          "Hottest Products"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "08 TRADER JOE’S Tote Bag"
+    },
+    {
+      "observation_id": "0542268f-e1fd-4175-b8a2-48d3f1d90ef1",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "1PM Sneakers",
+        "category": "footwear",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Village pm",
+          "Hottest Products"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "09 Village pm 1PM Sneakers"
+    },
+    {
+      "observation_id": "62f39b1f-af8d-4cb2-9241-c503d9e5a211",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Tropic 504 Flat Cap",
+        "category": "accessory",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Kangol",
+          "Hottest Products"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "10 KANGOL Tropic 504 Flat Cap"
+    },
+    {
+      "observation_id": "3e70c872-fd8e-4402-92e3-33c099ba76c2",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "brand",
+      "extracted_attributes": {
+        "brand": "Vivienne Westwood",
+        "rank": "NA",
+        "movement": "NA",
+        "ranking_list": "NA",
+        "associated_products": "NA",
+        "associated_aesthetic": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "+88% QuARTER-ON-QUARTER RISE IN DEMAND for VIVIENNE WESTWOOD Corset dress"
+    },
+    {
+      "observation_id": "6e366b49-58d6-42e2-a481-eb8c532cb079",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Corset dress",
+        "category": "dress",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "Vivienne Westwood"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "+88% QuARTER-ON-QUARTER RISE IN DEMAND for VIVIENNE WESTWOOD Corset dress"
+    },
+    {
+      "observation_id": "cb3d62da-3be0-4952-b948-b8ef7f8ddd53",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Crew Neck Cardigan",
+        "category": "top",
+        "key_features": "NA",
+        "gender": "men",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Inside the Ascent of the Crew Neck Cardigan"
+    },
+    {
+      "observation_id": "77c7d492-5634-4af9-a8f3-7cd2b926fbe1",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "bag charm",
+        "category": "accessory",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": [
+          "craze"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "Breaking down thebag charm craze"
+    },
+    {
+      "observation_id": "77ab4857-2627-4b2e-8948-421ddffe78ad",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "item_style",
+      "extracted_attributes": {
+        "product_type": "Windbreakers",
+        "category": "outerwear",
+        "key_features": "NA",
+        "gender": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Windbreakers are having a moment."
+    },
+    {
+      "observation_id": "f30a8860-b135-49aa-ba48-54c2e4c8ef14",
+      "source": "lyst_index",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-30T06:21:39.203533+00:00",
+      "raw_type": "editorial",
+      "group": "aesthetic",
+      "extracted_attributes": {
+        "style": "90s",
+        "mood": "NA",
+        "associated_items": "NA",
+        "associated_colors": "NA",
+        "consumer_segment": "NA",
+        "season": "Q1-26",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Everyone’s Dressing Like It’s the ‘90s Again"
+    }
+  ]
+}
