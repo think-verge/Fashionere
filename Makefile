@@ -1,7 +1,7 @@
 SHELL := /bin/bash
 AGENT_VENV := agent/.venv
 
-.PHONY: agent agent-install backend ui api-refresh
+.PHONY: agent agent-install trend-agent backend ui api-refresh
 
 agent-install:
 	test -d $(AGENT_VENV) || python3 -m venv $(AGENT_VENV)
@@ -9,6 +9,9 @@ agent-install:
 
 agent: agent-install
 	cd agent && . .venv/bin/activate && uvicorn app.main:app --reload --port 8001
+
+trend-agent: agent-install
+	cd agent/Trend_agent/Centior/Query_Mrakdown && ../../../../$(AGENT_VENV)/bin/uvicorn api:app --reload --port 8081
 
 backend:
 	cd backend && npm run dev

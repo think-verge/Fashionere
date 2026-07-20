@@ -13,3 +13,4 @@ openai
 fal-client
 replicate
 google-genai
+langchain-google-genai

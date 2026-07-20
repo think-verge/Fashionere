@@ -12,5 +12,6 @@ export const env = {
   JWT_SECRET: process.env.JWT_SECRET ?? "change-me-in-production",
   CLIENT_ORIGIN: process.env.CLIENT_ORIGIN ?? "http://localhost:5173",
   AGENT_URL: process.env.AGENT_URL ?? "http://localhost:8001",
+  TREND_AGENT_URL: process.env.TREND_AGENT_URL ?? "http://localhost:8081",
   NODE_ENV: process.env.NODE_ENV ?? "development",
 };
