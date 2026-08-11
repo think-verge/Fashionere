@@ -1,0 +1,10 @@
+# AI engine
+google-genai>=1.73.0
+pillow>=11.0.0
+python-dotenv>=1.0.0
+
+# Web app (FastAPI backend)
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.9   # required by FastAPI for multipart/form-data uploads
+# pydantic is pulled in by fastapi (v2)

@@ -1,18 +1,27 @@
-# secrets
+# secrets (NEVER commit)
 .env
+**/.env
+*.env
+
+# large data / images
+Fashion_Images_Data/
+**/Fashion_Images_Data/
+
+# generated output
+output/
+output_canonical/
+**/output/
+**/output_canonical/
+swatch_export/
+my_export/
 
 # python
-.venv/
 __pycache__/
-*.pyc
-
-# generated images (dev)
-agent/static/*.svg
-agent/static/*.png
-agent/static/*.jpg
-agent/static/*.webp
-
-# pytest
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
 .pytest_cache/
 
 # node
@@ -20,8 +29,16 @@ node_modules/
 dist/
 *.local
 
+# generated images (dev)
+agent/static/*.svg
+agent/static/*.png
+agent/static/*.jpg
+agent/static/*.webp
+
 # editor
 .DS_Store
+**/.DS_Store
+*.swp
 .idea/
 .vscode/
 

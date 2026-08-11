@@ -1,0 +1,25 @@
+{
+  "version": "v1",
+  "dimension": "theme",
+  "terms": [
+    { "id": "military-utilitarian", "label": "Military / utilitarian", "aliases": ["military", "utilitarian", "uniform", "workwear"] },
+    { "id": "romantic", "label": "Romantic", "aliases": ["romance"] },
+    { "id": "minimalist", "label": "Minimalist", "aliases": ["minimal", "pared-back"] },
+    { "id": "maximalist", "label": "Maximalist", "aliases": ["maximal", "excess"] },
+    { "id": "sporty-athleisure", "label": "Sporty / athleisure", "aliases": ["sporty", "athletic"] },
+    { "id": "lingerie-dishabille", "label": "Lingerie / dishabille", "aliases": ["lingerie", "underwear-as-outerwear", "boudoir"] },
+    { "id": "bourgeois", "label": "Bourgeois / ladylike", "aliases": ["ladylike", "prim"] },
+    { "id": "folk-peasant", "label": "Folk / peasant", "aliases": ["folk", "peasant", "prairie"] },
+    { "id": "grunge", "label": "Grunge / undone", "aliases": ["undone", "distressed"] },
+    { "id": "futuristic", "label": "Futuristic", "aliases": ["techno", "sci-fi"] },
+    { "id": "nautical", "label": "Nautical", "aliases": ["marine"] },
+    { "id": "bohemian", "label": "Bohemian", "aliases": ["boho"] },
+    { "id": "gothic", "label": "Gothic / dark", "aliases": ["goth", "dark"] },
+    { "id": "preppy", "label": "Preppy / collegiate", "aliases": ["collegiate", "ivy"] },
+    { "id": "avant-garde", "label": "Avant-garde / conceptual", "aliases": ["conceptual", "deconstructed"] },
+    { "id": "retro", "label": "Retro / vintage", "aliases": ["vintage", "nostalgic"] },
+    { "id": "glam", "label": "Glamour / evening", "aliases": ["glamour", "eveningwear"] },
+    { "id": "americana", "label": "Americana / western", "aliases": ["western", "cowboy"] },
+    { "id": "surreal", "label": "Surreal / playful", "aliases": ["surrealist", "playful", "witty"] }
+  ]
+}
