@@ -1,0 +1,11 @@
+{
+  "version": "v1",
+  "brands": [
+    {
+      "slug": "prada",
+      "canonical_name": "Prada",
+      "aliases": ["prada"],
+      "source_names": { "vogue": "prada" }
+    }
+  ]
+}

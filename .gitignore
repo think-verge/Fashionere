@@ -1,0 +1,35 @@
+# --- secrets (NEVER commit) ---
+.env
+**/.env
+*.env
+
+# --- large data / images (kept out of git) ---
+Fashion_Images_Data/
+**/Fashion_Images_Data/
+
+# --- generated output ---
+output/
+output_canonical/
+**/output/
+**/output_canonical/
+swatch_export/
+my_export/
+
+# --- python ---
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# --- node ---
+node_modules/
+
+# --- os / editor ---
+.DS_Store
+**/.DS_Store
+*.swp
+.idea/
+.vscode/

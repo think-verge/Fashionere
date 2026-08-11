@@ -1,0 +1,27 @@
+{
+  "version": "v1",
+  "dimension": "detail",
+  "terms": [
+    { "id": "top-handle-bag", "label": "Top-handle bag", "type": "bag" },
+    { "id": "shoulder-bag", "label": "Shoulder bag", "type": "bag" },
+    { "id": "tote-bag", "label": "Tote", "type": "bag" },
+    { "id": "clutch", "label": "Clutch", "type": "bag" },
+    { "id": "belt", "label": "Belt", "type": "accessory" },
+    { "id": "opera-gloves", "label": "Opera gloves", "type": "gloves" },
+    { "id": "gloves", "label": "Gloves", "type": "gloves" },
+    { "id": "drop-earrings", "label": "Drop earrings", "type": "jewelry" },
+    { "id": "statement-jewelry", "label": "Statement jewelry", "type": "jewelry" },
+    { "id": "brooch", "label": "Brooch", "type": "jewelry" },
+    { "id": "sunglasses", "label": "Sunglasses", "type": "eyewear" },
+    { "id": "scarf", "label": "Scarf", "type": "accessory" },
+    { "id": "headscarf", "label": "Headscarf", "type": "headwear" },
+    { "id": "hat", "label": "Hat", "type": "headwear" },
+    { "id": "tights-hosiery", "label": "Tights / hosiery", "type": "hosiery" },
+    { "id": "embellished-socks", "label": "Embellished socks", "type": "hosiery" },
+    { "id": "loafers", "label": "Loafers", "type": "shoe" },
+    { "id": "heeled-mules", "label": "Heeled mules", "type": "shoe" },
+    { "id": "boots", "label": "Boots", "type": "shoe" },
+    { "id": "ballet-flats", "label": "Ballet flats", "type": "shoe" },
+    { "id": "platform-shoes", "label": "Platform shoes", "type": "shoe" }
+  ]
+}
