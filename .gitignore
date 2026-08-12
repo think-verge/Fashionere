@@ -1,10 +1,19 @@
-# secrets
+# --- secrets (NEVER commit) ---
 .env
+**/.env
+*.env
 
-# python
-.venv/
-__pycache__/
-*.pyc
+# --- large data / images (kept out of git) ---
+Fashion_Images_Data/
+**/Fashion_Images_Data/
+
+# --- generated output ---
+output/
+output_canonical/
+**/output/
+**/output_canonical/
+swatch_export/
+my_export/
 
 # generated images (dev)
 agent/static/*.svg
@@ -12,17 +21,23 @@ agent/static/*.png
 agent/static/*.jpg
 agent/static/*.webp
 
-# pytest
+# --- python ---
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
 .pytest_cache/
 
-# node
+# --- node ---
 node_modules/
 dist/
 *.local
 
-# editor
+# --- os / editor ---
 .DS_Store
+**/.DS_Store
+*.swp
 .idea/
 .vscode/
-
-# generated OpenAPI (committed intentionally; exclude runtime artifacts only)

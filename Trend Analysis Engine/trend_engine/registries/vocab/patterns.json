@@ -1,0 +1,19 @@
+{
+  "version": "v1",
+  "dimension": "pattern",
+  "terms": [
+    { "id": "solid", "label": "Solid / plain", "aliases": ["monochrome", "plain"] },
+    { "id": "floral", "label": "Floral" },
+    { "id": "stripe", "label": "Stripe" },
+    { "id": "check-plaid", "label": "Check / plaid", "aliases": ["plaid", "tartan", "gingham", "glen-check", "glen-plaid"] },
+    { "id": "houndstooth", "label": "Houndstooth" },
+    { "id": "polka-dot", "label": "Polka dot", "aliases": ["dot", "spot"] },
+    { "id": "animal-print", "label": "Animal print", "aliases": ["leopard", "zebra", "python", "snakeskin"] },
+    { "id": "geometric", "label": "Geometric" },
+    { "id": "painterly-abstract", "label": "Painterly / abstract", "aliases": ["abstract", "painterly"] },
+    { "id": "embroidery", "label": "Embroidery" },
+    { "id": "applique", "label": "Appliqué" },
+    { "id": "lace-work", "label": "Lace / openwork" },
+    { "id": "colorblock", "label": "Colour-block", "aliases": ["color-block"] }
+  ]
+}
