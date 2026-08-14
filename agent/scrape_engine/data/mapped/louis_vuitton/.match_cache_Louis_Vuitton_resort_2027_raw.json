@@ -1,0 +1,1348 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5e0af4910652d6013a1/master/pass/00001c-louis-vuitton-resort-2027-detail-credit-brand.jpg|1-7": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The model wears identical two-tone blue jeans, the distinctive silver wavy textured shoes, and carries the same brown leather suitcase.",
+  "alternates": [
+   {
+    "look_number": 6,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5e0229c52eebfda8842/master/pass/00001a-louis-vuitton-resort-2027-detail-credit-brand.jpg|1-6": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 1, including the navy bucket hat, red textured knit cardigan, zebra print belt, and denim jacket tied around the waist. The model, hair, and makeup are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5e0a9e7d816e9d6b3af/master/pass/00001b-louis-vuitton-resort-2027-detail-credit-brand.jpg|1-7": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 1, including the red chunky knit top, denim jacket tied around the waist, two-tone denim pants, silver metallic shoes, brown leather suitcase with Keith Haring-style art, and zebra print belt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5e36cdc1fa3a92fee30/master/pass/00002b-louis-vuitton-resort-2027-detail-credit-brand.jpg|1-8": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a unique brown leather box bag with Keith Haring-style drawings and a light blue ruffled denim skirt with a dark blue trim. Look 2 features the exact same bag and the exact same ruffled denim skirt, along with a brown leather jacket consistent with the cuff visible in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5e6074c03b83af87fd4/master/pass/00003b-louis-vuitton-resort-2027-detail-credit-brand.jpg|1-9": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The handbag with the distinctive black and yellow pattern featuring stylized human figures is identical in both the detail and Look 3. The light brown embroidered shorts/skirt and brown belt also perfectly match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5e46a72fffcf88c0f7b/master/pass/00002c-louis-vuitton-resort-2027-detail-credit-brand.jpg|1-8": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the dark textured boots, bright yellow socks, and the dark ankle strap with a buckle seen in Look 2.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5e77b0518f3455db344/master/pass/00003c-louis-vuitton-resort-2027-detail-credit-brand.jpg|1-9": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the bronze ribbed boots, grey ribbed socks, and brown buckled ankle strap worn by the model in Look 3, including the skin tone.",
+  "alternates": [
+   {
+    "look_number": 5,
+    "confidence": 0.9
+   },
+   {
+    "look_number": 9,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5e93fb55e68f7ab6219/master/pass/00004a-louis-vuitton-resort-2027-detail-credit-brand.jpg|1-9": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a brown leather jacket with white and grey mountain-like panels, a matching brown leather bottom, a distinctive silver buckle, and a khaki bucket hat. Look 4 features the exact same brown leather jumpsuit with identical white and grey panels, the same silver buckle, and the same khaki bucket hat.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5e6c77116ca61ad0fc0/master/pass/00003a-louis-vuitton-resort-2027-detail-credit-brand.jpg|1-8": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The model, black bucket hat, brown leather sleeveless jacket with red lining and 'VUITTON' label, beige lace shorts, and black and yellow patterned bag are all identical to Look 3.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5e9d8c9660abf10cf1b/master/pass/00004b-louis-vuitton-resort-2027-detail-credit-brand.jpg|1-10": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model holding a unique light grey column-shaped bag with gold hardware and a light blue handle. The model is wearing a brown leather garment with a light blue cuff trim and a red tag. Look 4 features the exact same bag and the model is wearing an identical brown leather jumpsuit with the matching cuff details.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5e3229c52eebfda8849/master/pass/00002a-louis-vuitton-resort-2027-detail-credit-brand.jpg|1-7": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 2, featuring the same white bucket hat, brown leather jacket with cut-out details, zebra print belt, blue ruffled denim shorts, and brown box bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5ea63c621d929cc9110/master/pass/00004c-louis-vuitton-resort-2027-detail-credit-brand.jpg|1-10": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The red ribbed lace-up boots, white socks, dark ankle strap, and the grey textured and dark brown leather fabrics of the jumpsuit perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5ec63c621d929cc9117/master/pass/00005b-louis-vuitton-resort-2027-detail-credit-brand.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a Louis Vuitton monogram trunk bag and shiny pink pants, both of which are worn by the model in Look 5. The pink sleeve also matches the shirt in Look 5.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5ed44ea06f5ae75b35a/master/pass/00005c-louis-vuitton-resort-2027-detail-credit-brand.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the pink metallic pants, the distinctive red, gold, and black textured boots, and the monogrammed bag seen in Look 5.",
+  "alternates": [
+   {
+    "look_number": 9,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5eb7b0518f3455db34b/master/pass/00005a-louis-vuitton-resort-2027-detail-credit-brand.jpg|1-10": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 5, including the olive green bucket hat, the olive green utility vest with red lining, the light pink shirt, the metallic pink pants, and the small tan bag. The model, hair, and makeup are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5efb673a67bace131eb/master/pass/00006a-louis-vuitton-resort-2027-detail-credit-brand.jpg|1-11": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 6, showing the same striped shirt with ruffled shoulders, beige fabric bow at the waist, patterned pants, and brown structured bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5f26a6e5698a261450c/master/pass/00007a-louis-vuitton-resort-2027-detail-credit-brand.jpg|1-13": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 7, featuring the identical cream and dark blue jacket with green stitching, cream trousers, ornate belt buckle, and red boxing glove bag. The model, hair, and makeup are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5f04025f1b56068abab/master/pass/00006c-louis-vuitton-resort-2027-detail-credit-brand.jpg|1-12": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image shows pants with a beige stripe and a reddish-purple gradient, along with distinctive silver/purple shoes with a concentric wavy pattern. Look 6 features the exact same pants and shoes.",
+  "alternates": [
+   {
+    "look_number": 11,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 1,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 8,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5f3096f3eda9f5a025d/master/pass/00007b-louis-vuitton-resort-2027-detail-credit-brand.jpg|1-13": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 7, including the model, the cream and dark blue jacket with green stitching, the cream trousers, the red boxing gloves with yellow cuffs, the red strap, and the ornate silver belt buckle.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5f07e738497b3226a63/master/pass/00006b-louis-vuitton-resort-2027-detail-credit-brand.jpg|1-12": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a unique brown column-shaped bag, a white striped shirt with black cuff buttons, and trousers with a distinctive red/orange/purple abstract pattern on one leg and plain beige on the other. Look 6 features all these exact items.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5f54025f1b56068abb2/master/pass/00008a-louis-vuitton-resort-2027-detail-credit-brand.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The model, light blue bucket hat, unique brown/grey/silver sweater with scalloped leather details, and the distinctive Louis Vuitton monogrammed boxing glove bag are all identical to Look 8.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5f4f298952478284c17/master/pass/00007c-louis-vuitton-resort-2027-detail-credit-brand.jpg|1-13": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the light beige trousers and metallic rose gold wavy shoes of Look 7 in color, texture, and fit.",
+  "alternates": [
+   {
+    "look_number": 9,
+    "confidence": 0.9
+   },
+   {
+    "look_number": 3,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5f8e2dabdc1dddd44a9/master/pass/00008c-louis-vuitton-resort-2027-detail-credit-brand.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the silver textured lace-up ankle boots, black socks, and the thin brown ankle strap with a small detail worn by Look 8.",
+  "alternates": [
+   {
+    "look_number": 11,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 3,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5f87e738497b3226a6a/master/pass/00008b-louis-vuitton-resort-2027-detail-credit-brand.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 8, including the light blue bucket hat, the unique brown, grey, and white patterned top with knit trim, the Louis Vuitton monogram boxing glove bags, and the multi-panel skirt with red and white sections.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5fa7e738497b3226a71/master/pass/00009b-louis-vuitton-resort-2027-detail-credit-brand.jpg|3-15": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the hat, the striped shirt, and the distinctive textured brown leather double-breasted coat worn by the model in Look 9.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5f9fce9ac5558d50a40/master/pass/00009-louis-vuitton-resort-2027-detail-credit-brand.jpg|3-15": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 9, including the khaki bucket hat with beige ribbon, the textured brown double-breasted coat, the cream pants, and the unique headlight-shaped bag with yellow and red accents.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5fcaf4910652d6013a8/master/pass/00010c-louis-vuitton-resort-2027-detail-credit-brand.jpg|4-16": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The detail shows a dark metallic ridged boot with laces, bright yellow socks, and a thin dark ankle strap with a buckle. Look 10 features the identical boot, yellow socks, and ankle strap.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5fe3fb55e68f7ab6220/master/pass/00011a-louis-vuitton-resort-2027-detail-credit-brand.jpg|4-16": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The model's hat, hair, brown textured bomber jacket, white and blue wrap top, and blue leather pants are identical to those in Look 11.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5fe72316ab5d965231f/master/pass/00011b-louis-vuitton-resort-2027-detail-credit-brand.jpg|4-16": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the blue leather pants, the brown pebbled leather jacket, and the unique clear/natural leather handbag with internal objects from Look 11.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef600fce9ac5558d50a47/master/pass/00012a-louis-vuitton-resort-2027-detail-credit-brand.jpg|5-17": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The model, hat, blue textured jacket with pockets and ribbed waistband, and matching blue textured shorts are identical to Look 12. The visible part of the bag also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef600d50918e3acfad5e0/master/pass/00011c-louis-vuitton-resort-2027-detail-credit-brand.jpg|5-17": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the blue leather pants, the silver wavy textured shoes, and the white bag with a gold clasp seen in Look 11.",
+  "alternates": [
+   {
+    "look_number": 8,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 14,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef603d8c9660abf10cf28/master/pass/00012c-louis-vuitton-resort-2027-detail-credit-brand.jpg|6-18": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The boots in the detail image perfectly match the dark blue/black ribbed boots with ruffled details worn by the model in Look 12.",
+  "alternates": [
+   {
+    "look_number": 14,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef5fb9234dfa688bd5fd6/master/pass/00009c-louis-vuitton-resort-2027-detail-credit-brand.jpg|3-15": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail image shows cream pants with an ankle zipper and a small charm, paired with red and gold ribbed high-top lace-up shoes. Look 9 features the exact same cream pants with the ankle zipper and charm, and the identical red and gold ribbed high-top lace-up shoes.",
+  "alternates": [
+   {
+    "look_number": 5,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 7,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6033fb55e68f7ab6227/master/pass/00013a-louis-vuitton-resort-2027-detail-credit-brand.jpg|6-18": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 13, including the brown fedora hat, the white and black leather jacket with silver patterned insert and studded details, the animal print belt with a triangular buckle, the white skirt with black scalloped trim, and the white handbag with a colorful scarf.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6019234dfa688bd5fdd/master/pass/00012b-louis-vuitton-resort-2027-detail-credit-brand.jpg|6-18": {
+  "look_number": 12,
+  "confidence": 0.85,
+  "evidence": "The blue shiny jacket, shorts, and ruffled boots in the detail image are an exact match for Look 12. The bag, however, is different from the one shown in Look 12.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6065c06d5e0986b95b5/master/pass/00013c-louis-vuitton-resort-2027-detail-credit-brand.jpg|7-19": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The metallic silver ribbed ankle boots, black socks, and thin brown ankle bracelet with a metallic detail are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6077b0518f3455db352/master/pass/00014a-louis-vuitton-resort-2027-detail-credit-brand.jpg|7-19": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The model, hat, black bomber jacket with ribbed details and unique zipper pull, white waistband, and olive belt are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef609d8c9660abf10cf2f/master/pass/00014b-louis-vuitton-resort-2027-detail-credit-brand.jpg|8-20": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 14, featuring the identical Louis Vuitton monogram hobo bag, silver ruffled boots, yellow satin shorts, and black ribbed cuff.",
+  "alternates": [
+   {
+    "look_number": 8,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 11,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef60972316ab5d965232c/master/pass/00015a-louis-vuitton-resort-2027-detail-credit-brand.jpg|8-20": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The hat, jacket (color, fabric, and quilted details), and white waistband are identical to the detail image. The model is also the same.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef60ba3632c1efedfd5a4/master/pass/00015c-louis-vuitton-resort-2027-detail-credit-brand.jpg|9-21": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The boots in the detail image are identical to the dark, ruffled, ribbed boots worn by the model in Look 12.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef605fce9ac5558d50a4e/master/pass/00013b-louis-vuitton-resort-2027-detail-credit-brand.jpg|7-19": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a white jacket with black trim and cut-outs, a light blue undergarment, black socks, and a highly distinctive white Louis Vuitton bag with numerous patches and charms. Look 13 features all of these elements identically: the same white and black jacket and skirt with matching cut-outs and visible light blue undergarment, the exact same embellished Louis Vuitton bag, and black socks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef608229c52eebfda8856/master/pass/00014c-louis-vuitton-resort-2027-detail-credit-brand.jpg|8-20": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail image shows silver metallic ribbed and ruffled boots, a bare leg, and a glimpse of a brown monogrammed bag. Look 14 features identical boots, a bare leg, and the matching brown monogrammed bag.",
+  "alternates": [
+   {
+    "look_number": 11,
+    "confidence": 0.9
+   },
+   {
+    "look_number": 8,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef60cd50918e3acfad5e7/master/pass/00016b-louis-vuitton-resort-2027-detail-credit-brand.jpg|9-21": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a multi-colored metallic ribbed shoe (green toe, gold side, fuchsia mid-foot, dark grey heel) with green laces, paired with an olive green sock featuring a brown ankle strap with a buckle and a subtle pattern. Look 16 features the exact same shoe and sock combination.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef60e63c621d929cc911e/master/pass/00016c-louis-vuitton-resort-2027-detail-credit-brand.jpg|10-22": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image shows dark olive green socks and distinctive multi-colored boots (green, fuchsia, grey, gold) with laces and a chunky heel. Look 16 features the exact same socks and boots.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef60c074c03b83af87fe1/master/pass/00016a-louis-vuitton-resort-2027-detail-credit-brand.jpg|9-21": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The model, green bucket hat, black leather jacket with tan lapel insert and hanging tan leather straps with buckles are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef60fd50918e3acfad5ee/master/pass/00017b-louis-vuitton-resort-2027-detail-credit-brand.jpg|10-22": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The detail shows a red garment and a unique silver rhinestone 'NEW YORK' apple takeout box bag. Look 17 features the exact same red garment and the identical 'NEW YORK' apple bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6115c06d5e0986b95bc/master/pass/00018a-louis-vuitton-resort-2027-detail-credit-brand.jpg|11-23": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The black jacket with white geometric embroidery, high collar, and red bottom garment are identical. The model is also the same.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef60fb673a67bace131fe/master/pass/00017a-louis-vuitton-resort-2027-detail-credit-brand.jpg|10-22": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The model wears the identical khaki fedora with a dark ribbon and a vibrant red blazer with wide, shiny satin lapels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef61209f3b49eab1e5381/master/pass/00018b-louis-vuitton-resort-2027-detail-credit-brand.jpg|12-24": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black vinyl record-shaped bag with a Keith Haring label, a red skirt, and a black top with a white patterned side. Look 18 features the exact same bag, a red skirt, and a black top with a matching white pattern on the side and a black sleeve with a strap detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef611096f3eda9f5a0270/master/pass/00017c-louis-vuitton-resort-2027-detail-credit-brand.jpg|11-23": {
+  "look_number": 17,
+  "confidence": 0.9,
+  "evidence": "The black ribbed lace-up ankle boot with a block heel is identical. The sock is white, matching the base color. While the detail shows a brown ankle strap and Look 17 shows a black stripe on the sock, the overall shoe and hosiery match is the strongest among candidates.",
+  "alternates": [
+   {
+    "look_number": 13,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 15,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 19,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef61463c621d929cc9125/master/pass/00018d-louis-vuitton-resort-2027-detail-credit-brand.jpg|12-24": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The white sneaker with the black ribbed upper and red side detail is an exact match. The red skirt with black and white accents also matches the garment visible in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef61772316ab5d9652339/master/pass/00019a-louis-vuitton-resort-2027-detail-credit-brand.jpg|13-25": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 19, featuring the identical black, grey, red, and pink quilted and textured jacket/dress with the same voluminous black skirt element and model.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6156cdc1fa3a92fee4f/master/pass/00019-louis-vuitton-resort-2027-detail-credit-brand.jpg|13-25": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 19, showing the same textured black, grey, and red jacket/dress with a pink trim, voluminous black skirt, and black boots. The model's hair and skin tone are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6179234dfa688bd5fe4/master/pass/00019b-louis-vuitton-resort-2027-detail-credit-brand.jpg|13-25": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 19, including the unique black and grey textured jacket with a red diagonal panel and burgundy cuff, the black sheer flowing train, and the distinctive black ribbed shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef61bfce9ac5558d50a55/master/pass/00020a-louis-vuitton-resort-2027-detail-credit-brand.jpg|14-26": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The model's hair color and style (blonde with blue tips) and the quilted, multi-colored top with structured shoulders and small buttons are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6147e738497b3226a78/master/pass/00018c-louis-vuitton-resort-2027-detail-credit-brand.jpg|12-24": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The white ribbed high-top sneakers with a black tongue and the LV logo are an exact match. The red Keith Haring heart graphic is visible on the side of the shoe in the detail, and the overall shoe design, including the black sole detail, perfectly matches the shoes worn in Look 18.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef61aaf4910652d6013bb/master/pass/00020b-louis-vuitton-resort-2027-detail-credit-brand.jpg|14-26": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the quilted brown, orange, and green top, the voluminous sheer yellow skirt, and the white chunky sneakers of Look 20.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef61d7e738497b3226a86/master/pass/00021a-louis-vuitton-resort-2027-detail-credit-brand.jpg|15-27": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The model, black patterned shirt, and orange jumper dress are identical in both the detail and Look 21.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef61e6a72fffcf88c0f88/master/pass/00022a-louis-vuitton-resort-2027-detail-credit-brand.jpg|16-28": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The blazer dress, its specific coral color, wide lapel design, white buttons, and the unique teal triangular bag are identical in both the detail image and Look 22. The model's hair and makeup also match perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef61bc2528c953386faad/master/pass/00020c-louis-vuitton-resort-2027-detail-credit-brand.jpg|15-27": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The white ribbed high-top sneaker and the sheer, layered yellow/gold skirt fabric in the detail image are an exact match for Look 20.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6187e738497b3226a7f/master/pass/00019c-louis-vuitton-resort-2027-detail-credit-brand.jpg|14-26": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinct wavy textured pattern on the shoe in the detail image does not match any of the candidate looks. While Look 19 features an identical black layered, ruffled skirt, its shoes have a ribbed texture, not the concentric wavy pattern seen in the detail.",
+  "alternates": [
+   {
+    "look_number": 19,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef61e9234dfa688bd5feb/master/pass/00021c-louis-vuitton-resort-2027-detail-credit-brand.jpg|15-27": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a teal ribbed boot with laces, white socks, and a thin brown ankle strap. Look 21 features the identical teal ribbed boots, white socks, and the same brown ankle strap.",
+  "alternates": [
+   {
+    "look_number": 26,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6204025f1b56068abc5/master/pass/00022c-louis-vuitton-resort-2027-detail-credit-brand.jpg|16-28": {
+  "look_number": null,
+  "confidence": 1.0,
+  "evidence": "No candidate look features the exact white ribbed high-top shoe with a red Keith Haring heart graphic.",
+  "alternates": [
+   {
+    "look_number": 27,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 28,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 26,
+    "confidence": 0.5
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6206a6e5698a261451f/master/pass/00022b-louis-vuitton-resort-2027-detail-credit-brand.jpg|16-28": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a green cartoon-style handbag with black outlines and a coral/red textured garment. Look 22 features the exact same green cartoon handbag and a matching coral/red textured jacket/dress.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6215c06d5e0986b95c3/master/pass/00023a-louis-vuitton-resort-2027-detail-credit-brand.jpg|17-29": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The model, royal blue blazer with deep V-neck, wide structured lapels, textured fabric, and distinctive white geometric button are identical to Look 23.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef623d50918e3acfad5f5/master/pass/00023b-louis-vuitton-resort-2027-detail-credit-brand.jpg|17-29": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a royal blue jacket and an asymmetrical royal blue skirt, paired with a distinctive orange handbag with black trim. Look 23 features the identical royal blue jacket and asymmetrical skirt, and the exact same orange handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef624c2528c953386faba/master/pass/00024a-louis-vuitton-resort-2027-detail-credit-brand.jpg|18-30": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The model, hair color, black choker, and the orange deep V-neck garment with cream trim are identical in both the detail and look 24.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef627a3632c1efedfd5b1/master/pass/00024b-louis-vuitton-resort-2027-detail-credit-brand.jpg|18-30": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The orange dress, unique patterned high-top sneakers, and the specific olive green hobo bag are all identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef627d50918e3acfad5fc/master/pass/00024c-louis-vuitton-resort-2027-detail-credit-brand.jpg|19-31": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The distinctive patterned high-top sneakers and the orange dress are an exact match to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef62b09f3b49eab1e5388/master/pass/00025b-louis-vuitton-resort-2027-detail-credit-brand.jpg|19-31": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The unique white, yellow, and black patterned high-top sneakers and the dark navy dress with purple lining are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef62b7a34af218003d266/master/pass/00026c-louis-vuitton-resort-2027-detail-credit-brand.jpg|20-32": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail image shows distinctive bright pink, textured, high-heeled ankle boots with laces, paired with white ribbed socks. Look 26 features the exact same boots and socks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6285c06d5e0986b95ca/master/pass/00025a-louis-vuitton-resort-2027-detail-credit-brand.jpg|19-31": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The model's hair, the black wavy choker, the dark navy square-neck dress with purple trim, and the small silver pin on the neckline are all identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 24,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef62bb673a67bace1320b/master/pass/00027a-louis-vuitton-resort-2027-detail-credit-brand.jpg|20-32": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The model, top, and skirt are identical in both the detail image and Look 27. The white sleeveless top with ruffled shoulders and the specific Keith Haring graphic print, along with the bright pink ruffled mini skirt, are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef62e074c03b83af87fe8/master/pass/00027b-louis-vuitton-resort-2027-detail-credit-brand.jpg|20-32": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 27's pink ruffled skirt, black handbag with gold hardware and padlock, white socks with ankle straps, and dark textured shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef623c77116ca61ad0fc7/master/pass/00023c-louis-vuitton-resort-2027-detail-credit-brand.jpg|18-30": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The white ribbed shoe with the black ribbed cuff and red Keith Haring heart-man graphic, along with the blue skirt, perfectly matches the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef62ed50918e3acfad603/master/pass/00028a-louis-vuitton-resort-2027-detail-credit-brand.jpg|21-33": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The model, white sleeveless top with \"NEW YORK\" Keith Haring apple print, light blue jeans, and distinctive Keith Haring-style dancing figure earring are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef62f6a72fffcf88c0f8f/master/pass/00027c-louis-vuitton-resort-2027-detail-credit-brand.jpg|21-33": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the metallic bronze ribbed boots, white socks, and brown braided ankle bracelet worn in Look 28.",
+  "alternates": [
+   {
+    "look_number": 29,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef631a9e7d816e9d6b3c2/master/pass/00029a-louis-vuitton-resort-2027-detail-credit-brand.jpg|22-34": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The model, cropped black blazer with satin lapels, and black belt with silver LV buckle are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef634fce9ac5558d50a62/master/pass/00029b-louis-vuitton-resort-2027-detail-credit-brand.jpg|22-34": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a white rectangular handbag with a Keith Haring 'RAIN DANCE' graphic, white socks with a brown stripe, and brown/gold shoes with a buckle. Look 29 features the identical handbag, socks, and shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6306cdc1fa3a92fee62/master/pass/00028b-louis-vuitton-resort-2027-detail-credit-brand.jpg|21-33": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The light blue pants, the metallic red can-shaped bag, and the dark brown wristband are identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6356cdc1fa3a92fee69/master/pass/00030a-louis-vuitton-resort-2027-detail-credit-brand.jpg|23-35": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The jacket, its distinctive graphic print (silver, red, yellow, black), the black belt detail, and the unique silver earring are identical in both the detail image and Look 30. The model's hair and facial features also match perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef632715567ce5fa08793/master/pass/00028c-louis-vuitton-resort-2027-detail-credit-brand.jpg|22-34": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image shows light blue pants with a zipper detail at the ankle and metallic bronze ribbed boots with laces. Look 28 features the exact same light blue pants with zipper detail and the identical metallic bronze ribbed boots.",
+  "alternates": [
+   {
+    "look_number": 31,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef636c77116ca61ad0fe0/master/pass/00030c-louis-vuitton-resort-2027-detail-credit-brand.jpg|24-36": {
+  "look_number": 30,
+  "confidence": 0.95,
+  "evidence": "The detail image shows bright red ribbed ankle boots with laces and white ribbed socks. Look 30 features identical bright red ribbed ankle boots with laces and white ribbed socks.",
+  "alternates": [
+   {
+    "look_number": 26,
+    "confidence": 0.75
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6343fb55e68f7ab623a/master/pass/00029c-louis-vuitton-resort-2027-detail-credit-brand.jpg|23-35": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The detail shows a multi-metallic ribbed boot (bronze, red, gold) with white socks and a brown ankle strap. Look 29 features the exact same boot with identical colors, texture, white socks, and ankle strap.",
+  "alternates": [
+   {
+    "look_number": 28,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef637e57785338759dac0/master/pass/00030d-louis-vuitton-resort-2027-detail-credit-brand.jpg|24-36": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The red ribbed ankle boots, white socks, ankle strap with star charm, and brown embroidered skirt fabric are all identical to Look 30.",
+  "alternates": [
+   {
+    "look_number": 26,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef63ae57785338759dac7/master/pass/00031c-louis-vuitton-resort-2027-detail-credit-brand.jpg|25-37": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a gold metallic textured ankle boot with dark brown ribbed socks and a metallic ankle strap. Look 28 features the identical boots and socks.",
+  "alternates": [
+   {
+    "look_number": 31,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef638715567ce5fa0879a/master/pass/00031a-louis-vuitton-resort-2027-detail-credit-brand.jpg|24-36": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The model's curly brown hair, bright yellow rectangular sunglasses, and the blue and yellow houndstooth top with white embellishments are identical in both the detail and look 31.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef639c77116ca61ad0fed/master/pass/00031b-louis-vuitton-resort-2027-detail-credit-brand.jpg|25-37": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the blue and yellow houndstooth top and shorts, the dark brown Louis Vuitton handbag with gold hardware, the metallic bronze lace-up boots, and the dark brown socks with a light stripe and emblem from Look 31.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef63cf298952478284c3c/master/pass/00032b-louis-vuitton-resort-2027-detail-credit-brand.jpg|26-38": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the pink and brown patterned top, black leather shorts with gold hardware, dark blue socks, black ribbed boots, and tan handbag with blue strap shown in Look 32.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef63b63c621d929cc913e/master/pass/00032a-louis-vuitton-resort-2027-detail-credit-brand.jpg|25-37": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the pink and brown houndstooth sweater, black leather shorts, brown Louis Vuitton bag with blue stripe, black chunky boots, and dark socks worn in Look 32.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef63e7e738497b3226a9f/master/pass/00032c-louis-vuitton-resort-2027-detail-credit-brand.jpg|26-38": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 32, showing identical black leather shorts, dark blue socks with a brown ankle strap, black textured lace-up shoes, and a brown leather bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef63e6cdc1fa3a92fee70/master/pass/00033a-louis-vuitton-resort-2027-detail-credit-brand.jpg|26-38": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The model, hair color, choker, orange knit top with pink sheer ruffles, ribbed orange pants, and pink shoes are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef641096f3eda9f5a027d/master/pass/00033c-louis-vuitton-resort-2027-detail-credit-brand.jpg|27-39": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail shows ribbed coral-pink pants and matching shoes with a block heel, which perfectly match the pants and shoes worn in Look 33.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef63f7e738497b3226aa6/master/pass/00033b-louis-vuitton-resort-2027-detail-credit-brand.jpg|27-39": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The model's blue hair, light blue sculptural choker, and layered orange and pink sheer tops are an exact match to Look 33.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef64309f3b49eab1e5395/master/pass/00035a-louis-vuitton-resort-2027-detail-credit-brand.jpg|28-40": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact same sleeveless top/dress with a light grey textured outer layer and a dark blue inner layer featuring an abstract pattern of interlocking loops in light blue, pink, and yellow/gold, as seen on the model in Look 35. The model's hair and makeup also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef642b673a67bace13212/master/pass/00034c-louis-vuitton-resort-2027-detail-credit-brand.jpg|28-40": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The dark blue ribbed pants and the unique light blue, orange, and white striped shoes with a chunky heel are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef644f298952478284c43/master/pass/00035b-louis-vuitton-resort-2027-detail-credit-brand.jpg|29-41": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The metallic grey box bag with multiple clasps, the white textured sleeveless top, and the dark blue garment with the colorful open-weave pattern are all identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef645b673a67bace13219/master/pass/00035c-louis-vuitton-resort-2027-detail-credit-brand.jpg|29-41": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The silver/grey ribbed bootie with the distinctive layered, wavy pattern on the instep is an exact match to the shoe in the detail image.",
+  "alternates": [
+   {
+    "look_number": 36,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 41,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef641c2528c953386fac7/master/pass/00034a-louis-vuitton-resort-2027-detail-credit-brand.jpg|27-39": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 34, including the model, the unique mint green lace-like jacket, the blue ribbed top, the dark blue striped pants, the sheer blue sleeve inserts, and the matching choker.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef647af4910652d6013c2/master/pass/00036b-louis-vuitton-resort-2027-detail-credit-brand.jpg|30-42": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the white fuzzy knit top, the bright green skirt with a black and silver/blue metallic chain overlay, the black structured box bag, and the silver textured high-top sneakers worn in Look 36.",
+  "alternates": [
+   {
+    "look_number": 35,
+    "confidence": 0.75
+   },
+   {
+    "look_number": 41,
+    "confidence": 0.35
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6466a6e5698a261452c/master/pass/00036a-louis-vuitton-resort-2027-detail-credit-brand.jpg|29-41": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The model's pink hair, the white textured cowl-neck top, the bright green patterned dress/skirt with the cage overlay, the dark blue/purple structured bag, and the silver metallic shoes are all identical to Look 36.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6495c06d5e0986b95dd/master/pass/00037a-louis-vuitton-resort-2027-detail-credit-brand.jpg|30-42": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 37, featuring the identical lime green open-knit jacket and skirt, pink sheer top, black choker, and sheer fabric details on the sleeves. The model, hair, and makeup are also identical.",
+  "alternates": [
+   {
+    "look_number": 34,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef64c9234dfa688bd6005/master/pass/00038a-louis-vuitton-resort-2027-detail-credit-brand.jpg|31-43": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The model, sheer multi-colored top with black trim and green embellishments, and the distinctive lime green sculptural choker are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef648096f3eda9f5a0284/master/pass/00036c-louis-vuitton-resort-2027-detail-credit-brand.jpg|30-42": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The silver metallic boot with the distinctive wavy, concentric pattern in the detail image is identical to the boots worn in Look 35.",
+  "alternates": [
+   {
+    "look_number": 36,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 41,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef64c7e738497b3226aad/master/pass/00038c-louis-vuitton-resort-2027-detail-credit-brand.jpg|32-44": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The detail image shows green metallic ribbed ankle boots, black socks, and a lime green pleated skirt. Look 38 features the exact same boots, socks, and skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef64d44ea06f5ae75b37f/master/pass/00039a-louis-vuitton-resort-2027-detail-credit-brand.jpg|32-44": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The model's hair, black choker, and the entire top including the rust, coral, and yellow color blocking, ribbed sheer fabric, black trim, and ruffled neckline are identical to Look 39.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef64ac2528c953386fad4/master/pass/00037c-louis-vuitton-resort-2027-detail-credit-brand.jpg|31-43": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The ankle boots in look 37 perfectly match the detail image in color (pink and green gradient), ribbed texture, neon green laces, and overall design.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef64f09f3b49eab1e539c/master/pass/00039c-louis-vuitton-resort-2027-detail-credit-brand.jpg|33-45": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The metallic bronze/gold ankle boots with the distinctive wavy texture and the sheer yellow/orange flowing garment are an exact match to Look 39.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef64f9234dfa688bd6012/master/pass/00039b-louis-vuitton-resort-2027-detail-credit-brand.jpg|32-44": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The dress, Louis Vuitton monogram bag, and metallic pleated boots in the detail image are identical to those worn by the model in Look 39.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef64a9234dfa688bd5ffe/master/pass/00037b-louis-vuitton-resort-2027-detail-credit-brand.jpg|31-43": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the distinctive lime green looped/coiled fabric, the sheer light green and pink fabric elements hanging from the sleeves/hem, and the overall garment style of Look 37.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef65244ea06f5ae75b386/master/pass/00040b-louis-vuitton-resort-2027-detail-credit-brand.jpg|33-45": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the top, dark blue pants, and the distinctive white, red, and gold box bag with a chain strap worn by the model in Look 40.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef652715567ce5fa087a1/master/pass/00041-louis-vuitton-resort-2027-detail-credit-brand.jpg|34-46": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The dress, choker, and shoes in Look 41 are identical to those in the detail image, including the unique purple swirling pattern, off-the-shoulder sleeves, and silver metallic footwear. The model's hair and features also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef652229c52eebfda885d/master/pass/00040c-louis-vuitton-resort-2027-detail-credit-brand.jpg|34-46": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The dark blue trousers and the distinctive silver shoes with a wavy textured pattern are identical in both the detail and Look 40.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef650d50918e3acfad610/master/pass/00040a-louis-vuitton-resort-2027-detail-credit-brand.jpg|33-45": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The model's hat, pleated floral top, hair color and style, and makeup are an exact match to Look 40.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef65563c621d929cc9145/master/pass/00041a-louis-vuitton-resort-2027-detail-credit-brand.jpg|35-47": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The model, her hair, the spiderweb tattoo on her shoulder, the purple looped-texture off-the-shoulder dress, and the matching purple looped choker are all identical to Look 41.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef65544ea06f5ae75b38d/master/pass/00041c-louis-vuitton-resort-2027-detail-credit-brand.jpg|35-47": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The silver textured shoes with a swirling pattern and the purple textured dress visible above the ankle perfectly match Look 41.",
+  "alternates": [
+   {
+    "look_number": 35,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 36,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 47,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef65572316ab5d9652364/master/pass/00042a-louis-vuitton-resort-2027-detail-credit-brand.jpg|35-47": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, and the unique pink halter-neck dress with its distinctive intertwined texture and matching choker are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef658c2528c953386fae1/master/pass/00042c-louis-vuitton-resort-2027-detail-credit-brand.jpg|36-48": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The metallic pink booties with the distinctive swirling textured pattern in the detail image are an exact match for the shoes worn in Look 42.",
+  "alternates": [
+   {
+    "look_number": 39,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef65809f3b49eab1e53a3/master/pass/00043a-louis-vuitton-resort-2027-detail-credit-brand.jpg|36-48": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The floral high-neck blouse with voluminous sleeves, the fuchsia patterned skirt, hair, makeup, and earrings are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef65baf4910652d6013cf/master/pass/00044b-louis-vuitton-resort-2027-detail-credit-brand.jpg|37-49": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 44, including the pleated floral top, metallic lavender skirt, black and gold sneakers, blue earrings, and model's hair and makeup.",
+  "alternates": [
+   {
+    "look_number": 40,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 43,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef65b074c03b83af87fef/master/pass/00044a-louis-vuitton-resort-2027-detail-credit-brand.jpg|37-49": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The pleated, voluminous top with the specific floral and blue/grey pattern, the model's face, hair, and blue drop earrings are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6587e738497b3226ab4/master/pass/00043-louis-vuitton-resort-2027-detail-credit-brand.jpg|36-48": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The model, dress with floral print top and pink patterned skirt, and the unique striped shoes are identical in both the detail and Look 43.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef65e7a34af218003d27a/master/pass/00044c-louis-vuitton-resort-2027-detail-credit-brand.jpg|38-50": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The multi-colored, textured ankle boot with black laces and block heel is an exact match.",
+  "alternates": [
+   {
+    "look_number": 44,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef65f63c621d929cc914c/master/pass/00045a-louis-vuitton-resort-2027-detail-credit-brand.jpg|38-50": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the top, choker, and model from Look 45, including the specific magenta and teal floral pattern, silver embellishments, and ornate necklace.",
+  "alternates": [
+   {
+    "look_number": 46,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef65ba3632c1efedfd5b8/master/pass/00043c-louis-vuitton-resort-2027-detail-credit-brand.jpg|37-49": {
+  "look_number": null,
+  "confidence": 0.9,
+  "evidence": "The detail shows a metallic purple/silver bootie with a dark toe, a gold/bronze oval accent, and black laces. No candidate look features this exact color combination.",
+  "alternates": [
+   {
+    "look_number": 43,
+    "confidence": 0.4
+   },
+   {
+    "look_number": 39,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef661d8c9660abf10cf42/master/pass/00045c-louis-vuitton-resort-2027-detail-credit-brand.jpg|39-51": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The shoes in Look 45 are identical to the detail image, featuring the same white/cream base, magenta/purple ornate pattern, and textured design.",
+  "alternates": [
+   {
+    "look_number": 46,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef66009f3b49eab1e53aa/master/pass/00045b-louis-vuitton-resort-2027-detail-credit-brand.jpg|39-51": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 45, including the embroidered top, the teal skirt with pink trim, the orange rectangular handbag with gold clasp, and the patterned sneakers.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef65ee2dabdc1dddd44c2/master/pass/00044d-louis-vuitton-resort-2027-detail-credit-brand.jpg|38-50": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The shoes in the detail image, featuring a light purple ribbed body, dark toe, metallic gold layered element, and black laces, are an exact match for the shoes worn in Look 43.",
+  "alternates": [
+   {
+    "look_number": 44,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6616a72fffcf88c0f9c/master/pass/00046a-louis-vuitton-resort-2027-detail-credit-brand.jpg|39-51": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The model's teal embroidered top, magenta floral draped skirt, pink rectangular sunglasses, and beaded choker are identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef663af4910652d6013dc/master/pass/00046c-louis-vuitton-resort-2027-detail-credit-brand.jpg|40-52": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The shoes in the detail image are an exact match to the shoes worn by the model in Look 46, featuring the same magenta color, white floral pattern, and bootie style.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef668b673a67bace13220/master/pass/00047c-louis-vuitton-resort-2027-detail-credit-brand.jpg|41-53": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The silver, high-top shoe with the distinctive wavy quilted pattern in the detail image is an exact match for the shoes worn in Look 41.",
+  "alternates": [
+   {
+    "look_number": 47,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef66344ea06f5ae75b394/master/pass/00046b-louis-vuitton-resort-2027-detail-credit-brand.jpg|40-52": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The model's shoes are identical in color, pattern, and style to the detail image.",
+  "alternates": [
+   {
+    "look_number": 45,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6646a6e5698a261453f/master/pass/00047a-louis-vuitton-resort-2027-detail-credit-brand.jpg|41-53": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The model, dark navy embroidered top with pink, yellow, blue, and white patterns, and the silver choker with a green stone are identical in both the detail and look 47.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef667a9e7d816e9d6b3db/master/pass/00048a-louis-vuitton-resort-2027-detail-credit-brand.jpg|42-54": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The model, hat, navy collared jacket with textured fabric and chest pocket, dark crew-neck top, and ornate brooch all perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef66a7a34af218003d286/master/pass/00048b-louis-vuitton-resort-2027-detail-credit-brand.jpg|42-54": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The detail shows a model wearing a navy oversized jacket with navy shorts and carrying a distinctive round Louis Vuitton monogram bag with gold hardware. Look 48 features the exact same jacket, shorts, and bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6664025f1b56068abe4/master/pass/00047b-louis-vuitton-resort-2027-detail-credit-brand.jpg|41-53": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black garment with pink scalloped trim, a purple rectangular box bag with a gold clasp, and silver sneakers. Look 47 features the exact same black garment with pink trim, the identical purple box bag, and matching silver sneakers.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef66a3fb55e68f7ab6241/master/pass/00048c-louis-vuitton-resort-2027-detail-credit-brand.jpg|42-54": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The model wears identical black socks with a gold ankle strap and metallic teal/blue and silver ribbed high-top shoes with dark blue laces and a dark toe cap.",
+  "alternates": [
+   {
+    "look_number": 44,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 48,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef66ca3632c1efedfd5c5/master/pass/00049b-louis-vuitton-resort-2027-detail-credit-brand.jpg|43-55": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The model, black textured beanie, cream jacket with black buttons and elasticated hem, brown belt, black trousers, and dark dangling earrings are all identical to Look 49.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef66b09f3b49eab1e53b1/master/pass/00049a-louis-vuitton-resort-2027-detail-credit-brand.jpg|43-55": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The model's hat, light yellow jacket with a single button and chest pocket, and the distinctive large sculptural earring are all identical to those in Look 49.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef66f63c621d929cc9153/master/pass/00050b-louis-vuitton-resort-2027-detail-credit-brand.jpg|44-56": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the dark blue ribbed knit top and capri pants, the dark blue ribbed knit ankle boots, the dark blue leather handbag with gold hardware and LV logo, and the yellow ruffled trim visible on the top in Look 50.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef66ef298952478284c5c/master/pass/00049c-louis-vuitton-resort-2027-detail-credit-brand.jpg|43-55": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The black wide-leg pants and the distinctive black textured lace-up ankle boots with a block heel are an exact match to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef66ec77116ca61ad1006/master/pass/00050a-louis-vuitton-resort-2027-detail-credit-brand.jpg|44-56": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The model's hat, jewelry, ruffled collar, blue long-sleeve top, dark vest, yellow ruffled trim, and blue ribbed leggings are all identical to Look 50.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef674d50918e3acfad617/master/pass/00052a-louis-vuitton-resort-2027-detail-credit-brand.jpg|46-57": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The model, hat, necklace, mint green ribbed knit top and capri pants, brown ruffled sleeves, wide dark belt, and brown structured bag are all identical to Look 52.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6714025f1b56068abeb/master/pass/00050c-louis-vuitton-resort-2027-detail-credit-brand.jpg|44-56": {
+  "look_number": 50,
+  "confidence": 0.98,
+  "evidence": "The boots in the detail image are an exact match in color, ribbed pattern, laces, and chunky heel to the boots worn in Look 50. The visible garment above the boot in the detail image is a ribbed knit in a deep blue/teal, which closely matches the knitted garment in Look 50.",
+  "alternates": [
+   {
+    "look_number": 51,
+    "confidence": 0.95
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6726cdc1fa3a92fee89/master/pass/00051b-louis-vuitton-resort-2027-detail-credit-brand.jpg|45-57": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The dark blue ribbed ankle boot with laces, side zipper, and chunky heel perfectly matches the detail image.",
+  "alternates": [
+   {
+    "look_number": 51,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef67009f3b49eab1e53ca/master/pass/00051a-louis-vuitton-resort-2027-detail-credit-brand.jpg|45-57": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 51, including the dark blue conical hat, the elaborate ruffled top with blue sheer fabric, grey patterned fabric, purple trim, white floral embellishment, and white collar with black outline. The dark blue ribbed undergarment, metallic waist accents, gold drop earrings, and dark lipstick are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef677e2dabdc1dddd44c9/master/pass/00053a-louis-vuitton-resort-2027-detail-credit-brand.jpg|47-57": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, peach knit top, layered ruffled overlay, sheer striped skirt, and small gold bag are identical to Look 53.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef678c2528c953386faee/master/pass/00053b-louis-vuitton-resort-2027-detail-credit-brand.jpg|47-57": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the striped skirt, dark brown textured boots, khaki rectangular bag with gold hardware, and pink long-sleeved top worn by the model in Look 53.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef675229c52eebfda886a/master/pass/00052c-louis-vuitton-resort-2027-detail-credit-brand.jpg|46-57": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light green ribbed knit garment and metallic green ribbed ankle boots, which are an exact match for the garment and footwear worn by the model in Look 52.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6786a6e5698a2614552/master/pass/00053c-louis-vuitton-resort-2027-detail-credit-brand.jpg|47-57": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The detail shows a dark, textured, lace-up ankle boot with a block heel. Look 49 features identical black boots with the same distinctive ridged texture, lace-up design, and heel.",
+  "alternates": [
+   {
+    "look_number": 53,
+    "confidence": 0.95
+   },
+   {
+    "look_number": 55,
+    "confidence": 0.95
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6757a34af218003d28d/master/pass/00052b-louis-vuitton-resort-2027-detail-credit-brand.jpg|46-57": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The light green ribbed knit garment, green metallic textured lace-up boots, and brown structured handbag with gold frame are identical in both the detail and Look 52.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef67ad8c9660abf10cf49/master/pass/00054a-louis-vuitton-resort-2027-detail-credit-brand.jpg|48-57": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The model's hat, sunglasses, green drop earrings, red lipstick, and the entire top (color, fabric, ruffles, black trim, and red cuff detail) are identical in both the detail image and Look 54.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef67b9234dfa688bd6031/master/pass/00054b-louis-vuitton-resort-2027-detail-credit-brand.jpg|48-57": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The model's hat, sunglasses, earrings, hair, makeup, sheer purple ruffled blouse with pink shoulders and red cuffs, and the white and grey striped voluminous skirt/trousers are all identical to Look 54.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef67dd8c9660abf10cf50/master/pass/00055a-louis-vuitton-resort-2027-detail-credit-brand.jpg|49-57": {
+  "look_number": 55,
+  "confidence": 1.0,
+  "evidence": "The model, top, belt, and striped sheer cargo pants are identical in look 55 to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef680096f3eda9f5a028b/master/pass/00056a-louis-vuitton-resort-2027-detail-credit-brand.jpg|50-57": {
+  "look_number": 56,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 56, including the cream hat, blue ruffled collar, gold/brown embroidered top with white ruffles, dark belt with gold buckle, and the striped puffy shorts over sheer pants. The model's hair and makeup are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef67e6cdc1fa3a92fee90/master/pass/00055c-louis-vuitton-resort-2027-detail-credit-brand.jpg|49-57": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail shows distinctive bronze wavy shoes and sheer striped full-length pants. Look 53 matches the shoes perfectly but not the pants. Looks 54, 55, and 56 match the pants perfectly but not the shoes.",
+  "alternates": [
+   {
+    "look_number": 53,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 54,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 55,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef67b229c52eebfda8871/master/pass/00054c-louis-vuitton-resort-2027-detail-credit-brand.jpg|48-57": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the distinctive black shoes with swirling ridges and the sheer, vertically striped pants with a buttoned cuff seen in Look 54.",
+  "alternates": [
+   {
+    "look_number": 55,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 56,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef681229c52eebfda8878/master/pass/00056b-louis-vuitton-resort-2027-detail-credit-brand.jpg|50-57": {
+  "look_number": 56,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the top (blue ruffled collar, white ruffled shoulders, embroidered panel), the belt (LV buckle and circular buckle), and the layered skirt/pants (white striped overskirt with pockets over sheer striped pants) of Look 56.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef67ee57785338759dae0/master/pass/00055b-louis-vuitton-resort-2027-detail-credit-brand.jpg|49-57": {
+  "look_number": 55,
+  "confidence": 1.0,
+  "evidence": "The detail image shows black sheer striped cargo pants, a brown belt with a distinctive buckle, and a black structured bag with a gold frame and LV logo. Look 55 features all these elements perfectly matching the detail.",
+  "alternates": [
+   {
+    "look_number": 54,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef68163c621d929cc915a/master/pass/00056c-louis-vuitton-resort-2027-detail-credit-brand.jpg|50-57": {
+  "look_number": 56,
+  "confidence": 1.0,
+  "evidence": "The sheer dark brown striped cargo pants with snap buttons and the dark blue textured wavy shoes are identical to those in the detail image.",
+  "alternates": [
+   {
+    "look_number": 54,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 55,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 50,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef68363c621d929cc9161/master/pass/00056d-louis-vuitton-resort-2027-detail-credit-brand.jpg|51-57": {
+  "look_number": 56,
+  "confidence": 1.0,
+  "evidence": "The sheer, vertically striped dark brown cargo pants and the iridescent blue/purple wavy textured shoes in the detail image perfectly match those in Look 56.",
+  "alternates": [
+   {
+    "look_number": 54,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 51,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 53,
+    "confidence": 0.65
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef60ba3632c1efedfd5a4/master/pass/00015c-louis-vuitton-resort-2027-detail-credit-brand.jpg|15-16": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The boots in Look 15 are an exact match to the detail image, featuring the same dark, ruffled, and ribbed design. Look 16 has completely different footwear.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6065c06d5e0986b95b5/master/pass/00013c-louis-vuitton-resort-2027-detail-credit-brand.jpg|13-14": {
+  "look_number": 13,
+  "confidence": 0.95,
+  "evidence": "The boots in Look 13 perfectly match the detail image in terms of their unique ribbed metallic texture, lace-up design, chunky heel, black socks, and the thin strap around the ankle.",
+  "alternates": [
+   {
+    "look_number": 14,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef65ba3632c1efedfd5b8/master/pass/00043c-louis-vuitton-resort-2027-detail-credit-brand.jpg|43-44": {
+  "look_number": 43,
+  "confidence": 0.95,
+  "evidence": "The metallic ribbed ankle boot with a dark toe, gold side detail, and chunky ribbed heel is an exact match to the shoe worn in Look 43.",
+  "alternates": [
+   {
+    "look_number": 44,
+    "confidence": 0.95
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0ef6204025f1b56068abc5/master/pass/00022c-louis-vuitton-resort-2027-detail-credit-brand.jpg|22-23": {
+  "look_number": 22,
+  "confidence": 0.95,
+  "evidence": "The white ribbed high-top shoe with a black padded collar and the red Keith Haring heart graphic is an exact match for the shoe worn in Look 22.",
+  "alternates": [
+   {
+    "look_number": 23,
+    "confidence": 0.95
+   }
+  ]
+ }
+}

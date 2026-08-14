@@ -1,0 +1,109 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/675c5870dfd9edba8d6a4b1e/master/pass/00022-gucci-pre-fall-2025-details-credit-brand.jpg|3-15": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "No matching garments or accessories (jacket, bag, bandana, sunglasses) were found in any of the candidate looks. The detail features a unique olive green monogrammed jacket and matching duffel bag not present in the candidates.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/675c586e8f83d0646494cb5b/master/pass/00018-gucci-pre-fall-2025-details-credit-brand.jpg|1-9": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "None of the candidate looks feature the distinctive navy coat with a red leather collar, gold emblem, silver rectangular earrings, or the specific sunglasses visible in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/675c58748309397f22273f43/master/pass/00034-gucci-pre-fall-2025-details-credit-brand.jpg|20-32": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "No candidate look features a dark grey/blue coat with a white collar, striped sleeve lining, and light plaid trousers as seen in the detail."
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/675c58708309397f22273f41/master/pass/00026-gucci-pre-fall-2025-details-credit-brand.jpg|9-21": {
+  "look_number": null,
+  "confidence": 1.0,
+  "evidence": "The prominent pink leather jacket with 'Gucci' embroidery in the detail image is not present in any of the candidate full-body looks.",
+  "alternates": [
+   {
+    "look_number": 19,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 13,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 21,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/675c58721a8f9d5e4d3f9692/master/pass/00030-gucci-pre-fall-2025-details-credit-brand.jpg|15-27": {
+  "look_number": null,
+  "confidence": 1.0,
+  "evidence": "The detail image displays a full ensemble featuring a specific green floral pattern on the shirt, skirt, and bag, a neon yellow tie, and olive green boots. None of these primary garments or accessories are present in any of the candidate looks.",
+  "alternates": [
+   {
+    "look_number": 22,
+    "confidence": 0.4
+   },
+   {
+    "look_number": 23,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/675c58768ef0ea297ee6578b/master/pass/00037-gucci-pre-fall-2025-details-credit-brand.jpg|26-38": {
+  "look_number": 37,
+  "confidence": 0.95,
+  "evidence": "The olive green bomber jacket with large flap pockets, shoulder epaulets, and elasticated hem is identical in both the detail and Look 37. The model's gold hoop earrings and rectangular sunglasses are also a perfect match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/675c587689d0f3f884ebd668/master/pass/00043-gucci-pre-fall-2025-details-credit-brand.jpg|32-44": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 43, including the patterned silk scarf, yellow-tinted sunglasses, gold chain necklace, light grey long-sleeved top, dark grey trousers, black shiny structured shoulder bag, and the model's hair and makeup.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/675c58787b3fd438b865b091/master/pass/00046-gucci-pre-fall-2025-details-credit-brand.jpg|38-47": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the burgundy embossed headscarf, large gold sculptural earrings, silver-framed eyeglasses, and dark pinstriped blazer with a white shirt seen in Look 46.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/675c58721a8f9d5e4d3f9692/master/pass/00030-gucci-pre-fall-2025-details-credit-brand.jpg|19-37": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the olive green patterned top, skirt, headscarf, and drawstring bag shown in Look 30. The model is also the same.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/675c58748309397f22273f43/master/pass/00034-gucci-pre-fall-2025-details-credit-brand.jpg|19-37": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The dark grey/blue coat with the distinctive white stand-up collar, rolled-up sleeves revealing a striped lining, and the model's hair, sunglasses, and earring are identical to Look 34.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/675c5870dfd9edba8d6a4b1e/master/pass/00022-gucci-pre-fall-2025-details-credit-brand.jpg|1-19": {
+  "look_number": 9,
+  "confidence": 0.1,
+  "evidence": "The detail image features an olive green jacket with a subtle GG monogram. Look 9 is the only candidate that includes a significant olive green garment (pants), aligning with the dominant color of the detail. Both are from the same brand (Gucci, indicated by GG elements). However, the main garment type, pattern, model, and most accessories do not match.",
+  "alternates": [
+   {
+    "look_number": 6,
+    "confidence": 0.05
+   },
+   {
+    "look_number": 17,
+    "confidence": 0.05
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/675c586e8f83d0646494cb5b/master/pass/00018-gucci-pre-fall-2025-details-credit-brand.jpg|1-19": {
+  "look_number": 18,
+  "confidence": 0.98,
+  "evidence": "The navy blue coat with red leather collar, visible striped cuff, gold buttons, model's short curly hair, skin tone, and matching silver rectangular earrings and sunglasses are identical.",
+  "alternates": [
+   {
+    "look_number": 14,
+    "confidence": 0.05
+   }
+  ]
+ }
+}

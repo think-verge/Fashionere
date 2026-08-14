@@ -1,0 +1,2592 @@
+{
+  "pipeline_version": 2,
+  "summary": {
+    "updated_at": "2026-08-06T11:17:45+05:30",
+    "designers": 7,
+    "collections": 56,
+    "looks": 3731,
+    "details": 5355,
+    "details_attached": 4223,
+    "images_tagged": 6436,
+    "mongo_documents": 2301,
+    "est_cost_usd": 26.5828,
+    "by_stage": {
+      "scrape": {
+        "ok": 56,
+        "failed": 0,
+        "suspect": 0,
+        "pending": 0
+      },
+      "match": {
+        "ok": 35,
+        "failed": 21,
+        "suspect": 0,
+        "pending": 0
+      },
+      "tag": {
+        "ok": 35,
+        "failed": 0,
+        "suspect": 0,
+        "pending": 21
+      },
+      "flatten": {
+        "ok": 35,
+        "failed": 0,
+        "suspect": 0,
+        "pending": 21
+      }
+    },
+    "by_designer": {
+      "balenciaga": {
+        "designer": "Balenciaga",
+        "collections": 10,
+        "looks": 649,
+        "details": 880,
+        "details_attached": 524,
+        "images_tagged": 910,
+        "mongo_documents": 387,
+        "est_cost_usd": 3.6046,
+        "last_run": "2026-08-06T04:59:36+05:30",
+        "collection_names": [
+          "fall-2026-couture",
+          "resort-2027",
+          "fall-2026-ready-to-wear",
+          "spring-2026-ready-to-wear",
+          "pre-fall-2026",
+          "spring-2025-ready-to-wear",
+          "fall-2025-couture",
+          "resort-2026",
+          "pre-fall-2025",
+          "fall-2025-ready-to-wear"
+        ],
+        "incomplete": [
+          "fall-2026-ready-to-wear:match=failed",
+          "fall-2026-ready-to-wear:tag=pending",
+          "fall-2026-ready-to-wear:flatten=pending",
+          "pre-fall-2026:match=failed",
+          "pre-fall-2026:tag=pending",
+          "pre-fall-2026:flatten=pending",
+          "fall-2025-couture:match=failed",
+          "fall-2025-couture:tag=pending",
+          "fall-2025-couture:flatten=pending",
+          "fall-2025-ready-to-wear:match=failed",
+          "fall-2025-ready-to-wear:tag=pending",
+          "fall-2025-ready-to-wear:flatten=pending"
+        ]
+      },
+      "chanel": {
+        "designer": "Chanel",
+        "collections": 10,
+        "looks": 677,
+        "details": 1252,
+        "details_attached": 1252,
+        "images_tagged": 1694,
+        "mongo_documents": 447,
+        "est_cost_usd": 7.2881,
+        "last_run": "2026-08-06T08:24:21+05:30",
+        "collection_names": [
+          "fall-2026-couture",
+          "resort-2027",
+          "fall-2026-ready-to-wear",
+          "spring-2026-couture",
+          "pre-fall-2026",
+          "spring-2026-ready-to-wear",
+          "fall-2025-couture",
+          "resort-2026",
+          "spring-2025-couture",
+          "fall-2025-ready-to-wear"
+        ],
+        "incomplete": [
+          "resort-2027:match=failed",
+          "resort-2027:tag=pending",
+          "resort-2027:flatten=pending",
+          "pre-fall-2026:match=failed",
+          "pre-fall-2026:tag=pending",
+          "pre-fall-2026:flatten=pending",
+          "resort-2026:match=failed",
+          "resort-2026:tag=pending",
+          "resort-2026:flatten=pending"
+        ]
+      },
+      "christian_dior": {
+        "designer": "Christian Dior",
+        "collections": 10,
+        "looks": 697,
+        "details": 980,
+        "details_attached": 644,
+        "images_tagged": 853,
+        "mongo_documents": 212,
+        "est_cost_usd": 3.713,
+        "last_run": "2026-08-06T03:10:52+05:30",
+        "collection_names": [
+          "fall-2026-couture",
+          "resort-2027",
+          "fall-2026-ready-to-wear",
+          "spring-2026-couture",
+          "pre-fall-2026",
+          "spring-2026-ready-to-wear",
+          "fall-2025-couture",
+          "resort-2026",
+          "pre-fall-2025",
+          "fall-2025-ready-to-wear"
+        ],
+        "incomplete": [
+          "fall-2026-couture:match=failed",
+          "fall-2026-couture:tag=pending",
+          "fall-2026-couture:flatten=pending",
+          "resort-2027:match=failed",
+          "resort-2027:tag=pending",
+          "resort-2027:flatten=pending",
+          "pre-fall-2026:match=failed",
+          "pre-fall-2026:tag=pending",
+          "pre-fall-2026:flatten=pending",
+          "spring-2026-ready-to-wear:match=failed",
+          "spring-2026-ready-to-wear:tag=pending",
+          "spring-2026-ready-to-wear:flatten=pending",
+          "fall-2025-couture:match=failed",
+          "fall-2025-couture:tag=pending",
+          "fall-2025-couture:flatten=pending",
+          "resort-2026:match=failed",
+          "resort-2026:tag=pending",
+          "resort-2026:flatten=pending",
+          "pre-fall-2025:match=failed",
+          "pre-fall-2025:tag=pending",
+          "pre-fall-2025:flatten=pending"
+        ]
+      },
+      "gucci": {
+        "designer": "Gucci",
+        "collections": 8,
+        "looks": 445,
+        "details": 415,
+        "details_attached": 334,
+        "images_tagged": 701,
+        "mongo_documents": 367,
+        "est_cost_usd": 2.5519,
+        "last_run": "2026-08-06T11:12:28+05:30",
+        "collection_names": [
+          "fall-2026-ready-to-wear",
+          "resort-2027",
+          "pre-fall-2026",
+          "spring-2026-ready-to-wear",
+          "fall-2025-ready-to-wear",
+          "resort-2026",
+          "pre-fall-2025",
+          "spring-2025-ready-to-wear"
+        ],
+        "incomplete": [
+          "spring-2026-ready-to-wear:match=failed",
+          "spring-2026-ready-to-wear:tag=pending",
+          "spring-2026-ready-to-wear:flatten=pending",
+          "spring-2025-ready-to-wear:match=failed",
+          "spring-2025-ready-to-wear:tag=pending",
+          "spring-2025-ready-to-wear:flatten=pending"
+        ]
+      },
+      "louis_vuitton": {
+        "designer": "Louis Vuitton",
+        "collections": 4,
+        "looks": 204,
+        "details": 399,
+        "details_attached": 292,
+        "images_tagged": 405,
+        "mongo_documents": 113,
+        "est_cost_usd": 1.7226,
+        "last_run": "2026-08-06T09:24:45+05:30",
+        "collection_names": [
+          "resort-2027",
+          "fall-2026-ready-to-wear",
+          "spring-2026-ready-to-wear",
+          "resort-2026"
+        ],
+        "incomplete": [
+          "spring-2026-ready-to-wear:match=failed",
+          "spring-2026-ready-to-wear:tag=pending",
+          "spring-2026-ready-to-wear:flatten=pending",
+          "resort-2026:match=failed",
+          "resort-2026:tag=pending",
+          "resort-2026:flatten=pending"
+        ]
+      },
+      "prada": {
+        "designer": "Prada",
+        "collections": 4,
+        "looks": 217,
+        "details": 596,
+        "details_attached": 446,
+        "images_tagged": 611,
+        "mongo_documents": 165,
+        "est_cost_usd": 2.6149,
+        "last_run": "2026-08-06T00:59:59+05:30",
+        "collection_names": [
+          "fall-2025-ready-to-wear",
+          "fall-2026-ready-to-wear",
+          "spring-2026-ready-to-wear",
+          "spring-2025-ready-to-wear"
+        ],
+        "incomplete": [
+          "spring-2026-ready-to-wear:match=failed",
+          "spring-2026-ready-to-wear:tag=pending",
+          "spring-2026-ready-to-wear:flatten=pending"
+        ]
+      },
+      "valentino": {
+        "designer": "Valentino",
+        "collections": 10,
+        "looks": 842,
+        "details": 833,
+        "details_attached": 731,
+        "images_tagged": 1262,
+        "mongo_documents": 610,
+        "est_cost_usd": 5.0877,
+        "last_run": "2026-08-06T01:28:30+05:30",
+        "collection_names": [
+          "fall-2026-ready-to-wear",
+          "spring-2026-couture",
+          "resort-2027",
+          "pre-fall-2026",
+          "spring-2026-ready-to-wear",
+          "resort-2026",
+          "fall-2025-ready-to-wear",
+          "spring-2025-couture",
+          "pre-fall-2025",
+          "spring-2025-ready-to-wear"
+        ],
+        "incomplete": [
+          "pre-fall-2026:match=failed",
+          "pre-fall-2026:tag=pending",
+          "pre-fall-2026:flatten=pending",
+          "resort-2026:match=failed",
+          "resort-2026:tag=pending",
+          "resort-2026:flatten=pending"
+        ]
+      }
+    }
+  },
+  "collections": {
+    "https://www.vogue.com/fashion-shows/fall-2025-ready-to-wear/prada": {
+      "first_seen": "2026-08-02T20:50:57+05:30",
+      "designer_key": "prada",
+      "collection_name": "fall-2025-ready-to-wear",
+      "designer": "Prada",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-02T20:51:18+05:30",
+          "pipeline_version": 2,
+          "looks": 52,
+          "details": 117,
+          "tags": 169,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:0255cbbe54e86f6cbbbca0e6428863a3",
+          "output": "data/raw/prada/Prada_fall_2025_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-02T20:55:39+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:0255cbbe54e86f6cbbbca0e6428863a3",
+          "details_attached": 116,
+          "unmatched": 1,
+          "looks_with_details": 52,
+          "est_cost_usd": 0.3159,
+          "output": "data/mapped/prada/Prada_fall_2025_ready_to_wear_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-02T21:47:31+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:0255cbbe54e86f6cbbbca0e6428863a3",
+          "built_on_match_at": "2026-08-02T20:55:39+05:30",
+          "images_tagged": 169,
+          "images_failed": 0,
+          "est_cost_usd": 0.3887,
+          "output": "data/tagged/prada/Prada_fall_2025_ready_to_wear_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-03T14:06:54+05:30",
+          "built_on_tag_at": "2026-08-02T21:47:31+05:30",
+          "documents": 53,
+          "looks": 52,
+          "unmatched_details": 1,
+          "output": "data/flattened/prada/Prada_fall_2025_ready_to_wear_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T00:59:57+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/fall-2026-ready-to-wear/valentino": {
+      "first_seen": "2026-08-03T11:12:54+05:30",
+      "designer_key": "valentino",
+      "collection_name": "fall-2026-ready-to-wear",
+      "designer": "Valentino",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-03T11:13:18+05:30",
+          "pipeline_version": 2,
+          "looks": 85,
+          "details": 101,
+          "tags": 186,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:6dafbca19795ddc6ace6d6894d0cd450",
+          "output": "data/raw/valentino/Valentino_fall_2026_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-03T11:18:25+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:6dafbca19795ddc6ace6d6894d0cd450",
+          "details_attached": 101,
+          "unmatched": 0,
+          "looks_with_details": 84,
+          "est_cost_usd": 0.2727,
+          "output": "data/mapped/valentino/Valentino_fall_2026_ready_to_wear_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-03T11:29:19+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:6dafbca19795ddc6ace6d6894d0cd450",
+          "built_on_match_at": "2026-08-03T11:18:25+05:30",
+          "images_tagged": 186,
+          "images_failed": 0,
+          "est_cost_usd": 0.4278,
+          "output": "data/tagged/valentino/Valentino_fall_2026_ready_to_wear_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-03T14:06:56+05:30",
+          "built_on_tag_at": "2026-08-03T11:29:19+05:30",
+          "documents": 85,
+          "looks": 85,
+          "unmatched_details": 0,
+          "output": "data/flattened/valentino/Valentino_fall_2026_ready_to_wear_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T01:00:03+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/spring-2026-couture/valentino": {
+      "first_seen": "2026-08-03T18:55:12+05:30",
+      "designer_key": "valentino",
+      "collection_name": "spring-2026-couture",
+      "designer": "Valentino",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-03T18:55:39+05:30",
+          "pipeline_version": 2,
+          "looks": 61,
+          "details": 80,
+          "tags": 141,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:d01d9ebb69ebb6a75e8582c6bb21e68e",
+          "output": "data/raw/valentino/Valentino_spring_2026_couture_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-03T19:00:38+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:d01d9ebb69ebb6a75e8582c6bb21e68e",
+          "details_attached": 80,
+          "unmatched": 0,
+          "looks_with_details": 60,
+          "est_cost_usd": 0.216,
+          "output": "data/mapped/valentino/Valentino_spring_2026_couture_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-03T19:08:58+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:d01d9ebb69ebb6a75e8582c6bb21e68e",
+          "built_on_match_at": "2026-08-03T19:00:38+05:30",
+          "images_tagged": 140,
+          "images_failed": 1,
+          "est_cost_usd": 0.3243,
+          "output": "data/tagged/valentino/Valentino_spring_2026_couture_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-03T19:08:58+05:30",
+          "built_on_tag_at": "2026-08-03T19:08:58+05:30",
+          "documents": 61,
+          "looks": 61,
+          "unmatched_details": 0,
+          "output": "data/flattened/valentino/Valentino_spring_2026_couture_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T01:00:05+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/fall-2026-ready-to-wear/prada": {
+      "first_seen": "2026-08-04T16:08:23+05:30",
+      "designer_key": "prada",
+      "collection_name": "fall-2026-ready-to-wear",
+      "designer": "Prada",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-04T16:09:04+05:30",
+          "pipeline_version": 2,
+          "looks": 61,
+          "details": 209,
+          "tags": 270,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:b4c423ca77ac49cbd520af3ccf194b0a",
+          "output": "data/raw/prada/Prada_fall_2026_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-04T16:25:51+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:b4c423ca77ac49cbd520af3ccf194b0a",
+          "details_attached": 209,
+          "unmatched": 0,
+          "looks_with_details": 60,
+          "est_cost_usd": 0.5643,
+          "output": "data/mapped/prada/Prada_fall_2026_ready_to_wear_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-04T16:47:31+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:b4c423ca77ac49cbd520af3ccf194b0a",
+          "built_on_match_at": "2026-08-04T16:25:51+05:30",
+          "images_tagged": 270,
+          "images_failed": 0,
+          "est_cost_usd": 0.621,
+          "output": "data/tagged/prada/Prada_fall_2026_ready_to_wear_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-04T16:47:32+05:30",
+          "built_on_tag_at": "2026-08-04T16:47:31+05:30",
+          "documents": 61,
+          "looks": 61,
+          "unmatched_details": 0,
+          "output": "data/flattened/prada/Prada_fall_2026_ready_to_wear_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T00:53:23+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/spring-2026-ready-to-wear/prada": {
+      "first_seen": "2026-08-04T16:47:34+05:30",
+      "designer_key": "prada",
+      "collection_name": "spring-2026-ready-to-wear",
+      "designer": "Prada",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-04T16:47:51+05:30",
+          "pipeline_version": 2,
+          "looks": 54,
+          "details": 148,
+          "tags": 202,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:b21a9e0646617898a1002c754e1f17fa",
+          "output": "data/raw/prada/Prada_spring_2026_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "failed",
+          "at": "2026-08-06T00:59:57+05:30",
+          "error": "RuntimeError: Gemini scoring failed after retries: the JSON object must be str, bytes or bytearray, not NoneType"
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/spring-2025-ready-to-wear/prada": {
+      "first_seen": "2026-08-04T16:58:58+05:30",
+      "designer_key": "prada",
+      "collection_name": "spring-2025-ready-to-wear",
+      "designer": "Prada",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-04T16:59:18+05:30",
+          "pipeline_version": 2,
+          "looks": 50,
+          "details": 122,
+          "tags": 172,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:3acf0edbec9828759ec1af2c47af930c",
+          "output": "data/raw/prada/Prada_spring_2025_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-04T17:09:18+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:3acf0edbec9828759ec1af2c47af930c",
+          "details_attached": 121,
+          "unmatched": 1,
+          "looks_with_details": 49,
+          "est_cost_usd": 0.3294,
+          "output": "data/mapped/prada/Prada_spring_2025_ready_to_wear_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-04T17:22:31+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:3acf0edbec9828759ec1af2c47af930c",
+          "built_on_match_at": "2026-08-04T17:09:18+05:30",
+          "images_tagged": 172,
+          "images_failed": 0,
+          "est_cost_usd": 0.3956,
+          "output": "data/tagged/prada/Prada_spring_2025_ready_to_wear_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-04T17:22:31+05:30",
+          "built_on_tag_at": "2026-08-04T17:22:31+05:30",
+          "documents": 51,
+          "looks": 50,
+          "unmatched_details": 1,
+          "output": "data/flattened/prada/Prada_spring_2025_ready_to_wear_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T00:59:59+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/resort-2027/valentino": {
+      "first_seen": "2026-08-04T17:22:33+05:30",
+      "designer_key": "valentino",
+      "collection_name": "resort-2027",
+      "designer": "Valentino",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-04T17:22:50+05:30",
+          "pipeline_version": 2,
+          "looks": 66,
+          "details": 50,
+          "tags": 116,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:246326ffdb963244e1cef7de9b1271c7",
+          "output": "data/raw/valentino/Valentino_resort_2027_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-04T17:28:42+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:246326ffdb963244e1cef7de9b1271c7",
+          "details_attached": 47,
+          "unmatched": 3,
+          "looks_with_details": 39,
+          "est_cost_usd": 0.135,
+          "output": "data/mapped/valentino/Valentino_resort_2027_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-04T17:39:06+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:246326ffdb963244e1cef7de9b1271c7",
+          "built_on_match_at": "2026-08-04T17:28:42+05:30",
+          "images_tagged": 112,
+          "images_failed": 4,
+          "est_cost_usd": 0.2668,
+          "output": "data/tagged/valentino/Valentino_resort_2027_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-04T17:39:06+05:30",
+          "built_on_tag_at": "2026-08-04T17:39:06+05:30",
+          "documents": 69,
+          "looks": 66,
+          "unmatched_details": 3,
+          "output": "data/flattened/valentino/Valentino_resort_2027_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T01:00:01+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/pre-fall-2026/valentino": {
+      "first_seen": "2026-08-04T17:39:12+05:30",
+      "designer_key": "valentino",
+      "collection_name": "pre-fall-2026",
+      "designer": "Valentino",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-04T17:39:35+05:30",
+          "pipeline_version": 2,
+          "looks": 111,
+          "details": 0,
+          "tags": 111,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:0bc6e94950eb40e30bb0e113cc391f5c",
+          "output": "data/raw/valentino/Valentino_pre_fall_2026_raw.json"
+        },
+        "match": {
+          "status": "failed",
+          "at": "2026-08-06T01:00:08+05:30",
+          "error": "C:\\Users\\JaswanthPall_fnohyb7\\Downloads\\Prada\\fashion_engine\\scrape_engine\\data\\raw\\valentino\\Valentino_pre_fall_2026_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file."
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/spring-2026-ready-to-wear/valentino": {
+      "first_seen": "2026-08-04T17:39:35+05:30",
+      "designer_key": "valentino",
+      "collection_name": "spring-2026-ready-to-wear",
+      "designer": "Valentino",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-04T17:39:46+05:30",
+          "pipeline_version": 2,
+          "looks": 81,
+          "details": 106,
+          "tags": 187,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:0958a159cb18fb67b64c684175a75a10",
+          "output": "data/raw/valentino/Valentino_spring_2026_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-04T17:48:05+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:0958a159cb18fb67b64c684175a75a10",
+          "details_attached": 106,
+          "unmatched": 0,
+          "looks_with_details": 76,
+          "est_cost_usd": 0.2862,
+          "output": "data/mapped/valentino/Valentino_spring_2026_ready_to_wear_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-04T17:59:57+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:0958a159cb18fb67b64c684175a75a10",
+          "built_on_match_at": "2026-08-04T17:48:05+05:30",
+          "images_tagged": 187,
+          "images_failed": 0,
+          "est_cost_usd": 0.4301,
+          "output": "data/tagged/valentino/Valentino_spring_2026_ready_to_wear_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-04T17:59:58+05:30",
+          "built_on_tag_at": "2026-08-04T17:59:57+05:30",
+          "documents": 81,
+          "looks": 81,
+          "unmatched_details": 0,
+          "output": "data/flattened/valentino/Valentino_spring_2026_ready_to_wear_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T01:00:08+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/resort-2026/valentino": {
+      "first_seen": "2026-08-04T18:00:00+05:30",
+      "designer_key": "valentino",
+      "collection_name": "resort-2026",
+      "designer": "Valentino",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-04T18:00:21+05:30",
+          "pipeline_version": 2,
+          "looks": 132,
+          "details": 91,
+          "tags": 223,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:40b3fd82216a964d058a07762dcc16e3",
+          "output": "data/raw/valentino/Valentino_resort_2026_raw.json"
+        },
+        "match": {
+          "status": "failed",
+          "at": "2026-08-06T01:01:38+05:30",
+          "error": "RuntimeError: Gemini scoring failed after retries: the JSON object must be str, bytes or bytearray, not NoneType"
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/fall-2025-ready-to-wear/valentino": {
+      "first_seen": "2026-08-04T18:04:10+05:30",
+      "designer_key": "valentino",
+      "collection_name": "fall-2025-ready-to-wear",
+      "designer": "Valentino",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-04T18:04:26+05:30",
+          "pipeline_version": 2,
+          "looks": 81,
+          "details": 99,
+          "tags": 180,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:deb93de0e81350b9d61298b90668224c",
+          "output": "data/raw/valentino/Valentino_fall_2025_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-04T18:12:44+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:deb93de0e81350b9d61298b90668224c",
+          "details_attached": 99,
+          "unmatched": 0,
+          "looks_with_details": 80,
+          "est_cost_usd": 0.2673,
+          "output": "data/mapped/valentino/Valentino_fall_2025_ready_to_wear_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-04T18:24:46+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:deb93de0e81350b9d61298b90668224c",
+          "built_on_match_at": "2026-08-04T18:12:44+05:30",
+          "images_tagged": 180,
+          "images_failed": 0,
+          "est_cost_usd": 0.414,
+          "output": "data/tagged/valentino/Valentino_fall_2025_ready_to_wear_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-04T18:24:46+05:30",
+          "built_on_tag_at": "2026-08-04T18:24:46+05:30",
+          "documents": 81,
+          "looks": 81,
+          "unmatched_details": 0,
+          "output": "data/flattened/valentino/Valentino_fall_2025_ready_to_wear_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T01:01:38+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino": {
+      "first_seen": "2026-08-04T18:24:48+05:30",
+      "designer_key": "valentino",
+      "collection_name": "spring-2025-couture",
+      "designer": "Valentino",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-04T18:25:07+05:30",
+          "pipeline_version": 2,
+          "looks": 49,
+          "details": 65,
+          "tags": 114,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:2040bef7fe155893cf3b2d4d5a056e95",
+          "output": "data/raw/valentino/Valentino_spring_2025_couture_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-04T18:30:04+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:2040bef7fe155893cf3b2d4d5a056e95",
+          "details_attached": 65,
+          "unmatched": 0,
+          "looks_with_details": 48,
+          "est_cost_usd": 0.1755,
+          "output": "data/mapped/valentino/Valentino_spring_2025_couture_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-04T18:41:25+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:2040bef7fe155893cf3b2d4d5a056e95",
+          "built_on_match_at": "2026-08-04T18:30:04+05:30",
+          "images_tagged": 114,
+          "images_failed": 0,
+          "est_cost_usd": 0.2622,
+          "output": "data/tagged/valentino/Valentino_spring_2025_couture_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-04T18:41:26+05:30",
+          "built_on_tag_at": "2026-08-04T18:41:25+05:30",
+          "documents": 49,
+          "looks": 49,
+          "unmatched_details": 0,
+          "output": "data/flattened/valentino/Valentino_spring_2025_couture_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T01:01:40+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/pre-fall-2025/valentino": {
+      "first_seen": "2026-08-04T18:41:28+05:30",
+      "designer_key": "valentino",
+      "collection_name": "pre-fall-2025",
+      "designer": "Valentino",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-04T18:41:48+05:30",
+          "pipeline_version": 2,
+          "looks": 90,
+          "details": 97,
+          "tags": 187,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:23db7a4b019631eaa50fdde3e082c6f8",
+          "output": "data/raw/valentino/Valentino_pre_fall_2025_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-04T18:52:30+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:23db7a4b019631eaa50fdde3e082c6f8",
+          "details_attached": 89,
+          "unmatched": 8,
+          "looks_with_details": 60,
+          "est_cost_usd": 0.2619,
+          "output": "data/mapped/valentino/Valentino_pre_fall_2025_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-04T19:08:46+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:23db7a4b019631eaa50fdde3e082c6f8",
+          "built_on_match_at": "2026-08-04T18:52:30+05:30",
+          "images_tagged": 113,
+          "images_failed": 74,
+          "est_cost_usd": 0.4301,
+          "output": "data/tagged/valentino/Valentino_pre_fall_2025_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-04T19:08:47+05:30",
+          "built_on_tag_at": "2026-08-04T19:08:46+05:30",
+          "documents": 98,
+          "looks": 90,
+          "unmatched_details": 8,
+          "output": "data/flattened/valentino/Valentino_pre_fall_2025_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T01:01:42+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/spring-2025-ready-to-wear/valentino": {
+      "first_seen": "2026-08-04T19:08:49+05:30",
+      "designer_key": "valentino",
+      "collection_name": "spring-2025-ready-to-wear",
+      "designer": "Valentino",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-04T19:09:15+05:30",
+          "pipeline_version": 2,
+          "looks": 86,
+          "details": 144,
+          "tags": 230,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:b8f7490214576d7795556831f48f52b4",
+          "output": "data/raw/valentino/Valentino_spring_2025_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T01:13:16+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:b8f7490214576d7795556831f48f52b4",
+          "details_attached": 144,
+          "unmatched": 0,
+          "looks_with_details": 85,
+          "est_cost_usd": 0.3888,
+          "output": "data/mapped/valentino/Valentino_spring_2025_ready_to_wear_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T01:28:30+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:b8f7490214576d7795556831f48f52b4",
+          "built_on_match_at": "2026-08-06T01:13:16+05:30",
+          "images_tagged": 230,
+          "images_failed": 0,
+          "est_cost_usd": 0.529,
+          "output": "data/tagged/valentino/Valentino_spring_2025_ready_to_wear_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T01:28:30+05:30",
+          "built_on_tag_at": "2026-08-06T01:28:30+05:30",
+          "documents": 86,
+          "looks": 86,
+          "unmatched_details": 0,
+          "output": "data/flattened/valentino/Valentino_spring_2025_ready_to_wear_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T01:28:30+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/fall-2026-couture/christian-dior": {
+      "first_seen": "2026-08-06T01:28:32+05:30",
+      "designer_key": "christion_dior",
+      "collection_name": "fall-2026-couture",
+      "designer": "Christian Dior",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T01:29:03+05:30",
+          "pipeline_version": 2,
+          "looks": 66,
+          "details": 193,
+          "tags": 259,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:f50138e784875a0c08246b65f8e9cee8",
+          "output": "data/raw/christian_dior/Christian_Dior_fall_2026_couture_raw.json"
+        },
+        "match": {
+          "status": "failed",
+          "at": "2026-08-06T01:32:13+05:30",
+          "error": "RuntimeError: Gemini scoring failed after retries: the JSON object must be str, bytes or bytearray, not NoneType"
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/resort-2027/christian-dior": {
+      "first_seen": "2026-08-06T01:32:13+05:30",
+      "designer_key": "christion_dior",
+      "collection_name": "resort-2027",
+      "designer": "Christian Dior",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T01:32:20+05:30",
+          "pipeline_version": 2,
+          "looks": 76,
+          "details": 0,
+          "tags": 76,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:15cf32173186fd43f82afcc0f0c4489b",
+          "output": "data/raw/christian_dior/Christian_Dior_resort_2027_raw.json"
+        },
+        "match": {
+          "status": "failed",
+          "at": "2026-08-06T01:32:20+05:30",
+          "error": "C:\\Users\\JaswanthPall_fnohyb7\\Downloads\\Prada\\fashion_engine\\scrape_engine\\data\\raw\\christian_dior\\Christian_Dior_resort_2027_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file."
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/fall-2026-ready-to-wear/christian-dior": {
+      "first_seen": "2026-08-06T01:32:20+05:30",
+      "designer_key": "christion_dior",
+      "collection_name": "fall-2026-ready-to-wear",
+      "designer": "Christian Dior",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T01:32:45+05:30",
+          "pipeline_version": 2,
+          "looks": 66,
+          "details": 250,
+          "tags": 316,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:42b298479d887ddebd43bb1a79338c3f",
+          "output": "data/raw/christian_dior/Christian_Dior_fall_2026_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T01:45:37+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:42b298479d887ddebd43bb1a79338c3f",
+          "details_attached": 249,
+          "unmatched": 1,
+          "looks_with_details": 65,
+          "est_cost_usd": 0.675,
+          "output": "data/mapped/christian_dior/Christian_Dior_fall_2026_ready_to_wear_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T02:07:57+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:42b298479d887ddebd43bb1a79338c3f",
+          "built_on_match_at": "2026-08-06T01:45:37+05:30",
+          "images_tagged": 315,
+          "images_failed": 1,
+          "est_cost_usd": 0.7268,
+          "output": "data/tagged/christian_dior/Christian_Dior_fall_2026_ready_to_wear_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T02:07:57+05:30",
+          "built_on_tag_at": "2026-08-06T02:07:57+05:30",
+          "documents": 67,
+          "looks": 66,
+          "unmatched_details": 1,
+          "output": "data/flattened/christian_dior/Christian_Dior_fall_2026_ready_to_wear_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T02:07:57+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/spring-2026-couture/christian-dior": {
+      "first_seen": "2026-08-06T02:07:59+05:30",
+      "designer_key": "christion_dior",
+      "collection_name": "spring-2026-couture",
+      "designer": "Christian Dior",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T02:08:23+05:30",
+          "pipeline_version": 2,
+          "looks": 63,
+          "details": 180,
+          "tags": 243,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:ce3f83a85b6a8be5fb89d5d4e8125e1b",
+          "output": "data/raw/christian_dior/Christian_Dior_spring_2026_couture_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T02:18:25+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:ce3f83a85b6a8be5fb89d5d4e8125e1b",
+          "details_attached": 180,
+          "unmatched": 0,
+          "looks_with_details": 63,
+          "est_cost_usd": 0.486,
+          "output": "data/mapped/christian_dior/Christian_Dior_spring_2026_couture_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T02:36:19+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:ce3f83a85b6a8be5fb89d5d4e8125e1b",
+          "built_on_match_at": "2026-08-06T02:18:25+05:30",
+          "images_tagged": 242,
+          "images_failed": 1,
+          "est_cost_usd": 0.5589,
+          "output": "data/tagged/christian_dior/Christian_Dior_spring_2026_couture_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T02:36:19+05:30",
+          "built_on_tag_at": "2026-08-06T02:36:19+05:30",
+          "documents": 63,
+          "looks": 63,
+          "unmatched_details": 0,
+          "output": "data/flattened/christian_dior/Christian_Dior_spring_2026_couture_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T02:36:19+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/pre-fall-2026/christian-dior": {
+      "first_seen": "2026-08-06T02:36:21+05:30",
+      "designer_key": "christion_dior",
+      "collection_name": "pre-fall-2026",
+      "designer": "Christian Dior",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T02:36:34+05:30",
+          "pipeline_version": 2,
+          "looks": 86,
+          "details": 0,
+          "tags": 86,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:1a2342bb800f23cb853e8c42629102e3",
+          "output": "data/raw/christian_dior/Christian_Dior_pre_fall_2026_raw.json"
+        },
+        "match": {
+          "status": "failed",
+          "at": "2026-08-06T02:36:34+05:30",
+          "error": "C:\\Users\\JaswanthPall_fnohyb7\\Downloads\\Prada\\fashion_engine\\scrape_engine\\data\\raw\\christian_dior\\Christian_Dior_pre_fall_2026_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file."
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/spring-2026-ready-to-wear/christian-dior": {
+      "first_seen": "2026-08-06T02:36:34+05:30",
+      "designer_key": "christion_dior",
+      "collection_name": "spring-2026-ready-to-wear",
+      "designer": "Christian Dior",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T02:36:54+05:30",
+          "pipeline_version": 2,
+          "looks": 75,
+          "details": 141,
+          "tags": 216,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:12a9260a5d32f10a04599a3480cfd8ab",
+          "output": "data/raw/christian_dior/Christian_Dior_spring_2026_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "failed",
+          "at": "2026-08-06T02:38:44+05:30",
+          "error": "RuntimeError: Gemini scoring failed after retries: the JSON object must be str, bytes or bytearray, not NoneType"
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/fall-2025-couture/christian-dior": {
+      "first_seen": "2026-08-06T02:38:44+05:30",
+      "designer_key": "christion_dior",
+      "collection_name": "fall-2025-couture",
+      "designer": "Christian Dior",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T02:38:53+05:30",
+          "pipeline_version": 2,
+          "looks": 32,
+          "details": 0,
+          "tags": 32,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:6a76b768026af674a16ecd5ea4557e63",
+          "output": "data/raw/christian_dior/Christian_Dior_fall_2025_couture_raw.json"
+        },
+        "match": {
+          "status": "failed",
+          "at": "2026-08-06T02:38:53+05:30",
+          "error": "C:\\Users\\JaswanthPall_fnohyb7\\Downloads\\Prada\\fashion_engine\\scrape_engine\\data\\raw\\christian_dior\\Christian_Dior_fall_2025_couture_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file."
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/resort-2026/christian-dior": {
+      "first_seen": "2026-08-06T02:38:53+05:30",
+      "designer_key": "christion_dior",
+      "collection_name": "resort-2026",
+      "designer": "Christian Dior",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T02:39:02+05:30",
+          "pipeline_version": 2,
+          "looks": 81,
+          "details": 0,
+          "tags": 81,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:5283d5af78117bf659be37d065e10de0",
+          "output": "data/raw/christian_dior/Christian_Dior_resort_2026_raw.json"
+        },
+        "match": {
+          "status": "failed",
+          "at": "2026-08-06T02:39:03+05:30",
+          "error": "C:\\Users\\JaswanthPall_fnohyb7\\Downloads\\Prada\\fashion_engine\\scrape_engine\\data\\raw\\christian_dior\\Christian_Dior_resort_2026_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file."
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/pre-fall-2025/christian-dior": {
+      "first_seen": "2026-08-06T02:39:03+05:30",
+      "designer_key": "christion_dior",
+      "collection_name": "pre-fall-2025",
+      "designer": "Christian Dior",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T02:39:12+05:30",
+          "pipeline_version": 2,
+          "looks": 71,
+          "details": 0,
+          "tags": 71,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:4db7fc50dd4a23f2ff40999a037a61ae",
+          "output": "data/raw/christian_dior/Christian_Dior_pre_fall_2025_raw.json"
+        },
+        "match": {
+          "status": "failed",
+          "at": "2026-08-06T02:39:12+05:30",
+          "error": "C:\\Users\\JaswanthPall_fnohyb7\\Downloads\\Prada\\fashion_engine\\scrape_engine\\data\\raw\\christian_dior\\Christian_Dior_pre_fall_2025_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file."
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/fall-2025-ready-to-wear/christian-dior": {
+      "first_seen": "2026-08-06T02:39:12+05:30",
+      "designer_key": "christion_dior",
+      "collection_name": "fall-2025-ready-to-wear",
+      "designer": "Christian Dior",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T02:39:35+05:30",
+          "pipeline_version": 2,
+          "looks": 81,
+          "details": 216,
+          "tags": 297,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:2b7c0117451b9cbbc2b4c16d06462e47",
+          "output": "data/raw/christian_dior/Christian_Dior_fall_2025_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T02:51:44+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:2b7c0117451b9cbbc2b4c16d06462e47",
+          "details_attached": 215,
+          "unmatched": 1,
+          "looks_with_details": 77,
+          "est_cost_usd": 0.5832,
+          "output": "data/mapped/christian_dior/Christian_Dior_fall_2025_ready_to_wear_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T03:10:51+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:2b7c0117451b9cbbc2b4c16d06462e47",
+          "built_on_match_at": "2026-08-06T02:51:44+05:30",
+          "images_tagged": 296,
+          "images_failed": 1,
+          "est_cost_usd": 0.6831,
+          "output": "data/tagged/christian_dior/Christian_Dior_fall_2025_ready_to_wear_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T03:10:52+05:30",
+          "built_on_tag_at": "2026-08-06T03:10:51+05:30",
+          "documents": 82,
+          "looks": 81,
+          "unmatched_details": 1,
+          "output": "data/flattened/christian_dior/Christian_Dior_fall_2025_ready_to_wear_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T03:10:52+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/fall-2026-couture/balenciaga": {
+      "first_seen": "2026-08-06T03:10:54+05:30",
+      "designer_key": "balenciaga",
+      "collection_name": "fall-2026-couture",
+      "designer": "Balenciaga",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T03:11:19+05:30",
+          "pipeline_version": 2,
+          "looks": 53,
+          "details": 222,
+          "tags": 275,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:370fac46dbe6025f1013228bafb9e95e",
+          "output": "data/raw/balenciaga/Balenciaga_fall_2026_couture_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T03:21:21+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:370fac46dbe6025f1013228bafb9e95e",
+          "details_attached": 222,
+          "unmatched": 0,
+          "looks_with_details": 52,
+          "est_cost_usd": 0.5994,
+          "output": "data/mapped/balenciaga/Balenciaga_fall_2026_couture_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T03:39:36+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:370fac46dbe6025f1013228bafb9e95e",
+          "built_on_match_at": "2026-08-06T03:21:21+05:30",
+          "images_tagged": 274,
+          "images_failed": 1,
+          "est_cost_usd": 0.6325,
+          "output": "data/tagged/balenciaga/Balenciaga_fall_2026_couture_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T03:39:36+05:30",
+          "built_on_tag_at": "2026-08-06T03:39:36+05:30",
+          "documents": 53,
+          "looks": 53,
+          "unmatched_details": 0,
+          "output": "data/flattened/balenciaga/Balenciaga_fall_2026_couture_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T03:39:36+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/resort-2027/balenciaga": {
+      "first_seen": "2026-08-06T03:39:38+05:30",
+      "designer_key": "balenciaga",
+      "collection_name": "resort-2027",
+      "designer": "Balenciaga",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T03:39:52+05:30",
+          "pipeline_version": 2,
+          "looks": 81,
+          "details": 74,
+          "tags": 155,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:143a8857cc5987c6e11ef4cb7d7aed20",
+          "output": "data/raw/balenciaga/Balenciaga_resort_2027_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T03:45:11+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:143a8857cc5987c6e11ef4cb7d7aed20",
+          "details_attached": 71,
+          "unmatched": 3,
+          "looks_with_details": 51,
+          "est_cost_usd": 0.1998,
+          "output": "data/mapped/balenciaga/Balenciaga_resort_2027_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T03:55:01+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:143a8857cc5987c6e11ef4cb7d7aed20",
+          "built_on_match_at": "2026-08-06T03:45:11+05:30",
+          "images_tagged": 155,
+          "images_failed": 0,
+          "est_cost_usd": 0.3565,
+          "output": "data/tagged/balenciaga/Balenciaga_resort_2027_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T03:55:01+05:30",
+          "built_on_tag_at": "2026-08-06T03:55:01+05:30",
+          "documents": 84,
+          "looks": 81,
+          "unmatched_details": 3,
+          "output": "data/flattened/balenciaga/Balenciaga_resort_2027_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T03:55:01+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/fall-2026-ready-to-wear/balenciaga": {
+      "first_seen": "2026-08-06T03:55:03+05:30",
+      "designer_key": "balenciaga",
+      "collection_name": "fall-2026-ready-to-wear",
+      "designer": "Balenciaga",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T03:55:31+05:30",
+          "pipeline_version": 2,
+          "looks": 82,
+          "details": 321,
+          "tags": 403,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:23658bf7aa6bc1f1b2984fa9dd2b2d46",
+          "output": "data/raw/balenciaga/Balenciaga_fall_2026_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "failed",
+          "at": "2026-08-06T04:02:17+05:30",
+          "error": "RuntimeError: Gemini scoring failed after retries: the JSON object must be str, bytes or bytearray, not NoneType"
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/spring-2026-ready-to-wear/balenciaga": {
+      "first_seen": "2026-08-06T04:02:17+05:30",
+      "designer_key": "balenciaga",
+      "collection_name": "spring-2026-ready-to-wear",
+      "designer": "Balenciaga",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T04:02:31+05:30",
+          "pipeline_version": 2,
+          "looks": 54,
+          "details": 136,
+          "tags": 190,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:d04a44ae085bcb63b37d9b359be2215c",
+          "output": "data/raw/balenciaga/Balenciaga_spring_2026_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T04:10:27+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:d04a44ae085bcb63b37d9b359be2215c",
+          "details_attached": 136,
+          "unmatched": 0,
+          "looks_with_details": 53,
+          "est_cost_usd": 0.3672,
+          "output": "data/mapped/balenciaga/Balenciaga_spring_2026_ready_to_wear_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T04:24:37+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:d04a44ae085bcb63b37d9b359be2215c",
+          "built_on_match_at": "2026-08-06T04:10:27+05:30",
+          "images_tagged": 190,
+          "images_failed": 0,
+          "est_cost_usd": 0.437,
+          "output": "data/tagged/balenciaga/Balenciaga_spring_2026_ready_to_wear_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T04:24:38+05:30",
+          "built_on_tag_at": "2026-08-06T04:24:37+05:30",
+          "documents": 54,
+          "looks": 54,
+          "unmatched_details": 0,
+          "output": "data/flattened/balenciaga/Balenciaga_spring_2026_ready_to_wear_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T04:24:38+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/pre-fall-2026/balenciaga": {
+      "first_seen": "2026-08-06T04:24:40+05:30",
+      "designer_key": "balenciaga",
+      "collection_name": "pre-fall-2026",
+      "designer": "Balenciaga",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T04:24:52+05:30",
+          "pipeline_version": 2,
+          "looks": 96,
+          "details": 0,
+          "tags": 96,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:85129d71c318492e8824475b25a6aa55",
+          "output": "data/raw/balenciaga/Balenciaga_pre_fall_2026_raw.json"
+        },
+        "match": {
+          "status": "failed",
+          "at": "2026-08-06T04:24:52+05:30",
+          "error": "C:\\Users\\JaswanthPall_fnohyb7\\Downloads\\Prada\\fashion_engine\\scrape_engine\\data\\raw\\balenciaga\\Balenciaga_pre_fall_2026_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file."
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/spring-2025-ready-to-wear/balenciaga": {
+      "first_seen": "2026-08-06T04:24:52+05:30",
+      "designer_key": "balenciaga",
+      "collection_name": "spring-2025-ready-to-wear",
+      "designer": "Balenciaga",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T04:25:07+05:30",
+          "pipeline_version": 2,
+          "looks": 58,
+          "details": 32,
+          "tags": 90,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:e72551d86b3321f83c046444c08301c0",
+          "output": "data/raw/balenciaga/Balenciaga_spring_2025_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T04:28:41+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:e72551d86b3321f83c046444c08301c0",
+          "details_attached": 30,
+          "unmatched": 2,
+          "looks_with_details": 14,
+          "est_cost_usd": 0.0864,
+          "output": "data/mapped/balenciaga/Balenciaga_spring_2025_ready_to_wear_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T04:34:56+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:e72551d86b3321f83c046444c08301c0",
+          "built_on_match_at": "2026-08-06T04:28:41+05:30",
+          "images_tagged": 90,
+          "images_failed": 0,
+          "est_cost_usd": 0.207,
+          "output": "data/tagged/balenciaga/Balenciaga_spring_2025_ready_to_wear_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T04:34:56+05:30",
+          "built_on_tag_at": "2026-08-06T04:34:56+05:30",
+          "documents": 60,
+          "looks": 58,
+          "unmatched_details": 2,
+          "output": "data/flattened/balenciaga/Balenciaga_spring_2025_ready_to_wear_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T04:34:56+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/fall-2025-couture/balenciaga": {
+      "first_seen": "2026-08-06T04:34:58+05:30",
+      "designer_key": "balenciaga",
+      "collection_name": "fall-2025-couture",
+      "designer": "Balenciaga",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T04:35:07+05:30",
+          "pipeline_version": 2,
+          "looks": 39,
+          "details": 0,
+          "tags": 39,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:e683c0af94de1c0b127aeec59490bc60",
+          "output": "data/raw/balenciaga/Balenciaga_fall_2025_couture_raw.json"
+        },
+        "match": {
+          "status": "failed",
+          "at": "2026-08-06T04:35:08+05:30",
+          "error": "C:\\Users\\JaswanthPall_fnohyb7\\Downloads\\Prada\\fashion_engine\\scrape_engine\\data\\raw\\balenciaga\\Balenciaga_fall_2025_couture_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file."
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/resort-2026/balenciaga": {
+      "first_seen": "2026-08-06T04:35:08+05:30",
+      "designer_key": "balenciaga",
+      "collection_name": "resort-2026",
+      "designer": "Balenciaga",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T04:35:23+05:30",
+          "pipeline_version": 2,
+          "looks": 48,
+          "details": 48,
+          "tags": 96,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:9d5f821a326f4853657a6994b4f49fff",
+          "output": "data/raw/balenciaga/Balenciaga_resort_2026_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T04:38:27+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:9d5f821a326f4853657a6994b4f49fff",
+          "details_attached": 48,
+          "unmatched": 0,
+          "looks_with_details": 48,
+          "est_cost_usd": 0.1296,
+          "output": "data/mapped/balenciaga/Balenciaga_resort_2026_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T04:44:48+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:9d5f821a326f4853657a6994b4f49fff",
+          "built_on_match_at": "2026-08-06T04:38:27+05:30",
+          "images_tagged": 96,
+          "images_failed": 0,
+          "est_cost_usd": 0.2208,
+          "output": "data/tagged/balenciaga/Balenciaga_resort_2026_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T04:44:48+05:30",
+          "built_on_tag_at": "2026-08-06T04:44:48+05:30",
+          "documents": 48,
+          "looks": 48,
+          "unmatched_details": 0,
+          "output": "data/flattened/balenciaga/Balenciaga_resort_2026_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T04:44:48+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/pre-fall-2025/balenciaga": {
+      "first_seen": "2026-08-06T04:44:50+05:30",
+      "designer_key": "balenciaga",
+      "collection_name": "pre-fall-2025",
+      "designer": "Balenciaga",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T04:45:10+05:30",
+          "pipeline_version": 2,
+          "looks": 58,
+          "details": 47,
+          "tags": 105,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:5842f2dbab769d8c685dfdb69e9877e7",
+          "output": "data/raw/balenciaga/Balenciaga_pre_fall_2025_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T04:51:58+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:5842f2dbab769d8c685dfdb69e9877e7",
+          "details_attached": 17,
+          "unmatched": 30,
+          "looks_with_details": 12,
+          "est_cost_usd": 0.1269,
+          "output": "data/mapped/balenciaga/Balenciaga_pre_fall_2025_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T04:59:36+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:5842f2dbab769d8c685dfdb69e9877e7",
+          "built_on_match_at": "2026-08-06T04:51:58+05:30",
+          "images_tagged": 105,
+          "images_failed": 0,
+          "est_cost_usd": 0.2415,
+          "output": "data/tagged/balenciaga/Balenciaga_pre_fall_2025_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T04:59:36+05:30",
+          "built_on_tag_at": "2026-08-06T04:59:36+05:30",
+          "documents": 88,
+          "looks": 58,
+          "unmatched_details": 30,
+          "output": "data/flattened/balenciaga/Balenciaga_pre_fall_2025_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T04:59:36+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/fall-2025-ready-to-wear/balenciaga": {
+      "first_seen": "2026-08-06T04:59:38+05:30",
+      "designer_key": "balenciaga",
+      "collection_name": "fall-2025-ready-to-wear",
+      "designer": "Balenciaga",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T04:59:51+05:30",
+          "pipeline_version": 2,
+          "looks": 80,
+          "details": 0,
+          "tags": 80,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:8f2ff509b4bac53b3b34c9f9304fafd6",
+          "output": "data/raw/balenciaga/Balenciaga_fall_2025_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "failed",
+          "at": "2026-08-06T04:59:51+05:30",
+          "error": "C:\\Users\\JaswanthPall_fnohyb7\\Downloads\\Prada\\fashion_engine\\scrape_engine\\data\\raw\\balenciaga\\Balenciaga_fall_2025_ready_to_wear_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file."
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/fall-2026-couture/chanel": {
+      "first_seen": "2026-08-06T04:59:51+05:30",
+      "designer_key": "chanel",
+      "collection_name": "fall-2026-couture",
+      "designer": "Chanel",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T05:00:06+05:30",
+          "pipeline_version": 2,
+          "looks": 64,
+          "details": 149,
+          "tags": 213,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:bcd0d65ce08770de876aa87556a71124",
+          "output": "data/raw/chanel/Chanel_fall_2026_couture_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T05:09:40+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:bcd0d65ce08770de876aa87556a71124",
+          "details_attached": 149,
+          "unmatched": 0,
+          "looks_with_details": 63,
+          "est_cost_usd": 0.4023,
+          "output": "data/mapped/chanel/Chanel_fall_2026_couture_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T05:25:03+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:bcd0d65ce08770de876aa87556a71124",
+          "built_on_match_at": "2026-08-06T05:09:40+05:30",
+          "images_tagged": 213,
+          "images_failed": 0,
+          "est_cost_usd": 0.4899,
+          "output": "data/tagged/chanel/Chanel_fall_2026_couture_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T05:25:03+05:30",
+          "built_on_tag_at": "2026-08-06T05:25:03+05:30",
+          "documents": 64,
+          "looks": 64,
+          "unmatched_details": 0,
+          "output": "data/flattened/chanel/Chanel_fall_2026_couture_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T05:25:03+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/resort-2027/chanel": {
+      "first_seen": "2026-08-06T05:25:05+05:30",
+      "designer_key": "chanel",
+      "collection_name": "resort-2027",
+      "designer": "Chanel",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T05:25:17+05:30",
+          "pipeline_version": 2,
+          "looks": 80,
+          "details": 0,
+          "tags": 80,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:be6d40180d159a18235b2b53c917b72f",
+          "output": "data/raw/chanel/Chanel_resort_2027_raw.json"
+        },
+        "match": {
+          "status": "failed",
+          "at": "2026-08-06T05:25:17+05:30",
+          "error": "C:\\Users\\JaswanthPall_fnohyb7\\Downloads\\Prada\\fashion_engine\\scrape_engine\\data\\raw\\chanel\\Chanel_resort_2027_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file."
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/fall-2026-ready-to-wear/chanel": {
+      "first_seen": "2026-08-06T05:25:17+05:30",
+      "designer_key": "chanel",
+      "collection_name": "fall-2026-ready-to-wear",
+      "designer": "Chanel",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T05:25:40+05:30",
+          "pipeline_version": 2,
+          "looks": 79,
+          "details": 229,
+          "tags": 308,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:f79def0e61b48278f3192ed812608e83",
+          "output": "data/raw/chanel/Chanel_fall_2026_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T05:39:52+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:f79def0e61b48278f3192ed812608e83",
+          "details_attached": 229,
+          "unmatched": 0,
+          "looks_with_details": 78,
+          "est_cost_usd": 0.6183,
+          "output": "data/mapped/chanel/Chanel_fall_2026_ready_to_wear_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T06:02:56+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:f79def0e61b48278f3192ed812608e83",
+          "built_on_match_at": "2026-08-06T05:39:52+05:30",
+          "images_tagged": 307,
+          "images_failed": 1,
+          "est_cost_usd": 0.7084,
+          "output": "data/tagged/chanel/Chanel_fall_2026_ready_to_wear_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T06:02:56+05:30",
+          "built_on_tag_at": "2026-08-06T06:02:56+05:30",
+          "documents": 79,
+          "looks": 79,
+          "unmatched_details": 0,
+          "output": "data/flattened/chanel/Chanel_fall_2026_ready_to_wear_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T06:02:56+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/spring-2026-couture/chanel": {
+      "first_seen": "2026-08-06T06:02:58+05:30",
+      "designer_key": "chanel",
+      "collection_name": "spring-2026-couture",
+      "designer": "Chanel",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T06:03:23+05:30",
+          "pipeline_version": 2,
+          "looks": 54,
+          "details": 192,
+          "tags": 246,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:4afa924f71314f79d41a7b7ea805eef2",
+          "output": "data/raw/chanel/Chanel_spring_2026_couture_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T06:13:17+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:4afa924f71314f79d41a7b7ea805eef2",
+          "details_attached": 192,
+          "unmatched": 0,
+          "looks_with_details": 54,
+          "est_cost_usd": 0.5184,
+          "output": "data/mapped/chanel/Chanel_spring_2026_couture_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T06:32:45+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:4afa924f71314f79d41a7b7ea805eef2",
+          "built_on_match_at": "2026-08-06T06:13:17+05:30",
+          "images_tagged": 242,
+          "images_failed": 4,
+          "est_cost_usd": 0.5658,
+          "output": "data/tagged/chanel/Chanel_spring_2026_couture_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T06:32:45+05:30",
+          "built_on_tag_at": "2026-08-06T06:32:45+05:30",
+          "documents": 54,
+          "looks": 54,
+          "unmatched_details": 0,
+          "output": "data/flattened/chanel/Chanel_spring_2026_couture_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T06:32:45+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/pre-fall-2026/chanel": {
+      "first_seen": "2026-08-06T06:32:47+05:30",
+      "designer_key": "chanel",
+      "collection_name": "pre-fall-2026",
+      "designer": "Chanel",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T06:33:06+05:30",
+          "pipeline_version": 2,
+          "looks": 81,
+          "details": 0,
+          "tags": 81,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:5bd457f85bf4249b500eada6a0ad0ad1",
+          "output": "data/raw/chanel/Chanel_pre_fall_2026_raw.json"
+        },
+        "match": {
+          "status": "failed",
+          "at": "2026-08-06T06:33:06+05:30",
+          "error": "C:\\Users\\JaswanthPall_fnohyb7\\Downloads\\Prada\\fashion_engine\\scrape_engine\\data\\raw\\chanel\\Chanel_pre_fall_2026_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file."
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/spring-2026-ready-to-wear/chanel": {
+      "first_seen": "2026-08-06T06:33:07+05:30",
+      "designer_key": "chanel",
+      "collection_name": "spring-2026-ready-to-wear",
+      "designer": "Chanel",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T06:33:29+05:30",
+          "pipeline_version": 2,
+          "looks": 78,
+          "details": 201,
+          "tags": 279,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:3faafbe38169c4bf1e32dd7dd5f20c6f",
+          "output": "data/raw/chanel/Chanel_spring_2026_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T06:46:30+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:3faafbe38169c4bf1e32dd7dd5f20c6f",
+          "details_attached": 201,
+          "unmatched": 0,
+          "looks_with_details": 77,
+          "est_cost_usd": 0.5427,
+          "output": "data/mapped/chanel/Chanel_spring_2026_ready_to_wear_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T07:06:43+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:3faafbe38169c4bf1e32dd7dd5f20c6f",
+          "built_on_match_at": "2026-08-06T06:46:30+05:30",
+          "images_tagged": 279,
+          "images_failed": 0,
+          "est_cost_usd": 0.6417,
+          "output": "data/tagged/chanel/Chanel_spring_2026_ready_to_wear_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T07:06:43+05:30",
+          "built_on_tag_at": "2026-08-06T07:06:43+05:30",
+          "documents": 78,
+          "looks": 78,
+          "unmatched_details": 0,
+          "output": "data/flattened/chanel/Chanel_spring_2026_ready_to_wear_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T07:06:43+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/fall-2025-couture/chanel": {
+      "first_seen": "2026-08-06T07:06:45+05:30",
+      "designer_key": "chanel",
+      "collection_name": "fall-2025-couture",
+      "designer": "Chanel",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T07:07:01+05:30",
+          "pipeline_version": 2,
+          "looks": 46,
+          "details": 130,
+          "tags": 176,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:a4f004e3b0ab3379a284f11234ae6c88",
+          "output": "data/raw/chanel/Chanel_fall_2025_couture_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T07:15:14+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:a4f004e3b0ab3379a284f11234ae6c88",
+          "details_attached": 130,
+          "unmatched": 0,
+          "looks_with_details": 46,
+          "est_cost_usd": 0.351,
+          "output": "data/mapped/chanel/Chanel_fall_2025_couture_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T07:27:09+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:a4f004e3b0ab3379a284f11234ae6c88",
+          "built_on_match_at": "2026-08-06T07:15:14+05:30",
+          "images_tagged": 176,
+          "images_failed": 0,
+          "est_cost_usd": 0.4048,
+          "output": "data/tagged/chanel/Chanel_fall_2025_couture_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T07:27:09+05:30",
+          "built_on_tag_at": "2026-08-06T07:27:09+05:30",
+          "documents": 46,
+          "looks": 46,
+          "unmatched_details": 0,
+          "output": "data/flattened/chanel/Chanel_fall_2025_couture_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T07:27:09+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/resort-2026/chanel": {
+      "first_seen": "2026-08-06T07:27:11+05:30",
+      "designer_key": "chanel",
+      "collection_name": "resort-2026",
+      "designer": "Chanel",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T07:27:23+05:30",
+          "pipeline_version": 2,
+          "looks": 69,
+          "details": 0,
+          "tags": 69,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:43e1e3d336161d50d8d134cbf9707bf2",
+          "output": "data/raw/chanel/Chanel_resort_2026_raw.json"
+        },
+        "match": {
+          "status": "failed",
+          "at": "2026-08-06T07:27:23+05:30",
+          "error": "C:\\Users\\JaswanthPall_fnohyb7\\Downloads\\Prada\\fashion_engine\\scrape_engine\\data\\raw\\chanel\\Chanel_resort_2026_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file."
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/spring-2025-couture/chanel": {
+      "first_seen": "2026-08-06T07:27:23+05:30",
+      "designer_key": "chanel",
+      "collection_name": "spring-2025-couture",
+      "designer": "Chanel",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T07:27:38+05:30",
+          "pipeline_version": 2,
+          "looks": 55,
+          "details": 143,
+          "tags": 198,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:89169ac6729225c1adbde753e00a2b9d",
+          "output": "data/raw/chanel/Chanel_spring_2025_couture_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T07:35:56+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:89169ac6729225c1adbde753e00a2b9d",
+          "details_attached": 143,
+          "unmatched": 0,
+          "looks_with_details": 55,
+          "est_cost_usd": 0.3861,
+          "output": "data/mapped/chanel/Chanel_spring_2025_couture_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T07:49:18+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:89169ac6729225c1adbde753e00a2b9d",
+          "built_on_match_at": "2026-08-06T07:35:56+05:30",
+          "images_tagged": 198,
+          "images_failed": 0,
+          "est_cost_usd": 0.4554,
+          "output": "data/tagged/chanel/Chanel_spring_2025_couture_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T07:49:19+05:30",
+          "built_on_tag_at": "2026-08-06T07:49:18+05:30",
+          "documents": 55,
+          "looks": 55,
+          "unmatched_details": 0,
+          "output": "data/flattened/chanel/Chanel_spring_2025_couture_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T07:49:19+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/fall-2025-ready-to-wear/chanel": {
+      "first_seen": "2026-08-06T07:49:21+05:30",
+      "designer_key": "chanel",
+      "collection_name": "fall-2025-ready-to-wear",
+      "designer": "Chanel",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T07:49:57+05:30",
+          "pipeline_version": 2,
+          "looks": 71,
+          "details": 208,
+          "tags": 279,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:eb1b0ded4d1ef507778f5360dd8b9aa7",
+          "output": "data/raw/chanel/Chanel_fall_2025_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T08:04:42+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:eb1b0ded4d1ef507778f5360dd8b9aa7",
+          "details_attached": 208,
+          "unmatched": 0,
+          "looks_with_details": 70,
+          "est_cost_usd": 0.5616,
+          "output": "data/mapped/chanel/Chanel_fall_2025_ready_to_wear_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T08:24:21+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:eb1b0ded4d1ef507778f5360dd8b9aa7",
+          "built_on_match_at": "2026-08-06T08:04:42+05:30",
+          "images_tagged": 279,
+          "images_failed": 0,
+          "est_cost_usd": 0.6417,
+          "output": "data/tagged/chanel/Chanel_fall_2025_ready_to_wear_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T08:24:21+05:30",
+          "built_on_tag_at": "2026-08-06T08:24:21+05:30",
+          "documents": 71,
+          "looks": 71,
+          "unmatched_details": 0,
+          "output": "data/flattened/chanel/Chanel_fall_2025_ready_to_wear_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T08:24:21+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/resort-2027/louis-vuitton": {
+      "first_seen": "2026-08-06T08:24:23+05:30",
+      "designer_key": "louis_vuitton",
+      "collection_name": "resort-2027",
+      "designer": "Louis Vuitton",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T08:24:43+05:30",
+          "pipeline_version": 2,
+          "looks": 57,
+          "details": 161,
+          "tags": 218,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:0bbe0c342739e1c48e660ff18de3ebd5",
+          "output": "data/raw/louis_vuitton/Louis_Vuitton_resort_2027_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T08:39:45+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:0bbe0c342739e1c48e660ff18de3ebd5",
+          "details_attached": 161,
+          "unmatched": 0,
+          "looks_with_details": 56,
+          "est_cost_usd": 0.4347,
+          "output": "data/mapped/louis_vuitton/Louis_Vuitton_resort_2027_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T08:56:28+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:0bbe0c342739e1c48e660ff18de3ebd5",
+          "built_on_match_at": "2026-08-06T08:39:45+05:30",
+          "images_tagged": 218,
+          "images_failed": 0,
+          "est_cost_usd": 0.5014,
+          "output": "data/tagged/louis_vuitton/Louis_Vuitton_resort_2027_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T08:56:28+05:30",
+          "built_on_tag_at": "2026-08-06T08:56:28+05:30",
+          "documents": 57,
+          "looks": 57,
+          "unmatched_details": 0,
+          "output": "data/flattened/louis_vuitton/Louis_Vuitton_resort_2027_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T08:56:28+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/fall-2026-ready-to-wear/louis-vuitton": {
+      "first_seen": "2026-08-06T08:56:30+05:30",
+      "designer_key": "louis_vuitton",
+      "collection_name": "fall-2026-ready-to-wear",
+      "designer": "Louis Vuitton",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T08:56:47+05:30",
+          "pipeline_version": 2,
+          "looks": 55,
+          "details": 132,
+          "tags": 187,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:402f1cf94d1eb91d9e791ff9fae00224",
+          "output": "data/raw/louis_vuitton/Louis_Vuitton_fall_2026_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T09:10:39+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:402f1cf94d1eb91d9e791ff9fae00224",
+          "details_attached": 131,
+          "unmatched": 1,
+          "looks_with_details": 54,
+          "est_cost_usd": 0.3564,
+          "output": "data/mapped/louis_vuitton/Louis_Vuitton_fall_2026_ready_to_wear_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T09:24:45+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:402f1cf94d1eb91d9e791ff9fae00224",
+          "built_on_match_at": "2026-08-06T09:10:39+05:30",
+          "images_tagged": 187,
+          "images_failed": 0,
+          "est_cost_usd": 0.4301,
+          "output": "data/tagged/louis_vuitton/Louis_Vuitton_fall_2026_ready_to_wear_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T09:24:45+05:30",
+          "built_on_tag_at": "2026-08-06T09:24:45+05:30",
+          "documents": 56,
+          "looks": 55,
+          "unmatched_details": 1,
+          "output": "data/flattened/louis_vuitton/Louis_Vuitton_fall_2026_ready_to_wear_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T09:24:45+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/spring-2026-ready-to-wear/louis-vuitton": {
+      "first_seen": "2026-08-06T09:24:47+05:30",
+      "designer_key": "louis_vuitton",
+      "collection_name": "spring-2026-ready-to-wear",
+      "designer": "Louis Vuitton",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T09:25:03+05:30",
+          "pipeline_version": 2,
+          "looks": 46,
+          "details": 106,
+          "tags": 152,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:bcc87bc3e42c59a003c792f49fb1334a",
+          "output": "data/raw/louis_vuitton/Louis_Vuitton_spring_2026_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "failed",
+          "at": "2026-08-06T09:32:39+05:30",
+          "error": "RuntimeError: Gemini scoring failed after retries: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/resort-2026/louis-vuitton": {
+      "first_seen": "2026-08-06T09:32:39+05:30",
+      "designer_key": "louis_vuitton",
+      "collection_name": "resort-2026",
+      "designer": "Louis Vuitton",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T09:32:55+05:30",
+          "pipeline_version": 2,
+          "looks": 46,
+          "details": 0,
+          "tags": 46,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:8edfe14551e838065261580953ba0edb",
+          "output": "data/raw/louis_vuitton/Louis_Vuitton_resort_2026_raw.json"
+        },
+        "match": {
+          "status": "failed",
+          "at": "2026-08-06T09:32:55+05:30",
+          "error": "C:\\Users\\JaswanthPall_fnohyb7\\Downloads\\Prada\\fashion_engine\\scrape_engine\\data\\raw\\louis_vuitton\\Louis_Vuitton_resort_2026_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file."
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/fall-2026-ready-to-wear/gucci": {
+      "first_seen": "2026-08-06T09:32:55+05:30",
+      "designer_key": "gucci",
+      "collection_name": "fall-2026-ready-to-wear",
+      "designer": "Gucci",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T09:33:08+05:30",
+          "pipeline_version": 2,
+          "looks": 83,
+          "details": 58,
+          "tags": 141,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:15e19968b77686a10cd80d778e646a0f",
+          "output": "data/raw/gucci/Gucci_fall_2026_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T09:39:07+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:15e19968b77686a10cd80d778e646a0f",
+          "details_attached": 58,
+          "unmatched": 0,
+          "looks_with_details": 46,
+          "est_cost_usd": 0.1566,
+          "output": "data/mapped/gucci/Gucci_fall_2026_ready_to_wear_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T09:49:35+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:15e19968b77686a10cd80d778e646a0f",
+          "built_on_match_at": "2026-08-06T09:39:07+05:30",
+          "images_tagged": 141,
+          "images_failed": 0,
+          "est_cost_usd": 0.3243,
+          "output": "data/tagged/gucci/Gucci_fall_2026_ready_to_wear_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T09:49:36+05:30",
+          "built_on_tag_at": "2026-08-06T09:49:35+05:30",
+          "documents": 83,
+          "looks": 83,
+          "unmatched_details": 0,
+          "output": "data/flattened/gucci/Gucci_fall_2026_ready_to_wear_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T09:49:36+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/resort-2027/gucci": {
+      "first_seen": "2026-08-06T09:49:38+05:30",
+      "designer_key": "gucci",
+      "collection_name": "resort-2027",
+      "designer": "Gucci",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T09:49:55+05:30",
+          "pipeline_version": 2,
+          "looks": 63,
+          "details": 71,
+          "tags": 134,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:e75752d32078b9428dae1a7ffde8d4a7",
+          "output": "data/raw/gucci/Gucci_resort_2027_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T09:57:23+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:e75752d32078b9428dae1a7ffde8d4a7",
+          "details_attached": 71,
+          "unmatched": 0,
+          "looks_with_details": 55,
+          "est_cost_usd": 0.1917,
+          "output": "data/mapped/gucci/Gucci_resort_2027_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T10:08:22+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:e75752d32078b9428dae1a7ffde8d4a7",
+          "built_on_match_at": "2026-08-06T09:57:23+05:30",
+          "images_tagged": 134,
+          "images_failed": 0,
+          "est_cost_usd": 0.3082,
+          "output": "data/tagged/gucci/Gucci_resort_2027_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T10:08:22+05:30",
+          "built_on_tag_at": "2026-08-06T10:08:22+05:30",
+          "documents": 63,
+          "looks": 63,
+          "unmatched_details": 0,
+          "output": "data/flattened/gucci/Gucci_resort_2027_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T10:08:22+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/pre-fall-2026/gucci": {
+      "first_seen": "2026-08-06T10:08:24+05:30",
+      "designer_key": "gucci",
+      "collection_name": "pre-fall-2026",
+      "designer": "Gucci",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T10:08:41+05:30",
+          "pipeline_version": 2,
+          "looks": 58,
+          "details": 58,
+          "tags": 116,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:35aac05425c4108b858c1e298892315a",
+          "output": "data/raw/gucci/Gucci_pre_fall_2026_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T10:13:56+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:35aac05425c4108b858c1e298892315a",
+          "details_attached": 58,
+          "unmatched": 0,
+          "looks_with_details": 58,
+          "est_cost_usd": 0.1566,
+          "output": "data/mapped/gucci/Gucci_pre_fall_2026_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T10:23:39+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:35aac05425c4108b858c1e298892315a",
+          "built_on_match_at": "2026-08-06T10:13:56+05:30",
+          "images_tagged": 116,
+          "images_failed": 0,
+          "est_cost_usd": 0.2668,
+          "output": "data/tagged/gucci/Gucci_pre_fall_2026_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T10:23:39+05:30",
+          "built_on_tag_at": "2026-08-06T10:23:39+05:30",
+          "documents": 58,
+          "looks": 58,
+          "unmatched_details": 0,
+          "output": "data/flattened/gucci/Gucci_pre_fall_2026_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T10:23:39+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/spring-2026-ready-to-wear/gucci": {
+      "first_seen": "2026-08-06T10:23:41+05:30",
+      "designer_key": "gucci",
+      "collection_name": "spring-2026-ready-to-wear",
+      "designer": "Gucci",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T10:23:58+05:30",
+          "pipeline_version": 2,
+          "looks": 38,
+          "details": 0,
+          "tags": 38,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:7a5b6465408c1de801b144186b92c795",
+          "output": "data/raw/gucci/Gucci_spring_2026_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "failed",
+          "at": "2026-08-06T10:23:58+05:30",
+          "error": "C:\\Users\\JaswanthPall_fnohyb7\\Downloads\\Prada\\fashion_engine\\scrape_engine\\data\\raw\\gucci\\Gucci_spring_2026_ready_to_wear_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file."
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/fall-2025-ready-to-wear/gucci": {
+      "first_seen": "2026-08-06T10:23:58+05:30",
+      "designer_key": "gucci",
+      "collection_name": "fall-2025-ready-to-wear",
+      "designer": "Gucci",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T10:24:12+05:30",
+          "pipeline_version": 2,
+          "looks": 60,
+          "details": 68,
+          "tags": 128,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:0ef71f13bec70f6bfb03b97f0a40b033",
+          "output": "data/raw/gucci/Gucci_fall_2025_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T10:34:14+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:0ef71f13bec70f6bfb03b97f0a40b033",
+          "details_attached": 55,
+          "unmatched": 13,
+          "looks_with_details": 36,
+          "est_cost_usd": 0.1836,
+          "output": "data/mapped/gucci/Gucci_fall_2025_ready_to_wear_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T10:47:09+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:0ef71f13bec70f6bfb03b97f0a40b033",
+          "built_on_match_at": "2026-08-06T10:34:14+05:30",
+          "images_tagged": 128,
+          "images_failed": 0,
+          "est_cost_usd": 0.2944,
+          "output": "data/tagged/gucci/Gucci_fall_2025_ready_to_wear_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T10:47:09+05:30",
+          "built_on_tag_at": "2026-08-06T10:47:09+05:30",
+          "documents": 73,
+          "looks": 60,
+          "unmatched_details": 13,
+          "output": "data/flattened/gucci/Gucci_fall_2025_ready_to_wear_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T10:47:09+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/resort-2026/gucci": {
+      "first_seen": "2026-08-06T10:47:11+05:30",
+      "designer_key": "gucci",
+      "collection_name": "resort-2026",
+      "designer": "Gucci",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T10:47:31+05:30",
+          "pipeline_version": 2,
+          "looks": 42,
+          "details": 85,
+          "tags": 127,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:b9b516dfac2acaa06ffb8a3d25332da5",
+          "output": "data/raw/gucci/Gucci_resort_2026_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T10:54:00+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:b9b516dfac2acaa06ffb8a3d25332da5",
+          "details_attached": 85,
+          "unmatched": 0,
+          "looks_with_details": 39,
+          "est_cost_usd": 0.2295,
+          "output": "data/mapped/gucci/Gucci_resort_2026_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T11:04:44+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:b9b516dfac2acaa06ffb8a3d25332da5",
+          "built_on_match_at": "2026-08-06T10:54:00+05:30",
+          "images_tagged": 127,
+          "images_failed": 0,
+          "est_cost_usd": 0.2921,
+          "output": "data/tagged/gucci/Gucci_resort_2026_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T11:04:44+05:30",
+          "built_on_tag_at": "2026-08-06T11:04:44+05:30",
+          "documents": 42,
+          "looks": 42,
+          "unmatched_details": 0,
+          "output": "data/flattened/gucci/Gucci_resort_2026_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T11:04:44+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/pre-fall-2025/gucci": {
+      "first_seen": "2026-08-06T11:04:46+05:30",
+      "designer_key": "gucci",
+      "collection_name": "pre-fall-2025",
+      "designer": "Gucci",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T11:05:04+05:30",
+          "pipeline_version": 2,
+          "looks": 47,
+          "details": 8,
+          "tags": 55,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:3de2ac43971c75c1717f8c9164e7cebc",
+          "output": "data/raw/gucci/Gucci_pre_fall_2025_raw.json"
+        },
+        "match": {
+          "status": "ok",
+          "at": "2026-08-06T11:07:01+05:30",
+          "model": "gemini-2.5-flash",
+          "source_fingerprint": "sha256:3de2ac43971c75c1717f8c9164e7cebc",
+          "details_attached": 7,
+          "unmatched": 1,
+          "looks_with_details": 7,
+          "est_cost_usd": 0.0216,
+          "output": "data/mapped/gucci/Gucci_pre_fall_2025_mapped.json"
+        },
+        "tag": {
+          "status": "ok",
+          "at": "2026-08-06T11:12:28+05:30",
+          "model": "gemini-2.5-flash",
+          "prompt_version": 2,
+          "source_fingerprint": "sha256:3de2ac43971c75c1717f8c9164e7cebc",
+          "built_on_match_at": "2026-08-06T11:07:01+05:30",
+          "images_tagged": 55,
+          "images_failed": 0,
+          "est_cost_usd": 0.1265,
+          "output": "data/tagged/gucci/Gucci_pre_fall_2025_tagged.json"
+        },
+        "flatten": {
+          "status": "ok",
+          "at": "2026-08-06T11:12:28+05:30",
+          "built_on_tag_at": "2026-08-06T11:12:28+05:30",
+          "documents": 48,
+          "looks": 47,
+          "unmatched_details": 1,
+          "output": "data/flattened/gucci/Gucci_pre_fall_2025_flattened.json"
+        }
+      },
+      "last_run": "2026-08-06T11:12:28+05:30"
+    },
+    "https://www.vogue.com/fashion-shows/spring-2025-ready-to-wear/gucci": {
+      "first_seen": "2026-08-06T11:12:30+05:30",
+      "designer_key": "gucci",
+      "collection_name": "spring-2025-ready-to-wear",
+      "designer": "Gucci",
+      "stages": {
+        "scrape": {
+          "status": "ok",
+          "at": "2026-08-06T11:12:55+05:30",
+          "pipeline_version": 2,
+          "looks": 54,
+          "details": 67,
+          "tags": 121,
+          "strategy": "embedded-state",
+          "fingerprint": "sha256:25c18323a9b6dae47876ba7236ecd591",
+          "output": "data/raw/gucci/Gucci_spring_2025_ready_to_wear_raw.json"
+        },
+        "match": {
+          "status": "failed",
+          "at": "2026-08-06T11:17:45+05:30",
+          "error": "RuntimeError: Gemini scoring failed after retries: the JSON object must be str, bytes or bytearray, not NoneType"
+        }
+      }
+    }
+  }
+}

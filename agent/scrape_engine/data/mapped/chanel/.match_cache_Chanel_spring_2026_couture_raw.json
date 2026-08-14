@@ -1,0 +1,1405 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca607b3b33445f0a51f5/master/pass/00001-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-6": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, sheer beige top with pink buttons, and dangling earrings are identical in the detail and Look 1.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca5e8e04d0fbd172c21c/master/pass/00002-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-6": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 1 in color, fabric, trim details (pearls, small charms), the sheer skirt with embroidery, the visible undergarments, the hosiery, and the quilted bag with a gold chain strap.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca616a5bb9241e086276/master/pass/00004-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-7": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail matches the sheer grey sleeveless top with pearl embellishments, the sheer grey skirt with embroidered patterns and pearl trim, the pink hosiery, and the grey plaid bag with a gold chain from Look 2.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca5f4645e0dea3c2aa5b/master/pass/00003-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-7": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The sheer nude fabric with subtle bird embroidery, beaded trim on the hem and sleeves, and the identical light pink crumpled fabric bag with a gold chain and white tag are all perfectly matched.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca636a5bb9241e086278/master/pass/00005-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-7": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The sheer sleeveless top with clear teardrop embellishments, the lavender undergarments, the sheer patterned trousers with light blue/green embroidery, and the distinctive pearl and chain bracelet all perfectly match Look 2.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca63f898455c9d327995/master/pass/00006-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-8": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the bag (grey plaid with fringe and gold chain) and the shoes (yellow slingback with black toe and sculptural gold heel) worn in Look 2. The sheer dress fabric is also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca656a5bb9241e08627a/master/pass/00007-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-8": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The model, hair, earrings, and the unique red sheer top with its distinctive button closure are identical in both the detail and Look 3.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca684ecbcaf7b3d915cf/master/pass/00008-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-8": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 3 in terms of the sheer red top with specific buttons and pockets, the identical pearl and charm belt, the pleated sheer red skirt, and the red bag with a gold chain.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca671ab0540f0dbac7e0/master/pass/00009-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-8": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 3 in every visible aspect: the red sheer top with pearl embellishments and ruffled waist, the red sheer pleated wide-leg pants, the light grey hosiery, the two-tone shoes with black toe caps, and the distinctive red drawstring bag with a clear bottom and gold chain strap. The model's skin tone and dark nail polish also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca6dd26fd5593ecbddd5/master/pass/00012-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-9": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The model, sheer mint green collared top, visible light blue lace undergarment, and subtle embroidery pattern all perfectly match Look 4.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca687b3b33445f0a51f7/master/pass/00010-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-9": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 3's sheer red top with pearl and gold chain trim on the sleeves and hem, the pocket detail, the pleated red skirt, and the red bag with a gold chain strap.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca6b720abd8f28391411/master/pass/00011-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-9": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 3, including the red sheer pleated dress, the red soft bag with a gold chain and white scarf with Chanel logo, and the distinctive white and black shoes with a gold sculptural heel and white ankle strap.",
+  "alternates": [
+   {
+    "look_number": 8,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca6ccb0ce04e31498b7d/master/pass/00013-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-10": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The sheer mint green collared shirt with V-neck, decorative buttons, light blue bralette underneath, and the specific embroidered pattern on the fabric perfectly match Look 4.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca6fc1d4f0e483fa7228/master/pass/00014-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-10": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 4 in garment color (mint green), sheer fabric, blue floral embroidery on the sleeves and undergarment, the button-down front, the waist belt detail, and even the model's long white nails.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca7079b01ae76568257f/master/pass/00015-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-10": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the mint green sheer fabric, the intricate blue and green embroidery pattern on the sleeves and body, and the delicate silver chain trim on the cuff of Look 4.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca71110e7749f910929e/master/pass/00016-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-10": {
+  "look_number": 4,
+  "confidence": 0.95,
+  "evidence": "The sheer light green fabric with blue and gold bird embroidery and beaded hem perfectly matches the dress in Look 4. The unique gold sculpted heel on the shoe is also present in Look 4.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca75bcd344c05dbf7e08/master/pass/00019-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The sheer light blue/mint green fabric, intricate gold/beige embroidery on the sleeves and pants, pearl trim along the cuffs and hem, and the pearl bracelet all perfectly match Look 5. The model is also holding the same small white paper.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca732ee04c3897d0a717/master/pass/00017-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The model, sheer light blue embroidered top with pastel mushroom and floral motifs, and the unique teardrop bead closure at the neckline are identical to Look 5. The lavender bra visible underneath also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca73dd36f2c90b340c36/master/pass/00018-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 5, including the sheer light blue embroidered trousers, the matching embroidered jacket with cuff embellishments, the two-toned shoes (black toe, beige body), and the white item held in hand.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca772ee04c3897d0a719/master/pass/00020-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The sheer mint green jacket with intricate mushroom and foliage embroidery, along with the pearl and charm cuff trim, perfectly matches the detail image. The visible sheer light blue undergarment also aligns.",
+  "alternates": [
+   {
+    "look_number": 4,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca79110e7749f91092a0/master/pass/00022-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-12": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The sheer light grey top with red and white mushroom appliques, red straps with pearl embellishments, and visible red bra are identical in both the detail and Look 6.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca77f45f08bdd90793a9/master/pass/00021-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-12": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail shows sheer light blue trousers with distinctive botanical embroidery in pink, peach, and light green, paired with beige and black two-tone shoes. Look 5 features the exact same trousers, embroidery, and shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca7a2ee04c3897d0a71b/master/pass/00023-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-12": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The light pink quilted bag with gold chain and the light blue sheer garment with red and white mushroom embroidery perfectly match Look 6.",
+  "alternates": [
+   {
+    "look_number": 1,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca7cbcd344c05dbf7e0a/master/pass/00024-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-13": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail shows a sheer light blue garment with extensive red and white mushroom embroidery and a gold trim. Look 6 features the exact same sheer light blue fabric, red and white mushroom embroidery, and gold trim on both the top and bottom garments.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca7e3eb9bc1c91eb7c4a/master/pass/00026-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-13": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the nude pump with black pointed toe, ankle strap, unique pink sculptural heel, and sheer nude hosiery worn by the model in Look 1.",
+  "alternates": [
+   {
+    "look_number": 5,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 6,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca7f1ab0540f0dbac7e2/master/pass/00027-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-13": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The model's hair, the distinctive dangling earrings, and the unique pastel-colored, scale-like textured fabric of the garment are all identical to Look 7.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca7cd8d6b7d8eb11b041/master/pass/00025-chanel-spring-2026-couture-details-credit-gorunway.jpg|1-13": {
+  "look_number": 6,
+  "confidence": 0.9,
+  "evidence": "The light blue sheer dress with red mushroom embroidery and gold trim, and the nude sheer hosiery are an exact match. The shoe's nude color and black cap toe also match, though the heel shape and ankle strap differ from the full look.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca804b1e508cfa463ce5/master/pass/00028-chanel-spring-2026-couture-details-credit-gorunway.jpg|2-14": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a sheer, collared, long-sleeved top with unique petal-like embellishments in mixed pale yellow and blue/grey tones, along with matching ornate dangling earrings. Look 7 features the identical garment and earrings.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca83edb1221f5aa20d16/master/pass/00030-chanel-spring-2026-couture-details-credit-gorunway.jpg|2-14": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a garment with a unique scale-like applique texture in muted cream, beige, and light blue tones. Look 7 features a coat or dress with the identical texture, color palette, and sleeve design.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca823f0eefba8e867649/master/pass/00029-chanel-spring-2026-couture-details-credit-gorunway.jpg|2-14": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a sheer, collared garment with a unique scale-like texture in cream, light blue, and light yellow/green, adorned with small pearl-like embellishments. The model wears large ornate earrings and a light green/yellow bra. Look 7 features a coat with the identical texture, color, embellishments, collar style, and the same earrings and visible bra color.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca86cd117c4683844af1/master/pass/00032-chanel-spring-2026-couture-details-credit-gorunway.jpg|3-15": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a sheer, light-colored jacket and pants with a distinctive black and white scribbled texture and gold buttons. Look 8 features the exact same jacket and matching skirt with the identical texture and buttons, and the model is holding a bag with a gold chain strap consistent with the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca83bd02fd5cd2a3d131/master/pass/00031-chanel-spring-2026-couture-details-credit-gorunway.jpg|3-15": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The light blue shoes with a black toe cap, ankle strap, and cut-out design, along with the sheer light hosiery, perfectly match those worn in Look 7. The visible part of the dress also matches the texture and color of the garment in Look 7.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca87ebf1c5c26848e76e/master/pass/00034-chanel-spring-2026-couture-details-credit-gorunway.jpg|3-15": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail shows a sheer garment with black irregular thread-like embroidery and gold chain trim, along with a small black drawstring bag with a gold chain strap. Look 8 features the identical garment and bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca86d26fd5593ecbddd7/master/pass/00033-chanel-spring-2026-couture-details-credit-gorunway.jpg|3-15": {
+  "look_number": 8,
+  "confidence": 0.95,
+  "evidence": "The detail shows a sheer garment with a distinctive black and white tangled thread pattern and gold trim. Look 8 features a jacket and skirt made of the exact same sheer fabric with the identical black and white tangled thread pattern and gold trim.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca8beda813203e8ea57a/master/pass/00035-chanel-spring-2026-couture-details-credit-gorunway.jpg|4-16": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the shoes (cream with black toe, ankle strap, sculptural wooden heel), sheer pink hosiery, and the cream skirt with black scribbled pattern and gold trim seen in Look 8.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca8d77d2a09a9ccb8984/master/pass/00037-chanel-spring-2026-couture-details-credit-gorunway.jpg|4-16": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The sheer pink sleeveless top with the distinctive wavy pattern and high neck detail is an exact match to the garment worn in Look 9.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca8d74abed7c0f4457df/master/pass/00036-chanel-spring-2026-couture-details-credit-gorunway.jpg|4-16": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The shoe's unique sculptural heel, cream body, black toe, and ankle strap with gold buckle perfectly match the detail.",
+  "alternates": [
+   {
+    "look_number": 9,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca9174abed7c0f4457e3/master/pass/00039-chanel-spring-2026-couture-details-credit-gorunway.jpg|5-17": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail shows a pink sheer fabric with a distinctive embroidered scale/feather pattern, scalloped gold-trimmed hem, and a sheer pink sleeve/scarf with gold chains and pearls. Look 9 features a skirt and a matching accessory with all these exact details.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca9074abed7c0f4457e1/master/pass/00040-chanel-spring-2026-couture-details-credit-gorunway.jpg|5-17": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The sheer light beige jacket with colorful mushroom embroidery on the collar, cuffs, and hem, the sheer pink undergarment with dangling embellishments, and the woven chain-strap bag are identical in both the detail and Look 10.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca8ef45f08bdd90793ab/master/pass/00038-chanel-spring-2026-couture-details-credit-gorunway.jpg|5-17": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the pink sheer top and skirt with scale-like embroidery, the sheer pink hosiery, the white shoes with black toe caps, and the pink beaded scarf held in hand from Look 9.",
+  "alternates": [
+   {
+    "look_number": 8,
+    "confidence": 0.2
+   },
+   {
+    "look_number": 17,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca920283f37b9351f9e9/master/pass/00041-chanel-spring-2026-couture-details-credit-gorunway.jpg|5-17": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 10 in terms of the sheer beige top and skirt with colorful mushroom embroidery, the bright orange sheer tights, the red shoes with black toes, and the small sheer beige bag with a gold chain strap.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca9648f8abce505d4688/master/pass/00044-chanel-spring-2026-couture-details-credit-gorunway.jpg|6-18": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The model's short brown bob hairstyle, the sheer light-colored top, and the distinctive grey, white, and black embroidered pattern on the collar are an exact match to Look 11.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca955a11a748a4a7e137/master/pass/00043-chanel-spring-2026-couture-details-credit-gorunway.jpg|6-18": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the orange sheer hosiery, the red suede slingback pumps with black pointed toes, and the colorful mushroom-patterned sheer dress hem with a frayed edge seen in Look 10.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca989322c717a3e59dcc/master/pass/00045-chanel-spring-2026-couture-details-credit-gorunway.jpg|7-19": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The sheer white top with the distinctive grey, pale yellow, and light blue organic-shaped appliqu\u00e9 and beaded trim at the hem perfectly matches the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca942ca4723e5c58b7c8/master/pass/00042-chanel-spring-2026-couture-details-credit-gorunway.jpg|6-18": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a sheer, light beige garment with vibrant, multi-colored mushroom embroidery along the hem, featuring a gold trim. Look 10 perfectly matches this description, showing the same sheer fabric, color, and identical mushroom embroidery pattern and trim on both the top and skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca9b9322c717a3e59dce/master/pass/00047-chanel-spring-2026-couture-details-credit-gorunway.jpg|7-19": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the cream and red slingback heels with the unique sculptural heel, the sheer hosiery, and the layered sheer white dress with the patterned undergarment visible in Look 11.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca99edb1221f5aa20d18/master/pass/00046-chanel-spring-2026-couture-details-credit-gorunway.jpg|7-19": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 11 in the sheer white garment, the unique grey/black/green abstract appliqu\u00e9 pattern on the top and skirt slit, the sheer white hosiery, and the distinctive white pumps with red toe caps and ankle straps. The long, pointed nails also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca9bf898455c9d327997/master/pass/00048-chanel-spring-2026-couture-details-credit-gorunway.jpg|7-19": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a sheer yellow garment with black brushstroke-like patterns, which perfectly matches the dress worn in Look 12. The fabric, color, and pattern are identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca9c720abd8f28391413/master/pass/00049-chanel-spring-2026-couture-details-credit-gorunway.jpg|8-20": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail shows a sheer yellow shirt with black textured, scale-like embellishments and a matching skirt. Look 12 features the identical shirt and skirt, matching perfectly in color, fabric, and pattern.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca9e6a5bb9241e08627c/master/pass/00051-chanel-spring-2026-couture-details-credit-gorunway.jpg|8-20": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the yellow dress with black abstract pattern, olive green tights, and red and black slingback heels worn in Look 12.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978ca9f48f8abce505d468a/master/pass/00050-chanel-spring-2026-couture-details-credit-gorunway.jpg|8-20": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The yellow sheer fabric with black abstract pattern, olive green hosiery, and red and black two-tone pumps are identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 10,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caa021c68d4a58bfc870/master/pass/00052-chanel-spring-2026-couture-details-credit-gorunway.jpg|8-20": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail shows a sheer black garment with a deep V-back, small buttons down the spine, and long flowing fabric panels draped over the shoulders. None of the candidate looks feature this specific back design or flowing panels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caa2c32b0a086e3c8c63/master/pass/00054-chanel-spring-2026-couture-details-credit-gorunway.jpg|9-21": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The sheer black sleeveless top with bird appliques and the black lace bra visible underneath are identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caa2cd117c4683844af3/master/pass/00053-chanel-spring-2026-couture-details-credit-gorunway.jpg|9-21": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 13, including the sheer black sleeveless top, black lace bralette and shorts with lace trim, the subtle embroidery on the sheer top, and the white clutch with black writing. The model is also the same.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caa4d8d6b7d8eb11b043/master/pass/00055-chanel-spring-2026-couture-details-credit-gorunway.jpg|9-21": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail shows black sheer fabric with a pearl-like trim, black hosiery, and two-tone brown/gold sculpted heels. Look 13 features all these exact elements.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caa62a1eb19f42a9b0b8/master/pass/00057-chanel-spring-2026-couture-details-credit-gorunway.jpg|10-22": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The jacket's exact color, textured fabric, ruffled trim on the neckline, front, cuffs, and hem, along with the buttons and the sheer pink ruffled bottoms, perfectly match Look 14. The earrings are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caa53f0eefba8e86764b/master/pass/00056-chanel-spring-2026-couture-details-credit-gorunway.jpg|10-22": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The model's hair, the light pink textured jacket with ruffled trim and white buttons, and the ornate earrings with pink, white, and blue accents are an exact match to Look 14.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caa907d6d62b3cfa15cb/master/pass/00059-chanel-spring-2026-couture-details-credit-gorunway.jpg|10-22": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light purple opaque hosiery and a yellow slingback shoe with a black toe cap and a unique pink sculpted floral heel. Look 14 features the exact same hosiery and shoe.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caa821c68d4a58bfc872/master/pass/00058-chanel-spring-2026-couture-details-credit-gorunway.jpg|10-22": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the pink textured jacket with ruffled trim, the sheer light pink slip skirt with ruffled hem, the opaque purple tights, and the gold/cream pumps with black toe cap and pink floral embellishment seen in Look 14.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caad0fff26ed44a7aba1/master/pass/00063-chanel-spring-2026-couture-details-credit-gorunway.jpg|12-24": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a sheer white tank top, a white lace bra, and light blue denim jeans. Look 16 features the exact same sheer white tank top, white bra, and light blue jeans.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caadc1d4f0e483fa722a/master/pass/00062-chanel-spring-2026-couture-details-credit-gorunway.jpg|11-23": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light pink pump with a black pointed toe, an ankle strap with a gold buckle, and distinctive side straps and heel shape. Look 15 features the exact same shoe.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caae7b3b33445f0a51f9/master/pass/00061-chanel-spring-2026-couture-details-credit-gorunway.jpg|11-23": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the sheer, loosely woven top and skirt of Look 15, including the raw edges, patch pockets, and the distinctive white teardrop embellishments on the pocket flaps. The fabric texture and color gradient from lighter top to darker skirt are identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caaa7a8eaf10941f6b66/master/pass/00060-chanel-spring-2026-couture-details-credit-gorunway.jpg|11-23": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The sheer woven top with collar, zipper, pearl details, and frayed hem, along with the matching sheer skirt, pink bra, and woven bag, are identical to those in Look 15.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cab162a0591e0488e3de/master/pass/00066-chanel-spring-2026-couture-details-credit-gorunway.jpg|12-24": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The model, her short dark hair, the black sleeveless garment, and all the distinctive blue and silver jewelry (earrings, necklace, and brooch) are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cab079b01ae765682583/master/pass/00065-chanel-spring-2026-couture-details-credit-gorunway.jpg|12-24": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image shows sheer light blue pants with a metallic oval embellishment on the ankle and two-tone black and tan shoes. Look 16 features identical sheer light blue pants with the same embellishment and the exact same two-tone black and tan shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cab079b01ae765682581/master/pass/00064-chanel-spring-2026-couture-details-credit-gorunway.jpg|12-24": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The sheer white tank top, sheer blue pants with blue underwear, two-tone beige and black shoes, and the dark grey textured bag are all identical to those in Look 16.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cab30fff26ed44a7aba3/master/pass/00067-chanel-spring-2026-couture-details-credit-gorunway.jpg|13-25": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The shoe in the detail image perfectly matches the off-white body, black toe cap, light heel, and distinctive white double-strap slingback design with a cut-out seen on the model in Look 17.",
+  "alternates": [
+   {
+    "look_number": 18,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 20,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 21,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cab4f898455c9d327999/master/pass/00069-chanel-spring-2026-couture-details-credit-gorunway.jpg|13-25": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 18, showing the same black jacket with feathered cuffs, black skirt with lime green buttons and high slit, and white pumps with black toes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cab34645e0dea3c2aa5d/master/pass/00068-chanel-spring-2026-couture-details-credit-gorunway.jpg|13-25": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black coat with a black feather collar, light green round buttons, and matching light green stud earrings. The model's hair and facial features are also visible. Look 18 features the exact same black coat with black feather collar, identical light green buttons, and matching light green stud earrings on the same model.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cab6110e7749f91092a2/master/pass/00070-chanel-spring-2026-couture-details-credit-gorunway.jpg|14-26": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black jacket sleeve with black feather cuffs and three distinctive light green/chartreuse buttons. Look 18 features a black jacket with identical black feather cuffs and the same light green/chartreuse buttons on the sleeves.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cab78e79743d83fca359/master/pass/00071-chanel-spring-2026-couture-details-credit-gorunway.jpg|14-26": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The dress, including its unique open-weave scale pattern, color gradient from teal to dark blue/black, irregular hem with dark trim, and the light blue/white heels with black toe cap, perfectly matches Look 19. The model's hair and visible features are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cab8d26fd5593ecbddd9/master/pass/00072-chanel-spring-2026-couture-details-credit-gorunway.jpg|14-26": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, and the unique mint green/teal openwork dress with its intricate pattern and darker underlayer perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cab92ee04c3897d0a71d/master/pass/00073-chanel-spring-2026-couture-details-credit-gorunway.jpg|14-26": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The dress in the detail image is identical to the dress in Look 19, featuring the same intricate open-work, scale-like pattern and a gradient color from light teal/green to darker teal/blue/black.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caba5a11a748a4a7e139/master/pass/00074-chanel-spring-2026-couture-details-credit-gorunway.jpg|15-27": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the light blue slingback pumps with black toes and light grey heels, as well as the dark green intricate open-weave dress worn in Look 19.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cabcd8d6b7d8eb11b045/master/pass/00075-chanel-spring-2026-couture-details-credit-gorunway.jpg|15-27": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 20 in terms of the model's features (skin tone, short hair), the distinctive sparkly round earrings, the unique black and light-colored feathery/frayed collar, and the green, white, and black textured tweed-like fabric of the garment.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cabd6ce75bb9f43e86a5/master/pass/00077-chanel-spring-2026-couture-details-credit-gorunway.jpg|16-28": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the green, black, and white textured tweed-like fabric and the distinctive black feathery cuff trim of Look 20.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cac12ca4723e5c58b7ca/master/pass/00079-chanel-spring-2026-couture-details-credit-gorunway.jpg|16-28": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a tweed jacket with red, black, white, and yellow threads, a distinctive white feathery collar, and blue buttons. Look 21 features a dress/coat with the identical tweed pattern, color combination, and the same white feathery collar. The blue buttons are also visible on the garment in Look 21.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cabd2ee04c3897d0a71f/master/pass/00076-chanel-spring-2026-couture-details-credit-gorunway.jpg|15-27": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 20 in terms of the unique green, white, and black textured fabric, the decorative buttons, the black cuff trim with pink accents, and the distinctive black and white feather trim at the hem.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cac0c1d4f0e483fa722c/master/pass/00080-chanel-spring-2026-couture-details-credit-gorunway.jpg|16-28": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail shows a multi-colored tweed-like fabric in red, black, white, and yellow, with small blue buttons and a light-colored feather trim on the cuff. Look 21 features a dress with the identical fabric, buttons, and light-colored feather trim on both the cuffs and hem.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cabe0a0a725c14fb6f55/master/pass/00078-chanel-spring-2026-couture-details-credit-gorunway.jpg|16-28": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail shows distinctive white and black pointed-toe pumps with a cut-out heel, bare dark-skinned legs, and a garment with black and white/cream feathers. Look 20 features the exact same shoes, matching bare dark-skinned legs, and a dress with a black and white feather trim at the hem, perfectly matching the visible garment in the detail.",
+  "alternates": [
+   {
+    "look_number": 17,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 27,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cac47c81d00ba77e6171/master/pass/00083-chanel-spring-2026-couture-details-credit-gorunway.jpg|17-29": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the ombre knit top, the black and white feather and textured pattern on the skirt, and the feather cuffs of Look 22.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cac14ecbcaf7b3d915d1/master/pass/00081-chanel-spring-2026-couture-details-credit-gorunway.jpg|17-29": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the multi-colored tweed fabric, the cream-colored feather trim on the cuffs and hem, and the blue buttons of Look 21.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cac30c618f618c9bb1fc/master/pass/00082-chanel-spring-2026-couture-details-credit-gorunway.jpg|17-29": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The shoe in the detail image is an exact match for the shoe worn by the model in Look 17, featuring the same off-white body, black toe cap, slingback design with cut-outs, and sculpted heel.",
+  "alternates": [
+   {
+    "look_number": 18,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 20,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 21,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cac4bd02fd5cd2a3d133/master/pass/00084-chanel-spring-2026-couture-details-credit-gorunway.jpg|17-29": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the feathered and beaded skirt and lower sleeve of Look 22, including the black, white, and brown/gold color palette and intricate texture.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cac60a0a725c14fb6f57/master/pass/00085-chanel-spring-2026-couture-details-credit-gorunway.jpg|18-30": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail shows a garment with a reddish-brown beaded upper section and a lower section with black and white feathers arranged in a distinct pattern with beaded bands. Look 22 features a top with the identical reddish-brown beaded fabric and a skirt with the exact same black and white feather pattern and beaded bands.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cac8cd117c4683844af5/master/pass/00087-chanel-spring-2026-couture-details-credit-gorunway.jpg|18-30": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The model's hair, the black and white textured jacket fabric, the black feathery collar with colorful flecks, and the red and silver buttons/earrings are all identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 20,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cac70a0a725c14fb6f59/master/pass/00086-chanel-spring-2026-couture-details-credit-gorunway.jpg|18-30": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The light blue slingback pumps with black toe caps and the black and white feather trim on the garment perfectly match Look 22.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cacacf58fa8f09f608b3/master/pass/00088-chanel-spring-2026-couture-details-credit-gorunway.jpg|19-31": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The black textured jacket with 3/4 sleeves, feathery trim with colored accents, and distinctive red and silver buttons are identical to Look 23. The model's hair also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cacb4645e0dea3c2aa5f/master/pass/00089-chanel-spring-2026-couture-details-credit-gorunway.jpg|19-31": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black textured jacket and skirt with black feather trim. Look 23 features the exact same black textured fabric, the distinctive red and white circular buttons on the jacket, and the black feather trim with colorful specks on both the jacket and skirt hems.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cacd21c68d4a58bfc876/master/pass/00091-chanel-spring-2026-couture-details-credit-gorunway.jpg|19-31": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The dress, hosiery, and shoes in the detail image are identical to those worn by the model in Look 24. The multi-colored textured top, sheer layered skirt, pink hosiery, and two-tone shoes are all exact matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cacb0fff26ed44a7aba5/master/pass/00090-chanel-spring-2026-couture-details-credit-gorunway.jpg|19-31": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The white pump with black toe cap, white ankle strap, and sculptural heel perfectly matches. The black garment with colorful, spiky fringes at the hem also matches the dress in Look 20.",
+  "alternates": [
+   {
+    "look_number": 23,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cace7b3b33445f0a51fb/master/pass/00093-chanel-spring-2026-couture-details-credit-gorunway.jpg|20-32": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The sleeveless dress in Look 24 features the identical unique textured fabric, color palette (white, red, yellow, black), and abstract pattern as seen in the detail image.",
+  "alternates": [
+   {
+    "look_number": 25,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cace4645e0dea3c2aa61/master/pass/00092-chanel-spring-2026-couture-details-credit-gorunway.jpg|20-32": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The model's hair, facial features, and the distinctive textured, multi-colored sleeveless dress with red, yellow, and black patches are an exact match to Look 24. The earrings are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cad0d26fd5593ecbdddb/master/pass/00094-chanel-spring-2026-couture-details-credit-gorunway.jpg|20-32": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The detail shows pink hosiery and a light pink pump with a black pointed toe and ankle strap. Look 24 features identical pink hosiery and the exact same shoe design.",
+  "alternates": [
+   {
+    "look_number": 28,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cad1cd117c4683844af7/master/pass/00096-chanel-spring-2026-couture-details-credit-gorunway.jpg|21-33": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact close-up of the bodice of the dress in Look 25, featuring the identical ruffled neckline, layered fabric textures, and color palette of black, yellow, and light pink/beige.",
+  "alternates": [
+   {
+    "look_number": 24,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cad1d8d6b7d8eb11b047/master/pass/00095-chanel-spring-2026-couture-details-credit-gorunway.jpg|21-33": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail image is a rear view of Look 25, showing the identical multi-colored, textured bodice and the flowing, pastel-colored sheer skirt. The model's short, dark, curly hair also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cad30283f37b9351f9eb/master/pass/00097-chanel-spring-2026-couture-details-credit-gorunway.jpg|21-33": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the unique textured bodice with black, yellow, and cream elements, and the flowing pastel green, yellow, and pink sheer skirt of Look 25.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cad42a1eb19f42a9b0ba/master/pass/00098-chanel-spring-2026-couture-details-credit-gorunway.jpg|21-33": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 25, featuring the same unique textured bodice with black, peach, yellow, and green elements, the flowing sheer skirt with a gradient of light green, peach, yellow, and cream, and the brown/bronze heels with a cream toe cap.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cad47a8eaf10941f6b68/master/pass/00099-chanel-spring-2026-couture-details-credit-gorunway.jpg|22-34": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 26, showing the same black midi dress with a sheer flowing cape and identical black slingback heels with a contrasting heel.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cad648f8abce505d468c/master/pass/00100-chanel-spring-2026-couture-details-credit-gorunway.jpg|22-34": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The model, hair, earrings, and the black dress with its distinctive ruffled collar and sheer sleeves are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cad74ecbcaf7b3d915d3/master/pass/00101-chanel-spring-2026-couture-details-credit-gorunway.jpg|22-34": {
+  "look_number": 26,
+  "confidence": 0.98,
+  "evidence": "The black pointed-toe stiletto heels with the distinctive two-strap cut-out design and slingback are an exact match to the shoes in the detail image.",
+  "alternates": [
+   {
+    "look_number": 31,
+    "confidence": 0.98
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cad74ecbcaf7b3d915d5/master/pass/00102-chanel-spring-2026-couture-details-credit-gorunway.jpg|23-35": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The model, cream tweed jacket with its specific texture, ruffled collar with pearl details, and unique buttons all perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cada110e7749f91092a4/master/pass/00104-chanel-spring-2026-couture-details-credit-gorunway.jpg|23-35": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the cream textured jacket and skirt with 3D floral appliques, and the distinctive white shoes with black pointed toes and heel straps, worn in Look 27.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cad97c81d00ba77e6173/master/pass/00103-chanel-spring-2026-couture-details-credit-gorunway.jpg|23-35": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the cream textured jacket with ruffled collar and buttons, and the matching skirt with 3D floral appliques, worn by the model in Look 27.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cadbcd117c4683844af9/master/pass/00105-chanel-spring-2026-couture-details-credit-gorunway.jpg|23-35": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a white slingback pump with a black cap toe and a distinctive sculptural heel, which perfectly matches the shoes worn in Look 27. Additionally, the light, textured, ruffled fabric visible at the bottom of the detail image matches the skirt of Look 27.",
+  "alternates": [
+   {
+    "look_number": 23,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 35,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cade7b73e561cf16ff35/master/pass/00107-chanel-spring-2026-couture-details-credit-gorunway.jpg|24-36": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The red textured jacket with raw edges and fluffy red trim on the cuffs and the bottom of the sheer red skirt perfectly matches the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cade7a8eaf10941f6b6a/master/pass/00108-chanel-spring-2026-couture-details-credit-gorunway.jpg|24-36": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The red tweed jacket, ruffled collar, buttons, and the model's earrings and facial features are identical to look 28.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cadc0a0a725c14fb6f5b/master/pass/00106-chanel-spring-2026-couture-details-credit-gorunway.jpg|24-36": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The model in Look 27 is wearing the identical white slingback pump with a black cap toe and unique mushroom-shaped heel as shown in the detail image.",
+  "alternates": [
+   {
+    "look_number": 35,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cae079b01ae765682585/master/pass/00109-chanel-spring-2026-couture-details-credit-gorunway.jpg|25-37": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The red tweed jacket with ruffled collar and cuffs, pearl buttons, sheer red skirt, red tights, and ruffled leg detail are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cae14e4591a24427b513/master/pass/00111-chanel-spring-2026-couture-details-credit-gorunway.jpg|25-37": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail shows a red textured jacket with red feathered cuffs and a white button, worn over sheer red fabric. Look 28 features the identical red textured jacket with matching feathered cuffs, white buttons, and sheer red skirt/tights underneath.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cae177d2a09a9ccb8986/master/pass/00110-chanel-spring-2026-couture-details-credit-gorunway.jpg|25-37": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the red tweed jacket with white buttons and ruffled trim, the sheer red skirt with dense ruffled hem, the opaque red tights, and the two-tone beige and black ankle-strap shoes of Look 28.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cae348f8abce505d468e/master/pass/00112-chanel-spring-2026-couture-details-credit-gorunway.jpg|25-37": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The shoes and hosiery in the detail image perfectly match those worn by the model in Look 28. The shoe features a beige body, black toe cap, cut-outs, an ankle strap with a gold buckle, and a kitten heel, all identical to Look 28. The sheer red hosiery is also an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cae5d8d6b7d8eb11b049/master/pass/00114-chanel-spring-2026-couture-details-credit-gorunway.jpg|26-38": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The black textured coat with prominent ruffled floral embellishments and the distinctive brooch at the neckline are an exact match to Look 29.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cae59322c717a3e59dd0/master/pass/00113-chanel-spring-2026-couture-details-credit-gorunway.jpg|26-38": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The model's hair, the dark textured fabric with floral appliques, the beaded collar, and the distinctive brooch with green and white stones are all identical to Look 29.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cae6110e7749f91092a6/master/pass/00115-chanel-spring-2026-couture-details-credit-gorunway.jpg|26-38": {
+  "look_number": 29,
+  "confidence": 0.95,
+  "evidence": "The detail shows red slingback heels with a black pointed toe and a black ruffled skirt. Look 29 features the identical red and black shoes and a black ruffled dress.",
+  "alternates": [
+   {
+    "look_number": 36,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cae8eda813203e8ea57c/master/pass/00116-chanel-spring-2026-couture-details-credit-gorunway.jpg|26-38": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The model, the cream textured sleeveless dress, and the unique floral-like embellishment around the neckline are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cae8bcd344c05dbf7e0c/master/pass/00117-chanel-spring-2026-couture-details-credit-gorunway.jpg|27-39": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the layered, multi-colored fabric hem of the dress and the distinctive white shoes with a red toe cap from Look 30. The upper garment texture and color also align.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caeb22e8517864273ae6/master/pass/00119-chanel-spring-2026-couture-details-credit-gorunway.jpg|27-39": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 31, showing the same black blazer with green and white buttons on the sleeves, a sheer black skirt, and a voluminous black feathered hem.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cae97a8eaf10941f6b6c/master/pass/00118-chanel-spring-2026-couture-details-credit-gorunway.jpg|27-39": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the cream textured bodice with embellishments, the multi-colored pleated skirt layers, and the distinctive cream slingback shoes with a red toe cap of Look 30.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caec0c618f618c9bb1fe/master/pass/00120-chanel-spring-2026-couture-details-credit-gorunway.jpg|28-40": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The model, black blazer with green embellishments, and distinctive earrings are identical in the detail and Look 31.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caec4645e0dea3c2aa63/master/pass/00121-chanel-spring-2026-couture-details-credit-gorunway.jpg|28-40": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The black double-breasted blazer with distinctive green embellished buttons perfectly matches the detail image in color, fabric, and button design.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caefc1d4f0e483fa722e/master/pass/00123-chanel-spring-2026-couture-details-credit-gorunway.jpg|28-40": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The black double-breasted blazer with gold buttons and distinctive green and white/gold floral embellishments on both the front and cuffs, along with the sheer black skirt, perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caefdd36f2c90b340c38/master/pass/00122-chanel-spring-2026-couture-details-credit-gorunway.jpg|28-40": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black double-breasted blazer with green buttons, a sheer black layer, and a long black skirt with voluminous, pleated, and ruffled details. Look 31 perfectly matches all these elements.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caf207d6d62b3cfa15cd/master/pass/00125-chanel-spring-2026-couture-details-credit-gorunway.jpg|29-41": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a black sleeveless dress with a distinctive red and black textured collar and two silver buttons on the shoulders. Look 32 features the exact same dress, collar, and buttons, worn by a model with a similar hair bun.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caef0a0a725c14fb6f5d/master/pass/00124-chanel-spring-2026-couture-details-credit-gorunway.jpg|29-41": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The model, black sleeveless textured dress, red ruffled collar, and white multi-strand necklace are identical in both the detail and look 32.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caf377d2a09a9ccb8988/master/pass/00126-chanel-spring-2026-couture-details-credit-gorunway.jpg|29-41": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a voluminous off-white and black feathery cape over a red dress, which is an exact match for Look 33.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caf38e79743d83fca35b/master/pass/00127-chanel-spring-2026-couture-details-credit-gorunway.jpg|30-42": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail shows a garment made of cream/off-white feathers with black tips, covering the head and shoulders. Look 33 features an identical garment.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caf72ca4723e5c58b7cc/master/pass/00130-chanel-spring-2026-couture-details-credit-gorunway.jpg|30-42": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 34, including the black and white tweed-like fabric of the dress, the layered black, white, and beige feathers at the hem, and the light blue pointed-toe heels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caf5eda813203e8ea57e/master/pass/00128-chanel-spring-2026-couture-details-credit-gorunway.jpg|30-42": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The sleeveless top in the detail image perfectly matches the fabric, pattern, and style of the top worn in Look 34. The black and white textured material is identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caf86a5bb9241e08627e/master/pass/00131-chanel-spring-2026-couture-details-credit-gorunway.jpg|31-43": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the light blue/mint green slingback pumps with black toe and silver heel, and the black and cream feathered skirt worn by the model in Look 34.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caf7720abd8f28391415/master/pass/00129-chanel-spring-2026-couture-details-credit-gorunway.jpg|30-42": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The sleeveless top and matching skirt in Look 34 feature the identical speckled off-white and black tweed-like fabric and the same high, slightly ruffled collar as seen in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cafaf45f08bdd90793ad/master/pass/00133-chanel-spring-2026-couture-details-credit-gorunway.jpg|31-43": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The model, cream sleeveless top, and distinctive yellow and green stone necklace and matching earrings are identical in both the detail and look 35.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cafa9322c717a3e59dd2/master/pass/00132-chanel-spring-2026-couture-details-credit-gorunway.jpg|31-43": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a sleeveless cream top with an elaborate jeweled neckline and a layered feather/fringe hem. Look 35 features the identical sleeveless cream top with the matching jeweled neckline and feather/fringe detail, worn by a model with similar curly hair and yellow earrings.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cafd6ce75bb9f43e86a7/master/pass/00135-chanel-spring-2026-couture-details-credit-gorunway.jpg|32-44": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The model's hair, facial features, and the distinctive red and white patterned top with the unique ruffled collar (featuring red, white, and turquoise elements) are an exact match to Look 36.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb003f0eefba8e86764d/master/pass/00137-chanel-spring-2026-couture-details-credit-gorunway.jpg|32-44": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 36, showing the identical black and white geometric pattern, the red and white upper pattern, the central ruffled trim with red and teal beads, and the matching embellishments on the sleeve cuffs.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cafe3eb9bc1c91eb7c4c/master/pass/00136-chanel-spring-2026-couture-details-credit-gorunway.jpg|32-44": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the red and white patterned top with the distinctive ruffled neckline and teal accents, and the black and white patterned bottom of Look 36.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb010283f37b9351f9ed/master/pass/00139-chanel-spring-2026-couture-details-credit-gorunway.jpg|33-45": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The detail shows a red and white ombre textured dress with ruffled collar and cuffs, which perfectly matches Look 37.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb054e4591a24427b515/master/pass/00140-chanel-spring-2026-couture-details-credit-gorunway.jpg|33-45": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The red and white wavy patterned fabric with the fringed hem and the light-colored slingback shoe with a black toe cap perfectly match Look 37.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cafc74abed7c0f4457e5/master/pass/00134-chanel-spring-2026-couture-details-credit-gorunway.jpg|32-44": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The white slingback pump with a black toe cap and distinctive sculptural white heel perfectly matches the shoe in the detail image.",
+  "alternates": [
+   {
+    "look_number": 39,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 44,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb00cf58fa8f09f608b5/master/pass/00138-chanel-spring-2026-couture-details-credit-gorunway.jpg|33-45": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The red and pink pointed-toe slingback heels are an exact match, and the black and white wavy patterned skirt with a scalloped hem perfectly matches the garment visible in the detail.",
+  "alternates": [
+   {
+    "look_number": 40,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb0548f8abce505d4690/master/pass/00141-chanel-spring-2026-couture-details-credit-gorunway.jpg|34-46": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The model in the detail image is wearing a dark, textured jacket over a high-neck sequined top with a pink, red, black, and white abstract pattern. Look 38 features the exact same jacket and sequined top, worn by the same model.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb09cb0ce04e31498b7f/master/pass/00144-chanel-spring-2026-couture-details-credit-gorunway.jpg|34-46": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The double-breasted coat in Look 39 features the identical multi-colored textured fabric and distinctive green buttons as seen in the detail image.",
+  "alternates": [
+   {
+    "look_number": 38,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb094645e0dea3c2aa65/master/pass/00143-chanel-spring-2026-couture-details-credit-gorunway.jpg|34-46": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The jacket's multi-colored textured fabric, green buttons, and the distinct white, gold, red, and black sequined high-neck top are identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 38,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb06718f4ae85a691f29/master/pass/00142-chanel-spring-2026-couture-details-credit-gorunway.jpg|34-46": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The pants in the detail image perfectly match the pattern, color, and texture of the pants in Look 38. The two-tone beige and black pointed-toe flats also match exactly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb0d0070474b19f6a721/master/pass/00148-chanel-spring-2026-couture-details-credit-gorunway.jpg|35-47": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light pink, voluminous, off-the-shoulder top with shirred details at the top and bottom, paired with a textured light pink skirt. Look 40 features the exact same top and skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb0c74abed7c0f4457e7/master/pass/00146-chanel-spring-2026-couture-details-credit-gorunway.jpg|35-47": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a pink off-the-shoulder voluminous top with a matching pink textured skirt and red slingback heels. Look 40 features the identical outfit, including the specific design of the top, the texture of the skirt, and the red slingback heels. The model's hair is also styled in a bun, matching the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb0c2ca4723e5c58b7ce/master/pass/00147-chanel-spring-2026-couture-details-credit-gorunway.jpg|35-47": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the off-the-shoulder voluminous pink top with smocking and the textured pink skirt of Look 40 in terms of color, fabric, and design.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb0a4b1e508cfa463ce7/master/pass/00145-chanel-spring-2026-couture-details-credit-gorunway.jpg|35-47": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The white slingback heels with a black pointed toe and ankle strap are an exact match. The visible dark, textured fabric with red and white flecks perfectly matches the coat worn in Look 39.",
+  "alternates": [
+   {
+    "look_number": 35,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 44,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 45,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb0f48f8abce505d4692/master/pass/00150-chanel-spring-2026-couture-details-credit-gorunway.jpg|36-48": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a shaggy, multi-colored fabric with prominent white, green, red, and dark specks. Look 41 features a long dress made of this exact same distinctive fabric and texture.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb117b73e561cf16ff39/master/pass/00151-chanel-spring-2026-couture-details-credit-gorunway.jpg|36-48": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The jacket and skirt in Look 42 perfectly match the distinctive multi-colored, textured fabric and the golden-brown buttons seen in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb0f7b73e561cf16ff37/master/pass/00149-chanel-spring-2026-couture-details-credit-gorunway.jpg|36-48": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a garment with a distinctive multi-colored, feathery/fringed texture and a high ruffled neckline. Look 41 features a dress with the exact same fabric, texture, color palette (white, black, red, green, blue), and ruffled neckline.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb1322e8517864273ae8/master/pass/00153-chanel-spring-2026-couture-details-credit-gorunway.jpg|37-49": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The shoes in look 42 perfectly match the detail image, including the beige patent leather, black cap toe, ankle strap, and the distinctive ornate gold-toned heel.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb122ca4723e5c58b7d0/master/pass/00152-chanel-spring-2026-couture-details-credit-gorunway.jpg|37-49": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a jacket and skirt with a distinctive multi-colored, textured fabric resembling small feathers or frayed threads in shades of beige, brown, black, and rust. Look 42 features a two-piece suit (jacket and skirt) made from the exact same fabric, pattern, and color palette.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb146a5bb9241e086280/master/pass/00154-chanel-spring-2026-couture-details-credit-gorunway.jpg|37-49": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The black jacket with the distinctive colorful sequined high collar, the black sequin trim down the front with a small brooch, and the flap pockets with black buttons are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb15cb0ce04e31498b81/master/pass/00155-chanel-spring-2026-couture-details-credit-gorunway.jpg|37-49": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The black jacket with the distinctive pearl and gold/bronze buttons on the cuffs, along with the black leaf-like embellishments on the cuffs and the black pants, perfectly match Look 43.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb168e79743d83fca35d/master/pass/00156-chanel-spring-2026-couture-details-credit-gorunway.jpg|38-50": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The black trousers with the pearl button detail on the ankle and the unique black slingback heels with the organic, light-colored heel are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb177b3b33445f0a51fd/master/pass/00157-chanel-spring-2026-couture-details-credit-gorunway.jpg|38-50": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 44, showing the same multi-colored off-the-shoulder top with voluminous sleeves, the black feathered skirt with yellow lining, and the identical white and black two-tone slingback heels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb18edb1221f5aa20d1a/master/pass/00158-chanel-spring-2026-couture-details-credit-gorunway.jpg|38-50": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image shows an off-the-shoulder top with a red shirred band, followed by horizontal stripes of white, beige, black, and yellow. Look 44 features the exact same garment with all these details matching perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb199322c717a3e59dd4/master/pass/00159-chanel-spring-2026-couture-details-credit-gorunway.jpg|39-51": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 44, showing the same multi-colored pleated off-the-shoulder top, black feather embellishments, and the black dress with a yellow lining peeking out.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb1acb0ce04e31498b83/master/pass/00160-chanel-spring-2026-couture-details-credit-gorunway.jpg|39-51": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact same off-the-shoulder, voluminous sleeves with red, white, beige, black, and yellow color blocking, and the black feathered skirt with a yellow lining, as seen in Look 44.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb1c4b1e508cfa463ce9/master/pass/00162-chanel-spring-2026-couture-details-credit-gorunway.jpg|39-51": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the light peach pleated fabric, the delicate lace sleeves, and the distinctive light pink feather embellishments at the hem and mid-section of Look 45.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb1b718f4ae85a691f2b/master/pass/00161-chanel-spring-2026-couture-details-credit-gorunway.jpg|39-51": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the embellished high-neck top with feather trim and the pleated peach trousers of Look 45.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb1f0283f37b9351f9ef/master/pass/00164-chanel-spring-2026-couture-details-credit-gorunway.jpg|40-52": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black and white tweed jacket with white feather embellishments and gold buttons, which perfectly matches the jacket worn in Look 46. The model's hair also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb1f3eb9bc1c91eb7c4e/master/pass/00165-chanel-spring-2026-couture-details-credit-gorunway.jpg|40-52": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black and white tweed garment with white feather embellishments and small gold buttons, which perfectly matches Look 46.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb1dcb0ce04e31498b85/master/pass/00163-chanel-spring-2026-couture-details-credit-gorunway.jpg|40-52": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light beige pump with a black toe cap and an ankle strap, paired with a light peach feathery skirt. Look 45 features the exact same shoes and a skirt with matching light peach feathers.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb20cb0ce04e31498b87/master/pass/00166-chanel-spring-2026-couture-details-credit-gorunway.jpg|41-53": {
+  "look_number": null,
+  "confidence": 1.0,
+  "evidence": "The unique sculptural golden heel in the detail image does not match the white block heels seen on any of the candidate looks, despite similar body and toe cap colors.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb23110e7749f91092a8/master/pass/00167-chanel-spring-2026-couture-details-credit-gorunway.jpg|41-53": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a strapless red dress with black, grey, and white feathery embellishments, and light blue/grey heels with a black toe. Look 47 features the identical dress, shoes, and model's hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb23e3160bd375a42b35/master/pass/00168-chanel-spring-2026-couture-details-credit-gorunway.jpg|41-53": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 47, showing the same strapless design, black and grey feathers on the bust, and red and grey textured fabric below.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb2322e8517864273aea/master/pass/00169-chanel-spring-2026-couture-details-credit-gorunway.jpg|41-53": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 47, showing the same red textured fabric with black and white fringe, black feather trim at the neckline, and side pockets.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb263f0eefba8e86764f/master/pass/00170-chanel-spring-2026-couture-details-credit-gorunway.jpg|42-54": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The light blue slingback pump with a black toe and ankle strap in the detail image perfectly matches the shoes worn by the model in Look 47.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb26bd02fd5cd2a3d135/master/pass/00171-chanel-spring-2026-couture-details-credit-gorunway.jpg|42-54": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 48, showing the identical cream and yellow tweed jacket and skirt with yellow and white feather embellishments and matching buttons.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb296a5bb9241e086282/master/pass/00173-chanel-spring-2026-couture-details-credit-gorunway.jpg|43-54": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail shows an off-white slingback pump with a black cap toe and a distinctive organic, light-colored heel. Look 44 features the exact same shoe.",
+  "alternates": [
+   {
+    "look_number": 45,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 46,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 48,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb2774abed7c0f4457e9/master/pass/00172-chanel-spring-2026-couture-details-credit-gorunway.jpg|42-54": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a yellow tweed jacket and skirt with yellow and black feather embellishments, paired with white shoes with black toes. Look 48 is an exact match for all these garment elements.",
+  "alternates": [
+   {
+    "look_number": 44,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 45,
+    "confidence": 0.3
+   },
+   {
+    "look_number": 46,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb293eb9bc1c91eb7c50/master/pass/00174-chanel-spring-2026-couture-details-credit-gorunway.jpg|43-54": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The top in the detail image perfectly matches the top in Look 49, featuring the same ombre blue to white color transition, distinctive textured pattern, and ruffled neckline.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb2a48f8abce505d4694/master/pass/00175-chanel-spring-2026-couture-details-credit-gorunway.jpg|43-54": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a garment with a distinctive blue, white, and black streaky pattern and a crinkled texture, with a gathered sleeve and a gold button. Look 49 features a top and matching pants with the exact same pattern, color, texture, and gathered sleeve detail, including the gold button.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb2bdd36f2c90b340c3a/master/pass/00176-chanel-spring-2026-couture-details-credit-gorunway.jpg|43-54": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The detail shows a garment with a dark blue ruffled neck trim and an ombre blue to white textured fabric with an abstract pattern. Look 49 features the exact same garment and the model's hairstyle (bun) also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb2cf898455c9d32799b/master/pass/00177-chanel-spring-2026-couture-details-credit-gorunway.jpg|44-54": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The sleeveless dress with its unique multi-colored feather/fringe embellishment, including the prominent red and dark blue section at the V-neckline, and the model's short curly hair, are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb2dd26fd5593ecbdddd/master/pass/00178-chanel-spring-2026-couture-details-credit-gorunway.jpg|44-54": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The sleeveless V-neck dress in Look 50 is an exact match to the detail image, featuring the same unique multi-colored fringed fabric, pattern, and color distribution.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb3007d6d62b3cfa15cf/master/pass/00180-chanel-spring-2026-couture-details-credit-gorunway.jpg|44-54": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The model's hair color and style (bun), the black textured jacket with ruffled trim, the ornate chandelier earrings with yellow, white, and blue stones and gold tassels, and the brooch on the jacket all perfectly match Look 51.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb2ecf58fa8f09f608b7/master/pass/00179-chanel-spring-2026-couture-details-credit-gorunway.jpg|44-54": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The detail image shows cream slingback heels with a black toe cap, which perfectly match the shoes in Look 46. The dress hem in the detail image features silver/white and dark fringed/feathered texture, which is an exact match for the black and white feathered mini-dress in Look 46.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb319322c717a3e59dd6/master/pass/00182-chanel-spring-2026-couture-details-credit-gorunway.jpg|45-54": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The black textured fabric, ruffled cuff trim, and distinctive gold and black buttons on the cuff in the detail image are an exact match for the jacket worn in Look 51.",
+  "alternates": [
+   {
+    "look_number": 52,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 53,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb340c618f618c9bb200/master/pass/00184-chanel-spring-2026-couture-details-credit-gorunway.jpg|46-54": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The black textured tweed fabric and the distinctive light blue/mint green buttons with central embellishment on the cuff perfectly match Look 52.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb305a11a748a4a7e13b/master/pass/00181-chanel-spring-2026-couture-details-credit-gorunway.jpg|45-54": {
+  "look_number": 51,
+  "confidence": 0.98,
+  "evidence": "The black textured jacket with ruffled collar and placket, the specific brooch with a dark top stone and leaf design, and the elaborate gold-toned earring with multiple colored stones all perfectly match Look 51.",
+  "alternates": [
+   {
+    "look_number": 52,
+    "confidence": 0.85
+   },
+   {
+    "look_number": 53,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb33dd36f2c90b340c3c/master/pass/00183-chanel-spring-2026-couture-details-credit-gorunway.jpg|45-54": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The black tweed jacket with braided trim and the distinctive gold and turquoise brooch are an exact match.",
+  "alternates": [
+   {
+    "look_number": 51,
+    "confidence": 0.95
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb354b1e508cfa463ceb/master/pass/00185-chanel-spring-2026-couture-details-credit-gorunway.jpg|46-54": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black jacket with a feathered/frayed trim along the collar and front, and a distinctive red and white brooch. Look 53 features the exact same black jacket with the identical trim and brooch.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb366ce75bb9f43e86a9/master/pass/00186-chanel-spring-2026-couture-details-credit-gorunway.jpg|46-54": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black jacket sleeve with three red mushroom-shaped buttons with crystal accents and black feathery trim on the cuff. Look 53 features an identical black jacket with the same red mushroom buttons and black feathery cuff trim, worn with black trousers.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb38cd117c4683844afb/master/pass/00188-chanel-spring-2026-couture-details-credit-gorunway.jpg|47-54": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a top and bottom covered in iridescent scale-like embellishments, and a white spiky headpiece. Look 54 features the identical top, skirt, and headpiece.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb37bcd344c05dbf7e0e/master/pass/00187-chanel-spring-2026-couture-details-credit-gorunway.jpg|46-54": {
+  "look_number": 53,
+  "confidence": 0.95,
+  "evidence": "The black trousers in the detail perfectly match the color, fabric, and cut of the trousers in Look 53. The black pointed-toe shoes are also consistent with the detail.",
+  "alternates": [
+   {
+    "look_number": 51,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb39cf58fa8f09f608b9/master/pass/00189-chanel-spring-2026-couture-details-credit-gorunway.jpg|47-54": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The skirt in the detail image perfectly matches the sequined skirt in Look 54, including the iridescent scales and the diagonal trim. The shoes and hosiery are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb3c7b3b33445f0a51ff/master/pass/00191-chanel-spring-2026-couture-details-credit-gorunway.jpg|48-54": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The model, white spiky headpiece, and iridescent sequined top are identical in both the detail and look 54.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb3aedb1221f5aa20d1c/master/pass/00190-chanel-spring-2026-couture-details-credit-gorunway.jpg|47-54": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 54 in the iridescent textured jacket and skirt, the distinctive white spiky headpiece, and the white ankle-strap heels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb3c0a0a725c14fb6f5f/master/pass/00192-chanel-spring-2026-couture-details-credit-gorunway.jpg|48-54": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The detail shows a white sequined skirt, sheer hosiery, and white ankle-strap heels with a unique heel shape. Look 54 features the identical white sequined skirt, sheer hosiery, and matching white ankle-strap heels.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb2ecf58fa8f09f608b7/master/pass/00179-chanel-spring-2026-couture-details-credit-gorunway.jpg|50-51": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The shoes and the fringed, multi-colored dress fabric visible in the detail image are an exact match to Look 50.",
+  "alternates": [
+   {
+    "look_number": 51,
+    "confidence": 0.0
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6978cb20cb0ce04e31498b87/master/pass/00166-chanel-spring-2026-couture-details-credit-gorunway.jpg|46-47": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The shoes in Look 46 are an exact match for the detail image, featuring the same cream body, black pointed toe, and distinctive gold sculptural heel.",
+  "alternates": [
+   {
+    "look_number": 47,
+    "confidence": 0.0
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6978caa021c68d4a58bfc870/master/pass/00052-chanel-spring-2026-couture-details-credit-gorunway.jpg|12-13": {
+  "look_number": 13,
+  "confidence": 0.95,
+  "evidence": "The detail shows the back of a sheer black sleeveless garment with a deep V-back, buttons, and draped fabric, which perfectly matches the model and the sheer black sleeveless dress/tunic presented in Look 13.",
+  "alternates": [
+   {
+    "look_number": 12,
+    "confidence": 0.05
+   }
+  ]
+ }
+}

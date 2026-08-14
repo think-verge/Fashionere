@@ -1,0 +1,1078 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05712bdca1343b58f44a4/master/pass/00001-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-6": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 1 in terms of the black knitted beanie, the long silver cylindrical earrings, the model's hair and makeup, and the distinctive black garment with braided trim and leather-like paneling.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0571330c4539a7c4e5cc5/master/pass/00003-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-7": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model wearing a black knitted hood and a black and white mottled shaggy coat with a black strap and metallic buckle. Look 2 features the exact same black knitted hood, the identical black and white mottled shaggy coat, and the matching black strap with a metallic buckle.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05712b2a48f818375bcd5/master/pass/00002-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-7": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black ruched skirt and a black pointed-toe wedge pump with an LV logo. Look 1 features the identical black ruched dress and the same black pointed-toe wedge pumps.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05715abcfd6fc2bdfa606/master/pass/00005-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-8": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The model's beige ribbed beanie, the shaggy light beige cape, and the underlying beige garment with the hanging tag are identical in both the detail and Look 3.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05718b2a48f818375bcdc/master/pass/00008-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-9": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The model, the distinctive gold studded choker, and all visible garment details including the dark textured top, ruffled dark section, black fabric, white ruffles, and burgundy studded fabric perfectly match Look 5.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057156cc8a68e47be89b1/master/pass/00006-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-8": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 4, including the brown knitted hat, gold cylindrical earrings, textured camel-colored cape with dark brown fuzzy trim, the underlying leather-like garment, and the visible monogrammed strap.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057156cc8a68e47be89aa/master/pass/00004-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-7": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The black and white shaggy coat, black knitted hood, black scarf, grey top, and chest brooch are all identical to Look 2. The model, hair, and makeup are also a perfect match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0571a6402a527f222d399/master/pass/00010-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-10": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 5, showing the same multi-textured garment with ruffles and patches, the identical black handbag tied to a staff, and the same gold studded choker and model's hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05718faa06ce459f4ae0a/master/pass/00007-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-9": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The brown wedge heel shoes with the gold logo, and the layered brown textured coat over a smooth brown dress hem, perfectly match Look 4.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0571aad2e16927bd54415/master/pass/00011-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-10": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail shows a brown pump with a shiny light gold toe, side cut-outs, and a distinctive horn-patterned heel. Look 5 features the exact same shoe.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0571c67a033f1bf2259fd/master/pass/00013-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-11": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a distinctive yellow handbag with a knotted strap and a dress with a dark pleated top, white and black striped ruffle, and cream/off-white textured fabric. Look 6 features the exact same yellow handbag and the dress matches all visible elements.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0571a54ce5a87b48592c2/master/pass/00012-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-11": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The model, studded collar, striped cream top, and white textured shoulder details in the close-up perfectly match Look 6.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05718fbbdbab39b71dc5f/master/pass/00009-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-10": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 5, including the multi-textured top with white ruffles and red accents, the brown/grey skirt, the gold studded choker, and the model's long blonde hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0571d0ab44add9c705cd1/master/pass/00015-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-12": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The model, black and gold studded choker, red and white striped top, blue denim top with brown trim and gold buttons, and dark textured fabric underneath all match perfectly.",
+  "alternates": [
+   {
+    "look_number": 5,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0571f54ce5a87b48592c9/master/pass/00018-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-13": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The dress in Look 8 perfectly matches the patchwork design, colors, and textures, including the striped ruffle hem, seen in the detail image. The cream knotted bag is also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05721986628e995bee013/master/pass/00019-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The deep red, glossy pointed-toe pump with the unique variegated horn-like heel and subtle LV logo is an exact match.",
+  "alternates": [
+   {
+    "look_number": 14,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0571dac0c35736e152bef/master/pass/00014-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-12": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive dark green patent leather pump with the patterned heel from the detail image is not present in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05722442f0872a218b9ca/master/pass/00021-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|3-15": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a bright green knotted handbag tied to a branch, held by a model wearing a grey and white shaggy top. Look 9 features the identical green knotted handbag tied to a branch, held by the same model wearing the same grey and white shaggy top, and the gold ring is also visible.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0571f9ad0444d3d87500f/master/pass/00016-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-12": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail shows a glossy mustard yellow pump with a distinctive black and white animal print heel. Look 7 features the exact same shoe.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0571fabcfd6fc2bdfa60d/master/pass/00017-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-13": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, silver studded choker, dark teal textured top, black leather-like chevron panel, and striped sleeve detail are an exact match.",
+  "alternates": [
+   {
+    "look_number": 5,
+    "confidence": 0.3
+   },
+   {
+    "look_number": 6,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057228ce34935e18bf76d/master/pass/00020-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|2-14": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The model's hair, the grey ribbed turtleneck, the shaggy grey and light grey banded top, and the brown stick accessory are all identical to Look 9.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057241c45bde7c06b2470/master/pass/00023-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|3-15": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The hat, sunglasses, and the padded floral jacket in the detail image are identical to those worn by the model in Look 10.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057240ab44add9c705cd8/master/pass/00022-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|3-15": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail shows a brown leather boot with a black pointed toe and heel, featuring a tan leather tab and a side zipper. The model wears black trousers tucked into the boot. Look 9 features identical brown leather boots with black heels, black trousers tucked in, a tan tab on the boot, and the model is holding a matching brown stick accessory.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05725c80d405defdf2ef8/master/pass/00024-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|4-16": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the floral puffer jacket, black gathered pants, black boots with the distinctive cut-out and heel detail, and the black handbag with gold chain and bell charm worn by the model in Look 10.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05726029ae321775d21ed/master/pass/00025-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|4-16": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The black leather boots with the distinctive tan flap detail, side zipper, shiny black heel with LV logo, and pointed toe are an exact match to the boots worn in Look 10.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0572762b7a82b4e154574/master/pass/00027-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|5-17": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 11, including the dark quilted jacket, the dark pants with white fur trim, the unique house-shaped bag, and the distinctive blue/grey pointed-toe heels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0572955e258dc23c0100d/master/pass/00028-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|5-17": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, sunglasses, peach pleated scarf, and the black top with gold embroidery are identical in both the detail and look 12.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0572ac5d1d166ef5e97ad/master/pass/00030-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|6-18": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The hat, the sleeveless metallic textured top, and the model's hair are identical to those in look 13.",
+  "alternates": [
+   {
+    "look_number": 10,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05727ac0c35736e152bf6/master/pass/00026-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|5-17": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The model, sunglasses, and the distinctive dark grey quilted garment with red polka dots and the black and white fringed collar are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0572c551d89408e148e04/master/pass/00031-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|7-19": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The dress, bag, and shoes in Look 13 are identical to those in the detail image. The dress has the same unique textured metallic fabric, the bag has the same multi-strap design and tassel, and the shoes are the same dark wedge heels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0572a62b7a82b4e15457b/master/pass/00029-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|6-18": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the striped pants with black fluffy trim and the gold block-heeled pumps worn in Look 12.",
+  "alternates": [
+   {
+    "look_number": 7,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 15,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 16,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0572fa1b82dc0db33aa21/master/pass/00034-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|8-20": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The black trousers, dark red pointed-toe pumps with the distinctive wooden heel and LV logo, and the black structured handbag with gold hardware all perfectly match Look 14.",
+  "alternates": [
+   {
+    "look_number": 8,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0572c55e258dc23c01014/master/pass/00033-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|8-20": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 14's dark brown fur jacket with leather accents, black trousers, dark red patent leather pumps with a unique heel, and the black handbag with a brown monogrammed section and gold bell charm. A gold ring is also visible on the model's hand in Look 14, matching the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0572cdcfafd819beb091d/master/pass/00032-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|7-19": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, and the distinctive dark curly fur collar and paneled dark brown leather jacket with a zipper are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0572faa661e05672d8d6b/master/pass/00035-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|8-20": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The model's long blonde hair, the black leather jacket, and the distinctive black fur collar with a greyish underlayer perfectly match Look 15.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057317ec72fc6089b8470/master/pass/00039-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|10-22": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail shows a white ribbed garment with a ruffled hem and glossy mustard yellow pointed-toe pumps with a patterned heel. Look 16 features the exact same white ruffled culottes and the identical mustard yellow pumps with a patterned heel.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05731aa661e05672d8d72/master/pass/00037-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|9-21": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "Exact match of black trousers, light gold pointed pumps with thick heel, and dark burgundy bag strap.",
+  "alternates": [
+   {
+    "look_number": 12,
+    "confidence": 0.4
+   },
+   {
+    "look_number": 20,
+    "confidence": 0.4
+   },
+   {
+    "look_number": 21,
+    "confidence": 0.4
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05734f25f16239bc5db92/master/pass/00040-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|10-22": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the large grey and black multi-tonal fur wrap and the dark garment with white buttons visible in Look 17.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0572f63b38a5884d6fb48/master/pass/00036-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|9-21": {
+  "look_number": 15,
+  "confidence": 0.95,
+  "evidence": "The detail's black leather jacket with textured sleeves, black trousers, and distinctive light yellow pointed-toe pumps perfectly match Look 15. While the bag in the detail is a structured rectangular shape, Look 15 features a spherical bag of similar color and hardware, suggesting a styling variation or alternate accessory for the same look.",
+  "alternates": [
+   {
+    "look_number": 21,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057310aeb0205b2de4e5b/master/pass/00038-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|10-22": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 16, including the beige knit beanie, white ruffled collar, red duffle coat with fur trim and toggle closures, and the model's features.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0573416ec73a054c3ceff/master/pass/00042-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|11-23": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The detail shows dark teal textured pants with a grey ruffled hem and dark green pointed-toe heels with a marbled heel. Look 17 features identical pants and shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05734a1b82dc0db33aa28/master/pass/00041-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|11-23": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the dark teal textured pants with ruffled hem, the dark green patent leather pumps with the distinctive patterned heel, and the multi-strap box bag with light blue, grey, and dark green panels. The grey fur stole also matches the fur visible in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057364a9de05f3c52733f/master/pass/00045-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|13-25": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the hat, hair color and style, white button-down top with ruffled collar, and the distinctive patterned, textured jacket with embellishments seen in Look 19.",
+  "alternates": [
+   {
+    "look_number": 13,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057396402a527f222d3a0/master/pass/00046-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|13-25": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the jacket's unique textured pattern and ruffled trim, the cream-colored textured pants (part of a jumpsuit), and the distinctive brown trunk-style bag with gold hardware seen in Look 19.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057369ad0444d3d87501c/master/pass/00043-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|12-24": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The top with its unique pattern, colors, light blue ruffled collar and hem, and the burgundy textured shorts with white buttons are an exact match to Look 18.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05739faa06ce459f4ae1d/master/pass/00047-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|13-25": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, and the multi-toned fur garment with dark trim are an exact match to Look 20.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057396cc8a68e47be89be/master/pass/00048-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|14-26": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the Louis Vuitton trunk bag, the two-tone heels with the distinctive curved heel, the cream textured culottes with ruffled dark trim, and the dark brown fur vest worn by the model in Look 20.",
+  "alternates": [
+   {
+    "look_number": 16,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 18,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057367ec72fc6089b8477/master/pass/00044-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|12-24": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the burgundy pleated shorts with a dark ruffled hem and the distinctive dark red pointed-toe pumps with the sculpted, multi-toned heel and LV logo worn in Look 18.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0573c9ad0444d3d875023/master/pass/00051-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|15-27": {
+  "look_number": 21,
+  "confidence": 0.98,
+  "evidence": "The detail shows a gold/tan pump shoe and a black garment with a dark ruffled hem. Look 21 features identical gold/tan pumps and a black skirt/culottes with a matching dark ruffled hem. The fur coat in Look 21 also aligns with the fur visible at the top of the detail image.",
+  "alternates": [
+   {
+    "look_number": 16,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 20,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0573cd155e54225f85234/master/pass/00049-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|14-26": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail shows a brown pump with a metallic gold toe, a side cut-out, and a distinctive striped horn-like heel. It also shows a white garment with a dark blue/grey ruffled hem. Look 20 features the exact same shoe, including the unique striped heel, and a white jumpsuit with a matching dark blue/grey ruffled hem.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0573f303ffad907a008e2/master/pass/00053-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|16-28": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a cream-colored garment with a distinctive open-weave, textured pattern and gold high-heeled pumps. Look 22 features a model wearing an identical cream-colored jumpsuit with the same unique texture and the exact same gold pumps.",
+  "alternates": [
+   {
+    "look_number": 16,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 20,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 21,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0573e30c4539a7c4e5ccc/master/pass/00052-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|15-27": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 22, featuring the same white ribbed beanie, brown fur stole, and light-colored textured top. The model's hair and makeup are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0573cbdca1343b58f44b1/master/pass/00050-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|15-27": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 21, including the brown knitted beanie with ear flaps, the distinctive cream-framed sunglasses, the light brown fur coat, and the unique black leather knot and toggle closure.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0573f15149c4d4c769547/master/pass/00054-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|16-28": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The white ribbed beanie, the dark brown shaggy fur stole, and the textured cream-colored garment underneath are identical in both the detail and Look 22.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05743b2a48f818375bcef/master/pass/00058-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|18-30": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The shoe in the detail image, with its brown leather upper, metallic gold toe, side cutout, and distinctive chunky, translucent heel, is an exact match for the shoe worn in Look 20.",
+  "alternates": [
+   {
+    "look_number": 23,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 24,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057417b1d00c8257357e0/master/pass/00056-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|17-29": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The brown wide-leg trousers and the distinctive two-tone slingback shoes with the horn-patterned chunky heel are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05742a02f3f970b82a369/master/pass/00057-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|18-30": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the hat, sunglasses, hair, cream knitted top with ruffled collar, black draped garment with brown fur panels and leather straps, and the small buckle on the hip of Look 24.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057467c8218b47634143e/master/pass/00061-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|19-31": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The shoe in the detail image perfectly matches the shoe worn in Look 25, including the dark green toe, grey spotted upper, and unique mottled sculptural heel. The black textured garment hem also matches the fabric of the garment in Look 25.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05744029ae321775d21fa/master/pass/00060-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|19-31": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 25, showing the same model, black fur and leather top, textured black jumpsuit, and brown strap details.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057410aeb0205b2de4e62/master/pass/00055-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|17-29": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the hat, hair, grey-green top with slit and pearl, rust-colored draped overalls with pink panel, and brown fur arm details of Look 23.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0574454ce5a87b48592d0/master/pass/00059-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|18-30": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The model's curly dark hair, the distinctive fur-trimmed hat, the gold-framed sunglasses, and the black fur-trimmed top with wooden toggles are all identical to Look 25.",
+  "alternates": [
+   {
+    "look_number": 29,
+    "confidence": 0.4
+   },
+   {
+    "look_number": 21,
+    "confidence": 0.3
+   },
+   {
+    "look_number": 28,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0574615149c4d4c76954e/master/pass/00062-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|20-32": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The model in look 26 wears the identical black ribbed beanie, gold spiral earrings, black leather woven necklace with toggle, and dark brown cape with mixed brown and white fur trim on the sleeves, matching all visible elements in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0574963b38a5884d6fb55/master/pass/00066-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|21-33": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 28, including the black balaclava-style hat, the specific sunglasses with light-colored frames, the dark brown cape with black fur trim, and the distinctive light-colored embroidered edge.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05749456f61f49f73efa2/master/pass/00065-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|21-33": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black blazer, black trousers with fur trim, gold pointed-toe heels, and the black handbag with gold hardware and tassel seen in Look 27.",
+  "alternates": [
+   {
+    "look_number": 28,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05749029ae321775d2201/master/pass/00064-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|20-32": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The model's hair color, black knit beanie, black knit neck warmer, dark fur collar, and black jacket perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0574667a033f1bf225a0a/master/pass/00063-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|20-32": {
+  "look_number": null,
+  "confidence": 1.0,
+  "evidence": "The distinctive marbled heel and specific side cut-out of the shoe in the detail image are not present in any of the candidate looks. All candidate shoes either have different colors, styles, or lack the unique heel pattern.",
+  "alternates": [
+   {
+    "look_number": 26,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0574b8ce34935e18bf774/master/pass/00067-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|22-34": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The black blazer, black wide-leg pants with fur trim, gold pointed-toe shoes, and the distinctive small black structured handbag with gold hardware all match perfectly.",
+  "alternates": [
+   {
+    "look_number": 27,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0574e5791083229b64a79/master/pass/00070-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|23-35": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 30, including the black leather jacket with fur collar and rose embellishments on the sleeves, the sheer brown top, the brown velvet pants, and the brown knitted balaclava.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0574cbe586ea331b6ac23/master/pass/00068-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|22-34": {
+  "look_number": 29,
+  "confidence": 0.95,
+  "evidence": "The model wears the exact same dark brown fur-trimmed hat and distinctive shaggy brown/white/grey fur sleeves as seen in the detail image. The dark brown coat color is also consistent.",
+  "alternates": [
+   {
+    "look_number": 26,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0574bf9eee026159d0f01/master/pass/00069-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|23-35": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The model, brown knitted hood, amber-framed sunglasses, black leather jacket with fur collar, and sheer brown button-up top are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0574edcfafd819beb0924/master/pass/00072-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|24-36": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the cropped plaid jacket with the distinctive cuff art, the matching plaid skirt with cutouts, the green crop top, and the Louis Vuitton monogrammed handbag with a green tassel seen in Look 31.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0574e9ad0444d3d875030/master/pass/00071-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|23-35": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 31, including the model's face and hair, the distinctive brown hat with white fluffy trim, the fuzzy brown and green plaid top, the bright green garment visible underneath, and the necklace with rectangular elements.",
+  "alternates": [
+   {
+    "look_number": 34,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 35,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0575177ef0f328171dfbc/master/pass/00075-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|25-37": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 32, including the beige fuzzy coat with a distressed panel, the dark green pleated skirt with white ruffle trim, the dark green Givenchy bag with gold chain and bell charm, and the dark green pointed-toe pumps with a marbled gold heel.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0575177ef0f328171dfb5/master/pass/00074-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|25-37": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The hat, the fluffy beige coat with large white buttons and distressed pattern, and the matching fluffy scarf are identical in color, texture, and style to those worn by the model in Look 32.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057500ab44add9c705ce5/master/pass/00073-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|24-36": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The boots in look 31 are an exact match to the detail image, featuring the same olive green leather, brown trim, yellow stitching, and heel design with gold hardware.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0575363b38a5884d6fb5c/master/pass/00077-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|26-38": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the knitted balaclava-style hat, the distinctive large framed sunglasses, and the unique textured knit sweater with its wide, structured collar from Look 33.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05753aa661e05672d8d79/master/pass/00076-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|25-37": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The dark green garment with white ruffled trim and the distinctive dark green pointed-toe pumps with a patterned, translucent heel and LV logo are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05756db0d5fc64eae923e/master/pass/00079-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|27-39": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 33, including the light brown knitted beanie, the chunky knit brown sweater dress with a high collar, the light cream backpack with a subtle monogram, and the white fluffy accessory attached to the backpack.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05753a1b82dc0db33aa35/master/pass/00078-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|26-38": {
+  "look_number": null,
+  "confidence": 1.0,
+  "evidence": "The detail shoe features a distinct cow-print pattern on the upper and a translucent, marbled block heel. None of the candidate looks show a shoe with these specific details; all candidate shoes are solid light gold/beige pumps with solid heels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0575677ef0f328171dfc3/master/pass/00080-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|27-39": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The hat's color, shape, and fur trim, the fuzzy blue, red, and yellow plaid top, and the unique rectangular collar elements are all identical to the detail image. The model is also the same.",
+  "alternates": [
+   {
+    "look_number": 31,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 32,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05756c80d405defdf2eff/master/pass/00081-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|28-40": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a two-tone olive green and reddish-brown wedge heel with yellow stitching and an LV logo, which perfectly matches the shoes worn in Look 34. The colorful, fuzzy fabric visible at the top of the detail image also matches the plaid skirt/top in Look 34.",
+  "alternates": [
+   {
+    "look_number": 36,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057589ad0444d3d87503d/master/pass/00083-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|28-40": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black fur-trimmed hat, a grey fuzzy sweater with red and brown woven patterns, and a red undergarment. Look 35 features the exact same hat, sweater, and visible red undergarment.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057584a9de05f3c52734c/master/pass/00082-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|28-40": {
+  "look_number": null,
+  "confidence": 0.9,
+  "evidence": "The detail image shows a long plaid coat with a rounded hem and a lamb patch featuring a black boot. None of the candidate looks include this specific long coat. While Look 34 shares the identical hat, plaid pattern, and shoes, its main garment is a cropped jacket and skirt, and its lamb patch features a brown boot.",
+  "alternates": [
+   {
+    "look_number": 34,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05759ac0c35736e152bfd/master/pass/00084-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|29-41": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the grey fur jacket with red woven details, the unique embroidered skirt with cut-outs, the red crop top, and the black ankle boots of Look 35.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0575ac80d405defdf2f06/master/pass/00085-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|29-41": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The black pointed-toe shoe with a side cut-out, transparent panel, and chunky flared heel is an exact match.",
+  "alternates": [
+   {
+    "look_number": 30,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 39,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 40,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0575efbbdbab39b71dc6c/master/pass/00089-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|31-43": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the hat, sunglasses, red top, pink ruffled accessory, and Louis Vuitton monogram strap seen on Look 37.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0575bf8041b67f963839c/master/pass/00086-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|30-42": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the model, the distinctive tan fur-trimmed hat, and the unique magenta top with greyish-purple embellished upper section from Look 36.",
+  "alternates": [
+   {
+    "look_number": 32,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0575b9b293623b63e2918/master/pass/00087-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|30-42": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the hat, top, skirt with the lamb painting, and the small dark brown bag with a gold chain handle from Look 36. The model's hair and makeup are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0575ef9eee026159d0f08/master/pass/00090-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|31-43": {
+  "look_number": 37,
+  "confidence": 0.9,
+  "evidence": "The pink pants with the distinctive ruffled trim and white bands are an exact match to those worn in Look 37. The shoes, however, do not match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0575efc4721ece1a48dc1/master/pass/00088-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|30-42": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the fuzzy plaid skirt with rectangular patches and printed panel, and the dark brown structured bag with gold hardware, as seen in Look 36. The bare leg is also consistent.",
+  "alternates": [
+   {
+    "look_number": 31,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05760abcfd6fc2bdfa614/master/pass/00091-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|32-44": {
+  "look_number": 37,
+  "confidence": 0.9,
+  "evidence": "The detail matches Look 37 with the identical brown furry hat, blonde hair, and distinctive bright pink ruffles on the lower garment. Backpack straps are also visible, consistent with the backpack in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05761faa06ce459f4ae2a/master/pass/00092-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|32-44": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the red and light blue translucent garments, white drawstring, black pants, and distinctive light brown/gold wooden-heeled pumps with the LV logo seen in Look 38.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05763bdca1343b58f44c4/master/pass/00094-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|33-45": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The black suit, the distinctive black bucket bag with gold hardware, and the black pointed-toe shoes with a unique heel are all identical to those in Look 39.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057636402a527f222d3b3/master/pass/00095-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|33-45": {
+  "look_number": null,
+  "confidence": 0.9,
+  "evidence": "The distinctive black slingback heels with a translucent horn-like heel in the detail image do not appear in any of the candidate looks.",
+  "alternates": [
+   {
+    "look_number": 39,
+    "confidence": 0.75
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057600aeb0205b2de4e6f/master/pass/00093-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|33-45": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The model wears an identical black ribbed beanie, cylindrical metallic earrings, and a black blazer with matching lapel trim and textured buttons.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05766c80d405defdf2f0d/master/pass/00099-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|35-47": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model wearing a large, light-colored woven hat/umbrella with red-accented handles, and a black loose-fitting dress underneath. Look 41 features the identical woven hat/umbrella, red-accented handles, and a matching black loose dress.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05763fbbdbab39b71dc73/master/pass/00096-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|34-46": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a white knitted beanie, a white blazer with black trim on the lapels, and distinctive white paper-like earrings. Look 40 features all these exact elements.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05765303ffad907a008e9/master/pass/00097-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|34-46": {
+  "look_number": 40,
+  "confidence": 0.9,
+  "evidence": "The cream-colored blazer and trousers, along with the black pointed-toe heels, perfectly match the garments and shoes in the detail image. The bag is different.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05768d155e54225f8523b/master/pass/00100-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|35-47": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 42, including the black woven basket hat, the light-colored sunglasses, the blonde hair, the black long-sleeved top, and the grey pleated dress underneath.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05766a02f3f970b82a370/master/pass/00098-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|35-47": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 41, including the black square-neck dress, the large woven straw hat, the dark rectangular sunglasses, and the long white rectangular earrings.",
+  "alternates": [
+   {
+    "look_number": 42,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057681c45bde7c06b2477/master/pass/00101-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|36-48": {
+  "look_number": 42,
+  "confidence": 0.95,
+  "evidence": "The dark grey flared dress with a subtle sheen and the distinctive black ankle boots with a ribbed cuff perfectly match the detail image.",
+  "alternates": [
+   {
+    "look_number": 41,
+    "confidence": 0.85
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05769d96792228ad1c9a5/master/pass/00102-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|36-48": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The hat, coat, and model's hair are identical to those in Look 43. The black conical hat with fur trim and the grey layered coat are a perfect match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0576b986628e995bee01a/master/pass/00105-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|38-50": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 44, featuring the same grey faux fur hood, grey patterned coat, and sequined high-neck top. The model's hair and facial features are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0576b7ec72fc6089b8484/master/pass/00103-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|37-49": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The dark grey crinkled fabric of the garment and the unique black pagoda-shaped handbag are identical in both the detail and Look 43.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0576bf9eee026159d0f0f/master/pass/00104-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|37-49": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive spotted shoes with a fur heel from the detail image are not present in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0577062b7a82b4e154588/master/pass/00109-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|39-51": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact quilted dark jacket with silver buttons, contrasting grey collar with white piping, and the same model with identical hair and makeup as seen in Look 46.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0576ef9eee026159d0f16/master/pass/00108-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|39-51": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the model's hair, the fluffy grey and black fur collar and shoulder trim, the black and white patterned fabric, and the structured black leather bodice of Look 45.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0576df8041b67f96383a3/master/pass/00106-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|38-50": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail shows a grey patterned dress with a white stripe at the hem and a distinctive grey and black spotted pump with a white fur heel and LV logo. Look 44 features the exact same dress fabric and the identical shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0576d9f595b5469e628c9/master/pass/00107-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|38-50": {
+  "look_number": 44,
+  "confidence": 0.9,
+  "evidence": "The grey patterned voluminous coat with fur trim and gathered waist in the detail image is an exact match for the main garment in Look 44. The shoes, however, differ; the detail shows black and white patterned shoes, while Look 44 has plain black shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0577058192e5cae67ddc6/master/pass/00110-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|40-52": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 46, including the dark blue/grey jacket with white trim and layered cuffs, the shiny light grey trousers with the distinctive cut-out, and the black Louis Vuitton bag with the gold chain and bell charm.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0577262b7a82b4e15458f/master/pass/00112-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|40-52": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The model, white fluffy hat, cream textured jacket with fur trim, and unique colorful brooches are identical in both the detail and Look 47.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0577181cf0552768d2ea8/master/pass/00111-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|40-52": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The light grey/silver pants with a subtle sheen and the black pointed-toe mule with a transparent section and a distinctive horn-like heel are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057737f390448ffd89a58/master/pass/00113-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|41-53": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 47, featuring the same model, white fluffy hat, cream textured jacket with fur trim and decorative elements, grey top, white shirt, and dark grey pants.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057757f390448ffd89a5f/master/pass/00115-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|42-54": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the jacket's texture, fur trim, white shirt with gold buttons, grey knit sleeve, grey ripped jeans, and the exact burgundy Louis Vuitton bag with gold chain and tassel seen in Look 47.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05777551d89408e148e11/master/pass/00117-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|43-55": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for the model's outfit in Look 49, including the black braided headpiece, black and white plaid jacket with structured shoulders and cream fur trim, and matching plaid pants.",
+  "alternates": [
+   {
+    "look_number": 50,
+    "confidence": 0.75
+   },
+   {
+    "look_number": 48,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05775a1b82dc0db33aa4e/master/pass/00116-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|42-54": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The shoes in the detail image are an exact match to those in Look 46, featuring the same pointed toe, slingback style, unique gradient heel, and metallic logo. However, the pants in the detail image are matte black with a subtle pattern, while Look 46 features shiny grey pants. This discrepancy in color, fabric, and pattern for the pants prevents a perfect match.",
+  "alternates": [
+   {
+    "look_number": 46,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057748ce34935e18bf781/master/pass/00114-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|41-53": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The dark grey washed-out denim pants and the distinctive brown pointed-toe pump with a side cut-out and multi-toned heel are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b057799ad0444d3d875044/master/pass/00120-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|44-55": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The model's hair and facial features are identical, and the black and white plaid top with its unique neckline trim, shoulder fringe, and grey patterned fabric perfectly match the detail.",
+  "alternates": [
+   {
+    "look_number": 49,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05778ad2e16927bd54422/master/pass/00118-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|43-55": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The model, black textured headpiece, cream curly fur trim, black and white plaid garment, and the grey abstract pattern on the shoulder all perfectly match Look 49.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0577a62b7a82b4e154596/master/pass/00121-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|44-55": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The plaid pants and the unique spotted pumps with the fur-textured heel are an exact match.",
+  "alternates": [
+   {
+    "look_number": 49,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0577ad96792228ad1c9ac/master/pass/00122-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|45-55": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The model's black knitted beanie, the delicate pearl drop necklace, and the distinctive black textured sleeveless top with white fluffy trim and woven front detail are all identical to Look 51.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05777303ffad907a008f0/master/pass/00119-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|43-55": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "Exact match for the distinctive plaid pants and the polka-dotted pumps with the unique multi-tonal heel and LV logo.",
+  "alternates": [
+   {
+    "look_number": 49,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0577cf9eee026159d0f1d/master/pass/00123-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|45-55": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black cylindrical bag with gold hardware, a black pleated skirt, and a vest with a black textured upper and cream fuzzy lower part. Look 51 features all these exact elements.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0577dbe586ea331b6ac2a/master/pass/00125-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|46-55": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the unique black conical hat, the underlying black knitted cap, the cream-colored structured top, and the black textured chest panel with sculptural embellishments seen on Look 52.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0577f029ae321775d220e/master/pass/00126-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|46-55": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 52, including the unique black conical hat, the cream voluminous top, the black textured bodice with decorative elements, the model's face, and the visible part of the handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0577ff25f16239bc5db9f/master/pass/00128-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|47-55": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The model, dark green ruffled collar, square neckline, and fabric texture in the detail image perfectly match Look 53.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0577f5791083229b64a86/master/pass/00127-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|47-55": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The black shiny handbag with gold hardware and bell charm, along with the cream flowing garment and black textured overlay, perfectly match Look 52.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05782f9eee026159d0f24/master/pass/00131-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|48-55": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The detail shows a cream pleated dress with two tiers and a distinctive small, structured brown and tan handbag with buckles and a gold clasp. Look 54 features the identical dress and handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05781c5d1d166ef5e97c0/master/pass/00130-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|48-55": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The model, cream knitted bonnet, pearl necklace, and the distinctive cream pleated ruffled collar and square neckline all perfectly match Look 54.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05781a1b82dc0db33aa55/master/pass/00129-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|48-55": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a dark green pleated fabric and a small, dark green structured handbag with gold hardware and a distinctive clasp. Look 53 features the exact same dark green pleated dress and the identical handbag with matching hardware and clasp.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05784ac0c35736e152c0a/master/pass/00132-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|49-55": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The detail shows a cream pleated skirt and a distinctive gold pump. Look 54 features an identical cream pleated dress and the exact same gold pumps.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0577c15149c4d4c769561/master/pass/00124-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|45-55": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The dark green patent leather pump with the distinctive marbled heel and the black pleated skirt perfectly match those in Look 51.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0574667a033f1bf225a0a/master/pass/00063-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|26-27": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The shoe in Look 26 is an exact match for the detail image, featuring the same dark color, pointed toe, side cut-outs, and distinctive marbled/tortoiseshell heel.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0575ac80d405defdf2f06/master/pass/00085-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|35-36": {
+  "look_number": 35,
+  "confidence": 0.98,
+  "evidence": "The black pointed-toe bootie with side cut-outs and a chunky heel in Look 35 is an exact match for the shoe in the detail image.",
+  "alternates": [
+   {
+    "look_number": 36,
+    "confidence": 0.05
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05753a1b82dc0db33aa35/master/pass/00078-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|33-33": {
+  "look_number": 33,
+  "confidence": 0.1,
+  "evidence": "The shoes in the detail image feature a distinct cow-print pattern and a marbled heel, which are not present in Look 33's solid metallic gold shoes.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0571dac0c35736e152bef/master/pass/00014-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|6-7": {
+  "look_number": 6,
+  "confidence": 0.6,
+  "evidence": "The detail shows a dark, patent leather, pointed-toe pump. Look 6 features dark, shiny, pointed-toe pumps that match the general shape and material. While the detail shows a distinct dark green color and a patterned heel, these features could be less apparent in the full runway shot due to lighting or distance.",
+  "alternates": [
+   {
+    "look_number": 7,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/69b0576bf9eee026159d0f0f/master/pass/00104-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|43-44": {
+  "look_number": 43,
+  "confidence": 0.9,
+  "evidence": "The dark grey, plain, structured fabric and flared silhouette of the dress in Look 43 are an exact match for the garment in the detail shot. The shoes are different, but the garment match is primary.",
+  "alternates": [
+   {
+    "look_number": 44,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/69b05775a1b82dc0db33aa4e/master/pass/00116-louis-vuitton-fall-2026-ready-to-wear-details-credit-gorunway.jpg|47-49": {
+  "look_number": 48,
+  "confidence": 0.65,
+  "evidence": "The black tapered trousers in Look 48 are an excellent match for the trousers in the detail image in terms of color, fabric, and cut. The shoes, however, are different.",
+  "alternates": []
+ }
+}

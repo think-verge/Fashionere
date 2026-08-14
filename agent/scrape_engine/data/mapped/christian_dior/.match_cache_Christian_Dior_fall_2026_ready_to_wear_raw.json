@@ -1,0 +1,1968 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e63247a597438ab7acc3/master/pass/00002-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-6": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The grey textured jacket with silver buttons, white collared shirt, and white ruffled skirt with silver dots and blue trim are identical in Look 1 and the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e632aba22d07a7b40c7d/master/pass/00003-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-7": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the white ruffled skirt with polka dots and the white polka-dot shoes with black bows from Look 1.",
+  "alternates": [
+   {
+    "look_number": 2,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 3,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e634be7a05efea5c7a85/master/pass/00004-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-7": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The detail shows a white polka dot shoe with black trim and a white ruffled skirt with silver polka dots and scalloped edges. Look 1 features the identical shoe and skirt.",
+  "alternates": [
+   {
+    "look_number": 2,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 3,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 4,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e636c378e0ab8e1e1491/master/pass/00005-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-7": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 3, including the unique patterned jacket with the large bow at the back, the dark brown ruffled polka-dot skirt with a train, and the white polka-dot shoes. The hair style is also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e631f3aa6b19289c54ce/master/pass/00001-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-6": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, white collared shirt, and the distinctive grey textured jacket with a prominent silver button are an exact match to Look 1.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6381f12bfd7c8939358/master/pass/00007-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-8": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the green ruffled skirt with white polka dots and scalloped trim, the white top, and the black and white polka dot shoes of Look 2.",
+  "alternates": [
+   {
+    "look_number": 1,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 3,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e63a04b13c3bbe6eb2a3/master/pass/00009-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-8": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The model, jacket fabric, swirling pattern, collar style, and buttons are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e63bf3aa6b19289c54db/master/pass/00008-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-8": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail shows a white polka dot pump with a black bow and 'Dior' branding, paired with a green sheer ruffled skirt with white polka dots and scalloped edges. Look 2 features this exact shoe and the matching green polka dot ruffled skirt.",
+  "alternates": [
+   {
+    "look_number": 1,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 3,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e636db2e493aa7f5d146/master/pass/00006-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-7": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, and the intricate beaded and sequined top with its unique 3D floral embellishments, V-neck collar, and pearl-like button closure are an exact match to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e63b71e159713d6a10ec/master/pass/00010-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-9": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the unique pastel feather-patterned jacket with feather trim and the dark brown polka-dot ruffled skirt with scalloped white trim seen in Look 3.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6408977de0721cdd154/master/pass/00013-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-9": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model wearing a brown, blue, and white plaid top and matching scarf, and a light grey bag with a silver 'D' hardware. Look 4 features the exact same plaid top, scarf, bag, and model.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e63ff3aa6b19289c54e2/master/pass/00012-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-9": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The model wears identical white polka dot pumps with black trim and bow, and the visible brown sheer polka dot skirt fabric perfectly matches the detail.",
+  "alternates": [
+   {
+    "look_number": 1,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 2,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 9,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e63f60d8409814156693/master/pass/00011-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-9": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the brown ruffled skirt with white polka dots, the iridescent patterned top, and the white polka dot shoes of Look 3.",
+  "alternates": [
+   {
+    "look_number": 1,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 2,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e644c504908067dfe140/master/pass/00014-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-10": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a plaid coat and a light grey hobo bag with 'DIOR' branding. Look 4 features the identical plaid coat and the exact same light grey hobo bag with the 'DIOR' strap and blue charm.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e644113ce9d76e684931/master/pass/00015-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-10": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the brown plaid pants, the blue and brown plaid top/scarf, the white polka dot shoes with a black bow, and the light grey bag shown in Look 4.",
+  "alternates": [
+   {
+    "look_number": 1,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 2,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 3,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e648b5a9ac76d85f7f93/master/pass/00017-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-10": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The model's hair, facial features, and the intricate, colorful brocade pattern of the jacket with its distinct lapel collar are an exact match to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6440cb3b95fedd9ae9a/master/pass/00016-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-10": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail shows brown, black, and green plaid trousers and white polka dot pumps with a black bow and 'Dior' branding, all of which are perfectly matched in Look 4.",
+  "alternates": [
+   {
+    "look_number": 1,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 2,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 3,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e64960d84098141566a0/master/pass/00018-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The jacket and trousers in the detail image are identical to those worn in Look 5, matching the vibrant multi-colored pattern, wrap style, fluffy trim on the jacket, and the light blue color with intricate silver embellishments on the trousers.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e649f3aa6b19289c54e9/master/pass/00019-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the patterned jacket with fur trim, the embellished light blue trousers, and the brown boots of Look 5.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e64b267bbfd6999a4672/master/pass/00020-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail image shows light blue embellished jeans and brown suede boots, which perfectly match the jeans and boots worn by the model in Look 5.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e64c8977de0721cdd161/master/pass/00021-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-11": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The model, cream textured jacket, white collared shirt, and silver button are an exact match to the detail image.",
+  "alternates": [
+   {
+    "look_number": 2,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e64d2d4c3c4997167659/master/pass/00022-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-12": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the cream textured peplum jacket, white collared shirt, and white embellished pants of Look 6. The buttons and fabric texture are identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e64ed6a92593faef1802/master/pass/00023-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-12": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a person wearing white pants with silver embellishments, a cream textured top with wide sleeves, and holding a small olive green quilted handbag. Look 6 features the exact same white embellished pants, cream textured top with wide sleeves, and the identical olive green quilted handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e650d81cf9974d85999c/master/pass/00025-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-12": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The model, light grey textured jacket, and distinctive gold Dior buttons perfectly match Look 7.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e64faba22d07a7b40c8a/master/pass/00024-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-12": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The cream textured jacket, white embellished trousers, green quilted bag, and white polka dot shoes are identical to those in the detail image.",
+  "alternates": [
+   {
+    "look_number": 1,
+    "confidence": 0.05
+   },
+   {
+    "look_number": 2,
+    "confidence": 0.05
+   },
+   {
+    "look_number": 3,
+    "confidence": 0.05
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e65260d84098141566a7/master/pass/00026-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-13": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the grey fuzzy jacket with gold buttons and the beige fuzzy skirt with gold buttons worn by the model in Look 7. The fabric, color, style, and buttons are identical for both garments.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6534813b56eed6b47b7/master/pass/00027-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-13": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 7, including the light grey peplum jacket with gold buttons, the beige peplum mini skirt with gold buttons, the dark sheer hosiery, the strappy sandals with a floral/jeweled embellishment, and the light green bag visible under the skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e653113ce9d76e684938/master/pass/00028-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-13": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a shimmery T-strap sandal with a floral/succulent embellishment on the front. Look 7 features the exact same shoes, including the specific embellishment, and the model's skin tone and nail polish match perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e65560d84098141566b4/master/pass/00029-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, and the distinctive brown, black, and green plaid pattern of the garment in the detail image are an exact match for Look 8.",
+  "alternates": [
+   {
+    "look_number": 4,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e657113ce9d76e68493f/master/pass/00030-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the brown, black, and green plaid wrap top with the cinched waist and bow detail, as well as the quilted burgundy handbag with a gold charm, worn by the model in Look 8.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e65a736851d16cb19a4e/master/pass/00033-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|3-15": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The model, black polka-dot halter dress, white polka-dot scarf, and patterned green bag are identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e658db2e493aa7f5d153/master/pass/00031-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail shows a brown and green plaid coat, a dark purple quilted handbag with a silver charm, and dark textured trousers. Look 8 features all these exact items.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e658d81cf9974d8599a3/master/pass/00032-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The plaid draped top, black textured trousers with side trim, white polka dot flats, and burgundy quilted bag are all identical to those in the detail image.",
+  "alternates": [
+   {
+    "look_number": 4,
+    "confidence": 0.1
+   },
+   {
+    "look_number": 2,
+    "confidence": 0.1
+   },
+   {
+    "look_number": 3,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e65b113ce9d76e68494c/master/pass/00034-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|3-15": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The bag, the black polka dot dress, and the white polka dot scarf all perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e65ecc46703a666c290c/master/pass/00036-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|3-15": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, distinctive purple and green floral earrings, and the dark brown coat with a black satin shawl collar perfectly match Look 10.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e65e4813b56eed6b47be/master/pass/00037-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|4-16": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the dark brown fuzzy wrap coat with a black satin shawl collar and cinched waist seen in Look 10.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e65c47a597438ab7acca/master/pass/00035-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|3-15": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The black polka dot ruched dress, white polka dot textured scarf, white polka dot shoes with black bow, and the beige textured bag all match perfectly with the detail image.",
+  "alternates": [
+   {
+    "look_number": 11,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 3,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e661d963fbf892c3154b/master/pass/00039-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|4-16": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the dark navy peplum jacket and the black polka dot skirt worn by the model in Look 11. The model's hair styling is also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e65f736851d16cb19a55/master/pass/00038-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|4-16": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The light gold T-strap sandals with floral embellishment and 'CD' logo are an exact match, and the dark brown coat visible in the full look matches the garment color in the detail.",
+  "alternates": [
+   {
+    "look_number": 7,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e662fa86c2ade024a995/master/pass/00040-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|4-16": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, and the distinctive dark navy jacket with the wide, soft lapel are an exact match to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e663d6a92593faef1815/master/pass/00041-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|5-17": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 11's navy structured jacket, black draped polka-dot skirt, and brown suede ankle boots with gold 'DIOR' buckle.",
+  "alternates": [
+   {
+    "look_number": 9,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e664736851d16cb19a5c/master/pass/00042-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|5-17": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, white lace garment with wide lapel, and unique pink spiky earrings are an exact match to Look 12.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e665c98f5f6bb7547bed/master/pass/00043-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|5-17": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The white lace top with its distinctive V-neck, draped collar, long sleeves, and layered peplum is an exact match to the top worn in Look 12. The textured light-colored trousers also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e668c98f5f6bb7547bf4/master/pass/00046-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|6-18": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The jacket's unique olive green color, draped fuzzy collar, and suede-like texture, along with the light blue embellished jeans, are an exact match to Look 13.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e666d6a92593faef181c/master/pass/00044-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|5-17": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The light grey textured trousers with vertical beaded trim, the white lace top, and the pink quilted Dior bag with gold chain are all identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 16,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e66a84e01cf33c4e9df5/master/pass/00047-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|6-18": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail image shows an olive green coat, light blue embellished jeans, and a dark textured chain-strap bag. Look 13 features the exact same coat, jeans, and bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6680cb3b95fedd9aead/master/pass/00045-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|6-18": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 12, including the white lace top, the light grey textured pants with beaded side trim and unzipped hem, the brown suede boots, and the pink textured handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e66cb22958e1d8d293a1/master/pass/00049-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|7-19": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The model, dark brown coat with white feathery embellishment on the lapel, black bag strap, and green earring are all identical to Look 14.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e66dc378e0ab8e1e1498/master/pass/00050-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|7-19": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a dark brown double-breasted coat with gold buttons and distinctive white feathery trim along the lapel and front. Look 14 features the exact same coat with all these matching details.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e66bdb2e493aa7f5d15a/master/pass/00048-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|7-19": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the olive green coat, embellished light blue jeans, brown boots, and dark textured bag with a gold chain strap shown in Look 13.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e670f21feecce340d828/master/pass/00053-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|8-20": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The plaid pattern, colors (dark blue, brown, cream), and pleated texture of the fabric on the coat in the detail image perfectly match the coat worn by the model in Look 15. The model's hair and facial features are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e66f36ca83807c0177b3/master/pass/00052-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|8-20": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The plaid coat with its unique draping, dark textured pants, flat dark shoes with tan lining, light grey bag, and short curly hair are all identical to Look 15.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6728977de0721cdd174/master/pass/00054-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|8-20": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The plaid coat and the small quilted light grey bag are identical in pattern, color, and texture to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e66edb2e493aa7f5d161/master/pass/00051-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|7-19": {
+  "look_number": 14,
+  "confidence": 0.75,
+  "evidence": "The dark brown textured coat with distinctive white fringe is an exact match for Look 14. However, the quilted tote bag in the detail differs from the dark shoulder bag shown in Look 14.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e673113ce9d76e684959/master/pass/00055-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|8-20": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The black sparkling peplum top and matching ruffled skirt, along with the distinctive light pink textured bag with a chain strap, are identical to those in Look 16.",
+  "alternates": [
+   {
+    "look_number": 12,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e674f3aa6b19289c5502/master/pass/00056-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|9-21": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The model, sequined top with keyhole and button, and unique asymmetrical flower earrings are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e675b22958e1d8d293a8/master/pass/00057-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|9-21": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 16, including the black sparkly peplum top with keyhole cutout and button, the matching skirt, and the distinctive purple and green floral earrings.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6764813b56eed6b47c5/master/pass/00058-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|9-21": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black sparkly dress with a ruffled hem and a distinctive pink cylindrical sequined bag with a chain strap. Look 16 features the exact same black sparkly dress with a ruffled hem and the identical pink cylindrical sequined bag with a chain strap.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e67736ca83807c0177ba/master/pass/00059-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|9-21": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black sparkly two-piece outfit with a peplum top and ruffled skirt, and the distinctive pink textured bag with a chain strap, worn by the model in Look 16.",
+  "alternates": [
+   {
+    "look_number": 12,
+    "confidence": 0.4
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6791f12bfd7c8939377/master/pass/00060-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|10-22": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black and grey/silver lace-like garment with scalloped edges and a pink feathery embellishment on the shoulder. Look 17 features a dress with identical black and grey/silver lace-like fabric, scalloped edges, and pink feathery details, matching all visible elements.",
+  "alternates": [
+   {
+    "look_number": 22,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e67ad32a5247230238fe/master/pass/00061-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|10-22": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The model, black lace garment, and the distinctive pink and yellow floral embellishment on the shoulder are identical in both the detail and Look 17.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e67b84e01cf33c4e9dfc/master/pass/00062-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|10-22": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black and silver scalloped lace dress with two large pink and yellow feather embellishments seen in Look 17.",
+  "alternates": [
+   {
+    "look_number": 22,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e67cb5a9ac76d85f7fa6/master/pass/00063-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|10-22": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 17, featuring the same black and grey scalloped lace dress with pink floral embellishments and identical white polka dot shoes with a black bow.",
+  "alternates": [
+   {
+    "look_number": 22,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 20,
+    "confidence": 0.5
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e680736851d16cb19a69/master/pass/00066-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|11-23": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The jacket in the detail image perfectly matches the color, faux fur texture, wide lapel, and distinctive peplum shape of the jacket in Look 18.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e67ed32a524723023905/master/pass/00065-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|11-23": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The model, the distinctive purple and green earrings, and the light grey faux fur coat all match exactly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e682267bbfd6999a4685/master/pass/00067-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|12-24": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The T-strap sandal with square toe, light yellow/gold color, distinctive multi-colored flower embellishment, and side logo perfectly matches the shoe worn in Look 18.",
+  "alternates": [
+   {
+    "look_number": 24,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e67d71e159713d6a1105/master/pass/00064-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|11-23": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The detail shows white polka dot pumps with black trim and bow, and a white dress fabric with black circular pattern and scalloped edge, all of which perfectly match Look 17.",
+  "alternates": [
+   {
+    "look_number": 23,
+    "confidence": 0.75
+   },
+   {
+    "look_number": 20,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 21,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6829a57fa2ec5f8b6ea/master/pass/00068-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|12-24": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The dark grey wrap coat with a contrasting black shawl collar, textured fabric, and cinched waist perfectly matches the detail image. The model's dark hair pulled back is also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e684aba22d07a7b40c97/master/pass/00069-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|12-24": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, and the dark grey coat with a prominent black satin shawl lapel perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6869a57fa2ec5f8b6f1/master/pass/00070-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|12-24": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail image shows metallic T-strap sandals with a green floral embellishment and a reddish sole. Look 19 features the exact same sandals and the model is wearing a dark grey coat, matching the garment visible in the detail.",
+  "alternates": [
+   {
+    "look_number": 18,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 24,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e687f9957d008f94d934/master/pass/00072-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|13-25": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The plaid shirt with the distinctive pleated collar, the exact earrings, and the model's hair and facial features are identical in both the detail and Look 20.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e686c98f5f6bb7547bfb/master/pass/00071-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|13-25": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The model's hair, plaid shirt, textured black skirt, light blue crocodile-textured handbag, and earrings are identical in both the detail image and Look 20.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e68aa0fa9e8dfe42ad42/master/pass/00073-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|13-25": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The plaid shirt, heavily textured black skirt, and light blue crocodile-embossed handbag with a bow are identical in both the detail and look 20.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e68a04b13c3bbe6eb2aa/master/pass/00074-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|13-25": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the plaid shirt, black textured pants, light blue crocodile-embossed bag, and white polka dot shoes of Look 20.",
+  "alternates": [
+   {
+    "look_number": 21,
+    "confidence": 0.75
+   },
+   {
+    "look_number": 17,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 23,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e68e60d84098141566bb/master/pass/00076-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|14-26": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 21, showing the same model, brown leather jacket, large white fur stole, and textured brown skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e68b0cb3b95fedd9aeba/master/pass/00075-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|14-26": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the brown leather bomber jacket with a white fur collar, the long textured beige skirt, and the light grey fuzzy bag shown in Look 21.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e68e8977de0721cdd187/master/pass/00077-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|14-26": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The light grey faux fur bag with 'Dior' embossing and gold chain, the brown sleeve, and the heavily embellished, textured brown/bronze skirt fabric are all identical to Look 21.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e68f2d4c3c4997167666/master/pass/00078-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|14-26": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the hair, brown leather top, textured beaded taupe skirt, grey furry bag with gold chain, and white polka dot shoes of Look 21.",
+  "alternates": [
+   {
+    "look_number": 20,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 17,
+    "confidence": 0.5
+   },
+   {
+    "look_number": 23,
+    "confidence": 0.5
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e69184e01cf33c4e9e09/master/pass/00079-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|15-27": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 22 in the black and gold lace pattern, scalloped edges, pink feather shoulder detail, and the model's long, wavy ponytail hairstyle.",
+  "alternates": [
+   {
+    "look_number": 17,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e692267bbfd6999a468c/master/pass/00080-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|15-27": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The model's face and hair, the distinctive pink and yellow spiky floral embellishment, and the black lace over gold patterned fabric are all identical.",
+  "alternates": [
+   {
+    "look_number": 22,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e693113ce9d76e684966/master/pass/00081-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|15-27": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 22, including the black and gold scalloped lace dress with a pink floral embellishment and the distinctive blue high-heeled sandals.",
+  "alternates": [
+   {
+    "look_number": 17,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e69536ca83807c0177c7/master/pass/00083-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|16-28": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The model and the white ruffled top with silver embellishments and blue scalloped trim, including the textured straps, perfectly match Look 23.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e696b5a9ac76d85f7fb4/master/pass/00084-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|16-28": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the white ruffled top with silver polka dots and scalloped trim, the black ruffled skirt with white polka dots and scalloped trim, and the white spaghetti straps of Look 23.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e694b5a9ac76d85f7fad/master/pass/00082-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|16-28": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The royal blue T-strap heels with the distinctive embellishment and the gold scalloped lace-like dress are an exact match to Look 22.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e697b22958e1d8d293af/master/pass/00085-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|16-28": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The white polka dot shoes with black trim and the black sheer ruffled fabric with white polka dots and scalloped edges perfectly match the detail.",
+  "alternates": [
+   {
+    "look_number": 17,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 20,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 21,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e69804b13c3bbe6eb2b1/master/pass/00086-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|17-29": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The model, black jacket with dark fur collar and dramatic front drape, white textured pants, brown shoulder bag, and distinctive starburst earrings are all identical to Look 24.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e699fa86c2ade024a9a8/master/pass/00087-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|17-29": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The brown quilted suede tote bag with the bow detail and the dark coat are identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e69b4813b56eed6b47d2/master/pass/00088-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|17-29": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The white textured pants with side trim and the gold open-toe sandals are identical in both the detail image and Look 24. The black jacket also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e69bc378e0ab8e1e14a5/master/pass/00089-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|17-29": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a draped garment with a unique wavy, abstract pattern in cream, light blue, and light pink. Look 25 features a dress with this exact fabric and pattern, and the draping around the neckline matches perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e69e113ce9d76e68496d/master/pass/00091-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|18-30": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The dress with its unique swirling pattern and feather trim, the pink rose-embellished heels, and the black embellished clutch are all identical to Look 25.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e69fd81cf9974d8599bc/master/pass/00092-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|18-30": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the green tweed jacket with cream trim and the yellow textured garment with circular trims underneath worn in Look 26. The hair color and visible bag chain are also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6a0fa86c2ade024a9af/master/pass/00093-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|18-30": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The model, green tweed jacket, yellow textured collared shirt with gold buttons, and cream fluffy collar are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e69c36ca83807c0177ce/master/pass/00090-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|18-30": {
+  "look_number": null,
+  "confidence": 0.9,
+  "evidence": "The dress fabric, pattern, and feather trim are an exact match for Look 25, but the black sequined clutch bag in the detail image is a different shape than the spherical sequined bag carried in Look 25.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6a347a597438ab7ace3/master/pass/00096-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|19-31": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The shoe's unique T-strap design, dark base with gold embroidery, and prominent red floral embellishment perfectly match the detail image.",
+  "alternates": [
+   {
+    "look_number": 30,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6a2b22958e1d8d293b6/master/pass/00095-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|19-31": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a green and yellow textured top with white ruffled trim, a dark grey/black textured handbag with a chain strap, and gold and red/orange patterned high-heeled sandals with a floral embellishment. Look 26 features all these exact items: the matching top, the identical handbag, and the same distinctive shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6a5f9957d008f94d93b/master/pass/00097-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|19-31": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 27, showing the same white sheer polka-dot wrap dress with a flared skirt, scalloped lace trim, visible black bra, and the identical multi-colored clutch bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6a160d84098141566c2/master/pass/00094-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|19-31": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the green tweed jacket with cream fluffy trim and the yellow textured top with gold buttons and ruffled cuffs seen in Look 26.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6a6b22958e1d8d293bd/master/pass/00098-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|20-32": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The model, sheer white polka-dot blazer, and unique purple and green floral earrings are identical in both the detail and Look 27.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6a9a0fa9e8dfe42ad4f/master/pass/00100-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|20-32": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 27, showing the identical white sheer polka dot wrap top and ruffled skirt with a large bow, as well as the unique iridescent clutch bag with a chain strap.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6aaf21feecce340d835/master/pass/00101-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|21-33": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light beige T-strap sandal with a stiletto heel, square toe, and a fabric rose detail on the toe strap, along with a small logo. Look 27 features the exact same shoe with all these matching characteristics.",
+  "alternates": [
+   {
+    "look_number": 24,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6abcc46703a666c2919/master/pass/00102-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|21-33": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The jacket in the detail image perfectly matches the snakeskin pattern, fluffy cream trim on the collar, cuffs, and hem, and the gold buttons visible on the jacket in Look 28.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6acfa86c2ade024a9b6/master/pass/00103-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|21-33": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a coat with a distinctive snakeskin-like pattern, white shearling collar and lapel trim, and gold buttons. Look 28 features the exact same coat with all these matching details.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6add81cf9974d8599c3/master/pass/00104-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|21-33": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The coat in the detail image perfectly matches the snakeskin print, shearling trim, gold buttons, and overall design of the coat worn in Look 28.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6aed963fbf892c3155e/master/pass/00105-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|22-34": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the snakeskin-patterned jacket with fluffy trim and gold buttons, the black textured pants with side stitching, and the gold sandals with a clear strap and decorative toe from Look 28.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6b0d963fbf892c31565/master/pass/00106-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|22-34": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the jacket, tiered skirt with embellishments, green drop earrings, hairstyle, and light blue floral clutch shown in Look 29.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6a760d84098141566c9/master/pass/00099-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|20-32": {
+  "look_number": 27,
+  "confidence": 0.85,
+  "evidence": "The white sheer polka dot fabric with scalloped lace trim and wide sleeve in the detail image is an exact match for the dress in Look 27. The bag is the same style as in Look 27, but features the multi-colored swirl pattern.",
+  "alternates": [
+   {
+    "look_number": 29,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6b02d4c3c499716766d/master/pass/00107-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|22-34": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The model, her hair and makeup, the unique green leaf-shaped earrings, and the textured beige jacket with a stand-up collar and vertical buttons are all identical to Look 29.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6b2db2e493aa7f5d174/master/pass/00108-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|22-34": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The jacket in the detail image perfectly matches the jacket in Look 29, including the unique tweed fabric with colorful flecks, the stand-up collar, the long row of fabric-covered buttons, and the flap pockets. The light blue garment visible underneath also matches the skirt in Look 29.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6b44813b56eed6b47d9/master/pass/00110-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|23-35": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the beige tweed jacket, the light blue tiered ruffled skirt with silver embellishments, and the small light blue clutch with floral detail shown in Look 29.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6b3aba22d07a7b40cb6/master/pass/00109-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|23-35": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the jacket, the tiered light blue skirt with silver embellishments, and the unique light blue floral clutch bag worn by the model in Look 29.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6b560d84098141566d0/master/pass/00111-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|23-35": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a gold-toned T-strap sandal with a prominent multi-petal floral embellishment on the toe. Look 29 features the exact same shoe, matching the design, color, and floral detail perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6b704b13c3bbe6eb2b8/master/pass/00112-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|23-35": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The sheer light pink top with black floral lace appliques and beaded embellishments, high mock-neck, and cap sleeves perfectly matches the garment in the detail image. The model's hair and makeup are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6b971e159713d6a1124/master/pass/00114-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|24-36": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The model's hair color and style (low ponytail), the dark brown textured coat with a peplum-like flare, and the black garment visible underneath all perfectly match Look 31.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6b7113ce9d76e684974/master/pass/00113-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|24-36": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black voluminous lace skirt with white sheer lace underlayer and black floral appliques, as well as the metallic floral-embellished sandals seen in Look 30.",
+  "alternates": [
+   {
+    "look_number": 29,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 26,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6baf21feecce340d842/master/pass/00115-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|24-36": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, dark brown coat with black satin lapels, and the black top with vertical satin ribbons and a neck bow are identical in both the detail and look 31.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6bab22958e1d8d293c4/master/pass/00116-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|24-36": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the brown jacket, the black and white ribbon skirt, and the light gold embellished heels of Look 31.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6bccc46703a666c2926/master/pass/00117-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|25-37": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a dark fuzzy jacket with tiered ruffled sleeves and a dark fuzzy ruffled skirt. Look 32 features the identical dark fuzzy jacket with tiered ruffled sleeves and the matching dark fuzzy ruffled skirt. The hair and earrings are also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6be9a57fa2ec5f8b6f8/master/pass/00119-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|25-37": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail shows a dark blue fuzzy jacket with gold buttons and a dark brown fuzzy skirt with gold buttons. Look 32 features the exact same jacket and skirt, matching the color, texture, style, and button details perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6c0cc46703a666c292d/master/pass/00120-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|26-38": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light pink T-strap sandal with a fabric rose embellishment on the toe and a small metallic logo. Look 32 features the exact same shoe, matching in color, style, and embellishments.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6bda0fa9e8dfe42ad56/master/pass/00118-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|25-37": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The model, unique floral earrings, and the dark navy textured jacket with gold buttons are an exact match.",
+  "alternates": [
+   {
+    "look_number": 27,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6c0f21feecce340d855/master/pass/00121-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|26-38": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The off-white pleated shirt, the patterned trousers, the dark monogrammed bag, and the model's hair color and style all match perfectly with Look 33.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6c40cb3b95fedd9aec7/master/pass/00123-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|26-38": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a loose-fitting cream shirt, a burgundy Dior Oblique bag with a bow, and patterned gold/green trousers. Look 33 features all these exact items.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6c18977de0721cdd18e/master/pass/00122-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|26-38": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The model, white pleated shirt, and purple bag strap in the detail image perfectly match Look 33.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6c404b13c3bbe6eb2c5/master/pass/00124-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|27-39": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 33, including the patterned wide-leg pants with a dark side stripe, the white loose blouse, the dark purple textured handbag, and the white polka-dot shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6c50cb3b95fedd9aece/master/pass/00125-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|27-39": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The silver pleated shirt, the colorful patterned skirt, the pink earrings, and the light-colored clutch bag are all identical to those in the detail image. The model's hair also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6c7cc46703a666c2934/master/pass/00126-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|27-39": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The model, silver pleated shirt, and distinctive purple and green floral earrings are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6c98977de0721cdd195/master/pass/00127-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|27-39": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The clutch bag, silver draped top, and multi-colored patterned pants are identical to those in the detail image.",
+  "alternates": [
+   {
+    "look_number": 29,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6c960d84098141566d7/master/pass/00128-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|28-40": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The jacket's unique metallic gold, pink, and blue brocade fabric, intricate pattern, and stand-up collar perfectly match the detail image. The model's hair and skin tone also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6ca71e159713d6a112b/master/pass/00129-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|28-40": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The jacket's unique multi-colored brocade pattern, mandarin collar, and fitted silhouette, along with the light grey/silver textured draped skirt, are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6ccbe7a05efea5c7a9e/master/pass/00130-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|28-40": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The dark red structured handbag with gold hardware and 'DIOR' logo, the light grey draped skirt, and the colorful brocade jacket are all identical to Look 35.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6cd4813b56eed6b47e0/master/pass/00131-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|28-40": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 35, including the vibrant patterned jacket, the draped silver skirt, and the burgundy handbag with a gold chain strap.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6d0d32a52472302392a/master/pass/00133-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|29-41": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model wearing a greyish-beige tweed-like jacket with black satin peak lapels. Look 36 features the exact same jacket and model, matching the fabric, lapel style, and model's hair and makeup.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6d14813b56eed6b47e7/master/pass/00134-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|29-41": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The blazer, its fabric, black satin lapels, buttons, the light blue/grey wide-leg trousers, and the light grey bag are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6cebe7a05efea5c7aa5/master/pass/00132-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|29-41": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The blazer, trousers, and handbag in the detail image are identical to those worn in Look 36, including the fabric, color, sparkle, and design details like the black lapels and cuff buttons.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6d3db2e493aa7f5d17b/master/pass/00136-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|30-42": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The blazer, wide-leg jeans, suede-like handbag, and white polka-dot shoes in the detail image are identical to those worn in Look 36.",
+  "alternates": [
+   {
+    "look_number": 35,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6d160d84098141566e4/master/pass/00135-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|30-42": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a grey tweed-like jacket with sparkle, wide-leg washed-out grey pants, and a grey quilted handbag with a bow. Look 36 features the exact same jacket, pants, and handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6d536ca83807c0177d5/master/pass/00137-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|30-42": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The black ribbed dress with ruffled skirt, the unique light pink triangular bag, and the distinctive green embellished sandals are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6d571e159713d6a1132/master/pass/00138-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|30-42": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The model, purple flower earrings, and the black ribbed spaghetti strap top with frayed edges are identical to those in look 37.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6d6f3aa6b19289c551b/master/pass/00139-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|31-43": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light pink crocodile-embossed handbag with a unique folded design and gold hardware, carried by a model wearing a black dress with many fringes. Look 37 features the exact same handbag and the model is wearing the identical black fringed dress.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6d9d32a524723023937/master/pass/00141-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|31-43": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, and the distinctive black ruffled, high-neck garment with frayed edges and underlying ribbed texture are identical in both the detail image and Look 38.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6d9aba22d07a7b40cbd/master/pass/00140-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|31-43": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 37's black ribbed knit dress with a deconstructed frill skirt, green floral sandals, and light beige clutch bag.",
+  "alternates": [
+   {
+    "look_number": 38,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6dd4813b56eed6b47ee/master/pass/00144-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|32-44": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a cream textured jacket with a sculptural peplum, a white skirt with black and white feather trim, and a small white bag with black perforations. Look 39 features all these exact elements.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6dd2d4c3c4997167680/master/pass/00145-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|32-44": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The model, the textured white jacket, the collar style, and the distinctive white buttons are identical in both the detail and look 39.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6dafa86c2ade024a9cf/master/pass/00142-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|31-43": {
+  "look_number": 37,
+  "confidence": 0.95,
+  "evidence": "The detail shows a black dress with a ribbed upper section and a lower section composed of numerous black fabric strips, which perfectly matches the design, texture, and material of Look 37.",
+  "alternates": [
+   {
+    "look_number": 38,
+    "confidence": 0.9
+   },
+   {
+    "look_number": 31,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6dcc504908067dfe153/master/pass/00143-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|32-44": {
+  "look_number": 38,
+  "confidence": 0.98,
+  "evidence": "The green high-heeled sandal with the white and yellow floral embellishment on the toe strap is an exact match. The black flowing, layered fabric of the dress also matches the garment visible in the detail.",
+  "alternates": [
+   {
+    "look_number": 37,
+    "confidence": 0.95
+   },
+   {
+    "look_number": 43,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6df267bbfd6999a469e/master/pass/00146-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|32-44": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the white textured jacket, the white skirt with black and white feathers, the white polka-dot handbag with black flap and 'DIOR' logo, and the light pink strappy sandals with floral embellishment seen in Look 39.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6e19a57fa2ec5f8b70b/master/pass/00147-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|33-45": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The black lace jacket with its distinctive pattern and flared, scalloped hem, the model's curly reddish-brown hair, and the light blue/grey chain-strap bag are all identical to Look 40. The light-colored pants also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6e21f12bfd7c893938a/master/pass/00149-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|33-45": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The black lace wrap top with its distinct pattern and asymmetrical drape, along with the textured cream pants, are an exact match to Look 40. The visible silver chain from a bag also aligns.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6e14813b56eed6b47f5/master/pass/00148-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|33-45": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The model's curly reddish-brown hair and facial features are identical. The black lace-patterned jacket with a distinct texture matches perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6e536ca83807c0177dc/master/pass/00151-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|34-46": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The black lace top, cream textured pants with vertical trim, light blue textured bag with chain strap, and pink pointed-toe shoes are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6e4be7a05efea5c7aac/master/pass/00150-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|33-45": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The light blue ruched bag with silver chain, the cream textured pants with vertical detailing, and the black lace top are all exact matches to Look 40.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6e884e01cf33c4e9e2f/master/pass/00153-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|34-46": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The model and the distinctive off-white, voluminous, strapless, pleated garment are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6e6267bbfd6999a46a6/master/pass/00152-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|34-46": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a strapless, off-white, voluminous dress with a ruffled bust and gathered skirt. Look 41 features the identical dress, matching the color, fabric, and silhouette perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6e9a0fa9e8dfe42ad63/master/pass/00154-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|35-47": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The voluminous off-white pleated dress and the distinctive blue strappy sandals with a decorative element are identical in both the detail and Look 41.",
+  "alternates": [
+   {
+    "look_number": 45,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6e9113ce9d76e684981/master/pass/00155-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|35-47": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a royal blue T-strap sandal with a gold floral embellishment and a 'CD' logo, paired with a flowing, off-white pleated garment. Look 41 features the identical blue sandals and the identical off-white pleated dress.",
+  "alternates": [
+   {
+    "look_number": 45,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6eddb2e493aa7f5d188/master/pass/00157-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|35-47": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The light blue denim shirt with the distinctive silver embellishment down the front, the collar, and the model's hair and facial features are an exact match to look 42.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6edd963fbf892c3157e/master/pass/00156-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|35-47": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 42, including the light blue denim shirt with embellishments, the black textured flared skirt, the grey beaded bag with chain, and the brown ankle boots with gold hardware.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6ee8977de0721cdd1a8/master/pass/00158-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|36-48": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a grey quilted Dior bag with a silver chain, brown suede ankle boots with gold hardware, a black lace skirt, and a light blue denim cuff. Look 42 features all of these exact items.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6f1b5a9ac76d85f7fc7/master/pass/00159-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|36-48": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The detail image shows brown suede ankle boots with a gold 'DIOR' buckle and a grey textured bag with a circular handle. Look 42 features the exact same boots and bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6f260d84098141566f7/master/pass/00161-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|36-48": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The model, cream textured cardigan with black lapels, and black and white speckled shirt with white buttons are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6f1a0fa9e8dfe42ad6a/master/pass/00160-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|36-48": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 43's cream textured bomber jacket with black trim, black tiered ruffled skirt, and light blue quilted bag. The model's hair and skin tone also match.",
+  "alternates": [
+   {
+    "look_number": 40,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6f6f21feecce340d868/master/pass/00162-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|37-49": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the white textured cardigan with black lapels and tie, the black and white speckled shirt with white buttons, and the black and white speckled tiered skirt with white waistband embellishments seen in Look 43.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6f660d84098141566ff/master/pass/00163-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|37-49": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The light blue quilted handbag with gold hardware, the black textured ruffled mini-skirt, and the white textured jacket with a black cuff are all exact matches to Look 43.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6f660d8409814156704/master/pass/00164-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|37-49": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The model in look 37 is wearing the exact green satin T-strap sandals with water lily embellishments seen in the detail image.",
+  "alternates": [
+   {
+    "look_number": 38,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 43,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6fa04b13c3bbe6eb2d2/master/pass/00165-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|37-49": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The cropped textured greenish-gold jacket with black trim, the black and white patterned top and ruffled skirt, and the small patterned chain-strap bag are all identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6faf21feecce340d86f/master/pass/00166-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|38-50": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, greenish-gold textured jacket with black trim, and the black and white patterned shirt with silver buttons are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6fabe7a05efea5c7ab3/master/pass/00167-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|38-50": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the greenish-gold textured jacket with black lapels and tie, worn over a black and white patterned top with silver buttons, as seen in Look 44.",
+  "alternates": [
+   {
+    "look_number": 43,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6fe47a597438ab7acf6/master/pass/00168-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|38-50": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the jacket's fabric, sleeve cuff and ruffled trim, the skirt's fabric and ruffled trim, and the distinctive colorful cylindrical clutch bag with a gold chain strap from Look 44.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6ffc378e0ab8e1e14ac/master/pass/00169-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|38-50": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The jacket, skirt, bag, and shoes in the detail image are identical to those in Look 44.",
+  "alternates": [
+   {
+    "look_number": 43,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e701267bbfd6999a46bf/master/pass/00171-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|39-51": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light pink, voluminous, pleated strapless dress. Look 45 features the identical dress in the same color, fabric, and style.",
+  "alternates": [
+   {
+    "look_number": 41,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e6ff36ca83807c0177e3/master/pass/00170-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|39-51": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, and the distinctive pink pleated fabric of the strapless dress in the detail image perfectly match Look 45.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e703aba22d07a7b40cd0/master/pass/00172-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|39-51": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The royal blue satin T-strap sandal with the gold 'CD' logo and elaborate toe embellishment perfectly matches the shoe in Look 45. The pink garment visible at the top of the detail image also matches the pink dress in Look 45.",
+  "alternates": [
+   {
+    "look_number": 41,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e703db2e493aa7f5d18f/master/pass/00173-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|40-52": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model wearing a brown, orange, and black plaid wrap coat with a dark brown shoulder bag. Look 46 features the identical plaid wrap coat, the same dark brown shoulder bag with matching strap and hardware, and black trousers underneath, consistent with the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e705f21feecce340d876/master/pass/00174-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|40-52": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The model, the brown, black, and orange plaid wrap coat, and the brown leather bag strap with the Dior charm in the detail image perfectly match Look 46.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e706d32a52472302393e/master/pass/00175-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|40-52": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a wrap coat with a brown, black, and orange plaid pattern, a matching belt, and large draped pockets, worn over black trousers. Look 46 features the identical coat with the same pattern, style, and black trousers, along with a matching brown bag strap visible over the shoulder.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e707d81cf9974d8599e3/master/pass/00176-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|40-52": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The black blazer with satin lapel and the unique textured, fringed, and ruffled detail on the left side perfectly match the detail image. The model, hair, and makeup are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e70af21feecce340d87d/master/pass/00178-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|41-53": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 47, including the light wash wide-leg jeans, the brown shoes, the black ruffled top/jacket, and the distinctive dark green/gold beaded 'Dior' bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e70caba22d07a7b40cd7/master/pass/00179-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|41-53": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The yellow textured two-piece outfit with white ruffled trim and the distinctive small green/gold ornate handbag are identical in both the detail and Look 48.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e709d6a92593faef183b/master/pass/00177-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|41-53": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black jacket with a ruffled/fringed element, light blue jeans, and a distinctive small, rectangular, textured dark green/goldish bag with a circular 'Dior' logo. Look 47 features the exact same jacket, jeans, and bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e70cf3aa6b19289c5528/master/pass/00180-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|41-53": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The model, yellow textured garment with ruffled collar and trim, and the unique purple lotus and green lily pad brooch are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e71060d8409814156718/master/pass/00182-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|42-54": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The model and the distinctive patterned blazer with a white shirt are an exact match to look 49.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e711cc46703a666c293b/master/pass/00183-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|42-54": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The jacket in look 49 has the identical swirling metallic pattern in gold, blue, and pink, with the same lapel, single button closure, and tie-waist detail as seen in the close-up.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e70eb5a9ac76d85f7fda/master/pass/00181-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|42-54": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a yellow textured garment with white ruffled trim, an oval dark green velvet bag with a metallic frame and chain, a flower-shaped ring, and dark purple strappy sandals. Look 48 features all of these exact items: the matching yellow textured top and skirt with white ruffles, the identical oval dark green bag, the same flower ring on the model's hand, and the same dark purple strappy sandals.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e7150cb3b95fedd9aedb/master/pass/00187-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|43-55": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, and the distinctive brocade jacket with its unique floral pattern and high collar are identical in both the detail and Look 50.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e715fa86c2ade024a9dc/master/pass/00186-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|43-55": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The jacket's unique floral pattern, high collar, and 3D floral appliques on the back, as well as the tiered denim skirt with black trim and the dark structured handbag, are an exact match to Look 50.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e71460d840981415671f/master/pass/00185-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|43-55": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 49, including the unique swirled patterned jacket with shearling lining, the brown suede Dior ankle boots, and the dark textured bag with a gold chain.",
+  "alternates": [
+   {
+    "look_number": 55,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e719d6a92593faef1842/master/pass/00189-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|44-56": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The tiered denim-like skirt with black trim and silver embellishments, the dark green textured Dior tote bag, and the light-colored strappy sandals are all identical to those in the detail image.",
+  "alternates": [
+   {
+    "look_number": 47,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e717be7a05efea5c7aba/master/pass/00188-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|44-56": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The jacket's unique floral brocade pattern, fabric-covered buttons, and sculptural fabric flower embellishments are identical. The ruffled denim skirt is also a perfect match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e7198977de0721cdd1b4/master/pass/00190-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|44-56": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the jacket with floral embroidery and 3D appliques, the tiered denim skirt with ruffled trim, the dark green textured tote bag, and the beige open-toe heels of Look 50.",
+  "alternates": [
+   {
+    "look_number": 47,
+    "confidence": 0.4
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e71147a597438ab7acfd/master/pass/00184-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|42-54": {
+  "look_number": 49,
+  "confidence": 0.95,
+  "evidence": "The detail image perfectly matches the brown suede boots with gold hardware and the dark grey textured handbag with gold chain seen in Look 49. The visible light-colored, textured garment in the detail is also consistent with the light-colored patterned jacket/dress of Look 49, despite the specific pattern and fluffy trim not being fully apparent in the full look.",
+  "alternates": [
+   {
+    "look_number": 42,
+    "confidence": 0.75
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e71bb22958e1d8d293dd/master/pass/00191-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|44-56": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The detail shows a dark blue velvet wrap dress with a wide lapel, which perfectly matches the garment worn in Look 51. The model's hair and skin tone also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e71c47a597438ab7ad04/master/pass/00192-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|45-57": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The detail shows a dark teal velvet wrap dress with a self-tie belt, which perfectly matches the garment in Look 51. The small green bag also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e71d1f12bfd7c8939391/master/pass/00193-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|45-57": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The dark blue velvet wrap dress and the distinctive dark green structured handbag with gold hardware are identical in both the detail and Look 51.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e71efa86c2ade024a9e3/master/pass/00194-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|45-57": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The T-strap sandal with a glittery strap and a prominent multi-colored floral embellishment on the toe perfectly matches the shoe in the detail image. The dark blue fabric visible in the detail also matches the dress in look 51.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e720c98f5f6bb7547c20/master/pass/00195-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|45-57": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The yellow textured peplum jacket with bell sleeves, the blue floral asymmetrical skirt with fringe, and the dark purple high-heeled shoes are an exact match to Look 52.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e7219a57fa2ec5f8b712/master/pass/00196-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|46-58": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The model, yellow textured cardigan, round neckline, and silver buttons are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e72260d8409814156726/master/pass/00197-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|46-58": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the yellow textured jacket with silver buttons and the dark blue floral patterned skirt with feathery embellishment seen in Look 52.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e7240cb3b95fedd9aee2/master/pass/00199-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|46-58": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 52, including the yellow textured top, the blue floral patterned skirt with the long straw-like embellishment, the dark purple square-toe heels with a gold buckle, and the small white flower held in the hand.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e723f3aa6b19289c552f/master/pass/00198-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|46-58": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a yellow textured sleeve, a dark blue fabric with a metallic floral pattern, and a green woven bag with a white flower embellishment and gold chain. Look 52 features all these exact elements: the model wears a yellow textured cardigan, a skirt with the matching dark blue metallic floral pattern, and carries the identical green woven bag with the white flower and gold chain.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e726be7a05efea5c7ac1/master/pass/00201-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|47-59": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The dark grey textured jacket with bell sleeves and peplum hem, and the vibrant multi-colored floral patterned skirt are identical in both the detail and Look 53.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e725c98f5f6bb7547c27/master/pass/00200-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|47-59": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a dark purple T-strap sandal with a rose embellishment on the toe and a 'CD' logo, along with a dark blue patterned fabric and light brown feathery elements. Look 52 features the identical dark purple T-strap sandals with the rose embellishment and 'CD' logo, and the model is wearing a skirt with the matching dark blue patterned fabric and light brown feathery trim.",
+  "alternates": [
+   {
+    "look_number": 48,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 59,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e7270cb3b95fedd9aeef/master/pass/00202-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|47-59": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The model's hair color and style, the dark textured jacket with a round neckline, and the distinctive silver button with a design are all identical to Look 53.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e729267bbfd6999a46d8/master/pass/00203-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|47-59": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The dark, textured jacket with green sparkle, silver buttons, and peplum, along with the multi-colored floral patterned skirt visible underneath, are an exact match to Look 53.",
+  "alternates": [
+   {
+    "look_number": 52,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e72a9a57fa2ec5f8b719/master/pass/00205-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|48-60": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a dark charcoal textured jacket with a distinctive voluminous peplum. Look 54 features the identical jacket, matching in color, fabric texture, and the unique peplum design.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e72dc504908067dfe15a/master/pass/00206-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|48-60": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, and the dark grey textured coat with its distinctive wide, soft lapel are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e72ad32a524723023951/master/pass/00204-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|48-60": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the dark grey textured top with ruffled sleeves, the multi-colored metallic floral skirt, the green structured clutch with gold chain, and the flower brooch on the sleeve of Look 53.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e72d71e159713d6a1157/master/pass/00207-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|49-61": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The dark grey sculptural coat with its distinctive ruffled waist and draped collar perfectly matches the garment in the detail image in color, fabric, and design.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e72e4813b56eed6b4808/master/pass/00208-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|49-61": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The green lily pad sandals with the pink water lily and sparkling center are an exact match. The dark charcoal grey garment also matches the one partially visible in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e731c504908067dfe167/master/pass/00210-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|49-61": {
+  "look_number": 55,
+  "confidence": 1.0,
+  "evidence": "The jacket and skirt in look 55 are an exact match for the detail image, featuring the same stand-up collar, button-front closure, flap pockets, and distinctive sparkly tweed fabric.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e730b22958e1d8d293ea/master/pass/00209-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|49-61": {
+  "look_number": 55,
+  "confidence": 1.0,
+  "evidence": "The model's hair color and style, the jacket's stand-up collar, the grey/beige tweed-like fabric with colorful flecks, and the vertical line of buttons on the jacket front are all identical to Look 55.",
+  "alternates": [
+   {
+    "look_number": 53,
+    "confidence": 0.2
+   },
+   {
+    "look_number": 57,
+    "confidence": 0.15
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e7330cb3b95fedd9aef6/master/pass/00212-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|50-62": {
+  "look_number": 55,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the grey sparkly mini skirt, brown Dior boots, and yellow/pink feathered bag shown in Look 55.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e732d32a52472302395e/master/pass/00211-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|50-62": {
+  "look_number": 55,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the sparkly grey skirt, the distinctive yellow knitted bag with pink floral embellishments and silver chain, and the brown ankle boots with gold hardware and 'Dior' logo seen in Look 55.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e735aba22d07a7b40cde/master/pass/00213-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|50-62": {
+  "look_number": 55,
+  "confidence": 0.98,
+  "evidence": "The detail image shows a grey/brown tweed-like jacket and skirt with subtle sparkle, blonde hair in a ponytail, and a light-colored bag with a chain strap. Look 55 features a model wearing an identical grey/brown tweed-like jacket and matching skirt, with the same fabric, color, and sparkle. The model also has blonde hair and carries a light-colored, textured bag with a chain strap, which matches the visible elements of the bag in the detail. The jacket style and fabric are a perfect match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e735f9957d008f94d954/master/pass/00214-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|50-62": {
+  "look_number": 56,
+  "confidence": 1.0,
+  "evidence": "The detail image is a rear view of Look 56, showing the identical beige lace top with dark floral appliques, the structured dark brown peplum, and the asymmetrical lace skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e73736ca83807c0177f0/master/pass/00215-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|51-63": {
+  "look_number": 56,
+  "confidence": 1.0,
+  "evidence": "The model's hair and makeup, and the intricate lace and floral applique top with beaded details, perfectly match look 56.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e739d6a92593faef185b/master/pass/00217-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|51-63": {
+  "look_number": 56,
+  "confidence": 1.0,
+  "evidence": "The brown suede ankle boots with the gold 'DIOR' strap and the cream/dark floral lace dress are identical in both the detail and Look 56.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e739f21feecce340d884/master/pass/00216-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|51-63": {
+  "look_number": 56,
+  "confidence": 0.95,
+  "evidence": "The unique dark brown voluminous skirt with black floral appliques and the underlying beige floral lace dress are identical. The brown ankle boots are also consistent.",
+  "alternates": [
+   {
+    "look_number": 55,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e73bd81cf9974d8599ef/master/pass/00218-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|51-63": {
+  "look_number": 57,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 57, including the grey textured peplum jacket, the distinctive patterned dark jeans, the brown studded shoes, and the model's blonde ponytail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e73cc378e0ab8e1e14b9/master/pass/00219-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|52-64": {
+  "look_number": 57,
+  "confidence": 1.0,
+  "evidence": "The model's hair color and style, the grey tweed-like jacket with white fluffy trim, and the distinctive green and purple floral earrings are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e73ec98f5f6bb7547c2e/master/pass/00221-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|52-64": {
+  "look_number": 57,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the grey textured top with white feathery trim, the unique embellished denim jeans, and the brown boots of Look 57.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e73df9957d008f94d961/master/pass/00220-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|52-64": {
+  "look_number": 57,
+  "confidence": 1.0,
+  "evidence": "The jacket and the embellished jeans in the detail image are an exact match for the jacket and jeans worn in Look 57, including the unique fabric, feathery trim, and embellishments on the pants.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e740c504908067dfe16e/master/pass/00223-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|53-65": {
+  "look_number": 58,
+  "confidence": 1.0,
+  "evidence": "The cream-colored, textured jacket with a single dark button and the model's hair and facial features are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e74060d8409814156733/master/pass/00222-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|52-64": {
+  "look_number": 57,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the embellished blue denim jeans with silver and black details, and the brown suede-like ankle boots with a thick black sole seen on Look 57.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e7422d4c3c4997167699/master/pass/00224-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|53-65": {
+  "look_number": 58,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the cream textured jacket with a single dark button and the cream lace, ruffled, high-low skirt with layered tiers seen in Look 58.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e744d963fbf892c31591/master/pass/00225-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|53-65": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The light pink T-strap sandal with a square toe and rose-like fabric embellishment on the toe strap is identical to the shoe in the detail image.",
+  "alternates": [
+   {
+    "look_number": 58,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e746113ce9d76e68498e/master/pass/00227-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|54-66": {
+  "look_number": 59,
+  "confidence": 1.0,
+  "evidence": "The model's hair, the grey textured cardigan, the black bow top, and the white ruffled skirt are all identical to look 59.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e744a0fa9e8dfe42ad7d/master/pass/00226-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|54-66": {
+  "look_number": 59,
+  "confidence": 1.0,
+  "evidence": "The grey textured jacket, the multi-layered black and light ruffled skirt, the purple strappy heels, and the model's short curly hair are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e747b22958e1d8d293f1/master/pass/00228-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|54-66": {
+  "look_number": 59,
+  "confidence": 1.0,
+  "evidence": "The grey textured jacket, black satin bow, and white/cream layered ruffled dress are identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 58,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e7480cb3b95fedd9af03/master/pass/00229-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|54-66": {
+  "look_number": 60,
+  "confidence": 1.0,
+  "evidence": "The black textured jacket with a split back, the light blue jeans, and the ruffled cream top are identical in Look 60 and the detail image. The model's hair and skin tone also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e74971e159713d6a115e/master/pass/00230-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|55-66": {
+  "look_number": 60,
+  "confidence": 1.0,
+  "evidence": "The model's face, short curly hair, and natural makeup are identical. The black textured double-breasted jacket with a wide lapel and structured shoulders perfectly matches the garment in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e74cd963fbf892c31598/master/pass/00232-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|55-66": {
+  "look_number": 60,
+  "confidence": 0.95,
+  "evidence": "The detail image shows light blue jeans, a black jacket, and a black clutch with a floral embellishment. Look 60 features the exact same light blue jeans, a matching black jacket, and a black clutch with a similar floral design.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e74bcc46703a666c2954/master/pass/00231-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|55-66": {
+  "look_number": 60,
+  "confidence": 1.0,
+  "evidence": "The black textured double-breasted blazer with peplum, the ruffled off-white undergarment, the light wash denim jeans, and the black clutch bag with gold detail are all identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 61,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 58,
+    "confidence": 0.4
+   },
+   {
+    "look_number": 59,
+    "confidence": 0.4
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e74cc378e0ab8e1e14c0/master/pass/00233-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|55-66": {
+  "look_number": 60,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 60 in terms of the black blazer, cream ruffled peplum, light blue wide-leg jeans, gold patterned heels, and black clutch with gold embellishment.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e74ff9957d008f94d968/master/pass/00235-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|56-66": {
+  "look_number": 61,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 61, featuring the same light yellow double-breasted blazer, grey denim jeans, ruffled garment underneath, and brown textured bag.",
+  "alternates": [
+   {
+    "look_number": 60,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e74f9a57fa2ec5f8b720/master/pass/00234-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|56-66": {
+  "look_number": 61,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, and the light pale green double-breasted blazer with notched lapels are an exact match to Look 61.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e750be7a05efea5c7ac8/master/pass/00236-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|56-66": {
+  "look_number": 61,
+  "confidence": 1.0,
+  "evidence": "The detail shows a light green blazer, grey denim jeans, and a brown quilted suede handbag. Look 61 features all three of these items, which are identical in color, fabric, and style.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e753c98f5f6bb7547c3b/master/pass/00237-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|56-66": {
+  "look_number": 61,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 61, including the light green blazer, the ruffled top underneath, the dark grey jeans, and the brown textured bag. The model's hair is also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e753f3aa6b19289c5536/master/pass/00238-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|57-66": {
+  "look_number": 62,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black textured suit with a distinctive peplum jacket and matching trousers, paired with brown shoes. Look 62 features the identical black textured suit, jacket silhouette, trousers, and brown shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e753aba22d07a7b40ce5/master/pass/00239-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|57-66": {
+  "look_number": 62,
+  "confidence": 1.0,
+  "evidence": "The model, hair, distinctive green spiral earrings, and the dark textured jacket with its unique stand-up collar and row of small fabric-covered buttons are identical in both the detail and Look 62.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e7579a57fa2ec5f8b727/master/pass/00241-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|57-66": {
+  "look_number": 63,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a long, colorful, ornate patterned coat and a brown suede drawstring bag. Look 63 features the identical coat and bag, along with dark pants consistent with the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e756c98f5f6bb7547c42/master/pass/00240-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|57-66": {
+  "look_number": 62,
+  "confidence": 1.0,
+  "evidence": "The black textured jacket with a stand-up collar, front buttons, and flap pockets, along with the matching textured pants and green earrings, are identical in both the detail image and Look 62.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e758d32a52472302396b/master/pass/00242-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|58-66": {
+  "look_number": 63,
+  "confidence": 1.0,
+  "evidence": "The model's hair, the white collared shirt, and the distinctive multi-colored floral textured coat are an exact match to look 63.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e75bc98f5f6bb7547c49/master/pass/00245-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|59-66": {
+  "look_number": 64,
+  "confidence": 1.0,
+  "evidence": "The model's hair, the grey textured coat with wide lapels, and the bright green bag strap all perfectly match look 64.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e75ac504908067dfe175/master/pass/00243-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|58-66": {
+  "look_number": 63,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a long, colorful patterned coat with a textured fabric, a white shirt, dark trousers, and a small brown suede bag. Look 63 features the identical coat, shirt, trousers, and bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e75f4813b56eed6b481b/master/pass/00247-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|59-66": {
+  "look_number": 64,
+  "confidence": 1.0,
+  "evidence": "The grey double-breasted coat with prominent silver buttons, wide lapels, and the olive green shoulder bag are identical in both the detail and Look 64.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e75df3aa6b19289c5543/master/pass/00246-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|59-66": {
+  "look_number": 64,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a woman wearing a grey coat and carrying a distinctive olive green quilted bag. Look 64 features the exact same grey coat and the identical olive green quilted bag, matching in color, texture, shape, and pattern.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e7618977de0721cdd1c8/master/pass/00249-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|60-66": {
+  "look_number": 65,
+  "confidence": 1.0,
+  "evidence": "The model, hairstyle, black textured coat, and wide satin lapel in the detail image perfectly match Look 65.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e75fb22958e1d8d293f8/master/pass/00248-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|59-66": {
+  "look_number": 65,
+  "confidence": 1.0,
+  "evidence": "The black textured coat and the distinctive green high-heeled sandals are an exact match to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e75bc378e0ab8e1e14c7/master/pass/00244-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|58-66": {
+  "look_number": 63,
+  "confidence": 0.8,
+  "evidence": "The multi-colored, textured, patterned coat in the detail image is an exact match for the coat in Look 63. However, the light brown suede quilted bag with a bow in the detail image does not match the bag in Look 63.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e762c378e0ab8e1e14d4/master/pass/00250-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|60-66": {
+  "look_number": 61,
+  "confidence": 1.0,
+  "evidence": "The green satin high-heeled sandal with the distinctive lily pad and flower embellishment is an exact match.",
+  "alternates": [
+   {
+    "look_number": 64,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 65,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e69c36ca83807c0177ce/master/pass/00090-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|25-25": {
+  "look_number": 25,
+  "confidence": 0.98,
+  "evidence": "The dress fabric, pattern, and distinctive feather trim are identical in both the detail and full-body images. The bag is different, but the garment match is exact.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/69a7e636c378e0ab8e1e1491/master/pass/00005-christian-dior-fall-2026-ready-to-wear-detail-credit-gorunway.jpg|1-2": {
+  "look_number": 2,
+  "confidence": 0.2,
+  "evidence": "The detail image shares the exact polka-dot ruffled high-low skirt style and polka-dot shoes with Look 2. The model's dark, pulled-back hair in Look 2 is also a closer match to the detail than Look 1's short, curly hair. However, the skirt color in the detail (dark brown) differs from Look 2 (green), and the top garment is entirely different.",
+  "alternates": [
+   {
+    "look_number": 1,
+    "confidence": 0.15
+   }
+  ]
+ }
+}

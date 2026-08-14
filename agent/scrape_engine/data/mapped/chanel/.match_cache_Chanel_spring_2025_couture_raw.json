@@ -1,0 +1,1126 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db6a32cc88b32b3b938a/master/pass/00001-chanel-spring-2025-couture-detail-credit-gorunway.JPG|1-6": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the jacket's white tweed base with pastel rainbow quilted pattern, the silver-toned ornate buttons, the white tweed shorts, and the thin black belt with a gold oval buckle of Look 1.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db676473ad56104d2b09/master/pass/00003-chanel-spring-2025-couture-detail-credit-gorunway.JPG|1-7": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a white tweed jacket with a multicolored quilted panel and a white tweed skirt. Look 1 features the identical white tweed jacket with the same multicolored quilted pattern (visible on the front, implying the back), matching plain white tweed sleeves, identical pearl-like buttons on the cuffs, and the same white tweed mini skirt with a thin black belt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db6afe55d05b7ca3c03f/master/pass/00004-chanel-spring-2025-couture-detail-credit-gorunway.JPG|1-7": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the white textured jacket with puffed sleeves, pastel trim, and unique buttons, as well as the matching white textured skirt and black velvet belt with a gold buckle found in Look 2.",
+  "alternates": [
+   {
+    "look_number": 1,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db696473ad56104d2b0b/master/pass/00002-chanel-spring-2025-couture-detail-credit-gorunway.JPG|1-7": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The white Mary Jane shoe with a black toe cap, gold buckle, and white block heel in Look 1 is an exact match for the shoe in the detail image.",
+  "alternates": [
+   {
+    "look_number": 2,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 7,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db7231a40b0de4418131/master/pass/00006-chanel-spring-2025-couture-detail-credit-gorunway.JPG|1-8": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The jacket's unique pink and purple floral sequined front panel, cream tweed, puffed sleeves, matching buttons, and the fluffy pink cuff trim are identical in both the detail and Look 3. The skirt's design, tweed, buttons, and trim also match perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db7731a40b0de4418133/master/pass/00008-chanel-spring-2025-couture-detail-credit-gorunway.JPG|1-9": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 4, featuring the same mint green tweed jacket with white fur collar, gold buttons, white braided trim, matching pleated skirt, and black velvet belt with gold buckle.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db6f7c1ec1f19b7526eb/master/pass/00007-chanel-spring-2025-couture-detail-credit-gorunway.JPG|1-8": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a cream tweed jacket with puffed sleeves and a central embellished panel featuring pink, yellow, and white textured threads. Look 3 features an identical jacket with the same cream tweed, puffed sleeves, and the exact same embellished panel on the front, indicating it wraps around or is a key design element of this specific jacket. The pink trim at the cuff is also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db70539edace4fc89d05/master/pass/00005-chanel-spring-2025-couture-detail-credit-gorunway.JPG|1-8": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The detail perfectly matches the white tweed skirt, the white tweed jacket's side panel, the pastel trim on the jacket's hem and cuffs, the pastel buttons on the cuffs, and the black belt with a gold buckle.",
+  "alternates": [
+   {
+    "look_number": 2,
+    "confidence": 0.99
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db78eb1f3a9b962005cd/master/pass/00009-chanel-spring-2025-couture-detail-credit-gorunway.JPG|1-9": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light green tweed jacket and skirt with a white fur collar and a black belt. Look 4 features the identical light green tweed jacket and skirt, the same white fur collar, and a matching black belt. The model's hair color and style are also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db781b54e7820fced7c8/master/pass/00010-chanel-spring-2025-couture-detail-credit-gorunway.JPG|1-10": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a pastel floral textured jacket and pants with black velvet trim and a black velvet bow at the neck. Look 5 features the exact same jacket and pants, with identical fabric, pattern, and black velvet details, worn by a model with the same skin tone and hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db7d539edace4fc89d07/master/pass/00011-chanel-spring-2025-couture-detail-credit-gorunway.JPG|1-10": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact same pink and light blue feathered and layered dress with a black velvet belt and gold buckle as worn by the model in Look 6.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db7e8c756a61df36f1bf/master/pass/00012-chanel-spring-2025-couture-detail-credit-gorunway.JPG|1-10": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 6, showing the same pink and light blue tiered dress with feathery details, black belt with gold buckle, and distinctive silver and black Mary Jane shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db84cc6dafb1188845cf/master/pass/00014-chanel-spring-2025-couture-detail-credit-gorunway.JPG|1-11": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 7, showing the same yellow tweed jacket and skirt with pink fluffy trim, gold buttons, black belt with gold buckle, and white and black Mary Jane shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db8a9376d80bca37151e/master/pass/00015-chanel-spring-2025-couture-detail-credit-gorunway.JPG|1-12": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 8 in terms of the gold tweed fabric, pink braided trim, gold buttons, puffed sleeves, and the visible pink cuff underneath.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db881efb129a06ba0b36/master/pass/00016-chanel-spring-2025-couture-detail-credit-gorunway.JPG|1-12": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 8 in garment color, tweed fabric, pink braided trim on the neckline and cuffs, puffed sleeves, and the model's hair color and style.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db7f417b656eff73a9f2/master/pass/00013-chanel-spring-2025-couture-detail-credit-gorunway.JPG|1-11": {
+  "look_number": 6,
+  "confidence": 0.95,
+  "evidence": "The multi-layered pink, aqua, and white ruffled dress with feathery top, black belt with gold buckle, and three silver buttons is identical to the detail. The shoe style is the same, though the color appears slightly different (silver in look vs. light blue in detail).",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db8afe55d05b7ca3c041/master/pass/00017-chanel-spring-2025-couture-detail-credit-gorunway.JPG|1-12": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 9, including the pink dress with feathered sleeves, metallic pattern, sheer embellished overlay, black velvet belt with gold buckle, and white shoes with black cap toe and strap.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db8c8c756a61df36f1c1/master/pass/00018-chanel-spring-2025-couture-detail-credit-gorunway.JPG|1-13": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 9, showing the same light pink dress with large ruffled sleeves, sparkly embellishments on the dress and sheer overlay, and a thin black belt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db91cc6dafb1188845d1/master/pass/00019-chanel-spring-2025-couture-detail-credit-gorunway.JPG|1-13": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The dress, including the pink base with silver embellishments, the sheer overlay, the voluminous ruffled sleeves, the thin black belt, and the white block-heeled Mary Jane shoes with black cap toes, are all identical to Look 9.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db919376d80bca371520/master/pass/00021-chanel-spring-2025-couture-detail-credit-gorunway.JPG|2-14": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The dress color, tweed texture, colorful sequined V-neck panel, black velvet belt with gold buckle, and front patch pockets with gold buttons are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db95cc487d4f80639ec5/master/pass/00022-chanel-spring-2025-couture-detail-credit-gorunway.JPG|2-14": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 11 in terms of the lavender tweed fabric, the black belt with gold buckle, the pleated skirt, and especially the distinctive colorful geometric embellishments on the shoulders/neckline of the jacket.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db8ef15524d9aa86e932/master/pass/00020-chanel-spring-2025-couture-detail-credit-gorunway.JPG|2-14": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail image shows a long pink dress with a V-neck, a thin black belt, and distinctive white feather embellishments on the back drapery. While Look 10 shares the long pink V-neck dress style and similar shoes, it lacks the prominent feather embellishments and has a different belt buckle.",
+  "alternates": [
+   {
+    "look_number": 10,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db9a6e7a0a23300771ee/master/pass/00023-chanel-spring-2025-couture-detail-credit-gorunway.JPG|3-15": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 12, including the pink tweed coat with purple collar and braided trim, the purple top with blue and red beading, the black belt with gold buckle, and the pleated purple skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db98fa5db2ff1c050fe1/master/pass/00024-chanel-spring-2025-couture-detail-credit-gorunway.JPG|3-15": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The white Mary Jane shoes with a black cap toe, block heel, and pearl-like button on the strap are identical to those worn in the detail image.",
+  "alternates": [
+   {
+    "look_number": 4,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 7,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 9,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db9ecc6dafb1188845d3/master/pass/00025-chanel-spring-2025-couture-detail-credit-gorunway.JPG|3-15": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the pink/peach multi-color tweed coat with purple collar, purple lining visible at the hem slit, and purple trim with gold buttons on the cuffs of Look 12.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dba016449efbb54d0171/master/pass/00026-chanel-spring-2025-couture-detail-credit-gorunway.JPG|4-16": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 13, including the light blue tweed coat and skirt with green trim, the light green embellished top, the black velvet belt with a gold buckle, and the model's hair and makeup.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dba8ed9a47b2eafbb25c/master/pass/00028-chanel-spring-2025-couture-detail-credit-gorunway.JPG|5-17": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light blue tweed coat with multicolored flecks and a bright lime green lining/trim visible at the cuffs. Look 13 features an identical coat with the same fabric, color, and lime green lining/trim.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dba382a2c32eaa4d5560/master/pass/00027-chanel-spring-2025-couture-detail-credit-gorunway.JPG|4-16": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The tweed jacket, green inner top, matching tweed skirt with pockets, black belt with gold buckle, and model's hair and makeup are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dba5e8d2a214cc8202a1/master/pass/00029-chanel-spring-2025-couture-detail-credit-gorunway.JPG|5-17": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The tweed jacket and skirt set, including the specific color mix of yellow, green, and pink/red threads, the trim pattern, the bright pink V-neck top, and the pink lining, are identical in both the detail and Look 14.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbaccc6dafb1188845d5/master/pass/00030-chanel-spring-2025-couture-detail-credit-gorunway.JPG|5-17": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The tweed fabric, distinctive woven trim in pink, white, and yellow/lime, gold buttons, jacket style (collar, pockets, cuffs), and bright pink top worn underneath are an exact match to Look 14.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dba91b54e7820fced7ca/master/pass/00031-chanel-spring-2025-couture-detail-credit-gorunway.JPG|6-18": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a white satin Mary Jane pump with a black toe, white strap, gold buckle, and block heel, which perfectly matches the shoes worn in Look 7.",
+  "alternates": [
+   {
+    "look_number": 9,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 12,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 13,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbb2ed9a47b2eafbb25e/master/pass/00033-chanel-spring-2025-couture-detail-credit-gorunway.JPG|6-18": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light blue tweed sleeveless cropped top and a matching ruffled skirt with dark blue braided trim, gold buttons on the pockets, and a black velvet belt with a gold buckle. Look 15 features the identical outfit.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbb5e8d2a214cc8202a3/master/pass/00034-chanel-spring-2025-couture-detail-credit-gorunway.JPG|7-19": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 15, featuring the same light blue tweed two-piece set with dark blue braided trim, gold buttons, and a black velvet belt with a gold oval buckle.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbbb2aa9edcc262e7462/master/pass/00036-chanel-spring-2025-couture-detail-credit-gorunway.JPG|8-20": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the light blue tweed cropped top and skirt with blue rope trim and black belt worn by the model in Look 15.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbb36c4033dbb3db9160/master/pass/00035-chanel-spring-2025-couture-detail-credit-gorunway.JPG|7-19": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the light blue tweed crop top and skirt with blue rope trim, gold buttons, and black velvet belt worn in Look 15.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbc01886338ee082bf58/master/pass/00037-chanel-spring-2025-couture-detail-credit-gorunway.JPG|8-20": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The tweed jacket and skirt, yellow satin lapel, yellow top, black velvet belt with gold buckle, and gold-toned buttons are identical in color, fabric, and style to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbbf625035a8255ac34b/master/pass/00038-chanel-spring-2025-couture-detail-credit-gorunway.JPG|8-20": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 16, including the gold tweed jacket and skirt with yellow trim, the yellow satin top, and the black velvet belt with a gold oval buckle.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbbef4ccdc4e89eb27dc/master/pass/00039-chanel-spring-2025-couture-detail-credit-gorunway.JPG|9-21": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The model in Look 9 is wearing the exact white satin Mary Jane shoes with a black pointed toe, block heel, and pearl-embellished strap as seen in the detail image.",
+  "alternates": [
+   {
+    "look_number": 10,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 12,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 13,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbc967358a182bb0b42e/master/pass/00040-chanel-spring-2025-couture-detail-credit-gorunway.JPG|9-21": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The tweed jacket and skirt, yellow satin collar and cuffs, and black belt over a yellow band perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbca1b4caf1db44b4fb0/master/pass/00042-chanel-spring-2025-couture-detail-credit-gorunway.JPG|10-22": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light grey tweed jacket and skirt with red trim and a red top underneath. Look 17 features the exact same light grey tweed jacket and skirt, with identical red and white braided trim on the jacket's hem and cuffs, and a matching red top visible beneath the jacket.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbadb6ccde376521cc9d/master/pass/00032-chanel-spring-2025-couture-detail-credit-gorunway.JPG|6-18": {
+  "look_number": 12,
+  "confidence": 0.65,
+  "evidence": "The detail shows a coat with multi-colored braided trim on the collar, cuffs, and pockets (pink, yellow, green, white). Look 12 is a coat with very similar multi-colored braided trim (pink, blue, yellow, white) on the same features. While the main tweed fabric of Look 12 appears more pinkish than the golden-yellow in the detail, the specific and intricate trim pattern is a stronger identifying feature.",
+  "alternates": [
+   {
+    "look_number": 8,
+    "confidence": 0.55
+   },
+   {
+    "look_number": 14,
+    "confidence": 0.5
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbcae2e595e7c06eeab0/master/pass/00041-chanel-spring-2025-couture-detail-credit-gorunway.JPG|10-22": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 17, showing the identical light tweed jacket and skirt with red satin lapels, red and gold braided trim, and gold buttons. The red top underneath is also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbd032cc88b32b3b938c/master/pass/00043-chanel-spring-2025-couture-detail-credit-gorunway.JPG|10-22": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The red sequined halter neck dress, black velvet belt with gold buckle, and the model's hair and makeup are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbcfcc6dafb1188845d7/master/pass/00045-chanel-spring-2025-couture-detail-credit-gorunway.JPG|11-23": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a red halter-neck dress with a sequined bodice, ruffled peplum, sheer flowing skirt, black velvet belt, and a long red fabric piece tied at the neck. Look 18 perfectly matches all these elements, including the model's hair and makeup.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbd2cc6dafb1188845d9/master/pass/00044-chanel-spring-2025-couture-detail-credit-gorunway.JPG|11-23": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The red halter-neck dress, sequined bodice, ruffled skirt detail, black velvet belt with oval gold buckle, and model's red lipstick and hair match exactly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbd8d244ca37bedf6803/master/pass/00047-chanel-spring-2025-couture-detail-credit-gorunway.JPG|12-24": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the purple satin blouse with gold buttons, black velvet belt with gold buckle, and the pink/multicolored tweed skirt with scalloped edges and patterned cuffs/pocket trim seen in Look 19.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbd36c4033dbb3db9162/master/pass/00046-chanel-spring-2025-couture-detail-credit-gorunway.JPG|12-24": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 18, featuring the same red halter-neck dress with a black belt, textured top, ruffled peplum, flowing skirt, and white shoes with black toe caps.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbd8cc487d4f80639ec7/master/pass/00049-chanel-spring-2025-couture-detail-credit-gorunway.JPG|13-25": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The tweed jacket and skirt set, including the specific green/teal color, the dark green satin collar and inner top, the gold buttons, and the braided trim, are identical in both the detail and Look 20.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbd88245f6d1116ca91d/master/pass/00048-chanel-spring-2025-couture-detail-credit-gorunway.JPG|12-24": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The model's shoe is identical in color, style, heel, and buckle to the detail image.",
+  "alternates": [
+   {
+    "look_number": 13,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 14,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 15,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbe3e8d2a214cc8202a5/master/pass/00051-chanel-spring-2025-couture-detail-credit-gorunway.JPG|13-25": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The tweed fabric, color blend (light blue, green, and subtle other colors), and the dark green trim on both the jacket and skirt are an exact match. The model's red hair also matches perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbe0fe55d05b7ca3c043/master/pass/00050-chanel-spring-2025-couture-detail-credit-gorunway.JPG|13-25": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The tweed fabric, bright green braided trim, bright green lining, and gold buttons on both the jacket and skirt are an exact match to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbe732cc88b32b3b938e/master/pass/00053-chanel-spring-2025-couture-detail-credit-gorunway.JPG|14-26": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The jacket's tweed fabric, plaid pattern with blue, green, and purple threads on a white base, and the intricate jewel embellishments on the neckline and front placket are an exact match. The model's hair and makeup also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbe3fa5db2ff1c050fe3/master/pass/00052-chanel-spring-2025-couture-detail-credit-gorunway.JPG|14-26": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 21, showing the exact same white tweed jacket and skirt with blue, green, and purple checkered pattern, sparkly trim, and decorative embellishments. The model's hair and makeup also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbe7ed7ebd5402626493/master/pass/00054-chanel-spring-2025-couture-detail-credit-gorunway.JPG|15-27": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a white d'Orsay pump with a black cap toe, block heel, and a strap with a gold buckle. Look 15 features the identical shoe.",
+  "alternates": [
+   {
+    "look_number": 16,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 17,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 18,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbeb625035a8255ac34d/master/pass/00055-chanel-spring-2025-couture-detail-credit-gorunway.JPG|15-27": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a tweed jacket and skirt/shorts set with a distinctive off-white base and square patterns in light blue, purple, and green/teal. Look 21 features the exact same jacket and skirt/shorts with identical fabric, pattern, colors, and design details, including the peplum jacket and ruffled skirt hem.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbef8915e79157d4a4c4/master/pass/00056-chanel-spring-2025-couture-detail-credit-gorunway.JPG|15-27": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, sequined camisole with sheer ruffled neckline and black velvet straps, black velvet belt with gold buckle, and the visible sequined bottom garment with black velvet trim and buttons are all identical to Look 22.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbeccc487d4f80639ec9/master/pass/00057-chanel-spring-2025-couture-detail-credit-gorunway.JPG|16-28": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the sequined top, layered ruffled peplum, sequined pants, and black velvet belt with gold buckle worn in Look 22.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbf02a2e933c2507174f/master/pass/00058-chanel-spring-2025-couture-detail-credit-gorunway.JPG|16-28": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 22, including the sequined light blue top with peplum and black belt, the sequined pants with ruffled sheer hem, and the light blue block heel shoes with white straps.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbf367358a182bb0b430/master/pass/00059-chanel-spring-2025-couture-detail-credit-gorunway.JPG|16-28": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the sequined off-the-shoulder top with ruffled sleeves and the tiered ruffled skirt of Look 23 in color, fabric, embellishment, and style.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbf58c756a61df36f1c3/master/pass/00061-chanel-spring-2025-couture-detail-credit-gorunway.JPG|17-29": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The dress in the detail image is an exact match to Look 23, featuring the same light blue/mint color, spaghetti straps, ruffled off-the-shoulder sleeves, sequined bodice, and tiered tulle skirt with a train.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbf32aa9edcc262e7464/master/pass/00060-chanel-spring-2025-couture-detail-credit-gorunway.JPG|17-29": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the multi-colored sequined bodice, the light blue tulle ruffles on the shoulders and around the waist, and the overall ethereal style of Look 23.",
+  "alternates": [
+   {
+    "look_number": 22,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbfefe55d05b7ca3c045/master/pass/00063-chanel-spring-2025-couture-detail-credit-gorunway.JPG|18-30": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The tweed jacket and shorts, including the specific color, pattern, gold buttons, blue/green trim, and sheer ruffled cuffs, are identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbfbc95ea753ce4789ad/master/pass/00062-chanel-spring-2025-couture-detail-credit-gorunway.JPG|18-30": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The dress, including the sequined bodice, ruffled off-the-shoulder sleeves, layered tulle skirt with a train, and the silver block-heeled shoes, is identical to the detail image. The model's hair and skin tone also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbfb008fac964a11db3f/master/pass/00064-chanel-spring-2025-couture-detail-credit-gorunway.JPG|18-30": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The shoe style (Mary Jane with block heel, black toe cap, and gold buckle) is present in multiple candidate looks, but the detail shoe is light silver/grey while all matching candidate shoes are white, indicating a color mismatch.",
+  "alternates": [
+   {
+    "look_number": 19,
+    "confidence": 0.75
+   },
+   {
+    "look_number": 20,
+    "confidence": 0.75
+   },
+   {
+    "look_number": 21,
+    "confidence": 0.75
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbff1b4caf1db44b4fb2/master/pass/00065-chanel-spring-2025-couture-detail-credit-gorunway.JPG|19-31": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a tweed jacket and shorts with a specific light green/cream/gold color mix and distinctive sheer ruffled cuffs. Look 24 features the exact same jacket and shorts, including the unique ruffled cuffs and tweed pattern.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc00c95ea753ce4789af/master/pass/00066-chanel-spring-2025-couture-detail-credit-gorunway.JPG|19-31": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 25, including the sheer embellished top with ruffled neckline and sleeves, the floral-patterned skirt with ruffled hem, and the black velvet belt with a gold buckle.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc031efb129a06ba0b38/master/pass/00067-chanel-spring-2025-couture-detail-credit-gorunway.JPG|20-32": {
+  "look_number": null,
+  "confidence": 0.05,
+  "evidence": "The detail shows a white wedge slingback shoe with a black cap toe and gold buckle. This exact shoe is worn by models in almost all candidate looks, making it impossible to identify a unique match from the shoe alone.",
+  "alternates": [
+   {
+    "look_number": 20,
+    "confidence": 0.95
+   },
+   {
+    "look_number": 21,
+    "confidence": 0.95
+   },
+   {
+    "look_number": 22,
+    "confidence": 0.95
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc068245f6d1116ca91f/master/pass/00069-chanel-spring-2025-couture-detail-credit-gorunway.JPG|20-32": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light blue sheer top with colorful beaded embellishments and a matching light blue sheer skirt with a watercolor floral pattern and ruffled hem. Look 25 features the identical top and skirt, as well as the same long wavy brown hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc0bc95ea753ce4789b1/master/pass/00070-chanel-spring-2025-couture-detail-credit-gorunway.JPG|21-33": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 26, showing the same light blue tweed dress with fringe details, black velvet belt with gold buckle, and sheer sparkly underlayer.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc04dd7bc041dad0fda9/master/pass/00068-chanel-spring-2025-couture-detail-credit-gorunway.JPG|20-32": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail shows a two-tone (cream and black toe) wedge slingback shoe with an instep strap and gold buckle, which is identical to the shoe worn in Look 20.",
+  "alternates": [
+   {
+    "look_number": 21,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 22,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 23,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc0d2a2e933c25071751/master/pass/00071-chanel-spring-2025-couture-detail-credit-gorunway.JPG|21-33": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a light blue tweed dress with fringe details, a thin black belt, and a sheer, glittery lower skirt. Look 26 features the identical dress, model, hair, and accessories, confirming it is the same garment.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc185dbbc2fa35c20827/master/pass/00073-chanel-spring-2025-couture-detail-credit-gorunway.JPG|22-34": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 27, featuring the same multi-colored tweed jacket and skirt, black velvet belt with gold buckle, pearl buttons, and patterned blouse underneath. The model's hair and makeup are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc0b7c1ec1f19b7526ed/master/pass/00072-chanel-spring-2025-couture-detail-credit-gorunway.JPG|22-34": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The model's hair, makeup, and the exact multi-colored tweed fabric, patterned collar with black trim, and pearly buttons perfectly match look 27.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc138915e79157d4a4c6/master/pass/00074-chanel-spring-2025-couture-detail-credit-gorunway.JPG|22-34": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 27, featuring the identical multi-colored tweed jacket and skirt set with horizontal color banding, the same light-colored buttons, and the distinctive black velvet belt with a gold buckle.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc12cc6dafb1188845db/master/pass/00075-chanel-spring-2025-couture-detail-credit-gorunway.JPG|23-35": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The pink satin wedge shoe with a black cap toe and gold buckle ankle strap in the detail image is an exact match for the shoes worn by the model in Look 27.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc179376d80bca371522/master/pass/00077-chanel-spring-2025-couture-detail-credit-gorunway.JPG|23-35": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The white satin block heel shoe with a black cap toe and gold buckle strap is an exact match.",
+  "alternates": [
+   {
+    "look_number": 28,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc1b6473ad56104d2b0d/master/pass/00078-chanel-spring-2025-couture-detail-credit-gorunway.JPG|24-36": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 28's white tweed fabric with iridescent flecks, black horizontal trims on the jacket, gold buttons on the sleeve, and the black ruffled cuff.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc1d82a2c32eaa4d5562/master/pass/00079-chanel-spring-2025-couture-detail-credit-gorunway.JPG|24-36": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The model's hair, makeup, the pale yellow pleated garment, the distinctive ruffled collar with yellow and purple iridescent fabric, and the ornate silver buttons are all identical to look 29.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc19cc6dafb1188845dd/master/pass/00076-chanel-spring-2025-couture-detail-credit-gorunway.JPG|23-35": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The tweed jacket and skirt, including the specific pastel color variations, black trim, gold buttons, and black sheer ruffled cuffs, are identical in both the detail and Look 28. The model's hair and makeup also match perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc1fae34c95ef48988aa/master/pass/00080-chanel-spring-2025-couture-detail-credit-gorunway.JPG|25-37": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the pale yellow satin dress with ruffled, iridescent collar and cuffs, ornate buttons, vertical pleats, and black velvet belt with gold buckle seen in Look 29.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc22ae34c95ef48988ac/master/pass/00081-chanel-spring-2025-couture-detail-credit-gorunway.JPG|25-37": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The black tweed jacket with white braided trim and gold buttons, cream pussy-bow blouse, black belt with oval gold buckle, and black and white patterned trousers are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc2282a2c32eaa4d5564/master/pass/00082-chanel-spring-2025-couture-detail-credit-gorunway.JPG|25-37": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The detail image shows wide-leg trousers with a distinctive black and white abstract pattern and two-tone white and black cap-toe shoes, which perfectly match Look 30.",
+  "alternates": [
+   {
+    "look_number": 28,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 29,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 31,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc27cc6dafb1188845df/master/pass/00084-chanel-spring-2025-couture-detail-credit-gorunway.JPG|26-38": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 31, featuring the same off-the-shoulder white feathered top, white to black embellished gradient, black spaghetti straps, and black velvet belt with a gold oval buckle. The model's hair and makeup are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc276473ad56104d2b0f/master/pass/00083-chanel-spring-2025-couture-detail-credit-gorunway.JPG|26-38": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The black tweed jacket with metallic threads and the distinctive black and white geometric patterned pants are an exact match to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc2a417b656eff73a9f4/master/pass/00085-chanel-spring-2025-couture-detail-credit-gorunway.JPG|26-38": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The white ruffled off-the-shoulder top with black straps, ombre sequined mini-skirt, sheer black overlay, and black velvet belt with gold buckle are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc2e1b4caf1db44b4fb4/master/pass/00086-chanel-spring-2025-couture-detail-credit-gorunway.JPG|27-39": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The dress, sheer overlay, black velvet bow, black velvet belt with oval buckle, ruffled cuffs, hair, and makeup are identical in the detail and Look 32.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc35f15524d9aa86e934/master/pass/00089-chanel-spring-2025-couture-detail-credit-gorunway.JPG|28-40": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the cream tweed vest and skirt, the white sheer ruffled blouse with black bow, and black cuffs of Look 33.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc2e6e7a0a23300771f0/master/pass/00087-chanel-spring-2025-couture-detail-credit-gorunway.JPG|27-39": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 32, including the sheer white top with black velvet bow, the embellished bodice, the black velvet belt with gold buckle, the tiered ruffled skirt, and the model's hair and makeup.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc38ed9a47b2eafbb260/master/pass/00090-chanel-spring-2025-couture-detail-credit-gorunway.JPG|28-40": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 33, including the off-white tweed vest and pleated skirt with black braided trim, the ruffled collar with black dots, ruffled shoulder details, and the white sheer long-sleeved blouse with ruffled cuffs.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc2fcc6dafb1188845e1/master/pass/00088-chanel-spring-2025-couture-detail-credit-gorunway.JPG|28-40": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 32, showing the same tiered ruffled light-colored dress, black velvet belt, sheer sleeves with ruffled cuffs, and identical white shoes with black cap toes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc3a539edace4fc89d09/master/pass/00091-chanel-spring-2025-couture-detail-credit-gorunway.JPG|29-41": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the white tweed jacket and shorts set with the sheer polka dot blouse, black trim, and gold buttons seen in Look 34.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc40f15524d9aa86e936/master/pass/00093-chanel-spring-2025-couture-detail-credit-gorunway.JPG|30-42": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the jacket, polka dot sheer sleeves with lace cuffs, and tweed shorts of Look 34. The model's hair also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc3eabaffac2705cabdc/master/pass/00094-chanel-spring-2025-couture-detail-credit-gorunway.JPG|30-42": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 35, including the black tweed jacket and shorts set, the white/light blue floral embellishments on the collar, placket, and cuffs, the white flecks in the tweed, the black velvet belt with a gold oval buckle, and the model's hair and makeup.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc381b4caf1db44b4fb6/master/pass/00092-chanel-spring-2025-couture-detail-credit-gorunway.JPG|29-41": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The white d'Orsay style shoes with a black cap toe, block heel, and gold-buckled ankle strap are an exact match to the detail image.",
+  "alternates": [
+   {
+    "look_number": 30,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 31,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 32,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc3ff0069c9d10c5011d/master/pass/00095-chanel-spring-2025-couture-detail-credit-gorunway.JPG|30-42": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black tweed jacket and shorts set with white floral embellishments and black velvet belt seen in Look 35. The model's hair color and style also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc475dbbc2fa35c20829/master/pass/00098-chanel-spring-2025-couture-detail-credit-gorunway.JPG|32-44": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 36, featuring the same black tweed jacket with red lining and black/white braided trim, gold buttons on the cuffs, a red bow blouse, and a matching black tweed skirt. The model's hair also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc4732cc88b32b3b9390/master/pass/00097-chanel-spring-2025-couture-detail-credit-gorunway.JPG|31-43": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black tweed jacket and skirt with red and white braided trim, the bright red satin blouse with a large bow and gold buttons, the black velvet belt with a gold oval buckle, and the model's hair and makeup in Look 36.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc46abaffac2705cabde/master/pass/00096-chanel-spring-2025-couture-detail-credit-gorunway.JPG|31-43": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model with long reddish-brown wavy hair wearing a black jacket and shorts set with white speckles/embellishments and white textured trim on the cuffs and shorts hem. Look 35 features the exact same model, hair, jacket, and shorts, including the distinctive white speckles, flared jacket hem, black belt, and white textured embellishments on the cuffs and shorts hem.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc54539edace4fc89d0b/master/pass/00099-chanel-spring-2025-couture-detail-credit-gorunway.JPG|32-44": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 37, including the high-neck ruffled leopard print blouse, the tweed jacket and skirt with black, red, and white flecks, and the black velvet belt with a gold oval buckle.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc53cc6dafb1188845e3/master/pass/00100-chanel-spring-2025-couture-detail-credit-gorunway.JPG|32-44": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 37, including the unique red, black, and white tweed fabric, the sheer printed sleeves with ruffled cuffs, the high ruffled collar with gold chain, the black lace trim, and the black velvet belt with a gold buckle. The model's hair and skin tone also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc53f4ccdc4e89eb27de/master/pass/00101-chanel-spring-2025-couture-detail-credit-gorunway.JPG|33-45": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact same black tweed-like jacket/blouse with red and white flecks, gold buttons, black belt with a gold circular buckle, and matching skirt/shorts as seen in Look 38. The model's hair and makeup also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc5ae2e595e7c06eeab2/master/pass/00102-chanel-spring-2025-couture-detail-credit-gorunway.JPG|33-45": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 38's black tweed jacket and skirt, featuring the same sheer quality, woven grid pattern with white/pink/red flecks, voluminous sleeves, and cinched waist. The model's long black hair also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc5e539edace4fc89d0d/master/pass/00103-chanel-spring-2025-couture-detail-credit-gorunway.JPG|33-45": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The dress's black and white tweed fabric, halter neckline with embellished mesh, lace trim, and visible patterned shorts underneath are identical in both images. The model's hair and makeup also match perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc611b4caf1db44b4fb8/master/pass/00105-chanel-spring-2025-couture-detail-credit-gorunway.JPG|34-46": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a sleeveless black and white tweed-like dress with pearl buttons and lace trim. Look 39 is the front view of the exact same dress, matching the fabric, pattern, style, lace trim, and model's hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc5d6e7a0a23300771f2/master/pass/00104-chanel-spring-2025-couture-detail-credit-gorunway.JPG|34-46": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The dress in Look 39 is an exact match for the detail, featuring the same black and white tweed-like fabric with metallic threads, the embellished high neckline, the sheer black yoke, and the layered lace hem.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc651886338ee082bf5a/master/pass/00106-chanel-spring-2025-couture-detail-credit-gorunway.JPG|35-47": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact same sequined top with ruffled collar, velvet bow, pearl buttons, velvet belt with gold buckle, and colorful patterned trousers as seen on Look 40. The model is also the same.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc652a2e933c25071753/master/pass/00107-chanel-spring-2025-couture-detail-credit-gorunway.JPG|35-47": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, and the black sheer dress with scattered sparkles and colorful iridescent trim on the scoop neckline and puffy sleeves are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc65fa5db2ff1c050fe5/master/pass/00108-chanel-spring-2025-couture-detail-credit-gorunway.JPG|35-47": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The black sheer dress with scattered sparkles, beaded neckline and sleeve trim, puffy ruffled sleeves, black velvet belt with gold oval buckle, and heavily sequined ruffled skirt are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc6e2a2e933c25071757/master/pass/00110-chanel-spring-2025-couture-detail-credit-gorunway.JPG|36-48": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the white and black two-tone shoes with a gold buckle and the sheer black fabric with scattered sparkles forming a long train, both visible in Look 41.",
+  "alternates": [
+   {
+    "look_number": 36,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 37,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 38,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc6ccc6dafb1188845e5/master/pass/00111-chanel-spring-2025-couture-detail-credit-gorunway.JPG|36-48": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 41, including the black sheer sparkly dress with ruffled sleeves and tiered skirt, the sheer train, the black belt with gold buckle, the white block-heeled pumps with black cap toe, and the model's long wavy brown hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc6c2a2e933c25071755/master/pass/00109-chanel-spring-2025-couture-detail-credit-gorunway.JPG|36-48": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The white and black toe Mary Jane shoes with the pearl buckle are identical, and the black sheer, glittery fabric of the dress matches the visible garment in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc761b4caf1db44b4fba/master/pass/00112-chanel-spring-2025-couture-detail-credit-gorunway.JPG|37-49": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The model, black lace top with ruffled collar and cuffs, black velvet belt with gold oval buckle, and black feathered skirt are all identical to Look 42.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc73e9da3c88c702e182/master/pass/00113-chanel-spring-2025-couture-detail-credit-gorunway.JPG|37-49": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 42, showing the same black intricate lace/sequined top with a ruffled collar, black velvet belt, feathered skirt with purple/grey accents over a sequined base, and a sheer black train. The model's hair also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc771b54e7820fced7cc/master/pass/00114-chanel-spring-2025-couture-detail-credit-gorunway.JPG|38-50": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, black sheer lace top, neckline trim, and vertical button/sequin detail are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc7731a40b0de4418135/master/pass/00115-chanel-spring-2025-couture-detail-credit-gorunway.JPG|38-50": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "Exact match of the sheer black lace top with central placket, black velvet belt with oval gold buckle, and the black skirt with horizontal blue and silver sequin embellishments.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc80e2e595e7c06eeab4/master/pass/00117-chanel-spring-2025-couture-detail-credit-gorunway.JPG|39-51": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact same voluminous periwinkle satin cape with a black velvet bow, worn over a dark blue sequined dress with an iridescent pattern, matching Look 44 perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc7edd7bc041dad0fdab/master/pass/00118-chanel-spring-2025-couture-detail-credit-gorunway.JPG|39-51": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The voluminous periwinkle/lavender cape/gown in the detail image perfectly matches the one worn in Look 44, including the color, fabric, and silhouette from the back.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc7e1b4caf1db44b4fbc/master/pass/00116-chanel-spring-2025-couture-detail-credit-gorunway.JPG|38-50": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 43, including the black lace long-sleeve top, the tiered skirt with silver and black fringed layers, the long lace trains, the white and black cap-toe shoes, and the model's long dark wavy hair.",
+  "alternates": [
+   {
+    "look_number": 41,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc851b54e7820fced7ce/master/pass/00121-chanel-spring-2025-couture-detail-credit-gorunway.JPG|40-52": {
+  "look_number": 45,
+  "confidence": 0.95,
+  "evidence": "The detail shows a navy blue Mary Jane style shoe with a block heel and a gold buckle. Look 45 features the exact same shoe.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc8b32cc88b32b3b9392/master/pass/00119-chanel-spring-2025-couture-detail-credit-gorunway.JPG|40-52": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black sequined cape with gold trim and velvet bow, and the blue sequined dress with gold trim at the hem, worn in Look 45.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc8add7bc041dad0fdad/master/pass/00120-chanel-spring-2025-couture-detail-credit-gorunway.JPG|40-52": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the blue sequined dress and the black sequined mesh cape with gold wavy trim and black velvet bow worn in Look 45.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc8e00eb54d27e6ab524/master/pass/00122-chanel-spring-2025-couture-detail-credit-gorunway.JPG|41-53": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black sequined cape with blue accents and gold scalloped trim, worn over a blue sequined dress. Look 45 features the identical cape and dress.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc8f6c4033dbb3db9164/master/pass/00123-chanel-spring-2025-couture-detail-credit-gorunway.JPG|41-53": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, and the dark blue sequined sleeveless top with the distinctive beaded neckline trim are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc92f0069c9d10c5011f/master/pass/00124-chanel-spring-2025-couture-detail-credit-gorunway.JPG|42-54": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a dark blue, sleeveless gown with a heavily embellished bodice, a large back cut-out, and ruffled fabric below. Look 46 features this exact dress, and its back is clearly visible on the model in the background of Look 54, matching all details perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc96cc6dafb1188845e7/master/pass/00125-chanel-spring-2025-couture-detail-credit-gorunway.JPG|42-54": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 47, including the navy sheer top with camisole, the black velvet belt with three gold ornate buttons, and the tiered navy skirt with scattered gold glitter embellishment.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc94e9da3c88c702e184/master/pass/00126-chanel-spring-2025-couture-detail-credit-gorunway.JPG|42-54": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 47, featuring the same sheer navy top, solid camisole, black belt with three gold ornate buttons, tiered navy glitter-embellished skirt, sheer navy floor-length skirt/trousers, and dark flats.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc9bcc6dafb1188845eb/master/pass/00128-chanel-spring-2025-couture-detail-credit-gorunway.JPG|43-55": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The black lace top with puffy sleeves, ruffled cuffs, and the distinctive blue and black sequin fringe at the waist are identical in both the detail and Look 48.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dca100eb54d27e6ab526/master/pass/00130-chanel-spring-2025-couture-detail-credit-gorunway.JPG|44-55": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 48, featuring the same black sheer lace top with a deep V-back, ruffled sleeves, heavily embellished waist, tiered sheer skirt, and dark blue block heels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc996e7a0a23300771f4/master/pass/00129-chanel-spring-2025-couture-detail-credit-gorunway.JPG|43-55": {
+  "look_number": 45,
+  "confidence": 0.95,
+  "evidence": "The distinctive dark blue/black satin shoes with a black cap toe, gold buckle strap, and block heel are an exact match to those worn in Look 45. The sheer dark fabric in the detail could be very dark blue hosiery or a sheer element of the dress.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc99cc6dafb1188845e9/master/pass/00127-chanel-spring-2025-couture-detail-credit-gorunway.JPG|43-55": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, black sheer lace top with puffed sleeves, and the black camisole underneath are identical. The visible dark, sequined, and textured skirt portion also perfectly matches Look 48.",
+  "alternates": [
+   {
+    "look_number": 43,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc9d1efb129a06ba0b3a/master/pass/00131-chanel-spring-2025-couture-detail-credit-gorunway.JPG|44-55": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the light lavender sheer fabric, boat neck with delicate trim, flowing sleeves with embellished edges, and the silver rhinestone belt of Look 49.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dcaf67358a182bb0b433/master/pass/00134-chanel-spring-2025-couture-detail-credit-gorunway.JPG|45-55": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the tweed jacket and pants, black ruffled neckpiece, black trim, and buttons of Look 50.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dca66473ad56104d2b11/master/pass/00135-chanel-spring-2025-couture-detail-credit-gorunway.JPG|46-55": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The dress color, off-the-shoulder black velvet neckline, sculptural shoulder embellishments, and black velvet belt with gold buttons are identical to the detail image. The model's hair also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dca1008fac964a11db41/master/pass/00132-chanel-spring-2025-couture-detail-credit-gorunway.JPG|45-55": {
+  "look_number": 49,
+  "confidence": 0.85,
+  "evidence": "The sheer, flowing light lavender garment with ruffles and wide sleeves perfectly matches Look 49 in color, fabric, and style. The sparkling bow belt in the detail differs from the thin band belt shown in Look 49.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dca1ed7ebd5402626495/master/pass/00133-chanel-spring-2025-couture-detail-credit-gorunway.JPG|45-55": {
+  "look_number": 49,
+  "confidence": 0.9,
+  "evidence": "The flowing, sheer, ruffled pale lavender dress and the model's long dark hair are an excellent match. The belt in the detail image is a large embellished bow, while Look 49 features a thin embellished band, which is the only notable difference.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dcad31a40b0de4418138/master/pass/00136-chanel-spring-2025-couture-detail-credit-gorunway.JPG|46-55": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The long coat in look 52 perfectly matches the detail image in fabric, color, texture, sleeve style with sheer ruffle, and the distinctive vertical silver embellished panel along the side.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dcafe8d2a214cc8202a8/master/pass/00137-chanel-spring-2025-couture-detail-credit-gorunway.JPG|46-55": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a long, textured gold/beige coat with a train, which is an exact match for the coat worn in Look 52. The fabric, color, texture, and silhouette are identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dcb2cc1fe4a69ca12874/master/pass/00138-chanel-spring-2025-couture-detail-credit-gorunway.JPG|47-55": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 53, including the gold sequined off-the-shoulder dress with ruffled sleeves, the black velvet belt with three gold medallions, the model's short blonde hair, and red lipstick.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dcb61886338ee082bf5e/master/pass/00140-chanel-spring-2025-couture-detail-credit-gorunway.JPG|48-55": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The model, top, and visible skirt details including color, texture, and embellishments are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dcb8d244ca37bedf6854/master/pass/00141-chanel-spring-2025-couture-detail-credit-gorunway.JPG|48-55": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the sleeveless, light cream top with textured fabric details and beaded neckline, and the sheer embellished skirt of Look 54.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dcbc7c1ec1f19b7526f0/master/pass/00142-chanel-spring-2025-couture-detail-credit-gorunway.JPG|48-55": {
+  "look_number": 54,
+  "confidence": 0.98,
+  "evidence": "The dress in Look 54 perfectly matches the color, the unique textured diamond-like pattern on the bodice, and the sheer, embellished lower skirt seen in the detail image. The model's hair is also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dcbdcc6dafb1188845ee/master/pass/00143-chanel-spring-2025-couture-detail-credit-gorunway.JPG|49-55": {
+  "look_number": 55,
+  "confidence": 1.0,
+  "evidence": "The jacket, skirt, belt, headpiece, and veil in the detail image are identical to those worn by the model in Look 55.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dcb9ed7ebd5402626498/master/pass/00139-chanel-spring-2025-couture-detail-credit-gorunway.JPG|47-55": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The dress's unique shimmering lace, off-the-shoulder design, tiered ruffles, black velvet belt with gold buttons, and the model's hair and makeup are identical to Look 53.",
+  "alternates": [
+   {
+    "look_number": 52,
+    "confidence": 0.4
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbbef4ccdc4e89eb27dc/master/pass/00039-chanel-spring-2025-couture-detail-credit-gorunway.JPG|16-16": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The shoes in the detail image are identical to the shoes worn by the model in Look 16, featuring the same white/cream color with a black toe cap, Mary Jane strap with a pearl detail, and block heel.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dba91b54e7820fced7ca/master/pass/00031-chanel-spring-2025-couture-detail-credit-gorunway.JPG|14-14": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The white satin pump with a black pointed toe, white strap, and gold buckle perfectly matches the shoe in the detail image.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6798db98fa5db2ff1c050fe1/master/pass/00024-chanel-spring-2025-couture-detail-credit-gorunway.JPG|12-12": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The shoes in the detail image perfectly match the shoes worn by the model in Look 12, including the white body, black pointed toe, instep strap with pearl embellishment, and block heel.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbfb008fac964a11db3f/master/pass/00064-chanel-spring-2025-couture-detail-credit-gorunway.JPG|24-24": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The shoes in the detail image perfectly match the shoes worn by the model in Look 24, including the color (silver with black toe cap), style (Mary Jane with strap), heel type, and ornate gold buckle.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbe7ed7ebd5402626493/master/pass/00054-chanel-spring-2025-couture-detail-credit-gorunway.JPG|21-21": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The shoe in the detail image is an exact match for the shoe worn by the model in Look 21, featuring the same white body, black cap toe, ankle strap, and block heel.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc031efb129a06ba0b38/master/pass/00067-chanel-spring-2025-couture-detail-credit-gorunway.JPG|25-25": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The shoes in the detail image are an exact match for the shoes worn by the model in Look 25, featuring the same white/cream color, black cap toe, ankle strap with gold buckle, and low wedge heel.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dbd88245f6d1116ca91d/master/pass/00048-chanel-spring-2025-couture-detail-credit-gorunway.JPG|19-20": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The white Mary Jane shoe with a black cap toe, gold buckle, and block heel is an exact match to the detail. The model's bare leg also matches.",
+  "alternates": [
+   {
+    "look_number": 20,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc04dd7bc041dad0fda9/master/pass/00068-chanel-spring-2025-couture-detail-credit-gorunway.JPG|25-25": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The shoes in the detail image are an exact match to the shoes worn by the model in Look 25, featuring the same off-white satin, black cap toe, wedge heel, and gold-toned buckle detail.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc996e7a0a23300771f4/master/pass/00129-chanel-spring-2025-couture-detail-credit-gorunway.JPG|48-48": {
+  "look_number": 48,
+  "confidence": 0.98,
+  "evidence": "The sheer black flowing skirt fabric and the distinctive black pointed-toe shoe with a navy body, gold buckle strap, and chunky navy heel are identical in both images.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6798dc381b4caf1db44b4fb6/master/pass/00092-chanel-spring-2025-couture-detail-credit-gorunway.JPG|34-34": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The shoes in the detail image perfectly match the white block-heeled shoes with a black cap toe and gold buckle worn by the model in Look 34.",
+  "alternates": []
+ }
+}

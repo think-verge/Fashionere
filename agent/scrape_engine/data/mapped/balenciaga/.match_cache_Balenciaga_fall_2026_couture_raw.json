@@ -1,0 +1,1448 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6258480e5eb1be874c59/master/pass/00001-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-6": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a red feathered voluminous top and wide khaki trousers, which perfectly match Look 1.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6258ef70436404a2a6a3/master/pass/00002-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-6": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 1, including the red feathered voluminous top, white inner top, wide-leg khaki pants, and dark teal gloves. The model's skin tone and hair also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6258d9ebb4593e1e50b4/master/pass/00003-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-7": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The model, red feathered jacket, white satin top, dark green sleeves, and khaki wide-leg pants are identical in both the detail and Look 1.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e625aefa886c001cdfd23/master/pass/00006-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-7": {
+  "look_number": 2,
+  "confidence": 0.95,
+  "evidence": "The long, flowing off-white coat with long sleeves and a simple back neckline in Look 2 is an exact match for the garment shown in the detail image, including color, fabric, and silhouette.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e625a15869310d9a1293d/master/pass/00005-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-7": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 1, including the white top, red feathered jacket, wide-leg khaki pants, purple shoes, and teal gloves.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e625aab0921bb5925ed23/master/pass/00004-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-7": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The model, red feathered cape, white top, dark teal gloves, and khaki wide-leg pants are identical in both the detail and Look 1.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e625d3bbd144b5cb8bba8/master/pass/00007-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-8": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a white long coat with a side slit revealing a vibrant red feathery garment underneath, worn by a model with short blonde hair. Look 2 perfectly matches all these elements: the white coat, the red feathery garment, and the model's hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e625c3d2ee69032a02d24/master/pass/00008-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-8": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The model's distinctive blonde mullet haircut, the unique white sculptural coat with its specific collar design, and the earring are all identical in the detail and Look 2.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e625d3bbd144b5cb8bbad/master/pass/00009-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-8": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The white asymmetrical coat/dress and the vibrant red feathered garment visible underneath are identical in both the detail and Look 2. The model's hair and earrings also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e625eefa886c001cdfd30/master/pass/00010-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-8": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a black dress with a white high collar and a long white ribbon flowing down the back, white cuffs, and distinctive white sculptural shoes. Look 3 shows the front of the exact same black dress with the white collar and ribbon, white cuffs, and identical white sculptural shoes, worn by a model with the same short dark hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e625fb37cb4aaa5bebd37/master/pass/00011-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-9": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 3, including the model's features, the black dress with white collar and cuffs, the long white ties, the white pointed-toe heels, and the large black earrings.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6261eb6eb5a03e7549d8/master/pass/00014-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-9": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black garment with a distinctive white cuff folded back, which perfectly matches the cuffs on the black dress in Look 3. The model's arm and skin tone also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e626015869310d9a1294a/master/pass/00013-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-9": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 3, showing the same black long-sleeved garment with prominent shoulder pads, white folded cuffs, a white high collar, and identical large silver earrings on a model with similar features.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e625f5be10a3f1fb05656/master/pass/00012-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-9": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The model, black garment, white high collar, and unique large sparkling earring are identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62617f29a64f1274c02d/master/pass/00015-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-9": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The model, black garment, cream ribbon tied at the back of the neck, and the distinctive chandelier earrings all match perfectly with Look 3.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6262b92cb882314dd322/master/pass/00016-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-10": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The voluminous black top with large puffed sleeves and high collar, along with the wide-leg black trousers, perfectly match the garment in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62635f3a86db799ad92e/master/pass/00018-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-10": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The model, white sleeveless top, and the distinctive black voluminous structured jacket/cape are identical in Look 4.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62631657c04c54e3fe8e/master/pass/00017-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-10": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 4, including the model, the white top, the voluminous black cape, the black wide-leg trousers, and the black shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62647da31cb81504d551/master/pass/00019-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-10": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail shows a white top, black voluminous jacket/cape, and black pants, all of which are perfectly matched in Look 4. The arm with bracelets is visible through the jacket opening, consistent with Look 4's design.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62650187b08e5fa52e04/master/pass/00021-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The model, cream dress with short sleeves and train, silver pointed-toe heels, and metallic embellished handbag with tassel are identical in both the detail and look 5.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6265a3690677487ad19f/master/pass/00020-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The white high-neck, short-sleeved dress with a long train, the metallic embellished handbag, and the sleek low ponytail are identical in both the detail image and Look 5.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6267e9cbbd9c5a826f28/master/pass/00023-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 5 in terms of the cream-colored structured dress, crew neck, wide short sleeves, vertical seam details on the skirt, the gold earring, and the metallic handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62667da31cb81504d558/master/pass/00022-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The model, her hair, makeup, and distinctive gold leaf earring are identical. The cream-colored top with a round neck and short wide sleeves perfectly matches the garment in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e626815869310d9a12951/master/pass/00025-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-12": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model with long blonde hair wearing a black blazer and wide, flowing white trousers/skirt. Look 6 features a model with identical hair, wearing the same black blazer and white flowing bottom garment.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6269a655ca89d8cc2c50/master/pass/00026-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-12": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 6, featuring the same model, black blazer, white voluminous top with a long train, and black feathered skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6267ec146e48ab31de93/master/pass/00024-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-12": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a silver, embellished handbag with light tassels, carried by a person wearing a flowing off-white garment. Look 5 features the exact same handbag and the model is wearing a matching off-white dress.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62695f3a86db799ad93b/master/pass/00027-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-12": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The model's hair, facial features, black blazer, and white strapless top are identical to those in Look 6.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e626a480e5eb1be874c60/master/pass/00028-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-13": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 6, featuring the same black blazer, white draped strapless top, black feathery skirt, and model's hair and accessories.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e626bd95e16923c1974ea/master/pass/00029-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-13": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black blazer over a white garment, a black feathered skirt, and a distinctive crystal ring. Look 6 features all these elements: a black blazer, a white top, a black feathered skirt, and the identical crystal ring on the model's hand.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e626beb6eb5a03e7549df/master/pass/00030-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-13": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The voluminous dark red top and the wide, flowing bright pink pants, along with the model's curly dark hair, are an exact match to Look 7.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e626c1657c04c54e3fe9c/master/pass/00031-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|1-13": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model wearing a deep burgundy oversized top with a V-neck and a two-tone pink voluminous skirt/trousers. Look 7 features the exact same top and skirt/trousers, with identical colors, fabric, and silhouette.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e626d5be10a3f1fb05663/master/pass/00032-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|2-14": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The model and the deep burgundy top with its distinctive wide V-neckline and structured collar are an exact match to Look 7.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e626ef8d82c99d9adcc51/master/pass/00034-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a strapless gown with a distinctive multi-colored, textured fabric (pink, green, yellow, feathery/fringed elements). Look 8 features the exact same gown from the front, confirming the match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e626cd95e16923c1974f1/master/pass/00033-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|2-14": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the burgundy oversized top and coral wide-leg trousers with the distinctive structured waistline of Look 7. The model's hair also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e626e480e5eb1be874c6d/master/pass/00035-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a strapless gown with a unique textured application of pink, green, and yellow elements, which is an exact match for the dress worn in Look 8.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e626f05b217e1f03172d6/master/pass/00036-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The model's face, hairstyle, and the unique strapless dress with pink, green, and yellow feathered/petaled texture are identical in both the detail and Look 8.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6270480e5eb1be874c74/master/pass/00037-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|3-15": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail shows a dress with a distinctive pink, green, and yellow floral/leafy pattern with textured embellishments and clear/nude high-heeled shoes. Look 8 features the exact same dress and shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6271486cadd0a04b34dc/master/pass/00038-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|3-15": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 9, showing the same pink floral headpiece, purple gloves, red wide-leg trousers, and bare midriff.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62723bbd144b5cb8bbb5/master/pass/00040-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|3-15": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 9, showing the same pink floral sheer top, purple gloves, and red wide-leg trousers.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e627105b217e1f03172dd/master/pass/00039-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|3-15": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 9, including the pink floral veil, purple gloves, red wide-leg pants, and red pointed-toe shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e627305b217e1f03172e4/master/pass/00042-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|4-16": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model from behind wearing a long, flowing, sheer deep purple dress with long brown hair. Look 10 features the exact same dress and model, matching the color, fabric, and hair perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62739d765981fb7c2c05/master/pass/00041-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|4-16": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 9, featuring the same pink floral veil, purple gloves, and red wide-leg trousers with an exposed midriff.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6275ec146e48ab31de9a/master/pass/00044-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|4-16": {
+  "look_number": 10,
+  "confidence": 0.95,
+  "evidence": "The dark purple sheer, flowing garment with a gathered high neck and the model's long, straight brown hair perfectly match Look 10.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6274f8d82c99d9adcc5e/master/pass/00043-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|4-16": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model wearing a long, flowing, sheer dark purple dress with a high halter neck and gathered waist. Look 10 features the identical dress, color, fabric, and style, including similar nude/clear shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62771657c04c54e3feaa/master/pass/00046-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|5-17": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The model's hair color and style, white sleeveless top, light teal gloves, silver bracelet, and the distinctive voluminous grey skirt with its texture and train are all identical to Look 11.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62759d765981fb7c2c0c/master/pass/00045-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|5-17": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The detail shows a sheer, flowing, dark purple dress with clear strappy sandals, which perfectly matches Look 10 in color, fabric, style, and footwear.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62789d765981fb7c2c19/master/pass/00047-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|5-17": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 11, including the white tank top, voluminous grey skirt with yellow lining, light blue gloves, silver arm cuff, and the model's hair and makeup.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62770187b08e5fa52e0b/master/pass/00048-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|5-17": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The model, white sleeveless top, teal gloves, and silver cuff bracelet are identical in both the detail and Look 11.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6279486cadd0a04b34e3/master/pass/00050-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|6-18": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 11, showing the same white sleeveless top, grey voluminous skirt, teal long glove, and silver cuff bracelet.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6279ec146e48ab31dea1/master/pass/00049-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|6-18": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 11, including the white sleeveless top, the teal long gloves, the silver arm cuff, and the voluminous grey skirt with its texture.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e627a7da31cb81504d565/master/pass/00051-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|6-18": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model with long curly blonde hair wearing a long, light beige/oatmeal colored coat/dress with distinctive light grey/beige feathered shoes. Look 12 features the exact same model, garment, and feathered shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e627b5f3a86db799ad942/master/pass/00052-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|6-18": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 12, showing the same model, light beige long dress with a deep V-slit and high leg slit, and white feathered sandals.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e627b5be10a3f1fb05676/master/pass/00053-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|7-19": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, and the distinctive light beige/off-white coat/dress with a deep round neckline and soft texture are an exact match to Look 12.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e627cd9ebb4593e1e50c1/master/pass/00054-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|7-19": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light beige/taupe flowing garment and white open-toe sandals with light pink/mauve feathers. Look 12 features the exact same shoes and a matching light beige/taupe long dress/coat made of a similar soft, flowing fabric.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e627d5582611c06842dd1/master/pass/00055-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|7-19": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail image is a rear view of Look 13, showing the identical turquoise top, grey voluminous skirt overlay, and light brown flowing skirt. The model's hair and earrings also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e627e536e4b3d1ab04ad1/master/pass/00056-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|7-19": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 13, including the turquoise high-neck top, the grey draped garment, the long taupe skirt with a train, the red heels, and the model's hair and earrings.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e627ea655ca89d8cc2c92/master/pass/00057-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|7-19": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The model, turquoise high-neck top, and unique earrings perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e627fef70436404a2a6b0/master/pass/00058-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|8-20": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 13, showing the same turquoise oversized top, draped grey jacket, taupe skirt, and light blue earrings.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62809d765981fb7c2c20/master/pass/00059-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|8-20": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail shows a turquoise high-neck top, a light brown skirt, and a voluminous grey garment draped over the arm, all of which are perfectly matched in Look 13.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6280b92cb882314dd33b/master/pass/00060-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|8-20": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a full-body shaggy, textured outfit in light brown/beige with a high collar, short curly hair, turquoise/teal trousers, and yellow shoes. Look 14 is an exact match for all these elements.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6281a655ca89d8cc2c99/master/pass/00061-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|8-20": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 14, showing the same shaggy light brown coat with a high collar, the model's curly brown hair, and the visible turquoise garment underneath.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6281486cadd0a04b34ea/master/pass/00062-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|9-21": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail shows a light brown/beige shaggy/feathered garment with a high, voluminous collar. Look 14 features a full-length coat made of identical material, color, and collar style. The model's hair also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6282679d13d0e0ec2c38/master/pass/00063-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|9-21": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail shows a light beige/grey shaggy coat with a matching belt and dark buttons. Look 14 features an identical coat with the same distinctive texture, color, belt, and buttons.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6283efa886c001cdfd43/master/pass/00065-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|9-21": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The dress in the detail image is identical to the dress in Look 15, featuring the same teal/green textured fabric, structured off-the-shoulder neckline, fitted silhouette, and high slit. The shoes are also an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62853d2ee69032a02d37/master/pass/00067-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|10-22": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail shows an off-the-shoulder garment made of teal and green feathers. Look 15 features a dress with the identical feather texture, color, and off-the-shoulder neckline.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e628405b217e1f03172fd/master/pass/00066-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|10-22": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The dress in the detail image perfectly matches the color, texture, and silhouette of the dress in Look 15. The shoes are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6285eb6eb5a03e7549f2/master/pass/00068-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|10-22": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The model, the teal feathered garment, and the distinctive green ear cuff/earring are identical in both the detail and Look 15.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6286a3690677487ad1ac/master/pass/00069-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|10-22": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The teal feathered dress and light grey pointed-toe pumps in the detail image are identical to those worn in Look 15.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6287d95e16923c1974f8/master/pass/00070-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|11-23": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The model's curly brown hair, the brown blazer, and the voluminous light pink/nude skirt with a long train are identical in both the detail and Look 16.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e628715869310d9a1295e/master/pass/00071-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|11-23": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The model, brown blazer, pink top, and voluminous light pink skirt with a train are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62887f29a64f1274c046/master/pass/00072-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|11-23": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The model, brown blazer, and pink garment visible underneath are an exact match to look 16.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6289efa886c001cdfd4a/master/pass/00073-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|11-23": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The brown blazer, pink top, voluminous light pink skirt, and wrist bracelet are identical in both the detail and look 16.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6283b92cb882314dd348/master/pass/00064-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|9-21": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the light brown feathered coat, bright green wide-leg pants, and yellow pointed shoes seen in Look 14.",
+  "alternates": [
+   {
+    "look_number": 11,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6289b92cb882314dd355/master/pass/00074-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|12-24": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a brown jacket, a voluminous light beige skirt, and a distinctive red ring. Look 16 features the exact same brown jacket, voluminous light beige skirt, and the identical red ring on the model's hand.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e628aeb6eb5a03e7549f9/master/pass/00075-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|12-24": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 17, featuring the same purple strapless top, wide-leg purple pants, and long dark brown gloves. The model's skin tone, short hair, and visible red shoe sole also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e628b7f29a64f1274c04d/master/pass/00076-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|12-24": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 17, including the model's skin tone and hair, the exact shade and structured fabric of the purple strapless jumpsuit, and the dark brown leather gloves. The red shoes also align.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e628bef70436404a2a6b7/master/pass/00077-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|12-24": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The model, the strapless purple garment, and the unique purple abstract earrings are identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e628b1657c04c54e3feb7/master/pass/00078-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|13-25": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model from the back wearing a long, floor-length coat made of bright lime green feathers. Look 18 features an identical lime green feathery coat.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e628d1657c04c54e3febe/master/pass/00079-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|13-25": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 18, showing the same lime green coat with a high collar and a long, matching feathery boa draped over the shoulder.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e628db37cb4aaa5bebd4a/master/pass/00080-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|13-25": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The detail shows a lime green textured coat with a high collar and lime green feather embellishments. Look 18 features the identical coat with the same color, texture, collar style, and feather details.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e628d486cadd0a04b34f7/master/pass/00081-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|13-25": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a long, bright yellow, heavily embellished dress with a textured surface and matching yellow pointed-toe shoes. Look 19 features the identical dress, texture, color, and the model's hair matches the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e628f15869310d9a12965/master/pass/00082-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|13-25": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 19, including the long, sequined lime green dress, the lime green high heels, and the model's short, light brown hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e628f5582611c06842dd8/master/pass/00084-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|14-26": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a bright yellow long-sleeved garment covered in small, overlapping scale-like embellishments. Look 19 is a full-body dress with the exact same bright yellow color and distinctive scale-like texture covering the entire garment, including the sleeves and neckline.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e628fd9ebb4593e1e50c8/master/pass/00083-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|14-26": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The bright yellow garment with scale-like embellishments and the model's hair match exactly.",
+  "alternates": [
+   {
+    "look_number": 15,
+    "confidence": 0.1
+   },
+   {
+    "look_number": 25,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6291a655ca89d8cc2ca0/master/pass/00085-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|14-26": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 20, showing the same sheer purple cape over a deep purple feathered skirt.",
+  "alternates": [
+   {
+    "look_number": 22,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 17,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6292d95e16923c1974ff/master/pass/00086-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|14-26": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 20, featuring the identical sheer purple high-neck top and the long, shaggy dark magenta feathered skirt. The model's hair and styling are also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6294ec146e48ab31dea8/master/pass/00088-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|15-27": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the sheer purple high-neck top, the magenta feathered skirt, and the silver earrings worn by the model in Look 20.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6294eb6eb5a03e754a06/master/pass/00089-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|15-27": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 21, featuring the identical taupe cape, shaggy brown textured garment, and distinctive metallic green sequined handbag with tassels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6291480e5eb1be874c81/master/pass/00087-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|15-27": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The model's sheer purple high-neck top with gathered fabric and the style of the earrings/neckline embellishment perfectly match Look 20. The model's hair is also styled similarly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62947da31cb81504d57e/master/pass/00090-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|15-27": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 21, including the model, the light brown trench coat with neon green lining, the shaggy brown pants, and the embellished metallic handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6295b37cb4aaa5bebd51/master/pass/00091-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|16-28": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 21, showing the same model, light brown coat with a wide collar and single button, and a bright neon green high-neck top underneath.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6295d9ebb4593e1e50d5/master/pass/00092-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|16-28": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact green studded handbag, brown coat, shaggy brown garment, and neon green element visible in Look 21.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6296f8d82c99d9adcc65/master/pass/00093-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|16-28": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a distinctive metallic green handbag with silver hardware, a light brown/taupe coat, and a shaggy brown textured bottom garment. Look 21 features all three of these exact items: the identical handbag, the same color and style coat, and the matching shaggy brown garment.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6298a655ca89d8cc2ca7/master/pass/00094-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|16-28": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the oversized lime green jacket with the tie at the back and the distinctive purple shaggy skirt of Look 22.",
+  "alternates": [
+   {
+    "look_number": 20,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6298efa886c001cdfd51/master/pass/00095-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|17-29": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a lime green coat/dress worn over a purple feathery skirt. Look 22 features the exact same lime green coat/dress and purple feathery skirt, styled identically.",
+  "alternates": [
+   {
+    "look_number": 20,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6298480e5eb1be874c88/master/pass/00096-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|17-29": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The model, lime green/yellow coat, lime green scoop-neck top, and yellow earring are identical in both the detail and Look 22.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e629bec146e48ab31deaf/master/pass/00097-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|17-29": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the lime green draped coat and the purple shaggy fur garment visible in Look 22.",
+  "alternates": [
+   {
+    "look_number": 20,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e629ae9cbbd9c5a826f47/master/pass/00098-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|17-29": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 23, showing the same purple draped head covering, exposed midriff, and voluminous purple skirt with a subtle pattern.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e629c1657c04c54e3fed7/master/pass/00100-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|18-30": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The model, purple draped headpiece, mottled purple fabric, pleated bodice with side cut-outs, and overall garment design are identical to Look 23.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e629a480e5eb1be874c8f/master/pass/00099-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|18-30": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 23, showing the same purple voluminous dress with draped top, waist cut-outs, and matching head covering.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e629da3690677487ad1ba/master/pass/00101-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|18-30": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the draped purple top with the distinctive mottled pattern and exposed midriff seen in Look 23. The fabric, color, and draping style are identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e629da3690677487ad1bf/master/pass/00102-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|18-30": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 23, featuring the same purple draped dress with side cut-outs, voluminous skirt, and head covering, worn by the same model.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e629f679d13d0e0ec2c45/master/pass/00103-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|18-30": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black high-collar jacket, black trousers with pink and black feather trim at the hem, and red pointed-toe shoes. Look 24 features all these exact elements.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62a005b217e1f0317310/master/pass/00105-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|19-31": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The model, black double-breasted coat with wide collar and black buttons, and the distinctive red/dark red cluster earrings are identical in both the detail and Look 24.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62a00187b08e5fa52e30/master/pass/00104-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|19-31": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The black double-breasted coat, the light pink and black feathered trim at the hem, the red shoes, the black gloves, and the large dark earrings are all identical to Look 24.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62a2d95e16923c197506/master/pass/00106-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|19-31": {
+  "look_number": 24,
+  "confidence": 0.95,
+  "evidence": "The black double-breasted coat with a wide, structured collar and a tied belt is identical in both the detail and Look 24. The dark beaded earrings in Look 24 are also very similar in style to the red beaded accessory in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62a3e9cbbd9c5a826f4e/master/pass/00107-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|19-31": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a long dress with layered, petal-like fabric pieces in an ombr\u00e9 effect, transitioning from white/cream to light pink and then fuchsia pink. Look 25 is the front view of the identical dress, matching the color, fabric, texture, and overall design perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62a3b92cb882314dd362/master/pass/00108-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|20-32": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a long ombr\u00e9 dress with layered petal-like fabric, transitioning from white to pink, along with blonde hair and pink floral earrings. Look 25 is an exact match for all these elements.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62a4ef70436404a2a6d6/master/pass/00109-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|20-32": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The model's blonde hair, the distinctive pink and red feather/petal ear decoration, and the white/pink petal-embellished spaghetti strap dress are all identical in Look 25 and the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62a7a655ca89d8cc2cba/master/pass/00110-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|20-32": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The model's blonde hair, the distinctive pink and red feather ear cuff, and the light-colored ruffled garment visible in the detail image are all perfectly matched in Look 25.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62a60187b08e5fa52e37/master/pass/00111-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|20-32": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a dress with petal-like embellishments transitioning from off-white to pink, thin spaghetti straps, and pink petal earrings. Look 25 features the identical dress, straps, and earrings on the same model.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62a9d9ebb4593e1e50e2/master/pass/00113-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|21-33": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The model, black coat with wide collar, and the distinctive black shredded/fringe detail at the bottom of the garment are identical to Look 26. The ear cuff is also the same.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62a7679d13d0e0ec2c4c/master/pass/00112-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|21-33": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The black coat/dress with the distinctive wide collar and the voluminous black textured fringe at the hem perfectly matches the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62aa05b217e1f0317323/master/pass/00114-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|21-33": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The model's hair, black coat with matching collar, and the unique dark, textured ear cuff are identical to Look 26.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62aad95e16923c19750d/master/pass/00115-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|21-33": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The model, black coat with wide collar, and unique ear cuff are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62ae3d2ee69032a02d3e/master/pass/00118-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|22-34": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The black off-the-shoulder dress with structured neckline, long black leather gloves, white pointed-toe heels with a bow, and the distinctive silver/blue earring all perfectly match Look 27.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62ae0187b08e5fa52e45/master/pass/00119-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|22-34": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The model in both images wears the same black off-the-shoulder dress and an identical elaborate ear cuff on her right ear.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62ad0187b08e5fa52e3e/master/pass/00117-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|22-34": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black off-the-shoulder midi dress with long black gloves and distinctive white heels. Look 27 features the identical dress, gloves, and shoes, worn by the same model with the same hairstyle.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62ada655ca89d8cc2cc1/master/pass/00116-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|22-34": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The black long coat in the detail image perfectly matches the wide collar, long sleeves, pockets, and single-breasted button closure of Look 26.",
+  "alternates": [
+   {
+    "look_number": 24,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62b2d9ebb4593e1e50e9/master/pass/00121-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|23-35": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 28, featuring the same black dress, voluminous shiny black cape-like garment, black choker necklace, and black high heels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62b2ab0921bb5925ed42/master/pass/00120-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|23-35": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The white pointed-toe pump with the distinctive ruffled vamp and dark stiletto heel is an exact match. The black dress in Look 27 also matches the black fabric visible above the shoe in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62b4f8d82c99d9adcc6c/master/pass/00123-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|23-35": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The model's facial features, skin tone, sleek dark hair, the exact black multi-stone ear cuff, and the wide, dark, textured choker necklace are all identical to Look 28.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62b2ef70436404a2a6dd/master/pass/00122-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|23-35": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The model, black scoop-neck midi dress, sculptural black arm pieces with integrated gloves, black choker, and black pointed-toe heels are identical in both the detail and Look 28.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62b75be10a3f1fb05689/master/pass/00126-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|24-36": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 29, featuring the same black sheer hood, black flared top, voluminous shaggy beige pants, and black shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62b70187b08e5fa52e59/master/pass/00127-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|24-36": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model wearing a sheer black veil over her head and upper body, exposing her chest. Look 29 features the exact same sheer black veil and exposed chest.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62b50187b08e5fa52e52/master/pass/00125-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|24-36": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 29, featuring the same sheer black hooded top, black skirt overlay, and voluminous cream/beige shaggy texture underneath.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62b5b92cb882314dd369/master/pass/00124-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|23-35": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail shows a bare foot in a black pointed-toe pump with a thin, curved heel, and the hem of a black garment. Look 28 features a model wearing identical black pumps and a black dress with a matching fabric and hem.",
+  "alternates": [
+   {
+    "look_number": 31,
+    "confidence": 0.9
+   },
+   {
+    "look_number": 26,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 29,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62b9a3690677487ad1cd/master/pass/00128-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|24-36": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model wearing a sheer black veil and dark, flowing trousers, which perfectly matches Look 29.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62bbb37cb4aaa5bebd5e/master/pass/00130-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|25-37": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 30, featuring the same white deep V-neck top, black wide-leg trousers, and black voluminous jacket draped over the arms. The model, hair, and styling are identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62baef70436404a2a6e4/master/pass/00129-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|25-37": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model from the back with long brown hair, wearing a white sleeveless top, black wide-leg pants, and a black voluminous jacket draped over her arms. Look 30 features the exact same white top, black wide-leg pants, black voluminous jacket draped over the arms, and the model has identical long brown hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62bb486cadd0a04b352a/master/pass/00131-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|25-37": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The model's light grey deep V-neck halter top, voluminous black sleeves, black pants, dark earrings, and hair color/style are an exact match to Look 30.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62bea655ca89d8cc2cc8/master/pass/00132-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|25-37": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 31, including the black sleeveless top, long black gloves, voluminous light pink ruffled skirt, black heels, sleek bun hairstyle, and large earrings.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62be3bbd144b5cb8bbce/master/pass/00134-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|26-38": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The model is wearing the identical large, elaborate pink/rose gold crystal ear cuff and a matching black sleeveless top with a rounded neckline.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62bf15869310d9a12972/master/pass/00133-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|26-38": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The model, black sleeveless top, large ruffled light pink skirt, long black leather gloves, black pointed-toe heels, and large dark earrings are identical to Look 31.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62c07f29a64f1274c060/master/pass/00135-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|26-38": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The model, the large pinkish-brown crystal chandelier earrings, and the black sleeveless top with a rounded neckline are identical in both the detail image and Look 31. The hair is also styled in the same sleek low bun.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62c2e9cbbd9c5a826f67/master/pass/00136-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|26-38": {
+  "look_number": 31,
+  "confidence": 0.98,
+  "evidence": "The detail shows a black pointed-toe stiletto pump and a light pink/off-white densely ruffled skirt. Look 31 features the identical black pump and a large, light pink/off-white ruffled skirt with the same texture and layering.",
+  "alternates": [
+   {
+    "look_number": 28,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 29,
+    "confidence": 0.4
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62c2ec146e48ab31dec2/master/pass/00137-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|27-39": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail image shows an off-white jumpsuit with voluminous sleeves and ruched legs, paired with turquoise heels and a sleek bun. Look 32 is an exact match for this outfit, shoes, and hairstyle.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62c3e9cbbd9c5a826f6e/master/pass/00138-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|27-39": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 32, showing the same cream deep V-neck jumpsuit with voluminous sleeves, pockets, and teal pointed-toe heels. The model's hair and makeup are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62c5b37cb4aaa5bebd65/master/pass/00140-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|27-39": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail image shows an off-white jumpsuit with a deep V-neck and voluminous sleeves gathered at the cuffs, with hands in pockets. Look 32 is an exact match for this garment, including color, fabric, and silhouette.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62c4a3690677487ad1da/master/pass/00139-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|27-39": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The model, hair, unique gold ear cuff, and cream-colored garment all perfectly match Look 32.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62c85be10a3f1fb05690/master/pass/00143-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|28-40": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The model in the detail image is identical to the model in Look 33, including her hair and facial features. The white V-neck top with voluminous, draped sleeves is also an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62c8a3690677487ad1e1/master/pass/00142-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|28-40": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 33, featuring the same white voluminous top, long black gloves, and distinctive royal blue trousers with a shaggy, layered fringe texture on the lower half.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62c9f8d82c99d9adcc79/master/pass/00144-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|28-40": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a white voluminous V-neck top, black opera gloves, and royal blue trousers. Look 33 features the identical white top, black gloves, and royal blue trousers with a feathered hem, matching all visible elements perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62c69d765981fb7c2c3f/master/pass/00141-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|28-40": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 33, featuring the identical white voluminous top, royal blue skirt with shaggy blue trim, black gloves, and black shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62cd7da31cb81504d59d/master/pass/00148-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|29-41": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a model wearing a light blue/grey, short-sleeved, boat-neck, floor-length dress. Look 34 features the exact same dress, color, fabric, and style, worn by a model with matching hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62ca15869310d9a12979/master/pass/00145-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|28-40": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail shows a white voluminous top, royal blue skirt, and long black leather gloves, all of which are perfectly matched in Look 33.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62cb536e4b3d1ab04ae4/master/pass/00146-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|29-41": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the white voluminous top, royal blue trousers, and black ruched leather gloves worn in Look 33.",
+  "alternates": [
+   {
+    "look_number": 31,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62cc679d13d0e0ec2c53/master/pass/00147-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|29-41": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 33, showing the same blue trousers with a voluminous feathered hem, white oversized top, and black leather gloves.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62cd28a33d7b4581f741/master/pass/00149-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|29-41": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light blue/grey boat-neck, short-sleeved maxi dress, which is an exact match for the dress worn in Look 34. The model's hair and sandals also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62cfd9ebb4593e1e50fd/master/pass/00151-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|30-42": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a dark brown/black hooded cape with a voluminous skirt. Look 35 features the identical hooded cape, matching the color, fabric, and silhouette perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62d07da31cb81504d5a4/master/pass/00153-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|30-42": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The detail shows a dark brown flowing outer garment and heavily embellished gold/silver pants with a distinct textured pattern, which perfectly match the garments worn in Look 35. The visible shoe also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62ced9ebb4593e1e50f6/master/pass/00150-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|30-42": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The model, light blue boat-neck garment, and distinctive turquoise dangling earrings and ear cuff are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62d03bbd144b5cb8bbd5/master/pass/00152-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|30-42": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 35, featuring the same dark brown hooded cloak, light blue deep V-neck top, and distinctive gold embellished wide-leg pants.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62d205b217e1f0317330/master/pass/00154-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|31-43": {
+  "look_number": 36,
+  "confidence": 0.98,
+  "evidence": "The garment's unique multi-colored floral/abstract pattern, texture, and deep V-back design are an exact match to Look 36.",
+  "alternates": [
+   {
+    "look_number": 40,
+    "confidence": 0.85
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62d4f8d82c99d9adcc80/master/pass/00155-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|31-43": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 36 in terms of the unique multi-colored textured pattern of the garment, the deep V-neck, sleeveless cut, and the large gold earrings worn by the model.",
+  "alternates": [
+   {
+    "look_number": 40,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62d3679d13d0e0ec2c60/master/pass/00156-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|31-43": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The model's hair color and style, the distinctive gold floral earrings, and the unique colorful embroidered/sequined fabric of the garment are an exact match to Look 36.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62d4ab0921bb5925ed4f/master/pass/00157-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|31-43": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The model's hair, the distinctive floral earring, and the multi-colored embellished fabric of the garment with a deep V-neck are all identical to Look 36.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62d5a3690677487ad1e8/master/pass/00158-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|32-44": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a sleeveless top with a deep V-neck, featuring a colorful, abstract, brushstroke-like pattern in pink, blue, green, and gold tones, along with large gold earrings. Look 36 features a full-body garment with the identical pattern, colors, texture, deep V-neck, and the same gold earrings.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62d7d9ebb4593e1e5104/master/pass/00159-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|32-44": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a sheer, light grey/lavender cape/dress with small floral appliques and a model with long blonde hair. Look 37 is an exact match for the garment, color, texture, embellishments, and model's hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62d9ec146e48ab31dec9/master/pass/00160-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|32-44": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a sheer, light grey/lavender gown with small white floral appliques, which perfectly matches the garment in Look 37.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62d8ef70436404a2a6f1/master/pass/00161-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|32-44": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The model's hair and makeup, the high-neck, gathered, sheer dusty pink garment with identical small floral appliques, and the overall fabric and texture perfectly match Look 37.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62dcefa886c001cdfd6a/master/pass/00163-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|33-45": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a vibrant green strapless gown with a full skirt and train, and a matching green beaded arm cuff. Look 38 features the identical green strapless gown and arm cuff.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62da15869310d9a12986/master/pass/00162-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|33-45": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a vibrant green gown with a deep V-back and a green arm cuff. Look 38 features the identical vibrant green strapless gown with a full skirt and the same green arm cuff on the model's arm.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62dda655ca89d8cc2cd5/master/pass/00165-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|33-45": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The vibrant green strapless dress with its unique textured fabric, flared skirt, and pockets, along with the distinctive green beaded arm cuff, perfectly matches Look 38. The model's hair and visible arm tattoos also align.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62e00187b08e5fa52e60/master/pass/00167-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|34-46": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a green sequined dress with a voluminous feathered hem. Look 39 is an exact match, featuring the same green sequined fabric and the distinctive feathered bottom.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62dfe9cbbd9c5a826f75/master/pass/00166-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|34-46": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a sleeveless emerald green sequined dress with a voluminous green feather trim at the hem, which perfectly matches Look 39.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62e1536e4b3d1ab04af7/master/pass/00168-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|34-46": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The model and the green sequined sleeveless top are an exact match to Look 39.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62dca3690677487ad1ef/master/pass/00164-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|33-45": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The detail shows a vibrant green strapless garment with a distinct horizontal texture and a green beaded arm cuff. Look 38 features the same model wearing an identical vibrant green strapless gown with the matching texture and arm cuff.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62e1679d13d0e0ec2c6d/master/pass/00169-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|34-46": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The detail shows a vibrant green dress with a textured, leaf-like sequin embellishment. Look 39 features an identical green dress with the same sequined texture and color.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62e3d9ebb4593e1e5111/master/pass/00170-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|34-46": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a backless, floral-patterned dress with a pink bracelet and feathered purple heels. Look 40 features the identical dress with the same floral pattern, backless design (implied by the front view), matching pink bracelet on the right arm, and the same feathered purple heels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62e4480e5eb1be874cb4/master/pass/00172-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|35-47": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The model, floral textured V-neck garment, and rose gold arm cuff are identical to those in the detail image.",
+  "alternates": [
+   {
+    "look_number": 36,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62e5d95e16923c197514/master/pass/00173-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|35-47": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the vibrant floral textured dress and the unique rose gold arm cuff worn by the model in Look 40.",
+  "alternates": [
+   {
+    "look_number": 36,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62e41657c04c54e3feea/master/pass/00171-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|35-47": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 40, showing the same model, floral embellished dress with deep V-neck, beaded arm cuff, and purple feathered sandals.",
+  "alternates": [
+   {
+    "look_number": 36,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62e67da31cb81504d5b7/master/pass/00174-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|35-47": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The dress's vibrant floral pattern, deep V-neck, and the unique braided pink arm cuff are an exact match to Look 40. The model's hair also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62e80187b08e5fa52e67/master/pass/00175-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|36-48": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model from behind wearing a voluminous plum-colored gown and long light blue gloves. Look 41 features the exact same gown and gloves, worn by a model with similar hair color and style.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62e95582611c06842df1/master/pass/00176-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|36-48": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 41, showing the same model, plum-colored voluminous strapless gown, bright blue elbow-length gloves, and matching plum pointed-toe heels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62eaf8d82c99d9adcc8d/master/pass/00178-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|36-48": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black pleated backless gown with a long train and black arm cuffs. Look 42 features the identical black pleated strapless gown with a sheer skirt and matching black arm cuffs, and the model's hair is styled similarly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62e97da31cb81504d5be/master/pass/00177-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|36-48": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The model, the strapless plum-colored voluminous garment, and the bright blue glove visible in the detail image perfectly match Look 41.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62edab0921bb5925ed5d/master/pass/00179-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|37-49": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The black strapless pleated dress with a sheer, flowing skirt, the dark multi-band arm cuff, and the sleek bun hairstyle are identical in both the detail image and Look 42.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62ecab0921bb5925ed56/master/pass/00180-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|37-49": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black strapless pleated dress with a distinctive two-band arm cuff. Look 42 features an identical black strapless pleated dress with the exact same arm cuff, matching perfectly in color, fabric, pleating, and accessory.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62edef70436404a2a6fe/master/pass/00181-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|37-49": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The detail shows a sheer, black, finely pleated or gathered fabric that perfectly matches the skirt of Look 42.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62f0eb6eb5a03e754a1f/master/pass/00182-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|37-49": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a model wearing a sheer black embroidered top with a high ruffled neck and a voluminous black feathered skirt with a train. Look 43 features the exact same garments, including the sheer black embroidered top, high ruffled neck, and the black feathered skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62f105b217e1f031733d/master/pass/00184-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|38-50": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black sheer top with intricate embroidery and a distinctive high, structured black collar with circular cut-out patterns. Look 43 features the exact same top and collar on the same model.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62f20187b08e5fa52e6e/master/pass/00183-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|38-50": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 43, featuring the same sheer black embroidered top with a high ruffled collar and the voluminous black feathered skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62f2a655ca89d8cc2cdc/master/pass/00185-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|38-50": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The sheer black top with intricate black floral embroidery and the unique structured black neckpiece are identical in both the detail image and Look 43.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62f30187b08e5fa52e75/master/pass/00186-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|38-50": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a sheer black top with intricate floral embroidery and a high, structured collar that covers the face, paired with a black feathered lower garment. Look 43 features the exact same sheer black embroidered top, high collar, and black feathered skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62f7536e4b3d1ab04b04/master/pass/00188-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|39-51": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the deep red voluminous top and skirt with small, raised embellishments seen in Look 44. The fabric, color, and unique embellishments are identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62f6679d13d0e0ec2c80/master/pass/00187-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|39-51": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a deep red voluminous gown with a textured fabric featuring small raised elements. Look 44 presents the front of the identical garment, matching perfectly in color, fabric texture, and the dramatic, voluminous silhouette of both the top and skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62f65f3a86db799ad96d/master/pass/00189-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|39-51": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail shows the model's face and the upper part of a voluminous, deep red garment with a distinctive floral/petal-like appliqu\u00e9 texture. Look 44 features the same model with identical hair and makeup, wearing a top that perfectly matches the color, volume, and unique textured appliqu\u00e9 seen in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62fb15869310d9a1299a/master/pass/00191-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|39-51": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 45, featuring the same bright pink, shaggy, feathery material and identical silhouette with a voluminous top, middle, and skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62f815869310d9a12993/master/pass/00190-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|39-51": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail shows a deep red fabric with small floral appliques and a matching deep red feathered open-toe shoe. Look 44 features a dress and feathered shoes that perfectly match these elements in color, texture, and design.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62fb5be10a3f1fb0569d/master/pass/00193-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|40-52": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail shows a voluminous, bright pink garment with a fluffy, feathered texture. Look 45 features a full-body garment with the identical bright pink color and fluffy, feathered texture, worn by the same model.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62fbb92cb882314dd388/master/pass/00192-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|40-52": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a bright pink, voluminous garment made of shaggy, feather-like material with a distinct silhouette, including a large round top and a full skirt. Look 45 is an exact match for this garment in color, texture, and overall design.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62ff5be10a3f1fb056a4/master/pass/00195-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|40-52": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a voluminous black gown with a gathered neckline and full skirt, which perfectly matches the style, fabric, and color of Look 46.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6300f8d82c99d9adcc94/master/pass/00196-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|41-53": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 46, featuring the same black voluminous top with a ruffled collar, matching voluminous skirt, white long gloves, and black open-toe shoes. The fabric texture and model's hair also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e63005582611c06842dfe/master/pass/00197-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|41-53": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model with short dark hair wearing a black voluminous top with large, structured ruffles. Look 46 features the identical model and the exact same black voluminous, ruffled top with structured fabric.",
+  "alternates": [
+   {
+    "look_number": 48,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 44,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e63027f29a64f1274c07e/master/pass/00198-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|41-53": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black voluminous ruffled top, a cropped midriff, a voluminous black skirt, and a white sleeve. Look 46 features the exact same black voluminous ruffled top, cropped midriff, voluminous black skirt, and white gloves/sleeves.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e62fd679d13d0e0ec2c87/master/pass/00194-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|40-52": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a voluminous, hot pink feathered garment. Look 45 features a model wearing an identical hot pink, voluminous feathered dress, matching perfectly in color and texture.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e63037da31cb81504d5cb/master/pass/00199-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|41-53": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail shows a dark green feathered top and a dark green skirt, matching exactly with Look 47. The dark gloves are also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e63037f29a64f1274c085/master/pass/00200-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|42-53": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model wearing a voluminous dark green feathered top and dark green wide-leg trousers, which perfectly matches Look 47.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e63047da31cb81504d5d2/master/pass/00201-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|42-53": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail image shows Gigi Hadid in a dark feathered garment, which is an exact match to Look 47, worn by the same model.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6306b92cb882314dd38f/master/pass/00202-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|42-53": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail shows dark green, flowing wide-leg pants, which perfectly match the pants worn in Look 47.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6306536e4b3d1ab04b0b/master/pass/00203-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|42-53": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The black voluminous gown with puffed shoulders, high neck, and long back ribbon perfectly matches Look 48 in color, fabric, and silhouette.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6306b37cb4aaa5bebed5/master/pass/00204-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|43-53": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 48, showing the same black voluminous dress with puffed sleeves, full skirt, and long black leather gloves on the same model.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6309a655ca89d8cc2ce3/master/pass/00207-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|43-53": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 49, showing the same vibrant fuchsia pink color, voluminous hooded silhouette, and the subtle floral pattern on the sheer fabric of both the hood and the flowing skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e63087f29a64f1274c08c/master/pass/00206-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|43-53": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The black voluminous structured garment, black leather gloves, and model's appearance are identical to the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e63083d2ee69032a02d51/master/pass/00205-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|43-53": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The black voluminous, sculptural top with a high neck and ruffled shoulders, made of a matte black fabric, perfectly matches the garment and model in Look 46.",
+  "alternates": [
+   {
+    "look_number": 48,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e630aab0921bb5925ed64/master/pass/00209-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|44-53": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a bright fuchsia hooded garment made of a lightweight, somewhat sheer fabric with a subtle pattern. Look 49 features the exact same garment, color, fabric, and pattern, worn by the same model.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e630aec146e48ab31ded6/master/pass/00208-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|44-53": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 49 in its vibrant fuchsia color, sheer fabric with a subtle floral pattern, voluminous hooded top, flowing skirt, and red shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e630ceb6eb5a03e754a2c/master/pass/00211-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|44-53": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a strapless gown with a white bodice transitioning into a light pink feathered/ruffled skirt. Look 50 is an exact match, featuring the identical white-to-pink gradient and feathered/ruffled texture on the skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e630aab0921bb5925ed6a/master/pass/00210-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|44-53": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the fuchsia color, sheer voluminous fabric with a subtle floral pattern, puffy sleeves, deep V-neck, and cinched waist of Look 49.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e630ca3690677487ad1fc/master/pass/00212-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|44-53": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 50, showing the same white strapless top transitioning into a light pink, layered, feathery skirt with identical texture and color gradient.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e630c7f29a64f1274c093/master/pass/00213-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|45-53": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The model's hair color and style, facial features, and the white strapless garment with a textured, possibly feathered, appearance perfectly match Look 50.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e630eec146e48ab31dee5/master/pass/00214-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|45-53": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a strapless dress with white feathers transitioning to pink feathers, and a rose gold ring. Look 50 features the exact same dress with the white to pink feather gradient and a matching ring on the model's hand.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e630e15869310d9a129a1/master/pass/00215-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|45-53": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 51, featuring the same voluminous light pink and white feathered garment that covers the head and trails extensively, with an exposed back.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e630f536e4b3d1ab04b12/master/pass/00216-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|45-53": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 51 in color (light pink), texture (voluminous feathers/shag), silhouette (gown with train), and the matching headpiece.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e63105582611c06842e05/master/pass/00217-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|46-53": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model in a voluminous light pink feathered garment covering the head and body, which is an exact match for Look 51.",
+  "alternates": [
+   {
+    "look_number": 50,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e63117da31cb81504d5d9/master/pass/00219-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|46-53": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a voluminous, off-white gown with a high gathered neckline and a long train. Look 52 features an identical off-white voluminous gown with a boat neck, long sleeves, and a matching long train, consistent in color, fabric, and silhouette.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6310efa886c001cdfd83/master/pass/00218-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|46-53": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model in a voluminous light pink feathered garment covering the head and body, which perfectly matches Look 51 in color, material, and style.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e6312e9cbbd9c5a826f8e/master/pass/00221-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|47-53": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The model, white high-neck garment, and distinctive long red earrings are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e631215869310d9a129a8/master/pass/00220-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|46-53": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The off-white voluminous gown with a long train, the specific textured brown shoes, the model's earrings, and hair are identical to Look 52.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a4e631315869310d9a129af/master/pass/00222-balenciaga-fall-2026-couture-details-credit-gorunway.jpg|47-53": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The detail shows a brown feathered ankle-strap sandal worn by a model with dark skin, with an off-white garment visible above. Look 52 features the exact same brown feathered sandals, worn by a model with dark skin, and the dress is off-white.",
+  "alternates": []
+ }
+}

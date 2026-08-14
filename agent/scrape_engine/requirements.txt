@@ -1,0 +1,14 @@
+# Dependencies for the scrape engine only (Layers 0-5).
+# The FastAPI / LangGraph query app has its own list in ../requirements.txt.
+# After installing, fetch the browser binary:
+#     python -m playwright install --with-deps chromium
+
+playwright
+beautifulsoup4
+lxml
+google-genai
+python-dotenv
+
+# Layer 5 (ingest_to_mongo.py). The [srv] extra pulls in dnspython, which the
+# mongodb+srv:// Atlas URI cannot be resolved without.
+pymongo[srv]

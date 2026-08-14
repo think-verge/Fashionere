@@ -1,0 +1,361 @@
+{
+  "ingest_version": 1,
+  "target": {
+    "database": "centoire",
+    "collection": "Fashionare"
+  },
+  "summary": {
+    "updated_at": "2026-08-05T13:37:51+05:30",
+    "ingest_version": 1,
+    "designers": 2,
+    "collections": 10,
+    "documents": 689,
+    "looks": 676,
+    "unmatched_details": 13,
+    "inserted": 0,
+    "updated": 0,
+    "unchanged": 689,
+    "by_status": {
+      "ok": 10,
+      "partial": 0,
+      "failed": 0,
+      "pending": 0
+    },
+    "by_designer": {
+      "prada": {
+        "designer": "Prada",
+        "collections": 3,
+        "documents": 165,
+        "looks": 163,
+        "unmatched_details": 2,
+        "last_run": "2026-08-05T13:35:57+05:30",
+        "collection_names": [
+          "fall-2025-ready-to-wear",
+          "fall-2026-ready-to-wear",
+          "spring-2025-ready-to-wear"
+        ],
+        "incomplete": []
+      },
+      "valentino": {
+        "designer": "Valentino",
+        "collections": 7,
+        "documents": 524,
+        "looks": 513,
+        "unmatched_details": 11,
+        "last_run": "2026-08-05T13:35:57+05:30",
+        "collection_names": [
+          "fall-2025-ready-to-wear",
+          "fall-2026-ready-to-wear",
+          "pre-fall-2025",
+          "resort-2027",
+          "spring-2025-couture",
+          "spring-2026-couture",
+          "spring-2026-ready-to-wear"
+        ],
+        "incomplete": []
+      }
+    }
+  },
+  "collections": {
+    "https://www.vogue.com/fashion-shows/fall-2025-ready-to-wear/prada": {
+      "first_seen": "2026-08-05T13:35:56+05:30",
+      "designer_key": "prada",
+      "collection_name": "fall-2025-ready-to-wear",
+      "designer": "Prada",
+      "target": {
+        "database": "centoire",
+        "collection": "Fashionare"
+      },
+      "last_run": "2026-08-05T13:35:56+05:30",
+      "stages": {
+        "ingest": {
+          "status": "ok",
+          "at": "2026-08-05T13:35:56+05:30",
+          "ingest_version": 1,
+          "legacy_fields": false,
+          "source": "data/flattened/prada/Prada_fall_2025_ready_to_wear_flattened.json",
+          "fingerprint": "sha256:f76af36df11c05c10f44ef4daacaab74",
+          "built_on_flatten_at": "2026-08-03T14:06:54+05:30",
+          "documents": 53,
+          "looks": 52,
+          "unmatched_details": 1,
+          "inserted": 0,
+          "updated": 0,
+          "unchanged": 53,
+          "skipped_no_look_id": 0,
+          "duplicate_look_ids_in_file": 0
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/fall-2026-ready-to-wear/prada": {
+      "first_seen": "2026-08-05T13:35:56+05:30",
+      "designer_key": "prada",
+      "collection_name": "fall-2026-ready-to-wear",
+      "designer": "Prada",
+      "target": {
+        "database": "centoire",
+        "collection": "Fashionare"
+      },
+      "last_run": "2026-08-05T13:35:56+05:30",
+      "stages": {
+        "ingest": {
+          "status": "ok",
+          "at": "2026-08-05T13:35:56+05:30",
+          "ingest_version": 1,
+          "legacy_fields": false,
+          "source": "data/flattened/prada/Prada_fall_2026_ready_to_wear_flattened.json",
+          "fingerprint": "sha256:eeb1cd1d04152ba44ad49211d0efaed5",
+          "built_on_flatten_at": "2026-08-04T16:47:32+05:30",
+          "documents": 61,
+          "looks": 61,
+          "unmatched_details": 0,
+          "inserted": 0,
+          "updated": 0,
+          "unchanged": 61,
+          "skipped_no_look_id": 0,
+          "duplicate_look_ids_in_file": 0
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/spring-2025-ready-to-wear/prada": {
+      "first_seen": "2026-08-05T13:35:57+05:30",
+      "designer_key": "prada",
+      "collection_name": "spring-2025-ready-to-wear",
+      "designer": "Prada",
+      "target": {
+        "database": "centoire",
+        "collection": "Fashionare"
+      },
+      "last_run": "2026-08-05T13:35:57+05:30",
+      "stages": {
+        "ingest": {
+          "status": "ok",
+          "at": "2026-08-05T13:35:57+05:30",
+          "ingest_version": 1,
+          "legacy_fields": false,
+          "source": "data/flattened/prada/Prada_spring_2025_ready_to_wear_flattened.json",
+          "fingerprint": "sha256:fec23eee506a9420239b435cce0d7a9c",
+          "built_on_flatten_at": "2026-08-04T17:22:31+05:30",
+          "documents": 51,
+          "looks": 50,
+          "unmatched_details": 1,
+          "inserted": 0,
+          "updated": 0,
+          "unchanged": 51,
+          "skipped_no_look_id": 0,
+          "duplicate_look_ids_in_file": 0
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/fall-2025-ready-to-wear/valentino": {
+      "first_seen": "2026-08-05T13:35:57+05:30",
+      "designer_key": "valentino",
+      "collection_name": "fall-2025-ready-to-wear",
+      "designer": "Valentino",
+      "target": {
+        "database": "centoire",
+        "collection": "Fashionare"
+      },
+      "last_run": "2026-08-05T13:35:57+05:30",
+      "stages": {
+        "ingest": {
+          "status": "ok",
+          "at": "2026-08-05T13:35:57+05:30",
+          "ingest_version": 1,
+          "legacy_fields": false,
+          "source": "data/flattened/valentino/Valentino_fall_2025_ready_to_wear_flattened.json",
+          "fingerprint": "sha256:e8a4703d15f5cb862db78f8cf03991c6",
+          "built_on_flatten_at": "2026-08-04T18:24:46+05:30",
+          "documents": 81,
+          "looks": 81,
+          "unmatched_details": 0,
+          "inserted": 0,
+          "updated": 0,
+          "unchanged": 81,
+          "skipped_no_look_id": 0,
+          "duplicate_look_ids_in_file": 0
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/fall-2026-ready-to-wear/valentino": {
+      "first_seen": "2026-08-05T13:35:57+05:30",
+      "designer_key": "valentino",
+      "collection_name": "fall-2026-ready-to-wear",
+      "designer": "Valentino",
+      "target": {
+        "database": "centoire",
+        "collection": "Fashionare"
+      },
+      "last_run": "2026-08-05T13:35:57+05:30",
+      "stages": {
+        "ingest": {
+          "status": "ok",
+          "at": "2026-08-05T13:35:57+05:30",
+          "ingest_version": 1,
+          "legacy_fields": false,
+          "source": "data/flattened/valentino/Valentino_fall_2026_ready_to_wear_flattened.json",
+          "fingerprint": "sha256:d4ee0eeb863dc353de02b1e55a85d088",
+          "built_on_flatten_at": "2026-08-03T14:06:56+05:30",
+          "documents": 85,
+          "looks": 85,
+          "unmatched_details": 0,
+          "inserted": 0,
+          "updated": 0,
+          "unchanged": 85,
+          "skipped_no_look_id": 0,
+          "duplicate_look_ids_in_file": 0
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/pre-fall-2025/valentino": {
+      "first_seen": "2026-08-05T13:35:57+05:30",
+      "designer_key": "valentino",
+      "collection_name": "pre-fall-2025",
+      "designer": "Valentino",
+      "target": {
+        "database": "centoire",
+        "collection": "Fashionare"
+      },
+      "last_run": "2026-08-05T13:35:57+05:30",
+      "stages": {
+        "ingest": {
+          "status": "ok",
+          "at": "2026-08-05T13:35:57+05:30",
+          "ingest_version": 1,
+          "legacy_fields": false,
+          "source": "data/flattened/valentino/Valentino_pre_fall_2025_flattened.json",
+          "fingerprint": "sha256:9e5809d094d152d2b00902ce3f8a2a4c",
+          "built_on_flatten_at": "2026-08-04T19:08:47+05:30",
+          "documents": 98,
+          "looks": 90,
+          "unmatched_details": 8,
+          "inserted": 0,
+          "updated": 0,
+          "unchanged": 98,
+          "skipped_no_look_id": 0,
+          "duplicate_look_ids_in_file": 0
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/resort-2027/valentino": {
+      "first_seen": "2026-08-05T13:35:57+05:30",
+      "designer_key": "valentino",
+      "collection_name": "resort-2027",
+      "designer": "Valentino",
+      "target": {
+        "database": "centoire",
+        "collection": "Fashionare"
+      },
+      "last_run": "2026-08-05T13:35:57+05:30",
+      "stages": {
+        "ingest": {
+          "status": "ok",
+          "at": "2026-08-05T13:35:57+05:30",
+          "ingest_version": 1,
+          "legacy_fields": false,
+          "source": "data/flattened/valentino/Valentino_resort_2027_flattened.json",
+          "fingerprint": "sha256:173f232a2202a87e21628028d6fe3bbd",
+          "built_on_flatten_at": "2026-08-04T17:39:06+05:30",
+          "documents": 69,
+          "looks": 66,
+          "unmatched_details": 3,
+          "inserted": 0,
+          "updated": 0,
+          "unchanged": 69,
+          "skipped_no_look_id": 0,
+          "duplicate_look_ids_in_file": 0
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino": {
+      "first_seen": "2026-08-05T13:35:57+05:30",
+      "designer_key": "valentino",
+      "collection_name": "spring-2025-couture",
+      "designer": "Valentino",
+      "target": {
+        "database": "centoire",
+        "collection": "Fashionare"
+      },
+      "last_run": "2026-08-05T13:35:57+05:30",
+      "stages": {
+        "ingest": {
+          "status": "ok",
+          "at": "2026-08-05T13:35:57+05:30",
+          "ingest_version": 1,
+          "legacy_fields": false,
+          "source": "data/flattened/valentino/Valentino_spring_2025_couture_flattened.json",
+          "fingerprint": "sha256:3e6bee69d9668fa26f9ae0b63a1f4475",
+          "built_on_flatten_at": "2026-08-04T18:41:26+05:30",
+          "documents": 49,
+          "looks": 49,
+          "unmatched_details": 0,
+          "inserted": 0,
+          "updated": 0,
+          "unchanged": 49,
+          "skipped_no_look_id": 0,
+          "duplicate_look_ids_in_file": 0
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/spring-2026-couture/valentino": {
+      "first_seen": "2026-08-05T13:35:57+05:30",
+      "designer_key": "valentino",
+      "collection_name": "spring-2026-couture",
+      "designer": "Valentino",
+      "target": {
+        "database": "centoire",
+        "collection": "Fashionare"
+      },
+      "last_run": "2026-08-05T13:35:57+05:30",
+      "stages": {
+        "ingest": {
+          "status": "ok",
+          "at": "2026-08-05T13:35:57+05:30",
+          "ingest_version": 1,
+          "legacy_fields": false,
+          "source": "data/flattened/valentino/Valentino_spring_2026_couture_flattened.json",
+          "fingerprint": "sha256:0c3466f41e53c0bc36b478b6e71cc735",
+          "built_on_flatten_at": "2026-08-03T19:08:58+05:30",
+          "documents": 61,
+          "looks": 61,
+          "unmatched_details": 0,
+          "inserted": 0,
+          "updated": 0,
+          "unchanged": 61,
+          "skipped_no_look_id": 0,
+          "duplicate_look_ids_in_file": 0
+        }
+      }
+    },
+    "https://www.vogue.com/fashion-shows/spring-2026-ready-to-wear/valentino": {
+      "first_seen": "2026-08-05T13:35:57+05:30",
+      "designer_key": "valentino",
+      "collection_name": "spring-2026-ready-to-wear",
+      "designer": "Valentino",
+      "target": {
+        "database": "centoire",
+        "collection": "Fashionare"
+      },
+      "last_run": "2026-08-05T13:35:57+05:30",
+      "stages": {
+        "ingest": {
+          "status": "ok",
+          "at": "2026-08-05T13:35:57+05:30",
+          "ingest_version": 1,
+          "legacy_fields": false,
+          "source": "data/flattened/valentino/Valentino_spring_2026_ready_to_wear_flattened.json",
+          "fingerprint": "sha256:ab75a92936bbeaf611ee4aa17e417f09",
+          "built_on_flatten_at": "2026-08-04T17:59:58+05:30",
+          "documents": 81,
+          "looks": 81,
+          "unmatched_details": 0,
+          "inserted": 0,
+          "updated": 0,
+          "unchanged": 81,
+          "skipped_no_look_id": 0,
+          "duplicate_look_ids_in_file": 0
+        }
+      }
+    }
+  }
+}

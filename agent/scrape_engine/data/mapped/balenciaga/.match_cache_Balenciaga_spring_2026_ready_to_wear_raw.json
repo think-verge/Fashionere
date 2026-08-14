@@ -1,0 +1,1013 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e87c3bb254e7972a0cc9/master/pass/00001d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|1-7": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The black draped sleeveless garment and the long, light beige/cream gloves are an exact match in both color, style, and material.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e87c94c5de18efe6aa33/master/pass/00001b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|1-6": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The model's short blonde hair, the black embellished eye mask, the long cream gloves, the black pointed-toe heels, and the style of the black sleeveless garment are all identical to Look 1.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e87c50ba76894826e819/master/pass/00001c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|1-7": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The model's jeweled mask, short blonde hair, and black V-neck garment with draped shoulders perfectly match Look 1.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e87f5f940799d897f94d/master/pass/00002a-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|1-7": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The model's short dark hair, the black sleeveless top with structured shoulders and V-neckline, the black trousers, the black heels, and the distinctive black handbag with gold hardware are all identical to Look 2.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e880c63807b89889727c/master/pass/00003b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|1-8": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 3, featuring the same model, off-white tunic with pockets, off-white trousers, and off-white pointed-toe heels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e883b48ec910ef391c07/master/pass/00004d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|1-9": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black leather wrap top with gathered waist, black trousers, and black belt with a gold buckle worn by the model in Look 4.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e88294c5de18efe6aa35/master/pass/00004c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|1-9": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The model, black visor sunglasses, and the distinctive black wrap top with a wide, structured collar are identical to Look 4.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e880ef9f2e796d556e51/master/pass/00004b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|1-8": {
+  "look_number": 4,
+  "confidence": 0.9,
+  "evidence": "The model wears identical black sunglasses, a black voluminous leather top, black trousers with unique gold hardware on the lower leg, and black pointed heels. The bag is similar in style and color, though the shape differs slightly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e88531950bacab5e93d5/master/pass/00004f-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|1-10": {
+  "look_number": 4,
+  "confidence": 0.9,
+  "evidence": "The black tailored pants and black pointed-toe pumps match, and crucially, the black bag with gold chain visible in the detail image perfectly matches the bag carried in Look 4.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e88868e9dc609ba9831c/master/pass/00005b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 5, featuring the same black cropped leather capelet, voluminous balloon skirt, long black gloves, sunglasses, and distinctive black ruffled mules.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8873b4cd13cedaf2a88/master/pass/00005a-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|1-10": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The cropped, open-back leather-like top with long sleeves and cape detail, the voluminous midi-length skirt, and the black embellished heels are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e884c14cf10bc881919a/master/pass/00004e-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|1-9": {
+  "look_number": 4,
+  "confidence": 0.9,
+  "evidence": "The black leather-like wrap top with voluminous sleeves and ruched cuffs, and the gold belt buckle are an exact match. The black bag with gold hardware is consistent in style, though the shape differs slightly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e888120dfb5113bfed9f/master/pass/00005c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model with slicked-back hair, black futuristic sunglasses, and a black leather-like crew neck top. Look 5 features the exact same sunglasses, slicked-back hair, and a black leather-like cropped top with a crew neck and long sleeves, matching all visible elements perfectly.",
+  "alternates": [
+   {
+    "look_number": 4,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 10,
+    "confidence": 0.5
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e88aef9f2e796d556e53/master/pass/00005d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The black mule with the elaborate floral/petal embellishment on the toe in the detail image is identical to the shoe worn in Look 5.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e88b489b4217ae89ef05/master/pass/00006b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|1-12": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The model, black oversized top with long train, black trousers, hot pink long gloves, hot pink structured handbag, and black pointed-toe heels are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e88b270f7d61dfdf76fa/master/pass/00006a-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|1-12": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model wearing a black sheer top, pink long gloves, and carrying a pink handbag. Look 6 features the exact same black sheer top, pink long gloves, and pink handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e88d961273974f3dfa8e/master/pass/00006c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|1-13": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a bright pink leather glove, a matching bright pink geometric handbag with a gold clasp, and black trousers. Look 6 features the exact same pink leather gloves, the identical pink geometric handbag with a gold clasp, and black trousers.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e88e359e3b1dfb574e2b/master/pass/00007c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|1-13": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The model's sunglasses, slicked-back hair, and the light pink boat-neck garment with structured shoulders perfectly match Look 7.",
+  "alternates": [
+   {
+    "look_number": 12,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e88e8c5cb304e0c10419/master/pass/00007b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|1-13": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The dress, eye mask, handbag, and orange shoes are identical in color, style, and details to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e88f961273974f3dfa90/master/pass/00007d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|2-14": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail shows an orange pointed-toe high-heeled pump and a light pink garment. Look 7 features the exact same orange shoes and a matching light pink dress.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8918c408c4448683e07/master/pass/00008a-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail shows a model from the back wearing a long white coat/shirt with a train and black gloves. Look 8 features the exact same white garment with a long train and black gloves.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8951c9b02687c1cc762/master/pass/00008d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|3-15": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a white oversized collared shirt with voluminous sleeves and long black leather gloves. Look 8 features the identical white oversized collared shirt with voluminous sleeves and the same long black leather gloves, along with matching hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e891b37e6d88205c4a57/master/pass/00008b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|3-15": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 8, including the oversized white shirt with a long train, wide-leg black trousers, long black leather gloves, black open-toe sandals, long blonde hair, and dark sunglasses.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e892e7c1b2cc14a8b599/master/pass/00008c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|3-15": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The model's blonde hair with bangs, the exact black futuristic sunglasses, and the white collared shirt are identical to Look 8.",
+  "alternates": [
+   {
+    "look_number": 5,
+    "confidence": 0.2
+   },
+   {
+    "look_number": 4,
+    "confidence": 0.15
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e894d31ffe4b6b0d59bd/master/pass/00009b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|4-16": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 9, including the light mint green sleeveless dress, the pale feathered hem, and the dark green platform flip-flops.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e895c14cf10bc881919c/master/pass/00009c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|4-16": {
+  "look_number": 9,
+  "confidence": 0.95,
+  "evidence": "The model, her short curly hair, and the unique dark green ear cuff on her right ear are identical to Look 9. The sleeveless garment with structured shoulders also perfectly matches the style of the dress in Look 9. The slight color difference (off-white in detail vs. pale mint green in Look 9) is likely due to lighting or white balance in the close-up shot.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e898390beccdff27ac0e/master/pass/00010b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|5-17": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 10, featuring the same black shiny bomber jacket, black trousers, black belt with a gold buckle, dark sunglasses, and long dark wavy hair. The shoes are also very similar black pointed-toe styles.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e89738ad306d97899edc/master/pass/00009d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|5-17": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail shows dark green velvet platform flip-flops with a toe ring, and a light mint green feathered garment. Look 9 features a model with the same skin tone wearing identical dark green velvet platform flip-flops with a toe ring, and a matching light mint green feathered dress.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8988c10bf5869212810/master/pass/00011a-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|5-17": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model from the back wearing a mint green draped top, long black leather gloves, a black full midi skirt, and black flat sandals. Look 11 features the exact same mint green draped top, black leather gloves, black full midi skirt, and black flat sandals, worn by a model with similar long dark hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e89b961273974f3dfa92/master/pass/00011c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|6-18": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, and natural makeup are identical. The light mint green top with its distinctive V-shaped neckline and thin straps is an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e89ae24c3f90df09ee1f/master/pass/00011b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|6-18": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model wearing a mint green and black voluminous dress, long black gloves, and black platform flip-flops. Look 11 features the exact same dress, gloves, and shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e89dab118209aabb25e8/master/pass/00012a-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|7-19": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 12, showing the same oversized black coat/dress, black pointed-toe high heels, and black eye mask/sunglasses. The model's hair is also styled identically.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e89b04d765314c13cd8c/master/pass/00011d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|7-19": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail shows a long black leather glove, a mint green draped top, and a black skirt/bottom. Look 11 features a dress with a mint green draped top, a black bottom, and identical long black leather gloves.",
+  "alternates": [
+   {
+    "look_number": 8,
+    "confidence": 0.3
+   },
+   {
+    "look_number": 15,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8a003838622839c8f55/master/pass/00012d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|8-20": {
+  "look_number": 12,
+  "confidence": 0.95,
+  "evidence": "The detail shows a black patent leather pointed-toe high-heeled pump, which perfectly matches the shoes worn in Look 12.",
+  "alternates": [
+   {
+    "look_number": 20,
+    "confidence": 0.94
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e89df83cf55d0af8153c/master/pass/00012b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|7-19": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The model's dark long coat with wide lapels and pockets, black shiny high heels, and distinctive dark futuristic sunglasses are an exact match to Look 12.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e89e489b4217ae89ef07/master/pass/00012c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|8-20": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The model's skin tone, slicked-back hair, the distinctive black butterfly-shaped sunglasses, and the black blazer with prominent shoulders and open front perfectly match Look 12.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8a10f8daf410fdbd658/master/pass/00013a-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|8-20": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 13, including the red leather cropped top, pink feathered skirt, burgundy leather gloves, burgundy handbag, and black platform sandals.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8a103838622839c8f57/master/pass/00013b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|9-21": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 13, including the reddish-brown cropped leather top, matching long gloves, light pink skirt with pink feather trim, reddish-brown half-moon bag, black platform flip-flops, and gold hoop earrings.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8a394c5de18efe6aa37/master/pass/00013c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|9-21": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 13, including the dark red leather crop top, long matching gloves, light pink feathered skirt, dark red dome-shaped bag with gold hardware, and black flat sandals.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8a45d595c0ebeaf474e/master/pass/00013d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|10-22": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black platform flip-flop with a unique clear/silver toe embellishment and a pink feathered garment. Look 13 features the exact same footwear with the toe embellishment and a pink feathered skirt, matching all visible elements perfectly.",
+  "alternates": [
+   {
+    "look_number": 11,
+    "confidence": 0.2
+   },
+   {
+    "look_number": 16,
+    "confidence": 0.2
+   },
+   {
+    "look_number": 17,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8a538ad306d97899ede/master/pass/00014a-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|10-22": {
+  "look_number": 14,
+  "confidence": 0.95,
+  "evidence": "The detail image shows the same black asymmetrical draped top, black trousers, black sunglasses, and black handbag with gold hardware as Look 14. The shoes are also consistent in style, though the heel color in the detail might be a reflection.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8a78c5cb304e0c1041b/master/pass/00014c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|11-23": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The model's hair, bangs, and the distinctive large visor sunglasses are identical. The black draped top with its unique neckline also perfectly matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8a64c9a7f5ca88f3931/master/pass/00014b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|10-22": {
+  "look_number": 14,
+  "confidence": 0.95,
+  "evidence": "The model's unique draped black top, black trousers, black belt with gold 'BB' buckle, large black sunglasses, and shaggy dark bob hairstyle are identical to Look 14. The shoes and bag differ.",
+  "alternates": [
+   {
+    "look_number": 10,
+    "confidence": 0.3
+   },
+   {
+    "look_number": 12,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8a8f83cf55d0af8153e/master/pass/00015a-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|11-23": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 15, including the black ruffled cropped top, long black leather gloves, black wide-leg trousers with a gold buckle belt, black structured handbag with red interior, and bare feet.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8aa1c9b02687c1cc764/master/pass/00015b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|12-24": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 15, including the model's hair, the unique black ruffled crop top, long black leather gloves, wide-leg black trousers, the belt with a gold buckle, and the distinctive black triangular bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8abdca1cebef38e983a/master/pass/00015c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|12-24": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 15, including the unique black textured cropped top, long black leather gloves, black trousers with a distinctive wrap-front and gold buckle belt, and the black bag with gold hardware.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8af03838622839c8f59/master/pass/00016c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|13-25": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The model in look 13 is wearing the exact black platform flip-flops with the distinctive gold and crystal flower embellishment shown in the detail image.",
+  "alternates": [
+   {
+    "look_number": 16,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 17,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 21,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8ab50ba76894826e81b/master/pass/00015d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|12-24": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image shows black leather long gloves, a black belt with a gold buckle, a black geometric flap handbag with gold hardware, and black wide-leg trousers. Look 15 features all of these exact items.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8af85a989dab7234479/master/pass/00016b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|13-25": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black halter-neck dress with a voluminous, textured, feathered/fringed hem, black platform flip-flops with a gold embellishment, and a small black backpack. Look 16 features the identical dress, shoes, and bag, worn by a model with the same hair.",
+  "alternates": [
+   {
+    "look_number": 25,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8ae674f235ef5f1bcc4/master/pass/00017a-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|14-26": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The bright orange draped dress, black platform flip-flop sandals, and model's hair and sunglasses are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8b1a0648056d854fe20/master/pass/00017c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|14-26": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The model, black futuristic sunglasses, and the bright red draped garment are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8b22d119fa4a8c74342/master/pass/00018a-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|14-26": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The model, white asymmetrical top, black wide-leg pants, and black structured handbag with gold hardware and tassels are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8b2270f7d61dfdf76fc/master/pass/00018b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|15-27": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The white asymmetric top with the bow detail, black wide-leg trousers, black structured handbag with gold hardware and tassels, and black sunglasses are identical in both the detail and look 18.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8b4ef9f2e796d556e55/master/pass/00018c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|15-27": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The black leather handbag with gold hardware, top handles, and decorative straps in the detail image is identical to the bag carried by the model in Look 18. The model's white top and black pants also match the visible clothing in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8b5e7c1b2cc14a8b59b/master/pass/00019b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|16-28": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 19, showing the same light pink oversized top, bright red shaggy skirt, long white gloves, and red sandals.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8b7f7287bc380cff620/master/pass/00019d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|16-28": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail shows a red feathery garment and red platform flip-flops, which perfectly match the skirt and shoes in Look 19.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8b6ec0663cc48660658/master/pass/00019c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|16-28": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The model's hair color and style, and the light pink crew-neck top, perfectly match those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8b8270f7d61dfdf76fe/master/pass/00020a-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|17-29": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The model, black wide-leg trousers, black structured handbag with gold hardware, and black pointed-toe heels are identical to Look 20. The white structured sleeveless top in the detail image is the back view of the top in Look 20, featuring a deep V-cutout.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8bbef9f2e796d556e57/master/pass/00021c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|18-30": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The model, black sleeveless garment, and distinctive chunky gold chain necklace are identical in both the detail and look 21.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8bae506969922fe5cdc/master/pass/00021a-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|18-30": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The black sleeveless midi dress, chunky gold chain necklace, black structured handbag with gold buckle, and black flat sandals are all identical to Look 21. The model's hair and styling also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8b8e506969922fe5cda/master/pass/00020c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|17-29": {
+  "look_number": 20,
+  "confidence": 0.75,
+  "evidence": "The model wears identical black pointed-toe heels, black trousers, and a white top. A black bag with gold hardware is carried, though the specific bag model differs from the detail.",
+  "alternates": [
+   {
+    "look_number": 23,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 18,
+    "confidence": 0.4
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8bba257a3e77381cc4c/master/pass/00021d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|18-30": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The black soft-structured bag with gold buckle, the black platform flip-flops, and the black dress fabric all perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8bda1f6146accc63441/master/pass/00022b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|19-31": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 22, including the black sleeveless top, black midi-length culottes, black platform flip-flop sandals, white structured handbag with gold hardware, and the black hat with a large bow detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8bd55e4389f9d716b8d/master/pass/00022c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|19-31": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive sculptural black hat with a tie and the unique ear cuff visible in the detail image are not present in any of the candidate full-body looks. While some candidates feature black sleeveless tops, none match the specific accessories.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8c0c49232d975d3ae4e/master/pass/00023b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|20-32": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The black suit jacket, white shirt with black tie detail, black trousers, and black pointed-toe heels are identical in both images. The model's hair and makeup also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8be8c10bf5869212812/master/pass/00022d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|20-32": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The white structured bag with gold hardware and black trim, black leather-like top, black shorts, black platform flip-flops, and gold ring all perfectly match the detail image.",
+  "alternates": [
+   {
+    "look_number": 21,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 25,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8c01bdfe09502b0bbcd/master/pass/00024b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|20-32": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The model, lime green coat, white trousers, orange shoes, dark brown bag, and black eye mask are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8c2a257a3e77381cc4e/master/pass/00024c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|21-33": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model wearing distinctive black butterfly-shaped sunglasses and a bright lime green/yellow coat with a wide collar. Look 24 features the exact same model, sunglasses, and coat.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8c33bb254e7972a0ccb/master/pass/00024d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|21-33": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The detail shows the exact yellow double-breasted coat with gold buttons and the dark brown suede bag with gold clasp and side ties, both perfectly matching Look 24.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8c468e9dc609ba9831e/master/pass/00025b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|22-34": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 25, including the black cropped top, black midi skirt, the distinctive black feathery/fringed item, black platform flip-flops, and the black bowler-style hat.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8c53853cb6054b1387f/master/pass/00025c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|22-34": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black platform flip-flop and black feathery/fringed garment elements. Look 25 features identical black platform flip-flops and a black skirt with matching feathery/fringed details.",
+  "alternates": [
+   {
+    "look_number": 22,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 28,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 30,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8c68c5cb304e0c1041d/master/pass/00026b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|22-34": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 26, including the model, purple cap, yellow and white top, yellow textured skirt, tan handbag, and dark platform flip-flops.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8c968e9dc609ba98320/master/pass/00026d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|23-35": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light brown suede bag with a gold clasp and a yellow/lime green textured skirt. Look 26 features the identical bag and a skirt with the same distinctive feathery texture and color.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8c90f28235687be2d0c/master/pass/00026e-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|24-36": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail shows a dark brown platform flip-flop and a skirt with bright yellow leaf-like embellishments, both of which are an exact match to Look 26.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8c72d119fa4a8c74344/master/pass/00026c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|23-35": {
+  "look_number": 26,
+  "confidence": 0.95,
+  "evidence": "The model, white top, and chartreuse cape are identical. The purple cap matches in color and general shape, and its textured appearance is consistent with the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8ca3853cb6054b13881/master/pass/00027b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|24-36": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The purple halter-neck dress with ruffled hem, chartreuse platform flip-flops, burgundy structured bag with gold chain, and dark chunky necklace are all identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8cc674f235ef5f1bcc6/master/pass/00027c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|24-36": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The purple halter-neck dress with the voluminous ruffled hem and the dark beaded necklace are an exact match. The model's skin tone and hair are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8cdf7287bc380cff622/master/pass/00027d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|25-37": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a chartreuse velvet platform flip-flop with a dark toe ring. Look 27 features the exact same chartreuse velvet platform flip-flops with a matching dark toe ring.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8cd8d42d28de9eacf43/master/pass/00028b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|25-37": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The model's long black dress with wide sleeves, black platform flip-flops, bright magenta shoulder bag, dark sunglasses, and blonde hair all perfectly match Look 28.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8d131950bacab5e93d7/master/pass/00028d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|26-38": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The fuchsia suede shoulder bag with gold hardware is an exact match, and the model is wearing a black garment consistent with the detail.",
+  "alternates": [
+   {
+    "look_number": 34,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8d1b48ec910ef391c09/master/pass/00029b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|26-38": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The model's hair, sunglasses, cream bomber jacket, beige wide-leg trousers, and black bowling bag are identical to Look 29.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8d03b4cd13cedaf2a8a/master/pass/00028c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|26-38": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The model, black futuristic sunglasses, and the black boat-neck top with shoulder slits perfectly match Look 28.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8d4c3203d842dd1e5ce/master/pass/00029c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|27-39": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The black dome-shaped handbag with gold hardware, light beige wide-leg trousers, and cream ribbed cuff are identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8d4e24c3f90df09ee21/master/pass/00030b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|27-39": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The model, cream floral applique dress, black leather gloves, and black platform flip-flop sandals are identical in both the detail and look 30.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8d5dca1cebef38e983c/master/pass/00030c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|28-40": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The detail shows a cream-colored garment with 3D floral appliques and long black leather gloves. Look 30 features an identical dress with the same appliques and the same long black leather gloves.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8d9771ebc253a7bb6c1/master/pass/00031b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|28-40": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The model's jacket, denim shorts, handbag, sunglasses, earrings, and red velvet platform flip-flops are identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8d955491f6825ba34cc/master/pass/00031c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|28-40": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a dark brown leather bag with gold hardware and tassels, light wash denim shorts with a raw hem, and red platform sandals. Look 31 features the identical bag, denim shorts, and red platform sandals, as well as a matching brown leather jacket.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8d904d765314c13cd8e/master/pass/00032b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|29-41": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 32, including the white baseball cap, the unique cropped top, the midi skirt with the distinctive ruffled floral hem, and the light-colored platform flip-flops.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8ddf83cf55d0af81540/master/pass/00032d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|30-42": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail shows a light beige/nude platform wedge flip-flop sandal, which perfectly matches the shoes worn by the model in Look 32.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8dd68e9dc609ba98322/master/pass/00032c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|29-41": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The white structured cap-like hat and the white round-neck short-sleeve top are identical to those in the detail image. The model's features also match perfectly.",
+  "alternates": [
+   {
+    "look_number": 39,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8df1bdfe09502b0bbcf/master/pass/00033b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|30-42": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 33, including the burgundy oversized jacket, brown wide-leg cropped trousers, fuchsia pointed-toe heels, and the dark brown structured shoulder bag. The model's hair also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8e18c5cb304e0c1041f/master/pass/00034b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|30-42": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 34, including the magenta off-the-shoulder top/dress, matching cap, dark magenta handbag, and magenta velvet platform flip-flops.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8e194c5de18efe6aa39/master/pass/00034c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|31-43": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The model, magenta off-the-shoulder top, and matching magenta baseball cap are identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8e28d42d28de9eacf45/master/pass/00034d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|31-43": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the magenta off-shoulder dress, the dark magenta Balenciaga City-style bag with gold hardware and tassels, and the magenta platform flip-flops shown in Look 34.",
+  "alternates": [
+   {
+    "look_number": 43,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 31,
+    "confidence": 0.5
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8e65d595c0ebeaf4750/master/pass/00035b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|32-44": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The model's hair, makeup, black sleeveless leather tunic, black trousers, black pointed-toe flats, and the distinctive black structured bag with tassels are identical in both the detail and Look 35.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8e4e24c3f90df09ee23/master/pass/00035a-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|32-44": {
+  "look_number": 35,
+  "confidence": 0.95,
+  "evidence": "The black structured handbag with tassels, black wide-leg pants, and black shoes are identical. The model's long dark hair is also consistent. The sleeveless dark top is consistent in material and color, despite the backless design in the detail not being fully visible from the front of Look 35.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8e7dca1cebef38e983e/master/pass/00035c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|32-44": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The black distressed leather handbag with multiple zippers, buckles, and long tassels is identical. The black pants and black pointed-toe shoes are also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8e8c2d4f9a46e94c82e/master/pass/00036b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|33-45": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The model's hair, long dark double-breasted coat, white collared shirt with dark bow, wide-leg blue jeans, and dark textured leather handbag with tassels are all identical to Look 36.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8ea38ad306d97899ee0/master/pass/00036c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|33-45": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 36, featuring the same long dark coat with white cuffs, the identical black distressed leather bag with prominent hardware and tassels, and the wide-leg blue denim jeans.",
+  "alternates": [
+   {
+    "look_number": 35,
+    "confidence": 0.2
+   },
+   {
+    "look_number": 41,
+    "confidence": 0.15
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8eb31950bacab5e93d9/master/pass/00037a-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|34-46": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The dress, bag, and shoes in the detail image are identical to those worn by the model in Look 37. The dress features a green base with colorful floral/feather-like embellishments, the bag is a dark brown structured bucket bag, and the shoes are green platform flip-flops, all matching perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8eec79c4b0683147ee5/master/pass/00037c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|34-46": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The multi-colored shaggy dress, brown domed handbag with gold hardware, and green flip-flop sandals are identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8ee38ad306d97899ee2/master/pass/00037d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|34-46": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The detail shows a green velvet platform flip-flop and a multi-colored, shaggy green garment. Look 37 features identical green velvet platform flip-flops and a dress made of the same multi-colored, shaggy green fabric.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8f03853cb6054b13883/master/pass/00038b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|35-47": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The model, green textured bomber jacket, denim shorts, orange shoulder bag with gold buckle, and black platform flip-flops are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8f332a44f415f486014/master/pass/00039b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|35-47": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 39, including the white baseball cap, white sleeveless crop top, white textured skirt, tan structured handbag, and chartreuse platform flip-flops.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8f4551a6243ff489e2d/master/pass/00039c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|35-47": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 39, featuring the same white feathery skirt, light beige handbag with distinctive details, and yellow platform flip-flop shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8f4d5fff1028d17f903/master/pass/00039d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|36-48": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The detail shows chartreuse velvet platform flip-flops and a white feathery skirt, both of which are perfectly matched in Look 39.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8f8b73d6550411515b2/master/pass/00040d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|37-49": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The animal print dome-shaped handbag with dark brown handles and gold hardware, along with the black voluminous skirt and black shirt, perfectly matches Look 40.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8f8c79c4b0683147ee7/master/pass/00040c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|37-49": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The model in the detail image wears a black baseball cap with a long fabric tail, a black collared shirt with a visible 'BALENCIAGA' logo, and gold hoop earrings. Look 40 features the exact same hat, shirt (with the logo visible), and earrings on the same model.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8f768e9dc609ba98324/master/pass/00040b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|36-48": {
+  "look_number": 40,
+  "confidence": 0.95,
+  "evidence": "The detail image shows an identical black oversized shirt, voluminous midi skirt, gold belt, black platform flip-flops, and animal print handbag. The black cap style differs slightly.",
+  "alternates": [
+   {
+    "look_number": 44,
+    "confidence": 0.35
+   },
+   {
+    "look_number": 43,
+    "confidence": 0.3
+   },
+   {
+    "look_number": 38,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8fc674f235ef5f1bcc8/master/pass/00040e-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|37-49": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The black platform thong sandal with a wide strap and solid black platform perfectly matches the shoe in the detail image.",
+  "alternates": [
+   {
+    "look_number": 40,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 43,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 44,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8fd6a9489eebb3bc87d/master/pass/00041c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|38-50": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the blue denim jeans, the dark red voluminous top, the dark teal Balenciaga bag, and the nude studded flat shoes worn in Look 41.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e900a1f6146accc63443/master/pass/00042b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|39-51": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 42 in every visible aspect: the dark red cap, navy double-breasted jacket with gold buttons, light beige culottes, nude shoulder bag with gold clasp, and white studded flats.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8fb551a6243ff489e2f/master/pass/00041b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|38-50": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The model, hair, burgundy leather top, blue jeans, studded nude flats, and dark blue fringed bag are identical in both the detail and Look 41.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e901c49232d975d3ae50/master/pass/00043c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|39-51": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the dark magenta leather gloves, the matching Balenciaga City-style handbag, the light taupe voluminous skirt, and the black flat sandals worn in Look 43.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e90194c5de18efe6aa3b/master/pass/00043b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|39-51": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 43, including the metallic brown cropped top, purple gloves, light brown bubble skirt, dark red bag, and black flip-flop sandals. The model, hair, and accessories are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e903e24c3f90df09ee25/master/pass/00044a-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|40-52": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model from behind wearing a black flowing cape-like garment, a chunky gold chain necklace, a small black structured handbag, and black platform sandals. Look 44 features the exact same black cape, gold necklace, black handbag, and black platform sandals.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e905c2d4f9a46e94c830/master/pass/00044b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|40-52": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 44, including the black cape dress, gathered skirt, chunky gold necklace, dark sunglasses, black structured handbag, and black platform sandals.",
+  "alternates": [
+   {
+    "look_number": 51,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 40,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 43,
+    "confidence": 0.5
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e9060f8daf410fdbd65a/master/pass/00045b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|41-53": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model wearing a black strapless top with a voluminous ruffled waist, black tailored trousers, long black leather gloves, and black pointed-toe heels. Look 45 features the exact same outfit and accessories, worn by a model with identical hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e9081bdfe09502b0bbd1/master/pass/00046b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|41-53": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The dress, shoes, model, hair, and makeup in the detail image are identical to those in Look 46. The yellow floral strapless dress with pockets and nude pumps are a perfect match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e90731950bacab5e93db/master/pass/00044c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|41-53": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model wearing oversized black sunglasses, a chunky gold chain necklace, and a black top. Look 44 features the exact same model, sunglasses, necklace, and black garment with a similar neckline.",
+  "alternates": [
+   {
+    "look_number": 48,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 51,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e90aa150b31348916891/master/pass/00046c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|42-54": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The nude patent leather pointed-toe pump with a stiletto heel and the yellow petal-embellished garment are an exact match to Look 46.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e90c6ebfbb53c3bf8fb4/master/pass/00047b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|43-54": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 47, including the white feathered crop top, black wide-leg trousers, gold buckle belt, and model's hair and bare midriff.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e90e04d765314c13cd90/master/pass/00047a-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|42-54": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model from the back wearing a white feathered crop top, black high-waisted trousers, and a black belt with a gold buckle. Look 47 features the exact same white feathered crop top, black high-waisted trousers, and black belt with a gold buckle, worn by a model with similar dark, straight hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e90ed31ffe4b6b0d59bf/master/pass/00048a-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|43-54": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The black structured cape-like top, black trousers, and black platform sandals with a light sole are identical in Look 48 and the detail image. The model's hair is also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e910a257a3e77381cc50/master/pass/00048c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|43-54": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black leather cropped cape top, black trousers, black belt with the distinctive gold buckle, and chunky gold chain bracelets worn in Look 48.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e9128c10bf5869212814/master/pass/00048d-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|44-54": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail shows black platform flip-flops with white fluffy trim and a toe ring, worn with black trousers, which perfectly matches Look 44.",
+  "alternates": [
+   {
+    "look_number": 48,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e91531950bacab5e93dd/master/pass/00049b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|44-54": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The model's black strapless top, black trousers, long white gloves, black pointed-toe heels, light cream handbag, and dark sunglasses are identical to those in Look 49. The hair and makeup also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e914e24c3f90df09ee27/master/pass/00049c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|45-54": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light-colored domed handbag with gold hardware and a hand wearing a matching light-colored glove. Look 49 features the exact same handbag and gloves, along with black trousers and a black top consistent with the background clothing in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e915aa605e17fe6b181b/master/pass/00050b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|45-54": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The model's hair, the off-white structured crop top, the voluminous emerald green bubble skirt, and the yellow platform sandals are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e917dca1cebef38e9840/master/pass/00050c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|45-54": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The detail shows a vibrant green voluminous skirt and yellow velvet platform flip-flops, which are perfectly matched by Look 50.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e91bc63807b89889727e/master/pass/00051b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|46-54": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 51, showing the same black voluminous gown with a structured black leather-like top, high neck, and black visor-style sunglasses.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e91a1bdfe09502b0bbd3/master/pass/00052a-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|46-54": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a strapless, light grey/silver gown with a ruched bodice and a flowing, sheer layered skirt. Look 52 is an exact match for this gown, including the color, fabric, and silhouette.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e91bb73d6550411515b4/master/pass/00052b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|47-54": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 52, showing the same light grey/lavender strapless, draped, sheer gown and the model's hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e91ec79c4b0683147ee9/master/pass/00053a-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|47-54": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a strapless, light pink dress with a voluminous bubble skirt and a bow detail. Look 53 features the identical dress from the front, matching the color, fabric, and silhouette perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e920dca1cebef38e9842/master/pass/00053b-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|47-54": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 53, including the unique light pink voluminous strapless dress with pockets, the black jeweled eye mask, the light pink pointed-toe flats, and the model's hair styled in a bun.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e9208c408c4448683e09/master/pass/00053c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|48-54": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The model in the detail image wears the identical black visor with crystal embellishment and a strapless light pink dress, matching Look 53 perfectly.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/68e7e8bd55e4389f9d716b8d/master/pass/00022c-balenciaga-spring-2026-ready-to-wear-details-credit-brand.jpg|22-22": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The hat, ear cuff, and the black sleeveless top's material and style are identical in both the detail and Look 22.",
+  "alternates": []
+ }
+}

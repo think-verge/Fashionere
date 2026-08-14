@@ -1,0 +1,23 @@
+2026-08-02 21:47:30 IST  run 2026-08-02T21:47:30+05:30 | 1 collection(s) | pipeline v2
+2026-08-02 21:47:30 IST  [ 1/1] prada | fall-2025-ready-to-wear
+2026-08-02 21:47:30 IST           scrape  SKIP   done 2026-08-02 (52 looks, 117 details)
+2026-08-02 21:47:30 IST           match   SKIP   done 2026-08-02 (116 attached)
+2026-08-02 21:47:30 IST           tag     RUN    169 images -> gemini-2.5-flash
+2026-08-02 21:47:31 IST             | -> Prada fall-2025-ready-to-wear: 169 images to tag
+2026-08-02 21:47:31 IST             |    model=gemini-2.5-flash width=768 workers=4 prompt_v2
+2026-08-02 21:47:31 IST             |    tagged 20/169
+2026-08-02 21:47:31 IST             |    tagged 40/169
+2026-08-02 21:47:31 IST             |    tagged 60/169
+2026-08-02 21:47:31 IST             |    tagged 80/169
+2026-08-02 21:47:31 IST             |    tagged 100/169
+2026-08-02 21:47:31 IST             |    tagged 120/169
+2026-08-02 21:47:31 IST             |    tagged 140/169
+2026-08-02 21:47:31 IST             |    tagged 160/169
+2026-08-02 21:47:31 IST             |    tagged 169/169
+2026-08-02 21:47:31 IST             |    tagged  : 169/169 images
+2026-08-02 21:47:31 IST             |    cache   : .tag_cache_Prada_fall_2025_ready_to_wear_mapped.json
+2026-08-02 21:47:31 IST             | Saved -> C:\Users\JaswanthPall_fnohyb7\Downloads\Prada\fashion_engine\scrape_engine\data\tagged\prada\Prada_fall_2025_ready_to_wear_tagged.json
+2026-08-02 21:47:31 IST           tag     OK     169/169 images   1s  ~$0.39
+2026-08-02 21:47:31 IST  ----------------------------------------------------------------
+2026-08-02 21:47:31 IST  scraped 0   matched 0   tagged 1   skipped 2   failed 0   suspect 0
+2026-08-02 21:47:31 IST  gemini ~$0.39 est (upper bound; cached calls cost nothing)   elapsed 1s   log: C:\Users\JaswanthPall_fnohyb7\Downloads\Prada\fashion_engine\scrape_engine\logs\run_2026-08-02_21-47-30_IST.log

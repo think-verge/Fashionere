@@ -1,0 +1,3558 @@
+{
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c5774881b07bec82d0687/master/pass/00004-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "White column gown with a halter neckline featuring a decorative silver-toned horsebit detail, a high thigh-slit, paired with knee-high burgundy leather boots and large gold hoop earrings.",
+  "fabric": "stretch crepe, leather, metal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Egret",
+    "hex_code": "#FDF5E6",
+    "pantone_code": "11-0107 (Egret)"
+   },
+   {
+    "color_name": "Burgundy",
+    "hex_code": "#800020",
+    "pantone_code": "19-1557 (Port Royale)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0947 (Mustard Gold)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Modern Elegance",
+  "keywords": [
+   "column gown",
+   "halter neckline",
+   "thigh-slit",
+   "maxi dress",
+   "body-skimming",
+   "knee-high boots",
+   "leather boots",
+   "gold earrings",
+   "horsebit detail",
+   "minimalist silhouette"
+  ],
+  "collection_keywords": [
+   "daily elegance",
+   "simple yet deeply italian",
+   "beautiful things designed to be worn",
+   "reinforcing codes",
+   "painstakingly considered detail",
+   "richly finished leathers",
+   "without nostalgia",
+   "reimagine and reinterpret"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c576e8ef0ea297ee65787/master/pass/00003-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Oversized dark brown leather bomber jacket with a wide collar and patch pockets, worn over a black polo shirt and black Bermuda shorts, styled with a patterned silk bandana, octagonal sunglasses, ribbed socks with a stripe detail, and chunky sole loafers with horsebit hardware.",
+  "fabric": "leather, cotton, silk, cotton blend",
+  "patterns": [
+   "abstract floral",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#362824",
+    "pantone_code": "19-1016 (Coffee Bean)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Warm Taupe",
+    "hex_code": "#A88F81",
+    "pantone_code": "16-1306 (Warm Taupe)"
+   },
+   {
+    "color_name": "Rose Pink",
+    "hex_code": "#E09090",
+    "pantone_code": "16-1715 (Rose Smoke)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   },
+   {
+    "color_name": "Deep Burgundy",
+    "hex_code": "#5C2F30",
+    "pantone_code": "19-1536 (Port Royale)"
+   },
+   {
+    "color_name": "Gucci Red",
+    "hex_code": "#B02F34",
+    "pantone_code": "18-1663 (Chinese Red)"
+   },
+   {
+    "color_name": "Gucci Green",
+    "hex_code": "#2F5C34",
+    "pantone_code": "19-5513 (Forest Green)"
+   }
+  ],
+  "theme": "Relaxed Luxury",
+  "keywords": [
+   "oversized bomber jacket",
+   "leather jacket",
+   "Bermuda shorts",
+   "polo shirt",
+   "chunky loafers",
+   "silk bandana",
+   "octagonal sunglasses",
+   "ribbed socks",
+   "horsebit detail",
+   "patch pockets"
+  ],
+  "collection_keywords": [
+   "casual grandeur",
+   "daily elegance",
+   "1970s inspiration",
+   "reimagine and reinterpret",
+   "without nostalgia",
+   "painstakingly considered detail",
+   "silhouette and visual texture"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c576edf2d29ad5811dd5a/master/pass/00001-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Oversized deep espresso long-pile faux fur coat with wide lapels and a self-fabric belt, styled with a golden tan silk monogrammed headscarf, dark cat-eye sunglasses, large gold hoop earrings, chocolate brown monogrammed leather gloves, and a structured chocolate brown suede handbag.",
+  "fabric": "faux fur, silk, suede, leather",
+  "patterns": [
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "Deep Espresso",
+    "hex_code": "#2C2624",
+    "pantone_code": "19-1111 (Black Coffee)"
+   },
+   {
+    "color_name": "Golden Tan",
+    "hex_code": "#A8824C",
+    "pantone_code": "16-1133 (Golden Haze)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#4A3B2F",
+    "pantone_code": "19-1118 (Chocolate Truffle)"
+   },
+   {
+    "color_name": "Chocolate Brown",
+    "hex_code": "#4A3B2F",
+    "pantone_code": "19-1118 (Chocolate Truffle)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0947 (Golden Rod)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Luxurious 70s Glamour",
+  "keywords": [
+   "fur coat",
+   "oversized silhouette",
+   "belted waist",
+   "wide lapels",
+   "silk headscarf",
+   "monogram print",
+   "cat-eye sunglasses",
+   "gold hoop earrings",
+   "leather gloves",
+   "suede handbag"
+  ],
+  "collection_keywords": [
+   "1970s",
+   "casual grandeur",
+   "daily elegance",
+   "reinforcing codes",
+   "visual texture",
+   "painstakingly considered detail"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c576edfd9edba8d6a4b17/master/pass/00002-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Brown wool cape layered over a matching brown long-sleeved jumpsuit with a stand collar and V-neck, cinched by a horsebit belt, styled with a patterned silk headscarf, dark sunglasses, a horsebit shoulder bag, and black and white loafers.",
+  "fabric": "Wool for the cape and jumpsuit, silk for the headscarf, leather for the belt, bag, and loafers, canvas for the bag, metal for hardware, and plastic for sunglasses.",
+  "patterns": [
+   "solid",
+   "geometric",
+   "stripe",
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#5C3A33",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#D4C1B0",
+    "pantone_code": "13-1008 (Oatmeal)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "12-0601 (Egret)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#8B0000",
+    "pantone_code": "19-1763 (Biking Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#006400",
+    "pantone_code": "19-5513 (Forest Green)"
+   },
+   {
+    "color_name": "Dark Taupe",
+    "hex_code": "#4A3C3C",
+    "pantone_code": "19-1016 (Coffee Bean)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   }
+  ],
+  "theme": "Equestrian Chic",
+  "keywords": [
+   "cape",
+   "jumpsuit",
+   "stand collar",
+   "V-neck",
+   "horsebit belt",
+   "shoulder bag",
+   "loafers",
+   "headscarf",
+   "sunglasses",
+   "wide leg",
+   "layered",
+   "monochromatic",
+   "relaxed silhouette"
+  ],
+  "collection_keywords": [
+   "1970s",
+   "casual grandeur",
+   "daily elegance",
+   "reinforcing codes",
+   "without nostalgia",
+   "painstakingly considered detail",
+   "visual texture generated",
+   "novelty"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c5773df2d29ad5811dd5c/master/pass/00005-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Cropped faux fur bomber jacket with a geometric pattern, styled with high-waisted houndstooth trousers, a silk headscarf, square-frame sunglasses, gold hoop earrings, a thin leather belt, leather gloves, and a shoulder bag.",
+  "fabric": "faux fur, wool blend, silk, leather, metal",
+  "patterns": [
+   "geometric",
+   "houndstooth"
+  ],
+  "Colors": [
+   {
+    "color_name": "Chili Pepper",
+    "hex_code": "#9F553B",
+    "pantone_code": "17-1340 (Chili Pepper)"
+   },
+   {
+    "color_name": "Vanilla Ice",
+    "hex_code": "#F3E8D7",
+    "pantone_code": "12-0703 (Vanilla Ice)"
+   },
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#1B4B36",
+    "pantone_code": "19-5513 (Forest Green)"
+   },
+   {
+    "color_name": "Grape Royale",
+    "hex_code": "#5F3A5B",
+    "pantone_code": "19-2311 (Grape Royale)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#2B2B2E",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#F8F8F8",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Port Royale",
+    "hex_code": "#7B2F3F",
+    "pantone_code": "19-1536 (Port Royale)"
+   },
+   {
+    "color_name": "Pink Flamb\u00e9",
+    "hex_code": "#E28B9C",
+    "pantone_code": "15-2210 (Pink Flamb\u00e9)"
+   },
+   {
+    "color_name": "Chocolate Brown",
+    "hex_code": "#5C3A2E",
+    "pantone_code": "18-1140 (Chocolate Brown)"
+   },
+   {
+    "color_name": "Gold Fusion",
+    "hex_code": "#B8860B",
+    "pantone_code": "16-0836 (Gold Fusion)"
+   }
+  ],
+  "theme": "Retro-inspired casual elegance",
+  "keywords": [
+   "faux fur jacket",
+   "bomber jacket",
+   "geometric pattern",
+   "houndstooth trousers",
+   "wide-leg pants",
+   "silk headscarf",
+   "square sunglasses",
+   "leather gloves",
+   "shoulder bag",
+   "GG logo",
+   "gold hardware",
+   "high-waisted"
+  ],
+  "collection_keywords": [
+   "1970s history",
+   "daily elegance",
+   "beautiful things",
+   "reimagined elements",
+   "wrong colors",
+   "heritage brands",
+   "considered detail",
+   "visual texture"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57767f660bc3c6728d03/master/pass/00007-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Oversized deep burgundy textured knit cardigan jacket with a V-neckline, four-button closure, and two large patch pockets, paired with dark grey straight-leg trousers, a red and white patterned neck scarf, rimless rectangular sunglasses, a single pearl drop earring, and a silver-tone GG logo pendant necklace.",
+  "fabric": "Textured knit, woven wool blend, silk, metal, pearl",
+  "patterns": [
+   "floral",
+   "abstract"
+  ],
+  "Colors": [
+   {
+    "color_name": "Deep Burgundy",
+    "hex_code": "#5C1A2E",
+    "pantone_code": "19-1524 (Port Royale)"
+   },
+   {
+    "color_name": "Dark Grey",
+    "hex_code": "#424A51",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C82D3D",
+    "pantone_code": "18-1660 (High Risk Red)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#F8F8F8",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0947 (Golden Rod)"
+   }
+  ],
+  "theme": "Contemporary Casual",
+  "keywords": [
+   "oversized cardigan",
+   "textured knit",
+   "V-neck",
+   "button-front",
+   "patch pockets",
+   "straight-leg trousers",
+   "neck scarf",
+   "rimless sunglasses",
+   "pearl earring",
+   "GG pendant necklace"
+  ],
+  "collection_keywords": [
+   "casual grandeur",
+   "daily elegance",
+   "reimagine and reinterpret",
+   "without nostalgia",
+   "wrong colors",
+   "berry-burgundy conversation",
+   "silhouette and visual texture",
+   "painstakingly considered detail"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c5778f562d38838335166/master/pass/00008-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Olive green short-sleeve polo shirt with a brown leather placket is paired with wide-leg burgundy trousers, a dark brown leather belt with a silver GG buckle, burgundy leather sneakers, a beige monogrammed coated canvas duffel bag, a patterned silk neck scarf, a silver chain bracelet, and rectangular silver-framed sunglasses.",
+  "fabric": "Cotton knit, leather, wool blend, coated canvas, silk, metal, plastic",
+  "patterns": [
+   "solid",
+   "monogram",
+   "floral",
+   "paisley"
+  ],
+  "Colors": [
+   {
+    "color_name": "Olive Green",
+    "hex_code": "#5C5C47",
+    "pantone_code": "18-0625 (Kalamata)"
+   },
+   {
+    "color_name": "Brown",
+    "hex_code": "#8B7355",
+    "pantone_code": "18-1018 (Coffee Liqueur)"
+   },
+   {
+    "color_name": "Burgundy",
+    "hex_code": "#8B253F",
+    "pantone_code": "19-1536 (Port Royale)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#4A2C2C",
+    "pantone_code": "19-1116 (Chocolate Plum)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#C8B291",
+    "pantone_code": "13-1009 (Oatmeal)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C02F3F",
+    "pantone_code": "18-1660 (Chinese Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#3A6B4A",
+    "pantone_code": "19-5513 (Forest Biome)"
+   },
+   {
+    "color_name": "Dark Grey",
+    "hex_code": "#333333",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Relaxed daily elegance",
+  "keywords": [
+   "polo shirt",
+   "short sleeve",
+   "wide leg trousers",
+   "pleated trousers",
+   "leather belt",
+   "sneakers",
+   "duffel bag",
+   "neck scarf",
+   "sunglasses",
+   "bracelet",
+   "menswear",
+   "casual tailoring"
+  ],
+  "collection_keywords": [
+   "daily elegance",
+   "simple yet deeply Italian",
+   "designed to be worn",
+   "wrong colors",
+   "painstakingly considered detail",
+   "reimagine and reinterpret"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c5779585d44b7cb788335/master/pass/00009-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Cropped dark brown shearling jacket with a black collar and cuffs, worn over a dark green ribbed knit cardigan with red and green stripes, olive green wide-leg trousers with front hem splits, and pink suede sneakers, accessorized with a patterned silk headscarf, gold hoop earrings, a gold chain necklace, a black leather belt with a gold GG buckle, and a brown suede and leather shoulder bag with a green and red web stripe.",
+  "fabric": "shearling, leather, ribbed knit wool, wool, silk, suede, synthetic",
+  "patterns": [
+   "monogram",
+   "floral"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#3F2E27",
+    "pantone_code": "19-1016 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Dark Green",
+    "hex_code": "#2B4237",
+    "pantone_code": "19-5513 (Forest Night)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#8C1D2B",
+    "pantone_code": "19-1763 (Biking Red)"
+   },
+   {
+    "color_name": "Olive Green",
+    "hex_code": "#5C5B42",
+    "pantone_code": "18-0521 (Olive Night)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#A67C4B",
+    "pantone_code": "16-0947 (Antique Gold)"
+   },
+   {
+    "color_name": "Pink",
+    "hex_code": "#D16B95",
+    "pantone_code": "16-2126 (Rose Violet)"
+   },
+   {
+    "color_name": "Light Pink",
+    "hex_code": "#E8C8D7",
+    "pantone_code": "13-2005 (Pink Lavender)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#F2E8D7",
+    "pantone_code": "12-0703 (Vanilla Ice)"
+   },
+   {
+    "color_name": "Light Blue",
+    "hex_code": "#A7D0D8",
+    "pantone_code": "14-4316 (Clearwater)"
+   },
+   {
+    "color_name": "Yellow",
+    "hex_code": "#F7E07F",
+    "pantone_code": "13-0858 (Daffodil)"
+   }
+  ],
+  "theme": "Eclectic Heritage",
+  "keywords": [
+   "shearling jacket",
+   "cropped jacket",
+   "ribbed knit cardigan",
+   "wide-leg trousers",
+   "front hem split",
+   "suede sneakers",
+   "silk headscarf",
+   "shoulder bag",
+   "GG buckle",
+   "gold jewelry"
+  ],
+  "collection_keywords": [
+   "casual grandeur",
+   "daily elegance",
+   "reimagine and reinterpret",
+   "without nostalgia",
+   "wrong colors",
+   "1970s spell",
+   "painstakingly considered detail",
+   "novelty"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c577a1a8f9d5e4d3f968a/master/pass/00010-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Cropped chevron-patterned fur jacket worn over a bright pink collared shirt, paired with wide-leg cuffed indigo denim jeans, white sneakers, a tan leather shoulder bag, gold chain necklace, gold hoop earrings, and green-tinted sunglasses.",
+  "fabric": "fur, cotton, denim, leather, rubber, metal, plastic",
+  "patterns": [
+   "chevron",
+   "solid",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Chocolate Lab",
+    "hex_code": "#2E1A0F",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#0A0A0A",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Fuchsia Rose",
+    "hex_code": "#F06292",
+    "pantone_code": "17-2036 (Fuchsia Rose)"
+   },
+   {
+    "color_name": "Dark Sapphire",
+    "hex_code": "#2C3E50",
+    "pantone_code": "19-4028 (Dark Sapphire)"
+   },
+   {
+    "color_name": "Toasted Coconut",
+    "hex_code": "#A0785A",
+    "pantone_code": "16-1334 (Toasted Coconut)"
+   },
+   {
+    "color_name": "Kelly Green",
+    "hex_code": "#3CB371",
+    "pantone_code": "17-5641 (Kelly Green)"
+   },
+   {
+    "color_name": "True Red",
+    "hex_code": "#B22222",
+    "pantone_code": "18-1660 (True Red)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#F8F8F8",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Golden Rod",
+    "hex_code": "#B8860B",
+    "pantone_code": "16-0947 (Golden Rod)"
+   },
+   {
+    "color_name": "Green Flash",
+    "hex_code": "#8FBC8F",
+    "pantone_code": "15-0531 (Green Flash)"
+   }
+  ],
+  "theme": "Elevated casual with a vibrant contrast",
+  "keywords": [
+   "cropped fur jacket",
+   "chevron pattern",
+   "collared shirt",
+   "wide-leg jeans",
+   "cuffed hem",
+   "denim",
+   "sneakers",
+   "shoulder bag",
+   "chain necklace",
+   "sunglasses",
+   "gold jewelry"
+  ],
+  "collection_keywords": [
+   "casual grandeur",
+   "daily elegance",
+   "wrong colors",
+   "reimagine and reinterpret",
+   "contemporary against historic",
+   "painstakingly considered detail"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c577cce0e510d410d62d9/master/pass/00012-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Textured dark brown hooded jacket with a full zip closure and ribbed cuffs, paired with dark grey straight-leg trousers and rimless rectangular sunglasses.",
+  "fabric": "textured faux fur, woven fabric",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Chocolate Truffle",
+    "hex_code": "#4A3026",
+    "pantone_code": "19-1016 (Chocolate Truffle)"
+   },
+   {
+    "color_name": "Phantom",
+    "hex_code": "#363636",
+    "pantone_code": "19-4007 (Phantom)"
+   },
+   {
+    "color_name": "Biking Red",
+    "hex_code": "#601C2B",
+    "pantone_code": "19-1725 (Biking Red)"
+   },
+   {
+    "color_name": "Silver Cloud",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Urban comfort",
+  "keywords": [
+   "hooded jacket",
+   "full zip closure",
+   "textured fabric",
+   "ribbed cuffs",
+   "trousers",
+   "straight leg",
+   "rimless sunglasses",
+   "dark lenses",
+   "casual silhouette"
+  ],
+  "collection_keywords": [
+   "casual grandeur",
+   "daily elegance",
+   "beautiful things designed to be worn",
+   "reimagine and reinterpret",
+   "evidently contemporary",
+   "silhouette and visual texture",
+   "painstakingly considered detail"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57750857edbef99662ae/master/pass/00006-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Micro-gingham wool blend suit featuring a long-line blazer with notched lapels and a single-button closure, cinched by a thin leather belt, paired with a matching midi skirt with a front slit, styled with deep red opaque tights, platform horsebit loafers, a suede top-handle bag with web stripe, a gold choker, and rectangular sunglasses.",
+  "fabric": "wool blend",
+  "patterns": [
+   "micro-gingham",
+   "web stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Light Grey",
+    "hex_code": "#B0B0B0",
+    "pantone_code": "14-4105 (Silver Cloud)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#4A3C3C",
+    "pantone_code": "19-1012 (Chocolate Truffle)"
+   },
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#00502F",
+    "pantone_code": "19-5513 (Forest Green)"
+   },
+   {
+    "color_name": "True Red",
+    "hex_code": "#A80000",
+    "pantone_code": "19-1763 (True Red)"
+   },
+   {
+    "color_name": "Deep Red",
+    "hex_code": "#800020",
+    "pantone_code": "19-1725 (Port Royale)"
+   },
+   {
+    "color_name": "Antique Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Antique Gold)"
+   },
+   {
+    "color_name": "Mauve",
+    "hex_code": "#B08090",
+    "pantone_code": "16-1516 (Rose Smoke)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4105 (Silver Cloud)"
+   }
+  ],
+  "theme": "Modern professional elegance with a retro twist",
+  "keywords": [
+   "blazer",
+   "midi skirt",
+   "suit",
+   "micro-gingham",
+   "belted waist",
+   "platform loafers",
+   "horsebit detail",
+   "top-handle bag",
+   "choker",
+   "sunglasses"
+  ],
+  "collection_keywords": [
+   "1970s history",
+   "daily elegance",
+   "simple yet deeply Italian",
+   "micro-gingham color-combos",
+   "wrong colors",
+   "painstakingly considered detail",
+   "silhouette and visual texture",
+   "richly finished leathers"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c577f6c9bd1848e0121fc/master/pass/00013-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Tailored berry purple and burgundy micro-gingham suit featuring a single-breasted blazer with notched lapels and rounded patch pockets, paired with straight-leg trousers, accessorized with a thin leather belt, a chunky gold chain choker, large gold dome earrings, rimless amber-tinted sunglasses, and a leather top-handle bag with horsebit hardware.",
+  "fabric": "Wool blend, leather, gold-tone metal, plastic",
+  "patterns": [
+   "micro-gingham"
+  ],
+  "Colors": [
+   {
+    "color_name": "Berry Purple",
+    "hex_code": "#6A4A7C",
+    "pantone_code": "19-3520 (Grape Compote)"
+   },
+   {
+    "color_name": "Espresso Brown",
+    "hex_code": "#4A302B",
+    "pantone_code": "19-4104 (Espresso)"
+   },
+   {
+    "color_name": "Antique Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "17-0949 (Antique Gold)"
+   },
+   {
+    "color_name": "Amber Brown",
+    "hex_code": "#B8860B",
+    "pantone_code": "16-1046 (Amber Gold)"
+   },
+   {
+    "color_name": "Port Royale Red",
+    "hex_code": "#842D3F",
+    "pantone_code": "19-1725 (Port Royale)"
+   }
+  ],
+  "theme": "Refined Professional",
+  "keywords": [
+   "tailored suit",
+   "single-breasted blazer",
+   "straight-leg trousers",
+   "patch pockets",
+   "thin belt",
+   "chain choker",
+   "gold earrings",
+   "rimless sunglasses",
+   "top-handle bag"
+  ],
+  "collection_keywords": [
+   "micro-gingham color-combos",
+   "berry-burgundy conversation",
+   "reinforcing codes",
+   "daily elegance",
+   "painstakingly considered detail",
+   "richly finished leathers",
+   "reimagine and reinterpret"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57807a3558ddd6f5bfdf/master/pass/00014-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Oversized grey plaid wool coat with a simple collar, layered over a burgundy leather high-neck top and matching grey plaid trousers, styled with black leather Chelsea boots and rectangular sunglasses.",
+  "fabric": "wool, leather, metal, plastic",
+  "patterns": [
+   "plaid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Grey",
+    "hex_code": "#606C6C",
+    "pantone_code": "17-4402 (Monument)"
+   },
+   {
+    "color_name": "Burgundy",
+    "hex_code": "#800020",
+    "pantone_code": "19-1725 (Biking Red)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Modern Heritage with 'Wrong Colors'",
+  "keywords": [
+   "oversized coat",
+   "wool plaid",
+   "leather high-neck",
+   "relaxed silhouette",
+   "tailored trousers",
+   "Chelsea boots",
+   "rectangular sunglasses",
+   "belted coat"
+  ],
+  "collection_keywords": [
+   "1970s history",
+   "casual grandeur",
+   "daily elegance",
+   "wrong colors",
+   "reinforcing codes",
+   "painstakingly considered detail",
+   "beyond retro"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57830857edbef99662b0/master/pass/00016-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Mid-length faux fur coat with notched lapels and button closure, worn over a deep red collared V-neck shirt, wide-leg black trousers, black loafers, and accessorized with a gold chain necklace, gold hoop earrings, rectangular sunglasses, and a brown suede hobo bag.",
+  "fabric": "faux fur, cotton, wool, suede, metal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Taupe Faux Fur",
+    "hex_code": "#8B8177",
+    "pantone_code": "16-1109 (Peyote)"
+   },
+   {
+    "color_name": "Deep Red",
+    "hex_code": "#9B2027",
+    "pantone_code": "19-1763 (Biking Red)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#262626",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Suede Brown",
+    "hex_code": "#A67C52",
+    "pantone_code": "17-1134 (Gingerbread)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0947 (Golden Rod)"
+   }
+  ],
+  "theme": "Luxurious casual, 70s inspired elegance",
+  "keywords": [
+   "faux fur coat",
+   "wide-leg trousers",
+   "collared shirt",
+   "hobo bag",
+   "gold chain necklace",
+   "rectangular sunglasses",
+   "layered",
+   "oversized silhouette",
+   "loafers"
+  ],
+  "collection_keywords": [
+   "1970s",
+   "casual grandeur",
+   "daily elegance",
+   "reimagine and reinterpret",
+   "silhouette and visual texture",
+   "painstakingly considered detail"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c577ece0e510d410d62db/master/pass/00011-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Sheer dark brown maxi shirt dress with a high neck, long sleeves, full-length button-front closure, and a tiered skirt, cinched at the waist with a thin leather belt, styled with a small embroidered shoulder bag and rectangular sunglasses.",
+  "fabric": "Sheer chiffon, leather, embroidery",
+  "patterns": [
+   "solid",
+   "monogram motif"
+  ],
+  "Colors": [
+   {
+    "color_name": "Espresso",
+    "hex_code": "#362828",
+    "pantone_code": "19-4104 (Espresso)"
+   },
+   {
+    "color_name": "Egret",
+    "hex_code": "#F0EAD6",
+    "pantone_code": "11-0103 (Egret)"
+   },
+   {
+    "color_name": "Black Beauty",
+    "hex_code": "#2C2C2C",
+    "pantone_code": "19-4006 (Black Beauty)"
+   },
+   {
+    "color_name": "Light Gray",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "13-4104 (Light Gray)"
+   }
+  ],
+  "theme": "Daily Elegance",
+  "keywords": [
+   "Maxi dress",
+   "sheer",
+   "shirt dress",
+   "high neck",
+   "long sleeve",
+   "tiered skirt",
+   "button-front",
+   "thin belt",
+   "shoulder bag",
+   "rectangular sunglasses"
+  ],
+  "collection_keywords": [
+   "daily elegance",
+   "simple yet deeply Italian",
+   "beautiful things designed to be worn",
+   "reimagine and reinterpret",
+   "without nostalgia",
+   "visual texture"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57838f83d0646494cb59/master/pass/00015-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Dark brown long-sleeve shirt and matching shorts with a micro-gingham tie, styled with two-tone loafers, dark socks, a suede duffel bag, rectangular sunglasses, and a single earring.",
+  "fabric": "cotton blend, woven silk, suede, leather, metal",
+  "patterns": [
+   "micro-gingham"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#362824",
+    "pantone_code": "19-1012 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Brown",
+    "hex_code": "#5C4033",
+    "pantone_code": "19-1016 (Coffee Bean)"
+   },
+   {
+    "color_name": "Tan",
+    "hex_code": "#A88D7B",
+    "pantone_code": "16-1336 (Toasted Almond)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Deep Red",
+    "hex_code": "#8B0000",
+    "pantone_code": "19-1763 (Cabernet)"
+   },
+   {
+    "color_name": "Dark Green",
+    "hex_code": "#006400",
+    "pantone_code": "19-5513 (Forest Biome)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   },
+   {
+    "color_name": "Dark Grey",
+    "hex_code": "#36454F",
+    "pantone_code": "19-3900 (Phantom)"
+   }
+  ],
+  "theme": "Contemporary Preppy",
+  "keywords": [
+   "long-sleeve shirt",
+   "tailored shorts",
+   "necktie",
+   "micro-pattern",
+   "duffel bag",
+   "suede",
+   "two-tone loafers",
+   "crew socks",
+   "rectangular sunglasses",
+   "menswear"
+  ],
+  "collection_keywords": [
+   "daily elegance",
+   "reimagine and reinterpret",
+   "fresh and relevant",
+   "micro-gingham",
+   "ivy league",
+   "considered detail",
+   "novelty"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c586e8f83d0646494cb5b/master/pass/00018-gucci-pre-fall-2025-details-credit-brand.jpg|https://assets.vogue.com/photos/675c57867a3558ddd6f5bfe1/master/pass/00018-gucci-pre-fall-2025-credit-brand.jpg": {
+  "image_description": "Oversized navy blue double-breasted overcoat with a contrasting deep red leather stand collar, gold-tone buttons, and a visible white and light blue striped shirt cuff, accessorized with silver rectangular sunglasses and silver hoop earrings.",
+  "fabric": "felted wool blend",
+  "patterns": [
+   "solid",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "True Navy",
+    "hex_code": "#1A233C",
+    "pantone_code": "19-4010 (True Navy)"
+   },
+   {
+    "color_name": "Port Royale",
+    "hex_code": "#6F1A2A",
+    "pantone_code": "19-1557 (Port Royale)"
+   },
+   {
+    "color_name": "Gold Fusion",
+    "hex_code": "#C8A25F",
+    "pantone_code": "16-0836 (Gold Fusion)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Clearwater",
+    "hex_code": "#C0D6E4",
+    "pantone_code": "14-4104 (Clearwater)"
+   },
+   {
+    "color_name": "Silver Cloud",
+    "hex_code": "#B0B0B0",
+    "pantone_code": "14-4500 (Silver Cloud)"
+   }
+  ],
+  "theme": "Modern tailored elegance with a contrasting detail",
+  "keywords": [
+   "overcoat",
+   "double-breasted",
+   "stand collar",
+   "leather collar",
+   "gold buttons",
+   "striped shirt",
+   "shirt cuff",
+   "sunglasses",
+   "hoop earrings",
+   "oversized silhouette"
+  ],
+  "collection_keywords": [
+   "1970s history",
+   "casual grandeur",
+   "daily elegance",
+   "reinterpretation",
+   "reinforcing codes",
+   "wrong colors",
+   "considered detail",
+   "novelty"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c5784585d44b7cb788338/master/pass/00017-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Cropped navy ribbed knit vest with two patch pockets layered over a short-sleeve burgundy polo shirt, paired with wide-leg navy trousers, a slim red leather belt, black loafers, a brown leather shoulder bag, a gold-tone chain necklace, and black framed glasses.",
+  "fabric": "Ribbed knit, piqu\u00e9 knit, wool blend, leather, metal, acetate",
+  "patterns": [
+   "solid",
+   "web stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Navy Blue",
+    "hex_code": "#1E2B3C",
+    "pantone_code": "19-4010 (Dress Blues)"
+   },
+   {
+    "color_name": "Burgundy",
+    "hex_code": "#800020",
+    "pantone_code": "19-1725 (Biking Red)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Rod)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#4A2C2A",
+    "pantone_code": "19-1118 (Chocolate Truffle)"
+   },
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#224B2B",
+    "pantone_code": "19-5513 (Forest Biome)"
+   },
+   {
+    "color_name": "True Red",
+    "hex_code": "#C8102E",
+    "pantone_code": "18-1663 (True Red)"
+   }
+  ],
+  "theme": "Preppy Academia",
+  "keywords": [
+   "cropped vest",
+   "polo shirt",
+   "wide-leg trousers",
+   "loafers",
+   "shoulder bag",
+   "chain necklace",
+   "glasses",
+   "leather belt",
+   "ribbed knit",
+   "GG buckle"
+  ],
+  "collection_keywords": [
+   "1970s",
+   "casual grandeur",
+   "daily elegance",
+   "reimagine and reinterpret",
+   "tonally harmonic Ivy League",
+   "richly finished leathers",
+   "painstakingly considered detail"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57867a3558ddd6f5bfe1/master/pass/00018-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Oversized navy blue double-breasted wool overcoat with a high stand-up leather collar, worn over a striped shirt and dark trousers, paired with chunky leather loafers, rectangular sunglasses, and hoop earrings.",
+  "fabric": "wool, leather, cotton",
+  "patterns": [
+   "solid",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Navy Blue",
+    "hex_code": "#1A2E44",
+    "pantone_code": "19-4010 (Dress Blues)"
+   },
+   {
+    "color_name": "Burgundy",
+    "hex_code": "#7B243B",
+    "pantone_code": "19-1725 (Biking Red)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0948 (Golden Rod)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Light Blue",
+    "hex_code": "#C0D8E8",
+    "pantone_code": "13-4108 (Light Blue)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4500 (Silver)"
+   }
+  ],
+  "theme": "Modern Military-Inspired Tailoring",
+  "keywords": [
+   "oversized overcoat",
+   "double-breasted closure",
+   "raglan sleeves",
+   "leather stand collar",
+   "gold-tone buttons",
+   "flap pockets",
+   "striped shirt",
+   "wide-leg trousers",
+   "chunky loafers",
+   "rectangular sunglasses"
+  ],
+  "collection_keywords": [
+   "1970s history",
+   "casual grandeur",
+   "daily elegance",
+   "reimagine and reinterpret",
+   "broadly-proportioned militaria",
+   "raglan sleeve overcoat",
+   "burgundy flashing",
+   "painstakingly considered detail"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c58708309397f22273f41/master/pass/00026-gucci-pre-fall-2025-details-credit-brand.jpg|https://assets.vogue.com/photos/675c5787585d44b7cb78833a/master/pass/00019-gucci-pre-fall-2025-credit-brand.jpg": {
+  "image_description": "Cropped pink leather jacket with large flap pockets, epaulets, and a ribbed hem, paired with a pink floral bandana, a gold chain necklace, gold hoop earrings, and amber-tinted rectangular sunglasses.",
+  "fabric": "leather, silk, metal, acetate",
+  "patterns": [
+   "solid",
+   "floral"
+  ],
+  "Colors": [
+   {
+    "color_name": "Pink",
+    "hex_code": "#E0A6B1",
+    "pantone_code": "14-1905 (Rose Smoke)"
+   },
+   {
+    "color_name": "Raspberry Pink",
+    "hex_code": "#D16A7B",
+    "pantone_code": "17-2031 (Raspberry Rose)"
+   },
+   {
+    "color_name": "Flame Red",
+    "hex_code": "#E54B3B",
+    "pantone_code": "18-1662 (Flame Scarlet)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "17-0949 (Antique Gold)"
+   },
+   {
+    "color_name": "Amber",
+    "hex_code": "#E4C87C",
+    "pantone_code": "16-1148 (Amber Gold)"
+   }
+  ],
+  "theme": "Playful elegance",
+  "keywords": [
+   "cropped jacket",
+   "leather jacket",
+   "flap pockets",
+   "epaulets",
+   "bandana",
+   "headscarf",
+   "sunglasses",
+   "chain necklace",
+   "hoop earrings",
+   "Gucci logo"
+  ],
+  "collection_keywords": [
+   "1970s inspiration",
+   "casual grandeur",
+   "daily elegance",
+   "reinterpretation",
+   "considered detail",
+   "novelty",
+   "heritage codes"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c5787585d44b7cb78833a/master/pass/00019-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Tailored single-breasted suit jacket and cropped trousers in berry-burgundy, styled with a floral silk headscarf, gold chain necklace, large gold disc earrings, rectangular sunglasses, a tan leather hobo bag with horsebit detail, and matching berry-burgundy platform horsebit loafers.",
+  "fabric": "wool, silk, leather, metal",
+  "patterns": [
+   "floral",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Port Royale",
+    "hex_code": "#8B1A2A",
+    "pantone_code": "19-1720 (Port Royale)"
+   },
+   {
+    "color_name": "Raspberry Wine",
+    "hex_code": "#B04E67",
+    "pantone_code": "18-1763 (Raspberry Wine)"
+   },
+   {
+    "color_name": "Rose Dust",
+    "hex_code": "#D8A7B3",
+    "pantone_code": "13-2005 (Rose Dust)"
+   },
+   {
+    "color_name": "Caramel Cafe",
+    "hex_code": "#A67C52",
+    "pantone_code": "16-1334 (Caramel Cafe)"
+   },
+   {
+    "color_name": "Golden Rod",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Rod)"
+   }
+  ],
+  "theme": "Modern Heritage Tailoring",
+  "keywords": [
+   "tailored suit",
+   "single-breasted jacket",
+   "cropped trousers",
+   "platform loafers",
+   "horsebit detail",
+   "hobo bag",
+   "silk headscarf",
+   "gold jewelry",
+   "sunglasses",
+   "fitted silhouette"
+  ],
+  "collection_keywords": [
+   "1970s history",
+   "daily elegance",
+   "berry-burgundy conversation",
+   "reimagine and reinterpret",
+   "heritage brands",
+   "richly finished leathers",
+   "painstakingly considered detail",
+   "beyond retro"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c5788398afdce82105a04/master/pass/00020-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Double-breasted suit in a deep red features a peak-lapel jacket with flap pockets and wide-leg trousers with a front split hem, paired with a matching pussy-bow blouse, a leather belt with a G-buckle, dark loafers, and rectangular sunglasses.",
+  "fabric": "Wool blend for the suit, silk satin for the blouse, leather for the belt and shoes, metal and plastic for the sunglasses.",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Rhubarb",
+    "hex_code": "#880808",
+    "pantone_code": "19-1760 (Rhubarb)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   },
+   {
+    "color_name": "Chocolate Brown",
+    "hex_code": "#3A1F1C",
+    "pantone_code": "19-1118 (Chocolate Brown)"
+   }
+  ],
+  "theme": "Monochromatic Tailoring with Retro Flair",
+  "keywords": [
+   "Double-breasted suit",
+   "Peak lapels",
+   "Wide-leg trousers",
+   "Split hem",
+   "Pussy-bow blouse",
+   "Monochromatic styling",
+   "Leather belt",
+   "G-buckle",
+   "Loafers",
+   "Rectangular sunglasses"
+  ],
+  "collection_keywords": [
+   "daily elegance",
+   "reinforcing codes",
+   "wrong colors",
+   "bell-bottom pant with a split",
+   "richly finished leathers",
+   "painstakingly considered detail",
+   "without nostalgia"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c578cdfd9edba8d6a4b19/master/pass/00021-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Lime green crew neck sweater and deep lichen green knit cardigan vest layered over tailored biking red trousers, accessorized with a brown suede and leather shoulder bag featuring a red and green web stripe, a dark red leather belt with a gold-tone GG buckle, a chunky gold chain necklace, and rectangular amber-tinted sunglasses.",
+  "fabric": "knit, wool blend, suede, leather, metal, plastic",
+  "patterns": [
+   "solid",
+   "web stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Lime Green",
+    "hex_code": "#8BC34A",
+    "pantone_code": "15-0533 (Meadowbrook)"
+   },
+   {
+    "color_name": "Deep Lichen Green",
+    "hex_code": "#4A5D4A",
+    "pantone_code": "19-0414 (Deep Lichen Green)"
+   },
+   {
+    "color_name": "Biking Red",
+    "hex_code": "#801818",
+    "pantone_code": "19-1725 (Biking Red)"
+   },
+   {
+    "color_name": "Gingerbread",
+    "hex_code": "#A0522D",
+    "pantone_code": "17-1340 (Gingerbread)"
+   },
+   {
+    "color_name": "Golden Rod",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Rod)"
+   },
+   {
+    "color_name": "Amber Gold",
+    "hex_code": "#FFBF00",
+    "pantone_code": "16-1148 (Amber Gold)"
+   },
+   {
+    "color_name": "True Red",
+    "hex_code": "#FF0000",
+    "pantone_code": "18-1660 (True Red)"
+   }
+  ],
+  "theme": "Modern Heritage",
+  "keywords": [
+   "crew neck sweater",
+   "cardigan vest",
+   "tailored trousers",
+   "shoulder bag",
+   "leather belt",
+   "chain necklace",
+   "sunglasses",
+   "layered knitwear",
+   "GG buckle",
+   "web stripe"
+  ],
+  "collection_keywords": [
+   "1970s inspiration",
+   "casual grandeur",
+   "daily elegance",
+   "Italian elegance",
+   "wearable luxury",
+   "reinterpretation",
+   "off-olive and berry-burgundy conversation",
+   "tonally harmonic Ivy League"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c578dd8e6c69bf6739e2b/master/pass/00023-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Olive green embossed GG monogram track jacket with a high neck and full zip closure, styled with brown micro-gingham check trousers, a dark brown suede duffel bag featuring a red and green web stripe, a floral bandana, silver-framed sunglasses, and a silver hoop earring.",
+  "fabric": "cotton blend, silk, wool blend, suede, leather, metal",
+  "patterns": [
+   "embossed GG monogram",
+   "floral",
+   "paisley",
+   "micro-gingham check",
+   "solid",
+   "web stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Olive Green",
+    "hex_code": "#6B8E23",
+    "pantone_code": "18-0622 (Olive Night)"
+   },
+   {
+    "color_name": "Light Green",
+    "hex_code": "#90EE90",
+    "pantone_code": "13-0623 (Lime Punch)"
+   },
+   {
+    "color_name": "Brown",
+    "hex_code": "#A0522D",
+    "pantone_code": "19-1012 (Chocolate Truffle)"
+   },
+   {
+    "color_name": "Tan",
+    "hex_code": "#D2B48C",
+    "pantone_code": "16-1334 (Toasted Almond)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#5C4033",
+    "pantone_code": "19-1118 (Coffee Bean)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#FF0000",
+    "pantone_code": "18-1660 (True Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#006400",
+    "pantone_code": "19-5513 (Forest Green)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0948 (Golden Rod)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   },
+   {
+    "color_name": "Dark Grey",
+    "hex_code": "#36454F",
+    "pantone_code": "19-3900 (Phantom)"
+   }
+  ],
+  "theme": "Casual elegance with heritage codes",
+  "keywords": [
+   "track jacket",
+   "high neck",
+   "full zip",
+   "embossed monogram",
+   "micro-gingham trousers",
+   "duffel bag",
+   "web stripe",
+   "suede bag",
+   "bandana",
+   "sunglasses",
+   "hoop earring",
+   "casual styling"
+  ],
+  "collection_keywords": [
+   "casual grandeur",
+   "daily elegance",
+   "reimagine and reinterpret",
+   "without nostalgia",
+   "off-kilter micro-gingham",
+   "painstakingly considered detail",
+   "silhouette and visual texture"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57917a3558ddd6f5bfe4/master/pass/00025-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Brown silk pussy-bow blouse and matching maxi skirt set with a pink floral paisley pattern, styled with a gold chain necklace, rectangular sunglasses, and a small drawstring pouch bag.",
+  "fabric": "Silk, metal",
+  "patterns": [
+   "floral",
+   "paisley"
+  ],
+  "Colors": [
+   {
+    "color_name": "Chocolate Brown",
+    "hex_code": "#5D3E30",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Hot Pink",
+    "hex_code": "#E75480",
+    "pantone_code": "17-2036 (Pink Flamb\u00e9)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Rod)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "11-0107 (Egret)"
+   }
+  ],
+  "theme": "Retro print sophistication",
+  "keywords": [
+   "pussy-bow blouse",
+   "maxi skirt",
+   "silk set",
+   "paisley print",
+   "long sleeves",
+   "contrasting cuffs",
+   "drawstring bag",
+   "chain necklace",
+   "rectangular sunglasses",
+   "column silhouette"
+  ],
+  "collection_keywords": [
+   "1970s inspiration",
+   "casual grandeur",
+   "daily elegance",
+   "reinterpretation",
+   "wrong colors",
+   "considered detail",
+   "visual texture",
+   "novelty"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57906c9bd1848e0121fe/master/pass/00024-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Brown micro-gingham trench coat with a spread collar and button closure, layered over a red, white, and navy geometric knit sweater, dark blue straight-leg trousers, and burgundy leather loafers, accessorized with a grey leather belt, silver chain necklace, silver stud earrings, and dark red eyeglasses.",
+  "fabric": "Wool blend (coat, trousers), knit wool (sweater), leather (belt, loafers), metal (necklace, earrings), acetate (eyeglasses)",
+  "patterns": [
+   "micro-gingham",
+   "geometric knit",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Brown",
+    "hex_code": "#8B572A",
+    "pantone_code": "18-1142 (Fudge)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#B22222",
+    "pantone_code": "19-1763 (Biking Red)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Navy Blue",
+    "hex_code": "#000080",
+    "pantone_code": "19-4010 (Dress Blues)"
+   },
+   {
+    "color_name": "Dark Blue",
+    "hex_code": "#2F4F4F",
+    "pantone_code": "19-4014 (Total Eclipse)"
+   },
+   {
+    "color_name": "Grey",
+    "hex_code": "#808080",
+    "pantone_code": "17-4402 (Storm Front)"
+   },
+   {
+    "color_name": "Burgundy",
+    "hex_code": "#800020",
+    "pantone_code": "19-1725 (Port Royale)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4500 (Silver Cloud)"
+   }
+  ],
+  "theme": "Refined Casual Layering",
+  "keywords": [
+   "trench coat",
+   "knit sweater",
+   "tailored trousers",
+   "loafers",
+   "spread collar",
+   "button closure",
+   "straight leg",
+   "layered look",
+   "chain necklace",
+   "eyeglasses"
+  ],
+  "collection_keywords": [
+   "daily elegance",
+   "simple yet deeply Italian",
+   "reimagine and reinterpret",
+   "without nostalgia",
+   "painstakingly considered detail",
+   "wrong colors"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c578c89d0f3f884ebd664/master/pass/00022-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Oversized olive green monogrammed zip-front jacket with a dark olive leather collar and matching straight-leg cropped trousers, styled with a floral silk headscarf, yellow-lens sunglasses, a crescent shoulder bag, burgundy ribbed socks, and high platform horsebit mules.",
+  "fabric": "Woven cotton blend (jacket, trousers, bag), leather (jacket collar, bag trim, mules), silk (headscarf), metal (sunglasses frame), plastic (sunglasses lenses), ribbed knit (socks)",
+  "patterns": [
+   "monogram",
+   "floral"
+  ],
+  "Colors": [
+   {
+    "color_name": "Olive Green",
+    "hex_code": "#5C6B4B",
+    "pantone_code": "17-0620 (Forest Biome)"
+   },
+   {
+    "color_name": "Dark Olive Leather",
+    "hex_code": "#4A4F3C",
+    "pantone_code": "18-0627 (Sycamore)"
+   },
+   {
+    "color_name": "Light Green",
+    "hex_code": "#A7C080",
+    "pantone_code": "14-0437 (Green Ash)"
+   },
+   {
+    "color_name": "Mellow Yellow",
+    "hex_code": "#D4D160",
+    "pantone_code": "13-0720 (Mellow Yellow)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#B89B5C",
+    "pantone_code": "16-0836 (Goldenrod)"
+   },
+   {
+    "color_name": "Burgundy",
+    "hex_code": "#8B1A2C",
+    "pantone_code": "19-1725 (Biking Red)"
+   }
+  ],
+  "theme": "Modern 70s Utility",
+  "keywords": [
+   "zip-front jacket",
+   "cropped trousers",
+   "monogram set",
+   "leather collar",
+   "silk headscarf",
+   "sunglasses",
+   "crescent bag",
+   "platform mules",
+   "horsebit detail",
+   "ribbed socks"
+  ],
+  "collection_keywords": [
+   "1970s",
+   "casual grandeur",
+   "daily elegance",
+   "wrong colors",
+   "reimagine and reinterpret",
+   "painstakingly considered detail",
+   "novelty"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c5795dfd9edba8d6a4b1b/master/pass/00027-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Long faux fur coat with horizontal chevron stripes and a wide notched lapel, worn open over a vibrant pink collared shirt and a black and white houndstooth mini skirt, accessorized with yellow-tinted rectangular sunglasses, a chunky gold chain necklace, and a brown suede and leather shoulder bag with a green and red web stripe and horsebit hardware.",
+  "fabric": "Faux fur, cotton, wool blend, suede, leather, metal, plastic",
+  "patterns": [
+   "chevron",
+   "houndstooth",
+   "web stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Rose Smoke",
+    "hex_code": "#D8C3C0",
+    "pantone_code": "14-1905 (Rose Smoke)"
+   },
+   {
+    "color_name": "Whisper White",
+    "hex_code": "#F8F8F8",
+    "pantone_code": "11-0701 (Whisper White)"
+   },
+   {
+    "color_name": "Pink Yarrow",
+    "hex_code": "#FC0FC0",
+    "pantone_code": "17-2036 (Pink Yarrow)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Lime Punch",
+    "hex_code": "#D4EE4F",
+    "pantone_code": "13-0530 (Lime Punch)"
+   },
+   {
+    "color_name": "Gold Fusion",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Gold Fusion)"
+   },
+   {
+    "color_name": "Camel",
+    "hex_code": "#C19A6B",
+    "pantone_code": "16-1331 (Camel)"
+   },
+   {
+    "color_name": "Chocolate Truffle",
+    "hex_code": "#4F352B",
+    "pantone_code": "19-1220 (Chocolate Truffle)"
+   },
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#228B22",
+    "pantone_code": "19-5513 (Forest Green)"
+   },
+   {
+    "color_name": "True Red",
+    "hex_code": "#CB0020",
+    "pantone_code": "19-1664 (True Red)"
+   }
+  ],
+  "theme": "Eclectic Retro Glamour",
+  "keywords": [
+   "faux fur coat",
+   "long coat",
+   "chevron pattern",
+   "collared shirt",
+   "mini skirt",
+   "houndstooth",
+   "shoulder bag",
+   "horsebit detail",
+   "sunglasses",
+   "chain necklace",
+   "layered"
+  ],
+  "collection_keywords": [
+   "70s history",
+   "casual grandeur",
+   "daily elegance",
+   "wrong colors",
+   "saccharine shades",
+   "reimagine and reinterpret"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57966c9bd1848e012201/master/pass/00028-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Double-breasted sage green suit with peak lapels and flap pockets, paired with a matching collared shirt, a patterned dark green tie, a silver rectangular buckle belt, and square-frame gold sunglasses.",
+  "fabric": "Wool blend, cotton, silk, metal",
+  "patterns": [
+   "solid",
+   "geometric"
+  ],
+  "Colors": [
+   {
+    "color_name": "Sage Green",
+    "hex_code": "#919B87",
+    "pantone_code": "16-0110 (Sage)"
+   },
+   {
+    "color_name": "Evergreen",
+    "hex_code": "#5B6E5B",
+    "pantone_code": "18-0426 (Evergreen)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "15-1050 (Gold)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Modern Ivy League tailoring",
+  "keywords": [
+   "double-breasted suit",
+   "peak lapels",
+   "flap pockets",
+   "tailored trousers",
+   "collared shirt",
+   "necktie",
+   "belt",
+   "square-frame sunglasses",
+   "monochromatic styling",
+   "menswear"
+  ],
+  "collection_keywords": [
+   "1970s",
+   "casual grandeur",
+   "daily elegance",
+   "reinforcing codes",
+   "sharply tailored",
+   "tonally harmonic Ivy League",
+   "painstakingly considered detail",
+   "wrong colors"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c5791d82f5965b9a35bb6/master/pass/00026-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Cropped pink leather bomber jacket with flap chest pockets and an elasticated hem is paired with a matching knee-length cargo skirt featuring multiple flap pockets, styled with a floral headscarf, rimless sunglasses, gold hoop earrings, and burgundy knee-high boots.",
+  "fabric": "leather",
+  "patterns": [
+   "floral",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dusty Pink",
+    "hex_code": "#D8A7B0",
+    "pantone_code": "13-2805 (Pale Dogwood)"
+   },
+   {
+    "color_name": "Burgundy",
+    "hex_code": "#7B1E2B",
+    "pantone_code": "19-1725 (Biking Red)"
+   },
+   {
+    "color_name": "Deep Rose",
+    "hex_code": "#C0526B",
+    "pantone_code": "18-1655 (Rhubarb)"
+   },
+   {
+    "color_name": "Fiesta Orange",
+    "hex_code": "#E95C4B",
+    "pantone_code": "17-1563 (Fiesta)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0947 (Golden Rod)"
+   },
+   {
+    "color_name": "Amber",
+    "hex_code": "#F2C75B",
+    "pantone_code": "14-0848 (Golden Glow)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Soft Utility",
+  "keywords": [
+   "leather bomber jacket",
+   "cargo skirt",
+   "cropped jacket",
+   "utility pockets",
+   "knee-high boots",
+   "floral headscarf",
+   "rimless sunglasses",
+   "gold hoop earrings",
+   "shoulder epaulets",
+   "horsebit detail"
+  ],
+  "collection_keywords": [
+   "1970s inspiration",
+   "daily elegance",
+   "reinterpretation",
+   "wrong colors",
+   "archival floral",
+   "militaria",
+   "considered detail",
+   "visual texture"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c5799ce0e510d410d62dd/master/pass/00030-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "A long-sleeved, loose-fitting silk blouse and matching midi skirt with a black elastic waistband, paired with a coordinating silk headscarf and drawstring pouch bag, all featuring a green floral and geometric print.",
+  "fabric": "silk",
+  "patterns": [
+   "floral",
+   "geometric",
+   "bandana print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Olive Green",
+    "hex_code": "#555C42",
+    "pantone_code": "18-0625 (Kalamata)"
+   },
+   {
+    "color_name": "Chartreuse",
+    "hex_code": "#C6D142",
+    "pantone_code": "14-0452 (Lime Punch)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Neon Yellow",
+    "hex_code": "#DFFF00",
+    "pantone_code": "13-0650 (Spectra Yellow)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Rod)"
+   }
+  ],
+  "theme": "Modern Heritage Print",
+  "keywords": [
+   "silk blouse",
+   "midi skirt",
+   "headscarf",
+   "turban",
+   "drawstring bag",
+   "pouch bag",
+   "floral print",
+   "geometric print",
+   "matching set",
+   "black waistband",
+   "gold earrings"
+  ],
+  "collection_keywords": [
+   "1970s inspiration",
+   "casual grandeur",
+   "daily elegance",
+   "reinterpretation",
+   "wrong colors",
+   "archival floral",
+   "considered detail",
+   "visual texture"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c58721a8f9d5e4d3f9692/master/pass/00030-gucci-pre-fall-2025-details-credit-brand.jpg|https://assets.vogue.com/photos/675c5799ce0e510d410d62dd/master/pass/00030-gucci-pre-fall-2025-credit-brand.jpg": {
+  "image_description": "A silk headscarf and matching long-sleeved top with a floral and border print, accessorized with a coordinating drawstring bag.",
+  "fabric": "silk",
+  "patterns": [
+   "floral",
+   "geometric border"
+  ],
+  "Colors": [
+   {
+    "color_name": "Deep Lichen Green",
+    "hex_code": "#4A533A",
+    "pantone_code": "19-0417 (Deep Lichen Green)"
+   },
+   {
+    "color_name": "Acid Lime",
+    "hex_code": "#C8E337",
+    "pantone_code": "13-0532 (Acid Lime)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Archival floral reinterpretation",
+  "keywords": [
+   "headscarf",
+   "silk top",
+   "floral print",
+   "border print",
+   "drawstring bag",
+   "matching print",
+   "high neck",
+   "black belt"
+  ],
+  "collection_keywords": [
+   "1970s history",
+   "casual grandeur",
+   "daily elegance",
+   "deeply Italian",
+   "reinforcing codes",
+   "archival floral",
+   "reconfigured patterns",
+   "considered detail"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57971a8f9d5e4d3f968d/master/pass/00029-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Olive green single-breasted collared jacket with flap pockets, paired with brown micro-check wide-leg cropped trousers, burgundy platform horsebit loafers, a large olive green pebbled leather hobo bag with horsebit hardware, and gold-tone rectangular glasses.",
+  "fabric": "wool, leather, knit, metal",
+  "patterns": [
+   "micro-check",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Olive Green",
+    "hex_code": "#6B705E",
+    "pantone_code": "17-0625 (Kalamata)"
+   },
+   {
+    "color_name": "Brown",
+    "hex_code": "#5C4B40",
+    "pantone_code": "19-1118 (Chocolate Truffle)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#DCD7C9",
+    "pantone_code": "12-0703 (Pristine)"
+   },
+   {
+    "color_name": "Burgundy",
+    "hex_code": "#800020",
+    "pantone_code": "19-1725 (Biking Red)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0948 (Mustard Gold)"
+   }
+  ],
+  "theme": "Refined Casual with Equestrian Accents",
+  "keywords": [
+   "collared jacket",
+   "flap pockets",
+   "wide-leg trousers",
+   "cropped hem",
+   "platform heels",
+   "block heel",
+   "horsebit loafers",
+   "hobo bag",
+   "pebbled leather",
+   "rectangular glasses"
+  ],
+  "collection_keywords": [
+   "casual grandeur",
+   "daily elegance",
+   "wrong colors",
+   "sharply tailored",
+   "micro-gingham",
+   "richly finished leathers",
+   "painstakingly considered detail"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c579aeedbb8fec5c20cfb/master/pass/00031-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "An olive green collared shirt jacket with extensive chartreuse and mellow yellow floral embroidery is paired with dark forest green tailored shorts, olive green ribbed socks with red and evergreen stripes, black chunky horsebit loafers, and a beige GG monogram shoulder bag with red and evergreen web stripe, accessorized with gunmetal sunglasses.",
+  "fabric": "Embroidered cotton blend (jacket), woven cotton blend (shorts), ribbed knit (socks), leather (loafers, bag trim), coated canvas (bag), metal (sunglasses frame, bag hardware, loafer hardware), tinted plastic (sunglasses lenses), fabric (bag web stripe).",
+  "patterns": [
+   "floral",
+   "stripe",
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "Olive Green",
+    "hex_code": "#6B705C",
+    "pantone_code": "18-0622 (Kalamata)"
+   },
+   {
+    "color_name": "Chartreuse",
+    "hex_code": "#C2D27F",
+    "pantone_code": "13-0630 (Chartreuse)"
+   },
+   {
+    "color_name": "Mellow Yellow",
+    "hex_code": "#F0E4A4",
+    "pantone_code": "13-0720 (Mellow Yellow)"
+   },
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#344031",
+    "pantone_code": "19-0622 (Forest Night)"
+   },
+   {
+    "color_name": "True Red",
+    "hex_code": "#BF212F",
+    "pantone_code": "18-1660 (True Red)"
+   },
+   {
+    "color_name": "Evergreen",
+    "hex_code": "#0A483D",
+    "pantone_code": "19-5513 (Evergreen)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#D2B48C",
+    "pantone_code": "15-1217 (Sand)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#36221A",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Goldfinch)"
+   },
+   {
+    "color_name": "Gunmetal",
+    "hex_code": "#5A5A5A",
+    "pantone_code": "19-3900 (Phantom)"
+   }
+  ],
+  "theme": "Patterned Leisure",
+  "keywords": [
+   "shirt jacket",
+   "embroidered",
+   "tailored shorts",
+   "chunky loafers",
+   "horsebit",
+   "GG monogram bag",
+   "web stripe",
+   "ribbed socks",
+   "sunglasses",
+   "boxy silhouette"
+  ],
+  "collection_keywords": [
+   "casual grandeur",
+   "daily elegance",
+   "reimagine and reinterpret",
+   "floral pattern",
+   "painstakingly considered detail",
+   "visual texture",
+   "richly finished leathers"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c579bd8e6c69bf6739e2d/master/pass/00032-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Oversized yellow faux fur coat with a wide collar, belted waist, and monogrammed cuffs, styled with black cat-eye sunglasses and gold hoop earrings.",
+  "fabric": "faux fur, silk, metal",
+  "patterns": [
+   "solid",
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "Daffodil Yellow",
+    "hex_code": "#FFF000",
+    "pantone_code": "12-0736 (Daffodil)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#DAA520",
+    "pantone_code": "16-0836 (Goldenrod)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Vibrant Glamour",
+  "keywords": [
+   "faux fur coat",
+   "oversized",
+   "belted",
+   "wide collar",
+   "monogram cuffs",
+   "cat-eye sunglasses",
+   "gold hoop earrings",
+   "statement outerwear",
+   "luxury"
+  ],
+  "collection_keywords": [
+   "wrong colors",
+   "saccharine shades",
+   "daily elegance",
+   "beautiful things",
+   "reimagine and reinterpret",
+   "without nostalgia",
+   "visual texture",
+   "painstakingly considered detail"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c579d0681ba865db1d3fa/master/pass/00033-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Oversized light green knit cardigan with ribbed V-neck and cuffs, featuring a chest pocket with embroidered Gucci logo, layered over a matching collared polo shirt, paired with tailored micro-gingham trousers and a dark brown leather belt, accessorized with tortoiseshell glasses and a silver earring.",
+  "fabric": "knit, woven fabric, leather, acetate, metal",
+  "patterns": [
+   "micro-gingham",
+   "check"
+  ],
+  "Colors": [
+   {
+    "color_name": "Mint Green",
+    "hex_code": "#C8DBCF",
+    "pantone_code": "13-0117 (Celadon Tint)"
+   },
+   {
+    "color_name": "Light Grey-Brown",
+    "hex_code": "#C7C4BE",
+    "pantone_code": "14-1118 (Pumice Stone)"
+   },
+   {
+    "color_name": "Dark Olive Green",
+    "hex_code": "#5A6B5B",
+    "pantone_code": "18-0622 (Forest Biome)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#4A302A",
+    "pantone_code": "19-1118 (Chocolate Truffle)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   },
+   {
+    "color_name": "Tortoiseshell",
+    "hex_code": "#A0522D",
+    "pantone_code": "18-1154 (Russet Brown)"
+   }
+  ],
+  "theme": "Casual elegance, modern menswear",
+  "keywords": [
+   "knit cardigan",
+   "polo shirt",
+   "tailored trousers",
+   "leather belt",
+   "oversized silhouette",
+   "dropped shoulder",
+   "ribbed trim",
+   "micro-gingham",
+   "tortoiseshell glasses",
+   "silver earring"
+  ],
+  "collection_keywords": [
+   "daily elegance",
+   "simple yet deeply Italian",
+   "beautiful things designed to be worn",
+   "reinforcing codes",
+   "painstakingly considered detail",
+   "without nostalgia"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c579f21157c96154c176c/master/pass/00034-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Oversized grey-blue double-breasted coat with a wide white high-neck collar and gold buttons, styled with wide-leg micro-gingham trousers featuring split hems, burgundy studded loafers, and round black sunglasses.",
+  "fabric": "Felted wool, cotton, wool blend, leather, metal",
+  "patterns": [
+   "solid",
+   "stripe",
+   "micro-gingham"
+  ],
+  "Colors": [
+   {
+    "color_name": "Muted Blue-Grey",
+    "hex_code": "#6A7B8B",
+    "pantone_code": "18-4006 (Phantom)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Light Blue",
+    "hex_code": "#C0D0E0",
+    "pantone_code": "13-4108 (Clearwater)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#C9A02F",
+    "pantone_code": "16-0947 (Golden Rod)"
+   },
+   {
+    "color_name": "Grey",
+    "hex_code": "#808080",
+    "pantone_code": "17-4014 (Quiet Shade)"
+   },
+   {
+    "color_name": "Burgundy",
+    "hex_code": "#800020",
+    "pantone_code": "19-1536 (Port Royale)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#A0A0A0",
+    "pantone_code": "16-4000 (Silver Cloud)"
+   }
+  ],
+  "theme": "Modern 70s casual grandeur",
+  "keywords": [
+   "oversized coat",
+   "double-breasted",
+   "wide collar",
+   "high-neck shirt",
+   "patch pockets",
+   "wide-leg trousers",
+   "split hem",
+   "micro-gingham",
+   "studded loafers",
+   "round sunglasses"
+  ],
+  "collection_keywords": [
+   "1970s inspiration",
+   "casual grandeur",
+   "daily elegance",
+   "reimagine and reinterpret",
+   "micro-gingham",
+   "split hem",
+   "considered detail"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c58748309397f22273f43/master/pass/00034-gucci-pre-fall-2025-details-credit-brand.jpg|https://assets.vogue.com/photos/675c579f21157c96154c176c/master/pass/00034-gucci-pre-fall-2025-credit-brand.jpg": {
+  "image_description": "Oversized grey-blue double-breasted coat with a high contrasting white stand collar, wide cuffed sleeves revealing a striped lining, gold buttons, and a back strap detail, worn over checked trousers.",
+  "fabric": "wool blend, cotton, metal",
+  "patterns": [
+   "stripe",
+   "micro-check"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dark Blue-Grey",
+    "hex_code": "#4A555C",
+    "pantone_code": "19-4008 (Phantom)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0947 (Golden Rod)"
+   },
+   {
+    "color_name": "Light Grey",
+    "hex_code": "#D3D3D3",
+    "pantone_code": "13-4104 (Light Gray)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Contemporary oversized outerwear",
+  "keywords": [
+   "double-breasted coat",
+   "oversized silhouette",
+   "stand collar",
+   "contrasting collar",
+   "cuffed sleeves",
+   "gold buttons",
+   "raglan sleeve",
+   "checked trousers",
+   "sunglasses",
+   "earrings"
+  ],
+  "collection_keywords": [
+   "daily elegance",
+   "broadly-proportioned",
+   "painstakingly considered detail",
+   "silhouette and visual texture",
+   "reimagine and reinterpret",
+   "without nostalgia",
+   "sharply tailored"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c579fd82f5965b9a35bb8/master/pass/00035-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Olive green embossed leather bomber jacket with a cream shearling collar, paired with olive tailored trousers, a matching belt, rectangular aviator sunglasses, a silver hoop earring, and a GG monogram canvas duffle bag with a red and green web stripe.",
+  "fabric": "leather, shearling, ribbed knit, wool blend, coated canvas, metal",
+  "patterns": [
+   "embossed GG logo",
+   "GG monogram",
+   "web stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Olive Green",
+    "hex_code": "#5C6B4D",
+    "pantone_code": "18-0521 (Olive Night)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "12-0304 (Vanilla Ice)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#4A3C30",
+    "pantone_code": "19-1116 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#D2C7B4",
+    "pantone_code": "13-1008 (Oatmeal)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#B00000",
+    "pantone_code": "19-1664 (Chinese Red)"
+   },
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#004B00",
+    "pantone_code": "19-5513 (Forest Green)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Rod)"
+   },
+   {
+    "color_name": "Dark Grey",
+    "hex_code": "#4A4A4A",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Refined utilitarian",
+  "keywords": [
+   "bomber jacket",
+   "shearling collar",
+   "embossed leather",
+   "tailored trousers",
+   "duffle bag",
+   "GG monogram",
+   "web stripe",
+   "aviator sunglasses",
+   "silver earring",
+   "utilitarian"
+  ],
+  "collection_keywords": [
+   "1970s inspiration",
+   "casual grandeur",
+   "daily elegance",
+   "reinforcing codes",
+   "considered detail",
+   "visual texture",
+   "precise design"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57a1ed09f68e6ecd6708/master/pass/00036-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "A tailored single-breasted blazer and matching mini skirt in a green GG monogram jacquard are layered over a ribbed V-neck top, styled with a dark brown suede Boston bag featuring a web stripe, black patent leather chunky heeled horsebit loafers, rectangular sunglasses, a chunky gold chain necklace, and gold hoop earrings.",
+  "fabric": "Jacquard, ribbed knit, suede, leather, patent leather, metal, plastic",
+  "patterns": [
+   "monogram",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Olive Night",
+    "hex_code": "#54523F",
+    "pantone_code": "18-0625 (Olive Night)"
+   },
+   {
+    "color_name": "Egret",
+    "hex_code": "#F0EAD6",
+    "pantone_code": "11-0105 (Egret)"
+   },
+   {
+    "color_name": "Deep Lichen Green",
+    "hex_code": "#4A5240",
+    "pantone_code": "19-0622 (Deep Lichen Green)"
+   },
+   {
+    "color_name": "Chocolate Lab",
+    "hex_code": "#4F3222",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "True Red",
+    "hex_code": "#BF0A30",
+    "pantone_code": "19-1763 (True Red)"
+   },
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#014421",
+    "pantone_code": "19-5513 (Forest Green)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#1C1C1C",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Golden Rod",
+    "hex_code": "#DAA520",
+    "pantone_code": "16-0947 (Golden Rod)"
+   }
+  ],
+  "theme": "Modern heritage tailoring",
+  "keywords": [
+   "blazer",
+   "mini skirt",
+   "matching set",
+   "GG monogram",
+   "V-neck top",
+   "ribbed knit",
+   "Boston bag",
+   "suede bag",
+   "web stripe",
+   "chunky loafers",
+   "horsebit",
+   "patent leather",
+   "sunglasses",
+   "chain necklace",
+   "hoop earrings"
+  ],
+  "collection_keywords": [
+   "1970s history",
+   "casual grandeur",
+   "daily elegance",
+   "reinforcing codes",
+   "heritage brands",
+   "visual texture"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57a56a40bf50d90dcdc4/master/pass/00037-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Cropped olive green cotton twill military jacket with shoulder epaulets and chest flap pockets, paired with a matching midi cargo skirt featuring multiple flap pockets and a front split, styled with olive green leather knee-high boots, gold-tone hoop earrings, a gold chain necklace, and rectangular sunglasses.",
+  "fabric": "cotton twill, leather, metal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Olive Green",
+    "hex_code": "#6C7A5E",
+    "pantone_code": "18-0625 (Kalamata)"
+   },
+   {
+    "color_name": "Deep Olive Green",
+    "hex_code": "#5B6A4E",
+    "pantone_code": "19-0622 (Forest Biome)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Rod)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Utilitarian Chic",
+  "keywords": [
+   "cropped jacket",
+   "midi cargo skirt",
+   "shoulder epaulets",
+   "flap pockets",
+   "knee-high boots",
+   "block heel",
+   "gold hoop earrings",
+   "rectangular sunglasses",
+   "utilitarian silhouette"
+  ],
+  "collection_keywords": [
+   "broadly-proportioned militaria",
+   "powerfully colored militaria",
+   "casual grandeur",
+   "daily elegance",
+   "reimagined elements",
+   "without nostalgia",
+   "painstakingly considered detail"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57a4efba9ced4d9d09fa/master/pass/00038-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "White lace long-sleeve top and matching midi skirt set with pink floral embroidery, styled with a green headscarf, gold chain choker, tortoiseshell cat-eye sunglasses, a dark green top-handle bag, and burgundy knee-high boots.",
+  "fabric": "Lace, silk, leather, metal",
+  "patterns": [
+   "floral"
+  ],
+  "Colors": [
+   {
+    "color_name": "Cream",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Pink",
+    "hex_code": "#FFC0CB",
+    "pantone_code": "13-2005 (Pink Dogwood)"
+   },
+   {
+    "color_name": "Olive Green",
+    "hex_code": "#6B8E23",
+    "pantone_code": "17-0625 (Olive Green)"
+   },
+   {
+    "color_name": "Fuchsia",
+    "hex_code": "#C71585",
+    "pantone_code": "18-2326 (Fuchsia Rose)"
+   },
+   {
+    "color_name": "Burgundy",
+    "hex_code": "#800020",
+    "pantone_code": "19-1725 (Biking Red)"
+   },
+   {
+    "color_name": "Dark Green",
+    "hex_code": "#006400",
+    "pantone_code": "19-0419 (Forest Night)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0947 (Golden Rod)"
+   },
+   {
+    "color_name": "Brown",
+    "hex_code": "#A52A2A",
+    "pantone_code": "19-1118 (Chocolate Brown)"
+   }
+  ],
+  "theme": "Eclectic Romanticism",
+  "keywords": [
+   "Lace two-piece set",
+   "long-sleeve top",
+   "midi skirt",
+   "floral embroidery",
+   "headscarf",
+   "gold chain choker",
+   "top-handle bag",
+   "knee-high boots",
+   "scalloped hem",
+   "cat-eye sunglasses"
+  ],
+  "collection_keywords": [
+   "wrong colors",
+   "daily elegance",
+   "reimagine and reinterpret",
+   "without nostalgia",
+   "fatto a mano and craft",
+   "richly finished leathers",
+   "painstakingly considered detail"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c58768ef0ea297ee6578b/master/pass/00037-gucci-pre-fall-2025-details-credit-brand.jpg|https://assets.vogue.com/photos/675c57a56a40bf50d90dcdc4/master/pass/00037-gucci-pre-fall-2025-credit-brand.jpg": {
+  "image_description": "Cropped olive green cotton utility jacket with a pointed collar, shoulder epaulets, two chest flap pockets, an elasticated hem, and embroidered 'GUCCI' branding on the chest, worn with a matching cargo skirt and accessorized with gold hoop earrings, a gold chain necklace, and square-frame sunglasses.",
+  "fabric": "cotton, metal, acetate",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Olive Green",
+    "hex_code": "#6B7B5E",
+    "pantone_code": "18-0625 (Olive Green)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Rod)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Militaria",
+  "keywords": [
+   "cropped jacket",
+   "utility jacket",
+   "cargo pockets",
+   "epaulets",
+   "elasticated hem",
+   "pointed collar",
+   "Gucci branding",
+   "gold hoop earrings",
+   "gold chain necklace",
+   "square-frame sunglasses"
+  ],
+  "collection_keywords": [
+   "militaria",
+   "daily elegance",
+   "beautiful things designed to be worn",
+   "without nostalgia",
+   "reinforcing codes",
+   "reimagine and reinterpret",
+   "powerfully colored",
+   "broadly-proportioned"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57aaefba9ced4d9d09fc/master/pass/00040-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Lavender longline trench coat with a wide collar, concealed button placket, and large patch pockets, worn over a matching lavender mini skirt and ribbed knit top, styled with a floral silk headscarf, rectangular tinted sunglasses, chunky gold chain necklace, gold hoop earrings, a dark green patent leather shoulder bag with silver hardware, and dark green knee-high leather boots.",
+  "fabric": "Cotton twill, ribbed knit, silk, patent leather, leather, metal",
+  "patterns": [
+   "solid",
+   "floral"
+  ],
+  "Colors": [
+   {
+    "color_name": "Lavender",
+    "hex_code": "#C8BFE7",
+    "pantone_code": "14-3903 (Lilac Sachet)"
+   },
+   {
+    "color_name": "Dark Green",
+    "hex_code": "#3A4D39",
+    "pantone_code": "19-0323 (Deep Lichen Green)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0947 (Golden Rod)"
+   },
+   {
+    "color_name": "Orange",
+    "hex_code": "#E67E22",
+    "pantone_code": "17-1464 (Flame)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C0392B",
+    "pantone_code": "18-1660 (Fiery Red)"
+   },
+   {
+    "color_name": "Yellow",
+    "hex_code": "#F1C40F",
+    "pantone_code": "13-0755 (Daffodil)"
+   },
+   {
+    "color_name": "Light Brown",
+    "hex_code": "#D2B48C",
+    "pantone_code": "15-1234 (Camel)"
+   }
+  ],
+  "theme": "Pastel Power Dressing",
+  "keywords": [
+   "trench coat",
+   "mini skirt",
+   "knee-high boots",
+   "headscarf",
+   "sunglasses",
+   "gold chain necklace",
+   "patent leather handbag",
+   "oversized silhouette",
+   "pastel styling",
+   "monochromatic look"
+  ],
+  "collection_keywords": [
+   "daily elegance",
+   "reimagine and reinterpret",
+   "wrong colors",
+   "floral scarf",
+   "painstakingly considered detail",
+   "novelty"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57aa6c9bd1848e012203/master/pass/00042-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Cropped lilac ribbed knit cardigan with yellow trim over a beige knit camisole, paired with dark olive wide-leg trousers, a black leather belt with a gold GG buckle, a tan leather bucket bag, gold chain choker, gold hoop earrings, tinted rectangular sunglasses, and neon yellow sneakers.",
+  "fabric": "ribbed knit, knit, woven suiting fabric, leather, gold-tone metal, synthetic",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Lilac",
+    "hex_code": "#C8BFE7",
+    "pantone_code": "14-3812 (Lilac Sachet)"
+   },
+   {
+    "color_name": "Pale Yellow",
+    "hex_code": "#F0E68C",
+    "pantone_code": "12-0727 (Mellow Yellow)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#D2B48C",
+    "pantone_code": "13-1009 (Oatmeal)"
+   },
+   {
+    "color_name": "Dark Olive",
+    "hex_code": "#4B5320",
+    "pantone_code": "19-0822 (Forest Night)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Tan Brown",
+    "hex_code": "#A0522D",
+    "pantone_code": "16-1334 (Gingerbread)"
+   },
+   {
+    "color_name": "Neon Yellow",
+    "hex_code": "#CCFF00",
+    "pantone_code": "13-0650 (Spectra Yellow)"
+   }
+  ],
+  "theme": "Playful casual elegance",
+  "keywords": [
+   "cropped cardigan",
+   "ribbed knit",
+   "knit camisole",
+   "wide-leg trousers",
+   "GG buckle belt",
+   "leather bucket bag",
+   "horsebit detail",
+   "neon sneakers",
+   "gold jewelry",
+   "tinted sunglasses"
+  ],
+  "collection_keywords": [
+   "wrong colors",
+   "saccharine shades",
+   "daily elegance",
+   "without nostalgia",
+   "novelty",
+   "painstakingly considered detail",
+   "silhouette and visual texture"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57a98309397f22273f3f/master/pass/00041-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Cropped lilac faux fur jacket with a geometric pattern is layered over a light blue ribbed henley top, paired with olive green wide-leg trousers featuring split hems, pink sneakers, a black leather belt with a gold GG buckle, a nude leather horsebit bag, a gold chain necklace, a gold chain bracelet, and square-frame sunglasses.",
+  "fabric": "Faux fur, ribbed cotton knit, wool blend, leather, metal, plastic",
+  "patterns": [
+   "geometric",
+   "abstract"
+  ],
+  "Colors": [
+   {
+    "color_name": "Lilac",
+    "hex_code": "#C8A2C8",
+    "pantone_code": "16-3205 (Lilac Sachet)"
+   },
+   {
+    "color_name": "Lemon Yellow",
+    "hex_code": "#FDFD96",
+    "pantone_code": "12-0736 (Lemon Drop)"
+   },
+   {
+    "color_name": "Chocolate Brown",
+    "hex_code": "#5C4033",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Light Blue-Grey",
+    "hex_code": "#B0C4DE",
+    "pantone_code": "14-4203 (Quiet Shade)"
+   },
+   {
+    "color_name": "Olive Green",
+    "hex_code": "#6B8E23",
+    "pantone_code": "18-0625 (Kalamata)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Antique Gold)"
+   },
+   {
+    "color_name": "Pale Blush",
+    "hex_code": "#E0B0B0",
+    "pantone_code": "13-1009 (Pale Blush)"
+   },
+   {
+    "color_name": "Pink",
+    "hex_code": "#FFC0CB",
+    "pantone_code": "16-2124 (Pink Lady)"
+   },
+   {
+    "color_name": "Lime Green",
+    "hex_code": "#C7EA46",
+    "pantone_code": "13-0340 (Lime Punch)"
+   }
+  ],
+  "theme": "Vibrant Eclectic Casual",
+  "keywords": [
+   "cropped jacket",
+   "faux fur",
+   "geometric pattern",
+   "ribbed knit top",
+   "henley neckline",
+   "wide-leg trousers",
+   "split hem",
+   "sneakers",
+   "GG belt",
+   "horsebit bag",
+   "chain necklace",
+   "chain bracelet",
+   "sunglasses",
+   "layered"
+  ],
+  "collection_keywords": [
+   "wrong colors",
+   "daily elegance",
+   "reimagine and reinterpret",
+   "without nostalgia",
+   "painstakingly considered detail",
+   "novelty",
+   "split running up the seam",
+   "contemporary against historic"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57ae1a8f9d5e4d3f9690/master/pass/00044-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Black shiny trench coat with wide lapels and double-breasted closure, worn over a black pussy-bow blouse and pinstripe trousers, accessorized with a black patterned headscarf, octagonal sunglasses, and a black leather belt with a silver GG buckle.",
+  "fabric": "Coated fabric, silk, wool blend, leather, metal",
+  "patterns": [
+   "floral",
+   "pinstripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Modern Noir Elegance",
+  "keywords": [
+   "trench coat",
+   "double-breasted",
+   "wide lapels",
+   "pussy-bow blouse",
+   "pinstripe trousers",
+   "headscarf",
+   "octagonal sunglasses",
+   "leather belt",
+   "GG buckle",
+   "sleek silhouette"
+  ],
+  "collection_keywords": [
+   "1970s inspiration",
+   "daily elegance",
+   "reimagine and reinterpret",
+   "sharply tailored",
+   "painstakingly considered detail",
+   "richly finished leathers",
+   "without nostalgia",
+   "casual grandeur"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c587689d0f3f884ebd668/master/pass/00043-gucci-pre-fall-2025-details-credit-brand.jpg|https://assets.vogue.com/photos/675c57ae861eb3f79c193f1e/master/pass/00043-gucci-pre-fall-2025-credit-brand.jpg": {
+  "image_description": "A black glossy shoulder bag with gold hardware is carried, paired with a light grey crew-neck knit sweater, a dark grey knit vest, a patterned silk headscarf, and yellow-tinted sunglasses.",
+  "fabric": "silk",
+  "patterns": [
+   "abstract",
+   "strap motif"
+  ],
+  "Colors": [
+   {
+    "color_name": "Bright White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Golden Rod",
+    "hex_code": "#B8860B",
+    "pantone_code": "16-1133 (Golden Rod)"
+   },
+   {
+    "color_name": "Light Grey",
+    "hex_code": "#D3D3D3",
+    "pantone_code": "13-4104 (Nimbus Cloud)"
+   },
+   {
+    "color_name": "Dark Grey",
+    "hex_code": "#696969",
+    "pantone_code": "18-4006 (Phantom)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0836 (Gold)"
+   },
+   {
+    "color_name": "Pale Yellow",
+    "hex_code": "#FFFACD",
+    "pantone_code": "12-0727 (Pale Yellow)"
+   }
+  ],
+  "theme": "Modern daily elegance",
+  "keywords": [
+   "shoulder bag",
+   "headscarf",
+   "knit sweater",
+   "knit vest",
+   "sunglasses",
+   "gold chain necklace",
+   "patent leather bag",
+   "cropped vest",
+   "wet-look hair",
+   "dark lip"
+  ],
+  "collection_keywords": [
+   "casual grandeur",
+   "daily elegance",
+   "reimagine and reinterpret",
+   "without nostalgia",
+   "painstakingly considered detail",
+   "novelty"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57ae861eb3f79c193f1e/master/pass/00043-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Light grey crewneck sweater and cropped button-front cardigan layered over dark grey wide-leg trousers, cinched with a black leather belt, styled with a silk headscarf, rectangular sunglasses, a gold chain necklace, black leather loafers, and a black leather shoulder bag.",
+  "fabric": "Wool knit, silk, wool blend, leather, metal",
+  "patterns": [
+   "solid",
+   "abstract geometric"
+  ],
+  "Colors": [
+   {
+    "color_name": "Silver Cloud",
+    "hex_code": "#BFC4C7",
+    "pantone_code": "14-4107 (Silver Cloud)"
+   },
+   {
+    "color_name": "Anthracite",
+    "hex_code": "#3C424B",
+    "pantone_code": "19-3909 (Anthracite)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Antique Gold",
+    "hex_code": "#C8A76B",
+    "pantone_code": "16-0836 (Antique Gold)"
+   },
+   {
+    "color_name": "Dusty Olive",
+    "hex_code": "#80966F",
+    "pantone_code": "16-0532 (Dusty Olive)"
+   },
+   {
+    "color_name": "Nimbus Cloud",
+    "hex_code": "#C9D2D4",
+    "pantone_code": "13-4104 (Nimbus Cloud)"
+   },
+   {
+    "color_name": "Coffee Bean",
+    "hex_code": "#705842",
+    "pantone_code": "18-1018 (Coffee Bean)"
+   },
+   {
+    "color_name": "Dark Sapphire",
+    "hex_code": "#2E3E4B",
+    "pantone_code": "19-4028 (Dark Sapphire)"
+   }
+  ],
+  "theme": "Understated everyday elegance with 70s inspired accessories.",
+  "keywords": [
+   "Crewneck sweater",
+   "cropped cardigan",
+   "wide-leg trousers",
+   "leather belt",
+   "loafers",
+   "silk headscarf",
+   "rectangular sunglasses",
+   "chain necklace",
+   "shoulder bag",
+   "layering"
+  ],
+  "collection_keywords": [
+   "1970s history",
+   "casual grandeur",
+   "daily elegance",
+   "simple yet Italian",
+   "beautiful things",
+   "sharply tailored",
+   "broadly-proportioned"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57ae6c9bd1848e012205/master/pass/00045-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Black double-breasted coat with peak lapels, gold-tone buttons, and flap pockets, styled with cat-eye sunglasses, a chunky gold chain necklace, gold hoop earrings, black leather gloves, a black leather shoulder bag, black tights, and two-tone horsebit loafers.",
+  "fabric": "wool",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Rod)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "12-0304 (Vanilla Ice)"
+   },
+   {
+    "color_name": "Dark Green",
+    "hex_code": "#0A1C0A",
+    "pantone_code": "19-0303 (Black Forest)"
+   }
+  ],
+  "theme": "Elegant heritage",
+  "keywords": [
+   "double-breasted coat",
+   "peak lapel",
+   "flap pockets",
+   "gold-tone buttons",
+   "cat-eye sunglasses",
+   "chain necklace",
+   "hoop earrings",
+   "leather gloves",
+   "shoulder bag",
+   "horsebit loafers"
+  ],
+  "collection_keywords": [
+   "daily elegance",
+   "reinforcing codes",
+   "heritage brands",
+   "painstakingly considered detail",
+   "richly finished leathers"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57a5ce0e510d410d62df/master/pass/00039-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Fitted olive green crop top with square neckline and spaghetti straps, paired with a matching high-waisted midi skirt, both featuring tonal floral appliqu\u00e9s, styled with a structured olive green top-handle bag, pearl choker, gold earrings, and oval sunglasses.",
+  "fabric": "Matte woven fabric, leather, pearls, gold-tone metal, plastic",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Olive Green",
+    "hex_code": "#5C6B50",
+    "pantone_code": "18-0620 (Deep Lichen Green)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Harvest Gold)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "12-0713 (Egret)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Modern minimalist with archival details",
+  "keywords": [
+   "crop top",
+   "midi skirt",
+   "tonal floral appliqu\u00e9",
+   "fitted silhouette",
+   "square neckline",
+   "spaghetti straps",
+   "top-handle bag",
+   "pearl choker",
+   "gold jewelry",
+   "sunglasses"
+  ],
+  "collection_keywords": [
+   "casual grandeur",
+   "daily elegance",
+   "reinforcing codes",
+   "considered detail",
+   "fatto a mano",
+   "craft"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c58787b3fd438b865b091/master/pass/00046-gucci-pre-fall-2025-details-credit-brand.jpg|https://assets.vogue.com/photos/675c57b17a3558ddd6f5bfe7/master/pass/00046-gucci-pre-fall-2025-credit-brand.jpg": {
+  "image_description": "Burgundy leather headscarf with an embossed GG logo pattern, paired with large gold-tone hoop earrings and silver-framed glasses, worn with a dark grey pinstripe blazer over a white shirt.",
+  "fabric": "[\"leather\", \"metal\", \"wool\", \"cotton\"]",
+  "patterns": [
+   "logo",
+   "pinstripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Burgundy",
+    "hex_code": "#800020",
+    "pantone_code": "19-1725 (Biking Red)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0948 (Mustard Gold)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver)"
+   },
+   {
+    "color_name": "Dark Grey",
+    "hex_code": "#212121",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   }
+  ],
+  "theme": "Modern heritage styling",
+  "keywords": [
+   "leather headscarf",
+   "GG logo",
+   "embossed pattern",
+   "gold hoop earrings",
+   "silver eyeglasses",
+   "pinstripe blazer",
+   "tailored jacket",
+   "white shirt",
+   "accessories",
+   "headwear"
+  ],
+  "collection_keywords": [
+   "reinforcing codes",
+   "daily elegance",
+   "richly finished leathers",
+   "painstakingly considered detail",
+   "without nostalgia",
+   "beautiful things designed to be worn"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57b17a3558ddd6f5bfe7/master/pass/00046-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Dark grey pinstripe double-breasted suit with wide-leg trousers, styled with a white pussy-bow blouse, a black leather belt with a gold GG buckle, a black leather handbag, a burgundy leather headscarf, gold hoop earrings, and round sunglasses.",
+  "fabric": "wool, silk, leather, metal, plastic",
+  "patterns": [
+   "pinstripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Charcoal Grey",
+    "hex_code": "#36454F",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Off-White",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "11-0602 (Cloud Dancer)"
+   },
+   {
+    "color_name": "Burgundy",
+    "hex_code": "#800020",
+    "pantone_code": "19-1725 (Biking Red)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0836 (Golden Rod)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Modern Power Dressing",
+  "keywords": [
+   "pinstripe suit",
+   "double-breasted jacket",
+   "wide-leg trousers",
+   "pussy-bow blouse",
+   "leather headscarf",
+   "gold hoop earrings",
+   "round sunglasses",
+   "GG buckle belt",
+   "structured handbag",
+   "tailored silhouette"
+  ],
+  "collection_keywords": [
+   "daily elegance",
+   "sharply tailored",
+   "without nostalgia",
+   "painstakingly considered detail",
+   "silhouette and visual texture",
+   "reimagine and reinterpret"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c57b26a40bf50d90dcdc6/master/pass/00047-gucci-pre-fall-2025-credit-brand.jpg|-": {
+  "image_description": "Oversized dark grey pinstripe double-breasted suit with notched lapels and flap pockets, paired with a white shirt featuring a tied neck scarf, red-tinted rectangular sunglasses, and silver stud earrings.",
+  "fabric": "Wool, cotton, silk, metal, acetate",
+  "patterns": [
+   "pinstripe",
+   "logo print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dark Grey",
+    "hex_code": "#363636",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Burgundy",
+    "hex_code": "#8B0000",
+    "pantone_code": "19-1763 (Biking Red)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   },
+   {
+    "color_name": "Light Blue",
+    "hex_code": "#ADD8E6",
+    "pantone_code": "13-4108 (Blue Tint)"
+   }
+  ],
+  "theme": "Modern tailored elegance",
+  "keywords": [
+   "double-breasted suit",
+   "pinstripe suit",
+   "oversized tailoring",
+   "notched lapel",
+   "flap pockets",
+   "neck scarf",
+   "rectangular sunglasses",
+   "silver earrings",
+   "logo pinstripe"
+  ],
+  "collection_keywords": [
+   "1970s influence",
+   "casual grandeur",
+   "daily elegance",
+   "Italian elegance",
+   "reinterpretation",
+   "Ivy League influence",
+   "considered detail",
+   "visual texture"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/675c5870dfd9edba8d6a4b1e/master/pass/00022-gucci-pre-fall-2025-details-credit-brand.jpg|-": {
+  "image_description": "Olive green zip-front jacket with an embossed Gucci monogram, featuring a contrasting leather collar, paired with a matching oversized monogrammed carryall bag, a patterned silk headscarf, yellow-tinted rectangular sunglasses, and a pearl necklace.",
+  "fabric": "cotton blend",
+  "patterns": [
+   "monogram",
+   "floral",
+   "abstract botanical"
+  ],
+  "Colors": [
+   {
+    "color_name": "Olive Green",
+    "hex_code": "#5C6B4E",
+    "pantone_code": "18-0625 (Kalamata)"
+   },
+   {
+    "color_name": "Dark Olive Green",
+    "hex_code": "#4A5540",
+    "pantone_code": "19-0622 (Forest Night)"
+   },
+   {
+    "color_name": "Light Olive Green",
+    "hex_code": "#90A060",
+    "pantone_code": "15-0533 (Celery)"
+   },
+   {
+    "color_name": "Chartreuse",
+    "hex_code": "#C8D840",
+    "pantone_code": "13-0647 (Green Gecko)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4C080",
+    "pantone_code": "14-0848 (Golden Rod)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#F0EAD6",
+    "pantone_code": "11-0107 (Egret)"
+   }
+  ],
+  "theme": "Contemporary utilitarian luxury",
+  "keywords": [
+   "zip-front jacket",
+   "leather collar",
+   "monogrammed fabric",
+   "oversized bag",
+   "carryall bag",
+   "headscarf",
+   "sunglasses",
+   "pearl necklace",
+   "olive green",
+   "utilitarian style"
+  ],
+  "collection_keywords": [
+   "casual grandeur",
+   "daily elegance",
+   "reimagine and reinterpret",
+   "without nostalgia",
+   "floral scarf pattern",
+   "painstakingly considered detail",
+   "richly finished leathers"
+  ]
+ }
+}

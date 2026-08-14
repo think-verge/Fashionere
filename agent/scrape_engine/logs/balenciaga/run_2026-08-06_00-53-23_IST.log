@@ -1,0 +1,11 @@
+run 2026-08-06_00-53-23_IST
+fall-2026-couture: scrape=ok match=ok tag=ok
+resort-2027: scrape=ok match=ok tag=ok
+fall-2026-ready-to-wear: scrape=ok match=fail tag=skip error=Gemini scoring failed after retries: the JSON object must be str, bytes or bytearray, not NoneType
+spring-2026-ready-to-wear: scrape=ok match=ok tag=ok
+pre-fall-2026: scrape=ok match=fail tag=skip error=C:\Users\JaswanthPall_fnohyb7\Downloads\Prada\fashion_engine\scrape_engine\data\raw\balenciaga\Balenciaga_pre_fall_2026_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file.
+spring-2025-ready-to-wear: scrape=ok match=ok tag=ok
+fall-2025-couture: scrape=ok match=fail tag=skip error=C:\Users\JaswanthPall_fnohyb7\Downloads\Prada\fashion_engine\scrape_engine\data\raw\balenciaga\Balenciaga_fall_2025_couture_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file.
+resort-2026: scrape=ok match=ok tag=ok
+pre-fall-2025: scrape=ok match=ok tag=ok
+fall-2025-ready-to-wear: scrape=ok match=fail tag=skip error=C:\Users\JaswanthPall_fnohyb7\Downloads\Prada\fashion_engine\scrape_engine\data\raw\balenciaga\Balenciaga_fall_2025_ready_to_wear_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file.

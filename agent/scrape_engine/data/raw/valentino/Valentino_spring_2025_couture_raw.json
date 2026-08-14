@@ -1,0 +1,867 @@
+{
+  "source": "vogue",
+  "designer": "Valentino",
+  "source_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino",
+  "collection_name": "spring-2025-couture",
+  "summary": "“I’m still trembling,” gasped a fashion editor as we rushed for the door. We’d just witnessed Alessandro Michele’s 48 models running across a darkened stage in strobe lights; their crinolines and capes and flying hair—every gesture caught as if in slow-motion. His debut for Valentino haute couture had felt more like being involved in a cinematic psychodrama—swept along in one man’s stream of fevered imaginings—than any other fashion show I can compare it with. “I’ve been in the middle of a tornado,” he’d said earlier in the calm of the Valentino couture salon in the Place Vendôme. “I went through many obsessions, an unbelievable list of things. I tried, first of all, to go back to my personal obsessions as a Roman person. Looking at the Valentino archives, and my passion about historical costume—the dream, the metaphysical idea of fashion.” Delving into the past has been a distinguishing feature of all the couture collections this week, but no one has dived in deeper than Michele. A “river”—as he put it—of the inspirations behind each complicated hand-made outfit ran in digital red type projected onto the back of the set. Each had a head-spinning set of literary, art history, and old Hollywood references behind them: Venetian carnivals, medieval nuns and Marie Antoinette, Georgian panniers and Victorian crinolines, silent movie stars and cardinals, the names of poets and theorists, and much more. cm-unit And of course Michele’s main creative concern was the Valentino archive—and the living couture ateliers at the house in Rome. What he draws from the archive is Valentino Garavani’s culture of “beauty, elegance and opulence. It is not a brand, it’s a house.” The head-spinning sensation of having the phenomenal skills of the house at his fingertips caused the sense of “Vertigineux,” which he named the collection. “It’s hard to see your way through because you have the freedom to do anything. To them, everything must be not just perfect, but mesmerizing. I learned a lot.” Michele’s lists make note of the seasons many of the looks are drawn from. Familiar, inimitable Valentino techniques show up: minute pleating on trumpet sleeves (dress 19); fragile, complicated ruffles and chintzy floral prints (dress 7); the bows, the frilly blouse plackets, bejeweled lattice-work embroidery (dress 42); the precise shape of a princess coat (dress 29). But then, Michele exploded the shapes, putting giant crinolines or 17th-century panniers under them. “I was like, if I take a dress [from] 1950 and I put the pannier, it’s like a robe manteau from Versailles!” He also ran references to couturiers from other eras, like Adrian’s movie stars, Paul Poiret, and Charles Frederick Worth. Also, to the Catholic church. The Valentino red was used in both an insane crinoline with a bolero jacket (dress 20) and a Pope’s scarlet moire robe (dress 37). “When I was a kid, it was the most beautiful dress I saw walking in the street—really beyond—on a man. You see priests in a restaurant, the market. They eat, laugh, even smoke. I think Rome really is a surreal culture. It’s what Fellini saw.” And this is where the Rome of Valentino meets the Rome of the designer who has taken over his house—somewhere in Cinecittà. Michele is the son of a mother who was a costume designer in the Roman movie industry—the origin story which Rebecca Mead writes about in her Vogue profile. Dress 12 in the collection is called “My Mother.” It helps to account for the fact that he is so focused on bringing to life cinematic experiences, and costuming them to fit the impossible time-traveling inhabitants of his mind. “I’m not a couturier. I don’t think of myself as a couturier,” he smiled. “I mean, I think about myself as a guy with a lot of imagination. That’s me.”",
+  "looks": [
+    {
+      "look_number": 1,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#1",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a631cf7d303239e96602a/master/pass/00001-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Clothing Dress Fashion Formal Wear Gown Adult Person Wedding and Figurine",
+      "runway_img_1_tag": "<img alt=\"Image may contain Clothing Dress Fashion Formal Wear Gown Adult Person Wedding and Figurine\" loading=\"eager\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" src=\"https://assets.vogue.com/photos/679a631cf7d303239e96602a/master/w_2560%2Cc_limit/00001-valentino-spring-2025-couture-credit-gorunway.jpg\" data-src=\"https://assets.vogue.com/photos/679a631cf7d303239e96602a/master/w_2560%2Cc_limit/00001-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 2,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#2",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a63196c08658ea7783fe6/master/pass/00002-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Fashion Clothing Dress Formal Wear Long Sleeve Sleeve Gown Adult Person and Performer",
+      "runway_img_2_tag": "<img alt=\"Image may contain Fashion Clothing Dress Formal Wear Long Sleeve Sleeve Gown Adult Person and Performer\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a63196c08658ea7783fe6/master/w_120,c_limit/00002-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a63196c08658ea7783fe6/master/w_240,c_limit/00002-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a63196c08658ea7783fe6/master/w_320,c_limit/00002-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a63196c08658ea7783fe6/master/w_360%2Cc_limit/00002-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 3,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#3",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a631b0e98f979f5e9cc51/master/pass/00003-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Fashion Clothing Dress Adult Person Wedding Formal Wear Gown Long Sleeve and Sleeve",
+      "runway_img_3_tag": "<img alt=\"Image may contain Fashion Clothing Dress Adult Person Wedding Formal Wear Gown Long Sleeve and Sleeve\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a631b0e98f979f5e9cc51/master/w_120,c_limit/00003-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a631b0e98f979f5e9cc51/master/w_240,c_limit/00003-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a631b0e98f979f5e9cc51/master/w_320,c_limit/00003-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a631b0e98f979f5e9cc51/master/w_360%2Cc_limit/00003-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 4,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#4",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a631ff795da7049e577ca/master/pass/00004-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Daiki Ito Clothing Dress Fashion Formal Wear Gown Wedding Wedding Gown Adult and Person",
+      "runway_img_4_tag": "<img alt=\"Image may contain Daiki Ito Clothing Dress Fashion Formal Wear Gown Wedding Wedding Gown Adult and Person\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a631ff795da7049e577ca/master/w_120,c_limit/00004-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a631ff795da7049e577ca/master/w_240,c_limit/00004-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a631ff795da7049e577ca/master/w_320,c_limit/00004-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a631ff795da7049e577ca/master/w_360%2Cc_limit/00004-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 5,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#5",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a6321629bf7cdd748f543/master/pass/00005-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Fashion Adult Person Performer Solo Performance Clothing Long Sleeve Sleeve and Hat",
+      "runway_img_5_tag": "<img alt=\"Image may contain Fashion Adult Person Performer Solo Performance Clothing Long Sleeve Sleeve and Hat\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a6321629bf7cdd748f543/master/w_120,c_limit/00005-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a6321629bf7cdd748f543/master/w_240,c_limit/00005-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a6321629bf7cdd748f543/master/w_320,c_limit/00005-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a6321629bf7cdd748f543/master/w_360%2Cc_limit/00005-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 6,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#6",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a63224f36ffc110503d3e/master/pass/00006-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Fashion Performer Person Solo Performance Cape Clothing Adult Wedding Dress Formal Wear and Gown",
+      "runway_img_6_tag": "<img alt=\"Image may contain Fashion Performer Person Solo Performance Cape Clothing Adult Wedding Dress Formal Wear and Gown\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a63224f36ffc110503d3e/master/w_120,c_limit/00006-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a63224f36ffc110503d3e/master/w_240,c_limit/00006-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a63224f36ffc110503d3e/master/w_320,c_limit/00006-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a63224f36ffc110503d3e/master/w_360%2Cc_limit/00006-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 7,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#7",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a6322f795da7049e577cc/master/pass/00007-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Clothing Dress Fashion Formal Wear Gown Wedding Wedding Gown Evening Dress Adult and Person",
+      "runway_img_7_tag": "<img alt=\"Image may contain Clothing Dress Fashion Formal Wear Gown Wedding Wedding Gown Evening Dress Adult and Person\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a6322f795da7049e577cc/master/w_120,c_limit/00007-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a6322f795da7049e577cc/master/w_240,c_limit/00007-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a6322f795da7049e577cc/master/w_320,c_limit/00007-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a6322f795da7049e577cc/master/w_360%2Cc_limit/00007-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 8,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#8",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a63264f36ffc110503d40/master/pass/00008-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Bella Thorne Fashion Clothing Costume Person Dress Formal Wear Gown and Performer",
+      "runway_img_8_tag": "<img alt=\"Image may contain Bella Thorne Fashion Clothing Costume Person Dress Formal Wear Gown and Performer\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a63264f36ffc110503d40/master/w_120,c_limit/00008-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a63264f36ffc110503d40/master/w_240,c_limit/00008-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a63264f36ffc110503d40/master/w_320,c_limit/00008-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a63264f36ffc110503d40/master/w_360%2Cc_limit/00008-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 9,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#9",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a632561ce79068099178f/master/pass/00009-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Maya Vik Fashion Clothing Dress Formal Wear Adult Person Wedding Performer and Solo Performance",
+      "runway_img_9_tag": "<img alt=\"Image may contain Maya Vik Fashion Clothing Dress Formal Wear Adult Person Wedding Performer and Solo Performance\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a632561ce79068099178f/master/w_120,c_limit/00009-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a632561ce79068099178f/master/w_240,c_limit/00009-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a632561ce79068099178f/master/w_320,c_limit/00009-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a632561ce79068099178f/master/w_360%2Cc_limit/00009-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 10,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#10",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a6326b52b148525153d26/master/pass/00010-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Fashion Adult Person Performer Solo Performance Clothing Dress and Cape",
+      "runway_img_10_tag": "<img alt=\"Image may contain Fashion Adult Person Performer Solo Performance Clothing Dress and Cape\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a6326b52b148525153d26/master/w_120,c_limit/00010-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a6326b52b148525153d26/master/w_240,c_limit/00010-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a6326b52b148525153d26/master/w_320,c_limit/00010-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a6326b52b148525153d26/master/w_360%2Cc_limit/00010-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 11,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#11",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a6328a968ea07ef3f4c47/master/pass/00011-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Justina Humpf Fashion Cape Clothing Dress Adult Person Formal Wear Gown and Performer",
+      "runway_img_11_tag": "<img alt=\"Image may contain Justina Humpf Fashion Cape Clothing Dress Adult Person Formal Wear Gown and Performer\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a6328a968ea07ef3f4c47/master/w_120,c_limit/00011-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a6328a968ea07ef3f4c47/master/w_240,c_limit/00011-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a6328a968ea07ef3f4c47/master/w_320,c_limit/00011-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a6328a968ea07ef3f4c47/master/w_360%2Cc_limit/00011-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 12,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#12",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a632c413190d024277db2/master/pass/00012-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Ren Harvieu Clothing Dress Fashion Formal Wear Gown Wedding Wedding Gown Adult and Person",
+      "runway_img_12_tag": "<img alt=\"Image may contain Ren Harvieu Clothing Dress Fashion Formal Wear Gown Wedding Wedding Gown Adult and Person\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a632c413190d024277db2/master/w_120,c_limit/00012-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a632c413190d024277db2/master/w_240,c_limit/00012-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a632c413190d024277db2/master/w_320,c_limit/00012-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a632c413190d024277db2/master/w_360%2Cc_limit/00012-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 13,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#13",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a632c629bf7cdd748f545/master/pass/00013-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Michaela Kocianova Clothing Long Sleeve Sleeve Adult Person Fashion Performer and Solo Performance",
+      "runway_img_13_tag": "<img alt=\"Image may contain Michaela Kocianova Clothing Long Sleeve Sleeve Adult Person Fashion Performer and Solo Performance\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a632c629bf7cdd748f545/master/w_120,c_limit/00013-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a632c629bf7cdd748f545/master/w_240,c_limit/00013-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a632c629bf7cdd748f545/master/w_320,c_limit/00013-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a632c629bf7cdd748f545/master/w_360%2Cc_limit/00013-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 14,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#14",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a632a0e98f979f5e9cc53/master/pass/00014-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Fashion Performer Person Solo Performance Adult Clothing Dress Dancing and Leisure Activities",
+      "runway_img_14_tag": "<img alt=\"Image may contain Fashion Performer Person Solo Performance Adult Clothing Dress Dancing and Leisure Activities\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a632a0e98f979f5e9cc53/master/w_120,c_limit/00014-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a632a0e98f979f5e9cc53/master/w_240,c_limit/00014-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a632a0e98f979f5e9cc53/master/w_320,c_limit/00014-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a632a0e98f979f5e9cc53/master/w_360%2Cc_limit/00014-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 15,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#15",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a632d86ac25680e0f1379/master/pass/00015-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Clothing Dress Fashion Formal Wear Gown Wedding Wedding Gown Adult Person and Evening Dress",
+      "runway_img_15_tag": "<img alt=\"Image may contain Clothing Dress Fashion Formal Wear Gown Wedding Wedding Gown Adult Person and Evening Dress\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a632d86ac25680e0f1379/master/w_120,c_limit/00015-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a632d86ac25680e0f1379/master/w_240,c_limit/00015-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a632d86ac25680e0f1379/master/w_320,c_limit/00015-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a632d86ac25680e0f1379/master/w_360%2Cc_limit/00015-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 16,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#16",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a63325ff854cfbb12fdc8/master/pass/00016-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Sonny Zhou Adult Person Performer Solo Performance Fashion People Clothing Long Sleeve and Sleeve",
+      "runway_img_16_tag": "<img alt=\"Image may contain Sonny Zhou Adult Person Performer Solo Performance Fashion People Clothing Long Sleeve and Sleeve\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a63325ff854cfbb12fdc8/master/w_120,c_limit/00016-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a63325ff854cfbb12fdc8/master/w_240,c_limit/00016-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a63325ff854cfbb12fdc8/master/w_320,c_limit/00016-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a63325ff854cfbb12fdc8/master/w_360%2Cc_limit/00016-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 17,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#17",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a63325c0830fc3731746d/master/pass/00017-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Clothing Dress Fashion Formal Wear Gown Wedding Wedding Gown Adult Person and Robe",
+      "runway_img_17_tag": "<img alt=\"Image may contain Clothing Dress Fashion Formal Wear Gown Wedding Wedding Gown Adult Person and Robe\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a63325c0830fc3731746d/master/w_120,c_limit/00017-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a63325c0830fc3731746d/master/w_240,c_limit/00017-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a63325c0830fc3731746d/master/w_320,c_limit/00017-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a63325c0830fc3731746d/master/w_360%2Cc_limit/00017-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 18,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#18",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a6333ca56d5412bdca396/master/pass/00018-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Adult Person Performer Solo Performance Fashion Blouse Clothing Footwear and Shoe",
+      "runway_img_18_tag": "<img alt=\"Image may contain Adult Person Performer Solo Performance Fashion Blouse Clothing Footwear and Shoe\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a6333ca56d5412bdca396/master/w_120,c_limit/00018-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a6333ca56d5412bdca396/master/w_240,c_limit/00018-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a6333ca56d5412bdca396/master/w_320,c_limit/00018-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a6333ca56d5412bdca396/master/w_360%2Cc_limit/00018-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 19,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#19",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a6337a968ea07ef3f4c49/master/pass/00019-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Fashion Clothing Dress Formal Wear Gown Adult Person Wedding Costume and Performer",
+      "runway_img_19_tag": "<img alt=\"Image may contain Fashion Clothing Dress Formal Wear Gown Adult Person Wedding Costume and Performer\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a6337a968ea07ef3f4c49/master/w_120,c_limit/00019-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a6337a968ea07ef3f4c49/master/w_240,c_limit/00019-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a6337a968ea07ef3f4c49/master/w_320,c_limit/00019-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a6337a968ea07ef3f4c49/master/w_360%2Cc_limit/00019-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 20,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#20",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a63395c0830fc3731746f/master/pass/00020-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Clothing Dress Fashion Formal Wear Gown Adult Person Wedding and Evening Dress",
+      "runway_img_20_tag": "<img alt=\"Image may contain Clothing Dress Fashion Formal Wear Gown Adult Person Wedding and Evening Dress\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a63395c0830fc3731746f/master/w_120,c_limit/00020-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a63395c0830fc3731746f/master/w_240,c_limit/00020-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a63395c0830fc3731746f/master/w_320,c_limit/00020-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a63395c0830fc3731746f/master/w_360%2Cc_limit/00020-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 21,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#21",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a633919b5af0d9bcce775/master/pass/00021-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Performer Person Solo Performance Adult Fashion Clothing Long Sleeve Sleeve Coat and Glove",
+      "runway_img_21_tag": "<img alt=\"Image may contain Performer Person Solo Performance Adult Fashion Clothing Long Sleeve Sleeve Coat and Glove\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a633919b5af0d9bcce775/master/w_120,c_limit/00021-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a633919b5af0d9bcce775/master/w_240,c_limit/00021-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a633919b5af0d9bcce775/master/w_320,c_limit/00021-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a633919b5af0d9bcce775/master/w_360%2Cc_limit/00021-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 22,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#22",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a633bb7d3b64fec7b749d/master/pass/00022-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Fashion Cape Clothing Adult Person and Cloak",
+      "runway_img_22_tag": "<img alt=\"Image may contain Fashion Cape Clothing Adult Person and Cloak\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a633bb7d3b64fec7b749d/master/w_120,c_limit/00022-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a633bb7d3b64fec7b749d/master/w_240,c_limit/00022-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a633bb7d3b64fec7b749d/master/w_320,c_limit/00022-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a633bb7d3b64fec7b749d/master/w_360%2Cc_limit/00022-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 23,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#23",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a633f5c0830fc37317471/master/pass/00023-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Mike Zombie Fashion Clothing Dress Formal Wear Gown Wedding Wedding Gown Adult and Person",
+      "runway_img_23_tag": "<img alt=\"Image may contain Mike Zombie Fashion Clothing Dress Formal Wear Gown Wedding Wedding Gown Adult and Person\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a633f5c0830fc37317471/master/w_120,c_limit/00023-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a633f5c0830fc37317471/master/w_240,c_limit/00023-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a633f5c0830fc37317471/master/w_320,c_limit/00023-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a633f5c0830fc37317471/master/w_360%2Cc_limit/00023-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 24,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#24",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a633e335fcfd67bce6459/master/pass/00024-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Mary Jepkosgei Keitany Clothing Long Sleeve Sleeve Adult Person Fashion Blouse Hat and Glove",
+      "runway_img_24_tag": "<img alt=\"Image may contain Mary Jepkosgei Keitany Clothing Long Sleeve Sleeve Adult Person Fashion Blouse Hat and Glove\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a633e335fcfd67bce6459/master/w_120,c_limit/00024-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a633e335fcfd67bce6459/master/w_240,c_limit/00024-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a633e335fcfd67bce6459/master/w_320,c_limit/00024-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a633e335fcfd67bce6459/master/w_360%2Cc_limit/00024-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 25,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#25",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a6342bd5ab52b744e0f11/master/pass/00025-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Clothing Dress Fashion Formal Wear Gown Adult Person Wedding and Wedding Gown",
+      "runway_img_25_tag": "<img alt=\"Image may contain Clothing Dress Fashion Formal Wear Gown Adult Person Wedding and Wedding Gown\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a6342bd5ab52b744e0f11/master/w_120,c_limit/00025-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a6342bd5ab52b744e0f11/master/w_240,c_limit/00025-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a6342bd5ab52b744e0f11/master/w_320,c_limit/00025-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a6342bd5ab52b744e0f11/master/w_360%2Cc_limit/00025-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 26,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#26",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a63448674b062b74bde16/master/pass/00026-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Sarah Cardwell Clothing Coat Performer Person Solo Performance Adult Fashion and Footwear",
+      "runway_img_26_tag": "<img alt=\"Image may contain Sarah Cardwell Clothing Coat Performer Person Solo Performance Adult Fashion and Footwear\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a63448674b062b74bde16/master/w_120,c_limit/00026-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a63448674b062b74bde16/master/w_240,c_limit/00026-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a63448674b062b74bde16/master/w_320,c_limit/00026-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a63448674b062b74bde16/master/w_360%2Cc_limit/00026-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 27,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#27",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a634461ce790680991791/master/pass/00027-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Fashion Clothing Long Sleeve Sleeve Formal Wear Adult Person Accessories Tie Dress and Performer",
+      "runway_img_27_tag": "<img alt=\"Image may contain Fashion Clothing Long Sleeve Sleeve Formal Wear Adult Person Accessories Tie Dress and Performer\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a634461ce790680991791/master/w_120,c_limit/00027-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a634461ce790680991791/master/w_240,c_limit/00027-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a634461ce790680991791/master/w_320,c_limit/00027-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a634461ce790680991791/master/w_360%2Cc_limit/00027-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 28,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#28",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a6348ca56d5412bdca399/master/pass/00028-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Performer Person Solo Performance Fashion Adult Formal Wear Clothing and Dress",
+      "runway_img_28_tag": "<img alt=\"Image may contain Performer Person Solo Performance Fashion Adult Formal Wear Clothing and Dress\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a6348ca56d5412bdca399/master/w_120,c_limit/00028-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a6348ca56d5412bdca399/master/w_240,c_limit/00028-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a6348ca56d5412bdca399/master/w_320,c_limit/00028-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a6348ca56d5412bdca399/master/w_360%2Cc_limit/00028-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 29,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#29",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a634a19b5af0d9bcce778/master/pass/00029-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Fashion Clothing Dress Adult Person Formal Wear Gown Evening Dress Performer and Solo Performance",
+      "runway_img_29_tag": "<img alt=\"Image may contain Fashion Clothing Dress Adult Person Formal Wear Gown Evening Dress Performer and Solo Performance\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a634a19b5af0d9bcce778/master/w_120,c_limit/00029-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a634a19b5af0d9bcce778/master/w_240,c_limit/00029-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a634a19b5af0d9bcce778/master/w_320,c_limit/00029-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a634a19b5af0d9bcce778/master/w_360%2Cc_limit/00029-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 30,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#30",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a634b335fcfd67bce645b/master/pass/00030-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Fashion Performer Person Solo Performance Adult Clothing and Costume",
+      "runway_img_30_tag": "<img alt=\"Image may contain Fashion Performer Person Solo Performance Adult Clothing and Costume\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a634b335fcfd67bce645b/master/w_120,c_limit/00030-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a634b335fcfd67bce645b/master/w_240,c_limit/00030-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a634b335fcfd67bce645b/master/w_320,c_limit/00030-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a634b335fcfd67bce645b/master/w_360%2Cc_limit/00030-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 31,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#31",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a634c428aeb919c200e50/master/pass/00031-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Fashion Adult Person Clothing Costume Accessories Glasses Dress and Hat",
+      "runway_img_31_tag": "<img alt=\"Image may contain Fashion Adult Person Clothing Costume Accessories Glasses Dress and Hat\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a634c428aeb919c200e50/master/w_120,c_limit/00031-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a634c428aeb919c200e50/master/w_240,c_limit/00031-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a634c428aeb919c200e50/master/w_320,c_limit/00031-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a634c428aeb919c200e50/master/w_360%2Cc_limit/00031-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 32,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#32",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a6351bd5ab52b744e0f13/master/pass/00032-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Benedetta Barzini Clothing Coat Fashion Adult Person Performer and Solo Performance",
+      "runway_img_32_tag": "<img alt=\"Image may contain Benedetta Barzini Clothing Coat Fashion Adult Person Performer and Solo Performance\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a6351bd5ab52b744e0f13/master/w_120,c_limit/00032-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a6351bd5ab52b744e0f13/master/w_240,c_limit/00032-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a6351bd5ab52b744e0f13/master/w_320,c_limit/00032-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a6351bd5ab52b744e0f13/master/w_360%2Cc_limit/00032-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 33,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#33",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a6352f113080116866213/master/pass/00033-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Sandrine Kiberlain Fashion Clothing Costume Person Formal Wear Dress Adult Gown Blonde and Hair",
+      "runway_img_33_tag": "<img alt=\"Image may contain Sandrine Kiberlain Fashion Clothing Costume Person Formal Wear Dress Adult Gown Blonde and Hair\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a6352f113080116866213/master/w_120,c_limit/00033-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a6352f113080116866213/master/w_240,c_limit/00033-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a6352f113080116866213/master/w_320,c_limit/00033-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a6352f113080116866213/master/w_360%2Cc_limit/00033-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 34,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#34",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a63538674b062b74bde18/master/pass/00034-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Clothing Costume Person Fashion Adult Wedding Hat Dress Dancing Leisure Activities and Performer",
+      "runway_img_34_tag": "<img alt=\"Image may contain Clothing Costume Person Fashion Adult Wedding Hat Dress Dancing Leisure Activities and Performer\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a63538674b062b74bde18/master/w_120,c_limit/00034-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a63538674b062b74bde18/master/w_240,c_limit/00034-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a63538674b062b74bde18/master/w_320,c_limit/00034-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a63538674b062b74bde18/master/w_360%2Cc_limit/00034-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 35,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#35",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a63580e98f979f5e9cc55/master/pass/00035-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Mary Jepkosgei Keitany Fashion Performer Person Solo Performance Adult Clothing Hat and Footwear",
+      "runway_img_35_tag": "<img alt=\"Image may contain Mary Jepkosgei Keitany Fashion Performer Person Solo Performance Adult Clothing Hat and Footwear\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a63580e98f979f5e9cc55/master/w_120,c_limit/00035-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a63580e98f979f5e9cc55/master/w_240,c_limit/00035-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a63580e98f979f5e9cc55/master/w_320,c_limit/00035-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a63580e98f979f5e9cc55/master/w_360%2Cc_limit/00035-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 36,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#36",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a635bbd5ab52b744e0f15/master/pass/00036-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Adult Person Fashion Performer and Solo Performance",
+      "runway_img_36_tag": "<img alt=\"Image may contain Adult Person Fashion Performer and Solo Performance\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a635bbd5ab52b744e0f15/master/w_120,c_limit/00036-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a635bbd5ab52b744e0f15/master/w_240,c_limit/00036-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a635bbd5ab52b744e0f15/master/w_320,c_limit/00036-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a635bbd5ab52b744e0f15/master/w_360%2Cc_limit/00036-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 37,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#37",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a6357b52b148525153d28/master/pass/00037-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Fashion Clothing Dress Formal Wear Gown Adult Person Wedding Evening Dress Velvet and Robe",
+      "runway_img_37_tag": "<img alt=\"Image may contain Fashion Clothing Dress Formal Wear Gown Adult Person Wedding Evening Dress Velvet and Robe\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a6357b52b148525153d28/master/w_120,c_limit/00037-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a6357b52b148525153d28/master/w_240,c_limit/00037-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a6357b52b148525153d28/master/w_320,c_limit/00037-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a6357b52b148525153d28/master/w_360%2Cc_limit/00037-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 38,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#38",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a635e6c08658ea7783fea/master/pass/00038-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Yin Jian Clothing Dress Fashion Formal Wear Evening Dress Gown Adult Person and Performer",
+      "runway_img_38_tag": "<img alt=\"Image may contain Yin Jian Clothing Dress Fashion Formal Wear Evening Dress Gown Adult Person and Performer\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a635e6c08658ea7783fea/master/w_120,c_limit/00038-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a635e6c08658ea7783fea/master/w_240,c_limit/00038-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a635e6c08658ea7783fea/master/w_320,c_limit/00038-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a635e6c08658ea7783fea/master/w_360%2Cc_limit/00038-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 39,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#39",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a6360335fcfd67bce645f/master/pass/00039-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Fashion Performer Person Solo Performance and Adult",
+      "runway_img_39_tag": "<img alt=\"Image may contain Fashion Performer Person Solo Performance and Adult\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a6360335fcfd67bce645f/master/w_120,c_limit/00039-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a6360335fcfd67bce645f/master/w_240,c_limit/00039-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a6360335fcfd67bce645f/master/w_320,c_limit/00039-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a6360335fcfd67bce645f/master/w_360%2Cc_limit/00039-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 40,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#40",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a635f5c0830fc37317473/master/pass/00040-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Fashion Clothing Dress Adult Person Wedding Costume Formal Wear Performer and Solo Performance",
+      "runway_img_40_tag": "<img alt=\"Image may contain Fashion Clothing Dress Adult Person Wedding Costume Formal Wear Performer and Solo Performance\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a635f5c0830fc37317473/master/w_120,c_limit/00040-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a635f5c0830fc37317473/master/w_240,c_limit/00040-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a635f5c0830fc37317473/master/w_320,c_limit/00040-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a635f5c0830fc37317473/master/w_360%2Cc_limit/00040-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 41,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#41",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a63644f36ffc110503d45/master/pass/00041-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Sonny Zhou Fashion Clothing Dress Formal Wear Gown Glove Adult Person Costume and Cape",
+      "runway_img_41_tag": "<img alt=\"Image may contain Sonny Zhou Fashion Clothing Dress Formal Wear Gown Glove Adult Person Costume and Cape\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a63644f36ffc110503d45/master/w_120,c_limit/00041-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a63644f36ffc110503d45/master/w_240,c_limit/00041-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a63644f36ffc110503d45/master/w_320,c_limit/00041-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a63644f36ffc110503d45/master/w_360%2Cc_limit/00041-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 42,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#42",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a63655c0830fc37317475/master/pass/00042-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Fashion Clothing Dress Formal Wear Long Sleeve Sleeve Adult Person Wedding Gown and Coat",
+      "runway_img_42_tag": "<img alt=\"Image may contain Fashion Clothing Dress Formal Wear Long Sleeve Sleeve Adult Person Wedding Gown and Coat\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a63655c0830fc37317475/master/w_120,c_limit/00042-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a63655c0830fc37317475/master/w_240,c_limit/00042-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a63655c0830fc37317475/master/w_320,c_limit/00042-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a63655c0830fc37317475/master/w_360%2Cc_limit/00042-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 43,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#43",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a636661ce790680991793/master/pass/00043-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Fashion Cape Clothing Coat Adult Person and Costume",
+      "runway_img_43_tag": "<img alt=\"Image may contain Fashion Cape Clothing Coat Adult Person and Costume\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a636661ce790680991793/master/w_120,c_limit/00043-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a636661ce790680991793/master/w_240,c_limit/00043-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a636661ce790680991793/master/w_320,c_limit/00043-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a636661ce790680991793/master/w_360%2Cc_limit/00043-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 44,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#44",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a636c61ce790680991795/master/pass/00044-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Fashion Clothing Dress Formal Wear Gown Performer Person Solo Performance Adult and Accessories",
+      "runway_img_44_tag": "<img alt=\"Image may contain Fashion Clothing Dress Formal Wear Gown Performer Person Solo Performance Adult and Accessories\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a636c61ce790680991795/master/w_120,c_limit/00044-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a636c61ce790680991795/master/w_240,c_limit/00044-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a636c61ce790680991795/master/w_320,c_limit/00044-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a636c61ce790680991795/master/w_360%2Cc_limit/00044-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 45,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#45",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a636c8674b062b74bde1b/master/pass/00045-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Sonny Zhou Fashion Adult Person Performer Solo Performance Clothing Coat Dress and Hat",
+      "runway_img_45_tag": "<img alt=\"Image may contain Sonny Zhou Fashion Adult Person Performer Solo Performance Clothing Coat Dress and Hat\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a636c8674b062b74bde1b/master/w_120,c_limit/00045-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a636c8674b062b74bde1b/master/w_240,c_limit/00045-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a636c8674b062b74bde1b/master/w_320,c_limit/00045-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a636c8674b062b74bde1b/master/w_360%2Cc_limit/00045-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 46,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#46",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a636dbec4700044655e0a/master/pass/00046-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Clothing Dress Fashion Formal Wear Gown Wedding Wedding Gown Adult and Person",
+      "runway_img_46_tag": "<img alt=\"Image may contain Clothing Dress Fashion Formal Wear Gown Wedding Wedding Gown Adult and Person\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a636dbec4700044655e0a/master/w_120,c_limit/00046-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a636dbec4700044655e0a/master/w_240,c_limit/00046-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a636dbec4700044655e0a/master/w_320,c_limit/00046-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a636dbec4700044655e0a/master/w_360%2Cc_limit/00046-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 47,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#47",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a6373428aeb919c200e53/master/pass/00047-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Adult Person Fashion Clothing Dress Cross Symbol Costume People Formal Wear and Accessories",
+      "runway_img_47_tag": "<img alt=\"Image may contain Adult Person Fashion Clothing Dress Cross Symbol Costume People Formal Wear and Accessories\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a6373428aeb919c200e53/master/w_120,c_limit/00047-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a6373428aeb919c200e53/master/w_240,c_limit/00047-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a6373428aeb919c200e53/master/w_320,c_limit/00047-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a6373428aeb919c200e53/master/w_360%2Cc_limit/00047-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 48,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#48",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a6370f7d303239e96602d/master/pass/00048-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Fashion Clothing Dress Formal Wear Gown Adult Person and Wedding",
+      "runway_img_48_tag": "<img alt=\"Image may contain Fashion Clothing Dress Formal Wear Gown Adult Person and Wedding\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a6370f7d303239e96602d/master/w_120,c_limit/00048-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a6370f7d303239e96602d/master/w_240,c_limit/00048-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a6370f7d303239e96602d/master/w_320,c_limit/00048-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a6370f7d303239e96602d/master/w_360%2Cc_limit/00048-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 49,
+      "runway_img": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/collection#49",
+      "runway_img_asset": "https://assets.vogue.com/photos/679a63708674b062b74bde1d/master/pass/00049-valentino-spring-2025-couture-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Lighting Adult Person Clothing Pants Footwear Shoe Photography Nature Outdoors Weather and Face",
+      "runway_img_49_tag": "<img alt=\"Image may contain Lighting Adult Person Clothing Pants Footwear Shoe Photography Nature Outdoors Weather and Face\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a63708674b062b74bde1d/master/w_120,c_limit/00049-valentino-spring-2025-couture-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a63708674b062b74bde1d/master/w_240,c_limit/00049-valentino-spring-2025-couture-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a63708674b062b74bde1d/master/w_320,c_limit/00049-valentino-spring-2025-couture-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a63708674b062b74bde1d/master/w_360%2Cc_limit/00049-valentino-spring-2025-couture-credit-gorunway.jpg\">",
+      "details_images": []
+    }
+  ],
+  "details_gallery": [
+    {
+      "detail_index": 1,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#1",
+      "details_img_asset": "https://assets.vogue.com/photos/679a8227bd5ab52b744e1563/master/pass/00001-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Accessories Jewelry Necklace and Bag",
+      "details_img_1_tag": "<img alt=\"Image may contain Accessories Jewelry Necklace and Bag\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" src=\"https://assets.vogue.com/photos/679a8227bd5ab52b744e1563/master/w_2560%2Cc_limit/00001-valentino-spring-2025-couture-details-credit-gorunway.jpg\" data-src=\"https://assets.vogue.com/photos/679a8227bd5ab52b744e1563/master/w_2560%2Cc_limit/00001-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 2,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#2",
+      "details_img_asset": "https://assets.vogue.com/photos/679a822beb887547ff2cd969/master/pass/00002-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Carla Bley Adult Person Fashion Book Publication Clothing Dress and Formal Wear",
+      "details_img_2_tag": "<img alt=\"Image may contain Carla Bley Adult Person Fashion Book Publication Clothing Dress and Formal Wear\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a822beb887547ff2cd969/master/w_120,c_limit/00002-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a822beb887547ff2cd969/master/w_240,c_limit/00002-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a822beb887547ff2cd969/master/w_320,c_limit/00002-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a822beb887547ff2cd969/master/w_360%2Cc_limit/00002-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 3,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#3",
+      "details_img_asset": "https://assets.vogue.com/photos/679a822fca56d5412bdca3b6/master/pass/00003-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Adult Person Wedding Clothing Hat Face Head Photography and Portrait",
+      "details_img_3_tag": "<img alt=\"Image may contain Adult Person Wedding Clothing Hat Face Head Photography and Portrait\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a822fca56d5412bdca3b6/master/w_120,c_limit/00003-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a822fca56d5412bdca3b6/master/w_240,c_limit/00003-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a822fca56d5412bdca3b6/master/w_320,c_limit/00003-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a822fca56d5412bdca3b6/master/w_360%2Cc_limit/00003-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 4,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#4",
+      "details_img_asset": "https://assets.vogue.com/photos/679a822d629bf7cdd748f563/master/pass/00004-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Lace Adult Person and Wedding",
+      "details_img_4_tag": "<img alt=\"Image may contain Lace Adult Person and Wedding\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a822d629bf7cdd748f563/master/w_120,c_limit/00004-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a822d629bf7cdd748f563/master/w_240,c_limit/00004-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a822d629bf7cdd748f563/master/w_320,c_limit/00004-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a822d629bf7cdd748f563/master/w_360%2Cc_limit/00004-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 5,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#5",
+      "details_img_asset": "https://assets.vogue.com/photos/679a8235eb887547ff2cd96b/master/pass/00005-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Dress Fashion Formal Wear Evening Dress Long Sleeve Sleeve Gown Adult and Person",
+      "details_img_5_tag": "<img alt=\"Image may contain Clothing Dress Fashion Formal Wear Evening Dress Long Sleeve Sleeve Gown Adult and Person\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a8235eb887547ff2cd96b/master/w_120,c_limit/00005-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a8235eb887547ff2cd96b/master/w_240,c_limit/00005-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a8235eb887547ff2cd96b/master/w_320,c_limit/00005-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a8235eb887547ff2cd96b/master/w_360%2Cc_limit/00005-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 6,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#6",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82379d7e8a99673c1eaf/master/pass/00006-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Adult Person Accessories Purple Jewelry Clothing Long Sleeve and Sleeve",
+      "details_img_6_tag": "<img alt=\"Image may contain Adult Person Accessories Purple Jewelry Clothing Long Sleeve and Sleeve\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82379d7e8a99673c1eaf/master/w_120,c_limit/00006-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82379d7e8a99673c1eaf/master/w_240,c_limit/00006-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82379d7e8a99673c1eaf/master/w_320,c_limit/00006-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82379d7e8a99673c1eaf/master/w_360%2Cc_limit/00006-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 7,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#7",
+      "details_img_asset": "https://assets.vogue.com/photos/679a823abec4700044655e27/master/pass/00007-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Footwear Shoe High Heel Adult and Person",
+      "details_img_7_tag": "<img alt=\"Image may contain Clothing Footwear Shoe High Heel Adult and Person\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a823abec4700044655e27/master/w_120,c_limit/00007-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a823abec4700044655e27/master/w_240,c_limit/00007-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a823abec4700044655e27/master/w_320,c_limit/00007-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a823abec4700044655e27/master/w_360%2Cc_limit/00007-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 8,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#8",
+      "details_img_asset": "https://assets.vogue.com/photos/679a823afa9ba2653c555f88/master/pass/00008-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Cape Clothing Fashion Adult Person Dress Formal Wear Velvet Blouse and Costume",
+      "details_img_8_tag": "<img alt=\"Image may contain Cape Clothing Fashion Adult Person Dress Formal Wear Velvet Blouse and Costume\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a823afa9ba2653c555f88/master/w_120,c_limit/00008-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a823afa9ba2653c555f88/master/w_240,c_limit/00008-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a823afa9ba2653c555f88/master/w_320,c_limit/00008-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a823afa9ba2653c555f88/master/w_360%2Cc_limit/00008-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 9,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#9",
+      "details_img_asset": "https://assets.vogue.com/photos/679a824086ac25680e0f139a/master/pass/00009-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Dress Fashion Formal Wear Gown Adult Person Evening Dress and Robe",
+      "details_img_9_tag": "<img alt=\"Image may contain Clothing Dress Fashion Formal Wear Gown Adult Person Evening Dress and Robe\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a824086ac25680e0f139a/master/w_120,c_limit/00009-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a824086ac25680e0f139a/master/w_240,c_limit/00009-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a824086ac25680e0f139a/master/w_320,c_limit/00009-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a824086ac25680e0f139a/master/w_360%2Cc_limit/00009-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 10,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#10",
+      "details_img_asset": "https://assets.vogue.com/photos/679a8244bec4700044655e29/master/pass/00010-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Bella Thorne Adult Person Blonde Hair Face Head Photography Portrait and Braid",
+      "details_img_10_tag": "<img alt=\"Image may contain Bella Thorne Adult Person Blonde Hair Face Head Photography Portrait and Braid\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a8244bec4700044655e29/master/w_120,c_limit/00010-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a8244bec4700044655e29/master/w_240,c_limit/00010-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a8244bec4700044655e29/master/w_320,c_limit/00010-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a8244bec4700044655e29/master/w_360%2Cc_limit/00010-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 11,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#11",
+      "details_img_asset": "https://assets.vogue.com/photos/679a8244f7d303239e966046/master/pass/00011-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Sphere Adult Person Dancing Leisure Activities Clothing Dress and Accessories",
+      "details_img_11_tag": "<img alt=\"Image may contain Sphere Adult Person Dancing Leisure Activities Clothing Dress and Accessories\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a8244f7d303239e966046/master/w_120,c_limit/00011-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a8244f7d303239e966046/master/w_240,c_limit/00011-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a8244f7d303239e966046/master/w_320,c_limit/00011-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a8244f7d303239e966046/master/w_360%2Cc_limit/00011-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 12,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#12",
+      "details_img_asset": "https://assets.vogue.com/photos/679a824c9697deb58840a6ec/master/pass/00012-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Dress Fashion Formal Wear Gown Adult Person Wedding Dancing and Leisure Activities",
+      "details_img_12_tag": "<img alt=\"Image may contain Clothing Dress Fashion Formal Wear Gown Adult Person Wedding Dancing and Leisure Activities\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a824c9697deb58840a6ec/master/w_120,c_limit/00012-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a824c9697deb58840a6ec/master/w_240,c_limit/00012-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a824c9697deb58840a6ec/master/w_320,c_limit/00012-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a824c9697deb58840a6ec/master/w_360%2Cc_limit/00012-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 13,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#13",
+      "details_img_asset": "https://assets.vogue.com/photos/679a8249376aeae7b7445031/master/pass/00013-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Cape Clothing Adult Person Fashion Dancing and Leisure Activities",
+      "details_img_13_tag": "<img alt=\"Image may contain Cape Clothing Adult Person Fashion Dancing and Leisure Activities\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a8249376aeae7b7445031/master/w_120,c_limit/00013-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a8249376aeae7b7445031/master/w_240,c_limit/00013-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a8249376aeae7b7445031/master/w_320,c_limit/00013-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a8249376aeae7b7445031/master/w_360%2Cc_limit/00013-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 14,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#14",
+      "details_img_asset": "https://assets.vogue.com/photos/679a824a19b5af0d9bcce799/master/pass/00014-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Dress Evening Dress Formal Wear Fashion Adult Person and Gown",
+      "details_img_14_tag": "<img alt=\"Image may contain Clothing Dress Evening Dress Formal Wear Fashion Adult Person and Gown\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a824a19b5af0d9bcce799/master/w_120,c_limit/00014-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a824a19b5af0d9bcce799/master/w_240,c_limit/00014-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a824a19b5af0d9bcce799/master/w_320,c_limit/00014-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a824a19b5af0d9bcce799/master/w_360%2Cc_limit/00014-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 15,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#15",
+      "details_img_asset": "https://assets.vogue.com/photos/679a8255e0d255d9a7dca1f0/master/pass/00015-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Dress Formal Wear Fashion Gown Evening Dress Adult Person Wedding and Wedding Gown",
+      "details_img_15_tag": "<img alt=\"Image may contain Clothing Dress Formal Wear Fashion Gown Evening Dress Adult Person Wedding and Wedding Gown\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a8255e0d255d9a7dca1f0/master/w_120,c_limit/00015-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a8255e0d255d9a7dca1f0/master/w_240,c_limit/00015-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a8255e0d255d9a7dca1f0/master/w_320,c_limit/00015-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a8255e0d255d9a7dca1f0/master/w_360%2Cc_limit/00015-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 16,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#16",
+      "details_img_asset": "https://assets.vogue.com/photos/679a8254413190d024277dd3/master/pass/00016-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Accessories Formal Wear Tie Adult Person Fashion Pattern Face Head Photography and Portrait",
+      "details_img_16_tag": "<img alt=\"Image may contain Accessories Formal Wear Tie Adult Person Fashion Pattern Face Head Photography and Portrait\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a8254413190d024277dd3/master/w_120,c_limit/00016-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a8254413190d024277dd3/master/w_240,c_limit/00016-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a8254413190d024277dd3/master/w_320,c_limit/00016-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a8254413190d024277dd3/master/w_360%2Cc_limit/00016-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 17,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#17",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82560e98f979f5e9cc75/master/pass/00017-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Footwear High Heel Shoe Adult and Person",
+      "details_img_17_tag": "<img alt=\"Image may contain Clothing Footwear High Heel Shoe Adult and Person\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82560e98f979f5e9cc75/master/w_120,c_limit/00017-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82560e98f979f5e9cc75/master/w_240,c_limit/00017-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82560e98f979f5e9cc75/master/w_320,c_limit/00017-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82560e98f979f5e9cc75/master/w_360%2Cc_limit/00017-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 18,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#18",
+      "details_img_asset": "https://assets.vogue.com/photos/679a825c0c4ef508550797fa/master/pass/00018-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Blouse Clothing Adult Person Sleeve Fashion Performer Solo Performance Dress Footwear and Shoe",
+      "details_img_18_tag": "<img alt=\"Image may contain Blouse Clothing Adult Person Sleeve Fashion Performer Solo Performance Dress Footwear and Shoe\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a825c0c4ef508550797fa/master/w_120,c_limit/00018-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a825c0c4ef508550797fa/master/w_240,c_limit/00018-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a825c0c4ef508550797fa/master/w_320,c_limit/00018-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a825c0c4ef508550797fa/master/w_360%2Cc_limit/00018-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 19,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#19",
+      "details_img_asset": "https://assets.vogue.com/photos/679a825d9d7e8a99673c1f51/master/pass/00019-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Carnival Adult Person Wedding Crowd Mardi Gras and Parade",
+      "details_img_19_tag": "<img alt=\"Image may contain Carnival Adult Person Wedding Crowd Mardi Gras and Parade\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a825d9d7e8a99673c1f51/master/w_120,c_limit/00019-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a825d9d7e8a99673c1f51/master/w_240,c_limit/00019-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a825d9d7e8a99673c1f51/master/w_320,c_limit/00019-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a825d9d7e8a99673c1f51/master/w_360%2Cc_limit/00019-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 20,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#20",
+      "details_img_asset": "https://assets.vogue.com/photos/679a825cca56d5412bdca3b8/master/pass/00020-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Hat Adult Person Face Head Photography Portrait Long Sleeve Sleeve and Fashion",
+      "details_img_20_tag": "<img alt=\"Image may contain Clothing Hat Adult Person Face Head Photography Portrait Long Sleeve Sleeve and Fashion\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a825cca56d5412bdca3b8/master/w_120,c_limit/00020-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a825cca56d5412bdca3b8/master/w_240,c_limit/00020-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a825cca56d5412bdca3b8/master/w_320,c_limit/00020-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a825cca56d5412bdca3b8/master/w_360%2Cc_limit/00020-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 21,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#21",
+      "details_img_asset": "https://assets.vogue.com/photos/679a8266763f88bbb6c8eda6/master/pass/00021-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Dress Fashion Formal Wear Gown Adult Person and Robe",
+      "details_img_21_tag": "<img alt=\"Image may contain Clothing Dress Fashion Formal Wear Gown Adult Person and Robe\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a8266763f88bbb6c8eda6/master/w_120,c_limit/00021-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a8266763f88bbb6c8eda6/master/w_240,c_limit/00021-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a8266763f88bbb6c8eda6/master/w_320,c_limit/00021-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a8266763f88bbb6c8eda6/master/w_360%2Cc_limit/00021-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 22,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#22",
+      "details_img_asset": "https://assets.vogue.com/photos/679a8263b52b148525153de5/master/pass/00022-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Cape Clothing Fashion Adult Person Wedding and Glove",
+      "details_img_22_tag": "<img alt=\"Image may contain Cape Clothing Fashion Adult Person Wedding and Glove\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a8263b52b148525153de5/master/w_120,c_limit/00022-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a8263b52b148525153de5/master/w_240,c_limit/00022-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a8263b52b148525153de5/master/w_320,c_limit/00022-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a8263b52b148525153de5/master/w_360%2Cc_limit/00022-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 23,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#23",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82682c2c32ee0ec7de18/master/pass/00023-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Footwear Shoe High Heel Adult Person Accessories Jewelry and Necklace",
+      "details_img_23_tag": "<img alt=\"Image may contain Clothing Footwear Shoe High Heel Adult Person Accessories Jewelry and Necklace\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82682c2c32ee0ec7de18/master/w_120,c_limit/00023-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82682c2c32ee0ec7de18/master/w_240,c_limit/00023-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82682c2c32ee0ec7de18/master/w_320,c_limit/00023-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82682c2c32ee0ec7de18/master/w_360%2Cc_limit/00023-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 24,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#24",
+      "details_img_asset": "https://assets.vogue.com/photos/679a8268b7d3b64fec7b74be/master/pass/00024-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Costume Person and Adult",
+      "details_img_24_tag": "<img alt=\"Image may contain Clothing Costume Person and Adult\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a8268b7d3b64fec7b74be/master/w_120,c_limit/00024-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a8268b7d3b64fec7b74be/master/w_240,c_limit/00024-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a8268b7d3b64fec7b74be/master/w_320,c_limit/00024-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a8268b7d3b64fec7b74be/master/w_360%2Cc_limit/00024-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 25,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#25",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82716c08658ea77840ae/master/pass/00025-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Dress Fashion Formal Wear Gown Adult Person Performer Solo Performance and Dancing",
+      "details_img_25_tag": "<img alt=\"Image may contain Clothing Dress Fashion Formal Wear Gown Adult Person Performer Solo Performance and Dancing\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82716c08658ea77840ae/master/w_120,c_limit/00025-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82716c08658ea77840ae/master/w_240,c_limit/00025-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82716c08658ea77840ae/master/w_320,c_limit/00025-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82716c08658ea77840ae/master/w_360%2Cc_limit/00025-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 26,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#26",
+      "details_img_asset": "https://assets.vogue.com/photos/679a826e6c08658ea77840ac/master/pass/00026-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Footwear Shoe High Heel and Person",
+      "details_img_26_tag": "<img alt=\"Image may contain Clothing Footwear Shoe High Heel and Person\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a826e6c08658ea77840ac/master/w_120,c_limit/00026-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a826e6c08658ea77840ac/master/w_240,c_limit/00026-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a826e6c08658ea77840ac/master/w_320,c_limit/00026-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a826e6c08658ea77840ac/master/w_360%2Cc_limit/00026-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 27,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#27",
+      "details_img_asset": "https://assets.vogue.com/photos/679a8271413190d024277dd5/master/pass/00027-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Elizabeth Spriggs Velvet Adult Person Face Head Photography Portrait Fashion and People",
+      "details_img_27_tag": "<img alt=\"Image may contain Elizabeth Spriggs Velvet Adult Person Face Head Photography Portrait Fashion and People\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a8271413190d024277dd5/master/w_120,c_limit/00027-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a8271413190d024277dd5/master/w_240,c_limit/00027-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a8271413190d024277dd5/master/w_320,c_limit/00027-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a8271413190d024277dd5/master/w_360%2Cc_limit/00027-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 28,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#28",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82749697deb58840a6ee/master/pass/00028-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Dress Fashion Adult Person Formal Wear Gown Wedding and Wedding Gown",
+      "details_img_28_tag": "<img alt=\"Image may contain Clothing Dress Fashion Adult Person Formal Wear Gown Wedding and Wedding Gown\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82749697deb58840a6ee/master/w_120,c_limit/00028-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82749697deb58840a6ee/master/w_240,c_limit/00028-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82749697deb58840a6ee/master/w_320,c_limit/00028-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82749697deb58840a6ee/master/w_360%2Cc_limit/00028-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 29,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#29",
+      "details_img_asset": "https://assets.vogue.com/photos/679a827cbd5ab52b744e1565/master/pass/00029-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Ataui Deng Clothing Hat Face Head Person Photography Portrait and Bonnet",
+      "details_img_29_tag": "<img alt=\"Image may contain Ataui Deng Clothing Hat Face Head Person Photography Portrait and Bonnet\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a827cbd5ab52b744e1565/master/w_120,c_limit/00029-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a827cbd5ab52b744e1565/master/w_240,c_limit/00029-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a827cbd5ab52b744e1565/master/w_320,c_limit/00029-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a827cbd5ab52b744e1565/master/w_360%2Cc_limit/00029-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 30,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#30",
+      "details_img_asset": "https://assets.vogue.com/photos/679a827a0c4ef508550797fc/master/pass/00030-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Head Person Face Adult and Wedding",
+      "details_img_30_tag": "<img alt=\"Image may contain Head Person Face Adult and Wedding\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a827a0c4ef508550797fc/master/w_120,c_limit/00030-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a827a0c4ef508550797fc/master/w_240,c_limit/00030-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a827a0c4ef508550797fc/master/w_320,c_limit/00030-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a827a0c4ef508550797fc/master/w_360%2Cc_limit/00030-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 31,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#31",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82790e98f979f5e9cc77/master/pass/00031-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Accessories Adult Person Jewelry Body Part Finger Hand and Ornament",
+      "details_img_31_tag": "<img alt=\"Image may contain Accessories Adult Person Jewelry Body Part Finger Hand and Ornament\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82790e98f979f5e9cc77/master/w_120,c_limit/00031-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82790e98f979f5e9cc77/master/w_240,c_limit/00031-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82790e98f979f5e9cc77/master/w_320,c_limit/00031-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82790e98f979f5e9cc77/master/w_360%2Cc_limit/00031-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 32,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#32",
+      "details_img_asset": "https://assets.vogue.com/photos/679a8284eb887547ff2cd96d/master/pass/00032-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Footwear Shoe High Heel Adult and Person",
+      "details_img_32_tag": "<img alt=\"Image may contain Clothing Footwear Shoe High Heel Adult and Person\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a8284eb887547ff2cd96d/master/w_120,c_limit/00032-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a8284eb887547ff2cd96d/master/w_240,c_limit/00032-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a8284eb887547ff2cd96d/master/w_320,c_limit/00032-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a8284eb887547ff2cd96d/master/w_360%2Cc_limit/00032-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 33,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#33",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82832c2c32ee0ec7de1a/master/pass/00033-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Electronics Screen Clothing Long Sleeve Sleeve Body Part Finger Hand Person and Computer Hardware",
+      "details_img_33_tag": "<img alt=\"Image may contain Electronics Screen Clothing Long Sleeve Sleeve Body Part Finger Hand Person and Computer Hardware\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82832c2c32ee0ec7de1a/master/w_120,c_limit/00033-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82832c2c32ee0ec7de1a/master/w_240,c_limit/00033-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82832c2c32ee0ec7de1a/master/w_320,c_limit/00033-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82832c2c32ee0ec7de1a/master/w_360%2Cc_limit/00033-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 34,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#34",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82860b3e7330ea6ef1dc/master/pass/00034-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Dress Adult Person Wedding Dancing and Leisure Activities",
+      "details_img_34_tag": "<img alt=\"Image may contain Clothing Dress Adult Person Wedding Dancing and Leisure Activities\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82860b3e7330ea6ef1dc/master/w_120,c_limit/00034-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82860b3e7330ea6ef1dc/master/w_240,c_limit/00034-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82860b3e7330ea6ef1dc/master/w_320,c_limit/00034-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82860b3e7330ea6ef1dc/master/w_360%2Cc_limit/00034-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 35,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#35",
+      "details_img_asset": "https://assets.vogue.com/photos/679a828efa9ba2653c555f8a/master/pass/00035-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Fashion and Person",
+      "details_img_35_tag": "<img alt=\"Image may contain Fashion and Person\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a828efa9ba2653c555f8a/master/w_120,c_limit/00035-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a828efa9ba2653c555f8a/master/w_240,c_limit/00035-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a828efa9ba2653c555f8a/master/w_320,c_limit/00035-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a828efa9ba2653c555f8a/master/w_360%2Cc_limit/00035-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 36,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#36",
+      "details_img_asset": "https://assets.vogue.com/photos/679a828e0c4ef508550797fe/master/pass/00036-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Adult Person Face Head Photography Portrait Performer Solo Performance Accessories and Clothing",
+      "details_img_36_tag": "<img alt=\"Image may contain Adult Person Face Head Photography Portrait Performer Solo Performance Accessories and Clothing\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a828e0c4ef508550797fe/master/w_120,c_limit/00036-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a828e0c4ef508550797fe/master/w_240,c_limit/00036-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a828e0c4ef508550797fe/master/w_320,c_limit/00036-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a828e0c4ef508550797fe/master/w_360%2Cc_limit/00036-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 37,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#37",
+      "details_img_asset": "https://assets.vogue.com/photos/679a828fb7d3b64fec7b74c0/master/pass/00037-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Dress Fashion Formal Wear Gown Accessories Bag Handbag Robe Adult Person and Wedding",
+      "details_img_37_tag": "<img alt=\"Image may contain Clothing Dress Fashion Formal Wear Gown Accessories Bag Handbag Robe Adult Person and Wedding\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a828fb7d3b64fec7b74c0/master/w_120,c_limit/00037-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a828fb7d3b64fec7b74c0/master/w_240,c_limit/00037-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a828fb7d3b64fec7b74c0/master/w_320,c_limit/00037-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a828fb7d3b64fec7b74c0/master/w_360%2Cc_limit/00037-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 38,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#38",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82999d7e8a99673c1f53/master/pass/00038-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Footwear High Heel Shoe Adult and Person",
+      "details_img_38_tag": "<img alt=\"Image may contain Clothing Footwear High Heel Shoe Adult and Person\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82999d7e8a99673c1f53/master/w_120,c_limit/00038-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82999d7e8a99673c1f53/master/w_240,c_limit/00038-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82999d7e8a99673c1f53/master/w_320,c_limit/00038-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82999d7e8a99673c1f53/master/w_360%2Cc_limit/00038-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 39,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#39",
+      "details_img_asset": "https://assets.vogue.com/photos/679a829b376aeae7b7445033/master/pass/00039-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Adult Person Face Head Photography Portrait Carnival and Wedding",
+      "details_img_39_tag": "<img alt=\"Image may contain Adult Person Face Head Photography Portrait Carnival and Wedding\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a829b376aeae7b7445033/master/w_120,c_limit/00039-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a829b376aeae7b7445033/master/w_240,c_limit/00039-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a829b376aeae7b7445033/master/w_320,c_limit/00039-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a829b376aeae7b7445033/master/w_360%2Cc_limit/00039-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 40,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#40",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82930c4ef50855079800/master/pass/00040-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Adult Person and Accessories",
+      "details_img_40_tag": "<img alt=\"Image may contain Adult Person and Accessories\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82930c4ef50855079800/master/w_120,c_limit/00040-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82930c4ef50855079800/master/w_240,c_limit/00040-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82930c4ef50855079800/master/w_320,c_limit/00040-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82930c4ef50855079800/master/w_360%2Cc_limit/00040-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 41,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#41",
+      "details_img_asset": "https://assets.vogue.com/photos/679a829d413190d024277dd7/master/pass/00041-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Footwear High Heel Shoe Adult and Person",
+      "details_img_41_tag": "<img alt=\"Image may contain Clothing Footwear High Heel Shoe Adult and Person\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a829d413190d024277dd7/master/w_120,c_limit/00041-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a829d413190d024277dd7/master/w_240,c_limit/00041-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a829d413190d024277dd7/master/w_320,c_limit/00041-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a829d413190d024277dd7/master/w_360%2Cc_limit/00041-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 42,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#42",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82a30e98f979f5e9cc79/master/pass/00042-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Blouse Clothing Fashion Adult Person Performer Solo Performance and Skirt",
+      "details_img_42_tag": "<img alt=\"Image may contain Blouse Clothing Fashion Adult Person Performer Solo Performance and Skirt\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82a30e98f979f5e9cc79/master/w_120,c_limit/00042-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82a30e98f979f5e9cc79/master/w_240,c_limit/00042-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82a30e98f979f5e9cc79/master/w_320,c_limit/00042-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82a30e98f979f5e9cc79/master/w_360%2Cc_limit/00042-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 43,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#43",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82a10c4ef50855079802/master/pass/00043-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Adult Person Fashion Clothing and Dress",
+      "details_img_43_tag": "<img alt=\"Image may contain Adult Person Fashion Clothing and Dress\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82a10c4ef50855079802/master/w_120,c_limit/00043-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82a10c4ef50855079802/master/w_240,c_limit/00043-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82a10c4ef50855079802/master/w_320,c_limit/00043-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82a10c4ef50855079802/master/w_360%2Cc_limit/00043-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 44,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#44",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82a561ce7906809917ae/master/pass/00044-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Footwear Shoe High Heel Adult and Person",
+      "details_img_44_tag": "<img alt=\"Image may contain Clothing Footwear Shoe High Heel Adult and Person\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82a561ce7906809917ae/master/w_120,c_limit/00044-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82a561ce7906809917ae/master/w_240,c_limit/00044-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82a561ce7906809917ae/master/w_320,c_limit/00044-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82a561ce7906809917ae/master/w_360%2Cc_limit/00044-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 45,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#45",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82ab61ce7906809917b0/master/pass/00045-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Footwear Shoe High Heel Sandal and Person",
+      "details_img_45_tag": "<img alt=\"Image may contain Clothing Footwear Shoe High Heel Sandal and Person\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82ab61ce7906809917b0/master/w_120,c_limit/00045-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82ab61ce7906809917b0/master/w_240,c_limit/00045-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82ab61ce7906809917b0/master/w_320,c_limit/00045-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82ab61ce7906809917b0/master/w_360%2Cc_limit/00045-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 46,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#46",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82ac1bef18502f297dd4/master/pass/00046-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Face Head Person Photography Portrait Adult Accessories Fashion Clothing Costume and Hat",
+      "details_img_46_tag": "<img alt=\"Image may contain Face Head Person Photography Portrait Adult Accessories Fashion Clothing Costume and Hat\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82ac1bef18502f297dd4/master/w_120,c_limit/00046-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82ac1bef18502f297dd4/master/w_240,c_limit/00046-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82ac1bef18502f297dd4/master/w_320,c_limit/00046-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82ac1bef18502f297dd4/master/w_360%2Cc_limit/00046-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 47,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#47",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82ad85468b061650b01c/master/pass/00047-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Hat Glove Carnival Bonnet Adult Person and Wedding",
+      "details_img_47_tag": "<img alt=\"Image may contain Clothing Hat Glove Carnival Bonnet Adult Person and Wedding\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82ad85468b061650b01c/master/w_120,c_limit/00047-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82ad85468b061650b01c/master/w_240,c_limit/00047-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82ad85468b061650b01c/master/w_320,c_limit/00047-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82ad85468b061650b01c/master/w_360%2Cc_limit/00047-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 48,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#48",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82b3763f88bbb6c8eda8/master/pass/00048-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Footwear High Heel Shoe and Person",
+      "details_img_48_tag": "<img alt=\"Image may contain Clothing Footwear High Heel Shoe and Person\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82b3763f88bbb6c8eda8/master/w_120,c_limit/00048-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82b3763f88bbb6c8eda8/master/w_240,c_limit/00048-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82b3763f88bbb6c8eda8/master/w_320,c_limit/00048-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82b3763f88bbb6c8eda8/master/w_360%2Cc_limit/00048-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 49,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#49",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82b49697deb58840a6f0/master/pass/00049-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Adult Person Face Head Photography Portrait Performer Solo Performance Accessories and Earring",
+      "details_img_49_tag": "<img alt=\"Image may contain Adult Person Face Head Photography Portrait Performer Solo Performance Accessories and Earring\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82b49697deb58840a6f0/master/w_120,c_limit/00049-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82b49697deb58840a6f0/master/w_240,c_limit/00049-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82b49697deb58840a6f0/master/w_320,c_limit/00049-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82b49697deb58840a6f0/master/w_360%2Cc_limit/00049-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 50,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#50",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82b6b7d3b64fec7b74c2/master/pass/00050-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Accessories Jewelry Adult Person Wedding Clothing Dress Velvet and Glove",
+      "details_img_50_tag": "<img alt=\"Image may contain Accessories Jewelry Adult Person Wedding Clothing Dress Velvet and Glove\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82b6b7d3b64fec7b74c2/master/w_120,c_limit/00050-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82b6b7d3b64fec7b74c2/master/w_240,c_limit/00050-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82b6b7d3b64fec7b74c2/master/w_320,c_limit/00050-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82b6b7d3b64fec7b74c2/master/w_360%2Cc_limit/00050-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 51,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#51",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82bc763f88bbb6c8edaa/master/pass/00051-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Fashion Clothing Dress Adult Person Formal Wear Evening Dress Performer and Solo Performance",
+      "details_img_51_tag": "<img alt=\"Image may contain Fashion Clothing Dress Adult Person Formal Wear Evening Dress Performer and Solo Performance\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82bc763f88bbb6c8edaa/master/w_120,c_limit/00051-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82bc763f88bbb6c8edaa/master/w_240,c_limit/00051-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82bc763f88bbb6c8edaa/master/w_320,c_limit/00051-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82bc763f88bbb6c8edaa/master/w_360%2Cc_limit/00051-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 52,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#52",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82b80e98f979f5e9cc7b/master/pass/00052-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Velvet Adult Person and Purple",
+      "details_img_52_tag": "<img alt=\"Image may contain Velvet Adult Person and Purple\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82b80e98f979f5e9cc7b/master/w_120,c_limit/00052-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82b80e98f979f5e9cc7b/master/w_240,c_limit/00052-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82b80e98f979f5e9cc7b/master/w_320,c_limit/00052-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82b80e98f979f5e9cc7b/master/w_360%2Cc_limit/00052-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 53,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#53",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82ba0b3e7330ea6ef1de/master/pass/00053-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Hat Bonnet Adult Person and Wedding",
+      "details_img_53_tag": "<img alt=\"Image may contain Clothing Hat Bonnet Adult Person and Wedding\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82ba0b3e7330ea6ef1de/master/w_120,c_limit/00053-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82ba0b3e7330ea6ef1de/master/w_240,c_limit/00053-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82ba0b3e7330ea6ef1de/master/w_320,c_limit/00053-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82ba0b3e7330ea6ef1de/master/w_360%2Cc_limit/00053-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 54,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#54",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82c20b3e7330ea6ef1e0/master/pass/00054-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Blouse Clothing Adult Person Wedding and Formal Wear",
+      "details_img_54_tag": "<img alt=\"Image may contain Blouse Clothing Adult Person Wedding and Formal Wear\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82c20b3e7330ea6ef1e0/master/w_120,c_limit/00054-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82c20b3e7330ea6ef1e0/master/w_240,c_limit/00054-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82c20b3e7330ea6ef1e0/master/w_320,c_limit/00054-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82c20b3e7330ea6ef1e0/master/w_360%2Cc_limit/00054-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 55,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#55",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82bd6c08658ea77840b0/master/pass/00055-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Glove Adult Person Body Part Finger Hand Fashion Accessories Formal Wear and Tie",
+      "details_img_55_tag": "<img alt=\"Image may contain Clothing Glove Adult Person Body Part Finger Hand Fashion Accessories Formal Wear and Tie\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82bd6c08658ea77840b0/master/w_120,c_limit/00055-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82bd6c08658ea77840b0/master/w_240,c_limit/00055-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82bd6c08658ea77840b0/master/w_320,c_limit/00055-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82bd6c08658ea77840b0/master/w_360%2Cc_limit/00055-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 56,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#56",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82c685468b061650b01e/master/pass/00056-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Person Blouse Clothing Face and Head",
+      "details_img_56_tag": "<img alt=\"Image may contain Person Blouse Clothing Face and Head\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82c685468b061650b01e/master/w_120,c_limit/00056-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82c685468b061650b01e/master/w_240,c_limit/00056-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82c685468b061650b01e/master/w_320,c_limit/00056-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82c685468b061650b01e/master/w_360%2Cc_limit/00056-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 57,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#57",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82c39d7e8a99673c1f55/master/pass/00057-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Adult Person and Wedding",
+      "details_img_57_tag": "<img alt=\"Image may contain Adult Person and Wedding\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82c39d7e8a99673c1f55/master/w_120,c_limit/00057-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82c39d7e8a99673c1f55/master/w_240,c_limit/00057-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82c39d7e8a99673c1f55/master/w_320,c_limit/00057-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82c39d7e8a99673c1f55/master/w_360%2Cc_limit/00057-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 58,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#58",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82c9763f88bbb6c8edac/master/pass/00058-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Adult Person Head Hair and Face",
+      "details_img_58_tag": "<img alt=\"Image may contain Adult Person Head Hair and Face\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82c9763f88bbb6c8edac/master/w_120,c_limit/00058-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82c9763f88bbb6c8edac/master/w_240,c_limit/00058-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82c9763f88bbb6c8edac/master/w_320,c_limit/00058-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82c9763f88bbb6c8edac/master/w_360%2Cc_limit/00058-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 59,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#59",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82c961ce7906809917b2/master/pass/00059-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Adult Person Accessories Bag Handbag Blouse Clothing Fashion Face Head Purse and Jewelry",
+      "details_img_59_tag": "<img alt=\"Image may contain Adult Person Accessories Bag Handbag Blouse Clothing Fashion Face Head Purse and Jewelry\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82c961ce7906809917b2/master/w_120,c_limit/00059-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82c961ce7906809917b2/master/w_240,c_limit/00059-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82c961ce7906809917b2/master/w_320,c_limit/00059-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82c961ce7906809917b2/master/w_360%2Cc_limit/00059-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 60,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#60",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82cb2c2c32ee0ec7de1c/master/pass/00060-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Footwear Shoe High Heel Adult Person and Wedding",
+      "details_img_60_tag": "<img alt=\"Image may contain Clothing Footwear Shoe High Heel Adult Person and Wedding\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82cb2c2c32ee0ec7de1c/master/w_120,c_limit/00060-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82cb2c2c32ee0ec7de1c/master/w_240,c_limit/00060-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82cb2c2c32ee0ec7de1c/master/w_320,c_limit/00060-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82cb2c2c32ee0ec7de1c/master/w_360%2Cc_limit/00060-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 61,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#61",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82cd763f88bbb6c8edae/master/pass/00061-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Footwear High Heel Shoe Adult Person Accessories Jewelry and Necklace",
+      "details_img_61_tag": "<img alt=\"Image may contain Clothing Footwear High Heel Shoe Adult Person Accessories Jewelry and Necklace\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82cd763f88bbb6c8edae/master/w_120,c_limit/00061-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82cd763f88bbb6c8edae/master/w_240,c_limit/00061-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82cd763f88bbb6c8edae/master/w_320,c_limit/00061-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82cd763f88bbb6c8edae/master/w_360%2Cc_limit/00061-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 62,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#62",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82cd1bef18502f297dd6/master/pass/00062-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Carnival Adult Person Face Head Photography Portrait Crowd Mardi Gras and Parade",
+      "details_img_62_tag": "<img alt=\"Image may contain Carnival Adult Person Face Head Photography Portrait Crowd Mardi Gras and Parade\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82cd1bef18502f297dd6/master/w_120,c_limit/00062-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82cd1bef18502f297dd6/master/w_240,c_limit/00062-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82cd1bef18502f297dd6/master/w_320,c_limit/00062-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82cd1bef18502f297dd6/master/w_360%2Cc_limit/00062-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 63,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#63",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82d4bec4700044655e2b/master/pass/00063-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Adult Person Performer Solo Performance Dancing and Leisure Activities",
+      "details_img_63_tag": "<img alt=\"Image may contain Adult Person Performer Solo Performance Dancing and Leisure Activities\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82d4bec4700044655e2b/master/w_120,c_limit/00063-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82d4bec4700044655e2b/master/w_240,c_limit/00063-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82d4bec4700044655e2b/master/w_320,c_limit/00063-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82d4bec4700044655e2b/master/w_360%2Cc_limit/00063-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 64,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#64",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82d5ca56d5412bdca3ba/master/pass/00064-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Fashion Adult and Person",
+      "details_img_64_tag": "<img alt=\"Image may contain Fashion Adult and Person\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82d5ca56d5412bdca3ba/master/w_120,c_limit/00064-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82d5ca56d5412bdca3ba/master/w_240,c_limit/00064-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82d5ca56d5412bdca3ba/master/w_320,c_limit/00064-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82d5ca56d5412bdca3ba/master/w_360%2Cc_limit/00064-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    },
+    {
+      "detail_index": 65,
+      "details_img_url": "https://www.vogue.com/fashion-shows/spring-2025-couture/valentino/slideshow/details#65",
+      "details_img_asset": "https://assets.vogue.com/photos/679a82d10e98f979f5e9cc7d/master/pass/00065-valentino-spring-2025-couture-details-credit-gorunway.jpg",
+      "details_img_alt": "Image may contain Clothing Long Sleeve Sleeve Adult Person Coat Fashion Dress Knitwear Sweater and Candle",
+      "details_img_65_tag": "<img alt=\"Image may contain Clothing Long Sleeve Sleeve Adult Person Coat Fashion Dress Knitwear Sweater and Candle\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/679a82d10e98f979f5e9cc7d/master/w_120,c_limit/00065-valentino-spring-2025-couture-details-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/679a82d10e98f979f5e9cc7d/master/w_240,c_limit/00065-valentino-spring-2025-couture-details-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/679a82d10e98f979f5e9cc7d/master/w_320,c_limit/00065-valentino-spring-2025-couture-details-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/679a82d10e98f979f5e9cc7d/master/w_360%2Cc_limit/00065-valentino-spring-2025-couture-details-credit-gorunway.jpg\">"
+    }
+  ],
+  "mapping": {
+    "strategy": "embedded-state",
+    "detail_policy": "none",
+    "looks_found": 49,
+    "details_found": 65,
+    "details_attached": 0,
+    "tags_captured": 114,
+    "note": "Vogue publishes no look->detail link for this show: the detail gallery is an independent running sequence with its own count. Details are preserved in 'details_gallery' for downstream vision-based matching rather than guessed at."
+  }
+}

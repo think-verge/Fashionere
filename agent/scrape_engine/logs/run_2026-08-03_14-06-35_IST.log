@@ -1,0 +1,16 @@
+2026-08-03 14:06:35 IST  run 2026-08-03T14:06:35+05:30 | 2 collection(s) | pipeline v2
+2026-08-03 14:06:35 IST  DRY RUN - no network or API calls will be made
+
+2026-08-03 14:06:35 IST  [ 1/2] prada | fall-2025-ready-to-wear
+2026-08-03 14:06:35 IST           scrape  SKIP   done 2026-08-02 (52 looks, 117 details)
+2026-08-03 14:06:35 IST           match   SKIP   done 2026-08-02 (116 attached)
+2026-08-03 14:06:35 IST           tag     SKIP   done 2026-08-02 (169 images)
+2026-08-03 14:06:35 IST           flatten PLAN   free, no API calls
+2026-08-03 14:06:35 IST  [ 2/2] valentino | fall-2026-ready-to-wear
+2026-08-03 14:06:35 IST           scrape  SKIP   done 2026-08-03 (85 looks, 101 details)
+2026-08-03 14:06:35 IST           match   SKIP   done 2026-08-03 (101 attached)
+2026-08-03 14:06:35 IST           tag     SKIP   done 2026-08-03 (186 images)
+2026-08-03 14:06:35 IST           flatten PLAN   free, no API calls
+2026-08-03 14:06:35 IST  ----------------------------------------------------------------
+2026-08-03 14:06:35 IST  scraped 0   matched 0   tagged 0   flattened 0   skipped 6   failed 0   suspect 0
+2026-08-03 14:06:35 IST  gemini ~$0.00 est (upper bound; cached calls cost nothing)   elapsed 0s   log: C:\Users\JaswanthPall_fnohyb7\Downloads\Prada\fashion_engine\scrape_engine\logs\run_2026-08-03_14-06-35_IST.log

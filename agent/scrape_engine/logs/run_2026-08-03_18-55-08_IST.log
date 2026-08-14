@@ -1,0 +1,60 @@
+2026-08-03 18:55:08 IST  run 2026-08-03T18:55:08+05:30 | 3 collection(s) | pipeline v2
+2026-08-03 18:55:08 IST  [ 1/3] prada | fall-2025-ready-to-wear
+2026-08-03 18:55:08 IST           scrape  SKIP   done 2026-08-02 (52 looks, 117 details)
+2026-08-03 18:55:08 IST           match   SKIP   done 2026-08-02 (116 attached)
+2026-08-03 18:55:08 IST           tag     SKIP   done 2026-08-02 (169 images)
+2026-08-03 18:55:08 IST           flatten SKIP   done 2026-08-03 (53 docs)
+2026-08-03 18:55:10 IST  [ 2/3] valentino | fall-2026-ready-to-wear
+2026-08-03 18:55:10 IST           scrape  SKIP   done 2026-08-03 (85 looks, 101 details)
+2026-08-03 18:55:10 IST           match   SKIP   done 2026-08-03 (101 attached)
+2026-08-03 18:55:10 IST           tag     SKIP   done 2026-08-03 (186 images)
+2026-08-03 18:55:10 IST           flatten SKIP   done 2026-08-03 (85 docs)
+2026-08-03 18:55:12 IST  [ 3/3] valentino | spring-2026-couture
+2026-08-03 18:55:12 IST           scrape  RUN    
+2026-08-03 18:55:39 IST             | -> Loading https://www.vogue.com/fashion-shows/spring-2026-couture/valentino
+2026-08-03 18:55:39 IST             |    Strategy 1 (embedded state): 61 looks, 80 details
+2026-08-03 18:55:39 IST             |    Capturing <img> tags from the slideshows...
+2026-08-03 18:55:39 IST             |    tags captured: 141/141 images
+2026-08-03 18:55:39 IST           scrape  OK     61 looks, 80 details, 141 tags
+2026-08-03 18:55:39 IST           match   RUN    80 details -> gemini-2.5-flash
+2026-08-03 19:00:38 IST             | -> Valentino spring-2026-couture: 61 looks, 80 details
+2026-08-03 19:00:38 IST             |    model=gemini-2.5-flash window=+/-6 workers=4
+2026-08-03 19:00:38 IST             |    scored 10/80
+2026-08-03 19:00:38 IST             |    scored 20/80
+2026-08-03 19:00:38 IST             |    scored 30/80
+2026-08-03 19:00:38 IST             |    scored 40/80
+2026-08-03 19:00:38 IST             |    scored 50/80
+2026-08-03 19:00:38 IST             |    scored 60/80
+2026-08-03 19:00:38 IST             |    scored 70/80
+2026-08-03 19:00:38 IST             |    scored 80/80
+2026-08-03 19:00:38 IST             |    attached      : 80/80 details
+2026-08-03 19:00:38 IST             |    unmatched     : 0
+2026-08-03 19:00:38 IST             |    looks covered : 60/61
+2026-08-03 19:00:38 IST             |    order-adjusted: 0
+2026-08-03 19:00:38 IST             |    cache         : .match_cache_Valentino_spring_2026_couture_raw.json
+2026-08-03 19:00:38 IST             | Saved -> C:\Users\JaswanthPall_fnohyb7\Downloads\Prada\fashion_engine\scrape_engine\data\mapped\valentino\Valentino_spring_2026_couture_mapped.json
+2026-08-03 19:00:38 IST           match   OK     80/80 attached, 60/61 looks   299s  ~$0.22
+2026-08-03 19:00:38 IST           tag     RUN    141 images -> gemini-2.5-flash
+2026-08-03 19:08:58 IST             | -> Valentino spring-2026-couture: 141 images to tag
+2026-08-03 19:08:58 IST             |    model=gemini-2.5-flash width=768 workers=4 prompt_v2
+2026-08-03 19:08:58 IST             |    tagged 20/141
+2026-08-03 19:08:58 IST             |    tagged 40/141
+2026-08-03 19:08:58 IST             |    tagged 60/141
+2026-08-03 19:08:58 IST             |    tagged 80/141
+2026-08-03 19:08:58 IST             |    tagged 100/141
+2026-08-03 19:08:58 IST             |    tagged 120/141
+2026-08-03 19:08:58 IST             |    tagged 140/141
+2026-08-03 19:08:58 IST             |    tagged  : 140/141 images
+2026-08-03 19:08:58 IST             |    failed  : 1 -> ['look 16 detail 22: RuntimeError']
+2026-08-03 19:08:58 IST             |    cache   : .tag_cache_Valentino_spring_2026_couture_mapped.json
+2026-08-03 19:08:58 IST             | Saved -> C:\Users\JaswanthPall_fnohyb7\Downloads\Prada\fashion_engine\scrape_engine\data\tagged\valentino\Valentino_spring_2026_couture_tagged.json
+2026-08-03 19:08:58 IST           tag     OK     140/141 images   499s  ~$0.32
+2026-08-03 19:08:58 IST           flatten RUN    
+2026-08-03 19:08:58 IST             | -> Valentino spring-2026-couture
+2026-08-03 19:08:58 IST             |    documents : 61  (61 looks)
+2026-08-03 19:08:58 IST             |    details   : 80 nested across those documents
+2026-08-03 19:08:58 IST             | Saved -> C:\Users\JaswanthPall_fnohyb7\Downloads\Prada\fashion_engine\scrape_engine\data\flattened\valentino\Valentino_spring_2026_couture_flattened.json
+2026-08-03 19:08:58 IST           flatten OK     61 documents (61 looks) ready for Mongo
+2026-08-03 19:08:58 IST  ----------------------------------------------------------------
+2026-08-03 19:08:58 IST  scraped 1   matched 1   tagged 1   flattened 1   skipped 8   failed 0   suspect 0
+2026-08-03 19:08:58 IST  gemini ~$0.54 est (upper bound; cached calls cost nothing)   elapsed 829s   log: C:\Users\JaswanthPall_fnohyb7\Downloads\Prada\fashion_engine\scrape_engine\logs\run_2026-08-03_18-55-08_IST.log

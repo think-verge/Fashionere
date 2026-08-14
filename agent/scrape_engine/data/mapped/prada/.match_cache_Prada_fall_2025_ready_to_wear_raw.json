@@ -1,0 +1,959 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc5610926bf708223922/master/pass/00001-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|1-6": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The model, black dress with specific button and seam details, and the white handbag are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc56aeb70f29ea52fb20/master/pass/00003-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|1-7": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The black dress with the distinctive raw-edge draped neckline and short sleeves, along with the white structured bag, are identical to Look 3. The model also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc5b2a0bbe3f01fb9f26/master/pass/00004-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|1-8": {
+  "look_number": 1,
+  "confidence": 0.95,
+  "evidence": "The detail image shows a white shoulder bag with gold hardware, brown pointed-toe heels, and a black textured dress on a dark-skinned model. Look 1 features the identical bag, shoes, and a black dress with a consistent texture, worn by a model with the same skin tone.",
+  "alternates": [
+   {
+    "look_number": 3,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc602a0bbe3f01fb9f28/master/pass/00007-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|1-9": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 5, showing the same red knitted sweater with a white shirt underneath, drawstring waist with a bow, and blue denim jeans.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc5c98a6d0a0d819f164/master/pass/00006-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|1-8": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The light pink Prada handbag with gold hardware, black dress, and black pointed-toe heels are identical to those in the detail image.",
+  "alternates": [
+   {
+    "look_number": 4,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc578bac80a6cca62a33/master/pass/00002-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|1-7": {
+  "look_number": null,
+  "confidence": 0.9,
+  "evidence": "The distinctive light blue Prada bag in the detail image does not appear in any of the candidate looks. All candidates show a different, cream-colored bag or no bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc5f8bac80a6cca62a35/master/pass/00008-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|1-9": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The dark blue jeans with distressed areas and the black slip-on loafers with visible stitching perfectly match those worn by the model in Look 5. The model's skin tone also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc5adfc1a04fb13f512c/master/pass/00005-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|1-8": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The model, black boat-neck dress with central button and flap pockets, white handbag, dark heels, and hosiery are identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 1,
+    "confidence": 0.2
+   },
+   {
+    "look_number": 2,
+    "confidence": 0.2
+   },
+   {
+    "look_number": 3,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc64dfc1a04fb13f512e/master/pass/00010-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|1-10": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black open-toe loafer with a pleated vamp and black cropped trousers. Look 6 features the exact same black open-toe loafers and black cropped trousers.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc601e03d7eee386464d/master/pass/00009-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|1-10": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The light blue knitted top with its distinctive high collar, short sleeves with buttons, and front pockets with buttons, along with the model's hair and makeup, are identical in both the detail and look 6.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc6598a6d0a0d819f166/master/pass/00011-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|1-11": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The model, brown piped shirt, mint green pleated bottom, and black bag are identical to Look 7.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc6979a07c3328fc3f40/master/pass/00014-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|1-12": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The model's hair, glasses, yellow ribbed top, and intricate necklace with flower, leaf, and pearl charms are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc692e69d57b38906c1b/master/pass/00013-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|1-12": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 9, featuring the same model, green knitted dress with pleated details, light blue collared shirt underneath, and black boots.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc6f1f632d92124d7949/master/pass/00017-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|1-13": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 11, including the dark brown jacket with fur collar, navy lapel, grey pleated skirt, and the small tan handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc6a1f632d92124d7947/master/pass/00015-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|1-12": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The model, mustard yellow ribbed top, grey trousers, glasses, hair, makeup, and necklaces are identical to Look 10.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc6ed409bbbc4b7456ce/master/pass/00016-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|1-13": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The black leather tote bag with gold chain strap and brown leather accents, along with the grey trousers, perfectly match those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc721e03d7eee386464f/master/pass/00019-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|2-14": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The model, hair, glasses, both necklaces, the pink collared shirt with piping, and the grey oversized coat are all identical in the detail and Look 12.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc6ffba4865efd8e55a6/master/pass/00018-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|2-14": {
+  "look_number": null,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a distinct ombr\u00e9 brown Prada shoulder bag with a specific strap design. None of the candidate looks feature this exact bag; they either show different bags or no bag at all.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc65f3fa22bd5c850853/master/pass/00012-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|1-11": {
+  "look_number": 8,
+  "confidence": 0.95,
+  "evidence": "The brown pointed-toe kitten heel pump with the distinctive vamp detail in the detail image is an exact match for the shoes worn in Look 8.",
+  "alternates": [
+   {
+    "look_number": 2,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc74e68d025d7e5dbb77/master/pass/00020-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|3-15": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 12, including the model, hair, glasses, grey coat, pink shirt with white piping, brown ruffled skirt with white piping, and all visible jewelry (chunky necklace, long pendant necklace, and brooch).",
+  "alternates": [
+   {
+    "look_number": 7,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc74a66a726521949401/master/pass/00021-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|3-15": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the dark grey coat, pink piped shirt, brown gathered skirt with white buttons and piping, and the pearl necklace worn in Look 12.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc78fba4865efd8e55a8/master/pass/00023-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|4-16": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the brown fur-collared, shiny coated jacket with large light buttons worn by the model in Look 14. The model's hair and glasses are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc75dfc1a04fb13f5130/master/pass/00022-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|4-16": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact same grey ribbed knit top with a bow detail and voluminous pockets, worn over blue jeans, as seen in Look 13. The model's hair and glasses are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc79fba4865efd8e55aa/master/pass/00024-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|4-16": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 14, featuring the identical shiny brown fur coat with a large fur collar, fur cuffs, light-colored buttons, and the distinctive green chain-strap bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc79f0de7d3f099cb862/master/pass/00025-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|5-17": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail image shows an olive green Prada bag with a gold chain strap and a brown fur-trimmed coat with a shiny, mottled brown body. Look 14 features the exact same bag and coat.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc7b0f90e3db771b95c6/master/pass/00026-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|5-17": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail shows a yellow/mustard chunky knit garment with a wide, structured neckline, worn by a model with dark skin and short, curly dark hair. Look 15 features a dress with the exact same color, knit texture, and neckline, worn by the identical model.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc7d79a07c3328fc3f42/master/pass/00027-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|6-18": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The dress, including its color, knit texture, rolled collar, pleats, buttoned flap pockets, and sleeve buttons, is an exact match. The small brown gathered leather bag with a gold chain strap is also identical.",
+  "alternates": [
+   {
+    "look_number": 6,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc7f137d584a31aeaa99/master/pass/00029-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|7-19": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for the pink sleeveless dress with a bow detail, ribbed texture, and pockets shown in Look 16.",
+  "alternates": [
+   {
+    "look_number": 13,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 19,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc82a66a726521949403/master/pass/00031-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|8-20": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, burgundy knit top, navy knit skirt with pockets, brown suede bag, and all jewelry are identical to Look 17.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc7d137d584a31aeaa97/master/pass/00028-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|6-18": {
+  "look_number": 15,
+  "confidence": 0.9,
+  "evidence": "The yellow knit garment in the detail perfectly matches the dress in Look 15. The brown leather bag with a gold chain strap and the model's dark skin tone are also consistent with Look 15.",
+  "alternates": [
+   {
+    "look_number": 10,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 17,
+    "confidence": 0.4
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc81fe27e22f42f830fd/master/pass/00030-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|7-19": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The model's face, blonde bob haircut, dark red knit top, and all visible jewelry (pink teardrop earring, abstract silver earring, square orange pendant, pearl drop, and flower brooch) are identical to Look 17.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc8410926bf708223926/master/pass/00033-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|8-20": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for the dark grey coat with a large black fur collar, flap pockets, and single button closure worn by the model in Look 18. The model's hair and facial features also match perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc8310926bf708223924/master/pass/00032-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|8-20": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive brown suede Prada bag and the black pump with a textured heel from the detail image are not present in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc877fb4c2b4aaed6fb5/master/pass/00034-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|9-21": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The pointed-toe pump in muted yellow/chartreuse with a matching bow detail on the toe is identical to the shoe in the detail image.",
+  "alternates": [
+   {
+    "look_number": 18,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc88131718004e7d8f3e/master/pass/00036-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|10-22": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The dress, its yellow and green floral pattern, pleated bodice with a bow, and the small black structured handbag are identical in both the detail image and Look 19. The model's hair and visible arm tattoos also match perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc87e68d025d7e5dbb79/master/pass/00035-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|9-21": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The model, hair, tattoos, and the unique yellow-green textured dress with a front bow and abstract pattern are identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc8c0f90e3db771b95c8/master/pass/00038-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|11-23": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The model's hair, facial features, and the floral patterned dress with its specific colors (pink, green, yellow, blue) and bow detail are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc8ca66a726521949405/master/pass/00039-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|11-23": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The dress, including its unique floral pattern, colors, neckline, sleeve length, and waist bow, is identical. The model's voluminous blonde hair and the black structured handbag are also an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc8ffe27e22f42f830ff/master/pass/00040-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|12-24": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The black Prada handbag and the vibrant floral print dress with pink, green, yellow, and blue flowers are an exact match to Look 20.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc9050ea11271afb5889/master/pass/00041-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|12-24": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The dress, bag, hair, and visible tattoos are identical in the detail and Look 21.",
+  "alternates": [
+   {
+    "look_number": 19,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc8a1f632d92124d794b/master/pass/00037-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|10-22": {
+  "look_number": null,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model wearing a yellow and green patterned dress and carrying a small black rectangular bag, which perfectly match Look 19. However, the model's tattoo and the black platform shoes in the detail image do not match the model's tattoos or the white pointed-toe shoes in Look 19. No other candidate look matches any significant elements.",
+  "alternates": [
+   {
+    "look_number": 19,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc96f0de7d3f099cb864/master/pass/00043-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|13-25": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The model's hair, the dark grey coat, the distinctive green-jeweled necklace with a dark blue knitted base, and the large silver-toned earrings are all identical to Look 22.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc91131718004e7d8f40/master/pass/00042-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|12-24": {
+  "look_number": 20,
+  "confidence": 0.95,
+  "evidence": "The black rectangular bag with the triangular logo and the multi-color floral dress with pink, green, and yellow hues perfectly match the detail image.",
+  "alternates": [
+   {
+    "look_number": 21,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc961f632d92124d794d/master/pass/00045-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|14-26": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The dress, belt, and distinctive pink and black striped necklace are identical in both the detail and Look 23.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc9baeb70f29ea52fb22/master/pass/00046-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|14-26": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The light-colored open-toe sandal with an ankle strap and a bow detail on the toe strap is identical in both the detail image and Look 23.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc9c79a07c3328fc3f44/master/pass/00047-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|15-27": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The model, dark blue knitted choker with gold embellishments, and the dark grey strapless knitted top with the gold circular brooch are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc95f038c29d4420cc04/master/pass/00044-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|13-25": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The dark grey coat with brown belt, ornate necklace, red chain bag, and model's hair are identical to Look 22.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc9be68d025d7e5dbb7b/master/pass/00048-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|15-27": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 24, including the strapless knitted top with brooch, green skirt with bow, chunky necklace, and brown chain-strap bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cca2137d584a31aeaa9b/master/pass/00051-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|16-28": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The model, pink bomber jacket, brown ribbed top, dark skirt, silver glasses, star earrings, and brown chain bag are identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc9e50ea11271afb588b/master/pass/00049-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|16-28": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The brown Prada bag with gold chain and circular links, the dark green skirt, and the reddish-brown textured shoes all perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cca2f0de7d3f099cb866/master/pass/00050-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|16-28": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The model, hair, unique glasses, and distinctive earrings (one sculptural, one small geometric) are an exact match. The light pink collared jacket with a zipper and the brown top underneath also match perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cca498a6d0a0d819f168/master/pass/00052-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|17-29": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a pink jacket, dark trousers, and a brown leather bag with a gold chain strap. Look 25 features the exact same pink jacket, dark bottom, and the identical brown leather bag with a gold chain strap.",
+  "alternates": [
+   {
+    "look_number": 24,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cca9e68d025d7e5dbb7d/master/pass/00053-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|17-29": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The red paper-bag waist skirt with a small bow and the burgundy draped top are identical in color, style, and details to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccab131718004e7d8f42/master/pass/00055-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|18-30": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The blazer in Look 27 is an exact match for the detail image in terms of color, fabric texture, notched lapels, two-button closure, and flap pockets. The model and the visible bag also match perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccb2dfc1a04fb13f5132/master/pass/00057-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|19-31": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail shows a dark grey sleeveless dress with pleating and a red Prada bag with a gold chain. Look 28 features the exact same dark grey sleeveless dress with similar pleating and the identical red Prada bag with a gold chain. The model's blonde hair also matches.",
+  "alternates": [
+   {
+    "look_number": 22,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccb298a6d0a0d819f16a/master/pass/00058-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|20-32": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The model, hair, strapless tie-dye top with white trim and V-straps, and the dark grey textured skirt are identical in both the detail and look 29.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccaee68d025d7e5dbb7f/master/pass/00056-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|19-31": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The model, dark grey sleeveless dress with gathered detail, red structured bag with gold chain, and long white earrings are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccaba66a726521949407/master/pass/00054-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|18-30": {
+  "look_number": 27,
+  "confidence": 0.98,
+  "evidence": "The dark brown, pointed-toe pump with a stiletto heel and matte finish perfectly matches the shoes worn in Look 27. The subtle bow detail at the heel is consistent with the overall design, though not explicitly visible from the full-body angle.",
+  "alternates": [
+   {
+    "look_number": 29,
+    "confidence": 0.98
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccb8aeb70f29ea52fb24/master/pass/00060-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|20-32": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The light blue bomber jacket, dark grey top, cream skirt with ties, and brown leather handbag are identical in Look 30 and the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccba131718004e7d8f44/master/pass/00061-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|21-33": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the light blue jacket, the distinctive cream/off-white skirt with vertical seams and ties, and the brown suede bag shown in Look 30.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccb450ea11271afb588d/master/pass/00059-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|20-32": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the colorful strapless top, the dark grey skirt with four prominent buttons and pleats, and the black handbag with gold hardware seen in Look 29.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccba8bac80a6cca62a37/master/pass/00062-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|21-33": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light blue jacket, a light beige skirt, and a brown suede Prada shoulder bag. Look 30 features the exact same light blue jacket, light beige skirt, and brown suede Prada shoulder bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccbefba4865efd8e55ac/master/pass/00063-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|22-34": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The model, burgundy speckled knit sweater with brooches and necklace, and brown paper-bag waist shorts with white buttons and trim are identical to Look 31.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccc4dfc1a04fb13f5134/master/pass/00065-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|23-35": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The model, fur coat with brown fur collar and grey lapel, white ruffled blouse, and large silver earrings are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccc4f3fa22bd5c850855/master/pass/00066-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|23-35": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail shows a brown fur coat and a distinctive black drawstring bag with a gold chain and silver ball charm, both of which are an exact match to Look 32. The visible shoe color also aligns.",
+  "alternates": [
+   {
+    "look_number": 35,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccc410926bf708223928/master/pass/00064-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|22-34": {
+  "look_number": 31,
+  "confidence": 0.95,
+  "evidence": "The detail image shows a light-colored, pointed-toe pump with a distinctive soft, irregular folded detail on the vamp. Look 31 features shoes that perfectly match this description in color, shape, and the unique folded design.",
+  "alternates": [
+   {
+    "look_number": 34,
+    "confidence": 0.85
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cccbf038c29d4420cc06/master/pass/00067-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|24-36": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The model, yellow knit bandeau top with white and pink straps, and the dark brown leather-like skirt with gathered waist and ties are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cccd98a6d0a0d819f16c/master/pass/00068-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|24-36": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The yellow knitted halter top with white trim and pink straps, and the dark brown leather-like skirt with ties, are identical in both the detail and Look 33. The model's hair and skin tone also match perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccccdfc1a04fb13f5136/master/pass/00069-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|24-36": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The light pink pointed-toe pump with a distinctive bow-like detail at the heel in the detail image does not match any of the shoes worn in the candidate looks. All candidate looks feature shoes of different colors and styles, none with the specific heel detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccd3fe27e22f42f83101/master/pass/00070-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|25-37": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 34, featuring the same model, the distinctive textured brown jacket with its unique collar and two large buttons, and the matching short skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccd38bac80a6cca62a39/master/pass/00071-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|25-37": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light cream pointed-toe pump with a bow detail on the toe, which is identical to the shoes worn in Look 34.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccd3dfc1a04fb13f5138/master/pass/00072-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|26-38": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The model, hair, glasses, large abstract hoop earrings, pink chunky necklace, and the black textured high-collared jacket with the visible brown/grey knit collar are all identical to Look 35.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccdbfe27e22f42f83103/master/pass/00073-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|26-38": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The jacket, glasses, earrings, bag, and model's hair and makeup are identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 34,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccdb1f632d92124d794f/master/pass/00075-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|27-39": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The model's hair, light blue collared shirt, and the brown textured knit garment with its distinctive gathered neckline are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cce31f632d92124d7951/master/pass/00076-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|28-40": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The brown knitted dress with its unique texture, pleated neckline, and horizontal seam, worn over a white collared shirt, perfectly matches Look 36. The black structured handbag with the gold buckle is also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cce350ea11271afb588f/master/pass/00077-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|28-40": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The black structured handbag with gold hardware and 'PRADA MILANO' logo, the brown textured knit garment, and the dark patterned shoes all perfectly match Look 36.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccea7fb4c2b4aaed6fb7/master/pass/00079-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|29-41": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The model, light blue tied shirt, grey pleated shorts, and clear-framed glasses are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cce40f90e3db771b95ca/master/pass/00078-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|28-40": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The model, glasses, and light blue collared shirt with a white strap visible underneath are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccdb137d584a31aeaa9d/master/pass/00074-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|27-39": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The black gathered pouch bag with a gold chain and silver spherical charm is identical, and the black textured jacket visible in the detail matches the jacket worn in Look 35.",
+  "alternates": [
+   {
+    "look_number": 32,
+    "confidence": 0.9
+   },
+   {
+    "look_number": 28,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cceb50ea11271afb5891/master/pass/00080-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|29-41": {
+  "look_number": 32,
+  "confidence": 0.98,
+  "evidence": "The black leather loafer with its specific strap, stitching, and sole design is an exact match to the shoe worn in Look 32.",
+  "alternates": [
+   {
+    "look_number": 37,
+    "confidence": 0.98
+   },
+   {
+    "look_number": 38,
+    "confidence": 0.98
+   },
+   {
+    "look_number": 41,
+    "confidence": 0.98
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccebaeb70f29ea52fb26/master/pass/00081-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|30-42": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The model, brown wool coat with fur collar, red handbag, and black shoes are identical in both the detail and look 38.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccf1191c412098a8a700/master/pass/00082-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|30-42": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The handbag in the detail image is identical in color (burgundy suede), shape, strap design, gold hardware, and hanging tag to the bag carried by the model in Look 38. The dark coat behind the bag in the detail also matches the coat in Look 38.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccf2f0de7d3f099cb868/master/pass/00083-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|31-43": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The model, grey herringbone coat, light pink tied shirt, brown gathered mini skirt, and light flat shoes are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccf51f632d92124d7953/master/pass/00085-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|32-44": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 40, including the red suede jacket, the long red tie, the brown and white patterned knit sweater, the silver necklace with a charm, the dark textured pants, and the model's hair and facial features.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccf2131718004e7d8f46/master/pass/00084-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|31-43": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The detail shows an off-white Prada lace-up sneaker with a distressed finish and a dark leg, which perfectly matches the shoes and model's leg in Look 39.",
+  "alternates": [
+   {
+    "look_number": 43,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccf910926bf70822392a/master/pass/00086-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|32-44": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The red jacket, the brown and white patterned knit sweater, and the dark navy textured skirt with its unique draped and pleated structure are all identical to those in Look 40.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccfa98a6d0a0d819f16e/master/pass/00087-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|32-44": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The light-colored pointed-toe pump with a stiletto heel and distinctive angular fold on the vamp perfectly matches the shoe in the detail image.",
+  "alternates": [
+   {
+    "look_number": 40,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccfc10926bf70822392c/master/pass/00088-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|33-45": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The model, hair, glasses, earrings, dark blue ribbed strapless top with pearl embellishment, and brown skirt are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd00131718004e7d8f48/master/pass/00089-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|33-45": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a dark reddish-brown leather handbag with gold hardware and 'PRADA MILANO' branding, along with a black leather loafer. Look 41 features the exact same handbag and black leather loafers, and the visible brown garment and bare legs are consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd02928ae217253cb0b8/master/pass/00090-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|34-46": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The model, curly blonde hair, dark brown fur stole, lime green cape, light blue shirt, and dark brown drawstring bag with gold chain are all identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 41,
+    "confidence": 0.4
+   },
+   {
+    "look_number": 38,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd03fba4865efd8e55ae/master/pass/00091-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|34-46": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The lime green poncho, dark brown fur collar, light blue shirt cuff, dark brown chain bag, and curly blonde hair are all identical to Look 42.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd06a66a726521949409/master/pass/00092-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|35-47": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 42, including the model's curly blonde hair, the brown fur collar, the lime green cape, the light blue shirt cuff, and the burgundy Prada clutch bag with gold chain.",
+  "alternates": [
+   {
+    "look_number": 41,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 38,
+    "confidence": 0.5
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd09f038c29d4420cc08/master/pass/00094-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|36-48": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the dark navy coat, burgundy top with white trim, and light blue pleated skirt with white hem trim and button closure seen in Look 43.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd0a10926bf70822392e/master/pass/00093-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|35-47": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the dark navy coat, burgundy shirt with white piping, and light blue gathered skirt with white piping seen in Look 43.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd0c98a6d0a0d819f170/master/pass/00095-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|36-48": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, and the black strapless garment with a textured/frayed top edge are identical in both the detail and look 44.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd10dfc1a04fb13f513a/master/pass/00096-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|36-48": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black strapless dress with a bow on the bodice and frayed edges at the top and bottom. Look 44 features the identical black strapless dress with the same bow, frayed edges, and overall design.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd12dfc1a04fb13f513c/master/pass/00098-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|37-49": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The black strapless dress with four large round black buttons, textured fabric, and pleated waist is identical. The model's long dark hair visible in the detail image matches Look 45.",
+  "alternates": [
+   {
+    "look_number": 46,
+    "confidence": 0.95
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd158bac80a6cca62a3d/master/pass/00099-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|38-50": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black knee-high boot with a loafer-style foot, which perfectly matches the boots worn in Look 44.",
+  "alternates": [
+   {
+    "look_number": 45,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 46,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd1a10926bf708223930/master/pass/00102-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|39-51": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The black, shiny, knee-high boot with a distinctive moccasin-style toe and flat sole is identical in the detail and look 44.",
+  "alternates": [
+   {
+    "look_number": 45,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 46,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd108bac80a6cca62a3b/master/pass/00097-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|37-49": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, and the black strapless dress with prominent round buttons and fabric texture are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd177fb4c2b4aaed6fb9/master/pass/00100-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|38-50": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, and the black strapless garment with its textured fabric and raw top edge perfectly match look 46.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd1e0f90e3db771b95cc/master/pass/00103-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|40-52": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The model, brown fur coat with light beige collar and dark lapel, and light blue ruffled shirt are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd20a128fed9f8188983/master/pass/00104-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|40-52": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The model, brown fur coat with light collar, light blue shirt, dark trousers, and small brown bag with gold chain are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd19fe27e22f42f83105/master/pass/00101-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|39-51": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The detail image is a close-up of Look 46, featuring the identical black strapless dress with two large buttons, fringed top edge, and textured fabric, worn by the same model.",
+  "alternates": [
+   {
+    "look_number": 45,
+    "confidence": 0.95
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd207fb4c2b4aaed6fbb/master/pass/00105-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|40-52": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the brown fur coat, the olive green bag with brown trim, gold chain, and silver spherical charm, and the dark trousers worn in Look 47.",
+  "alternates": [
+   {
+    "look_number": 42,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd23f3fa22bd5c850857/master/pass/00106-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|41-52": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The model's curly brown hair, facial features, and the black fur garment are an exact match to look 48.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd28131718004e7d8f4a/master/pass/00107-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|41-52": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The model, her curly hair with a blue accessory, and the voluminous black fur coat are identical in both the detail and look 48.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd290f90e3db771b95d0/master/pass/00109-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|42-52": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The model, white oversized shirt, and dark brown gathered skirt with a tie detail are identical in both the detail and look 49.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd2f137d584a31aeaa9f/master/pass/00110-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|43-52": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the white shirt, dark brown gathered leather skirt with a front bow, and the dark brown structured handbag with gold hardware seen in Look 49.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd3050ea11271afb5893/master/pass/00111-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|43-52": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The dark brown leather handbag with the gold Prada logo and the dark brown leather skirt perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd30928ae217253cb0ba/master/pass/00112-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|44-52": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The model, brown suede jacket, navy blue speckled turtleneck sweater, and all visible necklaces (square pendant, floral/bee charms) are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd36aeb70f29ea52fb28/master/pass/00113-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|44-52": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The detail shows a dark brown blazer, a navy speckled knit sweater, and black textured shorts with a prominent side button. Look 50 features all these exact garments.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd370f90e3db771b95d2/master/pass/00114-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|44-52": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The coat, including its color, oversized fit, wide collar, and distinctive gold-toned ornate buttons, is identical to the detail. The model's hair and facial features also match perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd280f90e3db771b95ce/master/pass/00108-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|42-52": {
+  "look_number": 48,
+  "confidence": 0.98,
+  "evidence": "The detail image shows a brown leather pointed-toe pump with a kitten heel and a distinctive folded leather detail on the vamp. Look 48 features the exact same shoe, matching in color, style, heel, and the unique vamp detail.",
+  "alternates": [
+   {
+    "look_number": 49,
+    "confidence": 0.98
+   },
+   {
+    "look_number": 42,
+    "confidence": 0.95
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd3df0de7d3f099cb86a/master/pass/00116-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|45-52": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, and makeup are identical, and the dark grey textured coat with its distinctive wide collar perfectly matches the garment in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd37f038c29d4420cc0a/master/pass/00115-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|45-52": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The silver strappy high-heeled sandal with an ankle strap in the detail image is identical to the shoes worn in Look 50.",
+  "alternates": [
+   {
+    "look_number": 51,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 52,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cd3e1f632d92124d7955/master/pass/00117-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|46-52": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 52, including the dark grey coat, the unique pearl-like buttons, the model's hair and facial features, and the light-colored open-toe heels.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc6ffba4865efd8e55a6/master/pass/00018-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|11-12": {
+  "look_number": 11,
+  "confidence": 0.95,
+  "evidence": "The dark brown jacket sleeve and dark skirt visible in the detail shot perfectly match the garments worn in Look 11. The bag is different, but garments are prioritized.",
+  "alternates": [
+   {
+    "look_number": 12,
+    "confidence": 0.05
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc8310926bf708223924/master/pass/00032-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|17-18": {
+  "look_number": 17,
+  "confidence": 0.98,
+  "evidence": "The brown suede Prada handbag, dark skirt, and black textured heels in the detail shot are identical to those worn in Look 17.",
+  "alternates": [
+   {
+    "look_number": 18,
+    "confidence": 0.05
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0cc578bac80a6cca62a33/master/pass/00002-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|1-3": {
+  "look_number": 2,
+  "confidence": 0.95,
+  "evidence": "The black pleated skirt and brown pointed-toe heels in the detail perfectly match those worn in Look 2. The bag is different, but this is permissible.",
+  "alternates": [
+   {
+    "look_number": 1,
+    "confidence": 0.1
+   },
+   {
+    "look_number": 3,
+    "confidence": 0.15
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67c0ccccdfc1a04fb13f5136/master/pass/00069-prada-fall-2025-ready-to-wear-detail-credit-gorunway.jpg|33-34": {
+  "look_number": 34,
+  "confidence": 0.05,
+  "evidence": "Look 34 is the only candidate wearing shoes. However, the color and specific design details of the shoes in the full look (pale yellow with front bow) do not match the close-up image (light pink/nude with rear detail).",
+  "alternates": [
+   {
+    "look_number": 33,
+    "confidence": 0.0
+   }
+  ]
+ }
+}

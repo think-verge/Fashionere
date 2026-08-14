@@ -1,0 +1,6119 @@
+{
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059c9f25c7fb049e2f389/master/pass/00001-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b4adc46c427d039bde2/master/pass/00001-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "A light pink single-breasted blazer with notched lapels and matching slim-fit trousers featuring integrated shoe coverings is paired with a small white crescent shoulder bag and black pointed-toe pumps with a metallic detail.",
+  "fabric": "silk blend",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Pale Pink",
+    "hex_code": "#FADADD",
+    "pantone_code": "12-1009 (Rosewater)"
+   },
+   {
+    "color_name": "Off-White",
+    "hex_code": "#F8F8F8",
+    "pantone_code": "11-0602 (Cloud Dancer)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Sleek modern tailoring",
+  "keywords": [
+   "blazer",
+   "trousers",
+   "suit",
+   "slim fit",
+   "notched lapel",
+   "single-breasted",
+   "shoulder bag",
+   "pointed-toe pumps",
+   "integrated shoe covering",
+   "sculptural heel"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "emotional response",
+   "provocative banal",
+   "silhouette and body",
+   "selfish bag",
+   "creative R&D"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059c9234aad71fd57d1f6/master/pass/00002-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b4af740689c42c1c802/master/pass/00002-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "A lustrous dark green single-breasted suit jacket with a notched lapel is worn over a black V-neck t-shirt, paired with matching wide-leg trousers, textured black loafers, and a small black leather shoulder bag with red and green web stripes.",
+  "fabric": "Satin, cotton, wool blend, leather",
+  "patterns": [
+   "solid",
+   "textured",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Very Dark Green",
+    "hex_code": "#0A1A17",
+    "pantone_code": "19-0417 (Deep Forest)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#B22222",
+    "pantone_code": "19-1763 (True Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#006400",
+    "pantone_code": "19-5620 (Dark Green)"
+   }
+  ],
+  "theme": "Sleek modern suiting with subtle luxury",
+  "keywords": [
+   "single-breasted jacket",
+   "notched lapel",
+   "V-neck t-shirt",
+   "wide-leg trousers",
+   "textured loafers",
+   "shoulder bag",
+   "web stripe",
+   "satin suit",
+   "menswear"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "emotional response",
+   "V-neck item",
+   "provocatively banal",
+   "approach to silhouette",
+   "selfish bag",
+   "Ford-era Gucci"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b4af740689c42c1c802/master/pass/00002-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Oversized deep petrol blazer and matching wide-leg trousers are layered over a black V-neck t-shirt, styled with black embossed leather loafers and a small wrist-strapped bag.",
+  "fabric": "Polished wool blend",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Deep Petrol",
+    "hex_code": "#1A2B2B",
+    "pantone_code": "19-4203 (Phantom)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gucci Red",
+    "hex_code": "#CC0000",
+    "pantone_code": "18-1663 (True Red)"
+   },
+   {
+    "color_name": "Gucci Green",
+    "hex_code": "#006600",
+    "pantone_code": "19-5620 (Forest Green)"
+   }
+  ],
+  "theme": "Contemporary suiting",
+  "keywords": [
+   "oversized blazer",
+   "wide-leg trousers",
+   "V-neck t-shirt",
+   "tailored suit",
+   "relaxed fit",
+   "single-breasted",
+   "two-button closure",
+   "wrist bag",
+   "embossed leather loafers",
+   "menswear"
+  ],
+  "collection_keywords": [
+   "fit that is more now",
+   "V-neck is such a Gucci item",
+   "provocatively positioning the banal",
+   "emotional response",
+   "selfish bag"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b4adc46c427d039bde2/master/pass/00001-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Pale pink single-button blazer with a deep V-neckline and matching stirrup leggings, styled with a white crescent shoulder bag and black pointed-toe heels featuring a horsebit detail.",
+  "fabric": "Silk blend suiting, leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Pale Pink",
+    "hex_code": "#F0DCDC",
+    "pantone_code": "13-1404 (Pale Dogwood)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#A9A9A9",
+    "pantone_code": "17-4402 (Silver Cloud)"
+   }
+  ],
+  "theme": "Sleek modern tailoring",
+  "keywords": [
+   "blazer",
+   "tailored jacket",
+   "single-button closure",
+   "deep V-neck",
+   "stirrup leggings",
+   "pointed-toe heels",
+   "horsebit detail",
+   "shoulder bag",
+   "slim silhouette",
+   "androgynous"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "emotional response",
+   "Ford-era cutting-edge",
+   "Italian feminine glamour",
+   "provocative banal",
+   "silhouette and body"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b4b5e97b8363f04de82/master/pass/00003-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Black lustrous woven fabric single-breasted blazer and matching knee-length pencil skirt, styled with a black V-neck top, a black leather shoulder bag with gold-toned hardware, and black leather pointed-toe pumps with gold-toned horsebit detail.",
+  "fabric": "lustrous woven fabric, leather, viscose blend",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Sleek professional",
+  "keywords": [
+   "blazer",
+   "pencil skirt",
+   "V-neck top",
+   "single-breasted",
+   "fitted silhouette",
+   "knee-length",
+   "pointed-toe pumps",
+   "kitten heel",
+   "shoulder bag",
+   "horsebit detail"
+  ],
+  "collection_keywords": [
+   "Italian feminine glamour",
+   "Ford-era Gucci",
+   "70s Gucci",
+   "unexpected desire",
+   "Gucci V-neck",
+   "approach to silhouette"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059ca00621954c123938a/master/pass/00003-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b4b5e97b8363f04de82/master/pass/00003-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "A black structured blazer with a deep V-neckline and a single-button closure, paired with a matching black pencil skirt, a black leather shoulder bag with gold-tone hardware, and black pointed-toe pumps featuring gold-tone horsebit details.",
+  "fabric": "silk blend",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Goldfinch)"
+   }
+  ],
+  "theme": "Sophisticated suiting",
+  "keywords": [
+   "blazer",
+   "pencil skirt",
+   "pumps",
+   "shoulder bag",
+   "structured blazer",
+   "tailored",
+   "V-neckline",
+   "horsebit hardware",
+   "gold-tone hardware",
+   "fitted skirt"
+  ],
+  "collection_keywords": [
+   "archival archetypes",
+   "Ford-era Gucci",
+   "Italian feminine glamour",
+   "approach to silhouette",
+   "Gucci memory",
+   "creative R&D"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b4d78b18aebb7357852/master/pass/00005-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Cream single-button blazer with a deep V-neck and structured shoulders is paired with a matching floor-length column maxi skirt, accessorized with black aviator sunglasses, a black leather hobo bag, a silver-toned watch, and black pointed-toe horsebit heels.",
+  "fabric": "wool crepe, leather, metal, plastic",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Cream",
+    "hex_code": "#FDF5E6",
+    "pantone_code": "11-0103 (Egret)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "13-4104 (Silver Cloud)"
+   }
+  ],
+  "theme": "Sleek Modern Elegance",
+  "keywords": [
+   "blazer",
+   "maxi skirt",
+   "column silhouette",
+   "deep V-neck",
+   "structured shoulders",
+   "aviator sunglasses",
+   "hobo bag",
+   "pointed-toe heels",
+   "horsebit detail",
+   "monochromatic"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "emotional response",
+   "Ford-era Gucci",
+   "Italian feminine glamour",
+   "V-neck",
+   "approach to silhouette"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059ccdd5be9a5e767694e/master/pass/00004-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b4d313e8fffafe175c8/master/pass/00004-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "A dark grey single-breasted suit jacket worn over a black V-neck t-shirt, paired with a black leather belt featuring a silver interlocking G buckle, a black leather Lunetta Phone+ mini bag with red and green Web stripe, and black studded pointed-toe shoes.",
+  "fabric": "wool blend, cotton jersey, denim, leather, acetate, metal",
+  "patterns": [
+   "solid",
+   "web stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dark Grey",
+    "hex_code": "#36454F",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Cloud Dancer)"
+   },
+   {
+    "color_name": "True Red",
+    "hex_code": "#C40233",
+    "pantone_code": "18-1663 (True Red)"
+   },
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#0B6623",
+    "pantone_code": "19-5606 (Forest Green)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0947 (Goldenrod)"
+   }
+  ],
+  "theme": "Urban tailored casual",
+  "keywords": [
+   "suit jacket",
+   "single-breasted blazer",
+   "V-neck t-shirt",
+   "leather belt",
+   "logo buckle",
+   "mini bag",
+   "Web stripe bag",
+   "pointed-toe shoes",
+   "studded footwear",
+   "sunglasses",
+   "cross pendant"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "emotional response",
+   "selfish bag",
+   "V-neck",
+   "provocatively banal",
+   "Ford-era cutting-edge"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059ccdd5be9a5e7676950/master/pass/00005-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b4d78b18aebb7357852/master/pass/00005-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Cream single-breasted blazer with peaked lapels and a deep V-neckline, paired with a matching floor-length maxi skirt, accessorized with a black textured leather shoulder bag, black pointed-toe flat shoes with gold G-logo hardware, dark rectangular sunglasses, and a silver watch.",
+  "fabric": "Silk blend, satin, textured leather, smooth leather, metal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Cream",
+    "hex_code": "#F0EAD6",
+    "pantone_code": "11-0103 (Egret)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Rod)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Modern tailored elegance with minimalist accessories",
+  "keywords": [
+   "blazer",
+   "peaked lapel",
+   "deep V-neck",
+   "maxi skirt",
+   "tailored suit",
+   "shoulder bag",
+   "pointed-toe flats",
+   "G-logo hardware",
+   "sunglasses",
+   "watch"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "Gucci memory",
+   "Italian feminine glamour",
+   "emotional response",
+   "new silhouette",
+   "provocatively positioning banal"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059cdb9d26076efb25828/master/pass/00006-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b4e438959cabcb3b738/master/pass/00006-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Double-breasted pinstripe blazer with peaked lapels, worn over a black V-neck t-shirt, blue flared jeans with a red and green Web stripe and studded hem, a black leather belt with a G-logo buckle, black studded pointed-toe shoes, aviator sunglasses, a gold cross necklace, and a beige GG Supreme canvas shoulder bag with a red and green Web stripe.",
+  "fabric": "Wool, cotton, denim, leather, canvas, metal",
+  "patterns": [
+   "pinstripe",
+   "monogram",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dark Olive Brown",
+    "hex_code": "#4A453C",
+    "pantone_code": "19-0814 (Forest Night)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Mid Blue Denim",
+    "hex_code": "#3A608D",
+    "pantone_code": "17-4021 (Dark Denim)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C00000",
+    "pantone_code": "19-1763 (Chinese Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#006000",
+    "pantone_code": "19-5513 (Forest Green)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#808080",
+    "pantone_code": "17-4402 (Silver Cloud)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#D4C6A8",
+    "pantone_code": "13-1009 (Oatmeal)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#5C4B3D",
+    "pantone_code": "19-1118 (Coffee Bean)"
+   },
+   {
+    "color_name": "Tortoiseshell Brown",
+    "hex_code": "#8B4513",
+    "pantone_code": "18-1142 (Fudge)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Mustard Gold)"
+   }
+  ],
+  "theme": "Modern tailoring with casual denim and luxury accessories",
+  "keywords": [
+   "double-breasted blazer",
+   "pinstripe",
+   "peaked lapels",
+   "V-neck t-shirt",
+   "flared jeans",
+   "Web stripe",
+   "studded shoes",
+   "G-logo belt",
+   "GG Supreme bag",
+   "aviator sunglasses"
+  ],
+  "collection_keywords": [
+   "emotional response",
+   "Ford-era cutting-edge",
+   "classic 70s Gucci",
+   "V-neck Gucci item",
+   "provocatively banal",
+   "selfish bag"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b4e438959cabcb3b738/master/pass/00006-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Double-breasted pinstripe blazer with peak lapels, worn over a black V-neck t-shirt, paired with straight-leg denim jeans featuring side web stripes, black studded point-toe flats, a small monogrammed wrist bag, and dark sunglasses.",
+  "fabric": "wool, cotton denim, leather, coated canvas, metal",
+  "patterns": [
+   "pinstripe",
+   "web stripe",
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dark Olive",
+    "hex_code": "#4A4B40",
+    "pantone_code": "19-0622 (Forest Night)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Mid Blue",
+    "hex_code": "#366091",
+    "pantone_code": "17-4023 (Blue Depths)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#D12D2D",
+    "pantone_code": "18-1663 (Flame Scarlet)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#006B3D",
+    "pantone_code": "19-5620 (Evergreen)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#D2B48C",
+    "pantone_code": "16-1334 (Toasted Almond)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#5C4033",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0836 (Golden Rod)"
+   }
+  ],
+  "theme": "Refined casual suiting",
+  "keywords": [
+   "double-breasted blazer",
+   "pinstripe",
+   "peak lapels",
+   "V-neck t-shirt",
+   "denim jeans",
+   "straight-leg",
+   "side stripe",
+   "studded flats",
+   "point-toe shoes",
+   "wrist bag",
+   "monogram",
+   "sunglasses",
+   "gold necklace",
+   "menswear"
+  ],
+  "collection_keywords": [
+   "creative R&D",
+   "emotional response",
+   "Ford-era Gucci",
+   "70s Gucci",
+   "modern fit",
+   "V-neck",
+   "provocative banal",
+   "silhouette"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b50990c447c7554d0b0/master/pass/00007-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Sheer black button-down shirt with long sleeves and an open neckline, paired with a navy blue knee-length pencil skirt, black pointed-toe pumps with gold horsebit hardware, and a dark brown crocodile-embossed leather hobo bag.",
+  "fabric": "Sheer silk chiffon, wool gabardine, crocodile-embossed leather, leather",
+  "patterns": [
+   "solid",
+   "crocodile"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Navy Blue",
+    "hex_code": "#1A2B4D",
+    "pantone_code": "19-4028 (Dress Blues)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#36221A",
+    "pantone_code": "19-1016 (Espresso)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Goldenrod)"
+   }
+  ],
+  "theme": "Modern professional elegance",
+  "keywords": [
+   "sheer shirt",
+   "button-down",
+   "open neckline",
+   "pencil skirt",
+   "knee-length",
+   "pointed-toe pumps",
+   "stiletto heel",
+   "horsebit detail",
+   "hobo bag",
+   "crocodile-embossed",
+   "gold jewelry",
+   "minimalist accessories"
+  ],
+  "collection_keywords": [
+   "Ford-era cutting-edge Gucci",
+   "Italian feminine glamour",
+   "emotional response",
+   "unexpected desire",
+   "provocatively banal"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b4d313e8fffafe175c8/master/pass/00004-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Black satin single-breasted blazer worn over a black crew-neck t-shirt and dark wash straight-leg denim jeans, accessorized with aviator sunglasses, a gold pendant necklace, a small black GG monogram shoulder bag with Web stripe, and black studded pointed-toe flats.",
+  "fabric": "Satin, cotton jersey, denim, canvas, leather, metal",
+  "patterns": [
+   "solid",
+   "monogram",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Goldenrod)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#DA291C",
+    "pantone_code": "18-1663 (True Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#008000",
+    "pantone_code": "19-5513 (Forest Green)"
+   }
+  ],
+  "theme": "Sleek urban cool",
+  "keywords": [
+   "blazer",
+   "t-shirt",
+   "straight-leg jeans",
+   "denim",
+   "aviator sunglasses",
+   "pendant necklace",
+   "shoulder bag",
+   "studded flats",
+   "pointed-toe shoes",
+   "tailored"
+  ],
+  "collection_keywords": [
+   "fomo",
+   "emotional response",
+   "ford-era cutting-edge",
+   "classic 70s gucci",
+   "provocative banal",
+   "selfish design"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059d0da9a25400a479979/master/pass/00008-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b51438959cabcb3b73a/master/pass/00008-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "A beige and off-white houndstooth blazer is worn over a black turtleneck, accessorized with brown rectangular sunglasses, a black leather belt with a gold-tone G buckle, and a small beige GG monogram canvas shoulder bag with a red and green Web stripe.",
+  "fabric": "wool blend, knit, acetate, leather, coated canvas",
+  "patterns": [
+   "houndstooth",
+   "monogram",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Beige",
+    "hex_code": "#C2A385",
+    "pantone_code": "16-1331 (Camel)"
+   },
+   {
+    "color_name": "Off-white",
+    "hex_code": "#F0EAD6",
+    "pantone_code": "11-0107 (Egret)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#232C33",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Brown",
+    "hex_code": "#4A352F",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Rod)"
+   },
+   {
+    "color_name": "Light Beige",
+    "hex_code": "#E0D8C7",
+    "pantone_code": "13-1009 (Oatmeal)"
+   },
+   {
+    "color_name": "Medium Brown",
+    "hex_code": "#6B5B4F",
+    "pantone_code": "18-1018 (Nutria)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C60C30",
+    "pantone_code": "18-1663 (True Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#006B3C",
+    "pantone_code": "19-5420 (Forest Green)"
+   }
+  ],
+  "theme": "Retro academic chic",
+  "keywords": [
+   "blazer",
+   "turtleneck",
+   "sunglasses",
+   "shoulder bag",
+   "houndstooth",
+   "cross-body bag",
+   "tailored jacket",
+   "eyewear",
+   "Gucci Web stripe",
+   "GG monogram",
+   "leather belt",
+   "logo buckle"
+  ],
+  "collection_keywords": [
+   "classic \u201970s Gucci",
+   "Ford-era cutting-edge",
+   "selfish bag",
+   "unexpected desire",
+   "emotional response",
+   "Gucci memory"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059cf8d8b5b664f5f26d5/master/pass/00007-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b50990c447c7554d0b0/master/pass/00007-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Dark brown crocodile-embossed leather hobo bag with gold-toned hardware, paired with a navy blue pencil skirt and black pointed-toe pumps featuring gold-toned G-shaped hardware.",
+  "fabric": "crocodile-embossed leather, leather, wool blend",
+  "patterns": [
+   "crocodile",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#3F2E2B",
+    "pantone_code": "19-1016 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0840 (Golden Rod)"
+   },
+   {
+    "color_name": "Navy Blue",
+    "hex_code": "#2F3C53",
+    "pantone_code": "19-4010 (Dress Blues)"
+   }
+  ],
+  "theme": "Polished professional",
+  "keywords": [
+   "hobo bag",
+   "crocodile-embossed leather",
+   "pointed-toe pumps",
+   "stiletto heel",
+   "pencil skirt",
+   "knee-length",
+   "gold hardware",
+   "Gucci logo"
+  ],
+  "collection_keywords": [
+   "Italian feminine glamour",
+   "classic 70s Gucci",
+   "unnecessary desire",
+   "emotional response"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b51dc46c427d039bde4/master/pass/00009-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Oversized dark teal suit with a single-breasted blazer and wide-leg trousers, layered over a black turtleneck, accessorized with a black textured shoulder bag and black pointed-toe heels, both featuring gold-tone horsebit hardware.",
+  "fabric": "silk blend, fine-gauge knit, embossed leather, leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dark Teal",
+    "hex_code": "#1A2A2A",
+    "pantone_code": "19-4524 (Deep Teal)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Gold)"
+   }
+  ],
+  "theme": "Modern tailored elegance",
+  "keywords": [
+   "oversized blazer",
+   "wide-leg trousers",
+   "turtleneck",
+   "tailored suit",
+   "two-piece suit",
+   "shoulder bag",
+   "chain strap",
+   "horsebit detail",
+   "pointed-toe heels",
+   "gold-tone hardware"
+  ],
+  "collection_keywords": [
+   "unexpected desire",
+   "creative R&D",
+   "emotional response",
+   "Ford-era cutting-edge Gucci",
+   "Italian feminine glamour",
+   "more now",
+   "silhouette and the body"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b51438959cabcb3b73a/master/pass/00008-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Houndstooth single-breasted blazer with wide-leg blue jeans, a black turtleneck, black loafers, aviator sunglasses, a black leather belt with a gold GG buckle, and a beige canvas crossbody bag with a green and red Web stripe.",
+  "fabric": "wool, cotton denim, knit, leather, canvas",
+  "patterns": [
+   "houndstooth",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Blue Denim",
+    "hex_code": "#2A4B7C",
+    "pantone_code": "19-4028 (Dark Sapphire)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#D2B48C",
+    "pantone_code": "16-1326 (Nomad)"
+   },
+   {
+    "color_name": "Brown",
+    "hex_code": "#654321",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Rod)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#006B3D",
+    "pantone_code": "19-5513 (Evergreen)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C1272D",
+    "pantone_code": "18-1660 (Fiery Red)"
+   }
+  ],
+  "theme": "Retro-inspired casual tailoring",
+  "keywords": [
+   "blazer",
+   "turtleneck",
+   "wide-leg jeans",
+   "denim",
+   "loafers",
+   "crossbody bag",
+   "aviator sunglasses",
+   "leather belt",
+   "GG buckle",
+   "houndstooth"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "creative R&D",
+   "emotional response",
+   "classic 70s Gucci",
+   "provocative banal",
+   "new silhouette",
+   "selfish bag"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059d0180867a056740f51/master/pass/00009-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b51dc46c427d039bde4/master/pass/00009-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Black embossed leather shoulder bag with a gold-tone chain strap and a double-headed animal hardware closure.",
+  "fabric": "Embossed leather, metal",
+  "patterns": [
+   "embossed"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Gold Ochre)"
+   }
+  ],
+  "theme": "Modern classic glamour",
+  "keywords": [
+   "shoulder bag",
+   "chain strap",
+   "embossed leather",
+   "gold-tone hardware",
+   "animal head motif",
+   "flap closure",
+   "evening bag"
+  ],
+  "collection_keywords": [
+   "Ford-era cutting-edge Gucci",
+   "Italian feminine glamour",
+   "selfish bag",
+   "unexpected desire",
+   "Gucci memory"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b531c2b6ff4b63b38a7/master/pass/00010-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "A long-sleeved turtleneck top in a muted purple is paired with dark grey pinstripe trousers, a dark brown crocodile-embossed shoulder bag, black pointed-toe flats, and black aviator sunglasses.",
+  "fabric": "Jersey, wool blend, embossed leather, plastic",
+  "patterns": [
+   "pinstripe",
+   "crocodile"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dusty Lavender",
+    "hex_code": "#8A8BA3",
+    "pantone_code": "17-3911 (Dusty Lavender)"
+   },
+   {
+    "color_name": "Phantom",
+    "hex_code": "#4A4D4F",
+    "pantone_code": "19-3900 (Phantom)"
+   },
+   {
+    "color_name": "Chocolate Truffle",
+    "hex_code": "#3A2A25",
+    "pantone_code": "19-1116 (Chocolate Truffle)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Sleek modern luxury",
+  "keywords": [
+   "turtleneck",
+   "long sleeve",
+   "tailored trousers",
+   "wide leg",
+   "pinstripe",
+   "shoulder bag",
+   "crocodile embossed",
+   "pointed-toe flats",
+   "aviator sunglasses",
+   "sleek silhouette"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "emotional response",
+   "Ford-era cutting-edge",
+   "new silhouette",
+   "provocatively positioning the banal"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b551810535ae4b59741/master/pass/00011-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Oversized grey pinstripe blazer layered over a black turtleneck and wide-leg trousers, accessorized with a black croc-embossed hobo bag, black horsebit loafers, and black aviator sunglasses.",
+  "fabric": "Wool suiting, fine knit, wool blend, croc-embossed leather, leather, acetate",
+  "patterns": [
+   "pinstripe",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Charcoal Grey",
+    "hex_code": "#4A4A4A",
+    "pantone_code": "19-3909 (Phantom)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Sophisticated Tailoring",
+  "keywords": [
+   "oversized blazer",
+   "pinstripe",
+   "turtleneck",
+   "wide-leg trousers",
+   "hobo bag",
+   "croc-embossed",
+   "loafers",
+   "horsebit detail",
+   "aviator sunglasses",
+   "tailored silhouette"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "emotional response",
+   "Ford-era cutting-edge",
+   "Italian feminine glamour",
+   "selfish bag"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059d4298a3ae9c1f1e9a4/master/pass/00010-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b531c2b6ff4b63b38a7/master/pass/00010-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "A dark purple-grey turtleneck top is paired with dark grey pinstripe wide-leg trousers, a dark brown crocodile-embossed shoulder bag, black textured pointed-toe shoes, black shield sunglasses, and a silver-toned ring.",
+  "fabric": "Viscose blend (top), wool blend (trousers), crocodile-embossed leather (bag), leather (shoes), acetate (sunglasses), metal (ring)",
+  "patterns": [
+   "pinstripe",
+   "crocodile-embossed"
+  ],
+  "Colors": [
+   {
+    "color_name": "Muted Purple-Grey",
+    "hex_code": "656575",
+    "pantone_code": "19-4203 (Phantom)"
+   },
+   {
+    "color_name": "Dark Grey",
+    "hex_code": "4A4A4A",
+    "pantone_code": "19-4007 (Wrought Iron)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "3A2A2A",
+    "pantone_code": "19-4104 (Espresso)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "000000",
+    "pantone_code": "19-4005 (True Black)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "C0C0C0",
+    "pantone_code": "13-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Sleek modernism",
+  "keywords": [
+   "turtleneck top",
+   "wide-leg trousers",
+   "pinstripe",
+   "shoulder bag",
+   "crocodile-embossed",
+   "shield sunglasses",
+   "pointed-toe shoes",
+   "tailored silhouette",
+   "long sleeves",
+   "ring"
+  ],
+  "collection_keywords": [
+   "unexpected desire",
+   "emotional response",
+   "selfish bag",
+   "modern fit",
+   "banal made strange",
+   "new silhouette"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059d400621954c123938c/master/pass/00012-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b5524a46ebebe8e4fb9/master/pass/00012-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Black leather shoulder bag with a red and green Web stripe, featuring a top zipper closure and a slender shoulder strap, held in the hand.",
+  "fabric": "leather",
+  "patterns": [
+   "solid",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C00000",
+    "pantone_code": "19-1761 (True Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#006400",
+    "pantone_code": "19-5513 (Forest Green)"
+   }
+  ],
+  "theme": "Classic accessory with modern minimalism",
+  "keywords": [
+   "shoulder bag",
+   "leather bag",
+   "Web stripe",
+   "top zipper",
+   "slender strap",
+   "compact bag",
+   "handheld",
+   "accessory"
+  ],
+  "collection_keywords": [
+   "Gucci-color Web stripes",
+   "Lunetta Phone+",
+   "classic \u201970s Gucci",
+   "selfish bag",
+   "unexpected desire",
+   "emotional response"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b5524a46ebebe8e4fb9/master/pass/00012-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Long navy coat with a classic collar and button closure is layered over a black crew neck t-shirt and blue flared denim jeans, accessorized with a black leather shoulder bag featuring the Gucci Web stripe, dark aviator sunglasses, and pointed-toe flat shoes with a monogram pattern and dark brown toe caps.",
+  "fabric": "Nylon blend, cotton jersey, denim, leather, canvas, acetate, metal",
+  "patterns": [
+   "solid",
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "Navy Blue",
+    "hex_code": "#1A242F",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4203 (Ebony)"
+   },
+   {
+    "color_name": "Denim Blue",
+    "hex_code": "#3B608C",
+    "pantone_code": "18-4006 (Dark Denim)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#D22B2B",
+    "pantone_code": "18-1660 (True Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#006B3C",
+    "pantone_code": "19-5513 (Forest Green)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#D2B48C",
+    "pantone_code": "16-1334 (Sandstone)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#4A2C2A",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Dark Grey",
+    "hex_code": "#36454F",
+    "pantone_code": "19-3900 (Phantom)"
+   },
+   {
+    "color_name": "Bronze",
+    "hex_code": "#CD7F32",
+    "pantone_code": "17-1047 (Bronze Mist)"
+   }
+  ],
+  "theme": "Elevated Casual",
+  "keywords": [
+   "long coat",
+   "collared coat",
+   "crew neck t-shirt",
+   "flared jeans",
+   "denim",
+   "shoulder bag",
+   "aviator sunglasses",
+   "pointed-toe flats",
+   "layered outfit",
+   "relaxed silhouette"
+  ],
+  "collection_keywords": [
+   "archetypes",
+   "modern fit",
+   "emotional response",
+   "banal to strange",
+   "silhouette and body"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b56180867a056740f58/master/pass/00013-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Oversized black leather jacket with wide notched lapels and a single-breasted closure is paired with black skinny stirrup pants, a black crocodile-embossed hobo bag, and black pointed-toe stiletto heels with gold horsebit hardware.",
+  "fabric": "Leather, stretch fabric, crocodile-embossed leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0836 (Gold)"
+   }
+  ],
+  "theme": "Sleek and edgy",
+  "keywords": [
+   "leather jacket",
+   "oversized jacket",
+   "notched lapels",
+   "skinny pants",
+   "stirrup pants",
+   "pointed-toe heels",
+   "stiletto heels",
+   "hobo bag",
+   "crocodile-embossed",
+   "gold hardware"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "emotional response",
+   "Ford-era cutting-edge",
+   "Italian feminine glamour",
+   "modern silhouette"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059d375aa28c41b113527/master/pass/00011-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b551810535ae4b59741/master/pass/00011-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Oversized grey pinstripe blazer with prominent shoulder pads, worn over a black turtleneck and partially visible wide-leg trousers, accessorized with a dark brown crocodile-embossed shoulder bag and black rectangular sunglasses.",
+  "fabric": "Wool, knit, leather",
+  "patterns": [
+   "pinstripe",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Quiet Shade",
+    "hex_code": "#70777F",
+    "pantone_code": "17-4014 (Quiet Shade)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Chocolate Lab",
+    "hex_code": "#362828",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   }
+  ],
+  "theme": "Sophisticated tailoring",
+  "keywords": [
+   "oversized blazer",
+   "pinstripe",
+   "shoulder pads",
+   "tailored jacket",
+   "turtleneck",
+   "wide-leg trousers",
+   "crocodile-embossed bag",
+   "shoulder bag",
+   "rectangular sunglasses"
+  ],
+  "collection_keywords": [
+   "unexpected desire",
+   "emotional response",
+   "creative R&D",
+   "Gucci memory",
+   "archetypes",
+   "selfish bag",
+   "modern fit"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059d61810535ae4b59739/master/pass/00013-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b56180867a056740f58/master/pass/00013-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Black leather jacket with a wide collar and structured shoulders, paired with slim-fit black stirrup pants, a black crocodile-embossed shoulder bag featuring gold-tone Horsebit hardware, and black pointed-toe heels with matching gold-tone Horsebit detailing.",
+  "fabric": "leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Rod)"
+   }
+  ],
+  "theme": "Sophisticated Edge",
+  "keywords": [
+   "leather jacket",
+   "wide collar",
+   "structured shoulders",
+   "slim-fit pants",
+   "stirrup pants",
+   "pointed-toe heels",
+   "crocodile-embossed bag",
+   "Horsebit hardware",
+   "gold-tone jewelry",
+   "shoulder bag"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "emotional response",
+   "Ford-era cutting-edge Gucci",
+   "new silhouette",
+   "Gucci memory",
+   "unnecessary desire"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059d8dc46c427d039bde0/master/pass/00015-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b59234aad71fd57d1ff/master/pass/00015-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Suede pussy-bow blouse with patch pockets and chain trim, paired with a matching suede midi skirt, pointed-toe high-heeled boots, and a Gucci Dionysus shoulder bag in monogram canvas with a chain strap and horsebit buckle.",
+  "fabric": "suede, coated canvas, leather, metal",
+  "patterns": [
+   "solid",
+   "monogram",
+   "web stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Camel",
+    "hex_code": "#B8916F",
+    "pantone_code": "16-1336 (Camel)"
+   },
+   {
+    "color_name": "Coffee Bean",
+    "hex_code": "#5A3B2B",
+    "pantone_code": "19-1016 (Coffee Bean)"
+   },
+   {
+    "color_name": "Chinese Red",
+    "hex_code": "#C0392B",
+    "pantone_code": "19-1763 (Chinese Red)"
+   },
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#22574A",
+    "pantone_code": "19-5513 (Forest Green)"
+   },
+   {
+    "color_name": "Antique Gold",
+    "hex_code": "#B8860B",
+    "pantone_code": "16-0836 (Antique Gold)"
+   }
+  ],
+  "theme": "70s-inspired sophisticated glamour",
+  "keywords": [
+   "suede blouse",
+   "pussy-bow",
+   "chain trim",
+   "suede midi skirt",
+   "pointed-toe boots",
+   "high heels",
+   "Gucci Dionysus bag",
+   "monogram canvas",
+   "horsebit buckle"
+  ],
+  "collection_keywords": [
+   "70s Gucci",
+   "Italian glamour",
+   "Ford-era Gucci",
+   "emotional response",
+   "unnecessary desire",
+   "creative R&D"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059d7990c447c7554d0ab/master/pass/00014-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b58f25c7fb049e2f391/master/pass/00014-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Black leather crossbody bag with a top zipper closure and a green-red-green Gucci Web stripe across the front.",
+  "fabric": "leather, textile",
+  "patterns": [
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#006633",
+    "pantone_code": "19-5620 (Forest Green)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#CC0000",
+    "pantone_code": "19-1664 (True Red)"
+   }
+  ],
+  "theme": "Sporty luxury accessory",
+  "keywords": [
+   "crossbody bag",
+   "leather bag",
+   "Gucci Web stripe",
+   "zipper closure",
+   "compact bag",
+   "adjustable strap",
+   "menswear accessory",
+   "shoulder bag"
+  ],
+  "collection_keywords": [
+   "unnecessary desire",
+   "emotional response",
+   "without overthinking",
+   "Ford-era Gucci",
+   "banal made strange",
+   "selfish design"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b59234aad71fd57d1ff/master/pass/00015-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Tan suede pussy-bow blouse with a matching midi skirt featuring chain-trimmed patch pockets, paired with knee-high pointed-toe boots and a monogrammed chain-strap shoulder bag.",
+  "fabric": "suede, coated canvas, leather, metal",
+  "patterns": [
+   "solid",
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "Camel",
+    "hex_code": "#C29B70",
+    "pantone_code": "16-1342 (Camel)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#5C4033",
+    "pantone_code": "19-1016 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Goldfinch)"
+   }
+  ],
+  "theme": "70s Inspired Glamour",
+  "keywords": [
+   "suede blouse",
+   "pussy-bow neckline",
+   "midi skirt",
+   "patch pockets",
+   "chain trim",
+   "knee-high boots",
+   "pointed toe",
+   "monogram bag",
+   "chain strap",
+   "gold bracelet"
+  ],
+  "collection_keywords": [
+   "70s Gucci",
+   "Italian feminine glamour",
+   "Ford-era Gucci",
+   "emotional response",
+   "unnecessary desire",
+   "selfish design",
+   "silhouette exploration"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059dab7d0fce9d462d6f7/master/pass/00016-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b598d8b5b664f5f26e5/master/pass/00016-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Dark blue satin bomber jacket with a black cotton crewneck t-shirt, red-tinted aviator sunglasses, a gold-tone pendant necklace, and a small brown leather shoulder bag.",
+  "fabric": "satin, cotton jersey, leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Navy Blue",
+    "hex_code": "#2C3E50",
+    "pantone_code": "19-4010 (Dress Blues)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#231F20",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C42130",
+    "pantone_code": "18-1663 (Fiery Red)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#DAA520",
+    "pantone_code": "15-1040 (Golden Rod)"
+   },
+   {
+    "color_name": "Brown",
+    "hex_code": "#5C4033",
+    "pantone_code": "18-1340 (Potting Soil)"
+   }
+  ],
+  "theme": "Modern casual with retro accents",
+  "keywords": [
+   "bomber jacket",
+   "crewneck t-shirt",
+   "aviator sunglasses",
+   "pendant necklace",
+   "shoulder bag",
+   "zipper closure",
+   "collared jacket",
+   "relaxed fit"
+  ],
+  "collection_keywords": [
+   "provocatively banal",
+   "emotional response",
+   "gucci memory",
+   "70s pre-fashion",
+   "creative r&d",
+   "without overthinking"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b598d8b5b664f5f26e5/master/pass/00016-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Dark blue bomber jacket with a full-zip closure and pointed collar is layered over a black crew neck t-shirt, paired with dark wash denim straight-leg jeans, brown leather spiked loafers, red aviator sunglasses, a gold pendant necklace, a black leather belt with a silver buckle, and a small brown leather crossbody bag.",
+  "fabric": "Satin, Cotton, Denim, Leather, Metal, Plastic",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Navy Blue",
+    "hex_code": "#1A2B3C",
+    "pantone_code": "19-4010 (Dress Blues)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Dark Wash Denim",
+    "hex_code": "#36454F",
+    "pantone_code": "19-4023 (Dark Sapphire)"
+   },
+   {
+    "color_name": "Cognac Brown",
+    "hex_code": "#8B4513",
+    "pantone_code": "18-1340 (Cognac)"
+   },
+   {
+    "color_name": "Fiery Red",
+    "hex_code": "#FF0000",
+    "pantone_code": "18-1660 (Fiery Red)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "15-1050 (Golden Rod)"
+   }
+  ],
+  "theme": "Casual Chic with an Edge",
+  "keywords": [
+   "bomber jacket",
+   "denim jeans",
+   "spiked loafers",
+   "aviator sunglasses",
+   "crossbody bag",
+   "layered outfit",
+   "casual menswear",
+   "gold jewelry",
+   "leather belt"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "emotional response",
+   "provocatively positioning the banal",
+   "creative R&D",
+   "selfish bag"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b58f25c7fb049e2f391/master/pass/00014-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Black technical jersey track jacket with a high stand collar and full zip closure, paired with matching black technical jersey sweatpants, a black leather cross-body bag featuring a red and green Web stripe, black textured leather slip-on shoes, and silver-framed sunglasses.",
+  "fabric": "Technical jersey, leather, textured leather, metal, tinted lens",
+  "patterns": [
+   "solid",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C00000",
+    "pantone_code": "19-1763 (Chinese Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#006600",
+    "pantone_code": "19-5513 (Forest Green)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   },
+   {
+    "color_name": "Grey",
+    "hex_code": "#808080",
+    "pantone_code": "17-4402 (Quiet Shade)"
+   }
+  ],
+  "theme": "Elevated Athleisure",
+  "keywords": [
+   "Track jacket",
+   "sweatpants",
+   "technical jersey",
+   "athleisure",
+   "cross-body bag",
+   "Web stripe",
+   "slip-on shoes",
+   "textured leather",
+   "sunglasses",
+   "menswear"
+  ],
+  "collection_keywords": [
+   "unexpected desire",
+   "emotional response",
+   "selfish bag",
+   "Gucci memory",
+   "provocatively positioning the banal",
+   "modern fit"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b5b180867a056740f5a/master/pass/00017-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Long-sleeved dark faux fur coat-dress with an A-line silhouette, paired with a small chain-strap shoulder bag and knee-high embossed leather stiletto boots.",
+  "fabric": "faux fur, velvet, embossed leather, metal",
+  "patterns": [
+   "solid",
+   "crocodile embossed"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#0A0A0A",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Dark Glamour",
+  "keywords": [
+   "faux fur coat-dress",
+   "A-line silhouette",
+   "knee-high boots",
+   "embossed leather",
+   "stiletto heel",
+   "chain strap bag",
+   "pointed toe",
+   "luxurious"
+  ],
+  "collection_keywords": [
+   "unnecessary desire",
+   "emotional response",
+   "Ford-era Gucci",
+   "Italian glamour",
+   "Gucci item",
+   "silhouette exploration"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059da180867a056740f53/master/pass/00017-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b5b180867a056740f5a/master/pass/00017-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "A black faux fur knee-length coat with a high neck and long sleeves, paired with a black shoulder bag featuring a silver chain strap and horsebit hardware, and black knee-high pointed-toe boots with a stiletto heel and embossed texture.",
+  "fabric": "faux fur, embossed leather, metal",
+  "patterns": [
+   "solid",
+   "embossed"
+  ],
+  "Colors": [
+   {
+    "color_name": "black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "dark glamour",
+  "keywords": [
+   "faux fur coat",
+   "knee-length coat",
+   "high neck",
+   "shoulder bag",
+   "chain strap",
+   "horsebit hardware",
+   "knee-high boots",
+   "pointed-toe boots",
+   "stiletto heel",
+   "embossed leather"
+  ],
+  "collection_keywords": [
+   "unnecessary desire",
+   "free expression",
+   "emotional response",
+   "ford-era gucci",
+   "italian glamour",
+   "silhouette exploration"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b5c1c2b6ff4b63b38a9/master/pass/00018-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Sheer black striped button-down shirt paired with distressed wide-leg dark wash jeans, pointed black studded flats, a black shoulder bag with Web stripe, and black aviator sunglasses.",
+  "fabric": "Sheer synthetic blend, denim, leather, suede",
+  "patterns": [
+   "stripe",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Dark Indigo",
+    "hex_code": "#2C3539",
+    "pantone_code": "19-4010 (Dress Blues)"
+   },
+   {
+    "color_name": "True Red",
+    "hex_code": "#D10000",
+    "pantone_code": "18-1663 (True Red)"
+   },
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#008000",
+    "pantone_code": "19-5420 (Forest Green)"
+   }
+  ],
+  "theme": "Modern casual with subversive details",
+  "keywords": [
+   "sheer shirt",
+   "button-down",
+   "wide-leg jeans",
+   "distressed denim",
+   "pointed flats",
+   "studded shoes",
+   "horsebit detail",
+   "shoulder bag",
+   "aviator sunglasses",
+   "leather belt"
+  ],
+  "collection_keywords": [
+   "emotional response",
+   "provocatively banal",
+   "unexpected desire",
+   "Ford-era cutting-edge",
+   "silhouette and body",
+   "creative R&D"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059db8d8b5b664f5f26d7/master/pass/00018-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b5c1c2b6ff4b63b38a9/master/pass/00018-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Black sheer vertically striped button-up shirt with long cuffs, paired with dark wash straight-leg denim jeans, a black leather belt with an interlocking G buckle, a black suede tote bag, black pointed-toe studded loafers with horsebit detail, and black rectangular sunglasses.",
+  "fabric": "Sheer woven fabric, denim, leather, suede, metal",
+  "patterns": [
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Androgynous casual, modern luxury, understated rebellion",
+  "keywords": [
+   "sheer shirt",
+   "button-up shirt",
+   "long cuffs",
+   "denim jeans",
+   "straight-leg jeans",
+   "leather belt",
+   "interlocking G buckle",
+   "suede tote bag",
+   "pointed-toe loafers",
+   "studded shoes",
+   "horsebit detail",
+   "rectangular sunglasses"
+  ],
+  "collection_keywords": [
+   "unexpected desire",
+   "emotional response",
+   "Ford-era cutting-edge",
+   "provocatively banal",
+   "new silhouette",
+   "Gucci memory"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059dde591e2b2f98159ea/master/pass/00019-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b5da22c6f62ceacf159/master/pass/00019-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Leopard print faux fur knee-length coat with a high neck, paired with a beige GG monogram canvas box bag featuring a top handle and a wrist strap, and black pointed-toe pumps with gold-tone hardware.",
+  "fabric": "faux fur, canvas, leather, metal",
+  "patterns": [
+   "leopard print",
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Tan",
+    "hex_code": "#B87333",
+    "pantone_code": "16-1336 (Gingerbread)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#4A2C2A",
+    "pantone_code": "19-1012 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#D2B48C",
+    "pantone_code": "13-0908 (Oatmeal)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Antique Gold)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#FF0000",
+    "pantone_code": "19-1763 (True Red)"
+   }
+  ],
+  "theme": "Modern feline elegance",
+  "keywords": [
+   "faux fur coat",
+   "leopard print",
+   "knee-length coat",
+   "high neck",
+   "A-line silhouette",
+   "box bag",
+   "top handle bag",
+   "wrist strap",
+   "monogram canvas",
+   "pointed-toe pumps",
+   "stiletto heel",
+   "gold-tone hardware"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "emotional response",
+   "Gucci memory",
+   "Italian feminine glamour",
+   "selfish bag",
+   "approach to silhouette"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059de313e8fffafe175bd/master/pass/00020-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b5e504fbe9c49ee94a2/master/pass/00020-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Fitted black leather racer jacket with contrasting dark grey shoulder panels, paired with dark wash straight-leg jeans, a beige monogrammed structured handbag, and black studded pointed-toe flats.",
+  "fabric": "leather, denim, coated canvas, metal",
+  "patterns": [
+   "solid",
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Charcoal Grey",
+    "hex_code": "#36454F",
+    "pantone_code": "19-3900 (Phantom)"
+   },
+   {
+    "color_name": "Tan",
+    "hex_code": "#D2B48C",
+    "pantone_code": "16-1334 (Toasted Coconut)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#654321",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   }
+  ],
+  "theme": "Modern biker with heritage accessory",
+  "keywords": [
+   "leather jacket",
+   "racer jacket",
+   "fitted silhouette",
+   "high collar",
+   "front zip closure",
+   "straight-leg jeans",
+   "dark wash denim",
+   "structured handbag",
+   "monogram print",
+   "studded flats"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "creative R&D",
+   "emotional response",
+   "Gucci memory",
+   "Ford-era cutting-edge",
+   "leather racer jacket",
+   "approach to silhouette"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b5e504fbe9c49ee94a2/master/pass/00020-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Black leather bomber jacket with a stand collar and full zip closure, paired with dark wash low-rise straight-leg jeans, black pointed-toe studded flats, and a beige monogrammed trunk bag with gold and black hardware.",
+  "fabric": "Leather, denim, coated canvas, metal",
+  "patterns": [
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Dark Grey Denim",
+    "hex_code": "#212121",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#D4C2A3",
+    "pantone_code": "13-1008 (Oatmeal)"
+   },
+   {
+    "color_name": "Brown Monogram",
+    "hex_code": "#8B7355",
+    "pantone_code": "17-1047 (Nutria)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Goldenrod)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Edgy casual luxury with archival nods",
+  "keywords": [
+   "leather bomber jacket",
+   "zip-front",
+   "stand collar",
+   "low-rise denim",
+   "straight-leg jeans",
+   "monogram trunk bag",
+   "studded flats",
+   "pointed-toe shoes",
+   "casual luxury"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "creative R&D",
+   "emotional response",
+   "racing jacket",
+   "archive reboot",
+   "selfish bag",
+   "unexpected desire"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b5ff740689c42c1c806/master/pass/00021-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Black leather trench coat with a collared neckline, button-front closure, and midi length, styled with a red leather shoulder bag featuring a gold chain strap and silver-tone Dionysus hardware, black studded pointed-toe slingback heels, and dark shield sunglasses.",
+  "fabric": "Leather, metal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C40233",
+    "pantone_code": "19-1763 (Cabaret)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Antique Gold)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "15-4503 (Silver Cloud)"
+   }
+  ],
+  "theme": "Modern noir glamour",
+  "keywords": [
+   "leather trench coat",
+   "collared",
+   "button-front",
+   "midi length",
+   "long sleeves",
+   "shoulder bag",
+   "chain strap",
+   "Dionysus hardware",
+   "pointed-toe heels",
+   "slingback",
+   "studded footwear",
+   "shield sunglasses"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "emotional response",
+   "Ford-era cutting-edge",
+   "Italian feminine glamour",
+   "provocatively banal"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b5da22c6f62ceacf159/master/pass/00019-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Knee-length leopard print faux fur coat-dress with a high neck, styled with a monogrammed box bag and black pointed-toe stiletto heels.",
+  "fabric": "Faux fur, coated canvas, leather, metal",
+  "patterns": [
+   "leopard print",
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Espresso Brown",
+    "hex_code": "#4B2E00",
+    "pantone_code": "19-1118 (Espresso)"
+   },
+   {
+    "color_name": "Golden Tan",
+    "hex_code": "#C89F48",
+    "pantone_code": "16-1133 (Golden Harvest)"
+   },
+   {
+    "color_name": "Oatmeal Beige",
+    "hex_code": "#D4C19F",
+    "pantone_code": "13-1008 (Oatmeal)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Goldfinch)"
+   },
+   {
+    "color_name": "True Red",
+    "hex_code": "#C80000",
+    "pantone_code": "19-1763 (True Red)"
+   }
+  ],
+  "theme": "Glamorous Animalia",
+  "keywords": [
+   "coat-dress",
+   "faux fur",
+   "leopard print",
+   "high neck",
+   "knee-length",
+   "box bag",
+   "monogram",
+   "stiletto heels",
+   "pointed toe",
+   "gold hardware"
+  ],
+  "collection_keywords": [
+   "unnecessary desire",
+   "free expression",
+   "emotional response",
+   "Ford-era Gucci",
+   "feminine glamour",
+   "selfish design"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059de47c68058f695ec80/master/pass/00021-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b5ff740689c42c1c806/master/pass/00021-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Red leather shoulder bag with a gold chain strap, featuring a prominent gold horsebit-inspired hardware closure with a green and red Web stripe on the front flap, worn with the black leather coat.",
+  "fabric": "leather, metal",
+  "patterns": [
+   "solid",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Red",
+    "hex_code": "#B20000",
+    "pantone_code": "19-1763 (True Red)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Gold)"
+   },
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#228B22",
+    "pantone_code": "19-5513 (Forest Green)"
+   }
+  ],
+  "theme": "Iconic luxury accessory",
+  "keywords": [
+   "shoulder bag",
+   "leather bag",
+   "chain strap",
+   "gold hardware",
+   "horsebit detail",
+   "Web stripe",
+   "flap bag",
+   "structured bag",
+   "Gucci bag",
+   "designer accessory"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "Gucci memory",
+   "Ford-era Gucci",
+   "Italian glamour",
+   "Gucci item"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b60234aad71fd57d202/master/pass/00022-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Black leather racer jacket with red and green Web stripes on sleeves, paired with dark wash straight-leg jeans featuring matching side stripes, black textured pointed-toe shoes, and a small monogrammed shoulder bag, accessorized with slim rectangular sunglasses.",
+  "fabric": "Leather, denim, canvas, acetate",
+  "patterns": [
+   "stripe",
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#D10000",
+    "pantone_code": "18-1660 (High Risk Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#005F20",
+    "pantone_code": "19-5420 (Dark Green)"
+   }
+  ],
+  "theme": "Sporty luxury, retro racer",
+  "keywords": [
+   "leather racer jacket",
+   "denim jeans",
+   "straight leg",
+   "Web stripe",
+   "shoulder bag",
+   "pointed-toe shoes",
+   "sunglasses",
+   "full zip closure",
+   "sporty silhouette"
+  ],
+  "collection_keywords": [
+   "Ford-era Gucci",
+   "jacket for myself",
+   "selfish bag",
+   "emotional response",
+   "unexpected desire",
+   "creative R&D"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059e0b9c1fb3b4a81a840/master/pass/00022-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b60234aad71fd57d202/master/pass/00022-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Black leather racer jacket with red and green Web stripes on the sleeves, dark wash denim straight-leg jeans, black woven loafers, and a black mini shoulder bag with matching red and green Web stripes.",
+  "fabric": "leather, denim, woven leather, textured fabric",
+  "patterns": [
+   "solid",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#DA291C",
+    "pantone_code": "18-1663 (Flame Scarlet)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#008000",
+    "pantone_code": "19-5620 (Forest Green)"
+   }
+  ],
+  "theme": "Modern casual with heritage accents",
+  "keywords": [
+   "racer jacket",
+   "leather jacket",
+   "denim jeans",
+   "straight-leg jeans",
+   "woven loafers",
+   "mini shoulder bag",
+   "Gucci Web stripe",
+   "zipper closure",
+   "sunglasses",
+   "pointed toe loafers"
+  ],
+  "collection_keywords": [
+   "racer jacket",
+   "web stripes",
+   "mini bag",
+   "Ford-era cutting-edge",
+   "emotional response",
+   "creative R&D"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b61e591e2b2f98159f5/master/pass/00023-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Red long-sleeved midi dress with a pussy-bow neckline, button-front closure, and pleated skirt, styled with black pointed-toe pumps, sheer black stockings, a cream and beige shoulder bag, and a black cuff bracelet.",
+  "fabric": "Silk, leather, nylon",
+  "patterns": [
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "Flame Scarlet",
+    "hex_code": "#CD212A",
+    "pantone_code": "18-1660 (Flame Scarlet)"
+   },
+   {
+    "color_name": "Gardenia",
+    "hex_code": "#F8F4E8",
+    "pantone_code": "11-0601 (Gardenia)"
+   },
+   {
+    "color_name": "Oatmeal",
+    "hex_code": "#D2C7B1",
+    "pantone_code": "13-0908 (Oatmeal)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Gold)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#1C1C1C",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Elegant sophistication",
+  "keywords": [
+   "midi dress",
+   "pussy-bow neckline",
+   "long sleeves",
+   "pleated skirt",
+   "button-front",
+   "pointed-toe pumps",
+   "high heels",
+   "shoulder bag",
+   "chain strap",
+   "horsebit detail",
+   "cuff bracelet",
+   "sheer stockings",
+   "feminine silhouette"
+  ],
+  "collection_keywords": [
+   "Italian feminine glamour",
+   "classic '70s Gucci",
+   "unexpected desire",
+   "creating FOMO",
+   "emotional response"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b62313e8fffafe175ca/master/pass/00024-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Black washed denim racer jacket with red and green Web stripes on the sleeves, worn over a white crew-neck t-shirt, paired with blue denim straight-leg jeans featuring matching side stripes, and black pointed-toe loafers, accessorized with rectangular sunglasses and a small crossbody bag.",
+  "fabric": "Washed denim, cotton, leather",
+  "patterns": [
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Blue Denim",
+    "hex_code": "#2F659C",
+    "pantone_code": "18-4048 (Directoire Blue)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C8102E",
+    "pantone_code": "18-1662 (True Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#006B3E",
+    "pantone_code": "19-5513 (Forest Biome)"
+   },
+   {
+    "color_name": "Tan",
+    "hex_code": "#B8A78D",
+    "pantone_code": "16-1326 (Nomad)"
+   },
+   {
+    "color_name": "Silver Grey",
+    "hex_code": "#8C8C8C",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Sporty casual with retro flair",
+  "keywords": [
+   "racer jacket",
+   "denim jacket",
+   "straight-leg jeans",
+   "web stripe",
+   "crew neck t-shirt",
+   "pointed-toe loafers",
+   "sunglasses",
+   "crossbody bag",
+   "casualwear",
+   "sportswear"
+  ],
+  "collection_keywords": [
+   "racing jackets",
+   "Gucci memory",
+   "70s pre-fashion",
+   "emotional response",
+   "banal made strange",
+   "FOMO"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059e200621954c123938e/master/pass/00024-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b62313e8fffafe175ca/master/pass/00024-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Black denim racer jacket with red and green Web stripes on the sleeves, paired with blue denim jeans featuring matching side stripes, a white t-shirt, a beige GG monogram canvas shoulder bag with brown leather trim, and silver-framed sunglasses.",
+  "fabric": "denim, cotton, canvas, leather, metal, plastic",
+  "patterns": [
+   "solid",
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "blue",
+    "hex_code": "#2C4B73",
+    "pantone_code": "19-4023 (Dark Sapphire)"
+   },
+   {
+    "color_name": "white",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "red",
+    "hex_code": "#B00000",
+    "pantone_code": "19-1664 (Chinese Red)"
+   },
+   {
+    "color_name": "green",
+    "hex_code": "#006600",
+    "pantone_code": "19-5620 (Forest Green)"
+   },
+   {
+    "color_name": "beige",
+    "hex_code": "#C8B59A",
+    "pantone_code": "16-1334 (Warm Sand)"
+   },
+   {
+    "color_name": "brown",
+    "hex_code": "#6F4E37",
+    "pantone_code": "18-1140 (Caramel Cafe)"
+   },
+   {
+    "color_name": "silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Sporty casual with heritage branding",
+  "keywords": [
+   "racer jacket",
+   "denim jacket",
+   "straight-leg jeans",
+   "Gucci Web stripe",
+   "side stripe",
+   "shoulder bag",
+   "monogram bag",
+   "sunglasses",
+   "pointed-toe shoes",
+   "casualwear"
+  ],
+  "collection_keywords": [
+   "Ford-era cutting-edge Gucci",
+   "classic '70s Gucci",
+   "Gucci Web stripes",
+   "more now fit",
+   "creating unexpected desire",
+   "creative R&D"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b632a6d46e3815fa1af/master/pass/00025-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Plum jersey midi dress with a blouson bodice and gathered skirt, styled with a black and gold cuff, a brown textured leather shoulder bag, and black embossed leather knee-high stiletto boots.",
+  "fabric": "Jersey, metal, enamel, textured leather, embossed leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Deep Plum",
+    "hex_code": "#5B2C4E",
+    "pantone_code": "19-2428 (Deep Plum)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Golden Rod",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Rod)"
+   },
+   {
+    "color_name": "Russet Brown",
+    "hex_code": "#8B4513",
+    "pantone_code": "19-1120 (Russet Brown)"
+   },
+   {
+    "color_name": "Silver Cloud",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Sophisticated evening wear",
+  "keywords": [
+   "midi dress",
+   "blouson bodice",
+   "high neck",
+   "long sleeve",
+   "gathered waist",
+   "cuff bracelet",
+   "shoulder bag",
+   "chain strap",
+   "Dionysus bag",
+   "knee-high boots",
+   "pointed toe",
+   "stiletto heel",
+   "embossed leather",
+   "textured leather"
+  ],
+  "collection_keywords": [
+   "unexpected desire",
+   "emotional response",
+   "creative R&D",
+   "Gucci memory",
+   "Ford-era cutting-edge",
+   "Italian feminine glamour",
+   "selfish bag",
+   "provocatively positioning the banal"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059e4438959cabcb3b733/master/pass/00025-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b632a6d46e3815fa1af/master/pass/00025-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "A deep plum high-neck midi dress features voluminous sleeves with gathered cuffs and a gathered elasticated waist, accessorized with a brown croc-effect shoulder bag, black croc-effect pointed-toe boots, and a black and white cuff bracelet.",
+  "fabric": "jersey, embossed leather, resin",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Grape Compote",
+    "hex_code": "#5B3A5B",
+    "pantone_code": "19-3520 (Grape Compote)"
+   },
+   {
+    "color_name": "Cognac",
+    "hex_code": "#8B4513",
+    "pantone_code": "18-1348 (Cognac)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gunmetal",
+    "hex_code": "#A9A9A9",
+    "pantone_code": "19-3900 (Phantom)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "11-0601 (Bright White)"
+   }
+  ],
+  "theme": "Retro Elegance",
+  "keywords": [
+   "midi dress",
+   "high neck",
+   "voluminous sleeves",
+   "gathered waist",
+   "shoulder bag",
+   "horsebit closure",
+   "croc-effect boots",
+   "pointed-toe boots",
+   "stiletto heel",
+   "cuff bracelet"
+  ],
+  "collection_keywords": [
+   "fomo",
+   "unnecessary desire",
+   "emotional response",
+   "gucci memory",
+   "italian feminine glamour",
+   "classic 70s gucci"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059e12a6d46e3815fa0db/master/pass/00023-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b61e591e2b2f98159f5/master/pass/00023-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "A red pussy-bow blouse and pleated skirt dress, featuring an all-over Gucci monogram pattern, is accessorized with a beige and cream Dionysus shoulder bag with a gold chain strap, a black cuff bracelet, and black pointed-toe pumps with gold horsebit details.",
+  "fabric": "silk blend, canvas, leather, nylon",
+  "patterns": [
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "True Red",
+    "hex_code": "#C8102E",
+    "pantone_code": "19-1664 (True Red)"
+   },
+   {
+    "color_name": "Egret",
+    "hex_code": "#F0EAD6",
+    "pantone_code": "12-0601 (Egret)"
+   },
+   {
+    "color_name": "Nomad",
+    "hex_code": "#B99B6B",
+    "pantone_code": "16-1326 (Nomad)"
+   },
+   {
+    "color_name": "Golden Rod",
+    "hex_code": "#DAA520",
+    "pantone_code": "15-0927 (Golden Rod)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Classic corporate glamour",
+  "keywords": [
+   "pussy-bow blouse",
+   "pleated skirt",
+   "midi dress",
+   "long sleeve",
+   "monogram",
+   "Dionysus bag",
+   "shoulder bag",
+   "horsebit",
+   "pointed-toe pumps",
+   "cuff bracelet"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "emotional response",
+   "Ford-era cutting-edge Gucci",
+   "classic '70s Gucci",
+   "Italian feminine glamour",
+   "selfish bag"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b655e97b8363f04de86/master/pass/00026-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Slim-fit silver sparkle knit turtleneck sweater with light blue sequined straight-leg jeans, black textured loafers, and a small tan monogram shoulder bag with a dark brown leather strap and red and green web stripe detail.",
+  "fabric": "sparkle knit, denim, sequins, canvas, leather",
+  "patterns": [
+   "solid",
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "Silver Grey",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4103 (Silver Cloud)"
+   },
+   {
+    "color_name": "Light Blue",
+    "hex_code": "#ADD8E6",
+    "pantone_code": "14-4203 (Blue Fog)"
+   },
+   {
+    "color_name": "Tan",
+    "hex_code": "#D2B48C",
+    "pantone_code": "16-1334 (Sandstone)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#654321",
+    "pantone_code": "19-1116 (Espresso)"
+   },
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#228B22",
+    "pantone_code": "19-5513 (Forest Green)"
+   },
+   {
+    "color_name": "Crimson Red",
+    "hex_code": "#DC143C",
+    "pantone_code": "18-1660 (True Red)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Elevated Casual",
+  "keywords": [
+   "turtleneck sweater",
+   "sequined jeans",
+   "straight-leg",
+   "sparkle knit",
+   "mock neck",
+   "shoulder bag",
+   "monogram print",
+   "loafers",
+   "glitter",
+   "casual glamour"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "emotional response",
+   "Gucci memory",
+   "archival-based riff",
+   "banal to strange",
+   "new silhouette",
+   "selfish bag"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059e5313e8fffafe175bf/master/pass/00027-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b65ebdcca4392e74a9d/master/pass/00027-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "A long-sleeved pussy-bow blouse with a dense floral print, tucked into a matching pleated midi skirt, paired with a structured brown leather handbag.",
+  "fabric": "silk blend, leather",
+  "patterns": [
+   "floral"
+  ],
+  "Colors": [
+   {
+    "color_name": "Deep Navy",
+    "hex_code": "#000033",
+    "pantone_code": "19-3923 (True Navy)"
+   },
+   {
+    "color_name": "Dark Red",
+    "hex_code": "#8B0000",
+    "pantone_code": "19-1763 (Biking Red)"
+   },
+   {
+    "color_name": "Orange Red",
+    "hex_code": "#FF4500",
+    "pantone_code": "17-1464 (Flame)"
+   },
+   {
+    "color_name": "Golden Yellow",
+    "hex_code": "#FFD700",
+    "pantone_code": "14-0848 (Golden Rod)"
+   },
+   {
+    "color_name": "Light Blue",
+    "hex_code": "#ADD8E6",
+    "pantone_code": "16-4132 (Blue Atoll)"
+   },
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#006400",
+    "pantone_code": "19-5513 (Forest Green)"
+   },
+   {
+    "color_name": "Fuchsia Pink",
+    "hex_code": "#FFC0CB",
+    "pantone_code": "17-2036 (Fuchsia Rose)"
+   },
+   {
+    "color_name": "Saddle Brown",
+    "hex_code": "#8B4513",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   }
+  ],
+  "theme": "Dark floral romance",
+  "keywords": [
+   "pussy-bow blouse",
+   "long sleeve",
+   "floral print",
+   "pleated skirt",
+   "midi skirt",
+   "handbag",
+   "structured bag",
+   "leather bag"
+  ],
+  "collection_keywords": [
+   "creating FOMO",
+   "unexpected desire",
+   "emotional response",
+   "feminine glamour"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059e578b18aebb7357849/master/pass/00026-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b655e97b8363f04de86/master/pass/00026-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Long-sleeved grey metallic turtleneck top paired with light blue sequined wide-leg jeans, a small tan crescent shoulder bag, and black woven pointed-toe loafers.",
+  "fabric": "metallic knit, denim, sequins, leather, woven leather",
+  "patterns": [
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "Grey",
+    "hex_code": "#6C7A89",
+    "pantone_code": "17-4008 (Phantom)"
+   },
+   {
+    "color_name": "Light Blue",
+    "hex_code": "#A7D9E0",
+    "pantone_code": "14-4504 (Clearwater)"
+   },
+   {
+    "color_name": "Tan",
+    "hex_code": "#B87333",
+    "pantone_code": "16-1334 (Gingerbread)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C02130",
+    "pantone_code": "19-1655 (Chinese Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#005F40",
+    "pantone_code": "19-6050 (Evergreen)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#232B2B",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Glamorous casual",
+  "keywords": [
+   "turtleneck top",
+   "metallic knit",
+   "wide-leg jeans",
+   "sequined denim",
+   "shoulder bag",
+   "monogram bag",
+   "pointed-toe loafers",
+   "woven shoes",
+   "casual wear",
+   "glamorous details"
+  ],
+  "collection_keywords": [
+   "provocatively positioning the banal",
+   "Gucci memory",
+   "approach to silhouette",
+   "emotional response",
+   "FOMO",
+   "creative R&D"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b66bbc3962e1a82e882/master/pass/00028-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Black V-neck cotton jersey t-shirt paired with dark wash straight-leg denim jeans, accessorized with a black leather crossbody bag featuring the red and green Web stripe, black rectangular sunglasses, a gold-toned ring, and black embossed leather loafers.",
+  "fabric": "cotton jersey",
+  "patterns": [
+   "solid",
+   "stripe",
+   "embossed"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Dark Wash Denim",
+    "hex_code": "#2C3539",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#D40026",
+    "pantone_code": "18-1664 (True Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#008000",
+    "pantone_code": "17-6153 (Kelly Green)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Mustard Gold)"
+   }
+  ],
+  "theme": "Modern Casual Luxury",
+  "keywords": [
+   "V-neck t-shirt",
+   "straight leg jeans",
+   "dark wash denim",
+   "crossbody bag",
+   "Gucci Web stripe",
+   "rectangular sunglasses",
+   "embossed leather loafers",
+   "gold ring",
+   "casual styling"
+  ],
+  "collection_keywords": [
+   "emotional response",
+   "unexpected desire",
+   "selfish bag",
+   "V-neck is Gucci item",
+   "provocatively banal",
+   "new silhouette"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059e71c2b6ff4b63b389f/master/pass/00028-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b66bbc3962e1a82e882/master/pass/00028-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Black V-neck t-shirt paired with dark wash straight-leg jeans, a black leather cross-body bag with signature Web stripe, black rectangular sunglasses, a gold-tone ring, and black pointed-toe shoes.",
+  "fabric": "cotton jersey, denim, leather, plastic, metal",
+  "patterns": [
+   "solid",
+   "stripe",
+   "embossed leather"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#CC0000",
+    "pantone_code": "19-1763 (Chinese Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#006600",
+    "pantone_code": "19-6050 (Evergreen)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "17-0947 (Mustard Gold)"
+   }
+  ],
+  "theme": "Modern casual with iconic accents",
+  "keywords": [
+   "V-neck t-shirt",
+   "denim jeans",
+   "straight-leg",
+   "cross-body bag",
+   "Gucci Web stripe",
+   "sunglasses",
+   "pointed-toe shoes",
+   "slim fit",
+   "leather accessories",
+   "ring"
+  ],
+  "collection_keywords": [
+   "V-neck Gucci item",
+   "selfish design",
+   "70s Gucci",
+   "fashion FOMO",
+   "emotional response",
+   "banal made strange"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059e88d8b5b664f5f26d9/master/pass/00029-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b68180867a056740f5d/master/pass/00029-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Long-sleeved midi dress with an equestrian print, pussy-bow collar, fur trim, and pleated skirt with a high slit, accessorized with a black leather shoulder bag and black pointed-toe pumps.",
+  "fabric": "silk, fur, leather",
+  "patterns": [
+   "equestrian print",
+   "chain print",
+   "strap print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#231F20",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#4A352F",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Tan",
+    "hex_code": "#B8860B",
+    "pantone_code": "16-1133 (Golden Harvest)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#F0EAD6",
+    "pantone_code": "11-0602 (Egret)"
+   },
+   {
+    "color_name": "Orange",
+    "hex_code": "#E2725B",
+    "pantone_code": "16-1346 (Tigerlily)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#DAA520",
+    "pantone_code": "16-0947 (Golden Rod)"
+   }
+  ],
+  "theme": "Equestrian chic",
+  "keywords": [
+   "midi dress",
+   "long sleeve",
+   "pussy-bow",
+   "pleated skirt",
+   "high slit",
+   "fur trim",
+   "leather belt",
+   "shoulder bag",
+   "pointed-toe pumps",
+   "horsebit detail"
+  ],
+  "collection_keywords": [
+   "classic gucci",
+   "italian glamour",
+   "ford-era gucci",
+   "gucci heritage"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b65ebdcca4392e74a9d/master/pass/00027-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Long-sleeved floral print dress with a pussy-bow neckline, buttoned cuffs, and a pleated midi skirt, styled with a structured brown leather handbag and black over-the-knee leather boots featuring gold-tone hardware.",
+  "fabric": "silk, leather",
+  "patterns": [
+   "floral"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Brown",
+    "hex_code": "#7B3F00",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#B22222",
+    "pantone_code": "18-1660 (Fiery Red)"
+   },
+   {
+    "color_name": "Orange",
+    "hex_code": "#FF8C00",
+    "pantone_code": "16-1361 (Orange Tiger)"
+   },
+   {
+    "color_name": "Yellow",
+    "hex_code": "#FFD700",
+    "pantone_code": "13-0755 (Buttercup)"
+   },
+   {
+    "color_name": "Blue",
+    "hex_code": "#4169E1",
+    "pantone_code": "19-3921 (True Blue)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#228B22",
+    "pantone_code": "17-6153 (Emerald)"
+   },
+   {
+    "color_name": "Pink",
+    "hex_code": "#FF69B4",
+    "pantone_code": "17-2036 (Fuchsia Rose)"
+   }
+  ],
+  "theme": "Romantic Floral",
+  "keywords": [
+   "floral dress",
+   "pussy-bow neckline",
+   "long sleeve",
+   "pleated skirt",
+   "midi length",
+   "over-the-knee boots",
+   "stiletto heel",
+   "pointed toe",
+   "structured handbag",
+   "gold hardware"
+  ],
+  "collection_keywords": [
+   "classic 70s",
+   "feminine glamour",
+   "emotional response",
+   "unexpected desire",
+   "creative R&D",
+   "free experimentation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b6824a46ebebe8e4fbb/master/pass/00030-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "White slim-fit V-neck t-shirt paired with wide-leg blue denim jeans, a striped canvas belt, black leather studded loafers, and a black monogram shoulder bag.",
+  "fabric": "Cotton jersey, denim, canvas, leather",
+  "patterns": [
+   "solid",
+   "stripe",
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Dark Denim Blue",
+    "hex_code": "#336699",
+    "pantone_code": "18-4020 (Dark Denim)"
+   },
+   {
+    "color_name": "Flame Scarlet Red",
+    "hex_code": "#E4002B",
+    "pantone_code": "18-1663 (Flame Scarlet)"
+   },
+   {
+    "color_name": "Emerald Green",
+    "hex_code": "#008A45",
+    "pantone_code": "17-6159 (Emerald)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Casual '90s luxury",
+  "keywords": [
+   "V-neck t-shirt",
+   "slim fit",
+   "short sleeve",
+   "wide-leg jeans",
+   "denim",
+   "striped belt",
+   "leather loafers",
+   "studded footwear",
+   "pointed toe",
+   "shoulder bag",
+   "monogram bag",
+   "casualwear"
+  ],
+  "collection_keywords": [
+   "V-neck is Gucci item",
+   "selfish bag",
+   "provocatively positioning the banal",
+   "emotional response",
+   "unexpected desire"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059e9d483ec8989a8e59a/master/pass/00030-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b6824a46ebebe8e4fbb/master/pass/00030-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "White V-neck t-shirt with short sleeves, paired with blue flared denim jeans, a red and green Web stripe belt, black pointed-toe loafers, and a black shoulder bag.",
+  "fabric": "Cotton jersey, denim, leather, canvas",
+  "patterns": [
+   "solid",
+   "web stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Medium Blue",
+    "hex_code": "#3B5B8B",
+    "pantone_code": "18-4048 (Directoire Blue)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C80000",
+    "pantone_code": "18-1663 (True Red)"
+   },
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#006400",
+    "pantone_code": "19-5513 (Forest Green)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Elevated casual menswear",
+  "keywords": [
+   "V-neck t-shirt",
+   "short sleeves",
+   "denim jeans",
+   "flared leg",
+   "Web stripe belt",
+   "shoulder bag",
+   "leather loafers",
+   "pointed toe",
+   "menswear",
+   "casualwear"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "creative R&D",
+   "emotional response",
+   "classic '70s Gucci",
+   "V-neck is Gucci",
+   "provocatively banal",
+   "silhouette and body"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b691810535ae4b59743/master/pass/00031-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Sheer black pussy-bow blouse with long sleeves and a pleated midi skirt featuring a yellow and blue floral and baroque print, cinched with a black leather belt, paired with a beige monogrammed shoulder bag and pink pointed-toe pumps.",
+  "fabric": "Sheer silk chiffon, silk, leather, coated canvas, metal",
+  "patterns": [
+   "floral",
+   "baroque",
+   "border print",
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "12-0703 (Vanilla Ice)"
+   },
+   {
+    "color_name": "Vibrant Yellow",
+    "hex_code": "#FFD700",
+    "pantone_code": "13-0858 (Spectra Yellow)"
+   },
+   {
+    "color_name": "Royal Blue",
+    "hex_code": "#4169E1",
+    "pantone_code": "18-4051 (Directoire Blue)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Antique Gold)"
+   },
+   {
+    "color_name": "Soft Pink",
+    "hex_code": "#F7CAC9",
+    "pantone_code": "13-2007 (Rosewater)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#C2B280",
+    "pantone_code": "16-1334 (Toasted Almond)"
+   }
+  ],
+  "theme": "Elegant daytime chic",
+  "keywords": [
+   "sheer blouse",
+   "pussy-bow neckline",
+   "long sleeves",
+   "pleated skirt",
+   "midi skirt",
+   "A-line silhouette",
+   "leather belt",
+   "GG buckle",
+   "shoulder bag",
+   "chain strap",
+   "monogram print",
+   "pointed-toe pumps",
+   "kitten heel"
+  ],
+  "collection_keywords": [
+   "unnecessary desire",
+   "archival archetypes",
+   "free expression",
+   "emotional response",
+   "Ford-era Gucci",
+   "Italian glamour",
+   "banal made strange",
+   "silhouette exploration"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059eaa22c6f62ceacf151/master/pass/00031-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b691810535ae4b59743/master/pass/00031-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Sheer black long-sleeved pussy-bow blouse with lace cuffs, a pleated midi skirt featuring a baroque floral and stripe print, a black leather belt with a gold G buckle, a beige shoulder bag with gold hardware, and pink pointed-toe pumps.",
+  "fabric": "sheer silk, lace, silk, leather, coated canvas, metal",
+  "patterns": [
+   "baroque floral",
+   "stripe",
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "11-0107 (Egret)"
+   },
+   {
+    "color_name": "Royal Blue",
+    "hex_code": "#4169E1",
+    "pantone_code": "19-4052 (Directoire Blue)"
+   },
+   {
+    "color_name": "Vibrant Yellow",
+    "hex_code": "#FFD700",
+    "pantone_code": "13-0859 (Spectra Yellow)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0836 (Golden Rod)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "16-1326 (Nomad)"
+   },
+   {
+    "color_name": "Light Pink",
+    "hex_code": "#FFC0CB",
+    "pantone_code": "13-2005 (Rose Quartz)"
+   }
+  ],
+  "theme": "Sophisticated eclectic",
+  "keywords": [
+   "sheer blouse",
+   "pussy-bow neckline",
+   "lace cuffs",
+   "pleated midi skirt",
+   "baroque print",
+   "leather belt",
+   "shoulder bag",
+   "pointed-toe pumps",
+   "monogram bag",
+   "gold hardware"
+  ],
+  "collection_keywords": [
+   "Ford-era cutting-edge Gucci",
+   "classic 70s Gucci",
+   "Italian feminine glamour",
+   "emotional response",
+   "make stuff without overthinking it"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b68180867a056740f5d/master/pass/00029-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Long-sleeved midi shirt dress with a pussy-bow neckline, equestrian-themed print, pleated brown hem, cinched with a black leather belt, paired with a black shoulder bag and pointed-toe heels.",
+  "fabric": "silk, leather",
+  "patterns": [
+   "equestrian",
+   "belt",
+   "chain"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#4A2C2A",
+    "pantone_code": "19-1116 (Turkish Coffee)"
+   },
+   {
+    "color_name": "Orange Tan",
+    "hex_code": "#D28D44",
+    "pantone_code": "16-1346 (Autumn Leaf)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0947 (Mustard Gold)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "11-0602 (Cloud Dancer)"
+   }
+  ],
+  "theme": "Equestrian Chic",
+  "keywords": [
+   "midi dress",
+   "shirt dress",
+   "pussy-bow neckline",
+   "equestrian print",
+   "pleated hem",
+   "leather belt",
+   "GG buckle",
+   "pointed-toe heels",
+   "horsebit detail",
+   "shoulder bag"
+  ],
+  "collection_keywords": [
+   "ford-era gucci",
+   "70s gucci",
+   "italian glamour",
+   "unnecessary desire",
+   "emotional response"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059eb75aa28c41b113529/master/pass/00032-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b6bf740689c42c1c809/master/pass/00032-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "A matching short-sleeved button-up shirt and shorts set in a blue tropical print, paired with a beige GG monogram duffle bag featuring a red and green Web stripe, and black slide sandals with a matching Web stripe and gold GG logo.",
+  "fabric": "silk blend, coated canvas, leather, textile",
+  "patterns": [
+   "tropical print",
+   "floral print",
+   "monogram",
+   "stripe",
+   "logo print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Sky Blue",
+    "hex_code": "#87CEEB",
+    "pantone_code": "16-4529 (Blue Atoll)"
+   },
+   {
+    "color_name": "Flame Orange",
+    "hex_code": "#FF7F50",
+    "pantone_code": "17-1464 (Flame Orange)"
+   },
+   {
+    "color_name": "Rosebud Pink",
+    "hex_code": "#FFC0CB",
+    "pantone_code": "15-2216 (Rosebud)"
+   },
+   {
+    "color_name": "Lush Meadow Green",
+    "hex_code": "#228B22",
+    "pantone_code": "16-0220 (Lush Meadow)"
+   },
+   {
+    "color_name": "Sand Beige",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "14-1118 (Sand)"
+   },
+   {
+    "color_name": "Coffee Bean Brown",
+    "hex_code": "#5C4033",
+    "pantone_code": "19-1118 (Coffee Bean)"
+   },
+   {
+    "color_name": "True Red",
+    "hex_code": "#FF0000",
+    "pantone_code": "18-1660 (True Red)"
+   },
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#006400",
+    "pantone_code": "19-5513 (Forest Green)"
+   },
+   {
+    "color_name": "Golden Rod",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0837 (Golden Rod)"
+   },
+   {
+    "color_name": "Stretch Limo Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   }
+  ],
+  "theme": "Luxury resort wear",
+  "keywords": [
+   "Hawaiian shirt",
+   "matching set",
+   "shorts",
+   "tropical print",
+   "duffle bag",
+   "monogram bag",
+   "Web stripe",
+   "slide sandals",
+   "GG logo",
+   "resort wear"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "creative R&D",
+   "experiment more freely",
+   "emotional response",
+   "selfish bag",
+   "provocatively positioning the banal",
+   "classic 70s Gucci"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b6b18715b0da0d8f6ba/master/pass/00033-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Oversized dark faux fur coat with a high collar, paired with a glitter-embellished shoulder bag and black pointed-toe pumps featuring gold horsebit details.",
+  "fabric": "Faux fur, fabric, leather, metal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Deep Teal",
+    "hex_code": "#0F2D2D",
+    "pantone_code": "19-4524 (Deep Teal)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0947 (Golden Rod)"
+   }
+  ],
+  "theme": "Glamorous Evening Wear",
+  "keywords": [
+   "faux fur coat",
+   "oversized silhouette",
+   "high collar",
+   "shoulder bag",
+   "glitter embellishment",
+   "horsebit hardware",
+   "pointed-toe pumps",
+   "stiletto heel",
+   "evening wear",
+   "luxe"
+  ],
+  "collection_keywords": [
+   "Ford-era Gucci",
+   "Italian feminine glamour",
+   "emotional response",
+   "unexpected desire",
+   "silhouette exploration"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059ec298a3ae9c1f1e9a6/master/pass/00033-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b6b18715b0da0d8f6ba/master/pass/00033-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Oversized black faux fur coat with a high neck, paired with a black glitter shoulder bag featuring a silver-toned Dionysus buckle and a chain strap, and black pointed-toe pumps with gold-toned horsebit details.",
+  "fabric": "Faux fur, glitter fabric, leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Luxurious evening glamour",
+  "keywords": [
+   "Faux fur coat",
+   "High neck",
+   "Oversized coat",
+   "Shoulder bag",
+   "Glitter bag",
+   "Dionysus buckle",
+   "Chain strap",
+   "Pointed-toe pumps",
+   "High heels",
+   "Horsebit detail"
+  ],
+  "collection_keywords": [
+   "unnecessary desire",
+   "free expression",
+   "emotional response",
+   "Ford-era Gucci",
+   "Italian feminine glamour",
+   "silhouette exploration"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b6bf740689c42c1c809/master/pass/00032-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Oversized blue Hawaiian shirt and matching shorts with a tropical print, styled with a large monogrammed duffel bag featuring the Web stripe and black slide sandals.",
+  "fabric": "silk, coated canvas, leather, rubber",
+  "patterns": [
+   "floral",
+   "tropical",
+   "monogram",
+   "web stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Azure Blue",
+    "hex_code": "#007FFF",
+    "pantone_code": "18-4220 (Azure Blue)"
+   },
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#00563F",
+    "pantone_code": "19-5513 (Forest Biome)"
+   },
+   {
+    "color_name": "True Red",
+    "hex_code": "#C8102E",
+    "pantone_code": "18-1663 (True Red)"
+   },
+   {
+    "color_name": "Tan",
+    "hex_code": "#D2B48C",
+    "pantone_code": "16-1326 (Sandstone)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#654321",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Coral Pink",
+    "hex_code": "#FF7F50",
+    "pantone_code": "16-1361 (Coral Reef)"
+   }
+  ],
+  "theme": "resort wear",
+  "keywords": [
+   "Hawaiian shirt",
+   "matching shorts",
+   "relaxed fit",
+   "button-down",
+   "duffel bag",
+   "monogram",
+   "web stripe",
+   "slide sandals",
+   "open-toe"
+  ],
+  "collection_keywords": [
+   "creating desire",
+   "experiment freely",
+   "emotional response",
+   "selfish design",
+   "more now",
+   "provocative banal",
+   "Gucci memory"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b6c75aa28c41b11352e/master/pass/00034-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Black short-sleeve polo shirt with a subtle monogram pattern is paired with dark wash straight-leg jeans featuring red and green side stripes, accessorized with a beige monogrammed duffel bag, black textured loafers, and gold-rimmed sunglasses.",
+  "fabric": "cotton knit, denim, coated canvas, leather, metal, plastic",
+  "patterns": [
+   "monogram",
+   "stripe",
+   "geometric"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Dark Blue",
+    "hex_code": "#212B36",
+    "pantone_code": "19-4023 (Eclipse)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#E0C8A7",
+    "pantone_code": "13-1008 (Oatmeal)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C8102E",
+    "pantone_code": "19-1664 (True Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#006B3D",
+    "pantone_code": "19-5620 (Forest Green)"
+   },
+   {
+    "color_name": "Brown",
+    "hex_code": "#58372F",
+    "pantone_code": "19-1118 (Chocolate Brown)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0947 (Golden Rod)"
+   }
+  ],
+  "theme": "Sporty chic with classic branding",
+  "keywords": [
+   "polo shirt",
+   "short sleeve",
+   "collared shirt",
+   "straight-leg jeans",
+   "side stripe",
+   "duffel bag",
+   "monogram print",
+   "web stripe",
+   "loafers",
+   "sunglasses",
+   "casual menswear"
+  ],
+  "collection_keywords": [
+   "classic '70s",
+   "web stripe",
+   "emotional response",
+   "provocatively positioning the banal",
+   "fomo",
+   "unexpected desire"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059edf25c7fb049e2f38b/master/pass/00034-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b6c75aa28c41b11352e/master/pass/00034-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Beige Gucci monogram duffle bag with a brown leather strap and red and green Web stripe, worn with a black short-sleeve polo shirt, dark wash denim jeans with side stripes, a black leather belt with a gold buckle, and gold-framed sunglasses.",
+  "fabric": "cotton pique, coated canvas, leather, denim, metal, acetate",
+  "patterns": [
+   "Gucci monogram",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Beige",
+    "hex_code": "#D2B48C",
+    "pantone_code": "13-1008 (Oatmeal)"
+   },
+   {
+    "color_name": "Brown",
+    "hex_code": "#5C4033",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C8102E",
+    "pantone_code": "19-1655 (True Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#006B3D",
+    "pantone_code": "19-5513 (Forest Biome)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#0A0A0A",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "15-1040 (Golden Glow)"
+   }
+  ],
+  "theme": "Heritage casual",
+  "keywords": [
+   "polo shirt",
+   "short sleeve",
+   "denim jeans",
+   "duffle bag",
+   "crossbody bag",
+   "Gucci Web stripe",
+   "Gucci monogram",
+   "leather belt",
+   "gold buckle",
+   "sunglasses"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "creative R&D",
+   "emotional response",
+   "Gucci memory",
+   "Ford-era cutting-edge",
+   "classic '70s pre-fashion",
+   "provocatively positioning the banal"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b6e78b18aebb7357854/master/pass/00035-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Voluminous camel faux fur mini coat-dress with a high collar, cinched at the waist by a thin Gucci Web stripe belt, paired with red platform peep-toe mules and a black chain-strap shoulder bag.",
+  "fabric": "faux fur, leather, patent leather, metal",
+  "patterns": [
+   "Gucci Web stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Camel",
+    "hex_code": "#C19A6B",
+    "pantone_code": "16-1331 (Camel)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#E30022",
+    "pantone_code": "18-1660 (True Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#006B3D",
+    "pantone_code": "19-5513 (Forest Green)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Goldenrod)"
+   }
+  ],
+  "theme": "Dramatic Opulence",
+  "keywords": [
+   "faux fur",
+   "mini dress",
+   "coat-dress",
+   "high collar",
+   "cinched waist",
+   "Gucci Web belt",
+   "platform mules",
+   "peep-toe",
+   "shoulder bag",
+   "voluminous silhouette"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "emotional response",
+   "Ford-era cutting-edge Gucci",
+   "Italian feminine glamour"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059eed3a46ac107d67139/master/pass/00035-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b6e78b18aebb7357854/master/pass/00035-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Short brown fur coat with a wide collar, cinched at the waist by a black leather belt featuring a red and green Web stripe, accessorized with a black leather chain-strap bag, a gold chain necklace, and large gold hoop earrings.",
+  "fabric": "fur, leather, metal",
+  "patterns": [
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Gingerbread",
+    "hex_code": "#965A38",
+    "pantone_code": "17-1047 (Gingerbread)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "True Red",
+    "hex_code": "#BF0A1A",
+    "pantone_code": "18-1663 (True Red)"
+   },
+   {
+    "color_name": "Forest Night",
+    "hex_code": "#0B3F24",
+    "pantone_code": "19-5513 (Forest Night)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#DAA520",
+    "pantone_code": "16-0947 (Goldenrod)"
+   }
+  ],
+  "theme": "Opulent accessories and luxurious fur",
+  "keywords": [
+   "fur coat",
+   "short coat",
+   "wide collar",
+   "belted waist",
+   "leather belt",
+   "Web stripe",
+   "chain-strap bag",
+   "gold jewelry",
+   "statement earrings",
+   "dark lip"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "emotional response",
+   "Gucci memory",
+   "Ford-era",
+   "Italian glamour",
+   "branding"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b6ebbc3962e1a82e884/master/pass/00036-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Fitted black short-sleeve mock neck top with shoulder panel details, paired with voluminous wide-leg black trousers, black pointed-toe flats, a black leather crossbody bag with red and green Web stripe, and a gold-tone watch.",
+  "fabric": "jersey, fluid synthetic, leather, metal",
+  "patterns": [
+   "solid",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#DA291C",
+    "pantone_code": "18-1663 (Flame Scarlet)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#008000",
+    "pantone_code": "17-6153 (Evergreen)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0836 (Goldenrod)"
+   }
+  ],
+  "theme": "Modern minimalist comfort",
+  "keywords": [
+   "mock neck top",
+   "short sleeve",
+   "fitted top",
+   "wide leg trousers",
+   "voluminous silhouette",
+   "dropped crotch",
+   "crossbody bag",
+   "Gucci Web stripe",
+   "ballet flats",
+   "gold watch"
+  ],
+  "collection_keywords": [
+   "unnecessary desire",
+   "free expression",
+   "emotional design",
+   "modern fit",
+   "new silhouette",
+   "banal made strange",
+   "selfish design"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059ef00621954c1239390/master/pass/00036-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b6ebbc3962e1a82e884/master/pass/00036-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Fitted black short-sleeved mock neck top and wide-leg black trousers, accessorized with a black leather crossbody bag featuring a green and red Web stripe and a gold-toned wrist watch.",
+  "fabric": "stretch jersey, crepe, leather, metal",
+  "patterns": [
+   "stripe",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#228B22",
+    "pantone_code": "19-5513 (Forest Green)"
+   },
+   {
+    "color_name": "Scarlet Red",
+    "hex_code": "#FF2400",
+    "pantone_code": "18-1660 (Scarlet Red)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0836 (Gold)"
+   }
+  ],
+  "theme": "Modern monochrome with heritage branding",
+  "keywords": [
+   "mock neck top",
+   "short sleeve top",
+   "fitted silhouette",
+   "wide leg trousers",
+   "crossbody bag",
+   "leather bag",
+   "Web stripe",
+   "wrist watch",
+   "gold tone"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "creative R&D",
+   "emotional response",
+   "Gucci Web stripes",
+   "selfish bag",
+   "silhouette and body",
+   "provocatively banal"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b6f78b18aebb7357856/master/pass/00037-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Form-fitting black leather zip-front top and matching slim-fit pants with ankle slits, styled with a black shoulder bag and pointed-toe heels.",
+  "fabric": "leather",
+  "patterns": [
+   "solid",
+   "quilted"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0947 (Golden Rod)"
+   }
+  ],
+  "theme": "Modern Leather Sleekness",
+  "keywords": [
+   "leather top",
+   "leather pants",
+   "zip-front closure",
+   "mock neck",
+   "slim silhouette",
+   "ankle slits",
+   "pointed-toe heels",
+   "quilted vamp",
+   "shoulder bag",
+   "gold chain strap"
+  ],
+  "collection_keywords": [
+   "unexpected desire",
+   "creative R&D",
+   "emotional response",
+   "Ford-era cutting-edge",
+   "Italian feminine glamour",
+   "provocatively banal",
+   "body silhouette",
+   "more now fit"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059f2dd5be9a5e7676952/master/pass/00037-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b6f78b18aebb7357856/master/pass/00037-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Black leather long-sleeved top with a high neck and full-zip front, paired with matching slim-fit leather pants featuring split hems, accessorized with a black shoulder bag with a gold chain strap and black pointed-toe pumps.",
+  "fabric": "leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0947 (Golden Rod)"
+   }
+  ],
+  "theme": "Sleek and edgy",
+  "keywords": [
+   "leather top",
+   "leather pants",
+   "slim fit",
+   "high neck",
+   "full-zip",
+   "split hem",
+   "shoulder bag",
+   "gold chain",
+   "pointed-toe pumps"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "cutting-edge Gucci",
+   "silhouette and body",
+   "unexpected desire",
+   "emotional response"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059f218715b0da0d8f6b6/master/pass/00039-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b7175aa28c41b113531/master/pass/00039-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Black leather bomber jacket with a ribbed hem and cuffs, worn over dark wash skinny jeans featuring split hems, paired with black pointed-toe stiletto heels adorned with gold horsebit hardware, a dark brown leather shoulder bag, and black rectangular sunglasses.",
+  "fabric": "Leather, Denim",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Dark Indigo",
+    "hex_code": "#2C3539",
+    "pantone_code": "19-4023 (Dress Blues)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#36221B",
+    "pantone_code": "19-1118 (Coffee Bean)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0948 (Golden Rod)"
+   }
+  ],
+  "theme": "Sleek urban edge",
+  "keywords": [
+   "leather bomber jacket",
+   "cropped jacket",
+   "skinny jeans",
+   "split hem jeans",
+   "pointed-toe heels",
+   "stiletto heels",
+   "horsebit detail",
+   "shoulder bag",
+   "rectangular sunglasses"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "emotional response",
+   "Gucci memory",
+   "Ford-era cutting-edge",
+   "banal to strange"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059f200621954c1239392/master/pass/00038-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b728d8b5b664f5f26e7/master/pass/00038-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "White cotton jersey V-neck t-shirt paired with a beige monogrammed coated canvas duffel bag featuring a brown leather strap and signature red and green web stripe, worn with white drawstring pants and amber-tinted aviator sunglasses.",
+  "fabric": "cotton jersey, coated canvas, leather, metal, plastic",
+  "patterns": [
+   "monogram",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#D2B48C",
+    "pantone_code": "13-1007 (Oatmeal)"
+   },
+   {
+    "color_name": "Brown",
+    "hex_code": "#3F251E",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C60C30",
+    "pantone_code": "18-1663 (True Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#008000",
+    "pantone_code": "17-6030 (Kelly Green)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0947 (Antique Gold)"
+   },
+   {
+    "color_name": "Amber",
+    "hex_code": "#FFBF00",
+    "pantone_code": "14-1041 (Goldenrod)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Casual luxury sportswear",
+  "keywords": [
+   "V-neck t-shirt",
+   "short sleeve t-shirt",
+   "duffel bag",
+   "monogram print",
+   "web stripe",
+   "leather strap",
+   "drawstring pants",
+   "sunglasses",
+   "aviator sunglasses",
+   "gold hardware"
+  ],
+  "collection_keywords": [
+   "fomo",
+   "archival archetypes",
+   "emotional approach",
+   "classic 70s gucci",
+   "gucci product",
+   "v-neck is gucci",
+   "provocatively banal"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b728d8b5b664f5f26e7/master/pass/00038-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "White V-neck t-shirt and wide-leg drawstring pants are paired with a beige Gucci monogram duffle bag, white sneakers with red and green web stripes, and gold-rimmed eyeglasses.",
+  "fabric": "Cotton jersey, cotton, coated canvas, leather, rubber, metal, plastic",
+  "patterns": [
+   "solid",
+   "monogram",
+   "web stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "White",
+    "hex_code": "#F8F8F8",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Brown",
+    "hex_code": "#6F4E37",
+    "pantone_code": "19-1118 (Chocolate Truffle)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#D2B48C",
+    "pantone_code": "16-1109 (Sandstone)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C80000",
+    "pantone_code": "18-1660 (True Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#008000",
+    "pantone_code": "17-6153 (Kelly Green)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Goldenrod)"
+   }
+  ],
+  "theme": "Relaxed Athletic Luxury",
+  "keywords": [
+   "V-neck t-shirt",
+   "wide-leg pants",
+   "drawstring waist",
+   "duffle bag",
+   "shoulder bag",
+   "sneakers",
+   "athletic footwear",
+   "eyeglasses",
+   "casualwear",
+   "relaxed silhouette"
+  ],
+  "collection_keywords": [
+   "emotional response",
+   "provocatively positioning the banal",
+   "V-neck is a Gucci item",
+   "unexpected desire"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b7175aa28c41b113531/master/pass/00039-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Black leather bomber jacket with ribbed cuffs and hem is layered over a black knit crop top, paired with dark wash skinny jeans featuring stirrup hems, black pointed-toe high heels with gold horsebit hardware, a brown leather shoulder bag, and black rectangular sunglasses.",
+  "fabric": "leather, knit, denim",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Dark Indigo",
+    "hex_code": "#2C3E50",
+    "pantone_code": "19-4010 (Eclipse)"
+   },
+   {
+    "color_name": "Coffee Brown",
+    "hex_code": "#6F4E37",
+    "pantone_code": "19-1116 (Coffee Bean)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0836 (Goldenrod)"
+   }
+  ],
+  "theme": "Edgy urban casual",
+  "keywords": [
+   "bomber jacket",
+   "leather jacket",
+   "crop top",
+   "skinny jeans",
+   "stirrup pants",
+   "pointed-toe heels",
+   "high heels",
+   "shoulder bag",
+   "sunglasses",
+   "gold hardware",
+   "casual styling",
+   "layered"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "creative R&D",
+   "emotional response",
+   "Ford-era cutting-edge",
+   "provocatively banal",
+   "modern fit"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b71bbc3962e1a82e886/master/pass/00040-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Wide-leg navy track pants with red and green side stripes, styled with a beige monogram duffle bag, dark sunglasses, and black flat shoes.",
+  "fabric": "Technical knit, coated canvas, leather, plastic",
+  "patterns": [
+   "stripe",
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "Navy",
+    "hex_code": "#1A233C",
+    "pantone_code": "19-4010 (Dress Blues)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C8102E",
+    "pantone_code": "18-1660 (True Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#008000",
+    "pantone_code": "17-6030 (Kelly Green)"
+   },
+   {
+    "color_name": "Warm Sand",
+    "hex_code": "#D2B48C",
+    "pantone_code": "14-1118 (Warm Sand)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#4A2C2A",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Blue Tint",
+    "hex_code": "#4682B4",
+    "pantone_code": "18-4220 (Blue Depths)"
+   }
+  ],
+  "theme": "Athleisure luxury with a minimalist edge",
+  "keywords": [
+   "track pants",
+   "wide-leg",
+   "side stripe",
+   "duffle bag",
+   "monogram",
+   "sunglasses",
+   "flat shoes",
+   "athleisure",
+   "casual luxury",
+   "menswear"
+  ],
+  "collection_keywords": [
+   "unnecessary desire",
+   "free expression",
+   "emotional response",
+   "Ford-era Gucci",
+   "banal made strange",
+   "silhouette exploration"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059f6438959cabcb3b735/master/pass/00040-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b71bbc3962e1a82e886/master/pass/00040-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "A Gucci GG Supreme canvas duffel bag with Web stripe, carried with navy wide-leg track pants featuring red and green side stripes, and black pointed-toe loafers.",
+  "fabric": "coated canvas, leather, jersey",
+  "patterns": [
+   "monogram",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "beige",
+    "hex_code": "#D2B48C",
+    "pantone_code": "16-1326 (Nomad)"
+   },
+   {
+    "color_name": "dark brown",
+    "hex_code": "#4A2C2A",
+    "pantone_code": "19-1012 (Chocolate Lab)"
+   },
+   {
+    "color_name": "red",
+    "hex_code": "#CB3234",
+    "pantone_code": "18-1660 (True Red)"
+   },
+   {
+    "color_name": "green",
+    "hex_code": "#228B22",
+    "pantone_code": "19-5513 (Forest Green)"
+   },
+   {
+    "color_name": "navy",
+    "hex_code": "#26436D",
+    "pantone_code": "19-4010 (Dress Blues)"
+   },
+   {
+    "color_name": "black",
+    "hex_code": "#1C1C1C",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "luxury athleisure",
+  "keywords": [
+   "duffel bag",
+   "shoulder bag",
+   "GG Supreme",
+   "Web stripe",
+   "track pants",
+   "wide-leg pants",
+   "side stripe",
+   "loafers",
+   "pointed-toe shoes",
+   "Gucci logo"
+  ],
+  "collection_keywords": [
+   "unexpected desire",
+   "emotional response",
+   "provocatively banal",
+   "Gucci heritage",
+   "classic Gucci"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b75f740689c42c1c80b/master/pass/00041-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Perforated yellow snakeskin-embossed leather bomber jacket worn over a black t-shirt and black shorts, styled with black knee-high horsebit boots and a beige monogram wristlet bag.",
+  "fabric": "leather",
+  "patterns": [
+   "snakeskin",
+   "monogram",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Mustard Yellow",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0947 (Goldenrod)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#D2B48C",
+    "pantone_code": "13-1008 (Sand)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#D22B2B",
+    "pantone_code": "18-1663 (True Red)"
+   },
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#228B22",
+    "pantone_code": "17-6153 (Forest Green)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0836 (Goldfinch)"
+   }
+  ],
+  "theme": "Sporty Glamour",
+  "keywords": [
+   "bomber jacket",
+   "leather jacket",
+   "snakeskin print",
+   "perforated leather",
+   "shorts",
+   "knee-high boots",
+   "pointed toe boots",
+   "horsebit detail",
+   "wristlet bag",
+   "Gucci monogram"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "creative R&D",
+   "emotional response",
+   "Ford-era cutting-edge",
+   "classic Gucci",
+   "modern fit",
+   "selfish bag"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059f78d8b5b664f5f26db/master/pass/00041-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b75f740689c42c1c80b/master/pass/00041-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Tan leather bomber jacket with a snakeskin texture, featuring a rounded collar and front zipper closure, worn with a beige canvas mini shoulder bag with brown leather trim and a red and green Web stripe, and black knee-high pointed-toe boots with horsebit detail.",
+  "fabric": "leather",
+  "patterns": [
+   "snakeskin",
+   "monogram",
+   "web stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Golden Tan",
+    "hex_code": "#D4A76B",
+    "pantone_code": "16-1139 (Golden Glow)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#C4A286",
+    "pantone_code": "16-1336 (Toasted Almond)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#5C3A21",
+    "pantone_code": "19-1016 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C80000",
+    "pantone_code": "19-1655 (True Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#006400",
+    "pantone_code": "19-5924 (Forest Green)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Edgy luxury street style",
+  "keywords": [
+   "bomber jacket",
+   "leather jacket",
+   "snakeskin texture",
+   "mini bag",
+   "shoulder bag",
+   "knee-high boots",
+   "pointed-toe boots",
+   "horsebit detail",
+   "shorts",
+   "monogram print"
+  ],
+  "collection_keywords": [
+   "unexpected desire",
+   "Gucci memory",
+   "Ford-era cutting-edge",
+   "Italian feminine glamour",
+   "selfish bag",
+   "approach to silhouette"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b75313e8fffafe175cc/master/pass/00043-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Black chiffon mini-dress with sheer long sleeves, a deep V-neckline, and a cinched waist, paired with black knee-high pointed-toe stiletto boots, a black crocodile-embossed shoulder bag, sunglasses, and gold jewelry.",
+  "fabric": "chiffon, leather, embossed leather, metal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#B8860B",
+    "pantone_code": "16-0836 (Golden Haze)"
+   }
+  ],
+  "theme": "Glamorous evening wear with a modern edge",
+  "keywords": [
+   "mini-dress",
+   "sheer sleeves",
+   "V-neck",
+   "cinched waist",
+   "knee-high boots",
+   "stiletto heel",
+   "pointed toe",
+   "shoulder bag",
+   "sunglasses",
+   "gold jewelry",
+   "layering"
+  ],
+  "collection_keywords": [
+   "unexpected desire",
+   "emotional response",
+   "Ford-era Gucci",
+   "Italian feminine glamour",
+   "selfish bag",
+   "provocative banal",
+   "silhouette and body"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b75c1c3c6b90dcb55ad/master/pass/00042-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Fitted short-sleeve crew neck top and wide-leg fluid trousers in a matching dark red, styled with a large brown suede tote bag featuring a green and red web stripe, gold-tone bracelet, and rectangular sunglasses.",
+  "fabric": "velvet knit, satin, suede, leather, grosgrain, metal, acetate",
+  "patterns": [
+   "solid",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Burgundy",
+    "hex_code": "#6A1E24",
+    "pantone_code": "19-1725 (Biking Red)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#653D22",
+    "pantone_code": "19-1118 (Chocolate Truffle)"
+   },
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#00562D",
+    "pantone_code": "19-5610 (Evergreen)"
+   },
+   {
+    "color_name": "True Red",
+    "hex_code": "#C80000",
+    "pantone_code": "18-1660 (True Red)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#B8860B",
+    "pantone_code": "16-0836 (Golden Rod)"
+   }
+  ],
+  "theme": "Relaxed luxury",
+  "keywords": [
+   "fitted top",
+   "crew neck",
+   "short sleeve",
+   "wide-leg trousers",
+   "fluid silhouette",
+   "suede tote bag",
+   "web stripe",
+   "flat mules",
+   "sunglasses",
+   "gold bracelet"
+  ],
+  "collection_keywords": [
+   "emotional response",
+   "modern fit",
+   "70s Gucci",
+   "unnecessary desire",
+   "free expression",
+   "silhouette exploration"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059f7313e8fffafe175c1/master/pass/00042-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b75c1c3c6b90dcb55ad/master/pass/00042-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Brown suede tote bag with red and green Web stripe detailing, dark brown leather trim, and top handles, paired with a fitted short-sleeve top, wide-leg fluid trousers, and pointed-toe flats in a matching dark reddish-brown, accessorized with thin-frame sunglasses and a beaded bracelet.",
+  "fabric": "Suede, Leather, Velvet, Metal, Beads",
+  "patterns": [
+   "Web stripe",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Root Beer",
+    "hex_code": "#5F3F34",
+    "pantone_code": "19-1228 (Root Beer)"
+   },
+   {
+    "color_name": "Espresso",
+    "hex_code": "#362D2B",
+    "pantone_code": "19-4104 (Espresso)"
+   },
+   {
+    "color_name": "True Red",
+    "hex_code": "#BF1E2D",
+    "pantone_code": "19-1664 (True Red)"
+   },
+   {
+    "color_name": "Evergreen",
+    "hex_code": "#005030",
+    "pantone_code": "19-5513 (Evergreen)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#C0A060",
+    "pantone_code": "16-0836 (Gold)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#212121",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Retro-inspired comfort",
+  "keywords": [
+   "tote bag",
+   "suede bag",
+   "Web stripe",
+   "short-sleeve top",
+   "crew neck",
+   "wide-leg trousers",
+   "fluid silhouette",
+   "pointed-toe flats",
+   "sunglasses",
+   "beaded bracelet",
+   "monochromatic styling"
+  ],
+  "collection_keywords": [
+   "70s pre-fashion Gucci",
+   "emotional response",
+   "without overthinking",
+   "unnecessary desire",
+   "banal made strange",
+   "free expression"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059faebdcca4392e74a9b/master/pass/00043-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b75313e8fffafe175cc/master/pass/00043-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Black sheer chiffon mini-dress with a deep ruffled V-neckline and ruffled cuffs, paired with a black crocodile-embossed leather shoulder bag, black pointed-toe knee-high stiletto boots, a gold chain necklace, and black rectangular sunglasses.",
+  "fabric": "Sheer chiffon, leather, crocodile-embossed leather, metal",
+  "patterns": [
+   "solid",
+   "crocodile embossed"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Antique Gold)"
+   }
+  ],
+  "theme": "Glamorous gothic chic",
+  "keywords": [
+   "sheer mini-dress",
+   "ruffled V-neck",
+   "long sleeves",
+   "knee-high stiletto boots",
+   "pointed toe",
+   "shoulder bag",
+   "crocodile embossed",
+   "chain necklace",
+   "rectangular sunglasses"
+  ],
+  "collection_keywords": [
+   "Ford-era cutting-edge",
+   "Italian feminine glamour",
+   "creating FOMO",
+   "unexpected desire",
+   "silhouette and body"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059fa24a46ebebe8e4fa8/master/pass/00044-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b77438959cabcb3b73e/master/pass/00044-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Oversized off-white bomber jacket with a high collar and full-zip front, paired with a small beige monogram shoulder bag.",
+  "fabric": "cotton blend, coated canvas, leather, metal",
+  "patterns": [
+   "monogram",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Off-white",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "11-0107 (Egret)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "13-1008 (Oatmeal)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#36220F",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Modern Athleisure",
+  "keywords": [
+   "bomber jacket",
+   "oversized jacket",
+   "high collar",
+   "zipper closure",
+   "shoulder bag",
+   "monogram bag",
+   "rings",
+   "voluminous sleeves",
+   "athleisure wear"
+  ],
+  "collection_keywords": [
+   "fomo",
+   "unexpected desire",
+   "emotional response",
+   "gucci memory",
+   "selfish bag",
+   "archetypes",
+   "modern fit",
+   "banal made strange"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b77438959cabcb3b73e/master/pass/00044-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Cropped cream zip-up jacket worn over a black bandeau top and dark green leggings, paired with black knee-high stiletto boots and a beige monogram shoulder bag.",
+  "fabric": "Cotton blend, stretch knit, stretch jersey, suede, coated canvas, leather trim",
+  "patterns": [
+   "solid",
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "Cream",
+    "hex_code": "#FDF5E6",
+    "pantone_code": "12-0712 (Egret)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Dark Green",
+    "hex_code": "#0F2020",
+    "pantone_code": "19-5711 (Evergreen)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#D2B48C",
+    "pantone_code": "16-1334 (Sandstone)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#4A2C2A",
+    "pantone_code": "19-1118 (Chocolate Brown)"
+   }
+  ],
+  "theme": "Athleisure glamour",
+  "keywords": [
+   "cropped jacket",
+   "zip-up jacket",
+   "high collar",
+   "bandeau top",
+   "leggings",
+   "knee-high boots",
+   "stiletto heel",
+   "pointed toe",
+   "shoulder bag",
+   "monogram print"
+  ],
+  "collection_keywords": [
+   "provocatively positioning the banal",
+   "emotional response",
+   "unexpected desire",
+   "silhouette and the body",
+   "creative R&D",
+   "Ford-era cutting-edge Gucci"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b782a6d46e3815fa1b1/master/pass/00045-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Black long-sleeve deep V-neck top with a drawstring waist and matching wide-leg trousers, styled with black leather loafers featuring a web stripe and a small black leather wrist bag.",
+  "fabric": "Jersey, leather",
+  "patterns": [
+   "solid",
+   "web stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C8102E",
+    "pantone_code": "18-1663 (True Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#008000",
+    "pantone_code": "19-5513 (Forest Green)"
+   }
+  ],
+  "theme": "Sensual loungewear",
+  "keywords": [
+   "Deep V-neck",
+   "long-sleeve top",
+   "drawstring waist",
+   "wide-leg trousers",
+   "relaxed fit",
+   "leather loafers",
+   "mini bag",
+   "casual chic",
+   "knitwear"
+  ],
+  "collection_keywords": [
+   "unexpected desire",
+   "emotional response",
+   "selfish bag",
+   "V-neck is Gucci item",
+   "provocatively positioning the banal",
+   "silhouette and the body"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b79a22c6f62ceacf15c/master/pass/00046-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Sheer black long-sleeve button-up shirt with a pointed collar, unbuttoned, paired with black velvet burnout trousers featuring a floral damask pattern, styled with a diamond choker, beaded shoulder bag, and pointed-toe flats.",
+  "fabric": "sheer chiffon, velvet, silk, diamonds, metal, beads, leather",
+  "patterns": [
+   "floral",
+   "damask"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0947 (Golden Rod)"
+   }
+  ],
+  "theme": "Sensual Evening Wear",
+  "keywords": [
+   "sheer shirt",
+   "velvet burnout trousers",
+   "flared trousers",
+   "diamond choker",
+   "beaded shoulder bag",
+   "pointed-toe flats",
+   "evening wear",
+   "sensual styling",
+   "layered jewelry"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "emotional response",
+   "Ford-era Gucci",
+   "Italian feminine glamour",
+   "provocative styling",
+   "new silhouette"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b7af25c7fb049e2f393/master/pass/00047-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Red silk knee-length robe with black piping, tied at the waist, styled with a black pouch bag, gold necklace, sunglasses, and black velvet slipper shoes.",
+  "fabric": "silk",
+  "patterns": [
+   "geometric motif",
+   "embroidered logo",
+   "web stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Red",
+    "hex_code": "#B02E2E",
+    "pantone_code": "19-1763 (Tango Red)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#006633",
+    "pantone_code": "18-5620 (Kelly Green)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Goldenrod)"
+   },
+   {
+    "color_name": "Amber",
+    "hex_code": "#FFBF00",
+    "pantone_code": "14-1064 (Amberglow)"
+   }
+  ],
+  "theme": "Relaxed Opulence",
+  "keywords": [
+   "silk robe",
+   "wrap silhouette",
+   "belted waist",
+   "black piping",
+   "velvet slippers",
+   "embroidered logo",
+   "pouch bag",
+   "web stripe",
+   "sunglasses",
+   "gold necklace"
+  ],
+  "collection_keywords": [
+   "provocatively positioning the banal",
+   "unexpected desire",
+   "emotional response",
+   "selfish bag",
+   "Italian feminine glamour",
+   "Ford-era cutting-edge"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059fd49d0d21e02a91ec6/master/pass/00046-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b79a22c6f62ceacf15c/master/pass/00046-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Sheer black long-sleeved button-up shirt worn over a black bra, paired with black velvet burnout flared trousers, a black fringed handbag with a gold chain strap, a silver-toned choker necklace, and black pointed-toe shoes.",
+  "fabric": "sheer georgette, velvet burnout, beaded textile, metal",
+  "patterns": [
+   "floral",
+   "paisley"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#B8860B",
+    "pantone_code": "16-0948 (Golden Rod)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4500 (Silver)"
+   }
+  ],
+  "theme": "Sensual evening glamour",
+  "keywords": [
+   "sheer shirt",
+   "velvet burnout trousers",
+   "flared silhouette",
+   "fringed handbag",
+   "gold chain strap",
+   "choker necklace",
+   "pointed-toe shoes",
+   "long-sleeved shirt",
+   "bra"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "emotional response",
+   "Ford-era cutting-edge",
+   "Italian feminine glamour",
+   "approach to silhouette"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059faa22c6f62ceacf153/master/pass/00045-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b782a6d46e3815fa1b1/master/pass/00045-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Black long-sleeved jersey top with a deep V-neck and matching wide-leg drawstring trousers, accessorized with a small black shoulder bag and black pointed-toe shoes with a gold-toned horsebit detail.",
+  "fabric": "jersey knit",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0948 (Golden Haze)"
+   }
+  ],
+  "theme": "Fluid comfort",
+  "keywords": [
+   "deep V-neck",
+   "long sleeve",
+   "wide-leg trousers",
+   "drawstring waist",
+   "jersey knit",
+   "shoulder bag",
+   "pointed-toe shoes",
+   "horsebit detail",
+   "monochromatic"
+  ],
+  "collection_keywords": [
+   "unexpected desire",
+   "emotional response",
+   "provocatively banal",
+   "new silhouette",
+   "fluid silhouette",
+   "selfish bag"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059fe00621954c1239394/master/pass/00048-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305bb754a4b7d4e38430d4/master/pass/00048-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Black oversized bomber jacket with ribbed cuffs and hem, worn over a black mini dress featuring a sheer side panel and ruched detailing, paired with black pointed-toe pumps with gold-tone G-logo hardware and a metallic pale gold chain-strap shoulder bag.",
+  "fabric": "Technical fabric, ribbed knit, stretch jersey, sheer mesh, leather, metallic leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Pale Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "13-0905 (Pale Gold)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0836 (Golden Haze)"
+   }
+  ],
+  "theme": "Modern evening glamour",
+  "keywords": [
+   "oversized bomber jacket",
+   "mini dress",
+   "sheer panel",
+   "ruched dress",
+   "pointed-toe pumps",
+   "G-logo hardware",
+   "chain strap bag",
+   "metallic bag",
+   "ribbed cuffs",
+   "long sleeves"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "emotional response",
+   "Gucci memory",
+   "Ford-era cutting-edge",
+   "Italian feminine glamour",
+   "selfish bag",
+   "approach to silhouette"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b7cebdcca4392e74a9f/master/pass/00049-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Black V-neck t-shirt and briefs styled with a black leather duffel bag featuring the Gucci Web stripe and black leather horsebit loafers.",
+  "fabric": "cotton jersey, leather",
+  "patterns": [
+   "solid",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#BF0A30",
+    "pantone_code": "18-1663 (Flame Scarlet)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#006B3D",
+    "pantone_code": "19-5620 (Forest Biome)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Rod)"
+   }
+  ],
+  "theme": "Athletic minimalism with luxury accessories",
+  "keywords": [
+   "V-neck t-shirt",
+   "briefs",
+   "duffel bag",
+   "leather loafers",
+   "horsebit",
+   "Web stripe",
+   "minimalist",
+   "athletic wear",
+   "underwear as outerwear",
+   "body-conscious"
+  ],
+  "collection_keywords": [
+   "provocatively positioning the banal",
+   "V-neck is such a Gucci item",
+   "emotional response",
+   "unexpected desire",
+   "FOMO"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305bb754a4b7d4e38430d4/master/pass/00048-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Black bomber jacket with ribbed cuffs and hem is layered over a black V-neck mini dress, styled with a metallic mini bag and black pointed-toe heels featuring gold horsebit detailing.",
+  "fabric": "Nylon, jersey, metallic leather, leather, metal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Haze)"
+   },
+   {
+    "color_name": "Metallic Greige",
+    "hex_code": "#D3D3D3",
+    "pantone_code": "13-0000 (White Asparagus)"
+   }
+  ],
+  "theme": "Edgy Glamour",
+  "keywords": [
+   "bomber jacket",
+   "V-neck top",
+   "mini skirt",
+   "high heels",
+   "pointed toe",
+   "horsebit detail",
+   "chain strap",
+   "mini bag",
+   "watch",
+   "short hemline"
+  ],
+  "collection_keywords": [
+   "fomo",
+   "unexpected desire",
+   "emotional response",
+   "ford-era cutting-edge",
+   "italian feminine glamour",
+   "v-neck is gucci",
+   "provocatively banal"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/693059fe8d8b5b664f5f26dd/master/pass/00047-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b7af25c7fb049e2f393/master/pass/00047-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Red silk knee-length robe with a subtle all-over monogram pattern, black piping, self-tie belt, and patch pockets, accessorized with a black wrist pouch featuring a green and red Web stripe, black velvet slip-on loafers with gold embroidered crests, gold-framed eyeglasses, and a gold chain necklace with a pendant.",
+  "fabric": "silk",
+  "patterns": [
+   "monogram",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Biking Red",
+    "hex_code": "#8B0000",
+    "pantone_code": "19-1763 (Biking Red)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#006633",
+    "pantone_code": "19-5924 (Forest Green)"
+   },
+   {
+    "color_name": "Chinese Red",
+    "hex_code": "#CC0000",
+    "pantone_code": "19-1759 (Chinese Red)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Goldenrod)"
+   }
+  ],
+  "theme": "Loungewear luxury",
+  "keywords": [
+   "silk robe",
+   "dressing gown",
+   "shawl collar",
+   "self-tie belt",
+   "patch pockets",
+   "wrist bag",
+   "velvet loafers",
+   "gold embroidery",
+   "eyeglasses",
+   "gold necklace"
+  ],
+  "collection_keywords": [
+   "unnecessary desire",
+   "emotional response",
+   "free experimentation",
+   "banal made strange",
+   "Gucci memory",
+   "70s Gucci"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305a00f740689c42c1c7f6/master/pass/00049-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b7cebdcca4392e74a9f/master/pass/00049-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Black V-neck t-shirt paired with black briefs, a black leather duffel bag featuring a red and green web stripe, and black leather backless loafers with a gold-tone horsebit detail.",
+  "fabric": "Cotton jersey, leather",
+  "patterns": [
+   "solid",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C8102E",
+    "pantone_code": "18-1660 (Scarlet Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#008000",
+    "pantone_code": "19-5620 (Evergreen)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0947 (Mustard Gold)"
+   }
+  ],
+  "theme": "Sporty luxury",
+  "keywords": [
+   "V-neck t-shirt",
+   "briefs",
+   "duffel bag",
+   "web stripe",
+   "backless loafers",
+   "horsebit detail",
+   "leather accessories",
+   "short sleeve",
+   "minimalist styling",
+   "menswear"
+  ],
+  "collection_keywords": [
+   "V-neck t-shirts",
+   "provocatively positioning the banal",
+   "silhouette and the body",
+   "Gucci memory",
+   "classic \u201970s Gucci",
+   "emotional response"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b7d180867a056740f5f/master/pass/00050-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Oversized cream faux fur coat worn over a nude bodysuit, styled with a sparkling silver shoulder bag and black pointed-toe heels.",
+  "fabric": "faux fur, stretch knit, leather, sequins",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Cream",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "11-0107 (Egret)"
+   },
+   {
+    "color_name": "Nude Beige",
+    "hex_code": "#D2B48C",
+    "pantone_code": "14-1118 (Sand)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0836 (Goldfinch)"
+   }
+  ],
+  "theme": "Opulent Glamour",
+  "keywords": [
+   "oversized faux fur coat",
+   "bodysuit",
+   "pointed-toe heels",
+   "horsebit detail",
+   "sparkling shoulder bag",
+   "chain strap",
+   "drop earrings",
+   "glamorous",
+   "evening wear",
+   "luxury"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "emotional response",
+   "Ford-era Gucci",
+   "Italian feminine glamour",
+   "selfish bag"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305a01bbc3962e1a82e880/master/pass/00050-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b7d180867a056740f5f/master/pass/00050-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Silver crystal-embellished Dionysus shoulder bag with a gold chain strap and horsebit closure, worn with the white faux fur coat.",
+  "fabric": "crystal-embellished leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4500 (Silver Cloud)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0947 (Golden Rod)"
+   }
+  ],
+  "theme": "Opulent elegance",
+  "keywords": [
+   "shoulder bag",
+   "handbag",
+   "chain strap",
+   "horsebit closure",
+   "crystal embellished",
+   "glitter",
+   "rectangular bag",
+   "evening bag",
+   "luxury accessory"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "Italian feminine glamour",
+   "Gucci memory",
+   "archival-based riff",
+   "emotional response"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b7ec1c3c6b90dcb55af/master/pass/00051-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Black sequined sleeveless mini dress with a V-neckline and flared skirt, styled with a silver sequined shoulder bag featuring a gold chain strap, a silver watch, and black pointed-toe pumps with horsebit hardware.",
+  "fabric": "sequined fabric, leather, metal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4500 (Silver Cloud)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0947 (Golden Rod)"
+   }
+  ],
+  "theme": "Glamorous evening wear",
+  "keywords": [
+   "mini dress",
+   "sequined dress",
+   "V-neckline",
+   "flared skirt",
+   "shoulder bag",
+   "chain strap",
+   "pointed-toe pumps",
+   "horsebit hardware",
+   "glamorous",
+   "evening wear"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "emotional response",
+   "Italian feminine glamour",
+   "Gucci memory"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305a02b9d26076efb2582a/master/pass/00051-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b7ec1c3c6b90dcb55af/master/pass/00051-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Black sequined mini dress with a deep V-neckline and a ruffled hem, paired with a silver glitter shoulder bag featuring a chain strap and black pointed-toe pumps with Horsebit hardware.",
+  "fabric": "Sequined fabric, glitter fabric, leather, metal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Glamorous party attire",
+  "keywords": [
+   "mini dress",
+   "sequined dress",
+   "V-neckline",
+   "ruffled hem",
+   "shoulder bag",
+   "chain strap bag",
+   "pointed-toe pumps",
+   "high heels",
+   "Horsebit detail",
+   "cocktail dress"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "Ford-era Gucci",
+   "Italian feminine glamour",
+   "V-neck",
+   "emotional response",
+   "unnecessary desire"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305a06234aad71fd57d1f8/master/pass/00052-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b7f438959cabcb3b740/master/pass/00052-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Black Dionysus shoulder bag with a gold chain strap and a crystal-embellished flap featuring a tiger head closure.",
+  "fabric": "velvet, crystals, metal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Rod)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "13-4104 (Silver Filigree)"
+   }
+  ],
+  "theme": "Evening Glamour",
+  "keywords": [
+   "shoulder bag",
+   "Dionysus bag",
+   "chain strap",
+   "crystal embellishment",
+   "tiger head closure",
+   "flap bag",
+   "evening bag",
+   "luxury accessory"
+  ],
+  "collection_keywords": [
+   "creating desire",
+   "emotional response",
+   "ford-era gucci",
+   "italian glamour",
+   "provocative banal",
+   "gucci memory"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b7f438959cabcb3b740/master/pass/00052-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Cropped long-sleeve high-neck top and ruched asymmetrical mini skirt in shimmery fabric, styled with a glitter-embellished shoulder bag, pointed-toe pumps, and dangling earrings.",
+  "fabric": "Lurex knit, glitter-embellished fabric, leather, metal, crystal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dark Grey Shimmer",
+    "hex_code": "#2C3539",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Black Glitter",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0947 (Harvest Gold)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Evening Glamour",
+  "keywords": [
+   "cropped top",
+   "mini skirt",
+   "shimmer fabric",
+   "high neck",
+   "asymmetrical hem",
+   "shoulder bag",
+   "chain strap",
+   "pointed-toe pumps",
+   "horsebit detail",
+   "dangling earrings"
+  ],
+  "collection_keywords": [
+   "unnecessary desire",
+   "free expression",
+   "emotional response",
+   "ford-era gucci",
+   "italian feminine glamour",
+   "silhouette and body"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b8175aa28c41b113533/master/pass/00053-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Black stretch jersey halter-neck bodysuit with a deep plunging V-neckline and high-waisted shorts, styled with sheer black tights, pointed-toe stiletto pumps featuring gold horsebit hardware, a glitter-embellished shoulder bag with a gold chain strap, a black wrist cuff, and a delicate silver-toned necklace.",
+  "fabric": "Stretch jersey, glitter fabric, leather, nylon, metal",
+  "patterns": [
+   "solid",
+   "glitter"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "15-1050 (Golden Glow)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Cloud Dancer)"
+   }
+  ],
+  "theme": "Modern Glamour",
+  "keywords": [
+   "Halter neck bodysuit",
+   "deep V-neck",
+   "high-waisted shorts",
+   "sheer tights",
+   "pointed-toe pumps",
+   "stiletto heel",
+   "horsebit hardware",
+   "chain strap bag",
+   "glitter bag",
+   "wrist cuff"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "emotional response",
+   "Ford-era cutting-edge",
+   "Italian feminine glamour"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b815e97b8363f04de89/master/pass/00054-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Sheer black jersey bralette and matching sheer black jersey maxi skirt, styled with a black fringed shoulder bag, pointed-toe pumps with gold hardware, large silver hoop earrings, and a silver bracelet.",
+  "fabric": "Sheer jersey, sequins, fringe, leather, metal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#B8860B",
+    "pantone_code": "16-0836 (Antique Gold)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Sheer evening glamour",
+  "keywords": [
+   "sheer bralette",
+   "sheer maxi skirt",
+   "body-con silhouette",
+   "fringed shoulder bag",
+   "pointed-toe pumps",
+   "gold hardware",
+   "silver hoop earrings",
+   "bracelet",
+   "eveningwear"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "Ford-era cutting-edge",
+   "Italian feminine glamour",
+   "provocatively positioning the banal"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305a0524a46ebebe8e4faa/master/pass/00053-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b8175aa28c41b113533/master/pass/00053-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Black halter-neck top with a deep V-neckline, paired with a gold rectangular shoulder bag featuring a chain strap and prominent hardware, a silver chain necklace with a pendant, and a black cuff bracelet with gold Gucci logo hardware.",
+  "fabric": "stretch knit, metallic leather, metal, leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Goldfinch)"
+   },
+   {
+    "color_name": "silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Modern glamour",
+  "keywords": [
+   "halter top",
+   "deep V-neckline",
+   "shoulder bag",
+   "chain strap",
+   "metallic leather bag",
+   "cuff bracelet",
+   "necklace",
+   "pendant",
+   "Gucci logo hardware",
+   "horsebit hardware"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "Gucci memory",
+   "Italian feminine glamour",
+   "Ford-era cutting-edge Gucci",
+   "V-neck is such a Gucci item",
+   "emotional response",
+   "approach to silhouette"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305a0547c68058f695ec82/master/pass/00054-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b815e97b8363f04de89/master/pass/00054-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Black sheer bra top paired with a black fringed shoulder bag featuring a gold chain strap and horsebit detail, and black pointed-toe pumps with gold horsebit hardware.",
+  "fabric": "Sheer knit, textile fringe, leather, gold-tone metal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#DAA520",
+    "pantone_code": "16-0836 (Antique Gold)"
+   }
+  ],
+  "theme": "Sensual evening accessories",
+  "keywords": [
+   "Bra top",
+   "sheer top",
+   "fringed shoulder bag",
+   "horsebit detail",
+   "gold chain strap",
+   "pointed-toe pumps",
+   "gold hardware",
+   "evening accessories",
+   "minimalist silhouette"
+  ],
+  "collection_keywords": [
+   "Gucci memory",
+   "Ford-era cutting-edge",
+   "Italian feminine glamour",
+   "unexpected desire",
+   "selfish bag",
+   "emotional response"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b82da9a25400a479980/master/pass/00055-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Black one-shoulder maxi dress with a draped long sleeve and a high side slit, paired with black pointed-toe knee-high boots and a silver chain-strap mini bag.",
+  "fabric": "jersey, leather, metal mesh",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4500 (Silver)"
+   }
+  ],
+  "theme": "Modern asymmetry",
+  "keywords": [
+   "maxi dress",
+   "one-shoulder",
+   "draped sleeve",
+   "high slit",
+   "knee-high boots",
+   "pointed toe",
+   "horsebit detail",
+   "mini bag",
+   "chain strap",
+   "asymmetric"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "Ford-era cutting-edge",
+   "Italian feminine glamour",
+   "silhouette and body"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305a092a6d46e3815fa0dd/master/pass/00055-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b82da9a25400a479980/master/pass/00055-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "A black one-shoulder maxi dress features a wide, draped sleeve on the left arm and a high thigh slit on the right leg, accessorized with a silver chainmail handbag and a black leather knee-high boot.",
+  "fabric": "jersey, chainmail, leather",
+  "patterns": [
+   "solid",
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4500 (Silver Cloud)"
+   }
+  ],
+  "theme": "provocative glamour",
+  "keywords": [
+   "maxi dress",
+   "one-shoulder",
+   "high slit",
+   "draped sleeve",
+   "chainmail handbag",
+   "knee-high boots",
+   "pointed toe",
+   "stiletto heel",
+   "asymmetric neckline"
+  ],
+  "collection_keywords": [
+   "Italian feminine glamour",
+   "Ford-era cutting-edge",
+   "unexpected desire",
+   "emotional response",
+   "provocative silhouette"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b84f2904f35b853d113/master/pass/00056-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "One-shoulder black column gown with a high thigh slit, fully embellished with iridescent rhinestones, paired with a matching embellished mini shoulder bag, a silver bracelet, and pointed-toe embellished stiletto heels.",
+  "fabric": "rhinestone embellished jersey, rhinestone embellished leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Sparkling evening elegance",
+  "keywords": [
+   "one-shoulder gown",
+   "column silhouette",
+   "high slit",
+   "rhinestone embellishment",
+   "mini bag",
+   "chain strap",
+   "stiletto heels",
+   "pointed toe",
+   "bracelet",
+   "glamorous"
+  ],
+  "collection_keywords": [
+   "fashion FOMO",
+   "emotional response",
+   "Ford-era cutting",
+   "Italian feminine glamour",
+   "unnecessary desire",
+   "body silhouette"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305a09298a3ae9c1f1e9a8/master/pass/00056-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b84f2904f35b853d113/master/pass/00056-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "One-shoulder black sequined gown with a high left-leg slit, accessorized with a sequined leopard print mini-bag and black pointed-toe pumps.",
+  "fabric": "Sequined mesh for the gown, sequined fabric for the mini-bag, leather for the pumps, and metal with rhinestones for the bracelet.",
+  "patterns": [
+   "solid",
+   "leopard print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver)"
+   },
+   {
+    "color_name": "Brown",
+    "hex_code": "#A52A2A",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   }
+  ],
+  "theme": "Evening Glamour",
+  "keywords": [
+   "one-shoulder gown",
+   "sequined dress",
+   "high slit",
+   "maxi dress",
+   "mini-bag",
+   "leopard print bag",
+   "pointed-toe pumps",
+   "stiletto heels",
+   "bracelet",
+   "sparkle"
+  ],
+  "collection_keywords": [
+   "fashion is FOMO",
+   "unexpected desire",
+   "Italian feminine glamour",
+   "Ford-era cutting-edge Gucci",
+   "emotional response",
+   "Gucci memory"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b842a6d46e3815fa1b3/master/pass/00057-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Sleeveless, high-neck, floor-length gown in black sequined fabric, styled with a matching sequined wristlet bag, chunky silver-toned jewelry, and pointed-toe flats.",
+  "fabric": "Sequined fabric, metal, leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   },
+   {
+    "color_name": "Dark Green",
+    "hex_code": "#004B49",
+    "pantone_code": "19-5420 (Deep Teal)"
+   }
+  ],
+  "theme": "Evening Glamour",
+  "keywords": [
+   "Gown",
+   "maxi dress",
+   "sleeveless",
+   "high neck",
+   "column silhouette",
+   "sequin embellishment",
+   "wristlet bag",
+   "statement jewelry",
+   "pointed-toe flats"
+  ],
+  "collection_keywords": [
+   "unnecessary desire",
+   "fomo",
+   "emotional response",
+   "ford-era gucci",
+   "italian feminine glamour",
+   "selfish bag"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305a0ae591e2b2f98159ec/master/pass/00057-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b842a6d46e3815fa1b3/master/pass/00057-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "A sleeveless, high-neck column gown is entirely covered in iridescent sequins, accessorized with a matching sequined shoulder bag, chunky silver-toned necklace, earrings, and bracelet.",
+  "fabric": "sequins, metal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4500 (Silver Cloud)"
+   }
+  ],
+  "theme": "Evening glamour",
+  "keywords": [
+   "column gown",
+   "sequined",
+   "high neck",
+   "sleeveless",
+   "shoulder bag",
+   "statement necklace",
+   "drop earrings",
+   "bracelet",
+   "pointed-toe shoes"
+  ],
+  "collection_keywords": [
+   "Italian glamour",
+   "feminine glamour",
+   "Ford-era Gucci",
+   "cutting-edge",
+   "unexpected desire"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305a0b78b18aebb735784b/master/pass/00058-gucci-pre-fall-2026-details-credit-brand.jpg|https://assets.vogue.com/photos/69305b85f25c7fb049e2f395/master/pass/00058-gucci-pre-fall-2026-credit-brand.jpg": {
+  "image_description": "Black sequined halter-neck gown with a ruched bodice and a floor-length silhouette, accessorized with a black leather shoulder bag featuring a gold chain strap and Dionysus buckle, and silver-toned statement jewelry including drop earrings, a necklace, and a bracelet.",
+  "fabric": "sequined fabric, leather, metal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "13-4108 (Silver)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0947 (Golden Rod)"
+   }
+  ],
+  "theme": "Glamorous evening wear",
+  "keywords": [
+   "halter-neck gown",
+   "sequined gown",
+   "ruched bodice",
+   "floor-length silhouette",
+   "shoulder bag",
+   "chain strap",
+   "Dionysus buckle",
+   "drop earrings",
+   "statement necklace",
+   "bracelet"
+  ],
+  "collection_keywords": [
+   "FOMO",
+   "unexpected desire",
+   "Italian feminine glamour",
+   "Ford-era cutting-edge Gucci",
+   "selfish bag"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/69305b85f25c7fb049e2f395/master/pass/00058-gucci-pre-fall-2026-credit-brand.jpg|-": {
+  "image_description": "Black sequined halter-neck gown with a deep open back, styled with a black Dionysus shoulder bag, pointed-toe pumps, and chunky silver-toned jewelry.",
+  "fabric": "Sequined fabric",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Rod)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4500 (Silver Cloud)"
+   }
+  ],
+  "theme": "Glamorous evening wear",
+  "keywords": [
+   "halter neck",
+   "backless gown",
+   "sequins",
+   "floor-length",
+   "body-con silhouette",
+   "Dionysus bag",
+   "pointed-toe pumps",
+   "statement jewelry",
+   "evening dress",
+   "glamorous"
+  ],
+  "collection_keywords": [
+   "fashion is FOMO",
+   "unexpected desire",
+   "emotional response",
+   "Ford-era Gucci",
+   "Italian feminine glamour",
+   "body silhouette"
+  ]
+ }
+}

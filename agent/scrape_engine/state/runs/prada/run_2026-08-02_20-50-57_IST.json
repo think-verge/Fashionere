@@ -1,0 +1,27 @@
+{
+  "run": "2026-08-02_20-50-57_IST",
+  "at": "2026-08-02T21:04:53+05:30",
+  "pipeline_version": 2,
+  "dry_run": false,
+  "counts": {
+    "scraped": 1,
+    "matched": 1,
+    "tagged": 1,
+    "skipped": 0,
+    "failed": 0,
+    "suspect": 0
+  },
+  "est_cost_usd": 0.7046,
+  "collections": [
+    {
+      "url": "https://www.vogue.com/fashion-shows/fall-2025-ready-to-wear/prada",
+      "designer": "prada",
+      "collection": "fall-2025-ready-to-wear",
+      "scrape": "ok",
+      "match": "ok",
+      "tag": "ok",
+      "error": null
+    }
+  ],
+  "designer": "prada"
+}

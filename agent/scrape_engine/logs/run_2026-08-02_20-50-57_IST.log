@@ -1,0 +1,50 @@
+2026-08-02 20:50:57 IST  run 2026-08-02T20:50:57+05:30 | 1 collection(s) | pipeline v2
+2026-08-02 20:50:57 IST  [ 1/1] prada | fall-2025-ready-to-wear
+2026-08-02 20:50:57 IST           scrape  RUN    
+2026-08-02 20:51:18 IST             | -> Loading https://www.vogue.com/fashion-shows/fall-2025-ready-to-wear/prada
+2026-08-02 20:51:18 IST             |    Strategy 1 (embedded state): 52 looks, 117 details
+2026-08-02 20:51:18 IST             |    Capturing <img> tags from the slideshows...
+2026-08-02 20:51:18 IST             |    tags captured: 169/169 images
+2026-08-02 20:51:18 IST           scrape  OK     52 looks, 117 details, 169 tags
+2026-08-02 20:51:18 IST           match   RUN    117 details -> gemini-2.5-flash
+2026-08-02 20:55:39 IST             | -> Prada fall-2025-ready-to-wear: 52 looks, 117 details
+2026-08-02 20:55:39 IST             |    model=gemini-2.5-flash window=+/-6 workers=4
+2026-08-02 20:55:39 IST             |    scored 10/117
+2026-08-02 20:55:39 IST             |    scored 20/117
+2026-08-02 20:55:39 IST             |    scored 30/117
+2026-08-02 20:55:39 IST             |    scored 40/117
+2026-08-02 20:55:39 IST             |    scored 50/117
+2026-08-02 20:55:39 IST             |    scored 60/117
+2026-08-02 20:55:39 IST             |    scored 70/117
+2026-08-02 20:55:39 IST             |    scored 80/117
+2026-08-02 20:55:39 IST             |    scored 90/117
+2026-08-02 20:55:39 IST             |    scored 100/117
+2026-08-02 20:55:39 IST             |    scored 110/117
+2026-08-02 20:55:39 IST             |    scored 117/117
+2026-08-02 20:55:39 IST             |    gap-fill pass over 4 declined detail(s)
+2026-08-02 20:55:39 IST             |    attached      : 116/117 details
+2026-08-02 20:55:39 IST             |    unmatched     : 1
+2026-08-02 20:55:39 IST             |    looks covered : 52/52
+2026-08-02 20:55:39 IST             |    order-adjusted: 12
+2026-08-02 20:55:39 IST             |    cache         : .match_cache_Prada_fall_2025_ready_to_wear_raw.json
+2026-08-02 20:55:39 IST             | Saved -> C:\Users\JaswanthPall_fnohyb7\Downloads\Prada\fashion_engine\scrape_engine\data\mapped\prada\Prada_fall_2025_ready_to_wear_mapped.json
+2026-08-02 20:55:39 IST           match   OK     116/117 attached, 52/52 looks   261s  ~$0.32
+2026-08-02 20:55:39 IST           tag     RUN    169 images -> gemini-2.5-flash
+2026-08-02 21:04:53 IST             | -> Prada fall-2025-ready-to-wear: 169 images to tag
+2026-08-02 21:04:53 IST             |    model=gemini-2.5-flash width=768 workers=4 prompt_v2
+2026-08-02 21:04:53 IST             |    tagged 20/169
+2026-08-02 21:04:53 IST             |    tagged 40/169
+2026-08-02 21:04:53 IST             |    tagged 60/169
+2026-08-02 21:04:53 IST             |    tagged 80/169
+2026-08-02 21:04:53 IST             |    tagged 100/169
+2026-08-02 21:04:53 IST             |    tagged 120/169
+2026-08-02 21:04:53 IST             |    tagged 140/169
+2026-08-02 21:04:53 IST             |    tagged 160/169
+2026-08-02 21:04:53 IST             |    tagged 169/169
+2026-08-02 21:04:53 IST             |    tagged  : 169/169 images
+2026-08-02 21:04:53 IST             |    cache   : .tag_cache_Prada_fall_2025_ready_to_wear_mapped.json
+2026-08-02 21:04:53 IST             | Saved -> C:\Users\JaswanthPall_fnohyb7\Downloads\Prada\fashion_engine\scrape_engine\data\tagged\prada\Prada_fall_2025_ready_to_wear_tagged.json
+2026-08-02 21:04:53 IST           tag     OK     169/169 images   554s  ~$0.39
+2026-08-02 21:04:53 IST  ----------------------------------------------------------------
+2026-08-02 21:04:53 IST  scraped 1   matched 1   tagged 1   skipped 0   failed 0   suspect 0
+2026-08-02 21:04:53 IST  gemini ~$0.70 est (upper bound; cached calls cost nothing)   elapsed 836s   log: C:\Users\JaswanthPall_fnohyb7\Downloads\Prada\fashion_engine\scrape_engine\logs\run_2026-08-02_20-50-57_IST.log

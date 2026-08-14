@@ -1,0 +1,479 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b20fe803e0c850df4eed/master/pass/00001-valentino-resort-2027-detail-credit-brand.jpg|1-7": {
+  "look_number": 1,
+  "confidence": 0.95,
+  "evidence": "The detail image shows a tiger-stripe fur coat and a light blue denim skirt, both of which are identical to the coat and skirt worn in Look 1. The shoes are not visible in Look 1, but the primary garments are a perfect match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b20fbc90d91161486fa0/master/pass/00003-valentino-resort-2027-detail-credit-brand.jpg|1-9": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 2, showing the same green knitted cardigan with gold buttons, white trousers, and distinctive embroidered tan knee-high boots. The model is also in the same pose and setting.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b214e803e0c850df4ef3/master/pass/00006-valentino-resort-2027-detail-credit-brand.jpg|1-13": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 7 in the model's black cap with a textured brim, the multi-strand pearl necklace with gold and crystal accents, and the large ornate earring with red and green stones. The black coat also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b212c5644fa593931d59/master/pass/00005-valentino-resort-2027-detail-credit-brand.jpg|1-12": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive lizard-skin patterned clutch with the gold 'VV' logo is not visible in any of the candidate full-body looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b21033ec043d3b0c187a/master/pass/00002-valentino-resort-2027-detail-credit-brand.jpg|1-8": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the model, red 'VILLAIN TEEN' cap, green cable-knit cardigan, blue and white striped shirt, and gold necklaces in Look 2.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b212bc90d91161486fa6/master/pass/00004-valentino-resort-2027-detail-credit-brand.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the purple suede heels with a clear strap, the light purple sheer hosiery, and the gold embellished skirt with floral patterns seen in Look 5.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b2158afb377ac11f9cee/master/pass/00007-valentino-resort-2027-detail-credit-brand.jpg|3-15": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact same model wearing the same beaded dress with a feather collar, green sunglasses, and earrings, sitting on the identical striped sofa as in Look 8.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b2188d97ef6c2af019cc/master/pass/00009-valentino-resort-2027-detail-credit-brand.jpg|5-17": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The model, multi-colored tweed jacket, and multi-strand pearl necklace with a large green pendant are identical to those in Look 13.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b218bc90d91161486fac/master/pass/00010-valentino-resort-2027-detail-credit-brand.jpg|7-19": {
+  "look_number": 12,
+  "confidence": 0.9,
+  "evidence": "Exact match for the brown studded bag, dark purple blazer, light purple shirt, cream skirt, and green wavy-strap shoe design. Hosiery color differs (purple in detail, green in look).",
+  "alternates": [
+   {
+    "look_number": 19,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b21592fcd89cad84ec39/master/pass/00008-valentino-resort-2027-detail-credit-brand.jpg|4-16": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 11, including the dark blue 'VILLAIN TEEN' baseball cap with red text, the large pearl drop earrings, and the brown and black leopard print textured coat.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b21b1669cbab83ad371a/master/pass/00012-valentino-resort-2027-detail-credit-brand.jpg|9-21": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinct fuchsia-toed, yellow snakeskin heels with a gold ankle strap from the detail image do not appear in any of the candidate looks.",
+  "alternates": [
+   {
+    "look_number": 16,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b21bacbf3d248f1b1b24/master/pass/00013-valentino-resort-2027-detail-credit-brand.jpg|10-22": {
+  "look_number": 17,
+  "confidence": 0.95,
+  "evidence": "The detail shows a shimmering, beaded cape with floral embellishments and a beaded garment underneath. Look 17 features the exact same shimmering, fringed cape and the model's hair matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b21b92ae92f349966a9c/master/pass/00014-valentino-resort-2027-detail-credit-brand.jpg|12-24": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The brown leather handbag with pyramid studs along the flap and a V-logo clasp in the detail image is identical to the bag carried by the model in Look 12.",
+  "alternates": [
+   {
+    "look_number": 19,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b21e494e9a4bb054a7d0/master/pass/00016-valentino-resort-2027-detail-credit-brand.jpg|14-26": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The model, plaid top, grey trousers, black belt with gold buckle, multi-layered pearl necklace, large earrings, and green sunglasses are identical in both the detail image and Look 23.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b21892ae92f349966a96/master/pass/00011-valentino-resort-2027-detail-credit-brand.jpg|8-20": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail shows pink lace and gold-tipped pumps with sheer light pink hosiery. Look 8 features the exact same shoes and hosiery, along with a sequined dress that matches the glimpse of fabric in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b21e7ab1113c1be19018/master/pass/00017-valentino-resort-2027-detail-credit-brand.jpg|16-28": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The model, sunglasses, unique long pearl earring, pleated high-neck top, and pink fabric flower are all identical to Look 22.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b222df2e575487f1462d/master/pass/00019-valentino-resort-2027-detail-credit-brand.jpg|18-30": {
+  "look_number": 25,
+  "confidence": 0.7,
+  "evidence": "The black and tiger-stripe sequined dress in the detail image perfectly matches the dress in Look 25. However, the purple studded shoes and white hosiery in the detail do not match the open-toe purple shoes and bare legs in Look 25.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b21ef084b706e9066dec/master/pass/00015-valentino-resort-2027-detail-credit-brand.jpg|13-25": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail shows grey sweatpants, blue studded heels, and sheer light pink socks. Look 19 features the exact same grey sweatpants, blue studded heels, and sheer light pink socks.",
+  "alternates": [
+   {
+    "look_number": 22,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b223aea770857255bf5a/master/pass/00020-valentino-resort-2027-detail-credit-brand.jpg|20-32": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the green 'VILLAIN TEEN' cap, the red jacket with black trim and bow, the multi-strand pearl necklace with star pendant, and the large pearl earrings worn by the model in Look 26.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b22192fcd89cad84ec3f/master/pass/00018-valentino-resort-2027-detail-credit-brand.jpg|17-29": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a blonde model wearing a cream cable knit cardigan, a blue collared shirt, and a navy blue silk scarf with a gold chain pattern and 'VALENTINO' branding. Look 24 features the exact same model wearing the identical cardigan, blue shirt, and patterned scarf.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b225df2e575487f14633/master/pass/00022-valentino-resort-2027-detail-credit-brand.jpg|22-34": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the plaid pleated midi skirt, the blue and white striped shirt, and the leopard print clutch bag with the gold 'V' logo shown in Look 29.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b2297fbc119d498c040a/master/pass/00025-valentino-resort-2027-detail-credit-brand.jpg|26-38": {
+  "look_number": 32,
+  "confidence": 0.95,
+  "evidence": "The red pleated skirt and the red jacket with pleated peplum and black buttons are an exact match. The shoes are similar in style but differ slightly in color (nude with pink toe in detail vs. solid pink in look 32).",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b226f084b706e9066df2/master/pass/00023-valentino-resort-2027-detail-credit-brand.jpg|24-36": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The plaid skirt, orange cut-out mules, sheer hosiery, and leopard print bag are all identical to those in Look 29.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b226771ca4d22e5d9294/master/pass/00024-valentino-resort-2027-detail-credit-brand.jpg|25-37": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The model, the unique embellished metallic and green neckpiece, and the sheer light-colored garment are identical in both the detail and Look 28.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b22c92ae92f349966aa2/master/pass/00028-valentino-resort-2027-detail-credit-brand.jpg|30-42": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The model, the intricate purple and gold beaded dress, the large pink ostrich feathers on the sleeves, and the chunky dark beaded necklace all perfectly match the detail image.",
+  "alternates": [
+   {
+    "look_number": 39,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b2248d97ef6c2af019d2/master/pass/00021-valentino-resort-2027-detail-credit-brand.jpg|21-33": {
+  "look_number": 27,
+  "confidence": 0.95,
+  "evidence": "The detail image shows light pink sheer hosiery and a light green sheer dress with an asymmetrical hem. Look 27 features the exact same light pink sheer hosiery and a matching light green sheer dress with an asymmetrical hem.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b229494e9a4bb054a7d6/master/pass/00026-valentino-resort-2027-detail-credit-brand.jpg|28-40": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The detail shows purple studded strappy heels, sheer skin-tone hosiery, and a yellow garment. Look 35 features identical purple studded strappy heels, sheer hosiery, and a yellow dress/coat.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b229f79c2768b66525f4/master/pass/00027-valentino-resort-2027-detail-credit-brand.jpg|29-41": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The handbag in the detail image is identical in color, style, gold 'V' logo, and chain strap to the bag carried in Look 37.",
+  "alternates": [
+   {
+    "look_number": 31,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b230114ed1b98739fc5b/master/pass/00031-valentino-resort-2027-detail-credit-brand.jpg|34-46": {
+  "look_number": 41,
+  "confidence": 0.95,
+  "evidence": "The detail image shows light wash, distressed denim jeans with frayed hems and pointed-toe snakeskin heels with a purple toe. Look 41 features identical light wash, distressed denim jeans with frayed hems.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b22c92fcd89cad84ec45/master/pass/00029-valentino-resort-2027-detail-credit-brand.jpg|32-44": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The red coat with purple trim, khaki cuffed pants, dark sheer hosiery, and distinctive black and white loafers with a gold 'V' logo and pink sole edge are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b230355bc766ec898ab3/master/pass/00032-valentino-resort-2027-detail-credit-brand.jpg|36-48": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The model in Look 43 wears the identical gold-framed, yellow-tinted cat-eye sunglasses and the same brown collared shirt with a white pattern featuring gold buckles, ropes, and tassels as seen in the detail image. The model's hair and facial features also match.",
+  "alternates": [
+   {
+    "look_number": 45,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b22df084b706e9066dfd/master/pass/00030-valentino-resort-2027-detail-credit-brand.jpg|33-45": {
+  "look_number": 38,
+  "confidence": 0.9,
+  "evidence": "The detail shows a sheer purple sequined and beaded dress with a distinctive zig-zag beaded hem and light purple hosiery, which perfectly matches the elaborate purple gown and hosiery in Look 38. The cream fabric could be an underlayer of the dress. The shoes are not visible in Look 38.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b233e803e0c850df4f03/master/pass/00034-valentino-resort-2027-detail-credit-brand.jpg|38-50": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the grey knitted cardigan, light blue shirt, red knitted midi skirt with buttons, brown handbag, white studded heels, and light pink hosiery of Look 44.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b2349eff9211d07f84f3/master/pass/00036-valentino-resort-2027-detail-credit-brand.jpg|41-53": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a person wearing a pink sweatshirt, light beige shorts, and a purple baseball cap. Look 47 features a model wearing the identical pink sweatshirt, light beige shorts, and purple baseball cap.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b236c5644fa593931d5f/master/pass/00037-valentino-resort-2027-detail-credit-brand.jpg|42-54": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The navy wide-leg trousers with a subtle side stripe and the black textured loafers with a gold chain are identical in both the detail and Look 49.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b23131c43fba4f9215ff/master/pass/00033-valentino-resort-2027-detail-credit-brand.jpg|37-49": {
+  "look_number": 38,
+  "confidence": 0.9,
+  "evidence": "The iridescent sequined dress with floral embroidery and dusty rose feather trim perfectly matches the garment worn in the detail.",
+  "alternates": [
+   {
+    "look_number": 39,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 46,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b2349eff9211d07f84f5/master/pass/00035-valentino-resort-2027-detail-credit-brand.jpg|40-52": {
+  "look_number": 45,
+  "confidence": 0.9,
+  "evidence": "The dark grey fluid shirt, pink collar, brown belt, and model's hair in the detail perfectly match Look 45. The embroidery is assumed to be on the back of this shirt.",
+  "alternates": [
+   {
+    "look_number": 51,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b237254dd14297b1e9fe/master/pass/00038-valentino-resort-2027-detail-credit-brand.jpg|44-56": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The detail shows a grey tweed-like coat, dark green trousers with a beige side stripe, and black crocodile-embossed Chelsea boots. Look 50 features an identical grey tweed cape, the same dark green trousers with a beige side stripe, and matching black Chelsea boots.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b23af084b706e9066e03/master/pass/00042-valentino-resort-2027-detail-credit-brand.jpg|49-61": {
+  "look_number": 55,
+  "confidence": 1.0,
+  "evidence": "The animal print trousers in the detail image are an exact match for the trousers worn in Look 55.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b239e803e0c850df4f0f/master/pass/00040-valentino-resort-2027-detail-credit-brand.jpg|46-58": {
+  "look_number": null,
+  "confidence": 0.9,
+  "evidence": "The distinctive black loafers with a gold chain and lizard-like texture from the detail image are not present in any of the candidate looks. While some looks feature dark, wide-leg pants similar in cut and color, the specific shoe details are a clear mismatch.",
+  "alternates": [
+   {
+    "look_number": 48,
+    "confidence": 0.3
+   },
+   {
+    "look_number": 52,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b23caea770857255bf65/master/pass/00043-valentino-resort-2027-detail-credit-brand.jpg|50-62": {
+  "look_number": 56,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the pinstriped cropped trousers and the black loafers with red vamp and gold 'V' logo chain worn in Look 56. The floor pattern also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b236e803e0c850df4f09/master/pass/00039-valentino-resort-2027-detail-credit-brand.jpg|45-57": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The two-tone brown and tan loafers with gold chain detail and the dark blue sweatpants are an exact match.",
+  "alternates": [
+   {
+    "look_number": 49,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b23caea770857255bf6b/master/pass/00044-valentino-resort-2027-detail-credit-brand.jpg|51-63": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The black textured loafers with the gold chain and 'V' logo on the vamp in the detail image are an exact match for the shoes worn by the model in Look 53.",
+  "alternates": [
+   {
+    "look_number": 58,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b23af79c2768b66525fa/master/pass/00041-valentino-resort-2027-detail-credit-brand.jpg|47-59": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the leopard print coat, white baseball cap, yellow-tinted sunglasses, and the distinctive dark burgundy studded bag worn by the model in Look 53.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b23d9fda1576ba8ad4bb/master/pass/00045-valentino-resort-2027-detail-credit-brand.jpg|53-65": {
+  "look_number": 58,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the leopard print cap with red patch, the green sequined jacket with gold/pink embroidery, and the light blue striped shirt worn by the model in Look 58. The model's hair color also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b2427ab1113c1be19071/master/pass/00049-valentino-resort-2027-detail-credit-brand.jpg|58-66": {
+  "look_number": 66,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model wearing a light olive double-breasted suit, a light blue shirt, and a patterned tie, holding a distinctive light-colored, textured handbag with a gold 'V' logo. Look 66 features the exact same suit, shirt, tie, and handbag on the same model.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b23ff79c2768b6652600/master/pass/00047-valentino-resort-2027-detail-credit-brand.jpg|55-66": {
+  "look_number": 63,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the trench coat, grey t-shirt, teal shorts, black socks, yellow and brown studded sneakers, and the red and white striped 'VILLA' tote bag seen in Look 63.",
+  "alternates": [
+   {
+    "look_number": 65,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b240114ed1b98739fc66/master/pass/00048-valentino-resort-2027-detail-credit-brand.jpg|57-66": {
+  "look_number": 64,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the grey herringbone blazer, purple striped shirt, dark blue trousers with red and white side stripe, and large brown leather tote bag seen in Look 64.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b23fdf2e575487f14648/master/pass/00046-valentino-resort-2027-detail-credit-brand.jpg|54-66": {
+  "look_number": 61,
+  "confidence": 1.0,
+  "evidence": "The model, green 'VILLAIN TEEN' cap, yellow-tinted sunglasses, purple jacket with beige/gold collar, and brown bag strap all match perfectly.",
+  "alternates": [
+   {
+    "look_number": 64,
+    "confidence": 0.4
+   },
+   {
+    "look_number": 65,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b24233ec043d3b0c1885/master/pass/00050-valentino-resort-2027-detail-credit-brand.jpg|59-66": {
+  "look_number": 59,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact same brown suede fringed bag with silver studs, grey pleated trousers, and grey and purple sneakers as seen on the model in Look 59.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b212c5644fa593931d59/master/pass/00005-valentino-resort-2027-detail-credit-brand.jpg|5-7": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The handbag in Look 5 perfectly matches the detail image in color, exotic skin pattern, gold 'VV' logo hardware, and strap design.",
+  "alternates": [
+   {
+    "look_number": 6,
+    "confidence": 0.0
+   },
+   {
+    "look_number": 7,
+    "confidence": 0.0
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b21b1669cbab83ad371a/master/pass/00012-valentino-resort-2027-detail-credit-brand.jpg|13-17": {
+  "look_number": 16,
+  "confidence": 0.95,
+  "evidence": "The detail shows sheer nude hosiery and pointed-toe heels with a fuchsia front and gold snakeskin body. Look 16 features identical sheer nude hosiery and shoes with a matching fuchsia pointed toe and a thin gold heel.",
+  "alternates": [
+   {
+    "look_number": 14,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b21892ae92f349966a96/master/pass/00011-valentino-resort-2027-detail-credit-brand.jpg|13-17": {
+  "look_number": 16,
+  "confidence": 0.7,
+  "evidence": "The sheer light pink hosiery and the main pink color of the pointed-toe pumps in the detail image strongly match Look 16, despite the full look not clearly showing the gold toe cap, lace detail, or gold heel."
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b226771ca4d22e5d9294/master/pass/00024-valentino-resort-2027-detail-credit-brand.jpg|29-32": {
+  "look_number": 30,
+  "confidence": 0.85,
+  "evidence": "The model's long, dark, wavy hair and the light pink color of the top in the detail image perfectly match the model and the draped top in Look 30. The prominent neckpiece is considered an accessory and may not be visible or present in the full look.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b21e494e9a4bb054a7d0/master/pass/00016-valentino-resort-2027-detail-credit-brand.jpg|19-22": {
+  "look_number": 21,
+  "confidence": 0.15,
+  "evidence": "The model's face and hair are identical to the model in Look 21. However, the plaid top, pearl necklace, and grey trousers in the detail image do not match the embellished grey top and jeans in Look 21.",
+  "alternates": [
+   {
+    "look_number": 19,
+    "confidence": 0.01
+   },
+   {
+    "look_number": 20,
+    "confidence": 0.01
+   },
+   {
+    "look_number": 22,
+    "confidence": 0.01
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b218bc90d91161486fac/master/pass/00010-valentino-resort-2027-detail-credit-brand.jpg|13-17": {
+  "look_number": 15,
+  "confidence": 0.6,
+  "evidence": "Exact match for the light purple hosiery, which is a primary garment component. Main garments and shoes differ.",
+  "alternates": [
+   {
+    "look_number": 14,
+    "confidence": 0.4
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b22c92ae92f349966aa2/master/pass/00028-valentino-resort-2027-detail-credit-brand.jpg|37-37": {
+  "look_number": 37,
+  "confidence": 0.01,
+  "evidence": "The model, garment, and accessories in the detail shot do not match Look 37. The models are different, and the clothing styles, colors, and materials are entirely dissimilar.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b239e803e0c850df4f0f/master/pass/00040-valentino-resort-2027-detail-credit-brand.jpg|51-53": {
+  "look_number": 52,
+  "confidence": 0.9,
+  "evidence": "The detail shows dark, wide-leg trousers with a cuffed hem and dark loafers with a gold chain. Look 52 features a model wearing dark, wide-leg trousers with a cuffed hem and dark loafers, matching the style and color. The subtle dotted texture on the trousers in the detail is not clearly visible in the full shot, but the overall garment and shoe style are consistent.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b24233ec043d3b0c1885/master/pass/00050-valentino-resort-2027-detail-credit-brand.jpg|66-66": {
+  "look_number": 66,
+  "confidence": 0.9,
+  "evidence": "The grey pleated trousers and sneakers in the detail image are a strong match for the trousers and footwear worn in Look 66. The bag differs, but this is permissible for detail shots."
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6a32b23131c43fba4f9215ff/master/pass/00033-valentino-resort-2027-detail-credit-brand.jpg|43-44": {
+  "look_number": 44,
+  "confidence": 0.01,
+  "evidence": "The detail shows a female model's arm and a highly embellished garment. Look 44 features a female model, but the clothing and accessories are entirely different, making this a forced choice with extremely low confidence.",
+  "alternates": [
+   {
+    "look_number": 43,
+    "confidence": 0.001
+   }
+  ]
+ }
+}

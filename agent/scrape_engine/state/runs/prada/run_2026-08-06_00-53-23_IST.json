@@ -1,0 +1,59 @@
+{
+  "run": "2026-08-06_00-53-23_IST",
+  "at": "2026-08-06T11:17:45+05:30",
+  "pipeline_version": 2,
+  "dry_run": false,
+  "counts": {
+    "scraped": 42,
+    "matched": 25,
+    "tagged": 25,
+    "flattened": 25,
+    "skipped": 44,
+    "failed": 21,
+    "suspect": 0
+  },
+  "est_cost_usd": 19.798,
+  "collections": [
+    {
+      "url": "https://www.vogue.com/fashion-shows/fall-2026-ready-to-wear/prada",
+      "designer": "prada",
+      "collection": "fall-2026-ready-to-wear",
+      "scrape": "skip",
+      "match": "skip",
+      "tag": "skip",
+      "flatten": "skip",
+      "error": null
+    },
+    {
+      "url": "https://www.vogue.com/fashion-shows/spring-2026-ready-to-wear/prada",
+      "designer": "prada",
+      "collection": "spring-2026-ready-to-wear",
+      "scrape": "skip",
+      "match": "fail",
+      "tag": "skip",
+      "flatten": "skip",
+      "error": "Gemini scoring failed after retries: the JSON object must be str, bytes or bytearray, not NoneType"
+    },
+    {
+      "url": "https://www.vogue.com/fashion-shows/fall-2025-ready-to-wear/prada",
+      "designer": "prada",
+      "collection": "fall-2025-ready-to-wear",
+      "scrape": "skip",
+      "match": "skip",
+      "tag": "skip",
+      "flatten": "skip",
+      "error": null
+    },
+    {
+      "url": "https://www.vogue.com/fashion-shows/spring-2025-ready-to-wear/prada",
+      "designer": "prada",
+      "collection": "spring-2025-ready-to-wear",
+      "scrape": "skip",
+      "match": "skip",
+      "tag": "skip",
+      "flatten": "skip",
+      "error": null
+    }
+  ],
+  "designer": "prada"
+}

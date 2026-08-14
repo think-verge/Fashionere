@@ -1,0 +1,742 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd1fa00c209f78e6fd41/master/pass/00001-balenciaga-pre-fall-2025-details-credit-brand.jpg|1-7": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive black motorcycle jacket with patches and perforated details from the close-up image is not present in any of the candidate full-body looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd1e5cce0900d7a09608/master/pass/00002-balenciaga-pre-fall-2025-details-credit-brand.jpg|1-8": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail image shows a grey and navy blue two-tone jacket with a matching navy blue cap and pants. None of the candidate looks feature this specific jacket, color combination, or accessories; all candidates are predominantly black or red.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd21224e9f0f6e3da443/master/pass/00004-balenciaga-pre-fall-2025-details-credit-brand.jpg|1-10": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The navy blue fleece zip-up jacket with white stripes and Balenciaga logo, along with the reflective visor sunglasses, are not present in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd1c18dd70d640976934/master/pass/00003-balenciaga-pre-fall-2025-details-credit-brand.jpg|1-9": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive dark jacket with a white stripe and Balenciaga logo, the white towel-like scarf, and the specific silver-framed glasses from the detail image are not present in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd2350d0e08a251c0669/master/pass/00005-balenciaga-pre-fall-2025-details-credit-brand.jpg|1-12": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail shows light green and white striped pants with beige closed-toe slippers. None of the candidate looks feature these specific pants or shoes; all candidates wear dark, solid-colored garments and different footwear.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd22e0fba14258746623/master/pass/00006-balenciaga-pre-fall-2025-details-credit-brand.jpg|1-13": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black zip-up jacket with a high collar and a distinctive Balenciaga/Lamborghini logo on the left chest. Look 8 features the identical black zip-up jacket with the same logo, worn by a male model with similar short hair and dark pants, consistent with the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd268c797a58db9d25b0/master/pass/00008-balenciaga-pre-fall-2025-details-credit-brand.jpg|3-15": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The black jacket with the white 'AUTOMOBILI LAMBORGHINI' logo on the back and the black Balenciaga headband are identical in both the detail and Look 8.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd24e0fba14258746625/master/pass/00007-balenciaga-pre-fall-2025-details-credit-brand.jpg|2-14": {
+  "look_number": null,
+  "confidence": 1.0,
+  "evidence": "The distinctive Balenciaga ski goggles from the detail are not present in any candidate look.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd26037432ccc9041124/master/pass/00009-balenciaga-pre-fall-2025-details-credit-brand.jpg|4-16": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The specific black leather bag with a gold chain strap and silver Balenciaga plaque is not visible in any of the candidate full-body looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd297486f78e5c5bcb3e/master/pass/00010-balenciaga-pre-fall-2025-details-credit-brand.jpg|6-18": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail shows ski goggles with 'BALENCIAGA' on the strap and a black and red fur-trimmed jacket. None of the candidate looks feature these items.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd2c4ab5cd0524f5cda7/master/pass/00012-balenciaga-pre-fall-2025-details-credit-brand.jpg|8-20": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive black chunky sneaker with a white logo and high heel, worn with black ribbed socks, is not present in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcefb0065d122fab87905/master/pass/00013-balenciaga-pre-fall-2025-details-credit-brand.jpg|9-21": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail image features a blue graphic tank top, a blue zip-up hoodie, a black handbag with a distinctive gold and black chain strap, and large visor sunglasses. None of these specific items or the overall aesthetic match any of the provided candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd2fa2abd07ca4c5f620/master/pass/00014-balenciaga-pre-fall-2025-details-credit-brand.jpg|11-23": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "None of the candidate looks feature the distinctive blue sweatshirt, the black tote bag with the metallic plate and braided strap, or the wristband visible in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd3081bca0a4fa6a95f8/master/pass/00015-balenciaga-pre-fall-2025-details-credit-brand.jpg|12-24": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive red Isabelle Huppert t-shirt and the large black crocodile-embossed tote bag from the detail image are not present in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd2b7486f78e5c5bcb40/master/pass/00011-balenciaga-pre-fall-2025-details-credit-brand.jpg|7-19": {
+  "look_number": null,
+  "confidence": 0.9,
+  "evidence": "The yellow tracksuit, specific black Balenciaga tote bag with keychains, and light yellow 'BB' slip-on shoes from the detail image are not present in any of the candidate full-body looks.",
+  "alternates": [
+   {
+    "look_number": 14,
+    "confidence": 0.2
+   },
+   {
+    "look_number": 12,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd3300fe5e7495165767/master/pass/00016-balenciaga-pre-fall-2025-details-credit-brand.jpg|13-25": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive cream/pale yellow sneakers with a stiletto heel and Balenciaga logo socks from the detail image do not appear in any of the candidate full-body looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcf07224e9f0f6e3da449/master/pass/00017-balenciaga-pre-fall-2025-details-credit-brand.jpg|14-26": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinct Balenciaga bag with the gold plaque, the graphic print on the black oversized top, the black shorts, and the black knee-high boots are not present in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd3e7565bb811fe030ca/master/pass/00019-balenciaga-pre-fall-2025-details-credit-brand.jpg|17-29": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The model, dark grey oversized jacket, pleated skirt with denim insert, dark oval sunglasses, and thin cross-body strap are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd41e7ee23bf08b18622/master/pass/00020-balenciaga-pre-fall-2025-details-credit-brand.jpg|18-30": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "None of the candidate looks feature the specific combination of a grey hooded top, grey mini skirt, grey ribbed over-the-knee socks, and grey pointed-toe stiletto boots shown in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd4a6e516c4c3c5647ec/master/pass/00022-balenciaga-pre-fall-2025-details-credit-brand.jpg|21-33": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The black t-shirt dress and unique geometric bag in the detail image do not match any of the provided candidate looks. All candidate looks feature different garments and/or bags.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd47a87f0a2822f456c6/master/pass/00021-balenciaga-pre-fall-2025-details-credit-brand.jpg|19-31": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail shows a black leather trench coat with a ribbed knit underneath, but no candidate look features a black leather trench coat.",
+  "alternates": [
+   {
+    "look_number": 29,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd3818dd70d640976936/master/pass/00018-balenciaga-pre-fall-2025-details-credit-brand.jpg|16-28": {
+  "look_number": null,
+  "confidence": 0.9,
+  "evidence": "The black t-shirt with 'QUEER' text in the detail is not present in any of the candidate full-body looks. While the black leather neck pillow and black visor sunglasses match Look 20, the t-shirt mismatch prevents a full identification of the complete outfit.",
+  "alternates": [
+   {
+    "look_number": 20,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd4f5cce0900d7a0960a/master/pass/00023-balenciaga-pre-fall-2025-details-credit-brand.jpg|22-34": {
+  "look_number": null,
+  "confidence": 0.9,
+  "evidence": "The distinctive black bow-neck top, black sunglasses, and gold choker from the detail image are not present in any of the candidate looks.",
+  "alternates": [
+   {
+    "look_number": 29,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd5ca2abd07ca4c5f622/master/pass/00026-balenciaga-pre-fall-2025-details-credit-brand.jpg|25-37": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The black leather handbag with the distinctive gold emblem and structured design in the detail image is an exact match for the bag carried in Look 29.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd5850d0e08a251c066b/master/pass/00025-balenciaga-pre-fall-2025-details-credit-brand.jpg|24-36": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The model, Balenciaga visor, dark grey zip-up hoodie with gold zipper and chest logo, and the car key necklace are all identical to Look 28.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd61224e9f0f6e3da445/master/pass/00027-balenciaga-pre-fall-2025-details-credit-brand.jpg|27-39": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "None of the candidate looks feature the black collared leather jacket with the subtle Balenciaga logo, the black padded neck accessory, or the specific black sunglasses seen in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd64e7ee23bf08b18624/master/pass/00028-balenciaga-pre-fall-2025-details-credit-brand.jpg|28-40": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The model, red Balenciaga football jersey, reflective sunglasses, and silver chain necklace are identical. The camouflage pattern on the lower body is also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd68e7ee23bf08b18626/master/pass/00029-balenciaga-pre-fall-2025-details-credit-brand.jpg|29-41": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 35, including the dark grey zip-up hoodie with the white logo, the identical mirrored visor, and the exact silver chain necklace with its specific dark pendants (key, small pouch, religious medallion).",
+  "alternates": [
+   {
+    "look_number": 38,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 31,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd5388b94df1fa0cac03/master/pass/00024-balenciaga-pre-fall-2025-details-credit-brand.jpg|23-35": {
+  "look_number": 26,
+  "confidence": 0.7,
+  "evidence": "The black flowing wide-leg pants and the unique toe ring on the right second toe are an exact match. The shoe style is similar, but the color differs (black in detail, light in look 26).",
+  "alternates": [
+   {
+    "look_number": 30,
+    "confidence": 0.4
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd6c224e9f0f6e3da447/master/pass/00030-balenciaga-pre-fall-2025-details-credit-brand.jpg|30-42": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The detail shows dark grey heathered sweatpants with a white oval logo on the right thigh, a dark grey heathered zippered hoodie with a white oval logo on the left chest, and nude open-toe slides. Look 35 matches all these elements exactly.",
+  "alternates": [
+   {
+    "look_number": 38,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd72a87f0a2822f456ca/master/pass/00032-balenciaga-pre-fall-2025-details-credit-brand.jpg|33-45": {
+  "look_number": 36,
+  "confidence": 0.95,
+  "evidence": "The grey plaid/houndstooth pattern and textured fabric of the jacket in the detail image perfectly match the jacket worn in Look 36.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd6ca87f0a2822f456c8/master/pass/00031-balenciaga-pre-fall-2025-details-credit-brand.jpg|32-44": {
+  "look_number": null,
+  "confidence": 1.0,
+  "evidence": "No candidate look matches the distinct grey/black plaid jacket, black ribbed inner top, and specific black Balenciaga shoulder bag visible in the detail image. Look 36 has a similar plaid pattern but the color is grey/white, not grey/black, and the inner top and bag are completely different.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd77ec5f5b7459c02021/master/pass/00034-balenciaga-pre-fall-2025-details-credit-brand.jpg|35-47": {
+  "look_number": 39,
+  "confidence": 0.95,
+  "evidence": "The dark brown leather shoulder bag with silver chain and clasp, and subtle embossed Balenciaga pattern, is an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd7481bca0a4fa6a95fa/master/pass/00033-balenciaga-pre-fall-2025-details-credit-brand.jpg|34-46": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The prominent dark grey plaid coat and the small chain shoulder bag in the detail image do not match any of the candidate looks. While the distressed dark grey wide-leg pants are identical to those in Look 45, the model in Look 45 wears a neck brace and a different bag, and lacks the distinctive coat.",
+  "alternates": [
+   {
+    "look_number": 45,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd7ac63de7bd6a2400a8/master/pass/00035-balenciaga-pre-fall-2025-details-credit-brand.jpg|37-49": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The voluminous dark plaid wrap, the specific dark quilted bag with a silver chain, and the unique sunglasses from the detail image are not present in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd78f7d22cb7876f3441/master/pass/00036-balenciaga-pre-fall-2025-details-credit-brand.jpg|38-50": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail shows a white fringed leather jacket and a white t-shirt with a Lamborghini graphic. None of the candidate looks feature these specific garments. Look 43 has a fringed leather jacket, but it is black, not white, and the t-shirt is different.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd7c50d0e08a251c066d/master/pass/00038-balenciaga-pre-fall-2025-details-credit-brand.jpg|40-52": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The model's hair, black Balenciaga visor, light grey ribbed long-sleeve top, and the visible grey and white checkered collared shirt underneath are all identical in the detail and Look 41.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd7a4b505f7990cb8d10/master/pass/00037-balenciaga-pre-fall-2025-details-credit-brand.jpg|39-51": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive black, square-toed, flat, and distressed shoes with greenish-blue edges in the detail image do not match any of the shoes worn in the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd7f5cce0900d7a0960c/master/pass/00039-balenciaga-pre-fall-2025-details-credit-brand.jpg|42-54": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 45, including the black distressed 'QUEER' t-shirt, the black leather neck pillow, the distressed black pants, and the black belt with an attached pouch.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd8050d0e08a251c066f/master/pass/00040-balenciaga-pre-fall-2025-details-credit-brand.jpg|43-55": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The model, black high-neck open-back top, and black pants with white stripes are identical in both the detail and look 44.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd7f18dd70d640976938/master/pass/00041-balenciaga-pre-fall-2025-details-credit-brand.jpg|44-56": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The model, black zip-up top with logo, black wide-leg pants with three white stripes, black chunky shoes, and small black chain-strap bag are identical in both the detail and look 44.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd83e59fe7d86cd406c7/master/pass/00043-balenciaga-pre-fall-2025-details-credit-brand.jpg|46-58": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive black crocodile-embossed bag with a prominent bow and gold hardware from the detail image is not present in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd846e516c4c3c5647ee/master/pass/00042-balenciaga-pre-fall-2025-details-credit-brand.jpg|45-57": {
+  "look_number": null,
+  "confidence": 0.05,
+  "evidence": "No matching garments or accessories were found. The detail shows a grey ribbed top, a light blue checked shirt, light grey distressed pants, and a black Balenciaga logo tote bag, none of which appear in the candidate looks. While Look 46 has white chunky sneakers, the rest of the outfit is entirely different.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd86ec5f5b7459c02023/master/pass/00044-balenciaga-pre-fall-2025-details-credit-brand.jpg|48-58": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail image shows an oversized dark striped button-up shirt and dark pants, along with specific sunglasses, choker, and bag. None of the candidate looks feature these primary garments or exact accessories.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd8788b94df1fa0cac05/master/pass/00046-balenciaga-pre-fall-2025-details-credit-brand.jpg|50-58": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail image shows a male model wearing a light blue collared shirt with a red circular logo and red-framed reflective sunglasses. None of the candidate looks feature a male model, this specific shirt, or these sunglasses.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd8be7ee23bf08b18628/master/pass/00047-balenciaga-pre-fall-2025-details-credit-brand.jpg|51-58": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The dark blue sweatpants with white stripes, light yellow slip-on shoes, and dark brown handbag in the detail image do not appear in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd8923d363cc054d3105/master/pass/00045-balenciaga-pre-fall-2025-details-credit-brand.jpg|49-58": {
+  "look_number": null,
+  "confidence": 0.9,
+  "evidence": "The detail features a male model, a khaki draped garment, and black wraparound sunglasses, none of which are present in any of the candidate looks. All candidate looks feature female models.",
+  "alternates": [
+   {
+    "look_number": 57,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd21224e9f0f6e3da443/master/pass/00004-balenciaga-pre-fall-2025-details-credit-brand.jpg|1-8": {
+  "look_number": 6,
+  "confidence": 0.05,
+  "evidence": "No garment match found between the detail image (navy blue track jacket) and any candidate look. Look 6 was chosen as the most likely based on the model's curly dark hair and the presence of sunglasses, which are the closest match for secondary features among the candidates.",
+  "alternates": [
+   {
+    "look_number": 7,
+    "confidence": 0.01
+   },
+   {
+    "look_number": 8,
+    "confidence": 0.01
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd1e5cce0900d7a09608/master/pass/00002-balenciaga-pre-fall-2025-details-credit-brand.jpg|1-8": {
+  "look_number": 8,
+  "confidence": 0.2,
+  "evidence": "The jacket in Look 8 is an oversized black windbreaker with a high collar and elasticated hem, which stylistically aligns with the detail shot. However, there is a significant color discrepancy (black in Look 8 vs. grey and navy color-block in detail) and the models are different.",
+  "alternates": [
+   {
+    "look_number": 3,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd1fa00c209f78e6fd41/master/pass/00001-balenciaga-pre-fall-2025-details-credit-brand.jpg|1-8": {
+  "look_number": 8,
+  "confidence": 0.05,
+  "evidence": "No direct garment match found. Chosen based on the presence of a male model and a black sporty jacket in Look 8, despite significant differences in jacket style and model's hair compared to the detail image.",
+  "alternates": [
+   {
+    "look_number": 3,
+    "confidence": 0.02
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd1c18dd70d640976934/master/pass/00003-balenciaga-pre-fall-2025-details-credit-brand.jpg|1-8": {
+  "look_number": 8,
+  "confidence": 0.01,
+  "evidence": "Look 8 is the only candidate featuring a male model and a similar style of oversized, dark, technical jacket, despite significant differences in the specific jacket design (white stripe and logo vs plain), model's facial features, hair, and eyewear (glasses vs sunglasses). The white towel scarf is also unique to the detail shot.",
+  "alternates": [
+   {
+    "look_number": 3,
+    "confidence": 0.001
+   },
+   {
+    "look_number": 4,
+    "confidence": 0.001
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd24e0fba14258746625/master/pass/00007-balenciaga-pre-fall-2025-details-credit-brand.jpg|8-8": {
+  "look_number": 8,
+  "confidence": 0.05,
+  "evidence": "The model, eyewear (Balenciaga goggles vs. sunglasses), and the visible garment details (zippered top vs. oversized jacket) are all different between the detail and Look 8."
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd2350d0e08a251c0669/master/pass/00005-balenciaga-pre-fall-2025-details-credit-brand.jpg|1-8": {
+  "look_number": 1,
+  "confidence": 0.05,
+  "evidence": "No garment match; the detail shows light green and white striped pants, while Look 1 features a black dress. The only tenuous similarity is the light beige color of the shoes, though the styles differ (closed-toe slippers in detail vs. open-toe sandals in Look 1).",
+  "alternates": [
+   {
+    "look_number": 2,
+    "confidence": 0.04
+   },
+   {
+    "look_number": 5,
+    "confidence": 0.04
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd297486f78e5c5bcb3e/master/pass/00010-balenciaga-pre-fall-2025-details-credit-brand.jpg|8-19": {
+  "look_number": null,
+  "confidence": 0.01,
+  "evidence": "No direct garment or accessory match found in any candidate look. The detail image shows a black and red fur-trimmed jacket with Balenciaga ski goggles, which are not present in any full-body look. The item itself is visible on a rack in the background of other looks, but not worn by a model. Given the constraint to choose, a match cannot be confidently identified.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd26037432ccc9041124/master/pass/00009-balenciaga-pre-fall-2025-details-credit-brand.jpg|8-19": {
+  "look_number": 8,
+  "confidence": 0.1,
+  "evidence": "The detail shows a black garment with a ribbed cuff. Look 8 features a black jacket with elasticated cuffs, which is the closest match for this specific detail among the candidates, despite differences in fabric texture and other garment features. The bag itself is not present in any full look.",
+  "alternates": [
+   {
+    "look_number": 10,
+    "confidence": 0.05
+   },
+   {
+    "look_number": 17,
+    "confidence": 0.05
+   },
+   {
+    "look_number": 18,
+    "confidence": 0.05
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd2b7486f78e5c5bcb40/master/pass/00011-balenciaga-pre-fall-2025-details-credit-brand.jpg|8-19": {
+  "look_number": 14,
+  "confidence": 0.1,
+  "evidence": "The 'Schol' logo on the yellow sweatshirt in the detail image is a partial match to the 'Scholl' logo on the cap in Look 14, despite the main garments being entirely different.",
+  "alternates": [
+   {
+    "look_number": 10,
+    "confidence": 0.05
+   },
+   {
+    "look_number": 17,
+    "confidence": 0.05
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd2c4ab5cd0524f5cda7/master/pass/00012-balenciaga-pre-fall-2025-details-credit-brand.jpg|8-19": {
+  "look_number": 13,
+  "confidence": 0.1,
+  "evidence": "The detail features black footwear with a heel and black hosiery. Look 13 includes black boots with a heel and black hosiery, sharing these general attributes, though the specific shoe type (boot vs. sneaker-heel) and heel style are different.",
+  "alternates": [
+   {
+    "look_number": 15,
+    "confidence": 0.09
+   },
+   {
+    "look_number": 17,
+    "confidence": 0.05
+   },
+   {
+    "look_number": 14,
+    "confidence": 0.03
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcefb0065d122fab87905/master/pass/00013-balenciaga-pre-fall-2025-details-credit-brand.jpg|8-19": {
+  "look_number": 17,
+  "confidence": 0.1,
+  "evidence": "No garment match found between the detail image and any candidate look. The selection is based on the model's dark hair and large, dark sunglasses, which are most similar to Look 17 among the candidates, despite the outfit being completely different.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd2fa2abd07ca4c5f620/master/pass/00014-balenciaga-pre-fall-2025-details-credit-brand.jpg|8-19": {
+  "look_number": 9,
+  "confidence": 0.05,
+  "evidence": "No direct match for the blue-teal sweatshirt/tank or unique accessories (bag, wristband) found in any candidate. Look 9 is chosen as its dark navy color is the closest to blue-teal among the candidates, despite the garment type being a trench coat.",
+  "alternates": [
+   {
+    "look_number": 10,
+    "confidence": 0.03
+   },
+   {
+    "look_number": 19,
+    "confidence": 0.03
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd3081bca0a4fa6a95f8/master/pass/00015-balenciaga-pre-fall-2025-details-credit-brand.jpg|8-19": {
+  "look_number": 9,
+  "confidence": 0.1,
+  "evidence": "The detail bag shares the unique black crocodile-embossed texture with the bag in Look 9. While the bag's size, style, and hardware color differ, no other candidate look features a crocodile-embossed bag, and the garments in the detail image do not match any full look.",
+  "alternates": [
+   {
+    "look_number": 10,
+    "confidence": 0.05
+   },
+   {
+    "look_number": 17,
+    "confidence": 0.05
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd3300fe5e7495165767/master/pass/00016-balenciaga-pre-fall-2025-details-credit-brand.jpg|8-19": {
+  "look_number": 14,
+  "confidence": 0.15,
+  "evidence": "The detail image shows cream/pale yellow sneakers with a distinctive stiletto heel and Balenciaga logo socks. Look 14 is the only candidate featuring sneakers, although the specific color (grey vs. cream), design details (no visible stiletto heel or winged logo), and visible socks differ significantly from the detail image. All other candidates feature non-sneaker footwear.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcf07224e9f0f6e3da449/master/pass/00017-balenciaga-pre-fall-2025-details-credit-brand.jpg|8-19": {
+  "look_number": 17,
+  "confidence": 0.95,
+  "evidence": "The model, hair, makeup, choker necklace, and earrings are identical. The oversized black top in Look 17 is consistent with the detail's black top and graphic t-shirt underneath, likely being a layered ensemble. The bag is different, but this is permissible.",
+  "alternates": [
+   {
+    "look_number": 10,
+    "confidence": 0.1
+   },
+   {
+    "look_number": 19,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd3818dd70d640976936/master/pass/00018-balenciaga-pre-fall-2025-details-credit-brand.jpg|8-19": {
+  "look_number": null,
+  "confidence": 0.05,
+  "evidence": "No direct visual match found for the distinctive visor, neck pillow, or 'QUEER' t-shirt in any candidate looks. The model's hair also does not match any of the full-body looks. A choice cannot be made based on visual evidence, therefore look_number is null.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd47a87f0a2822f456c6/master/pass/00021-balenciaga-pre-fall-2025-details-credit-brand.jpg|19-26": {
+  "look_number": 20,
+  "confidence": 0.05,
+  "evidence": "The detail shows a black leather trench coat, which is not present in any candidate look. Look 20 is chosen as the least dissimilar option due to featuring a black leather jacket, despite significant differences in garment style and features.",
+  "alternates": [
+   {
+    "look_number": 21,
+    "confidence": 0.04
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd41e7ee23bf08b18622/master/pass/00020-balenciaga-pre-fall-2025-details-credit-brand.jpg|19-26": {
+  "look_number": 19,
+  "confidence": 0.1,
+  "evidence": "The detail shows a grey zip-up top, a short grey skirt/shorts, and grey ribbed over-the-knee stiletto boots. Look 19 is the only candidate that includes a skirt, though it is a dark grey pleated midi skirt, and the footwear is mules. There are significant discrepancies in color, fabric, length, and footwear.",
+  "alternates": [
+   {
+    "look_number": 22,
+    "confidence": 0.05
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd4a6e516c4c3c5647ec/master/pass/00022-balenciaga-pre-fall-2025-details-credit-brand.jpg|19-26": {
+  "look_number": 24,
+  "confidence": 0.1,
+  "evidence": "The model in the detail image and Look 24 both have long dark hair and wear rectangular glasses, despite significant differences in garment, hair styling, and perceived gender.",
+  "alternates": [
+   {
+    "look_number": 21,
+    "confidence": 0.05
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd4f5cce0900d7a0960a/master/pass/00023-balenciaga-pre-fall-2025-details-credit-brand.jpg|19-26": {
+  "look_number": 20,
+  "confidence": 0.01,
+  "evidence": "No direct garment match. Both feature a black outfit with trousers and sunglasses, but the specific top, model's gender, and accessories are entirely different.",
+  "alternates": [
+   {
+    "look_number": 21,
+    "confidence": 0.005
+   },
+   {
+    "look_number": 23,
+    "confidence": 0.005
+   },
+   {
+    "look_number": 26,
+    "confidence": 0.005
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd6ca87f0a2822f456c8/master/pass/00031-balenciaga-pre-fall-2025-details-credit-brand.jpg|35-36": {
+  "look_number": 36,
+  "confidence": 0.95,
+  "evidence": "The plaid pattern and color of the jacket in the detail image perfectly match the jacket worn in Look 36.",
+  "alternates": [
+   {
+    "look_number": 35,
+    "confidence": 0.05
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd61224e9f0f6e3da445/master/pass/00027-balenciaga-pre-fall-2025-details-credit-brand.jpg|29-35": {
+  "look_number": 30,
+  "confidence": 0.15,
+  "evidence": "The detail features a male model wearing a black leather bomber jacket, black collared shirt, black trousers, dark sunglasses, and a black neck pillow. Look 30 also features a male model in a black leather jacket and black trousers. However, the jacket in Look 30 is a racing style with prominent white Balenciaga branding, unlike the plain bomber with subtle branding in the detail. The model's hair color, headwear, and the presence of the neck pillow also differ significantly. Despite these discrepancies, Look 30 is the only candidate featuring a black leather jacket and black trousers on a male model, making it the closest, albeit weak, match among the given options.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd64e7ee23bf08b18624/master/pass/00028-balenciaga-pre-fall-2025-details-credit-brand.jpg|29-35": {
+  "look_number": 32,
+  "confidence": 0.1,
+  "evidence": "The model in the detail shot appears to be the same as the model in Look 32, despite completely different garments and accessories. No other candidate look shares any garment or accessory with the detail.",
+  "alternates": [
+   {
+    "look_number": 33,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd7481bca0a4fa6a95fa/master/pass/00033-balenciaga-pre-fall-2025-details-credit-brand.jpg|36-39": {
+  "look_number": 36,
+  "confidence": 0.05,
+  "evidence": "Only candidate with a grey patterned garment, though the pattern scale, fabric texture, and garment type (jacket vs. draped cape/coat) differ significantly from the detail. The pants also differ in color and distressing.",
+  "alternates": [
+   {
+    "look_number": 38,
+    "confidence": 0.01
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd78f7d22cb7876f3441/master/pass/00036-balenciaga-pre-fall-2025-details-credit-brand.jpg|39-41": {
+  "look_number": 39,
+  "confidence": 0.0,
+  "evidence": "No visual match found between the detail close-up (white fringed leather jacket, Lamborghini t-shirt) and any of the candidate full-body looks. All candidate looks feature entirely different garments and accessories.",
+  "alternates": [
+   {
+    "look_number": 40,
+    "confidence": 0.0
+   },
+   {
+    "look_number": 41,
+    "confidence": 0.0
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd7ac63de7bd6a2400a8/master/pass/00035-balenciaga-pre-fall-2025-details-credit-brand.jpg|39-41": {
+  "look_number": 39,
+  "confidence": 0.01,
+  "evidence": "No direct visual match for model, garments, or accessories. The detail features a female model in a dark brown patterned wrap and dark grey top, while all candidates are male models in sportswear or casual wear. The only extremely tenuous link is the dark grey color of the underlying top in the detail and the dark grey pants in Look 39. This is a forced choice with extremely low confidence due to the task constraint that a match must be selected.",
+  "alternates": [
+   {
+    "look_number": 40,
+    "confidence": 0.005
+   },
+   {
+    "look_number": 41,
+    "confidence": 0.005
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd7a4b505f7990cb8d10/master/pass/00037-balenciaga-pre-fall-2025-details-credit-brand.jpg|39-41": {
+  "look_number": null,
+  "confidence": 0.05,
+  "evidence": "No matching garments or shoes found in any candidate. The detail image shows black wide-leg trousers and black square-toe shoes, which are not present in any of the provided looks. All candidates feature different colored and styled trousers and shoes.",
+  "alternates": [
+   {
+    "look_number": 39,
+    "confidence": 0.03
+   },
+   {
+    "look_number": 40,
+    "confidence": 0.03
+   },
+   {
+    "look_number": 41,
+    "confidence": 0.03
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd7f5cce0900d7a0960c/master/pass/00039-balenciaga-pre-fall-2025-details-credit-brand.jpg|41-44": {
+  "look_number": 42,
+  "confidence": 0.6,
+  "evidence": "The distinctive black padded headwear in the detail shot is an exact match for the headwear in Look 42. However, the 'QUEER' t-shirt and distressed dark pants in the detail shot do not match the yellow hoodie and sweatpants of Look 42.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd846e516c4c3c5647ee/master/pass/00042-balenciaga-pre-fall-2025-details-credit-brand.jpg|44-58": {
+  "look_number": 45,
+  "confidence": 0.2,
+  "evidence": "The detail image features wide-leg distressed pants, a style only present in Look 45 among the candidates, despite differences in color, specific distressing, tops, and footwear.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd86ec5f5b7459c02023/master/pass/00044-balenciaga-pre-fall-2025-details-credit-brand.jpg|44-58": {
+  "look_number": 53,
+  "confidence": 0.15,
+  "evidence": "The model's curly dark hair and the black bag with a gold chain are similar to Look 53. However, the main garment in the detail image (oversized dark striped button-up shirt and pants) is completely different from Look 53's graphic t-shirt and shorts.",
+  "alternates": [
+   {
+    "look_number": 51,
+    "confidence": 0.05
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd83e59fe7d86cd406c7/master/pass/00043-balenciaga-pre-fall-2025-details-credit-brand.jpg|44-58": {
+  "look_number": 47,
+  "confidence": 0.1,
+  "evidence": "The detail shows a black garment and a black bag with a gold chain. Look 47 features a black outfit and a black bag with a gold chain, which is the closest general match among the candidates, despite significant discrepancies in the specific garment fabric (subtle vertical stripes not visible in Look 47) and bag design (crocodile texture and bow not present in Look 47's bag). No candidate provides a clear match for the garment's specific fabric.",
+  "alternates": [
+   {
+    "look_number": 49,
+    "confidence": 0.08
+   },
+   {
+    "look_number": 53,
+    "confidence": 0.08
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd8923d363cc054d3105/master/pass/00045-balenciaga-pre-fall-2025-details-credit-brand.jpg|44-58": {
+  "look_number": 45,
+  "confidence": 0.1,
+  "evidence": "The model's hair style and gender match, and the headwear shares a similar sporty, black aesthetic, but the specific sunglasses, distinctive earring, and main khaki garment from the detail are not present in the full look.",
+  "alternates": [
+   {
+    "look_number": 46,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd8788b94df1fa0cac05/master/pass/00046-balenciaga-pre-fall-2025-details-credit-brand.jpg|44-58": {
+  "look_number": 56,
+  "confidence": 0.05,
+  "evidence": "The detail image shows a male model in a light blue collared shirt and mirrored sporty sunglasses. None of the candidate looks feature a male model or a light blue collared shirt. Look 56 is the only candidate that includes sunglasses as an accessory, despite significant differences in the specific style, color, and the model's gender and primary garment.",
+  "alternates": [
+   {
+    "look_number": 45,
+    "confidence": 0.01
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/674dcd8be7ee23bf08b18628/master/pass/00047-balenciaga-pre-fall-2025-details-credit-brand.jpg|44-58": {
+  "look_number": 44,
+  "confidence": 0.4,
+  "evidence": "The detail shows dark track pants with distinctive triple white stripes, matching the pattern and style of the pants in Look 44. The color is very similar (dark navy vs black).",
+  "alternates": [
+   {
+    "look_number": 45,
+    "confidence": 0.1
+   }
+  ]
+ }
+}

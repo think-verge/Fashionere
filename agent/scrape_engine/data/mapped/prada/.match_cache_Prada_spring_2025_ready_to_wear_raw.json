@@ -1,0 +1,793 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec412a937be87121be841c/master/pass/00001-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|1-6": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a white floral slip dress with bow-tied straps and an asymmetrical hem. Look 1 features the identical dress, pattern, and strap details.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec412c74f45149e7339083/master/pass/00004-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|1-7": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a dark, ring-embellished dress and a black bucket bag with a gold chain detail. Look 2 features the identical dress and bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec412a63f923e997cd79b0/master/pass/00003-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|1-7": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact same distressed leather dress with metal rings, the same black handbag, and the same model with identical hair as seen in Look 2.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4128889a85b26559119f/master/pass/00002-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|1-7": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The black patent leather Mary Jane shoes with white polka dots and a gold buckle on the strap are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec413042daf23ffa32d74b/master/pass/00005-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|1-8": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact same model wearing the identical herringbone jacket with textured shoulders, navy sweater, and metallic abstract-patterned skirt as seen in Look 3.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4137c08f18dfdd0a813f/master/pass/00009-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|1-9": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model wearing an olive green jacket, black pants, a burgundy Prada bucket bag with a gold chain, and white cowboy boots. Look 6 features the exact same jacket, pants, bag, and boots.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4130b8dd58ed4ade3689/master/pass/00006-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|1-8": {
+  "look_number": 4,
+  "confidence": 0.9,
+  "evidence": "The ribbed tan polo top, ribbed pink pants, brown belt, and black Prada bag with tan piping are identical. The shoes in the detail image are light-colored and pointed, while Look 4 features black chunky shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41319835a161279f5ea0/master/pass/00007-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|1-9": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model wearing a strapless pale yellow gown with a structured bodice and gathered skirt, along with large rectangular sunglasses and long wavy brown hair. Look 5 features the identical gown, sunglasses, and model with the same hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec413e2e69292ee9efc664/master/pass/00012-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|1-11": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 9, showing the same metallic silver skirt with circular cutouts, the red long-sleeved top, and the distinctive light pink Prada handbag with gold ring details.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec413ec26a9fff11b884d2/master/pass/00011-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|1-10": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The long coat in the detail image has the exact same tweed-like pattern, color, and length as the coat worn by the model in Look 8.",
+  "alternates": [
+   {
+    "look_number": 3,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4137fec3064505ad5bb5/master/pass/00010-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|1-10": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The pink ruffled shirt, grey trousers, and brown belt are identical in color, style, and detail to the close-up. The model's hair and skin tone also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec413ebb4b9eca844ac060/master/pass/00013-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|1-11": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The model, periwinkle blue shirt, dark grey ribbed leggings, and brown belt with gold buckle are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4144a53098b5c4175bcd/master/pass/00014-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|1-12": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the periwinkle blue shirt, brown leather belt with gold buckle, and dark grey ribbed knit leggings worn by the model in Look 10.",
+  "alternates": [
+   {
+    "look_number": 4,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 7,
+    "confidence": 0.4
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4145508c920a7148e0d0/master/pass/00015-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|1-12": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 11, featuring the identical green strapless bow-front top, the dark belt with silver buckle and large O-rings with clips, and the dark grey pleated skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec414ab1daf4f0e1093941/master/pass/00017-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|1-13": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a shiny dark crescent-shaped handbag with silver trim and a dark grey pleated skirt. Look 11 features the identical handbag and a matching dark grey pleated skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec414b619a8137b7a074dc/master/pass/00018-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|1-13": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The model, sunglasses, and the distinctive navy blue and distressed cream striped sweater with a high crew neck are identical in both the detail and Look 12.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec413669d37f01fad682b3/master/pass/00008-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|1-9": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a bright green suede-like jacket with a round collar, three large round buttons, and a flap pocket, along with dark trousers and a dark brown bag. Look 6 features the identical jacket, trousers, and bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec414c481595ef5c5ebd8f/master/pass/00019-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|2-14": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 12, showing the same navy blue striped sweater, navy skirt with white fringed overlay, and dark brown bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec414515a550be9d588e99/master/pass/00016-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|1-12": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 11, showing the same dark grey pleated skirt, the distinctive black belt with silver hardware and large D-rings/clips, and the silver metallic bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec414ec26a9fff11b884d4/master/pass/00020-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|2-14": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the navy blue sweater, navy skirt with white scalloped fringe, dark brown structured top-handle bag, and white and navy striped open-toe shoes with a sculptural heel from Look 12.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4151e427447ae9f7ffde/master/pass/00022-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|3-15": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The black patent leather handbag with silver clasp and side zipper, the grey trousers, and the red ribbed cuff of the jacket are all exact matches.",
+  "alternates": [
+   {
+    "look_number": 9,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4153634495456e6d13f7/master/pass/00023-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|3-15": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact same green dress with a bright green under-layer, sheer dark ruffled overlay, gathered neckline, subtle vertical texture, and dark brown belt with a gold buckle as seen in Look 14.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4155bb4b9eca844ac062/master/pass/00024-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|4-16": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the dark brown angular pumps, bright green ribbed tights, and sheer dark brown ruffled fabric visible in Look 14.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec415940d812c95ee808b3/master/pass/00025-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|4-16": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 15, including the navy sweater with red cutouts and scarf, the striped briefs, the gold-buckle belt with chain, the model's hair, and the visible part of the bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4159cad901d1f9acf9bb/master/pass/00026-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|4-16": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 15, including the navy sweater with red cuffs, the striped shorts, the brown belt with gold buckle and chain, the navy bucket bag with rope handle, and the specific tattoos on both thighs.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec415915a550be9d588e9b/master/pass/00027-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|5-17": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The navy blue bucket bag with cream rope handles, gold grommets, and Prada logo is identical in both the detail image and Look 15.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4153c08f18dfdd0a8141/master/pass/00021-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|2-14": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The red bomber jacket, light blue collared shirt, grey trousers, brown belt, and geometric sunglasses are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec415fa53098b5c4175bcf/master/pass/00028-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|5-17": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the cream pussy-bow blouse, the unique black leather belt with silver rings and straps, and the black midi skirt worn in Look 16.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4160cad901d1f9acf9bd/master/pass/00030-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|6-18": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The model's hair, unique geometric sunglasses, red strapless bandeau top with white pockets and gold buttons, greyish-brown trousers, and brown belt with a gold buckle are all identical to Look 17.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec416749f58ac89fc137d5/master/pass/00032-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|7-19": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a dark brown structured handbag with a silver clasp and light brown/grey trousers. Look 17 features the exact same handbag and trousers.",
+  "alternates": [
+   {
+    "look_number": 13,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4167646e721875948919/master/pass/00031-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|6-18": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The red bandeau top with white trim, brown leather belt, greyish-brown wide-leg trousers, and dark brown handbag are identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 13,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 7,
+    "confidence": 0.3
+   },
+   {
+    "look_number": 10,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4167d4baf8a27ededa5c/master/pass/00033-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|7-19": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 18, showing the same olive-green textured coat with a fur collar, three dark buttons, and pink ribbed tights.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec416def7accb5ad071b8c/master/pass/00035-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|8-20": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The model's hair, dark grey long-sleeve top with triangular detail, black gathered satin skirt with black beaded appliques, and black shoulder bag are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec415ffec3064505ad5bb7/master/pass/00029-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|6-18": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The bright yellow leather handbag with its distinctive shape, silver clasp, and 'PRADA' tag is identical in both the detail image and Look 16. The black skirt worn by the model in Look 16 is also consistent with the black garment visible in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec416bb8dd58ed4ade368b/master/pass/00034-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|8-20": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light grey/silver pointed-toe pump with a metallic silver cap featuring a distinctive design, paired with ribbed dusty rose/mauve tights. Look 18 features the exact same shoes and ribbed tights in the same color.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec416c74f45149e7339085/master/pass/00036-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|9-21": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black satin-like skirt with intricate black embellishments, the black long-sleeved top, and the black flat shoes worn in Look 19.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4173b6a3b1045ebce3c5/master/pass/00040-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|10-22": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a purple sneaker with a silver metal toe cap and black laces. Look 20 features the exact same shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4171ef7accb5ad071b8e/master/pass/00039-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|10-22": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a mustard yellow leather-like coat with a white scarf tied around the neck. Look 20 features the identical coat and scarf.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec417115a550be9d588e9d/master/pass/00038-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|9-21": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the unique brown visor, white tied hoodie, and mustard yellow coat worn by the model in Look 20.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4177706776f69921e5ed/master/pass/00042-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|11-23": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a white bucket bag with a black studded strap, a black dress, and yellow pointed-toe heels. Look 21 features the exact same bag, a black dress, and identical yellow pointed-toe heels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec416f9835a161279f5ea2/master/pass/00037-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|9-21": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The model's hair, the black long-sleeved top, the black skirt with black floral embellishments, and the black Prada tote bag are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4177b4dc644c5971d14f/master/pass/00041-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|11-23": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The black dress with cream cuffs and waist band, gold D-rings, and the white handbag with black straps are identical in both the detail and Look 21. The model's hair also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4177e427447ae9f7ffe0/master/pass/00043-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|11-23": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 21, showing the identical black dress with cream bands and gold rings on the sleeves and waist, and the same white bucket bag with a patterned strap.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec417d471ffcadc3065bd3/master/pass/00045-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|12-24": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the brown suede jacket, grey ribbed tights, brown structured handbag with gold hardware and tassel, and red shoes worn in Look 22.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4182ef7accb5ad071b90/master/pass/00047-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|13-25": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The pink coat/dress, the dark brown glossy structured handbag with front straps and silver clasp, and the dark grey hosiery are identical in Look 23 and the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec418340d812c95ee808b5/master/pass/00048-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|13-25": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 24, including the grey cardigan, the distinctive geometric patterned skirt, the red belt with large circular buckles, the black patent leather handbag, and the brown flat sandals.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec417d72a6824107b543b1/master/pass/00046-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|13-25": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The pink coat with the ruffled collar, brown buttons, cinched waist, dark brown structured handbag, and dark grey tights are identical in both images. The model's hair and skin tone also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec417d4edb45e2caee2ebe/master/pass/00044-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|12-24": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The brown suede jacket, pink floral crop top, grey ribbed leggings, black belt with gold buckle, and tan leather handbag are all identical to those in the detail image. The model's hair and skin tone also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4184889a85b2655911a1/master/pass/00049-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|14-26": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the grey knitted cardigan, the distinctive geometric patterned skirt, and the black patent leather Prada handbag with a silver clasp shown in Look 24.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41884257efccf1cf9817/master/pass/00052-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|15-27": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 26, including the brown leather visor with circular cutouts, the orange jacket with white trim, and the black feathered garment underneath.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec418a619a8137b7a074de/master/pass/00053-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|16-28": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 26, including the orange hooded jacket, the black feathered garment with blue tips, the brown leather visor, and the model's hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4186ea6898db5d54f849/master/pass/00050-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|14-26": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The model, sunglasses, cream draped blouse, dark brown belt with gold buckle, and dark purple ribbed trousers are identical in both the detail and look 25.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec418be427447ae9f7ffe4/master/pass/00054-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|16-28": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail shows dark grey ribbed hosiery, black pointed-toe stiletto heels, and a dark garment with black feathery embellishments. Look 26 features all these elements exactly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4190fec3064505ad5bb9/master/pass/00057-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|17-29": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the dark coat with reddish fur collar and the metallic silver skirt with circular cut-outs worn in Look 27. The model's hair and skin tone are also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec418c40d812c95ee808b7/master/pass/00055-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|16-28": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 26, including the unique brown leather headpiece, the orange hooded anorak with white drawstrings, the model's hair color and style, and the black feathery garment visible at the bottom.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec418f72a6824107b543b3/master/pass/00056-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|17-29": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The model's hair, futuristic silver sunglasses with blue lenses, and dark brown fur collar are an exact match to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4190350d1d913f86a554/master/pass/00058-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|18-30": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The shoes in the detail image are identical to the shoes worn by the model in Look 27, featuring the same dark color, off-white laces, silver eyelets, and flat sole with a small block heel.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41932e69292ee9efc666/master/pass/00059-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|18-30": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black polka dot bandana, purple heart-shaped sunglasses, light blue collared shirt, and olive green zip-up jacket worn in Look 28.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4195e427447ae9f7ffe6/master/pass/00060-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|18-30": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 28, including the olive green bomber jacket, light blue collared shirt, grey asymmetrical mini skirt, brown belt with gold buckle, purple sunglasses, and silver bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4196b1daf4f0e1093943/master/pass/00062-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|19-31": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The model, hair, brown suede jacket with pointed lapels, dark brown leather bustier, and brown belt with gold buckle are identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 22,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4195937be87121be841e/master/pass/00061-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|19-31": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model carrying a shiny black and silver crescent-shaped bag with a Prada logo, wearing a grey mini skirt, a dark green top, and dark shoes. Look 28 features the exact same bag, grey mini skirt, and a green bomber jacket that matches the color of the top in the detail, along with similar dark shoes and belt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec419cb1daf4f0e1093945/master/pass/00065-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|20-32": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The mustard yellow coat, ribbed purple tights, and the distinctive dark brown and green rectangular handbag are identical in both the detail and Look 30.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec4187e427447ae9f7ffe2/master/pass/00051-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|15-27": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail shows an off-white blouse, dark purple ribbed leggings, a brown belt with a gold buckle, and a tan leather handbag with a gold clasp. Look 25 features all these exact items.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec419a42daf23ffa32d74d/master/pass/00063-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|20-32": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The brown suede coat, dark ruched inner garment, brown belt, and patterned handbag are identical to the detail image. The model's hair also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec419b49f58ac89fc137d7/master/pass/00064-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|20-32": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive leopard print rectangular handbag in the detail image is not present in any of the candidate looks. While Look 29 features a brown suede coat that is an exact match for the one visible in the detail, the bag is a clear mismatch, preventing an overall exact match.",
+  "alternates": [
+   {
+    "look_number": 29,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41a11c0cc2a56074ab10/master/pass/00066-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|21-33": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The detail shows a model wearing a mustard yellow oversized coat over ribbed purple leggings, holding a rectangular olive green and dark blue Prada bag. Look 30 features the exact same mustard yellow coat, ribbed purple leggings, and the identical olive green and dark blue Prada bag, carried by a model with a matching skin tone.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41a0d4baf8a27ededa5e/master/pass/00067-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|21-33": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The argyle sweater, pink bow blouse, black leather skirt with silver rings, dark belt, and emerald green handbag are identical in both the detail and Look 31.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41a4937be87121be8420/master/pass/00069-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|22-34": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a dark brown long-sleeve top, a dark skirt adorned with numerous metal rings, and a distinctive emerald green rectangular handbag. Look 31 features an identical dark brown and grey argyle sweater, the exact same skirt with metal rings, and the identical emerald green handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41a891146fdbbfa0b7a7/master/pass/00070-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|22-34": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The dress, its distinctive textured fabric, and the yellow slouchy shoulder bag are identical in both the detail and Look 32. The model's hair and skin tone also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41a763f923e997cd79b2/master/pass/00071-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|23-35": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The model's hair, the textured cream-colored garment, and the distinctive mustard yellow tote bag are all identical to those in Look 32.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41a28842d4b416d95952/master/pass/00068-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|22-34": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The argyle sweater, distressed leather skirt with rings, brown belt, and emerald green handbag are identical in both the detail and Look 31.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41aac26a9fff11b884d6/master/pass/00073-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|24-36": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The model, light yellow coat, bright pink hooded top with tied hood, pink ribbed cuffs, and dark purple shorts are all identical to Look 33.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41a9a53098b5c4175bd1/master/pass/00072-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|23-35": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The model, the light yellow leather jacket with a single button, and the bright pink garment tied around the neck are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41abd4baf8a27ededa60/master/pass/00074-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|24-36": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The dark brown loafer with a prominent rectangular silver metal bar across the vamp and chunky sole perfectly matches the shoe in look 25.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41ad508c920a7148e0d2/master/pass/00075-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|25-37": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 33, showing the same light yellow jacket over a bright pink hooded garment, with the pink visible at the neck and cuffs.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41b0a53098b5c4175bd3/master/pass/00078-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|26-38": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The detail image shows dark grey ribbed tights and brown patent leather shoes with a white rectangular detail on the toe, which perfectly match the hosiery and shoes worn in Look 34.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41b2ef7accb5ad071b92/master/pass/00079-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|26-38": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 35, including the grey utility jacket, brown textured bandeau top, grey ribbed leggings, black belt with gold buckle, and the black structured bag with metal hardware.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41ae471ffcadc3065bd5/master/pass/00076-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|25-37": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 34, including the dark purple coat, the beige top underneath, the grey ribbed leggings, and the model's hair and sunglasses.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41b49835a161279f5ea4/master/pass/00080-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|27-39": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the dark grey utility jacket with drawstring, the black studded handbag, and the dark grey ribbed leggings worn in Look 35.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41af350d1d913f86a556/master/pass/00077-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|25-37": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The model's hair, large butterfly-shaped sunglasses, purple coat, and beige undergarment are identical in both the detail image and Look 34.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41b51c0cc2a56074ab12/master/pass/00081-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|27-39": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 36, featuring the same navy blue double-breasted coat with gold buttons and flap pockets, black fringed visor, and mirrored sunglasses.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41b642daf23ffa32d74f/master/pass/00082-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|27-39": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The navy double-breasted coat with gold buttons, brown leather belt, white mini skirt with buckle pattern, and green top-handle bag are identical in both the detail and look 36.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41b842daf23ffa32d751/master/pass/00083-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|28-40": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail shows a navy blue coat with gold buttons and a bright lime green structured handbag with a gold clasp. Look 36 features the exact same navy blue coat with gold buttons and the identical lime green handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41bb8842d4b416d95954/master/pass/00084-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|28-40": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the navy blue cardigan, black pussy-bow blouse, and red button-front skirt tied at the waist seen in Look 37.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41bfea6898db5d54f84b/master/pass/00087-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|29-41": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact same light brown coat with a deep pink velvet collar and a black satin bralette underneath, worn by the same model with identical hair and makeup as in Look 38.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41c142daf23ffa32d753/master/pass/00088-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|30-42": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 38, showing the same tan coat with a pink velvet collar, black bralette, and orange A-line skirt with prominent flap pockets.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41c1508c920a7148e0d4/master/pass/00089-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|30-42": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive white distressed loafer with a chunky black heel and unique metal hardware (bar, ring, sphere) from the detail image does not appear in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41bc2e69292ee9efc668/master/pass/00085-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|29-41": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 37, showing the same navy cardigan, black tie-neck blouse, red tie-front mini skirt with buttons, and black patent leather tote bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41bcb1daf4f0e1093947/master/pass/00086-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|29-41": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The black patent leather bucket bag with a gold Prada logo is identical in both the detail and Look 37. The red skirt and light-colored fringed shoes also match the partial elements visible in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41c374f45149e7339087/master/pass/00090-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|31-43": {
+  "look_number": 38,
+  "confidence": 0.95,
+  "evidence": "The detail image shows the back of a camel-colored coat with a cape-like overlay and large pockets. Look 38 features a coat of the exact same camel color, with large front pockets that match the style seen from the back, and a similar overall silhouette and fabric. The model's hair color and style also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41c6481595ef5c5ebd91/master/pass/00092-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|32-44": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The black structured top-handle bag with gold hardware and clasp in Look 39 is identical to the bag in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41c6d4baf8a27ededa62/master/pass/00091-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|31-43": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact same model wearing the identical black coat with a cream fur collar and carrying the same black handbag as in Look 39.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41cafec3064505ad5bbb/master/pass/00095-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|33-45": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The black pointed-toe pumps with the distinctive cut-out design on the vamp and kitten heel, along with the dark grey pleated skirt, perfectly match those worn in Look 40.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41ce481595ef5c5ebd93/master/pass/00097-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|34-46": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 41, featuring the same dark purple ribbed long-sleeve top, the light blue band under a black belt with a gold buckle, and the sheer dark blue skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41cdb94b5a31849b7109/master/pass/00096-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|33-45": {
+  "look_number": 40,
+  "confidence": 0.95,
+  "evidence": "The detail shows a dark grey jacket with unique back detailing and a matching dark grey pleated skirt. Look 40 features a model with matching blonde hair wearing an identical dark grey blazer and pleated skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41d18842d4b416d95956/master/pass/00098-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|34-46": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 41, including the dark purple ribbed top, light blue band with black belt, sheer dark ruffled skirt, blue ribbed leggings, and dark Mary Jane shoes with a silver buckle.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41ccb94b5a31849b7107/master/pass/00094-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|32-44": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The grey blazer, pleated skirt, black belt with chain detail, silver disc top, and black pointed heels are identical in Look 40 and the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41d2481595ef5c5ebd95/master/pass/00099-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|34-46": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the blue ribbed tights, brown Prada loafers with silver hardware, and sheer black ruffled skirt seen in Look 41.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41c8635f2727a72984af/master/pass/00093-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|32-44": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The model's blonde hair, mirrored sunglasses, dark grey blazer, and the unique metallic disc top are identical in both the detail image and Look 40.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41d4706776f69921e5ef/master/pass/00101-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|35-47": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 42, including the purple pussy-bow blouse, brown draped mini skirt, patterned headscarf, butterfly sunglasses, and yellow top-handle bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41d6c26a9fff11b884d8/master/pass/00102-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|36-48": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the purple pussy-bow blouse, the brown ruched mini skirt, and the tan bag with the yellow rope handle shown in Look 42.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41d34257efccf1cf9819/master/pass/00100-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|35-47": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The model's headwear, sunglasses, and deep purple bow-neck blouse with visible buttons are identical in both the detail and Look 42.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41d9508c920a7148e0d6/master/pass/00104-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|36-48": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The black leather-like hooded garment with ruffles, the black zippered jacket with collar and dark buttons, and the neck tie/bow are identical in both the detail and Look 43.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41db635f2727a72984b1/master/pass/00105-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|37-49": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 43, including the black leather-like jacket, inner zippered top, shorts, and balaclava headwear. The partially visible light-colored bag also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41df63f923e997cd79b4/master/pass/00107-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|38-50": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a sleeveless floral top with ruffles and a dark pleated skirt with a white lace-up detail. Look 44 features the exact same top and skirt, worn by a model with identical hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41d88842d4b416d95958/master/pass/00103-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|36-48": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The brown bucket bag with yellow braided handle and Prada logo, the purple blouse, and the brown mini skirt are all identical to those worn by the model in Look 42.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41dda53098b5c4175bd5/master/pass/00106-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|37-49": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The light blue/grey handbag with gold clasp and the distinctive yellow shoes are an exact match to those in Look 43. The black garment visible in the detail is consistent with the black leather shorts/jacket in Look 43.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41dfc08f18dfdd0a8143/master/pass/00108-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|38-50": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The floral sleeveless top and the dark pleated midi skirt with white lacing detail are identical in both the close-up and Look 44.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41e79835a161279f5ea7/master/pass/00111-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|39-50": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 45, featuring the same yellow hooded jacket, sequined dress with black circular embellishments, and straw hat.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41e79835a161279f5ea8/master/pass/00112-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|40-50": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The dark plum satin mule shoes with kitten heels and the silver and dark sequined dress hem are an exact match to Look 45.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41e149f58ac89fc137d9/master/pass/00109-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|38-50": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The shoes in look 44 are an exact match for the detail image, featuring the same navy blue upper, dark red platform and toe, thin instep strap with buckle, and flared heel.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41ebb4dc644c5971d151/master/pass/00113-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|40-50": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 46, featuring the same leopard print coat, black and white striped top, black briefs, and brown structured handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41ed481595ef5c5ebd97/master/pass/00115-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|41-50": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 47, featuring the same model, grey sweater, navy bow scarf, black patent skirt with circular cutouts, and dark lipstick.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41ef15a550be9d588e9f/master/pass/00116-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|41-50": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 47, including the grey sweater, dark blue scarf, black patent leather skirt with circular cutouts, and the model's skin tone and hosiery.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41e663f923e997cd79b6/master/pass/00110-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|39-50": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the straw visor, yellow hooded jacket with white zippers, and the silver sequined dress with large dark circular embellishments and clear crystals worn by the model in Look 45.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41f1619a8137b7a074e0/master/pass/00117-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|42-50": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The shoes in look 47 are identical to the detail image, featuring the same pink and grey striped pattern, open-toe design, ankle strap, and architectural heel with the 'PRADA' branding.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41f3471ffcadc3065bd7/master/pass/00119-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|43-50": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The detail shows a light pink silky top, grey pleated trousers, and a black patent leather Prada bag with gold rings. Look 48 features all these exact items.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41f3d4baf8a27ededa66/master/pass/00118-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|42-50": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 48, including the light pink strapless top with ruched detailing, the grey textured trousers, the white spherical bead necklace, the model's hair color and style, and the black bag strap.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41edd4baf8a27ededa64/master/pass/00114-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|41-50": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The leopard print coat and the structured brown leather handbag in the detail image perfectly match those worn in Look 46.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41f7937be87121be8422/master/pass/00122-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|44-50": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The pale green pointed-toe pump with a distinctive silver toe cap in the detail image perfectly matches the shoes worn by the model in Look 49.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41f7692e940efc1d674c/master/pass/00121-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|43-50": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black belt with a gold buckle and two silver rings attached to a dark navy skirt. Look 49 features the identical belt and a matching dark navy skirt with the same cut and fabric. The model's tattoos are also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41f5350d1d913f86a558/master/pass/00120-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|43-50": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The model, hair, sunglasses, black top with jagged edges, black belt with gold buckle, and skirt with silver rings are identical in both images.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41abd4baf8a27ededa60/master/pass/00074-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|33-33": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The dark brown loafer with the distinctive silver metallic bar across the vamp is an exact match to the shoe worn by the model in Look 33.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/66ec41c1508c920a7148e0d4/master/pass/00089-prada-spring-2025-ready-to-wear-detail-credit-gorunway.jpg|38-38": {
+  "look_number": 38,
+  "confidence": 0.05,
+  "evidence": "The shoes in the detail image are distressed white/grey loafers with a chunky black heel and specific metal hardware (plate, ring, sphere). The shoes in Look 38 are metallic silver loafers with a white sole and no matching hardware.",
+  "alternates": []
+ }
+}

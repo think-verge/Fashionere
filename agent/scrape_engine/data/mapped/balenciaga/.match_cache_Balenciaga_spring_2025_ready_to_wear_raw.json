@@ -1,0 +1,402 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead67382e996e94c61bcc/master/pass/00001-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|1-7": {
+  "look_number": 6,
+  "confidence": 0.95,
+  "evidence": "The black leather handbag with the gold 'BB' logo is identical. The model's black sheer hosiery and the dark, possibly knitted, sleeve visible in the detail perfectly match Look 6's black sheer stockings and navy V-neck sweater.",
+  "alternates": [
+   {
+    "look_number": 3,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 4,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 7,
+    "confidence": 0.75
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead69f349f5b78101ed21/master/pass/00002-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|1-9": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail image shows a model with long curly brown hair in pigtails, a red ruffled top, and a distinctive gold and black pendant necklace. None of the candidate looks feature these specific garments or hair styling.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead6c18caa7b54a37b13f/master/pass/00004-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|1-12": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail image shows a male model wearing a dark bomber jacket and futuristic visor sunglasses. All candidate looks feature female models and none wear the matching garments or accessories.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead696e644967ebcc50ab/master/pass/00003-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|1-11": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The black leather handbag with the distinctive flap and gold 'BB' logo, along with the vibrant red fabric of the dress, perfectly match Look 11.",
+  "alternates": [
+   {
+    "look_number": 8,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 9,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 10,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead6f6ee362ab3f5931af/master/pass/00005-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|2-14": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail image shows a male model wearing baggy dark grey pants and distinctive gold and black athletic-style shoes. None of the candidate looks feature a male model, nor do they feature these specific pants or shoes. All candidate looks show female models in dresses, lingerie, or skirts, almost exclusively with pointed heels or boots.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead70f31267a50c100725/master/pass/00007-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|6-18": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail shows light blue jeans and white/silver futuristic sneakers with black accents. Look 16 features identical light blue jeans and very similar white futuristic sneakers.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead6f6398447ddb85665d/master/pass/00006-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|4-16": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail shows black Balenciaga sneakers and blue denim jeans. None of the candidate looks feature these specific black shoes. Look 16 has similar blue denim jeans but white shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead75382e996e94c61bce/master/pass/00009-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|9-21": {
+  "look_number": null,
+  "confidence": 0.9,
+  "evidence": "The blue striped polo shirt worn by the model in the detail image is not present in any of the candidate full-body looks.",
+  "alternates": [
+   {
+    "look_number": 16,
+    "confidence": 0.3
+   },
+   {
+    "look_number": 18,
+    "confidence": 0.3
+   },
+   {
+    "look_number": 19,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead75d536c35d27cd0ddd/master/pass/00008-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|8-20": {
+  "look_number": 16,
+  "confidence": 0.9,
+  "evidence": "The off-white chunky Balenciaga sneakers with visible branding and sole pattern are an exact match. The jeans have a similar baggy, wide-leg cut, though the color appears blue in the full look and grey in the detail.",
+  "alternates": [
+   {
+    "look_number": 19,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead766ee362ab3f5931b1/master/pass/00010-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|11-23": {
+  "look_number": 16,
+  "confidence": 0.95,
+  "evidence": "The light blue distressed denim jeans with distinctive paneling in the detail image are an exact match for the jeans worn by the male model in Look 16. The Balenciaga accessory is consistent with the brand.",
+  "alternates": [
+   {
+    "look_number": 22,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead7cfbfc547b88dc5ad5/master/pass/00012-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|15-27": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive bright red shoes in the detail image do not appear in any of the candidate full-body looks. All candidate looks feature black, white, or dark-colored shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead7c7040f1a8735cca35/master/pass/00013-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|17-29": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail image features a prominent light grey hoodie and a dark bag with a distinct diagonal strap/design, neither of which are present in any of the candidate full-body looks. The outermost dark jacket and light wash jeans also do not match any single candidate look.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead7f81a687d80d48b479/master/pass/00014-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|18-30": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The plaid shirt, bright green underlayer, and distinctive black bag with chains and keys visible in the detail image are not present in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead7baf7ddee079a51eff/master/pass/00011-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|13-25": {
+  "look_number": 19,
+  "confidence": 0.95,
+  "evidence": "The detail shows a male hand and dark washed, paneled denim jeans with specific fading and seam construction, which perfectly matches the jeans worn by the male model in Look 19. The Balenciaga phone case and beaded bracelet are not visible in the full look.",
+  "alternates": [
+   {
+    "look_number": 21,
+    "confidence": 0.9
+   },
+   {
+    "look_number": 25,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead83d0e34150cc6cfffb/master/pass/00015-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|20-32": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail shows a black flat sandal with prominent silver embellishments. None of the candidate looks feature this specific footwear; all models are wearing closed-toe shoes, boots, or sneakers.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead840ec165d2dad45c2f/master/pass/00016-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|22-34": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail image shows a red textured handbag, a plaid shirt, a blue undershirt, and a black and white houndstooth pattern garment. None of these items are present in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead8418caa7b54a37b141/master/pass/00017-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|24-36": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The black high-heeled boot with a square toe and a small metallic buckle on the front of the toe in the detail image is an exact match for the boot worn by the model in Look 36.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead88d2a83028b15465a8/master/pass/00018-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|26-38": {
+  "look_number": 37,
+  "confidence": 0.95,
+  "evidence": "The detail shows a large dark bag with a silver ring, black cord details, and a 'Priority' tag, along with a dark coat and cap. Look 37 features an identical large dark bag with the same hardware and a 'Priority' tag (though yellow instead of blue), a similar dark coat draped, and a matching dark cap. A grey plaid jacket is also draped over the arm/bag in Look 37, matching the draped garment in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead8bbf4164c224b82c46/master/pass/00019-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|28-40": {
+  "look_number": 37,
+  "confidence": 0.9,
+  "evidence": "The detail shows a black oversized jacket and a black slouchy leather bag with a shoulder strap and metallic hardware. Look 37 features a black oversized shirt/jacket and an identical black slouchy bag with similar details and hardware.",
+  "alternates": [
+   {
+    "look_number": 39,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead8a218d67c96bf7c2bc/master/pass/00020-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|29-41": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the model's black visor-style sunglasses, the unique silver chain necklace with two distinct pendants, and the black leather-like material of the garment in Look 40. The model's hair and general appearance are also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead90218d67c96bf7c2be/master/pass/00022-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|33-45": {
+  "look_number": 40,
+  "confidence": 0.95,
+  "evidence": "The detail shows a black leather-like garment with a high, structured collar and a prominent central zipper, along with dark visor-style sunglasses and light brown hair with a fringe. Look 40 features a model wearing an identical black leather-like coat with a high collar, the same style of dark visor, and consistent hair.",
+  "alternates": [
+   {
+    "look_number": 44,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead8df31267a50c100727/master/pass/00021-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|31-43": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The black leather handbag with distinctive silver hardware and clasp, black nail polish, and black watch are identical to those in Look 43. The black leather garment also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead9175fa636ec471a14a/master/pass/00023-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|35-47": {
+  "look_number": 40,
+  "confidence": 0.95,
+  "evidence": "The detail shows a black leather bag with silver chains and key holder, a black wrist cuff, and a voluminous black draped garment. Look 40 features all these elements identically, including the large, draped black leather coat matching the background fabric.",
+  "alternates": [
+   {
+    "look_number": 43,
+    "confidence": 0.85
+   },
+   {
+    "look_number": 45,
+    "confidence": 0.85
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead928940bc218a52ac82/master/pass/00024-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|37-49": {
+  "look_number": 37,
+  "confidence": 0.98,
+  "evidence": "The detail shows a distinctive silver belt buckle, dark wash denim jeans with yellowish stitching, and a dark, structured coat with a visible buttonhole. Look 37 features the exact same belt buckle, identical jeans in wash and stitching, and a dark, structured coat draped over the shoulders that matches the fabric and lapel visible in the detail.",
+  "alternates": [
+   {
+    "look_number": 47,
+    "confidence": 0.97
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead97af7ddee079a51f01/master/pass/00026-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|40-52": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The black visor, hair with fringe, silver chain necklace, and black strapless top with sculpted bust detail are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead959832f4decb2b2eb6/master/pass/00025-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|38-50": {
+  "look_number": 42,
+  "confidence": 0.95,
+  "evidence": "The unique black sandal with the prominent silver-toned buckle and white rope detail is an exact match. The dark, loose-fitting pants are also consistent with the detail image.",
+  "alternates": [
+   {
+    "look_number": 46,
+    "confidence": 0.9
+   },
+   {
+    "look_number": 49,
+    "confidence": 0.9
+   },
+   {
+    "look_number": 50,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead97f349f5b78101ed23/master/pass/00027-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|42-54": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The black leather handbag with silver chain detail, tassel, and keys is an exact match to the bag carried in Look 43.",
+  "alternates": [
+   {
+    "look_number": 48,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead9a6810e3f45cb27837/master/pass/00028-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|44-56": {
+  "look_number": 49,
+  "confidence": 0.95,
+  "evidence": "The detail shows black Balenciaga jeans with a leather patch and a black jacket. Look 49 features black jeans and a black jacket that perfectly match the color, fabric, and style of the garments in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead9c959f625383bce3e9/master/pass/00029-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|46-58": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black visor, multi-row crystal choker, and pink strapless top worn by the model in Look 51.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead9e8940bc218a52ac84/master/pass/00031-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|49-58": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The model's short hair, dark futuristic visor, large multi-tiered chain-link earrings, and strapless black top are identical in both the detail and Look 54.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead9cbf4164c224b82c48/master/pass/00030-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|47-58": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The detail shows a model wearing a black angular visor mask, with sleek, center-parted hair and light skin tone. A pink garment is visible at the bottom. Look 51 features the identical mask, model, hair, and the matching pink strapless top and leggings.",
+  "alternates": [
+   {
+    "look_number": 52,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 47,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 54,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/66feada0382e996e94c61bd0/master/pass/00032-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|51-58": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The detail shows a hand holding a black Balenciaga phone case, a dark bracelet, and black tight-fitting legwear. Look 52 features all these exact elements.",
+  "alternates": [
+   {
+    "look_number": 53,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 54,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead6c18caa7b54a37b13f/master/pass/00004-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|11-16": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The model's hair, gender, the distinctive dark visor-style sunglasses, and the navy bomber jacket with a ribbed collar and visible zipper pull are all identical to Look 16.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead69f349f5b78101ed21/master/pass/00002-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|6-11": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The red dress, hair styled in pigtails, sunglasses, and necklace are identical in both the detail and Look 11.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead6f6398447ddb85665d/master/pass/00006-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|11-16": {
+  "look_number": 16,
+  "confidence": 0.7,
+  "evidence": "The blue denim jeans in the detail shot are identical in wash, cut, and styling (baggy, bunched at the ankle, with visible paneling/seams) to the jeans worn in Look 16. The shoes, however, are different.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead6f6ee362ab3f5931af/master/pass/00005-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|11-16": {
+  "look_number": 15,
+  "confidence": 0.65,
+  "evidence": "The dark grey, baggy denim pants in the detail shot are a direct match for the jeans worn in Look 15. The gold and black shoes in the detail do not match the black boots in Look 15, but garments are prioritized over accessories.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead75382e996e94c61bce/master/pass/00009-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|16-16": {
+  "look_number": 16,
+  "confidence": 0.6,
+  "evidence": "The model and the unique black visor are an exact match. However, the blue striped polo shirt visible in the detail shot is not present in the full look, which features a bomber jacket and bare torso.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead7cfbfc547b88dc5ad5/master/pass/00012-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|19-36": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The detail image shows dark, distressed trousers with a frayed hem and distinctive bright red sculpted shoes with a black sole. Look 34 features identical dark, distressed trousers and the exact same bright red sculpted shoes.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead7c7040f1a8735cca35/master/pass/00013-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|19-36": {
+  "look_number": 35,
+  "confidence": 0.95,
+  "evidence": "The detail shows a light grey zip-up hoodie, a dark outer jacket, a dark blue cap, draped dark blue fabric, and light blue jeans, all of which are perfectly matched in Look 35.",
+  "alternates": [
+   {
+    "look_number": 31,
+    "confidence": 0.1
+   },
+   {
+    "look_number": 26,
+    "confidence": 0.05
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead83d0e34150cc6cfffb/master/pass/00015-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|19-36": {
+  "look_number": 35,
+  "confidence": 0.6,
+  "evidence": "The black slide sandals with the distinctive silver, multi-faceted ornament are an exact match. However, the dark, soft, loose pants in the detail image differ from the light blue patched jeans in Look 35.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead7f81a687d80d48b479/master/pass/00014-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|19-36": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail shows a blue plaid garment, a bright green draped fabric, a brown animal print fabric, and a black bag with chains and keys. Look 36 features all these exact elements: a blue plaid coat, a bright green garment tied at the waist, a brown animal print scarf, and a black bag with chains and keys.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead8df31267a50c100727/master/pass/00021-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|40-40": {
+  "look_number": 40,
+  "confidence": 0.9,
+  "evidence": "The black leather garment's texture and draping in the detail shot perfectly match the voluminous black leather coat in Look 40. The black handbag with silver hardware is also consistent.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead928940bc218a52ac82/master/pass/00024-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|40-42": {
+  "look_number": 42,
+  "confidence": 0.95,
+  "evidence": "The distinctive silver geometric belt buckle and dark wash denim jeans with visible stitching and pocket tag are identical to those in Look 42.",
+  "alternates": [
+   {
+    "look_number": 41,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/66fead840ec165d2dad45c2f/master/pass/00016-balenciaga-spring-2025-ready-to-wear-details-credit-brand.jpg|19-36": {
+  "look_number": 36,
+  "confidence": 0.95,
+  "evidence": "The detail image shows a black and white houndstooth pattern garment and a blue plaid shirt underneath, both of which are clearly visible in Look 36. The red bag is an accessory.",
+  "alternates": []
+ }
+}

@@ -1,0 +1,431 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a8227bd5ab52b744e1563/master/pass/00001-valentino-spring-2025-couture-details-credit-gorunway.jpg|1-6": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The detail shows a multi-colored ruffled garment and flowing sheer sleeves in red, green, blue, and pink, along with a distinctive silver chain bracelet. Look 1 features the exact same multi-colored ruffled dress, matching sheer sleeves, and the identical bracelet.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a822d629bf7cdd748f563/master/pass/00004-valentino-spring-2025-couture-details-credit-gorunway.jpg|1-9": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The intricate, off-white lace fabric with 3D floral motifs and ruffled bell sleeves in the detail image perfectly matches the dress worn in Look 3.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a8235eb887547ff2cd96b/master/pass/00005-valentino-spring-2025-couture-details-credit-gorunway.jpg|1-9": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a high-neck, long-sleeved dress in a mustard yellow/gold color with a highly textured fabric and scattered silver embellishments. Look 4 is an exact match, featuring the identical color, texture, embellishments, and garment style.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a822beb887547ff2cd969/master/pass/00002-valentino-spring-2025-couture-details-credit-gorunway.jpg|1-7": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The model's hair, facial profile, black long-sleeved top with a bow on the shoulder and ruched waist, and the voluminous dark brown skirt are identical in both the detail image and Look 2.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82379d7e8a99673c1eaf/master/pass/00006-valentino-spring-2025-couture-details-credit-gorunway.jpg|1-10": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black velvet top with a sequined cuff, a bright pink draped skirt, and two large oval metallic bracelets (one red, one dark). Look 5 features an identical bright pink draped skirt, a black top, and the exact same distinctive red and dark oval bracelets on the wrist.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a824086ac25680e0f139a/master/pass/00009-valentino-spring-2025-couture-details-credit-gorunway.jpg|1-12": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the floral pattern, color scheme, extensive ruffles on the collar, bodice, and skirt, ruched waist, and voluminous ruffled sleeves of Look 7.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a823abec4700044655e27/master/pass/00007-valentino-spring-2025-couture-details-credit-gorunway.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The fuchsia draped skirt, black polka dot hosiery, and distinctive black open-toe shoes with yellow trim and embellishments perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a823afa9ba2653c555f88/master/pass/00008-valentino-spring-2025-couture-details-credit-gorunway.jpg|1-12": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 6, showing the identical mint green draped neckpiece, the intricately embroidered and sequined dark garment with scalloped fur trim, and the pleated cream cape with feather shoulder details.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a8244bec4700044655e29/master/pass/00010-valentino-spring-2025-couture-details-credit-gorunway.jpg|1-13": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The model's hair color, the elaborate gold headpiece with metallic fringe and pearl details, and the distinctive royal blue pleated garment all perfectly match Look 8.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a822fca56d5412bdca3b6/master/pass/00003-valentino-spring-2025-couture-details-credit-gorunway.jpg|1-8": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The headpiece, intricate lace, floral appliques, ruffled collar, and the distinctive long, sparkling ear jewelry are identical in both the detail and Look 3.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a824c9697deb58840a6ec/master/pass/00012-valentino-spring-2025-couture-details-credit-gorunway.jpg|3-15": {
+  "look_number": 9,
+  "confidence": 0.95,
+  "evidence": "The detail shows a black tiered and pleated skirt with black ruffled embellishments and a white ruffled element. Look 9 features an identical black tiered and pleated skirt, black ruffles on the top, and white ruffled cuffs that match the white element in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a824a19b5af0d9bcce799/master/pass/00014-valentino-spring-2025-couture-details-credit-gorunway.jpg|4-16": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black V-neck garment with voluminous light blue/teal side panels secured by black bows. Look 11 perfectly matches these elements, including the color, fabric texture, and design.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a8244f7d303239e966046/master/pass/00011-valentino-spring-2025-couture-details-credit-gorunway.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail shows a royal blue ribbed top, a cream ruffled skirt with metallic trim, and three colorful bangles (green, blue, black) on the arm. Look 8 features all these exact elements, including the blue top, the ruffled skirt, and the matching bangles.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a8255e0d255d9a7dca1f0/master/pass/00015-valentino-spring-2025-couture-details-credit-gorunway.jpg|5-17": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 12, featuring the identical strapless black velvet bodice, fuchsia bow, and voluminous ruffled skirt and sleeves with pink floral appliques and gold accents.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a8249376aeae7b7445031/master/pass/00013-valentino-spring-2025-couture-details-credit-gorunway.jpg|3-15": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 10, showing the same off-white cape with extensive white fur trim on the collar, cuffs, and hem, worn by a model with similar long blonde hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a825c0c4ef508550797fa/master/pass/00018-valentino-spring-2025-couture-details-credit-gorunway.jpg|7-19": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact same embroidered, layered top with floral and leaf motifs in pink, purple, teal, and white on black, gold trim, and the prominent butterfly motif on the skirt. The model also wears identical long black gloves.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a825d9d7e8a99673c1f51/master/pass/00019-valentino-spring-2025-couture-details-credit-gorunway.jpg|8-20": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact ornate mask, dangling earrings, and central pendant worn by the model in Look 15. The visible strapless garment also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a825cca56d5412bdca3b8/master/pass/00020-valentino-spring-2025-couture-details-credit-gorunway.jpg|9-21": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 16, featuring the identical large black hat, red garment, and distinctive ruffled, pleated off-white collar.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82560e98f979f5e9cc75/master/pass/00017-valentino-spring-2025-couture-details-credit-gorunway.jpg|6-18": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The heavily embellished, pearl-and-bead encrusted leg covering and the black peep-toe shoe with an ornate gold heel are an exact match to the footwear in Look 13.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a8254413190d024277dd3/master/pass/00016-valentino-spring-2025-couture-details-credit-gorunway.jpg|6-18": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The model's hat, hair, lace choker, white shirt with pointed collar, light green bow tie, and the black polka-dotted jacket with structured shoulders are identical in both the detail and look 13.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a8263b52b148525153de5/master/pass/00022-valentino-spring-2025-couture-details-credit-gorunway.jpg|10-22": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the cream ruffled collar, pleated sleeves with ruffled cuffs, and the distinctive dark spiky headpiece seen in Look 18.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a8268b7d3b64fec7b74be/master/pass/00024-valentino-spring-2025-couture-details-credit-gorunway.jpg|12-24": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 19, including the ornate butterfly-embroidered top with ruffled collar and pleated sleeves, the metallic ruffled skirt, and the black feathery ear muffs with beaded strands.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82682c2c32ee0ec7de18/master/pass/00023-valentino-spring-2025-couture-details-credit-gorunway.jpg|11-23": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The black patent leather high heel with gold chain, dangling gold charms, and rhinestone embellishment on the front perfectly matches the shoe in the detail image. The black voluminous skirt also matches the fabric seen in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a826e6c08658ea77840ac/master/pass/00026-valentino-spring-2025-couture-details-credit-gorunway.jpg|13-25": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image shows sheer, light-colored tights with black polka dots and a black high heel with a distinctive curved heel and silver pointed toe cap. Look 21 features the exact same polka dot tights and shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82716c08658ea77840ae/master/pass/00025-valentino-spring-2025-couture-details-credit-gorunway.jpg|12-24": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 20, featuring the identical vibrant red ruffled dress and the short, embroidered sleeveless jacket with a ruffled collar.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a8271413190d024277dd5/master/pass/00027-valentino-spring-2025-couture-details-credit-gorunway.jpg|14-26": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail shows the same model wearing an identical red bow and pleated reddish-purple cape as seen in Look 22.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a827cbd5ab52b744e1565/master/pass/00029-valentino-spring-2025-couture-details-credit-gorunway.jpg|15-27": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 24, featuring the identical gold scale-like conical hat, white ruffled collar, and rust-colored velvet jacket with gold buttons and textured pattern. The model's braided hair also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82749697deb58840a6ee/master/pass/00028-valentino-spring-2025-couture-details-credit-gorunway.jpg|15-27": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The detail shows a strapless, off-white dress with a horizontally ruched bodice, voluminous ruffled sleeves, and a skirt made of numerous ruffled, petal-like fabric elements. Look 23 perfectly matches all these details, including the model's blonde hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a8266763f88bbb6c8eda6/master/pass/00021-valentino-spring-2025-couture-details-credit-gorunway.jpg|9-21": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the patchwork fabric, voluminous sleeves, and ruffled cream collar of Look 17. The overall design and color scheme are identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a827a0c4ef508550797fc/master/pass/00030-valentino-spring-2025-couture-details-credit-gorunway.jpg|16-28": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a floral embroidered mask and a garment with a floral tapestry pattern. Look 25 features the exact same mask and a dress with the identical floral tapestry pattern and square neckline.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82790e98f979f5e9cc77/master/pass/00031-valentino-spring-2025-couture-details-credit-gorunway.jpg|17-29": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The floral tapestry fabric with its distinct pattern and color palette in the detail image perfectly matches the fabric of the dress in Look 25.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82832c2c32ee0ec7de1a/master/pass/00033-valentino-spring-2025-couture-details-credit-gorunway.jpg|18-30": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 27, including the white structured top, the black velvet skirt with gold embroidery, and the distinctive ornate bracelets on the wrist.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a828efa9ba2653c555f8a/master/pass/00035-valentino-spring-2025-couture-details-credit-gorunway.jpg|20-32": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The detail shows a vibrant green textured fabric and a white multi-layered ruffled cuff with lace trim. Look 29 features a dress made of the identical green fabric with matching white ruffled cuffs.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a8284eb887547ff2cd96d/master/pass/00032-valentino-spring-2025-couture-details-credit-gorunway.jpg|18-30": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the ruffled yellow skirt, yellow lace tights, and black embellished shoes with ankle strap and bow seen in Look 26.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a828fb7d3b64fec7b74c0/master/pass/00037-valentino-spring-2025-couture-details-credit-gorunway.jpg|22-34": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The golden patterned fabric, the purple textured sleeve cuff, and the elaborate golden arm accessory in the detail are identical to those in Look 30.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a829b376aeae7b7445033/master/pass/00039-valentino-spring-2025-couture-details-credit-gorunway.jpg|23-35": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the mask, embroidered headpiece, black sheer embroidered top, and black scarf worn by the model in Look 31.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82860b3e7330ea6ef1dc/master/pass/00034-valentino-spring-2025-couture-details-credit-gorunway.jpg|19-31": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail shows a gold pleated train and purple fabric with gold embroidery, which perfectly matches the train and garment in Look 28.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82999d7e8a99673c1f53/master/pass/00038-valentino-spring-2025-couture-details-credit-gorunway.jpg|22-34": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the garment's floral brocade fabric, the beaded hosiery, and the distinctive shoes with the curved black heel, pearl chains, and patterned fabric, all visible on Look 30.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a828e0c4ef508550797fe/master/pass/00036-valentino-spring-2025-couture-details-credit-gorunway.jpg|21-33": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The model, hair, elaborate feathered headpiece with pink, red, and green feathers, and the gold patterned garment with purple trim are identical in both the detail and look 30.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82930c4ef50855079800/master/pass/00040-valentino-spring-2025-couture-details-credit-gorunway.jpg|24-36": {
+  "look_number": 32,
+  "confidence": 0.98,
+  "evidence": "The detail image perfectly matches the gold metallic ruffled and fringed top and skirt, as well as the embellished trousers/boots of Look 32. The fabric, texture, and embellishments are identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82a30e98f979f5e9cc79/master/pass/00042-valentino-spring-2025-couture-details-credit-gorunway.jpg|25-37": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 33, showing the same model, sheer cream ruffled blouse with black bow, long cream undersleeves, and voluminous black ruffled skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82a10c4ef50855079802/master/pass/00043-valentino-spring-2025-couture-details-credit-gorunway.jpg|26-38": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The detail shows a gold embroidered high-neck garment with multi-colored tiered tassels. Look 34 features the exact same gold embroidered garment and identical multi-colored tiered tassels on both sides.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a829d413190d024277dd7/master/pass/00041-valentino-spring-2025-couture-details-credit-gorunway.jpg|25-37": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail shows heavily embellished sheer leg coverings and matching open-toe heels with gold beading and metallic floral appliques, which are identical to the legwear and shoes worn in Look 32.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82ab61ce7906809917b0/master/pass/00045-valentino-spring-2025-couture-details-credit-gorunway.jpg|28-40": {
+  "look_number": 35,
+  "confidence": 0.98,
+  "evidence": "The detail shows gold open-toe heels, cream gathered pants with buttons, and a cream/gold sequined garment with fringe. Look 35 features identical gold open-toe shoes, cream gathered leggings, and a top with gold embellishments and a similar color palette.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82ad85468b061650b01c/master/pass/00047-valentino-spring-2025-couture-details-credit-gorunway.jpg|29-41": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail shows a textured green, purple, white, and gold patterned fabric with large fluffy pom-pom sleeves, white ruffled cuffs, and black gloves. Look 36 features all these exact elements, including the unique fabric pattern and sleeve design.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82a561ce7906809917ae/master/pass/00044-valentino-spring-2025-couture-details-credit-gorunway.jpg|27-39": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The yellow skirt with a wide gold sequined hem and the ornate gold open-toe heels with a distinctive curved heel are an exact match to the detail image.",
+  "alternates": [
+   {
+    "look_number": 30,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82ac1bef18502f297dd4/master/pass/00046-valentino-spring-2025-couture-details-credit-gorunway.jpg|28-40": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the gold headpiece, white ruffled collar, and the distinctive green, purple, gold, and white textured coat with a diamond pattern seen in Look 36.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82b6b7d3b64fec7b74c2/master/pass/00050-valentino-spring-2025-couture-details-credit-gorunway.jpg|31-43": {
+  "look_number": 37,
+  "confidence": 0.95,
+  "evidence": "The deep red textured fabric of the dress and the sheer, light-colored polka dot glove in the detail perfectly match Look 37.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82b49697deb58840a6f0/master/pass/00049-valentino-spring-2025-couture-details-credit-gorunway.jpg|31-43": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 37, showing the same model with blonde hair, the unique gold and black beaded face mask, and the distinctive deep red garment with its vertical wood-grain-like texture and high-neck design.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82b3763f88bbb6c8eda8/master/pass/00048-valentino-spring-2025-couture-details-credit-gorunway.jpg|30-42": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the heavily embellished gold patterned hosiery/leggings and the distinctive green and white patterned shoes with sculptural heels from Look 36. The green and purple textured garment visible at the top of the detail also matches Look 36's outfit.",
+  "alternates": [
+   {
+    "look_number": 32,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82bc763f88bbb6c8edaa/master/pass/00051-valentino-spring-2025-couture-details-credit-gorunway.jpg|32-44": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 38, showing the same sheer black top with a velvet band, the pleated gold/silver studded skirt, and the dramatic black flowing sleeve with a ruffled cuff.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82ba0b3e7330ea6ef1de/master/pass/00053-valentino-spring-2025-couture-details-credit-gorunway.jpg|34-46": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The lace headwear, ruffled high collar, gathered shoulder detail, and sheer lace-overlay sleeve in the detail image perfectly match Look 40.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82b80e98f979f5e9cc7b/master/pass/00052-valentino-spring-2025-couture-details-credit-gorunway.jpg|33-45": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the teal quilted jacket, gold trim, embellished light blue blouse, purple satin bow, and yellow textured skirt of Look 39.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82c20b3e7330ea6ef1e0/master/pass/00054-valentino-spring-2025-couture-details-credit-gorunway.jpg|34-46": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the cream lace, ruffled high collar, sheer fabric, and buttons on the back of the top worn in Look 40.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82bd6c08658ea77840b0/master/pass/00055-valentino-spring-2025-couture-details-credit-gorunway.jpg|35-47": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black satin-like sleeve, a light-colored leather glove, a black bow with a gold emblem on the wrist, and a green/teal trim inside the collar. Look 41 perfectly matches all these elements.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82c39d7e8a99673c1f55/master/pass/00057-valentino-spring-2025-couture-details-credit-gorunway.jpg|37-49": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the geometric pattern, embroidery, ruffled cuff with embellishments, and the pink embellished glove seen on Look 42.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82c961ce7906809917b2/master/pass/00059-valentino-spring-2025-couture-details-credit-gorunway.jpg|38-49": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the headpiece, elaborate gold face mask with dangling chains, the rich patterned fabric of the top garment with black feathery sleeves, and the gold beaded accessories seen in Look 44.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82c685468b061650b01e/master/pass/00056-valentino-spring-2025-couture-details-credit-gorunway.jpg|36-48": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the crystal face mask, the ruffled sheer collar, and the heavily embellished geometric patterned garment of Look 42.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82c9763f88bbb6c8edac/master/pass/00058-valentino-spring-2025-couture-details-credit-gorunway.jpg|37-49": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a crystal-embellished headpiece with dangling elements and a large side jewel, along with a light brown fur collar. Look 43 features the identical headpiece and a matching fur collar.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82cd1bef18502f297dd6/master/pass/00062-valentino-spring-2025-couture-details-credit-gorunway.jpg|40-49": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The mask, feathered neckpiece with crystal chains, and the white ruffled top with black polka dots are identical in both the detail and look 46.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82cd763f88bbb6c8edae/master/pass/00061-valentino-spring-2025-couture-details-credit-gorunway.jpg|40-49": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a gold/bronze embellished garment, matching hosiery, and a distinctive pink shoe with a black heel, bow, and pearl drops. Look 45 features all these exact elements: the jacket and skirt have the same gold/bronze fabric with blue/turquoise embellishments, the model wears matching embellished tights, and the shoes are identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82cb2c2c32ee0ec7de1c/master/pass/00060-valentino-spring-2025-couture-details-credit-gorunway.jpg|39-49": {
+  "look_number": 43,
+  "confidence": 0.98,
+  "evidence": "The brown wide-leg pants with a subtle ribbed texture and the highly ornate gold shoes with pearl and bead embellishments, along with the visible tassels, perfectly match Look 43.",
+  "alternates": [
+   {
+    "look_number": 45,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82d5ca56d5412bdca3ba/master/pass/00064-valentino-spring-2025-couture-details-credit-gorunway.jpg|42-49": {
+  "look_number": 47,
+  "confidence": 0.98,
+  "evidence": "The detail shows voluminous black ruffles on the shoulders, sheer black polka dot sleeves, and a black cuff. Look 47 features identical black ruffles, sheer black polka dot arm coverings, and black cuffs. The black head covering in Look 47 is consistent with the black bow/headwear seen from the back in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82d4bec4700044655e2b/master/pass/00063-valentino-spring-2025-couture-details-credit-gorunway.jpg|41-49": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 47, including the ornate gold and black mask, the voluminous black ruffled top, the gold textured undergarment, and the sheer black polka dot sleeve with the arm band.",
+  "alternates": [
+   {
+    "look_number": 41,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 42,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 46,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82d10e98f979f5e9cc7d/master/pass/00065-valentino-spring-2025-couture-details-credit-gorunway.jpg|43-49": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a crocheted garment with a distinctive red, off-white, and black wavy stripe pattern. Look 48 features a dress with the exact same pattern, colors, and texture, including the high neck and long sleeves visible in the detail.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/679a82a561ce7906809917ae/master/pass/00044-valentino-spring-2025-couture-details-credit-gorunway.jpg|34-35": {
+  "look_number": 35,
+  "confidence": 0.95,
+  "evidence": "The shoes in Look 35 are an exact match for the detail image, featuring the same gold color, open-toe design, embellishments, and unique curved heel. The sequined hem of the garment in Look 35 also perfectly matches the metallic, textured trim seen in the detail.",
+  "alternates": [
+   {
+    "look_number": 34,
+    "confidence": 0.1
+   }
+  ]
+ }
+}

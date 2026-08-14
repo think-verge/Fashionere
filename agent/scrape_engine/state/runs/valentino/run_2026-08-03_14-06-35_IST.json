@@ -1,0 +1,29 @@
+{
+  "run": "2026-08-03_14-06-35_IST",
+  "at": "2026-08-03T14:06:35+05:30",
+  "pipeline_version": 2,
+  "dry_run": true,
+  "counts": {
+    "scraped": 0,
+    "matched": 0,
+    "tagged": 0,
+    "flattened": 0,
+    "skipped": 6,
+    "failed": 0,
+    "suspect": 0
+  },
+  "est_cost_usd": 0.0,
+  "collections": [
+    {
+      "url": "https://www.vogue.com/fashion-shows/fall-2026-ready-to-wear/valentino",
+      "designer": "valentino",
+      "collection": "fall-2026-ready-to-wear",
+      "scrape": "skip",
+      "match": "skip",
+      "tag": "skip",
+      "flatten": "plan",
+      "error": null
+    }
+  ],
+  "designer": "valentino"
+}

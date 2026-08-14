@@ -1,0 +1,839 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca16459dd438320cf00d/master/pass/00001a-valentino-pre-fall-2025-credit-brand.jpg|1-6": {
+  "look_number": 1,
+  "confidence": 0.95,
+  "evidence": "The black ruffled skirt and the light green t-shirt style match exactly. The t-shirt in the detail shows 'CHEZ VALENTINO' on the back, while Look 1 shows 'PANTHE 60 LADY' on the front, suggesting different text on each side of the same shirt. Hair color and style are also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca166e0a09c9b5338c46/master/pass/00002a-valentino-pre-fall-2025-credit-brand.jpg|1-8": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black lace glove, gold charm bracelets with cherry and Eiffel Tower charms, and a black fabric with a red cherry pattern. Look 2 features all these elements: the model wears identical black lace gloves, the same gold charm bracelets, and a dress with the exact black and red cherry pattern.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca1ace98b3ab0f3569db/master/pass/00006a-valentino-pre-fall-2025-credit-brand.jpg|1-10": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The sunglasses, diamond-shaped earrings with black and white sections, and the intricately beaded collar/scarf with green/gold trim are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca1b6ca8ebd85d22a1ec/master/pass/00006b-valentino-pre-fall-2025-credit-brand.jpg|1-11": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 6, including the unique embroidered bag with green fringe and gold 'V' logo, the black sheer top, the purple and pink flowing skirt, the black lace gloves, and the embroidered strap with yellow circles and red tassels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca19116a8fc45e6148cc/master/pass/00004a-valentino-pre-fall-2025-credit-brand.jpg|1-9": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The model, the distinctive reddish-brown glasses, and the intricate paisley-like patterned top with purple, pink, and gold tones are an exact match to Look 4.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca15783d8ff20ac23723/master/pass/00001b-valentino-pre-fall-2025-credit-brand.jpg|1-7": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The detail shows black floral lace tights and pale yellow pointed-toe heels with white floral embroidery and an ankle strap, which are identical to those in Look 1.",
+  "alternates": [
+   {
+    "look_number": 5,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca1ec530e357b8a291ff/master/pass/00007b-valentino-pre-fall-2025-credit-brand.jpg|1-13": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The black crocodile-embossed loafers with gold chain detail and the white patterned socks in the detail image do not match any of the candidate looks. While Look 7 features similar white trousers, its shoes are black patent lace-ups and the socks are plain black, which are distinct from the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca1ccc8515ec51ea7808/master/pass/00007a-valentino-pre-fall-2025-credit-brand.jpg|1-12": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The model's red headwear, gold-rimmed sunglasses, black hair, and the distinctive blue and yellow patterned jacket with a stand collar and gold button are all identical to Look 7. The light blue shirt visible underneath also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca1fd479f96a424b6dba/master/pass/00009-valentino-pre-fall-2025-credit-brand.jpg|2-14": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail shows dark blue cuffed trousers, white patterned socks, and brown crocodile-embossed loafers with a gold chain and 'V' logo. Look 9 features identical trousers, socks, and shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca2393d3ec9ccdc7c329/master/pass/00012a-valentino-pre-fall-2025-credit-brand.jpg|6-18": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the white blazer with black trim and embroidered logo, light blue shirt cuff, black lace gloves, red crocodile-embossed clutch with gold V logo, and black trousers worn by the model in Look 12.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca20bad682d15c5ee73e/master/pass/00010a-valentino-pre-fall-2025-credit-brand.jpg|3-15": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The fuchsia suede pumps with dark red ankle strap and trim, and the sheer white floral patterned tights, are an exact match. The black fabric with white polka dots visible in the detail also matches the lining of the dress in Look 10.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca244a4bbac64efe7786/master/pass/00011b-valentino-pre-fall-2025-credit-brand.jpg|5-17": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the shoes (platform sandals with snakeskin and woven patterns), the brown floral patterned tights, and the white ruffled hem of the dress in Look 11.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca22b5ae80a7a3ce9042/master/pass/00011a-valentino-pre-fall-2025-credit-brand.jpg|4-16": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black and snakeskin 'V' logo handbag with a gold chain strap, and a light-colored paisley dress with sheer sleeves. Look 11 features the exact same handbag and dress.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca25df9661c4d2640f31/master/pass/00013a-valentino-pre-fall-2025-credit-brand.jpg|7-19": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black crocodile-textured box bag with a gold 'V' logo, white lace gloves with black trim, and a light blue garment with a cream cuff. Look 13 features all these exact items: the identical bag, the identical white lace gloves, and a light blue jacket and skirt with a visible cream cuff.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca2757859c4d692ed371/master/pass/00013b-valentino-pre-fall-2025-credit-brand.jpg|7-19": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the neon green lace patterned tights and the pink satin ankle-strap heels with toe embellishment worn in Look 13.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca27c530e357b8a29201/master/pass/00015a-valentino-pre-fall-2025-credit-brand.jpg|8-20": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image shows white patterned knee-high socks and black and white houndstooth shoes with black laces and tassels. Look 15 features identical socks and shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca28d2d8def7b50de05b/master/pass/00015b-valentino-pre-fall-2025-credit-brand.jpg|9-21": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the cap, sunglasses, single pearl earring, and the distinctive green embroidered jacket worn by the model in Look 15.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca2b57859c4d692ed373/master/pass/00016a-valentino-pre-fall-2025-credit-brand.jpg|10-22": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The model, sequined turban, black fur collar, and leopard print coat in the detail image perfectly match Look 16.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca2ceb3de416b65b7f4f/master/pass/00017a-valentino-pre-fall-2025-credit-brand.jpg|12-24": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 17, including the red sheer patterned blouse with ruffled cuffs, the red leather-like ruffled peplum skirt, the red lace gloves, the red lace patterned tights, and the red crocodile-embossed bag with a gold 'V' logo and chain strap.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca2c8c9337aadf4904bf/master/pass/00016b-valentino-pre-fall-2025-credit-brand.jpg|11-23": {
+  "look_number": 14,
+  "confidence": 0.75,
+  "evidence": "The white sheer patterned hosiery and the ruffled dress hem are an exact match. The shoes are similar in style (satin slingback with block heel) but differ in color (champagne in detail vs. silver in look) and the specific toe embellishment.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca306e0a09c9b5338c48/master/pass/00023a-valentino-pre-fall-2025-credit-brand.jpg|15-27": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The model, brown glasses, light brown coat, white rounded collar shirt, and blue and white geometric patterned scarf in the detail image all match perfectly with Look 23.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca2faef33842a7b41b0f/master/pass/00022a-valentino-pre-fall-2025-credit-brand.jpg|14-26": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the embroidered coat with blue tassels, the light pink lace gloves, the white patterned hosiery, and the exact embroidered bag with the gold chain, 'V' logo, and red heart charm seen in Look 22.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca31fc8d1223c276923e/master/pass/00023b-valentino-pre-fall-2025-credit-brand.jpg|16-28": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The detail image shows light grey cuffed trousers, white openwork diamond pattern socks, and black leather loafers with a bow and tassels. Look 23 features the exact same trousers, socks, and shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca2e57859c4d692ed375/master/pass/00018a-valentino-pre-fall-2025-credit-brand.jpg|13-25": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the checkered blazer, heart-patterned scarf, polka-dot tie, off-white shirt, and fingerless gloves worn by the model in Look 18.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca32aef33842a7b41b11/master/pass/00024a-valentino-pre-fall-2025-credit-brand.jpg|17-29": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "All visible items including the white ruffled shorts, white lace gloves, white textured socks, black and white Mary Jane shoes, white handbag with gold 'V' logo, and gold charm bracelet are an exact match to Look 24.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca381f3691143b9c2bc3/master/pass/00030a-valentino-pre-fall-2025-credit-brand.jpg|20-32": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The hat, jacket, ruffled collar, black bow, brooch, and earrings are identical in both the detail image and Look 30.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca36d479f96a424b6dbc/master/pass/00028a-valentino-pre-fall-2025-credit-brand.jpg|20-32": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The model, glasses, Eiffel Tower earring, multi-strand pearl necklace with ornate clasp, white ruffled shirt, and dark velvet blazer are all identical to Look 28.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca34af768e64905b77b1/master/pass/00025a-valentino-pre-fall-2025-credit-brand.jpg|18-30": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the dress pattern (dark blue with white dots and red cherries, ruffled hem), the black Mary Jane shoes, white ribbed socks, the brown embroidered floral bag with studs and 'V' logo, and the white lace fingerless glove from Look 25.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca34ee8a367dcd8a2cfe/master/pass/00027a-valentino-pre-fall-2025-credit-brand.jpg|19-31": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the pink crocodile-embossed handbag with gold 'V' logo, the pink sheer patterned hosiery, the silver metallic block-heel shoes with gold embellishment, and the sparkly silver dress with ruffled trim worn in Look 27.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca39013de6558ff31ae7/master/pass/00030c-valentino-pre-fall-2025-credit-brand.jpg|22-34": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the lime green floral tights and the navy and white houndstooth shoes with blue piping and gold shell embellishments worn in Look 30.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca3d013de6558ff31ae9/master/pass/00032a-valentino-pre-fall-2025-credit-brand.jpg|25-37": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the white knitted cardigan with colorful speckles, black stitching, heart and ice cream appliques, and the distinctive brown leather butterfly belt worn in Look 32.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca38dc9dea8c1466e349/master/pass/00030b-valentino-pre-fall-2025-credit-brand.jpg|21-33": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the jacket's red grid pattern, black trim, ruffled cream cuff with black bow, white lace gloves, black hat, and black crocodile-embossed bag with gold 'V' logo found in Look 30.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca41459dd438320cf00f/master/pass/00034aa-valentino-pre-fall-2025-credit-brand.jpg|27-39": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 34, showing the same reddish-purple velvet jacket, blue embroidered sleeve cuff with gold and silver trim, light blue ruffled cuff, white lace glove, and light purple trousers.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca3d95ec38a803f89dac/master/pass/00031a-valentino-pre-fall-2025-credit-brand.jpg|23-35": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The detail shows a navy blue t-shirt with 'ANTHE' visible, matching the 'PANTHER' t-shirt in look 31. The gold chain necklace with the white cat pendant is also identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca408f0a30337a1ef428/master/pass/00033a-valentino-pre-fall-2025-credit-brand.jpg|26-38": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black mini skirt with ribbon details, black lace tights, hot pink suede heels, and leopard print bag with gold chain and 'VV' logo from Look 33.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca421f3691143b9c2bc5/master/pass/00035a-valentino-pre-fall-2025-credit-brand.jpg|28-40": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 35, including the black lace gloves, the unique black velvet clutch with beaded cherries and a bow, and the black sheer dress with textured bands and a ruffled neckline.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca3cd2d8def7b50de05d/master/pass/00031b-valentino-pre-fall-2025-credit-brand.jpg|24-36": {
+  "look_number": 31,
+  "confidence": 0.95,
+  "evidence": "The detail shows the back of a blue t-shirt with 'CHEZ VALENTINO', light wash jeans, a black belt, and a gold necklace. Look 31 features the same model wearing an identical blue t-shirt (with 'PANTHER 60' on the front, suggesting different text on front and back), identical light wash jeans, the same black belt, and the same gold necklace. The pocket square in the detail is the only minor discrepancy.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca464a4bbac64efe7788/master/pass/00039b-valentino-pre-fall-2025-credit-brand.jpg|31-43": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The detail shows light wash denim jeans, a royal blue ribbed knit top, a brown suede bomber jacket with blue ribbed cuffs, and a gold keychain with a white cat charm. Look 39 features all these exact items, including the specific keychain hanging from the jeans, and the model's skin tone matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca476bc576863fbf9c9c/master/pass/00040a-valentino-pre-fall-2025-credit-brand.jpg|32-44": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The pink fringed bag with floral embroidery, studs, and gold 'V' logo, along with the yellow patterned tights, are an exact match to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca4305bf4632c6b98ab0/master/pass/00038a-valentino-pre-fall-2025-credit-brand.jpg|29-41": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The floral patterned top, white hat, pearl earrings, black lace gloves, black crocodile-embossed V-logo bag, and large snakeskin V-logo tote bag are all identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 30,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 35,
+    "confidence": 0.3
+   },
+   {
+    "look_number": 36,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca44145770f350182fc1/master/pass/00039a-valentino-pre-fall-2025-credit-brand.jpg|30-42": {
+  "look_number": 39,
+  "confidence": 0.75,
+  "evidence": "Exact match of the brown suede jacket and the blue and white patterned sweater worn by the model.",
+  "alternates": [
+   {
+    "look_number": 38,
+    "confidence": 0.5
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca488c9337aadf4904c1/master/pass/00041a-valentino-pre-fall-2025-credit-brand.jpg|33-45": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The unique embroidered Valentino bag, white fishnet gloves, and textured white socks with pom-pom are not present in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca49a34ddbc299002c99/master/pass/00042a-valentino-pre-fall-2025-credit-brand.jpg|33-45": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The model's hair, the distinctive round embellished glasses, the unique flower-shaped pearl earring, the white embellished top, and the olive green tassel necktie are all exact matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca4cfc8d1223c2769240/master/pass/00042b-valentino-pre-fall-2025-credit-brand.jpg|34-46": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "All visible items in the detail image, including both bags (snakeskin tote and floral embroidered clutch), the patterned shoes with furry cuffs and red strap, white socks, and the white ruffled floral dress, are perfectly matched in Look 42.",
+  "alternates": [
+   {
+    "look_number": 38,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca4cce98b3ab0f3569dd/master/pass/00044a-valentino-pre-fall-2025-credit-brand.jpg|35-47": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The bag, including its color, fringe, and intricate mirror-like embellishments, is an exact match. The white lace cuff, orange garment, and purple embroidered sleeve also perfectly match.",
+  "alternates": [
+   {
+    "look_number": 37,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 46,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca4fc530e357b8a29203/master/pass/00045a-valentino-pre-fall-2025-credit-brand.jpg|37-49": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 45, including the navy dress with gold buttons, the white crocodile-embossed bag with gold 'V' logo and specific charms (cat and cherries), the gold bracelet with black and white heart charms, and the orange patterned tights.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca5105bf4632c6b98ab2/master/pass/00046a-valentino-pre-fall-2025-credit-brand.jpg|38-50": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The hat, glasses, hair, and the white top with its ruffled lace collar and gold embroidery are identical in both the detail image and Look 46.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca51c8c59dfbb1320829/master/pass/00046b-valentino-pre-fall-2025-credit-brand.jpg|39-51": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a brown suede fringed bag with colorful beaded embroidery and silver studs, and white lace-knit gloves. Look 46 features the identical bag and gloves, and a white dress consistent with the detail.",
+  "alternates": [
+   {
+    "look_number": 44,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca551b845aa3fd73cc64/master/pass/00049a-valentino-pre-fall-2025-credit-brand.jpg|41-53": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The black lace gloves and the black crocodile-embossed clutch with the distinctive gold ridged clasp perfectly match those worn and carried in Look 49.",
+  "alternates": [
+   {
+    "look_number": 47,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca534a4bbac64efe778a/master/pass/00048a-valentino-pre-fall-2025-credit-brand.jpg|40-52": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a person wearing a tan fringed jacket, a white cherry-patterned shirt, blue shorts, white knee-high socks, and holding a white and black 'V' logo tote bag with gold chain straps. Look 48 features the exact same jacket, shirt, shorts, socks, and bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca555da86fc00da8041e/master/pass/00050a-valentino-pre-fall-2025-credit-brand.jpg|42-54": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black beanie, crystal-embellished oval sunglasses, red jacket, and blue collared shirt worn by the model in Look 50.",
+  "alternates": [
+   {
+    "look_number": 49,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca56b157474990788b7f/master/pass/00051a-valentino-pre-fall-2025-credit-brand.jpg|43-55": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a cream-colored dress with sheer voluminous sleeves, a deep V-neck, and intricate butterfly embroidery. The model has short hair and wears long rectangular pearl drop earrings. Look 51 features an identical cream-colored dress with sheer voluminous sleeves and a deep V-neck, worn by a model with the same short hair and identical long rectangular pearl drop earrings. The detail is a close-up of the back of this dress.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca4ddc9dea8c1466e34b/master/pass/00044b-valentino-pre-fall-2025-credit-brand.jpg|36-48": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the orange trousers with wide cuffs, the white patterned hosiery, and the mismatched gold and silver shoes with shell embellishments worn in Look 44.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca5bee8a367dcd8a2d00/master/pass/00052a-valentino-pre-fall-2025-credit-brand.jpg|44-56": {
+  "look_number": null,
+  "confidence": 0.9,
+  "evidence": "The detail's blue crewneck sweatshirt with 'CHEZ VALENTINO' and '25' on the sleeve is not identical to Look 52's blue V-neck sweatshirt with 'V' and '16' on the sleeve. While the green pleated skirt, black quilted bag, and patterned hair scarf are identical, the primary garment (sweatshirt) differs significantly in neckline, embroidery, and numbering, preventing a full match.",
+  "alternates": [
+   {
+    "look_number": 52,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca5ba34ddbc299002c9b/master/pass/00053a-valentino-pre-fall-2025-credit-brand.jpg|45-57": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the white ruffled shirt, red velvet jacket, purple and gold patterned scarf, black buttons, and the distinctive Eiffel Tower and black cherry necklace worn in Look 53.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca5f8f0a30337a1ef42a/master/pass/00058a-valentino-pre-fall-2025-credit-brand.jpg|48-60": {
+  "look_number": 58,
+  "confidence": 1.0,
+  "evidence": "The pink dress, patterned yellow tights, yellow heels, white lace gloves with black bows, and the distinctive white beaded cat-face bag with fringe are all identical in both the detail and look 58.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca5edc9dea8c1466e34d/master/pass/00056a-valentino-pre-fall-2025-credit-brand.jpg|46-58": {
+  "look_number": 56,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a tan suede fringed bag with floral tapestry and silver studs, a green top with white striped cuffs, and white ribbed knee-high socks. All these elements are perfectly matched in Look 56.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca5f5deabbad01459167/master/pass/00057a-valentino-pre-fall-2025-credit-brand.jpg|47-59": {
+  "look_number": 57,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the embroidered bag, fur stole, white lace dress, white lace gloves, and gold bracelet worn in Look 57.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca5a6fedff1caa6104a3/master/pass/00053b-valentino-pre-fall-2025-credit-brand.jpg|45-57": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The detail shows red velvet cuffed trousers and black studded shoes with red laces and white piping. Look 53 features identical red velvet cuffed trousers and black studded shoes with red laces and white piping.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca61eb3de416b65b7f51/master/pass/00059a-valentino-pre-fall-2025-credit-brand.jpg|49-61": {
+  "look_number": 59,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the white ruffled high-neck blouse with black bow, the rust-colored open-knit jacket with dark cuffs, the white lace fingerless gloves with pearl button, and the distinctive black and orange patterned bag with a gold 'V' logo and chain strap worn by the model in Look 59.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca646bc576863fbf9c9e/master/pass/00060b-valentino-pre-fall-2025-credit-brand.jpg|51-63": {
+  "look_number": 60,
+  "confidence": 1.0,
+  "evidence": "The dress fabric, black fringe trim, black patterned hosiery, and multicolored tweed-like shoes with gold embellishment are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca635deabbad01459169/master/pass/00060a-valentino-pre-fall-2025-credit-brand.jpg|50-62": {
+  "look_number": 60,
+  "confidence": 1.0,
+  "evidence": "The embroidered shoulder bag with the distinctive 'V' logo clasp, colorful geometric pattern, and scalloped edges is an exact match. The black lace gloves and the red and black patterned garment visible behind the bag in the detail image also perfectly match Look 60.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca65df9661c4d2640f33/master/pass/00061a-valentino-pre-fall-2025-credit-brand.jpg|52-64": {
+  "look_number": 61,
+  "confidence": 1.0,
+  "evidence": "The blue patterned top, the highly embellished skirt with geometric patterns, mirrors, and brown fringe, and the white lace cuff are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca6795ec38a803f89dae/master/pass/00061b-valentino-pre-fall-2025-credit-brand.jpg|53-65": {
+  "look_number": 61,
+  "confidence": 1.0,
+  "evidence": "The shoes with the black base, dog pattern, and red bow, along with the cream open-knit socks with ruffled tops and pom-poms, are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca6af037d474a5e3a673/master/pass/00064a-valentino-pre-fall-2025-credit-brand.jpg|55-67": {
+  "look_number": 64,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a woven floral embroidered bag with a 'V' logo, white lace gloves, and garments with red paisley, yellow fringe, and dark floral patterns. Look 64 features the identical bag, white lace gloves, and matching garment patterns including the red paisley top, yellow fringed scarf, and dark floral elements.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca6f013de6558ff31aeb/master/pass/00068a-valentino-pre-fall-2025-credit-brand.jpg|57-69": {
+  "look_number": 68,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the embroidered fringed bag with silver studs, the attached white lace pouch, the blue paisley top with yellow tassels, and the blue polka dot skirt worn in Look 68.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca6a5deabbad0145916b/master/pass/00063a-valentino-pre-fall-2025-credit-brand.jpg|54-66": {
+  "look_number": 63,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the blue plaid blazer, green 'VALEN PARIS/ROME' t-shirt, brown leather belt with gold buckle, blue denim jeans, lapel pin, and patterned fabric in the pocket of Look 63.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca6f783d8ff20ac23725/master/pass/00069a-valentino-pre-fall-2025-credit-brand.jpg|58-70": {
+  "look_number": 67,
+  "confidence": 1.0,
+  "evidence": "The detail image shows black patent leather loafers with a bow and tassel, paired with white openwork patterned knee-high socks. Look 67 features the identical shoes and socks.",
+  "alternates": [
+   {
+    "look_number": 65,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 69,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca6a5deabbad0145916d/master/pass/00067a-valentino-pre-fall-2025-credit-brand.jpg|56-68": {
+  "look_number": 67,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a tan suede fringe bag with large silver studs and a patterned jacket with green piping. Look 67 features the exact same bag and jacket, as well as matching white socks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca70f66913ea1e7f91df/master/pass/00072a-valentino-pre-fall-2025-credit-brand.jpg|58-70": {
+  "look_number": null,
+  "confidence": 0.9,
+  "evidence": "The detail shows a brown coat, a unique embroidered sash with red tassels, and a turquoise beaded belt buckle, none of which are present in any candidate looks. While Look 65 shares the light blue shirt and cream trousers, the outerwear and accessories are significantly different.",
+  "alternates": [
+   {
+    "look_number": 65,
+    "confidence": 0.4
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca73aef33842a7b41b13/master/pass/00075a-valentino-pre-fall-2025-credit-brand.jpg|61-73": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "None of the candidate looks feature the distinctive red wide-brimmed hat, green plaid jacket, large white bow, pearl necklaces, or intricate brooch visible in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca73b157474990788b81/master/pass/00074b-valentino-pre-fall-2025-credit-brand.jpg|60-72": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "None of the candidate looks feature the light grey ostrich leather boots or the dark blue trousers visible in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca72459dd438320cf011/master/pass/00074a-valentino-pre-fall-2025-credit-brand.jpg|59-71": {
+  "look_number": null,
+  "confidence": 0.9,
+  "evidence": "The detail image shows sunglasses with a distinct brown and white striped frame and a light yellow collared shirt with a gold button. None of the candidate looks feature sunglasses with this specific striped pattern, nor a light yellow collared shirt with a gold button. While Look 65 and Look 69 both feature a red beanie similar to the detail, their sunglasses appear solid dark, and their shirts are blue and light blue respectively, not yellow.",
+  "alternates": [
+   {
+    "look_number": 65,
+    "confidence": 0.3
+   },
+   {
+    "look_number": 69,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca765deabbad0145916f/master/pass/00077a-valentino-pre-fall-2025-credit-brand.jpg|63-75": {
+  "look_number": 68,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the polka dot skirt, the sheer patterned white hosiery, and the distinctive black heels with gold chain ankle strap and white floral embroidery on the heel from Look 68.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca77ff4471964e2ef934/master/pass/00075b-valentino-pre-fall-2025-credit-brand.jpg|62-74": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive multicolored tweed bag with sequins and gold 'V' logo, and the green plaid jacket and skirt from the detail image, are not present in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca78ff4471964e2ef936/master/pass/00078a-valentino-pre-fall-2025-credit-brand.jpg|64-76": {
+  "look_number": null,
+  "confidence": 1.0,
+  "evidence": "The detail shows a specific hat, model, hair, green neck ribbon, multi-strand necklace, and paisley top. While Look 76 matches the hat, model, and hair, it does not feature the green neck ribbon, the specific necklace, or the paisley top. No other candidate look matches all visible elements.",
+  "alternates": [
+   {
+    "look_number": 76,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca7b6ca8ebd85d22a1ee/master/pass/00078c-valentino-pre-fall-2025-credit-brand.jpg|66-78": {
+  "look_number": 78,
+  "confidence": 1.0,
+  "evidence": "The detail image shows white open-knit socks and beige heels with a white toe cap and black bow. Look 78 features the exact same white open-knit socks and the identical beige heels with a white toe cap and black bow.",
+  "alternates": [
+   {
+    "look_number": 75,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca7b9151d4d5c687f55f/master/pass/00078b-valentino-pre-fall-2025-credit-brand.jpg|65-77": {
+  "look_number": null,
+  "confidence": 1.0,
+  "evidence": "The distinctive paisley jacket with tassels and the pink velvet Valentino clutch bag from the detail image are not present in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca7c1f3691143b9c2bc7/master/pass/00079a-valentino-pre-fall-2025-credit-brand.jpg|67-79": {
+  "look_number": 79,
+  "confidence": 1.0,
+  "evidence": "The headwear, elaborate pearl and crystal earring, ruffled high collar, and the intricate silver embellished sheer top all perfectly match Look 79.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca7f8f0a30337a1ef42c/master/pass/00079b-valentino-pre-fall-2025-credit-brand.jpg|68-80": {
+  "look_number": 76,
+  "confidence": 1.0,
+  "evidence": "The detail shows light purple pointed-toe heels with an ankle strap and white sheer patterned tights, which perfectly match the shoes and hosiery worn in Look 76.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca7fb5ae80a7a3ce9044/master/pass/00080a-valentino-pre-fall-2025-credit-brand.jpg|69-81": {
+  "look_number": 80,
+  "confidence": 1.0,
+  "evidence": "The red wide-brimmed hat with black bow, navy and white checkered jacket, white collared shirt, and all the layered gold necklaces with the Chanel-like pendant and heart brooch are identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 75,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca84dc9dea8c1466e34f/master/pass/00082a-valentino-pre-fall-2025-credit-brand.jpg|71-83": {
+  "look_number": 82,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the rust-colored blazer, patterned top, yellow belt bag with 'V' logo, embroidered skirt/sash, and white lace cuffs seen in Look 82.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca801dbd6d1e11002c93/master/pass/00081a-valentino-pre-fall-2025-credit-brand.jpg|70-82": {
+  "look_number": 81,
+  "confidence": 1.0,
+  "evidence": "The green textured jacket with black trim, pink lace blouse, brown belt with gold buckle, light blue embroidered jeans, and gold chain bracelet all perfectly match Look 81.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca85ee8a367dcd8a2d02/master/pass/00082b-valentino-pre-fall-2025-credit-brand.jpg|72-84": {
+  "look_number": 82,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the white ballet flats with brown toe caps, gold 'V' logo, white bow, white floral patterned hosiery, and the yellow/orange skirt of Look 82.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca83783d8ff20ac23727/master/pass/00081b-valentino-pre-fall-2025-credit-brand.jpg|71-83": {
+  "look_number": 81,
+  "confidence": 1.0,
+  "evidence": "The green textured jacket with black trim, the dark brown crocodile-embossed bag with gold chain and 'V' logo, the charm bracelet, and the light blue jeans all match perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca8895ec38a803f89db0/master/pass/00084b-valentino-pre-fall-2025-credit-brand.jpg|74-86": {
+  "look_number": 84,
+  "confidence": 1.0,
+  "evidence": "The detail image shows light beige suede moccasin-style shoes with dark brown lacing and white patterned knee-high socks. Look 84 features identical shoes and socks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca884a4bbac64efe778c/master/pass/00086a-valentino-pre-fall-2025-credit-brand.jpg|75-87": {
+  "look_number": 86,
+  "confidence": 1.0,
+  "evidence": "The bag, including its color, material, 'V' logo, and charm, perfectly matches the detail. The patterned jacket and light blue jeans also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca870240d659c79e02d3/master/pass/00084a-valentino-pre-fall-2025-credit-brand.jpg|73-85": {
+  "look_number": 84,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the brown studded tote bag, brown moccasin shoes, white textured socks, light blue studded shorts, denim jacket sleeve, and beaded bracelet worn by the model in Look 84.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca8a6bc576863fbf9ca0/master/pass/00087a-valentino-pre-fall-2025-credit-brand.jpg|76-88": {
+  "look_number": 87,
+  "confidence": 0.8,
+  "evidence": "The navy dress, white ruffled cuff, and highly distinctive orange patterned tights perfectly match Look 87. The bag and gloves differ.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca8cc530e357b8a29205/master/pass/00087b-valentino-pre-fall-2025-credit-brand.jpg|77-89": {
+  "look_number": 87,
+  "confidence": 1.0,
+  "evidence": "Exact match of yellow patterned tights and silver metallic bow heels with ankle strap.",
+  "alternates": [
+   {
+    "look_number": 89,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca8dd2d8def7b50de05f/master/pass/00089a-valentino-pre-fall-2025-credit-brand.jpg|78-90": {
+  "look_number": 89,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 89, featuring the identical dark knit sweater and skirt with the dog pattern, the brown leather and gold chain belt with the 'V' logo, the black lace gloves, and the gold chain necklace.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca8ec530e357b8a29207/master/pass/00089b-valentino-pre-fall-2025-credit-brand.jpg|79-90": {
+  "look_number": 89,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a dark crocodile-textured bag with a gold 'V' logo, a dark fabric with a repeating dog pattern, black lace gloves, and bright orange patterned hosiery. Look 89 features the identical bag, the same dog-patterned skirt, and the same orange patterned hosiery. The lace gloves are also consistent with the look.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca930240d659c79e02d5/master/pass/00092-valentino-pre-fall-2025-credit-brand.jpg|83-90": {
+  "look_number": null,
+  "confidence": 1.0,
+  "evidence": "The black studded shoes with the 'V' logo and the distinctive white open-knit socks from the detail image do not appear in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca90b5ae80a7a3ce9046/master/pass/00089c-valentino-pre-fall-2025-credit-brand.jpg|80-90": {
+  "look_number": 89,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the silver shoes with the gold beetle embellishment, the yellow floral patterned tights, and the dark skirt with the repeating golden bee pattern found in Look 89.",
+  "alternates": [
+   {
+    "look_number": 87,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca9195ec38a803f89db2/master/pass/00091-valentino-pre-fall-2025-credit-brand.jpg|82-90": {
+  "look_number": null,
+  "confidence": 1.0,
+  "evidence": "The black studded fanny pack with gold hardware and a light blue cat charm shown in the detail image does not appear in any of the candidate looks. While Look 86 features similar denim jeans, the bag is a complete mismatch.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca928f0a30337a1ef42e/master/pass/00090-valentino-pre-fall-2025-credit-brand.jpg|81-90": {
+  "look_number": null,
+  "confidence": 0.9,
+  "evidence": "The brown studded moccasin shoes with fringe and black laces are an exact match for Look 84. However, the white lace-patterned socks and the cream wide-leg pants with an embroidered band in the detail image do not match the ribbed white socks and light blue shorts in Look 84. No other candidate look matches any visible elements.",
+  "alternates": [
+   {
+    "look_number": 84,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca959151d4d5c687f561/master/pass/00093-valentino-pre-fall-2025-credit-brand.jpg|84-90": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "No garments or accessories in the candidate looks exactly match the color or pattern of the blazer, scarf, or bag in the detail image.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca1ec530e357b8a291ff/master/pass/00007b-valentino-pre-fall-2025-credit-brand.jpg|7-9": {
+  "look_number": 7,
+  "confidence": 0.95,
+  "evidence": "The detail image shows black crocodile-embossed loafers with a gold chain, white patterned socks, and cream wide-leg pants. Look 7 features identical black loafers with gold hardware, the same white patterned socks, and matching cream wide-leg pants.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca6f013de6558ff31aeb/master/pass/00068a-valentino-pre-fall-2025-credit-brand.jpg|67-67": {
+  "look_number": 67,
+  "confidence": 0.05,
+  "evidence": "The bag in the detail image features elaborate colorful floral beadwork, which is entirely absent from the plain brown suede bag carried in Look 67. The clothing worn in the detail image (blue paisley top, dark blue polka dot skirt) also does not match the quilted jacket and shorts in Look 67.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca2c8c9337aadf4904bf/master/pass/00016b-valentino-pre-fall-2025-credit-brand.jpg|16-17": {
+  "look_number": 16,
+  "confidence": 0.95,
+  "evidence": "The detail image shows white patterned hosiery, a cream pleated skirt, and gold satin shoes with ornate buckles. Look 16 features identical white patterned hosiery, a matching cream pleated skirt, and gold satin platform shoes that are consistent in color and material with the detail shot.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca72459dd438320cf011/master/pass/00074a-valentino-pre-fall-2025-credit-brand.jpg|67-68": {
+  "look_number": 67,
+  "confidence": 0.3,
+  "evidence": "Male model, similar rectangular thick-framed sunglasses, and a light-colored collared shirt, despite differences in hair color, headwear, and specific glasses pattern.",
+  "alternates": [
+   {
+    "look_number": 68,
+    "confidence": 0.05
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca70f66913ea1e7f91df/master/pass/00072a-valentino-pre-fall-2025-credit-brand.jpg|67-68": {
+  "look_number": 68,
+  "confidence": 0.05,
+  "evidence": "The detail features a prominent, intricately beaded and tasseled accessory. Look 68 features a similarly prominent, patterned, and tasseled vest, suggesting a shared aesthetic for embellished garments, despite differences in specific items and colors.",
+  "alternates": [
+   {
+    "look_number": 67,
+    "confidence": 0.01
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca77ff4471964e2ef934/master/pass/00075b-valentino-pre-fall-2025-credit-brand.jpg|67-68": {
+  "look_number": 67,
+  "confidence": 0.3,
+  "evidence": "The white cable-knit knee-high socks are an exact match, though the main garments and bag differ significantly.",
+  "alternates": [
+   {
+    "look_number": 68,
+    "confidence": 0.0
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca488c9337aadf4904c1/master/pass/00041a-valentino-pre-fall-2025-credit-brand.jpg|40-42": {
+  "look_number": 41,
+  "confidence": 0.4,
+  "evidence": "The white ribbed knee-high socks in the detail image are an exact match for the socks worn in Look 41. Other garment elements and accessories show discrepancies.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca73aef33842a7b41b13/master/pass/00075a-valentino-pre-fall-2025-credit-brand.jpg|67-68": {
+  "look_number": 68,
+  "confidence": 0.01,
+  "evidence": "No garments, headwear, or accessories from the detail image match Look 68. The only shared characteristic is the model's apparent gender.",
+  "alternates": [
+   {
+    "look_number": 67,
+    "confidence": 0.005
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca73b157474990788b81/master/pass/00074b-valentino-pre-fall-2025-credit-brand.jpg|67-68": {
+  "look_number": 68,
+  "confidence": 0.01,
+  "evidence": "No direct match for the dark blue trousers or light grey textured boots in either candidate. Look 68's navy blue skirt is a dark blue, which is the closest color family for the main garment, but the garment type and footwear are completely different.",
+  "alternates": [
+   {
+    "look_number": 67,
+    "confidence": 0.005
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca7b9151d4d5c687f55f/master/pass/00078b-valentino-pre-fall-2025-credit-brand.jpg|76-78": {
+  "look_number": 78,
+  "confidence": 0.95,
+  "evidence": "The unique paisley pattern on the top and skirt, the tassels on the hem, and the pink velvet 'V' logo clutch bag are identical to Look 78.",
+  "alternates": [
+   {
+    "look_number": 76,
+    "confidence": 0.05
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca7f8f0a30337a1ef42c/master/pass/00079b-valentino-pre-fall-2025-credit-brand.jpg|79-80": {
+  "look_number": 79,
+  "confidence": 0.95,
+  "evidence": "The lavender embroidered shoes and patterned sheer hosiery in the detail image are a clear mismatch for the black and white shoes and opaque knee-high socks visible in Look 80, making Look 79 the only possible match by elimination.",
+  "alternates": [
+   {
+    "look_number": 80,
+    "confidence": 0.0
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca928f0a30337a1ef42e/master/pass/00090-valentino-pre-fall-2025-credit-brand.jpg|89-90": {
+  "look_number": 90,
+  "confidence": 0.1,
+  "evidence": "The detail image shows cream wide-leg trousers with an elaborate patterned cuff, white lace socks, and brown studded moccasins. Look 90 features white wide-leg trousers, which is the only very loose garment similarity in terms of color and silhouette, despite the cuff, socks, and shoes being entirely different.",
+  "alternates": [
+   {
+    "look_number": 89,
+    "confidence": 0.05
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca930240d659c79e02d5/master/pass/00092-valentino-pre-fall-2025-credit-brand.jpg|89-90": {
+  "look_number": 89,
+  "confidence": 0.1,
+  "evidence": "The shoes in the detail image feature a Valentino 'V' logo, which is also present on the handbag in Look 89. However, the shoes, socks, and trousers in the detail do not match any visible items in Look 89.",
+  "alternates": [
+   {
+    "look_number": 90,
+    "confidence": 0.05
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca959151d4d5c687f561/master/pass/00093-valentino-pre-fall-2025-credit-brand.jpg|89-90": {
+  "look_number": 89,
+  "confidence": 0.05,
+  "evidence": "The detail image and Look 89 both feature a bag with the distinctive gold 'V' logo, despite a complete mismatch in garments, scarf pattern, and model's skin tone. This is a forced choice as no garment match is present.",
+  "alternates": [
+   {
+    "look_number": 90,
+    "confidence": 0.01
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6759ca9195ec38a803f89db2/master/pass/00091-valentino-pre-fall-2025-credit-brand.jpg|89-90": {
+  "look_number": 89,
+  "confidence": 0.05,
+  "evidence": "No matching garments (blue jeans) or accessories (black studded fanny pack) are visible in either candidate look. A choice is forced by the prompt, but no direct visual evidence supports a match.",
+  "alternates": [
+   {
+    "look_number": 90,
+    "confidence": 0.03
+   }
+  ]
+ }
+}

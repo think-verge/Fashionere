@@ -1,0 +1,35 @@
+{
+  "run": "2026-08-03_11-12-52_IST",
+  "at": "2026-08-03T11:29:19+05:30",
+  "pipeline_version": 2,
+  "dry_run": false,
+  "counts": {
+    "scraped": 1,
+    "matched": 1,
+    "tagged": 1,
+    "skipped": 3,
+    "failed": 0,
+    "suspect": 0
+  },
+  "est_cost_usd": 0.7005,
+  "collections": [
+    {
+      "url": "https://www.vogue.com/fashion-shows/fall-2025-ready-to-wear/prada",
+      "designer": "prada",
+      "collection": "fall-2025-ready-to-wear",
+      "scrape": "skip",
+      "match": "skip",
+      "tag": "skip",
+      "error": null
+    },
+    {
+      "url": "https://www.vogue.com/fashion-shows/fall-2026-ready-to-wear/valentino",
+      "designer": "valentino",
+      "collection": "fall-2026-ready-to-wear",
+      "scrape": "ok",
+      "match": "ok",
+      "tag": "ok",
+      "error": null
+    }
+  ]
+}

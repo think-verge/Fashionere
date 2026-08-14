@@ -1,0 +1,53 @@
+2026-08-03 11:12:52 IST  run 2026-08-03T11:12:52+05:30 | 2 collection(s) | pipeline v2
+2026-08-03 11:12:52 IST  [ 1/2] prada | fall-2025-ready-to-wear
+2026-08-03 11:12:52 IST           scrape  SKIP   done 2026-08-02 (52 looks, 117 details)
+2026-08-03 11:12:52 IST           match   SKIP   done 2026-08-02 (116 attached)
+2026-08-03 11:12:52 IST           tag     SKIP   done 2026-08-02 (169 images)
+2026-08-03 11:12:54 IST  [ 2/2] valentino | fall-2026-ready-to-wear
+2026-08-03 11:12:54 IST           scrape  RUN    
+2026-08-03 11:13:18 IST             | -> Loading https://www.vogue.com/fashion-shows/fall-2026-ready-to-wear/valentino
+2026-08-03 11:13:18 IST             |    Strategy 1 (embedded state): 85 looks, 101 details
+2026-08-03 11:13:18 IST             |    Capturing <img> tags from the slideshows...
+2026-08-03 11:13:18 IST             |    tags captured: 186/186 images
+2026-08-03 11:13:18 IST           scrape  OK     85 looks, 101 details, 186 tags
+2026-08-03 11:13:18 IST           match   RUN    101 details -> gemini-2.5-flash
+2026-08-03 11:18:25 IST             | -> Valentino fall-2026-ready-to-wear: 85 looks, 101 details
+2026-08-03 11:18:25 IST             |    model=gemini-2.5-flash window=+/-6 workers=4
+2026-08-03 11:18:25 IST             |    scored 10/101
+2026-08-03 11:18:25 IST             |    scored 20/101
+2026-08-03 11:18:25 IST             |    scored 30/101
+2026-08-03 11:18:25 IST             |    scored 40/101
+2026-08-03 11:18:25 IST             |    scored 50/101
+2026-08-03 11:18:25 IST             |    scored 60/101
+2026-08-03 11:18:25 IST             |    scored 70/101
+2026-08-03 11:18:25 IST             |    scored 80/101
+2026-08-03 11:18:25 IST             |    scored 90/101
+2026-08-03 11:18:25 IST             |    scored 100/101
+2026-08-03 11:18:25 IST             |    scored 101/101
+2026-08-03 11:18:25 IST             |    attached      : 101/101 details
+2026-08-03 11:18:25 IST             |    unmatched     : 0
+2026-08-03 11:18:25 IST             |    looks covered : 84/85
+2026-08-03 11:18:25 IST             |    order-adjusted: 0
+2026-08-03 11:18:25 IST             |    cache         : .match_cache_Valentino_fall_2026_ready_to_wear_raw.json
+2026-08-03 11:18:25 IST             | Saved -> C:\Users\JaswanthPall_fnohyb7\Downloads\Prada\fashion_engine\scrape_engine\data\mapped\valentino\Valentino_fall_2026_ready_to_wear_mapped.json
+2026-08-03 11:18:25 IST           match   OK     101/101 attached, 84/85 looks   308s  ~$0.27
+2026-08-03 11:18:25 IST           tag     RUN    186 images -> gemini-2.5-flash
+2026-08-03 11:29:19 IST             | -> Valentino fall-2026-ready-to-wear: 186 images to tag
+2026-08-03 11:29:19 IST             |    model=gemini-2.5-flash width=768 workers=4 prompt_v2
+2026-08-03 11:29:19 IST             |    tagged 20/186
+2026-08-03 11:29:19 IST             |    tagged 40/186
+2026-08-03 11:29:19 IST             |    tagged 60/186
+2026-08-03 11:29:19 IST             |    tagged 80/186
+2026-08-03 11:29:19 IST             |    tagged 100/186
+2026-08-03 11:29:19 IST             |    tagged 120/186
+2026-08-03 11:29:19 IST             |    tagged 140/186
+2026-08-03 11:29:19 IST             |    tagged 160/186
+2026-08-03 11:29:19 IST             |    tagged 180/186
+2026-08-03 11:29:19 IST             |    tagged 186/186
+2026-08-03 11:29:19 IST             |    tagged  : 186/186 images
+2026-08-03 11:29:19 IST             |    cache   : .tag_cache_Valentino_fall_2026_ready_to_wear_mapped.json
+2026-08-03 11:29:19 IST             | Saved -> C:\Users\JaswanthPall_fnohyb7\Downloads\Prada\fashion_engine\scrape_engine\data\tagged\valentino\Valentino_fall_2026_ready_to_wear_tagged.json
+2026-08-03 11:29:19 IST           tag     OK     186/186 images   654s  ~$0.43
+2026-08-03 11:29:19 IST  ----------------------------------------------------------------
+2026-08-03 11:29:19 IST  scraped 1   matched 1   tagged 1   skipped 3   failed 0   suspect 0
+2026-08-03 11:29:19 IST  gemini ~$0.70 est (upper bound; cached calls cost nothing)   elapsed 987s   log: C:\Users\JaswanthPall_fnohyb7\Downloads\Prada\fashion_engine\scrape_engine\logs\run_2026-08-03_11-12-52_IST.log

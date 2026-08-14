@@ -1,0 +1,718 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390691fa3a1fe05aa82b8/master/pass/00001-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|1-6": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the blue ruched top with bows and the yellow trousers worn by the model in Look 1. The hair color and style also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3906b4a8bd289ca9f6bb1/master/pass/00003-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|1-8": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The black patent leather open-toe heels with T-strap lacing and red sole, along with the black skirt, are an exact match to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3906d4ccf5988f3901d9f/master/pass/00004-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|1-9": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The model, hair, sheer gold embroidered high-neck garment, and feather-like neck embellishments are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3906c6a1db7b4ac77b93b/master/pass/00002-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|1-7": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The blouse, skirt, and velvet flower brooch in Look 2 are identical to those in the detail image, including color, fabric, and design details. The model's hair and makeup also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390700f112dd4f77f7b57/master/pass/00005-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|1-9": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light blue crocodile-embossed bag with a gold chain and a gold 'V' logo, along with a sheer gold-patterned dress. Look 3 features the exact same bag and dress.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390785253713f38c2827e/master/pass/00008-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|1-12": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image shows black pants and distinctive black and white shoes with a silver V-logo zipper. Look 4 features the exact same black pants and the identical black and white shoes with the silver V-logo zipper.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3907194acb986419996bd/master/pass/00007-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|1-11": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a male model wearing a light blue shirt, a dark red patterned tie, a dark double-breasted blazer, and a distinctive large gold necklace. Candidate Look 4 features the exact same model wearing the identical outfit and necklace.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e39076a3479dc87749e951/master/pass/00009-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|1-12": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the polka dot blouse, olive green velvet ruched skirt, and black chain-strap clutch bag worn in Look 5.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e39072e551f310f8175908/master/pass/00006-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|1-10": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a sheer gold lace dress, white perforated pumps with a clear toe section, and a light green bag with a gold chain. Look 3 features the exact same dress, shoes, and bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e39077c5f2c64694bc7b3a/master/pass/00010-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|1-13": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light-colored, polka-dotted double-breasted jacket with a distinctive butterfly brooch on the sleeve cuff and a textured gold clutch bag. Look 6 features a male model wearing an identical jacket, brooch, and clutch bag, along with dark trousers consistent with the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3907c6fa1897ef9bf9e64/master/pass/00012-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|3-15": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail shows a vibrant purple garment with a distinctive embossed pattern and teal/emerald green heels with a clear strap. Look 7 features the identical purple garment with the same pattern and the exact same teal/emerald green shoes with a clear strap.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e39081a84aa62deab2fb84/master/pass/00014-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|4-16": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail shows black trousers and black loafers with a gold 'V' logo buckle, which perfectly match the items worn in Look 6.",
+  "alternates": [
+   {
+    "look_number": 9,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 13,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3907e576cf1a73ed22709/master/pass/00013-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|4-16": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The sheer white blouse with lace detail and ruffled cuffs, and the red button-front skirt are identical to those in Look 8.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390800bdacc3badd10fa4/master/pass/00015-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|5-17": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The sequined jacket with floral pattern, black collar, pleated cuffs, light-colored satin trousers, and large gold earrings are identical in both the detail and Look 10. The model's hair and makeup also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3907b1f68e683ea2e172d/master/pass/00011-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|2-14": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The model, purple patterned garment, and large gold earrings are identical to Look 7.",
+  "alternates": [
+   {
+    "look_number": 10,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e39084ffac66e659d3d738/master/pass/00017-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|7-19": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail shows a blue draped dress, black peep-toe heels, sheer black hosiery, and a silver toe ring. Look 11 features an identical blue draped dress, black peep-toe heels, sheer black hosiery, and a visible toe ring.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390857aac57869b0109cd/master/pass/00018-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|7-19": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The model, cream jacket with black trim and bow, and the unique mismatched heart-shaped earrings are identical in both the detail and Look 12.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390884eea215299d7d09d/master/pass/00019-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|8-20": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail shows a cream jacket, a black Valentino bag with a gold chain, and black patterned tights, all of which are perfectly matched in Look 12.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3908c7248375310415cac/master/pass/00022-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|10-22": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black tiered pleated mini-dress with a large cream bow and gold accent, and the model's long wavy hair in Look 14.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3908351cb83d89e28322e/master/pass/00016-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|6-18": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The model, light blue draped dress with shoulder cutout, and white feathery neckpiece are identical in both the detail and Look 11.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3908a2b9a8fc376310d72/master/pass/00020-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|9-21": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The model, grey high-neck top with zipper and heart details, and the distinctive gold necklace with three large stones are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3908a9b973b54e582a809/master/pass/00021-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|10-22": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The model wears identical pink trousers and dark brown loafers with a gold 'V' logo buckle.",
+  "alternates": [
+   {
+    "look_number": 17,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390906a1db7b4ac77b93d/master/pass/00023-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|11-23": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The red open-toe high-heeled mules with a prominent bow on the front perfectly match the shoes worn in Look 14.",
+  "alternates": [
+   {
+    "look_number": 12,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390907aac57869b0109cf/master/pass/00024-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|12-24": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the sheer, embellished, light brown dress with ruffled hem and black open-toe heels worn in Look 15.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3909451b057c455b62f75/master/pass/00026-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|13-25": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The detail shows dark grey pinstripe trousers and brown loafers with a gold V-logo buckle. Look 17 features the exact same dark grey pinstripe trousers and brown loafers with the gold V-logo buckle.",
+  "alternates": [
+   {
+    "look_number": 13,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e39095d77122bce418f039/master/pass/00027-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|14-26": {
+  "look_number": 18,
+  "confidence": 0.95,
+  "evidence": "The detail shows a light brown open-toe mule with a snake embellishment. Look 18 features the exact same shoe, matching the color, style, heel, and metallic snake detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3909ac6626e6f95208e8c/master/pass/00029-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|16-28": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail image shows sheer, gold-toned, ribbed fabric on the legs and nude high heels with a clear toe section and perforated sides. Look 20 features a full-body catsuit with the identical sheer, gold-toned, ribbed fabric and the exact same nude high heels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3909ba3479dc87749e953/master/pass/00030-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|17-29": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black top with gold pleated detail, black trousers, sculptural cuff bracelet with blue stones, and black 'V' logo clutch bag seen in Look 21.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390913cf18b7344af15f0/master/pass/00025-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|13-25": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a brown leather bag with gold chain straps and a 'V' logo, a sheer lime green ruffled top, dark trousers, and black open-toe shoes. Look 16 features the exact same bag, top, trousers, and shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3909baf6d1ceb0a1e85f9/master/pass/00031-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|17-29": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The model, coral-pink ruched dress with a bow, and heart-shaped crystal earrings are identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 27,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390966fa1897ef9bf9e66/master/pass/00028-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|15-27": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail shows a sheer polka dot blouse with ruffled cuffs and a lime green skirt. Look 19 features the identical blouse and skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3909f2b9a8fc376310d74/master/pass/00032-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|18-30": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 23, showing the same mustard-gold jacket with large buttons and patch pockets, black neck bow, black chain-strap bag with gold 'V' logo, light blue jeans, and gold earrings.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390a13d4ac5143faffe55/master/pass/00034-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|20-32": {
+  "look_number": 24,
+  "confidence": 0.9,
+  "evidence": "The sheer, ruffled dark grey/brown skirt fabric in the detail perfectly matches the skirt in Look 24. The nude patent open-toe high heel with an ankle strap and lacing is also a very close match, despite a slight discrepancy in lacing color.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390a151b057c455b62f77/master/pass/00033-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|19-31": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the green and gold embellished top, the flowing sheer khaki skirt, the black handbag with gold chain and 'V' logo, and the beige/nude high-heeled shoes with red soles and ankle straps seen in Look 24.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390a6a7525ab48adc6fec/master/pass/00036-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|21-33": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail shows yellow patent leather T-strap heels with black laces and a purple quilted chain-strap bag, which are identical to the shoes and bag worn in Look 25. The dark skirt also matches the black velvet skirt in Look 25.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390a6728e38de3604f29e/master/pass/00037-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|22-34": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 26, showing the same sparkling black jumpsuit and the light blue cape draped over the shoulder.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390ac48a0fed13762592a/master/pass/00039-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|23-35": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the navy blazer with gold buttons, white shirt, polka dot tie, and the distinctive yellow embroidered shorts worn by the male model in Look 28.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390ab9b973b54e582a80b/master/pass/00038-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|23-35": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail image shows dark, sparkly, open-toe integrated boots/tights with a thin heel, which perfectly matches the full-body jumpsuit and integrated footwear worn in Look 26.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390a55d2354609a44a6a9/master/pass/00035-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|20-32": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a purple handbag with gold chain straps, a black skirt with side ruching, and a black blouse with a pink floral pattern and white cuffs. Look 25 features all these exact elements.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390ab0eddd0cbf11a1718/master/pass/00040-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|24-36": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The shoes and socks in the detail image are identical to those worn by the model in Look 28, matching in color, pattern, and style.",
+  "alternates": [
+   {
+    "look_number": 33,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390af0f47c00a9037e52d/master/pass/00041-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|25-37": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The model, light blue shirt, patterned tie, grey double-breasted blazer with the 'W' logo, and the distinctive gold statement necklace are all identical to Look 29.",
+  "alternates": [
+   {
+    "look_number": 35,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390b081b61933666b754b/master/pass/00042-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|26-38": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the yellow floral blouse with white cuffs and the dark blue velvet ruched skirt from Look 30.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390b1aa8cadebe7d8def6/master/pass/00043-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|26-38": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The grey ruched top, black trousers, and the unique black floral embroidered and beaded clutch bag with a gold 'V' logo are identical in both the detail and Look 31.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390b597cd684a553f0d28/master/pass/00045-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|28-40": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The sheer striped top with light green and pink stripes, along with the distinctive ruffled rose-like cuffs, perfectly matches the top in Look 32. The royal blue trousers also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390b6e01301db6082a2aa/master/pass/00046-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|29-41": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail shows a pink bomber jacket with gold buttons, khaki shorts with gold buttons, and a black embroidered drawstring bag with tassels and a gold 'V' logo. Look 33 features all these identical items.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390bc61afab260bbb62d2/master/pass/00048-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|30-42": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a royal blue handbag with gold hardware, a light mint green bomber jacket, a sparkly rose gold top, and pleated reddish-pink pants. Look 34 features all these exact items.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390b7b750f04e80fe7f9c/master/pass/00047-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|30-42": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image shows brown leather loafers with a gold 'V' logo, beige ribbed socks with two black stripes, and bare legs. Look 33 features identical shoes, socks, and bare legs (wearing shorts).",
+  "alternates": [
+   {
+    "look_number": 35,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390bb5253713f38c28280/master/pass/00049-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|31-43": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The model, sequined high-neck jacket, and distinctive large gold necklace are identical in both the detail image and Look 35.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390bc0bdacc3badd10fa6/master/pass/00050-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|32-44": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The model, mustard yellow pleated shirt, and large gold and crystal earrings are an exact match to look 36.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390c318168981adb8ebc9/master/pass/00051-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|33-45": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the purple suede-like skirt and the distinctive pink high-heeled shoes with black lacing and ankle strap seen in Look 36.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390c3aa8cadebe7d8def8/master/pass/00052-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|33-45": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a green shirt, black trousers, and a dark crocodile-embossed bag with a gold V logo and chain. Look 37 features the identical green shirt, black trousers, and the exact same bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390b4e551f310f817590a/master/pass/00044-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|27-39": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The detail image shows black pants and distinctive black and white two-tone shoes with a silver zipper and 'V' logo. Look 31 features the exact same black pants and shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390c7989311c2104636b6/master/pass/00054-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|35-47": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 38, showing the same magenta jacket with unique swirling embroidery, identical dark sunglasses with gold temple details, and the exact gold necklace with a bow pendant. The model's hair and facial features are also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390c23d4ac5143faffe57/master/pass/00053-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|34-46": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The detail shows black trousers, snakeskin loafers with a gold V-logo, and a gold chain. Look 37 features identical black trousers, the exact snakeskin V-logo loafers, and a black bag with a matching gold chain.",
+  "alternates": [
+   {
+    "look_number": 39,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390c96fa1897ef9bf9e68/master/pass/00055-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|36-48": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the magenta embroidered jacket, sheer purple ruffled gloves, tan textured bag with gold chain and V logo, and tan trousers worn in Look 38.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390cdbd089a4578a199fe/master/pass/00058-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|38-50": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The detail shows a yellow top, grey trousers, and a distinctive blue clutch bag with beige floral embellishments and a gold 'V' logo. Look 41 features the exact same yellow top, grey trousers, and blue floral clutch bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390c939a01419ae0379e5/master/pass/00056-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|36-48": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The model, grey patterned blazer, reddish-brown zippered top, color-blocked inner garment, and black polka dot scarf are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390cb7aac57869b0109d1/master/pass/00057-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|37-49": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the dress worn in Look 40, including the sheer black high neck, the beaded halter straps, the light pink sheer fabric, and the intricate silver and pink beaded embroidery pattern.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390d07248375310415cae/master/pass/00059-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|39-51": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The black dress with the distinctive pink ruffled feather-like embellishment, the long gold and crystal earrings, and the model's hair and makeup are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390cf2b9a8fc376310d76/master/pass/00060-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|39-51": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The black mesh mule with the silver crystal-embellished snake design is an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390d20eddd0cbf11a171a/master/pass/00061-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|40-52": {
+  "look_number": 43,
+  "confidence": 0.98,
+  "evidence": "The detail shows a fuchsia satin wide-leg trouser with a side slit and a black open-toe high-heeled sandal. Look 43 features trousers with one leg in the exact fuchsia satin, matching the fabric, color, and style, along with the identical black open-toe sandal.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390d6a59b7c4e10835b17/master/pass/00064-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|43-55": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a pink satin blazer, black trousers, and a distinctive off-white floral embroidered clutch with a gold 'V' logo. Look 46 features a model wearing the identical pink satin blazer, black trousers, and holding the exact same clutch bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390d40eddd0cbf11a171c/master/pass/00062-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|41-53": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 44, showing the same sheer embroidered top with floral patterns and sequins, the draped nude fabric, the blue sheer drape over the shoulder, and the black choker.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390d8b750f04e80fe7f9e/master/pass/00063-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|42-54": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The sequined purple gown with a pink lining and the distinctive olive green velvet mules with a bow are an exact match to Look 45.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390d84eea215299d7d09f/master/pass/00065-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|43-55": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail shows red perforated peep-toe heels and a black pleated skirt. Look 47 features identical red peep-toe heels and a matching black tiered pleated skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390e06fa1897ef9bf9e6a/master/pass/00067-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|45-57": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, sheer black spaghetti strap top, and distinctive multi-colored pendant necklace all match Look 49 exactly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390de51cb83d89e283230/master/pass/00068-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|46-58": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the red and black diamond-patterned jacket, white shirt, and black polka-dot tie worn by the model in Look 50. The model's hair also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390e5989311c2104636b8/master/pass/00070-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|47-59": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The detail shows brown pleated pants with an ankle zipper and black square-toe shoes, which perfectly match the pants and shoes worn in Look 51.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390e79b973b54e582a80d/master/pass/00071-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|48-60": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the pink dress with gathered neckline and keyhole opening, as well as the distinctive large gold and crystal earrings worn by the model in Look 52.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390e6d77122bce418f03b/master/pass/00072-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|49-61": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The model, long blonde hair, lavender velvet one-shoulder draped dress, and the distinctive gold necklace with green and red pendant are identical in both the detail and Look 53.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390e27248375310415cb0/master/pass/00069-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|46-58": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The unique embroidered tassel bag, white shirt, grey trousers, and red and black diamond-patterned jacket in the detail image are an exact match for Look 50.",
+  "alternates": [
+   {
+    "look_number": 46,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390df8cc04cc9ca2bbb49/master/pass/00066-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|44-56": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light blue/silver shimmering top with a unique polka-dot texture, a high ruffled neck, and a keyhole cutout. Look 48 features a dress with the identical fabric, pattern, color, high ruffled neck, and keyhole cutout, worn by the same model.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390ea3d178100fe8f402f/master/pass/00074-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|50-62": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail shows a light grey/white pointed-toe pump with a clear side panel and a stiletto heel. None of the candidate looks feature this exact shoe style.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390e9aeed0745abb3b530/master/pass/00073-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|49-61": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The model's short dark hair, facial features, and the distinctive coral/pink ruffled sheer top are an exact match to look 54.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390ee1e1a871994b04777/master/pass/00077-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|52-64": {
+  "look_number": 57,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the embellished yellow top, black trousers, unique silver cuff with green stone, and the dark red crocodile-embossed bag with gold chain and 'V' logo worn by the model in Look 57.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390ecc75a7c8b0a87a06b/master/pass/00076-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|52-64": {
+  "look_number": 56,
+  "confidence": 1.0,
+  "evidence": "The model's hair, facial features, the exact metallic floral fabric of the dress, the structured shoulders, and the unique long earrings with clear stones and white feathers are all identical to Look 56.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390eb3d4ac5143faffe59/master/pass/00075-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|51-63": {
+  "look_number": 55,
+  "confidence": 1.0,
+  "evidence": "The model, grey pinstripe jacket with black trim and collar, white shirt, and dark red tie are an exact match to Look 55.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390f039a01419ae0379e7/master/pass/00079-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|54-66": {
+  "look_number": 59,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the white ruffled blouse with black trim, the black lace skirt, and the distinctive black mule heels with silver snake embellishment and red pedicure seen in Look 59.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390f31e1a871994b04779/master/pass/00080-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|55-67": {
+  "look_number": 60,
+  "confidence": 0.9,
+  "evidence": "The unique chevron-patterned tan bag with gold chain and 'V' logo, and the light blue wide-leg jeans are identical. The shoes differ (flats in detail, open-toe heels in look 60).",
+  "alternates": [
+   {
+    "look_number": 55,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390f5d58e693499bb6f93/master/pass/00082-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|56-68": {
+  "look_number": 62,
+  "confidence": 1.0,
+  "evidence": "The sheer ruched top with embellished trim, the black floral embroidered bag with a gold 'D' logo, and the model's short dark hair are identical in both the detail and look 62.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390f4a7525ab48adc6fee/master/pass/00081-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|56-68": {
+  "look_number": 61,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a royal blue one-shoulder draped dress with a long sleeve and buttoned cuff, which perfectly matches the dress worn in Look 61.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390f6989311c2104636ba/master/pass/00083-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|57-69": {
+  "look_number": 62,
+  "confidence": 1.0,
+  "evidence": "The detail shows red bow mules and a pink lace garment with white lace trim, which perfectly match the shoes and skirt in Look 62.",
+  "alternates": [
+   {
+    "look_number": 58,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390f8e01301db6082a2ac/master/pass/00084-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|58-70": {
+  "look_number": 63,
+  "confidence": 1.0,
+  "evidence": "The handbag in the detail image is identical to the one carried in Look 63, featuring the same snakeskin pattern, chevron design, gold chain strap, and 'V' logo. The dark top worn by the model in Look 63 also matches the garment visible in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390fbdf95c6a1e4962a7b/master/pass/00086-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|59-71": {
+  "look_number": 65,
+  "confidence": 1.0,
+  "evidence": "The detail shows burgundy trousers and black loafers with a gold V-shaped buckle. Look 65 features identical burgundy leather trousers and the same black loafers with the gold V-buckle.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390f061afab260bbb62d4/master/pass/00078-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|53-65": {
+  "look_number": 58,
+  "confidence": 1.0,
+  "evidence": "The detail shows a sheer dark blue/purple lace fabric with gold embroidery and a pink/purple shoe with a bow. Look 58 features a long dress with identical lace fabric and the exact same pink/purple shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390fce551f310f817590c/master/pass/00087-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|60-72": {
+  "look_number": 66,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a white pinstriped jacket with distinctive buttons and pockets, a cream crocodile-textured clutch with a gold 'V' logo, and sheer patterned hosiery. Look 66 features all these exact elements.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e391001f68e683ea2e172f/master/pass/00090-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|62-74": {
+  "look_number": 68,
+  "confidence": 1.0,
+  "evidence": "The model, floral patterned coat, white shirt, patterned tie, and unique studded sunglasses are identical in both the detail and look 68.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390fe577450c74892b899/master/pass/00088-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|61-73": {
+  "look_number": 67,
+  "confidence": 1.0,
+  "evidence": "The model's hair, sunglasses, pink satin cowl neck top, and delicate necklace are identical in both the detail image and Look 67.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390fac75a7c8b0a87a06d/master/pass/00085-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|59-71": {
+  "look_number": 65,
+  "confidence": 1.0,
+  "evidence": "The model, dark reddish-brown leather-like blazer, striped shirt, polka dot tie, and distinctive gold necklace with three large stones are identical in both the detail and look 65.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e39102728e38de3604f2a0/master/pass/00091-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|63-75": {
+  "look_number": 68,
+  "confidence": 1.0,
+  "evidence": "The floral coat, beige and tan studded bag with black strap, purple pants with white stripe, and dark loafers all match exactly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e391001e1a871994b0477b/master/pass/00089-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|62-74": {
+  "look_number": 67,
+  "confidence": 1.0,
+  "evidence": "The pink ruched satin dress with lace trim and the black floral embroidered clutch bag with a gold 'V' logo are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e391060eddd0cbf11a1720/master/pass/00094-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|65-77": {
+  "look_number": 70,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 70, including the unique sunglasses, multi-tiered gold earrings, butterfly necklace, blonde hair, and the silver sequined dress with the green draped underlayer.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e39108a59b7c4e10835b19/master/pass/00095-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|66-78": {
+  "look_number": 71,
+  "confidence": 1.0,
+  "evidence": "The model's hair, sunglasses, grey pinstripe suit jacket, light beige striped shirt, and dark red and blue striped tie are identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3910c6fa1897ef9bf9e6c/master/pass/00096-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|67-79": {
+  "look_number": 71,
+  "confidence": 1.0,
+  "evidence": "The detail shows a grey pinstripe suit and a black leather bag with gold chains, a gold 'V' logo, and a studded strap. Look 71 features the exact same grey pinstripe suit and the identical black studded bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e391041e1a871994b0477d/master/pass/00093-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|65-77": {
+  "look_number": 69,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the sheer black long-sleeved top, black trousers, and the black crocodile-embossed clutch with a gold 'B' logo seen in Look 69.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3910a5dd4f5bc70cc6868/master/pass/00097-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|68-80": {
+  "look_number": 71,
+  "confidence": 1.0,
+  "evidence": "The detail image shows dark grey pinstripe trousers and distinctive grey/blue-grey loafers with a gold V-shaped buckle and textured surface. Look 71 features the exact same pinstripe trousers and identical shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e391060eddd0cbf11a171f/master/pass/00092-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|64-76": {
+  "look_number": 69,
+  "confidence": 1.0,
+  "evidence": "The model, sheer black shirt with rhinestone fringe collar, and large gold earrings are identical in the detail and Look 69.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e39110ffac66e659d3d73a/master/pass/00100-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|70-81": {
+  "look_number": 73,
+  "confidence": 1.0,
+  "evidence": "The trousers with the subtle plaid pattern and the distinctive black shoes with the red stripe and silver zipper are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3911236a867a051064282/master/pass/00101-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|71-81": {
+  "look_number": 74,
+  "confidence": 1.0,
+  "evidence": "The sheer black fabric, the elaborate serpentine embellishment running down the leg, and the exact style of the black open-toe strappy heels are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3910c39a01419ae0379e9/master/pass/00098-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|69-81": {
+  "look_number": 72,
+  "confidence": 1.0,
+  "evidence": "The detail shows a red satin draped dress and black high-heeled pumps with a clear strap. Look 72 features the identical red satin draped dress with long sleeves and the same black high-heeled pumps with a clear strap.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3910e50321272a7d9697c/master/pass/00099-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|69-81": {
+  "look_number": 73,
+  "confidence": 1.0,
+  "evidence": "The sheer cream blouse with white floral embroidery and blue accents, the solid cream collar and placket, the small textured silver sunglasses, and the model's short dark hair with bangs are identical in both the detail and Look 73.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e39116df95c6a1e4962a7d/master/pass/00104-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|73-81": {
+  "look_number": 78,
+  "confidence": 1.0,
+  "evidence": "The model, burnt orange double-breasted blazer, shimmering silver zippered top, and embellished rectangular sunglasses are identical in both the detail and look 78.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e39114b750f04e80fe7fa0/master/pass/00103-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|72-81": {
+  "look_number": 77,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 77, including the gold sequined blazer, beige shirt, patterned tie, black lace garment, model's hair, and unique sunglasses.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e3911765f8a95d93f7bf8d/master/pass/00105-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|74-81": {
+  "look_number": 78,
+  "confidence": 1.0,
+  "evidence": "The rust-colored double-breasted blazer with three cuff buttons, the silver sparkly long-sleeve undershirt, and the dark trousers perfectly match Look 78. The model's skin tone also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e391131e1a871994b0477f/master/pass/00102-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|72-81": {
+  "look_number": 75,
+  "confidence": 1.0,
+  "evidence": "The detail shows a gold sequined leopard-print top, bright blue satin trousers, and a black crocodile-embossed clutch with a gold 'V' logo. Look 75 features all these exact elements.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/68e391185dd4f5bc70cc686a/master/pass/00106-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|75-81": {
+  "look_number": 80,
+  "confidence": 1.0,
+  "evidence": "The detail shows a silver sequined garment with a distinctive brown and beige patterned belt and light beige sleeve cuffs, all of which are perfectly matched by Look 80.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/68e390ea3d178100fe8f402f/master/pass/00074-valentino-spring-2026-ready-to-wear-details-credit-gorunway.jpg|54-55": {
+  "look_number": 54,
+  "confidence": 0.65,
+  "evidence": "The black skirt visible in the detail shot matches the black velvet skirt worn in Look 54. The shoes, however, are different in style and texture.",
+  "alternates": [
+   {
+    "look_number": 55,
+    "confidence": 0.05
+   }
+  ]
+ }
+}

@@ -1,0 +1,571 @@
+{
+  "source": "vogue",
+  "designer": "Chanel",
+  "source_url": "https://www.vogue.com/fashion-shows/resort-2026/chanel",
+  "collection_name": "resort-2026",
+  "summary": "Chanel’s cruise caravane touched down today on the shores of Lake Como, one of the most romantic, scenic manifestations of Italian #dolcevita. Unshaken by luxury’s shifting tides, the French house went all in on cinematic glamour, framing the Studio de Création-designed collection within the old-world charm of Hotel Villa d’Este. (Matthieu Blazy’s debut as Chanel’s new artistic director is set for the ready-to-wear season in Paris this October.) Coco Chanel herself fell for Italy in 1920, when she first traveled with friends Misia and José Maria Sert to Venice, a city whose gilded Byzantine splendor spoke to her taste for opulence. In the 1930s, Luchino Visconti hosted the imperious couturière at the grand Villa Erba, nestled in his family’s Cernobbio estate on Lake Como. The director and the designer shared a devotion to presentation—lavish yet exacting, unconventional and soignée, apparently effortless, but rooted in aristocratic polish. Avoiding nostalgia or overt references, the new cruise collection unfolded as a chic yet easygoing, summery remix, evoking the Italian resort lifestyle, but crafted with French savoir-faire and finesse. cm-unit Framed by two white ensembles—a peignoir -style robe manteau ready for the beach and a sinuous evening gown in liquid satin—the lineup centered on imaginative daywear. A sun-washed palette evoked the terracotta hues of Villa D’Este’s walls and the soft pastels of wisteria festooning its spectacular gardens, with added dashes of bougainvillea and camellia. Shimmer flashed on a fluid pajama set rendered in matte-gold cloqué and in a daring backless jumpsuit of pink and orange striped lamé, layered under an entrance-making matching cape. Sequined trimmings added pizzazz to a classic lilac tweed suit, shown over a blouse with a paillette volant, while macramé, crochet, and intricate lace brought textured depth to short, svelte silhouettes of the kind Romy Schneider, dressed by Chanel in Visconti’s episode of Boccaccio ’70, once wore. The finale’s black evening gowns in rustling taffeta radiated a rather dramatic, sultry glow. Surrounded by a whirlwind of Chanel-clad celebrities—among them Sofia Coppola, Lupita Nyong’o, Keira Knightley, Margaret Qualley, and Anna Mouglalis—Chanel’s President Bruno Pavlovsky called out the collaborative achievement of the Studio de Création, a team trained under the guidance of Karl Lagerfeld and Virginie Viard. “Matthieu Blazy will be working with part of that same team,” he noted. “From October, he’ll be involved in every decision. But Chanel stands above all—above any individual designer. What we learned from Karl and Virginie is the importance of the Chanel silhouette, the clarity of Chanel style—and keeping that alive, meaningful, and strong will be Matthieu’s next mission. Still,” he went on, “no designer, no matter how talented, can do it alone. He must lead with his vision, but it’s the strength of the team that brings collections to life. Chanel’s codes are powerful, but what’s exciting is injecting them with energy and sparkle. They must evolve, not remain static. We want Matthieu to bring his energy, his vision, and his spark to the house.”",
+  "looks": [
+    {
+      "look_number": 1,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#1",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e841fa3721e3d5efe872/master/pass/00001-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Małgosia Bela Adult Person Clothing Footwear Shoe Accessories Bag Handbag Formal Wear and Suit",
+      "runway_img_1_tag": "<img alt=\"Image may contain Małgosia Bela Adult Person Clothing Footwear Shoe Accessories Bag Handbag Formal Wear and Suit\" loading=\"eager\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" src=\"https://assets.vogue.com/photos/6810e841fa3721e3d5efe872/master/w_2560%2Cc_limit/00001-chanel-resort-2026-credit-gorunway.jpg\" data-src=\"https://assets.vogue.com/photos/6810e841fa3721e3d5efe872/master/w_2560%2Cc_limit/00001-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 2,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#2",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e8417979e8926339839d/master/pass/00002-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Adult Person Accessories Bag Handbag Clothing Footwear Shoe Plant Skirt Chair and Furniture",
+      "runway_img_2_tag": "<img alt=\"Image may contain Adult Person Accessories Bag Handbag Clothing Footwear Shoe Plant Skirt Chair and Furniture\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e8417979e8926339839d/master/w_120,c_limit/00002-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e8417979e8926339839d/master/w_240,c_limit/00002-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e8417979e8926339839d/master/w_320,c_limit/00002-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e8417979e8926339839d/master/w_360%2Cc_limit/00002-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 3,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#3",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e841bebc331a96c39dcc/master/pass/00003-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Lucie Lucas Person Adult Clothing Footwear Shoe Accessories Jewelry Necklace and Standing",
+      "runway_img_3_tag": "<img alt=\"Image may contain Lucie Lucas Person Adult Clothing Footwear Shoe Accessories Jewelry Necklace and Standing\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e841bebc331a96c39dcc/master/w_120,c_limit/00003-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e841bebc331a96c39dcc/master/w_240,c_limit/00003-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e841bebc331a96c39dcc/master/w_320,c_limit/00003-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e841bebc331a96c39dcc/master/w_360%2Cc_limit/00003-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 4,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#4",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e8446897cd35cfbebb22/master/pass/00004-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Ysica Toscanini Adult Person Clothing Footwear High Heel Shoe Accessories Bag Handbag and Coat",
+      "runway_img_4_tag": "<img alt=\"Image may contain Ysica Toscanini Adult Person Clothing Footwear High Heel Shoe Accessories Bag Handbag and Coat\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e8446897cd35cfbebb22/master/w_120,c_limit/00004-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e8446897cd35cfbebb22/master/w_240,c_limit/00004-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e8446897cd35cfbebb22/master/w_320,c_limit/00004-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e8446897cd35cfbebb22/master/w_360%2Cc_limit/00004-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 5,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#5",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e844dbe74c19f7789c06/master/pass/00005-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Clothing Pants Accessories Bag Handbag Person Adult Footwear High Heel Shoe Belt and Jewelry",
+      "runway_img_5_tag": "<img alt=\"Image may contain Clothing Pants Accessories Bag Handbag Person Adult Footwear High Heel Shoe Belt and Jewelry\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e844dbe74c19f7789c06/master/w_120,c_limit/00005-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e844dbe74c19f7789c06/master/w_240,c_limit/00005-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e844dbe74c19f7789c06/master/w_320,c_limit/00005-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e844dbe74c19f7789c06/master/w_360%2Cc_limit/00005-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 6,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#6",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e846df401e8feefb62df/master/pass/00006-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Ayu Gani Person Adult Accessories Bag Handbag Clothing Footwear Shoe Pants Hat and Formal Wear",
+      "runway_img_6_tag": "<img alt=\"Image may contain Ayu Gani Person Adult Accessories Bag Handbag Clothing Footwear Shoe Pants Hat and Formal Wear\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e846df401e8feefb62df/master/w_120,c_limit/00006-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e846df401e8feefb62df/master/w_240,c_limit/00006-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e846df401e8feefb62df/master/w_320,c_limit/00006-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e846df401e8feefb62df/master/w_360%2Cc_limit/00006-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 7,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#7",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e847af3a488fd08c0751/master/pass/00007-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Smithzz Person Clothing Formal Wear Suit Adult Footwear High Heel Shoe Desk Furniture and Table",
+      "runway_img_7_tag": "<img alt=\"Image may contain Smithzz Person Clothing Formal Wear Suit Adult Footwear High Heel Shoe Desk Furniture and Table\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e847af3a488fd08c0751/master/w_120,c_limit/00007-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e847af3a488fd08c0751/master/w_240,c_limit/00007-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e847af3a488fd08c0751/master/w_320,c_limit/00007-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e847af3a488fd08c0751/master/w_360%2Cc_limit/00007-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 8,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#8",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e84675bb4015402d086c/master/pass/00008-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Lucy Evans Clothing Formal Wear Suit Person Footwear High Heel Shoe Accessories Bag and Handbag",
+      "runway_img_8_tag": "<img alt=\"Image may contain Lucy Evans Clothing Formal Wear Suit Person Footwear High Heel Shoe Accessories Bag and Handbag\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e84675bb4015402d086c/master/w_120,c_limit/00008-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e84675bb4015402d086c/master/w_240,c_limit/00008-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e84675bb4015402d086c/master/w_320,c_limit/00008-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e84675bb4015402d086c/master/w_360%2Cc_limit/00008-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 9,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#9",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e849df401e8feefb62e1/master/pass/00009-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Nicole Fox Adult Person Accessories Bag Handbag Fashion Clothing Footwear Shoe and Plant",
+      "runway_img_9_tag": "<img alt=\"Image may contain Nicole Fox Adult Person Accessories Bag Handbag Fashion Clothing Footwear Shoe and Plant\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e849df401e8feefb62e1/master/w_120,c_limit/00009-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e849df401e8feefb62e1/master/w_240,c_limit/00009-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e849df401e8feefb62e1/master/w_320,c_limit/00009-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e849df401e8feefb62e1/master/w_360%2Cc_limit/00009-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 10,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#10",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e848fa3721e3d5efe874/master/pass/00010-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Chlöe Howl Clothing Footwear Shoe Adult Person Accessories Glasses High Heel Plant and Bag",
+      "runway_img_10_tag": "<img alt=\"Image may contain Chlöe Howl Clothing Footwear Shoe Adult Person Accessories Glasses High Heel Plant and Bag\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e848fa3721e3d5efe874/master/w_120,c_limit/00010-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e848fa3721e3d5efe874/master/w_240,c_limit/00010-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e848fa3721e3d5efe874/master/w_320,c_limit/00010-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e848fa3721e3d5efe874/master/w_360%2Cc_limit/00010-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 11,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#11",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e8490b0a8f4736cf6caf/master/pass/00011-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Clothing Footwear High Heel Shoe Adult Person Accessories Jewelry Necklace Bag and Handbag",
+      "runway_img_11_tag": "<img alt=\"Image may contain Clothing Footwear High Heel Shoe Adult Person Accessories Jewelry Necklace Bag and Handbag\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e8490b0a8f4736cf6caf/master/w_120,c_limit/00011-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e8490b0a8f4736cf6caf/master/w_240,c_limit/00011-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e8490b0a8f4736cf6caf/master/w_320,c_limit/00011-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e8490b0a8f4736cf6caf/master/w_360%2Cc_limit/00011-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 12,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#12",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e84c597c16568a03fa27/master/pass/00012-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Person Clothing Footwear High Heel Shoe Accessories Bag Handbag Adult Jewelry Necklace and Coat",
+      "runway_img_12_tag": "<img alt=\"Image may contain Person Clothing Footwear High Heel Shoe Accessories Bag Handbag Adult Jewelry Necklace and Coat\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e84c597c16568a03fa27/master/w_120,c_limit/00012-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e84c597c16568a03fa27/master/w_240,c_limit/00012-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e84c597c16568a03fa27/master/w_320,c_limit/00012-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e84c597c16568a03fa27/master/w_360%2Cc_limit/00012-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 13,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#13",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e84cbe77100283c71e9d/master/pass/00013-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Person Clothing Footwear High Heel Shoe Accessories Bag Handbag Adult Sandal and Jewelry",
+      "runway_img_13_tag": "<img alt=\"Image may contain Person Clothing Footwear High Heel Shoe Accessories Bag Handbag Adult Sandal and Jewelry\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e84cbe77100283c71e9d/master/w_120,c_limit/00013-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e84cbe77100283c71e9d/master/w_240,c_limit/00013-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e84cbe77100283c71e9d/master/w_320,c_limit/00013-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e84cbe77100283c71e9d/master/w_360%2Cc_limit/00013-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 14,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#14",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e84cfa3721e3d5efe876/master/pass/00014-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Inbal Segev Person Accessories Bag Handbag Clothing Footwear High Heel Shoe Adult and Plant",
+      "runway_img_14_tag": "<img alt=\"Image may contain Inbal Segev Person Accessories Bag Handbag Clothing Footwear High Heel Shoe Adult and Plant\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e84cfa3721e3d5efe876/master/w_120,c_limit/00014-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e84cfa3721e3d5efe876/master/w_240,c_limit/00014-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e84cfa3721e3d5efe876/master/w_320,c_limit/00014-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e84cfa3721e3d5efe876/master/w_360%2Cc_limit/00014-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 15,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#15",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e84efa3721e3d5efe878/master/pass/00015-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Roberto Irineu Marinho Clothing Footwear Shoe Person Adult Accessories Bag Handbag and Chair",
+      "runway_img_15_tag": "<img alt=\"Image may contain Roberto Irineu Marinho Clothing Footwear Shoe Person Adult Accessories Bag Handbag and Chair\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e84efa3721e3d5efe878/master/w_120,c_limit/00015-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e84efa3721e3d5efe878/master/w_240,c_limit/00015-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e84efa3721e3d5efe878/master/w_320,c_limit/00015-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e84efa3721e3d5efe878/master/w_360%2Cc_limit/00015-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 16,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#16",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e84e7979e8926339839f/master/pass/00016-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Mlanie Thierry Person Adult Clothing Footwear High Heel Shoe Desk Furniture Table and Plant",
+      "runway_img_16_tag": "<img alt=\"Image may contain Mlanie Thierry Person Adult Clothing Footwear High Heel Shoe Desk Furniture Table and Plant\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e84e7979e8926339839f/master/w_120,c_limit/00016-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e84e7979e8926339839f/master/w_240,c_limit/00016-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e84e7979e8926339839f/master/w_320,c_limit/00016-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e84e7979e8926339839f/master/w_360%2Cc_limit/00016-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 17,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#17",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e84edf401e8feefb62e3/master/pass/00017-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Nikki Pradhan Person Accessories Bag Handbag Clothing Footwear High Heel Shoe Adult and Desk",
+      "runway_img_17_tag": "<img alt=\"Image may contain Nikki Pradhan Person Accessories Bag Handbag Clothing Footwear High Heel Shoe Adult and Desk\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e84edf401e8feefb62e3/master/w_120,c_limit/00017-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e84edf401e8feefb62e3/master/w_240,c_limit/00017-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e84edf401e8feefb62e3/master/w_320,c_limit/00017-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e84edf401e8feefb62e3/master/w_360%2Cc_limit/00017-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 18,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#18",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e8503cf217b40624cb4d/master/pass/00018-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Person Adult Clothing Footwear High Heel Shoe Floor Desk Furniture Table Plant and Dress",
+      "runway_img_18_tag": "<img alt=\"Image may contain Person Adult Clothing Footwear High Heel Shoe Floor Desk Furniture Table Plant and Dress\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e8503cf217b40624cb4d/master/w_120,c_limit/00018-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e8503cf217b40624cb4d/master/w_240,c_limit/00018-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e8503cf217b40624cb4d/master/w_320,c_limit/00018-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e8503cf217b40624cb4d/master/w_360%2Cc_limit/00018-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 19,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#19",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e85147f6a5b2d67de0d8/master/pass/00019-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Heather Nedohin Person Clothing Footwear High Heel Shoe Adult Plant Hat Child and Chair",
+      "runway_img_19_tag": "<img alt=\"Image may contain Heather Nedohin Person Clothing Footwear High Heel Shoe Adult Plant Hat Child and Chair\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e85147f6a5b2d67de0d8/master/w_120,c_limit/00019-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e85147f6a5b2d67de0d8/master/w_240,c_limit/00019-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e85147f6a5b2d67de0d8/master/w_320,c_limit/00019-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e85147f6a5b2d67de0d8/master/w_360%2Cc_limit/00019-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 20,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#20",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e851af3a488fd08c0753/master/pass/00020-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Adult Person Clothing Footwear High Heel Shoe Accessories Bag Handbag Wedding and Chair",
+      "runway_img_20_tag": "<img alt=\"Image may contain Adult Person Clothing Footwear High Heel Shoe Accessories Bag Handbag Wedding and Chair\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e851af3a488fd08c0753/master/w_120,c_limit/00020-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e851af3a488fd08c0753/master/w_240,c_limit/00020-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e851af3a488fd08c0753/master/w_320,c_limit/00020-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e851af3a488fd08c0753/master/w_360%2Cc_limit/00020-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 21,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#21",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e8537979e892633983a1/master/pass/00021-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Clothing Footwear Shoe Accessories Bag Handbag High Heel Sandal Adult Person Desk and Furniture",
+      "runway_img_21_tag": "<img alt=\"Image may contain Clothing Footwear Shoe Accessories Bag Handbag High Heel Sandal Adult Person Desk and Furniture\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e8537979e892633983a1/master/w_120,c_limit/00021-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e8537979e892633983a1/master/w_240,c_limit/00021-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e8537979e892633983a1/master/w_320,c_limit/00021-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e8537979e892633983a1/master/w_360%2Cc_limit/00021-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 22,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#22",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e85336ccb9b7fe0ffafb/master/pass/00022-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Jessie Li Person Clothing Footwear High Heel Shoe Adult Formal Wear Suit Chair and Furniture",
+      "runway_img_22_tag": "<img alt=\"Image may contain Jessie Li Person Clothing Footwear High Heel Shoe Adult Formal Wear Suit Chair and Furniture\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e85336ccb9b7fe0ffafb/master/w_120,c_limit/00022-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e85336ccb9b7fe0ffafb/master/w_240,c_limit/00022-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e85336ccb9b7fe0ffafb/master/w_320,c_limit/00022-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e85336ccb9b7fe0ffafb/master/w_360%2Cc_limit/00022-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 23,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#23",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e853597c16568a03fa29/master/pass/00023-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Nadezhda Tolokonnikova Larissa Lezhnina Person Adult Clothing Footwear High Heel and Shoe",
+      "runway_img_23_tag": "<img alt=\"Image may contain Nadezhda Tolokonnikova Larissa Lezhnina Person Adult Clothing Footwear High Heel and Shoe\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e853597c16568a03fa29/master/w_120,c_limit/00023-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e853597c16568a03fa29/master/w_240,c_limit/00023-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e853597c16568a03fa29/master/w_320,c_limit/00023-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e853597c16568a03fa29/master/w_360%2Cc_limit/00023-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 24,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#24",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e855dbe74c19f7789c08/master/pass/00024-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Person Clothing Footwear High Heel Shoe Adult Accessories Bag Handbag Chair and Furniture",
+      "runway_img_24_tag": "<img alt=\"Image may contain Person Clothing Footwear High Heel Shoe Adult Accessories Bag Handbag Chair and Furniture\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e855dbe74c19f7789c08/master/w_120,c_limit/00024-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e855dbe74c19f7789c08/master/w_240,c_limit/00024-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e855dbe74c19f7789c08/master/w_320,c_limit/00024-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e855dbe74c19f7789c08/master/w_360%2Cc_limit/00024-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 25,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#25",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e856df401e8feefb62e5/master/pass/00025-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Clothing Footwear High Heel Shoe Adult Person Glove Dress Accessories Bag Handbag and Plant",
+      "runway_img_25_tag": "<img alt=\"Image may contain Clothing Footwear High Heel Shoe Adult Person Glove Dress Accessories Bag Handbag and Plant\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e856df401e8feefb62e5/master/w_120,c_limit/00025-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e856df401e8feefb62e5/master/w_240,c_limit/00025-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e856df401e8feefb62e5/master/w_320,c_limit/00025-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e856df401e8feefb62e5/master/w_360%2Cc_limit/00025-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 26,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#26",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e856fa3721e3d5efe87a/master/pass/00026-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Ayça Ayşin Turan Clothing Footwear Shoe Adult Person High Heel Plant Dress Accessories and Bag",
+      "runway_img_26_tag": "<img alt=\"Image may contain Ayça Ayşin Turan Clothing Footwear Shoe Adult Person High Heel Plant Dress Accessories and Bag\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e856fa3721e3d5efe87a/master/w_120,c_limit/00026-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e856fa3721e3d5efe87a/master/w_240,c_limit/00026-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e856fa3721e3d5efe87a/master/w_320,c_limit/00026-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e856fa3721e3d5efe87a/master/w_360%2Cc_limit/00026-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 27,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#27",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e8576897cd35cfbebb24/master/pass/00027-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Karmen Pedaru Person Adult Plant Clothing Footwear High Heel Shoe Desk Furniture and Table",
+      "runway_img_27_tag": "<img alt=\"Image may contain Karmen Pedaru Person Adult Plant Clothing Footwear High Heel Shoe Desk Furniture and Table\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e8576897cd35cfbebb24/master/w_120,c_limit/00027-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e8576897cd35cfbebb24/master/w_240,c_limit/00027-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e8576897cd35cfbebb24/master/w_320,c_limit/00027-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e8576897cd35cfbebb24/master/w_360%2Cc_limit/00027-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 28,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#28",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e859df401e8feefb62e7/master/pass/00028-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Sonny Zhou Clothing Footwear Shoe Shorts Accessories Glasses Adult Person High Heel and Bag",
+      "runway_img_28_tag": "<img alt=\"Image may contain Sonny Zhou Clothing Footwear Shoe Shorts Accessories Glasses Adult Person High Heel and Bag\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e859df401e8feefb62e7/master/w_120,c_limit/00028-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e859df401e8feefb62e7/master/w_240,c_limit/00028-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e859df401e8feefb62e7/master/w_320,c_limit/00028-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e859df401e8feefb62e7/master/w_360%2Cc_limit/00028-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 29,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#29",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e859be77100283c71ea0/master/pass/00029-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Person Clothing Footwear High Heel Shoe Adult Accessories Bag Handbag Plant and Jewelry",
+      "runway_img_29_tag": "<img alt=\"Image may contain Person Clothing Footwear High Heel Shoe Adult Accessories Bag Handbag Plant and Jewelry\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e859be77100283c71ea0/master/w_120,c_limit/00029-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e859be77100283c71ea0/master/w_240,c_limit/00029-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e859be77100283c71ea0/master/w_320,c_limit/00029-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e859be77100283c71ea0/master/w_360%2Cc_limit/00029-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 30,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#30",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e85a5aa2354a67906c13/master/pass/00030-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Person Clothing Pants Jeans Adult Footwear High Heel Shoe Accessories Jewelry and Necklace",
+      "runway_img_30_tag": "<img alt=\"Image may contain Person Clothing Pants Jeans Adult Footwear High Heel Shoe Accessories Jewelry and Necklace\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e85a5aa2354a67906c13/master/w_120,c_limit/00030-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e85a5aa2354a67906c13/master/w_240,c_limit/00030-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e85a5aa2354a67906c13/master/w_320,c_limit/00030-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e85a5aa2354a67906c13/master/w_360%2Cc_limit/00030-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 31,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#31",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e85b5aa2354a67906c15/master/pass/00031-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Clothing Pants Jeans Footwear Sandal Accessories Bag Handbag Adult Person High Heel and Shoe",
+      "runway_img_31_tag": "<img alt=\"Image may contain Clothing Pants Jeans Footwear Sandal Accessories Bag Handbag Adult Person High Heel and Shoe\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e85b5aa2354a67906c15/master/w_120,c_limit/00031-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e85b5aa2354a67906c15/master/w_240,c_limit/00031-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e85b5aa2354a67906c15/master/w_320,c_limit/00031-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e85b5aa2354a67906c15/master/w_360%2Cc_limit/00031-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 32,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#32",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e85b7355cf60ef990c70/master/pass/00032-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Person Adult Accessories Bag Handbag Clothing Formal Wear Suit Desk Furniture and Table",
+      "runway_img_32_tag": "<img alt=\"Image may contain Person Adult Accessories Bag Handbag Clothing Formal Wear Suit Desk Furniture and Table\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e85b7355cf60ef990c70/master/w_120,c_limit/00032-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e85b7355cf60ef990c70/master/w_240,c_limit/00032-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e85b7355cf60ef990c70/master/w_320,c_limit/00032-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e85b7355cf60ef990c70/master/w_360%2Cc_limit/00032-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 33,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#33",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e85dd254669b4a197ce3/master/pass/00033-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Bregje Heinen Adult Person Clothing Footwear Shoe High Heel Desk Furniture Table and Plant",
+      "runway_img_33_tag": "<img alt=\"Image may contain Bregje Heinen Adult Person Clothing Footwear Shoe High Heel Desk Furniture Table and Plant\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e85dd254669b4a197ce3/master/w_120,c_limit/00033-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e85dd254669b4a197ce3/master/w_240,c_limit/00033-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e85dd254669b4a197ce3/master/w_320,c_limit/00033-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e85dd254669b4a197ce3/master/w_360%2Cc_limit/00033-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 34,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#34",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e85e3cf217b40624cb50/master/pass/00034-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Rebecca Nyandeng De Mabior Accessories Bag Handbag Desk Furniture Table Adult Person and Clothing",
+      "runway_img_34_tag": "<img alt=\"Image may contain Rebecca Nyandeng De Mabior Accessories Bag Handbag Desk Furniture Table Adult Person and Clothing\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e85e3cf217b40624cb50/master/w_120,c_limit/00034-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e85e3cf217b40624cb50/master/w_240,c_limit/00034-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e85e3cf217b40624cb50/master/w_320,c_limit/00034-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e85e3cf217b40624cb50/master/w_360%2Cc_limit/00034-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 35,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#35",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e85ebe77100283c71ea2/master/pass/00035-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Accessories Bag Handbag Clothing Footwear High Heel Shoe Adult Person Desk Furniture and Table",
+      "runway_img_35_tag": "<img alt=\"Image may contain Accessories Bag Handbag Clothing Footwear High Heel Shoe Adult Person Desk Furniture and Table\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e85ebe77100283c71ea2/master/w_120,c_limit/00035-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e85ebe77100283c71ea2/master/w_240,c_limit/00035-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e85ebe77100283c71ea2/master/w_320,c_limit/00035-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e85ebe77100283c71ea2/master/w_360%2Cc_limit/00035-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 36,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#36",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e8605aa2354a67906c18/master/pass/00036-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Francesca Rettondini Adult Person Clothing Footwear High Heel Shoe Accessories Belt and Desk",
+      "runway_img_36_tag": "<img alt=\"Image may contain Francesca Rettondini Adult Person Clothing Footwear High Heel Shoe Accessories Belt and Desk\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e8605aa2354a67906c18/master/w_120,c_limit/00036-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e8605aa2354a67906c18/master/w_240,c_limit/00036-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e8605aa2354a67906c18/master/w_320,c_limit/00036-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e8605aa2354a67906c18/master/w_360%2Cc_limit/00036-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 37,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#37",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e8600741ab11e16f6d16/master/pass/00037-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Person Adult Accessories Bag Handbag Clothing Footwear High Heel Shoe Sandal Plant and Purse",
+      "runway_img_37_tag": "<img alt=\"Image may contain Person Adult Accessories Bag Handbag Clothing Footwear High Heel Shoe Sandal Plant and Purse\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e8600741ab11e16f6d16/master/w_120,c_limit/00037-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e8600741ab11e16f6d16/master/w_240,c_limit/00037-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e8600741ab11e16f6d16/master/w_320,c_limit/00037-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e8600741ab11e16f6d16/master/w_360%2Cc_limit/00037-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 38,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#38",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e86136ccb9b7fe0ffafd/master/pass/00038-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Person Clothing Footwear High Heel Shoe Plant Adult Wedding Accessories Belt and Jewelry",
+      "runway_img_38_tag": "<img alt=\"Image may contain Person Clothing Footwear High Heel Shoe Plant Adult Wedding Accessories Belt and Jewelry\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e86136ccb9b7fe0ffafd/master/w_120,c_limit/00038-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e86136ccb9b7fe0ffafd/master/w_240,c_limit/00038-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e86136ccb9b7fe0ffafd/master/w_320,c_limit/00038-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e86136ccb9b7fe0ffafd/master/w_360%2Cc_limit/00038-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 39,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#39",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e862d254669b4a197ce5/master/pass/00039-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Hilary Rhoda Cearbhall Ó Dlaigh Person Accessories Bag Handbag Desk Furniture Table and Adult",
+      "runway_img_39_tag": "<img alt=\"Image may contain Hilary Rhoda Cearbhall Ó Dlaigh Person Accessories Bag Handbag Desk Furniture Table and Adult\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e862d254669b4a197ce5/master/w_120,c_limit/00039-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e862d254669b4a197ce5/master/w_240,c_limit/00039-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e862d254669b4a197ce5/master/w_320,c_limit/00039-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e862d254669b4a197ce5/master/w_360%2Cc_limit/00039-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 40,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#40",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e8635aa2354a67906c1a/master/pass/00040-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "",
+      "runway_img_40_tag": "<img alt=\"\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e8635aa2354a67906c1a/master/w_120,c_limit/00040-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e8635aa2354a67906c1a/master/w_240,c_limit/00040-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e8635aa2354a67906c1a/master/w_320,c_limit/00040-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e8635aa2354a67906c1a/master/w_360%2Cc_limit/00040-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 41,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#41",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e86439a2cf8e328d7872/master/pass/00041-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Ana Girardot Accessories Bag Handbag Clothing Footwear High Heel Shoe Adult Person and Glasses",
+      "runway_img_41_tag": "<img alt=\"Image may contain Ana Girardot Accessories Bag Handbag Clothing Footwear High Heel Shoe Adult Person and Glasses\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e86439a2cf8e328d7872/master/w_120,c_limit/00041-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e86439a2cf8e328d7872/master/w_240,c_limit/00041-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e86439a2cf8e328d7872/master/w_320,c_limit/00041-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e86439a2cf8e328d7872/master/w_360%2Cc_limit/00041-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 42,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#42",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e86482c31207a8342d47/master/pass/00042-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Accessories Glasses Adult Person Plant Clothing Skirt Desk Furniture Table and Footwear",
+      "runway_img_42_tag": "<img alt=\"Image may contain Accessories Glasses Adult Person Plant Clothing Skirt Desk Furniture Table and Footwear\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e86482c31207a8342d47/master/w_120,c_limit/00042-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e86482c31207a8342d47/master/w_240,c_limit/00042-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e86482c31207a8342d47/master/w_320,c_limit/00042-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e86482c31207a8342d47/master/w_360%2Cc_limit/00042-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 43,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#43",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e865cd0a6fe72a034c72/master/pass/00043-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Person Adult Plant Clothing Footwear High Heel Shoe Accessories Bag Handbag Floor and Jewelry",
+      "runway_img_43_tag": "<img alt=\"Image may contain Person Adult Plant Clothing Footwear High Heel Shoe Accessories Bag Handbag Floor and Jewelry\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e865cd0a6fe72a034c72/master/w_120,c_limit/00043-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e865cd0a6fe72a034c72/master/w_240,c_limit/00043-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e865cd0a6fe72a034c72/master/w_320,c_limit/00043-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e865cd0a6fe72a034c72/master/w_360%2Cc_limit/00043-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 44,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#44",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e867dbe74c19f7789c0c/master/pass/00044-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Person Adult Accessories Bag Handbag Clothing Dress Footwear High Heel Shoe and Plant",
+      "runway_img_44_tag": "<img alt=\"Image may contain Person Adult Accessories Bag Handbag Clothing Dress Footwear High Heel Shoe and Plant\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e867dbe74c19f7789c0c/master/w_120,c_limit/00044-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e867dbe74c19f7789c0c/master/w_240,c_limit/00044-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e867dbe74c19f7789c0c/master/w_320,c_limit/00044-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e867dbe74c19f7789c0c/master/w_360%2Cc_limit/00044-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 45,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#45",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e867597c16568a03fa2c/master/pass/00045-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Clothing Skirt Adult Person Dress Accessories Bag Handbag Footwear High Heel Shoe and Bracelet",
+      "runway_img_45_tag": "<img alt=\"Image may contain Clothing Skirt Adult Person Dress Accessories Bag Handbag Footwear High Heel Shoe and Bracelet\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e867597c16568a03fa2c/master/w_120,c_limit/00045-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e867597c16568a03fa2c/master/w_240,c_limit/00045-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e867597c16568a03fa2c/master/w_320,c_limit/00045-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e867597c16568a03fa2c/master/w_360%2Cc_limit/00045-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 46,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#46",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e868be77100283c71ea4/master/pass/00046-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Person Clothing Footwear High Heel Shoe Dress Adult Formal Wear Chair Furniture and Plant",
+      "runway_img_46_tag": "<img alt=\"Image may contain Person Clothing Footwear High Heel Shoe Dress Adult Formal Wear Chair Furniture and Plant\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e868be77100283c71ea4/master/w_120,c_limit/00046-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e868be77100283c71ea4/master/w_240,c_limit/00046-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e868be77100283c71ea4/master/w_320,c_limit/00046-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e868be77100283c71ea4/master/w_360%2Cc_limit/00046-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 47,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#47",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e86a47f6a5b2d67de0da/master/pass/00047-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Mladen Grdović Clothing Dress Formal Wear Evening Dress Footwear High Heel Shoe Person and Adult",
+      "runway_img_47_tag": "<img alt=\"Image may contain Mladen Grdović Clothing Dress Formal Wear Evening Dress Footwear High Heel Shoe Person and Adult\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e86a47f6a5b2d67de0da/master/w_120,c_limit/00047-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e86a47f6a5b2d67de0da/master/w_240,c_limit/00047-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e86a47f6a5b2d67de0da/master/w_320,c_limit/00047-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e86a47f6a5b2d67de0da/master/w_360%2Cc_limit/00047-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 48,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#48",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e86936ccb9b7fe0ffaff/master/pass/00048-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Jessica Harp Person Clothing Footwear High Heel Shoe Adult Accessories Jewelry and Necklace",
+      "runway_img_48_tag": "<img alt=\"Image may contain Jessica Harp Person Clothing Footwear High Heel Shoe Adult Accessories Jewelry and Necklace\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e86936ccb9b7fe0ffaff/master/w_120,c_limit/00048-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e86936ccb9b7fe0ffaff/master/w_240,c_limit/00048-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e86936ccb9b7fe0ffaff/master/w_320,c_limit/00048-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e86936ccb9b7fe0ffaff/master/w_360%2Cc_limit/00048-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 49,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#49",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e86bdbe74c19f7789c0f/master/pass/00049-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Clothing Footwear High Heel Shoe Glove Person Adult Plant Accessories Jewelry and Necklace",
+      "runway_img_49_tag": "<img alt=\"Image may contain Clothing Footwear High Heel Shoe Glove Person Adult Plant Accessories Jewelry and Necklace\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e86bdbe74c19f7789c0f/master/w_120,c_limit/00049-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e86bdbe74c19f7789c0f/master/w_240,c_limit/00049-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e86bdbe74c19f7789c0f/master/w_320,c_limit/00049-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e86bdbe74c19f7789c0f/master/w_360%2Cc_limit/00049-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 50,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#50",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e86cfa3721e3d5efe87d/master/pass/00050-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Accessories Jewelry Necklace Adult Person Clothing Footwear High Heel Shoe Sleeve and Standing",
+      "runway_img_50_tag": "<img alt=\"Image may contain Accessories Jewelry Necklace Adult Person Clothing Footwear High Heel Shoe Sleeve and Standing\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e86cfa3721e3d5efe87d/master/w_120,c_limit/00050-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e86cfa3721e3d5efe87d/master/w_240,c_limit/00050-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e86cfa3721e3d5efe87d/master/w_320,c_limit/00050-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e86cfa3721e3d5efe87d/master/w_360%2Cc_limit/00050-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 51,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#51",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e86d597c16568a03fa2e/master/pass/00051-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Gizele Oliveira Clothing Pants Footwear High Heel Shoe Person Teen Adult Skirt and Desk",
+      "runway_img_51_tag": "<img alt=\"Image may contain Gizele Oliveira Clothing Pants Footwear High Heel Shoe Person Teen Adult Skirt and Desk\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e86d597c16568a03fa2e/master/w_120,c_limit/00051-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e86d597c16568a03fa2e/master/w_240,c_limit/00051-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e86d597c16568a03fa2e/master/w_320,c_limit/00051-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e86d597c16568a03fa2e/master/w_360%2Cc_limit/00051-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 52,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#52",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e86e75bb4015402d0871/master/pass/00052-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Kim Sunghee Adult Person Clothing Formal Wear Suit Pants Footwear High Heel Shoe and Desk",
+      "runway_img_52_tag": "<img alt=\"Image may contain Kim Sunghee Adult Person Clothing Formal Wear Suit Pants Footwear High Heel Shoe and Desk\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e86e75bb4015402d0871/master/w_120,c_limit/00052-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e86e75bb4015402d0871/master/w_240,c_limit/00052-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e86e75bb4015402d0871/master/w_320,c_limit/00052-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e86e75bb4015402d0871/master/w_360%2Cc_limit/00052-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 53,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#53",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e86e3cf217b40624cb52/master/pass/00053-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Elizabeth Wurtzel Adult Person Clothing Footwear High Heel Shoe Pants Wedding and Formal Wear",
+      "runway_img_53_tag": "<img alt=\"Image may contain Elizabeth Wurtzel Adult Person Clothing Footwear High Heel Shoe Pants Wedding and Formal Wear\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e86e3cf217b40624cb52/master/w_120,c_limit/00053-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e86e3cf217b40624cb52/master/w_240,c_limit/00053-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e86e3cf217b40624cb52/master/w_320,c_limit/00053-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e86e3cf217b40624cb52/master/w_360%2Cc_limit/00053-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 54,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#54",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e87082c31207a8342d49/master/pass/00054-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Person Adult Clothing Footwear High Heel Shoe Dress Chair Furniture Formal Wear and Accessories",
+      "runway_img_54_tag": "<img alt=\"Image may contain Person Adult Clothing Footwear High Heel Shoe Dress Chair Furniture Formal Wear and Accessories\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e87082c31207a8342d49/master/w_120,c_limit/00054-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e87082c31207a8342d49/master/w_240,c_limit/00054-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e87082c31207a8342d49/master/w_320,c_limit/00054-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e87082c31207a8342d49/master/w_360%2Cc_limit/00054-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 55,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#55",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e8713cf217b40624cb54/master/pass/00055-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Clothing Dress Person Footwear High Heel Shoe Formal Wear Adult Evening Dress and Chair",
+      "runway_img_55_tag": "<img alt=\"Image may contain Clothing Dress Person Footwear High Heel Shoe Formal Wear Adult Evening Dress and Chair\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e8713cf217b40624cb54/master/w_120,c_limit/00055-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e8713cf217b40624cb54/master/w_240,c_limit/00055-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e8713cf217b40624cb54/master/w_320,c_limit/00055-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e8713cf217b40624cb54/master/w_360%2Cc_limit/00055-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 56,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#56",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e870d254669b4a197ce7/master/pass/00056-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Adult Person Clothing Footwear High Heel Shoe Glove Accessories Bag Handbag Floor and Desk",
+      "runway_img_56_tag": "<img alt=\"Image may contain Adult Person Clothing Footwear High Heel Shoe Glove Accessories Bag Handbag Floor and Desk\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e870d254669b4a197ce7/master/w_120,c_limit/00056-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e870d254669b4a197ce7/master/w_240,c_limit/00056-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e870d254669b4a197ce7/master/w_320,c_limit/00056-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e870d254669b4a197ce7/master/w_360%2Cc_limit/00056-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 57,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#57",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e87275bb4015402d0873/master/pass/00057-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Maria Sergeyeva Person Clothing Footwear High Heel Shoe Adult Accessories Bag Handbag and Desk",
+      "runway_img_57_tag": "<img alt=\"Image may contain Maria Sergeyeva Person Clothing Footwear High Heel Shoe Adult Accessories Bag Handbag and Desk\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e87275bb4015402d0873/master/w_120,c_limit/00057-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e87275bb4015402d0873/master/w_240,c_limit/00057-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e87275bb4015402d0873/master/w_320,c_limit/00057-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e87275bb4015402d0873/master/w_360%2Cc_limit/00057-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 58,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#58",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e873bebc331a96c39dd0/master/pass/00058-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Person Adult Desk Furniture Table Floor Accessories Bag Handbag Clothing Footwear and High Heel",
+      "runway_img_58_tag": "<img alt=\"Image may contain Person Adult Desk Furniture Table Floor Accessories Bag Handbag Clothing Footwear and High Heel\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e873bebc331a96c39dd0/master/w_120,c_limit/00058-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e873bebc331a96c39dd0/master/w_240,c_limit/00058-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e873bebc331a96c39dd0/master/w_320,c_limit/00058-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e873bebc331a96c39dd0/master/w_360%2Cc_limit/00058-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 59,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#59",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e8735aa2354a67906c1c/master/pass/00059-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Person Adult Clothing Glove Plant Footwear High Heel Shoe Desk Furniture Table Floor and Dress",
+      "runway_img_59_tag": "<img alt=\"Image may contain Person Adult Clothing Glove Plant Footwear High Heel Shoe Desk Furniture Table Floor and Dress\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e8735aa2354a67906c1c/master/w_120,c_limit/00059-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e8735aa2354a67906c1c/master/w_240,c_limit/00059-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e8735aa2354a67906c1c/master/w_320,c_limit/00059-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e8735aa2354a67906c1c/master/w_360%2Cc_limit/00059-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 60,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#60",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e874cd0a6fe72a034c74/master/pass/00060-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Clothing Footwear Shoe Adult Person Glove Dress High Heel Chair Furniture Skirt and Fashion",
+      "runway_img_60_tag": "<img alt=\"Image may contain Clothing Footwear Shoe Adult Person Glove Dress High Heel Chair Furniture Skirt and Fashion\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e874cd0a6fe72a034c74/master/w_120,c_limit/00060-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e874cd0a6fe72a034c74/master/w_240,c_limit/00060-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e874cd0a6fe72a034c74/master/w_320,c_limit/00060-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e874cd0a6fe72a034c74/master/w_360%2Cc_limit/00060-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 61,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#61",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e8756897cd35cfbebb29/master/pass/00061-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Person Clothing Footwear High Heel Shoe Adult Glove Accessories Jewelry Necklace and Desk",
+      "runway_img_61_tag": "<img alt=\"Image may contain Person Clothing Footwear High Heel Shoe Adult Glove Accessories Jewelry Necklace and Desk\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e8756897cd35cfbebb29/master/w_120,c_limit/00061-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e8756897cd35cfbebb29/master/w_240,c_limit/00061-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e8756897cd35cfbebb29/master/w_320,c_limit/00061-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e8756897cd35cfbebb29/master/w_360%2Cc_limit/00061-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 62,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#62",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e8750741ab11e16f6d18/master/pass/00062-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Nanna Blondell Clothing Footwear High Heel Shoe Glove Person Adult Desk Furniture and Table",
+      "runway_img_62_tag": "<img alt=\"Image may contain Nanna Blondell Clothing Footwear High Heel Shoe Glove Person Adult Desk Furniture and Table\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e8750741ab11e16f6d18/master/w_120,c_limit/00062-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e8750741ab11e16f6d18/master/w_240,c_limit/00062-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e8750741ab11e16f6d18/master/w_320,c_limit/00062-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e8750741ab11e16f6d18/master/w_360%2Cc_limit/00062-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 63,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#63",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e8765aa2354a67906c1e/master/pass/00063-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Hana Mae Lee Clothing Footwear High Heel Shoe Person Adult Accessories Glasses Bag and Handbag",
+      "runway_img_63_tag": "<img alt=\"Image may contain Hana Mae Lee Clothing Footwear High Heel Shoe Person Adult Accessories Glasses Bag and Handbag\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e8765aa2354a67906c1e/master/w_120,c_limit/00063-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e8765aa2354a67906c1e/master/w_240,c_limit/00063-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e8765aa2354a67906c1e/master/w_320,c_limit/00063-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e8765aa2354a67906c1e/master/w_360%2Cc_limit/00063-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 64,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#64",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e8776897cd35cfbebb2b/master/pass/00064-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Clothing Glove Footwear High Heel Shoe Adult Person Dress Formal Wear Evening Dress and Plant",
+      "runway_img_64_tag": "<img alt=\"Image may contain Clothing Glove Footwear High Heel Shoe Adult Person Dress Formal Wear Evening Dress and Plant\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e8776897cd35cfbebb2b/master/w_120,c_limit/00064-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e8776897cd35cfbebb2b/master/w_240,c_limit/00064-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e8776897cd35cfbebb2b/master/w_320,c_limit/00064-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e8776897cd35cfbebb2b/master/w_360%2Cc_limit/00064-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 65,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#65",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e8784020bdcd90b2df93/master/pass/00065-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Clothing Glove Adult Person Dress Formal Wear Plant Pants Evening Dress Footwear and High Heel",
+      "runway_img_65_tag": "<img alt=\"Image may contain Clothing Glove Adult Person Dress Formal Wear Plant Pants Evening Dress Footwear and High Heel\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e8784020bdcd90b2df93/master/w_120,c_limit/00065-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e8784020bdcd90b2df93/master/w_240,c_limit/00065-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e8784020bdcd90b2df93/master/w_320,c_limit/00065-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e8784020bdcd90b2df93/master/w_360%2Cc_limit/00065-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 66,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#66",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e878df401e8feefb62e9/master/pass/00066-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Clothing Coat Adult Person Footwear Shoe High Heel Accessories Glasses Jacket Bag and Handbag",
+      "runway_img_66_tag": "<img alt=\"Image may contain Clothing Coat Adult Person Footwear Shoe High Heel Accessories Glasses Jacket Bag and Handbag\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e878df401e8feefb62e9/master/w_120,c_limit/00066-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e878df401e8feefb62e9/master/w_240,c_limit/00066-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e878df401e8feefb62e9/master/w_320,c_limit/00066-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e878df401e8feefb62e9/master/w_360%2Cc_limit/00066-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 67,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#67",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e87a39a2cf8e328d7875/master/pass/00067-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Jing Wen Paul Kelly Person Clothing Footwear High Heel Shoe Accessories Glasses Adult and Glove",
+      "runway_img_67_tag": "<img alt=\"Image may contain Jing Wen Paul Kelly Person Clothing Footwear High Heel Shoe Accessories Glasses Adult and Glove\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e87a39a2cf8e328d7875/master/w_120,c_limit/00067-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e87a39a2cf8e328d7875/master/w_240,c_limit/00067-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e87a39a2cf8e328d7875/master/w_320,c_limit/00067-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e87a39a2cf8e328d7875/master/w_360%2Cc_limit/00067-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 68,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#68",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e87a0741ab11e16f6d1a/master/pass/00068-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Clothing Footwear Shoe High Heel Adult Person Glove Dress Accessories Bag Handbag and Chair",
+      "runway_img_68_tag": "<img alt=\"Image may contain Clothing Footwear Shoe High Heel Adult Person Glove Dress Accessories Bag Handbag and Chair\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e87a0741ab11e16f6d1a/master/w_120,c_limit/00068-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e87a0741ab11e16f6d1a/master/w_240,c_limit/00068-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e87a0741ab11e16f6d1a/master/w_320,c_limit/00068-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e87a0741ab11e16f6d1a/master/w_360%2Cc_limit/00068-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    },
+    {
+      "look_number": 69,
+      "runway_img": "https://www.vogue.com/fashion-shows/resort-2026/chanel/slideshow/collection#69",
+      "runway_img_asset": "https://assets.vogue.com/photos/6810e87b4020bdcd90b2df95/master/pass/00069-chanel-resort-2026-credit-gorunway.jpg",
+      "runway_img_alt": "Image may contain Person Clothing Glove Footwear High Heel Shoe Plant Adult Accessories Bag Handbag and Child",
+      "runway_img_69_tag": "<img alt=\"Image may contain Person Clothing Glove Footwear High Heel Shoe Plant Adult Accessories Bag Handbag and Child\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://assets.vogue.com/photos/6810e87b4020bdcd90b2df95/master/w_120,c_limit/00069-chanel-resort-2026-credit-gorunway.jpg 120w, https://assets.vogue.com/photos/6810e87b4020bdcd90b2df95/master/w_240,c_limit/00069-chanel-resort-2026-credit-gorunway.jpg 240w, https://assets.vogue.com/photos/6810e87b4020bdcd90b2df95/master/w_320,c_limit/00069-chanel-resort-2026-credit-gorunway.jpg 320w\" sizes=\"100vw\" src=\"https://assets.vogue.com/photos/6810e87b4020bdcd90b2df95/master/w_360%2Cc_limit/00069-chanel-resort-2026-credit-gorunway.jpg\">",
+      "details_images": []
+    }
+  ],
+  "details_gallery": [],
+  "mapping": {
+    "strategy": "embedded-state",
+    "detail_policy": "none",
+    "looks_found": 69,
+    "details_found": 0,
+    "details_attached": 0,
+    "tags_captured": 69,
+    "note": "No detail gallery found for this show."
+  }
+}

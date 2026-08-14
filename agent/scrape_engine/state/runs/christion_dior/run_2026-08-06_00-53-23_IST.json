@@ -1,0 +1,119 @@
+{
+  "run": "2026-08-06_00-53-23_IST",
+  "at": "2026-08-06T11:17:45+05:30",
+  "pipeline_version": 2,
+  "dry_run": false,
+  "counts": {
+    "scraped": 42,
+    "matched": 25,
+    "tagged": 25,
+    "flattened": 25,
+    "skipped": 44,
+    "failed": 21,
+    "suspect": 0
+  },
+  "est_cost_usd": 19.798,
+  "collections": [
+    {
+      "url": "https://www.vogue.com/fashion-shows/fall-2026-couture/christian-dior",
+      "designer": "christion_dior",
+      "collection": "fall-2026-couture",
+      "scrape": "ok",
+      "match": "fail",
+      "tag": "skip",
+      "flatten": "skip",
+      "error": "Gemini scoring failed after retries: the JSON object must be str, bytes or bytearray, not NoneType"
+    },
+    {
+      "url": "https://www.vogue.com/fashion-shows/resort-2027/christian-dior",
+      "designer": "christion_dior",
+      "collection": "resort-2027",
+      "scrape": "ok",
+      "match": "fail",
+      "tag": "skip",
+      "flatten": "skip",
+      "error": "C:\\Users\\JaswanthPall_fnohyb7\\Downloads\\Prada\\fashion_engine\\scrape_engine\\data\\raw\\christian_dior\\Christian_Dior_resort_2027_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file."
+    },
+    {
+      "url": "https://www.vogue.com/fashion-shows/fall-2026-ready-to-wear/christian-dior",
+      "designer": "christion_dior",
+      "collection": "fall-2026-ready-to-wear",
+      "scrape": "ok",
+      "match": "ok",
+      "tag": "ok",
+      "flatten": "ok",
+      "error": null
+    },
+    {
+      "url": "https://www.vogue.com/fashion-shows/spring-2026-couture/christian-dior",
+      "designer": "christion_dior",
+      "collection": "spring-2026-couture",
+      "scrape": "ok",
+      "match": "ok",
+      "tag": "ok",
+      "flatten": "ok",
+      "error": null
+    },
+    {
+      "url": "https://www.vogue.com/fashion-shows/pre-fall-2026/christian-dior",
+      "designer": "christion_dior",
+      "collection": "pre-fall-2026",
+      "scrape": "ok",
+      "match": "fail",
+      "tag": "skip",
+      "flatten": "skip",
+      "error": "C:\\Users\\JaswanthPall_fnohyb7\\Downloads\\Prada\\fashion_engine\\scrape_engine\\data\\raw\\christian_dior\\Christian_Dior_pre_fall_2026_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file."
+    },
+    {
+      "url": "https://www.vogue.com/fashion-shows/spring-2026-ready-to-wear/christian-dior",
+      "designer": "christion_dior",
+      "collection": "spring-2026-ready-to-wear",
+      "scrape": "ok",
+      "match": "fail",
+      "tag": "skip",
+      "flatten": "skip",
+      "error": "Gemini scoring failed after retries: the JSON object must be str, bytes or bytearray, not NoneType"
+    },
+    {
+      "url": "https://www.vogue.com/fashion-shows/fall-2025-couture/christian-dior",
+      "designer": "christion_dior",
+      "collection": "fall-2025-couture",
+      "scrape": "ok",
+      "match": "fail",
+      "tag": "skip",
+      "flatten": "skip",
+      "error": "C:\\Users\\JaswanthPall_fnohyb7\\Downloads\\Prada\\fashion_engine\\scrape_engine\\data\\raw\\christian_dior\\Christian_Dior_fall_2025_couture_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file."
+    },
+    {
+      "url": "https://www.vogue.com/fashion-shows/resort-2026/christian-dior",
+      "designer": "christion_dior",
+      "collection": "resort-2026",
+      "scrape": "ok",
+      "match": "fail",
+      "tag": "skip",
+      "flatten": "skip",
+      "error": "C:\\Users\\JaswanthPall_fnohyb7\\Downloads\\Prada\\fashion_engine\\scrape_engine\\data\\raw\\christian_dior\\Christian_Dior_resort_2026_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file."
+    },
+    {
+      "url": "https://www.vogue.com/fashion-shows/pre-fall-2025/christian-dior",
+      "designer": "christion_dior",
+      "collection": "pre-fall-2025",
+      "scrape": "ok",
+      "match": "fail",
+      "tag": "skip",
+      "flatten": "skip",
+      "error": "C:\\Users\\JaswanthPall_fnohyb7\\Downloads\\Prada\\fashion_engine\\scrape_engine\\data\\raw\\christian_dior\\Christian_Dior_pre_fall_2025_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file."
+    },
+    {
+      "url": "https://www.vogue.com/fashion-shows/fall-2025-ready-to-wear/christian-dior",
+      "designer": "christion_dior",
+      "collection": "fall-2025-ready-to-wear",
+      "scrape": "ok",
+      "match": "ok",
+      "tag": "ok",
+      "flatten": "ok",
+      "error": null
+    }
+  ],
+  "designer": "christion_dior"
+}

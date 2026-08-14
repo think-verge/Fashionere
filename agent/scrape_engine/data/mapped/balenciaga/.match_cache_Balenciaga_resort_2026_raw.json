@@ -1,0 +1,335 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efbe9f237f629cc7a6fb2/master/pass/00001-balenciaga-resort-2026-details-credit-brand.jpg|1-6": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The blazer, its grey check pattern, double-breasted style, black buttons, and the model's glasses are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efbea0ef9bc9a6911a0e3/master/pass/00002-balenciaga-resort-2026-details-credit-brand.jpg|1-8": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The blazer in Look 2 perfectly matches the detail image in color, fabric, double-breasted style, peaked lapels, button placement, and pocket design. The model's hair and earrings also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efbeb820d51afdeb0e80e/master/pass/00003-balenciaga-resort-2026-details-credit-brand.jpg|1-8": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for the double-breasted, brown and black houndstooth long coat worn by the model in Look 3, including the pattern, color, lapel style, and button configuration.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efbec78d116f2f3b2b131/master/pass/00004-balenciaga-resort-2026-details-credit-brand.jpg|1-10": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The model, black button-front dress, sunglasses, grey drawstring bag, and wrist accessory are identical in both the detail and Look 4.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efbedbece3fbe53218a24/master/pass/00005-balenciaga-resort-2026-details-credit-brand.jpg|1-10": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The black oversized coat with wide lapels, structured shoulders, large patch pockets, and raw edges on the hem and cuffs is identical in both the detail and Look 5.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efbef7925b0484c763224/master/pass/00007-balenciaga-resort-2026-details-credit-brand.jpg|1-12": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 7, featuring the same dark brown long coat, sheer high-neck garment, and glasses.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efbf078d116f2f3b2b133/master/pass/00006-balenciaga-resort-2026-details-credit-brand.jpg|1-12": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a fitted, high-collared coat with a brown and black houndstooth pattern, button-front closure, and flap pockets. Look 6 is an exact match for this garment, including the pattern, color, buttons, silhouette, and even the model's hair and the visible bag strap.",
+  "alternates": [
+   {
+    "look_number": 3,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efbf0a042348c72c987c9/master/pass/00008-balenciaga-resort-2026-details-credit-brand.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The navy bomber jacket in the detail image is identical to the one worn in Look 8, matching in color, fabric, zippers, and sleeve pocket detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efbf3bece3fbe53218a26/master/pass/00009-balenciaga-resort-2026-details-credit-brand.jpg|2-14": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The model, light brown oversized trench coat, dark blue pleated skirt, and the black bag with colorful elements (yellow, blue, purple) are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efbf4820d51afdeb0e810/master/pass/00010-balenciaga-resort-2026-details-credit-brand.jpg|4-16": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 10, featuring the same model, black leather trench coat, black ribbed turtleneck, black trousers, and glasses.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efbf5e67583166a0089d7/master/pass/00011-balenciaga-resort-2026-details-credit-brand.jpg|4-16": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact same oversized black blazer with prominent shoulder pads, single button closure, and subtle vertical texture, worn by the same model, as seen in Look 11.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efbf7c4f7e5fcef0ea37d/master/pass/00012-balenciaga-resort-2026-details-credit-brand.jpg|6-18": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact same dark grey graphic tank top, dark grey cropped hoodie, and black skinny jeans as worn by the model in Look 12. The model and visible accessories (ring) also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efbf86bf62ccf67573f5b/master/pass/00013-balenciaga-resort-2026-details-credit-brand.jpg|6-18": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The denim jacket, denim skirt, model's hair, and glasses are identical in both the detail image and Look 13.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efbf94b4dcccc69640013/master/pass/00014-balenciaga-resort-2026-details-credit-brand.jpg|8-20": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The model wears the exact same bright blue cropped hoodie, black sheer long-sleeve top, dark grey skinny jeans, and pink-tinted glasses as in the detail image. The ring on the right hand is also identical.",
+  "alternates": [
+   {
+    "look_number": 12,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efbfabece3fbe53218a28/master/pass/00015-balenciaga-resort-2026-details-credit-brand.jpg|8-20": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 15, including the layered jackets, black turtleneck, black pleated skirt, grey tote bag, black boots, and black sunglasses.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc00a042348c72c987cb/master/pass/00017-balenciaga-resort-2026-details-credit-brand.jpg|10-22": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black leather jacket with extensive fringe detailing. Look 17 features the exact same black leather fringed jacket.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc02918422581c50987b/master/pass/00018-balenciaga-resort-2026-details-credit-brand.jpg|12-24": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The model, cream hooded long-sleeve top, black drawstring sweatpants, and white crinkled paper-like bag are all identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 16,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc00850ccb1cbe4c00ed/master/pass/00019-balenciaga-resort-2026-details-credit-brand.jpg|12-24": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The model, black fur-trimmed top, black jeans, and crocodile-embossed Balenciaga bag are identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 23,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efbfc850ccb1cbe4c00eb/master/pass/00016-balenciaga-resort-2026-details-credit-brand.jpg|10-22": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 16, including the sheer purple hooded top, dark grey sweatpants, glasses, grey drawstring bag, black socks, and black slides.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc054b4dcccc69640015/master/pass/00022-balenciaga-resort-2026-details-credit-brand.jpg|16-28": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 22, including the grey full-zip hoodie, white Balenciaga cap, black high-neck underlayer, grey sweatpants, and grey Balenciaga drawstring bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc08cc67fa8bc5df0aa6/master/pass/00023-balenciaga-resort-2026-details-credit-brand.jpg|16-28": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 23, including the grey hooded tracksuit with dark blue stripes and logo, pink oversized sunglasses, and black quilted chain-strap bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc054e8fa155806fab63/master/pass/00020-balenciaga-resort-2026-details-credit-brand.jpg|14-26": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a cream striped zip-up jacket with a Balenciaga logo, matching cream striped pants, a black hood, black sunglasses, and a grey drawstring bag. Look 20 features all these exact items.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc040ef9bc9a6911a0e5/master/pass/00021-balenciaga-resort-2026-details-credit-brand.jpg|14-26": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 21, including the pink fur-trimmed top, pink snakeskin bag, black shaggy stole, red ribbed pants, and pink sunglasses.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc0952eabb4d5c4366c9/master/pass/00024-balenciaga-resort-2026-details-credit-brand.jpg|18-30": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The model, beige hooded top, plaid scarf, beige zip-up jacket with logo, dark wide-leg pants, and black duffel bag with green accents are all identical to Look 24.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc0b2966f47c79dc5263/master/pass/00026-balenciaga-resort-2026-details-credit-brand.jpg|20-32": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The blazer, cap, drawstring bag, and boots in the detail image are identical to those worn in Look 26.",
+  "alternates": [
+   {
+    "look_number": 22,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc0d0ef9bc9a6911a0e7/master/pass/00028-balenciaga-resort-2026-details-credit-brand.jpg|22-34": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The light grey zip-up hoodie, dark sheer top, black wide-leg pants, brown belt with silver buckle, and black fingerless sleeves are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc0fe759a896a108d621/master/pass/00029-balenciaga-resort-2026-details-credit-brand.jpg|22-34": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black oversized puffer jacket with a high collar and dark sunglasses. Look 29 features the identical black oversized puffer jacket, high collar, and dark sunglasses, worn by a model with similar long wavy hair.",
+  "alternates": [
+   {
+    "look_number": 27,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc0978d116f2f3b2b135/master/pass/00025-balenciaga-resort-2026-details-credit-brand.jpg|18-30": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The model's dark hooded shrug, navy star-print top, light wash jeans, snakeskin bag, pink-tinted glasses, and silver bracelet are all identical to Look 25.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc0c918422581c50987d/master/pass/00027-balenciaga-resort-2026-details-credit-brand.jpg|20-32": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact white oversized puffer jacket worn by the same model in Look 27.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc0f4b4dcccc69640017/master/pass/00030-balenciaga-resort-2026-details-credit-brand.jpg|24-36": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The model wears the identical black ribbed zip-up turtleneck, dark baggy cargo pants, and holds the same black and silver helmet-like bag.",
+  "alternates": [
+   {
+    "look_number": 34,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc131567da189ef4064e/master/pass/00033-balenciaga-resort-2026-details-credit-brand.jpg|26-38": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 33, featuring the identical red ruffled top, red mini skirt, off-white crescent 'BB' bag, black cat-eye sunglasses, and model's hair and makeup.",
+  "alternates": [
+   {
+    "look_number": 31,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc1284472360237ae940/master/pass/00032-balenciaga-resort-2026-details-credit-brand.jpg|26-38": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 32, including the Britney Spears t-shirt, dark brown cap with blue 'Britney' embroidery, silver chain, blue leather bag, two-tone cargo pants, and black boots.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc134e8fa155806fab67/master/pass/00034-balenciaga-resort-2026-details-credit-brand.jpg|28-40": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The model, black ribbed zip-up top with BB logo and thumbholes, distressed blue/purple pants, and large black duffel bag are identical in both images.",
+  "alternates": [
+   {
+    "look_number": 30,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc104e8fa155806fab65/master/pass/00031-balenciaga-resort-2026-details-credit-brand.jpg|24-36": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The model, black ruffled dress, white crescent bag with 'BB' logo, multiple watches, and glasses are all identical to Look 31.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc15f181303b6e85a6db/master/pass/00035-balenciaga-resort-2026-details-credit-brand.jpg|28-40": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The top, shorts, bag, and glasses in the detail image are identical to those worn in Look 35.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc17e67583166a0089d9/master/pass/00036-balenciaga-resort-2026-details-credit-brand.jpg|30-42": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black oversized puffer jacket, a black hoodie underneath, dark distressed pants, and a black duffel bag strap. Look 36 features all these exact items, including the specific style of the puffer jacket, the distressed texture of the pants, and the large black duffel bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc177925b0484c763226/master/pass/00037-balenciaga-resort-2026-details-credit-brand.jpg|30-42": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 37, including the black cropped hoodie, navy polka dot dress, pink sunglasses, necklace, ring, and pink textured bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc1b22d6c2e066cabd9d/master/pass/00039-balenciaga-resort-2026-details-credit-brand.jpg|32-44": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The red cropped bolero, floral dress, blue snakeskin bag, sunglasses, necklace, ring, and shoes all match exactly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc19918422581c50987f/master/pass/00038-balenciaga-resort-2026-details-credit-brand.jpg|32-44": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The model, all layered garments (light blue hoodie, black zip-up, blue jacket, dark brown textured coat with gold logo), dark baggy pants, and the distinctive orange and multi-colored striped tote bag are identical to Look 38.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc1ba042348c72c987cd/master/pass/00040-balenciaga-resort-2026-details-credit-brand.jpg|34-46": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 40, including the yellow puffer jacket, the layered blue and red garments, the black hoodie, the specific Britney Spears graphic t-shirt, and the distressed baseball cap.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc1c820d51afdeb0e812/master/pass/00041-balenciaga-resort-2026-details-credit-brand.jpg|34-46": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 41, including the pink hoodie, green floral dress, yellow snakeskin bag, pink sunglasses, and nude heels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc22e67583166a0089db/master/pass/00043-balenciaga-resort-2026-details-credit-brand.jpg|36-48": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The detail image shows an oversized royal blue puffer jacket with a bright red lining and a black hooded top underneath, matching exactly with Look 43.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc21967bcb6c158b1cb7/master/pass/00042-balenciaga-resort-2026-details-credit-brand.jpg|36-48": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 42, including the rhinestone Balenciaga cap, black fringed scarf, layered red and multi-patched jackets, grey camouflage pants, and black boots.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc226bf62ccf67573f5d/master/pass/00044-balenciaga-resort-2026-details-credit-brand.jpg|38-48": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 44, showing the identical model, hair, lip piercing, and the unique black leather garment with buckles and eyelets. The tattoo on the leg is also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc2553aa72f0e2978b66/master/pass/00045-balenciaga-resort-2026-details-credit-brand.jpg|38-48": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a red puffer jacket and nude lace-top stockings, which are identical to the jacket and stockings worn by the model in Look 45. The model's hair and facial features also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc25f181303b6e85a6dd/master/pass/00046-balenciaga-resort-2026-details-credit-brand.jpg|40-48": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The model, sheer nude top, lace bra, yellow wrapped skirt, nude heels, white box bag, and earrings are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc25918422581c509881/master/pass/00047-balenciaga-resort-2026-details-credit-brand.jpg|40-48": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The model, sheer pinkish-nude dress with built-in bra, and oversized pink sunglasses are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/683efc284e8fa155806fab69/master/pass/00048-balenciaga-resort-2026-details-credit-brand.jpg|42-48": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The model, sheer dark slip dress with built-in bra, and black fan with gothic lettering are identical to the detail image.",
+  "alternates": []
+ }
+}

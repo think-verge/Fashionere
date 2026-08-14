@@ -1,0 +1,765 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf0165be4e3e4a87e15698/master/pass/00001-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|1-6": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The model, brown fur coat, purple lace top, grey textured skirt, gold choker, and long gold horse-bit necklace are all identical to Look 1.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf016618751ce16d4eebb8/master/pass/00002-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|1-7": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light brown fur coat, a yellow crocodile-embossed bag with distinctive gold hardware, a grey tweed skirt, and sheer hosiery. Look 1 features all these exact items.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf0165399cff6da5d7a93a/master/pass/00003-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|1-8": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the headscarf, baseball cap, and sleeveless yellow top with gold ring details worn by the model in Look 2.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf016bc0582b2e8705e314/master/pass/00004-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|1-9": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The cream top with a large white button, black textured patent leather skirt, black patent handbag with gold hardware, and black patent wrist cuff are all identical to Look 2.",
+  "alternates": [
+   {
+    "look_number": 4,
+    "confidence": 0.75
+   },
+   {
+    "look_number": 7,
+    "confidence": 0.55
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf016e6d2bb5fdd437d47a/master/pass/00006-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|1-11": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive dark green, embossed mules in the detail image do not appear in any of the candidate looks. While several looks feature a matching grey textured skirt and sheer hosiery, the shoes are a clear mismatch.",
+  "alternates": [
+   {
+    "look_number": 1,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 3,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 11,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf016c399cff6da5d7a93c/master/pass/00005-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|1-10": {
+  "look_number": 2,
+  "confidence": 0.9,
+  "evidence": "The detail shows identical purple patent mules, black patent structured bag, and black textured skirt with a slit, all matching Look 2. Hosiery appears bare in detail but sheer nude in Look 2.",
+  "alternates": [
+   {
+    "look_number": 8,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 7,
+    "confidence": 0.5
+   },
+   {
+    "look_number": 4,
+    "confidence": 0.4
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf0174efdc89c45815b7c4/master/pass/00008-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|1-13": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 4, including the pink lace halter-neck top, the pink satin slip, the gold choker, and the long gold chain necklace with the D-ring pendant. The model is also the same.",
+  "alternates": [
+   {
+    "look_number": 1,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 9,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf0176b6cd66fbeec3b92d/master/pass/00009-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|2-14": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black leather gloves, the black crocodile-embossed bag with gold horse-bit hardware, and the pink satin dress with a high slit visible in Look 4.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf0176efdc89c45815b7c6/master/pass/00007-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|1-12": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a dark textured coat, pink patent leather gloves, and a small pink patent leather bag with gold hardware. Look 3 features all these exact items.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf0181c85f45d7534df146/master/pass/00012-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|4-16": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 6 in the grey tweed mini dress, the dark patterned tights, the distinctive dark green shaggy bag with gold horse-bit hardware, and the grey patent leather pumps.",
+  "alternates": [
+   {
+    "look_number": 4,
+    "confidence": 0.2
+   },
+   {
+    "look_number": 12,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf017fefdc89c45815b7c8/master/pass/00011-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|3-15": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The model's grey baseball cap, light green silk scarf with purple trim and chain pattern, and the grey sleeveless top with two gold circular embellishments are identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf0182e541011e5e8264ed/master/pass/00013-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|5-17": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a bright yellow jacket, a black textured skirt, and a grey crocodile-embossed handbag with a distinctive gold D-ring clasp. Look 7 features all these exact items.",
+  "alternates": [
+   {
+    "look_number": 17,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf017c65a8ec3964dbf742/master/pass/00010-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|2-14": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The model, the striped faux fur coat, the silver inner garment, the gold chain necklace, and the distinctive quilted dark grey/brown clutch bag are all identical to Look 5.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01876d2bb5fdd437d47c/master/pass/00014-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|6-18": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the brown fur coat, the beige trench-style sleeves, the dark green crocodile-embossed bag with gold hardware, and the purple patent leather mules worn in Look 8.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf018af9dd509649f32b42/master/pass/00016-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|8-20": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The detail shows a yellow lace-trimmed slip dress, sheer light hosiery, and red patent leather pointed-toe pumps with black heels. Look 10 features all these exact elements, including the specific lace pattern on the dress hem and the identical shoes and hosiery.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf018e966257ab7e085f89/master/pass/00017-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|9-21": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the light yellow textured jacket, the yellow dress with lace trim, and the yellow handbag with a gold clasp seen in Look 10.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf019049b800398ca36796/master/pass/00018-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|9-21": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the grey tweed skirt and jacket, the pink lizard-textured handbag with the gold D-clasp, and the pink leather wrist strap worn by the model in Look 11.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf0191c9555b836dcf4710/master/pass/00019-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|10-22": {
+  "look_number": 12,
+  "confidence": 0.98,
+  "evidence": "The detail perfectly matches the pink patent jacket and skirt, black horse-bit bag, grey patent mules, sheer hosiery, and the red garment visible underneath from Look 12.",
+  "alternates": [
+   {
+    "look_number": 18,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf0188674b4057f9a87ad6/master/pass/00015-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|7-19": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 9, including the purple wool coat, the light green lace bralette, the lime green satin skirt, the black quilted clutch bag, and the gold chain necklace with a horse-bit pendant.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01977cf01ffeb8149d20/master/pass/00020-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|11-23": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The model's skin tone, the light green textured knit garment, the light pink/beige silk scarf with purple trim and gold hardware, and the light pink/beige baseball cap worn underneath are all identical to Look 13.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf019a674b4057f9a87ad8/master/pass/00022-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|13-25": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a brown fur coat, a brown satin sleeve with a buckle, a dark brown quilted chevron-patterned clutch bag, and glasses, all of which are identical to those worn by the model in Look 14.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf0199d0261ebce86e40b6/master/pass/00021-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|12-24": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail shows a green textured garment and a cream bag with bamboo handles. Look 13 features the identical green textured dress and the same cream bag with bamboo handles.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01a206f743c2b6638093/master/pass/00024-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|15-27": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 16, featuring the identical purple high-neck dress with the distinctive V-shaped lace panel, the same gold-toned D-shaped choker necklace, and the model's long dark hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01a3a3115b81e731f038/master/pass/00026-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|16-28": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The detail shows a light grey structured handbag with a gold clasp, light grey fingerless gloves, and a brown textured skirt. Look 17 features all these exact items.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01a0d0261ebce86e40b8/master/pass/00025-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|16-28": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail shows the hem of a purple garment and distinctive light grey fluffy shoes, both of which are an exact match for Look 16.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf019c72b73dc9d4c2e587/master/pass/00023-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|14-26": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The light green glossy pointed-toe mules and the dark brown shaggy fur garment perfectly match Look 14.",
+  "alternates": [
+   {
+    "look_number": 17,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 26,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01a93fefc26b2f2c1518/master/pass/00028-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|18-30": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the purple dress with lavender lace trim, the dark brown crocodile-embossed handbag with gold hardware, and the dark brown wrist cuff worn by the model in Look 19.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01a9966257ab7e085f8b/master/pass/00029-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|19-31": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black patent heels, black opaque tights, dark brown structured bag with gold 'P' clasp, purple skirt with lace trim, yellow fabric accent, and gold ankle bracelet visible in Look 19.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01abf8681f92d4f181d9/master/pass/00030-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|20-32": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a large, shaggy pink bag with gold horse-bit hardware, carried with a white garment. Look 20 features the exact same pink bag and a matching white dress.",
+  "alternates": [
+   {
+    "look_number": 27,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01a66d2bb5fdd437d47e/master/pass/00027-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|17-29": {
+  "look_number": 18,
+  "confidence": 0.9,
+  "evidence": "The detail's dark sequined skirt with a greenish-gold sheen and the glossy light taupe pointed-toe pumps are an exact match for Look 18. However, the detail shows a gold chain anklet and bare legs, which are not present and differ from the light hosiery in Look 18.",
+  "alternates": [
+   {
+    "look_number": 17,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01af4676441adaadde58/master/pass/00031-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|21-33": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive black patent pointed-toe mules and white wide-leg trousers from the detail image are not present in any of the candidate looks. While Look 26 features a similar pink fluffy bag, its shoes and bottom garment are completely different.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01b7f19a97675bfea3c9/master/pass/00034-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|24-36": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail shows a fuzzy grey top, an orange lace skirt with floral embroidery and sequins, and a delicate gold waist chain with a horse-bit detail and a 'GUCCI' tag on the skirt. None of the candidate looks feature this specific combination of garments or accessories.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01b2d0261ebce86e40ba/master/pass/00033-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|23-35": {
+  "look_number": null,
+  "confidence": 0.9,
+  "evidence": "The detail shows a white slouchy bag with gold hardware and dark grey pants. No candidate look features a white bag or the combination of a similar bag style with dark grey pants.",
+  "alternates": [
+   {
+    "look_number": 24,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01b9f41c05efc86a6054/master/pass/00036-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|25-37": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "While the purple tights match Look 30, the detail shows purple patent leather shoes, a gold anklet, and a dark brown garment hem, none of which are present in Look 30 (which has black shoes, no anklet, and a white dress).",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01b10a7fd7d1768a5959/master/pass/00032-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|22-34": {
+  "look_number": null,
+  "confidence": 0.9,
+  "evidence": "The dark grey jacket and trousers in the detail do not match the color or type of main garments in any candidate look. While the gold chain and belt buckle are identical to Look 24, the main garments in Look 24 are brown and the top is a shirt, not a jacket.",
+  "alternates": [
+   {
+    "look_number": 24,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01c2de6a3e20334070f6/master/pass/00038-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|27-39": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive light olive green slouchy bag with gold hardware is not present in any of the candidate looks. The brown garment is also not matched.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01bcc2b01b5316859c32/master/pass/00037-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|26-38": {
+  "look_number": 31,
+  "confidence": 0.7,
+  "evidence": "The gold chain necklace with the horse-bit pendant is identical to the one in the detail image, and the top is also brown.",
+  "alternates": [
+   {
+    "look_number": 38,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01c3c0582b2e8705e316/master/pass/00039-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|28-40": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The orange chevron velvet garment and the black patent bag with bamboo handles from the detail image are not present in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01b90f305c8b6eb54fc6/master/pass/00035-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|24-36": {
+  "look_number": null,
+  "confidence": 0.9,
+  "evidence": "The detail image features a dark brown textured jacket and skirt, a mint green bamboo-handle bag, and bright purple hosiery. While Look 30 is the only candidate with bright purple hosiery, its main garment is a white sequined dress and it carries a lavender rectangular bag, which are clear mismatches for the other prominent elements in the detail image. No single candidate look matches all key elements of the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01ce6d2bb5fdd437d480/master/pass/00042-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|31-43": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail image shows a dark grey velvet garment with a sparkling 'GG' pattern and a large gold horsebit belt. None of the candidate looks feature this specific garment or belt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01c413a69ef0f4f1dd57/master/pass/00040-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|29-41": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive pink bamboo-handle bag and the sparkling embellished garment on the leg are not present in any of the candidate looks. While Look 40 has a dark brown fur coat and a light green garment, the primary items in the detail are missing from all candidates.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01c8c2b01b5316859c34/master/pass/00041-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|30-42": {
+  "look_number": null,
+  "confidence": 1.0,
+  "evidence": "The distinctive patterned sparkly leggings, pink bamboo-handle bag with green scarf, and light beige mules in the detail image do not appear in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01cf7cf01ffeb8149d22/master/pass/00044-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|32-44": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "None of the candidate looks feature the light blue sequined dress, the cream patent leather cuff, or the distinctive cream patent leather handbag with a gold clasp shown in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01d1966257ab7e085f8d/master/pass/00045-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|33-45": {
+  "look_number": null,
+  "confidence": 1.0,
+  "evidence": "The detail image shows high heels, a delicate gold anklet, and a sequined skirt/dress. None of the candidate looks feature any of these items; all models are male and wear loafers or boots, and no sequined garments or anklets are present.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01d5de6a3e20334070f8/master/pass/00047-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|35-47": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail image shows a female model wearing a black lace dress and light grey mule heels. All candidate looks feature male models in suits or coats with pants and closed-toe shoes, none of which match the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01ccc0582b2e8705e318/master/pass/00043-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|32-44": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive shaggy cream bag with gold hardware and the dark patterned legwear from the detail image are not present in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01d709a0ae24b2646ee4/master/pass/00048-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|36-48": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail shows a female model with long blonde hair wearing a black sequined open-back garment with a delicate gold chain across the lower back. All candidate looks feature male models wearing suits and coats, none of which match the garment, hair, or visible body features.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01d40f305c8b6eb54fc8/master/pass/00046-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|34-46": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "No matching garments or accessories (white sequined top, lavender bag, purple tights) were found in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01dbc85f45d7534df148/master/pass/00051-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|39-51": {
+  "look_number": 43,
+  "confidence": 0.9,
+  "evidence": "The model wears the exact grey tweed suit and black horsebit loafers. The duffel bag is the same style, though its color appears darker (dark grey/black) in the full look compared to the distinct green in the detail.",
+  "alternates": [
+   {
+    "look_number": 41,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01defa70c353514118c8/master/pass/00052-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|39-51": {
+  "look_number": null,
+  "confidence": 1.0,
+  "evidence": "The specific Gucci horsebit sunglasses, beige collared shirt, and black shiny textured jacket from the detail image are not present in any of the candidate full-body looks. While the model in the detail matches Look 39, the garments are entirely different.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01daa3115b81e731f03a/master/pass/00050-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|38-50": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail image features a light cream/pale yellow crinkled coat, dark grey speckled trousers, and black chunky ankle boots. While several candidates feature matching trousers and/or boots, none of the candidate looks include a coat that matches the distinct color and crinkled texture of the coat in the detail image.",
+  "alternates": [
+   {
+    "look_number": 39,
+    "confidence": 0.75
+   },
+   {
+    "look_number": 44,
+    "confidence": 0.75
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01d9399cff6da5d7a93e/master/pass/00049-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|37-49": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The detail shows dark grey textured trousers and dark brown horsebit loafers, along with a fragment of a matching dark grey textured jacket. Look 43 features a full suit in the exact dark grey textured fabric and the identical dark brown horsebit loafers.",
+  "alternates": [
+   {
+    "look_number": 42,
+    "confidence": 0.95
+   },
+   {
+    "look_number": 45,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 39,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01dff9dd509649f32b44/master/pass/00053-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|40-52": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The model, dark grey double-breasted suit, matching shirt and tie, and silver aviator glasses from the detail image do not appear in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01e23e9dd1a2f0d4bb89/master/pass/00055-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|42-54": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 43, including the grey tweed suit, the dark grey suede Gucci Web stripe bag, and the dark green velvet horsebit loafers.",
+  "alternates": [
+   {
+    "look_number": 54,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 42,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 45,
+    "confidence": 0.5
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01e06d2bb5fdd437d482/master/pass/00054-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|41-53": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The dark olive/brown suede bag with red/green stripe and gold GG logo, the purple trousers, and the black horsebit loafers all match perfectly.",
+  "alternates": [
+   {
+    "look_number": 53,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 43,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 51,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01e6966257ab7e085f8f/master/pass/00058-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|45-57": {
+  "look_number": 48,
+  "confidence": 0.98,
+  "evidence": "The detail image shows light purple trousers and dark brown suede horsebit mules. Look 48 features identical light purple trousers and the same dark brown suede horsebit mules.",
+  "alternates": [
+   {
+    "look_number": 52,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01e831d41daed73b9f1f/master/pass/00059-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|46-58": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The model, sunglasses, brown textured blazer, and light blue turtleneck with a sheer layer underneath are identical in both the detail and look 49.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01e509a0ae24b2646ee6/master/pass/00057-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|44-56": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 45, including the grey tweed suit, the orange suede duffel bag with green/red stripe and Gucci logo, and the dark brown loafers with gold chain detail. The model's skin tone also matches.",
+  "alternates": [
+   {
+    "look_number": 46,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 48,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 49,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01ea06f743c2b6638095/master/pass/00060-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|46-58": {
+  "look_number": 49,
+  "confidence": 0.9,
+  "evidence": "The dark brown textured suit and the dark grey crocodile-embossed bag with silver horsebit clasp are an exact match. The dark brown horsebit loafers are also present, though the detail shows a backless style while Look 49 shows a full loafer.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01e4b6cd66fbeec3b92f/master/pass/00056-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|43-55": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The grey textured trousers, dark green velvet horsebit loafers, and black Gucci bag with red and green stripe perfectly match all visible elements in the detail.",
+  "alternates": [
+   {
+    "look_number": 54,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 45,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01ef40897b5c558fa883/master/pass/00063-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|49-60": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The light lavender wide-leg pants and the light grey/taupe unstructured hobo bag with silver hardware are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01ed65a8ec3964dbf744/master/pass/00061-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|47-59": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The fuzzy light purple cardigan, grey trousers, and dark green leather bag with a silver horsebit clasp are identical in both the detail and look 51.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01ec2fdcc604ffc0d75a/master/pass/00062-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|48-60": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the dark grey trousers and the dark loafers with a gold horsebit buckle seen in Look 51. The fabric, color, and shoe style are identical.",
+  "alternates": [
+   {
+    "look_number": 53,
+    "confidence": 0.95
+   },
+   {
+    "look_number": 54,
+    "confidence": 0.95
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01f218751ce16d4eebba/master/pass/00065-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|51-60": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 54's grey fuzzy cardigan, dark grey trousers, dark green horsebit loafers, and pale yellow horsebit bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01f8b6cd66fbeec3b931/master/pass/00068-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|54-60": {
+  "look_number": 57,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a purple velvet duffel bag with red and green stripe and gold GG logo, light grey trousers, and dark brown shoes. Look 57 features the exact same bag, trousers, and shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01f5d0261ebce86e40bc/master/pass/00066-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|52-60": {
+  "look_number": 55,
+  "confidence": 1.0,
+  "evidence": "The model, unique silver aviator glasses, dark grey shirt, dark grey tie, and shiny dark brown leather-look jacket perfectly match Look 55.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01f606f743c2b6638097/master/pass/00067-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|53-60": {
+  "look_number": 56,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the dark grey hobo bag, the dark grey wide-leg trousers, and the burgundy sequined long-sleeve top visible in Look 56.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01f0a3115b81e731f03c/master/pass/00064-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|50-60": {
+  "look_number": 53,
+  "confidence": 0.8,
+  "evidence": "The unique olive green velvet slouchy bag with a dark brown leather strap and the dark grey suit perfectly match Look 53. The shoes in the detail image are light-colored, while Look 53 features dark loafers.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01af4676441adaadde58/master/pass/00031-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|20-24": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The white garment, black patent pointed-toe mules, bare legs, and pink furry bag are all identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 21,
+    "confidence": 0.0
+   },
+   {
+    "look_number": 22,
+    "confidence": 0.0
+   },
+   {
+    "look_number": 23,
+    "confidence": 0.0
+   },
+   {
+    "look_number": 24,
+    "confidence": 0.0
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01b2d0261ebce86e40ba/master/pass/00033-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|24-31": {
+  "look_number": 24,
+  "confidence": 0.35,
+  "evidence": "The style and drape of the pants in Look 24 are the closest match to the pants in the detail image, despite a clear color difference (brown vs. dark grey/charcoal). The large, slouchy hobo bag with gold hardware in Look 24 also closely matches the style of the bag in the detail, though its color is different. The model in the detail image appears to be different from the model in Look 24.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01b7f19a97675bfea3c9/master/pass/00034-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|24-31": {
+  "look_number": 31,
+  "confidence": 0.2,
+  "evidence": "The detail image shows a sheer, embellished lace garment and a gold chain with a horse-bit motif. Look 31 features a sheer, embellished black lace skirt and a gold chain necklace with a horse-bit motif. The style of lace and the specific horse-bit design are similar, despite color differences in the lace and the chain's placement. The grey fuzzy top and bright orange color of the lace in the detail are not directly visible in Look 31.",
+  "alternates": [
+   {
+    "look_number": 28,
+    "confidence": 0.15
+   },
+   {
+    "look_number": 27,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01b90f305c8b6eb54fc6/master/pass/00035-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|24-31": {
+  "look_number": 30,
+  "confidence": 0.15,
+  "evidence": "Exact match for the bright purple hosiery. However, the main brown textured garment in the detail and the model's skin tone do not match Look 30's white sequined dress and model.",
+  "alternates": [
+   {
+    "look_number": 24,
+    "confidence": 0.05
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01b9f41c05efc86a6054/master/pass/00036-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|24-31": {
+  "look_number": 30,
+  "confidence": 0.7,
+  "evidence": "Exact match for unique purple opaque tights and specific gold chain anklet. Shoes are identical in style (patent leather, pointed toe, black heel) but differ in color (purple in detail, black in full look). The visible dark brown garment in the detail does not appear in Look 30.",
+  "alternates": [
+   {
+    "look_number": 25,
+    "confidence": 0.05
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01c2de6a3e20334070f6/master/pass/00038-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|31-39": {
+  "look_number": 36,
+  "confidence": 0.1,
+  "evidence": "Only Look 36 features a green bag, though its style, shade, and the model's garment and skin tone differ significantly from the detail image.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01c413a69ef0f4f1dd57/master/pass/00040-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|31-39": {
+  "look_number": 31,
+  "confidence": 0.05,
+  "evidence": "Only candidate with a dark brown garment (velvet top) and an embellished garment (skirt), loosely matching the dark brown fur and embellished garment in the detail, despite significant fabric and color differences. No strong match found.",
+  "alternates": [
+   {
+    "look_number": 36,
+    "confidence": 0.02
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01c8c2b01b5316859c34/master/pass/00041-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|31-39": {
+  "look_number": 31,
+  "confidence": 0.05,
+  "evidence": "Female model. Look 31 features a dark brown top and light-colored shoes, which are the closest general color and item type matches among the female candidates, despite significant differences in fabric, pattern, and style.",
+  "alternates": [
+   {
+    "look_number": 32,
+    "confidence": 0.02
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01c3c0582b2e8705e316/master/pass/00039-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|31-39": {
+  "look_number": 31,
+  "confidence": 0.1,
+  "evidence": "The detail shows a long-sleeved garment in a reddish-brown velvet-like fabric, which matches the color and texture family of the sleeveless top in Look 31. However, the detail clearly features a sleeve, which is absent in Look 31, making this a very weak match.",
+  "alternates": [
+   {
+    "look_number": 32,
+    "confidence": 0.0
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01ce6d2bb5fdd437d480/master/pass/00042-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|31-39": {
+  "look_number": 31,
+  "confidence": 0.1,
+  "evidence": "The detail shows a sleeveless V-neck velvet top with a belt. Look 31 is the only candidate that features a sleeveless V-neck velvet top with a belt, despite significant differences in color, pattern, and buckle design.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01ccc0582b2e8705e318/master/pass/00043-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|31-39": {
+  "look_number": 31,
+  "confidence": 0.01,
+  "evidence": "No matching garment or accessory found in any candidate look. The detail image shows patterned leggings and a shaggy white bag, which are not present in Look 31. This is a forced choice among female models as no candidate look matches the detail image's visible garment or accessory.",
+  "alternates": [
+   {
+    "look_number": 32,
+    "confidence": 0.01
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01cf7cf01ffeb8149d22/master/pass/00044-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|31-39": {
+  "look_number": 32,
+  "confidence": 0.05,
+  "evidence": "The only candidate featuring a sequined garment, despite significant discrepancies in color (dark green vs. light blue/teal), sleeve length (long-sleeved vs. bare arm), and specific sequin appearance compared to the detail. The accessories also do not match.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01d5de6a3e20334070f8/master/pass/00047-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|31-39": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The black embellished skirt, sheer hosiery, and light grey patent mules are an exact match.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01d1966257ab7e085f8d/master/pass/00045-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|31-39": {
+  "look_number": 32,
+  "confidence": 0.1,
+  "evidence": "The detail garment's sequined texture is the only commonality with Look 32. However, there are significant mismatches in garment color (light blue-green vs dark green), length (short vs long dress), shoes, and the presence of an anklet.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01defa70c353514118c8/master/pass/00052-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|41-41": {
+  "look_number": 41,
+  "confidence": 0.01,
+  "evidence": "The model, garments, and accessories in the detail image do not match Look 41. Look 41 features a different model and a purple suit, while the detail shows a dark-skinned model, a beige shirt, and a black textured jacket.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01dff9dd509649f32b44/master/pass/00053-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|41-41": {
+  "look_number": 41,
+  "confidence": 0.05,
+  "evidence": "The model, garment color (grey vs. purple), and suit style (single-breasted vs. double-breasted) are completely different between the detail and candidate look.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01d40f305c8b6eb54fc8/master/pass/00046-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|31-39": {
+  "look_number": 31,
+  "confidence": 0.0,
+  "evidence": "There is no visual match between the detail image and any of the candidate looks. The detail shows a white embellished garment, purple hosiery, and a dark-skinned female model, none of which are present in any of the provided full-body looks. Look 31 was chosen arbitrarily as the first candidate due to the constraint to select one.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67bf01d709a0ae24b2646ee4/master/pass/00048-gucci-fall-2025-ready-to-wear-detail-credit-brand.jpg|31-39": {
+  "look_number": 32,
+  "confidence": 0.95,
+  "evidence": "The model's blonde, shoulder-length hair is identical. The garment is a long, sequined dress with a deep back, matching the texture and style. The dark green color of the dress in the full shot appears black in the detail due to lighting or a very dark shade.",
+  "alternates": [
+   {
+    "look_number": 31,
+    "confidence": 0.1
+   }
+  ]
+ }
+}

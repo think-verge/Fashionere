@@ -1,0 +1,565 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef833fde453b99cbb38f/master/pass/00001b-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|1-8": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The white dress, black leather bag with distinctive clasp and handle, silver bracelet, and leg tattoo are all identical in the detail and Look 1.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef835f1f1b829bc6bd2f/master/pass/00002a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|1-10": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a male model wearing a white sleeveless top, white jeans/trousers with visible belt loops and button, and a silver-toned watch with a dark face on the left wrist. Look 2 perfectly matches all these elements, including the model's physique.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef8705db6c5acc229759/master/pass/00007a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|2-14": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The model, her hairstyle, the white jacket, the white blouse with a large bow, and the long dangle earrings are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef86ea5539abc092d532/master/pass/00006a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|1-12": {
+  "look_number": 6,
+  "confidence": 0.98,
+  "evidence": "The detail shows black crocodile-embossed pointed shoes and dark trousers, which perfectly match the shoes and trousers in Look 6.",
+  "alternates": [
+   {
+    "look_number": 12,
+    "confidence": 0.95
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef85d08063c920b9ee49/master/pass/00005a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The black pointed-toe heels with gold horsebit buckle and the dark, slightly shiny skirt fabric perfectly match those in the detail image.",
+  "alternates": [
+   {
+    "look_number": 11,
+    "confidence": 0.9
+   },
+   {
+    "look_number": 3,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef885fee983aa51233ab/master/pass/00007b-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|3-15": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a cream blazer, a bow-neck blouse, and a light olive crocodile-embossed handbag with a unique gold clasp. Look 7 features the exact same blazer, blouse, and handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef8a57966e4abfc21855/master/pass/00009a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|5-17": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The model's hair, makeup, light grey/blue spaghetti strap dress, silver hoop earrings, wrist accessory, and white structured bag are identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef81b4eceb6b8d6befea/master/pass/00001a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|1-7": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, makeup, earrings, and the white ruched turtleneck top are identical in the detail and Look 1.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef8b7fe60fdf8f629feb/master/pass/00009b-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|6-18": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the light grey sleeveless bodycon dress, the white crocodile-embossed bamboo handle bag, and the silver bracelet worn by the model in Look 9.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef8cc5c8f2c5df60e554/master/pass/00011a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|8-20": {
+  "look_number": 11,
+  "confidence": 0.95,
+  "evidence": "The black high-neck, long-sleeved dress, the distinctive dark brown crocodile-embossed bag with the gold bamboo clasp, and the gold bracelet all match perfectly.",
+  "alternates": [
+   {
+    "look_number": 18,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef8f9ef79d7989dd49e9/master/pass/00013a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|10-22": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 13, featuring the same model, dark satin suit (blazer and trousers), black top-handle bag, gold bracelet, and dark eye makeup.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef8d7cf427c2893e7c24/master/pass/00012a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|9-21": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black crocodile-embossed pointed shoes and the dark, slightly shiny, baggy pants seen in Look 12.",
+  "alternates": [
+   {
+    "look_number": 14,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 16,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef8f3fde453b99cbb3cd/master/pass/00015a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|12-24": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a cream double-breasted coat with gold buttons, a dark top, a black leather handbag with a bamboo-style closure, and gold jewelry. Look 15 features the identical coat, dark top, handbag, and jewelry.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef91bc6801f348f86431/master/pass/00017a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|13-25": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The model's hair, makeup, red polo shirt with collar and logo, black choker with gold GG pendant, and gold hoop earrings are all identical to Look 17.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef9219b858d5d6663399/master/pass/00018a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|15-27": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The brown crocodile-embossed handbag with gold horsebit hardware, white short-sleeved top, black leggings, and gold jewelry (rings and bracelet) are identical in both the detail and Look 18.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef93ea5539abc092d53d/master/pass/00019a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|16-28": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The model's blonde hair, dark eye makeup, black turtleneck top, black shoulder bag, and gold-tone ring are identical to Look 19.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef95fffa071ef19335de/master/pass/00021a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|19-31": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the brown patterned skirt and the black high-heeled open-toe mules with a platform seen in Look 21.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef989ef79d7989dd49f9/master/pass/00024a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|22-34": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The red crocodile-embossed ankle boots and the dark, textured trousers in the detail image are an exact match for those worn by the model in Look 24.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef97c5c8f2c5df60e55a/master/pass/00023a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|20-32": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the distinctive Gucci monogrammed horsebit shoulder bag, the black pointed-toe shoes with gold horsebit detail, the dark satin-like trousers, and the gold bracelet worn on the wrist in Look 23.",
+  "alternates": [
+   {
+    "look_number": 20,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 25,
+    "confidence": 0.5
+   },
+   {
+    "look_number": 32,
+    "confidence": 0.5
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef9a9ef79d7989dd49ff/master/pass/00027a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|23-35": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the silver textured pants and black textured shoes worn by the male model in Look 27. The visible watch and tattoo on the model's wrist are also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef9c9a0d95787f61dc3b/master/pass/00029a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|26-38": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The detail image shows silver metallic pants and white textured boots. Look 29 features identical silver metallic pants and the same distinctive white textured, possibly reptilian-patterned, boots.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef9bf743828c90e2d6cc/master/pass/00028a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|25-37": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image shows gold metallic pants and beige boots with a repeating monogram pattern. Look 28 features identical gold metallic pants and the same patterned boots.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef965f1f1b829bc6bd35/master/pass/00021b-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|18-30": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail shows a dark brown, shimmery, textured long-sleeved top and matching skirt, and a black clutch bag. Look 21 features the exact same top and skirt, and a consistent black clutch bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef9e57966e4abfc2185c/master/pass/00031a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|28-40": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The model, cap, necklace, black loose-fitting top, black fanny pack, and silver bracelet all match exactly. The tattoo on the model's abdomen is also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef9e19b858d5d66633a4/master/pass/00031b-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|29-41": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The black cropped pants with white side stripe and black fur-lined loafers with silver horsebit detail perfectly match the detail image.",
+  "alternates": [
+   {
+    "look_number": 35,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 37,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6ef9fd34aaf50ee468724/master/pass/00032a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|30-42": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black puffer jacket with a dark fur collar, a black leather bag with a silver chain strap and horsebit hardware, a red and green striped belt, and black trousers, all of which are perfectly matched in Look 32.",
+  "alternates": [
+   {
+    "look_number": 38,
+    "confidence": 0.3
+   },
+   {
+    "look_number": 40,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efa375300db6e628e15b/master/pass/00033b-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|33-45": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the light khaki cropped pants with a white side stripe and the brown fur-lined horsebit mules worn in Look 33.",
+  "alternates": [
+   {
+    "look_number": 35,
+    "confidence": 0.9
+   },
+   {
+    "look_number": 37,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efa575300db6e628e165/master/pass/00036a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|36-48": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 36, including the dark fur collar, shiny royal blue dress, black leather jacket sleeve, patterned beige gloves, and the specific Gucci Horsebit 1955 monogram bag with a gold chain.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efa27fe60fdf8f629ffb/master/pass/00033a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|32-44": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The model's white V-neck t-shirt, light grey capri pants, sunglasses, silver watch, and the distinctive beige/brown Gucci monogram duffel bag with dark brown straps are all identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efa3bc6801f348f86437/master/pass/00035a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|35-47": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The model, black ribbed tank top, black rectangular sunglasses, and slicked-back wet-look hair are identical in both the detail and Look 35.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efa8fdeb03b5ba7ec844/master/pass/00037b-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|39-51": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail shows fur-lined, black, crocodile-embossed mules with a silver horsebit buckle and matte black, lightweight, possibly cropped trousers. None of the candidate looks feature these specific shoes or trousers.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efa9b567401d7ba38fdd/master/pass/00038a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|41-53": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail image shows a pleated floral skirt in blue/purple/green and black knee-high boots with a gold horsebit detail. None of the candidate looks feature this specific floral pattern or these knee-high boots. Candidate looks 44, 46, 48, and 52 have a similar black bag with a gold horsebit and black pumps with a gold horsebit, but not the boots or the skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efadf743828c90e2d6d2/master/pass/00042a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|43-55": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive green and black floral print jacket from the detail image is not present in any of the candidate full-body looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efa7c6655877971ab235/master/pass/00037a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|38-50": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The model's hair, black rectangular sunglasses, open black jacket, and black shoulder strap are identical to look 49.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efaf6093557667446b7f/master/pass/00043a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|46-58": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail image shows a male model wearing a grey plaid blazer, a red patterned t-shirt, amber sunglasses, a gold pendant choker, and a 'GG' logo bag. None of the provided candidate looks feature these specific garments or accessories.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efabb4eceb6b8d6beff0/master/pass/00040a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|42-54": {
+  "look_number": 42,
+  "confidence": 0.95,
+  "evidence": "The detail image perfectly matches the distinctive GG logo tights and the two-tone pointed-toe heels with a gold buckle from Look 42. The floral pleated skirt pattern is also consistent in style, despite a slight perceived color variation in the floral elements.",
+  "alternates": [
+   {
+    "look_number": 44,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 48,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efadb567401d7ba38fe3/master/pass/00042b-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|45-57": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The green floral dress, Gucci monogrammed shoes, and logo patterned hosiery in the detail image do not match any of the candidate full-body looks. While the handbag is identical to those in Look 52 and Look 54, the overall outfit is not a match.",
+  "alternates": [
+   {
+    "look_number": 52,
+    "confidence": 0.35
+   },
+   {
+    "look_number": 54,
+    "confidence": 0.35
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efb257966e4abfc2186b/master/pass/00045a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|49-61": {
+  "look_number": 51,
+  "confidence": 0.9,
+  "evidence": "The distinctive dark, shiny, crinkled jacket fabric and the model's medium-length shaggy hair are an exact match for Look 51. The bag from the detail is not visible in the full look.",
+  "alternates": [
+   {
+    "look_number": 55,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 53,
+    "confidence": 0.4
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efb26093557667446b85/master/pass/00046a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|51-63": {
+  "look_number": null,
+  "confidence": 0.9,
+  "evidence": "The distinctive white fur coat with black spots in the detail is not present in any candidate look. However, the black patent leather bag with the gold horsebit clasp matches perfectly in several looks.",
+  "alternates": [
+   {
+    "look_number": 54,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 56,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 59,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efb3d34aaf50ee468734/master/pass/00049a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|52-64": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive black crocodile-embossed shoulder bag from the detail image is not present in any of the candidate looks. While some looks feature male models in dark attire and sunglasses, none match the specific bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efb6bc6801f348f8643d/master/pass/00057a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|55-67": {
+  "look_number": 57,
+  "confidence": 1.0,
+  "evidence": "The black shiny shirt and the distinctive black slouchy shoulder bag with gold hardware are identical in both images.",
+  "alternates": [
+   {
+    "look_number": 55,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efb07cf427c2893e7c34/master/pass/00044a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|48-60": {
+  "look_number": 56,
+  "confidence": 0.65,
+  "evidence": "The dark, shaggy fur texture and color in the detail closely match the fur stole in Look 56, and the black pointed-toe Gucci Horsebit heels are an exact match. However, the fur in the detail appears to be a full garment with a flared hem, not a stole, and the handbag is different.",
+  "alternates": [
+   {
+    "look_number": 54,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 48,
+    "confidence": 0.55
+   },
+   {
+    "look_number": 60,
+    "confidence": 0.55
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efbc702f73b71d160a23/master/pass/00060b-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|58-70": {
+  "look_number": 60,
+  "confidence": 0.9,
+  "evidence": "The navy textured short coat, navy mini skirt, and distinctive Gucci monogram tights are identical to those worn in Look 60.",
+  "alternates": [
+   {
+    "look_number": 66,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efbaea5539abc092d548/master/pass/00060a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|59-71": {
+  "look_number": 60,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the dark blue coat and skirt, the sheer 'GG' logo tights, the 'GG' logo knee-high boots with gold buckle, and the black handbag with gold clasp seen in Look 60.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efb7d34aaf50ee46873a/master/pass/00056a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|53-65": {
+  "look_number": 56,
+  "confidence": 0.9,
+  "evidence": "The detail shows black wide-leg trousers, black pointed-toe shoes with silver horsebit, a silver ring, and a silver bracelet, all of which perfectly match Look 56. The black chain bag in the detail is crocodile-embossed with a horsebit clasp, which differs from the smooth leather bag with a different clasp shown in Look 56, but it is still a black chain bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efbc7fe60fdf8f62a006/master/pass/00064a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|61-73": {
+  "look_number": 64,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a white dress with a vibrant floral and butterfly pattern, a black patent leather bag with a gold horsebit detail, and gold jewelry. Look 64 features the exact same dress, bag, and jewelry on a model with the same skin tone.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efb819b858d5d66633af/master/pass/00058a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|56-68": {
+  "look_number": 58,
+  "confidence": 1.0,
+  "evidence": "The model's hair, the light olive/grey trench coat, and the white quilted Gucci 'GG' shoulder bag are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efc0f743828c90e2d6d8/master/pass/00067a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|65-77": {
+  "look_number": 67,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black pinstripe suit jacket, a black textured bag with a short strap, and a distinctive gold multi-banded ring. Look 67 features all these exact elements.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efbdc6655877971ab240/master/pass/00065a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|62-74": {
+  "look_number": 65,
+  "confidence": 1.0,
+  "evidence": "Exact match for black opaque tights, black pointed-toe heels with gold horsebit, and visible black leather skirt.",
+  "alternates": [
+   {
+    "look_number": 62,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 67,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efc1f743828c90e2d6de/master/pass/00069a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|66-78": {
+  "look_number": 69,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 69, featuring the same silver embellished wide-leg pants, white textured long-sleeve top, small silver embellished clutch bag, and silver pointed-toe embellished shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efc3ea5539abc092d54e/master/pass/00071a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|68-80": {
+  "look_number": 71,
+  "confidence": 1.0,
+  "evidence": "The silver sparkly mini dress with spaghetti straps, the small silver chain-strap clutch bag, and the silver dangling earrings are identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 69,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efc4d08063c920b9ee54/master/pass/00071b-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|69-81": {
+  "look_number": 71,
+  "confidence": 1.0,
+  "evidence": "The detail shows a sparkly silver mini-dress and matching silver glitter pointed-toe heels, which perfectly match Look 71.",
+  "alternates": [
+   {
+    "look_number": 69,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efc875300db6e628e16c/master/pass/00077a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|72-83": {
+  "look_number": 77,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a high-neck, long-sleeved garment with intricate multi-colored floral embellishments, sequins, and beads in shades of green, purple, and gold. Look 77 features a gown with an identical design, including the high neck, long sleeves, and the exact same pattern, color palette, and embellishment style.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efbf42e63b8b6276696e/master/pass/00065b-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|63-75": {
+  "look_number": 65,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 65, including the model's hair and makeup, the black leather blazer, the dark blue inner top, the choker necklace, and the distinctive dark green crocodile-embossed handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efc9af6694908d0ead02/master/pass/00079a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|73-83": {
+  "look_number": 79,
+  "confidence": 1.0,
+  "evidence": "The detail shows a purple sequined garment, a silver beaded clutch, a silver bracelet, and a silver ring. Look 79 features an identical purple sequined dress, the exact same silver beaded clutch, and matching jewelry (bracelet and ring).",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efc56ae530252d0b9c0d/master/pass/00075a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|71-83": {
+  "look_number": 75,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the gold sequined dress, gold glitter heels, and gold textured clutch bag worn in Look 75.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efcbd08063c920b9ee5a/master/pass/00083a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|76-83": {
+  "look_number": 83,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black, long-sleeved, sparkly dress with an open back and a visible G-string. Look 83 features an identical black sparkly dress with long sleeves and a matching open back, consistent with the detail. The model in Look 83 also carries a black clutch, matching the one in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efc96093557667446b90/master/pass/00081a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|75-83": {
+  "look_number": 81,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the pearl and crystal embellished clutch bag, the silver 'nail' bracelet, the multiple silver rings, and the black long-sleeved garment worn by the model in Look 81.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efa7c6655877971ab235/master/pass/00037a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|36-42": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The model, black open shirt, black sunglasses, and visible bag strap in the detail image perfectly match Look 37.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efa8fdeb03b5ba7ec844/master/pass/00037b-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|36-42": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The detail image shows black fur-lined mules with a silver horsebit detail and black cropped pants. Look 37 features the exact same mules and black cropped pants on a male model, matching the legs in the detail.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efadf743828c90e2d6d2/master/pass/00042a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|42-48": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, green and black floral print garment, and all visible accessories (choker, necklace, earrings) are an exact match.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efaf6093557667446b7f/master/pass/00043a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|42-48": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The model, grey plaid blazer, red patterned top, sunglasses, choker, and Gucci monogram bag are identical in both the detail shot and Look 43.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efadb567401d7ba38fe3/master/pass/00042b-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|42-48": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The green and black floral print dress, GG logo hosiery, GG logo pumps with horsebit detail, and dark horsebit bag are all identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 44,
+    "confidence": 0.2
+   },
+   {
+    "look_number": 46,
+    "confidence": 0.2
+   },
+   {
+    "look_number": 48,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efb3d34aaf50ee468734/master/pass/00049a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|54-56": {
+  "look_number": 55,
+  "confidence": 0.95,
+  "evidence": "The model, hair, and sunglasses are an exact match. The dark suit jacket in the detail image is consistent in style, cut, and texture with the black suit jacket in Look 55. The difference in the bag is permissible.",
+  "alternates": [
+   {
+    "look_number": 54,
+    "confidence": 0.01
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/69a6efa9b567401d7ba38fdd/master/pass/00038a-gucci-fall-2026-ready-to-wear-details-credit-brand.jpg|36-42": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The floral pleated dress and the black boots with gold horsebit detail are an exact match to the detail image.",
+  "alternates": [
+   {
+    "look_number": 40,
+    "confidence": 0.2
+   }
+  ]
+ }
+}

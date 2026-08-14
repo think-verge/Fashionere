@@ -1,0 +1,6914 @@
+{
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2a1771ca4d22e5d92ab/master/pass/00002-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Red baseball cap with black embroidered text, layered green cable-knit cardigan over a navy and white striped button-down shirt, paired with white straight-leg trousers and tan suede knee-high boots with intricate gold embroidery.",
+  "fabric": "Cotton twill, wool knit, cotton poplin, suede, embroidery",
+  "patterns": [
+   "stripe",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Red",
+    "hex_code": "#D22B2B",
+    "pantone_code": "18-1663 (Flame Scarlet)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Emerald Green",
+    "hex_code": "#008000",
+    "pantone_code": "17-5641 (Emerald)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Navy Blue",
+    "hex_code": "#000080",
+    "pantone_code": "19-3923 (True Navy)"
+   },
+   {
+    "color_name": "Tan",
+    "hex_code": "#D2B48C",
+    "pantone_code": "16-1334 (Camel)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "15-1050 (Harvest Gold)"
+   }
+  ],
+  "theme": "Rebellious collegiate",
+  "keywords": [
+   "baseball cap",
+   "cable knit cardigan",
+   "striped shirt",
+   "white trousers",
+   "knee-high boots",
+   "stiletto heel",
+   "layered outfit",
+   "gold necklace",
+   "embroidered boots",
+   "pointed toe"
+  ],
+  "collection_keywords": [
+   "preppy",
+   "collegiate",
+   "sportswear",
+   "improbable pairings",
+   "layered styling",
+   "liberating elegance"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2a131c43fba4f921622/master/pass/00001-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Brown and black striped fur coat worn open over a pale grey tank top, paired with a light blue denim midi skirt featuring a front slit, cinched with a black leather belt.",
+  "fabric": "fur, cotton jersey, denim, leather, metal",
+  "patterns": [
+   "tiger stripe",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#4F2F2F",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Light Brown",
+    "hex_code": "#A87C54",
+    "pantone_code": "16-1331 (Toasted Almond)"
+   },
+   {
+    "color_name": "Pale Grey",
+    "hex_code": "#D3D3D3",
+    "pantone_code": "12-0304 (Moonbeam)"
+   },
+   {
+    "color_name": "Medium Blue Denim",
+    "hex_code": "#5D8AA8",
+    "pantone_code": "17-4023 (Blue Depths)"
+   },
+   {
+    "color_name": "Antique Gold",
+    "hex_code": "#8B846B",
+    "pantone_code": "16-0906 (Antique Gold)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4002 (Quiet Shade)"
+   }
+  ],
+  "theme": "Decadent casual",
+  "keywords": [
+   "fur coat",
+   "animal print",
+   "oversized",
+   "tank top",
+   "denim midi skirt",
+   "front slit",
+   "high-waisted",
+   "leather belt",
+   "layered necklace",
+   "casual"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "everyday dressing",
+   "liberating elegance",
+   "insouciant provocation",
+   "plurality over prescription"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b20fe803e0c850df4eed/master/pass/00001-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2a131c43fba4f921622/master/pass/00001-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Tiger-stripe fur coat with brown fur trim, worn over a light blue denim midi skirt, paired with fuchsia suede peep-toe high heels and sheer nude hosiery.",
+  "fabric": "fur",
+  "patterns": [
+   "tiger stripe",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Chocolate Lab",
+    "hex_code": "#4A312C",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#2C2C34",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Nomad",
+    "hex_code": "#B8A78F",
+    "pantone_code": "16-1108 (Nomad)"
+   },
+   {
+    "color_name": "Blue Heaven",
+    "hex_code": "#87CEEB",
+    "pantone_code": "16-4120 (Blue Heaven)"
+   },
+   {
+    "color_name": "Fuchsia Rose",
+    "hex_code": "#C74375",
+    "pantone_code": "19-2045 (Fuchsia Rose)"
+   },
+   {
+    "color_name": "Pale Khaki",
+    "hex_code": "#D2B48C",
+    "pantone_code": "13-1009 (Pale Khaki)"
+   }
+  ],
+  "theme": "Eclectic elegance",
+  "keywords": [
+   "fur coat",
+   "denim skirt",
+   "midi skirt",
+   "high heels",
+   "peep-toe",
+   "suede heels",
+   "animal print",
+   "tiger print",
+   "hosiery",
+   "pointed toe"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "liberating elegance",
+   "decadent blas\u00e9",
+   "plurality over prescription",
+   "Valentino 2.0 wardrobe"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b21033ec043d3b0c187a/master/pass/00002-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2a1771ca4d22e5d92ab/master/pass/00002-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Red cotton twill baseball cap with black \"VILLAIN TEEN\" embroidery, worn over a white and navy striped cotton poplin collared shirt, layered with a green cable-knit v-neck cardigan, and accessorized with two gold-tone chain necklaces.",
+  "fabric": "cotton twill, cotton poplin, knit wool blend, metal",
+  "patterns": [
+   "solid",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Red",
+    "hex_code": "#E00000",
+    "pantone_code": "18-1663 (Fiesta)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Navy Blue",
+    "hex_code": "#1A2B4D",
+    "pantone_code": "19-4010 (Dress Blues)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#008040",
+    "pantone_code": "16-5533 (Kelly Green)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Harvest Gold)"
+   }
+  ],
+  "theme": "Rebellious collegiate casual",
+  "keywords": [
+   "baseball cap",
+   "embroidered text",
+   "striped shirt",
+   "collared shirt",
+   "button-down shirt",
+   "cable-knit cardigan",
+   "v-neck cardigan",
+   "gold chain necklace",
+   "layered necklaces",
+   "casualwear"
+  ],
+  "collection_keywords": [
+   "collegiate stripes",
+   "schoolgirl references",
+   "teenage debauchery",
+   "wearable clothes",
+   "perverse pairings",
+   "sportswear",
+   "baseball caps",
+   "liberating elegance"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b20fbc90d91161486fa0/master/pass/00003-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2a1771ca4d22e5d92ab/master/pass/00002-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Knee-high pointed-toe suede boots with gold embroidery, worn with white trousers and a green cable-knit cardigan.",
+  "fabric": "suede",
+  "patterns": [
+   "embroidered",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Nomad",
+    "hex_code": "#C6A78C",
+    "pantone_code": "16-1326 (Nomad)"
+   },
+   {
+    "color_name": "Goldfinch",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Goldfinch)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Kelly Green",
+    "hex_code": "#4CBB17",
+    "pantone_code": "16-5930 (Kelly Green)"
+   }
+  ],
+  "theme": "Preppy Western fusion",
+  "keywords": [
+   "knee-high boots",
+   "suede boots",
+   "pointed-toe",
+   "stiletto heel",
+   "gold embroidery",
+   "white trousers",
+   "cable-knit cardigan",
+   "Western-inspired"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "preppy references",
+   "liberating elegance",
+   "Valentino 2.0 wardrobe",
+   "off-kilter charge",
+   "decadent"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2a17ab1113c1be1907d/master/pass/00003-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Long red double-breasted trench coat with a high stand collar, storm flap, self-fabric belt with a rectangular buckle, and buckled cuffs, styled with black embroidered ankle boots and white drop earrings.",
+  "fabric": "wool gabardine, suede, metal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Red",
+    "hex_code": "#C80000",
+    "pantone_code": "19-1664 (True Red)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#B8860B",
+    "pantone_code": "16-0948 (Golden Rod)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   }
+  ],
+  "theme": "Bold Outerwear",
+  "keywords": [
+   "trench coat",
+   "long coat",
+   "double-breasted",
+   "storm flap",
+   "belted waist",
+   "buckled cuffs",
+   "stand collar",
+   "ankle boots",
+   "embroidered boots",
+   "drop earrings"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "liberating elegance",
+   "Valentino 2.0",
+   "plurality",
+   "insouciant provocation",
+   "everyday dressing"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2a49fda1576ba8ad4ca/master/pass/00004-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Blue short-sleeve top with 'VILLAIN TEEN' text paired with brown pleated trousers, a black crocodile-embossed leather belt, and a black studded leather shoulder bag.",
+  "fabric": "Synthetic jersey, woven fabric, leather",
+  "patterns": [
+   "text print",
+   "crocodile embossed"
+  ],
+  "Colors": [
+   {
+    "color_name": "Directoire Blue",
+    "hex_code": "#1E90FF",
+    "pantone_code": "18-4051 (Directoire Blue)"
+   },
+   {
+    "color_name": "Nutria",
+    "hex_code": "#695A4B",
+    "pantone_code": "18-1014 (Nutria)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Youthful provocation",
+  "keywords": [
+   "short-sleeve top",
+   "trousers",
+   "pleated trousers",
+   "fitted silhouette",
+   "text print",
+   "leather belt",
+   "studded bag",
+   "high-waisted"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "sportswear",
+   "liberating elegance",
+   "insouciant provocation",
+   "wearable clothes"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b212c5644fa593931d59/master/pass/00005-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2a5254dd14297b1ea1a/master/pass/00005-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Brown and black embossed leather shoulder bag with a gold-tone Valentino VLogo Signature clasp and a slender dark brown leather strap.",
+  "fabric": "embossed leather, metal",
+  "patterns": [
+   "reptile print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Tan",
+    "hex_code": "#C29B7D",
+    "pantone_code": "16-1334 (Toasted Almond)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#4A3B34",
+    "pantone_code": "19-1016 (Espresso)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "15-1040 (Golden Glow)"
+   }
+  ],
+  "theme": "Luxury accessory",
+  "keywords": [
+   "shoulder bag",
+   "clutch bag",
+   "embossed leather",
+   "reptile print",
+   "VLogo Signature",
+   "gold-tone hardware",
+   "flap closure",
+   "slender strap",
+   "Valentino accessory"
+  ],
+  "collection_keywords": [
+   "decadent",
+   "sartorial intrigues",
+   "elitist heritage",
+   "liberating elegance",
+   "Valentino 2.0 wardrobe"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2a5254dd14297b1ea1a/master/pass/00005-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Brown faux fur coat with ribbed knit sleeves is layered over an olive green tank top and a sheer beige mini skirt with gold embroidery, styled with light pink tights, purple pointed-toe pumps, and a brown embossed leather shoulder bag.",
+  "fabric": "faux fur, ribbed knit, jersey, sheer tulle, embroidery, sequins, nylon, spandex, suede, embossed leather",
+  "patterns": [
+   "solid",
+   "embroidered abstract"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#3D251E",
+    "pantone_code": "19-1016 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Medium Brown",
+    "hex_code": "#6E4534",
+    "pantone_code": "19-1118 (Root Beer)"
+   },
+   {
+    "color_name": "Olive Green",
+    "hex_code": "#6C6B50",
+    "pantone_code": "17-0625 (Kalamata)"
+   },
+   {
+    "color_name": "Sheer Beige",
+    "hex_code": "#E0D8C8",
+    "pantone_code": "12-0703 (Pristine)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#B89B6E",
+    "pantone_code": "16-0924 (Golden Haze)"
+   },
+   {
+    "color_name": "Light Pink",
+    "hex_code": "#E0C8D8",
+    "pantone_code": "13-2806 (Lilac Sachet)"
+   },
+   {
+    "color_name": "Bright Purple",
+    "hex_code": "#6A2C9B",
+    "pantone_code": "19-3520 (Grape Royale)"
+   },
+   {
+    "color_name": "Russet Brown",
+    "hex_code": "#8B4513",
+    "pantone_code": "18-1244 (Russet Brown)"
+   }
+  ],
+  "theme": "Eclectic Opulence",
+  "keywords": [
+   "faux fur coat",
+   "ribbed knit sleeves",
+   "mini skirt",
+   "embroidery",
+   "sequins",
+   "tank top",
+   "tights",
+   "pointed-toe pumps",
+   "shoulder bag",
+   "layering"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "liberating elegance",
+   "insouciant provocation",
+   "eccentricities",
+   "decadent",
+   "Valentino 2.0 wardrobe"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b212bc90d91161486fa6/master/pass/00004-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2a5254dd14297b1ea1a/master/pass/00005-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Gold sequined and embroidered mini skirt paired with light lavender sheer tights and purple suede pointed-toe pumps featuring a clear PVC vamp detail.",
+  "fabric": "sequins, embroidery, tulle, sheer nylon, suede, PVC",
+  "patterns": [
+   "floral embroidery",
+   "solid",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Gold Fusion)"
+   },
+   {
+    "color_name": "Lavender",
+    "hex_code": "#E6E6FA",
+    "pantone_code": "13-2804 (Lilac Sachet)"
+   },
+   {
+    "color_name": "Purple",
+    "hex_code": "#800080",
+    "pantone_code": "19-3520 (Grape Royale)"
+   }
+  ],
+  "theme": "Decadent and playful",
+  "keywords": [
+   "mini skirt",
+   "sequin embellishment",
+   "floral embroidery",
+   "sheer tights",
+   "pointed-toe pumps",
+   "high heels",
+   "suede shoes",
+   "PVC detail",
+   "opulent"
+  ],
+  "collection_keywords": [
+   "eccentricities",
+   "off-kilter charge",
+   "improbable pairings",
+   "sartorial intrigues",
+   "decadent",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2a52de584e829c295f2/master/pass/00006-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Printed jumpsuit with a deep V-neck and tie closure, styled with a baseball cap, a black leather handbag, and black pointed-toe boots.",
+  "fabric": "Viscose blend, cotton twill, leather",
+  "patterns": [
+   "floral",
+   "abstract"
+  ],
+  "Colors": [
+   {
+    "color_name": "Deep Periwinkle",
+    "hex_code": "#504080",
+    "pantone_code": "19-3928 (Indigo Bunting)"
+   },
+   {
+    "color_name": "Poppy Red",
+    "hex_code": "#E03030",
+    "pantone_code": "18-1662 (Poppy Red)"
+   },
+   {
+    "color_name": "Kelly Green",
+    "hex_code": "#308030",
+    "pantone_code": "16-6340 (Kelly Green)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Eclectic luxury",
+  "keywords": [
+   "jumpsuit",
+   "wide-leg silhouette",
+   "V-neckline",
+   "tie-neck closure",
+   "long sleeves",
+   "floral print",
+   "baseball cap",
+   "leather handbag",
+   "studded bag",
+   "pointed-toe boots",
+   "high-heel boots"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "everyday dressing",
+   "liberating elegance",
+   "insouciant provocation",
+   "decadent blas\u00e9"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2a8aea770857255bf71/master/pass/00007-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Black wool coat with a high neckline, long sleeves, and a flared hem featuring bright blue triangular inserts, styled with a black cap, a multi-strand pearl necklace, brown fur cuffs, and beige cowboy boots.",
+  "fabric": "wool, fur, pearl, leather",
+  "patterns": [
+   "solid",
+   "embroidered"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Bright Blue",
+    "hex_code": "#007FFF",
+    "pantone_code": "18-4045 (Cerulean Blue)"
+   },
+   {
+    "color_name": "Brown",
+    "hex_code": "#8B4513",
+    "pantone_code": "18-1248 (Root Beer)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "16-1331 (Sandstone)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#FFFDD0",
+    "pantone_code": "11-0602 (Egret)"
+   }
+  ],
+  "theme": "Improbable pairings",
+  "keywords": [
+   "A-line coat",
+   "color-block",
+   "flared hem",
+   "high neck",
+   "long sleeves",
+   "pearl necklace",
+   "fur cuffs",
+   "cowboy boots",
+   "military cap"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "off-kilter charge",
+   "liberating elegance",
+   "insouciant provocation",
+   "Valentino 2.0 wardrobe",
+   "eccentricities"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b214e803e0c850df4ef3/master/pass/00006-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2a8aea770857255bf71/master/pass/00007-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Black felt baseball cap with a croc-embossed leather visor, layered faux pearl and rhinestone necklaces, and a large silver-tone gemstone earring, worn with a black wool coat.",
+  "fabric": "Felt, croc-embossed leather, faux pearls, metal, rhinestones, gemstones, wool",
+  "patterns": [
+   "croc-embossed",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#F0EAD6",
+    "pantone_code": "11-0105 (Egret)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0947 (Harvest Gold)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C1272D",
+    "pantone_code": "18-1660 (Fiery Red)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#009B77",
+    "pantone_code": "17-5936 (Emerald)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   },
+   {
+    "color_name": "Clear",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   }
+  ],
+  "theme": "Decadent maximalist accessories",
+  "keywords": [
+   "baseball cap",
+   "felt cap",
+   "croc-embossed visor",
+   "layered necklaces",
+   "faux pearl necklace",
+   "rhinestone embellishment",
+   "statement earring",
+   "gemstone earring",
+   "black coat",
+   "maximalist jewelry"
+  ],
+  "collection_keywords": [
+   "eccentricities",
+   "off-kilter charge",
+   "improbable pairings",
+   "decadent",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2a82de584e829c295f8/master/pass/00008-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Long-sleeved sequined maxi dress with a high neckline and feather trim, styled with green sunglasses and a small embroidered clutch bag.",
+  "fabric": "Sequined mesh, feathers, embroidered fabric",
+  "patterns": [
+   "solid",
+   "floral"
+  ],
+  "Colors": [
+   {
+    "color_name": "Iridescent Mauve",
+    "hex_code": "#B8A8B8",
+    "pantone_code": "15-1905 (Mauve Mist)"
+   },
+   {
+    "color_name": "Dusty Rose",
+    "hex_code": "#C8A0A8",
+    "pantone_code": "16-1511 (Dusty Rose)"
+   },
+   {
+    "color_name": "Light Blue Gray",
+    "hex_code": "#C0C8D0",
+    "pantone_code": "13-4108 (Light Blue Gray)"
+   },
+   {
+    "color_name": "Lime Green",
+    "hex_code": "#A0D040",
+    "pantone_code": "14-0442 (Lime Green)"
+   }
+  ],
+  "theme": "Insouciant Glamour",
+  "keywords": [
+   "maxi dress",
+   "sequined dress",
+   "feather trim",
+   "high neckline",
+   "long sleeves",
+   "clutch bag",
+   "embroidered bag",
+   "sunglasses",
+   "embellished"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "liberating elegance",
+   "insouciant provocation",
+   "lavishly embroidered clothes",
+   "eccentricities",
+   "off-kilter charge"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2158afb377ac11f9cee/master/pass/00007-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2a82de584e829c295f8/master/pass/00008-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Sequined long-sleeve dress with a high neckline, adorned with a voluminous feather collar, paired with slim oval sunglasses.",
+  "fabric": "sequins",
+  "patterns": [
+   "floral",
+   "grid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Mauve",
+    "hex_code": "#A790A7",
+    "pantone_code": "16-1703 (Mauve Mist)"
+   },
+   {
+    "color_name": "Dusty Rose",
+    "hex_code": "#B28C9B",
+    "pantone_code": "17-1512 (Dusty Rose)"
+   },
+   {
+    "color_name": "Periwinkle Blue",
+    "hex_code": "#92A8C8",
+    "pantone_code": "14-4107 (Blue Fog)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4002 (Silver Cloud)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Gold Fusion)"
+   },
+   {
+    "color_name": "Celadon Green",
+    "hex_code": "#96B696",
+    "pantone_code": "16-0532 (Celadon Green)"
+   }
+  ],
+  "theme": "Glamorous eccentricity",
+  "keywords": [
+   "sequined dress",
+   "feather collar",
+   "long sleeve",
+   "high neckline",
+   "floral embellishment",
+   "sunglasses",
+   "oval sunglasses",
+   "embellished dress",
+   "evening dress"
+  ],
+  "collection_keywords": [
+   "eccentricities",
+   "off-kilter charge",
+   "improbable pairings",
+   "perverse pairings",
+   "liberating elegance",
+   "insouciant provocation",
+   "sartorial intrigues",
+   "lavishly embroidered"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2a9484d320998f597fb/master/pass/00009-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Bright pink high-neck long-sleeve gown features voluminous sleeves, a fitted bodice, a dramatically tiered pleated skirt, and a long fabric train flowing from the shoulder, styled with white striped socks and orange open-toe sandals.",
+  "fabric": "Silk chiffon, polyester, knit",
+  "patterns": [
+   "solid",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Shocking Pink",
+    "hex_code": "#FC0FC0",
+    "pantone_code": "17-2036 (Shocking Pink)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "True Red",
+    "hex_code": "#FF0000",
+    "pantone_code": "18-1660 (True Red)"
+   },
+   {
+    "color_name": "Flame Orange",
+    "hex_code": "#FF4500",
+    "pantone_code": "17-1464 (Flame)"
+   }
+  ],
+  "theme": "Liberated elegance",
+  "keywords": [
+   "gown",
+   "long-sleeve",
+   "high-neck",
+   "pleated skirt",
+   "tiered skirt",
+   "voluminous sleeves",
+   "fabric train",
+   "shoulder detail",
+   "open-toe sandals",
+   "striped socks"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "liberating elegance",
+   "sartorial intrigues",
+   "insouciant provocation",
+   "eccentricities",
+   "decadent"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2aa254dd14297b1ea25/master/pass/00011-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Full-length leopard print coat with a high collar, button-front closure, and dark brown fur cuffs, styled with a black baseball cap, long pearl drop earrings, and black heels.",
+  "fabric": "Woven fabric, fur, cotton, pearl, leather",
+  "patterns": [
+   "leopard print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Golden Poppy",
+    "hex_code": "#E4A000",
+    "pantone_code": "16-1260 (Golden Poppy)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#2F2F2F",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Chocolate Truffle",
+    "hex_code": "#4F352A",
+    "pantone_code": "19-1228 (Chocolate Truffle)"
+   },
+   {
+    "color_name": "True Red",
+    "hex_code": "#BC2026",
+    "pantone_code": "19-1664 (True Red)"
+   },
+   {
+    "color_name": "Egret",
+    "hex_code": "#F0EAD6",
+    "pantone_code": "11-0103 (Egret)"
+   }
+  ],
+  "theme": "Liberated elegance",
+  "keywords": [
+   "duster coat",
+   "column silhouette",
+   "high collar",
+   "button closure",
+   "fur cuffs",
+   "leopard print",
+   "baseball cap",
+   "pearl drop earrings",
+   "heels",
+   "full length"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "liberating elegance",
+   "sportswear",
+   "baseball caps",
+   "wrong combinations"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b21592fcd89cad84ec39/master/pass/00008-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2aa254dd14297b1ea25/master/pass/00011-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "A black baseball cap with red embroidered text \"VILLAIN TEEN\" is worn with a high-neck, long-sleeve coat in a textured mustard yellow and black leopard print, accessorized with large drop earrings featuring a rectangular crystal-embellished top and a large spherical pearl.",
+  "fabric": "cotton twill, jacquard, metal, crystals, faux pearl",
+  "patterns": [
+   "leopard print",
+   "text"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C40233",
+    "pantone_code": "18-1663 (True Red)"
+   },
+   {
+    "color_name": "Mustard Yellow",
+    "hex_code": "#E3BC00",
+    "pantone_code": "16-0947 (Mustard)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "11-0107 (Egret)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Eccentric luxury with a rebellious edge",
+  "keywords": [
+   "baseball cap",
+   "embroidered text",
+   "leopard print coat",
+   "high neck",
+   "drop earrings",
+   "pearl earrings",
+   "crystal embellishment",
+   "statement earrings",
+   "sportswear accessory",
+   "outerwear"
+  ],
+  "collection_keywords": [
+   "eccentricities",
+   "off-kilter charge",
+   "improbable pairings",
+   "teenage debauchery",
+   "sportswear with couture",
+   "liberating elegance",
+   "insouciant provocation",
+   "Valentino 2.0 wardrobe"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2ab5234543806e73341/master/pass/00010-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Plaid wool coat-dress with puffed shoulders, a button-front closure, and a knee-length hem, styled with a silk scarf, white leather gloves, a black military cap, sunglasses, a white belt, a grey leather handbag, and purple T-strap heels over blue tights.",
+  "fabric": "wool, silk, leather, synthetic, plastic",
+  "patterns": [
+   "plaid",
+   "geometric"
+  ],
+  "Colors": [
+   {
+    "color_name": "Orange",
+    "hex_code": "#E65100",
+    "pantone_code": "16-1361 (Orange Tiger)"
+   },
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#006400",
+    "pantone_code": "18-5620 (Forest Green)"
+   },
+   {
+    "color_name": "Directoire Blue",
+    "hex_code": "#00008B",
+    "pantone_code": "19-4056 (Directoire Blue)"
+   },
+   {
+    "color_name": "Fiery Red",
+    "hex_code": "#B22222",
+    "pantone_code": "18-1663 (Fiery Red)"
+   },
+   {
+    "color_name": "Magenta Haze",
+    "hex_code": "#C71585",
+    "pantone_code": "19-2428 (Magenta Haze)"
+   },
+   {
+    "color_name": "Orangeade",
+    "hex_code": "#FFA500",
+    "pantone_code": "15-1050 (Orangeade)"
+   },
+   {
+    "color_name": "Serenity",
+    "hex_code": "#A7B8C9",
+    "pantone_code": "14-4107 (Serenity)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver Cloud",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4500 (Silver Cloud)"
+   },
+   {
+    "color_name": "Moonbeam",
+    "hex_code": "#B5A79B",
+    "pantone_code": "16-1109 (Moonbeam)"
+   },
+   {
+    "color_name": "Grape Kiss",
+    "hex_code": "#8A2BE2",
+    "pantone_code": "18-3025 (Grape Kiss)"
+   }
+  ],
+  "theme": "Eclectic Preppy Decadence",
+  "keywords": [
+   "coat-dress",
+   "plaid",
+   "puffed shoulders",
+   "button-front",
+   "knee-length",
+   "silk scarf",
+   "military cap",
+   "sunglasses",
+   "leather gloves",
+   "belt",
+   "handbag",
+   "T-strap heels",
+   "tights"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "preppy blazers",
+   "collegiate stripes",
+   "schoolgirl references",
+   "deliberately perverse pairings",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2ac355bc766ec898ad4/master/pass/00012-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Double-breasted purple blazer with orange contrast trim and a pink fabric flower brooch, layered over a white V-neck sweater vest with red stripes and a light pink collared shirt, paired with a cream pleated midi skirt, purple tights, and lime green flat shoes, accessorized with a black cap, a dark purple velvet bow tie, and a tan leather tote bag.",
+  "fabric": "wool, cotton, knit, poplin, felt, velvet, leather, hosiery",
+  "patterns": [
+   "solid",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Aubergine",
+    "hex_code": "#4F3A5E",
+    "pantone_code": "19-3023 (Aubergine)"
+   },
+   {
+    "color_name": "Tangerine Tango",
+    "hex_code": "#E48C3D",
+    "pantone_code": "17-1464 (Tangerine Tango)"
+   },
+   {
+    "color_name": "Pale Dogwood",
+    "hex_code": "#F2DCE1",
+    "pantone_code": "12-1706 (Pale Dogwood)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#F8F8F8",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "True Red",
+    "hex_code": "#C84A4A",
+    "pantone_code": "18-1663 (True Red)"
+   },
+   {
+    "color_name": "Egret",
+    "hex_code": "#F0E8D7",
+    "pantone_code": "12-0703 (Egret)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#201F22",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Grape Juice",
+    "hex_code": "#5C2F4D",
+    "pantone_code": "19-2428 (Grape Juice)"
+   },
+   {
+    "color_name": "Toasted Almond",
+    "hex_code": "#B57F52",
+    "pantone_code": "16-1334 (Toasted Almond)"
+   },
+   {
+    "color_name": "Lavender Fog",
+    "hex_code": "#B0A1D1",
+    "pantone_code": "15-3817 (Lavender Fog)"
+   },
+   {
+    "color_name": "Green Flash",
+    "hex_code": "#90D36B",
+    "pantone_code": "14-0452 (Green Flash)"
+   }
+  ],
+  "theme": "Preppy eccentricity",
+  "keywords": [
+   "blazer",
+   "double-breasted",
+   "contrast trim",
+   "fabric flower brooch",
+   "sweater vest",
+   "collared shirt",
+   "pleated skirt",
+   "midi length",
+   "cap",
+   "bow tie",
+   "tote bag",
+   "tights",
+   "flat shoes",
+   "layered"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "preppy blazers",
+   "collegiate stripes",
+   "schoolboy references",
+   "insouciant provocation",
+   "liberating elegance"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2ad9fda1576ba8ad4d5/master/pass/00013-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Multicolored tweed double-breasted blazer with padded shoulders and gold buttons, styled with light wash ripped straight-leg jeans, a chunky layered statement necklace, and white studded ballet flats.",
+  "fabric": "tweed, denim, metal, leather",
+  "patterns": [
+   "tweed",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Russet Brown",
+    "hex_code": "#803D2F",
+    "pantone_code": "19-1536 (Russet Brown)"
+   },
+   {
+    "color_name": "Blue Heaven",
+    "hex_code": "#87CEEB",
+    "pantone_code": "17-4023 (Blue Heaven)"
+   },
+   {
+    "color_name": "Grape Royal",
+    "hex_code": "#5D3F6A",
+    "pantone_code": "19-3716 (Grape Royal)"
+   },
+   {
+    "color_name": "Light Blue",
+    "hex_code": "#ADD8E6",
+    "pantone_code": "14-4203 (Light Blue)"
+   },
+   {
+    "color_name": "Goldenrod",
+    "hex_code": "#DAA520",
+    "pantone_code": "16-0948 (Goldenrod)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#1B1B1B",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Lavender",
+    "hex_code": "#E6E6FA",
+    "pantone_code": "13-3803 (Lavender)"
+   }
+  ],
+  "theme": "Eclectic high-low styling",
+  "keywords": [
+   "tweed blazer",
+   "double-breasted",
+   "padded shoulders",
+   "gold buttons",
+   "ripped jeans",
+   "distressed denim",
+   "straight leg",
+   "statement necklace",
+   "layered necklace",
+   "studded ballet flats",
+   "pointed toe"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "decadent blas\u00e9",
+   "wearable clothes",
+   "perverse pairings",
+   "liberating elegance",
+   "insouciant provocation",
+   "Valentino 2.0 wardrobe"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2ae9eff9211d07f8518/master/pass/00014-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Red satin bomber jacket with white logo lettering, worn over a light pink collared shirt, a blue denim front-slit maxi skirt, a black leather belt, a black baker boy cap, gold necklaces, and green and gold patterned mules.",
+  "fabric": "satin, cotton, denim, leather, textile",
+  "patterns": [
+   "logo lettering",
+   "geometric"
+  ],
+  "Colors": [
+   {
+    "color_name": "High Risk Red",
+    "hex_code": "#E4002B",
+    "pantone_code": "19-1664 (High Risk Red)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Rosewater",
+    "hex_code": "#F8E7F0",
+    "pantone_code": "12-1008 (Rosewater)"
+   },
+   {
+    "color_name": "Directoire Blue",
+    "hex_code": "#4A6BA8",
+    "pantone_code": "18-4048 (Directoire Blue)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Golden Rod",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Rod)"
+   },
+   {
+    "color_name": "Teal",
+    "hex_code": "#008080",
+    "pantone_code": "16-5114 (Teal)"
+   },
+   {
+    "color_name": "Dark Ivy",
+    "hex_code": "#2F4F4F",
+    "pantone_code": "19-5408 (Dark Ivy)"
+   }
+  ],
+  "theme": "Sporty prep with decadent accessories",
+  "keywords": [
+   "bomber jacket",
+   "maxi skirt",
+   "collared shirt",
+   "baker boy cap",
+   "front slit",
+   "layered",
+   "logo print",
+   "gold jewelry",
+   "mules",
+   "belt"
+  ],
+  "collection_keywords": [
+   "preppy",
+   "sportswear layering",
+   "unexpected combinations",
+   "decadent",
+   "insouciant provocation",
+   "logo-splashed",
+   "everyday dressing"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b218bc90d91161486fac/master/pass/00010-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2af9fda1576ba8ad4db/master/pass/00015-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Brown leather shoulder bag with gold-tone rockstuds and turn-lock closure, carried with a cream A-line skirt, light purple opaque tights, and green pointed-toe mules featuring clear straps and gold-tone stiletto heels.",
+  "fabric": "leather, woven fabric, nylon, plastic, metal, cotton, suiting fabric",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Tobacco Brown",
+    "hex_code": "#915D3F",
+    "pantone_code": "18-1248 (Tobacco Brown)"
+   },
+   {
+    "color_name": "Lilac Sachet",
+    "hex_code": "#C7B0D8",
+    "pantone_code": "15-3817 (Lilac Sachet)"
+   },
+   {
+    "color_name": "Green Flash",
+    "hex_code": "#8BC34A",
+    "pantone_code": "16-0435 (Green Flash)"
+   },
+   {
+    "color_name": "Vanilla Ice",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "12-0601 (Vanilla Ice)"
+   },
+   {
+    "color_name": "Pale Dogwood",
+    "hex_code": "#F0D9D9",
+    "pantone_code": "12-1009 (Pale Dogwood)"
+   },
+   {
+    "color_name": "Grape Royale",
+    "hex_code": "#4B0082",
+    "pantone_code": "19-3720 (Grape Royale)"
+   }
+  ],
+  "theme": "Bold color contrasts",
+  "keywords": [
+   "leather shoulder bag",
+   "rockstuds",
+   "turn-lock closure",
+   "pointed-toe mules",
+   "stiletto heel",
+   "clear strap shoes",
+   "opaque tights",
+   "A-line skirt",
+   "color contrast"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "perverse pairings",
+   "liberating elegance",
+   "insouciant provocation",
+   "plurality over prescription"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2b1114ed1b98739fc8a/master/pass/00016-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Off-white ruched mini blazer dress with strong padded shoulders, a black central ribbon detail with two bows, styled over a light blue collared shirt with French cuffs, paired with yellow-tinted sunglasses and fuchsia pointed-toe pumps.",
+  "fabric": "wool crepe, cotton poplin, satin, leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Cream",
+    "hex_code": "#F8F8F8",
+    "pantone_code": "11-0107 (Egret)"
+   },
+   {
+    "color_name": "Light Blue",
+    "hex_code": "#ADD8E6",
+    "pantone_code": "14-4123 (Clearwater)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Fuchsia",
+    "hex_code": "#E0218A",
+    "pantone_code": "19-2045 (Fuchsia Rose)"
+   },
+   {
+    "color_name": "Lime Yellow",
+    "hex_code": "#DFFF00",
+    "pantone_code": "13-0647 (Lime Punch)"
+   }
+  ],
+  "theme": "Eccentric Preppy Deconstruction",
+  "keywords": [
+   "mini dress",
+   "blazer silhouette",
+   "ruched detailing",
+   "strong shoulder",
+   "contrast collar",
+   "bow accents",
+   "pointed-toe pumps",
+   "ankle strap heels",
+   "tinted sunglasses"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "preppy blazers",
+   "schoolgirl references",
+   "perverse pairings",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b21892ae92f349966a96/master/pass/00011-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2b1114ed1b98739fc8a/master/pass/00016-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Pink suede d'Orsay pumps with floral lace inserts and gold pointed toe caps, worn with sheer white tights.",
+  "fabric": "suede",
+  "patterns": [
+   "floral",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Blushing Bride",
+    "hex_code": "#E6C6C6",
+    "pantone_code": "13-1509 (Blushing Bride)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Gold)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   }
+  ],
+  "theme": "Romantic and refined",
+  "keywords": [
+   "d'Orsay pumps",
+   "pointed toe",
+   "stiletto heel",
+   "lace detail",
+   "suede shoes",
+   "metallic toe cap",
+   "sheer tights",
+   "hosiery",
+   "footwear",
+   "gold accents"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "liberating elegance",
+   "decadent",
+   "oddities in styling",
+   "off-kilter charge"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b21b1669cbab83ad371a/master/pass/00012-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2b1114ed1b98739fc8a/master/pass/00016-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Pointed-toe pumps with a fuchsia suede toe and gold snakeskin body, featuring a delicate gold ankle strap and metallic stiletto heel, worn with sheer nude hosiery.",
+  "fabric": "suede, snakeskin, metallic leather, sheer nylon",
+  "patterns": [
+   "snakeskin",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Pink Flamb\u00e9",
+    "hex_code": "#D83A7B",
+    "pantone_code": "18-2045 (Pink Flamb\u00e9)"
+   },
+   {
+    "color_name": "Antique Gold",
+    "hex_code": "#B8860B",
+    "pantone_code": "16-0840 (Antique Gold)"
+   },
+   {
+    "color_name": "Barely There",
+    "hex_code": "#E0C7B0",
+    "pantone_code": "13-1009 (Barely There)"
+   }
+  ],
+  "theme": "Decadent footwear with playful elegance",
+  "keywords": [
+   "pumps",
+   "high heels",
+   "pointed toe",
+   "stiletto heel",
+   "ankle strap",
+   "snakeskin print",
+   "suede",
+   "hosiery",
+   "sheer tights",
+   "metallic details"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "decadent",
+   "perverse pairings",
+   "liberating elegance",
+   "quirk",
+   "eccentricities"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2b29fda1576ba8ad4e2/master/pass/00017-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Floor-length silver metallic fringe cape with a high neckline, worn over a dark base layer and styled with black heeled ankle boots.",
+  "fabric": "metallic fringe, suede",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4500 (Silver Cloud)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Dramatic evening wear",
+  "keywords": [
+   "floor-length cape",
+   "metallic fringe",
+   "high neckline",
+   "columnar silhouette",
+   "heeled ankle boots",
+   "glamorous",
+   "evening wear",
+   "shimmering"
+  ],
+  "collection_keywords": [
+   "eccentricities",
+   "off-kilter charge",
+   "liberating elegance",
+   "insouciant provocation",
+   "sartorial intrigues",
+   "lavishly embellished"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2b29fda1576ba8ad4e4/master/pass/00018-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Orange draped mini-dress with wide dolman sleeves and a knotted front detail, styled with light blue opaque tights, bright green pointed-toe pumps, and a metallic gold shoulder bag.",
+  "fabric": "Viscose jersey, nylon, suede, leather, metal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Marigold",
+    "hex_code": "#F2A33A",
+    "pantone_code": "16-1257 (Marigold)"
+   },
+   {
+    "color_name": "Serenity Blue",
+    "hex_code": "#AEC6E6",
+    "pantone_code": "14-4123 (Serenity)"
+   },
+   {
+    "color_name": "Vibrant Green",
+    "hex_code": "#32CD32",
+    "pantone_code": "16-5533 (Vibrant Green)"
+   },
+   {
+    "color_name": "Antique Gold",
+    "hex_code": "#B8860B",
+    "pantone_code": "16-0947 (Mustard Gold)"
+   }
+  ],
+  "theme": "Playful color blocking with unexpected pairings",
+  "keywords": [
+   "mini-dress",
+   "draped",
+   "knotted detail",
+   "dolman sleeves",
+   "boat neck",
+   "opaque tights",
+   "pointed-toe pumps",
+   "shoulder bag",
+   "color blocking",
+   "resort wear"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "perverse pairings",
+   "styling oddities",
+   "liberating elegance",
+   "wrong combinations",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b21bacbf3d248f1b1b24/master/pass/00013-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2b29fda1576ba8ad4e2/master/pass/00017-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Beaded cape-like overlay with long fringes and sculptural floral embellishments at the neckline, worn over a diamond-patterned beaded top.",
+  "fabric": "Beaded embroidery, sequins, silk base",
+  "patterns": [
+   "diamond"
+  ],
+  "Colors": [
+   {
+    "color_name": "Silver Cloud",
+    "hex_code": "#E0E0E0",
+    "pantone_code": "13-4108 (Silver Cloud)"
+   },
+   {
+    "color_name": "Forest Night",
+    "hex_code": "#2F4F4F",
+    "pantone_code": "19-0405 (Forest Night)"
+   }
+  ],
+  "theme": "Opulent Embellishment",
+  "keywords": [
+   "beaded cape",
+   "fringe",
+   "floral embellishment",
+   "beaded top",
+   "diamond pattern",
+   "couture",
+   "evening wear",
+   "sparkle",
+   "shimmer",
+   "intricate beading"
+  ],
+  "collection_keywords": [
+   "lavishly embroidered clothes",
+   "sartorial intrigues",
+   "liberating elegance",
+   "eccentricities",
+   "off-kilter charge",
+   "decadent"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2b439541f8887b27eee/master/pass/00019-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Oversized heather grey cotton fleece turtleneck sweatshirt with red \"you can come to my Villa\" and \"VILLA\" logo text, paired with matching heather grey cotton fleece jogger sweatpants, a kelly green baseball cap with \"VILLAIN TEEN\" text, cobalt blue studded strappy high heels, and sheer cobalt blue socks, accessorized with large cobalt blue and gold earrings and a studded cognac brown leather shoulder bag.",
+  "fabric": "Cotton fleece, leather, metal, sheer knit",
+  "patterns": [
+   "solid",
+   "text print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Heather Grey",
+    "hex_code": "#B0B0B0",
+    "pantone_code": "17-4007 (Quiet Shade)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C80000",
+    "pantone_code": "18-1663 (True Red)"
+   },
+   {
+    "color_name": "Kelly Green",
+    "hex_code": "#008000",
+    "pantone_code": "17-5641 (Kelly Green)"
+   },
+   {
+    "color_name": "Cobalt Blue",
+    "hex_code": "#0047AB",
+    "pantone_code": "19-4053 (Directoire Blue)"
+   },
+   {
+    "color_name": "Cognac Brown",
+    "hex_code": "#8B4513",
+    "pantone_code": "18-1442 (Cognac)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Goldenrod)"
+   }
+  ],
+  "theme": "Casual luxury sportswear with provocative accessories",
+  "keywords": [
+   "Sweatshirt",
+   "jogger pants",
+   "tracksuit",
+   "turtleneck",
+   "oversized silhouette",
+   "baseball cap",
+   "high heels",
+   "studded footwear",
+   "shoulder bag",
+   "statement earrings",
+   "athleisure"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "decadent blas\u00e9",
+   "teenage debauchery",
+   "oddities in styling",
+   "sportswear",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b21ef084b706e9066dec/master/pass/00015-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2b439541f8887b27eee/master/pass/00019-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Grey jersey sweatpants with elasticated cuffs are worn with sheer pale pink socks and blue leather Rockstud pumps featuring gold-tone pyramid studs and ankle straps.",
+  "fabric": "Cotton jersey, sheer nylon, leather, metal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Heather Grey",
+    "hex_code": "#B0B0B0",
+    "pantone_code": "14-4202 (Vapor Blue)"
+   },
+   {
+    "color_name": "Royal Blue",
+    "hex_code": "#0047AB",
+    "pantone_code": "19-4052 (Directoire Blue)"
+   },
+   {
+    "color_name": "Pale Blush",
+    "hex_code": "#F0D0C0",
+    "pantone_code": "12-1009 (Pale Blush)"
+   },
+   {
+    "color_name": "Gold-tone",
+    "hex_code": "#C4B454",
+    "pantone_code": "16-0947 (Golden Rod)"
+   }
+  ],
+  "theme": "Sportswear with couture footwear",
+  "keywords": [
+   "sweatpants",
+   "jersey",
+   "elasticated cuffs",
+   "sheer socks",
+   "pointed-toe pumps",
+   "high heels",
+   "ankle straps",
+   "pyramid studs",
+   "Rockstud",
+   "leather pumps"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "reconciling couture with everyday",
+   "sportswear",
+   "liberating elegance",
+   "wrong combinations"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b21b92ae92f349966a9c/master/pass/00014-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2b439541f8887b27eee/master/pass/00019-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "A brown leather shoulder bag features a studded flap closure with silver-tone hardware, a top handle, and an adjustable strap.",
+  "fabric": "Leather, metal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Brown",
+    "hex_code": "#965A3E",
+    "pantone_code": "17-1047 (Tobacco Brown)"
+   },
+   {
+    "color_name": "Silver-tone",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Cloud Dancer)"
+   }
+  ],
+  "theme": "Studded accessory",
+  "keywords": [
+   "Leather shoulder bag",
+   "studded flap",
+   "silver-tone hardware",
+   "top handle",
+   "adjustable strap",
+   "trapezoid silhouette",
+   "structured bag",
+   "Valentino Rockstud"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "wearable clothes",
+   "Valentino 2.0 wardrobe",
+   "liberating elegance",
+   "insouciant provocation",
+   "decadent"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2b592ae92f349966abc/master/pass/00020-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Orange silk chiffon maxi dress with purple sequin embellishment, short sleeves, V-neckline, grey satin cinched waist, and a fringed sequin hem, styled with a gold metallic mini bag and black suede high-heeled ankle boots.",
+  "fabric": "silk chiffon, sequins, satin, suede, metallic leather",
+  "patterns": [
+   "abstract wave"
+  ],
+  "Colors": [
+   {
+    "color_name": "Orange",
+    "hex_code": "#FF8C00",
+    "pantone_code": "16-1361 (Orange Tiger)"
+   },
+   {
+    "color_name": "Purple",
+    "hex_code": "#9932CC",
+    "pantone_code": "18-3838 (Ultra Violet)"
+   },
+   {
+    "color_name": "Grey",
+    "hex_code": "#808080",
+    "pantone_code": "17-4014 (Quiet Shade)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0947 (Golden Rod)"
+   }
+  ],
+  "theme": "Playful evening glamour",
+  "keywords": [
+   "maxi dress",
+   "sequin dress",
+   "fringe trim",
+   "V-neck",
+   "short sleeves",
+   "cinched waist",
+   "mini bag",
+   "ankle boots",
+   "high heels"
+  ],
+  "collection_keywords": [
+   "eccentricities",
+   "off-kilter charge",
+   "improbable pairings",
+   "liberating elegance",
+   "insouciant provocation",
+   "decadent blas\u00e9"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2b59fda1576ba8ad4ed/master/pass/00021-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Long-sleeve grey jersey top with elaborate gold and silver embroidery and fringe at the neckline and shoulders, paired with light wash distressed denim jeans featuring a raw hem, sheer white socks, and red studded flat sandals.",
+  "fabric": "jersey knit, denim, embroidery, beads, leather, sheer knit",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Grey",
+    "hex_code": "#777B7F",
+    "pantone_code": "17-4014 (Quiet Shade)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#B8860B",
+    "pantone_code": "16-0947 (Golden Rod)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4500 (Silver Cloud)"
+   },
+   {
+    "color_name": "Light Blue Denim",
+    "hex_code": "#A7C7E7",
+    "pantone_code": "15-4020 (Blue Fog)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C80815",
+    "pantone_code": "18-1663 (True Red)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#F8F8F8",
+    "pantone_code": "11-0601 (Bright White)"
+   }
+  ],
+  "theme": "Embellished everyday wear",
+  "keywords": [
+   "long-sleeve top",
+   "crew neck",
+   "embroidery",
+   "fringe",
+   "beading",
+   "distressed jeans",
+   "straight leg jeans",
+   "raw hem",
+   "studded sandals",
+   "sheer socks"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "couture everyday",
+   "liberating elegance",
+   "insouciant provocation",
+   "eccentricities",
+   "wrong combinations",
+   "Valentino 2.0 wardrobe"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2b77fbc119d498c046a/master/pass/00022-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Long-sleeved mock-neck dress with an asymmetrical hem, featuring a pleated cape overlay with ruffled edges, styled with green sunglasses, a pink fabric flower brooch, pearl drop earrings, lavender tights, and pointed-toe heels with an abstract print.",
+  "fabric": "jersey, pleated silk, knit, fabric flower, plastic, metal, pearl, leather",
+  "patterns": [
+   "solid",
+   "abstract print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Lavender Grey",
+    "hex_code": "#CFC8D0",
+    "pantone_code": "13-3805 (Lilac Gray)"
+   },
+   {
+    "color_name": "Lavender",
+    "hex_code": "#B0A8D9",
+    "pantone_code": "15-3817 (Lavender)"
+   },
+   {
+    "color_name": "Lime Green",
+    "hex_code": "#90B000",
+    "pantone_code": "14-0446 (Lime Punch)"
+   },
+   {
+    "color_name": "Hot Pink",
+    "hex_code": "#F08080",
+    "pantone_code": "17-2036 (Pink Flamb\u00e9)"
+   },
+   {
+    "color_name": "Light Purple",
+    "hex_code": "#C8BFE7",
+    "pantone_code": "15-3817 (Lavender)"
+   },
+   {
+    "color_name": "Teal Blue",
+    "hex_code": "#008080",
+    "pantone_code": "16-4725 (Teal Blue)"
+   }
+  ],
+  "theme": "Layered elegance",
+  "keywords": [
+   "mock neck dress",
+   "pleated cape",
+   "asymmetrical hem",
+   "long sleeves",
+   "draped silhouette",
+   "fabric flower brooch",
+   "sunglasses",
+   "pearl earrings",
+   "tights",
+   "pointed-toe heels"
+  ],
+  "collection_keywords": [
+   "eccentricities",
+   "off-kilter charge",
+   "improbable pairings",
+   "liberating elegance",
+   "insouciant provocation",
+   "plurality over prescription"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2b8114ed1b98739fc90/master/pass/00023-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Plaid button-up shirt tied at the waist, paired with high-waisted, wide-leg grey trousers, layered pearl necklaces, green sunglasses, a thin black belt, and black pointed-toe flats.",
+  "fabric": "Cotton, wool, pearls, leather",
+  "patterns": [
+   "plaid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Burgundy",
+    "hex_code": "#800020",
+    "pantone_code": "19-1725 (Port Royale)"
+   },
+   {
+    "color_name": "Medium Blue",
+    "hex_code": "#4169E1",
+    "pantone_code": "18-4048 (Directoire Blue)"
+   },
+   {
+    "color_name": "Light Blue",
+    "hex_code": "#ADD8E6",
+    "pantone_code": "14-4123 (Clearwater)"
+   },
+   {
+    "color_name": "Charcoal Grey",
+    "hex_code": "#36454F",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Pearl White",
+    "hex_code": "#F8F8F8",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4203 (Caviar)"
+   },
+   {
+    "color_name": "Lime Green",
+    "hex_code": "#32CD32",
+    "pantone_code": "15-0531 (Green Flash)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0836 (Goldfinch)"
+   }
+  ],
+  "theme": "Preppy eccentricity",
+  "keywords": [
+   "plaid shirt",
+   "button-up",
+   "tied waist",
+   "wide-leg trousers",
+   "high-waisted",
+   "pleated trousers",
+   "pearl necklace",
+   "sunglasses",
+   "leather belt",
+   "pointed-toe flats"
+  ],
+  "collection_keywords": [
+   "preppy references",
+   "collegiate style",
+   "improbable pairings",
+   "liberating elegance",
+   "insouciant provocation",
+   "eccentricities"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2b89fda1576ba8ad4f3/master/pass/00024-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Cream cable-knit cardigan layered over a light blue collared shirt, a navy and gold silk scarf, a pleated tartan midi skirt, a black leather belt, a dark brown leather tote bag, and pink ruffled open-toe mules.",
+  "fabric": "wool knit, cotton, silk, leather",
+  "patterns": [
+   "tartan",
+   "plaid",
+   "chain print",
+   "logo print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Cream",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "12-0712 (Egret)"
+   },
+   {
+    "color_name": "Light Blue",
+    "hex_code": "#ADD8E6",
+    "pantone_code": "15-4020 (Clearwater)"
+   },
+   {
+    "color_name": "Navy",
+    "hex_code": "#000080",
+    "pantone_code": "19-4010 (Dress Blues)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0947 (Golden Rod)"
+   },
+   {
+    "color_name": "Orange",
+    "hex_code": "#FFA500",
+    "pantone_code": "17-1464 (Tangerine Tango)"
+   },
+   {
+    "color_name": "Blue",
+    "hex_code": "#4682B4",
+    "pantone_code": "18-4048 (Directoire Blue)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#008000",
+    "pantone_code": "16-6136 (Kelly Green)"
+   },
+   {
+    "color_name": "Purple",
+    "hex_code": "#800080",
+    "pantone_code": "19-3520 (Grape Royal)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#654321",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Pink",
+    "hex_code": "#FFC0CB",
+    "pantone_code": "13-2806 (Ballet Slipper)"
+   }
+  ],
+  "theme": "Preppy Eclectic",
+  "keywords": [
+   "cable-knit cardigan",
+   "collared shirt",
+   "silk scarf",
+   "pleated midi skirt",
+   "tartan",
+   "leather belt",
+   "tote bag",
+   "open-toe mules",
+   "ruffled footwear",
+   "layered styling"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "preppy references",
+   "schoolgirl references",
+   "liberating elegance"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b22192fcd89cad84ec3f/master/pass/00018-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2b89fda1576ba8ad4f3/master/pass/00024-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Cream cable-knit cardigan layered over a light blue collared shirt, with a navy silk scarf featuring a gold chain print, and two layered gold-tone necklaces.",
+  "fabric": "knit, cotton, silk, metal",
+  "patterns": [
+   "chain print",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Cream",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "12-0104 (Egret)"
+   },
+   {
+    "color_name": "Light Blue",
+    "hex_code": "#ADD8E6",
+    "pantone_code": "15-4020 (Clearwater)"
+   },
+   {
+    "color_name": "Navy",
+    "hex_code": "#000080",
+    "pantone_code": "19-3923 (True Navy)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#DAA520",
+    "pantone_code": "16-0947 (Goldenrod)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Preppy layering with classic accessories",
+  "keywords": [
+   "cable knit cardigan",
+   "collared shirt",
+   "silk scarf",
+   "chain print",
+   "layered necklaces",
+   "choker",
+   "pendant necklace",
+   "preppy",
+   "resort wear"
+  ],
+  "collection_keywords": [
+   "preppy",
+   "collegiate",
+   "improbable pairings",
+   "layered",
+   "liberating elegance",
+   "Valentino 2.0 wardrobe"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2baacbf3d248f1b1b33/master/pass/00025-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Black strapless top with a rosette detail at the bust, paired with a long skirt featuring a tiger print sequined panel and a black draped overlay with a high front slit, styled with purple strappy heels.",
+  "fabric": "silk, sequins, fine woven fabric",
+  "patterns": [
+   "tiger print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Tiger Orange",
+    "hex_code": "#D96C00",
+    "pantone_code": "16-1346 (Tiger's Eye)"
+   },
+   {
+    "color_name": "Lavender Purple",
+    "hex_code": "#9966CC",
+    "pantone_code": "16-3310 (Lavender)"
+   }
+  ],
+  "theme": "Eclectic evening glamour",
+  "keywords": [
+   "strapless top",
+   "rosette detail",
+   "maxi skirt",
+   "high slit",
+   "tiger print",
+   "sequin embellishment",
+   "draped construction",
+   "strappy heels",
+   "evening wear"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "liberating elegance",
+   "insouciant provocation",
+   "decadent"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b222df2e575487f1462d/master/pass/00019-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2baacbf3d248f1b1b33/master/pass/00025-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Purple suede studded T-strap stiletto heels with gold hardware, worn with white opaque tights and a black and orange sequined tiger-print maxi skirt.",
+  "fabric": "Suede, metal, nylon, spandex, sequins, woven fabric",
+  "patterns": [
+   "tiger print",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Purple",
+    "hex_code": "#6F4E7C",
+    "pantone_code": "19-3520 (Grape Compote)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#F8F8F8",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#231F20",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Tiger Orange-Brown",
+    "hex_code": "#B86B25",
+    "pantone_code": "18-1155 (Tiger's Eye)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#C19A6B",
+    "pantone_code": "16-0836 (Gold)"
+   }
+  ],
+  "theme": "Decadent provocation",
+  "keywords": [
+   "studded heels",
+   "stiletto heels",
+   "pointed toe",
+   "ankle strap",
+   "T-strap",
+   "gold hardware",
+   "white tights",
+   "sequined skirt",
+   "tiger print",
+   "maxi skirt"
+  ],
+  "collection_keywords": [
+   "eccentricities",
+   "off-kilter charge",
+   "improbable pairings",
+   "insouciant provocation",
+   "decadent",
+   "oddities",
+   "perverse pairings"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2bb254dd14297b1ea35/master/pass/00026-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Cropped red wool jacket with black trim and a front bow closure, styled with high-waisted grey wide-leg trousers, a green baseball cap, layered pearl necklaces, a gold pendant, a black belt, and brown pointed-toe shoes.",
+  "fabric": "Wool, cotton twill, pearls, leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Fiery Red",
+    "hex_code": "#C0362C",
+    "pantone_code": "18-1660 (Fiery Red)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#2B2B2B",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Caviar",
+    "hex_code": "#383838",
+    "pantone_code": "19-3900 (Caviar)"
+   },
+   {
+    "color_name": "Kelly Green",
+    "hex_code": "#008744",
+    "pantone_code": "16-6340 (Kelly Green)"
+   },
+   {
+    "color_name": "Egret",
+    "hex_code": "#F0EAD6",
+    "pantone_code": "11-0602 (Egret)"
+   },
+   {
+    "color_name": "Golden Rod",
+    "hex_code": "#DAA520",
+    "pantone_code": "15-1050 (Golden Rod)"
+   },
+   {
+    "color_name": "Tobacco Brown",
+    "hex_code": "#9F6B3F",
+    "pantone_code": "17-1019 (Tobacco Brown)"
+   }
+  ],
+  "theme": "Eclectic formal with a preppy edge",
+  "keywords": [
+   "cropped jacket",
+   "wide-leg trousers",
+   "baseball cap",
+   "layered necklaces",
+   "pearls",
+   "pendant",
+   "tailored trousers",
+   "high-waist",
+   "pointed-toe shoes",
+   "bow closure"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "preppy blazers",
+   "schoolboy references",
+   "baseball caps coexisted",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b223aea770857255bf5a/master/pass/00020-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2bb254dd14297b1ea35/master/pass/00026-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Green baseball cap with \"VILLAIN TEEN\" embroidery, worn with a red cropped blazer featuring black trim and a black bow closure, layered with a multi-strand pearl necklace and a large yellow rhinestone star pendant, and pearl drop earrings.",
+  "fabric": "Cotton, Wool, Faux pearls, Rhinestones, Metal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Kelly Green",
+    "hex_code": "#3CB371",
+    "pantone_code": "16-6136 (Kelly Green)"
+   },
+   {
+    "color_name": "Scarlet Red",
+    "hex_code": "#FF2400",
+    "pantone_code": "19-1664 (Scarlet Red)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "11-0603 (Egret)"
+   },
+   {
+    "color_name": "Bright Yellow",
+    "hex_code": "#FFD700",
+    "pantone_code": "13-0859 (Spectra Yellow)"
+   }
+  ],
+  "theme": "Decadent Collegiate Rebel",
+  "keywords": [
+   "Baseball cap",
+   "Cropped blazer",
+   "Black trim",
+   "Bow closure",
+   "Pearl necklace",
+   "Statement necklace",
+   "Star pendant",
+   "Rhinestones",
+   "Pearl earrings",
+   "Embroidery",
+   "Accessories",
+   "Layered jewelry"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "off-kilter charge",
+   "decadent",
+   "collegiate references",
+   "teenage debauchery",
+   "perverse pairings",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2bbe803e0c850df4f28/master/pass/00027-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Flowing light green chiffon dress with a blouson bodice, wide cape sleeves, and a layered handkerchief hem skirt, styled with a lavender ruffled neckpiece, multi-strand necklace, ornate earrings, and black leather gloves.",
+  "fabric": "chiffon, leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Celery",
+    "hex_code": "#C9D89F",
+    "pantone_code": "13-0315 (Celery)"
+   },
+   {
+    "color_name": "Lilac",
+    "hex_code": "#B59DD8",
+    "pantone_code": "16-3255 (Lilac Sachet)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Pale Pink",
+    "hex_code": "#E0C8C8",
+    "pantone_code": "12-1008 (Barely Pink)"
+   }
+  ],
+  "theme": "Quirky elegance",
+  "keywords": [
+   "chiffon dress",
+   "blouson bodice",
+   "cape sleeves",
+   "handkerchief hem",
+   "layered skirt",
+   "ruffled neckpiece",
+   "statement necklace",
+   "ornate earrings",
+   "leather gloves",
+   "resort wear"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "sartorial intrigues",
+   "liberating elegance",
+   "insouciant provocation",
+   "eccentricities",
+   "decadent",
+   "quirk"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2248d97ef6c2af019d2/master/pass/00021-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2bbe803e0c850df4f28/master/pass/00027-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Green and gold floral brocade pointed-toe pumps with a dark red toe cap and a gold stiletto heel, featuring a black ankle strap, worn with sheer white tights and a chartreuse chiffon dress.",
+  "fabric": "Brocade, metallic thread, chiffon, nylon, leather, metal",
+  "patterns": [
+   "floral",
+   "foliage"
+  ],
+  "Colors": [
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#3F4F36",
+    "pantone_code": "19-5513 (Forest Night)"
+   },
+   {
+    "color_name": "Antique Gold",
+    "hex_code": "#B8860B",
+    "pantone_code": "16-0836 (Antique Gold)"
+   },
+   {
+    "color_name": "Dark Red",
+    "hex_code": "#842D3F",
+    "pantone_code": "19-1725 (Port Royale)"
+   },
+   {
+    "color_name": "Off-White",
+    "hex_code": "#F0F0F0",
+    "pantone_code": "11-0107 (Cloud Dancer)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Chartreuse",
+    "hex_code": "#C1D89F",
+    "pantone_code": "13-0620 (Celery)"
+   }
+  ],
+  "theme": "Opulent and eclectic",
+  "keywords": [
+   "pumps",
+   "high heels",
+   "stiletto heels",
+   "ankle strap",
+   "pointed toe",
+   "brocade",
+   "floral pattern",
+   "metallic heel",
+   "sheer tights",
+   "chiffon dress"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "sartorial intrigues",
+   "decadent",
+   "liberating elegance",
+   "lavishly embroidered clothes",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2bc39541f8887b27ef7/master/pass/00028-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Cream-colored flowing jumpsuit with a deep V-neck and wide-leg trousers, featuring a sheer full-length cape overlay and styled with an ornate embellished choker and light pink open-toe mules.",
+  "fabric": "Silk chiffon, silk, embellished fabric, leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Cream",
+    "hex_code": "#F0EAD6",
+    "pantone_code": "12-0713 (Egret)"
+   },
+   {
+    "color_name": "Charcoal Grey",
+    "hex_code": "#36454F",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Pewter",
+    "hex_code": "#676767",
+    "pantone_code": "17-4402 (Pewter)"
+   },
+   {
+    "color_name": "Pale Pink",
+    "hex_code": "#FADADD",
+    "pantone_code": "12-1009 (Rosewater)"
+   }
+  ],
+  "theme": "Liberated Elegance",
+  "keywords": [
+   "jumpsuit",
+   "wide-leg",
+   "deep V-neck",
+   "sheer cape",
+   "cape overlay",
+   "embellished choker",
+   "open-toe mules",
+   "flowing silhouette",
+   "floor-length"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "liberating elegance",
+   "insouciant provocation",
+   "Valentino 2.0 wardrobe",
+   "couture with everyday"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2be771ca4d22e5d92b4/master/pass/00029-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Oversized light blue and white striped button-down shirt, worn open over a navy tank top, is paired with a pleated tartan midi skirt, a black leather belt, a leopard print shoulder bag, and orange open-toe heels, accessorized with yellow sunglasses and a gold necklace.",
+  "fabric": "Cotton, wool, leather, calf hair, acetate, metal",
+  "patterns": [
+   "stripe",
+   "plaid",
+   "leopard print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Bright White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Clearwater",
+    "hex_code": "#ADD8E6",
+    "pantone_code": "14-4123 (Clearwater)"
+   },
+   {
+    "color_name": "Dress Blues",
+    "hex_code": "#000080",
+    "pantone_code": "19-4010 (Dress Blues)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Cabernet",
+    "hex_code": "#800020",
+    "pantone_code": "19-1763 (Cabernet)"
+   },
+   {
+    "color_name": "Everglade",
+    "hex_code": "#006400",
+    "pantone_code": "19-5513 (Everglade)"
+   },
+   {
+    "color_name": "Blue Tint",
+    "hex_code": "#4682B4",
+    "pantone_code": "16-4020 (Blue Tint)"
+   },
+   {
+    "color_name": "Flame Orange",
+    "hex_code": "#FFA500",
+    "pantone_code": "17-1464 (Flame Orange)"
+   },
+   {
+    "color_name": "Golden Haze",
+    "hex_code": "#D2B48C",
+    "pantone_code": "16-1139 (Golden Haze)"
+   },
+   {
+    "color_name": "Chocolate Lab",
+    "hex_code": "#654321",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Daffodil",
+    "hex_code": "#FFFF00",
+    "pantone_code": "13-0858 (Daffodil)"
+   },
+   {
+    "color_name": "Goldfinch",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0836 (Goldfinch)"
+   }
+  ],
+  "theme": "Eclectic collegiate with a rebellious edge",
+  "keywords": [
+   "oversized shirt",
+   "striped button-down",
+   "tank top",
+   "pleated midi skirt",
+   "tartan",
+   "leather belt",
+   "shoulder bag",
+   "leopard print",
+   "open-toe heels",
+   "sunglasses",
+   "gold necklace",
+   "layering",
+   "preppy"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "preppy",
+   "collegiate",
+   "schoolgirl references",
+   "perverse pairings",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b225df2e575487f14633/master/pass/00022-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2be771ca4d22e5d92b4/master/pass/00029-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Pleated midi skirt in red, blue, and white tartan, paired with a striped shirt sleeve and a leopard print clutch bag with a gold 'V' logo and green strap, worn with a pink open-toe shoe.",
+  "fabric": "Woven fabric, cotton, velvet, leather",
+  "patterns": [
+   "tartan",
+   "plaid",
+   "stripe",
+   "leopard print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Biking Red",
+    "hex_code": "#800020",
+    "pantone_code": "19-1760 (Biking Red)"
+   },
+   {
+    "color_name": "Clearwater",
+    "hex_code": "#90B5C6",
+    "pantone_code": "15-4020 (Clearwater)"
+   },
+   {
+    "color_name": "Dress Blues",
+    "hex_code": "#2F3C4F",
+    "pantone_code": "19-4023 (Dress Blues)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#212121",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Golden Rod",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-1048 (Golden Rod)"
+   },
+   {
+    "color_name": "Chocolate Lab",
+    "hex_code": "#4F352A",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Forest Night",
+    "hex_code": "#2A423A",
+    "pantone_code": "19-5513 (Forest Night)"
+   },
+   {
+    "color_name": "Coral Blush",
+    "hex_code": "#F88379",
+    "pantone_code": "16-1526 (Coral Blush)"
+   }
+  ],
+  "theme": "Preppy eclectic",
+  "keywords": [
+   "pleated midi skirt",
+   "tartan plaid",
+   "striped shirt",
+   "long sleeve",
+   "leopard print clutch",
+   "Valentino logo",
+   "gold hardware",
+   "green bag strap",
+   "open-toe shoe"
+  ],
+  "collection_keywords": [
+   "preppy",
+   "collegiate",
+   "improbable pairings",
+   "liberating elegance",
+   "plurality over prescription",
+   "Valentino 2.0 wardrobe"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2af9fda1576ba8ad4db/master/pass/00015-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "A plaid tweed jacket with white trim and large white buttons is layered over a bright red crewneck sweater and a blue and white striped collared shirt, paired with a light blue pencil skirt, purple tights, and light blue studded T-strap heels, accessorized with a purple baseball cap.",
+  "fabric": "tweed, wool blend, knit, cotton poplin, lightweight denim, nylon blend, leather",
+  "patterns": [
+   "plaid",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Grape Compote",
+    "hex_code": "#7B42A6",
+    "pantone_code": "19-3737 (Grape Compote)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Blue Depths",
+    "hex_code": "#4682B4",
+    "pantone_code": "18-4220 (Blue Depths)"
+   },
+   {
+    "color_name": "Fiery Red",
+    "hex_code": "#E21A2C",
+    "pantone_code": "18-1660 (Fiery Red)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#2C2C2C",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Clearwater",
+    "hex_code": "#C9E0E9",
+    "pantone_code": "13-4110 (Clearwater)"
+   },
+   {
+    "color_name": "Lavender Fog",
+    "hex_code": "#C8A2C8",
+    "pantone_code": "15-3716 (Lavender Fog)"
+   }
+  ],
+  "theme": "Preppy collegiate with eccentric layering",
+  "keywords": [
+   "baseball cap",
+   "striped shirt",
+   "crewneck sweater",
+   "tweed jacket",
+   "pencil skirt",
+   "tights",
+   "studded heels",
+   "layering",
+   "preppy",
+   "collegiate"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "preppy blazers",
+   "collegiate stripes",
+   "schoolgirl references",
+   "deliberately perverse pairings",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b226f084b706e9066df2/master/pass/00023-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2be771ca4d22e5d92b4/master/pass/00029-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Orange and reddish-brown leather open-toe mules with cut-out vamp detail and a gold stiletto heel, worn with a red, blue, and white plaid pleated midi skirt and a yellow and black leopard print shoulder bag.",
+  "fabric": "leather",
+  "patterns": [
+   "plaid",
+   "leopard print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Flame Orange",
+    "hex_code": "#E45B2A",
+    "pantone_code": "17-1464 (Flame Orange)"
+   },
+   {
+    "color_name": "Russet Orange",
+    "hex_code": "#B85D40",
+    "pantone_code": "18-1449 (Russet Orange)"
+   },
+   {
+    "color_name": "Golden Rod",
+    "hex_code": "#D9A62B",
+    "pantone_code": "16-0836 (Golden Rod)"
+   },
+   {
+    "color_name": "True Red",
+    "hex_code": "#BF0A30",
+    "pantone_code": "19-1664 (True Red)"
+   },
+   {
+    "color_name": "Blue Depths",
+    "hex_code": "#004B8D",
+    "pantone_code": "18-4048 (Blue Depths)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#1C1C1C",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Golden Haze",
+    "hex_code": "#D9B34A",
+    "pantone_code": "14-0848 (Golden Haze)"
+   }
+  ],
+  "theme": "Preppy Decadence",
+  "keywords": [
+   "mules",
+   "open-toe shoes",
+   "stiletto heel",
+   "cut-out detail",
+   "pleated skirt",
+   "midi skirt",
+   "plaid",
+   "shoulder bag",
+   "leopard print",
+   "hosiery"
+  ],
+  "collection_keywords": [
+   "preppy",
+   "collegiate references",
+   "schoolgirl references",
+   "decadent",
+   "blas\u00e9",
+   "improbable pairings",
+   "liberating elegance",
+   "quirk"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2bef79c2768b665261d/master/pass/00030-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Pink long-sleeve draped tunic top with a large floral embellishment at the waist, paired with light-wash distressed straight-leg jeans, metallic sandals, green rectangular sunglasses, and a patterned clutch bag.",
+  "fabric": "silk, denim, leather, plastic",
+  "patterns": [
+   "solid",
+   "geometric"
+  ],
+  "Colors": [
+   {
+    "color_name": "Rose Quartz",
+    "hex_code": "#E0B0B8",
+    "pantone_code": "13-2007 (Rose Quartz)"
+   },
+   {
+    "color_name": "Lavender Fog",
+    "hex_code": "#9B76A8",
+    "pantone_code": "17-3911 (Lavender Fog)"
+   },
+   {
+    "color_name": "Chambray Blue",
+    "hex_code": "#9BB0C7",
+    "pantone_code": "14-4203 (Chambray Blue)"
+   },
+   {
+    "color_name": "Pale Lime",
+    "hex_code": "#A8C79B",
+    "pantone_code": "13-0315 (Pale Lime)"
+   },
+   {
+    "color_name": "Golden Rod",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0947 (Golden Rod)"
+   },
+   {
+    "color_name": "Mocha Mousse",
+    "hex_code": "#8B4513",
+    "pantone_code": "18-1140 (Mocha Mousse)"
+   },
+   {
+    "color_name": "Silver Cloud",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4500 (Silver Cloud)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Relaxed glamour with romantic accents",
+  "keywords": [
+   "draped tunic",
+   "long sleeves",
+   "floral embellishment",
+   "distressed jeans",
+   "straight-leg jeans",
+   "metallic sandals",
+   "block heel",
+   "clutch bag",
+   "rectangular sunglasses",
+   "oversized top"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "liberating elegance",
+   "oddities in styling",
+   "deliberately perverse pairings",
+   "plurality over prescription",
+   "valentino 2.0 wardrobe"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2bfe7c040879febc309/master/pass/00031-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Longline sequined jacket with a geometric pattern, worn over a white graphic t-shirt and grey sweatpants, styled with an orange baseball cap, dark brown leather shoulder bag, and beige suede cowboy boots.",
+  "fabric": "Sequins, cotton, cotton fleece, cotton twill, embossed leather, metal, suede",
+  "patterns": [
+   "geometric",
+   "crocodile embossed"
+  ],
+  "Colors": [
+   {
+    "color_name": "True Blue",
+    "hex_code": "#408090",
+    "pantone_code": "18-4220 (True Blue)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#1A1A1A",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Silver Cloud",
+    "hex_code": "#B0B0B0",
+    "pantone_code": "14-4500 (Silver Cloud)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#F0F0F0",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Nimbus Cloud",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "13-4108 (Nimbus Cloud)"
+   },
+   {
+    "color_name": "Flame Orange",
+    "hex_code": "#F06020",
+    "pantone_code": "17-1464 (Flame Orange)"
+   },
+   {
+    "color_name": "Chocolate Truffle",
+    "hex_code": "#402010",
+    "pantone_code": "19-1016 (Chocolate Truffle)"
+   },
+   {
+    "color_name": "Antique Gold",
+    "hex_code": "#C0A050",
+    "pantone_code": "16-0836 (Antique Gold)"
+   },
+   {
+    "color_name": "Sandstone",
+    "hex_code": "#C0A080",
+    "pantone_code": "16-1336 (Sandstone)"
+   }
+  ],
+  "theme": "Eclectic street couture",
+  "keywords": [
+   "longline jacket",
+   "sequined",
+   "geometric pattern",
+   "t-shirt",
+   "graphic print",
+   "sweatpants",
+   "baseball cap",
+   "shoulder bag",
+   "chain strap",
+   "cowboy boots",
+   "high-low styling",
+   "relaxed fit"
+  ],
+  "collection_keywords": [
+   "tracksuits mingled with sequins",
+   "baseball caps",
+   "improbable pairings",
+   "off-kilter charge",
+   "liberating elegance",
+   "insouciant provocation",
+   "valentino 2.0 wardrobe"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b21e7ab1113c1be19018/master/pass/00017-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2b77fbc119d498c046a/master/pass/00022-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Gold-framed green-tinted shield sunglasses, a long drop earring with pav\u00e9 crystals and a large pearl, and a light lilac grey pleated high-neck top with a pale pink floral appliqu\u00e9.",
+  "fabric": "metal, plastic, crystal, pearl, fine gauge knit, chiffon",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Haze)"
+   },
+   {
+    "color_name": "Olive Green",
+    "hex_code": "#6B8E23",
+    "pantone_code": "16-0532 (Olive Green)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   },
+   {
+    "color_name": "Pristine",
+    "hex_code": "#FFFDD0",
+    "pantone_code": "11-0105 (Pristine)"
+   },
+   {
+    "color_name": "Lilac Gray",
+    "hex_code": "#C8C8D0",
+    "pantone_code": "13-3803 (Lilac Gray)"
+   },
+   {
+    "color_name": "Pale Pink",
+    "hex_code": "#FADADD",
+    "pantone_code": "12-1009 (Pale Dogwood)"
+   }
+  ],
+  "theme": "Eclectic formalwear",
+  "keywords": [
+   "shield sunglasses",
+   "gold-tone frame",
+   "green-tinted lenses",
+   "drop earrings",
+   "pearl earrings",
+   "pav\u00e9 crystal embellishment",
+   "high-neck top",
+   "pleated knitwear",
+   "floral appliqu\u00e9",
+   "accessories"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "eccentricity",
+   "liberated elegance",
+   "styling oddities",
+   "perverse pairings",
+   "couture everyday",
+   "off-kilter",
+   "Valentino 2.0"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2c12de584e829c29606/master/pass/00032-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Red wool blend jacket with a stand collar, button front closure, peplum hem, and flap pockets, paired with a matching knee-length pleated skirt and two-tone pumps.",
+  "fabric": "wool blend, leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Fiery Red",
+    "hex_code": "#D70000",
+    "pantone_code": "18-1664 (Fiery Red)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Pink Dogwood",
+    "hex_code": "#F5D0D8",
+    "pantone_code": "12-1706 (Pink Dogwood)"
+   },
+   {
+    "color_name": "Pristine",
+    "hex_code": "#F5E8D0",
+    "pantone_code": "12-0703 (Pristine)"
+   }
+  ],
+  "theme": "Tailored Preppy Chic",
+  "keywords": [
+   "tailored jacket",
+   "peplum hem",
+   "pleated skirt",
+   "stand collar",
+   "button front",
+   "skirt suit",
+   "two-tone pumps",
+   "long sleeve",
+   "flap pockets",
+   "knee-length skirt"
+  ],
+  "collection_keywords": [
+   "preppy",
+   "schoolgirl references",
+   "everyday dressing",
+   "Valentino 2.0 wardrobe",
+   "elitist heritage"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2297fbc119d498c040a/master/pass/00025-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2c12de584e829c29606/master/pass/00032-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Red tailored jacket with a pleated peplum and black button closure, paired with a matching pleated A-line skirt and two-tone beige and pink pointed-toe pumps with ankle straps.",
+  "fabric": "wool blend, leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Scarlet Red",
+    "hex_code": "#D20000",
+    "pantone_code": "18-1660 (Scarlet Red)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Sand",
+    "hex_code": "#D4C1A8",
+    "pantone_code": "13-1009 (Sand)"
+   },
+   {
+    "color_name": "Rose Quartz",
+    "hex_code": "#F7B5D1",
+    "pantone_code": "13-2007 (Rose Quartz)"
+   }
+  ],
+  "theme": "Sophisticated tailoring",
+  "keywords": [
+   "tailored jacket",
+   "peplum",
+   "pleated skirt",
+   "A-line skirt",
+   "pointed-toe pumps",
+   "ankle strap",
+   "two-tone shoes",
+   "high heels",
+   "button closure"
+  ],
+  "collection_keywords": [
+   "wearable clothes",
+   "preppy blazers",
+   "everyday dressing",
+   "Valentino 2.0 wardrobe",
+   "liberating elegance",
+   "improbable pairings",
+   "surprisingly cautious"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2c2e803e0c850df4f2e/master/pass/00034-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Double-breasted deep purple wool blazer with an embroidered crest and gold buttons, layered over a light pink cotton collared shirt and black knit vest, paired with a red and black plaid full midi skirt, light pink tights, black ankle-strap heels, a black baker boy cap, a black velvet bow tie, and a black mini leather handbag with gold hardware.",
+  "fabric": "wool, cotton, knit, velvet, leather, nylon",
+  "patterns": [
+   "plaid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Deep Purple",
+    "hex_code": "#4A2C4A",
+    "pantone_code": "19-3023 (Grape Royale)"
+   },
+   {
+    "color_name": "Light Pink",
+    "hex_code": "#F0D0D0",
+    "pantone_code": "12-1009 (Pale Dogwood)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Dark Red",
+    "hex_code": "#8B0000",
+    "pantone_code": "19-1763 (Biking Red)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Goldenrod)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "12-0304 (Vanilla Ice)"
+   }
+  ],
+  "theme": "Decadent school uniform",
+  "keywords": [
+   "blazer",
+   "double-breasted",
+   "embroidered crest",
+   "gold buttons",
+   "collared shirt",
+   "knit vest",
+   "midi skirt",
+   "plaid",
+   "full skirt",
+   "tights",
+   "ankle-strap heels",
+   "baker boy cap",
+   "velvet bow tie",
+   "mini handbag",
+   "layering",
+   "collegiate"
+  ],
+  "collection_keywords": [
+   "preppy blazers",
+   "collegiate references",
+   "improbable pairings",
+   "decadent",
+   "liberating elegance",
+   "off-kilter charge"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2c1df2e575487f14654/master/pass/00033-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Leopard print midi dress with a cowl neck, belted at the waist, layered under a matching leopard print long coat with fur cuffs, styled with a green baseball cap, black flat loafers, and a brown studded shoulder bag.",
+  "fabric": "Faux fur, real fur, silk, leather, cotton twill",
+  "patterns": [
+   "animal print",
+   "leopard print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Vanilla Ice",
+    "hex_code": "#F3EFE0",
+    "pantone_code": "12-0601 (Vanilla Ice)"
+   },
+   {
+    "color_name": "Turkish Coffee",
+    "hex_code": "#8B4513",
+    "pantone_code": "18-1142 (Turkish Coffee)"
+   },
+   {
+    "color_name": "Chocolate Lab",
+    "hex_code": "#4A2C2A",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Emerald",
+    "hex_code": "#008000",
+    "pantone_code": "17-5641 (Emerald)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   }
+  ],
+  "theme": "Decadent casual",
+  "keywords": [
+   "midi dress",
+   "cowl neck dress",
+   "long coat",
+   "fur cuffs",
+   "leopard print",
+   "baseball cap",
+   "flat loafers",
+   "leather shoulder bag",
+   "studded bag",
+   "belted silhouette"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "liberating elegance",
+   "sportswear",
+   "baseball caps",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2c4254dd14297b1ea40/master/pass/00035-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Structured yellow wool coat-dress with a sharp collar, three-button closure, and mini-length hem, styled with a navy military-style cap and lavender stiletto pumps.",
+  "fabric": "wool",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Spectra Yellow",
+    "hex_code": "#FDD700",
+    "pantone_code": "13-0755 (Spectra Yellow)"
+   },
+   {
+    "color_name": "True Navy",
+    "hex_code": "#232C3B",
+    "pantone_code": "19-3923 (True Navy)"
+   },
+   {
+    "color_name": "Lilac Sachet",
+    "hex_code": "#C8A2C8",
+    "pantone_code": "16-3310 (Lilac Sachet)"
+   }
+  ],
+  "theme": "Structured elegance with playful color contrast",
+  "keywords": [
+   "coat-dress",
+   "mini-dress",
+   "structured silhouette",
+   "sharp collar",
+   "three-button closure",
+   "long sleeves",
+   "military cap",
+   "stiletto pumps",
+   "pointed toe",
+   "short hem"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "liberating elegance",
+   "Valentino 2.0 wardrobe",
+   "preppy blazers",
+   "off-kilter charge",
+   "eccentricities"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2c4484d320998f59814/master/pass/00036-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Cream sheer organza blouse with a high stand collar, button-front closure, voluminous sleeves, and an embroidered scalloped overlay, paired with white cotton fleece sweatpants and a black cotton twill baseball cap with red embroidered text.",
+  "fabric": "organza",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Cream",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "12-0713 (Vanilla)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0602 (Optical White)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#CC0000",
+    "pantone_code": "18-1663 (True Red)"
+   }
+  ],
+  "theme": "Romantic sportswear",
+  "keywords": [
+   "blouse",
+   "sweatpants",
+   "baseball cap",
+   "voluminous sleeves",
+   "embroidered collar",
+   "sheer fabric",
+   "drawstring waist",
+   "high collar",
+   "button-front",
+   "sportswear"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "mundane demands",
+   "lofty spirit of couture",
+   "deliberately perverse pairings",
+   "Valentino 2.0 wardrobe",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b229494e9a4bb054a7d6/master/pass/00026-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2c4254dd14297b1ea40/master/pass/00035-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Purple studded strappy high-heeled pumps worn with a yellow mini dress.",
+  "fabric": "suede, metal, wool blend",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Orchid Purple",
+    "hex_code": "#9966CC",
+    "pantone_code": "18-3025 (Orchid Bloom)"
+   },
+   {
+    "color_name": "Bright Yellow",
+    "hex_code": "#FFD700",
+    "pantone_code": "13-0858 (Spectra Yellow)"
+   }
+  ],
+  "theme": "Bold accessory styling",
+  "keywords": [
+   "high heels",
+   "pumps",
+   "strappy shoes",
+   "studded shoes",
+   "ankle strap",
+   "pointed toe",
+   "mini dress hem",
+   "yellow garment",
+   "purple footwear"
+  ],
+  "collection_keywords": [
+   "quirk",
+   "eccentricities",
+   "improbable pairings",
+   "insouciant provocation",
+   "liberating elegance",
+   "Valentino 2.0"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b229f79c2768b66525f4/master/pass/00027-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2c633ec043d3b0c1b30/master/pass/00037-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "The light grey leather handbag features a gold V-logo, a top zipper closure, and a gold chain strap adorned with dark sculpted embellishments.",
+  "fabric": "leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Pumice Stone",
+    "hex_code": "#BDBDBD",
+    "pantone_code": "15-4305 (Pumice Stone)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Gold)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Luxury accessory",
+  "keywords": [
+   "handbag",
+   "leather bag",
+   "chain strap",
+   "V-logo",
+   "gold hardware",
+   "top zipper closure",
+   "sculpted embellishment",
+   "shoulder bag",
+   "structured bag",
+   "rectangular silhouette"
+  ],
+  "collection_keywords": [
+   "eccentricities",
+   "off-kilter charge",
+   "decadent",
+   "liberating elegance",
+   "Valentino 2.0",
+   "freedom"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2c633ec043d3b0c1b30/master/pass/00037-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Long red wool coat with purple trim worn over a striped shirt, argyle sweater vest, striped tie, pleated wide-leg trousers, and accessorized with a newsboy cap, top-handle bag, and two-tone loafers.",
+  "fabric": "Wool, knit, cotton, silk, leather",
+  "patterns": [
+   "argyle",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Deep Red",
+    "hex_code": "#8B0000",
+    "pantone_code": "19-1760 (Biking Red)"
+   },
+   {
+    "color_name": "Vibrant Purple",
+    "hex_code": "#8A2BE2",
+    "pantone_code": "19-3737 (Grape Compote)"
+   },
+   {
+    "color_name": "Navy Blue",
+    "hex_code": "#000080",
+    "pantone_code": "19-3923 (True Navy)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Light Blue",
+    "hex_code": "#ADD8E6",
+    "pantone_code": "14-4123 (Clearwater)"
+   },
+   {
+    "color_name": "Olive Green",
+    "hex_code": "#808000",
+    "pantone_code": "17-0627 (Kalamata)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Light Grey",
+    "hex_code": "#D3D3D3",
+    "pantone_code": "14-4103 (Quiet Shade)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0947 (Golden Rod)"
+   }
+  ],
+  "theme": "Preppy layering with eccentric details",
+  "keywords": [
+   "long coat",
+   "sweater vest",
+   "button-down shirt",
+   "striped tie",
+   "pleated trousers",
+   "wide-leg silhouette",
+   "newsboy cap",
+   "top-handle bag",
+   "two-tone loafers",
+   "layered styling"
+  ],
+  "collection_keywords": [
+   "eccentricities",
+   "off-kilter",
+   "improbable pairings",
+   "preppy",
+   "collegiate",
+   "schoolboy references",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b22c92fcd89cad84ec45/master/pass/00029-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2c633ec043d3b0c1b30/master/pass/00037-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Black and white two-tone leather loafers with gold V-logo hardware and a vibrant pink trim, worn with cuffed wide-leg khaki trousers, partially revealing a red coat with purple contrast trim.",
+  "fabric": "leather, cotton blend, wool, nylon",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Shocking Pink",
+    "hex_code": "#FF007F",
+    "pantone_code": "17-2036 (Shocking Pink)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Haze)"
+   },
+   {
+    "color_name": "Khaki",
+    "hex_code": "#C3B091",
+    "pantone_code": "16-1109 (Nomad)"
+   },
+   {
+    "color_name": "Biking Red",
+    "hex_code": "#B22222",
+    "pantone_code": "19-1755 (Biking Red)"
+   },
+   {
+    "color_name": "Deep Violet",
+    "hex_code": "#800080",
+    "pantone_code": "19-3528 (Deep Violet)"
+   },
+   {
+    "color_name": "Gingerbread",
+    "hex_code": "#A07860",
+    "pantone_code": "16-1334 (Gingerbread)"
+   }
+  ],
+  "theme": "Eclectic Preppy",
+  "keywords": [
+   "loafers",
+   "two-tone footwear",
+   "leather shoes",
+   "V-logo hardware",
+   "cuffed hem",
+   "wide-leg trousers",
+   "khaki pants",
+   "contrast trim",
+   "resort wear",
+   "footwear detail"
+  ],
+  "collection_keywords": [
+   "preppy",
+   "collegiate",
+   "improbable pairings",
+   "off-kilter charge",
+   "perverse pairings",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b22df084b706e9066dfd/master/pass/00030-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2c733ec043d3b0c1b36/master/pass/00038-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Two-tone teal and pale yellow leather mule worn with a sheer lavender stocking and the heavily embellished hem of a sequined and beaded dress.",
+  "fabric": "leather, sheer knit, tulle, sequins, glass beads",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Teal",
+    "hex_code": "#006D6D",
+    "pantone_code": "19-4524 (Teal Blue)"
+   },
+   {
+    "color_name": "Pale Yellow",
+    "hex_code": "#E0C27D",
+    "pantone_code": "13-0822 (Cornsilk)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#B8860B",
+    "pantone_code": "16-0947 (Goldenrod)"
+   },
+   {
+    "color_name": "Lavender",
+    "hex_code": "#D8BFD8",
+    "pantone_code": "14-3812 (Lavender Fog)"
+   },
+   {
+    "color_name": "Lilac",
+    "hex_code": "#C8A2C8",
+    "pantone_code": "16-3820 (Lilac Chiffon)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#B0B0B0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Decadent opulence with playful footwear",
+  "keywords": [
+   "mule",
+   "stiletto heel",
+   "open-toe",
+   "sheer stocking",
+   "sequin embellishment",
+   "bead embellishment",
+   "scalloped hem",
+   "embroidered trim"
+  ],
+  "collection_keywords": [
+   "eccentricities",
+   "off-kilter",
+   "improbable pairings",
+   "decadent",
+   "perverse pairings",
+   "liberating elegance"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2c733ec043d3b0c1b36/master/pass/00038-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Floor-length, long-sleeved gown in a column silhouette, heavily embellished with gold sequins in a scalloped pattern over a sheer lilac base, featuring dramatic dusty pink feather cuffs and a feather-trimmed hem, paired with a black and white geometric high-neck collar and a chunky statement necklace.",
+  "fabric": "Sequined mesh, ostrich feathers, woven fabric",
+  "patterns": [
+   "scalloped",
+   "geometric"
+  ],
+  "Colors": [
+   {
+    "color_name": "Lilac",
+    "hex_code": "#C8A2C8",
+    "pantone_code": "16-3205 (Lilac Sachet)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "15-0927 (Golden Rod)"
+   },
+   {
+    "color_name": "Dusty Pink",
+    "hex_code": "#F0C0B8",
+    "pantone_code": "14-1310 (Peach Blossom)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#212121",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#F8F8F8",
+    "pantone_code": "11-0601 (Bright White)"
+   }
+  ],
+  "theme": "Decadent Eveningwear with Provocative Flair",
+  "keywords": [
+   "floor-length gown",
+   "column silhouette",
+   "long sleeves",
+   "sequin embellishment",
+   "scalloped pattern",
+   "feather trim",
+   "cuff detail",
+   "high neckline",
+   "statement necklace",
+   "evening dress"
+  ],
+  "collection_keywords": [
+   "lavishly embroidered clothes",
+   "decadent",
+   "sartorial intrigues",
+   "improbable pairings",
+   "liberating elegance",
+   "off-kilter charge"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2c72de584e829c2960c/master/pass/00039-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Pink feather boa with a satin ribbon closure worn over an embellished mini-dress with tiered ruffles, styled with black leather gloves, a floral embroidered clutch, sheer black tights, and blue studded slingback heels, accessorized with green rectangular sunglasses.",
+  "fabric": "Feather, satin, sequined fabric, embroidered fabric, leather, sheer nylon",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Pink",
+    "hex_code": "#F49AC1",
+    "pantone_code": "16-2124 (Rosebud)"
+   },
+   {
+    "color_name": "Bronze Brown",
+    "hex_code": "#A0522D",
+    "pantone_code": "18-1340 (Gingerbread)"
+   },
+   {
+    "color_name": "Burgundy",
+    "hex_code": "#800020",
+    "pantone_code": "19-1536 (Biking Red)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Cobalt Blue",
+    "hex_code": "#0047AB",
+    "pantone_code": "19-3955 (Directoire Blue)"
+   },
+   {
+    "color_name": "Green Olive",
+    "hex_code": "#9ACD32",
+    "pantone_code": "15-0341 (Green Olive)"
+   },
+   {
+    "color_name": "Pale Blue",
+    "hex_code": "#C0D6E4",
+    "pantone_code": "13-4108 (Blue Fog)"
+   }
+  ],
+  "theme": "Eclectic Glamour",
+  "keywords": [
+   "feather boa",
+   "mini-dress",
+   "embellished",
+   "tiered ruffles",
+   "leather gloves",
+   "clutch bag",
+   "studded heels",
+   "slingback",
+   "sheer tights",
+   "sunglasses"
+  ],
+  "collection_keywords": [
+   "eccentricities",
+   "off-kilter charge",
+   "improbable pairings",
+   "decadent",
+   "blas\u00e9",
+   "deliberately perverse pairings",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2c9e803e0c850df4f34/master/pass/00040-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Long, flowing pale gold silk chiffon robe with feather-trimmed sleeves and a deep V-neck, worn over a heavily embellished, floor-length nude maxi dress featuring intricate sequin and beadwork.",
+  "fabric": "silk chiffon, feathers, sequins, glass beads, embroidery",
+  "patterns": [
+   "geometric",
+   "abstract"
+  ],
+  "Colors": [
+   {
+    "color_name": "Pale Gold",
+    "hex_code": "#F0E68C",
+    "pantone_code": "13-0915 (Pale Gold)"
+   },
+   {
+    "color_name": "Peach Beige",
+    "hex_code": "#FADCD2",
+    "pantone_code": "12-1008 (Peach Beige)"
+   },
+   {
+    "color_name": "Nude",
+    "hex_code": "#F5DEB3",
+    "pantone_code": "13-1009 (Nude)"
+   },
+   {
+    "color_name": "Metallic Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Goldenrod)"
+   }
+  ],
+  "theme": "Bohemian Opulence",
+  "keywords": [
+   "maxi dress",
+   "robe",
+   "deep V-neck",
+   "feather trim",
+   "sequins",
+   "beads",
+   "embroidery",
+   "flowing silhouette",
+   "evening wear",
+   "resort wear"
+  ],
+  "collection_keywords": [
+   "eccentricities",
+   "off-kilter charge",
+   "improbable pairings",
+   "liberating elegance",
+   "insouciant provocation",
+   "lavishly embroidered clothes"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b230114ed1b98739fc5b/master/pass/00031-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2c9771ca4d22e5d92bf/master/pass/00041-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Pointed-toe high heels with a snakeskin body and purple suede toe, featuring a gold-toned stiletto heel, worn with light blue distressed denim jeans with a raw, frayed hem.",
+  "fabric": "denim, suede, snakeskin-embossed leather, metal",
+  "patterns": [
+   "snakeskin"
+  ],
+  "Colors": [
+   {
+    "color_name": "Light Blue Denim",
+    "hex_code": "#99BADD",
+    "pantone_code": "15-4020 (Blue Fog)"
+   },
+   {
+    "color_name": "Deep Purple",
+    "hex_code": "#4B0082",
+    "pantone_code": "19-3737 (Purple Potion)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#D2B48C",
+    "pantone_code": "13-1008 (Oatmeal)"
+   },
+   {
+    "color_name": "Brown",
+    "hex_code": "#8B4513",
+    "pantone_code": "18-1110 (Warm Taupe)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0836 (Golden Rod)"
+   }
+  ],
+  "theme": "Eclectic casual with luxury accents",
+  "keywords": [
+   "distressed jeans",
+   "raw hem",
+   "frayed hem",
+   "pointed-toe heels",
+   "stiletto heels",
+   "snakeskin print",
+   "suede",
+   "denim",
+   "two-tone shoes",
+   "gold heel"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "perverse pairings",
+   "liberating elegance",
+   "high-low mix",
+   "everyday dressing",
+   "styling oddities"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2c9771ca4d22e5d92bf/master/pass/00041-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Oversized rust-colored satin coat with wide lapels and fur-trimmed cuffs, worn open over sheer brown tights and distressed light-wash denim jeans with a button fly, accessorized with multiple layered strands of pearl necklaces.",
+  "fabric": "satin",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Rust Orange",
+    "hex_code": "#B85F2D",
+    "pantone_code": "18-1248 (Russet Orange)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#4A2C1F",
+    "pantone_code": "19-1012 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Sheer Brown",
+    "hex_code": "#8B5E3C",
+    "pantone_code": "18-1027 (Tobacco Brown)"
+   },
+   {
+    "color_name": "Light Blue Denim",
+    "hex_code": "#9CC0E0",
+    "pantone_code": "14-4203 (Light Blue)"
+   },
+   {
+    "color_name": "Cream Pearl",
+    "hex_code": "#F8F8F8",
+    "pantone_code": "11-0602 (Pristine)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#C8A76B",
+    "pantone_code": "16-1133 (Golden Rod)"
+   }
+  ],
+  "theme": "Luxurious grunge",
+  "keywords": [
+   "oversized coat",
+   "satin coat",
+   "fur cuffs",
+   "distressed jeans",
+   "light wash denim",
+   "button fly",
+   "sheer tights",
+   "layered pearl necklaces",
+   "wide lapel",
+   "casual luxury"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "oddities in styling",
+   "liberating elegance",
+   "decadent casual",
+   "Valentino 2.0 wardrobe",
+   "off-kilter charge"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2c9e7c040879febc318/master/pass/00042-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "A red and white striped button-down shirt with rolled short sleeves is paired with a light wash denim maxi skirt featuring a front slit, styled with a black baseball cap, a red, white, and navy striped necktie, a dark brown leather tote bag with gold-tone stud details, light purple socks, and black loafers.",
+  "fabric": "Cotton, denim, leather, silk, knit",
+  "patterns": [
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Red",
+    "hex_code": "#E2231A",
+    "pantone_code": "18-1660 (True Red)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Light Blue",
+    "hex_code": "#A7C7E7",
+    "pantone_code": "14-4123 (Clearwater)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#4A2C2A",
+    "pantone_code": "19-1012 (Coffee Bean)"
+   },
+   {
+    "color_name": "Navy Blue",
+    "hex_code": "#000080",
+    "pantone_code": "19-4010 (Dress Blues)"
+   },
+   {
+    "color_name": "Light Purple",
+    "hex_code": "#C8A2C8",
+    "pantone_code": "15-3817 (Lilac Sachet)"
+   }
+  ],
+  "theme": "Preppy casual with eclectic accessories",
+  "keywords": [
+   "Striped shirt",
+   "Denim maxi skirt",
+   "Front slit",
+   "Baseball cap",
+   "Necktie",
+   "Leather tote bag",
+   "Loafers",
+   "Socks",
+   "Layering",
+   "Casual chic"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "preppy blazers",
+   "collegiate stripes",
+   "everyday dressing",
+   "liberating elegance",
+   "insouciant provocation",
+   "Valentino 2.0 wardrobe"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2cb494e9a4bb054a7fe/master/pass/00043-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Oversized long-sleeve shirt with an equestrian-inspired chain and belt print, featuring a contrasting solid dark brown collar, placket, and cuffs, paired with wide-leg taupe trousers with sculptural pleating on the left leg, and accessorized with white-framed, lime green-tinted sunglasses.",
+  "fabric": "silk, wool blend, acetate",
+  "patterns": [
+   "chain",
+   "belt"
+  ],
+  "Colors": [
+   {
+    "color_name": "Cream",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "11-0105 (Egret)"
+   },
+   {
+    "color_name": "Medium Brown",
+    "hex_code": "#A0522D",
+    "pantone_code": "18-1140 (Russet)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Rod)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#4A2C2A",
+    "pantone_code": "19-1016 (Espresso)"
+   },
+   {
+    "color_name": "Taupe",
+    "hex_code": "#8B8589",
+    "pantone_code": "17-1225 (Moonbeam)"
+   },
+   {
+    "color_name": "Lime Green",
+    "hex_code": "#BFFF00",
+    "pantone_code": "13-0540 (Lime Punch)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   }
+  ],
+  "theme": "Eclectic Preppy",
+  "keywords": [
+   "oversized shirt",
+   "button-down shirt",
+   "equestrian print",
+   "long sleeves",
+   "wide-leg trousers",
+   "pleated trousers",
+   "sculptural pleats",
+   "sunglasses",
+   "menswear",
+   "resort wear"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "preppy references",
+   "decadent",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b230355bc766ec898ab3/master/pass/00032-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2cb494e9a4bb054a7fe/master/pass/00043-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Gold-framed cat-eye sunglasses with yellow-green lenses are worn with a brown and off-white printed button-down shirt featuring belt, chain, and tassel motifs.",
+  "fabric": "silk",
+  "patterns": [
+   "belt print",
+   "chain print",
+   "tassel print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Haze)"
+   },
+   {
+    "color_name": "Yellow-Green",
+    "hex_code": "#BFFF00",
+    "pantone_code": "13-0647 (Green Flash)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#4A2C2A",
+    "pantone_code": "19-1016 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Off-White",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "11-0602 (Egret)"
+   }
+  ],
+  "theme": "Decadent styling",
+  "keywords": [
+   "sunglasses",
+   "cat-eye sunglasses",
+   "gold frame",
+   "yellow-green lenses",
+   "printed button-down shirt",
+   "collared shirt",
+   "long sleeve",
+   "belt print",
+   "chain print",
+   "tassel print"
+  ],
+  "collection_keywords": [
+   "sartorial intrigues",
+   "decadent",
+   "oddities in styling",
+   "eccentricities",
+   "plurality over prescription"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b233e803e0c850df4f03/master/pass/00034-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2cdf084b706e9066e1e/master/pass/00044-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Red open-knit midi skirt with front button closure, paired with a grey cable-knit cardigan, a brown snakeskin-print shoulder bag with gold chain strap, white studded pointed-toe pumps, and pink sheer tights.",
+  "fabric": "Open-knit, cable-knit, leather, sheer knit",
+  "patterns": [
+   "snakeskin",
+   "chevron"
+  ],
+  "Colors": [
+   {
+    "color_name": "Fiery Red",
+    "hex_code": "#D62C2C",
+    "pantone_code": "18-1663 (Fiery Red)"
+   },
+   {
+    "color_name": "Quiet Shade",
+    "hex_code": "#7A7F84",
+    "pantone_code": "17-4014 (Quiet Shade)"
+   },
+   {
+    "color_name": "Chocolate Lab",
+    "hex_code": "#7A5230",
+    "pantone_code": "19-1016 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Kalamata",
+    "hex_code": "#5C6040",
+    "pantone_code": "18-0527 (Kalamata)"
+   },
+   {
+    "color_name": "Egret",
+    "hex_code": "#F5F5F5",
+    "pantone_code": "11-0105 (Egret)"
+   },
+   {
+    "color_name": "Rose Smoke",
+    "hex_code": "#F0D0E0",
+    "pantone_code": "12-1706 (Rose Smoke)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#202020",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Antique Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Antique Gold)"
+   }
+  ],
+  "theme": "Eclectic casual elegance with edgy accents",
+  "keywords": [
+   "knit midi skirt",
+   "open-knit",
+   "front button closure",
+   "cable-knit cardigan",
+   "shoulder bag",
+   "snakeskin print",
+   "studded pumps",
+   "pointed-toe heels",
+   "sheer tights",
+   "gold chain strap"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "couture and everyday",
+   "decadent blas\u00e9",
+   "perverse pairings",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2cc494e9a4bb054a804/master/pass/00045-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Oversized dark grey velvet shirt with a button-front closure and long sleeves, layered over a pink collared shirt, paired with grey pleated wide-leg trousers, a brown leather belt, two-tone loafers, and green-tinted oval sunglasses.",
+  "fabric": "velvet",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dark Grey",
+    "hex_code": "#2C3539",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Pale Pink",
+    "hex_code": "#F0D0D8",
+    "pantone_code": "12-1703 (Ballet Slipper)"
+   },
+   {
+    "color_name": "Medium Grey",
+    "hex_code": "#848884",
+    "pantone_code": "16-4402 (Quiet Shade)"
+   },
+   {
+    "color_name": "Saddle Brown",
+    "hex_code": "#8B4513",
+    "pantone_code": "18-1244 (Root Beer)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Maroon",
+    "hex_code": "#800000",
+    "pantone_code": "19-1655 (Biking Red)"
+   },
+   {
+    "color_name": "Lime Green",
+    "hex_code": "#A7D129",
+    "pantone_code": "14-0452 (Lime Punch)"
+   }
+  ],
+  "theme": "Quirky Academia",
+  "keywords": [
+   "oversized shirt",
+   "button-down shirt",
+   "wide-leg trousers",
+   "pleated trousers",
+   "leather belt",
+   "loafers",
+   "oval sunglasses",
+   "layering",
+   "relaxed silhouette",
+   "high-waisted"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "preppy",
+   "schoolboy references",
+   "oddities",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2cdf084b706e9066e1e/master/pass/00044-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "A grey cable-knit cardigan is layered over a light blue collared shirt, paired with a red button-front midi skirt, white studded heels, white tights, a blue and yellow silk scarf, a gold chain necklace, a black belt with a gold buckle, and a brown leather handbag.",
+  "fabric": "wool knit, cotton, knit, silk, nylon, leather",
+  "patterns": [
+   "solid",
+   "geometric"
+  ],
+  "Colors": [
+   {
+    "color_name": "Grey",
+    "hex_code": "#6C7074",
+    "pantone_code": "18-0503 (Storm Gray)"
+   },
+   {
+    "color_name": "Light Blue",
+    "hex_code": "#C6D8E8",
+    "pantone_code": "13-4108 (Clearwater)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C82D3B",
+    "pantone_code": "19-1763 (True Red)"
+   },
+   {
+    "color_name": "Royal Blue",
+    "hex_code": "#0047AB",
+    "pantone_code": "19-3955 (Directoire Blue)"
+   },
+   {
+    "color_name": "Mustard Yellow",
+    "hex_code": "#E0B300",
+    "pantone_code": "14-0848 (Mustard)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Rod)"
+   },
+   {
+    "color_name": "Cognac Brown",
+    "hex_code": "#8B4513",
+    "pantone_code": "18-1354 (Cognac)"
+   }
+  ],
+  "theme": "Preppy Eclectic",
+  "keywords": [
+   "cable-knit cardigan",
+   "collared shirt",
+   "midi skirt",
+   "button-front closure",
+   "silk scarf",
+   "studded heels",
+   "tights",
+   "leather handbag",
+   "gold chain",
+   "preppy layering"
+  ],
+  "collection_keywords": [
+   "preppy references",
+   "schoolgirl references",
+   "improbable pairings",
+   "liberating elegance",
+   "off-kilter charge",
+   "eccentricities"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2349eff9211d07f84f5/master/pass/00035-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2cc494e9a4bb054a804/master/pass/00045-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Dark grey long-sleeved button-up shirt featuring 'you can come to my' embroidered text and a large raised 'VALENTINO' logo on the back, with a hint of a light pink collar visible.",
+  "fabric": "viscose",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Charcoal Grey",
+    "hex_code": "#363636",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Light Pink",
+    "hex_code": "#F0D0D0",
+    "pantone_code": "13-1404 (Pink Dogwood)"
+   }
+  ],
+  "theme": "Branded casualwear",
+  "keywords": [
+   "long-sleeved shirt",
+   "button-up shirt",
+   "embroidered text",
+   "raised logo",
+   "back detail",
+   "casual shirt",
+   "tonal branding",
+   "graphic text",
+   "overshirt"
+  ],
+  "collection_keywords": [
+   "you can come to my villa",
+   "logo-splashed",
+   "wearable clothes",
+   "embroidered",
+   "insouciant provocation",
+   "everyday dressing",
+   "liberating elegance"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2ce484d320998f5981a/master/pass/00046-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "A striped slip dress with a lace-trimmed hem is layered under an oversized white knit cardigan, styled with a silk scarf, a thin leather belt, pink tights, an embellished clutch, and knee-high cowboy boots.",
+  "fabric": "cotton blend, lace, knit, silk, leather, hosiery, suede, embossed leather, metal, beads",
+  "patterns": [
+   "vertical stripe",
+   "chain print",
+   "logo print",
+   "geometric",
+   "embossed"
+  ],
+  "Colors": [
+   {
+    "color_name": "Lavender",
+    "hex_code": "#C8C2D8",
+    "pantone_code": "14-3805 (Lavender Fog)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#F0EAD6",
+    "pantone_code": "11-0105 (Egret)"
+   },
+   {
+    "color_name": "Navy Blue",
+    "hex_code": "#000080",
+    "pantone_code": "19-4010 (Dress Blues)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#DAA520",
+    "pantone_code": "16-0947 (Golden Rod)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Rose Pink",
+    "hex_code": "#F7CAC9",
+    "pantone_code": "13-2007 (Rose Quartz)"
+   },
+   {
+    "color_name": "Beige",
+    "hex_code": "#BCB88A",
+    "pantone_code": "16-1326 (Nomad)"
+   },
+   {
+    "color_name": "Teal",
+    "hex_code": "#008080",
+    "pantone_code": "17-5110 (Teal Blue)"
+   },
+   {
+    "color_name": "Tango Red",
+    "hex_code": "#E23D28",
+    "pantone_code": "17-1544 (Tango Red)"
+   }
+  ],
+  "theme": "Eclectic Layering",
+  "keywords": [
+   "slip dress",
+   "lace trim",
+   "vertical stripe",
+   "oversized cardigan",
+   "silk scarf",
+   "chain print",
+   "leather belt",
+   "pink tights",
+   "cowboy boots",
+   "embellished clutch",
+   "layered styling",
+   "midi length"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "preppy",
+   "collegiate",
+   "everyday dressing",
+   "liberating elegance",
+   "insouciant provocation",
+   "Valentino 2.0 wardrobe"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2cfacbf3d248f1b1b3c/master/pass/00048-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Double-breasted dark navy knit jacket with gold buttons and patch pockets, worn over a striped shirt and a patterned neck scarf, paired with wide-leg cropped trousers and black leather lace-up shoes.",
+  "fabric": "Knit, cotton, silk, wool blend, leather, metal",
+  "patterns": [
+   "stripe",
+   "abstract print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dark Navy",
+    "hex_code": "1A242E",
+    "pantone_code": "19-4010 (Dress Blues)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "F5F5F5",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Teal",
+    "hex_code": "008080",
+    "pantone_code": "16-5114 (Teal Blue)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "D4AF37",
+    "pantone_code": "16-0836 (Goldenrod)"
+   }
+  ],
+  "theme": "Preppy Eccentricity",
+  "keywords": [
+   "double-breasted jacket",
+   "knit jacket",
+   "gold buttons",
+   "patch pockets",
+   "wide lapels",
+   "striped shirt",
+   "neck scarf",
+   "wide-leg trousers",
+   "cropped trousers",
+   "lace-up shoes",
+   "bracelet"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "preppy blazers",
+   "collegiate stripes",
+   "liberating elegance",
+   "insouciant provocation",
+   "everyday dressing"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2cfe803e0c850df4f3a/master/pass/00047-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Oversized red crewneck sweatshirt with an embossed logo, paired with light beige shorts, a dark brown belt featuring an ornate olive green and gold buckle with turquoise stones, a purple baseball cap with white embroidery, and a tan brown leather shoulder bag.",
+  "fabric": "Cotton fleece, cotton twill, leather, metal, stone",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Purple",
+    "hex_code": "#6A0DAD",
+    "pantone_code": "19-3520 (Grape Royale)"
+   },
+   {
+    "color_name": "Watermelon Red",
+    "hex_code": "#F05E6B",
+    "pantone_code": "17-1755 (Watermelon)"
+   },
+   {
+    "color_name": "Deep Teal",
+    "hex_code": "#006D6D",
+    "pantone_code": "19-4914 (Deep Teal)"
+   },
+   {
+    "color_name": "Light Beige",
+    "hex_code": "#E0D8C0",
+    "pantone_code": "13-0905 (Sand)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#5C4033",
+    "pantone_code": "19-1118 (Chocolate Brown)"
+   },
+   {
+    "color_name": "Olive Green",
+    "hex_code": "#707040",
+    "pantone_code": "18-0527 (Olive Green)"
+   },
+   {
+    "color_name": "Turquoise",
+    "hex_code": "#48D1CC",
+    "pantone_code": "15-5217 (Turquoise)"
+   },
+   {
+    "color_name": "Antique Gold",
+    "hex_code": "#B8860B",
+    "pantone_code": "16-0947 (Antique Gold)"
+   },
+   {
+    "color_name": "Tan Brown",
+    "hex_code": "#A0522D",
+    "pantone_code": "16-1336 (Gingerbread)"
+   }
+  ],
+  "theme": "Preppy casual with eclectic accessories",
+  "keywords": [
+   "oversized sweatshirt",
+   "crewneck",
+   "khaki shorts",
+   "baseball cap",
+   "embroidered cap",
+   "leather shoulder bag",
+   "statement belt",
+   "turquoise buckle",
+   "resortwear",
+   "casualwear"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "baseball caps",
+   "schoolboy references",
+   "insouciant provocation",
+   "liberating elegance",
+   "wearable clothes",
+   "casual styling"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2d1acbf3d248f1b1b45/master/pass/00049-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Long camel double-breasted trench coat layered over a black hoodie and a light blue striped shirt, paired with wide-leg navy trousers, black loafers, and a red embroidered baseball cap.",
+  "fabric": "cotton gabardine, cotton fleece, cotton, wool, leather, cotton twill",
+  "patterns": [
+   "solid",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Camel",
+    "hex_code": "#C2A478",
+    "pantone_code": "16-1331 (Camel)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Aqua Blue",
+    "hex_code": "#87CEEB",
+    "pantone_code": "13-4809 (Aqua Sky)"
+   },
+   {
+    "color_name": "Navy Blue",
+    "hex_code": "#000080",
+    "pantone_code": "19-3923 (True Navy)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#FF0000",
+    "pantone_code": "18-1660 (Fiery Red)"
+   }
+  ],
+  "theme": "Eclectic Collegiate Style",
+  "keywords": [
+   "trench coat",
+   "hoodie",
+   "wide-leg trousers",
+   "baseball cap",
+   "loafers",
+   "double-breasted",
+   "layering",
+   "sportswear",
+   "collegiate",
+   "embroidered"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "collegiate stripes",
+   "sportswear",
+   "hoodies",
+   "baseball caps",
+   "liberating elegance",
+   "Valentino 2.0 wardrobe"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b236c5644fa593931d5f/master/pass/00037-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2d1acbf3d248f1b1b45/master/pass/00049-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Wide-leg navy blue trousers with a central crease, paired with black lizard-effect leather loafers featuring gold-tone hardware.",
+  "fabric": "wool blend, lizard-effect leather, metal",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Navy Blue",
+    "hex_code": "#21305C",
+    "pantone_code": "19-4028 (True Navy)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0947 (Mustard Gold)"
+   }
+  ],
+  "theme": "Refined casual",
+  "keywords": [
+   "wide-leg trousers",
+   "pleated trousers",
+   "central crease",
+   "loafers",
+   "leather loafers",
+   "lizard effect",
+   "gold hardware",
+   "menswear",
+   "flat shoes"
+  ],
+  "collection_keywords": [
+   "wearable clothes",
+   "surprisingly cautious",
+   "plurality over prescription",
+   "valentino 2.0 wardrobe",
+   "elitist heritage",
+   "liberating elegance"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2d2e7c040879febc5c5/master/pass/00050-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Long grey wool tweed cape with a black velvet collar, worn over a light blue long-sleeved button-down shirt and teal drawstring-waist sweatpants with white side stripes, completed with black leather dress shoes and yellow-tinted sunglasses.",
+  "fabric": "wool tweed, velvet, cotton, leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Grey",
+    "hex_code": "#5B5E60",
+    "pantone_code": "17-4007 (Phantom)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Light Blue",
+    "hex_code": "#A7D2EB",
+    "pantone_code": "15-4020 (Blue Tint)"
+   },
+   {
+    "color_name": "Teal",
+    "hex_code": "#008080",
+    "pantone_code": "17-5111 (Teal)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Yellow",
+    "hex_code": "#F0E68C",
+    "pantone_code": "14-0756 (Sulphur Spring)"
+   }
+  ],
+  "theme": "Couture meets casualwear",
+  "keywords": [
+   "cape",
+   "tweed",
+   "velvet collar",
+   "button-down shirt",
+   "sweatpants",
+   "drawstring waist",
+   "side stripe",
+   "dress shoes",
+   "sunglasses",
+   "formal-casual styling"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "couture everyday dressing",
+   "liberating elegance",
+   "insouciant provocation",
+   "sportswear"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b237254dd14297b1e9fe/master/pass/00038-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2d2e7c040879febc5c5/master/pass/00050-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Teal relaxed-fit trousers with a light beige side stripe are paired with black crocodile-embossed leather Chelsea boots, visible beneath the hem of a grey and black herringbone coat.",
+  "fabric": "jersey",
+  "patterns": [
+   "solid",
+   "crocodile embossed",
+   "herringbone"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dark Teal",
+    "hex_code": "#006666",
+    "pantone_code": "19-4914 (Deep Teal)"
+   },
+   {
+    "color_name": "Light Beige",
+    "hex_code": "#D4C1A3",
+    "pantone_code": "13-1008 (Oatmeal)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Light Grey",
+    "hex_code": "#A0A0A0",
+    "pantone_code": "14-4103 (Silver Cloud)"
+   }
+  ],
+  "theme": "Eclectic formal-casual",
+  "keywords": [
+   "trousers",
+   "Chelsea boots",
+   "crocodile embossed leather",
+   "side stripe",
+   "herringbone",
+   "pointed toe boots",
+   "relaxed fit trousers",
+   "ankle boots"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "liberating elegance",
+   "preppy",
+   "sportswear and couture",
+   "mixed aesthetics",
+   "off-kilter"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b236e803e0c850df4f09/master/pass/00039-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2d2df2e575487f1465a/master/pass/00051-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Two-tone leather loafers in dark brown and tan with a gold-tone V-logo horsebit detail, worn with dark blue knit trousers.",
+  "fabric": "leather, knit",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#4A2C1F",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Tan",
+    "hex_code": "#C27F47",
+    "pantone_code": "16-1336 (Gingerbread)"
+   },
+   {
+    "color_name": "Dark Blue",
+    "hex_code": "#1A233A",
+    "pantone_code": "19-4010 (Dress Blues)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Rod)"
+   }
+  ],
+  "theme": "Preppy casual",
+  "keywords": [
+   "loafers",
+   "leather loafers",
+   "two-tone shoes",
+   "horsebit detail",
+   "V-logo",
+   "trousers",
+   "knit trousers",
+   "menswear",
+   "footwear",
+   "casual shoes"
+  ],
+  "collection_keywords": [
+   "wearable clothes",
+   "preppy",
+   "sportswear",
+   "valentino 2.0 wardrobe",
+   "liberating elegance",
+   "plurality over prescription"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2d539541f8887b27efd/master/pass/00052-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Oversized double-breasted suit jacket in dark navy wool, paired with matching straight-leg trousers, a crisp white collared shirt, a light grey scarf, black sunglasses, and black leather loafers, holding a black clutch.",
+  "fabric": "wool, cotton, silk, leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Navy Blue",
+    "hex_code": "#1A2433",
+    "pantone_code": "19-4024 (Dress Blues)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Light Grey",
+    "hex_code": "#B0B0B0",
+    "pantone_code": "17-4014 (Quiet Shade)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4305 (True Black)"
+   }
+  ],
+  "theme": "Relaxed preppy tailoring",
+  "keywords": [
+   "double-breasted jacket",
+   "suit trousers",
+   "collared shirt",
+   "scarf",
+   "sunglasses",
+   "clutch bag",
+   "loafers",
+   "oversized silhouette",
+   "notched lapels",
+   "tailoring"
+  ],
+  "collection_keywords": [
+   "preppy blazers",
+   "schoolboy references",
+   "wearable clothes",
+   "liberating elegance",
+   "insouciant provocation",
+   "valentino 2.0 wardrobe"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2d2df2e575487f1465a/master/pass/00051-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Grey cotton sweatshirt with 'You can come to my Villa' text, layered over a light blue collared shirt, paired with navy track pants featuring white side stripes, two-tone brown loafers, and a green baseball cap with 'VILLAIN TEEN' embroidery.",
+  "fabric": "cotton, polyester blend, leather",
+  "patterns": [
+   "text print",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Heather Grey",
+    "hex_code": "#B0B0B0",
+    "pantone_code": "14-4201 (Quiet Shade)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#C00000",
+    "pantone_code": "18-1663 (True Red)"
+   },
+   {
+    "color_name": "Light Blue",
+    "hex_code": "#ADD8E6",
+    "pantone_code": "14-4107 (Blue Fog)"
+   },
+   {
+    "color_name": "Navy",
+    "hex_code": "#000080",
+    "pantone_code": "19-4010 (Dress Blues)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#8B4513",
+    "pantone_code": "18-1140 (Mocha Mousse)"
+   },
+   {
+    "color_name": "Light Brown",
+    "hex_code": "#D2B48C",
+    "pantone_code": "16-1341 (Gingerbread)"
+   },
+   {
+    "color_name": "Green",
+    "hex_code": "#008000",
+    "pantone_code": "17-5641 (Kelly Green)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "15-1050 (Gold Fusion)"
+   }
+  ],
+  "theme": "Relaxed preppy sportswear",
+  "keywords": [
+   "crewneck sweatshirt",
+   "track pants",
+   "side stripe",
+   "collared shirt",
+   "baseball cap",
+   "loafers",
+   "two-tone footwear",
+   "embroidered text",
+   "printed text",
+   "casual layering"
+  ],
+  "collection_keywords": [
+   "sportswear",
+   "preppy references",
+   "improbable pairings",
+   "You Can Come To My Villa",
+   "Villain Teen",
+   "baseball caps",
+   "liberating elegance"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b239e803e0c850df4f0f/master/pass/00040-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2d539541f8887b27efd/master/pass/00052-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Black wide-leg trousers with a subtle dotted texture and cuffed hems, paired with black textured leather backless loafers featuring a gold chain detail.",
+  "fabric": "wool blend, embossed leather, metal",
+  "patterns": [
+   "micro dot",
+   "reptile print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Golden Haze)"
+   }
+  ],
+  "theme": "Sophisticated casual",
+  "keywords": [
+   "wide-leg trousers",
+   "cuffed hem",
+   "micro dot pattern",
+   "backless loafers",
+   "embossed leather",
+   "gold chain",
+   "mule shoes",
+   "tailored pants"
+  ],
+  "collection_keywords": [
+   "preppy",
+   "decadent",
+   "blas\u00e9",
+   "liberating elegance",
+   "Valentino 2.0 wardrobe",
+   "improbable pairings"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2d6254dd14297b1ea46/master/pass/00054-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Taupe double-breasted suit jacket with peak lapels and flap pockets, paired with matching wide-leg pleated trousers, a blue and pink striped shirt, a patterned neck scarf, and black leather loafers.",
+  "fabric": "Wool blend, cotton, silk, leather",
+  "patterns": [
+   "solid",
+   "stripe",
+   "abstract"
+  ],
+  "Colors": [
+   {
+    "color_name": "Taupe",
+    "hex_code": "#8B8171",
+    "pantone_code": "17-1009 (Peyote)"
+   },
+   {
+    "color_name": "Mykonos Blue",
+    "hex_code": "#4A6E9B",
+    "pantone_code": "18-4048 (Mykonos Blue)"
+   },
+   {
+    "color_name": "Rose Violet",
+    "hex_code": "#F0A0B0",
+    "pantone_code": "16-2124 (Rose Violet)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Golden Rod",
+    "hex_code": "#D4AF37",
+    "pantone_code": "14-0848 (Golden Rod)"
+   },
+   {
+    "color_name": "Biking Red",
+    "hex_code": "#A02020",
+    "pantone_code": "19-1763 (Biking Red)"
+   },
+   {
+    "color_name": "Directoire Blue",
+    "hex_code": "#304060",
+    "pantone_code": "19-4028 (Directoire Blue)"
+   }
+  ],
+  "theme": "Eclectic Preppy Tailoring",
+  "keywords": [
+   "Double-breasted suit",
+   "pleated trousers",
+   "wide-leg trousers",
+   "striped shirt",
+   "neck scarf",
+   "loafers",
+   "menswear",
+   "relaxed silhouette",
+   "tailoring",
+   "peak lapels"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "preppy blazers",
+   "collegiate stripes",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2d57fbc119d498c047d/master/pass/00053-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "A long leopard print coat is layered over a pale pink v-neck sweater and purple track pants with white and red side stripes, accessorized with black leather loafers, a white baseball cap, green sunglasses, a silver necklace, and a brown leather shoulder bag.",
+  "fabric": "Faux fur, fine knit, jersey, leather, cotton twill, metal, plastic",
+  "patterns": [
+   "leopard print",
+   "solid",
+   "stripe",
+   "logo"
+  ],
+  "Colors": [
+   {
+    "color_name": "Mustard Yellow",
+    "hex_code": "#D4AF37",
+    "pantone_code": "14-0848 (Mustard Gold)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#4A2C2A",
+    "pantone_code": "19-1016 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Pale Pink",
+    "hex_code": "#F8E8E8",
+    "pantone_code": "12-1008 (Rosewater)"
+   },
+   {
+    "color_name": "Vivid Purple",
+    "hex_code": "#990099",
+    "pantone_code": "19-2430 (Purple Potion)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Red",
+    "hex_code": "#FF0000",
+    "pantone_code": "18-1663 (True Red)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Chartreuse Green",
+    "hex_code": "#7FFF00",
+    "pantone_code": "15-0543 (Green Gecko)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4500 (Silver Cloud)"
+   }
+  ],
+  "theme": "Eclectic casual elegance",
+  "keywords": [
+   "long coat",
+   "leopard print",
+   "v-neck sweater",
+   "track pants",
+   "side stripe",
+   "loafers",
+   "baseball cap",
+   "sunglasses",
+   "shoulder bag",
+   "necklace",
+   "layering",
+   "relaxed fit"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "sportswear",
+   "tracksuits",
+   "baseball caps",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b23af79c2768b66525fa/master/pass/00041-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2d57fbc119d498c047d/master/pass/00053-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "A textured leopard print coat is paired with a dark brown leather tote bag featuring gold-tone rockstuds and a turn-lock closure, accessorized with a light grey baseball cap and yellow-tinted sunglasses.",
+  "fabric": "textured boucl\u00e9, leather, cotton twill, acetate",
+  "patterns": [
+   "leopard print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#1A1A1A",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Golden Yellow",
+    "hex_code": "#C89F3C",
+    "pantone_code": "16-1046 (Golden Ochre)"
+   },
+   {
+    "color_name": "Deep Burgundy",
+    "hex_code": "#4A1E26",
+    "pantone_code": "19-1725 (Bordeaux)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Goldfinch)"
+   },
+   {
+    "color_name": "Pale Grey",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "13-4104 (Silver Cloud)"
+   },
+   {
+    "color_name": "Translucent Beige",
+    "hex_code": "#E0D8C8",
+    "pantone_code": "12-0804 (Moonbeam)"
+   },
+   {
+    "color_name": "Yellow-Green Tint",
+    "hex_code": "#C0C000",
+    "pantone_code": "13-0858 (Lemon Chrome)"
+   }
+  ],
+  "theme": "Eclectic casual",
+  "keywords": [
+   "leopard print coat",
+   "textured coat",
+   "tote bag",
+   "rockstuds",
+   "shoulder bag",
+   "baseball cap",
+   "sunglasses",
+   "animal print",
+   "outerwear",
+   "accessories"
+  ],
+  "collection_keywords": [
+   "off-kilter",
+   "improbable pairings",
+   "decadent",
+   "styling oddities",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2d8f79c2768b6652623/master/pass/00055-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Dark grey crew-neck sweatshirt with a large butterfly graphic and a light blue collared shirt layered underneath, paired with wide-leg animal print trousers, cat-eye sunglasses, and a gold-tone chain bracelet.",
+  "fabric": "cotton fleece, cotton poplin, viscose blend",
+  "patterns": [
+   "butterfly",
+   "animal print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Charcoal Grey",
+    "hex_code": "#36454F",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Pale Blue",
+    "hex_code": "#ADD8E6",
+    "pantone_code": "13-4110 (Blue Tint)"
+   },
+   {
+    "color_name": "Light Tan",
+    "hex_code": "#D2B48C",
+    "pantone_code": "14-1118 (Sand)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#5C4033",
+    "pantone_code": "18-1024 (Mocha Mousse)"
+   },
+   {
+    "color_name": "Teal Green",
+    "hex_code": "#008080",
+    "pantone_code": "16-4530 (Hawaiian Surf)"
+   },
+   {
+    "color_name": "Lime Green",
+    "hex_code": "#9ACD32",
+    "pantone_code": "16-0237 (Green Flash)"
+   },
+   {
+    "color_name": "Royal Blue",
+    "hex_code": "#4169E1",
+    "pantone_code": "18-4220 (Blue Depths)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0947 (Golden Rod)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   }
+  ],
+  "theme": "Preppy sportswear with eccentric print",
+  "keywords": [
+   "sweatshirt",
+   "crew neck",
+   "butterfly graphic",
+   "collared shirt",
+   "layering",
+   "wide-leg trousers",
+   "animal print",
+   "pleated waist",
+   "cat-eye sunglasses",
+   "gold bracelet"
+  ],
+  "collection_keywords": [
+   "eccentricities",
+   "off-kilter charge",
+   "improbable pairings",
+   "preppy",
+   "sportswear",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b23caea770857255bf65/master/pass/00043-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2d8df2e575487f14660/master/pass/00056-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Black and burgundy leather loafers with gold-tone chain hardware are worn with charcoal pinstripe trousers.",
+  "fabric": "Leather, metal, wool blend",
+  "patterns": [
+   "pinstripe",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Burgundy",
+    "hex_code": "#6D071A",
+    "pantone_code": "19-1725 (Biking Red)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Antique Gold)"
+   },
+   {
+    "color_name": "Charcoal Grey",
+    "hex_code": "#36454F",
+    "pantone_code": "19-3900 (Phantom)"
+   },
+   {
+    "color_name": "Burnt Henna",
+    "hex_code": "#8A3324",
+    "pantone_code": "18-1442 (Burnt Henna)"
+   }
+  ],
+  "theme": "Preppy classic",
+  "keywords": [
+   "loafers",
+   "leather loafers",
+   "chain detail",
+   "gold hardware",
+   "two-tone",
+   "trousers",
+   "pinstripe trousers",
+   "cropped hem",
+   "menswear inspired",
+   "footwear"
+  ],
+  "collection_keywords": [
+   "preppy",
+   "collegiate",
+   "wearable clothes",
+   "surprisingly cautious",
+   "elitist heritage",
+   "Valentino 2.0 wardrobe"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2d8df2e575487f14660/master/pass/00056-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Blue cotton crewneck t-shirt with \"VILLAIN TEEN\" graphic text is paired with dark grey pinstripe wide-leg trousers with cuffed hems, black leather loafers with a red and gold detail, a gold chain necklace with a star pendant, and yellow-tinted sunglasses.",
+  "fabric": "Cotton, wool blend, leather, metal, plastic",
+  "patterns": [
+   "text graphic",
+   "pinstripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Directoire Blue",
+    "hex_code": "#0000CC",
+    "pantone_code": "19-4053 (Directoire Blue)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Charcoal Grey",
+    "hex_code": "#343A40",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Port Royale",
+    "hex_code": "#8B0000",
+    "pantone_code": "19-1557 (Port Royale)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#FFD700",
+    "pantone_code": "16-0947 (Golden Rod)"
+   },
+   {
+    "color_name": "Green Gecko",
+    "hex_code": "#BFFF00",
+    "pantone_code": "14-0452 (Green Gecko)"
+   }
+  ],
+  "theme": "Casual prep with a rebellious edge",
+  "keywords": [
+   "t-shirt",
+   "graphic tee",
+   "crewneck",
+   "wide-leg trousers",
+   "pinstripe trousers",
+   "cuffed hem",
+   "tailored trousers",
+   "loafers",
+   "leather loafers",
+   "gold necklace",
+   "star pendant",
+   "sunglasses",
+   "tinted lenses"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "wearable clothes",
+   "sportswear",
+   "preppy references",
+   "schoolboy references",
+   "insouciant provocation",
+   "freedom"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b23af084b706e9066e03/master/pass/00042-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2d8f79c2768b6652623/master/pass/00055-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Metallic silver low-top sneakers with white openwork socks and patterned wide-leg trousers.",
+  "fabric": "metallic leather, rubber, cotton knit, woven textile",
+  "patterns": [
+   "animal print",
+   "openwork knit"
+  ],
+  "Colors": [
+   {
+    "color_name": "Metallic Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4500 (Silver Cloud)"
+   },
+   {
+    "color_name": "Dark Grey",
+    "hex_code": "#5A5A5A",
+    "pantone_code": "18-4005 (Phantom)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0947 (Golden Rod)"
+   },
+   {
+    "color_name": "Teal Green",
+    "hex_code": "#007F7F",
+    "pantone_code": "17-4724 (Teal)"
+   },
+   {
+    "color_name": "Light Blue",
+    "hex_code": "#6495ED",
+    "pantone_code": "16-4132 (Blue Heaven)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#5C3A21",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Medium Brown",
+    "hex_code": "#8B5A2B",
+    "pantone_code": "17-1120 (Nutria)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "12-0601 (Vanilla Ice)"
+   }
+  ],
+  "theme": "Playful branded casual",
+  "keywords": [
+   "low-top sneakers",
+   "metallic sneakers",
+   "perforated leather",
+   "Valentino logo",
+   "openwork socks",
+   "animal print trousers",
+   "wide-leg trousers",
+   "lace-up closure",
+   "streetwear",
+   "casual footwear"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "off-kilter charge",
+   "Valentino 2.0 wardrobe",
+   "plurality over prescription",
+   "liberating elegance",
+   "insouciant provocation",
+   "casual dressing",
+   "eccentricities"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2d97fbc119d498c0483/master/pass/00057-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "A grey single-breasted blazer with notch lapels is layered over a patterned mandarin-collar shirt featuring frog closures, styled with yellow-tinted shield sunglasses and two butterfly brooches pinned to the lapel.",
+  "fabric": "Wool, silk blend, embroidered fabric, metal, plastic",
+  "patterns": [
+   "micro-paisley",
+   "butterfly wing pattern"
+  ],
+  "Colors": [
+   {
+    "color_name": "Grey",
+    "hex_code": "#8C8C8C",
+    "pantone_code": "16-4005 (Cloudburst)"
+   },
+   {
+    "color_name": "Muted Purple",
+    "hex_code": "#6A5B7A",
+    "pantone_code": "18-3910 (Twilight Mauve)"
+   },
+   {
+    "color_name": "Rust Orange",
+    "hex_code": "#C26B3D",
+    "pantone_code": "17-1450 (Russet Orange)"
+   },
+   {
+    "color_name": "Orange",
+    "hex_code": "#E07B39",
+    "pantone_code": "16-1361 (Orange Tiger)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "15-1050 (Mustard Gold)"
+   },
+   {
+    "color_name": "Chartreuse Yellow",
+    "hex_code": "#C1D82F",
+    "pantone_code": "14-0452 (Lime Punch)"
+   },
+   {
+    "color_name": "Off-White",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "11-0602 (Egret)"
+   },
+   {
+    "color_name": "Lavender Purple",
+    "hex_code": "#9B6EAB",
+    "pantone_code": "16-3412 (Lilac Sachet)"
+   },
+   {
+    "color_name": "Light Grey",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "13-4104 (Silver Cloud)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Eclectic formalwear with playful subversion",
+  "keywords": [
+   "blazer",
+   "single-breasted",
+   "notch lapel",
+   "mandarin collar",
+   "frog closure",
+   "patterned shirt",
+   "shield sunglasses",
+   "butterfly brooch",
+   "layered styling",
+   "formalwear",
+   "accessories"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "sartorial intrigues",
+   "liberating elegance",
+   "insouciant provocation",
+   "preppy blazers"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2dbf79c2768b6652629/master/pass/00058-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Embroidered green bomber jacket with a landscape motif, layered over a light blue collared shirt, paired with light wash denim jeans, black loafers, and a leopard print baseball cap.",
+  "fabric": "Sequined and embroidered fabric, cotton, denim, leather",
+  "patterns": [
+   "landscape",
+   "leopard print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Forest Green",
+    "hex_code": "#22422C",
+    "pantone_code": "19-5513 (Forest Green)"
+   },
+   {
+    "color_name": "Antique Gold",
+    "hex_code": "#B8860B",
+    "pantone_code": "16-0948 (Antique Gold)"
+   },
+   {
+    "color_name": "Sky Blue",
+    "hex_code": "#87CEEB",
+    "pantone_code": "14-4318 (Skyway)"
+   },
+   {
+    "color_name": "Light Denim Blue",
+    "hex_code": "#6495ED",
+    "pantone_code": "16-4120 (Blue Fog)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Goldenrod",
+    "hex_code": "#DAA520",
+    "pantone_code": "16-1046 (Goldenrod)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#4A2C2A",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Scarlet Red",
+    "hex_code": "#FF2400",
+    "pantone_code": "18-1663 (Scarlet Sage)"
+   }
+  ],
+  "theme": "Liberated elegance",
+  "keywords": [
+   "bomber jacket",
+   "sequins",
+   "embroidery",
+   "denim jeans",
+   "straight leg",
+   "collared shirt",
+   "baseball cap",
+   "leopard print",
+   "loafers",
+   "gold hardware"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "couture everyday mix",
+   "deliberately perverse pairings",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b23d9fda1576ba8ad4bb/master/pass/00045-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2dbf79c2768b6652629/master/pass/00058-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "A leopard print baseball cap with a red logo patch is worn with a green sequined jacket featuring gold and pink embroidery, over a blue and white striped shirt with buttoned cuffs.",
+  "fabric": "cotton, sequins, metallic embroidery, silk embroidery",
+  "patterns": [
+   "leopard print",
+   "scenic embroidery",
+   "vertical stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Mustard Yellow",
+    "hex_code": "#D4AF37",
+    "pantone_code": "14-0848 (Golden Rod)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "True Red",
+    "hex_code": "#C40233",
+    "pantone_code": "19-1763 (True Red)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Emerald Green",
+    "hex_code": "#046A38",
+    "pantone_code": "19-5420 (Emerald)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Gold Fusion)"
+   },
+   {
+    "color_name": "Pink Lavender",
+    "hex_code": "#D8BFD8",
+    "pantone_code": "15-2210 (Pink Lavender)"
+   },
+   {
+    "color_name": "Clearwater Blue",
+    "hex_code": "#B0E0E6",
+    "pantone_code": "16-4020 (Clearwater)"
+   }
+  ],
+  "theme": "Decadent sportswear",
+  "keywords": [
+   "baseball cap",
+   "sequined jacket",
+   "embroidered jacket",
+   "leopard print",
+   "logo patch",
+   "striped shirt",
+   "buttoned cuff",
+   "metallic embroidery",
+   "scenic embroidery"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "decadent",
+   "sportswear",
+   "baseball caps",
+   "collegiate stripes",
+   "liberating elegance"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b23caea770857255bf6b/master/pass/00044-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2dbf79c2768b6652629/master/pass/00058-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Black lizard-embossed leather loafers featuring a gold-tone chain and Valentino 'V' logo hardware.",
+  "fabric": "embossed leather, metal",
+  "patterns": [
+   "lizard print"
+  ],
+  "Colors": [
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0947 (Antique Gold)"
+   }
+  ],
+  "theme": "Preppy luxury footwear",
+  "keywords": [
+   "loafers",
+   "slip-on shoes",
+   "lizard-embossed leather",
+   "gold-tone hardware",
+   "chain detail",
+   "logo hardware",
+   "round toe",
+   "flat shoes",
+   "men's shoes"
+  ],
+  "collection_keywords": [
+   "preppy",
+   "collegiate",
+   "wearable clothes",
+   "Valentino 2.0 wardrobe",
+   "liberating elegance"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2dce803e0c850df4f4b/master/pass/00060-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Red satin bomber jacket with \"You can come to my Villa\" text, worn over a light pink collared shirt and paired with grey pleated wide-leg trousers and a black studded top-handle bag.",
+  "fabric": "satin, cotton, wool, leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Red",
+    "hex_code": "#E0212B",
+    "pantone_code": "18-1663 (Flame Scarlet)"
+   },
+   {
+    "color_name": "Light Pink",
+    "hex_code": "#F8D0D8",
+    "pantone_code": "12-1706 (Rose Smoke)"
+   },
+   {
+    "color_name": "Grey",
+    "hex_code": "#7B8085",
+    "pantone_code": "17-4014 (Quiet Shade)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Sporty elegance with a subversive message",
+  "keywords": [
+   "bomber jacket",
+   "collared shirt",
+   "wide-leg trousers",
+   "pleated trousers",
+   "satin jacket",
+   "studded handbag",
+   "top-handle bag",
+   "oversized silhouette",
+   "utility pocket",
+   "full zip closure"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "sportswear",
+   "preppy",
+   "liberating elegance",
+   "insouciant provocation",
+   "Valentino 2.0 wardrobe"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2db31c43fba4f921638/master/pass/00059-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Cropped brown tweed jacket with black velvet trim, worn over a white graphic t-shirt, paired with grey wide-leg pleated trousers, purple-accented sneakers, and a fringed suede hobo bag with silver stud embellishments.",
+  "fabric": "tweed, velvet, cotton, wool, suede, leather, mesh, rubber",
+  "patterns": [
+   "graphic print",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Tweed Brown",
+    "hex_code": "#8B6B4C",
+    "pantone_code": "17-1047 (Gingerbread)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Graphic Red",
+    "hex_code": "#E02121",
+    "pantone_code": "18-1663 (True Red)"
+   },
+   {
+    "color_name": "Suiting Grey",
+    "hex_code": "#70787C",
+    "pantone_code": "17-4402 (Steel Grey)"
+   },
+   {
+    "color_name": "Suede Tan",
+    "hex_code": "#C2A380",
+    "pantone_code": "16-1334 (Toasted Almond)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4500 (Silver Cloud)"
+   },
+   {
+    "color_name": "Sneaker Grey",
+    "hex_code": "#CFCFCF",
+    "pantone_code": "13-4104 (Moonbeam)"
+   },
+   {
+    "color_name": "Lavender Purple",
+    "hex_code": "#B0A0D0",
+    "pantone_code": "16-3817 (Lavender)"
+   }
+  ],
+  "theme": "Preppy Sportswear Mix",
+  "keywords": [
+   "cropped jacket",
+   "tweed jacket",
+   "velvet trim",
+   "graphic t-shirt",
+   "wide-leg trousers",
+   "pleated trousers",
+   "hobo bag",
+   "fringe",
+   "studs",
+   "sneakers"
+  ],
+  "collection_keywords": [
+   "preppy",
+   "sportswear",
+   "improbable pairings",
+   "liberating elegance",
+   "everyday dressing",
+   "off-kilter charge"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2de92fcd89cad84ec8f/master/pass/00061-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Oversized purple bomber jacket with yellow stripe details and a stand collar, styled with high-waisted pleated beige trousers, black loafers, a brown leather crossbody bag, yellow-tinted sunglasses, and a green baseball cap.",
+  "fabric": "Nylon bomber jacket, wool blend trousers, cotton twill cap, leather bag, leather loafers",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Grape Royale",
+    "hex_code": "#5D3F6A",
+    "pantone_code": "19-3520 (Grape Royale)"
+   },
+   {
+    "color_name": "Mustard Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "14-0848 (Mustard Gold)"
+   },
+   {
+    "color_name": "Peyote",
+    "hex_code": "#B0A890",
+    "pantone_code": "16-1108 (Peyote)"
+   },
+   {
+    "color_name": "Kelly Green",
+    "hex_code": "#4CBB17",
+    "pantone_code": "16-6340 (Kelly Green)"
+   },
+   {
+    "color_name": "Golden Haze",
+    "hex_code": "#D9C17C",
+    "pantone_code": "13-0858 (Golden Haze)"
+   },
+   {
+    "color_name": "Cognac",
+    "hex_code": "#8B4513",
+    "pantone_code": "18-1354 (Cognac)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Sporty Decadence",
+  "keywords": [
+   "bomber jacket",
+   "pleated trousers",
+   "wide leg",
+   "baseball cap",
+   "crossbody bag",
+   "loafers",
+   "sunglasses",
+   "stand collar",
+   "ribbed cuffs",
+   "athleisure"
+  ],
+  "collection_keywords": [
+   "off-kilter",
+   "improbable pairings",
+   "preppy references",
+   "sportswear and couture",
+   "liberating elegance",
+   "decadent"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b23fdf2e575487f14648/master/pass/00046-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2de92fcd89cad84ec8f/master/pass/00061-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Green baseball cap with 'VILLAIN TEEN' embroidery, worn with yellow-tinted sport sunglasses and a purple zip-up jacket featuring a tan stand collar.",
+  "fabric": "Cotton twill, plastic, tinted lens, technical fabric",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Vibrant Green",
+    "hex_code": "#16B050",
+    "pantone_code": "16-6340 (Vibrant Green)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Golden Glow",
+    "hex_code": "#FFC000",
+    "pantone_code": "14-1064 (Golden Glow)"
+   },
+   {
+    "color_name": "Grape Royale",
+    "hex_code": "#6A0DAD",
+    "pantone_code": "19-3520 (Grape Royale)"
+   },
+   {
+    "color_name": "Sandstone",
+    "hex_code": "#D2B48C",
+    "pantone_code": "16-1108 (Sandstone)"
+   },
+   {
+    "color_name": "Silver Cloud",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   }
+  ],
+  "theme": "Sporty and rebellious",
+  "keywords": [
+   "baseball cap",
+   "embroidered text",
+   "sport sunglasses",
+   "tinted lenses",
+   "zip-up jacket",
+   "stand collar",
+   "purple",
+   "green",
+   "casualwear",
+   "streetwear"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "teenage debauchery",
+   "oddities",
+   "liberating elegance",
+   "insouciant provocation",
+   "Valentino 2.0",
+   "sportswear"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2df92ae92f349966ac5/master/pass/00062-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Sequin-embroidered collarless jacket with patch pockets, worn over a white collared shirt and paired with wide-leg tailored trousers and black loafers.",
+  "fabric": "sequins, cotton, wool, leather",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Antique Gold",
+    "hex_code": "#846D4B",
+    "pantone_code": "17-1047 (Antique Gold)"
+   },
+   {
+    "color_name": "Charcoal Grey",
+    "hex_code": "#36454F",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Taupe Grey",
+    "hex_code": "#69635D",
+    "pantone_code": "18-0503 (Moonless Night)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Decadent casual",
+  "keywords": [
+   "sequined jacket",
+   "collarless jacket",
+   "tailored trousers",
+   "wide-leg trousers",
+   "collared shirt",
+   "loafers",
+   "eveningwear",
+   "daywear",
+   "smart casual",
+   "embellished jacket"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "liberating elegance",
+   "lavishly embroidered clothes",
+   "insouciant provocation",
+   "Valentino 2.0 wardrobe",
+   "sportswear",
+   "sequins"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2df2de584e829c2961c/master/pass/00063-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "A long beige cotton gabardine trench coat is layered over a grey knit top, bright green shorts, and a light tan skirt, styled with a red silk neck scarf, black socks, yellow sneakers, and a red and white striped canvas tote bag.",
+  "fabric": "cotton gabardine, knit, cotton, silk, canvas, cotton blend, leather, mesh, rubber",
+  "patterns": [
+   "solid",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Light Beige",
+    "hex_code": "#DCD7C7",
+    "pantone_code": "13-0908 (Parchment)"
+   },
+   {
+    "color_name": "True Red",
+    "hex_code": "#BF0A30",
+    "pantone_code": "18-1663 (True Red)"
+   },
+   {
+    "color_name": "Medium Grey",
+    "hex_code": "#808080",
+    "pantone_code": "17-4014 (Quiet Shade)"
+   },
+   {
+    "color_name": "Kelly Green",
+    "hex_code": "#4CBB17",
+    "pantone_code": "16-5806 (Kelly Green)"
+   },
+   {
+    "color_name": "Sandstone",
+    "hex_code": "#C2B280",
+    "pantone_code": "15-1217 (Sandstone)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Mustard Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-1022 (Mustard Gold)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   }
+  ],
+  "theme": "Provocative Everyday Layering",
+  "keywords": [
+   "trench coat",
+   "long coat",
+   "layered outfit",
+   "knit top",
+   "shorts",
+   "skirt",
+   "neck scarf",
+   "tote bag",
+   "sneakers",
+   "socks",
+   "oversized silhouette",
+   "casual styling"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "styling oddities",
+   "insouciant provocation",
+   "liberating elegance",
+   "wrong combinations",
+   "off-kilter charge",
+   "preppy references",
+   "Valentino 2.0 wardrobe"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b23ff79c2768b6652600/master/pass/00047-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2df2de584e829c2961c/master/pass/00063-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Striped canvas tote bag with \"you can come to my Villa\" text, carried with yellow and brown studded sneakers, black socks, teal shorts, a grey t-shirt, and a beige trench coat.",
+  "fabric": "canvas, cotton, cotton knit, cotton jersey, cotton gabardine, suede, rubber, leather",
+  "patterns": [
+   "stripe",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "True Red",
+    "hex_code": "#D02027",
+    "pantone_code": "18-1663 (True Red)"
+   },
+   {
+    "color_name": "Cloud Dancer",
+    "hex_code": "#F2F0E4",
+    "pantone_code": "11-0602 (Cloud Dancer)"
+   },
+   {
+    "color_name": "Lime Punch",
+    "hex_code": "#C1E03D",
+    "pantone_code": "15-0543 (Lime Punch)"
+   },
+   {
+    "color_name": "Mustard Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "14-0850 (Mustard Gold)"
+   },
+   {
+    "color_name": "Turkish Coffee",
+    "hex_code": "#6F4E37",
+    "pantone_code": "18-1142 (Turkish Coffee)"
+   },
+   {
+    "color_name": "Grape Royale",
+    "hex_code": "#5A2D5B",
+    "pantone_code": "19-3520 (Grape Royale)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Turquoise",
+    "hex_code": "#00A99D",
+    "pantone_code": "16-5121 (Turquoise)"
+   },
+   {
+    "color_name": "Nimbus Cloud",
+    "hex_code": "#BCC6CC",
+    "pantone_code": "16-4702 (Nimbus Cloud)"
+   },
+   {
+    "color_name": "Nomad",
+    "hex_code": "#D1B69F",
+    "pantone_code": "16-1326 (Nomad)"
+   }
+  ],
+  "theme": "Playful casual",
+  "keywords": [
+   "tote bag",
+   "canvas bag",
+   "striped bag",
+   "graphic print",
+   "sneakers",
+   "studded shoes",
+   "socks",
+   "shorts",
+   "trench coat",
+   "casualwear"
+  ],
+  "collection_keywords": [
+   "preppy",
+   "collegiate",
+   "logo-splashed",
+   "graphic text",
+   "improbable pairings",
+   "eclectic styling",
+   "liberating elegance"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2e1254dd14297b1ea4c/master/pass/00064-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Grey single-breasted blazer layered over a red crewneck sweater and a striped shirt, paired with navy track pants, brown brogues, a green baseball cap, and a brown leather tote bag.",
+  "fabric": "Wool, knit, cotton, cotton blend, leather, suede, woven textile",
+  "patterns": [
+   "solid",
+   "stripe"
+  ],
+  "Colors": [
+   {
+    "color_name": "Kelly Green",
+    "hex_code": "#00A859",
+    "pantone_code": "15-6436 (Kelly Green)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Heather Grey",
+    "hex_code": "#8C8C8C",
+    "pantone_code": "17-4007 (Quiet Shade)"
+   },
+   {
+    "color_name": "Bright Red",
+    "hex_code": "#E00000",
+    "pantone_code": "18-1660 (True Red)"
+   },
+   {
+    "color_name": "Deep Purple",
+    "hex_code": "#4B0082",
+    "pantone_code": "19-3520 (Grape Royale)"
+   },
+   {
+    "color_name": "Navy Blue",
+    "hex_code": "#1A237E",
+    "pantone_code": "19-3923 (True Navy)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "12-0804 (Vanilla Ice)"
+   },
+   {
+    "color_name": "Cognac Brown",
+    "hex_code": "#C35817",
+    "pantone_code": "18-1142 (Caramel Cafe)"
+   },
+   {
+    "color_name": "Dark Brown",
+    "hex_code": "#5C4033",
+    "pantone_code": "19-1118 (Chocolate Lab)"
+   },
+   {
+    "color_name": "Tan",
+    "hex_code": "#D2B48C",
+    "pantone_code": "16-1334 (Toasted Almond)"
+   }
+  ],
+  "theme": "Preppy Sportswear Fusion",
+  "keywords": [
+   "blazer",
+   "crewneck sweater",
+   "striped shirt",
+   "track pants",
+   "side stripe",
+   "brogues",
+   "baseball cap",
+   "tote bag",
+   "layered",
+   "relaxed silhouette",
+   "preppy",
+   "sportswear"
+  ],
+  "collection_keywords": [
+   "preppy blazers",
+   "collegiate references",
+   "improbable pairings",
+   "styling oddities",
+   "sportswear and couture",
+   "liberating elegance",
+   "insouciant provocation",
+   "Valentino 2.0 wardrobe"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b240114ed1b98739fc66/master/pass/00048-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2e1254dd14297b1ea4c/master/pass/00064-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Grey herringbone blazer worn with a large brown leather tote bag and navy track pants with a cream side stripe.",
+  "fabric": "wool",
+  "patterns": [
+   "herringbone",
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Grey",
+    "hex_code": "#8C929B",
+    "pantone_code": "17-4014 (Cloudburst)"
+   },
+   {
+    "color_name": "Cognac Brown",
+    "hex_code": "#9E6B4B",
+    "pantone_code": "18-1154 (Cognac)"
+   },
+   {
+    "color_name": "Navy Blue",
+    "hex_code": "#2F324F",
+    "pantone_code": "19-4010 (Dress Blues)"
+   },
+   {
+    "color_name": "Cream",
+    "hex_code": "#E0D9C8",
+    "pantone_code": "12-0712 (Vanilla Ice)"
+   },
+   {
+    "color_name": "Grape Purple",
+    "hex_code": "#6A4C8F",
+    "pantone_code": "18-3025 (Grape Kiss)"
+   }
+  ],
+  "theme": "Elevated casual",
+  "keywords": [
+   "blazer",
+   "tote bag",
+   "track pants",
+   "herringbone",
+   "side stripe",
+   "buttoned cuff",
+   "leather",
+   "relaxed fit",
+   "oversized bag"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "everyday dressing",
+   "sportswear",
+   "preppy blazers",
+   "wrong combinations",
+   "liberating elegance"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2e233ec043d3b0c1b3c/master/pass/00065-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Purple utility jacket with a pointed collar, silver-tone snap closures, and flap chest pockets, layered over a dark grey collared shirt and an orange cable knit V-neck sweater vest, paired with bright teal shorts, dark blue ribbed socks, grey and white panelled sneakers with red laces, gold-framed yellow lens sunglasses, and a gold cross pendant necklace.",
+  "fabric": "Cotton twill, cotton, wool knit, suede, leather, rubber, textile, metal, plastic",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Deep Violet",
+    "hex_code": "#6A2C9B",
+    "pantone_code": "19-3737 (Purple Velvet)"
+   },
+   {
+    "color_name": "Charcoal Grey",
+    "hex_code": "#363636",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Burnt Orange",
+    "hex_code": "#D46A2C",
+    "pantone_code": "17-1456 (Autumn Leaf)"
+   },
+   {
+    "color_name": "Bright Teal",
+    "hex_code": "#2CD4A0",
+    "pantone_code": "16-5121 (Turquoise)"
+   },
+   {
+    "color_name": "Navy Blue",
+    "hex_code": "#1A233D",
+    "pantone_code": "19-4010 (Navy Peony)"
+   },
+   {
+    "color_name": "Light Grey",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4105 (Silver Cloud)"
+   },
+   {
+    "color_name": "Off-White",
+    "hex_code": "#F5F5DC",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Bright Red",
+    "hex_code": "#FF0000",
+    "pantone_code": "18-1660 (True Red)"
+   },
+   {
+    "color_name": "Amber Yellow",
+    "hex_code": "#FFBF00",
+    "pantone_code": "14-0848 (Goldenrod)"
+   },
+   {
+    "color_name": "Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Goldfinch)"
+   }
+  ],
+  "theme": "Improbable pairings",
+  "keywords": [
+   "utility jacket",
+   "collared shirt",
+   "sweater vest",
+   "shorts",
+   "sneakers",
+   "sunglasses",
+   "layered",
+   "cable knit",
+   "V-neck",
+   "color blocking"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "preppy",
+   "collegiate references",
+   "styling oddities",
+   "mixed genres",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2427ab1113c1be19071/master/pass/00049-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2e39fda1576ba8ad4fc/master/pass/00066-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "The small structured handbag with a snakeskin-effect flap and gold-tone V-logo hardware, held in hand, worn with a muted green double-breasted suit jacket and a light blue collared shirt.",
+  "fabric": "wool blend, cotton, embossed leather, leather",
+  "patterns": [
+   "solid",
+   "subtle stripe",
+   "snakeskin"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dusty Olive",
+    "hex_code": "#8B9480",
+    "pantone_code": "17-0610 (Dusty Olive)"
+   },
+   {
+    "color_name": "Serenity",
+    "hex_code": "#A7C0D7",
+    "pantone_code": "14-4203 (Serenity)"
+   },
+   {
+    "color_name": "Ecru",
+    "hex_code": "#E0D9D0",
+    "pantone_code": "12-0304 (Ecru)"
+   },
+   {
+    "color_name": "Warm Taupe",
+    "hex_code": "#8C8277",
+    "pantone_code": "17-1310 (Warm Taupe)"
+   },
+   {
+    "color_name": "Gold Fusion",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0836 (Gold Fusion)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Decadent prep",
+  "keywords": [
+   "double-breasted jacket",
+   "suit jacket",
+   "collared shirt",
+   "handbag",
+   "top handle bag",
+   "snakeskin print",
+   "V-logo hardware",
+   "notched lapels",
+   "tailored jacket"
+  ],
+  "collection_keywords": [
+   "sartorial intrigues",
+   "improbable pairings",
+   "decadent",
+   "elitist heritage",
+   "liberating elegance",
+   "insouciant provocation",
+   "off-kilter charge"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b2e39fda1576ba8ad4fc/master/pass/00066-valentino-resort-2027-credit-brand.jpg|-": {
+  "image_description": "Oversized double-breasted blazer and wide-leg trousers suit paired with a light blue embroidered shirt, a green baseball cap, and a small top-handle bag.",
+  "fabric": "Wool blend suiting, cotton poplin, embroidered fabric, leather",
+  "patterns": [
+   "solid",
+   "monogram"
+  ],
+  "Colors": [
+   {
+    "color_name": "Dusty Olive",
+    "hex_code": "#8B8C7A",
+    "pantone_code": "16-0726 (Dusty Olive)"
+   },
+   {
+    "color_name": "Clearwater",
+    "hex_code": "#ADD8E6",
+    "pantone_code": "13-4108 (Clearwater)"
+   },
+   {
+    "color_name": "Greenery",
+    "hex_code": "#00A877",
+    "pantone_code": "16-0237 (Greenery)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Egret",
+    "hex_code": "#F0EAD6",
+    "pantone_code": "11-0605 (Egret)"
+   },
+   {
+    "color_name": "Goldenrod",
+    "hex_code": "#DAA520",
+    "pantone_code": "16-0836 (Goldenrod)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   }
+  ],
+  "theme": "Liberated Elegance",
+  "keywords": [
+   "double-breasted blazer",
+   "wide-leg trousers",
+   "tailored suit",
+   "collared shirt",
+   "embroidered collar",
+   "baseball cap",
+   "mini handbag",
+   "relaxed silhouette",
+   "formalwear",
+   "casual accessories"
+  ],
+  "collection_keywords": [
+   "improbable pairings",
+   "off-kilter charge",
+   "couture everyday dressing",
+   "preppy blazers",
+   "baseball caps with blouses",
+   "liberating elegance"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b24233ec043d3b0c1885/master/pass/00050-valentino-resort-2027-detail-credit-brand.jpg|https://assets.vogue.com/photos/6a32b2e39fda1576ba8ad4fc/master/pass/00066-valentino-resort-2027-credit-brand.jpg": {
+  "image_description": "Tan suede hobo bag with silver dome studs and long fringe trim, held by a hand wearing grey pleated trousers and grey and lavender lace-up sneakers.",
+  "fabric": "suede",
+  "patterns": [
+   "solid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Tan",
+    "hex_code": "#C19A6B",
+    "pantone_code": "16-1334 (Camel)"
+   },
+   {
+    "color_name": "Silver",
+    "hex_code": "#C0C0C0",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   },
+   {
+    "color_name": "Brown",
+    "hex_code": "#7F5217",
+    "pantone_code": "18-1140 (Walnut)"
+   },
+   {
+    "color_name": "Grey",
+    "hex_code": "#696969",
+    "pantone_code": "18-0601 (Dark Gull Gray)"
+   },
+   {
+    "color_name": "Light Grey",
+    "hex_code": "#D4D7D6",
+    "pantone_code": "16-4402 (Nimbus Cloud)"
+   },
+   {
+    "color_name": "Lavender",
+    "hex_code": "#C5B4E3",
+    "pantone_code": "16-3412 (Lavender Fog)"
+   },
+   {
+    "color_name": "White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   }
+  ],
+  "theme": "Eclectic casual",
+  "keywords": [
+   "suede hobo bag",
+   "fringe trim",
+   "metallic dome studs",
+   "leather strap",
+   "pleated trousers",
+   "grey tailored trousers",
+   "lace-up sneakers",
+   "athletic shoes"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "liberating elegance",
+   "insouciant provocation",
+   "eccentricities",
+   "plurality over prescription"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b21e494e9a4bb054a7d0/master/pass/00016-valentino-resort-2027-detail-credit-brand.jpg|-": {
+  "image_description": "Plaid puff-sleeve jacket with a gathered front, styled with a multi-strand faux pearl and rhinestone necklace, large pearl drop earrings, and yellow-green tinted sunglasses, worn over grey pleated trousers with a black crocodile-embossed belt.",
+  "fabric": "Cotton blend, faux pearls, rhinestones, gold-tone metal, acetate, metal, leather, crocodile-embossing, wool blend",
+  "patterns": [
+   "plaid"
+  ],
+  "Colors": [
+   {
+    "color_name": "Rhubarb",
+    "hex_code": "#8B253B",
+    "pantone_code": "19-1755 (Rhubarb)"
+   },
+   {
+    "color_name": "Blue Heaven",
+    "hex_code": "#7193B9",
+    "pantone_code": "17-4023 (Blue Heaven)"
+   },
+   {
+    "color_name": "Bright White",
+    "hex_code": "#FFFFFF",
+    "pantone_code": "11-0601 (Bright White)"
+   },
+   {
+    "color_name": "Stretch Limo",
+    "hex_code": "#211A1D",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Egret",
+    "hex_code": "#F0EAD6",
+    "pantone_code": "11-0105 (Egret)"
+   },
+   {
+    "color_name": "Harvest Gold",
+    "hex_code": "#D4AF37",
+    "pantone_code": "16-0947 (Harvest Gold)"
+   },
+   {
+    "color_name": "Silver Cloud",
+    "hex_code": "#BFC1C2",
+    "pantone_code": "14-4201 (Silver Cloud)"
+   },
+   {
+    "color_name": "Green Gecko",
+    "hex_code": "#80C41C",
+    "pantone_code": "14-0452 (Green Gecko)"
+   },
+   {
+    "color_name": "Phantom",
+    "hex_code": "#545860",
+    "pantone_code": "17-4007 (Phantom)"
+   }
+  ],
+  "theme": "Decadent schoolgirl punk",
+  "keywords": [
+   "plaid jacket",
+   "puff sleeves",
+   "gathered front",
+   "pearl necklace",
+   "layered necklace",
+   "drop earrings",
+   "sunglasses",
+   "tinted lenses",
+   "crocodile-embossed belt",
+   "pleated trousers"
+  ],
+  "collection_keywords": [
+   "off-kilter charge",
+   "improbable pairings",
+   "sartorial intrigues",
+   "schoolgirl references",
+   "decadent blas\u00e9",
+   "liberating elegance",
+   "insouciant provocation"
+  ]
+ },
+ "gemini-2.5-flash|v2|768|https://assets.vogue.com/photos/6a32b23131c43fba4f9215ff/master/pass/00033-valentino-resort-2027-detail-credit-brand.jpg|-": {
+  "image_description": "Iridescent sequined long-sleeved top with a feathered high neckline and flared cuffs, worn with a small rectangular beaded handbag featuring a thin leather strap.",
+  "fabric": "sequins, feathers, mesh, beads, leather",
+  "patterns": [
+   "floral"
+  ],
+  "Colors": [
+   {
+    "color_name": "Silver",
+    "hex_code": "#B0B0B0",
+    "pantone_code": "14-4103 (Quiet Shade)"
+   },
+   {
+    "color_name": "Lavender",
+    "hex_code": "#D8BFD8",
+    "pantone_code": "14-3903 (Lilac Sachet)"
+   },
+   {
+    "color_name": "Rose Tan",
+    "hex_code": "#D4A7A7",
+    "pantone_code": "17-1512 (Rose Tan)"
+   },
+   {
+    "color_name": "Mint Green",
+    "hex_code": "#C3E6CB",
+    "pantone_code": "13-0117 (Mint Green)"
+   },
+   {
+    "color_name": "Fuchsia Pink",
+    "hex_code": "#E05090",
+    "pantone_code": "17-2036 (Fuchsia Rose)"
+   },
+   {
+    "color_name": "Royal Blue",
+    "hex_code": "#4169E1",
+    "pantone_code": "18-4051 (True Blue)"
+   },
+   {
+    "color_name": "Black",
+    "hex_code": "#000000",
+    "pantone_code": "19-4005 (Stretch Limo)"
+   },
+   {
+    "color_name": "Espresso Brown",
+    "hex_code": "#362D28",
+    "pantone_code": "19-1118 (Espresso)"
+   }
+  ],
+  "theme": "Opulent glamour",
+  "keywords": [
+   "sequined top",
+   "feathered neckline",
+   "flared cuffs",
+   "beaded handbag",
+   "floral embroidery",
+   "iridescent sequins",
+   "eveningwear",
+   "embellishment",
+   "mini bag"
+  ],
+  "collection_keywords": [
+   "lavish embroidery",
+   "decadent",
+   "liberating elegance",
+   "sartorial intrigues",
+   "eccentricities"
+  ]
+ }
+}

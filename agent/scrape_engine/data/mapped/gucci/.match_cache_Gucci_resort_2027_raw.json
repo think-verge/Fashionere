@@ -1,0 +1,515 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a0823d9abd40ce6814375/master/pass/00001a-gucci-resort-2027-details-credit-brand.jpg|1-6": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The model, black satin suit, black shirt, black tie, and red apple are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a073929abd45c193a1f33/master/pass/00002b-gucci-resort-2027-details-credit-brand.jpg|1-8": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a magenta suit, a black leather bag with a gold chain strap and a distinctive gold clasp, and black pointed-toe heels. Look 2 features the exact same magenta suit, the identical black bag with the gold chain and clasp, and matching black pointed-toe heels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a073aa232ba599921c1fb/master/pass/00002a-gucci-resort-2027-details-credit-brand.jpg|1-7": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 2, showing the same magenta suit, black handbag with chain strap, hair, and makeup.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a073b794b317cd75ee576/master/pass/00003a-gucci-resort-2027-details-credit-brand.jpg|1-9": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The model in the detail image is wearing the exact same navy pinstripe double-breasted suit and carrying the identical black leather handbag with the distinctive fish charm and gold GG logo as seen in Look 3. The light blue item in the bag is also present.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a073c68044e9311f15e80/master/pass/00004a-gucci-resort-2027-details-credit-brand.jpg|1-10": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The model's hair, glasses, black suit, white shirt, black tie, silver watch, and black backpack are identical to those in Look 4.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a073f68044e9311f15e8b/master/pass/00004b-gucci-resort-2027-details-credit-brand.jpg|1-11": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black backpack with a red and green striped strap, worn with a black suit and white shirt. Look 4 features the exact same black backpack with the distinctive red and green strap, worn with a matching black suit and white shirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a073f4b2600279313e586/master/pass/00006a-gucci-resort-2027-details-credit-brand.jpg|1-12": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 6, including the dark grey pinstripe double-breasted suit, the dark striped shirt, the black backpack with 'GUCCI' branding, the red and green striped backpack straps, and the black sunglasses.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a0740b5b90ecd3cca0162/master/pass/00007a-gucci-resort-2027-details-credit-brand.jpg|1-13": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail shows a long navy coat, a black crocodile-embossed handbag with gold hardware, and long wavy light brown hair. Look 7 features the identical long navy coat, the exact same black crocodile-embossed handbag with matching gold hardware, and the model has long wavy light brown hair, perfectly matching all visible elements.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a0744752b1abbae6f2f11/master/pass/00011a-gucci-resort-2027-details-credit-brand.jpg|3-15": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The model's hair, makeup, grey fur coat, dark green patterned shirt, and gold choker necklace are identical in both the detail and Look 11.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a07479c325bba91fadfae/master/pass/00009a-gucci-resort-2027-details-credit-brand.jpg|2-14": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The brown fur coat, black pinstripe double-breasted dress, sheer black hosiery, and the black crocodile-textured bag with gold hardware and silver chain strap are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a0742eda24b02d657c224/master/pass/00008a-gucci-resort-2027-details-credit-brand.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The red double-breasted coat with gold buttons and the white crocodile-textured handbag are identical in both the detail and Look 8.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a0746b9af6b72617d9553/master/pass/00011b-gucci-resort-2027-details-credit-brand.jpg|4-16": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the grey fur, dark green patterned silk shirt, black trousers with a prominent gold zipper, and the dark green crocodile-embossed handbag with a gold clasp worn by the model in Look 11.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a074759fff5e9456372aa/master/pass/00012a-gucci-resort-2027-details-credit-brand.jpg|5-17": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The model, brown fur jacket, denim jacket, denim jeans, black GG logo bag, gold hoop earrings, and white smartphone are all identical to Look 12.",
+  "alternates": [
+   {
+    "look_number": 9,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a0749b9af6b72617d9559/master/pass/00013a-gucci-resort-2027-details-credit-brand.jpg|6-18": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a navy double-breasted coat with gold buttons and a black crocodile-textured handbag with a silver clasp. Look 13 features the exact same navy coat and black crocodile handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a074e59fff5e9456372b0/master/pass/00016a-gucci-resort-2027-details-credit-brand.jpg|10-22": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 16, including the dark navy coat, navy textured sweater, blue pinstriped shirt cuff, dark pinstriped skirt, and the exact Gucci monogram hobo bag. The model is also holding a phone in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a074dd9abd40ce681434f/master/pass/00015a-gucci-resort-2027-details-credit-brand.jpg|9-21": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The model, sunglasses, gold hoop earrings, and the distinctive white floral print jacket/coat are identical in both the detail and Look 15.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a074b752b1abbae6f2f17/master/pass/00014a-gucci-resort-2027-details-credit-brand.jpg|8-20": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 14, including the brown fur coat, black leather jacket and skirt, dark brown crocodile-embossed handbag with gold clasp, and black pointed-toe heels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a074b9c325bba91fadfb4/master/pass/00013b-gucci-resort-2027-details-credit-brand.jpg|7-19": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The black knee-high boots with gold horsebit detail and stiletto heel perfectly match the boots worn in Look 13.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a07529b03d4f210f10593/master/pass/00020a-gucci-resort-2027-details-credit-brand.jpg|12-24": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The fur coat, black satin shirt, silver concentric hoop earrings, rings, and black watch are all identical to those worn by the model in Look 20. The model's hair and makeup also match perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a075017f832ce597658c6/master/pass/00019a-gucci-resort-2027-details-credit-brand.jpg|11-23": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The model's hair color and style, the exact fur coat (color, texture, voluminous sleeves), and the visible rings and earrings are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a07539bc95159c66b948f/master/pass/00020b-gucci-resort-2027-details-credit-brand.jpg|13-25": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The black leather handbag with the distinctive gold clasp and colorful scarf, the light brown fur coat, and the black satin-like dress are all identical to those in Look 20.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a074f90e50c9dbb0ace0e/master/pass/00017a-gucci-resort-2027-details-credit-brand.jpg|10-22": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The model's hair, makeup, and facial features are identical. The detail shows a black turtleneck and a red fur coat with a distinctive black lining featuring a vibrant floral and botanical pattern, all of which are perfectly matched in Look 17.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a07574133fd6ba6df6127/master/pass/00023b-gucci-resort-2027-details-credit-brand.jpg|16-28": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a male model in a full black leather outfit, including a jacket with a zippered cuff and matching leather pants, along with a silver watch. Look 23 features a male model wearing an identical black leather jacket and pants, with the same zippered cuff detail and the same watch on his wrist.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a07554951d452e0fbb3f9/master/pass/00022b-gucci-resort-2027-details-credit-brand.jpg|15-27": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 22, including the white fur coat, leopard print pussy-bow dress, black crocodile-embossed bag with gold GG logo, and black gloves.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a075717f832ce597658cc/master/pass/00025b-gucci-resort-2027-details-credit-brand.jpg|17-29": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 25, including the man's face, glasses, hair, olive trench coat, dark blue turtleneck, and the distinctive large, dark brown crocodile-embossed leather bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a07549b03d4f210f10599/master/pass/00021b-gucci-resort-2027-details-credit-brand.jpg|14-26": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black puffer jacket, grey shaggy fur stole, beige Gucci monogram hobo bag, and dark blue textured dress worn in Look 21.",
+  "alternates": [
+   {
+    "look_number": 16,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 18,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a075ba232ba599921c20b/master/pass/00029a-gucci-resort-2027-details-credit-brand.jpg|19-31": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 29, including the long dark brown fur coat, red-tinted sunglasses, orange hair, the distinctive white tote bag with floral insert, and the bouquet of yellow flowers wrapped in peach paper.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a075aa0822e7523a35e18/master/pass/00028c-gucci-resort-2027-details-credit-brand.jpg|18-30": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 28, including the olive green trench coat, black hoodie, black backpack, large Gucci monogram tote bag, red/green/yellow patterned scarf, brown checkered fabric, and the book being held.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a075c711a23d1067ee9f6/master/pass/00030a-gucci-resort-2027-details-credit-brand.jpg|20-32": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The model, black durag, blue sunglasses, black hoodie, dark blue collared jacket with straps, and the distinctive dark curly faux fur coat with red and green striped strap are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a07584b2600279313e58c/master/pass/00028b-gucci-resort-2027-details-credit-brand.jpg|18-30": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 28, featuring the same olive-green trench coat, black hoodie, black backpack, and large Gucci monogram tote bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a075f2506164f8aaac5c7/master/pass/00031a-gucci-resort-2027-details-credit-brand.jpg|21-33": {
+  "look_number": 31,
+  "confidence": 0.9,
+  "evidence": "The black knee-high stiletto boots are identical, and the black short leather-like garment is very similar in style and length. The bag differs from the one in the full look.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a0760d9abd40ce6814355/master/pass/00033a-gucci-resort-2027-details-credit-brand.jpg|23-35": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The model, black top, grey/blue faux fur stole, black handbag with silver chain details, and silver bracelet are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a075f711a23d1067ee9fc/master/pass/00032a-gucci-resort-2027-details-credit-brand.jpg|22-34": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 32, including the beige Gucci monogram hobo bag, the grey fur stole, the blue and white striped shirt, the black jacket, and the white boots. The phone and ring also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a07649c325bba91fadfc5/master/pass/00036a-gucci-resort-2027-details-credit-brand.jpg|26-38": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 36, including the yellow patterned blouse and pleated skirt, the Gucci web belt, the black fur-lined coat with floral embroidery, the red crocodile-embossed handbag, and the model's hair and makeup.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a07639c325bba91fadfbf/master/pass/00035a-gucci-resort-2027-details-credit-brand.jpg|24-36": {
+  "look_number": 25,
+  "confidence": 0.8,
+  "evidence": "The detail shows an olive green trench coat and a dark, structured, crocodile-embossed top-handle bag with gold hardware. Look 25 features an identical olive green trench coat and a dark, structured, crocodile-embossed top-handle bag with matching texture, shape, and hardware. While the bag color has a slight nuance difference (dark blue/black in detail vs. dark brown/burgundy in Look 25), the overall identity of the main items is a strong match. The small Gucci monogrammed pouch and dark fur scarf in the detail are not clearly visible in Look 25, but could be detachable accessories or obscured.",
+  "alternates": [
+   {
+    "look_number": 28,
+    "confidence": 0.4
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a076617f832ce597658d2/master/pass/00037a-gucci-resort-2027-details-credit-brand.jpg|26-38": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The fur coat, black leather handbag with gold GG logo, black gloves, and silver hoop earrings all perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a07689bc95159c66b949a/master/pass/00038b-gucci-resort-2027-details-credit-brand.jpg|28-40": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 38, including the blue shiny denim jacket, red undershirt, blue shiny wide-leg jeans, Gucci monogram crossbody bag with red and green strap, and the keychain attached to the belt loop.",
+  "alternates": [
+   {
+    "look_number": 40,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a07639b03d4f210f105a4/master/pass/00035b-gucci-resort-2027-details-credit-brand.jpg|25-37": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The model's hair, black turtleneck, olive green coat, and dark curly fur garment all perfectly match look 35.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a076bf788445d7d512c75/master/pass/00039b-gucci-resort-2027-details-credit-brand.jpg|30-42": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a dark leather jacket, dark grey jeans, and a dark grey/black Gucci monogram messenger bag with a silver zipper. Look 39 features the identical leather jacket, dark grey wide-leg pants, and the exact same Gucci messenger bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a076729abd45c193a1f43/master/pass/00038a-gucci-resort-2027-details-credit-brand.jpg|27-39": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The model, denim jacket, baggy denim pants, Gucci monogram crossbody bag with red and green strap, watch, and rings are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a076f9b03d4f210f105aa/master/pass/00041b-gucci-resort-2027-details-credit-brand.jpg|33-45": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The model, black leather jacket, black Gucci cap, sunglasses, black headphones, and the brown shoulder strap are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a07694133fd6ba6df6132/master/pass/00039a-gucci-resort-2027-details-credit-brand.jpg|29-41": {
+  "look_number": 29,
+  "confidence": 0.98,
+  "evidence": "Identical dark, wide-leg pants with a textured fabric and black square-toed flat shoes.",
+  "alternates": [
+   {
+    "look_number": 30,
+    "confidence": 0.97
+   },
+   {
+    "look_number": 39,
+    "confidence": 0.97
+   },
+   {
+    "look_number": 40,
+    "confidence": 0.97
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a076f2506164f8aaac5cd/master/pass/00043a-gucci-resort-2027-details-credit-brand.jpg|33-45": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The model's black leather bomber jacket, snakeskin-patterned pants, metallic patterned shoulder bag, and dramatic hair and makeup are identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a076e752b1abbae6f2f1d/master/pass/00041a-gucci-resort-2027-details-credit-brand.jpg|32-44": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 41, including the black leather jacket, the dark blue/purple pants, the beige/brown Gucci monogram cross-body bag with a brown strap, and the black over-ear headphones.",
+  "alternates": [
+   {
+    "look_number": 40,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 38,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a077229abd45c193a1f49/master/pass/00043b-gucci-resort-2027-details-credit-brand.jpg|34-46": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The detail image shows shimmering, snakeskin-patterned pants and matching pointed-toe shoes, which are identical to the pants and shoes worn by the model in Look 43.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a0773711a23d1067eea02/master/pass/00044a-gucci-resort-2027-details-credit-brand.jpg|35-47": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 44, including the dark brown leather bomber jacket, black crop top, blue denim jeans with waistband details, brown snakeskin bag with chain strap, silver watch, large hoop earrings, purple sunglasses, and the model's hair and makeup.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a07739b03d4f210f105b0/master/pass/00045a-gucci-resort-2027-details-credit-brand.jpg|36-48": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The black triangular soft leather bag and the wide-leg dark trousers are an exact match to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a076bdc15e1429d4cbe43/master/pass/00040a-gucci-resort-2027-details-credit-brand.jpg|31-43": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 40, including the dark indigo wide-leg coated pants, the black belt, the Gucci monogram fanny pack worn at the waist, and the distinctive keychain with the striped charm.",
+  "alternates": [
+   {
+    "look_number": 38,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 41,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a0777f788445d7d512c7b/master/pass/00046b-gucci-resort-2027-details-credit-brand.jpg|38-50": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a dark suit jacket, wide-leg trousers with a flap pocket on the right thigh, a dark crushed velvet bag, and dark flat shoes. Look 46 features all these exact items.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a077611db9d1346ff4ce8/master/pass/00046a-gucci-resort-2027-details-credit-brand.jpg|37-49": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The model, hair, ear piercing, necklace, black collared shirt, and black suit jacket are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a077717f832ce597658d8/master/pass/00047a-gucci-resort-2027-details-credit-brand.jpg|39-51": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The model, hairstyle, and identical black sunglasses with the 'G' logo perfectly match the detail image. The black collared garment also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a077917f832ce597658de/master/pass/00047b-gucci-resort-2027-details-credit-brand.jpg|40-52": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The unique soft, knotted black bag with a subtle black-on-black Gucci GG monogram pattern is not visible in any of the full-body candidate looks.",
+  "alternates": [
+   {
+    "look_number": 52,
+    "confidence": 0.4
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a077b59fff5e9456372ca/master/pass/00048a-gucci-resort-2027-details-credit-brand.jpg|41-53": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The detail shows pinstripe pants, a black textured bag, and red nail polish, all of which are perfectly matched in Look 48.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a077cc73846e15adc729c/master/pass/00050a-gucci-resort-2027-details-credit-brand.jpg|42-54": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The model, black shirt, black sunglasses, and the distinctive red and green striped waist band are identical in both the detail and look 50.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a077a11db9d1346ff4cee/master/pass/00049a-gucci-resort-2027-details-credit-brand.jpg|41-53": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, makeup, silver hoop earrings, black satin oversized blazer worn off the shoulders, black lace top, and black structured bag with a chain strap are all identical to look 49.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a077f90e50c9dbb0ace19/master/pass/00052a-gucci-resort-2027-details-credit-brand.jpg|44-56": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The model, black sunglasses, and the distinctive black padded garment with the 'GG' monogram pattern are identical in both the detail and Look 52.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a07824951d452e0fbb3ff/master/pass/00053a-gucci-resort-2027-details-credit-brand.jpg|46-58": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The model and the unique black, shiny, padded, rectangular garment are identical in both the detail and look 53.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a07839bc95159c66b94a5/master/pass/00054a-gucci-resort-2027-details-credit-brand.jpg|47-59": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a male model wearing a voluminous black feathered jacket over a black shirt and black trousers. Look 54 features the identical model wearing the exact same black feathered jacket, black shirt, and black trousers.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a077fdc15e1429d4cbe4e/master/pass/00052b-gucci-resort-2027-details-credit-brand.jpg|45-57": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 52, featuring the same black padded garment with a repeating logo pattern, black wide-leg pants, and black sunglasses.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a077f794b317cd75ee581/master/pass/00051a-gucci-resort-2027-details-credit-brand.jpg|43-55": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The model in look 51 wears the identical black Gucci monogram baseball cap, the green-red-green striped bandeau top, and the black jacket draped over the shoulders, matching all visible elements in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a07857062b9037631f523/master/pass/00056a-gucci-resort-2027-details-credit-brand.jpg|49-61": {
+  "look_number": 56,
+  "confidence": 1.0,
+  "evidence": "The model's hair, heavy dark eye makeup, the distinctive black feathered garment, and the small black chain bag are identical in both the detail and Look 56.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a07839b03d4f210f105c0/master/pass/00055a-gucci-resort-2027-details-credit-brand.jpg|48-60": {
+  "look_number": 55,
+  "confidence": 1.0,
+  "evidence": "The model, her hair styling, makeup, and the distinctive black feathery garment are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a078741f668f57ef49492/master/pass/00057b-gucci-resort-2027-details-credit-brand.jpg|50-62": {
+  "look_number": 57,
+  "confidence": 1.0,
+  "evidence": "The detail shows a silver/grey fringed garment and dark pointed shoes. Look 57 features the identical silver/grey fringed dress and dark shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a078b711a23d1067eea0d/master/pass/00059b-gucci-resort-2027-details-credit-brand.jpg|53-63": {
+  "look_number": 59,
+  "confidence": 1.0,
+  "evidence": "The model's hair, heavy dark eye makeup, black double-breasted suit with peaked lapels, white shirt, black tie with a subtle logo, and the distinctive white floral/feathered brooch on the lapel are all identical to Look 59.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a0789035e84f47a9bab15/master/pass/00058a-gucci-resort-2027-details-credit-brand.jpg|51-63": {
+  "look_number": 58,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a red draped dress and a black patterned clutch with a chain strap. Look 58 features the exact same red draped dress and the identical black patterned clutch with a chain strap.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a0786a0822e7523a35e28/master/pass/00057a-gucci-resort-2027-details-credit-brand.jpg|49-61": {
+  "look_number": 57,
+  "confidence": 1.0,
+  "evidence": "The model's blonde bob hair, heavy dark eye makeup, red lipstick, light-colored fur coat, and black patterned clutch bag are identical in both the detail and Look 57.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a078fb9af6b72617d9564/master/pass/00062a-gucci-resort-2027-details-credit-brand.jpg|56-63": {
+  "look_number": 62,
+  "confidence": 1.0,
+  "evidence": "The model's hair, makeup, and the unique multi-gemstone statement necklace are identical. The sheer black flowing garment also matches perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a078a41f668f57ef49498/master/pass/00059a-gucci-resort-2027-details-credit-brand.jpg|52-63": {
+  "look_number": 58,
+  "confidence": 0.95,
+  "evidence": "The detail shows a red dress with a slit and a black sparkly pointed-toe high heel. Look 58 features a model wearing an identical red draped dress and black pointed-toe high heels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a078f41f668f57ef4949e/master/pass/00063a-gucci-resort-2027-details-credit-brand.jpg|57-63": {
+  "look_number": 63,
+  "confidence": 1.0,
+  "evidence": "The detail image shows Cindy Crawford wearing a black feathered strapless garment, which perfectly matches the top portion of the black feathered gown worn by Cindy Crawford in Look 63. The model, hair, and garment details are identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a078cb5b90ecd3cca0168/master/pass/00060a-gucci-resort-2027-details-credit-brand.jpg|54-63": {
+  "look_number": 60,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model wearing a black, heavily sequined/textured dress and holding a silver cylindrical clutch with a chain strap and a prominent 'G' logo. Look 60 features a model wearing the identical black sequined dress and holding the exact same silver cylindrical clutch with the 'G' logo.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a078e2506164f8aaac5d3/master/pass/00061a-gucci-resort-2027-details-credit-brand.jpg|55-63": {
+  "look_number": 61,
+  "confidence": 1.0,
+  "evidence": "The detail shows a male model wearing a black satin suit, a gold-toned watch with a white face and black strap, and holding a black textured clutch. Look 61 features a male model with an identical black satin suit, the exact same watch, and the same black textured clutch.",
+  "alternates": [
+   {
+    "look_number": 59,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a077917f832ce597658de/master/pass/00047b-gucci-resort-2027-details-credit-brand.jpg|47-48": {
+  "look_number": 47,
+  "confidence": 0.9,
+  "evidence": "The black oversized coat and trousers in Look 47 are identical in style and material to those in the detail shot. The bag is different but accessories are secondary.",
+  "alternates": [
+   {
+    "look_number": 48,
+    "confidence": 0.0
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/6a0a07639c325bba91fadfbf/master/pass/00035a-gucci-resort-2027-details-credit-brand.jpg|33-35": {
+  "look_number": 35,
+  "confidence": 0.65,
+  "evidence": "The olive/khaki coat in the detail close-up perfectly matches the coat draped over the model's shoulder in Look 35. While the fur stole in the detail (grey/blue) does not match the dark fur coat in Look 35, the main outerwear garment is a strong match.",
+  "alternates": [
+   {
+    "look_number": 33,
+    "confidence": 0.3
+   }
+  ]
+ }
+}

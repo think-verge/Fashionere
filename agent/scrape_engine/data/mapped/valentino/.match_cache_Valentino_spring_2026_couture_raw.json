@@ -1,0 +1,501 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66c7df76ad743756ef01/master/pass/00002-valentino-spring-2026-couture-details-credit-brand.jpg|1-7": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black velvet garment with extensive black feathering around the neck and shoulders, matching the black velvet cape and prominent feather trim on Look 2. The hair styling also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66cb2cc86222f17ce706/master/pass/00004-valentino-spring-2026-couture-details-credit-brand.jpg|1-9": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 3, including the golden halo headpiece, the sheer beaded gown with flowing sleeves, the choker necklace, and the long gold chain jewelry. The model's hair and makeup are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66c95a1f684c789e1ec4/master/pass/00003-valentino-spring-2026-couture-details-credit-brand.jpg|1-8": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The black velvet fabric and the exact style of the black Mary Jane heels with an ankle strap and pointed toe perfectly match Look 2.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66c8f7bbf554af311cfe/master/pass/00001-valentino-spring-2026-couture-details-credit-brand.jpg|1-6": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The red dress with deep V-neck, batwing sleeves, and knotted waist detail in the close-up perfectly matches Look 1.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66cc9da7e4af8c938957/master/pass/00006-valentino-spring-2026-couture-details-credit-brand.jpg|1-10": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the strapless pleated fuchsia top and wide fuchsia belt with a rectangular buckle seen in Look 4. The color, fabric, pleating, and belt design are identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66d3024d78b585bf75a1/master/pass/00008-valentino-spring-2026-couture-details-credit-brand.jpg|1-12": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail shows a gold, textured, flowing dress with nude heels. Look 6 features an identical gold, textured dress and similar nude heels.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66cc0d6164e9ba819bd7/master/pass/00005-valentino-spring-2026-couture-details-credit-brand.jpg|1-9": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a sheer, beaded, and embroidered light grey/silver dress with a distinct floral pattern along the hem, and light blue fluffy mules. Look 3 features an identical dress with the same beading, embroidery pattern, and matching light blue fluffy mules.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66d1744c7c4b3d1cc7d5/master/pass/00007-valentino-spring-2026-couture-details-credit-brand.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The black velvet gown with pink and gold floral embroidery and the black furry open-toe slippers are identical in both the detail image and Look 5.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66d252deb098a3330a86/master/pass/00009-valentino-spring-2026-couture-details-credit-brand.jpg|1-12": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black halter-neck dress with a ruffled collar and a large black bow at the lower back. Look 7 features an identical dress with all these elements.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66d64b7fc497424ee959/master/pass/00010-valentino-spring-2026-couture-details-credit-brand.jpg|1-13": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The black pointed-toe heels with an ankle strap and silver bow embellishment, along with the black dress with a high slit, are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66da52deb098a3330a88/master/pass/00013-valentino-spring-2026-couture-details-credit-brand.jpg|4-16": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 10, showing the same green velvet robe, light green satin lapels, gold sequined cuffs, and the distinctive black beaded belt with silver fringe.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66dc15ea845896cdaf02/master/pass/00015-valentino-spring-2026-couture-details-credit-brand.jpg|5-17": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a strapless dress with a deep V-neckline and a shimmery, pleated reddish-pink fabric. Look 11 features the exact same dress with identical color, fabric texture, and neckline design.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66dd4b7fc497424ee95b/master/pass/00016-valentino-spring-2026-couture-details-credit-brand.jpg|6-18": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The intricate gold and silver floral embroidery on the sheer black top, the gold sequined fabric draped around the waist, and the elaborate gold headpiece with a black velvet band are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66d8f31c0c1f4a577d74/master/pass/00012-valentino-spring-2026-couture-details-credit-brand.jpg|3-15": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail shows a silver metallic garment with wide, fringed sleeves, metallic gloves, and a gold sculptural element. Look 9 features an identical silver metallic gown with matching fringed sleeves, metallic gloves, and a large gold and white ruffled collar/headpiece that aligns with the sculptural element.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66d76387df7f76abd637/master/pass/00011-valentino-spring-2026-couture-details-credit-brand.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 8, featuring the same gold textured strapless top, red waist belt, and long black gloves.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66db3cec2c8761b77e4d/master/pass/00014-valentino-spring-2026-couture-details-credit-brand.jpg|4-16": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 10's dark green velvet dress with light green trim, pink lining, and identical dark red pleated open-toe shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66e2df76ad743756ef03/master/pass/00018-valentino-spring-2026-couture-details-credit-brand.jpg|7-19": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail shows a deep red velvet dress with a high slit and pink velvet open-toe mules. Look 13 features the identical deep red velvet dress with a similar slit and the exact same pink velvet open-toe mules.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66de74bd4068b43b7a2a/master/pass/00017-valentino-spring-2026-couture-details-credit-brand.jpg|7-19": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The model in the detail image is wearing the exact same rhinestone-embellished rectangular sunglasses and a deep red velvet dress with gathered shoulders, which perfectly matches Look 13.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66e452deb098a3330a8a/master/pass/00019-valentino-spring-2026-couture-details-credit-brand.jpg|8-20": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail shows a deep purple long-sleeved garment and a distinctive sculptural gold cuff bracelet. Look 14 features a dress of the exact same deep purple color and fabric, and the model is wearing the identical gold cuff bracelet on both wrists.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66e2df76ad743756ef05/master/pass/00020-valentino-spring-2026-couture-details-credit-brand.jpg|9-21": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The fuchsia satin voluminous sleeve, the gold and cream ruffled cuff with triangular metallic accents, the gold embellished bodice underneath, and the black hosiery all perfectly match Look 15.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66e7059e3fea05b3ec55/master/pass/00022-valentino-spring-2026-couture-details-credit-brand.jpg|10-22": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail shows a light yellow quilted jacket with a scalloped collar, a black ruffled neckpiece, and a dark lace top. Look 16 features the identical jacket, neckpiece, and a matching dark sheer top.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66e815ea845896cdaf04/master/pass/00023-valentino-spring-2026-couture-details-credit-brand.jpg|11-23": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light yellow midi skirt and black open-toe heels with an ankle strap. Look 16 features the identical skirt and shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66eac67495a34e2b6478/master/pass/00024-valentino-spring-2026-couture-details-credit-brand.jpg|12-24": {
+  "look_number": 17,
+  "confidence": 0.98,
+  "evidence": "The detail shows light blue triangular panels over black fabric and black open-toe mules, which perfectly match Look 17.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66ec52deb098a3330a8c/master/pass/00026-valentino-spring-2026-couture-details-credit-brand.jpg|13-25": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a metallic gold/bronze pleated dress with an open back and long off-white gloves. Look 19 features the identical metallic gold/bronze pleated dress with the same draping and long off-white gloves.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66ec15ea845896cdaf08/master/pass/00025-valentino-spring-2026-couture-details-credit-brand.jpg|13-25": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the sequined and beaded dress worn under the fur coat in Look 18, including the specific patterns, colors (black base with pink/burgundy and silver embellishments), and the ornate high collar.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66eff7bbf554af311d00/master/pass/00027-valentino-spring-2026-couture-details-credit-brand.jpg|14-26": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 20, including the unique pink feathered hat, the pink satin jacket with distinct seam lines and scalloped edges, and the dark high-neck top underneath. The model's hair and facial features also match exactly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66f1a163e42fcafe0b6b/master/pass/00029-valentino-spring-2026-couture-details-credit-brand.jpg|16-28": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 21, showing the same purple cowl-neck dress, large sculptural beige shoulder ruffles, long orange leather gloves, and gold chain detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66f03cec2c8761b77e4f/master/pass/00028-valentino-spring-2026-couture-details-credit-brand.jpg|15-27": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the pink quilted skirt with fan-like details and the pink feathered mules worn in Look 20.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66e7da1f82e87914f499/master/pass/00021-valentino-spring-2026-couture-details-credit-brand.jpg|10-22": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail shows black sheer stockings, pink feathered open-toe shoes, and a flowing magenta/pink garment. Look 15 features all these elements exactly.",
+  "alternates": [
+   {
+    "look_number": 20,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66f64b7fc497424ee95d/master/pass/00030-valentino-spring-2026-couture-details-credit-brand.jpg|16-28": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact same elaborate silver metallic headpiece with white feathers, and the large gold-toned multi-chain and embellished bib necklace as seen on Look 22. The cream-colored garment with gold embellishment on the shoulder also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66f7218f4e58fb061fb6/master/pass/00031-valentino-spring-2026-couture-details-credit-brand.jpg|17-29": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the light pink satin gown, cream embroidered cape, extensive layered gold and crystal jewelry, white gloves, and feathered headpiece of Look 22.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66fd0d6164e9ba819bd9/master/pass/00033-valentino-spring-2026-couture-details-credit-brand.jpg|19-31": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the mint green dress with a high slit, bright red tights, and black velvet open-toe mules seen in Look 23.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66f7744c7c4b3d1cc7d7/master/pass/00032-valentino-spring-2026-couture-details-credit-brand.jpg|18-30": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 23, featuring the same voluminous gold ruffled sleeve, light green strapless dress, and black leather glove.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66fecf3ea91c30bd477b/master/pass/00034-valentino-spring-2026-couture-details-credit-brand.jpg|20-32": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The detail shows black ankle-strap heels with a pointed toe and a pink sole, which perfectly match the shoes in Look 24. The garment in the detail is a black and white split dress, consistent with the black and white gown with a high slit worn in Look 24.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a6706cf3ea91c30bd477d/master/pass/00037-valentino-spring-2026-couture-details-credit-brand.jpg|22-34": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a white jacket with black lapels and cuffs, a black skirt, and a distinctive black, silver-embellished, white-feathered fan. Look 27 features the exact same jacket, skirt, and fan, worn by a model with matching skin tone and hosiery.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a6705a163e42fcafe0b6d/master/pass/00036-valentino-spring-2026-couture-details-credit-brand.jpg|21-33": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 26, featuring the same beaded headpiece, black fur coat, gold sequined garment, and light blue draped top.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a66ff218f4e58fb061fb8/master/pass/00035-valentino-spring-2026-couture-details-credit-brand.jpg|20-32": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail shows a pink sequined deep V-neck dress with long, flowing sleeves and wavy hair. Look 25 features the exact same pink sequined deep V-neck dress with identical sleeves and the same model with wavy hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a6707c8a08947df21e87c/master/pass/00038-valentino-spring-2026-couture-details-credit-brand.jpg|23-35": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The detail image shows purple velvet open-toe mules with a distinct fan-like texture and a black dress with a high slit. Look 27 features the exact same purple velvet mules and a black skirt with a matching high slit.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a670b9112ba4b9ed6bc92/master/pass/00039-valentino-spring-2026-couture-details-credit-brand.jpg|23-35": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black velvet top with large floral appliques, silver bead and sequin embellishments, voluminous sleeves, and heavily studded cuffs seen in Look 28.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a67106387df7f76abd639/master/pass/00042-valentino-spring-2026-couture-details-credit-brand.jpg|26-38": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the pink and black ruffled top, wide black belt with rectangular buckle, and red satin trousers of Look 31.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a670fc5fac92e33544628/master/pass/00040-valentino-spring-2026-couture-details-credit-brand.jpg|24-36": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a gold metallic trench coat with a distinct diagonal ribbed texture, a matching fabric belt tied in a knot, and pockets. Look 29 features the exact same gold metallic trench coat with identical texture, belt, and style.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a67145a1f684c789e1ec7/master/pass/00043-valentino-spring-2026-couture-details-credit-brand.jpg|26-38": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the identical beaded headpiece, embellished bodice, and sheer light blue/grey cape as seen in Look 32.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a670e9112ba4b9ed6bc94/master/pass/00041-valentino-spring-2026-couture-details-credit-brand.jpg|25-37": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The detail shows a teal metallic pleated dress with a deep V-neck and distinctive coiled, sculptural embellishments on the shoulders and neckline. Look 30 is an exact match, featuring the identical dress with all these specific design elements, color, and fabric.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a6717554b403d2bb93d6b/master/pass/00044-valentino-spring-2026-couture-details-credit-brand.jpg|27-39": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The sheer, light grey cape with intricate black and silver beaded feather-like embroidery and the light blue/grey satin collar are an exact match. The elaborate silver headpiece is also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a6719c67495a34e2b647a/master/pass/00045-valentino-spring-2026-couture-details-credit-brand.jpg|28-40": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the heavily embellished gold dress, the light blue satin mules with red soles, and the sheer overlay with black trim seen in Look 32.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a671a2cc86222f17ce708/master/pass/00046-valentino-spring-2026-couture-details-credit-brand.jpg|29-41": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail shows a dark velvet skirt with a high slit, a gold metallic fabric, and a pink velvet open-toe mule. Look 33 features all these exact elements: a dark velvet skirt with a high slit, a gold metallic sash, and matching pink velvet open-toe mules.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a671e059e3fea05b3ec57/master/pass/00047-valentino-spring-2026-couture-details-credit-brand.jpg|29-41": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a white feathered coat over a fuchsia sequined V-neck dress with a tie-waist. Look 34 features the exact same white feathered coat and fuchsia sequined V-neck dress with a tie-waist, worn by a model with matching hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a67207dc91d7a224e1f57/master/pass/00048-valentino-spring-2026-couture-details-credit-brand.jpg|30-42": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black and white striped blouse with a large bow, the red belt, and the striped skirt of Look 35.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a6722059e3fea05b3ec59/master/pass/00049-valentino-spring-2026-couture-details-credit-brand.jpg|31-43": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a deep V-neck green garment with a distinctive elaborate gold necklace. Look 36 features the identical green garment and the exact same gold necklace on a model with the same skin tone.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a67257cb73b20dcb9507a/master/pass/00050-valentino-spring-2026-couture-details-credit-brand.jpg|32-44": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The jacket's unique pink color, puffed sleeve design, and distinctive fabric texture, along with the visible undergarments (light top and black skirt with white band), are an exact match to Look 37.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a6729f7bbf554af311d02/master/pass/00052-valentino-spring-2026-couture-details-credit-brand.jpg|33-45": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The detail image shows light pink Mary Jane heels and a black dress with white wavy vertical ruffles. Look 38 features the exact same shoes and dress design.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a6725dfdf5c818ab1b186/master/pass/00051-valentino-spring-2026-couture-details-credit-brand.jpg|33-45": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The silver pointed-toe shoes with an ankle strap and embellished bow, and the black skirt, perfectly match those in Look 37.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a672b059e3fea05b3ec5b/master/pass/00053-valentino-spring-2026-couture-details-credit-brand.jpg|34-46": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the gold metallic pleated dress with extensive ruffles and the black open-toe shoes seen in Look 39.",
+  "alternates": [
+   {
+    "look_number": 43,
+    "confidence": 0.2
+   },
+   {
+    "look_number": 45,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a672ae88d1a92eedf45ab/master/pass/00054-valentino-spring-2026-couture-details-credit-brand.jpg|35-47": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 40, featuring the same black high-neck dress with a gold multi-chain deep V-neck, black velvet opera gloves with white claw-like tips, and draped black fabric.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a673152deb098a3330a8e/master/pass/00056-valentino-spring-2026-couture-details-credit-brand.jpg|36-48": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The headpiece, model's hair, and the pink sequined garment visible in the detail image are an exact match to Look 42.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a6737c8a08947df21e87e/master/pass/00058-valentino-spring-2026-couture-details-credit-brand.jpg|38-50": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail shows a deep purple gown with a large bow at the back and a white fluffy shrug. Look 44 features the identical deep purple gown with the large bow and the same white fluffy shrug.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a67300d6164e9ba819bdb/master/pass/00055-valentino-spring-2026-couture-details-credit-brand.jpg|36-48": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The model, headpiece, and the distinctive red cape with gold flame embroidery are an exact match to Look 41.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a6737dfdf5c818ab1b188/master/pass/00059-valentino-spring-2026-couture-details-credit-brand.jpg|39-51": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The detail shows pink velvet open-toe mules, a gold sequined garment, and a black garment. Look 45 features the exact same pink velvet open-toe mules, a gold sequined coat, and a black dress.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a673915ea845896cdaf0c/master/pass/00060-valentino-spring-2026-couture-details-credit-brand.jpg|39-51": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a red glove with black claw-like extensions adorned with rhinestones, and a black garment with a sheer, light-colored side panel. Look 46 features the identical red gloves with black claw extensions and a dress with matching black and sheer/beige elements.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a673ecf3ea91c30bd477f/master/pass/00062-valentino-spring-2026-couture-details-credit-brand.jpg|41-53": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the model's skin tone, the unique studded black cap, and the distinctive deep red velvet coat with sculptural rose-like shoulder ruffles seen in Look 48.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a673f2cc86222f17ce70a/master/pass/00063-valentino-spring-2026-couture-details-credit-brand.jpg|42-54": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the pattern, fabric color, black cuff with black fur trim, and overall style of the coat worn in Look 49.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a673e744c7c4b3d1cc7d9/master/pass/00061-valentino-spring-2026-couture-details-credit-brand.jpg|40-52": {
+  "look_number": 47,
+  "confidence": 0.95,
+  "evidence": "The detail shows a gold sequined garment with a black sheer overlay draped from the shoulders, consistent with the gold sequined dress and black sheer elements of Look 47.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a67449da7e4af8c938959/master/pass/00064-valentino-spring-2026-couture-details-credit-brand.jpg|42-54": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black feathered mule shoe with a red sole, and a long garment with intricate black and gold embroidery on a light fabric, trimmed with black fur. Look 49 features the exact same feathered mule shoes, the same embroidered fabric pattern and color, and matching black fur trim on the garment.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a673315ea845896cdaf0a/master/pass/00057-valentino-spring-2026-couture-details-credit-brand.jpg|37-49": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The detail shows a gold metallic long-sleeved top with a cowl neck and crinkled texture. Look 43 features an identical gold metallic long-sleeved dress with the same cowl neck and fabric texture. The model's hair also matches.",
+  "alternates": [
+   {
+    "look_number": 39,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a6746747a5f071eb6e41f/master/pass/00066-valentino-spring-2026-couture-details-credit-brand.jpg|44-56": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The detail shows purple velvet open-toe mules and black sheer polka dot tights, which are perfectly matched by Look 50. The upper garment in the detail also shows black fabric with gold embellishments, consistent with Look 50's top.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a6749e88d1a92eedf45ad/master/pass/00067-valentino-spring-2026-couture-details-credit-brand.jpg|45-57": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact same gold spiky headpiece, white fur stole, and dark green garment as seen in Look 51. The model's hair and facial features also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a674f2cc86222f17ce70c/master/pass/00070-valentino-spring-2026-couture-details-credit-brand.jpg|47-59": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black feathered headpiece with pink accents and a black feathered shrug. Look 53 features the identical headpiece and feathered shrug.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a6746dfdf5c818ab1b18a/master/pass/00065-valentino-spring-2026-couture-details-credit-brand.jpg|43-55": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the gold sequined jacket with diamond pattern, embellished cuffs, and the sheer black dress with gold embroidery and chain-link belt worn in Look 50.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a674fc5fac92e3354462a/master/pass/00068-valentino-spring-2026-couture-details-credit-brand.jpg|45-57": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the pleated metallic gold shoulder piece, long red leather gloves, and pink satin dress of Look 52.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a674e5706bbf1a5ea6e63/master/pass/00069-valentino-spring-2026-couture-details-credit-brand.jpg|46-58": {
+  "look_number": 52,
+  "confidence": 0.95,
+  "evidence": "The flowing, light pink satin-like fabric of the dress in the detail image is an exact match for the dress worn in Look 52. The metallic pink open-toe mule shoe is also consistent with the overall aesthetic, though not perfectly visible in the full look.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a6754dfdf5c818ab1b18c/master/pass/00071-valentino-spring-2026-couture-details-credit-brand.jpg|48-60": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The detail shows a gold embellished choker and straps, long black gloves, and a teal ruched skirt. Look 54 features an identical gold embellished top, long black gloves, and a matching teal ruched skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a67592dd311a1bbdb3622/master/pass/00074-valentino-spring-2026-couture-details-credit-brand.jpg|50-61": {
+  "look_number": 56,
+  "confidence": 1.0,
+  "evidence": "The detail shows a cream blouse with gold sequin cuffs, a pink draped sash, and a black skirt, all of which are perfectly matched in Look 56.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a6755683d38cf797d4343/master/pass/00073-valentino-spring-2026-couture-details-credit-brand.jpg|49-61": {
+  "look_number": 55,
+  "confidence": 0.95,
+  "evidence": "The detail image perfectly matches the black dress with rose gold metallic floral pattern and ruffled texture, as well as the opaque black hosiery seen in Look 55. The black shoes are also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a675d15ea845896cdaf0e/master/pass/00076-valentino-spring-2026-couture-details-credit-brand.jpg|52-61": {
+  "look_number": 57,
+  "confidence": 1.0,
+  "evidence": "The detail shows a gold flowing dress with a high slit revealing a black lining and champagne satin open-toe mules, all of which perfectly match Look 57.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a6756cf3ea91c30bd4781/master/pass/00072-valentino-spring-2026-couture-details-credit-brand.jpg|49-61": {
+  "look_number": 55,
+  "confidence": 1.0,
+  "evidence": "The model, black sheer blindfold with gold and pearl embellishments, black top with pink floral lace, and the black and pink metallic floral patterned robe are all identical to Look 55.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a675de228987c962d66fd/master/pass/00075-valentino-spring-2026-couture-details-credit-brand.jpg|51-61": {
+  "look_number": 57,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the gold draped skirt, intricate gold beaded top with cutouts, long gold gloves, and long gold necklace with tassels seen in Look 57.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a6763df76ad743756ef07/master/pass/00078-valentino-spring-2026-couture-details-credit-brand.jpg|53-61": {
+  "look_number": 59,
+  "confidence": 1.0,
+  "evidence": "The model, shimmery pink high-neck top, and the ornate hair accessory with dangling elements are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a6766024d78b585bf75a3/master/pass/00080-valentino-spring-2026-couture-details-credit-brand.jpg|55-61": {
+  "look_number": 60,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a voluminous, metallic gold, heavily pleated and ruffled gown, which perfectly matches the garment worn in Look 60 in terms of color, fabric, texture, and style.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a675f9112ba4b9ed6bc96/master/pass/00077-valentino-spring-2026-couture-details-credit-brand.jpg|52-61": {
+  "look_number": 58,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the jacket and its unique design elements, including the color, ruffled shoulders, deep V-neck, bow, and layered circular peplum, as seen in Look 58.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/697a6765da1f82e87914f49b/master/pass/00079-valentino-spring-2026-couture-details-credit-brand.jpg|54-61": {
+  "look_number": 59,
+  "confidence": 1.0,
+  "evidence": "The detail perfectly matches the shimmery dark pink top with ruched sleeves and buttons, the light pink shawl, and the shimmery pink skirt with intricate dark embroidery and silver embellishments seen in Look 59.",
+  "alternates": []
+ }
+}

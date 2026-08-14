@@ -1,0 +1,5 @@
+run 2026-08-06_00-53-23_IST
+fall-2026-ready-to-wear: scrape=skip match=skip tag=skip
+spring-2026-ready-to-wear: scrape=skip match=fail tag=skip error=Gemini scoring failed after retries: the JSON object must be str, bytes or bytearray, not NoneType
+fall-2025-ready-to-wear: scrape=skip match=skip tag=skip
+spring-2025-ready-to-wear: scrape=skip match=skip tag=skip

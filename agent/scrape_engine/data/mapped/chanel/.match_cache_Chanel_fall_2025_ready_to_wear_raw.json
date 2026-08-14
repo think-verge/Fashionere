@@ -1,0 +1,1740 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d037ea7397d3ca05bcf31a/master/pass/00004-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-7": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, light grey textured jacket, black sheer overlay with structured pockets, and black sheer bow all perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d037e6dd2dca6956dd983e/master/pass/00003-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-7": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The black sheer ruffled tulle skirt, black socks, and black lace-up boots with patent toe and wooden heel are an exact match for Look 1.",
+  "alternates": [
+   {
+    "look_number": 7,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d037e5c9668e1f401331ef/master/pass/00002-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-7": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The black tweed double-breasted jacket/dress with solid black lapels and flap pockets, the silver-toned buttons with dark centers, the sheer black tulle skirt overlay, and the distinctive pearl and camellia necklace are all identical to Look 1. The model's hair and makeup also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d037e7dbe9bcab11698d82/master/pass/00001-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-6": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The model, black tweed jacket with specific buttons and textured lapels, and the distinctive necklace are all identical to Look 1.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d037ee248381d41782ed1d/master/pass/00005-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-8": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 2, showing the same light tweed jacket with black sheer organza sleeves and overlay, black bow, and pocket details. The model is also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d037efd13d073e70cf2f1c/master/pass/00007-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-8": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 3, including the cream tweed jacket and skirt, the pearl-embellished collar and buttons, and the distinctive sheer cape with ruffled trim.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d037f6c9668e1f401331f1/master/pass/00009-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-9": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 4's black textured top with scattered sequins, large sheer black bow, sheer shoulder overlay, and the model's distinctive black and white beaded earrings, long straight hair, and eye makeup.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d037f48f39f4c29bb7fef2/master/pass/00010-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-9": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 4, showing the same black short-sleeved dress with a bow, textured fabric, buttons, pockets, sheer black tulle overlay, and tiered tulle skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d037ed8f39f4c29bb7fef0/master/pass/00006-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-8": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "No single candidate look matches all visible elements. The detail shows light grey textured trousers, black sheer tulle, white ribbed socks, and two-tone shoes with a chunky wooden heel. Look 3 matches the shoes and ribbed socks perfectly but has a white skirt and white tulle. Look 2 matches the light grey trousers and black tulle but has different shoes and socks.",
+  "alternates": [
+   {
+    "look_number": 3,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 2,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d037fb44008904b6216538/master/pass/00012-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-10": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The cream tweed dress with sheer white puffy sleeves and full-body overlay, button details, and the model's hair and earrings are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d037fb92d795819a4dd219/master/pass/00011-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-10": {
+  "look_number": 1,
+  "confidence": 0.95,
+  "evidence": "The detail shows a black sheer tulle skirt, patterned black socks, and black patent leather shoes with a gold block heel, all of which perfectly match Look 1.",
+  "alternates": [
+   {
+    "look_number": 2,
+    "confidence": 0.9
+   },
+   {
+    "look_number": 4,
+    "confidence": 0.9
+   },
+   {
+    "look_number": 7,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d037f3e8e434c2daa52dbc/master/pass/00008-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-9": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the two-tone black patent and cream textured shoes with ribbon laces, and the cream patterned 'Chanel' socks worn by the model in Look 3. The sheer white skirt hem is also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d037fb248381d41782ed1f/master/pass/00013-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-10": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 5's cream tweed dress with puffed sleeves, the sheer white floor-length overlay with tiered ruffles, and the black and white shoes.",
+  "alternates": [
+   {
+    "look_number": 3,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03803b5b95a19e8fd3d54/master/pass/00014-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-11": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 6, including the model's hair, facial features, tattoo, the pink tweed top and shorts, the sheer overlay skirt, the pink handbag, and the necklace.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03803b5b95a19e8fd3d52/master/pass/00015-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-11": {
+  "look_number": 6,
+  "confidence": 0.9,
+  "evidence": "The detail image shows a pink tweed garment under a sheer pink tulle overlay, which perfectly matches the pink tweed top/shorts and pink tulle skirt in Look 6. The dark boots are also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038017397d3ca05bcf31c/master/pass/00016-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-11": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a pink tweed garment with a sheer pink tulle skirt, a pink tweed handbag, black patent leather shoes with a wooden heel, and black patterned hosiery. Look 6 matches all these elements perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038058f39f4c29bb7fef4/master/pass/00017-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-12": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The black tweed jacket with its specific buttons and collar, the pearl and camellia choker necklace, the mismatched pearl and floral earrings, and the model's hair and makeup are all identical to Look 7.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038084abb50b888f39fad/master/pass/00018-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-12": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The model, black tweed jacket with specific buttons and beaded trim, sheer black skirt, and choker necklace are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0380a98006064650d0620/master/pass/00019-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-12": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 7 in the black textured jacket with ruffled peplum, the black short skirt with long sheer black tulle overlay, the sheer black hosiery, and the black patent Mary Jane shoes with black sparkly socks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0380dfe5890841e821bdc/master/pass/00021-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-13": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The multi-colored tweed jacket with sequins, the distinct multi-colored ruffled collar, the black sheer bow, and the sheer black sleeves are identical. The model's hair and makeup also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0380f017b59c267b32cd5/master/pass/00022-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-13": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a multi-colored tweed jacket/dress with sheer black ruffled sleeves and a sheer black ruffled underskirt. Look 8 perfectly matches this garment in tweed pattern, color, sleeve style, and underskirt design.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0380a248381d41782ed21/master/pass/00020-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|1-13": {
+  "look_number": 1,
+  "confidence": 0.98,
+  "evidence": "Exact match for black sheer pleated skirt, patterned sheer socks with bows, and black patent leather shoes with gold block heel.",
+  "alternates": [
+   {
+    "look_number": 4,
+    "confidence": 0.98
+   },
+   {
+    "look_number": 7,
+    "confidence": 0.98
+   },
+   {
+    "look_number": 8,
+    "confidence": 0.98
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03812a4f77398a9776859/master/pass/00023-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The multi-colored tweed jacket and skirt, sheer black tulle sleeves with ruffled cuffs, and black bow tie collar perfectly match Look 8.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03812e9cd02455799377e/master/pass/00024-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The multi-color tweed dress with black sheer ruffle, black sparkly socks, and black patent Mary Jane shoes with cut-out detail are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038137397d3ca05bcf31e/master/pass/00025-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black patent leather shoe with a pointed toe, gold block heel, and black ribbon/chain detail, paired with black sheer patterned ankle socks. Look 8 features the exact same shoe and socks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03817fd8dfadc6f711351/master/pass/00026-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|3-15": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 9, including the black textured top with bow and sheer sleeves, matching shorts, sheer overlay, handbag, and jewelry.",
+  "alternates": [
+   {
+    "look_number": 4,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03819e416700a6b64f0af/master/pass/00028-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|3-15": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 9, including the black textured top with ruffled collar and buttons, matching shorts, sheer black organza overlay, black patent Mary Jane shoes with socks, and the small black textured handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03819bb02246375cf02d8/master/pass/00027-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|3-15": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail image's unique black textured handbag with gold logo, sheer ruffled sleeves, and layered sheer black skirt are all perfectly matched in Look 9.",
+  "alternates": [
+   {
+    "look_number": 4,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0381fec1dfa969f878933/master/pass/00030-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|4-16": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black tweed jacket with three silver buttons on the cuff and a small black patent quilted bag with gold hardware. Look 10 features the exact same jacket with identical cuff buttons and the identical small black patent quilted bag, carried in the same manner. The bare legs are also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0382292d795819a4dd21b/master/pass/00032-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|5-17": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 11, including the black double-breasted tweed jacket, matching black skirt, and the distinctive white ruffled floral collar. The model's hair and makeup are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0381dd13d073e70cf2f1e/master/pass/00029-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|4-16": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The model, black sparkly tweed long-sleeved jacket/dress, ruffled collar, black bow, three distinctive buttons, and small black handbag are identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 4,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0381fe8e434c2daa52dbe/master/pass/00031-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|4-16": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 11, featuring the identical black tweed double-breasted jacket with matching buttons and the distinctive white ruffled collar. The model's hair is also consistent.",
+  "alternates": [
+   {
+    "look_number": 12,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 13,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 7,
+    "confidence": 0.5
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03825dbe9bcab11698d84/master/pass/00034-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|5-17": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The model's hair, the cream tweed jacket, the ruffled collar, the specific buttons, and the chunky pearl and crystal necklace with the 'CC' logo are all identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0382a248381d41782ed23/master/pass/00037-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|6-18": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The model, white ruffled collar, black sleeveless tweed dress with pockets, white voluminous sleeve blouse, layered pearl and gold necklaces, and black embellished clutch are all identical to Look 13.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03828e9cd024557993780/master/pass/00035-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|6-18": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 12, including the cream tweed jacket and shorts, the ruffled collar, the distinctive gold and pearl necklace with large stones, and the small spherical white bag. The model's hair and features are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03823fd8dfadc6f711353/master/pass/00033-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|5-17": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The white slingback shoe with a black cap toe, white block heel, and distinctive white ruffled detail around the ankle and vamp is an exact match.",
+  "alternates": [
+   {
+    "look_number": 17,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03828fd8dfadc6f711355/master/pass/00036-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|6-18": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail shows a cream tweed jacket with specific buttons and a distinctive round cream Chanel bag with a gold chain. Look 12 features the exact same cream tweed jacket, buttons, and the identical round Chanel bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0383079f3d805b71969de/master/pass/00038-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|7-19": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The white blouse with gathered cuffs, the black textured garment, and the distinctive black handbag with white pearl embellishments and gold clasp are all identical to Look 13.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038305243fdb1c6b57678/master/pass/00040-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|7-19": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The black knit dress, white floral collar, gold bow necklace, gold cuff bracelet, and black textured bag are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03838fd8dfadc6f711357/master/pass/00042-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|8-20": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 15's black and white tweed jacket, the distinctive black ruffled collar with pearl and gold trim, the short pearl and gold necklace, the large gold earrings, and the model's hair and makeup.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038320829597bc9e7cecf/master/pass/00041-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|8-20": {
+  "look_number": 11,
+  "confidence": 0.9,
+  "evidence": "The black textured jacket and the distinctive white ruffled collar in Look 11 perfectly match the visible garment and collar in the detail image.",
+  "alternates": [
+   {
+    "look_number": 14,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03839dbe9bcab11698d86/master/pass/00043-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|9-21": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black and white tweed jacket with ruffled black collar and trim, and the gold-toned chunky necklace worn in Look 15.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0382de16191d4ff70774c/master/pass/00039-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|7-19": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 14, featuring the same black sweater dress with large white floral embellishments, the distinctive bow necklace, and the model's hair and skin tone.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03842e16191d4ff70774e/master/pass/00045-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|9-21": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 16, showing the same blue tweed dress with black ruffled collar and sleeves, identical sunglasses, and earrings.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0383a79f3d805b71969e0/master/pass/00044-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|9-21": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The black and white tweed jacket and matching wide-leg pants, including the ruffled trim on the jacket, are identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03843fd8dfadc6f711359/master/pass/00046-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|10-22": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The blue tweed dress with black ruffles, gold cuff bracelets, black quilted bag, sunglasses, and model's features (skin tone, short hair) are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03846c6a90a5bfc5f8424/master/pass/00048-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|10-22": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 16 in terms of the blue and black tweed dress with ruffled trim, the black quilted bucket bag with chain strap, the black and white sneakers with ruffled ankle trim, and the gold cuff bracelet.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0384efd8dfadc6f71135b/master/pass/00050-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|11-23": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 17, showing the same multi-color tweed garment, white ruffled trim, the exact white quilted vanity case bag, and the identical multi-strand pearl and red bead necklace/bracelet.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0384c98006064650d0622/master/pass/00049-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|11-23": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The dress, including its multi-colored tweed fabric, white ruffled collar, cuffs, and hem, is identical. The long pearl and red bead necklace, the pearl and gold bracelets, and the small white quilted bag are also an exact match. The model's hair and makeup are consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038410829597bc9e7ced1/master/pass/00047-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|10-22": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The blue tweed dress with black ruffled trim, the gold Chanel cuff bracelet, and the black quilted chain bag are identical in both the detail and Look 16.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03852bb02246375cf02da/master/pass/00052-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|12-24": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 18, including the distinctive colorful patterned blouse, the red and blue tweed wide-leg trousers, the layered pearl and red bead necklaces, and the small burgundy handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03856e9cd024557993782/master/pass/00054-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|12-24": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 19, including the model, hair, earrings, multi-strand pearl and red bead necklaces, the short-sleeved top and matching pants with the distinctive colorful abstract plaid pattern, and the small gold cross-body bag.",
+  "alternates": [
+   {
+    "look_number": 18,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0384d5243fdb1c6b5767a/master/pass/00051-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|11-23": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, patterned long-sleeved top, multi-colored tweed bottom, and all pearl and red bead necklaces (including the Chanel logo charm) are identical to Look 18.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03854bb02246375cf02dc/master/pass/00053-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|12-24": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 18's multi-colored patterned top with pearl-embellished ruffled cuffs, the multi-colored tweed pants, the deep burgundy patent leather quilted bag, and the multi-strand pearl and red bead necklaces.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0385f22bb0fa720e8eb5c/master/pass/00057-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|13-25": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The model, blue corduroy jacket, matching undergarment, layered necklaces, and earrings are identical in both the detail and Look 20.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0385e5243fdb1c6b5767c/master/pass/00058-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|14-26": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a blue corduroy jacket and wide-leg pants, black patent leather shoes, a pearl necklace, and a gold belt buckle. Look 20 features the exact same outfit and accessories.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0385dfe5890841e821bde/master/pass/00059-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|14-26": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail shows blue wide-wale corduroy-like pants and black patent leather shoes with a gold/tan block heel, which perfectly match the pants and shoes worn in Look 20.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03858c6a90a5bfc5f8426/master/pass/00055-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|13-25": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the short-sleeved garment's unique plaid pattern, the layered pearl and red/gold bead necklaces, and the tiny gold quilted belt bag worn around the waist in Look 19.",
+  "alternates": [
+   {
+    "look_number": 18,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03858c6a90a5bfc5f8428/master/pass/00056-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|13-25": {
+  "look_number": 16,
+  "confidence": 0.6,
+  "evidence": "Exact match for the black and white Chanel sneakers and consistent dress length. The dress fabric pattern, however, differs from the detail.",
+  "alternates": [
+   {
+    "look_number": 19,
+    "confidence": 0.4
+   },
+   {
+    "look_number": 18,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0386192d795819a4dd21d/master/pass/00060-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|14-26": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the model wearing a two-tone red and pink cable knit sweater/dress with specific white stitching details, and a distinctive layered pearl and pink bead necklace. Look 21 features the exact same model, garment, and jewelry.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038646ad24b065f2ed0d9/master/pass/00061-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|15-27": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a red and pink cable-knit sweater dress with specific long pearl and bead necklaces, and a matching red chain-strap bag. Look 21 features the identical sweater dress, necklaces, and bag, worn by a model with the same hair color and style.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0386498006064650d0624/master/pass/00062-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|15-27": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 21, including the red and pink cable knit dress, the red tweed Chanel bag with gold chain, the pink satin shoes with black cap toe and ruffled ankle, and the long pearl and red bead necklace.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0386898006064650d0626/master/pass/00063-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|15-27": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The red/pink tweed bucket hat, matching tweed jacket with light pink trim and silver buttons, and the chunky pearl necklace are all identical to Look 22.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0386979f3d805b71969e2/master/pass/00064-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|16-28": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The red tweed jacket, skirt, pants, gloves, and small handbag in the detail image are identical in color, fabric, trim, and style to Look 22. The detail image is a full shot of Look 22.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0386a5243fdb1c6b5767e/master/pass/00065-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|16-28": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 22, showing the same red and pink tweed fabric, white braided trim, gold buttons, matching tweed gloves, and identical tweed flap bag with a gold chain strap and Chanel logo.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038705243fdb1c6b57680/master/pass/00066-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|16-28": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The model's hat, sleeveless tweed top, arm warmers, braided choker, heart locket, and earrings are identical in color, fabric, pattern, and style to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03870f6ab05de4ff26da9/master/pass/00067-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|17-29": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The hat, sleeveless tweed vest, and necklace in the detail image are identical to those worn by the model in Look 23. The hair and makeup also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03870c0c038ce5db88c7a/master/pass/00068-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|17-29": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 23, including the cream tweed sleeveless top, matching pants, long gloves, bucket hat, handbag, and gold heart choker necklace. The model's hair and makeup are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038796ad24b065f2ed0db/master/pass/00070-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|18-30": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the dark gold tweed jacket and matching hat with light braided trim, and gold buttons seen in Look 24. The model's hair and makeup are also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03879e16191d4ff707750/master/pass/00071-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|18-30": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The hat, jacket fabric, and braided trim in the detail image perfectly match those worn by the model in Look 24. The model's hair color and style also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0387c9530cdb26dfca639/master/pass/00072-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|18-30": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 24 in terms of the dark gold/bronze textured fabric, the gold braided trim, the gold buttons, the matching hat, and the gloves.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03876a4f77398a977685b/master/pass/00069-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|17-29": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the beige tweed fabric, black and gold trim, gold buttons, and the specific tweed shoulder bag with gold chain and Chanel logo seen in Look 23.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0388144008904b621653a/master/pass/00075-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|19-31": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 25, including the red strapless tweed dress with black trim and chain details, matching long gloves, quilted clutch bag, red bucket hat, and gold choker necklace. The model's hair and makeup are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03885fd8dfadc6f71135d/master/pass/00073-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|19-31": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the jacket from Look 24, including the dark fabric with gold shimmer, the distinctive black and cream braided trim, the gold buttons on the pockets and front, and the dark gloves.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0387efe57c7b03d38b98f/master/pass/00074-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|19-31": {
+  "look_number": 25,
+  "confidence": 0.9,
+  "evidence": "The detail shows a red tweed bucket hat with black and gold chain trim, a strapless red tweed top with matching trim, and red tweed arm warmers, all of which are identical to Look 25. The model's short dark hair also matches. While the necklace pendant differs, the core garments are a perfect match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038850829597bc9e7ced3/master/pass/00076-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|20-32": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 25, including the red strapless tweed dress, matching long gloves, red quilted Chanel bag, red hat, and gold choker necklace with red/gold stones.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0388bfd8dfadc6f71135f/master/pass/00078-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|20-32": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black tweed coat with white and gold braided trim, gold buttons, a matching black hat, and specific gold jewelry. Look 26 features a model wearing an identical long black tweed coat, matching hat, and the same gold necklace and earrings. The model's hair and makeup also match perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0388824ce0b2fa1c375b7/master/pass/00077-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|20-32": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a red quilted Chanel flap bag with a gold CC logo, long red tweed gloves with a black and silver trim, and a red tweed garment. Look 25 features the exact same red quilted Chanel flap bag, the identical long red tweed gloves with the matching black and silver trim, and a red tweed strapless dress that matches the fabric and color of the garment visible in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0388dcc3eee4be379c9f1/master/pass/00080-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|21-33": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The black textured coat with cream and gold braided trim, matching inner dress, model's braided hair, and pearl earrings are identical to Look 27.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0388ddbe9bcab11698d88/master/pass/00079-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|21-33": {
+  "look_number": 26,
+  "confidence": 0.95,
+  "evidence": "The detail shows a dark tweed garment with gold buttons and a distinctive black, white, and gold braided trim, along with a matching small tweed bag with a gold chain strap. Look 26 features a long black tweed coat with identical fabric, buttons, trim, and the exact same bag.",
+  "alternates": [
+   {
+    "look_number": 31,
+    "confidence": 0.85
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03890e416700a6b64f0b1/master/pass/00081-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|21-33": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black sheer lace sock with a dotted pattern and a black patent leather shoe with bows and a distinctive wooden block heel. Look 27 features the exact same hosiery and shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03893a8f250c7f82911b0/master/pass/00082-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|22-34": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the model on the right in Look 28, including the black and beige knit outfit, all jewelry, the black flower brooch, the cream quilted bag, and the cream ankle boots.",
+  "alternates": [
+   {
+    "look_number": 29,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03892e9cd024557993784/master/pass/00083-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|22-34": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The black dress with cream trim, the cream quilted bag with gold chain, and the cream boots with black cap toe and gold sphere heel are all identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 29,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038946ad24b065f2ed0dd/master/pass/00084-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|23-35": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image shows two models wearing knit dresses with contrasting stripes, pearl necklaces, black and cream bags, and matching ankle boots. Look 28 features these exact two models with identical outfits and accessories.",
+  "alternates": [
+   {
+    "look_number": 29,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0389a248381d41782ed25/master/pass/00086-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|23-35": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The red knit top and pants with pink accents, the layered pearl and gold necklaces, and the red quilted clutch bag are all identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 25,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03897e16191d4ff707752/master/pass/00085-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|23-35": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the model on the left in Look 28, featuring the identical cream knit dress with black trim, black quilted hobo bag with gold chain and CC logo, black boots with a spherical pearl heel, and a gold chain bracelet.",
+  "alternates": [
+   {
+    "look_number": 29,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0389f79f3d805b71969e4/master/pass/00087-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|24-36": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a red knit garment with pink trim and buttons on the cuff, a large red quilted bag, and a long multi-strand pearl necklace with pink accents. Look 30 features all these exact elements: the same red knit top with pink trim and buttons, the identical red quilted bag, and the matching pearl necklace.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0389cfe57c7b03d38b991/master/pass/00088-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|24-36": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The black ribbed jacket with gold buttons and braided trim, gold CC earrings, gold necklace, and the model's short natural hair are identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 26,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 27,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038a1fd8dfadc6f711361/master/pass/00090-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|25-37": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black ribbed pant and a black jacket cuff with distinctive trim, along with a highly embellished black velvet bag with a gold chain. Look 31 features the exact same black ribbed pants, the same jacket with matching cuff trim, and the identical embellished black velvet bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0389e3d9bd3422256ec96/master/pass/00089-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|24-36": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The jacket, pants, white top, gold necklace, gold earrings, and embellished black bag are identical in both the detail and look 31. The model, hair, and makeup are also the same.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038a4c0c038ce5db88c7c/master/pass/00091-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|25-37": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black patent leather-like garment with a large cape collar and a prominent black satin bow at the neck, along with a chunky pearl and crystal necklace. Look 32 features the exact same garment, bow, and necklace, worn by a model with matching hair and makeup.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038a4f6ab05de4ff26dab/master/pass/00092-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|25-37": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 32, including the black patent leather-like jacket with cape collar and ribbon ties, matching shiny pants, quilted black bag with gold chain, and the model's jewelry and hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038a92073724fb97ca471/master/pass/00094-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|26-38": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The tweed jacket with ribbon details, black tiered skirt, black ribbon headwear, and small black bag are identical in Look 33 to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038ab017b59c267b32cd7/master/pass/00095-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|26-38": {
+  "look_number": 33,
+  "confidence": 0.95,
+  "evidence": "The detail shows a black and white tweed jacket with black trim and a black ruffled skirt, along with a small tweed handbag. Look 33 features the identical tweed jacket and black ruffled skirt. The bag carried in Look 33 is also a small, structured black bag consistent with the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038b15243fdb1c6b57682/master/pass/00098-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|27-39": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The white woven bag with gold chain and black bow, along with the sheer black garment, perfectly matches Look 34.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038acdbe9bcab11698d8a/master/pass/00096-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|27-39": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The model, sheer black puff-sleeve top with multiple bows, sheer black trousers with waist chain, white woven bag with chain and black ribbon, and hair accessories are identical to Look 34.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038a6c9668e1f401331f3/master/pass/00093-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|26-38": {
+  "look_number": 32,
+  "confidence": 0.95,
+  "evidence": "The detail shows a black velvet sleeve with a satin bow, a shiny black top with a gathered waist, shiny black pants, and a black quilted velvet bag with a large satin bow and gold Chanel logo. Look 32 features a black shiny top with a gathered waist and matching shiny pants, and a black quilted bag. The shiny material and gathered waist are identical, and the bag is consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038ad3d9bd3422256ec98/master/pass/00097-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|27-39": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The sheer black top with puffed sleeves and multiple satin bows, the sheer black trousers, the delicate waist chain, and the small woven bag with a chain and black ribbon are all identical to Look 34.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038b19530cdb26dfca63b/master/pass/00099-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|28-40": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The model's sheer black button-down top with a large black bow at the neck, gold chain necklace, and small gold earrings perfectly match those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038b3c0c038ce5db88c7e/master/pass/00100-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|28-40": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The sheer black button-down top with a large neck bow, chest pockets, elasticated cuffs, drawstring hem, and the black quilted chain bag are identical in both the detail and Look 35. The model's hair and makeup also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038b9c0c038ce5db88c80/master/pass/00101-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|28-40": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The black quilted bow bag with gold CC logo and chain, the black ruffled boots, and the black sheer ruffled garment hem all perfectly match Look 35.",
+  "alternates": [
+   {
+    "look_number": 37,
+    "confidence": 0.95
+   },
+   {
+    "look_number": 38,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038b8e416700a6b64f0b3/master/pass/00102-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|29-41": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 36, including the model, the black shiny patent-leather-like top, the large black satin bow with a silver clasp, the silver buttons, the sparkly high-neck underlayer, and the black headband.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038c05d6a4aa6e22aeb02/master/pass/00106-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|30-42": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The model's cornrow hairstyle, black rectangular sunglasses with Chanel logo, black and white floral earrings, and the black satin-like cape top with a large bow and decorative buttons are all identical to Look 39.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038bd57d7546823252c38/master/pass/00104-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|29-41": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black sheer dress with gathered hem, the black bow-shaped bag with gold CC logo, and the black knee-high boots with patent toe cap worn in Look 35.",
+  "alternates": [
+   {
+    "look_number": 37,
+    "confidence": 0.9
+   },
+   {
+    "look_number": 38,
+    "confidence": 0.3
+   },
+   {
+    "look_number": 39,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038b9e416700a6b64f0b5/master/pass/00103-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|29-41": {
+  "look_number": 36,
+  "confidence": 0.8,
+  "evidence": "Exact match for the black quilted bucket bag with chain strap and CC logo, and the black patent-like material of the garment. The specific ruffled ankle boots from the detail are not present in any candidate look.",
+  "alternates": [
+   {
+    "look_number": 32,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038c1dbe9bcab11698d8c/master/pass/00107-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|30-42": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The model, braided hair, sunglasses, earrings, black cape with large bow, and the black garment underneath with silver buttons and horizontal trim are all identical to Look 39.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038bfa4f77398a977685d/master/pass/00105-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|30-42": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black puffy velvet-like garment with a bow on the sleeve, a large black quilted velvet tote bag with a gold chain and CC logo, and black high-heeled boots with a patent toe. All these elements are perfectly matched in Look 38.",
+  "alternates": [
+   {
+    "look_number": 37,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038c46ad24b065f2ed0df/master/pass/00108-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|31-43": {
+  "look_number": 39,
+  "confidence": 0.98,
+  "evidence": "The detail shows a black satin-like cape with a wide trim and a distinctive multi-strand bracelet with an ornate clasp. Look 39 features an identical cape and the same unique bracelet on the model's wrist.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038c6fe57c7b03d38b993/master/pass/00110-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|31-43": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The dress, including its velvet-like fabric, large embellished bow, and trim details on the neckline, cuffs, and pockets, is identical. The small beaded handbag, model's hair, headband, and makeup also match perfectly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038cc230147c1921c862c/master/pass/00112-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|32-44": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black velvet-like mini-dress with white trim, the distinctive black sequined flap bag with white trim and gold CC logo, and the black knee-high boots with ruffled tops seen in Look 40.",
+  "alternates": [
+   {
+    "look_number": 35,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 37,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 38,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038cae416700a6b64f0b7/master/pass/00111-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|32-44": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black beaded bag with white trim, the black textured dress with white beaded trim, and the black ruffled boots with a bow from Look 40.",
+  "alternates": [
+   {
+    "look_number": 35,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 37,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 38,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038c55243fdb1c6b57684/master/pass/00109-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|31-43": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The boots in Look 33 are identical to the detail image, featuring the same black leather, block heel with gold logo, patent toe, ruffled trim, and ribbon bow with charm.",
+  "alternates": [
+   {
+    "look_number": 35,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 37,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 38,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038cce416700a6b64f0b9/master/pass/00113-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|32-44": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The model, hat, earrings, multi-strand pearl necklace, and the sleeveless shiny black top with ruffled collar and large bow are an exact match.",
+  "alternates": [
+   {
+    "look_number": 43,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038d224ce0b2fa1c375b9/master/pass/00115-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|33-45": {
+  "look_number": 41,
+  "confidence": 0.9,
+  "evidence": "The shiny black patent-like pants with voluminous cascading ruffles are an exact match. The shoes in the detail differ from those worn in Look 41.",
+  "alternates": [
+   {
+    "look_number": 43,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038d4fd8dfadc6f711363/master/pass/00116-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|33-45": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black patent leather-like trench coat with a ruffled collar, distinctive buttons, and a quilted Chanel flap bag. Look 42 features the identical trench coat, buttons, and bag, worn by a model with consistent hair and makeup.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038d9aceee3e9c798e0a7/master/pass/00117-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|34-46": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black patent leather trench coat with a belt and buttons, and a black quilted Chanel clutch bag. Look 42 features the identical trench coat and the identical quilted Chanel clutch bag.",
+  "alternates": [
+   {
+    "look_number": 36,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 41,
+    "confidence": 0.5
+   },
+   {
+    "look_number": 43,
+    "confidence": 0.5
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038dbcc3eee4be379c9f3/master/pass/00118-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|34-46": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 43, including the wide-brimmed hat, the shiny black patent leather jacket with ruffled sleeves, the sparkly high-neck top with buttons, the shiny black patent leather pants, and the circular buckle details on the jacket and pants.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038d2c99b75d535170ef2/master/pass/00114-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|33-45": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The detail shows black shiny ruffled pants and chunky heeled boots, which perfectly match Look 41.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038dbe7f1df59ae4a9b01/master/pass/00119-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|34-46": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive black slingback shoe with ruched detail, block heel, and Chanel logo from the detail image is not present in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038de22bb0fa720e8eb5e/master/pass/00120-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|35-47": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 44, including the black knitted sweater with the large pink bow, the black knitted skirt with button details, and the distinctive large pearl necklace worn across the body. The model's hair and general appearance are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038e3e8e434c2daa52dc0/master/pass/00121-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|35-47": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 44, including the black knitted sweater with a large light-colored bow, the black knitted skirt with cut-out bow details and pockets, and the distinctive large pearl necklace worn diagonally.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038e2248381d41782ed27/master/pass/00122-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|35-47": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail shows a dark knitted sweater and skirt with a unique pearl and chain accessory draped across the back. Look 44 features the identical dark knitted sweater, matching skirt, and the exact same pearl and chain accessory.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038e9248381d41782ed29/master/pass/00124-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|36-48": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The model, black knit dress with the distinctive white bow neckline, and the black quilted clutch bag are identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038e8e16191d4ff707754/master/pass/00125-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|36-48": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The black knit dress with the distinctive white ribbon detail on the neckline and the large black quilted clutch with the silver CC logo are identical in both the detail and Look 45.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038e3c9668e1f401331f5/master/pass/00123-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|36-48": {
+  "look_number": 44,
+  "confidence": 0.8,
+  "evidence": "The black knit skirt with cut-out bows and white trim perfectly matches Look 44. However, the shoes in the detail image are different from those worn in Look 44.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038ea44008904b621653c/master/pass/00126-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|37-49": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The model, hair, earrings, and the black and white abstract patterned strapless dress with front buttons are identical to Look 46.",
+  "alternates": [
+   {
+    "look_number": 47,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038ed0829597bc9e7ced5/master/pass/00127-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|37-49": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The model, dress, pattern, buttons, shoulder straps, handbag, and shoes are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038efc99b75d535170ef4/master/pass/00129-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|38-50": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, earrings, and the black and white patterned strapless dress with front buttons and shoulder bows are identical to Look 47.",
+  "alternates": [
+   {
+    "look_number": 46,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038eeaceee3e9c798e0a9/master/pass/00128-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|38-50": {
+  "look_number": 46,
+  "confidence": 0.98,
+  "evidence": "The detail image shows a black and white abstract patterned dress and a small black quilted Chanel bag with gold hardware and a long black ribbon strap. Look 46 features the identical dress pattern and the exact same bag, including the specific strap details. The model's skin tone also matches.",
+  "alternates": [
+   {
+    "look_number": 47,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 48,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038f2e7f1df59ae4a9b03/master/pass/00130-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|38-50": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The dress in the detail image is identical to Look 47, featuring the same black and white abstract pattern, strapless design with black bows on the shoulders, front buttons, and ruffled high-low skirt. The model's hair and makeup also match perfectly.",
+  "alternates": [
+   {
+    "look_number": 46,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 48,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038f357d7546823252c3a/master/pass/00131-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|39-51": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact same off-the-shoulder dress with the distinctive black, white, and grey abstract pattern, bodice buttons, ruffled high-low hem, and black boots as seen in Look 47.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038fa7983cd98924bbd1c/master/pass/00133-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|39-51": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 48's halter neck top with black satin bow, black and white abstract pattern, black ribbon trim, model's hair, makeup, and long dangling earrings.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038f83876462102be3c27/master/pass/00134-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|40-52": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the exact same black and white tiered halter-neck top and matching tiered wide-leg pants with the distinctive abstract ribbon pattern, black satin ribbon trim, and black ankle boots as seen in Look 48.",
+  "alternates": [
+   {
+    "look_number": 46,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 47,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038f3fe57c7b03d38b995/master/pass/00132-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|39-51": {
+  "look_number": null,
+  "confidence": 0.1,
+  "evidence": "The distinctive pearl-heeled ankle boots in the detail image do not appear in any candidate look. While the black and white abstract pattern of the garment matches looks 46, 47, and 48, the shoe mismatch prevents a confident identification.",
+  "alternates": [
+   {
+    "look_number": 48,
+    "confidence": 0.2
+   },
+   {
+    "look_number": 46,
+    "confidence": 0.15
+   },
+   {
+    "look_number": 47,
+    "confidence": 0.15
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038fde8e434c2daa52dc2/master/pass/00136-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|40-52": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black leather boots with the distinctive pearl Chanel logo heel and the black and white swirling patterned dress with a black cuff seen in Look 47.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038ff230147c1921c862e/master/pass/00137-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|41-53": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 49's dark washed denim vest and jeans with sheer overlay, the large quilted dark bag with gold chain and Chanel logo, and the gold chain bracelet.",
+  "alternates": [
+   {
+    "look_number": 51,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 52,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03905a4f77398a977685f/master/pass/00140-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|42-54": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The sleeveless dark denim-like dress with patch pockets and sheer ruffled hem, the quilted dark bag with gold chain, and the gold cuff bracelet are all identical to Look 51.",
+  "alternates": [
+   {
+    "look_number": 49,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 52,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d039003d9bd3422256ec9a/master/pass/00138-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|41-53": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 50, showing the same model, denim shirt and jeans with a fade effect, layered necklaces including a cross pendant, and quilted denim bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0390292d795819a4dd21f/master/pass/00139-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|41-53": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a quilted denim bag, light blue denim pants fading to white, a sheer white blouse, and black patent leather shoes with a block heel. Look 50 features all these exact items.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03906fe5890841e821be0/master/pass/00141-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|42-54": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 51's dark denim-like sleeveless dress with a ruffled skirt, the quilted dark bag with gold hardware and chain strap, and the two wide gold cuffs on the wrists.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0390ae7f1df59ae4a9b05/master/pass/00142-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|42-54": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The model's hair, makeup, the grey/white/black melange knit dress, the large black sheer bow, the long pearl necklace with charms, and the small brooch are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038f98f39f4c29bb7fef6/master/pass/00135-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|40-52": {
+  "look_number": 47,
+  "confidence": 0.6,
+  "evidence": "The black and white abstract pattern and black trim on the flowing garment in the detail image perfectly match Look 47's dress. However, the distinctive pearl-heeled boot is not visible in Look 47.",
+  "alternates": [
+   {
+    "look_number": 46,
+    "confidence": 0.5
+   },
+   {
+    "look_number": 48,
+    "confidence": 0.5
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03912a4f77398a9776861/master/pass/00146-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|44-56": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 53, featuring the same model, hair, makeup, black tweed jacket with colorful sequins, matching tweed skirt, and wrist cuffs.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0390b57d7546823252c3c/master/pass/00143-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|43-55": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 52, including the gradient knit sweater dress, the black sheer bow, the long pearl necklace, the dark bag, and the model's hair and makeup.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03913fe57c7b03d38b997/master/pass/00147-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|44-56": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 53, showing the same black tweed jacket and skirt with colorful flecks, the sequined top underneath, and the identical silver-toned cuff bracelet.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0390ecc3eee4be379c9f5/master/pass/00145-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|43-55": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive ruffled ankle boots with a block heel and the specific Chanel flap bag with a gold chain and CC logo are not present in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0390c7983cd98924bbd1e/master/pass/00144-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|43-55": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a grey and white gradient knit dress, a large dark quilted bag with a gold and red chain strap and CC logo, black ankle boots with a block heel and textured trim, and a delicate gold chain necklace. Look 52 features all of these exact items.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03914fe57c7b03d38b999/master/pass/00148-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|44-56": {
+  "look_number": 53,
+  "confidence": 0.95,
+  "evidence": "The black tweed fabric with colorful flecks on the garment in the detail image perfectly matches the skirt fabric in Look 53. The black ruffled slingback shoe with a cap-toe and logo is consistent with the footwear in Look 53.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03918e7f1df59ae4a9b07/master/pass/00150-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|45-57": {
+  "look_number": 54,
+  "confidence": 0.9,
+  "evidence": "The detail image features an identical pink tweed jacket with embellishments, pearl belt, tiny silver bag, and two-tone shoes as Look 54. The only discrepancy is that the detail shows a long pink tweed skirt, while Look 54 has matching wide-leg pants.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d039193d9bd3422256ec9c/master/pass/00149-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|45-57": {
+  "look_number": 54,
+  "confidence": 0.9,
+  "evidence": "The pink tweed jacket, large sequined necklace, and delicate chain belt are identical to Look 54. The model's hair color and the small metallic bag also match. The detail shows a skirt, while Look 54 features pants.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0391e22bb0fa720e8eb60/master/pass/00152-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|46-58": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The detail shows a pink tweed garment with a gold button on the sleeve, a gold chain belt with charms, and a small silver quilted handbag. Look 54 features a pink tweed jacket and pants made of the identical fabric, the exact same gold chain belt, and the identical silver quilted handbag. The pants in Look 54 also have a ruffled hem consistent with the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d039216ad24b065f2ed0e1/master/pass/00154-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|46-58": {
+  "look_number": 55,
+  "confidence": 1.0,
+  "evidence": "The tweed jacket, unique pearl necklace/belt, pink earrings, bracelet, and cornrow hairstyle are identical in the detail and Look 55.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0391e7983cd98924bbd20/master/pass/00153-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|46-58": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a pink tweed fabric with black flecks and a white slingback shoe with a black cap toe, chunky heel, and ruffled details. Look 54 features a matching pink tweed garment and the identical white and black cap-toe ruffled slingback shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0391cc6a90a5bfc5f842a/master/pass/00151-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|45-57": {
+  "look_number": 54,
+  "confidence": 0.85,
+  "evidence": "The detail image shows an identical pink tweed cropped jacket, gold chain belt, metallic embellished bag, and hair color/style as Look 54. However, the detail image features a ruffled skirt, while Look 54 has wide-leg pants.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03923bb02246375cf02de/master/pass/00155-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|47-59": {
+  "look_number": 55,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 55, including the light pink tweed cropped jacket and wide-leg pants, the large pearl necklace with pink accents, the large pearl body chain/belt, and the pearl earrings.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0392598006064650d0628/master/pass/00156-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|47-59": {
+  "look_number": 55,
+  "confidence": 1.0,
+  "evidence": "The model's braided hair, the exact tweed fabric and color of the jacket and pants, the large pearl and gold chain accessory, and the pink drop earrings are all identical to Look 55.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03929fe5890841e821be2/master/pass/00157-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|47-59": {
+  "look_number": 55,
+  "confidence": 1.0,
+  "evidence": "The tweed jacket and wide-leg pants, the large pearl necklace, the pearl belt with the spherical buckle, the pearl bracelets, and the black shoes with pink toe caps are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0392a248381d41782ed2b/master/pass/00159-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|48-60": {
+  "look_number": 56,
+  "confidence": 1.0,
+  "evidence": "The light pink ruffled dress with its specific texture and tiered design in the detail image perfectly matches the dress worn in Look 56. The model in Look 56 also carries a small white bag, consistent with the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03928a4f77398a9776863/master/pass/00158-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|48-60": {
+  "look_number": 56,
+  "confidence": 1.0,
+  "evidence": "The dress, including its color, ruffled tiers, high collar, cape-like overlay, and three bows on the bodice, is an exact match. The model's hair, makeup, and visible accessories (earrings, small bag) are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03931c99b75d535170ef6/master/pass/00161-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|49-61": {
+  "look_number": 57,
+  "confidence": 1.0,
+  "evidence": "The light green chunky knit sweater dress with the large bow and the distinctive pearl cross-body strap are identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 55,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 52,
+    "confidence": 0.4
+   },
+   {
+    "look_number": 58,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0392ddbe9bcab11698d8e/master/pass/00160-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|48-60": {
+  "look_number": 56,
+  "confidence": 0.9,
+  "evidence": "The light pink, sheer, ruffled dress with multiple tiers is an exact match for Look 56. The shoes in the detail image are different from those worn in the full look.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03931aceee3e9c798e111/master/pass/00163-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|49-61": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "None of the candidate looks feature the cream/off-white ruffled ankle boot with a black cap toe and block heel shown in the detail image. All candidate looks show different footwear.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0392e8f39f4c29bb7fef8/master/pass/00162-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|49-61": {
+  "look_number": 57,
+  "confidence": 1.0,
+  "evidence": "The light green open-knit sweater dress with the distinctive bow detail at the neckline and the unique pearl belt/bag are identical to Look 57.",
+  "alternates": [
+   {
+    "look_number": 55,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03932e7f1df59ae4a9b09/master/pass/00164-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|50-62": {
+  "look_number": 58,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 58, featuring the same model, braided hair, mint green chunky knit sweater and scarf, multi-strand pearl and gold necklace with Chanel charms, and gold stud earrings.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d039360829597bc9e7ced7/master/pass/00165-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|50-62": {
+  "look_number": 58,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 58, including the light green chunky knit cardigan, matching scarf, multi-strand pearl and gold necklace, and the model's braided hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03935a8f250c7f82911b2/master/pass/00166-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|50-62": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail image shows a black slingback shoe with a block heel and distinctive ruched fabric detail. None of the candidate looks feature this specific shoe; models are wearing flats, boots, or other styles of black shoes without the matching features.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03938fd8dfadc6f711365/master/pass/00167-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|51-63": {
+  "look_number": 59,
+  "confidence": 1.0,
+  "evidence": "The model's white collared shirt with a large white bow, the specific multi-strand pearl and pink bead necklaces, matching bracelet, and earrings are identical in both the detail and Look 59.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d039393d9bd3422256ec9e/master/pass/00168-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|51-63": {
+  "look_number": 59,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 59, including the white shirt dress with a large neck bow, the long multi-strand pearl and chain necklace, the pink shoulder bag, the pearl bracelet, and the pink drop earrings.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0393e7983cd98924bbd22/master/pass/00170-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|52-64": {
+  "look_number": 59,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a model with long blonde hair wearing a white shirt and carrying a light pink quilted drawstring bucket bag with a gold chain strap and CC logo. Look 59 features a model with identical long blonde hair, wearing a white shirt dress, and carrying the exact same light pink quilted drawstring bucket bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0393bbb02246375cf02e0/master/pass/00169-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|52-64": {
+  "look_number": 59,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 59, showing the same white shirt dress with a large bow, and identical multi-strand pearl necklaces with gold accents, pink faceted beads, and a Chanel logo charm, along with a matching bracelet. The model's pose holding the necklaces is also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0393f22bb0fa720e8eb62/master/pass/00172-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|53-65": {
+  "look_number": 60,
+  "confidence": 1.0,
+  "evidence": "The model's hair, makeup, white collared shirt with a large bow, white jacket with pocket details, and the distinctive pearl belt with a gold buckle are all identical to Look 60.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0393d0829597bc9e7ced9/master/pass/00171-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|52-64": {
+  "look_number": 59,
+  "confidence": 0.85,
+  "evidence": "The shoe in the detail image features a distinctive white ruffled strap and a black cap toe, which perfectly matches the design elements of the flat shoe worn in Look 59. The model in both images also wears a white garment. The only discrepancy is the heel height, with the detail showing a block heel and Look 59 showing a flat shoe.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03942230147c1921c8630/master/pass/00173-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|53-65": {
+  "look_number": 60,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, white oversized shirt, white bow blouse, white trousers, pearl belt with gold buckle, and spherical pearl bag are all identical to Look 60.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03943e16191d4ff707756/master/pass/00174-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|53-65": {
+  "look_number": 60,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 60, featuring the identical white jacket with gold buttons and pocket logo, the distinctive wide multi-strand pearl belt with an ornate buckle, the spherical pearl bag with a gold handle, and white trousers.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d039423d9bd3422256eca0/master/pass/00175-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|54-66": {
+  "look_number": 60,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 60, including the white jacket, white wide-leg trousers, white shirt with a large bow, woven belt with a gold buckle, spherical bag, and black cap-toe flats.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03948fd8dfadc6f711367/master/pass/00176-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|54-66": {
+  "look_number": 61,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 61, showing the same white collared shirt, large white bow, black lace overlay dress, gold chain belt with pearl embellishments, and black shoulder ribbons. The model's hair and makeup also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03949a4f77398a9776865/master/pass/00177-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|54-66": {
+  "look_number": 61,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 61, including the model's hair and makeup, the white shirt with large bow and black shoulder straps, the black lace dress with its unique pattern, the crystal-embellished belt, and the small spherical bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0394dfd8dfadc6f711369/master/pass/00179-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|55-67": {
+  "look_number": 62,
+  "confidence": 1.0,
+  "evidence": "The model, black chunky knit dress, black knitted scarf with decorative element, and the distinctive cross-shaped necklace and ring are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0395198006064650d062a/master/pass/00181-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|56-68": {
+  "look_number": 63,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 63, including the black fur-trimmed coat with floral appliques and sparkling centers, the high neckline, the belted waist, the model's short brown hair with bangs, and the distinctive earrings.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0394ac0c038ce5db88c82/master/pass/00178-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|55-67": {
+  "look_number": 61,
+  "confidence": 0.9,
+  "evidence": "The black sheer lace-patterned dress and white shirt with cufflink in the detail image perfectly match Look 61. The bag, however, is different in the full look.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03952e8e434c2daa52dc4/master/pass/00182-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|56-68": {
+  "look_number": 63,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black coat with fur cuffs and a sparkly black tweed-like fabric, along with a small black top-handle bag with a gold CC logo. Look 63 features a coat with identical fur cuffs and fabric, and a very similar small black top-handle bag.",
+  "alternates": [
+   {
+    "look_number": 65,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0394d0829597bc9e7cedb/master/pass/00180-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|55-67": {
+  "look_number": 62,
+  "confidence": 0.75,
+  "evidence": "The black chunky knit dress with the distinctive openwork pattern perfectly matches Look 62. However, the shoes in the detail image are black slingback heels with a ruffled front, while Look 62 features black flat shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03956e7f1df59ae4a9b0b/master/pass/00184-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|57-69": {
+  "look_number": 64,
+  "confidence": 1.0,
+  "evidence": "The black long coat with fur trim and sheer lace body, the model's blonde hair, makeup, and gold jewelry (necklace and earrings) are identical in both the detail and look 64.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03953c6a90a5bfc5f842c/master/pass/00183-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|56-68": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The distinctive black boot with the spherical pearl heel and patent leather toe cap from the detail image is not present in any of the candidate looks.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0395dc6a90a5bfc5f842e/master/pass/00188-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|58-70": {
+  "look_number": 65,
+  "confidence": 1.0,
+  "evidence": "The model, the short black lace and fur-trimmed coat, the fur belt, the small black quilted bag, and the gold earrings are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03958e7f1df59ae4a9b0d/master/pass/00186-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|57-69": {
+  "look_number": 64,
+  "confidence": 1.0,
+  "evidence": "The black fur-trimmed lace coat in Look 64 is an exact match for the fur cuff and the underlying lace garment visible in the detail image.",
+  "alternates": [
+   {
+    "look_number": 63,
+    "confidence": 0.2
+   },
+   {
+    "look_number": 65,
+    "confidence": 0.2
+   },
+   {
+    "look_number": 61,
+    "confidence": 0.15
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03957a8f250c7f82911b4/master/pass/00185-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|57-69": {
+  "look_number": 64,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black fur-trimmed coat with sheer lace sleeves and skirt, a black belt, and a small black quilted bag. Look 64 perfectly matches all these elements, including the specific lace pattern and the model's hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0395a248381d41782ed2d/master/pass/00187-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|58-70": {
+  "look_number": 65,
+  "confidence": 1.0,
+  "evidence": "The model, her cornrow hairstyle, the gold square earrings with CC logo, and the black fur-trimmed patterned coat are identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 64,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0395ef6ab05de4ff26dad/master/pass/00190-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|59-71": {
+  "look_number": 66,
+  "confidence": 1.0,
+  "evidence": "The model, black double-breasted coat with high collar, puffed shoulders, and ornate black buttons, and the gold earrings are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03962fe5890841e821be4/master/pass/00191-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|59-71": {
+  "look_number": 66,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black shiny coat, black leather gloves, and a distinctive round black CHANEL bag with a gold chain. Look 66 features all these exact items.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0395c57d7546823252c3e/master/pass/00189-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|58-70": {
+  "look_number": 58,
+  "confidence": 1.0,
+  "evidence": "The black slingback shoe with a chunky block heel and ruched fabric detail around the ankle and over the foot perfectly matches the shoes worn in Look 58.",
+  "alternates": [
+   {
+    "look_number": 62,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 65,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03961c0c038ce5db88c84/master/pass/00192-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|59-71": {
+  "look_number": 67,
+  "confidence": 1.0,
+  "evidence": "The model's hair, makeup, and the distinctive white ruffled high-neck blouse with long dangling earrings are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03965c6a90a5bfc5f8430/master/pass/00194-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|60-71": {
+  "look_number": 67,
+  "confidence": 1.0,
+  "evidence": "The detail shows a white satin-like blouse with sheer ruffled cuffs and a unique pearl sphere handbag with a gold handle. Look 67 features the exact same blouse with matching ruffled cuffs and fabric, white satin-like trousers, and the identical pearl sphere handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d039627983cd98924bbd24/master/pass/00193-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|60-71": {
+  "look_number": 67,
+  "confidence": 1.0,
+  "evidence": "The blouse, including its ruffles, volume, and elasticated cuffs/hem, is an exact match. The model's hair, makeup, and the unique spherical metallic bag are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03967c0c038ce5db88c86/master/pass/00196-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|61-71": {
+  "look_number": 68,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, cream ruffled jacket with black bow, black inner garment with bows, black patterned skirt, small black chain bag, and large ornate earrings are all identical to Look 68.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0396798006064650d062c/master/pass/00195-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|60-71": {
+  "look_number": 67,
+  "confidence": 1.0,
+  "evidence": "The cream and black toe-cap boots with the distinctive spherical Chanel heel are an exact match. Additionally, the cream garment with a black band at the hem visible in the detail perfectly matches the pants worn in Look 67.",
+  "alternates": [
+   {
+    "look_number": 69,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 70,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0396a7983cd98924bbd26/master/pass/00197-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|61-71": {
+  "look_number": 68,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 68, including the long blonde wavy hair, the white ruffled blouse with textured fabric and black ribbon, the black textured skirt/pants, and the distinctive black rectangular clutch bag embellished with large crystals and pearls.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0396c5d6a4aa6e22aeb04/master/pass/00199-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|62-71": {
+  "look_number": 69,
+  "confidence": 1.0,
+  "evidence": "The detail shows a cream-colored satin-like coat with distinctive black buttons and a unique spherical pearl bag with a gold handle. Look 69 features the exact same coat, buttons, and spherical pearl bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0396dcc3eee4be379c9f7/master/pass/00198-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|61-71": {
+  "look_number": 69,
+  "confidence": 1.0,
+  "evidence": "The cream coat with black velvet collar, black buttons, patch pockets, long slits, cream and black toe boots, spherical pearl-like bag with ribbon, and layered necklaces are all identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0396e24ce0b2fa1c375bb/master/pass/00200-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|62-71": {
+  "look_number": 69,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the cream-colored boots with black cap toe and spherical heel, as well as the flowing cream coat with long slits seen in Look 69.",
+  "alternates": [
+   {
+    "look_number": 67,
+    "confidence": 0.9
+   },
+   {
+    "look_number": 70,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03972f6ab05de4ff26daf/master/pass/00201-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|62-71": {
+  "look_number": 70,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 70, showing the same white long-sleeved top, large black satin bow, and multi-strand pearl belt with an ornate buckle. The model's hair and general appearance are also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d039736ad24b065f2ed0e3/master/pass/00203-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|63-71": {
+  "look_number": 70,
+  "confidence": 1.0,
+  "evidence": "The detail shows a white flowing garment with a distinctive pearl and gold belt and a gold ring. Look 70 features the exact same white garment, the identical pearl and gold belt, and a matching gold ring on the right hand.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0397557d7546823252c40/master/pass/00202-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|63-71": {
+  "look_number": 70,
+  "confidence": 1.0,
+  "evidence": "The white flowy dress with wide sleeves, the large black bow at the neck, and the distinctive pearl-like belt with a gold floral buckle are all identical in both the detail and Look 70.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03978f6ab05de4ff26db1/master/pass/00205-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|64-71": {
+  "look_number": 71,
+  "confidence": 1.0,
+  "evidence": "The model, one-shoulder black top with bow and side eyelets, and the distinctive silver chain belt with ornate buckle are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03979c99b75d535170ef8/master/pass/00204-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|63-71": {
+  "look_number": 67,
+  "confidence": 0.8,
+  "evidence": "The cream wide-leg trousers with black trim perfectly match Look 67. The shoe shares the cream and black cap-toe design but is a pump with a spherical pearl heel, whereas Look 67 features a boot with a block heel.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0397e7983cd98924bbd28/master/pass/00207-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|64-71": {
+  "look_number": 71,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black garment with layered ribbon-like ruffles, a silver charm bracelet, and a small black square Chanel bag with a gold chain. Look 71 features all these exact elements: the black ruffled skirt, the matching silver bracelet, and the identical black square Chanel bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0397f24ce0b2fa1c375bd/master/pass/00208-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|65-71": {
+  "look_number": 71,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black boot with a pearl-like spherical heel featuring a black logo, a glossy black toe cap, and a black garment with numerous satin ribbons. Look 71 features the exact same distinctive boots and a skirt with identical black satin ribbon detailing.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0397b248381d41782ed2f/master/pass/00206-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|64-71": {
+  "look_number": 71,
+  "confidence": 1.0,
+  "evidence": "The detail image is an exact match for Look 71, including the one-shoulder top, ruffled skirt, gold chain belt, black ankle boots, small black bag, and jewelry.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038f3fe57c7b03d38b995/master/pass/00132-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|47-48": {
+  "look_number": 47,
+  "confidence": 0.95,
+  "evidence": "The unique spherical-heeled boots with patent toe caps and the specific black and white abstract pattern on the flowing fabric perfectly match Look 47.",
+  "alternates": [
+   {
+    "look_number": 48,
+    "confidence": 0.85
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03858c6a90a5bfc5f8428/master/pass/00056-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|19-20": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The unique patterned garment and the black Chanel sneakers with white accents are an exact match to Look 19.",
+  "alternates": [
+   {
+    "look_number": 20,
+    "confidence": 0.0
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038dbe7f1df59ae4a9b01/master/pass/00119-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|43-44": {
+  "look_number": 43,
+  "confidence": 0.95,
+  "evidence": "The black shiny trousers in Look 43 are an exact match in material, color, and cut to those in the detail image. The black shoes are also consistent.",
+  "alternates": [
+   {
+    "look_number": 44,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038fde8e434c2daa52dc2/master/pass/00136-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|48-49": {
+  "look_number": 48,
+  "confidence": 0.98,
+  "evidence": "The black and white patterned trousers with the black cuff, and the distinctive black leather boots with the pearl and Chanel logo heel, are an exact match to Look 48.",
+  "alternates": [
+   {
+    "look_number": 49,
+    "confidence": 0.01
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67d0390ecc3eee4be379c9f5/master/pass/00145-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|52-53": {
+  "look_number": 53,
+  "confidence": 0.95,
+  "evidence": "The black ruffled ankle boots with block heels and the dark textured fabric of the lower garment perfectly match those in the detail image.",
+  "alternates": [
+   {
+    "look_number": 52,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03931aceee3e9c798e111/master/pass/00163-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|57-58": {
+  "look_number": 57,
+  "confidence": 1.0,
+  "evidence": "The ankle boots in Look 57 perfectly match the detail image, featuring the same off-white color, black toe cap, ruffled ankle and side detailing, and block heel.",
+  "alternates": [
+   {
+    "look_number": 58,
+    "confidence": 0.0
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03935a8f250c7f82911b2/master/pass/00166-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|58-59": {
+  "look_number": 58,
+  "confidence": 1.0,
+  "evidence": "The black ruffled slingback shoes and sheer black hosiery in the detail image perfectly match those worn by the model in Look 58.",
+  "alternates": [
+   {
+    "look_number": 59,
+    "confidence": 0.0
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03979c99b75d535170ef8/master/pass/00204-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|70-71": {
+  "look_number": 70,
+  "confidence": 1.0,
+  "evidence": "The wide-leg, cream-colored satin pants and the distinctive cream shoes with black cap toes and pearl-sphere heels with the 'C' logo are an exact match to Look 70.",
+  "alternates": [
+   {
+    "look_number": 71,
+    "confidence": 0.0
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67d03953c6a90a5bfc5f842c/master/pass/00183-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|63-64": {
+  "look_number": 63,
+  "confidence": 0.98,
+  "evidence": "The black ankle boot with the distinctive spherical pearl heel and patent leather toe cap, along with the textured black fabric of the garment, perfectly match Look 63.",
+  "alternates": [
+   {
+    "look_number": 64,
+    "confidence": 0.05
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/67d038c55243fdb1c6b57684/master/pass/00109-chanel-fall-2025-ready-to-wear-details-credit-gorunway.jpg|39-40": {
+  "look_number": 39,
+  "confidence": 0.98,
+  "evidence": "The boots in Look 39 are an exact match to the detail image, featuring the same black leather, ruffled top, bow with gold charm, block heel, and patent toe cap. Look 40 also features identical boots.",
+  "alternates": [
+   {
+    "look_number": 40,
+    "confidence": 0.97
+   }
+  ]
+ }
+}

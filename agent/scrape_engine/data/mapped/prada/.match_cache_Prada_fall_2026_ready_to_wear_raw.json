@@ -1,0 +1,1720 @@
+{
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a40845f2f0c246c5c242/master/pass/00002-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-6": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The model, dark coat, multi-colored knitted scarf (red, yellow, brown, blue fringe), and the zippered high-neck top with brown, yellow, and cream V-pattern are all identical to Look 1.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a40ab6c9f6bd4aab8080/master/pass/00003-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-7": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The detail shows pink ornate shoes with black sheer socks embroidered with pink flowers, and black leggings. Look 1 features the exact same shoes, socks, and leggings, along with a black coat matching the visible garment hem.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a40b1443f798a3cde33d/master/pass/00001-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-6": {
+  "look_number": 1,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a long black coat, a multi-colored knitted scarf (yellow, green, blue, red), black leggings, and distinctive pink embellished shoes. Look 1 features all these identical elements: the same black coat, the same multi-colored scarf with matching colors, the same black leggings, and the unique pink embellished shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a40c22b0604cc255f119/master/pass/00004-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-7": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 2's beige trench coat with distressed details, purple shirt cuff, green square cufflink, and black crocodile-embossed clutch bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a40feef74476d5f30966/master/pass/00007-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-8": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, black blazer, dark sweater, and light blue collared shirt with a white button are identical in the detail and Look 3.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a40f993f4fc38046c328/master/pass/00006-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-8": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail shows dark socks with white daisy embroidery and light grey pointed shoes with laces and metal eyelets, which perfectly match the footwear in Look 2.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a412aeb6febf3b139aa6/master/pass/00008-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-8": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black blazer with three buttons and a flap pocket, worn with black trousers. Look 3 features an identical black blazer and trousers.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a40efe8966f5dc8d7112/master/pass/00005-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-7": {
+  "look_number": 2,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 2, showing the same beige trench coat, light purple shirt with a green cuff button, and black crocodile-embossed clutch bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4159edd068725663791/master/pass/00011-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-9": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the same model wearing an identical yellow hooded garment with drawstrings and silver snap buttons, and a brown fur collar, as seen in Look 4.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a41359dc90ed42f38502/master/pass/00010-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-9": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 4, including the navy long coat, the bright yellow cropped cape with shoulder buttons, the white hosiery/boots, and the silver pointed-toe high heels. The hair styling is also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4181443f798a3cde344/master/pass/00012-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-9": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 4, featuring the same navy double-breasted coat, yellow cape overlay with pockets, and dark brown fur scarf.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a41c222553697012da5c/master/pass/00015-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-10": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The model, the light-colored jacket with its distinctive collar, and the intricate gold/brown beaded embellishments with dangling elements perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4140f08a195f3d76c9d/master/pass/00009-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-8": {
+  "look_number": 3,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black cropped trousers, dark floral socks, black distressed lace-up shoes, and brown shoelaces worn in Look 3.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a41e269d7ea6b065bb9d/master/pass/00017-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a light grey distressed jacket, a cream crocodile-embossed Prada clutch, and a dark green fabric visible underneath. Look 5 features the exact same jacket, clutch bag, and green fabric under the sleeve.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a41ca18ec327d4b5ada7/master/pass/00016-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The light beige jacket with embellished collar, dark green folded cuffs with a green button, and the metallic textured clutch are identical to Look 5. The model and visible skirt also match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4209343b7d0eecf9096/master/pass/00018-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-11": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the light beige zippered jacket with green cuffs, the dark floral skirt with gold and green rose-like patterns, and the white tights worn in Look 5. The red string detail is also identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a418549eab3dee424f1e/master/pass/00013-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-10": {
+  "look_number": 4,
+  "confidence": 1.0,
+  "evidence": "The detail shows a navy garment, light ruched hosiery with a chevron pattern, and light grey pumps with a curved heel and toe embellishments. Look 4 features all these exact elements.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a42085995b0d806777c1/master/pass/00019-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-11": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The model, dark brown coat with distinctive light-colored stitching/trim on the collar and lapel, and the pink collared shirt visible underneath are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a421b07621ab7dedcd0a/master/pass/00020-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-12": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The black crocodile-embossed handbag with the 'PRADA MILANO' logo and the dark brown leather-like coat with textured lining visible at the cuff perfectly match Look 6.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a425d79e681c76407a07/master/pass/00022-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-12": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the back of a cream chunky knit sweater with two dark blue stripes, a sheer dark skirt with horizontal stripes, a red layer underneath, and light blue cuffs. Look 7 features the exact same cream chunky knit top (a zippered jacket from the front, but the back matches the detail's sweater), the identical sheer dark skirt with stripes, the red layer, and the light blue cuffs.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a425aeb6febf3b139aad/master/pass/00023-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-13": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a cream chunky knit sweater with a ribbed collar, a silver zipper, and two horizontal navy stripes. Look 7 features the exact same sweater and the sheer black skirt visible at the bottom of the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4248f47cd0675bf4cef/master/pass/00021-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-12": {
+  "look_number": null,
+  "confidence": 0.0,
+  "evidence": "The detail shows black socks with distinct pink floral embroidery and dark textured lace-up shoes with dark laces. None of the candidate looks feature these specific embroidered socks or perfectly matching shoes without other significant discrepancies (e.g., orange laces, studs, or different sock colors).",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a419eef74476d5f30973/master/pass/00014-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-10": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The light beige jacket with the embellished, patterned collar and the dark floral skirt are identical in color, fabric, and pattern to the detail image. A red strap is also visible on the left side of the skirt in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4287ca2e45120471c18/master/pass/00025-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-13": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "Exact match for the dark brown shoe with burgundy laces, ruched burgundy hosiery, and the small ankle embellishment.",
+  "alternates": [
+   {
+    "look_number": 10,
+    "confidence": 0.4
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a42b00e6b8b985161023/master/pass/00027-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 8, including the dark grey embellished coat, the leopard print fur collar, the yellow garment at the neck, the pale blue cuffs, and the green crocodile-textured handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a427549eab3dee424f25/master/pass/00024-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-13": {
+  "look_number": 7,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the cream striped knit sweater, light blue shirt cuff, sheer black overlay skirt with red underlayer, and dark red hosiery worn by the model in Look 7.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4299343b7d0eecf909d/master/pass/00026-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|1-13": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The model's hair and makeup, the yellow high-neck top, the grey crystal-embellished coat, the leopard print fur stole, and the light grey underlayer with a black button are all identical to Look 8.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4315005c6d16d9fd962/master/pass/00029-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the dark grey ruched socks, black fur-trimmed pointed shoes with purple laces, and white floral embroidery seen on the model in Look 8.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a432993f4fc38046c32f/master/pass/00030-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|3-15": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, and the sheer black collared top with the red design underneath are identical to Look 9.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a42cce691654f522803e/master/pass/00028-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|2-14": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The detail shows a green crocodile-embossed handbag, a light blue French cuff shirt with a dark blue cufflink, and a dark grey textured jacket. Look 8 features all these exact items: the identical green bag, the light blue shirt with the matching cufflink, and a dark grey coat with a similar texture.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a434d79e681c76407a0e/master/pass/00032-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|3-15": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The brown snakeskin-textured handbag with gold hardware is identical in Look 9 and the detail image. The dark, sheer garment worn by the model also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a42feef74476d5f30980/master/pass/00031-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|3-15": {
+  "look_number": 9,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 9, showing the identical sheer marbled coat with red accents, the light blue undergarment, and the distinctive brown textured handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a43b8dc6f055139c83ac/master/pass/00036-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|4-16": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The dark bomber jacket with its distinctive zipper and collar trim, the contrasting green cuffs with the small pink tag, and the layered sheer patterned skirt with burgundy underlayer are all identical to Look 10.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a437b6c9f6bd4aab808d/master/pass/00033-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|3-15": {
+  "look_number": 5,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the light grey ribbed socks with patterned ankle and the translucent yellow-green embellished pointed-toe shoes worn in Look 5.",
+  "alternates": [
+   {
+    "look_number": 9,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a43959dc90ed42f3850f/master/pass/00035-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|4-16": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The model, dark blue jacket, patterned collar trim, and zipper detail with distressed fabric all perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a44145f2f0c246c5c249/master/pass/00037-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|5-17": {
+  "look_number": 10,
+  "confidence": 1.0,
+  "evidence": "The dark burgundy hosiery and the unique feathered, embroidered, pointed-toe shoes with gold embellishments and a blue ribbon are an exact match.",
+  "alternates": [
+   {
+    "look_number": 7,
+    "confidence": 0.3
+   },
+   {
+    "look_number": 14,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a43a9353ccc561c383eb/master/pass/00034-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|4-16": {
+  "look_number": 10,
+  "confidence": 0.95,
+  "evidence": "The dark jacket with light embellishment, the patterned skirt, the burgundy hosiery, and the patterned ankle boots all match the detail image exactly.",
+  "alternates": [
+   {
+    "look_number": 7,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a440fe8966f5dc8d711f/master/pass/00039-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|5-17": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 11, including the black textured puffer jacket, the dark inner layer, the brown clutch bag, the dark sheer skirt with subtle green pattern, and the yellow textured boots.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4448f47cd0675bf4cfc/master/pass/00040-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|6-18": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black curly textured coat and a brown snakeskin-textured clutch. Look 11 features the identical black curly textured coat and a matching brown snakeskin clutch tucked into the pocket.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a44459dc90ed42f38516/master/pass/00041-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|6-18": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 11, featuring the identical black textured hooded coat, dark skirt, and unique yellow embellished knee-high boots.",
+  "alternates": [
+   {
+    "look_number": 9,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a446ce691654f522804b/master/pass/00042-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|6-18": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The jacket in the detail image is identical to the jacket in Look 12, featuring the same distressed design revealing plaid fabric, color, and distinctive large white folded cuffs. The model is also the same.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4490ed7609d52aa3610/master/pass/00043-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|6-18": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The grey wrap skirt with the patterned fabric visible underneath, the light-colored distressed jacket, and both the light blue and yellow textured boots match perfectly.",
+  "alternates": [
+   {
+    "look_number": 15,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a44ab07621ab7dedcd11/master/pass/00045-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|7-19": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, striped red/orange/purple scarf, orange zippered knit top, and the embellished beige/grey coat all match exactly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a45005857e4111c5f4e1/master/pass/00046-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|7-19": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the long grey coat, red fringed scarf, light blue garment visible underneath, and dark hosiery of Look 13.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a44ecff5df84e523a972/master/pass/00047-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|8-20": {
+  "look_number": 13,
+  "confidence": 1.0,
+  "evidence": "The trench coat, embellished lapels, plaid lining, orange ribbed zip-up top, and red and purple knit scarf are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a43f8dc6f055139c83b3/master/pass/00038-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|5-17": {
+  "look_number": 11,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black curly textured coat with a visible blue ribbed collar and a black zipper. Look 11 features the exact same coat, collar, and zipper, worn by a model with identical hair and makeup.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a457b8d4374e1dfbc507/master/pass/00049-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|8-20": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The fuchsia textured knit sweater with a zipper and the olive green and cream striped knitted scarf are identical to those in the detail image. The model is also the same.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a450c48ae7dce9d132a2/master/pass/00048-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|8-20": {
+  "look_number": 8,
+  "confidence": 1.0,
+  "evidence": "The dark hosiery with white floral appliques and the white fur-covered pointed shoes with silver eyelets and laces are an exact match.",
+  "alternates": [
+   {
+    "look_number": 13,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 17,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a45baeb6febf3b139aba/master/pass/00052-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|9-21": {
+  "look_number": 14,
+  "confidence": 0.95,
+  "evidence": "The detail image shows an exact match for the unique red beaded and floral-embroidered shoe and the burgundy hosiery worn in Look 14.",
+  "alternates": [
+   {
+    "look_number": 10,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4491443f798a3cde357/master/pass/00044-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|7-19": {
+  "look_number": 12,
+  "confidence": 1.0,
+  "evidence": "The detail shows a light blue/grey feathery boot with yellow laces, which perfectly matches the boot worn in Look 12.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4568f47cd0675bf4d09/master/pass/00051-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|9-21": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the fuchsia knitted zipped sweater, bright pink satin skirt, burgundy hosiery, and red shoes with white laces seen in Look 14.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a45e449a2f51854ed53a/master/pass/00054-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|10-22": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the reddish-brown leather jacket, bright pink shirt, and grey textured wrap skirt worn in Look 15.",
+  "alternates": [
+   {
+    "look_number": 12,
+    "confidence": 0.3
+   },
+   {
+    "look_number": 21,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a45d222553697012da63/master/pass/00053-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|9-21": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, and makeup are identical. The red leather jacket with the textured collar, the navy knit sweater, and the grey patterned inner layer are all perfectly matched.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4545a6f46fff0e4f514/master/pass/00050-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|8-20": {
+  "look_number": 14,
+  "confidence": 1.0,
+  "evidence": "The fuchsia knitted zip-up jacket with its unique textured pattern, silver zipper, and ribbed details, along with the distinctive olive green and cream striped knitted scarf with tassels, are an exact match to Look 14.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4640794b6a1f7af31ae/master/pass/00056-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|10-22": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The model, cream knitted zip-up jacket with brown collar, and the red and yellow striped scarf are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a463ad35561aabe4e852/master/pass/00057-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|10-22": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a cream chunky knit sweater with brown ribbed cuffs, a colorful striped scarf, and a small black crocodile-embossed handbag with gold hardware. Look 16 features the exact same sweater, scarf, and handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a468ce691654f522808a/master/pass/00058-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|11-23": {
+  "look_number": 16,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a pink pointed-toe shoe with a black fabric overlay embroidered with small pink floral motifs, paired with a sheer black stocking. Look 16 features the exact same shoes and black sheer stockings.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a46985995b0d806777ce/master/pass/00059-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|11-23": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The red hooded jacket with a dark brown fur collar and drawstring waist, along with the model's hair and makeup, perfectly matches the detail image.",
+  "alternates": [
+   {
+    "look_number": 23,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a46fb8d4374e1dfbc50e/master/pass/00062-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|12-24": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, dark crew-neck sweater, and light blue collared shirt are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a46b9353ccc561c383ff/master/pass/00060-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|11-23": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The red parka jacket with silver snap buttons, red drawstring waist, and dark brown fur stole perfectly matches Look 17.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a46e0f08a195f3d76caa/master/pass/00061-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|12-24": {
+  "look_number": 17,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the shoes (silver pointed-toe flats with front embellishment), hosiery (dark navy sheer, ruched with gold floral embellishments), and the dark, sheer, crinkled skirt visible above the hosiery in Look 17.",
+  "alternates": [
+   {
+    "look_number": 13,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4718dc6f055139c83ba/master/pass/00063-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|12-24": {
+  "look_number": 18,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 18, featuring the same dark crew-neck sweater, light blue collared shirt underneath with cuffs showing, black trousers, and a small black bag with a chain strap.",
+  "alternates": [
+   {
+    "look_number": 21,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4750ed7609d52aa361a/master/pass/00064-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|13-25": {
+  "look_number": 18,
+  "confidence": 0.95,
+  "evidence": "The black crocodile-embossed shoulder bag with the 'PRADA' logo, the dark ribbed sweater, the light blue shirt cuff with a green tag, and the dark trousers are all identical to those in Look 18.",
+  "alternates": [
+   {
+    "look_number": 25,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a475a1f46aa25ee2177e/master/pass/00065-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|13-25": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The model, dark green knitted sweater, and metal-framed glasses in the detail image are an exact match for Look 19.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a476d79e681c76407a1b/master/pass/00066-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|13-25": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black Prada shoulder bag, a dark green ribbed knit sleeve, and a dark skirt with a distressed hem revealing a yellow/green abstract pattern. Look 19 features all these elements exactly, including the white hosiery and a red strap visible near the skirt.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a46122b0604cc255f126/master/pass/00055-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|10-22": {
+  "look_number": 15,
+  "confidence": 1.0,
+  "evidence": "The grey textured skirt and the distinctive white lace-up boots with silver hardware are an exact match to the detail image.",
+  "alternates": [
+   {
+    "look_number": 12,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a47cc1d40c993eff2a98/master/pass/00067-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|13-25": {
+  "look_number": 19,
+  "confidence": 1.0,
+  "evidence": "The green sweater, the distinctive black skirt with the torn yellow and green pattern, the black bag, and the red ribbon at the waist are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4810794b6a1f7af31b5/master/pass/00070-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|14-26": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The black Prada handbag, the dark green sleeve, and the distinctive dark floral patterned fabric all perfectly match Look 20.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a480a18ec327d4b5adc6/master/pass/00068-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|14-26": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The model's face, short curly hair, and dark eye makeup are identical. The grey ribbed knit collar, zipper, and the dark patterned fabric with yellow/green/brown floral motifs visible on the shoulder/sleeve in the detail image perfectly match the jacket worn by the model in Look 20.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a47c59dc90ed42f38532/master/pass/00069-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|14-26": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The floral zippered dress, dark green undershirt sleeves, black structured handbag with gold hardware, and white hosiery are all identical to Look 20.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a48685995b0d806777d5/master/pass/00071-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|15-27": {
+  "look_number": 20,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the bright green embellished shoes, the light grey patterned leggings, and the dark floral patterned dress worn in Look 20.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a486d79e681c76407a22/master/pass/00072-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|15-27": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The model's face, blonde hair, heavy black eye makeup, black crew-neck sweater, and pink collared shirt are an exact match to Look 21.",
+  "alternates": [
+   {
+    "look_number": 15,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a487d79e681c76407a29/master/pass/00073-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|15-27": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black sweater, pink cuffs, black skirt with red embroidery, and the black structured top-handle bag seen in Look 21. The yellowish detail under the skirt is also present.",
+  "alternates": [
+   {
+    "look_number": 16,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 18,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 20,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a48ffe8966f5dc8d7138/master/pass/00074-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|15-27": {
+  "look_number": 21,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 21, featuring the same black knit sweater, pink shirt cuffs, black skirt with red floral embroidery and yellow/green embellishments, and the black structured handbag.",
+  "alternates": [
+   {
+    "look_number": 26,
+    "confidence": 0.4
+   },
+   {
+    "look_number": 18,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a492222553697012da77/master/pass/00077-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|16-28": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The yellow hooded jacket with a drawstring waist, the dark layered skirt with colorful accents, the dark leggings, and the model's curly brown hair are all identical to Look 23.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a497ad35561aabe4e85f/master/pass/00078-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|17-29": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The model, yellow hooded jacket, and leopard print fur stole are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a48ca18ec327d4b5adcd/master/pass/00076-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|16-28": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 22, including the light blue shirt with cuff detail, the red embellished skirt, the olive green crocodile-embossed handbag, the burgundy hosiery, and the dark lace-up shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a496c1d40c993eff2a9f/master/pass/00079-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|17-29": {
+  "look_number": 23,
+  "confidence": 1.0,
+  "evidence": "The detail shows a yellow hooded jacket with a drawstring waist and a leopard print fur scarf tied with yellow cords. Look 23 features the identical yellow hooded jacket and leopard print fur scarf, tied in the same manner.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a497d8506b9e46faf035/master/pass/00080-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|17-29": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The model's hair, skin tone, and dark eye makeup are identical. The garment in the detail shows a dark sheer top over a white layer, with an olive green ribbed strap and red embroidery, all of which perfectly match the top worn in Look 24.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a48e00e6b8b985161036/master/pass/00075-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|16-28": {
+  "look_number": 22,
+  "confidence": 1.0,
+  "evidence": "Exact match of model, hair, makeup, and light blue collared shirt, including collar style, buttons, and subtle fabric texture.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a49e5a6f46fff0e4f522/master/pass/00083-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|18-30": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The model, sheer iridescent blue coat with dark collar and placket, and dark eye makeup perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4a56517772082390f49/master/pass/00084-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|18-30": {
+  "look_number": 25,
+  "confidence": 1.0,
+  "evidence": "The sheer dark blue/purple coat with black trim, the underlying patterned garment, and the black crocodile-embossed bag with gold hardware are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a49fce691654f5228097/master/pass/00082-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|18-30": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The snakeskin bucket bag, the light blue garment with black embellishments, and the white hosiery are identical to those in Look 24.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a49ccff5df84e523a985/master/pass/00081-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|17-29": {
+  "look_number": 24,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the top with red floral embroidery, olive green ribbed strap, light blue gathered skirt with distressed detail, and the small woven bag in Look 24.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4ac22b0604cc255f12d/master/pass/00087-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|19-31": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The navy blue textured zip-up jacket, black crinkled skirt, and the distinctive light brown crocodile-textured bucket bag are identical in both the detail and Look 26. The model also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4a9c1d40c993eff2aa6/master/pass/00085-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|19-31": {
+  "look_number": 25,
+  "confidence": 0.8,
+  "evidence": "The dark red/burgundy legwear is an exact match. The shoe in Look 25 is also dark red/burgundy, pointed, and embellished, matching the general appearance of the detail shoe, although the specific feather texture and floral embroidery are not clearly discernible in the full look.",
+  "alternates": [
+   {
+    "look_number": 22,
+    "confidence": 0.2
+   },
+   {
+    "look_number": 29,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4a67ca2e45120471c30/master/pass/00086-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|19-31": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, and makeup are identical, and the navy blue chunky knit jacket with a ribbed collar and silver zipper is an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4b2222553697012da7e/master/pass/00089-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|20-32": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a knee-high, light yellow boot heavily embellished with yellow beads/appliques. Look 26 features the exact same distinctive boots.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4b30794b6a1f7af31bc/master/pass/00091-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|20-32": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The grey double-breasted wool coat with black buttons, black crocodile-embossed top-handle bag, and visible black choker/white top all match perfectly.",
+  "alternates": [
+   {
+    "look_number": 25,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 32,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 30,
+    "confidence": 0.5
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4b9ad35561aabe4e866/master/pass/00093-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|21-33": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 28, including the orange textured sweater, the burgundy fringed scarf, the light blue culottes, dark hosiery, and the model's hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4bd22b0604cc255f134/master/pass/00092-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|21-33": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The black crocodile embossed handbag and the grey textured double-breasted coat in the detail image perfectly match Look 27.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4aeb07621ab7dedcd18/master/pass/00088-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|20-32": {
+  "look_number": 26,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a brown crocodile-embossed handbag and a dark blue chunky knit sweater, both of which are identical to the items worn in Look 26.",
+  "alternates": [
+   {
+    "look_number": 24,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4bdb8d4374e1dfbc515/master/pass/00094-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|21-33": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The model, glasses, orange textured zippered sweater, and the distinctive red and purple knitted scarf are all identical.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4c1aeb6febf3b139ac7/master/pass/00095-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|22-34": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the orange knitted zip-up cardigan, the two-tone red/burgundy fringed scarf, and the light blue wide-leg pants worn in Look 28.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4c445f2f0c246c5c25c/master/pass/00097-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|22-34": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the dark blue ruched stockings with white floral embroidery, the white fur-covered pointed shoes, and the light blue pleated skirt visible in Look 28.",
+  "alternates": [
+   {
+    "look_number": 32,
+    "confidence": 0.95
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4b2b9d69a1fbfbc0d2d/master/pass/00090-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|20-32": {
+  "look_number": 27,
+  "confidence": 1.0,
+  "evidence": "The model, sunglasses, grey textured double-breasted coat, and black distressed inner top are an exact match to Look 27.",
+  "alternates": [
+   {
+    "look_number": 30,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4c90794b6a1f7af31f9/master/pass/00098-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|22-34": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The model, pink off-shoulder dress, striped khaki and beige scarf, and dark burgundy hosiery are identical in both the detail image and Look 29.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4c60794b6a1f7af31f2/master/pass/00096-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|22-34": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The orange textured zip-up cardigan, the multi-colored scarf, the light blue pleated skirt with a front zipper, and the black hosiery all perfectly match Look 28.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4cc5a6f46fff0e4f529/master/pass/00099-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|23-35": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The model, the striped knit scarf in cream and olive green, and the pink off-the-shoulder zippered dress with the black top and Prada logo underneath perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4d6993f4fc38046c33c/master/pass/00101-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|23-35": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the pink dress, burgundy ruched legwear, and distinctive red, pointed, floral-embroidered shoes of Look 29.",
+  "alternates": [
+   {
+    "look_number": 25,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4d5b6c9f6bd4aab80a6/master/pass/00103-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|24-36": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a dark grey textured double-breasted coat with six dark buttons and bright pink cuffs. Look 30 features the identical coat with the same fabric, buttons, and distinctive pink cuffs.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4d30f08a195f3d76cbd/master/pass/00102-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|24-36": {
+  "look_number": 30,
+  "confidence": 1.0,
+  "evidence": "The model, sunglasses, dark navy top, and grey textured double-breasted coat are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4cec1d40c993eff2ab6/master/pass/00100-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|23-35": {
+  "look_number": 29,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 29, including the pink off-the-shoulder dress with front zipper, the black top underneath, and the distinctive olive green and cream striped scarf.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4ddfe8966f5dc8d713f/master/pass/00105-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|24-36": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The detail image shows pink pointed-toe shoes with floral embellishments and black sheer socks with matching floral details. Look 31 features identical shoes and hosiery.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4e0269d7ea6b065bba4/master/pass/00107-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|25-37": {
+  "look_number": 32,
+  "confidence": 0.95,
+  "evidence": "The detail image shows a model wearing a light-colored chunky knit sweater with a high ribbed turtleneck and a zipper. Look 32 features the exact same sweater, including the color, knit pattern, turtleneck style, and zipper.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4dcb9d69a1fbfbc0d40/master/pass/00106-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|25-37": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The cream chunky knit zippered sweater, light blue shirt cuffs, black sheer crinkled skirt, and black crocodile-textured handbag are identical to Look 32.",
+  "alternates": [
+   {
+    "look_number": 26,
+    "confidence": 0.2
+   },
+   {
+    "look_number": 35,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4e3cff5df84e523a992/master/pass/00108-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|25-37": {
+  "look_number": 32,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the beige chunky knit sweater, light blue ruffled shirt, black crinkled skirt, and the distinctive black handbag with an attached crocodile-embossed pouch from Look 32.",
+  "alternates": [
+   {
+    "look_number": 33,
+    "confidence": 0.1
+   },
+   {
+    "look_number": 26,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4e6b9d69a1fbfbc0d47/master/pass/00109-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|26-38": {
+  "look_number": 28,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the light grey/silver pointed-toe shoes with sculptural heels and toe embellishments, as well as the dark hosiery with small light floral patterns around the ankle, seen in Look 28.",
+  "alternates": [
+   {
+    "look_number": 32,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4d945f2f0c246c5c263/master/pass/00104-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|24-36": {
+  "look_number": 31,
+  "confidence": 1.0,
+  "evidence": "The black short-sleeved dress with a front zipper and belted waist, along with the distinctive multi-colored knitted scarf (red, orange, yellow, blue fringe) and the sheer blue top underneath, are identical in both the detail and Look 31.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4e69353ccc561c38412/master/pass/00110-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|26-38": {
+  "look_number": 33,
+  "confidence": 0.98,
+  "evidence": "The model, hair, makeup, black crew-neck sweater, and light blue collared shirt visible in the detail image are an exact match for Look 33.",
+  "alternates": [
+   {
+    "look_number": 38,
+    "confidence": 0.95
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4eb269d7ea6b065bbab/master/pass/00112-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|27-39": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the black leather handbag with bow detail, the light blue shirt cuff with green embellishment, the dark knit sweater, and the white shorts with sheer black trim seen in Look 33.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4ec5005c6d16d9fd9e8/master/pass/00113-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|27-39": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 33, including the black sweater, blue shirt cuffs, white shorts with sheer black trim, layered dark and patterned socks, black lace-up shoes with orange laces, and the black top-handle bag.",
+  "alternates": [
+   {
+    "look_number": 32,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 28,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 31,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4e8bdd8f5ae0b4d0638/master/pass/00111-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|26-38": {
+  "look_number": 33,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 33, including the dark crew-neck sweater, light blue collared shirt with visible cuffs, white shorts, sheer black hosiery, and black structured handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4f29edd0687256637b0/master/pass/00116-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|28-40": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The model, grey textured knit sweater with a full zipper, and the distinctive rectangular glasses with a side emblem are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4edd28bb7fb543ac675/master/pass/00114-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|27-39": {
+  "look_number": 34,
+  "confidence": 1.0,
+  "evidence": "The model, dark green crew-neck sweater, and unique sculptural earrings are identical in both the detail image and Look 34.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4ef9343b7d0eecf90b4/master/pass/00115-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|27-39": {
+  "look_number": 34,
+  "confidence": 0.9,
+  "evidence": "The detail shows a dark green sweater with pink cuffs, a black beaded skirt, white tied socks, and light-colored shoes, all of which are identical to Look 34. The bag in the detail is a black Prada shoulder bag, while Look 34 features a black Prada top-handle bag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4f2ce691654f522809e/master/pass/00117-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|28-40": {
+  "look_number": 35,
+  "confidence": 1.0,
+  "evidence": "The grey cable-knit zip-up sweater, the black sheer overlay skirt with green pattern underneath, and the black structured handbag are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4f885995b0d806777dc/master/pass/00119-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|29-41": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The model's pink collared shirt with white buttons, blonde hair, dark eye makeup, and unique multi-faceted earring are an exact match to look 36.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4f40f08a195f3d76cc4/master/pass/00118-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|28-40": {
+  "look_number": 35,
+  "confidence": 0.9,
+  "evidence": "The grey cable knit sweater, dark shirt cuff, and green textured skirt in the detail image perfectly match Look 35. The bag in the detail image is a different style than the one shown in Look 35.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4fa5005c6d16d9fd9ef/master/pass/00121-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|29-41": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the pink shirt, the unique grey skirt with yellow embellishments, and the black handbag worn by the model in Look 36.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4f8ddd1b24a3f934480/master/pass/00120-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|29-41": {
+  "look_number": 36,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a pink shirt, a dark grey skirt with yellow beaded embellishments, and a black handbag with a houndstooth pattern. Look 36 features all these exact items.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4feddd1b24a3f934487/master/pass/00122-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|29-41": {
+  "look_number": null,
+  "confidence": 1.0,
+  "evidence": "The sheer black knee-high sock with pink floral embroidery, ruched texture, and tie detail visible in the close-up image does not appear in any of the candidate full-body looks. While some candidate looks (e.g., 33, 36, 37) feature similar dark lace-up shoes, the distinct hosiery is a clear mismatch across all options.",
+  "alternates": [
+   {
+    "look_number": 33,
+    "confidence": 0.3
+   },
+   {
+    "look_number": 36,
+    "confidence": 0.2
+   },
+   {
+    "look_number": 37,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a505aeb6febf3b139ae7/master/pass/00125-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|30-42": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The dark grey sweater, light blue shirt, deconstructed dark skirt with floral print, dark brown crocodile-embossed bag, dark over-the-knee boots, and black embellished pointed-toe shoes are all identical to those in the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a50005857e4111c5f500/master/pass/00123-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|30-42": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The model, black sleeveless dress with distressed neckline, sheer floral insert, and unique metallic earrings are identical in both the detail and Look 37.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a507fe8966f5dc8d7146/master/pass/00127-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|31-43": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 38, including the dark grey crew-neck sweater, the light blue collared shirt underneath, the dark skirt with the distinctive red and green floral pattern tied at the waist, and the brown leather bag with a gold clasp.",
+  "alternates": [
+   {
+    "look_number": 33,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5071443f798a3cde37a/master/pass/00126-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|31-43": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The model's distinctive curly hair, dark eye makeup, dark crew-neck sweater, and light blue collared shirt with a visible zipper detail are an exact match for Look 38.",
+  "alternates": [
+   {
+    "look_number": 33,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a50d0794b6a1f7af3206/master/pass/00129-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|32-44": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, and the sleeveless dress with its dark sheer fabric, white underlayer, olive-green ribbed strap, and red floral embroidery perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a50f0389cb91a10bd46e/master/pass/00128-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|31-43": {
+  "look_number": 38,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 38, including the dark brown crocodile-embossed bag, the dark grey sweater, the light blue shirt cuff peeking out, and the dark skirt with the distinctive red and green floral pattern on the hem.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a514ce691654f52280a5/master/pass/00131-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|32-44": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 39, featuring the identical black crinkled dress fabric, the specific black Prada handbag with gold hardware and tassel, and the distinctive white knee-high socks with tie details.",
+  "alternates": [
+   {
+    "look_number": 32,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5151443f798a3cde381/master/pass/00132-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|32-44": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The model, her hair, and makeup are identical. The white sleeveless top with a round neck visible in the detail matches the top worn in Look 40 exactly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5000ed7609d52aa362d/master/pass/00124-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|30-42": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The detail shows a black shiny dress with a floral patterned underlayer in pink, blue, and yellow/green, paired with dark red/burgundy hosiery. Look 37 features the exact same black shiny sleeveless dress with the identical floral pattern visible through cutouts and at the hem, and the same dark red/burgundy hosiery.",
+  "alternates": [
+   {
+    "look_number": 42,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a51c222553697012da91/master/pass/00135-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|33-45": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The detail shows a dark reddish-brown hosiery and a dark brown pointed-toe shoe with pink and white floral embroidery and dark blue laces, which perfectly matches the footwear in Look 37.",
+  "alternates": [
+   {
+    "look_number": 40,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a517d8506b9e46faf07b/master/pass/00133-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|33-45": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The white sleeveless dress with the unique collage print, the dark red knee-high hosiery, and the green crocodile-embossed mini handbag are all identical to Look 40.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a51d3c4c749a5f56a06c/master/pass/00136-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|34-46": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The grey textured jacket with purple trim on the collar and cuffs, and the black crinkled skirt with a green layer underneath, perfectly match Look 41.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a50fa0a657ef695f043f/master/pass/00130-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|32-44": {
+  "look_number": 39,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 39, showing the same dark sheer crinkled dress with red floral embroidery, the white undershirt, the olive green ribbed knit top, and the black handbag.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a51cddd1b24a3f93448e/master/pass/00134-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|33-45": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a bright green crocodile-embossed handbag with gold hardware and a tassel, which is identical to the bag carried by the model in Look 40.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a525a0a657ef695f0446/master/pass/00138-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|34-46": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The detail image shows distinctive yellow embellished knee-high boots and a dark, crinkled garment with a green/iridescent hem. Look 41 features the identical boots and a matching dark, crinkled skirt with a visible green lining at the hem, worn by a model with the same skin tone.",
+  "alternates": [
+   {
+    "look_number": 39,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a523cff5df84e523a99f/master/pass/00137-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|34-46": {
+  "look_number": 41,
+  "confidence": 1.0,
+  "evidence": "The model's facial features, short curly hair, dark eye makeup, and the grey collared zippered jacket with its specific fabric texture and zipper pull are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a52a0794b6a1f7af320d/master/pass/00140-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|35-47": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The black sleeveless dress with irregular cut-outs revealing a white/cream floral pattern with purple and pink elements, including the fabric texture and raw edges, is an exact match to the detail image.",
+  "alternates": [
+   {
+    "look_number": 42,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5240ed7609d52aa3634/master/pass/00139-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|34-46": {
+  "look_number": 37,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, and the distinctive black sleeveless dress with raw edges and purple/white floral cut-outs are identical.",
+  "alternates": [
+   {
+    "look_number": 42,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a52cb8d4374e1dfbc522/master/pass/00141-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|35-47": {
+  "look_number": 42,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the light blue feathered boots with yellow laces and the black dress with a purple floral underlayer seen in Look 42.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a532c48ae7dce9d13331/master/pass/00143-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|36-48": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The light blue zippered dress with a bow, the red and purple knitted scarf, and the black undergarment and hosiery are identical in both images.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5371435c4e9ef5c8cc1/master/pass/00144-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|36-48": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The detail shows black sheer socks with white floral embellishments over white feathered pointed-toe shoes with silver hardware. Look 43 features identical socks and shoes, and the light blue dress matches the fabric visible above the stocking.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5311435c4e9ef5c8cba/master/pass/00142-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|35-47": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The model, red and purple knitted scarf, and light blue zippered dress with a black garment underneath are identical to look 43.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5366517772082390f62/master/pass/00145-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|36-48": {
+  "look_number": 44,
+  "confidence": 0.98,
+  "evidence": "The model, hair, makeup, black sleeveless garment with white lining, and the triangular Prada logo on the chest all perfectly match the detail image. The neckline draping is also consistent.",
+  "alternates": [
+   {
+    "look_number": 39,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a53fbdd8f5ae0b4d0645/master/pass/00147-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|37-49": {
+  "look_number": 44,
+  "confidence": 1.0,
+  "evidence": "The detail image shows burgundy thigh-high socks with pink floral embroidery and red heavily embellished pointed-toe shoes. Look 44 features the exact same burgundy thigh-high socks with pink floral embroidery and the identical red embellished pointed-toe shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5406517772082390f69/master/pass/00148-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|37-49": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The dress, bag, and white lace-up boots are identical in color, pattern, texture, and style to those in the detail image. The model is also the same.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a538cff5df84e523a9a6/master/pass/00146-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|36-48": {
+  "look_number": 44,
+  "confidence": 0.9,
+  "evidence": "The detail shows a dark garment with a white underlayer and white ties, and dark red/burgundy hosiery. Look 44 features a black dress with a white underlayer and white ties, and dark red/burgundy hosiery. The bag in the detail has dark brown crocodile-textured ends and handle, matching the material of the bag in Look 44.",
+  "alternates": [
+   {
+    "look_number": 37,
+    "confidence": 0.3
+   },
+   {
+    "look_number": 40,
+    "confidence": 0.2
+   },
+   {
+    "look_number": 38,
+    "confidence": 0.2
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a53e269d7ea6b065bbb2/master/pass/00149-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|37-49": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The black crocodile-embossed Prada handbag is an exact match, and the black garment with brown and white abstract patterns visible behind the bag in the detail image perfectly matches the dress worn in Look 45.",
+  "alternates": [
+   {
+    "look_number": 39,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 38,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 44,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a544ce691654f52280ac/master/pass/00150-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|38-50": {
+  "look_number": 45,
+  "confidence": 1.0,
+  "evidence": "The white textured knee-high boots with silver metal hook lacing are identical. The black dress with brown and white abstract pattern visible above the boot also matches.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a54c9edd0687256637b7/master/pass/00153-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|39-51": {
+  "look_number": 46,
+  "confidence": 0.98,
+  "evidence": "The bright green crocodile-embossed Prada bag is identical, and the dark textured sheer dress and dark hosiery visible in the detail match Look 46.",
+  "alternates": [
+   {
+    "look_number": 40,
+    "confidence": 0.85
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a545d8506b9e46faf0ef/master/pass/00152-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|38-50": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The sheer black sleeveless top over a light blue bandeau, the sheer black overlay over grey shorts, the black knee-high socks, and the distinctive green crocodile-embossed handbag are all identical to Look 46.",
+  "alternates": [
+   {
+    "look_number": 40,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 47,
+    "confidence": 0.5
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5510389cb91a10bd475/master/pass/00156-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|39-51": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail shows a light blue oversized shirt over a red top, a black crinkled skirt, and a light gold crocodile-embossed bag, all of which perfectly match Look 47.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a546222553697012da98/master/pass/00151-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|38-50": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The model's facial features, hair, dark eye makeup, distinctive earrings, and the specific sheer black top over a light blue garment perfectly match Look 46.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a54d0ed7609d52aa3641/master/pass/00155-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|39-51": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The model, hair, dark eye makeup, light blue collared shirt, red garment underneath, and the distinctive purple and silver earring are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a54b85995b0d806777e3/master/pass/00154-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|39-51": {
+  "look_number": 46,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the pink embellished shoes, black sheer socks with pink floral embroidery, and the green bag from Look 46.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a55445f2f0c246c5c270/master/pass/00158-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|40-52": {
+  "look_number": 43,
+  "confidence": 1.0,
+  "evidence": "The light grey pointed shoes with white bow and silver details, the dark sheer daisy-embroidered socks, and the dark opaque leggings are an exact match.",
+  "alternates": [
+   {
+    "look_number": 47,
+    "confidence": 1.0
+   },
+   {
+    "look_number": 46,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 48,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a55c5a6f46fff0e4f536/master/pass/00160-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|41-53": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The detail image shows white shorts with black sheer trim, dark knee-high socks, and a distinctive yellow/brown snakeskin crescent-shaped bag. Look 48 features all these exact items.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a553269d7ea6b065bbb9/master/pass/00157-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|40-52": {
+  "look_number": 47,
+  "confidence": 1.0,
+  "evidence": "The detail shows a light blue shirt and a grey/taupe crocodile-embossed bucket bag with 'PRADA MILANO'. Look 47 features the exact same light blue shirt and an identical grey/taupe crocodile-embossed bucket bag, along with a dark crinkled skirt matching the background garment in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a55ad79e681c76407a3c/master/pass/00161-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|41-53": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the red square-neck crop top with blue trim, light grey baggy shorts, black sheer knee-high socks with visible straps, and the gold snakeskin-textured bag shown in Look 48.",
+  "alternates": [
+   {
+    "look_number": 52,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a55e5005c6d16d9fd9fd/master/pass/00162-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|41-53": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The model wears the exact same sheer black dress over a grey top, white hosiery, silver pointed-toe shoes, and carries the identical small blue crocodile-textured handbag. The hair is also styled similarly.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a56145f2f0c246c5c27d/master/pass/00163-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|41-53": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The sheer black sleeveless top with black beaded floral embroidery, the light grey under-top, and the dark sheer skirt are an exact match. The model's visible skin tone also matches.",
+  "alternates": [
+   {
+    "look_number": 49,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a56385995b0d806777ea/master/pass/00164-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|42-54": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The light blue, crocodile-embossed top-handle bag in the detail image is an exact match for the bag carried in Look 49. The white socks and dark sheer dress are also consistent.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a55745f11fca64b2d8b3/master/pass/00159-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|40-52": {
+  "look_number": 48,
+  "confidence": 1.0,
+  "evidence": "The red square-neck top with light blue trim and the distinctive black and metallic earring are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a568269d7ea6b065bbc6/master/pass/00165-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|42-54": {
+  "look_number": 49,
+  "confidence": 1.0,
+  "evidence": "The white patterned hosiery with drawstring and the light grey pointed-toe pump with a curved heel and metallic toe embellishment are an exact match.",
+  "alternates": [
+   {
+    "look_number": 50,
+    "confidence": 0.8
+   },
+   {
+    "look_number": 54,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a568993f4fc38046c35b/master/pass/00167-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|43-55": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The model's skin tone, short curly hair, and eye makeup are an exact match. The black sheer garment with a square neckline and visible zipper detail perfectly matches the top layer of Look 50.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a567fe8966f5dc8d7153/master/pass/00166-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|42-54": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The model, sheer black top, crinkled green skirt, white knee-high socks, green embellished pointed-toe shoes, and small black bag are all identical to Look 50. The detail image shows the back of the model, while Look 50 shows the front, explaining any neckline difference.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a56e222553697012da9f/master/pass/00168-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|43-55": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black textured handbag, a dark rumpled sleeve, and a bright green textured garment underneath. Look 50 features the identical black textured handbag, the same black rumpled sheer top/jacket, and the matching bright green textured dress underneath.",
+  "alternates": [
+   {
+    "look_number": 45,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 44,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 55,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a56da1f46aa25ee21791/master/pass/00169-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|43-55": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The model's sheer black zippered top, green textured undergarment, black square-neck crop top, and shiny black patent leather bag are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a571222553697012daa6/master/pass/00170-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|43-55": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The white patterned sock with chevron design and the lime green embellished pointed-toe shoe are an exact match.",
+  "alternates": [
+   {
+    "look_number": 54,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5736517772082390f70/master/pass/00171-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|44-56": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The model's blonde ponytail, the sheer dark sleeveless dress with gathered waist and crinkled texture, and the small black structured handbag are all identical to Look 51.",
+  "alternates": [
+   {
+    "look_number": 46,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a576b9d69a1fbfbc0d54/master/pass/00172-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|44-56": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The sheer black embroidered top, the underlying grey top, the crinkled drawstring skirt, the hint of red lining, and the black structured handbag all match perfectly.",
+  "alternates": [
+   {
+    "look_number": 46,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a57b8dc6f055139c83d9/master/pass/00174-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|45-57": {
+  "look_number": 51,
+  "confidence": 0.7,
+  "evidence": "The dark brown lace-up shoes with chunky soles are an exact match. The socks are black, matching the base color, but the floral embroidery pattern is different (pink flowers in detail vs. yellow/gold stars in look 51).",
+  "alternates": [
+   {
+    "look_number": 48,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a57e8dc6f055139c83e0/master/pass/00176-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|45-57": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The model, lime green V-neck crop top with light blue straps and gathered hem, and makeup are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5786517772082390f77/master/pass/00173-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|44-56": {
+  "look_number": 51,
+  "confidence": 1.0,
+  "evidence": "The black leather handbag with the distinctive shape, top handle, and front flap detail, including the 'PRADA MILANO' logo, is an exact match. The dark, crinkled fabric of the garment and the lighter greyish layer visible underneath the hem in the detail image perfectly match the dress worn in Look 51.",
+  "alternates": [
+   {
+    "look_number": 56,
+    "confidence": 0.9
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a582993f4fc38046c362/master/pass/00178-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|46-58": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 53, including the light blue cinched-waist shirt dress with a pleated skirt, the dark grey leggings, the black shoes, and the model's short curly hair.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a581b6c9f6bd4aab80b9/master/pass/00177-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|46-58": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The dark brown lace-up shoes with red laces, dark burgundy ruched over-the-knee socks with white floral embroidery, and black leg straps are identical to the detail.",
+  "alternates": [
+   {
+    "look_number": 48,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a58845f2f0c246c5c284/master/pass/00180-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|46-58": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The light blue oversized shirt with a front zipper, revealing a lime green top and black band, and the matching light blue fabric rose belt are identical to Look 53.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a57deef74476d5f309ac/master/pass/00175-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|45-57": {
+  "look_number": 52,
+  "confidence": 1.0,
+  "evidence": "The sheer black skirt with black beaded floral patterns, drawstring waist, and dark red hosiery perfectly match Look 52.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a588993f4fc38046c369/master/pass/00181-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|47-59": {
+  "look_number": 53,
+  "confidence": 0.98,
+  "evidence": "The dark grey leggings with white floral embroidery, black pointed shoe shape, and distinctive purple laces are all identical to the detail image.",
+  "alternates": [
+   {
+    "look_number": 51,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 55,
+    "confidence": 0.5
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a58e269d7ea6b065bbcd/master/pass/00183-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|47-59": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The model, green ribbed knit top over a white top, and the distinctive earring are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a58f549eab3dee424f38/master/pass/00184-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|48-60": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the olive green knitted V-neck top with its distinct pattern, the white undershirt, and the dark grey drawstring skirt with a hint of purple trim, all visible in Look 54.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a59a449a2f51854ed55c/master/pass/00186-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|48-60": {
+  "look_number": 50,
+  "confidence": 1.0,
+  "evidence": "The detail shows yellow embellished pointed shoes and white patterned socks. Look 50 features identical shoes and socks, matching the color, embellishment, and the distinct knit pattern on the sock's foot and sheer texture on the leg.",
+  "alternates": [
+   {
+    "look_number": 54,
+    "confidence": 1.0
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a590d79e681c76407a4a/master/pass/00185-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|48-60": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The cream crocodile-textured bag with gold hardware and 'PRADA' logo is an exact match. The grey skirt and white knee-high socks also match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a58b8dc6f055139c83e7/master/pass/00182-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|47-59": {
+  "look_number": 54,
+  "confidence": 1.0,
+  "evidence": "The model, olive green knitted top over white tank, grey skirt, light crocodile-textured bag, and white socks are all identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5957ca2e45120471c4f/master/pass/00188-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|49-61": {
+  "look_number": 55,
+  "confidence": 1.0,
+  "evidence": "The model, hair, makeup, dark grey textured top, sheer dark neckline, and triangular Prada logo all perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a59a45f2f0c246c5c28b/master/pass/00189-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|49-61": {
+  "look_number": 55,
+  "confidence": 1.0,
+  "evidence": "The dark grey fuzzy sleeveless top with the sheer neckline and Prada logo, and the dark grey gathered-waist shorts are an exact match.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a598993f4fc38046c376/master/pass/00187-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|48-60": {
+  "look_number": 55,
+  "confidence": 1.0,
+  "evidence": "The model's dark grey knit top, grey shiny shorts with white underlayer, burgundy knee-high socks/boots, pointed-toe shoes, and black top-handle bag are all identical to Look 55.",
+  "alternates": [
+   {
+    "look_number": 51,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a59ecff5df84e523a9ad/master/pass/00190-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|49-61": {
+  "look_number": 55,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a black cylindrical bag with crocodile-embossed ends, dark red over-the-knee socks with ties, and a grey garment with a white layer underneath. Look 55 features the identical bag, socks, and a grey shorts garment with a white layer underneath that perfectly matches the visible portion of the garment in the detail.",
+  "alternates": [
+   {
+    "look_number": 52,
+    "confidence": 0.7
+   },
+   {
+    "look_number": 58,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5a0b6c9f6bd4aab80c0/master/pass/00192-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|50-61": {
+  "look_number": 56,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 56 in the sleeveless dark dress with green accents, the distinctive yellow textured boots, and the small black top-handle bag. The model's hair also matches.",
+  "alternates": [
+   {
+    "look_number": 54,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5a7aeb6febf3b139b00/master/pass/00191-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|50-61": {
+  "look_number": 55,
+  "confidence": 0.65,
+  "evidence": "The detail shows burgundy hosiery and a dark, pointed-toe shoe with blue laces. Look 55 features burgundy hosiery and a dark, pointed-toe shoe with blue laces. While the hosiery pattern (embroidered roses vs. cut-outs) and shoe texture (feathers vs. patterned fabric) are not exact, the combination of hosiery color and lace color is the closest match among candidates.",
+  "alternates": [
+   {
+    "look_number": 52,
+    "confidence": 0.4
+   },
+   {
+    "look_number": 53,
+    "confidence": 0.3
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a585fe8966f5dc8d7160/master/pass/00179-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|46-58": {
+  "look_number": 53,
+  "confidence": 1.0,
+  "evidence": "The model's face, short curly brown hair, dark eye makeup, light blue collared shirt, and textured bright green top underneath are identical to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5ab5a6f46fff0e4f53d/master/pass/00195-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|51-61": {
+  "look_number": 56,
+  "confidence": 1.0,
+  "evidence": "The detail image shows a knee-high, pointed-toe boot in pale yellow satin, heavily embellished with matching yellow floral beadwork. Look 56 features the exact same boots.",
+  "alternates": [
+   {
+    "look_number": 54,
+    "confidence": 0.7
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5a61435c4e9ef5c8cd4/master/pass/00193-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|50-61": {
+  "look_number": 56,
+  "confidence": 1.0,
+  "evidence": "The model's hair, skin tone, and makeup are identical. The black sleeveless dress with the distinctive green and light green/white abstract embellishments around the neckline and upper chest perfectly matches the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5ad1443f798a3cde388/master/pass/00196-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|51-61": {
+  "look_number": 57,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 57's white square-neck dress with the blue face graphic, the red crocodile-embossed handbag, and the light blue/grey textured knee-high boots.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5b045f2f0c246c5c292/master/pass/00198-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|52-61": {
+  "look_number": 57,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches Look 57, showing the same white drawstring dress with the distinctive green face print and abstract pattern, the red crocodile-embossed handbag, and black sheer hosiery.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5ae9edd0687256637c4/master/pass/00197-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|51-61": {
+  "look_number": 57,
+  "confidence": 1.0,
+  "evidence": "The detail image shows the same model with identical hair and heavy smudged eye makeup, wearing a white sleeveless top with a square neckline and wide straps, which perfectly matches Look 57.",
+  "alternates": [
+   {
+    "look_number": 52,
+    "confidence": 0.8
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5a69343b7d0eecf90c1/master/pass/00194-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|50-61": {
+  "look_number": 56,
+  "confidence": 0.9,
+  "evidence": "The black dress with green embellishments and the yellow/gold embellished boots are an exact match in style, color, and texture. The bag in the detail is different from the one shown in the full look.",
+  "alternates": [
+   {
+    "look_number": 50,
+    "confidence": 0.6
+   },
+   {
+    "look_number": 54,
+    "confidence": 0.6
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5b5449a2f51854ed563/master/pass/00201-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|53-61": {
+  "look_number": 58,
+  "confidence": 1.0,
+  "evidence": "The model's face, hair, dark smokey eye makeup, black dress strap, and the distinctive dark green geometric earring are an exact match to the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5bac48ae7dce9d1333e/master/pass/00203-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|53-61": {
+  "look_number": 58,
+  "confidence": 1.0,
+  "evidence": "The black cylindrical bag with prominent silver zippers, the black dress with a slight sheen, and the black knee-high socks with a tie detail perfectly match those in Look 58.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5b98dc6f055139c83ee/master/pass/00202-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|53-61": {
+  "look_number": 58,
+  "confidence": 1.0,
+  "evidence": "The black sleeveless top/dress with thin straps, shiny fabric, elasticated waist, and prominent silver Prada triangle logo are identical in both the detail and Look 58.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5b3eef74476d5f309b3/master/pass/00199-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|52-61": {
+  "look_number": 57,
+  "confidence": 1.0,
+  "evidence": "The red crocodile-embossed Prada handbag, the white dress with green and blue abstract prints, and the light blue/grey textured boots all perfectly match the detail image.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5b40f08a195f3d76cdd/master/pass/00200-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|52-61": {
+  "look_number": 57,
+  "confidence": 1.0,
+  "evidence": "The detail image perfectly matches the light blue feathered boots with yellow laces, the white dress, and the red crocodile-textured bag worn by the model in Look 57.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5be222553697012dae8/master/pass/00205-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|54-61": {
+  "look_number": 59,
+  "confidence": 1.0,
+  "evidence": "The white cropped top with a wide neckline and the black skirt with the distinctive green and yellow abstract pattern are identical in both the detail image and Look 59. The model is also the same.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5c0549eab3dee424f3f/master/pass/00206-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|54-61": {
+  "look_number": 59,
+  "confidence": 1.0,
+  "evidence": "The detail shows burgundy knee-high socks with floral embroidery and red pointed-toe shoes with extensive red beading and dangling embellishments. Look 59 features identical burgundy knee-high socks with the same floral embroidery and the exact same red embellished shoes.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5c0d28bb7fb543ac67c/master/pass/00207-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|54-61": {
+  "look_number": 60,
+  "confidence": 1.0,
+  "evidence": "The detail shows a white sleeveless dress with a round neck and a drawstring waist, made of a crinkled fabric. Look 60 features the identical dress, including the model's tattoo and earrings visible in the detail.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5c5d79e681c76407a51/master/pass/00209-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|55-61": {
+  "look_number": 60,
+  "confidence": 1.0,
+  "evidence": "The detail shows a white feathered knee-high boot with silver D-ring eyelets and white laces, and a patterned garment with black and white lace trim. Look 60 features the exact same boots and a dress with a matching patterned and lace-trimmed section.",
+  "alternates": []
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5bb05857e4111c5f507/master/pass/00204-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|53-61": {
+  "look_number": 54,
+  "confidence": 0.95,
+  "evidence": "The model's face, short curly hair, and dark eye makeup are identical. The white garment's wide scoop neckline and the visible extent of the fabric match the undershirt worn in Look 54.",
+  "alternates": [
+   {
+    "look_number": 59,
+    "confidence": 0.75
+   }
+  ]
+ },
+ "gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a5c559dc90ed42f38557/master/pass/00208-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|55-61": {
+  "look_number": 60,
+  "confidence": 1.0,
+  "evidence": "The light blue crocodile-embossed handbag, the white printed dress with the classical bust motif, and the white textured boots all perfectly match the detail image.",
+  "alternates": []
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a51c222553697012da91/master/pass/00135-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|40-41": {
+  "look_number": 40,
+  "confidence": 1.0,
+  "evidence": "The burgundy thigh-high boots with pink floral embroidery, textured brown toe, and blue laces are an exact match to the detail image.",
+  "alternates": [
+   {
+    "look_number": 41,
+    "confidence": 0.0
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4248f47cd0675bf4cef/master/pass/00021-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|6-7": {
+  "look_number": 6,
+  "confidence": 1.0,
+  "evidence": "The shoes, black socks, and the distinctive floral embroidery pattern on the socks perfectly match the detail image. The hanging strings on the leg also match.",
+  "alternates": [
+   {
+    "look_number": 7,
+    "confidence": 0.1
+   }
+  ]
+ },
+ "forced|gemini-2.5-flash|512|https://assets.vogue.com/photos/69a0a4feddd1b24a3f934487/master/pass/00122-prada-fall-2026-ready-to-wear-details-credit-gorunway.jpg|36-37": {
+  "look_number": 36,
+  "confidence": 0.75,
+  "evidence": "The dark brown lace-up shoes and black, ruched knee-high socks match the detail in color and style. While the detail shows pink floral embroidery, Look 36 displays white embellishments on similar socks.",
+  "alternates": [
+   {
+    "look_number": 37,
+    "confidence": 0.1
+   }
+  ]
+ }
+}

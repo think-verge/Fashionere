@@ -1,0 +1,24 @@
+2026-08-03 14:06:54 IST  run 2026-08-03T14:06:54+05:30 | 2 collection(s) | pipeline v2
+2026-08-03 14:06:54 IST  [ 1/2] prada | fall-2025-ready-to-wear
+2026-08-03 14:06:54 IST           scrape  SKIP   done 2026-08-02 (52 looks, 117 details)
+2026-08-03 14:06:54 IST           match   SKIP   done 2026-08-02 (116 attached)
+2026-08-03 14:06:54 IST           tag     SKIP   done 2026-08-02 (169 images)
+2026-08-03 14:06:54 IST           flatten RUN    
+2026-08-03 14:06:54 IST             | -> Prada fall-2025-ready-to-wear
+2026-08-03 14:06:54 IST             |    documents : 53  (52 looks, 1 unmatched-detail)
+2026-08-03 14:06:54 IST             |    details   : 117 nested across those documents
+2026-08-03 14:06:54 IST             | Saved -> C:\Users\JaswanthPall_fnohyb7\Downloads\Prada\fashion_engine\scrape_engine\data\flattened\prada\Prada_fall_2025_ready_to_wear_flattened.json
+2026-08-03 14:06:54 IST           flatten OK     53 documents (52 looks) ready for Mongo
+2026-08-03 14:06:56 IST  [ 2/2] valentino | fall-2026-ready-to-wear
+2026-08-03 14:06:56 IST           scrape  SKIP   done 2026-08-03 (85 looks, 101 details)
+2026-08-03 14:06:56 IST           match   SKIP   done 2026-08-03 (101 attached)
+2026-08-03 14:06:56 IST           tag     SKIP   done 2026-08-03 (186 images)
+2026-08-03 14:06:56 IST           flatten RUN    
+2026-08-03 14:06:56 IST             | -> Valentino fall-2026-ready-to-wear
+2026-08-03 14:06:56 IST             |    documents : 85  (85 looks)
+2026-08-03 14:06:56 IST             |    details   : 101 nested across those documents
+2026-08-03 14:06:56 IST             | Saved -> C:\Users\JaswanthPall_fnohyb7\Downloads\Prada\fashion_engine\scrape_engine\data\flattened\valentino\Valentino_fall_2026_ready_to_wear_flattened.json
+2026-08-03 14:06:56 IST           flatten OK     85 documents (85 looks) ready for Mongo
+2026-08-03 14:06:56 IST  ----------------------------------------------------------------
+2026-08-03 14:06:56 IST  scraped 0   matched 0   tagged 0   flattened 2   skipped 6   failed 0   suspect 0
+2026-08-03 14:06:56 IST  gemini ~$0.00 est (upper bound; cached calls cost nothing)   elapsed 2s   log: C:\Users\JaswanthPall_fnohyb7\Downloads\Prada\fashion_engine\scrape_engine\logs\run_2026-08-03_14-06-54_IST.log

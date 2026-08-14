@@ -1,0 +1,78 @@
+2026-08-05 10:04:50 IST  run 2026-08-05T10:04:50+05:30 | 56 collection(s) | pipeline v2
+2026-08-05 10:04:50 IST  [ 1/56] prada | fall-2026-ready-to-wear
+2026-08-05 10:04:50 IST           scrape  SKIP   done 2026-08-04 (61 looks, 209 details)
+2026-08-05 10:04:50 IST           match   SKIP   done 2026-08-04 (209 attached)
+2026-08-05 10:04:50 IST           tag     SKIP   done 2026-08-04 (270 images)
+2026-08-05 10:04:50 IST           flatten SKIP   done 2026-08-04 (61 docs)
+2026-08-05 10:04:52 IST  [ 2/56] prada | spring-2026-ready-to-wear
+2026-08-05 10:04:52 IST           scrape  SKIP   done 2026-08-04 (54 looks, 148 details)
+2026-08-05 10:04:52 IST           match   RUN    148 details -> gemini-2.5-flash
+2026-08-05 10:05:42 IST             | -> Prada spring-2026-ready-to-wear: 54 looks, 148 details
+2026-08-05 10:05:42 IST             |    model=gemini-2.5-flash window=+/-6 workers=4
+2026-08-05 10:05:42 IST           match   FAIL   RuntimeError: Gemini scoring failed after retries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}
+2026-08-05 10:05:42 IST  [ 3/56] prada | fall-2025-ready-to-wear
+2026-08-05 10:05:42 IST           scrape  SKIP   done 2026-08-02 (52 looks, 117 details)
+2026-08-05 10:05:42 IST           match   SKIP   done 2026-08-02 (116 attached)
+2026-08-05 10:05:42 IST           tag     SKIP   done 2026-08-02 (169 images)
+2026-08-05 10:05:42 IST           flatten SKIP   done 2026-08-03 (53 docs)
+2026-08-05 10:05:44 IST  [ 4/56] prada | spring-2025-ready-to-wear
+2026-08-05 10:05:44 IST           scrape  SKIP   done 2026-08-04 (50 looks, 122 details)
+2026-08-05 10:05:44 IST           match   SKIP   done 2026-08-04 (121 attached)
+2026-08-05 10:05:44 IST           tag     SKIP   done 2026-08-04 (172 images)
+2026-08-05 10:05:44 IST           flatten SKIP   done 2026-08-04 (51 docs)
+2026-08-05 10:05:46 IST  [ 5/56] valentino | resort-2027
+2026-08-05 10:05:46 IST           scrape  SKIP   done 2026-08-04 (66 looks, 50 details)
+2026-08-05 10:05:46 IST           match   SKIP   done 2026-08-04 (47 attached)
+2026-08-05 10:05:46 IST           tag     SKIP   done 2026-08-04 (112 images)
+2026-08-05 10:05:46 IST           flatten SKIP   done 2026-08-04 (69 docs)
+2026-08-05 10:05:48 IST  [ 6/56] valentino | fall-2026-ready-to-wear
+2026-08-05 10:05:48 IST           scrape  SKIP   done 2026-08-03 (85 looks, 101 details)
+2026-08-05 10:05:48 IST           match   SKIP   done 2026-08-03 (101 attached)
+2026-08-05 10:05:48 IST           tag     SKIP   done 2026-08-03 (186 images)
+2026-08-05 10:05:48 IST           flatten SKIP   done 2026-08-03 (85 docs)
+2026-08-05 10:05:50 IST  [ 7/56] valentino | spring-2026-couture
+2026-08-05 10:05:50 IST           scrape  SKIP   done 2026-08-03 (61 looks, 80 details)
+2026-08-05 10:05:50 IST           match   SKIP   done 2026-08-03 (80 attached)
+2026-08-05 10:05:50 IST           tag     SKIP   done 2026-08-03 (140 images)
+2026-08-05 10:05:50 IST           flatten SKIP   done 2026-08-03 (61 docs)
+2026-08-05 10:05:52 IST  [ 8/56] valentino | pre-fall-2026
+2026-08-05 10:05:52 IST           scrape  SKIP   done 2026-08-04 (111 looks, 0 details)
+2026-08-05 10:05:52 IST           match   RUN    ? details -> gemini-2.5-flash
+2026-08-05 10:05:52 IST           match   FAIL   C:\Users\JaswanthPall_fnohyb7\Downloads\Prada\fashion_engine\scrape_engine\data\raw\valentino\Valentino_pre_fall_2026_raw.json has an empty 'details_gallery' -- nothing to match. Run this against the Layer 1 *_raw.json, not an already-mapped file.
+2026-08-05 10:05:52 IST  [ 9/56] valentino | spring-2026-ready-to-wear
+2026-08-05 10:05:52 IST           scrape  SKIP   done 2026-08-04 (81 looks, 106 details)
+2026-08-05 10:05:52 IST           match   SKIP   done 2026-08-04 (106 attached)
+2026-08-05 10:05:52 IST           tag     SKIP   done 2026-08-04 (187 images)
+2026-08-05 10:05:52 IST           flatten SKIP   done 2026-08-04 (81 docs)
+2026-08-05 10:05:54 IST  [10/56] valentino | resort-2026
+2026-08-05 10:05:55 IST           scrape  SKIP   done 2026-08-04 (132 looks, 91 details)
+2026-08-05 10:05:55 IST           match   RUN    91 details -> gemini-2.5-flash
+2026-08-05 10:06:46 IST             | -> Valentino resort-2026: 132 looks, 91 details
+2026-08-05 10:06:46 IST             |    model=gemini-2.5-flash window=+/-6 workers=4
+2026-08-05 10:06:46 IST           match   FAIL   RuntimeError: Gemini scoring failed after retries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}
+2026-08-05 10:06:46 IST  [11/56] valentino | fall-2025-ready-to-wear
+2026-08-05 10:06:46 IST           scrape  SKIP   done 2026-08-04 (81 looks, 99 details)
+2026-08-05 10:06:46 IST           match   SKIP   done 2026-08-04 (99 attached)
+2026-08-05 10:06:46 IST           tag     SKIP   done 2026-08-04 (180 images)
+2026-08-05 10:06:46 IST           flatten SKIP   done 2026-08-04 (81 docs)
+2026-08-05 10:06:48 IST  [12/56] valentino | spring-2025-couture
+2026-08-05 10:06:48 IST           scrape  SKIP   done 2026-08-04 (49 looks, 65 details)
+2026-08-05 10:06:48 IST           match   SKIP   done 2026-08-04 (65 attached)
+2026-08-05 10:06:48 IST           tag     SKIP   done 2026-08-04 (114 images)
+2026-08-05 10:06:48 IST           flatten SKIP   done 2026-08-04 (49 docs)
+2026-08-05 10:06:50 IST  [13/56] valentino | pre-fall-2025
+2026-08-05 10:06:50 IST           scrape  SKIP   done 2026-08-04 (90 looks, 97 details)
+2026-08-05 10:06:50 IST           match   SKIP   done 2026-08-04 (89 attached)
+2026-08-05 10:06:50 IST           tag     SKIP   done 2026-08-04 (113 images)
+2026-08-05 10:06:50 IST           flatten SKIP   done 2026-08-04 (98 docs)
+2026-08-05 10:06:52 IST  [14/56] valentino | spring-2025-ready-to-wear
+2026-08-05 10:06:52 IST           scrape  SKIP   done 2026-08-04 (86 looks, 144 details)
+2026-08-05 10:06:52 IST           match   RUN    144 details -> gemini-2.5-flash
+2026-08-05 10:07:41 IST             | -> Valentino spring-2025-ready-to-wear: 86 looks, 144 details
+2026-08-05 10:07:41 IST             |    model=gemini-2.5-flash window=+/-6 workers=4
+2026-08-05 10:07:41 IST           match   FAIL   RuntimeError: Gemini scoring failed after retries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}
+2026-08-05 10:07:41 IST  [15/56] christion_dior | fall-2026-couture
+2026-08-05 10:07:41 IST           scrape  RUN    
+2026-08-05 10:08:03 IST             | -> Loading https://www.vogue.com/fashion-shows/fall-2026-couture/christian-dior
+2026-08-05 10:08:03 IST             |    Strategy 1 (embedded state): 66 looks, 193 details
+2026-08-05 10:08:03 IST             |    Capturing <img> tags from the slideshows...
