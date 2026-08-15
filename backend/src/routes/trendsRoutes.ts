@@ -7,4 +7,4 @@ export const trendsRouter = Router();
 
 trendsRouter.use(requireAuth);
 trendsRouter.get("/", asyncHandler(trendsController.list));
-trendsRouter.get("/:id", asyncHandler(trendsController.getById));
+trendsRouter.get("/:brandSlug", asyncHandler(trendsController.getByBrandSlug));

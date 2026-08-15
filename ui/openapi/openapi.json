@@ -71,130 +71,6 @@
           "name"
         ]
       },
-      "Moodboard": {
-        "type": "object",
-        "properties": {
-          "_id": {
-            "type": "string"
-          },
-          "userId": {
-            "type": "string"
-          },
-          "jobId": {
-            "type": "string"
-          },
-          "status": {
-            "type": "string",
-            "enum": [
-              "pending",
-              "running",
-              "done",
-              "error"
-            ]
-          },
-          "inputMode": {
-            "type": "string",
-            "enum": [
-              "query",
-              "catalogue",
-              "image"
-            ]
-          },
-          "inputPayload": {
-            "type": "object",
-            "additionalProperties": {
-              "nullable": true
-            }
-          },
-          "moodboard": {
-            "type": "object",
-            "nullable": true,
-            "additionalProperties": {
-              "nullable": true
-            }
-          },
-          "name": {
-            "type": "string"
-          },
-          "error": {
-            "type": "string",
-            "nullable": true
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "updatedAt": {
-            "type": "string",
-            "format": "date-time"
-          }
-        },
-        "required": [
-          "_id",
-          "userId",
-          "jobId",
-          "status",
-          "inputMode",
-          "inputPayload",
-          "moodboard",
-          "name",
-          "error",
-          "createdAt",
-          "updatedAt"
-        ]
-      },
-      "MoodboardSummary": {
-        "type": "object",
-        "properties": {
-          "_id": {
-            "type": "string"
-          },
-          "userId": {
-            "type": "string"
-          },
-          "jobId": {
-            "type": "string"
-          },
-          "status": {
-            "type": "string",
-            "enum": [
-              "pending",
-              "running",
-              "done",
-              "error"
-            ]
-          },
-          "inputMode": {
-            "type": "string",
-            "enum": [
-              "query",
-              "catalogue",
-              "image"
-            ]
-          },
-          "name": {
-            "type": "string"
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "updatedAt": {
-            "type": "string",
-            "format": "date-time"
-          }
-        },
-        "required": [
-          "_id",
-          "userId",
-          "jobId",
-          "status",
-          "inputMode",
-          "name",
-          "createdAt",
-          "updatedAt"
-        ]
-      },
       "Project": {
         "type": "object",
         "properties": {
@@ -209,12 +85,6 @@
           },
           "description": {
             "type": "string"
-          },
-          "moodboardIds": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "tags": {
             "type": "array",
@@ -236,10 +106,440 @@
           "userId",
           "name",
           "description",
-          "moodboardIds",
           "tags",
           "createdAt",
           "updatedAt"
+        ]
+      },
+      "LookSummary": {
+        "type": "object",
+        "properties": {
+          "look_id": {
+            "type": "string"
+          },
+          "brand": {
+            "type": "string",
+            "nullable": true
+          },
+          "collection_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "runway_url": {
+            "type": "string",
+            "nullable": true
+          },
+          "num_garments": {
+            "type": "number"
+          },
+          "has_flats": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "look_id",
+          "brand",
+          "collection_id",
+          "runway_url",
+          "num_garments",
+          "has_flats"
+        ]
+      },
+      "ColorSwatch": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "pantone": {
+            "type": "string"
+          },
+          "hex": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          }
+        }
+      },
+      "FabricElement": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "material": {
+            "type": "string"
+          },
+          "weight": {
+            "type": "string"
+          },
+          "finish": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "string"
+          },
+          "swatch_url": {
+            "type": "string"
+          }
+        }
+      },
+      "PatternElement": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "motif": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "scale": {
+            "type": "string"
+          },
+          "colors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "description": {
+            "type": "string"
+          },
+          "swatch_url": {
+            "type": "string"
+          }
+        }
+      },
+      "Garment": {
+        "type": "object",
+        "properties": {
+          "garment_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "piece": {
+            "type": "string",
+            "nullable": true
+          },
+          "colors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ColorSwatch"
+            }
+          },
+          "flat": {
+            "type": "string",
+            "nullable": true
+          },
+          "fabrics": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FabricElement"
+            }
+          },
+          "patterns": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PatternElement"
+            }
+          }
+        },
+        "required": [
+          "garment_id",
+          "piece",
+          "colors",
+          "flat",
+          "fabrics",
+          "patterns"
+        ]
+      },
+      "LookDetail": {
+        "type": "object",
+        "properties": {
+          "look_id": {
+            "type": "string"
+          },
+          "brand": {
+            "type": "string",
+            "nullable": true
+          },
+          "collection_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "runway_url": {
+            "type": "string",
+            "nullable": true
+          },
+          "silhouette": {
+            "type": "string",
+            "nullable": true
+          },
+          "whole_look_flat": {
+            "type": "string",
+            "nullable": true
+          },
+          "garments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Garment"
+            }
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "required": [
+          "look_id",
+          "brand",
+          "collection_id",
+          "runway_url",
+          "silhouette",
+          "whole_look_flat",
+          "garments",
+          "status"
+        ]
+      },
+      "TrendSheetSummary": {
+        "type": "object",
+        "properties": {
+          "brand": {
+            "type": "string"
+          },
+          "brand_slug": {
+            "type": "string"
+          },
+          "window_years": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          },
+          "total_looks": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "brand",
+          "brand_slug",
+          "window_years",
+          "total_looks"
+        ]
+      },
+      "MomentumInfo": {
+        "type": "object",
+        "properties": {
+          "yoy_delta": {
+            "type": "number",
+            "nullable": true
+          },
+          "kind": {
+            "type": "string"
+          },
+          "trustworthy": {
+            "type": "boolean"
+          },
+          "by_year": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number"
+            }
+          },
+          "like_season": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number"
+            }
+          }
+        },
+        "required": [
+          "yoy_delta",
+          "kind",
+          "trustworthy",
+          "by_year",
+          "like_season"
+        ]
+      },
+      "EvidenceRef": {
+        "type": "object",
+        "properties": {
+          "collection_id": {
+            "type": "string"
+          },
+          "look_number": {
+            "type": "number"
+          },
+          "hex": {
+            "type": "string",
+            "nullable": true
+          },
+          "image": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "required": [
+          "collection_id",
+          "look_number"
+        ]
+      },
+      "RankedValue": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "string"
+          },
+          "share": {
+            "type": "number"
+          },
+          "looks": {
+            "type": "number"
+          },
+          "signature_score": {
+            "type": "number",
+            "nullable": true
+          },
+          "momentum": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/MomentumInfo"
+              },
+              {
+                "nullable": true
+              }
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EvidenceRef"
+            }
+          }
+        },
+        "required": [
+          "value",
+          "share",
+          "looks",
+          "evidence"
+        ]
+      },
+      "PaletteSwatch": {
+        "type": "object",
+        "properties": {
+          "hex": {
+            "type": "string"
+          },
+          "family": {
+            "type": "string"
+          },
+          "share": {
+            "type": "number"
+          },
+          "pantone": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "required": [
+          "hex",
+          "family",
+          "share"
+        ]
+      },
+      "DimensionAggregate": {
+        "type": "object",
+        "properties": {
+          "dimension": {
+            "type": "string"
+          },
+          "total_looks": {
+            "type": "number"
+          },
+          "by_year": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number"
+            }
+          },
+          "ranked": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RankedValue"
+            }
+          },
+          "palette": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PaletteSwatch"
+            }
+          },
+          "omitted_count": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "dimension",
+          "total_looks",
+          "by_year",
+          "ranked",
+          "palette",
+          "omitted_count"
+        ]
+      },
+      "TrendSheet": {
+        "type": "object",
+        "properties": {
+          "brand": {
+            "type": "string"
+          },
+          "brand_slug": {
+            "type": "string"
+          },
+          "report_type": {
+            "type": "string"
+          },
+          "window_years": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          },
+          "collections": {
+            "type": "number"
+          },
+          "total_looks": {
+            "type": "number"
+          },
+          "dimensions": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/DimensionAggregate"
+            }
+          },
+          "generated": {
+            "type": "object",
+            "additionalProperties": {
+              "nullable": true
+            }
+          }
+        },
+        "required": [
+          "brand",
+          "brand_slug",
+          "report_type",
+          "window_years",
+          "collections",
+          "total_looks",
+          "dimensions",
+          "generated"
         ]
       },
       "CostInput": {
@@ -463,10 +763,20 @@
         }
       }
     },
-    "/api/v1/moodboards": {
+    "/api/v1/looks": {
       "get": {
         "tags": [
-          "Moodboards"
+          "Looks"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "name": "brand",
+            "in": "query"
+          }
         ],
         "responses": {
           "200": {
@@ -476,7 +786,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/MoodboardSummary"
+                    "$ref": "#/components/schemas/LookSummary"
                   }
                 }
               }
@@ -485,119 +795,10 @@
         }
       }
     },
-    "/api/v1/moodboards/from-query": {
-      "post": {
-        "tags": [
-          "Moodboards"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "query": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "query"
-                ]
-              }
-            }
-          }
-        },
-        "responses": {
-          "202": {
-            "description": "Accepted",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Moodboard"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/v1/moodboards/from-catalogue": {
-      "post": {
-        "tags": [
-          "Moodboards"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "catalogue_item_id": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "catalogue_item_id"
-                ]
-              }
-            }
-          }
-        },
-        "responses": {
-          "202": {
-            "description": "Accepted",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Moodboard"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/v1/moodboards/from-image": {
-      "post": {
-        "tags": [
-          "Moodboards"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "image_url": {
-                    "type": "string",
-                    "format": "uri"
-                  }
-                },
-                "required": [
-                  "image_url"
-                ]
-              }
-            }
-          }
-        },
-        "responses": {
-          "202": {
-            "description": "Accepted",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Moodboard"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/v1/moodboards/{id}": {
+    "/api/v1/looks/{lookId}": {
       "get": {
         "tags": [
-          "Moodboards"
+          "Looks"
         ],
         "parameters": [
           {
@@ -605,7 +806,7 @@
               "type": "string"
             },
             "required": true,
-            "name": "id",
+            "name": "lookId",
             "in": "path"
           }
         ],
@@ -615,96 +816,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Moodboard"
-                }
-              }
-            }
-          }
-        }
-      },
-      "patch": {
-        "tags": [
-          "Moodboards"
-        ],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "required": true,
-            "name": "id",
-            "in": "path"
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "name": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "name"
-                ]
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Moodboard"
-                }
-              }
-            }
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Moodboards"
-        ],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "required": true,
-            "name": "id",
-            "in": "path"
-          }
-        ],
-        "responses": {
-          "204": {
-            "description": "No Content"
-          }
-        }
-      }
-    },
-    "/api/v1/catalogue": {
-      "get": {
-        "tags": [
-          "Catalogue"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "additionalProperties": {
-                      "nullable": true
-                    }
-                  }
+                  "$ref": "#/components/schemas/LookDetail"
                 }
               }
             }
@@ -717,48 +829,6 @@
         "tags": [
           "Trends"
         ],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "required": false,
-            "name": "category",
-            "in": "query"
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "required": false,
-            "name": "lifecycle",
-            "in": "query"
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "required": false,
-            "name": "season",
-            "in": "query"
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "required": false,
-            "name": "market",
-            "in": "query"
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "required": false,
-            "name": "type",
-            "in": "query"
-          }
-        ],
         "responses": {
           "200": {
             "description": "OK",
@@ -767,10 +837,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "type": "object",
-                    "additionalProperties": {
-                      "nullable": true
-                    }
+                    "$ref": "#/components/schemas/TrendSheetSummary"
                   }
                 }
               }
@@ -779,7 +846,7 @@
         }
       }
     },
-    "/api/v1/trends/{id}": {
+    "/api/v1/trends/{brandSlug}": {
       "get": {
         "tags": [
           "Trends"
@@ -790,7 +857,7 @@
               "type": "string"
             },
             "required": true,
-            "name": "id",
+            "name": "brandSlug",
             "in": "path"
           }
         ],
@@ -800,10 +867,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "object",
-                  "additionalProperties": {
-                    "nullable": true
-                  }
+                  "$ref": "#/components/schemas/TrendSheet"
                 }
               }
             }
@@ -971,52 +1035,6 @@
         "responses": {
           "204": {
             "description": "No Content"
-          }
-        }
-      }
-    },
-    "/api/v1/projects/{id}/moodboards": {
-      "post": {
-        "tags": [
-          "Projects"
-        ],
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "required": true,
-            "name": "id",
-            "in": "path"
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "moodboardId": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "moodboardId"
-                ]
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Project"
-                }
-              }
-            }
           }
         }
       }

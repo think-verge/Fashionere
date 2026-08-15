@@ -18,10 +18,8 @@ import {
   Button,
 } from "@mui/material";
 import DashboardIcon from "@mui/icons-material/DashboardOutlined";
-import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import CollectionsIcon from "@mui/icons-material/CollectionsOutlined";
 import TrendingUpIcon from "@mui/icons-material/TrendingUpOutlined";
-import ShoppingBagIcon from "@mui/icons-material/ShoppingBagOutlined";
 import CalculateIcon from "@mui/icons-material/CalculateOutlined";
 import FolderIcon from "@mui/icons-material/FolderOutlined";
 import SettingsIcon from "@mui/icons-material/SettingsOutlined";
@@ -33,10 +31,8 @@ const DRAWER_WIDTH = 288;
 
 const NAV_ITEMS = [
   { label: "Dashboard", path: "/dashboard", icon: <DashboardIcon /> },
-  { label: "Studio", path: "/studio", icon: <AutoAwesomeIcon /> },
-  { label: "Moodboards", path: "/moodboards", icon: <CollectionsIcon /> },
+  { label: "Looks", path: "/looks", icon: <CollectionsIcon /> },
   { label: "Trends", path: "/trends", icon: <TrendingUpIcon /> },
-  { label: "Catalogue", path: "/catalogue", icon: <ShoppingBagIcon /> },
   { label: "Cost Calculator", path: "/cost-calculator", icon: <CalculateIcon /> },
   { label: "Projects", path: "/projects", icon: <FolderIcon /> },
 ];
@@ -165,7 +161,7 @@ export function PageShell({ title, children }: Props) {
             variant="contained"
             fullWidth
             startIcon={<AddIcon />}
-            onClick={() => navigate("/studio")}
+            onClick={() => navigate("/projects")}
             sx={{ py: 1.5, borderRadius: "12px", fontSize: 14 }}
           >
             New Project

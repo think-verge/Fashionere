@@ -8,3 +8,6 @@ fastapi>=0.110.0
 uvicorn[standard]>=0.27.0
 python-multipart>=0.0.9   # required by FastAPI for multipart/form-data uploads
 # pydantic is pulled in by fastapi (v2)
+
+# Storage (canonical/store_mongo.py: GridFS + bson)
+pymongo>=4.10

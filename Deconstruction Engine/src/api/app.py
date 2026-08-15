@@ -6,6 +6,13 @@
 """
 from __future__ import annotations
 
+from dotenv import load_dotenv
+
+# Load MONGO_URI (etc.) from .env before anything reads os.environ — this app
+# has no other entrypoint that does so (config.py's load_dotenv() is not
+# imported here).
+load_dotenv()
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 

@@ -31,13 +31,3 @@ export async function remove(req: Request, res: Response) {
   await projectService.deleteProject(req.user!.userId, String(req.params.id));
   res.status(204).send();
 }
-
-export async function addMoodboard(req: Request, res: Response) {
-  const { moodboardId } = req.body as { moodboardId: string };
-  const doc = await projectService.addMoodboardToProject(
-    req.user!.userId,
-    String(req.params.id),
-    moodboardId,
-  );
-  res.json(doc);
-}

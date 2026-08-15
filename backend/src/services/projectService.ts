@@ -15,7 +15,7 @@ export async function createProject(
 }
 
 export async function getProject(userId: string, projectId: string) {
-  const doc = await Project.findOne({ _id: projectId, userId }).populate("moodboardIds");
+  const doc = await Project.findOne({ _id: projectId, userId });
   if (!doc) throw new ApiError(404, "Project not found");
   return doc;
 }
@@ -35,18 +35,4 @@ export async function updateProject(
 export async function deleteProject(userId: string, projectId: string) {
   const doc = await Project.findOneAndDelete({ _id: projectId, userId });
   if (!doc) throw new ApiError(404, "Project not found");
-}
-
-export async function addMoodboardToProject(
-  userId: string,
-  projectId: string,
-  moodboardId: string,
-) {
-  const doc = await Project.findOneAndUpdate(
-    { _id: projectId, userId },
-    { $addToSet: { moodboardIds: moodboardId } },
-    { new: true },
-  );
-  if (!doc) throw new ApiError(404, "Project not found");
-  return doc;
 }

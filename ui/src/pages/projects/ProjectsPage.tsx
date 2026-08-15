@@ -97,7 +97,7 @@ export function ProjectsPage() {
                 <Paper sx={{ p: 5, textAlign: "center" }}>
                   <FolderIcon sx={{ fontSize: 48, color: "text.disabled", mb: 1 }} />
                   <Typography color="text.secondary">
-                    No projects yet. Create one to organise your moodboards.
+                    No projects yet. Create one to organise your work.
                   </Typography>
                 </Paper>
               </Grid>
@@ -119,11 +119,6 @@ export function ProjectsPage() {
                     </Typography>
                   )}
                   <Box sx={{ mt: 1.5, display: "flex", gap: 0.5, flexWrap: "wrap" }}>
-                    <Chip
-                      label={`${proj.moodboardIds.length} boards`}
-                      size="small"
-                      variant="outlined"
-                    />
                     {proj.tags.map((tag) => (
                       <Chip key={tag} label={tag} size="small" sx={{ fontSize: 10 }} />
                     ))}

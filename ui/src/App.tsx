@@ -3,11 +3,9 @@ import { ProtectedRoute } from "./components/ProtectedRoute";
 import { LoginPage } from "./pages/auth/LoginPage";
 import { SignupPage } from "./pages/auth/SignupPage";
 import { DashboardPage } from "./pages/dashboard/DashboardPage";
-import { StudioPage } from "./pages/studio/StudioPage";
-import { MoodboardsPage } from "./pages/moodboards/MoodboardsPage";
-import { MoodboardDetailPage } from "./pages/moodboards/MoodboardDetailPage";
+import { LooksPage } from "./pages/looks/LooksPage";
+import { LookDetailPage } from "./pages/looks/LookDetailPage";
 import { TrendsPage } from "./pages/trends/TrendsPage";
-import { CataloguePage } from "./pages/catalogue/CataloguePage";
 import { CostCalculatorPage } from "./pages/cost-calculator/CostCalculatorPage";
 import { ProjectsPage } from "./pages/projects/ProjectsPage";
 import { SettingsPage } from "./pages/settings/SettingsPage";
@@ -20,11 +18,9 @@ export default function App() {
       <Route element={<ProtectedRoute />}>
         <Route path="/" element={<Navigate to="/dashboard" replace />} />
         <Route path="/dashboard" element={<DashboardPage />} />
-        <Route path="/studio" element={<StudioPage />} />
-        <Route path="/moodboards" element={<MoodboardsPage />} />
-        <Route path="/moodboards/:id" element={<MoodboardDetailPage />} />
+        <Route path="/looks" element={<LooksPage />} />
+        <Route path="/looks/:lookId" element={<LookDetailPage />} />
         <Route path="/trends" element={<TrendsPage />} />
-        <Route path="/catalogue" element={<CataloguePage />} />
         <Route path="/cost-calculator" element={<CostCalculatorPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/settings" element={<SettingsPage />} />

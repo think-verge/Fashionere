@@ -13,7 +13,7 @@ import { useAuth } from "../../lib/auth-context";
 
 const stats = [
   { label: "Active Projects", value: "12", Icon: FolderOpenIcon },
-  { label: "Mood Boards", value: "34", Icon: DashboardOutlinedIcon },
+  { label: "Deconstructed Looks", value: "34", Icon: DashboardOutlinedIcon },
   { label: "Trend Analyses", value: "08", Icon: BarChartOutlinedIcon },
 ];
 
@@ -49,10 +49,10 @@ const templates = [
 ];
 
 const capabilities = [
-  { Icon: LightbulbOutlinedIcon, title: "Inspiration Engine", desc: "AI-powered concept generation tuned to your brief." },
+  { Icon: LightbulbOutlinedIcon, title: "Deconstruction Engine", desc: "Break down runway looks into color, fabric, and pattern." },
   { Icon: StraightenOutlinedIcon, title: "TechPacks", desc: "Auto-generate production-ready specifications." },
   { Icon: TrendingUpOutlinedIcon, title: "Trend Analysis", desc: "Real-time market and runway intelligence." },
-  { Icon: PaletteOutlinedIcon, title: "Mood Boards", desc: "Compose visual references into living boards." },
+  { Icon: PaletteOutlinedIcon, title: "Design Sketches", desc: "Generated technical flats per garment, ready to reference." },
 ];
 
 export function DashboardPage() {
@@ -98,7 +98,7 @@ export function DashboardPage() {
             maxWidth: 560,
           }}
         >
-          Select a template to begin with pre-made mood boards, trend analysis, and cost
+          Select a template to explore deconstructed looks, trend analysis, and cost
           calculations calibrated to your craft.
         </Typography>
       </Box>
@@ -184,7 +184,7 @@ export function DashboardPage() {
           {templates.map((tmpl) => (
             <Grid key={tmpl.id} size={{ xs: 12, md: 6 }}>
               <Paper
-                onClick={() => navigate("/studio")}
+                onClick={() => navigate("/looks")}
                 sx={{
                   p: 3.5,
                   cursor: "pointer",

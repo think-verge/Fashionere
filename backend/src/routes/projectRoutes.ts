@@ -11,4 +11,3 @@ projectRouter.post("/", asyncHandler(projectController.create));
 projectRouter.get("/:id", asyncHandler(projectController.getById));
 projectRouter.patch("/:id", asyncHandler(projectController.update));
 projectRouter.delete("/:id", asyncHandler(projectController.remove));
-projectRouter.post("/:id/moodboards", asyncHandler(projectController.addMoodboard));
