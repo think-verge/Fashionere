@@ -40,6 +40,30 @@ export interface DimensionAggregate {
   omitted_count: number;
 }
 
+export interface TrendReportSection {
+  dimension: string;
+  label: string;
+  coined_name: string;
+  narrative: string;
+  designer_cue: string;
+}
+
+export interface TrendReportPullQuote {
+  text: string;
+  attribution: string;
+}
+
+export interface TrendReport {
+  headline: string;
+  standfirst: string;
+  at_a_glance: string[];
+  sections: TrendReportSection[];
+  pull_quote: TrendReportPullQuote;
+  rendered_html: string;
+  generated_at: string;
+  narrate_model: string;
+}
+
 export interface TrendSheet {
   brand: string;
   brand_slug: string;
@@ -49,6 +73,7 @@ export interface TrendSheet {
   total_looks: number;
   dimensions: Record<string, DimensionAggregate>;
   generated: Record<string, unknown>;
+  report?: TrendReport | null;
 }
 
 export interface TrendSheetSummary {
@@ -65,8 +90,12 @@ async function trendSheetsCollection() {
 
 export async function listTrendSheets(): Promise<TrendSheetSummary[]> {
   const coll = await trendSheetsCollection();
+  // trend_sheets also stores a per-collection breakdown doc alongside each
+  // brand's aggregate report (_id: "<brand_slug>:<collection_id>", report_type:
+  // "collection") — only the brand-level "overall" doc belongs in this list,
+  // or every brand would appear once per collection.
   const docs = await coll
-    .find({}, { projection: { brand: 1, brand_slug: 1, window_years: 1, total_looks: 1 } })
+    .find({ report_type: "overall" }, { projection: { brand: 1, brand_slug: 1, window_years: 1, total_looks: 1 } })
     .sort({ brand: 1 })
     .toArray();
   return docs.map((d) => ({

@@ -494,6 +494,93 @@
           "omitted_count"
         ]
       },
+      "TrendReportSection": {
+        "type": "object",
+        "properties": {
+          "dimension": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "coined_name": {
+            "type": "string"
+          },
+          "narrative": {
+            "type": "string"
+          },
+          "designer_cue": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "dimension",
+          "label",
+          "coined_name",
+          "narrative",
+          "designer_cue"
+        ]
+      },
+      "TrendReportPullQuote": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "attribution": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text",
+          "attribution"
+        ]
+      },
+      "TrendReport": {
+        "type": "object",
+        "properties": {
+          "headline": {
+            "type": "string"
+          },
+          "standfirst": {
+            "type": "string"
+          },
+          "at_a_glance": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sections": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TrendReportSection"
+            }
+          },
+          "pull_quote": {
+            "$ref": "#/components/schemas/TrendReportPullQuote"
+          },
+          "rendered_html": {
+            "type": "string"
+          },
+          "generated_at": {
+            "type": "string"
+          },
+          "narrate_model": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "headline",
+          "standfirst",
+          "at_a_glance",
+          "sections",
+          "pull_quote",
+          "rendered_html",
+          "generated_at",
+          "narrate_model"
+        ]
+      },
       "TrendSheet": {
         "type": "object",
         "properties": {
@@ -529,6 +616,16 @@
             "additionalProperties": {
               "nullable": true
             }
+          },
+          "report": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TrendReport"
+              },
+              {
+                "nullable": true
+              }
+            ]
           }
         },
         "required": [
@@ -871,6 +968,35 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/api/v1/trends/generate/stream": {
+      "post": {
+        "tags": [
+          "Trends"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "brand_slug": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "brand_slug"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "NDJSON stream (application/x-ndjson) of stage/progress/done/error events — not representable as a single JSON body; consume via a raw fetch + ReadableStream reader, not the generated client."
           }
         }
       }

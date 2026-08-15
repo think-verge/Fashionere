@@ -121,7 +121,7 @@ export function PageShell({ title, children }: Props) {
         {/* Nav */}
         <List sx={{ flex: 1, px: 1.5, py: 0.5, display: "flex", flexDirection: "column", gap: 0.25 }}>
           {NAV_ITEMS.map((item) => {
-            const active = location.pathname === item.path;
+            const active = location.pathname === item.path || location.pathname.startsWith(item.path + "/");
             return (
               <ListItem key={item.path} disablePadding>
                 <ListItemButton

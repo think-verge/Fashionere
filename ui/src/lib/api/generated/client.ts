@@ -15,6 +15,7 @@ import type {
   PatchApiV1ProjectsIdBody,
   PatchApiV1UsersMeBody,
   PostApiV1ProjectsBody,
+  PostApiV1TrendsGenerateStreamBody,
   Project,
   SignupRequest,
   TrendSheet,
@@ -112,6 +113,17 @@ const getApiV1TrendsBrandSlug = (
       );
     }
   
+const postApiV1TrendsGenerateStream = (
+    postApiV1TrendsGenerateStreamBody: PostApiV1TrendsGenerateStreamBody,
+ ) => {
+      return customInstance<void>(
+      {url: `/api/v1/trends/generate/stream`, method: 'POST',
+      headers: {'Content-Type': 'application/json', },
+      data: postApiV1TrendsGenerateStreamBody
+    },
+      );
+    }
+  
 const getApiV1Projects = (
     
  ) => {
@@ -173,7 +185,7 @@ const postApiV1CostEstimate = (
       );
     }
   
-return {postApiV1AuthSignup,postApiV1AuthLogin,postApiV1AuthLogout,getApiV1AuthMe,patchApiV1UsersMe,getApiV1Looks,getApiV1LooksLookId,getApiV1Trends,getApiV1TrendsBrandSlug,getApiV1Projects,postApiV1Projects,getApiV1ProjectsId,patchApiV1ProjectsId,deleteApiV1ProjectsId,postApiV1CostEstimate}};
+return {postApiV1AuthSignup,postApiV1AuthLogin,postApiV1AuthLogout,getApiV1AuthMe,patchApiV1UsersMe,getApiV1Looks,getApiV1LooksLookId,getApiV1Trends,getApiV1TrendsBrandSlug,postApiV1TrendsGenerateStream,getApiV1Projects,postApiV1Projects,getApiV1ProjectsId,patchApiV1ProjectsId,deleteApiV1ProjectsId,postApiV1CostEstimate}};
 export type PostApiV1AuthSignupResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['postApiV1AuthSignup']>>>
 export type PostApiV1AuthLoginResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['postApiV1AuthLogin']>>>
 export type PostApiV1AuthLogoutResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['postApiV1AuthLogout']>>>
@@ -183,6 +195,7 @@ export type GetApiV1LooksResult = NonNullable<Awaited<ReturnType<ReturnType<type
 export type GetApiV1LooksLookIdResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['getApiV1LooksLookId']>>>
 export type GetApiV1TrendsResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['getApiV1Trends']>>>
 export type GetApiV1TrendsBrandSlugResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['getApiV1TrendsBrandSlug']>>>
+export type PostApiV1TrendsGenerateStreamResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['postApiV1TrendsGenerateStream']>>>
 export type GetApiV1ProjectsResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['getApiV1Projects']>>>
 export type PostApiV1ProjectsResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['postApiV1Projects']>>>
 export type GetApiV1ProjectsIdResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['getApiV1ProjectsId']>>>

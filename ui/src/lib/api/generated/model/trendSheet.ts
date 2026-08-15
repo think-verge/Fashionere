@@ -7,6 +7,7 @@
  */
 import type { TrendSheetDimensions } from './trendSheetDimensions';
 import type { TrendSheetGenerated } from './trendSheetGenerated';
+import type { TrendSheetReport } from './trendSheetReport';
 
 export interface TrendSheet {
   brand: string;
@@ -17,4 +18,5 @@ export interface TrendSheet {
   total_looks: number;
   dimensions: TrendSheetDimensions;
   generated: TrendSheetGenerated;
+  report?: TrendSheetReport;
 }

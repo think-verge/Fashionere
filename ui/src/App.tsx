@@ -6,6 +6,8 @@ import { DashboardPage } from "./pages/dashboard/DashboardPage";
 import { LooksPage } from "./pages/looks/LooksPage";
 import { LookDetailPage } from "./pages/looks/LookDetailPage";
 import { TrendsPage } from "./pages/trends/TrendsPage";
+import { TrendGeneratePage } from "./pages/trends/TrendGeneratePage";
+import { TrendDetailPage } from "./pages/trends/TrendDetailPage";
 import { CostCalculatorPage } from "./pages/cost-calculator/CostCalculatorPage";
 import { ProjectsPage } from "./pages/projects/ProjectsPage";
 import { SettingsPage } from "./pages/settings/SettingsPage";
@@ -21,6 +23,8 @@ export default function App() {
         <Route path="/looks" element={<LooksPage />} />
         <Route path="/looks/:lookId" element={<LookDetailPage />} />
         <Route path="/trends" element={<TrendsPage />} />
+        <Route path="/trends/generate" element={<TrendGeneratePage />} />
+        <Route path="/trends/:brandSlug" element={<TrendDetailPage />} />
         <Route path="/cost-calculator" element={<CostCalculatorPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/settings" element={<SettingsPage />} />

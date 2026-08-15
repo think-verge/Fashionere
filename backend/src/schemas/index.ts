@@ -189,6 +189,39 @@ const DimensionAggregateSchema = registry.register(
   }),
 );
 
+const TrendReportSectionSchema = registry.register(
+  "TrendReportSection",
+  z.object({
+    dimension: z.string(),
+    label: z.string(),
+    coined_name: z.string(),
+    narrative: z.string(),
+    designer_cue: z.string(),
+  }),
+);
+
+const TrendReportPullQuoteSchema = registry.register(
+  "TrendReportPullQuote",
+  z.object({
+    text: z.string(),
+    attribution: z.string(),
+  }),
+);
+
+const TrendReportSchema = registry.register(
+  "TrendReport",
+  z.object({
+    headline: z.string(),
+    standfirst: z.string(),
+    at_a_glance: z.array(z.string()),
+    sections: z.array(TrendReportSectionSchema),
+    pull_quote: TrendReportPullQuoteSchema,
+    rendered_html: z.string(),
+    generated_at: z.string(),
+    narrate_model: z.string(),
+  }),
+);
+
 const TrendSheetSchema = registry.register(
   "TrendSheet",
   z.object({
@@ -200,6 +233,7 @@ const TrendSheetSchema = registry.register(
     total_looks: z.number(),
     dimensions: z.record(DimensionAggregateSchema),
     generated: z.record(z.unknown()),
+    report: TrendReportSchema.nullable().optional(),
   }),
 );
 
@@ -283,6 +317,18 @@ export function registerPaths() {
     method: "get", path: "/api/v1/trends/{brandSlug}", tags: ["Trends"],
     request: { params: z.object({ brandSlug: z.string() }) },
     responses: { 200: { description: "OK", content: { "application/json": { schema: TrendSheetSchema } } } },
+  });
+  registry.registerPath({
+    method: "post", path: "/api/v1/trends/generate/stream", tags: ["Trends"],
+    request: { body: { content: { "application/json": { schema: z.object({ brand_slug: z.string() }) } } } },
+    responses: {
+      200: {
+        description:
+          "NDJSON stream (application/x-ndjson) of stage/progress/done/error events — " +
+          "not representable as a single JSON body; consume via a raw fetch + ReadableStream " +
+          "reader, not the generated client.",
+      },
+    },
   });
 
   // Projects
