@@ -17,13 +17,15 @@ from __future__ import annotations
 
 import json
 from datetime import datetime, timezone
+from functools import lru_cache
 
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException, Query
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 from pymongo import MongoClient
 
 from fashionairre_core.store import CanonicalStore
+from trend_engine.canonical import compare as cmp
 from trend_engine.canonical.build_sheets import _gemini, build_brand_sheet
 from trend_engine.compose.model import build_report_model
 from trend_engine.compose.narrator import narrate
@@ -127,3 +129,52 @@ def generate_stream(req: GenerateRequest) -> StreamingResponse:
 
     return StreamingResponse(generate(), media_type="application/x-ndjson",
                               headers={"Cache-Control": "no-cache"})
+
+
+# --- on-demand comparison endpoints (runtime compute from cached sheets) -----
+@lru_cache(maxsize=1)
+def _sheets_coll():
+    return MongoClient(config.MONGO_URI, serverSelectionTimeoutMS=15000)["Fashionere"]["trend_sheets"]
+
+
+@router.get("/compare/options")
+def compare_options():
+    """Brands available to compare (drives the dropdown)."""
+    return {"brands": cmp.brand_options(_sheets_coll())}
+
+
+@router.get("/season/options")
+def season_options():
+    """(year, season, category) buckets with >=2 brands (drives the dropdown)."""
+    return {"seasons": cmp.season_options(_sheets_coll())}
+
+
+@router.get("/compare")
+def compare(a: str = Query(..., description="brand slug A"),
+            b: str = Query(..., description="brand slug B")):
+    """Brand-vs-brand comparison + editorial narration, computed live."""
+    try:
+        data = cmp.compare_brands(_sheets_coll(), a, b)
+    except ValueError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+    try:
+        data["report"] = cmp.narrate_compare(data)   # editorial prose (best-effort)
+    except Exception:  # noqa: BLE001 — never fail the numbers if narration hiccups
+        data["report"] = None
+    return data
+
+
+@router.get("/season")
+def season(year: int = Query(..., description="e.g. 2026"),
+           season: str = Query(..., description="e.g. Fall"),
+           category: str = Query("rtw", description="rtw | couture | resort | pre-fall")):
+    """Season-wide cross-brand comparison + editorial narration, computed live."""
+    try:
+        data = cmp.season_report(_sheets_coll(), year, season, category)
+    except ValueError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+    try:
+        data["report"] = cmp.narrate_season(data)     # editorial prose (best-effort)
+    except Exception:  # noqa: BLE001
+        data["report"] = None
+    return data

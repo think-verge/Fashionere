@@ -31,10 +31,11 @@ class Config:
     MONGO_URI: str = os.getenv("MONGO_URI", "")
     MONGO_DB: str = os.getenv("MONGO_DB", "fashionairre_trends")
 
-    # models
+    # models — gemini-2.5-* were retired for new API keys (404 "no longer available
+    # to new users"); default to the rolling-latest aliases so this doesn't break.
     GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
-    NORMALIZE_MODEL: str = os.getenv("NORMALIZE_MODEL", "gemini-2.5-flash")
-    NARRATE_MODEL: str = os.getenv("NARRATE_MODEL", "gemini-2.5-pro")
+    NORMALIZE_MODEL: str = os.getenv("NORMALIZE_MODEL", "gemini-flash-latest")
+    NARRATE_MODEL: str = os.getenv("NARRATE_MODEL", "gemini-flash-latest")
 
     # thresholds (DESIGN.md §15)
     CONFIDENCE_MIN: float = _f("CONFIDENCE_MIN", 0.6)
