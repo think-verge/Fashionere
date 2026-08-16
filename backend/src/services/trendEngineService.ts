@@ -13,3 +13,22 @@ export async function generateTrendReportStream(brandSlug: string) {
     { responseType: "stream" },
   );
 }
+
+// --- on-demand comparison (simple JSON GETs; fast, no LLM) ---
+const trendEngineJson = axios.create({ baseURL: env.TREND_ENGINE_URL, timeout: 20000 });
+
+export async function fetchCompareOptions() {
+  return (await trendEngineJson.get("/api/compare/options")).data;
+}
+
+export async function fetchCompare(a: string, b: string) {
+  return (await trendEngineJson.get("/api/compare", { params: { a, b } })).data;
+}
+
+export async function fetchSeasonOptions() {
+  return (await trendEngineJson.get("/api/season/options")).data;
+}
+
+export async function fetchSeason(year: number, season: string, category: string) {
+  return (await trendEngineJson.get("/api/season", { params: { year, season, category } })).data;
+}

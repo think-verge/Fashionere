@@ -25,7 +25,7 @@ app = FastAPI(title="Fashionairre Trend Analysis API", version="1.0",
 # open CORS for local frontend dev; tighten allow_origins for production —
 # Node is the sole intended caller, matching the Deconstruction Engine precedent.
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=False,
-                   allow_methods=["POST"], allow_headers=["*"])
+                   allow_methods=["GET", "POST"], allow_headers=["*"])
 
 app.include_router(router)
 
