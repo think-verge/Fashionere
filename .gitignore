@@ -41,5 +41,6 @@ agent/static/*.webp
 *.swp
 .idea/
 .vscode/
+scraper_output/
 
 # generated OpenAPI (committed intentionally; exclude runtime artifacts only)

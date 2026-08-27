@@ -28,7 +28,7 @@ from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
-SCHEMA_VERSION = "1.0"
+SCHEMA_VERSION = "1.1"
 
 ColorRole = Literal["dominant", "secondary", "accent"]
 Confidence = Literal["high", "medium", "low"]
@@ -97,11 +97,27 @@ class DetailTag(BaseModel):
     confidence: float | None = None
 
 
+class FiberContent(BaseModel):
+    """One fiber in a material composition, e.g. {"fiber": "wool", "pct": 60}."""
+    fiber: str
+    pct: float | None = None             # 0-100; None when composition is stated but not quantified
+
+
+GarmentType = Literal[
+    "jacket", "coat", "vest", "top", "shirt", "blouse", "sweater",
+    "dress", "skirt", "trousers", "jeans", "shorts", "jumpsuit",
+    "bodysuit", "lingerie", "swimwear", "activewear",
+    "accessory", "footwear", "bag", "other",
+]
+
+
 class Garment(BaseModel):
     """One apparel garment. `piece=None` means the source is not garment-segmented
     (e.g. look-level text) — attributes describe the whole look."""
     garment_id: str | None = None
-    piece: str | None = None
+    piece: str | None = None             # free-text from source ("Asymmetric Bubble Skirt")
+    garment_type: GarmentType | None = None  # DERIVED — normalized by garment-type normalizer
+    composition: list[FiberContent] = Field(default_factory=list)  # structured material breakdown
     color_palette: list[ColorSwatch] = Field(default_factory=list)
     fabrics: list[Fabric] = Field(default_factory=list)
     patterns: list[Pattern] = Field(default_factory=list)
@@ -139,6 +155,12 @@ class Source(BaseModel):
     extra: dict = Field(default_factory=dict)   # source-specific payload
 
 
+class Price(BaseModel):
+    amount: float
+    currency: str = "USD"                # ISO 4217
+    original: float | None = None        # pre-discount price, if on sale
+
+
 class Context(BaseModel):
     brand: str | None = None
     brand_slug: str | None = None
@@ -149,6 +171,9 @@ class Context(BaseModel):
     category: str | None = None
     designer: str | None = None
     provenance_confidence: ProvConfidence = "unknown"
+    product_id: str | None = None        # retailer SKU / product ID (retail sources)
+    price: Price | None = None           # retail price at time of scrape
+    category_path: list[str] = Field(default_factory=list)  # e.g. ["Women", "Dresses", "Midi"]
 
 
 class Meta(BaseModel):

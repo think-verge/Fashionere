@@ -2,18 +2,23 @@
   "version": "v1",
   "dimension": "pattern",
   "terms": [
-    { "id": "solid", "label": "Solid / plain", "aliases": ["monochrome", "plain"] },
+    { "id": "solid", "label": "Solid", "aliases": ["plain", "monochrome", "solid / plain"] },
     { "id": "floral", "label": "Floral" },
-    { "id": "stripe", "label": "Stripe" },
-    { "id": "check-plaid", "label": "Check / plaid", "aliases": ["plaid", "tartan", "gingham", "glen-check", "glen-plaid"] },
+    { "id": "stripe", "label": "Stripe", "aliases": ["striped", "pinstripe", "pinstriped"] },
+    { "id": "check-plaid", "label": "Check", "aliases": ["plaid", "tartan", "gingham", "glen-check", "glen-plaid", "check-plaid", "checked", "micro-check", "windowpane"] },
     { "id": "houndstooth", "label": "Houndstooth" },
-    { "id": "polka-dot", "label": "Polka dot", "aliases": ["dot", "spot"] },
-    { "id": "animal-print", "label": "Animal print", "aliases": ["leopard", "zebra", "python", "snakeskin"] },
+    { "id": "herringbone", "label": "Herringbone" },
+    { "id": "polka-dot", "label": "Polka dot", "aliases": ["dot", "spot", "polka"] },
+    { "id": "animal-print", "label": "Animal print", "aliases": ["leopard", "zebra", "python", "snakeskin", "cheetah", "tiger"] },
+    { "id": "embossed", "label": "Embossed", "aliases": ["crocodile embossed", "crocodile embossing", "croc embossed", "reptile embossed"] },
     { "id": "geometric", "label": "Geometric" },
     { "id": "painterly-abstract", "label": "Painterly / abstract", "aliases": ["abstract", "painterly"] },
-    { "id": "embroidery", "label": "Embroidery" },
-    { "id": "applique", "label": "Appliqué" },
-    { "id": "lace-work", "label": "Lace / openwork" },
-    { "id": "colorblock", "label": "Colour-block", "aliases": ["color-block"] }
+    { "id": "embroidery", "label": "Embroidery", "aliases": ["embroidered"] },
+    { "id": "applique", "label": "Appliqué", "aliases": ["applique"] },
+    { "id": "lace-work", "label": "Lace / openwork", "aliases": ["openwork"] },
+    { "id": "colorblock", "label": "Colour-block", "aliases": ["color-block", "colorblock", "colour-blocked", "color-blocked"] },
+    { "id": "marled", "label": "Marled", "aliases": ["marl", "melange"] },
+    { "id": "speckled", "label": "Speckled", "aliases": ["speckle", "flecked"] },
+    { "id": "textured", "label": "Textured", "aliases": ["textured knit", "textured weave", "boucle-textured"] }
   ]
 }

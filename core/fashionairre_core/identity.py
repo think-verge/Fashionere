@@ -48,5 +48,10 @@ def look_id(brand_slug: str, coll_id: str, look_number) -> str:
     return f"{brand_slug}:{coll_id}:{look_number}"
 
 
+def product_id(brand_slug: str, sku: str) -> str:
+    """Deterministic ID for a retail product (no collection/look_number)."""
+    return f"{brand_slug}:product:{sku}"
+
+
 def season_order(year: int | None, season: str) -> int:
     return (year or 0) * 10 + SEASON_RANK.get((season or "").lower(), 9)
