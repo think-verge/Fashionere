@@ -1,0 +1,146 @@
+{
+  "version": "v1",
+  "dimension": "garment_type",
+  "terms": [
+    {
+      "id": "jacket",
+      "label": "Jacket",
+      "parent": "outerwear",
+      "aliases": ["blazer", "bomber", "biker jacket", "moto jacket", "denim jacket", "leather jacket", "shacket", "overshirt", "zip-up jacket", "harrington", "varsity jacket", "field jacket", "safari jacket", "puffer jacket", "down jacket", "quilted jacket", "anorak", "windbreaker", "track jacket"],
+      "keywords": ["collar jacket", "jacket", "blazer", "bomber", "shacket", "overshirt"]
+    },
+    {
+      "id": "coat",
+      "label": "Coat",
+      "parent": "outerwear",
+      "aliases": ["overcoat", "trench", "trench coat", "parka", "topcoat", "duster", "fur coat", "shearling coat", "peacoat", "mac", "raincoat", "cape", "poncho", "mantle", "cloak"],
+      "keywords": ["coat", "trench", "parka", "overcoat", "duster", "cape", "poncho", "mantle", "cloak"]
+    },
+    {
+      "id": "vest",
+      "label": "Vest",
+      "parent": "outerwear",
+      "aliases": ["waistcoat", "gilet", "puffer vest", "quilted vest", "sleeveless jacket"],
+      "keywords": ["vest", "waistcoat", "gilet"]
+    },
+    {
+      "id": "top",
+      "label": "Top",
+      "parent": "tops",
+      "aliases": ["tank top", "camisole", "crop top", "tube top", "halter top", "bandeau", "corset top", "bustier", "peplum top", "wrap top", "off-shoulder top", "one-shoulder top", "bodice"],
+      "keywords": ["top", "camisole", "crop top", "tank", "bandeau", "bustier", "bodice", "halter"]
+    },
+    {
+      "id": "shirt",
+      "label": "Shirt",
+      "parent": "tops",
+      "aliases": ["button-down", "button-up", "dress shirt", "oxford shirt", "flannel shirt", "camp shirt", "hawaiian shirt", "henley", "polo shirt", "polo"],
+      "keywords": ["shirt", "button-down", "button-up", "polo", "henley", "oxford"]
+    },
+    {
+      "id": "blouse",
+      "label": "Blouse",
+      "parent": "tops",
+      "aliases": ["pussy-bow blouse", "tie-neck blouse", "ruffle blouse", "peasant blouse", "silk blouse", "wrap blouse", "peplum blouse"],
+      "keywords": ["blouse"]
+    },
+    {
+      "id": "sweater",
+      "label": "Sweater",
+      "parent": "tops",
+      "aliases": ["pullover", "jumper", "crewneck", "v-neck sweater", "turtleneck", "mock neck", "roll neck", "cable knit", "cardigan", "hoodie", "sweatshirt", "fleece", "knit top", "knit sweater"],
+      "keywords": ["sweater", "pullover", "jumper", "cardigan", "hoodie", "sweatshirt", "turtleneck", "knitwear", "knit"]
+    },
+    {
+      "id": "dress",
+      "label": "Dress",
+      "parent": "one-piece",
+      "aliases": ["mini dress", "midi dress", "maxi dress", "gown", "evening gown", "cocktail dress", "shift dress", "sheath dress", "a-line dress", "wrap dress", "slip dress", "shirt dress", "bodycon dress", "fit-and-flare", "babydoll dress", "sundress", "kaftan", "tunic dress", "column dress", "empire dress", "ball gown"],
+      "keywords": ["dress", "gown", "kaftan", "frock"]
+    },
+    {
+      "id": "skirt",
+      "label": "Skirt",
+      "parent": "bottoms",
+      "aliases": ["mini skirt", "midi skirt", "maxi skirt", "pencil skirt", "a-line skirt", "pleated skirt", "wrap skirt", "flared skirt", "circle skirt", "tulip skirt", "bubble skirt", "tiered skirt", "ruffle skirt", "column skirt", "sarong"],
+      "keywords": ["skirt", "sarong"]
+    },
+    {
+      "id": "trousers",
+      "label": "Trousers",
+      "parent": "bottoms",
+      "aliases": ["pants", "wide-leg trousers", "straight-leg trousers", "slim trousers", "tapered trousers", "palazzo pants", "culottes", "cargo pants", "cargo trousers", "chinos", "slacks", "dress pants", "track pants", "joggers", "sweatpants", "leggings", "tights"],
+      "keywords": ["trousers", "pants", "palazzo", "culottes", "chinos", "slacks", "joggers", "leggings", "tights"]
+    },
+    {
+      "id": "jeans",
+      "label": "Jeans",
+      "parent": "bottoms",
+      "aliases": ["denim", "skinny jeans", "straight jeans", "wide-leg jeans", "bootcut jeans", "flared jeans", "boyfriend jeans", "mom jeans", "high-waisted jeans"],
+      "keywords": ["jeans", "denim"]
+    },
+    {
+      "id": "shorts",
+      "label": "Shorts",
+      "parent": "bottoms",
+      "aliases": ["bermuda shorts", "cargo shorts", "denim shorts", "tailored shorts", "running shorts", "board shorts", "hot pants"],
+      "keywords": ["shorts"]
+    },
+    {
+      "id": "jumpsuit",
+      "label": "Jumpsuit",
+      "parent": "one-piece",
+      "aliases": ["romper", "playsuit", "catsuit", "boiler suit", "coverall", "flight suit", "dungarees", "overalls"],
+      "keywords": ["jumpsuit", "romper", "playsuit", "catsuit", "boiler suit", "overalls", "dungarees"]
+    },
+    {
+      "id": "bodysuit",
+      "label": "Bodysuit",
+      "parent": "tops",
+      "aliases": ["leotard", "body"],
+      "keywords": ["bodysuit", "leotard"]
+    },
+    {
+      "id": "lingerie",
+      "label": "Lingerie",
+      "parent": "intimates",
+      "aliases": ["bra", "bralette", "corset", "bustier", "slip", "chemise", "negligee", "teddy", "nightgown", "robe"],
+      "keywords": ["lingerie", "bra", "bralette", "negligee", "nightgown"]
+    },
+    {
+      "id": "swimwear",
+      "label": "Swimwear",
+      "parent": "activewear",
+      "aliases": ["bikini", "swimsuit", "one-piece swimsuit", "tankini", "swim trunks", "board shorts"],
+      "keywords": ["swimwear", "bikini", "swimsuit", "tankini"]
+    },
+    {
+      "id": "activewear",
+      "label": "Activewear",
+      "parent": "activewear",
+      "aliases": ["sports bra", "yoga pants", "gym top", "athletic shorts", "compression", "cycling shorts"],
+      "keywords": ["activewear", "sports bra", "yoga pants", "athletic"]
+    },
+    {
+      "id": "accessory",
+      "label": "Accessory",
+      "parent": "accessories",
+      "aliases": ["hat", "cap", "beret", "beanie", "headband", "scarf", "gloves", "mittens", "belt", "tie", "bow tie", "suspenders", "sunglasses", "glasses", "watch", "jewelry", "necklace", "bracelet", "earrings", "ring", "brooch", "hair clip", "balaclava", "hood", "socks", "tights", "stockings", "arm warmers", "leg warmers", "sleeves", "collar", "cuff", "underlayer", "detachable collar"],
+      "keywords": ["hat", "cap", "beret", "scarf", "gloves", "belt", "tie", "sunglasses", "watch", "jewelry", "balaclava", "hood", "headband", "beanie", "sleeves", "collar", "cuff", "underlayer"]
+    },
+    {
+      "id": "footwear",
+      "label": "Footwear",
+      "parent": "accessories",
+      "aliases": ["shoes", "boots", "sneakers", "trainers", "heels", "pumps", "sandals", "loafers", "mules", "flats", "oxfords", "brogues", "espadrilles", "slides", "flip-flops", "ankle boots", "knee-high boots", "thigh-high boots", "combat boots", "chelsea boots", "cowboy boots", "platform shoes", "wedges", "stilettos", "kitten heels", "clogs"],
+      "keywords": ["shoes", "boots", "sneakers", "heels", "pumps", "sandals", "loafers", "mules", "flats", "oxfords", "espadrilles", "slides", "clogs"]
+    },
+    {
+      "id": "bag",
+      "label": "Bag",
+      "parent": "accessories",
+      "aliases": ["handbag", "tote", "clutch", "crossbody", "shoulder bag", "backpack", "satchel", "bucket bag", "hobo bag", "messenger bag", "fanny pack", "belt bag", "baguette bag", "pouch", "briefcase", "weekender"],
+      "keywords": ["bag", "handbag", "tote", "clutch", "backpack", "satchel", "purse"]
+    }
+  ]
+}

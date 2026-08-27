@@ -1,11 +1,235 @@
 {
-  "version": "v1",
+  "version": "v2",
+  "tiers": {
+    "luxury": "High fashion / runway houses — trend-setting source, shows on the fashion calendar",
+    "retail": "High-street and contemporary brands — mass-market adoption signal"
+  },
   "brands": [
     {
       "slug": "prada",
       "canonical_name": "Prada",
+      "tier": "luxury",
       "aliases": ["prada"],
-      "source_names": { "vogue": "prada" }
+      "source_names": { "vogue": "prada" },
+      "source_types": ["vogue"],
+      "region": "it",
+      "parent_group": "Prada Group"
+    },
+    {
+      "slug": "balenciaga",
+      "canonical_name": "Balenciaga",
+      "tier": "luxury",
+      "aliases": ["balenciaga"],
+      "source_names": { "vogue": "balenciaga" },
+      "source_types": ["vogue"],
+      "region": "fr",
+      "parent_group": "Kering"
+    },
+    {
+      "slug": "chanel",
+      "canonical_name": "Chanel",
+      "tier": "luxury",
+      "aliases": ["chanel"],
+      "source_names": { "vogue": "chanel" },
+      "source_types": ["vogue"],
+      "region": "fr",
+      "parent_group": "Chanel"
+    },
+    {
+      "slug": "christian-dior",
+      "canonical_name": "Christian Dior",
+      "tier": "luxury",
+      "aliases": ["dior", "christian dior"],
+      "source_names": { "vogue": "christian-dior" },
+      "source_types": ["vogue"],
+      "region": "fr",
+      "parent_group": "LVMH"
+    },
+    {
+      "slug": "gucci",
+      "canonical_name": "Gucci",
+      "tier": "luxury",
+      "aliases": ["gucci"],
+      "source_names": { "vogue": "gucci" },
+      "source_types": ["vogue"],
+      "region": "it",
+      "parent_group": "Kering"
+    },
+    {
+      "slug": "louis-vuitton",
+      "canonical_name": "Louis Vuitton",
+      "tier": "luxury",
+      "aliases": ["louis vuitton", "lv"],
+      "source_names": { "vogue": "louis-vuitton" },
+      "source_types": ["vogue"],
+      "region": "fr",
+      "parent_group": "LVMH"
+    },
+    {
+      "slug": "valentino",
+      "canonical_name": "Valentino",
+      "tier": "luxury",
+      "aliases": ["valentino"],
+      "source_names": { "vogue": "valentino" },
+      "source_types": ["vogue"],
+      "region": "it",
+      "parent_group": "Kering"
+    },
+    {
+      "slug": "saint-laurent",
+      "canonical_name": "Saint Laurent",
+      "tier": "luxury",
+      "aliases": ["saint laurent", "ysl", "yves saint laurent"],
+      "source_names": { "vogue": "saint-laurent" },
+      "source_types": ["vogue"],
+      "region": "fr",
+      "parent_group": "Kering"
+    },
+    {
+      "slug": "bottega-veneta",
+      "canonical_name": "Bottega Veneta",
+      "tier": "luxury",
+      "aliases": ["bottega veneta", "bottega"],
+      "source_names": { "vogue": "bottega-veneta" },
+      "source_types": ["vogue"],
+      "region": "it",
+      "parent_group": "Kering"
+    },
+    {
+      "slug": "miu-miu",
+      "canonical_name": "Miu Miu",
+      "tier": "luxury",
+      "aliases": ["miu miu"],
+      "source_names": { "vogue": "miu-miu" },
+      "source_types": ["vogue"],
+      "region": "it",
+      "parent_group": "Prada Group"
+    },
+    {
+      "slug": "zara",
+      "canonical_name": "Zara",
+      "tier": "retail",
+      "aliases": ["zara"],
+      "source_types": ["product_scrape"],
+      "region": "es",
+      "parent_group": "Inditex"
+    },
+    {
+      "slug": "hm",
+      "canonical_name": "H&M",
+      "tier": "retail",
+      "aliases": ["h&m", "h and m", "hennes"],
+      "source_types": ["product_scrape"],
+      "region": "se",
+      "parent_group": "H&M Group"
+    },
+    {
+      "slug": "mango",
+      "canonical_name": "Mango",
+      "tier": "retail",
+      "aliases": ["mango"],
+      "source_types": ["product_scrape"],
+      "region": "es",
+      "parent_group": "Mango"
+    },
+    {
+      "slug": "uniqlo",
+      "canonical_name": "Uniqlo",
+      "tier": "retail",
+      "aliases": ["uniqlo"],
+      "source_types": ["product_scrape"],
+      "region": "jp",
+      "parent_group": "Fast Retailing"
+    },
+    {
+      "slug": "cos",
+      "canonical_name": "COS",
+      "tier": "retail",
+      "aliases": ["cos", "collection of style"],
+      "source_types": ["product_scrape"],
+      "region": "se",
+      "parent_group": "H&M Group"
+    },
+    {
+      "slug": "arket",
+      "canonical_name": "ARKET",
+      "tier": "retail",
+      "aliases": ["arket"],
+      "source_types": ["product_scrape"],
+      "region": "se",
+      "parent_group": "H&M Group"
+    },
+    {
+      "slug": "massimo-dutti",
+      "canonical_name": "Massimo Dutti",
+      "tier": "retail",
+      "aliases": ["massimo dutti"],
+      "source_types": ["product_scrape"],
+      "region": "es",
+      "parent_group": "Inditex"
+    },
+    {
+      "slug": "aritzia",
+      "canonical_name": "Aritzia",
+      "tier": "retail",
+      "aliases": ["aritzia"],
+      "source_types": ["product_scrape"],
+      "region": "ca",
+      "parent_group": "Aritzia"
+    },
+    {
+      "slug": "and-other-stories",
+      "canonical_name": "& Other Stories",
+      "tier": "retail",
+      "aliases": ["other stories", "& other stories"],
+      "source_types": ["product_scrape"],
+      "region": "se",
+      "parent_group": "H&M Group"
+    },
+    {
+      "slug": "topshop",
+      "canonical_name": "Topshop",
+      "tier": "retail",
+      "aliases": ["topshop"],
+      "source_types": ["product_scrape"],
+      "region": "gb",
+      "parent_group": "ASOS"
+    },
+    {
+      "slug": "asos",
+      "canonical_name": "ASOS",
+      "tier": "retail",
+      "aliases": ["asos"],
+      "source_types": ["product_scrape"],
+      "region": "gb",
+      "parent_group": "ASOS"
+    },
+    {
+      "slug": "pull-and-bear",
+      "canonical_name": "Pull & Bear",
+      "tier": "retail",
+      "aliases": ["pull & bear", "pull and bear"],
+      "source_types": ["product_scrape"],
+      "region": "es",
+      "parent_group": "Inditex"
+    },
+    {
+      "slug": "bershka",
+      "canonical_name": "Bershka",
+      "tier": "retail",
+      "aliases": ["bershka"],
+      "source_types": ["product_scrape"],
+      "region": "es",
+      "parent_group": "Inditex"
+    },
+    {
+      "slug": "stradivarius",
+      "canonical_name": "Stradivarius",
+      "tier": "retail",
+      "aliases": ["stradivarius"],
+      "source_types": ["product_scrape"],
+      "region": "es",
+      "parent_group": "Inditex"
     }
   ]
 }

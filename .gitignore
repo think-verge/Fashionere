@@ -33,3 +33,4 @@ node_modules/
 *.swp
 .idea/
 .vscode/
+scraper_output/
