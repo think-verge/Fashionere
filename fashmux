@@ -1,0 +1,78 @@
+#!/usr/bin/env bash
+# tmux launcher for the Fashionare dev stack.
+# Usage:
+#   ./fashmux        start (or attach to) the dev session
+#   ./fashmux kill   stop all services and tear down the session
+#
+# Pane layout:
+#   [backend :3001] | [ui :5173     ]
+#   [decon   :8002] | [control shell]
+
+set -euo pipefail
+
+SESSION="fashionare"
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+if ! command -v tmux >/dev/null 2>&1; then
+  echo "tmux is not installed. Install it with: brew install tmux" >&2
+  exit 1
+fi
+
+attach() {
+  if [ -n "${TMUX:-}" ]; then
+    tmux switch-client -t "$SESSION"
+  else
+    tmux attach-session -t "$SESSION"
+  fi
+}
+
+start() {
+  if tmux has-session -t "$SESSION" 2>/dev/null; then
+    echo "fashmux: session '$SESSION' already running, attaching..."
+    attach
+    exit 0
+  fi
+
+  tmux new-session -d -s "$SESSION" -n dev -c "$ROOT"
+  tmux set-option -t "$SESSION" pane-border-status top
+  tmux set-option -t "$SESSION" pane-border-format " #{pane_title} "
+
+  # Capture stable pane IDs to avoid index drift after splits
+  local backend_pane ui_pane decon_pane control_pane
+  backend_pane="$(tmux display-message -p -t "$SESSION:dev.0" '#{pane_id}')"
+  ui_pane="$(tmux split-window -h -t "$SESSION:dev" -c "$ROOT" -P -F '#{pane_id}')"
+  decon_pane="$(tmux split-window -v -t "$backend_pane" -c "$ROOT" -P -F '#{pane_id}')"
+  control_pane="$(tmux split-window -v -t "$ui_pane" -c "$ROOT" -P -F '#{pane_id}')"
+
+  tmux select-pane -t "$backend_pane" -T "backend :3001"
+  tmux send-keys -t "$backend_pane" "make backend" C-m
+
+  tmux select-pane -t "$ui_pane" -T "ui :5173"
+  tmux send-keys -t "$ui_pane" "make ui" C-m
+
+  tmux select-pane -t "$decon_pane" -T "deconstruction :8002"
+  tmux send-keys -t "$decon_pane" "make deconstruction-engine" C-m
+
+  tmux select-pane -t "$control_pane" -T "control"
+  tmux send-keys -t "$control_pane" "clear && echo '  fashmux running — ./fashmux kill to stop'" C-m
+
+  tmux select-layout -t "$SESSION:dev" tiled
+  tmux select-pane -t "$control_pane"
+
+  attach
+}
+
+kill_session() {
+  if tmux has-session -t "$SESSION" 2>/dev/null; then
+    tmux kill-session -t "$SESSION"
+    echo "fashmux: session '$SESSION' stopped."
+  else
+    echo "fashmux: no running session named '$SESSION'."
+  fi
+}
+
+case "${1:-start}" in
+  start) start ;;
+  kill|stop) kill_session ;;
+  *) echo "Usage: $0 [start|kill]" >&2; exit 1 ;;
+esac
