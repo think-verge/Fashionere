@@ -1,0 +1,500 @@
+openapi: "3.0.3"
+info:
+  title: Fashionare API
+  version: "1.0.0"
+  description: Node.js/Express backend for Fashionare — looks, workspaces, projects
+
+servers:
+  - url: http://localhost:3001/api/v1
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  schemas:
+    # ── Auth ──────────────────────────────────────────────────────────────
+    SignupRequest:
+      type: object
+      required: [name, email, password, role]
+      properties:
+        name:          { type: string }
+        email:         { type: string, format: email }
+        password:      { type: string, minLength: 8 }
+        role:          { type: string, enum: [designer, retail_chain] }
+        sources:       { type: array, items: { type: string } }
+        garment_interests: { type: array, items: { type: string } }
+
+    LoginRequest:
+      type: object
+      required: [email, password]
+      properties:
+        email:    { type: string, format: email }
+        password: { type: string }
+
+    AuthUser:
+      type: object
+      properties:
+        id:                 { type: string }
+        name:               { type: string }
+        email:              { type: string }
+        role:               { type: string, enum: [designer, retail_chain] }
+        sources:            { type: array, items: { type: string } }
+        garment_interests:  { type: array, items: { type: string } }
+        onboarding_complete: { type: boolean }
+
+    AuthResponse:
+      type: object
+      properties:
+        token:   { type: string }
+        user:    { $ref: '#/components/schemas/AuthUser' }
+        project: { $ref: '#/components/schemas/Project' }
+
+    # ── Projects ──────────────────────────────────────────────────────────
+    Project:
+      type: object
+      properties:
+        id:         { type: string }
+        name:       { type: string }
+        user_id:    { type: string }
+        is_default: { type: boolean }
+        created_at: { type: string, format: date-time }
+        updated_at: { type: string, format: date-time }
+
+    # ── Looks ─────────────────────────────────────────────────────────────
+    ColorRef:
+      type: object
+      properties:
+        name:       { type: string }
+        hex:        { type: string }
+        pantone:    { type: string }
+        family:     { type: string }
+        role:       { type: string }
+        weight:     { type: number }
+        swatch_url: { type: string }
+
+    FabricRef:
+      type: object
+      properties:
+        value:      { type: string }
+        material:   { type: string }
+        percentage: { type: number }
+        part:       { type: string }
+        macro_url:  { type: string }
+
+    PatternRef:
+      type: object
+      properties:
+        value:    { type: string }
+        motif:    { type: string }
+        tile_url: { type: string }
+
+    TagRef:
+      type: object
+      properties:
+        value:    { type: string }
+        evidence: { type: string }
+
+    GarmentElement:
+      type: object
+      properties:
+        garment_id:           { type: string }
+        piece:                { type: string }
+        garment_type:         { type: string }
+        bbox:                 { type: array, items: { type: number } }
+        colors:               { type: array, items: { $ref: '#/components/schemas/ColorRef' } }
+        materials_candidates: { type: array, items: { type: string } }
+        fabric:
+          type: object
+          properties:
+            value:     { type: string }
+            macro_url: { type: string }
+        pattern:
+          type: object
+          nullable: true
+          properties:
+            value:    { type: string }
+            tile_url: { type: string }
+
+    LookSummary:
+      type: object
+      properties:
+        look_id:         { type: string }
+        brand:           { type: string }
+        brand_slug:      { type: string }
+        source_type:     { type: string, enum: [runway, retail] }
+        is_deconstructed: { type: boolean }
+        thumbnail_url:   { type: string }
+        dominant_color:  { $ref: '#/components/schemas/ColorRef' }
+        season:          { type: string }
+        year:            { type: integer }
+        garment_count:   { type: integer }
+
+    Look:
+      type: object
+      properties:
+        look_id:          { type: string }
+        brand:            { type: string }
+        brand_slug:       { type: string }
+        source_type:      { type: string, enum: [runway, retail] }
+        is_deconstructed: { type: boolean }
+        colors:           { type: array, items: { $ref: '#/components/schemas/ColorRef' } }
+        fabrics:          { type: array, items: { $ref: '#/components/schemas/FabricRef' } }
+        patterns:         { type: array, items: { $ref: '#/components/schemas/PatternRef' } }
+        silhouettes:      { type: array, items: { $ref: '#/components/schemas/TagRef' } }
+        images:
+          type: array
+          items:
+            type: object
+            properties:
+              image_id:    { type: string }
+              role:        { type: string }
+              url:         { type: string }
+              description: { type: string }
+        garments:         { type: array, items: { $ref: '#/components/schemas/GarmentElement' } }
+        season:           { type: string }
+        year:             { type: integer }
+        source_url:       { type: string }
+        description:      { type: string }
+
+    LookListResponse:
+      type: object
+      properties:
+        items:       { type: array, items: { $ref: '#/components/schemas/LookSummary' } }
+        total:       { type: integer }
+        next_cursor: { type: string, nullable: true }
+
+    # ── Workspace ─────────────────────────────────────────────────────────
+    WorkspaceElement:
+      type: object
+      properties:
+        element_id:      { type: string }
+        look_id:         { type: string }
+        garment_id:      { type: string }
+        garment_type:    { type: string }
+        element_type:    { type: string, enum: [color, fabric, pattern, silhouette] }
+        data:            { type: object }
+        source_brand:    { type: string }
+        canvas_position:
+          type: object
+          properties:
+            x: { type: number }
+            y: { type: number }
+        row:             { type: string }
+
+    Workspace:
+      type: object
+      properties:
+        id:          { type: string }
+        name:        { type: string }
+        project_id:  { type: string }
+        user_id:     { type: string }
+        status:      { type: string, enum: [draft, ready, generating] }
+        elements:    { type: array, items: { $ref: '#/components/schemas/WorkspaceElement' } }
+        canvas_meta: { type: object }
+        created_at:  { type: string, format: date-time }
+        updated_at:  { type: string, format: date-time }
+
+    # ── Inventory ─────────────────────────────────────────────────────────
+    GarmentInventoryItem:
+      type: object
+      properties:
+        garment_type: { type: string }
+        count:        { type: integer }
+
+paths:
+  # ── Auth ──────────────────────────────────────────────────────────────
+  /auth/signup:
+    post:
+      tags: [auth]
+      summary: Sign up a new user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/SignupRequest' }
+      responses:
+        "201":
+          description: Created
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/AuthResponse' }
+
+  /auth/login:
+    post:
+      tags: [auth]
+      summary: Log in
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/LoginRequest' }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/AuthResponse' }
+
+  # ── Looks ─────────────────────────────────────────────────────────────
+  /looks:
+    get:
+      tags: [looks]
+      summary: List looks (paginated)
+      security: [{ BearerAuth: [] }]
+      parameters:
+        - { name: type, in: query, schema: { type: string, enum: [runway, retail] } }
+        - { name: brand, in: query, schema: { type: string } }
+        - { name: source, in: query, description: "comma-separated source slugs", schema: { type: string } }
+        - { name: garment, in: query, schema: { type: string } }
+        - { name: color, in: query, schema: { type: string } }
+        - { name: fabric, in: query, schema: { type: string } }
+        - { name: season, in: query, schema: { type: string } }
+        - { name: year, in: query, schema: { type: integer } }
+        - { name: cursor, in: query, schema: { type: string } }
+        - { name: limit, in: query, schema: { type: integer, default: 24, maximum: 100 } }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/LookListResponse' }
+
+  /looks/{lookId}:
+    get:
+      tags: [looks]
+      summary: Get a single look with full detail
+      security: [{ BearerAuth: [] }]
+      parameters:
+        - { name: lookId, in: path, required: true, schema: { type: string } }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Look' }
+        "404":
+          description: Not found
+
+  /looks/{lookId}/garments:
+    get:
+      tags: [looks]
+      summary: Get garment-level deconstruction for a look
+      security: [{ BearerAuth: [] }]
+      parameters:
+        - { name: lookId, in: path, required: true, schema: { type: string } }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: '#/components/schemas/GarmentElement' }
+        "404":
+          description: Not found or not deconstructed
+
+  /looks/{lookId}/garments/{garmentId}:
+    get:
+      tags: [looks]
+      summary: Get a specific garment's element detail + trend signal
+      security: [{ BearerAuth: [] }]
+      parameters:
+        - { name: lookId, in: path, required: true, schema: { type: string } }
+        - { name: garmentId, in: path, required: true, schema: { type: string } }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/GarmentElement' }
+        "404":
+          description: Not found
+
+  # ── Projects ──────────────────────────────────────────────────────────
+  /projects:
+    get:
+      tags: [projects]
+      summary: List current user's projects
+      security: [{ BearerAuth: [] }]
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: '#/components/schemas/Project' }
+    post:
+      tags: [projects]
+      summary: Create a new project
+      security: [{ BearerAuth: [] }]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [name]
+              properties:
+                name: { type: string }
+      responses:
+        "201":
+          description: Created
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Project' }
+
+  # ── Workspace ─────────────────────────────────────────────────────────
+  /workspace:
+    get:
+      tags: [workspace]
+      summary: List workspaces for a project
+      security: [{ BearerAuth: [] }]
+      parameters:
+        - { name: projectId, in: query, required: true, schema: { type: string } }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: '#/components/schemas/Workspace' }
+    post:
+      tags: [workspace]
+      summary: Create a new workspace
+      security: [{ BearerAuth: [] }]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [name, project_id]
+              properties:
+                name:       { type: string }
+                project_id: { type: string }
+      responses:
+        "201":
+          description: Created
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Workspace' }
+
+  /workspace/{id}:
+    get:
+      tags: [workspace]
+      summary: Get workspace detail (elements grouped by garment_type)
+      security: [{ BearerAuth: [] }]
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Workspace' }
+    delete:
+      tags: [workspace]
+      summary: Delete a workspace
+      security: [{ BearerAuth: [] }]
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      responses:
+        "204":
+          description: Deleted
+
+  /workspace/{id}/elements:
+    post:
+      tags: [workspace]
+      summary: Add a single element to workspace
+      security: [{ BearerAuth: [] }]
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/WorkspaceElement' }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Workspace' }
+    put:
+      tags: [workspace]
+      summary: Replace all elements (full canvas save)
+      security: [{ BearerAuth: [] }]
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                elements: { type: array, items: { $ref: '#/components/schemas/WorkspaceElement' } }
+                canvas_meta: { type: object }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Workspace' }
+
+  /workspace/{id}/elements/{elementId}:
+    delete:
+      tags: [workspace]
+      summary: Remove an element from workspace
+      security: [{ BearerAuth: [] }]
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+        - { name: elementId, in: path, required: true, schema: { type: string } }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Workspace' }
+
+  /workspace/{id}/generate:
+    post:
+      tags: [workspace]
+      summary: Trigger AI moodboard generation (stub)
+      security: [{ BearerAuth: [] }]
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      responses:
+        "202":
+          description: Accepted
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  job_id: { type: string }
+                  status: { type: string }
+
+  # ── Inventory ─────────────────────────────────────────────────────────
+  /inventory/garments:
+    get:
+      tags: [inventory]
+      summary: Garment type inventory with counts
+      security: [{ BearerAuth: [] }]
+      parameters:
+        - { name: source, in: query, schema: { type: string } }
+        - { name: season, in: query, schema: { type: string } }
+        - { name: year, in: query, schema: { type: integer } }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: '#/components/schemas/GarmentInventoryItem' }

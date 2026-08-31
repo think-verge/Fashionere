@@ -1,226 +1,88 @@
-import { useState } from "react";
-import { useNavigate, Link as RouterLink } from "react-router-dom";
-import { Box, Typography, TextField, Button, Alert, Link } from "@mui/material";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import VisibilityIcon from "@mui/icons-material/Visibility";
-import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
-import IconButton from "@mui/material/IconButton";
-import InputAdornment from "@mui/material/InputAdornment";
+import { useState, FormEvent } from "react";
+import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../../lib/auth-context";
-import { AuthIllustration } from "../../components/AuthIllustration";
 
-function LabeledInput({
-  label,
-  type = "text",
-  value,
-  onChange,
-  placeholder,
-  required,
-  autoComplete,
-  endAdornment,
-}: {
-  label: string;
-  type?: string;
-  value: string;
-  onChange: (v: string) => void;
-  placeholder?: string;
-  required?: boolean;
-  autoComplete?: string;
-  endAdornment?: React.ReactNode;
-}) {
-  return (
-    <Box>
-      <Typography
-        sx={{ fontSize: 14, fontWeight: 500, color: "text.primary", mb: 1 }}
-      >
-        {label}
-      </Typography>
-      <TextField
-        type={type}
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        placeholder={placeholder}
-        required={required}
-        fullWidth
-        autoComplete={autoComplete}
-        InputProps={{ endAdornment }}
-        sx={{
-          "& .MuiOutlinedInput-root": {
-            bgcolor: "#ffffff",
-            "& fieldset": { borderColor: "#f0e4e2" },
-            "&:hover fieldset": { borderColor: "#dfbfbc" },
-            "&.Mui-focused fieldset": { borderColor: "#a93533" },
-          },
-          "& .MuiInputBase-input::placeholder": { color: "#999999", opacity: 1 },
-        }}
-      />
-    </Box>
-  );
-}
-
-export function LoginPage() {
-  const navigate = useNavigate();
-  const { loginUser } = useAuth();
+export default function LoginPage() {
+  const { login } = useAuth();
+  const nav = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  async function handleSubmit(e: React.FormEvent) {
+  const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setError("");
     setLoading(true);
     try {
-      await loginUser(email, password);
-      navigate("/dashboard");
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Login failed");
+      await login(email, password);
+      nav("/app/looks");
+    } catch {
+      setError("Invalid email or password.");
     } finally {
       setLoading(false);
     }
-  }
+  };
 
   return (
-    <Box sx={{ minHeight: "100vh", display: "flex" }}>
-      {/* Left: illustration panel */}
-      <Box sx={{ display: { xs: "none", md: "flex" }, width: "50%", maxWidth: 600 }}>
-        <AuthIllustration />
-      </Box>
+    <div className="min-h-screen bg-bg flex items-center justify-center px-4">
+      <div className="w-full max-w-[400px]">
+        <div className="mb-10">
+          <p className="eyebrow text-deep-red mb-3">Fashionare</p>
+          <h1 className="text-3xl font-semibold tracking-tight">Welcome back</h1>
+          <p className="text-raisin/60 mt-2 text-sm">Sign in to your studio.</p>
+        </div>
 
-      {/* Right: form */}
-      <Box
-        sx={{
-          flex: 1,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          bgcolor: "#fff8f7",
-          p: { xs: 3, sm: 6 },
-          position: "relative",
-          overflow: "hidden",
-        }}
-      >
-        {/* Decorative blobs */}
-        <Box
-          sx={{
-            position: "absolute",
-            top: 80,
-            right: -80,
-            width: 240,
-            height: 240,
-            borderRadius: "50%",
-            bgcolor: "rgba(169,53,51,0.05)",
-            filter: "blur(60px)",
-            pointerEvents: "none",
-          }}
-        />
-        <Box
-          sx={{
-            position: "absolute",
-            bottom: 80,
-            left: -80,
-            width: 240,
-            height: 240,
-            borderRadius: "50%",
-            bgcolor: "rgba(0,108,77,0.03)",
-            filter: "blur(60px)",
-            pointerEvents: "none",
-          }}
-        />
+        {error && <p className="mb-4 text-sm text-red-500">{error}</p>}
 
-      <Box sx={{ width: "100%", maxWidth: 400, position: "relative" }}>
-        {/* Header */}
-        <Box sx={{ textAlign: "center", mb: 5 }}>
-          <Typography
-            sx={{
-              fontFamily: "'Literata', Georgia, serif",
-              fontSize: 36,
-              fontWeight: 700,
-              color: "text.primary",
-              lineHeight: 1,
-              mb: 1,
-            }}
-          >
-            CENTOIRE
-          </Typography>
-          <Typography sx={{ color: "primary.main", fontWeight: 500, fontSize: 15 }}>
-            Welcome Back
-          </Typography>
-        </Box>
-
-        {error && <Alert severity="error" sx={{ mb: 2.5 }}>{error}</Alert>}
-
-        <Box component="form" onSubmit={handleSubmit} sx={{ display: "flex", flexDirection: "column", gap: 2.5 }}>
-          <LabeledInput
-            label="Email Address"
-            type="email"
-            value={email}
-            onChange={setEmail}
-            placeholder="creative@studio.com"
-            required
-            autoComplete="email"
-          />
-          <LabeledInput
-            label="Password"
-            type={showPassword ? "text" : "password"}
-            value={password}
-            onChange={setPassword}
-            placeholder="••••••••"
-            required
-            autoComplete="current-password"
-            endAdornment={
-              <InputAdornment position="end">
-                <IconButton
-                  onClick={() => setShowPassword((v) => !v)}
-                  edge="end"
-                  size="small"
-                  sx={{ color: "#999999" }}
-                >
-                  {showPassword ? <VisibilityOffIcon fontSize="small" /> : <VisibilityIcon fontSize="small" />}
-                </IconButton>
-              </InputAdornment>
-            }
-          />
-
-          <Button
+        <form onSubmit={onSubmit} className="flex flex-col gap-5">
+          <Field label="Email">
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="you@studio.com"
+              required
+              className="input-base"
+            />
+          </Field>
+          <Field label="Password">
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="••••••••"
+              required
+              className="input-base"
+            />
+          </Field>
+          <button
             type="submit"
-            variant="contained"
-            fullWidth
             disabled={loading}
-            endIcon={<ArrowForwardIcon sx={{ transition: "transform 0.2s" }} />}
-            sx={{
-              py: 1.5,
-              fontSize: 15,
-              fontWeight: 600,
-              borderRadius: "10px",
-              mt: 0.5,
-              boxShadow: "0 4px 14px rgba(169,53,51,0.25)",
-              "&:hover": {
-                boxShadow: "0 6px 20px rgba(169,53,51,0.35)",
-                "& .MuiButton-endIcon svg": { transform: "translateX(3px)" },
-              },
-            }}
+            className="mt-2 bg-raisin text-white text-[12px] font-semibold tracking-[0.18em] uppercase py-3 hover:bg-deep-red transition-colors disabled:opacity-50"
           >
-            {loading ? "Signing in…" : "Sign In"}
-          </Button>
-        </Box>
+            {loading ? "Signing in…" : "Sign in"}
+          </button>
+        </form>
 
-        <Typography
-          variant="body2"
-          sx={{ mt: 4, textAlign: "center", color: "#999999" }}
-        >
-          Don't have an account?{" "}
-          <Link
-            component={RouterLink}
-            to="/signup"
-            sx={{ color: "primary.main", fontWeight: 500, textDecoration: "none", "&:hover": { textDecoration: "underline" } }}
-          >
-            Sign up
+        <p className="mt-6 text-sm text-raisin/60">
+          No account?{" "}
+          <Link to="/onboarding" className="text-deep-red underline">
+            Get early access
           </Link>
-        </Typography>
-      </Box>
-      </Box>
-    </Box>
+        </p>
+      </div>
+
+      <style>{`.input-base{width:100%;background:transparent;border-bottom:1px solid rgba(26,26,26,0.2);padding:0.75rem 0;font-size:15px;outline:none;transition:border-color 0.2s}.input-base:focus{border-color:#a93533}`}</style>
+    </div>
+  );
+}
+
+function Field({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <label className="flex flex-col gap-2">
+      <span className="eyebrow text-raisin/55">{label}</span>
+      {children}
+    </label>
   );
 }

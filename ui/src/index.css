@@ -1,15 +1,15 @@
-@import "@fontsource/geist-mono/index.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+@layer base {
+  body {
+    @apply bg-bg text-raisin font-sans antialiased;
+  }
 }
 
-body {
-  margin: 0;
-  background-color: #fff8f7;
-  color: #241918;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@layer utilities {
+  .eyebrow {
+    @apply font-display text-[11px] font-semibold tracking-[0.15em] uppercase;
+  }
 }

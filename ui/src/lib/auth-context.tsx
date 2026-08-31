@@ -1,86 +1,102 @@
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-  type PropsWithChildren,
-} from "react";
-import { getCentoireAPI } from "./api/generated/client";
-import type { User } from "./api/generated/model";
+import { createContext, useContext, useState, useEffect, ReactNode } from "react";
+import { api } from "./api/client";
 
-const api = getCentoireAPI();
-
-type AuthContextValue = {
-  user: User | null;
-  loading: boolean;
-  loginUser: (email: string, password: string) => Promise<void>;
-  signupUser: (email: string, password: string, name: string) => Promise<void>;
-  logoutUser: () => Promise<void>;
-  refreshUser: () => Promise<void>;
-  saveProfile: (name: string) => Promise<User>;
-};
-
-const AuthContext = createContext<AuthContextValue | undefined>(undefined);
-
-export function AuthProvider({ children }: PropsWithChildren) {
-  const [user, setUser] = useState<User | null>(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    let cancelled = false;
-    api
-      .getApiV1AuthMe()
-      .then((u) => { if (!cancelled) setUser(u); })
-      .catch(() => { if (!cancelled) setUser(null); })
-      .finally(() => { if (!cancelled) setLoading(false); });
-    return () => { cancelled = true; };
-  }, []);
-
-  const refreshUser = useCallback(async () => {
-    setLoading(true);
-    try {
-      setUser(await api.getApiV1AuthMe());
-    } catch {
-      setUser(null);
-    } finally {
-      setLoading(false);
-    }
-  }, []);
-
-  const loginUser = useCallback(async (email: string, password: string) => {
-    const u = await api.postApiV1AuthLogin({ email, password });
-    setUser(u);
-  }, []);
-
-  const signupUser = useCallback(async (email: string, password: string, name: string) => {
-    const u = await api.postApiV1AuthSignup({ email, password, name });
-    setUser(u);
-  }, []);
-
-  const logoutUser = useCallback(async () => {
-    await api.postApiV1AuthLogout();
-    setUser(null);
-  }, []);
-
-  const saveProfile = useCallback(async (name: string) => {
-    const u = await api.patchApiV1UsersMe({ name });
-    setUser(u);
-    return u;
-  }, []);
-
-  const value = useMemo<AuthContextValue>(
-    () => ({ user, loading, loginUser, signupUser, logoutUser, refreshUser, saveProfile }),
-    [loading, loginUser, logoutUser, refreshUser, saveProfile, signupUser, user],
-  );
-
-  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+interface User {
+  id: string;
+  name: string;
+  email: string;
+  role: "designer" | "retail_chain";
+  sources: string[];
+  garment_interests: string[];
+  onboarding_complete: boolean;
 }
 
-// eslint-disable-next-line react-refresh/only-export-components
+interface Project {
+  id: string;
+  name: string;
+  is_default: boolean;
+}
+
+interface AuthCtx {
+  user: User | null;
+  activeProject: Project | null;
+  projects: Project[];
+  isLoading: boolean;
+  login: (email: string, password: string) => Promise<void>;
+  signup: (data: SignupData) => Promise<void>;
+  logout: () => void;
+  setActiveProject: (p: Project) => void;
+  setProjects: (ps: Project[]) => void;
+}
+
+interface SignupData {
+  name: string;
+  email: string;
+  password: string;
+  role: "designer" | "retail_chain";
+  sources: string[];
+  garment_interests: string[];
+}
+
+const AuthContext = createContext<AuthCtx | null>(null);
+
+export function AuthProvider({ children }: { children: ReactNode }) {
+  const [user, setUser] = useState<User | null>(null);
+  const [activeProject, setActiveProject] = useState<Project | null>(null);
+  const [projects, setProjects] = useState<Project[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const token = localStorage.getItem("fash_token");
+    const storedUser = localStorage.getItem("fash_user");
+    const storedProject = localStorage.getItem("fash_project");
+    if (token && storedUser) {
+      try {
+        setUser(JSON.parse(storedUser));
+        if (storedProject) setActiveProject(JSON.parse(storedProject));
+      } catch {}
+    }
+    setIsLoading(false);
+  }, []);
+
+  const storeSession = (token: string, user: User, project: Project | null) => {
+    localStorage.setItem("fash_token", token);
+    localStorage.setItem("fash_user", JSON.stringify(user));
+    if (project) localStorage.setItem("fash_project", JSON.stringify(project));
+    setUser(user);
+    if (project) setActiveProject(project);
+  };
+
+  const login = async (email: string, password: string) => {
+    const { data } = await api.post("/auth/login", { email, password });
+    storeSession(data.token, data.user, data.project);
+    if (data.project) setProjects([data.project]);
+  };
+
+  const signup = async (signupData: SignupData) => {
+    const { data } = await api.post("/auth/signup", signupData);
+    storeSession(data.token, data.user, data.project);
+    if (data.project) setProjects([data.project]);
+  };
+
+  const logout = () => {
+    localStorage.removeItem("fash_token");
+    localStorage.removeItem("fash_user");
+    localStorage.removeItem("fash_project");
+    setUser(null);
+    setActiveProject(null);
+    setProjects([]);
+  };
+
+  return (
+    <AuthContext.Provider value={{ user, activeProject, projects, isLoading, login, signup, logout, setActiveProject, setProjects }}>
+      {children}
+    </AuthContext.Provider>
+  );
+}
+
 export function useAuth() {
   const ctx = useContext(AuthContext);
-  if (!ctx) throw new Error("useAuth must be used within AuthProvider");
+  if (!ctx) throw new Error("useAuth must be used inside AuthProvider");
   return ctx;
 }
