@@ -30,6 +30,96 @@ const SignupRequestSchema = registry.register(
     email: z.string().email(),
     password: z.string().min(6),
     name: z.string().min(1),
+    role: z.enum(["designer", "retail_chain"]).optional(),
+    sources: z.array(z.string()).optional(),
+    garment_interests: z.array(z.string()).optional(),
+  }),
+);
+
+// ── Looks ────────────────────────────────────────────────────────────────────
+
+const LookSummarySchema = registry.register(
+  "LookSummary",
+  z.object({
+    id: z.string(),
+    brand: z.string(),
+    season: z.string(),
+    year: z.number(),
+    source_type: z.enum(["retail", "runway"]),
+    thumbnail: z.string().url().optional(),
+    garment_count: z.number().int(),
+    is_deconstructed: z.boolean(),
+  }),
+);
+
+const GarmentElementSchema = registry.register(
+  "GarmentElement",
+  z.object({
+    id: z.string(),
+    look_id: z.string(),
+    piece: z.string(),
+    garment_type: z.string(),
+    bbox: z.record(z.unknown()).nullable(),
+    colors: z.array(z.record(z.unknown())),
+    fabric: z.record(z.unknown()),
+    pattern: z.string().nullable(),
+    materials_candidates: z.array(z.string()),
+  }),
+);
+
+const LookSchema = registry.register(
+  "Look",
+  z.object({
+    id: z.string(),
+    brand: z.string(),
+    season: z.string(),
+    year: z.number(),
+    source_type: z.enum(["retail", "runway"]),
+    images: z.array(z.record(z.unknown())),
+    tags: z.array(z.record(z.unknown())),
+    is_deconstructed: z.boolean(),
+    garments: z.array(GarmentElementSchema),
+  }),
+);
+
+const LookListResponseSchema = registry.register(
+  "LookListResponse",
+  z.object({
+    looks: z.array(LookSummarySchema),
+    total: z.number().int(),
+    next_cursor: z.string().optional(),
+  }),
+);
+
+// ── Workspace ─────────────────────────────────────────────────────────────────
+
+const WorkspaceElementSchema = registry.register(
+  "WorkspaceElement",
+  z.object({
+    element_id: z.string(),
+    look_id: z.string(),
+    garment_id: z.string(),
+    garment_type: z.string(),
+    element_type: z.enum(["color", "fabric", "pattern", "silhouette"]),
+    data: z.record(z.unknown()),
+    source_brand: z.string(),
+    canvas_position: z.object({ x: z.number(), y: z.number() }),
+    row: z.string(),
+  }),
+);
+
+const WorkspaceSchema = registry.register(
+  "Workspace",
+  z.object({
+    _id: z.string(),
+    name: z.string(),
+    project_id: z.string(),
+    user_id: z.string(),
+    status: z.enum(["draft", "ready", "generating"]),
+    elements: z.array(WorkspaceElementSchema),
+    canvas_meta: z.record(z.unknown()),
+    createdAt: z.string().datetime(),
+    updatedAt: z.string().datetime(),
   }),
 );
 
@@ -255,5 +345,60 @@ export function registerPaths() {
     method: "post", path: "/api/v1/cost/estimate", tags: ["Cost"],
     request: { body: { content: { "application/json": { schema: CostInputSchema } } } },
     responses: { 200: { description: "OK", content: { "application/json": { schema: CostEstimateSchema } } } },
+  });
+
+  // Looks
+  registry.registerPath({
+    method: "get", path: "/api/v1/looks", tags: ["Looks"],
+    request: { query: z.object({ type: z.enum(["retail", "runway"]).optional(), limit: z.string().optional(), cursor: z.string().optional() }) },
+    responses: { 200: { description: "OK", content: { "application/json": { schema: LookListResponseSchema } } } },
+  });
+  registry.registerPath({
+    method: "get", path: "/api/v1/looks/{lookId}", tags: ["Looks"],
+    request: { params: z.object({ lookId: z.string() }) },
+    responses: { 200: { description: "OK", content: { "application/json": { schema: LookSchema } } } },
+  });
+  registry.registerPath({
+    method: "get", path: "/api/v1/looks/{lookId}/garments", tags: ["Looks"],
+    request: { params: z.object({ lookId: z.string() }) },
+    responses: { 200: { description: "OK", content: { "application/json": { schema: z.array(GarmentElementSchema) } } } },
+  });
+  registry.registerPath({
+    method: "get", path: "/api/v1/looks/{lookId}/garments/{garmentId}", tags: ["Looks"],
+    request: { params: z.object({ lookId: z.string(), garmentId: z.string() }) },
+    responses: { 200: { description: "OK", content: { "application/json": { schema: GarmentElementSchema } } } },
+  });
+
+  // Workspace
+  registry.registerPath({
+    method: "get", path: "/api/v1/workspace", tags: ["Workspace"],
+    request: { query: z.object({ project_id: z.string().optional() }) },
+    responses: { 200: { description: "OK", content: { "application/json": { schema: z.array(WorkspaceSchema) } } } },
+  });
+  registry.registerPath({
+    method: "post", path: "/api/v1/workspace", tags: ["Workspace"],
+    request: { body: { content: { "application/json": { schema: z.object({ name: z.string(), project_id: z.string() }) } } } },
+    responses: { 201: { description: "Created", content: { "application/json": { schema: WorkspaceSchema } } } },
+  });
+  registry.registerPath({
+    method: "get", path: "/api/v1/workspace/{id}", tags: ["Workspace"],
+    request: { params: z.object({ id: z.string() }) },
+    responses: { 200: { description: "OK", content: { "application/json": { schema: WorkspaceSchema } } } },
+  });
+  registry.registerPath({
+    method: "post", path: "/api/v1/workspace/{id}/elements", tags: ["Workspace"],
+    request: { params: z.object({ id: z.string() }), body: { content: { "application/json": { schema: WorkspaceElementSchema } } } },
+    responses: { 200: { description: "OK", content: { "application/json": { schema: WorkspaceSchema } } } },
+  });
+  registry.registerPath({
+    method: "post", path: "/api/v1/workspace/{id}/generate", tags: ["Workspace"],
+    request: { params: z.object({ id: z.string() }) },
+    responses: { 200: { description: "OK", content: { "application/json": { schema: WorkspaceSchema } } } },
+  });
+
+  // Inventory
+  registry.registerPath({
+    method: "get", path: "/api/v1/inventory/garments", tags: ["Inventory"],
+    responses: { 200: { description: "OK", content: { "application/json": { schema: z.array(z.object({ garment_type: z.string(), count: z.number() })) } } } },
   });
 }

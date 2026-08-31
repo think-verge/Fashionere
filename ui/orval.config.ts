@@ -1,7 +1,7 @@
 import { defineConfig } from "orval";
 
 export default defineConfig({
-  centoire: {
+  fashionare: {
     input: {
       target: "./openapi/openapi.json",
     },

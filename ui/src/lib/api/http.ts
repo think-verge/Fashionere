@@ -1,17 +1,28 @@
 import axios, { type AxiosRequestConfig, isAxiosError } from "axios";
 
-export const apiBaseUrl = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8000";
-
 export const http = axios.create({
-  baseURL: apiBaseUrl,
+  baseURL: "/api/v1",
   withCredentials: true,
+});
+
+http.interceptors.request.use((config) => {
+  const token = localStorage.getItem("fash_token");
+  if (token) config.headers.Authorization = `Bearer ${token}`;
+  return config;
 });
 
 http.interceptors.response.use(
   (response) => response,
   (error: unknown) => {
     if (isAxiosError(error)) {
-      const detail = (error.response?.data as { detail?: unknown } | undefined)?.detail;
+      if (error.response?.status === 401) {
+        localStorage.removeItem("fash_token");
+        localStorage.removeItem("fash_user");
+        localStorage.removeItem("fash_project");
+        window.location.href = "/login";
+      }
+      const detail = (error.response?.data as { detail?: unknown; error?: unknown } | undefined)?.detail
+        ?? (error.response?.data as { error?: unknown } | undefined)?.error;
       if (typeof detail === "string" && detail.length > 0) {
         error.message = detail;
       }

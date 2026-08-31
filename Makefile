@@ -1,7 +1,7 @@
 SHELL := /bin/bash
 AGENT_VENV := agent/.venv
 
-.PHONY: agent agent-install backend ui api-refresh
+.PHONY: agent agent-install backend ui api-refresh install
 
 agent-install:
 	test -d $(AGENT_VENV) || python3 -m venv $(AGENT_VENV)
@@ -9,6 +9,10 @@ agent-install:
 
 agent: agent-install
 	cd agent && . .venv/bin/activate && uvicorn app.main:app --reload --port 8001
+
+install:
+	cd backend && npm install
+	cd ui && npm install
 
 backend:
 	cd backend && npm run dev
@@ -19,4 +23,4 @@ ui:
 api-refresh:
 	cd backend && npm run openapi && \
 	cp openapi/openapi.json ../ui/openapi/openapi.json && \
-	cd ../ui && npx orval
+	cd ../ui && npm run api:refresh

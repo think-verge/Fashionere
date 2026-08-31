@@ -17,7 +17,11 @@ declare global {
 }
 
 export function requireAuth(req: Request, _res: Response, next: NextFunction) {
-  const token = req.cookies?.token as string | undefined;
+  const cookieToken = req.cookies?.token as string | undefined;
+  const bearerToken = req.headers.authorization?.startsWith("Bearer ")
+    ? req.headers.authorization.slice(7)
+    : undefined;
+  const token = cookieToken ?? bearerToken;
   if (!token) throw new ApiError(401, "Not authenticated");
 
   try {

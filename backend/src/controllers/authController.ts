@@ -10,21 +10,24 @@ const COOKIE_OPTIONS = {
 };
 
 export async function signup(req: Request, res: Response) {
-  const { email, password, name } = req.body as {
+  const { email, password, name, role, sources, garment_interests } = req.body as {
     email: string;
     password: string;
     name: string;
+    role?: "designer" | "retail_chain";
+    sources?: string[];
+    garment_interests?: string[];
   };
-  const { token, user } = await authService.signup(email, password, name);
-  res.cookie("token", token, COOKIE_OPTIONS);
-  res.status(201).json(user);
+  const result = await authService.signup(email, password, name, role, sources, garment_interests);
+  res.cookie("token", result.token, COOKIE_OPTIONS);
+  res.status(201).json(result);
 }
 
 export async function login(req: Request, res: Response) {
   const { email, password } = req.body as { email: string; password: string };
-  const { token, user } = await authService.login(email, password);
-  res.cookie("token", token, COOKIE_OPTIONS);
-  res.json(user);
+  const result = await authService.login(email, password);
+  res.cookie("token", result.token, COOKIE_OPTIONS);
+  res.json(result);
 }
 
 export async function logout(_req: Request, res: Response) {
