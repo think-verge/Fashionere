@@ -4,27 +4,42 @@ import { ApiError } from "../utils/api-error.js";
 const RETAIL_SOURCES = new Set(["zara", "hm", "mango", "uniqlo", "cos", "asos"]);
 
 function sourceType(doc: Record<string, unknown>): "retail" | "runway" {
-  const src = (doc.source as Record<string, unknown> | undefined)?.type as string | undefined;
-  if (src && RETAIL_SOURCES.has(src.toLowerCase())) return "retail";
-  // fallback: check brand field
-  const brand = (doc.brand as string | undefined)?.toLowerCase() ?? "";
-  return RETAIL_SOURCES.has(brand) ? "retail" : "runway";
+  const srcType = (doc.source as Record<string, unknown> | undefined)?.type as string | undefined;
+  if (srcType && RETAIL_SOURCES.has(srcType.toLowerCase())) return "retail";
+  const brand = (
+    (doc.context as Record<string, unknown> | undefined)?.brand_slug
+    ?? (doc.context as Record<string, unknown> | undefined)?.brand
+    ?? doc.brand
+    ?? ""
+  ) as string;
+  return RETAIL_SOURCES.has(brand.toLowerCase()) ? "retail" : "runway";
 }
 
-function thumbnail(doc: Record<string, unknown>): string | undefined {
+function primaryImage(doc: Record<string, unknown>): string | undefined {
   const imgs = doc.images as Array<Record<string, unknown>> | undefined;
-  return (imgs?.[0]?.url ?? imgs?.[0]?.src) as string | undefined;
+  if (!imgs?.length) return undefined;
+  // prefer role=runway image, fall back to first
+  const runway = imgs.find((i) => i.role === "runway");
+  return ((runway ?? imgs[0])?.url ?? (runway ?? imgs[0])?.src) as string | undefined;
+}
+
+function allImageUrls(doc: Record<string, unknown>): string[] {
+  const imgs = doc.images as Array<Record<string, unknown>> | undefined;
+  if (!imgs?.length) return [];
+  return imgs.map((i) => (i.url ?? i.src) as string).filter(Boolean);
 }
 
 function buildSummary(doc: Record<string, unknown>, garmentCount: number) {
-  const src = (doc.source as Record<string, unknown> | undefined) ?? {};
+  const ctx = (doc.context as Record<string, unknown> | undefined) ?? {};
+  const nativeText = (doc.native_text as Record<string, unknown> | undefined) ?? {};
   return {
     id: String(doc._id),
-    brand: (src.brand ?? doc.brand ?? "") as string,
-    season: (src.season ?? doc.season ?? "") as string,
-    year: ((src.year ?? doc.year ?? 0) as number),
+    brand: (ctx.brand ?? doc.brand ?? "") as string,
+    name: (nativeText.product_name ?? doc.name ?? "") as string,
+    season: (ctx.season ?? doc.season ?? "") as string,
+    year: ((ctx.year ?? doc.year ?? 0) as number),
     source_type: sourceType(doc),
-    thumbnail: thumbnail(doc),
+    thumbnail: primaryImage(doc),
     garment_count: garmentCount,
     is_deconstructed: garmentCount > 0,
   };
@@ -32,24 +47,24 @@ function buildSummary(doc: Record<string, unknown>, garmentCount: number) {
 
 function buildGarment(g: Record<string, unknown>, lookId: string) {
   return {
-    id: (g.garment_id ?? g.id) as string,
+    garment_id: (g.garment_id ?? g.id) as string,
     look_id: lookId,
     piece: g.piece as string,
     garment_type: g.garment_type as string,
     bbox: g.bbox,
-    colors: g.colors ?? [],
-    fabric: g.fabric ?? {},
-    pattern: g.pattern ?? null,
-    materials_candidates: g.materials_candidates ?? [],
+    colors: (g.colors ?? []) as Array<{ hex: string; family?: string; name?: string }>,
+    fabric: (g.fabric ?? null) as Record<string, unknown> | null,
+    pattern: (g.pattern ?? null) as string | null,
+    materials_candidates: (g.materials_candidates ?? []) as string[],
   };
-}
-
-function decodeCursor(cursor: string): string {
-  return Buffer.from(cursor, "base64url").toString("utf8");
 }
 
 function encodeCursor(id: string): string {
   return Buffer.from(id, "utf8").toString("base64url");
+}
+
+function decodeCursor(cursor: string): string {
+  return Buffer.from(cursor, "base64url").toString("utf8");
 }
 
 const looksCol = () => mongoose.connection.db!.collection("canonical_looks");
@@ -62,30 +77,33 @@ export async function listLooks(opts: {
 }) {
   const { type, limit, cursor } = opts;
 
-  const filter: Record<string, unknown> = {};
+  // Base type filter (used for total count too)
+  const typeFilter: Record<string, unknown> = {};
   if (type === "retail") {
-    filter["source.type"] = { $in: [...RETAIL_SOURCES] };
+    typeFilter["source.type"] = { $in: [...RETAIL_SOURCES] };
   } else if (type === "runway") {
-    filter["source.type"] = { $nin: [...RETAIL_SOURCES] };
-  }
-  if (cursor) {
-    try {
-      const id = new mongoose.Types.ObjectId(decodeCursor(cursor));
-      filter._id = { $gt: id };
-    } catch {}
+    typeFilter["source.type"] = { $nin: [...RETAIL_SOURCES] };
   }
 
-  const total = await looksCol().countDocuments(type ? { ...filter, _id: undefined } : {});
-  const docs = await looksCol().find(filter).sort({ _id: 1 }).limit(limit + 1).toArray();
+  // Page filter adds cursor for pagination
+  const pageFilter: Record<string, unknown> = { ...typeFilter };
+  if (cursor) {
+    const decodedId = decodeCursor(cursor);
+    // _id is a string in canonical_looks — use string $gt for cursor pagination
+    pageFilter._id = { $gt: decodedId };
+  }
+
+  const [total, docs] = await Promise.all([
+    looksCol().countDocuments(typeFilter),
+    looksCol().find(pageFilter).sort({ _id: 1 }).limit(limit + 1).toArray(),
+  ]);
 
   const hasMore = docs.length > limit;
   const page = hasMore ? docs.slice(0, limit) : docs;
 
-  // Fetch decon garment counts for these look IDs
+  // Fetch decon garment counts for this page
   const lookIds = page.map((d) => String(d._id));
-  const deconDocs = await deconCol()
-    .find({ look_id: { $in: lookIds } })
-    .toArray();
+  const deconDocs = await deconCol().find({ look_id: { $in: lookIds } }).toArray();
   const garmentCountMap = new Map<string, number>();
   for (const d of deconDocs) {
     const lid = String(d.look_id);
@@ -100,30 +118,41 @@ export async function listLooks(opts: {
   return {
     looks,
     total,
-    next_cursor: hasMore ? encodeCursor(String(page[page.length - 1]._id)) : undefined,
+    next_cursor: hasMore ? encodeCursor(String(page[page.length - 1]._id)) : null,
   };
 }
 
 export async function getLook(lookId: string) {
-  // Look IDs are strings like "prada:prada-fall-2025-rtw:29" — query directly by string _id
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const d = await looksCol().findOne({ _id: lookId as any }) as Record<string, unknown> | null;
   if (!d) throw new ApiError(404, "Look not found");
 
   const decon = await deconCol().findOne({ look_id: lookId });
   const garments = ((decon as Record<string, unknown> | null)?.garments as Array<Record<string, unknown>>) ?? [];
+  const ctx = (d.context as Record<string, unknown> | undefined) ?? {};
 
-  const src = (d.source as Record<string, unknown> | undefined) ?? {};
+  const nativeText = (d.native_text as Record<string, unknown> | undefined) ?? {};
+
+  // tags can be a string[] (runway keywords) or an object (retail structured analysis)
+  const rawTags = d.tags as Record<string, unknown> | string[] | undefined;
+  const isStructuredAnalysis = rawTags && !Array.isArray(rawTags) && typeof rawTags === "object";
+  const keywords = isStructuredAnalysis
+    ? (nativeText.keywords as string[] ?? [])
+    : (rawTags as string[] | undefined) ?? (nativeText.keywords as string[] ?? []);
+  const categoryPath = (ctx.category_path as string[] | undefined);
+
   return {
     id: lookId,
-    brand: (src.brand ?? d.brand ?? "") as string,
-    season: (src.season ?? d.season ?? "") as string,
-    year: ((src.year ?? d.year ?? 0) as number),
+    brand: (ctx.brand ?? d.brand ?? "") as string,
+    season: (ctx.season ?? d.season ?? "") as string,
+    year: ((ctx.year ?? d.year ?? 0) as number),
+    category: (categoryPath?.[categoryPath.length - 1] ?? ctx.category ?? "") as string,
+    name: (nativeText.product_name ?? d.name ?? "") as string,
     source_type: sourceType(d),
-    images: (d.images ?? []) as unknown[],
-    tags: (d.tags ?? []) as unknown[],
+    images: allImageUrls(d),
+    tags: keywords,
+    analysis: isStructuredAnalysis ? (rawTags as Record<string, unknown>) : null,
     is_deconstructed: garments.length > 0,
-    garments: garments.map((g) => buildGarment(g, lookId)),
   };
 }
 
@@ -136,7 +165,7 @@ export async function getGarments(lookId: string) {
 
 export async function getGarment(lookId: string, garmentId: string) {
   const garments = await getGarments(lookId);
-  const g = garments.find((g) => g.id === garmentId);
+  const g = garments.find((g) => g.garment_id === garmentId);
   if (!g) throw new ApiError(404, "Garment not found");
   return g;
 }

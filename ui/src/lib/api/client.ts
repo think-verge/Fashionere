@@ -16,6 +16,8 @@ api.interceptors.response.use(
   (err) => {
     if (err.response?.status === 401) {
       localStorage.removeItem("fash_token");
+      localStorage.removeItem("fash_user");
+      localStorage.removeItem("fash_project");
       window.location.href = "/login";
     }
     return Promise.reject(err);

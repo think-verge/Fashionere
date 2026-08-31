@@ -1,5 +1,13 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import {
+  Box, Typography, Paper, Button, Chip, Divider, Alert,
+  IconButton, Skeleton, Tooltip,
+} from "@mui/material";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import CloseIcon from "@mui/icons-material/Close";
+import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
+import { PaletteStrip } from "../../components/PaletteStrip";
 import { api } from "../../lib/api/client";
 
 interface WorkspaceElement {
@@ -20,11 +28,11 @@ interface Workspace {
   elements: WorkspaceElement[];
 }
 
-const ELEMENT_COLORS: Record<string, string> = {
-  color: "bg-amber-50 border-amber-200 text-amber-800",
-  fabric: "bg-blue-50 border-blue-200 text-blue-800",
-  pattern: "bg-purple-50 border-purple-200 text-purple-800",
-  silhouette: "bg-raisin/5 border-raisin/20 text-raisin/70",
+const ELEMENT_CHIP_COLORS: Record<string, "warning" | "info" | "secondary" | "default"> = {
+  color: "warning",
+  fabric: "info",
+  pattern: "secondary",
+  silhouette: "default",
 };
 
 export default function WorkspaceCanvas() {
@@ -39,6 +47,7 @@ export default function WorkspaceCanvas() {
       return data;
     },
     enabled: !!id,
+    refetchInterval: (query) => query.state.data?.status === "generating" ? 5000 : false,
   });
 
   const removeEl = useMutation({
@@ -56,20 +65,17 @@ export default function WorkspaceCanvas() {
     onSuccess: () => qc.invalidateQueries({ queryKey: ["workspace", id] }),
   });
 
-  if (isLoading) return (
-    <div className="px-8 py-8">
-      <div className="animate-pulse space-y-4">
-        <div className="h-6 bg-raisin/5 w-48" />
-        <div className="h-48 bg-raisin/5" />
-      </div>
-    </div>
-  );
+  if (isLoading) {
+    return (
+      <Box>
+        <Skeleton variant="text" width={120} height={32} sx={{ mb: 4 }} />
+        <Skeleton variant="rectangular" height={200} sx={{ borderRadius: 2, mb: 2 }} />
+        <Skeleton variant="rectangular" height={160} sx={{ borderRadius: 2 }} />
+      </Box>
+    );
+  }
 
-  if (!ws) return (
-    <div className="px-8 py-8">
-      <p className="text-sm text-raisin/50">Workspace not found.</p>
-    </div>
-  );
+  if (!ws) return <Alert severity="error">Workspace not found.</Alert>;
 
   // Group elements by row (garment_type)
   const rows = new Map<string, WorkspaceElement[]>();
@@ -82,47 +88,86 @@ export default function WorkspaceCanvas() {
   const isGenerating = ws.status === "generating";
 
   return (
-    <div className="px-8 py-8 flex flex-col h-full">
+    <Box sx={{ display: "flex", flexDirection: "column", height: "100%" }}>
       {/* Header */}
-      <div className="flex items-start justify-between mb-8">
-        <div>
-          <button onClick={() => nav(-1)} className="text-sm text-raisin/50 hover:text-raisin mb-3 transition-colors block">← Back</button>
-          <h1 className="text-2xl font-semibold tracking-tight">{ws.name}</h1>
-          <p className="text-sm text-raisin/50 mt-1">{ws.elements.length} elements</p>
-        </div>
-
-        <button
-          onClick={() => generate.mutate()}
+      <Box sx={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", mb: 5 }}>
+        <Box>
+          <Button
+            startIcon={<ArrowBackIcon />}
+            onClick={() => nav(-1)}
+            sx={{ color: "text.secondary", mb: 1.5, fontWeight: 500, "&:hover": { color: "primary.main" } }}
+          >
+            Back
+          </Button>
+          <Typography sx={{ fontSize: 32, fontWeight: 700, letterSpacing: "-0.02em", color: "text.primary" }}>
+            {ws.name}
+          </Typography>
+          <Typography sx={{ color: "text.secondary", fontSize: 14, mt: 0.5 }}>
+            {ws.elements.length} element{ws.elements.length !== 1 ? "s" : ""}
+          </Typography>
+        </Box>
+        <Button
+          variant="contained"
+          startIcon={<AutoAwesomeIcon />}
           disabled={ws.elements.length === 0 || isGenerating || generate.isPending}
-          className="bg-deep-red text-white text-[12px] font-semibold tracking-[0.15em] uppercase px-6 py-3 hover:bg-raisin transition-colors disabled:opacity-40"
+          onClick={() => generate.mutate()}
+          sx={{ mt: 1, borderRadius: "10px", py: 1.5, px: 3 }}
         >
           {isGenerating ? "Generating…" : "Generate Collection"}
-        </button>
-      </div>
+        </Button>
+      </Box>
 
+      {/* Generating banner */}
       {isGenerating && (
-        <div className="mb-6 px-5 py-4 bg-salmon/10 border border-salmon/20 text-sm text-salmon">
+        <Alert severity="info" sx={{ mb: 4, borderRadius: "12px", border: "1px solid #e3f2fd" }}>
           Your collection is being generated. This may take a few minutes.
-        </div>
+        </Alert>
       )}
 
       {/* Canvas */}
       {ws.elements.length === 0 ? (
-        <div className="flex-1 border border-dashed border-raisin/15 flex items-center justify-center">
-          <div className="text-center">
-            <p className="text-raisin/40 text-sm mb-2">No elements yet.</p>
-            <p className="text-raisin/30 text-xs">Go to a look and add color, fabric, or pattern elements.</p>
-          </div>
-        </div>
+        <Paper
+          sx={{
+            flex: 1,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            border: "1px dashed #f0e4e2",
+            bgcolor: "#faf8f7",
+            py: 10,
+          }}
+        >
+          <Box sx={{ textAlign: "center" }}>
+            <Typography sx={{ color: "text.secondary", fontFamily: "'Literata', Georgia, serif", fontSize: 18, mb: 1 }}>
+              No elements yet
+            </Typography>
+            <Typography sx={{ color: "text.disabled", fontSize: 14 }}>
+              Go to a look and add color, fabric, or pattern elements.
+            </Typography>
+          </Box>
+        </Paper>
       ) : (
-        <div className="flex-1 overflow-auto space-y-6">
+        <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
           {[...rows.entries()].map(([rowKey, elements]) => (
-            <div key={rowKey}>
-              <div className="flex items-center gap-3 mb-3">
-                <p className="eyebrow text-raisin/50 capitalize">{rowKey}</p>
-                <div className="flex-1 h-px bg-raisin/10" />
-              </div>
-              <div className="flex flex-wrap gap-3">
+            <Paper key={rowKey} sx={{ p: 3 }}>
+              <Box sx={{ display: "flex", alignItems: "center", gap: 2, mb: 2.5 }}>
+                <Typography
+                  sx={{
+                    fontSize: 11,
+                    fontWeight: 700,
+                    textTransform: "uppercase",
+                    letterSpacing: "0.2em",
+                    color: "primary.main",
+                  }}
+                >
+                  {rowKey}
+                </Typography>
+                <Divider sx={{ flex: 1, borderColor: "#f0e4e2" }} />
+                <Typography sx={{ fontSize: 11, color: "text.disabled" }}>
+                  {elements.length} element{elements.length !== 1 ? "s" : ""}
+                </Typography>
+              </Box>
+              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5 }}>
                 {elements.map((el) => (
                   <ElementCard
                     key={el.element_id}
@@ -131,53 +176,89 @@ export default function WorkspaceCanvas() {
                     removing={removeEl.isPending}
                   />
                 ))}
-              </div>
-            </div>
+              </Box>
+            </Paper>
           ))}
-        </div>
+        </Box>
       )}
-    </div>
+    </Box>
   );
 }
 
-function ElementCard({ element, onRemove, removing }: {
+function ElementCard({
+  element,
+  onRemove,
+  removing,
+}: {
   element: WorkspaceElement;
   onRemove: () => void;
   removing: boolean;
 }) {
-  const colors = (element.data?.colors as Array<{ hex?: string; name?: string }>) ?? [];
-  const colorClass = ELEMENT_COLORS[element.element_type] ?? "bg-raisin/5 border-raisin/20";
+  const colors = (element.data?.colors as Array<{ hex?: string; name?: string; family?: string }>) ?? [];
+  const chipColor = ELEMENT_CHIP_COLORS[element.element_type] ?? "default";
 
   return (
-    <div className={`border px-4 py-3 min-w-[140px] max-w-[200px] group relative ${colorClass}`}>
-      <div className="flex items-start justify-between gap-2 mb-2">
-        <p className="text-[10px] font-semibold uppercase tracking-wider opacity-70">{element.element_type}</p>
-        <button
-          onClick={onRemove}
+    <Paper
+      sx={{
+        px: 2.5,
+        py: 2,
+        minWidth: 140,
+        maxWidth: 200,
+        position: "relative",
+        "&:hover .remove-btn": { opacity: 1 },
+        border: "1px solid #f0e4e2",
+        borderRadius: "12px",
+      }}
+    >
+      <Tooltip title="Remove">
+        <IconButton
+          className="remove-btn"
+          size="small"
           disabled={removing}
-          className="opacity-0 group-hover:opacity-100 text-[10px] text-current opacity-50 hover:opacity-100 transition-opacity disabled:opacity-30"
+          onClick={onRemove}
+          sx={{
+            position: "absolute",
+            top: 6,
+            right: 6,
+            opacity: 0,
+            transition: "opacity 0.15s",
+            width: 20,
+            height: 20,
+            bgcolor: "#fff0ef",
+            color: "primary.main",
+            "&:hover": { bgcolor: "#a93533", color: "#fff" },
+          }}
         >
-          ×
-        </button>
-      </div>
+          <CloseIcon sx={{ fontSize: 12 }} />
+        </IconButton>
+      </Tooltip>
+
+      <Chip
+        label={element.element_type}
+        color={chipColor}
+        size="small"
+        sx={{ mb: 1.5, fontSize: 9, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em" }}
+      />
 
       {element.element_type === "color" && colors.length > 0 && (
-        <div className="flex gap-1 mb-1">
-          {colors.slice(0, 4).map((c, i) => (
-            <div key={i} className="w-5 h-5 rounded-full border border-white/40" style={{ backgroundColor: c.hex ?? "#ccc" }} title={c.name} />
-          ))}
-        </div>
+        <PaletteStrip swatches={colors.map((c) => ({ hex: c.hex ?? "#ccc", name: c.name, family: c.family }))} size={20} />
       )}
 
       {element.element_type === "fabric" && (
-        <p className="text-[12px]">{(element.data?.fabric as { name?: string })?.name ?? "Unknown"}</p>
+        <Typography sx={{ fontSize: 13, fontWeight: 500, color: "text.primary" }}>
+          {typeof element.data?.fabric === "string" ? element.data.fabric : (element.data?.fabric as { name?: string })?.name ?? "Unknown"}
+        </Typography>
       )}
 
       {element.element_type === "pattern" && (
-        <p className="text-[12px] capitalize">{element.data?.pattern as string ?? "—"}</p>
+        <Typography sx={{ fontSize: 13, fontWeight: 500, color: "text.primary", textTransform: "capitalize" }}>
+          {element.data?.pattern as string ?? "—"}
+        </Typography>
       )}
 
-      <p className="text-[10px] opacity-50 mt-1.5 capitalize">{element.source_brand}</p>
-    </div>
+      <Typography sx={{ fontSize: 10, color: "text.disabled", mt: 1, textTransform: "capitalize" }}>
+        {element.source_brand}
+      </Typography>
+    </Paper>
   );
 }

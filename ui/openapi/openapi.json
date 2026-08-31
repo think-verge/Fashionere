@@ -63,12 +63,337 @@
           "name": {
             "type": "string",
             "minLength": 1
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "designer",
+              "retail_chain"
+            ]
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "garment_interests": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         },
         "required": [
           "email",
           "password",
           "name"
+        ]
+      },
+      "LookSummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "brand": {
+            "type": "string"
+          },
+          "season": {
+            "type": "string"
+          },
+          "year": {
+            "type": "number"
+          },
+          "source_type": {
+            "type": "string",
+            "enum": [
+              "retail",
+              "runway"
+            ]
+          },
+          "thumbnail": {
+            "type": "string",
+            "format": "uri"
+          },
+          "garment_count": {
+            "type": "integer"
+          },
+          "is_deconstructed": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "brand",
+          "season",
+          "year",
+          "source_type",
+          "garment_count",
+          "is_deconstructed"
+        ]
+      },
+      "GarmentElement": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "look_id": {
+            "type": "string"
+          },
+          "piece": {
+            "type": "string"
+          },
+          "garment_type": {
+            "type": "string"
+          },
+          "bbox": {
+            "type": "object",
+            "nullable": true,
+            "additionalProperties": {
+              "nullable": true
+            }
+          },
+          "colors": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": {
+                "nullable": true
+              }
+            }
+          },
+          "fabric": {
+            "type": "object",
+            "additionalProperties": {
+              "nullable": true
+            }
+          },
+          "pattern": {
+            "type": "string",
+            "nullable": true
+          },
+          "materials_candidates": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "look_id",
+          "piece",
+          "garment_type",
+          "bbox",
+          "colors",
+          "fabric",
+          "pattern",
+          "materials_candidates"
+        ]
+      },
+      "Look": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "brand": {
+            "type": "string"
+          },
+          "season": {
+            "type": "string"
+          },
+          "year": {
+            "type": "number"
+          },
+          "source_type": {
+            "type": "string",
+            "enum": [
+              "retail",
+              "runway"
+            ]
+          },
+          "images": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": {
+                "nullable": true
+              }
+            }
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": {
+                "nullable": true
+              }
+            }
+          },
+          "is_deconstructed": {
+            "type": "boolean"
+          },
+          "garments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GarmentElement"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "brand",
+          "season",
+          "year",
+          "source_type",
+          "images",
+          "tags",
+          "is_deconstructed",
+          "garments"
+        ]
+      },
+      "LookListResponse": {
+        "type": "object",
+        "properties": {
+          "looks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LookSummary"
+            }
+          },
+          "total": {
+            "type": "integer"
+          },
+          "next_cursor": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "looks",
+          "total"
+        ]
+      },
+      "WorkspaceElement": {
+        "type": "object",
+        "properties": {
+          "element_id": {
+            "type": "string"
+          },
+          "look_id": {
+            "type": "string"
+          },
+          "garment_id": {
+            "type": "string"
+          },
+          "garment_type": {
+            "type": "string"
+          },
+          "element_type": {
+            "type": "string",
+            "enum": [
+              "color",
+              "fabric",
+              "pattern",
+              "silhouette"
+            ]
+          },
+          "data": {
+            "type": "object",
+            "additionalProperties": {
+              "nullable": true
+            }
+          },
+          "source_brand": {
+            "type": "string"
+          },
+          "canvas_position": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number"
+              },
+              "y": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "x",
+              "y"
+            ]
+          },
+          "row": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "element_id",
+          "look_id",
+          "garment_id",
+          "garment_type",
+          "element_type",
+          "data",
+          "source_brand",
+          "canvas_position",
+          "row"
+        ]
+      },
+      "Workspace": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "project_id": {
+            "type": "string"
+          },
+          "user_id": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "draft",
+              "ready",
+              "generating"
+            ]
+          },
+          "elements": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/WorkspaceElement"
+            }
+          },
+          "canvas_meta": {
+            "type": "object",
+            "additionalProperties": {
+              "nullable": true
+            }
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "required": [
+          "_id",
+          "name",
+          "project_id",
+          "user_id",
+          "status",
+          "elements",
+          "canvas_meta",
+          "createdAt",
+          "updatedAt"
         ]
       },
       "Moodboard": {
@@ -1042,6 +1367,353 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/CostEstimate"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/looks": {
+      "get": {
+        "tags": [
+          "Looks"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "retail",
+                "runway"
+              ]
+            },
+            "required": false,
+            "name": "type",
+            "in": "query"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "name": "cursor",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LookListResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/looks/{lookId}": {
+      "get": {
+        "tags": [
+          "Looks"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "name": "lookId",
+            "in": "path"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Look"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/looks/{lookId}/garments": {
+      "get": {
+        "tags": [
+          "Looks"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "name": "lookId",
+            "in": "path"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GarmentElement"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/looks/{lookId}/garments/{garmentId}": {
+      "get": {
+        "tags": [
+          "Looks"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "name": "lookId",
+            "in": "path"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "name": "garmentId",
+            "in": "path"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GarmentElement"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/workspace": {
+      "get": {
+        "tags": [
+          "Workspace"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "name": "project_id",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Workspace"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Workspace"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "project_id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "project_id"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Workspace"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/workspace/{id}": {
+      "get": {
+        "tags": [
+          "Workspace"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Workspace"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/workspace/{id}/elements": {
+      "post": {
+        "tags": [
+          "Workspace"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WorkspaceElement"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Workspace"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/workspace/{id}/generate": {
+      "post": {
+        "tags": [
+          "Workspace"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Workspace"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/inventory/garments": {
+      "get": {
+        "tags": [
+          "Inventory"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "garment_type": {
+                        "type": "string"
+                      },
+                      "count": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "garment_type",
+                      "count"
+                    ]
+                  }
                 }
               }
             }

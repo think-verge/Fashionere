@@ -3,9 +3,9 @@ import { Box, CircularProgress } from "@mui/material";
 import { useAuth } from "../lib/auth-context";
 
 export function ProtectedRoute() {
-  const { user, loading } = useAuth();
+  const { user, isLoading } = useAuth();
 
-  if (loading) {
+  if (isLoading) {
     return (
       <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
         <CircularProgress color="primary" />

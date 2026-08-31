@@ -77,19 +77,13 @@ export const theme = createTheme({
       },
     },
     MuiTextField: {
-      defaultProps: {
-        variant: "outlined",
-      },
+      defaultProps: { variant: "outlined" },
     },
     MuiOutlinedInput: {
       styleOverrides: {
         root: {
-          "& .MuiOutlinedInput-notchedOutline": {
-            borderColor: "#f0e4e2",
-          },
-          "&:hover .MuiOutlinedInput-notchedOutline": {
-            borderColor: "#dfbfbc",
-          },
+          "& .MuiOutlinedInput-notchedOutline": { borderColor: "#f0e4e2" },
+          "&:hover .MuiOutlinedInput-notchedOutline": { borderColor: "#dfbfbc" },
         },
       },
     },
@@ -115,16 +109,12 @@ export const theme = createTheme({
     },
     MuiListItemButton: {
       styleOverrides: {
-        root: {
-          borderRadius: 12,
-        },
+        root: { borderRadius: 12 },
       },
     },
     MuiDialog: {
       styleOverrides: {
-        paper: {
-          border: "1px solid #f0e4e2",
-        },
+        paper: { border: "1px solid #f0e4e2" },
       },
     },
   },

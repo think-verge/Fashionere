@@ -1,124 +1,148 @@
-import { useState } from "react";
-import { useQuery } from "@tanstack/react-query";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useInfiniteQuery } from "@tanstack/react-query";
+import {
+  Box, Grid, Card, CardActionArea, CardMedia, CardContent,
+  Typography, Chip, Button, Skeleton,
+} from "@mui/material";
+import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
+import { PageHeader } from "../../components/PageHeader";
 import { useAuth } from "../../lib/auth-context";
 import { api } from "../../lib/api/client";
 
 interface LookSummary {
   id: string;
   brand: string;
+  name?: string;
   season: string;
   year: number;
-  source_type: "retail" | "runway";
   thumbnail?: string;
   garment_count: number;
-  is_deconstructed: boolean;
+  source_type: "retail" | "runway";
 }
 
-interface LookListResponse {
+interface LooksResponse {
   looks: LookSummary[];
+  next_cursor: string | null;
   total: number;
-  next_cursor?: string;
 }
 
 export default function LooksPage() {
+  const navigate = useNavigate();
   const { user } = useAuth();
-  const [cursor, setCursor] = useState<string | undefined>();
-  const [allLooks, setAllLooks] = useState<LookSummary[]>([]);
-
   const type = user?.role === "retail_chain" ? "retail" : "runway";
 
-  const { data, isLoading, isFetching } = useQuery<LookListResponse>({
-    queryKey: ["looks", type, cursor],
-    queryFn: async () => {
-      const params: Record<string, string> = { type, limit: "24" };
-      if (cursor) params.cursor = cursor;
-      const { data } = await api.get("/looks", { params });
-      if (!cursor) {
-        setAllLooks(data.looks);
-      } else {
-        setAllLooks((prev) => [...prev, ...data.looks]);
-      }
-      return data;
-    },
-  });
+  const { data, fetchNextPage, hasNextPage, isFetchingNextPage, isLoading } =
+    useInfiniteQuery<LooksResponse>({
+      queryKey: ["looks", type],
+      queryFn: async ({ pageParam }) => {
+        const params: Record<string, string> = { type, limit: "24" };
+        if (pageParam) params.cursor = pageParam as string;
+        const { data } = await api.get("/looks", { params });
+        return data;
+      },
+      getNextPageParam: (last) => last.next_cursor ?? undefined,
+      initialPageParam: undefined,
+    });
 
-  const loadMore = () => {
-    if (data?.next_cursor) setCursor(data.next_cursor);
-  };
+  const looks = data?.pages.flatMap((p) => p.looks) ?? [];
+  const total = data?.pages[0]?.total ?? 0;
 
   return (
-    <div className="px-8 py-8">
-      <div className="flex items-end justify-between mb-8">
-        <div>
-          <p className="eyebrow text-deep-red mb-1">
-            {type === "retail" ? "Retail" : "Runway"}
-          </p>
-          <h1 className="text-2xl font-semibold tracking-tight">Looks</h1>
-          {data && (
-            <p className="text-sm text-raisin/50 mt-1">{data.total.toLocaleString()} looks</p>
-          )}
-        </div>
-      </div>
+    <Box>
+      <PageHeader
+        eyebrow={type === "retail" ? "Retail Looks" : "Runway Looks"}
+        heading="Curated Looks"
+        description="Browse and deconstruct looks from your selected sources. Add elements to a workspace to start building your collection."
+      />
 
-      {isLoading && !allLooks.length ? (
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+      {isLoading ? (
+        <Grid container spacing={2.5}>
           {Array.from({ length: 12 }).map((_, i) => (
-            <div key={i} className="aspect-[3/4] bg-raisin/5 animate-pulse" />
+            <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }} key={i}>
+              <Card>
+                <Skeleton variant="rectangular" height={280} />
+                <CardContent>
+                  <Skeleton width="60%" />
+                  <Skeleton width="40%" />
+                </CardContent>
+              </Card>
+            </Grid>
           ))}
-        </div>
+        </Grid>
+      ) : looks.length === 0 ? (
+        <Box sx={{ textAlign: "center", py: 12 }}>
+          <Typography sx={{ color: "text.secondary", fontFamily: "'Literata', Georgia, serif", fontSize: 18 }}>
+            No looks found. Try adjusting your source preferences.
+          </Typography>
+        </Box>
       ) : (
         <>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            {allLooks.map((look) => (
-              <LookCard key={look.id} look={look} />
+          <Typography sx={{ mb: 3, color: "text.secondary", fontSize: 13 }}>
+            {total} looks
+          </Typography>
+          <Grid container spacing={2.5}>
+            {looks.map((look) => (
+              <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }} key={look.id}>
+                <Card sx={{ height: "100%" }}>
+                  <CardActionArea onClick={() => navigate(`/app/looks/${look.id}`)} sx={{ height: "100%", display: "flex", flexDirection: "column", alignItems: "stretch" }}>
+                    <Box sx={{ position: "relative", bgcolor: "#f5f0ef", aspectRatio: "3/4", overflow: "hidden" }}>
+                      {look.thumbnail ? (
+                        <CardMedia
+                          component="img"
+                          image={look.thumbnail}
+                          alt={`${look.brand} ${look.season}`}
+                          sx={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.3s ease", "&:hover": { transform: "scale(1.03)" } }}
+                        />
+                      ) : (
+                        <Box sx={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                          <AddPhotoAlternateIcon sx={{ fontSize: 40, color: "#dfbfbc" }} />
+                        </Box>
+                      )}
+                      {look.garment_count > 0 && (
+                        <Chip
+                          label={`${look.garment_count} garment${look.garment_count !== 1 ? "s" : ""}`}
+                          size="small"
+                          sx={{
+                            position: "absolute",
+                            top: 10,
+                            right: 10,
+                            bgcolor: "rgba(255,255,255,0.92)",
+                            fontSize: 10,
+                            fontWeight: 700,
+                            letterSpacing: "0.05em",
+                            backdropFilter: "blur(4px)",
+                          }}
+                        />
+                      )}
+                    </Box>
+                    <CardContent sx={{ flex: 1, pb: "16px !important" }}>
+                      <Typography sx={{ fontWeight: 700, fontSize: 14, color: "text.primary", mb: 0.25 }} noWrap>
+                        {look.name || look.brand}
+                      </Typography>
+                      <Typography sx={{ fontSize: 11, color: "text.secondary", textTransform: "uppercase", letterSpacing: "0.08em" }} noWrap>
+                        {look.name ? look.brand : [look.season, look.year > 0 ? look.year : null].filter(Boolean).join(" ") || " "}
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Grid>
             ))}
-          </div>
+          </Grid>
 
-          {data?.next_cursor && (
-            <div className="mt-10 flex justify-center">
-              <button
-                onClick={loadMore}
-                disabled={isFetching}
-                className="px-8 py-3 border border-raisin/20 text-[12px] font-semibold tracking-[0.15em] uppercase hover:border-raisin/50 transition-colors disabled:opacity-40"
+          {hasNextPage && (
+            <Box sx={{ textAlign: "center", mt: 6 }}>
+              <Button
+                variant="outlined"
+                onClick={() => fetchNextPage()}
+                disabled={isFetchingNextPage}
+                sx={{ borderColor: "#f0e4e2", color: "text.secondary", px: 5, py: 1.5, "&:hover": { borderColor: "#dfbfbc", bgcolor: "#fff0ef" } }}
               >
-                {isFetching ? "Loading…" : "Load more"}
-              </button>
-            </div>
+                {isFetchingNextPage ? "Loading…" : "Load More"}
+              </Button>
+            </Box>
           )}
         </>
       )}
-    </div>
-  );
-}
-
-function LookCard({ look }: { look: LookSummary }) {
-  return (
-    <Link to={`/app/looks/${encodeURIComponent(look.id)}`} className="group block">
-      <div className="aspect-[3/4] bg-raisin/5 overflow-hidden relative mb-3">
-        {look.thumbnail ? (
-          <img
-            src={look.thumbnail}
-            alt={`${look.brand} ${look.season}`}
-            className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
-          />
-        ) : (
-          <div className="w-full h-full flex items-center justify-center">
-            <svg className="w-8 h-8 text-raisin/20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-            </svg>
-          </div>
-        )}
-        {look.is_deconstructed && (
-          <div className="absolute top-2 right-2 bg-raisin text-white text-[9px] font-semibold tracking-widest px-2 py-0.5 uppercase">
-            {look.garment_count}G
-          </div>
-        )}
-      </div>
-      <div>
-        <p className="text-[13px] font-semibold capitalize">{look.brand}</p>
-        <p className="text-[12px] text-raisin/50 mt-0.5">{look.season} {look.year}</p>
-      </div>
-    </Link>
+    </Box>
   );
 }

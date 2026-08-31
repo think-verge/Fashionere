@@ -1,6 +1,13 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { Link } from "react-router-dom";
+import {
+  Box, Grid, Card, CardActionArea, CardContent,
+  Typography, Chip, Button, TextField, Alert,
+} from "@mui/material";
+import AddIcon from "@mui/icons-material/Add";
+import LayersOutlinedIcon from "@mui/icons-material/LayersOutlined";
+import { PageHeader } from "../../components/PageHeader";
 import { useAuth } from "../../lib/auth-context";
 import { api } from "../../lib/api/client";
 
@@ -9,130 +16,181 @@ interface Workspace {
   name: string;
   status: "draft" | "ready" | "generating";
   elements: unknown[];
-  createdAt: string;
-  updatedAt: string;
+  created_at: string;
 }
 
-const STATUS_BADGE: Record<string, string> = {
-  draft: "bg-raisin/10 text-raisin/60",
-  ready: "bg-green-100 text-green-700",
-  generating: "bg-salmon/15 text-salmon",
+interface WorkspacesResponse {
+  workspaces: Workspace[];
+}
+
+const STATUS_COLOR: Record<string, "default" | "success" | "warning" | "info"> = {
+  draft: "default",
+  ready: "success",
+  generating: "warning",
 };
 
 export default function WorkspacesPage() {
-  const { activeProject } = useAuth();
+  const navigate = useNavigate();
   const qc = useQueryClient();
-  const [creating, setCreating] = useState(false);
-  const [newName, setNewName] = useState("");
+  const { activeProject } = useAuth();
 
-  const { data: workspaces = [], isLoading } = useQuery<Workspace[]>({
+  const [newName, setNewName] = useState("");
+  const [creating, setCreating] = useState(false);
+
+  const { data, isLoading, error } = useQuery<WorkspacesResponse>({
     queryKey: ["workspaces", activeProject?.id],
     queryFn: async () => {
-      const params = activeProject?.id ? { project_id: activeProject.id } : {};
+      const params: Record<string, string> = {};
+      if (activeProject?.id) params.projectId = activeProject.id;
       const { data } = await api.get("/workspace", { params });
       return data;
     },
   });
 
-  const create = useMutation({
-    mutationFn: async (name: string) => {
+  const createWs = useMutation({
+    mutationFn: async () => {
+      const projectId = activeProject?.id;
+      if (!projectId) throw new Error("No active project");
       const { data } = await api.post("/workspace", {
-        name,
-        project_id: activeProject?.id,
+        name: newName.trim() || "New Workspace",
+        project_id: projectId,
       });
       return data;
     },
     onSuccess: () => {
-      qc.invalidateQueries({ queryKey: ["workspaces"] });
-      setCreating(false);
       setNewName("");
+      setCreating(false);
+      qc.invalidateQueries({ queryKey: ["workspaces"] });
     },
   });
 
-  const handleCreate = () => {
-    if (newName.trim()) create.mutate(newName.trim());
-  };
+  const workspaces = data?.workspaces ?? [];
 
   return (
-    <div className="px-8 py-8">
-      <div className="flex items-end justify-between mb-8">
-        <div>
-          <p className="eyebrow text-deep-red mb-1">Project</p>
-          <h1 className="text-2xl font-semibold tracking-tight">Workspaces</h1>
-          {activeProject && <p className="text-sm text-raisin/50 mt-1">{activeProject.name}</p>}
-        </div>
-        <button
+    <Box>
+      <Box sx={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", mb: 6 }}>
+        <PageHeader
+          eyebrow="Your Projects"
+          heading="Workspaces"
+          description="Collect garment elements from looks and build AI-powered collections."
+        />
+        <Button
+          variant="contained"
+          startIcon={<AddIcon />}
           onClick={() => setCreating(true)}
-          className="bg-raisin text-white text-[11px] font-semibold tracking-[0.15em] uppercase px-5 py-2.5 hover:bg-deep-red transition-colors"
+          sx={{ mt: 1, borderRadius: "10px", flexShrink: 0 }}
         >
-          + New workspace
-        </button>
-      </div>
+          New Workspace
+        </Button>
+      </Box>
 
-      {/* Create form */}
       {creating && (
-        <div className="border border-raisin/15 p-5 mb-6 flex gap-3 items-center">
-          <input
-            autoFocus
-            value={newName}
-            onChange={(e) => setNewName(e.target.value)}
-            onKeyDown={(e) => e.key === "Enter" && handleCreate()}
-            placeholder="Workspace name…"
-            className="flex-1 bg-transparent border-b border-raisin/20 py-2 text-[14px] outline-none focus:border-deep-red transition-colors"
-          />
-          <button
-            onClick={handleCreate}
-            disabled={!newName.trim() || create.isPending}
-            className="bg-raisin text-white text-[11px] font-semibold uppercase tracking-wider px-4 py-2 hover:bg-deep-red transition-colors disabled:opacity-40"
+        <Box
+          sx={{
+            mb: 4,
+            p: 3,
+            border: "1px solid #f0e4e2",
+            borderRadius: "12px",
+            bgcolor: "#faf8f7",
+            display: "flex",
+            gap: 2,
+            alignItems: "flex-end",
+          }}
+        >
+          <Box sx={{ flex: 1 }}>
+            <Typography sx={{ fontSize: 13, fontWeight: 500, mb: 1, color: "text.secondary" }}>Workspace name</Typography>
+            <TextField
+              fullWidth
+              size="small"
+              placeholder="Spring Collection Research"
+              value={newName}
+              onChange={(e) => setNewName(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && createWs.mutate()}
+              autoFocus
+              sx={{ "& .MuiOutlinedInput-root": { bgcolor: "#fff", "& fieldset": { borderColor: "#f0e4e2" } } }}
+            />
+          </Box>
+          <Button
+            variant="contained"
+            disabled={createWs.isPending}
+            onClick={() => createWs.mutate()}
+            sx={{ borderRadius: "10px", py: 1, whiteSpace: "nowrap" }}
           >
-            {create.isPending ? "Creating…" : "Create"}
-          </button>
-          <button onClick={() => { setCreating(false); setNewName(""); }} className="text-raisin/40 hover:text-raisin text-sm transition-colors">
+            {createWs.isPending ? "Creating…" : "Create"}
+          </Button>
+          <Button
+            variant="text"
+            onClick={() => { setCreating(false); setNewName(""); }}
+            sx={{ color: "text.secondary", borderRadius: "10px", py: 1 }}
+          >
             Cancel
-          </button>
-        </div>
+          </Button>
+        </Box>
       )}
 
       {isLoading ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {Array.from({ length: 3 }).map((_, i) => (
-            <div key={i} className="h-28 bg-raisin/5 animate-pulse" />
+        <Grid container spacing={2.5}>
+          {Array.from({ length: 6 }).map((_, i) => (
+            <Grid size={{ xs: 12, sm: 6, md: 4 }} key={i}>
+              <Card sx={{ height: 160 }} />
+            </Grid>
           ))}
-        </div>
+        </Grid>
+      ) : error ? (
+        <Alert severity="error">Failed to load workspaces.</Alert>
       ) : workspaces.length === 0 ? (
-        <div className="border border-dashed border-raisin/20 p-12 text-center">
-          <p className="text-raisin/40 text-sm">No workspaces yet.</p>
-          <button
-            onClick={() => setCreating(true)}
-            className="mt-3 text-deep-red text-sm underline"
-          >
-            Create your first workspace →
-          </button>
-        </div>
+        <Box sx={{ textAlign: "center", py: 12, border: "1px dashed #f0e4e2", borderRadius: 2 }}>
+          <LayersOutlinedIcon sx={{ fontSize: 40, color: "#dfbfbc", mb: 2 }} />
+          <Typography sx={{ color: "text.secondary", mb: 1, fontWeight: 500 }}>No workspaces yet</Typography>
+          <Typography sx={{ color: "text.disabled", fontSize: 14 }}>
+            Create a workspace to start collecting elements from looks.
+          </Typography>
+        </Box>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <Grid container spacing={2.5}>
           {workspaces.map((ws) => (
-            <Link
-              key={ws._id}
-              to={`/app/workspace/${ws._id}`}
-              className="border border-raisin/10 p-5 hover:border-raisin/30 transition-colors block group"
-            >
-              <div className="flex items-start justify-between mb-3">
-                <h3 className="font-medium text-[14px] group-hover:text-deep-red transition-colors">{ws.name}</h3>
-                <span className={`text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 ${STATUS_BADGE[ws.status]}`}>
-                  {ws.status}
-                </span>
-              </div>
-              <p className="text-[12px] text-raisin/50">
-                {ws.elements.length} element{ws.elements.length !== 1 ? "s" : ""}
-              </p>
-              <p className="text-[11px] text-raisin/35 mt-2">
-                {new Date(ws.updatedAt).toLocaleDateString("en-GB", { day: "numeric", month: "short" })}
-              </p>
-            </Link>
+            <Grid size={{ xs: 12, sm: 6, md: 4 }} key={ws._id}>
+              <Card sx={{ height: "100%", "&:hover": { borderColor: "#dfbfbc" }, transition: "border-color 0.15s" }}>
+                <CardActionArea
+                  onClick={() => navigate(`/app/workspace/${ws._id}`)}
+                  sx={{ height: "100%", display: "flex", flexDirection: "column", alignItems: "flex-start", p: 0 }}
+                >
+                  <CardContent sx={{ width: "100%", pb: "20px !important" }}>
+                    <Box sx={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", mb: 2 }}>
+                      <Box
+                        sx={{
+                          width: 40,
+                          height: 40,
+                          borderRadius: "10px",
+                          bgcolor: "#fff0ef",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                      >
+                        <LayersOutlinedIcon sx={{ fontSize: 20, color: "primary.main" }} />
+                      </Box>
+                      <Chip
+                        label={ws.status}
+                        color={STATUS_COLOR[ws.status] ?? "default"}
+                        size="small"
+                        variant="outlined"
+                        sx={{ fontSize: 10, textTransform: "capitalize" }}
+                      />
+                    </Box>
+                    <Typography sx={{ fontWeight: 700, fontSize: 16, color: "text.primary", mb: 0.75 }}>
+                      {ws.name}
+                    </Typography>
+                    <Typography sx={{ fontSize: 13, color: "text.secondary" }}>
+                      {ws.elements?.length ?? 0} element{ws.elements?.length !== 1 ? "s" : ""}
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Grid>
           ))}
-        </div>
+        </Grid>
       )}
-    </div>
+    </Box>
   );
 }

@@ -20,28 +20,5 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["src"],
-  "exclude": [
-    "src/components/AuthIllustration.tsx",
-    "src/components/GeneratingExperience.tsx",
-    "src/components/MoodboardCard.tsx",
-    "src/components/MoodboardViewer.tsx",
-    "src/components/MoodboardWizard.tsx",
-    "src/components/PageHeader.tsx",
-    "src/components/PageShell.tsx",
-    "src/components/PaletteStrip.tsx",
-    "src/components/PipelineAnimation.tsx",
-    "src/components/ProtectedRoute.tsx",
-    "src/components/TrendBadge.tsx",
-    "src/pages/auth/SignupPage.tsx",
-    "src/pages/catalogue",
-    "src/pages/cost-calculator",
-    "src/pages/dashboard",
-    "src/pages/moodboards",
-    "src/pages/projects",
-    "src/pages/settings",
-    "src/pages/studio",
-    "src/pages/trends",
-    "src/theme.ts"
-  ]
+  "include": ["src"]
 }
