@@ -5,8 +5,9 @@
 #   ./fashmux kill   stop all services and tear down the session
 #
 # Pane layout:
-#   [backend :3001] | [ui :5173     ]
-#   [decon   :8002] | [control shell]
+#   [backend  :3001] | [ui :5173      ]
+#   [app_api  :8001] | [control shell ]
+#   [decon    :8002] |
 
 set -euo pipefail
 
@@ -38,10 +39,11 @@ start() {
   tmux set-option -t "$SESSION" pane-border-format " #{pane_title} "
 
   # Capture stable pane IDs to avoid index drift after splits
-  local backend_pane ui_pane decon_pane control_pane
+  local backend_pane ui_pane app_api_pane decon_pane control_pane
   backend_pane="$(tmux display-message -p -t "$SESSION:dev.0" '#{pane_id}')"
   ui_pane="$(tmux split-window -h -t "$SESSION:dev" -c "$ROOT" -P -F '#{pane_id}')"
-  decon_pane="$(tmux split-window -v -t "$backend_pane" -c "$ROOT" -P -F '#{pane_id}')"
+  app_api_pane="$(tmux split-window -v -t "$backend_pane" -c "$ROOT" -P -F '#{pane_id}')"
+  decon_pane="$(tmux split-window -v -t "$app_api_pane" -c "$ROOT" -P -F '#{pane_id}')"
   control_pane="$(tmux split-window -v -t "$ui_pane" -c "$ROOT" -P -F '#{pane_id}')"
 
   tmux select-pane -t "$backend_pane" -T "backend :3001"
@@ -49,6 +51,9 @@ start() {
 
   tmux select-pane -t "$ui_pane" -T "ui :5173"
   tmux send-keys -t "$ui_pane" "make ui" C-m
+
+  tmux select-pane -t "$app_api_pane" -T "app_api :8001"
+  tmux send-keys -t "$app_api_pane" "make app_api" C-m
 
   tmux select-pane -t "$decon_pane" -T "deconstruction :8002"
   tmux send-keys -t "$decon_pane" "make deconstruction-engine" C-m

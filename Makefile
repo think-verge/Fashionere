@@ -1,8 +1,9 @@
 SHELL := /bin/bash
 AGENT_VENV := agent/.venv
 DECON_VENV := Deconstruction\ Engine/.venv
+APP_API_VENV := Trend\ Analysis\ Engine/.venv
 
-.PHONY: agent agent-install backend ui api-refresh install deconstruction-engine
+.PHONY: agent agent-install backend ui api-refresh install deconstruction-engine app_api
 
 agent-install:
 	test -d $(AGENT_VENV) || python3 -m venv $(AGENT_VENV)
@@ -17,6 +18,9 @@ deconstruction-engine:
 	  . .venv/bin/activate && \
 	  pip install -q -r requirements.txt && \
 	  uvicorn src.api.app:app --reload --port 8002
+
+app_api:
+	PYTHONPATH=core:. "Trend Analysis Engine/.venv/bin/python3" -m uvicorn app_api.main:app --reload --port 8001
 
 install:
 	cd backend && npm install

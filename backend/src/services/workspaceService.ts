@@ -19,6 +19,16 @@ export async function createWorkspace(userId: string, projectId: string, name: s
   return Workspace.create({ name, project_id: projectId, user_id: userId, elements: [] });
 }
 
+export async function renameWorkspace(id: string, userId: string, name: string) {
+  const ws = await Workspace.findOneAndUpdate(
+    { _id: id, user_id: userId },
+    { name: name.trim() },
+    { new: true },
+  ).lean();
+  if (!ws) throw new ApiError(404, "Workspace not found");
+  return ws;
+}
+
 export async function appendElement(id: string, userId: string, element: Partial<IWorkspaceElement>) {
   const ws = await Workspace.findOne({ _id: id, user_id: userId });
   if (!ws) throw new ApiError(404, "Workspace not found");
@@ -32,6 +42,7 @@ export async function appendElement(id: string, userId: string, element: Partial
     source_brand: element.source_brand ?? "",
     canvas_position: element.canvas_position ?? { x: 0, y: 0 },
     row: element.row ?? element.garment_type ?? "",
+    canvas_row: element.canvas_row ?? null,
   };
   ws.elements.push(el);
   await ws.save();

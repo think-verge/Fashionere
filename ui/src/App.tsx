@@ -6,6 +6,7 @@ import OnboardingPage from "./pages/onboarding/OnboardingPage";
 import AppShell from "./pages/app/AppShell";
 import LooksPage from "./pages/looks/LooksPage";
 import LookDetailPage from "./pages/looks/LookDetailPage";
+import GarmentDetailPage from "./pages/looks/GarmentDetailPage";
 import WorkspacesPage from "./pages/workspaces/WorkspacesPage";
 import WorkspaceCanvas from "./pages/workspaces/WorkspaceCanvas";
 import { TrendsPage } from "./pages/trends/TrendsPage";
@@ -22,6 +23,7 @@ export default function App() {
               <Route index element={<Navigate to="/app/looks" replace />} />
               <Route path="looks" element={<LooksPage />} />
               <Route path="looks/:lookId" element={<LookDetailPage />} />
+              <Route path="looks/:lookId/garment/:garmentId" element={<GarmentDetailPage />} />
               <Route path="workspaces" element={<WorkspacesPage />} />
               <Route path="workspace/:id" element={<WorkspaceCanvas />} />
               <Route path="trends" element={<TrendsPage />} />

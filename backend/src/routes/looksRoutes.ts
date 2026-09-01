@@ -8,6 +8,7 @@ export const looksRouter = Router();
 looksRouter.use(requireAuth);
 
 // Order matters — most specific first
+looksRouter.get("/filters", asyncHandler(looksController.listLooksFilters));
 looksRouter.get("/:lookId/garments/:garmentId", asyncHandler(looksController.getGarment));
 looksRouter.get("/:lookId/garments", asyncHandler(looksController.getGarments));
 looksRouter.get("/:lookId", asyncHandler(looksController.getLook));

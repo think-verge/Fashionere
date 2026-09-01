@@ -1,5 +1,6 @@
-import { type ReactNode } from "react";
+import { type ReactNode, useRef, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import {
   Box,
   Drawer,
@@ -15,12 +16,21 @@ import {
   Avatar,
   Tooltip,
   Divider,
+  Popover,
+  MenuItem,
+  TextField,
+  Button,
+  CircularProgress,
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/SearchOutlined";
 import LayersIcon from "@mui/icons-material/LayersOutlined";
 import TrendingUpIcon from "@mui/icons-material/TrendingUpOutlined";
 import LogoutIcon from "@mui/icons-material/LogoutOutlined";
+import FolderIcon from "@mui/icons-material/FolderOutlined";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import AddIcon from "@mui/icons-material/Add";
 import { useAuth } from "../lib/auth-context";
+import { api } from "../lib/api/client";
 
 const DRAWER_WIDTH = 288;
 
@@ -38,10 +48,39 @@ interface Props {
 export function PageShell({ title, children }: Props) {
   const navigate = useNavigate();
   const location = useLocation();
-  const { user, logout } = useAuth();
+  const { user, logout, activeProject, setActiveProject } = useAuth();
+  const qc = useQueryClient();
+
+  const [popoverOpen, setPopoverOpen] = useState(false);
+  const [creating, setCreating] = useState(false);
+  const [newProjectName, setNewProjectName] = useState("");
+  const anchorRef = useRef<HTMLButtonElement>(null);
+
+  const { data: projects = [] } = useQuery<Array<{ _id: string; name: string }>>({
+    queryKey: ["projects"],
+    queryFn: async () => {
+      const { data } = await api.get("/projects");
+      return Array.isArray(data) ? data : (data.projects ?? []);
+    },
+    enabled: !!user,
+  });
+
+  const createProject = useMutation({
+    mutationFn: async (name: string) => {
+      const { data } = await api.post("/projects", { name });
+      return data;
+    },
+    onSuccess: (project) => {
+      qc.invalidateQueries({ queryKey: ["projects"] });
+      setActiveProject({ id: project._id ?? project.id, name: project.name, is_default: false });
+      setNewProjectName("");
+      setCreating(false);
+      setPopoverOpen(false);
+    },
+  });
 
   const initials = user?.name
-    ? user.name.split(" ").map((n) => n[0]).slice(0, 2).join("").toUpperCase()
+    ? user.name.split(" ").map((n: string) => n[0]).slice(0, 2).join("").toUpperCase()
     : "?";
 
   const isActive = (path: string) =>
@@ -114,15 +153,118 @@ export function PageShell({ title, children }: Props) {
           </Box>
         </Box>
 
-        {/* Project label */}
+        {/* Role + Project selector */}
         {user && (
           <Box sx={{ px: 2.5, pb: 2 }}>
             <Typography sx={{ fontSize: 11, color: "#999999", textTransform: "uppercase", letterSpacing: "0.15em", mb: 0.5 }}>
               Role
             </Typography>
-            <Typography sx={{ fontSize: 13, fontWeight: 500, color: "text.secondary" }}>
+            <Typography sx={{ fontSize: 13, fontWeight: 500, color: "text.secondary", mb: 2 }}>
               {user.role === "retail_chain" ? "Retail Chain" : "Fashion Designer"}
             </Typography>
+
+            {/* Project selector */}
+            <Typography sx={{ fontSize: 11, color: "#999999", textTransform: "uppercase", letterSpacing: "0.15em", mb: 0.5 }}>
+              Project
+            </Typography>
+            <Button
+              ref={anchorRef}
+              onClick={() => setPopoverOpen(true)}
+              startIcon={<FolderIcon sx={{ fontSize: 15 }} />}
+              endIcon={<ArrowDropDownIcon />}
+              fullWidth
+              sx={{
+                justifyContent: "flex-start",
+                textAlign: "left",
+                color: activeProject ? "text.primary" : "text.disabled",
+                fontWeight: activeProject ? 600 : 400,
+                fontSize: 13,
+                px: 1.5,
+                py: 0.75,
+                border: "1px solid #f0e4e2",
+                borderRadius: "8px",
+                bgcolor: "#faf8f7",
+                "&:hover": { bgcolor: "#fff0ef", borderColor: "#dfbfbc" },
+                "& .MuiButton-endIcon": { ml: "auto" },
+              }}
+            >
+              <Box component="span" sx={{ flex: 1, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", textAlign: "left" }}>
+                {activeProject?.name ?? "Select project"}
+              </Box>
+            </Button>
+
+            <Popover
+              open={popoverOpen}
+              anchorEl={anchorRef.current}
+              onClose={() => { setPopoverOpen(false); setCreating(false); setNewProjectName(""); }}
+              anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
+              transformOrigin={{ vertical: "top", horizontal: "left" }}
+              PaperProps={{ sx: { width: DRAWER_WIDTH - 40, mt: 0.5, border: "1px solid #f0e4e2", borderRadius: "12px", boxShadow: "0 4px 24px rgba(36,25,24,0.10)" } }}
+            >
+              <Box sx={{ py: 1 }}>
+                {projects.length === 0 && !creating && (
+                  <MenuItem disabled sx={{ fontSize: 13, color: "text.disabled" }}>No projects yet</MenuItem>
+                )}
+                {projects.map((p) => (
+                  <MenuItem
+                    key={p._id}
+                    selected={activeProject?.id === p._id}
+                    onClick={() => {
+                      setActiveProject({ id: p._id, name: p.name, is_default: false });
+                      setPopoverOpen(false);
+                    }}
+                    sx={{
+                      fontSize: 13,
+                      borderRadius: "8px",
+                      mx: 0.5,
+                      "&.Mui-selected": { bgcolor: "#fff0ef", color: "primary.main", fontWeight: 600 },
+                    }}
+                  >
+                    {p.name}
+                  </MenuItem>
+                ))}
+                <Divider sx={{ borderColor: "#f0e4e2", my: 1 }} />
+                {creating ? (
+                  <Box sx={{ px: 1.5, pb: 1 }}>
+                    <TextField
+                      autoFocus
+                      size="small"
+                      fullWidth
+                      placeholder="Project name"
+                      value={newProjectName}
+                      onChange={(e) => setNewProjectName(e.target.value)}
+                      onKeyDown={(e) => e.key === "Enter" && newProjectName.trim() && createProject.mutate(newProjectName.trim())}
+                      sx={{ mb: 1, "& .MuiOutlinedInput-root fieldset": { borderColor: "#f0e4e2" } }}
+                    />
+                    <Box sx={{ display: "flex", gap: 1 }}>
+                      <Button
+                        variant="contained"
+                        size="small"
+                        disabled={!newProjectName.trim() || createProject.isPending}
+                        onClick={() => createProject.mutate(newProjectName.trim())}
+                        sx={{ borderRadius: "8px", fontSize: 12, flex: 1 }}
+                      >
+                        {createProject.isPending ? <CircularProgress size={14} /> : "Create"}
+                      </Button>
+                      <Button
+                        size="small"
+                        onClick={() => { setCreating(false); setNewProjectName(""); }}
+                        sx={{ borderRadius: "8px", fontSize: 12, color: "text.secondary" }}
+                      >
+                        Cancel
+                      </Button>
+                    </Box>
+                  </Box>
+                ) : (
+                  <MenuItem
+                    onClick={() => setCreating(true)}
+                    sx={{ fontSize: 13, color: "primary.main", fontWeight: 500, borderRadius: "8px", mx: 0.5 }}
+                  >
+                    <AddIcon sx={{ fontSize: 16, mr: 1 }} /> New project
+                  </MenuItem>
+                )}
+              </Box>
+            </Popover>
           </Box>
         )}
 

@@ -47,6 +47,12 @@ export async function generate(req: Request, res: Response) {
   res.json(ws);
 }
 
+export async function renameWorkspace(req: Request, res: Response) {
+  const { name } = req.body as { name: string };
+  const ws = await workspaceService.renameWorkspace(p(req, "id"), req.user!.userId, name);
+  res.json(ws);
+}
+
 export async function deleteWorkspace(req: Request, res: Response) {
   await workspaceService.deleteWorkspace(p(req, "id"), req.user!.userId);
   res.status(204).send();

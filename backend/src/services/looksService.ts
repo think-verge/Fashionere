@@ -45,17 +45,46 @@ function buildSummary(doc: Record<string, unknown>, garmentCount: number) {
   };
 }
 
+const ASSET_BASE = process.env.ASSET_BASE_URL ?? "http://localhost:8001/api/v1/assets";
+
+function assetUrl(gridfsId: unknown): string | null {
+  return gridfsId ? `${ASSET_BASE}/${String(gridfsId)}` : null;
+}
+
 function buildGarment(g: Record<string, unknown>, lookId: string) {
+  const rawFabrics = (g.fabrics ?? []) as Array<Record<string, unknown>>;
+  const rawPatterns = (g.patterns ?? []) as Array<Record<string, unknown>>;
+  const rawComposition = (g.composition ?? []) as Array<Record<string, unknown>>;
+  const flat = g.flat as Record<string, unknown> | undefined;
+
   return {
     garment_id: (g.garment_id ?? g.id) as string,
     look_id: lookId,
     piece: g.piece as string,
     garment_type: g.garment_type as string,
-    bbox: g.bbox,
-    colors: (g.colors ?? []) as Array<{ hex: string; family?: string; name?: string }>,
-    fabric: (g.fabric ?? null) as Record<string, unknown> | null,
-    pattern: (g.pattern ?? null) as string | null,
-    materials_candidates: (g.materials_candidates ?? []) as string[],
+    colors: (g.colors ?? []) as Array<{ hex: string; name?: string; role?: string; pantone?: string }>,
+    fabrics: rawFabrics.map((f) => ({
+      name:        (f.name ?? f.material ?? "") as string,
+      material:    (f.material ?? f.name ?? "") as string,
+      weight:      (f.weight ?? null) as string | null,
+      finish:      (f.finish ?? null) as string | null,
+      description: (f.description ?? null) as string | null,
+      image_url:   assetUrl(f.gridfs_id),
+    })),
+    patterns: rawPatterns.map((p) => ({
+      name:        (p.name ?? "") as string,
+      motif:       (p.motif ?? null) as string | null,
+      type:        (p.type ?? null) as string | null,
+      scale:       (p.scale ?? null) as string | null,
+      colors:      (p.colors ?? []) as string[],
+      description: (p.description ?? null) as string | null,
+      image_url:   assetUrl(p.gridfs_id),
+    })),
+    flat_url:    assetUrl(flat?.gridfs_id),
+    composition: rawComposition.map((c) => ({
+      fiber: (c.fiber ?? "") as string,
+      pct:   (c.pct ?? null) as number | null,
+    })),
   };
 }
 
@@ -70,12 +99,41 @@ function decodeCursor(cursor: string): string {
 const looksCol = () => mongoose.connection.db!.collection("canonical_looks");
 const deconCol = () => mongoose.connection.db!.collection("deconstructions");
 
+export async function listLooksFilters(opts: { type?: string }) {
+  const { type } = opts;
+
+  const typeFilter: Record<string, unknown> = {};
+  if (type === "retail") {
+    typeFilter["source.type"] = { $in: [...RETAIL_SOURCES] };
+  } else if (type === "runway") {
+    typeFilter["source.type"] = { $nin: [...RETAIL_SOURCES] };
+  }
+
+  const [brandRaw, garmentTypeRaw] = await Promise.all([
+    looksCol().distinct("context.brand", typeFilter),
+    deconCol().distinct("garments.garment_type", {}),
+  ]);
+
+  const brands = (brandRaw as string[])
+    .filter((b) => typeof b === "string" && b.length > 0)
+    .sort();
+  const garmentTypes = (garmentTypeRaw as string[])
+    .filter((g) => typeof g === "string" && g.length > 0)
+    .map((g) => g.charAt(0).toUpperCase() + g.slice(1).toLowerCase())
+    .filter((v, i, a) => a.indexOf(v) === i)
+    .sort();
+
+  return { brands, garment_types: garmentTypes };
+}
+
 export async function listLooks(opts: {
   type?: string;
   limit: number;
   cursor?: string;
+  brand?: string;
+  garment_type?: string;
 }) {
-  const { type, limit, cursor } = opts;
+  const { type, limit, cursor, brand, garment_type } = opts;
 
   // Base type filter (used for total count too)
   const typeFilter: Record<string, unknown> = {};
@@ -84,13 +142,30 @@ export async function listLooks(opts: {
   } else if (type === "runway") {
     typeFilter["source.type"] = { $nin: [...RETAIL_SOURCES] };
   }
+  if (brand) typeFilter["context.brand"] = brand;
+
+  // If garment_type filter is set, find look_ids from deconstructions first
+  let garmentTypeIds: string[] | undefined;
+  if (garment_type) {
+    const normalised = garment_type.toLowerCase();
+    const matching = await deconCol()
+      .find({ "garments.garment_type": { $regex: new RegExp(`^${normalised}$`, "i") } })
+      .project({ look_id: 1 })
+      .toArray();
+    garmentTypeIds = matching.map((d) => String(d.look_id));
+    typeFilter._id = { $in: garmentTypeIds };
+  }
 
   // Page filter adds cursor for pagination
   const pageFilter: Record<string, unknown> = { ...typeFilter };
   if (cursor) {
     const decodedId = decodeCursor(cursor);
     // _id is a string in canonical_looks — use string $gt for cursor pagination
-    pageFilter._id = { $gt: decodedId };
+    if (garmentTypeIds) {
+      pageFilter._id = { $in: garmentTypeIds, $gt: decodedId };
+    } else {
+      pageFilter._id = { $gt: decodedId };
+    }
   }
 
   const [total, docs] = await Promise.all([
@@ -164,8 +239,10 @@ export async function getGarments(lookId: string) {
 }
 
 export async function getGarment(lookId: string, garmentId: string) {
-  const garments = await getGarments(lookId);
-  const g = garments.find((g) => g.garment_id === garmentId);
-  if (!g) throw new ApiError(404, "Garment not found");
-  return g;
+  const decon = await deconCol().findOne({ look_id: lookId });
+  if (!decon) throw new ApiError(404, "Garment not found");
+  const garments = ((decon as Record<string, unknown>).garments as Array<Record<string, unknown>>) ?? [];
+  const raw = garments.find((g) => (g.garment_id ?? g.id) === garmentId);
+  if (!raw) throw new ApiError(404, "Garment not found");
+  return buildGarment(raw, lookId);
 }

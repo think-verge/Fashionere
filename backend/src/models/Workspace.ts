@@ -10,6 +10,7 @@ export interface IWorkspaceElement {
   source_brand: string;
   canvas_position: { x: number; y: number };
   row: string;
+  canvas_row?: number | null;
 }
 
 export interface IWorkspace extends Document {
@@ -34,6 +35,7 @@ const elementSchema = new Schema<IWorkspaceElement>(
     source_brand: { type: String, default: "" },
     canvas_position: { x: { type: Number, default: 0 }, y: { type: Number, default: 0 } },
     row: { type: String, default: "" },
+    canvas_row: { type: Number, default: null },
   },
   { _id: false },
 );

@@ -10,11 +10,19 @@ function q(req: Request, key: string): string | undefined {
   return Array.isArray(v) ? (v[0] as string) : (v as string | undefined);
 }
 
+export async function listLooksFilters(req: Request, res: Response) {
+  const type = q(req, "type");
+  const result = await looksService.listLooksFilters({ type });
+  res.json(result);
+}
+
 export async function listLooks(req: Request, res: Response) {
   const type = q(req, "type");
   const limit = Math.min(parseInt(q(req, "limit") || "24", 10), 100);
   const cursor = q(req, "cursor");
-  const result = await looksService.listLooks({ type, limit, cursor });
+  const brand = q(req, "brand");
+  const garment_type = q(req, "garment_type");
+  const result = await looksService.listLooks({ type, limit, cursor, brand, garment_type });
   res.json(result);
 }
 
