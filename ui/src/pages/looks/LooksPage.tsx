@@ -56,6 +56,7 @@ export default function LooksPage() {
       queryKey: ["looks", type, selectedBrand, selectedGarmentType],
       queryFn: async ({ pageParam }) => {
         const params: Record<string, string> = { type, limit: "24" };
+        if (type === "retail") params.deconstructed_only = "true";
         if (pageParam) params.cursor = pageParam as string;
         if (selectedBrand) params.brand = selectedBrand;
         if (selectedGarmentType) params.garment_type = selectedGarmentType;

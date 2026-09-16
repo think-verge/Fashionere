@@ -339,7 +339,7 @@ button.go:disabled { opacity:.5; cursor:default; }
     <input type="text" id="collection" placeholder="e.g. Spring 2026 Couture">
     <label class="fld">Source URL (optional)</label>
     <input type="text" id="source" placeholder="https://…">
-    <div class="row"><input type="checkbox" id="quality"><label for="quality">Higher-quality read (gemini-2.5-pro, slower)</label></div>
+    <div class="row"><input type="checkbox" id="quality"><label for="quality">Higher-quality read (gemini-pro-latest, slower)</label></div>
 
     <button class="go" id="go">Deconstruct</button>
     <div class="status-msg" id="status"></div>

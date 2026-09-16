@@ -232,6 +232,7 @@ def parse_product(raw_doc: dict) -> Look | None:
         context=Context(
             brand="H&M",
             brand_slug="hm",
+            garment_type=garment_type,
             product_id=aid,
             price=price,
             category_path=category_path,

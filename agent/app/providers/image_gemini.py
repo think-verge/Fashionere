@@ -22,7 +22,7 @@ class GeminiImageProvider:
     def __init__(
         self,
         api_key: str,
-        model: str = "gemini-2.5-flash-image",
+        model: str = "gemini-flash-latest",
         storage: Optional[LocalStorage] = None,
     ) -> None:
         if not api_key:

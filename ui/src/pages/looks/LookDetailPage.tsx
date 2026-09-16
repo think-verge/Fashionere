@@ -440,15 +440,18 @@ function GarmentRow({ garment, onOpen }: { garment: Garment; onOpen: () => void 
                   </Typography>
                   {firstPattern.image_url && (
                     <Box
+                      component="img"
+                      src={firstPattern.image_url}
                       sx={{
                         position: "absolute",
                         inset: 0,
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
                         zIndex: 2,
-                        backgroundImage: `url(${firstPattern.image_url})`,
-                        backgroundRepeat: "repeat",
-                        backgroundSize: "36px",
                         opacity: 0.95,
                       }}
+                      onError={(e) => { (e.target as HTMLElement).style.display = "none"; }}
                     />
                   )}
                 </>

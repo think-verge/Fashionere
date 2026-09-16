@@ -9,6 +9,7 @@ import { costRouter } from "./costRoutes.js";
 import { looksRouter } from "./looksRoutes.js";
 import { workspaceRouter } from "./workspaceRoutes.js";
 import { inventoryRouter } from "./inventoryRoutes.js";
+import { retailTrendsRouter } from "./retailTrendsRoutes.js";
 
 export const apiRouter = Router();
 
@@ -22,3 +23,4 @@ apiRouter.use("/cost", costRouter);
 apiRouter.use("/looks", looksRouter);
 apiRouter.use("/workspace", workspaceRouter);
 apiRouter.use("/inventory", inventoryRouter);
+apiRouter.use("/retail-trends", retailTrendsRouter);

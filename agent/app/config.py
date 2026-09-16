@@ -59,8 +59,8 @@ class Settings:
         self.openai_model: str = os.getenv("OPENAI_MODEL", "gpt-4o")
         self.fal_model: str = os.getenv("FAL_MODEL", "fal-ai/flux-pro")
         self.replicate_model: str = os.getenv("REPLICATE_MODEL", "black-forest-labs/flux-pro")
-        self.gemini_text_model: str = os.getenv("GEMINI_TEXT_MODEL", "gemini-2.5-flash")
-        self.gemini_image_model: str = os.getenv("GEMINI_IMAGE_MODEL", "gemini-2.5-flash-image")
+        self.gemini_text_model: str = os.getenv("GEMINI_TEXT_MODEL", "gemini-flash-latest")
+        self.gemini_image_model: str = os.getenv("GEMINI_IMAGE_MODEL", "gemini-flash-latest")
 
         # Storage
         self.static_dir: Path = _path(os.getenv("STATIC_DIR", "./static"))

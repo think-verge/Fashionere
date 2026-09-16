@@ -92,7 +92,7 @@ def run_folder(folder: str | Path, look_number: int, out_dir: str | Path, *, qua
         b = Path(im.file).read_bytes() if im.file and Path(im.file).exists() else None
         if b is None:
             continue
-        if im.role == "runway":
+        if im.role in ("runway", "product_front"):
             runway_bytes = b
         else:
             detail_bytes.append(b)

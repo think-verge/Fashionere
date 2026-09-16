@@ -185,7 +185,7 @@ def parse_args(argv: list[str] | None = None) -> RunConfig:
     )
     p.add_argument("--input", required=True, help="Collection folder (<Designer>/<Season>)")
     p.add_argument("--output", default="./output", help="Output dir (default ./output)")
-    p.add_argument("--quality", action="store_true", help="Use gemini-2.5-pro for vision")
+    p.add_argument("--quality", action="store_true", help="Use gemini-pro-latest for vision")
     p.add_argument("--force", action="store_true", help="Reprocess already-done looks")
     p.add_argument("--limit", type=int, default=None, help="Process only the first N looks")
     p.add_argument("--gallery-only", action="store_true",
