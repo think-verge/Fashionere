@@ -44,6 +44,13 @@ export async function appendElement(id: string, userId: string, element: Partial
     row: element.row ?? element.garment_type ?? "",
     canvas_row: element.canvas_row ?? null,
   };
+  const isDuplicate = ws.elements.some(
+    (e) =>
+      e.look_id === el.look_id &&
+      e.garment_id === el.garment_id &&
+      e.element_type === el.element_type,
+  );
+  if (isDuplicate) throw new ApiError(409, "This element is already in the workspace");
   ws.elements.push(el);
   await ws.save();
   return ws.toObject();

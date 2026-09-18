@@ -143,16 +143,17 @@ export default function GarmentDetailPage() {
       await api.post(`/workspace/${wsId}/elements`, {
         look_id: lookId,
         garment_id: garmentId,
-        garment_type: garment.garment_type,
+        garment_type: garment.garment_type || garment.piece || "other",
         element_type: type,
         data,
         source_brand: look?.brand ?? "",
-        row: garment.garment_type,
+        row: garment.garment_type || garment.piece || "other",
       });
       setSnackbarWsId(wsId);
       setSnackbarMsg(`${label} added to workspace`);
-    } catch {
-      setSnackbarMsg("Failed to add element. Try again.");
+    } catch (err: unknown) {
+      const status = (err as { response?: { status?: number } })?.response?.status;
+      setSnackbarMsg(status === 409 ? "Already in this workspace" : "Failed to add element. Try again.");
     } finally {
       setAddingType(null);
     }

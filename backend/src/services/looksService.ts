@@ -61,7 +61,7 @@ function buildGarment(g: Record<string, unknown>, lookId: string) {
     garment_id: (g.garment_id ?? g.id) as string,
     look_id: lookId,
     piece: g.piece as string,
-    garment_type: g.garment_type as string,
+    garment_type: ((g.garment_type ?? g.piece ?? "other") as string).toLowerCase(),
     colors: (g.colors ?? []) as Array<{ hex: string; name?: string; role?: string; pantone?: string }>,
     fabrics: rawFabrics.map((f) => ({
       name:        (f.name ?? f.material ?? "") as string,
