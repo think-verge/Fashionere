@@ -117,8 +117,9 @@ export default function LookDetailPage() {
       qc.removeQueries({ queryKey: ["workspaces"] });
       setSnackbarWsId(wsId);
       setSnackbarMsg(`${label} added to workspace`);
-    } catch {
-      setSnackbarMsg("Failed to add — try again");
+    } catch (err: unknown) {
+      const status = (err as { response?: { status?: number } })?.response?.status;
+      setSnackbarMsg(status === 409 ? "Already in this workspace" : "Failed to add — try again");
     } finally {
       setAddingKey(null);
     }
