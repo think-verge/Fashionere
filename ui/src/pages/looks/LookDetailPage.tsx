@@ -406,7 +406,6 @@ function GarmentRow({ garment, onOpen }: { garment: Garment; onOpen: () => void 
             <ElementSquare
               label={dominantColor?.name ?? "COLOUR"}
               color={dominantColor?.hex ?? "#f5f0ef"}
-              dark={dominantColor != null}
             >
               {secondColor && (
                 <Box sx={{ position: "absolute", right: 0, top: 0, bottom: 0, width: "40%", bgcolor: secondColor.hex }} />
@@ -488,12 +487,10 @@ function GarmentRow({ garment, onOpen }: { garment: Garment; onOpen: () => void 
 function ElementSquare({
   label,
   color,
-  dark = false,
   children,
 }: {
   label: string;
   color: string;
-  dark?: boolean;
   children?: React.ReactNode;
 }) {
   return (
