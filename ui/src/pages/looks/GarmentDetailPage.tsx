@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import {
   Box, Typography, Paper, IconButton, Chip, Alert,
   Skeleton, Snackbar, Tooltip, CircularProgress, Divider,
@@ -56,6 +56,7 @@ export default function GarmentDetailPage() {
   const { lookId, garmentId } = useParams<{ lookId: string; garmentId: string }>();
   const navigate = useNavigate();
   const { activeProject } = useAuth();
+  const qc = useQueryClient();
 
   const [addingType, setAddingType] = useState<AddingType>(null);
   const [pendingElement, setPendingElement] = useState<{
@@ -99,7 +100,7 @@ export default function GarmentDetailPage() {
     const { type, data, label } = pendingElement;
     setPendingElement(null);
     try {
-      await api.post(`/workspace/${wsId}/elements`, {
+      const { data: updatedWs } = await api.post(`/workspace/${wsId}/elements`, {
         look_id: lookId,
         garment_id: garmentId,
         garment_type: garment.garment_type,
@@ -108,6 +109,8 @@ export default function GarmentDetailPage() {
         source_brand: look?.brand ?? "",
         row: garment.garment_type,
       });
+      qc.setQueryData(["workspace", wsId], updatedWs);
+      qc.removeQueries({ queryKey: ["workspaces"] });
       setSnackbarWsId(wsId);
       setSnackbarMsg(`${label} added to workspace`);
     } catch {
