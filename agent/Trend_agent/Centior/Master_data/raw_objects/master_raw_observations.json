@@ -1,0 +1,1106 @@
+{
+  "generated_at": "2026-06-22T07:14:02.290290+00:00",
+  "observation_count": 53,
+  "observations": [
+    {
+      "observation_id": "4e5b3c67-24b6-41ed-9e48-f042fd0527d3",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.822739",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Chanel",
+        "ranking_list": "Lyst Index Hottest Brands Q1-26",
+        "rank": 1,
+        "movement": "new"
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Chanel ranked number 1 in the Lyst Index Hottest Brands for Q1-26."
+    },
+    {
+      "observation_id": "e210fa44-e058-4b7f-9c53-9ef98e7b3432",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.822839",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Saint Laurent",
+        "ranking_list": "Lyst Index Hottest Brands Q1-26",
+        "rank": 2,
+        "movement": "-1"
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Saint Laurent ranked number 2 in the Lyst Index Hottest Brands for Q1-26, moving down 1 spot."
+    },
+    {
+      "observation_id": "bef29ee5-85a5-48e4-8eaa-980e010a25fd",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.822865",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Dior",
+        "ranking_list": "Lyst Index Hottest Brands Q1-26",
+        "rank": 3,
+        "movement": "new"
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Dior ranked number 3 in the Lyst Index Hottest Brands for Q1-26 as a new entry."
+    },
+    {
+      "observation_id": "8f48c339-2eb5-416e-909a-59f3a8616634",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.822885",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Miu Miu",
+        "ranking_list": "Lyst Index Hottest Brands Q1-26",
+        "rank": 4,
+        "movement": "-2"
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Miu Miu ranked number 4 in the Lyst Index Hottest Brands for Q1-26, moving down 2 spots."
+    },
+    {
+      "observation_id": "999e3c2a-05f8-4c88-8296-f71af2ab8fd6",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.822921",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Gucci",
+        "ranking_list": "Lyst Index Hottest Brands Q1-26",
+        "rank": 5,
+        "movement": "+4"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Gucci ranked number 5 in the Lyst Index Hottest Brands for Q1-26, climbing 4 places."
+    },
+    {
+      "observation_id": "64abd132-6091-4c1f-97b5-f7e892b7ed2c",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.822937",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Ralph Lauren",
+        "ranking_list": "Lyst Index Hottest Brands Q1-26",
+        "rank": 6,
+        "movement": "-2"
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Ralph Lauren ranked number 6 in the Lyst Index Hottest Brands for Q1-26, moving down 2 spots."
+    },
+    {
+      "observation_id": "4cb0a02f-8066-4fab-b998-46e3577e99f7",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.822953",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Prada",
+        "ranking_list": "Lyst Index Hottest Brands Q1-26",
+        "rank": 7,
+        "movement": "-2"
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Prada ranked number 7 in the Lyst Index Hottest Brands for Q1-26, moving down 2 spots."
+    },
+    {
+      "observation_id": "6d88c93d-b98a-4d8d-855e-9577271f15a1",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.822969",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Coach",
+        "ranking_list": "Lyst Index Hottest Brands Q1-26",
+        "rank": 8,
+        "movement": "-2"
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Coach ranked number 8 in the Lyst Index Hottest Brands for Q1-26, moving down 2 spots."
+    },
+    {
+      "observation_id": "c5e07e09-7395-4012-991e-b00733892542",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.822985",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Burberry",
+        "ranking_list": "Lyst Index Hottest Brands Q1-26",
+        "rank": 9,
+        "movement": "-1"
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Burberry ranked number 9 in the Lyst Index Hottest Brands for Q1-26, moving down 1 spot."
+    },
+    {
+      "observation_id": "2dd2f6a6-9f22-45d0-a859-2e5a3ebb34a1",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823011",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "COS",
+        "ranking_list": "Lyst Index Hottest Brands Q1-26",
+        "rank": 10,
+        "movement": "-7"
+      },
+      "demand_direction": "fading",
+      "raw_text": "COS ranked number 10 in the Lyst Index Hottest Brands for Q1-26, moving down 7 spots."
+    },
+    {
+      "observation_id": "aadbe165-e304-48a4-bb8e-caf41df8c873",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823028",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Saint Laurent",
+        "product_name": "Stand-Collar Jacket",
+        "ranking_list": "Lyst Index Hottest Products Q1-26",
+        "rank": 1
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Saint Laurent Stand-Collar Jacket is the number 1 hottest product."
+    },
+    {
+      "observation_id": "c452de93-9c3c-45f1-b5b6-49e372fb76cc",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823044",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Chanel",
+        "product_name": "Pumps",
+        "ranking_list": "Lyst Index Hottest Products Q1-26",
+        "rank": 2
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Chanel Pumps are the number 2 hottest product."
+    },
+    {
+      "observation_id": "686016da-7718-420b-9877-5a55517b0e44",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823059",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Adidas",
+        "product_name": "Chinese Style Track Top",
+        "ranking_list": "Lyst Index Hottest Products Q1-26",
+        "rank": 3
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Adidas Chinese Style Track Top is the number 3 hottest product."
+    },
+    {
+      "observation_id": "252d5501-33e3-462e-963f-4ec74d9b9bc1",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823073",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Celine",
+        "product_name": "Ballet Lace-up Shoes",
+        "ranking_list": "Lyst Index Hottest Products Q1-26",
+        "rank": 4
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Celine Ballet Lace-up Shoes are the number 4 hottest product."
+    },
+    {
+      "observation_id": "2641d91f-d17d-4bf9-ac8a-e361bf95bd23",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823088",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Vivienne Westwood",
+        "product_name": "Long Fond Gown",
+        "ranking_list": "Lyst Index Hottest Products Q1-26",
+        "rank": 5
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Vivienne Westwood Long Fond Gown is the number 5 hottest product."
+    },
+    {
+      "observation_id": "4fe294b8-2dcb-4ee8-aa72-6cb0bb4ab65d",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823104",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Chanel",
+        "product_name": "Maxi Flap Bag",
+        "ranking_list": "Lyst Index Hottest Products Q1-26",
+        "rank": 6
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Chanel Maxi Flap Bag is the number 6 hottest product."
+    },
+    {
+      "observation_id": "6ab1b4fb-40c0-4cce-911e-9ac29c4ec53e",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823120",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Saint Laurent",
+        "product_name": "Butterfly Sunglasses",
+        "ranking_list": "Lyst Index Hottest Products Q1-26",
+        "rank": 7
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Saint Laurent Butterfly Sunglasses are the number 7 hottest product."
+    },
+    {
+      "observation_id": "2c6b3fd9-ba09-4b47-b06e-738c8c5e4384",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823139",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Trader Joe's",
+        "product_name": "Tote Bag",
+        "ranking_list": "Lyst Index Hottest Products Q1-26",
+        "rank": 8
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Trader Joe’s Tote Bag is the number 8 hottest product."
+    },
+    {
+      "observation_id": "cd1630ec-1bfd-4d9e-825f-ee5a460de620",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823157",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Village pm",
+        "product_name": "1PM Sneakers",
+        "ranking_list": "Lyst Index Hottest Products Q1-26",
+        "rank": 9
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Village pm 1PM Sneakers are the number 9 hottest product."
+    },
+    {
+      "observation_id": "f12cc86b-2810-465b-b6c5-7c66de5cfcd6",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823171",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Kangol",
+        "product_name": "Tropic 504 Flat Cap",
+        "ranking_list": "Lyst Index Hottest Products Q1-26",
+        "rank": 10
+      },
+      "demand_direction": "peaking",
+      "raw_text": "Kangol Tropic 504 Flat Cap is the number 10 hottest product."
+    },
+    {
+      "observation_id": "ac8b72fb-a5cf-48f8-b4cf-a06f62ae4db9",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823189",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Coach",
+        "metric": "year-on-year demand increase",
+        "value": "332%",
+        "year": "2024"
+      },
+      "demand_direction": "rising",
+      "raw_text": "The year on year increase in demand for Coach in 2024 is 332%."
+    },
+    {
+      "observation_id": "c2fafac8-3ccd-4443-8e8a-0d9250318fa3",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823205",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Gucci",
+        "metric": "day-on-day lift",
+        "value": "12%",
+        "event": "Demna's debut show"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Momentum is building around Demna’s debut, with a 12% day-on-day lift following the show."
+    },
+    {
+      "observation_id": "01d2c90e-4e4d-453e-8a03-5fb991cfafd4",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823222",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Zara",
+        "status": "breakout brand",
+        "strategy": "aligning with credible creative voices",
+        "event": "Bad Bunny's Super Bowl presence"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Zara emerges as a breakout not by competing on heritage, but by aligning itself with credible creative voices."
+    },
+    {
+      "observation_id": "7e743804-43e0-46ea-a2b3-07e557188859",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823236",
+      "raw_type": "editorial",
+      "extracted_attributes": {
+        "trend": "'90s minimalism",
+        "influencer": "Carolyn Bessette-Kennedy",
+        "catalyst": "Love Story TV show"
+      },
+      "demand_direction": "rising",
+      "raw_text": "The clearest signal this quarter is the resurgence of ’90s minimalism, catalysed by Love Story and renewed interest in Carolyn Bessette-Kennedy’s style."
+    },
+    {
+      "observation_id": "74665532-278c-4a62-91ff-12563f4b9aaf",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823250",
+      "raw_type": "search_term",
+      "extracted_attributes": {
+        "product_category": "knits",
+        "product_type": "black turtleneck",
+        "metric": "search increase",
+        "value": "217%",
+        "catalyst": "Love Story first episode"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Searches for black turtleneck knits rose 217% after the first episode of Love Story."
+    },
+    {
+      "observation_id": "446b03a2-34df-4ab1-b550-9102c30bf928",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823256",
+      "raw_type": "search_term",
+      "extracted_attributes": {
+        "product_category": "denim",
+        "product_type": "straight-leg denim"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Straight-leg denim demand has climbed steadily on Lyst."
+    },
+    {
+      "observation_id": "faef14b5-6619-4e17-8836-9807e3c8458f",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823262",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Calvin Klein",
+        "metric": "week-on-week lift",
+        "value": "43%",
+        "catalyst": "Love Story finale"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Calvin Klein saw a 43% week-on-week lift following the Love Story finale."
+    },
+    {
+      "observation_id": "a52cc830-23fb-46ff-b6e6-bf4293b598b0",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823268",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Vivienne Westwood",
+        "product_type": "satin dress",
+        "metric": "demand surge",
+        "value": "890%",
+        "catalyst": "Wuthering Heights release and press tour"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Demand for Vivienne Westwood’s satin dress surged by 890%, driven by the release and press tour wardrobe of Wuthering Heights."
+    },
+    {
+      "observation_id": "d8e58daf-45d3-4b51-a81f-6f894c852165",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823274",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Charvet",
+        "metric": "demand increase",
+        "value": "128%",
+        "time_period": "this quarter"
+      },
+      "demand_direction": "rising",
+      "raw_text": "128% increase in demand for charvet on Lyst this quarter."
+    },
+    {
+      "observation_id": "91b74acf-6b19-437e-bc19-6b609968a563",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823279",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Zara",
+        "status": "Brand Moving Fast",
+        "event": "Bad Bunny Super Bowl LX Halftime Show performance",
+        "metric": "viewers",
+        "value": "128.2M"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Zara: 128.2M VIEWERS WATCHED BAD BUNNY PERFORM IN A ZARA SUIT AT THE SUPER BOWL LX HALFTIME SHOW."
+    },
+    {
+      "observation_id": "b32a8b0c-0fba-452e-a7b5-835506d59079",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823286",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "brand": "Vivienne Westwood",
+        "product_type": "Corset dress",
+        "metric": "Quarter-on-quarter rise in demand",
+        "value": "+88%"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Vivienne Westwood: +88% QuARTER-ON-QUARTER RISE IN DEMAND for VIVIENNE WESTWOOD Corset dress."
+    },
+    {
+      "observation_id": "47e09392-5dbf-4095-9e5d-3afd8ec006f4",
+      "source": "Lyst Index Q1-26",
+      "source_url": "https://lyst.com/the-lyst-index/q1-26/?paid_session_id=3c751013-5a04-4151-9a72-0f1d4b1122c0",
+      "captured_date": "2026-06-22T05:48:38.823291",
+      "raw_type": "brand",
+      "extracted_attributes": {
+        "brand": "Calvin Klein",
+        "metric": "rise in weekly searches",
+        "value": "+43%",
+        "catalyst": "Love Story finale"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Calvin Klein: +43% rise in weekly calvin klein searches following the love story finale."
+    },
+    {
+      "observation_id": "ss26-trend-1",
+      "source": "Heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-19T07:39:06.240149",
+      "raw_type": "editorial",
+      "extracted_attributes": {
+        "trend_name": "Dots",
+        "pattern": "Dots",
+        "pattern_scale": [
+          "small",
+          "big"
+        ],
+        "product_category": "Apparel",
+        "product_type": [
+          "Dresses",
+          "Skirts"
+        ],
+        "style": [
+          "playful",
+          "sophisticated",
+          "retro",
+          "whimsical",
+          "modern",
+          "minimalist"
+        ],
+        "silhouette": "midi length"
+      },
+      "demand_direction": "rising",
+      "raw_text": "By balancing playfulness and sophistication, this print adds visual interest without overwhelming an outfit. Big Dots in Europe is forecasted to grow by +55% in visibility during SS26 compared to the year before, and in the US by +33%."
+    },
+    {
+      "observation_id": "ss26-trend-2",
+      "source": "Heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-19T07:39:06.240223",
+      "raw_type": "editorial",
+      "extracted_attributes": {
+        "trend_name": "Brut Denim",
+        "fabric": "Denim",
+        "fabric_treatment": [
+          "brut",
+          "raw",
+          "unwashed",
+          "untreated"
+        ],
+        "material": "stiff cotton",
+        "product_type": [
+          "jeans",
+          "jackets"
+        ],
+        "silhouette": [
+          "baggy",
+          "fitted",
+          "flared bootcut"
+        ],
+        "style": "head-to-toe denim",
+        "consumer_segment": [
+          "trendy",
+          "edgy"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "Unwashed and untreated, this denim is all about authenticity, with no distressing, no fades, just pure, stiff cotton in its most natural state. This fabric is projected to boost visibility by +6% among women and +3% among men."
+    },
+    {
+      "observation_id": "ss26-trend-3",
+      "source": "Heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-19T07:39:06.240245",
+      "raw_type": "editorial",
+      "extracted_attributes": {
+        "trend_name": "Romantic Fabrics",
+        "fabric": [
+          "Lace",
+          "Satin",
+          "Fine Lace",
+          "See-Through"
+        ],
+        "product_type": [
+          "maxi skirts",
+          "satin skirts",
+          "pants",
+          "stockings"
+        ],
+        "detail": "lace trims",
+        "style": [
+          "romantic",
+          "feminine",
+          "delicate",
+          "sensual"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "Lace maxi skirts, satin skirts with lace trims, flowy lace pants, and lace stockings are set to be standout pieces in women’s wardrobes in 2026. Forecasts indicate strong growth for lace skirts, with an expected +20% increase in the EU."
+    },
+    {
+      "observation_id": "ss26-trend-4",
+      "source": "Heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-19T07:39:06.240260",
+      "raw_type": "editorial",
+      "extracted_attributes": {
+        "trend_name": "Variations of Checked",
+        "pattern": [
+          "Checked",
+          "Gingham",
+          "Prince of Wales",
+          "Windowpane checks"
+        ],
+        "product_type": [
+          "swimwear",
+          "short-sleeve shirts",
+          "boxers",
+          "midi-length skirts",
+          "fitted jackets"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "For SS26 we can see all kinds of variations of checked patterns growing in visibility. For both men and women in Europe, gingham is forecasted to grow by +17% and +31%, respectively."
+    },
+    {
+      "observation_id": "ss26-trend-5",
+      "source": "Heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-19T07:39:06.240358",
+      "raw_type": "editorial",
+      "extracted_attributes": {
+        "trend_name": "Moccasins",
+        "product_category": "Footwear",
+        "product_type": [
+          "Moccasins",
+          "Loafers",
+          "Boatshoes"
+        ],
+        "material": "suede",
+        "style": "Bohemian",
+        "consumer_segment": "Edgy"
+      },
+      "demand_direction": "rising",
+      "raw_text": "The rise of suede and Bohemian references as for example moccasins, have grown steadily over the past year. Among men, it is estimated to grow +7% in the EU and is considered a consistent riser."
+    },
+    {
+      "observation_id": "ss26-trend-6",
+      "source": "Heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-19T07:39:06.240383",
+      "raw_type": "editorial",
+      "extracted_attributes": {
+        "trend_name": "Alternative Animal Prints",
+        "pattern": [
+          "Zebra stripes",
+          "Dalmatian",
+          "Snake print",
+          "Crocodile print",
+          "Cow print"
+        ],
+        "product_type": "Dresses",
+        "consumer_segment": "26–35 age group"
+      },
+      "demand_direction": "rising",
+      "raw_text": "If leopard print made its mark in 2024–2025, 2026 is set to welcome a new wave of animal-inspired patterns. Zebra stripes are poised to steal the spotlight, with projected growth of +21% in the EU and +17% in the US for Spring 2026."
+    },
+    {
+      "observation_id": "ss26-trend-7",
+      "source": "Heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-19T07:39:06.240392",
+      "raw_type": "editorial",
+      "extracted_attributes": {
+        "trend_name": "Creamy Yellow",
+        "color_family": "Yellow",
+        "color": [
+          "Creamy Yellow",
+          "Vanilla Yellow",
+          "Popcorn Yellow"
+        ],
+        "product_type": [
+          "dresses",
+          "activewear",
+          "sweaters",
+          "short-sleeve shirts"
+        ],
+        "style": "new neutral"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Color trends like Vanilla Yellow and Popcorn Yellow are rising fast. Both Vanilla Yellow and Popcorn Yellow are estimated to increase +22% among women in Europe during Spring 2026."
+    },
+    {
+      "observation_id": "ss26-trend-8",
+      "source": "Heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-19T07:39:06.240401",
+      "raw_type": "editorial",
+      "extracted_attributes": {
+        "trend_name": "Ruffles & Bubble-Hem",
+        "detail": [
+          "Ruffles",
+          "Bubble-Hem",
+          "Tiered ruffle",
+          "Draped"
+        ],
+        "product_type": [
+          "skirts",
+          "sarouel pants"
+        ],
+        "silhouette": "low-waist",
+        "style": [
+          "playful volume",
+          "light",
+          "airy"
+        ],
+        "color": "optical white"
+      },
+      "demand_direction": "rising",
+      "raw_text": "Tiered ruffle skirts are making a strong comeback among trendy consumers, with forecasted growth of +20% in the EU and +17% in the US. The emphasis is on playful volume, movement, and a light, airy aesthetic."
+    },
+    {
+      "observation_id": "ss26-trend-9",
+      "source": "Heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-19T07:39:06.240409",
+      "raw_type": "editorial",
+      "extracted_attributes": {
+        "trend_name": "Purple Hues",
+        "color_family": "Purple",
+        "color": [
+          "Plum",
+          "Muted Berry",
+          "Mauve",
+          "Sangria Purple",
+          "Eggplant",
+          "Vivid Purple",
+          "Lilac"
+        ],
+        "style": [
+          "playful elegance",
+          "individuality",
+          "spirituality"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "The color purple is estimated to influence the year of 2026, ranging from rich almost burgundy tones to airy, luminous lilacs. For womenswear in SS26, shades like Plum and Muted Berry are projected to grow by +10% in the EU."
+    },
+    {
+      "observation_id": "ss26-trend-10",
+      "source": "Heuritech",
+      "source_url": "https://heuritech.com/fashion-trends-2026/",
+      "captured_date": "2026-06-19T07:39:06.240424",
+      "raw_type": "editorial",
+      "extracted_attributes": {
+        "trend_name": "The New Raw",
+        "style": [
+          "practical",
+          "city-ready",
+          "urban",
+          "minimalism",
+          "outdoor",
+          "sporty"
+        ],
+        "color_family": [
+          "Green",
+          "Yellow"
+        ],
+        "color": [
+          "Pea Green",
+          "Pickled Green",
+          "Dusty Green"
+        ],
+        "fabric": "Opaque Rainproof",
+        "product_type": [
+          "Thong Sandals",
+          "windbreakers",
+          "palazzo pants",
+          "cycling shorts",
+          "sneakers"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "Practicality meets city-ready style in a wardrobe designed for modern urban living. This is reflected in nature-inspired color palettes, with particularly shades of green which are emerging as key tones for the season."
+    },
+    {
+      "observation_id": "65434965-2986-4edc-ad6e-60a86b596a4c",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/runway-reaction-index",
+      "captured_date": "2026-06-22T06:13:30.304716+00:00",
+      "raw_type": "editorial",
+      "extracted_attributes": {
+        "garments": [
+          "minidress",
+          "suit",
+          "evening gown",
+          "bag"
+        ],
+        "colors": "NA",
+        "materials": "NA",
+        "patterns": "NA",
+        "silhouettes": [
+          "body-conscious",
+          "tailored"
+        ],
+        "styles": [
+          "glamorous",
+          "sexy"
+        ],
+        "brands_designers": [
+          "Gucci",
+          "Demna Gvasalia",
+          "Balenciaga",
+          "Tod's",
+          "Prada",
+          "Tom Ford"
+        ],
+        "seasons": [
+          "FW26"
+        ],
+        "keywords": [
+          "Primavera",
+          "sexuality",
+          "Kate Moss",
+          "Karlie Kloss",
+          "Tom Ford era",
+          "Bamboo 1947 bag"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "Gucci Fall 2026\n\nDemna's Debut. Milan's Loudest Hour.\n\nThe Runway Reaction Index measures the 48-hour social, media, and search impact of a single fashion show. Gucci's Fall 2026 debut — Demna Gvasalia's first runway collection for the house — became the most-discussed show of Milan Fashion Week FW26 in a single hour. Here is the data behind the moment.\n\nThe Numbers\n\nThe Show\n\nNearly a year after Demna Gvasalia was hired to remake Gucci following his decade-long run at Balenciaga, he made his runway debut at the Palazzo Delle Scintille in Milan. The collection — titled \"Primavera\" after Sandro Botticelli's painting — was a declaration of intent: 83 looks spanning body-conscious minidresses, fluid tailored suits, and evening gowns, all threaded with the sexuality and cultural ambition that Demna believes defines the Gucci brand.\n\n\"My idea was to put Gucci back in the cultural spotlight,\" Demna told press after the show. The set — a museum-like hall lined with simulacra of Roman statuary, scanned and reproduced with the Uffizi's permission — made the statement architectural. Closing looks by Kate Moss and Karlie Kloss signaled the house's intention to reclaim its position at the apex of luxury fashion.\n\nThe Reaction\n\nThe Gucci show on February 27 at 2 PM generated 1.77 million social media mentions in a single hour — the highest single-show peak recorded across all of Milan Fashion Week FW26, according to Onclusive's social listening platform, which tracked 153 brands and 173 ambassadors across X, Instagram, TikTok, Facebook, and Threads.\n\nSentiment was mixed but predominantly positive. Fashion critics praised the emotional range of the collection and its cultural ambition. Social media users were more divided — some calling it \"ridiculous,\" others declaring it \"glamorous, sexy, dramatic and very intentional.\" The polarization itself drove engagement: controversy is an amplifier.\n\nShare of Voice — MFW FW26\n\nAmong 153 fashion brands tracked during Milan Fashion Week FW26, Gucci ranked second in overall share of voice with 18.82% — just 0.29 percentage points behind Tod's, whose Thai celebrity ambassador strategy dominated early-week conversation. The tightest race of the season.\n\nMedia Impact Value\n\nLaunchmetrics' Media Impact Value® (MIV®) — the industry-standard metric for quantifying the monetary value of media exposure across print, digital, and social — placed Gucci at $91 million for the Milan Fashion Week FW26 season, ranking second behind Prada's $117.9 million.\n\nThe total MFW FW26 season generated $638.7 million in MIV across all brands. Gucci's 14.2% share of that total — for a debut collection from a new creative director — represents a significant opening position. Tagwalk independently ranked Gucci second in fashion month overall, citing the star-studded cast as a driver of global visibility.\n\nThe Verdict\n\nDemna's Gucci debut generated the highest single-hour mention peak of Milan Fashion Week FW26 and secured the #2 position in both share of voice and Media Impact Value. For a first runway show under a new creative director — at a house that has been navigating a difficult transition — these are strong opening numbers.\n\nThe mixed sentiment is expected and arguably healthy: it signals genuine cultural engagement rather than polite indifference. The collection's deliberate sexuality and its references to the Tom Ford era gave the internet something to argue about, which is itself a form of brand heat.\n\nThe key question for subsequent seasons: can Demna convert this attention into sustained commercial momentum? The Bamboo 1947 bag update and the immediate post-show retail drop suggest the house is already thinking about the runway-to-retail pipeline. The data will follow.\n\nShow Details"
+    },
+    {
+      "observation_id": "d8e953f8-9473-48e9-813a-de5749ce6fe4",
+      "source": "fashionweekdata",
+      "source_url": "https://fashionweekdata.com/brand-heat-index",
+      "captured_date": "2026-06-22T06:13:30.304716+00:00",
+      "raw_type": "editorial",
+      "extracted_attributes": {
+        "garments": [
+          "Birkin bag"
+        ],
+        "colors": "NA",
+        "materials": "NA",
+        "patterns": "NA",
+        "silhouettes": "NA",
+        "styles": [
+          "quiet luxury",
+          "old money aesthetic"
+        ],
+        "brands_designers": [
+          "Louis Vuitton",
+          "Dior",
+          "Chanel",
+          "Gucci",
+          "Prada",
+          "Hermès",
+          "Coach",
+          "Versace",
+          "Ralph Lauren",
+          "Balenciaga",
+          "Burberry",
+          "Maria Grazia Chiuri",
+          "Karl Lagerfeld",
+          "Virginie Viard",
+          "Matthieu Blazy",
+          "Demna Gvasalia",
+          "Miuccia Prada",
+          "Raf Simons",
+          "Donatella Versace",
+          "Dario Vitale"
+        ],
+        "seasons": [
+          "Q1 2026",
+          "Spring 2026"
+        ],
+        "keywords": [
+          "heritage",
+          "mega-houses",
+          "wearable luxury",
+          "accessible luxury",
+          "heritage American brands"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Luxury Edition\n\nBrand Heat\n\nIndex\n\nA transparent, data-driven ranking of the world's most in-demand fashion brands — scored entirely from public, verifiable sources. No black boxes. No platform bias. Just signals.\n\nQ1 2026 Overview\n\nHeritage Reclaims the Throne\n\nThe first quarter of 2026 was defined by the enduring dominance of the mega-houses and the dramatic consequences of creative leadership change. Louis Vuitton, Dior, Chanel, and Gucci claimed the top four positions — a consolidation of heritage power that reflects both the resilience of these brands and the limitations of newer entrants to sustain comparable levels of public attention.\n\nWe evaluated 31 global fashion houses across three data pillars: social following, web traffic, and search interest.\n\n\"The Brand Heat Index exists to separate the two by giving brands, buyers, and industry professionals a clear, unbiased view of where public attention is actually concentrated, not where it's being directed.\" says Jeanel Alvarado, Editor-in-Chief of Retailboss.\n\nThe Q1 2026 findings: heritage houses lead by a significant margin, Louis Vuitton commands a position that most industry indices fail to capture, and the gap between perceived momentum and measurable demand is wider than the prevailing narrative suggests.\n\nLouis Vuitton leads the index with a Heat Score of 91.3, driven by 56 million Instagram followers, 18.1 million monthly web visits, and a search interest ratio that nearly doubles its nearest brand. Dior, Chanel, and Gucci hold the second through fourth positions, confirming the sustained dominance of the major heritage houses. Prada and Hermès round out the top six.\n\nCoach claims the highest web traffic score in the entire index, ranking seventh overall, a signal that consumer engagement extends well beyond the accessible luxury tier. What the data proves is simple: the most talked-about brands are not always the most in-demand.\n\nJeanel Alvarado\n\nEditor-In-Chief, RETAILBOSS\n\nInteractive Explorer\n\nSort by Pillar\n\nOverall brand heat — weighted composite of all three pillars\n\nNote: Rankings shown here reflect sorting by the selected pillar only. The official Heat Score ranking uses the weighted composite (Social 40% · Web 30% · Search 30%).\n\nTIER I — DOMINANT\n\nHeat Score 50+\n\nKey Signals\n\nLouis Vuitton\n\nLVMH · Paris, France · Founded 1854\n\nThere is no close second. Louis Vuitton scores a perfect 100 on both the social and search pillars — the only brand in the 31-brand universe to max out two of three metrics — and its web traffic of 18.1 million monthly visits is the highest of any fashion house tracked. These are not vanity metrics. They represent the aggregate of 56 million Instagram followers, 15.9 million TikTok followers, and a search interest that runs 1.85 times higher than the index's own baseline brand.\n\nQ1 2026 was not without turbulence for LVMH's flagship. The group reported first-quarter organic sales growth of just 1% — below analyst expectations — with its Fashion & Leather Goods division down 2%. Yet the public data tells a different story: consumer attention to Louis Vuitton did not waver. The brand's digital footprint remained the largest in luxury fashion by every measurable signal.\n\nLV's position at the top of this index also highlights a structural truth about how fashion heat is measured. Because the house sells exclusively through its own channels — no multi-brand wholesale, no third-party platforms — its web traffic is entirely direct demand. Every one of those 18.1 million monthly visits is a consumer who sought out Louis Vuitton by name.\n\nKey Signals\n\nDior\n\nLVMH · Paris, France · Founded 1946\n\nDior is the most balanced brand in the top five — strong across all three pillars without a single dominant spike. Its 44.4 million Instagram followers and 12.5 million TikTok followers place it firmly in the top tier of social reach, while 8.1 million monthly web visits confirm that the audience is active, not passive.\n\nUnder Maria Grazia Chiuri's continued creative direction, Dior's Q1 2026 narrative was one of quiet consistency rather than disruption. The house's Spring 2026 campaign — shot in the gardens of the Château de Versailles — generated sustained editorial coverage throughout January and February, maintaining search interest at 0.54 times the index baseline. In a quarter where several houses were defined by their creative transitions, Dior's stability was itself a statement.\n\nKey Signals\n\nChanel\n\nChanel S.A. · Paris, France · Founded 1910\n\nChanel ties Louis Vuitton on the social pillar with a perfect score — 56 million Instagram followers and 8.5 million TikTok followers — making it one of only two brands to achieve a social maximum. What separates it from LV is web traffic: Chanel's 11.5 million monthly visits, while impressive, trail LV's 18.1 million, reflecting the structural difference between a house that sells through its own e-commerce and one that drives consumers to boutiques.\n\nThe first quarter of 2026 marked Chanel's continued navigation of the post-Karl Lagerfeld, post-Virginie Viard era under new creative director Matthieu Blazy, who presented his second full collection in January. The critical response was warm — Blazy's instinct for precise, wearable luxury resonated with a market that had grown weary of spectacle. Consumer search interest held steady at 0.54 times the baseline, identical to Dior, suggesting the two houses are operating at near-identical levels of active consumer intent.\n\nKey Signals\n\nGucci\n\nKering · Florence, Italy · Founded 1921\n\nFebruary 27, 2026 was the most anticipated date on the fashion calendar. Nearly a year after Demna Gvasalia was announced as Gucci's new creative director, he finally stepped onto the runway. The show, staged in Milan's Palazzo Delle Scintille, was built around a \"museum\" of Roman statuary scanned from the Uffizi. \"My idea was to put Gucci back in the cultural spotlight,\" Demna told press.\n\nThe data suggests he succeeded — at least in generating attention. Demand for Gucci rose 12% in the 24 hours following the show, and the brand's Q1 web traffic of 8.4 million monthly visits matched Dior's. With 49.2 million Instagram followers and 10.2 million TikTok followers, Gucci's social footprint is the third-largest in the index.\n\nThe commercial reality was more complicated: Kering reported Gucci sales down 8% in Q1 2026. But brand heat and brand revenue are different signals, and Q1 2026 was the quarter in which Gucci's heat — driven by Demna's debut — clearly outpaced its commercial performance.\n\nKey Signals\n\nPrada\n\nPrada Group · Milan, Italy · Founded 1913\n\nPrada is the only brand in the index to score above 40 on all three pillars simultaneously — a consistency that reflects the house's remarkable decade-long run of critical and commercial relevance under Miuccia Prada and Raf Simons. The Prada Group reported 3% organic sales growth in Q1 2026, making it one of the few luxury groups to post positive numbers in a challenging quarter.\n\nWith 32.2 million Instagram followers, 7.0 million TikTok followers, and 7.8 million monthly web visits, Prada's data profile is the most evenly distributed of any brand in the top five. It does not dominate any single metric, but it is competitive across all of them — a reflection of a brand that has successfully cultivated relevance across demographics without compromising its intellectual identity.\n\nTIER II — STRONG\n\nHeat Score 30–49\n\nKey Signals\n\nHermès\n\nHermès International · Paris, France · Founded 1837\n\nHermès presents the most fascinating data anomaly in the index. With only 12.9 million Instagram followers — modest by mega-house standards — it generates 1.85 times Gucci's search interest and 8.8 million monthly web visits. The search-to-follower ratio is the highest of any brand in the 31-brand universe, suggesting a consumer base that is actively seeking the brand rather than passively following it.\n\nThis is the Hermès paradox: a house that has deliberately resisted the social media arms race — no celebrity collaborations, no viral stunts, no TikTok-first strategy — yet commands more active consumer intent than brands with four times its follower count. The Birkin waitlist is not a social media phenomenon. It is a demand signal that shows up in search data, in web traffic, and in the secondary market.\n\nQ1 2026 was a difficult quarter for Hermès at the corporate level: shares fell as much as 23% year-to-date amid geopolitical tensions and slower Chinese demand. But the public data — the consumer-facing signals — showed no equivalent deterioration. Brand heat and stock price are different things.\n\nKey Signals\n\nCoach\n\nTapestry Inc. · New York, USA · Founded 1941\n\nCoach scores a perfect 100 on the web traffic pillar — the only brand in the index to max out this metric — with 18.5 million monthly website visits, the highest raw traffic figure of all 31 brands evaluated. This is a genuine signal of consumer demand: Coach's e-commerce and direct-to-consumer model drives an enormous volume of active website engagement, reflecting strong purchase intent from its core American consumer base.\n\nThe brand's social and search scores are more modest: 8.1 million Instagram followers and a search score adjusted downward to account for the significant volume of non-fashion \"coach\" queries (sports coaching, life coaching, school bus). The adjusted search figure is conservative — the unadjusted score would place Coach considerably higher. This is one of the index's most transparent data quality flags.\n\nKey Signals\n\nVersace\n\nCapri Holdings · Milan, Italy · Founded 1978\n\nVersace is the index's most dramatic momentum story. A +47.9% month-on-month web traffic surge in Q1 2026 — the largest of any brand tracked — propelled the house from a mid-table position into the top ten. The driver: Dario Vitale, the Milanese designer appointed as creative director following Donatella Versace's transition to a brand ambassador role, presented his debut collection to significant critical and commercial attention.\n\nWith 29.3 million Instagram followers and 4.2 million TikTok followers, Versace's social footprint is the fifth-largest in the index — a legacy of Donatella's decades of celebrity cultivation and the house's innate understanding of spectacle. The question for the next two quarters is whether Vitale can convert the attention spike into sustained demand.\n\nKey Signals\n\nRalph Lauren\n\nRalph Lauren Corp. · New York, USA · Founded 1967\n\nRalph Lauren is the American heritage story that the data consistently validates. With 8.1 million monthly web visits — matching Dior — and a stable social presence of 16.2 million Instagram followers, the brand demonstrates that its cultural relevance extends well beyond its core demographic.\n\nQ1 2026 saw Ralph Lauren benefit from the broader \"quiet luxury\" and \"old money aesthetic\" trend cycles that continued to drive consumer interest in heritage American brands. The house's consistent web traffic, combined with its strong TikTok presence of 3.5 million followers, suggests a brand successfully navigating the generational transition without abandoning its identity.\n\nKey Signals\n\nBalenciaga\n\nKering · Paris, France · Founded 1919\n\nBalenciaga enters the index in the post-Demna era — the Georgian designer's departure for Gucci left the house without a creative director for the first quarter, creating a strategic vacuum that is visible in the data. A -4.2% month-on-month web traffic decline and a web score of 22.2 reflect a house in transition.\n\nYet the social numbers tell a more resilient story: 24.4 million Instagram followers and 5.8 million TikTok followers — the latter the fourth-highest in the index — suggest that the brand's cultural capital, built over a decade of Demna's provocations, has not evaporated. The question is whether Kering can find a successor who can channel that capital into new creative energy.\n\nTIER III — ESTABLISHED\n\nHeat Score 20–29\n\nKey Signals\n\nBurberry\n\nBurberry Group plc · London, UK · Founded 1856\n\nBurberry's Q1 2026 data reflects a house in the early stages of a genuine turnaround. Under Daniel Lee, who has now had three full years to reshape the brand's identity, the trench coat — Burberry's most iconic product — has been repositioned as a luxury statement rather than a heritage commodity. The +2.1% month-on-month web traffic growth, while modest, represents a reversal of the declining trend that characterized the brand's 2024 performance.\n\nWith 16.2 million Instagram followers and 5.1 million monthly web visits, Burberry sits at the lower end of the Tier II range — a reflection of the brand's ongoing repositioning from accessible luxury to true luxury. The data suggests the repositioning is working, but the full effect will take several more quarters to manifest in the index's metrics.\n\nKey Signals\n\nOff-White\n\nFarfetch/LVMH · Milan, Italy · Founded 2012\n\nOff-White's presence in the index reflects the enduring cultural capital of Virgil Abloh's creation rather than the brand's current commercial trajectory. With 9.0 million Instagram followers and a search interest that remains above the index's lower threshold, the brand continues to generate consumer attention — but the gap between attention and conversion is widening.\n\nRevenue declined an estimated 20–50% in 2025, and the brand's web traffic of 772,000 monthly visits is the lowest of any brand in the top 15. The creative direction under Ibrahim Kamara has struggled to generate the same cultural urgency that defined the Abloh era. Off-White's position in this index is, in part, a reflection of the lag between cultural perception and data reality.\n\nKey Signals\n\nMiu Miu\n\nPrada Group · Milan, Italy · Founded 1992\n\nMiu Miu's position at #13 in the data-driven index — compared to #4 in platform-based rankings — is the clearest illustration of the gap between editorial perception and public data. The brand's 2.2 million monthly web visits are the lowest of any brand in the top 15, and its Instagram following of 8.1 million is modest relative to its cultural profile.\n\nThe discrepancy is likely explained by Miu Miu's strength on fashion-specific platforms and in editorial coverage — signals that are not captured by general web traffic or broad social metrics. The brand's micro-skirt moment and its status as the critical darling of the past three seasons are real phenomena; they simply do not show up in the same way in publicly available data as they do in platform-specific demand signals.\n\nKey Signals\n\nJacquemus\n\nIndependent · Paris, France · Founded 2009\n\nJacquemus is the independent luxury success story of the past decade — a brand built almost entirely on Simon Porte Jacquemus's personal Instagram presence and a series of spectacular show locations, from the lavender fields of Provence to the salt flats of the Camargue. With 12.1 million Instagram followers and 2.5 million TikTok followers, the brand punches significantly above its revenue weight in social terms.\n\nThe 2.5 million monthly web visits reflect a brand that has successfully converted social attention into commercial traffic, even if the absolute numbers remain modest relative to the mega-houses. Q1 2026 saw Jacquemus continue its global expansion, with new store openings in New York and Tokyo reinforcing the brand's ambition to move from cult status to genuine luxury scale.\n\nKey Signals\n\nValentino\n\nMayhoola · Rome, Italy · Founded 1960\n\nValentino's score is driven almost entirely by its social pillar — 18.9 million Instagram followers give it the sixth-largest social following in the index — while its web traffic of 1.4 million monthly visits is the second-lowest in the top 15. This social-to-web gap suggests a brand with strong aspirational appeal but limited direct e-commerce conversion.\n\nUnder Alessandro Michele, who joined from Gucci in late 2023, Valentino has been in a period of creative reinvention. Michele's maximalist aesthetic — which defined Gucci's cultural moment from 2015 to 2022 — is being reinterpreted for a Roman house with different heritage codes. Q1 2026 was the first full quarter in which Michele's vision was fully visible in stores, and the social data suggests consumer curiosity remains high.\n\nTIER IV — CONTENDERS\n\nHeat Score 15–21\n\nKey Signals\n\nBottega Veneta\n\nKering · Vicenza, Italy · Founded 1966\n\nBottega Veneta occupies the sixteenth position in the Q1 2026 Brand Heat Index. Its intrecciato leather craft and Matthieu Blazy-era design legacy have sustained a loyal, high-value consumer base that operates largely outside conventional digital channels.\n\nThe brand's deliberately minimal digital presence — 4.0 million Instagram followers, no TikTok strategy — is a conscious brand decision. Bottega Veneta's consumer is not primarily a social media consumer. The brand's 3.1 million monthly web visits and strong secondary market performance suggest a customer base that does not require social amplification to maintain its purchasing behavior.\n\nKey Signals\n\nSaint Laurent\n\nKering · Paris, France · Founded 1961\n\nSaint Laurent's #17 position in this index — compared to #2 in platform-based rankings — is the most significant divergence in the entire dataset, and it warrants direct explanation. The brand's 3.4 million monthly web visits, 8.1 million Instagram followers, and 0.27× search ratio simply do not support a top-two ranking by any publicly verifiable metric.\n\nThis does not mean Saint Laurent is not a culturally significant brand. It means that its significance is concentrated in channels — editorial coverage, wholesale platform demand, celebrity dressing — that are not captured by the three pillars of this index. The gap between Saint Laurent's platform ranking and its public data ranking is the clearest argument for why transparent, multi-source indexing matters.\n\nKey Signals\n\nLoewe\n\nLVMH · Madrid, Spain · Founded 1846\n\nLoewe under Jonathan Anderson has been one of the critical success stories of the past five years — a Spanish leather goods house transformed into one of the most intellectually rigorous and culturally engaged brands in luxury. The brand's Craft Prize, its collaborations with artists and artisans, and Anderson's instinct for cultural relevance have generated enormous editorial goodwill.\n\nThe public data, however, reflects a brand that remains relatively niche in terms of raw consumer reach: 2.5 million monthly web visits and 8.1 million Instagram followers are modest by mega-house standards. Anderson's departure for Dior — announced in late 2025 — will be the defining event for Loewe in 2026, and its impact on the brand's data profile will be closely watched.\n\nKey Signals\n\nCeline\n\nLVMH · Paris, France · Founded 1945\n\nCeline's search data requires a significant adjustment: a substantial portion of \"Celine\" search queries relate to Celine Dion, the Canadian singer, rather than the French fashion house. The adjusted search score is conservative and may understate the brand's true fashion-specific search interest.\n\nUnder Hedi Slimane, Celine has maintained a deliberately minimal digital presence — 4.0 million Instagram followers and 0.5 million TikTok followers reflect a brand that does not compete for social reach. The 4.1 million monthly web visits suggest a loyal consumer base that seeks the brand out directly, consistent with Slimane's vision of Celine as a house for consumers who do not need to be told what to want.\n\nKey Signals\n\nFendi\n\nLVMH · Rome, Italy · Founded 1925\n\nFendi closes the index with a -9.9% month-on-month web traffic decline — the second-largest negative momentum figure in the top 20. The Roman house, under Kim Jones's creative direction, has struggled to generate the same level of cultural conversation as its LVMH stablemates Dior and Louis Vuitton.\n\nWith 8.1 million Instagram followers and 3.1 million monthly web visits, Fendi's data profile is consistent with a brand that maintains strong heritage recognition but has not yet found the creative catalyst that would elevate it to the next tier. The Baguette bag remains a cultural touchstone, and the brand's Roman identity — reinforced by its Palazzo della Civiltà Italiana headquarters — provides a distinctive positioning that the data does not yet fully reflect.\n\nQ1 2026 Macro Trends\n\nSix Themes Defining the Quarter\n\nThe Creative Director Effect\n\nNew creative appointments generated the most dramatic web traffic swings of the quarter. Versace's +47.9% MoM surge following Dario Vitale's debut and Gucci's +12% demand spike after Demna's first show confirm that a single runway moment can move the needle on public data signals within 24 hours.\n\nHeat ≠ Revenue\n\nThe most striking divergence in Q1 2026 is between brand heat and brand revenue. Gucci scored #4 in this index while reporting -8% sales. Louis Vuitton topped the index while LVMH's Fashion & Leather Goods division declined 2%. Consumer attention and consumer spending are increasingly decoupled.\n\nThe Search Premium\n\nHermès generates 1.85× Gucci's search interest with only 12.9M Instagram followers versus Gucci's 49.2M. The search-to-follower ratio is the most revealing metric in the index: it separates brands that are followed from brands that are actively sought. Hermès is the clearest example of the latter.\n\nDTC Dominates\n\nBrands with direct-to-consumer e-commerce channels average 13.0M monthly web visits versus 7.6M for brands reliant on multi-brand wholesale. The 65% gap reflects a structural advantage: every DTC visit is a direct demand signal, while wholesale traffic is fragmented across third-party platforms.\n\nTikTok as Tier Separator\n\nAverage TikTok followers for Tier I brands: 11.2M. Tier II: 3.5M. Tiers III and IV: below 2.5M. The 3.5M threshold is emerging as the dividing line between brands with genuine Gen Z cultural penetration and those that remain primarily Millennial or older in their digital reach.\n\nThe Quiet Luxury Ceiling\n\nBrands associated with the 'quiet luxury' aesthetic — Saint Laurent, The Row, Celine, Bottega Veneta — consistently score lower in this index than their editorial profiles suggest. The exception is Hermès, whose search premium saves it. Public data does not capture the word-of-mouth and in-store dynamics that drive quiet luxury demand.\n\nMomentum Signals\n\nBiggest Movers\n\nMonth-on-month web traffic change, Q1 2026. Ranked by absolute movement against the prior period.\n\nMethodology\n\nHow We Score Brands\n\nEvery score in this report is derived from publicly accessible data sources. The methodology is designed to be reproducible: anyone with access to SimilarWeb, Google Trends, and Instagram can verify or challenge any figure in this report.\n\nData Quality Flags\n\nData Sources\n\nBrand Heat Index · Q1 2026 · January – March\n\nAll data sourced from publicly available third-party platforms. Scores are normalized and reproducible. Analysis by RETAILBOSS."
+    },
+    {
+      "observation_id": "bda1a6a1-e007-4bab-abb6-6f0effd36258",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-22T06:45:21.329173+00:00",
+      "raw_type": "editorial",
+      "extracted_attributes": {
+        "garments": [
+          "yoga pants",
+          "tights",
+          "sneakers",
+          "leggings",
+          "gym shorts"
+        ],
+        "colors": "NA",
+        "materials": "NA",
+        "patterns": "NA",
+        "silhouettes": "NA",
+        "styles": [
+          "athleisure",
+          "sportswear"
+        ],
+        "brands_designers": "NA",
+        "seasons": "NA",
+        "keywords": [
+          "everyday fashion",
+          "fitness trends"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "Formal fashion declines, athleisure rises"
+    },
+    {
+      "observation_id": "a66cabc7-425d-41c2-ab4c-2874ab1cb433",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-22T06:45:21.329173+00:00",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "garments": [
+          "mini dress"
+        ],
+        "colors": "NA",
+        "materials": "NA",
+        "patterns": "NA",
+        "silhouettes": "NA",
+        "styles": [
+          "bold",
+          "expressive"
+        ],
+        "brands_designers": "NA",
+        "seasons": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Mini dresses defy modesty norms"
+    },
+    {
+      "observation_id": "b7b8a0a4-2f39-41fd-abe0-f45255b4a25b",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-22T06:45:21.329173+00:00",
+      "raw_type": "editorial",
+      "extracted_attributes": {
+        "garments": "NA",
+        "colors": "NA",
+        "materials": "NA",
+        "patterns": "NA",
+        "silhouettes": "NA",
+        "styles": [
+          "sustainable luxury"
+        ],
+        "brands_designers": "NA",
+        "seasons": "NA",
+        "keywords": [
+          "clothing rental",
+          "access over ownership",
+          "flexibility",
+          "sustainability"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "Access over ownership gains ground"
+    },
+    {
+      "observation_id": "f76fa6cd-c89e-4a28-ab72-c18393b2b411",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-22T06:45:21.329173+00:00",
+      "raw_type": "editorial",
+      "extracted_attributes": {
+        "garments": "NA",
+        "colors": "NA",
+        "materials": "NA",
+        "patterns": "NA",
+        "silhouettes": "NA",
+        "styles": "NA",
+        "brands_designers": "NA",
+        "seasons": "NA",
+        "keywords": [
+          "personalized shopping",
+          "AI",
+          "e-commerce"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "AI personalizes fashion choices"
+    },
+    {
+      "observation_id": "0f8849d4-c1ed-4ce1-9705-389eea3c1ae5",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-22T06:45:21.329173+00:00",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "garments": [
+          "clothing"
+        ],
+        "colors": "NA",
+        "materials": "NA",
+        "patterns": "NA",
+        "silhouettes": "NA",
+        "styles": "NA",
+        "brands_designers": "NA",
+        "seasons": "NA",
+        "keywords": [
+          "bows"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "Style on the rise: bows on clothing"
+    },
+    {
+      "observation_id": "d60637fc-8168-43a8-a5b1-2f8ce103a12c",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-22T06:45:21.329173+00:00",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "garments": [
+          "bamboo pajamas",
+          "bamboo clothing"
+        ],
+        "colors": "NA",
+        "materials": [
+          "bamboo",
+          "bamboo fabric"
+        ],
+        "patterns": "NA",
+        "silhouettes": "NA",
+        "styles": "NA",
+        "brands_designers": "NA",
+        "seasons": "NA",
+        "keywords": [
+          "environmentally friendly"
+        ]
+      },
+      "demand_direction": "rising",
+      "raw_text": "Bamboo pajamas solve sleep wars"
+    },
+    {
+      "observation_id": "f257787d-4a7a-4852-89e0-a3a2bd4f9671",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-22T06:45:21.329173+00:00",
+      "raw_type": "editorial",
+      "extracted_attributes": {
+        "garments": [
+          "scrubs",
+          "medical apparel"
+        ],
+        "colors": "NA",
+        "materials": "NA",
+        "patterns": "NA",
+        "silhouettes": "NA",
+        "styles": "NA",
+        "brands_designers": [
+          "FIGS",
+          "Mandala Scrubs"
+        ],
+        "seasons": "NA",
+        "keywords": [
+          "direct-to-consumer",
+          "DTC"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Scrubs shift from B2B to DTC"
+    },
+    {
+      "observation_id": "bb9e7e3e-a96c-4041-86e2-426dd850943a",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-22T06:45:21.329173+00:00",
+      "raw_type": "editorial",
+      "extracted_attributes": {
+        "garments": [
+          "second-hand clothing"
+        ],
+        "colors": "NA",
+        "materials": "NA",
+        "patterns": "NA",
+        "silhouettes": "NA",
+        "styles": "NA",
+        "brands_designers": "NA",
+        "seasons": "NA",
+        "keywords": [
+          "sustainability",
+          "individuality",
+          "conscious consumption"
+        ]
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Gen Z champions secondhand fashion"
+    },
+    {
+      "observation_id": "0f9143c4-11b0-4118-a373-72e2341e25eb",
+      "source": "glimpse",
+      "source_url": "https://meetglimpse.com/trends/fashion-apparel-trends/",
+      "captured_date": "2026-06-22T06:45:21.329173+00:00",
+      "raw_type": "product",
+      "extracted_attributes": {
+        "garments": [
+          "Halter tops"
+        ],
+        "colors": "NA",
+        "materials": "NA",
+        "patterns": "NA",
+        "silhouettes": "NA",
+        "styles": "NA",
+        "brands_designers": "NA",
+        "seasons": "NA",
+        "keywords": "NA"
+      },
+      "demand_direction": "unknown",
+      "raw_text": "Halter tops reclaim the spotlight"
+    }
+  ]
+}

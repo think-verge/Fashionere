@@ -1,0 +1,1632 @@
+{
+  "generated_at": "2026-06-22T07:16:07.626862+00:00",
+  "trend_count": 48,
+  "trend_records": [
+    {
+      "trend_id": "trend_e2fa9f3d2a4e",
+      "type": "aesthetic",
+      "label": "'90s Minimalism",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 72,
+      "source_count": 1,
+      "sources": [
+        "7e743804-43e0-46ea-a2b3-07e557188859"
+      ],
+      "first_seen": "2026-06-22T05:48:38.823236+00:00",
+      "last_seen": "2026-06-22T05:48:38.823236+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "'90s Minimalism. aesthetic",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_da4f6d3af87c",
+      "type": "aesthetic",
+      "label": "Athleisure",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": [
+          "sportswear",
+          "everyday fashion"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "bda1a6a1-e007-4bab-abb6-6f0effd36258"
+      ],
+      "first_seen": "2026-06-22T06:45:21.329173+00:00",
+      "last_seen": "2026-06-22T06:45:21.329173+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Athleisure. aesthetic. keywords: sportswear, everyday fashion",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_33c79580118b",
+      "type": "aesthetic",
+      "label": "Bohemian",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 72,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-5"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240358+00:00",
+      "last_seen": "2026-06-19T07:39:06.240358+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Bohemian. aesthetic",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_4b2fc16e54a4",
+      "type": "aesthetic",
+      "label": "Glamorous",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": [
+          "sexy"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": "FW26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "65434965-2986-4edc-ad6e-60a86b596a4c"
+      ],
+      "first_seen": "2026-06-22T06:13:30.304716+00:00",
+      "last_seen": "2026-06-22T06:13:30.304716+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Glamorous. aesthetic. keywords: sexy. context: FW26",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_cea3b6900c5c",
+      "type": "aesthetic",
+      "label": "Quiet Luxury",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": [
+          "old money aesthetic"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 65,
+      "source_count": 1,
+      "sources": [
+        "d8e953f8-9473-48e9-813a-de5749ce6fe4"
+      ],
+      "first_seen": "2026-06-22T06:13:30.304716+00:00",
+      "last_seen": "2026-06-22T06:13:30.304716+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Quiet Luxury. aesthetic. keywords: old money aesthetic",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_f99142e3eb73",
+      "type": "aesthetic",
+      "label": "Romantic",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": [
+          "feminine",
+          "delicate",
+          "sensual"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-3"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240245+00:00",
+      "last_seen": "2026-06-19T07:39:06.240245+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Romantic. aesthetic. keywords: feminine, delicate, sensual",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_27164738f020",
+      "type": "aesthetic",
+      "label": "Utilitarian",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": [
+          "practical",
+          "city-ready",
+          "urban",
+          "minimalism",
+          "outdoor",
+          "sporty"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-10"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240424+00:00",
+      "last_seen": "2026-06-19T07:39:06.240424+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Utilitarian. aesthetic. keywords: practical, city-ready, urban, minimalism, outdoor, sporty",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_4a3adf9e1c9b",
+      "type": "color",
+      "label": "Creamy Yellow",
+      "attributes": {
+        "colors": [
+          {
+            "name": "Creamy Yellow",
+            "hex": null,
+            "family": "Yellow"
+          },
+          {
+            "name": "Vanilla Yellow",
+            "hex": null,
+            "family": "Yellow"
+          },
+          {
+            "name": "Popcorn Yellow",
+            "hex": null,
+            "family": "Yellow"
+          }
+        ],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-7"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240392+00:00",
+      "last_seen": "2026-06-19T07:39:06.240392+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Creamy Yellow. color. colors: Creamy Yellow, Vanilla Yellow, Popcorn Yellow",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_9b1d14b24b10",
+      "type": "color",
+      "label": "Green",
+      "attributes": {
+        "colors": [
+          {
+            "name": "Pea Green",
+            "hex": null,
+            "family": "Green"
+          },
+          {
+            "name": "Pickled Green",
+            "hex": null,
+            "family": "Green"
+          },
+          {
+            "name": "Dusty Green",
+            "hex": null,
+            "family": "Green"
+          }
+        ],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-10"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240424+00:00",
+      "last_seen": "2026-06-19T07:39:06.240424+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Green. color. colors: Pea Green, Pickled Green, Dusty Green",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_18224d43b6cb",
+      "type": "color",
+      "label": "Purple",
+      "attributes": {
+        "colors": [
+          {
+            "name": "Plum",
+            "hex": null,
+            "family": "Purple"
+          },
+          {
+            "name": "Muted Berry",
+            "hex": null,
+            "family": "Purple"
+          },
+          {
+            "name": "Mauve",
+            "hex": null,
+            "family": "Purple"
+          },
+          {
+            "name": "Sangria Purple",
+            "hex": null,
+            "family": "Purple"
+          },
+          {
+            "name": "Eggplant",
+            "hex": null,
+            "family": "Purple"
+          },
+          {
+            "name": "Vivid Purple",
+            "hex": null,
+            "family": "Purple"
+          },
+          {
+            "name": "Lilac",
+            "hex": null,
+            "family": "Purple"
+          }
+        ],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-9"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240409+00:00",
+      "last_seen": "2026-06-19T07:39:06.240409+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Purple. color. colors: Plum, Muted Berry, Mauve, Sangria Purple, Eggplant, Vivid Purple, Lilac",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_a6a9968c5bb1",
+      "type": "color",
+      "label": "White",
+      "attributes": {
+        "colors": [
+          {
+            "name": "optical white",
+            "hex": null,
+            "family": null
+          }
+        ],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-8"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240401+00:00",
+      "last_seen": "2026-06-19T07:39:06.240401+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "White. color. colors: optical white",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_2c0f04627e35",
+      "type": "item_style",
+      "label": "Ballet Shoes",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": [
+          "Lace-up"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "peaking",
+      "demand_direction": "peaking",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "252d5501-33e3-462e-963f-4ec74d9b9bc1"
+      ],
+      "first_seen": "2026-06-22T05:48:38.823073+00:00",
+      "last_seen": "2026-06-22T05:48:38.823073+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Ballet Shoes. item style. keywords: Lace-up",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_412bae565541",
+      "type": "item_style",
+      "label": "Bows",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 72,
+      "source_count": 1,
+      "sources": [
+        "0f8849d4-c1ed-4ce1-9705-389eea3c1ae5"
+      ],
+      "first_seen": "2026-06-22T06:45:21.329173+00:00",
+      "last_seen": "2026-06-22T06:45:21.329173+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Bows. item style",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_6a6e044848ea",
+      "type": "item_style",
+      "label": "Butterfly Sunglasses",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "peaking",
+      "demand_direction": "peaking",
+      "confidence_score": 72,
+      "source_count": 1,
+      "sources": [
+        "6ab1b4fb-40c0-4cce-911e-9ac29c4ec53e"
+      ],
+      "first_seen": "2026-06-22T05:48:38.823120+00:00",
+      "last_seen": "2026-06-22T05:48:38.823120+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Butterfly Sunglasses. item style",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_5aab61a9d571",
+      "type": "item_style",
+      "label": "Corset Dress",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 72,
+      "source_count": 1,
+      "sources": [
+        "b32a8b0c-0fba-452e-a7b5-835506d59079"
+      ],
+      "first_seen": "2026-06-22T05:48:38.823286+00:00",
+      "last_seen": "2026-06-22T05:48:38.823286+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Corset Dress. item style",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_07c49cb3d311",
+      "type": "item_style",
+      "label": "Flap Bag",
+      "attributes": {
+        "colors": [],
+        "silhouette": "maxi",
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "peaking",
+      "demand_direction": "peaking",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "4fe294b8-2dcb-4ee8-aa72-6cb0bb4ab65d"
+      ],
+      "first_seen": "2026-06-22T05:48:38.823104+00:00",
+      "last_seen": "2026-06-22T05:48:38.823104+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Flap Bag. item style. silhouette: maxi",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_5fde1744c3fc",
+      "type": "item_style",
+      "label": "Flat Cap",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "peaking",
+      "demand_direction": "peaking",
+      "confidence_score": 72,
+      "source_count": 1,
+      "sources": [
+        "f12cc86b-2810-465b-b6c5-7c66de5cfcd6"
+      ],
+      "first_seen": "2026-06-22T05:48:38.823171+00:00",
+      "last_seen": "2026-06-22T05:48:38.823171+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Flat Cap. item style",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_74dd68ed1c74",
+      "type": "item_style",
+      "label": "Gown",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": [
+          "Long"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "peaking",
+      "demand_direction": "peaking",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "2641d91f-d17d-4bf9-ac8a-e361bf95bd23"
+      ],
+      "first_seen": "2026-06-22T05:48:38.823088+00:00",
+      "last_seen": "2026-06-22T05:48:38.823088+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Gown. item style. keywords: Long",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_3a30d6e2d748",
+      "type": "item_style",
+      "label": "Halter Top",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "unknown",
+      "confidence_score": 57,
+      "source_count": 1,
+      "sources": [
+        "0f9143c4-11b0-4118-a373-72e2341e25eb"
+      ],
+      "first_seen": "2026-06-22T06:45:21.329173+00:00",
+      "last_seen": "2026-06-22T06:45:21.329173+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Halter Top. item style",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_17aaa7e9c98a",
+      "type": "item_style",
+      "label": "Maxi Skirt",
+      "attributes": {
+        "colors": [],
+        "silhouette": "maxi",
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-3"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240245+00:00",
+      "last_seen": "2026-06-19T07:39:06.240245+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Maxi Skirt. item style. silhouette: maxi",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_b4b3bf364c21",
+      "type": "item_style",
+      "label": "Mini Dress",
+      "attributes": {
+        "colors": [],
+        "silhouette": "mini",
+        "pattern": null,
+        "material": null,
+        "keywords": [
+          "bold",
+          "expressive"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "rising",
+      "demand_direction": "rising",
+      "confidence_score": 100,
+      "source_count": 2,
+      "sources": [
+        "a66cabc7-425d-41c2-ab4c-2874ab1cb433",
+        "65434965-2986-4edc-ad6e-60a86b596a4c"
+      ],
+      "first_seen": "2026-06-22T06:13:30.304716+00:00",
+      "last_seen": "2026-06-22T06:45:21.329173+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Mini Dress. item style. silhouette: mini; keywords: bold, expressive",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_b6980b8a180a",
+      "type": "item_style",
+      "label": "Moccasins",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": "suede",
+        "keywords": []
+      },
+      "context": {
+        "category": "Footwear",
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-5"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240358+00:00",
+      "last_seen": "2026-06-19T07:39:06.240358+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Moccasins. item style. material: suede. context: Footwear",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_a2a4b177b233",
+      "type": "item_style",
+      "label": "Pumps",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "peaking",
+      "demand_direction": "peaking",
+      "confidence_score": 72,
+      "source_count": 1,
+      "sources": [
+        "c452de93-9c3c-45f1-b5b6-49e372fb76cc"
+      ],
+      "first_seen": "2026-06-22T05:48:38.823044+00:00",
+      "last_seen": "2026-06-22T05:48:38.823044+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Pumps. item style",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_29cd820ae1c4",
+      "type": "item_style",
+      "label": "Sneakers",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "peaking",
+      "demand_direction": "peaking",
+      "confidence_score": 92,
+      "source_count": 2,
+      "sources": [
+        "cd1630ec-1bfd-4d9e-825f-ee5a460de620",
+        "ss26-trend-10"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240424+00:00",
+      "last_seen": "2026-06-22T05:48:38.823157+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Sneakers. item style",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_22948c7aee73",
+      "type": "item_style",
+      "label": "Stand-Collar Jacket",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "peaking",
+      "demand_direction": "peaking",
+      "confidence_score": 72,
+      "source_count": 1,
+      "sources": [
+        "aadbe165-e304-48a4-bb8e-caf41df8c873"
+      ],
+      "first_seen": "2026-06-22T05:48:38.823028+00:00",
+      "last_seen": "2026-06-22T05:48:38.823028+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Stand-Collar Jacket. item style",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_51dbde6be0f5",
+      "type": "item_style",
+      "label": "Tote Bag",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "peaking",
+      "demand_direction": "peaking",
+      "confidence_score": 72,
+      "source_count": 1,
+      "sources": [
+        "2c6b3fd9-ba09-4b47-b06e-738c8c5e4384"
+      ],
+      "first_seen": "2026-06-22T05:48:38.823139+00:00",
+      "last_seen": "2026-06-22T05:48:38.823139+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Tote Bag. item style",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_e4f9d280b792",
+      "type": "item_style",
+      "label": "Track Top",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": null,
+        "keywords": [
+          "Chinese Style"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "peaking",
+      "demand_direction": "peaking",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "686016da-7718-420b-9877-5a55517b0e44"
+      ],
+      "first_seen": "2026-06-22T05:48:38.823059+00:00",
+      "last_seen": "2026-06-22T05:48:38.823059+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Track Top. item style. keywords: Chinese Style",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_4b5c27ba5ca0",
+      "type": "item_style",
+      "label": "Turtleneck",
+      "attributes": {
+        "colors": [
+          {
+            "name": "black",
+            "hex": null,
+            "family": null
+          }
+        ],
+        "silhouette": null,
+        "pattern": null,
+        "material": "knits",
+        "keywords": []
+      },
+      "context": {
+        "category": "knits",
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "74665532-278c-4a62-91ff-12563f4b9aaf"
+      ],
+      "first_seen": "2026-06-22T05:48:38.823250+00:00",
+      "last_seen": "2026-06-22T05:48:38.823250+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Turtleneck. item style. colors: black; material: knits. context: knits",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_88934e109d2d",
+      "type": "material",
+      "label": "Bamboo Fabric",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": "bamboo",
+        "keywords": [
+          "environmentally friendly"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "d60637fc-8168-43a8-a5b1-2f8ce103a12c"
+      ],
+      "first_seen": "2026-06-22T06:45:21.329173+00:00",
+      "last_seen": "2026-06-22T06:45:21.329173+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Bamboo Fabric. material. material: bamboo; keywords: environmentally friendly",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_51ce8c470d5e",
+      "type": "material",
+      "label": "Lace",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": "lace",
+        "material": "Lace",
+        "keywords": [
+          "Fine Lace",
+          "See-Through"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-3"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240245+00:00",
+      "last_seen": "2026-06-19T07:39:06.240245+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Lace. material. pattern: lace; material: Lace; keywords: Fine Lace, See-Through",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_6b2268c573e7",
+      "type": "material",
+      "label": "Rainproof Fabric",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": "Opaque Rainproof",
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-10"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240424+00:00",
+      "last_seen": "2026-06-19T07:39:06.240424+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Rainproof Fabric. material. material: Opaque Rainproof",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_2ba70ceea725",
+      "type": "material",
+      "label": "Raw Denim",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": "Denim",
+        "keywords": [
+          "brut",
+          "raw",
+          "unwashed",
+          "untreated",
+          "stiff cotton"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "rising",
+      "demand_direction": "rising",
+      "confidence_score": 100,
+      "source_count": 2,
+      "sources": [
+        "ss26-trend-2",
+        "446b03a2-34df-4ab1-b550-9102c30bf928"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240223+00:00",
+      "last_seen": "2026-06-22T05:48:38.823256+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Raw Denim. material. material: Denim; keywords: brut, raw, unwashed, untreated, stiff cotton",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_cd73c15510dd",
+      "type": "material",
+      "label": "Satin",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": "Satin",
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "rising",
+      "demand_direction": "rising",
+      "confidence_score": 100,
+      "source_count": 2,
+      "sources": [
+        "a52cc830-23fb-46ff-b6e6-bf4293b598b0",
+        "ss26-trend-3"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240245+00:00",
+      "last_seen": "2026-06-22T05:48:38.823268+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Satin. material. material: Satin",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_eb4558050a50",
+      "type": "material",
+      "label": "Suede",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": null,
+        "material": "suede",
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-5"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240358+00:00",
+      "last_seen": "2026-06-19T07:39:06.240358+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Suede. material. material: suede",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_5e8e7f6da10d",
+      "type": "pattern",
+      "label": "Animal Prints",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": "animal",
+        "material": null,
+        "keywords": [
+          "Zebra stripes",
+          "Dalmatian",
+          "Snake print",
+          "Crocodile print",
+          "Cow print"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-6"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240383+00:00",
+      "last_seen": "2026-06-19T07:39:06.240383+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Animal Prints. pattern. pattern: animal; keywords: Zebra stripes, Dalmatian, Snake print, Crocodile print, Cow print",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_f2d2f309889b",
+      "type": "pattern",
+      "label": "Check",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": "check",
+        "material": null,
+        "keywords": [
+          "Prince of Wales",
+          "Windowpane checks"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-4"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240260+00:00",
+      "last_seen": "2026-06-19T07:39:06.240260+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Check. pattern. pattern: check; keywords: Prince of Wales, Windowpane checks",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_81e619c85949",
+      "type": "pattern",
+      "label": "Dots",
+      "attributes": {
+        "colors": [],
+        "silhouette": "midi",
+        "pattern": "dots",
+        "material": null,
+        "keywords": [
+          "playful",
+          "sophisticated"
+        ]
+      },
+      "context": {
+        "category": "Apparel",
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-1"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240149+00:00",
+      "last_seen": "2026-06-19T07:39:06.240149+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Dots. pattern. silhouette: midi; pattern: dots; keywords: playful, sophisticated. context: Apparel",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_6238140db561",
+      "type": "pattern",
+      "label": "Gingham",
+      "attributes": {
+        "colors": [],
+        "silhouette": null,
+        "pattern": "gingham",
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-4"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240260+00:00",
+      "last_seen": "2026-06-19T07:39:06.240260+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Gingham. pattern. pattern: gingham",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_a2e6ea9ca9c6",
+      "type": "silhouette",
+      "label": "Baggy",
+      "attributes": {
+        "colors": [],
+        "silhouette": "baggy",
+        "pattern": null,
+        "material": "Denim",
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-2"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240223+00:00",
+      "last_seen": "2026-06-19T07:39:06.240223+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Baggy. silhouette. silhouette: baggy; material: Denim",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_671d0caeeceb",
+      "type": "silhouette",
+      "label": "Body Conscious",
+      "attributes": {
+        "colors": [],
+        "silhouette": "body_conscious",
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": "FW26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "65434965-2986-4edc-ad6e-60a86b596a4c"
+      ],
+      "first_seen": "2026-06-22T06:13:30.304716+00:00",
+      "last_seen": "2026-06-22T06:13:30.304716+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Body Conscious. silhouette. silhouette: body_conscious. context: FW26",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_31511f3b0dbb",
+      "type": "silhouette",
+      "label": "Bubble Hem",
+      "attributes": {
+        "colors": [],
+        "silhouette": "bubble_hem",
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-8"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240401+00:00",
+      "last_seen": "2026-06-19T07:39:06.240401+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Bubble Hem. silhouette. silhouette: bubble_hem",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_097f5fa8fddb",
+      "type": "silhouette",
+      "label": "Draped",
+      "attributes": {
+        "colors": [],
+        "silhouette": "draped",
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-8"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240401+00:00",
+      "last_seen": "2026-06-19T07:39:06.240401+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Draped. silhouette. silhouette: draped",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_f7afc6f6f5fd",
+      "type": "silhouette",
+      "label": "Fitted",
+      "attributes": {
+        "colors": [],
+        "silhouette": "fitted",
+        "pattern": null,
+        "material": "Denim",
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-2"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240223+00:00",
+      "last_seen": "2026-06-19T07:39:06.240223+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Fitted. silhouette. silhouette: fitted; material: Denim",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_219c89956801",
+      "type": "silhouette",
+      "label": "Flared Bootcut",
+      "attributes": {
+        "colors": [],
+        "silhouette": "flared",
+        "pattern": null,
+        "material": "Denim",
+        "keywords": [
+          "bootcut"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-2"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240223+00:00",
+      "last_seen": "2026-06-19T07:39:06.240223+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Flared Bootcut. silhouette. silhouette: flared; material: Denim; keywords: bootcut",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_f41c88db46e0",
+      "type": "silhouette",
+      "label": "Low Waist",
+      "attributes": {
+        "colors": [],
+        "silhouette": "low_waist",
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-8"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240401+00:00",
+      "last_seen": "2026-06-19T07:39:06.240401+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Low Waist. silhouette. silhouette: low_waist",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_c373e0e13ca8",
+      "type": "silhouette",
+      "label": "Ruffled",
+      "attributes": {
+        "colors": [],
+        "silhouette": "ruffled",
+        "pattern": null,
+        "material": null,
+        "keywords": [
+          "Tiered ruffle"
+        ]
+      },
+      "context": {
+        "category": null,
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "ss26-trend-8"
+      ],
+      "first_seen": "2026-06-19T07:39:06.240401+00:00",
+      "last_seen": "2026-06-19T07:39:06.240401+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Ruffled. silhouette. silhouette: ruffled; keywords: Tiered ruffle",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_a3d3f014ed53",
+      "type": "silhouette",
+      "label": "Straight Leg",
+      "attributes": {
+        "colors": [],
+        "silhouette": "straight_leg",
+        "pattern": null,
+        "material": "denim",
+        "keywords": []
+      },
+      "context": {
+        "category": "denim",
+        "season": null,
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "446b03a2-34df-4ab1-b550-9102c30bf928"
+      ],
+      "first_seen": "2026-06-22T05:48:38.823256+00:00",
+      "last_seen": "2026-06-22T05:48:38.823256+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Straight Leg. silhouette. silhouette: straight_leg; material: denim. context: denim",
+      "embedding": [],
+      "review_status": "pending"
+    },
+    {
+      "trend_id": "trend_7fa2310356cf",
+      "type": "silhouette",
+      "label": "Tailored",
+      "attributes": {
+        "colors": [],
+        "silhouette": "tailored",
+        "pattern": null,
+        "material": null,
+        "keywords": []
+      },
+      "context": {
+        "category": null,
+        "season": "FW26",
+        "market": null,
+        "gender": null
+      },
+      "lifecycle_stage": "emerging",
+      "demand_direction": "rising",
+      "confidence_score": 80,
+      "source_count": 1,
+      "sources": [
+        "65434965-2986-4edc-ad6e-60a86b596a4c"
+      ],
+      "first_seen": "2026-06-22T06:13:30.304716+00:00",
+      "last_seen": "2026-06-22T06:13:30.304716+00:00",
+      "last_updated": "2026-06-22T07:16:07.625720+00:00",
+      "descriptor": "Tailored. silhouette. silhouette: tailored. context: FW26",
+      "embedding": [],
+      "review_status": "pending"
+    }
+  ]
+}
