@@ -23,6 +23,8 @@ export function createApp() {
 
   // Serve agent-generated static images (mock SVGs + real images from providers)
   app.use("/static", express.static(path.join(__dirname, "../../agent/static")));
+  // Serve user-uploaded custom workspace element files
+  app.use("/uploads", express.static(path.join(__dirname, "../uploads")));
 
   app.get("/health", (_req, res) => {
     res.json({ status: "ok" });

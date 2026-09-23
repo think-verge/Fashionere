@@ -57,3 +57,24 @@ export async function deleteWorkspace(req: Request, res: Response) {
   await workspaceService.deleteWorkspace(p(req, "id"), req.user!.userId);
   res.status(204).send();
 }
+
+export async function uploadElement(req: Request, res: Response) {
+  const { element_type, label, garment_type } = req.body as {
+    element_type: string;
+    label?: string;
+    garment_type?: string;
+  };
+  if (!req.file) {
+    res.status(400).json({ error: "No file uploaded" });
+    return;
+  }
+  const ws = await workspaceService.uploadElement(
+    p(req, "id"),
+    req.user!.userId,
+    element_type,
+    req.file,
+    label,
+    garment_type,
+  );
+  res.json(ws);
+}
