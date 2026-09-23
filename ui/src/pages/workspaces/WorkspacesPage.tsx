@@ -70,10 +70,11 @@ export default function WorkspacesPage() {
       });
       return data;
     },
-    onSuccess: () => {
+    onSuccess: (data) => {
       setNewName("");
       setCreating(false);
       qc.invalidateQueries({ queryKey: ["workspaces"] });
+      navigate(`/app/workspace/${data._id}`);
     },
   });
 
