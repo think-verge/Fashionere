@@ -1,0 +1,29 @@
+name: fashionare
+root: <%= ENV["PWD"] %>
+startup_window: control
+
+windows:
+  - backend:
+      panes:
+        - backend:
+          - make backend
+
+  - ui:
+      panes:
+        - ui:
+          - make ui
+
+  - app_api:
+      panes:
+        - app_api:
+          - make app_api
+
+  - decon:
+      panes:
+        - decon:
+          - make deconstruction-engine
+
+  - control:
+      panes:
+        - control:
+          - clear
