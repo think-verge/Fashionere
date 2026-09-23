@@ -9,6 +9,7 @@ permissions:
   pull-requests: write
   issues: write
   actions: write
+  checks: read
 
 jobs:
   fast_forward_job:
