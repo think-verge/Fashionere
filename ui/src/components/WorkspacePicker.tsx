@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import {
   Dialog, DialogTitle, DialogContent, List, ListItemButton,
   ListItemText, ListItemIcon, Divider, Box, TextField, Button,
@@ -27,6 +27,7 @@ export function WorkspacePicker({ open, projectId, onClose, onSelect }: Props) {
   const [creating, setCreating] = useState(false);
   const [newName, setNewName] = useState("");
   const [creatingPending, setCreatingPending] = useState(false);
+  const qc = useQueryClient();
 
   const { data: workspaces = [], isLoading } = useQuery<Workspace[]>({
     queryKey: ["workspaces", projectId],
@@ -47,6 +48,7 @@ export function WorkspacePicker({ open, projectId, onClose, onSelect }: Props) {
       });
       const id = data._id ?? data.id;
       onSelect(id, newName.trim());
+      qc.invalidateQueries({ queryKey: ["workspaces"] });
       setNewName("");
       setCreating(false);
     } finally {
