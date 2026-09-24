@@ -9,7 +9,7 @@
 export type CostInputComplexity = typeof CostInputComplexity[keyof typeof CostInputComplexity];
 
 
-// eslint-disable-next-line @typescript-eslint/no-redeclare
+ 
 export const CostInputComplexity = {
   simple: 'simple',
   moderate: 'moderate',

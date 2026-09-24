@@ -9,7 +9,7 @@
 export type GetApiV1LooksType = typeof GetApiV1LooksType[keyof typeof GetApiV1LooksType];
 
 
-// eslint-disable-next-line @typescript-eslint/no-redeclare
+ 
 export const GetApiV1LooksType = {
   retail: 'retail',
   runway: 'runway',

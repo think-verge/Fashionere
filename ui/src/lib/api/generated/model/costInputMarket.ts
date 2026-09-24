@@ -9,7 +9,7 @@
 export type CostInputMarket = typeof CostInputMarket[keyof typeof CostInputMarket];
 
 
-// eslint-disable-next-line @typescript-eslint/no-redeclare
+ 
 export const CostInputMarket = {
   budget: 'budget',
   mid: 'mid',
