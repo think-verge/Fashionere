@@ -132,8 +132,10 @@ export async function listLooks(opts: {
   cursor?: string;
   brand?: string;
   garment_type?: string;
+  search?: string;
+  sort?: string;
 }) {
-  const { type, limit, cursor, brand, garment_type } = opts;
+  const { type, limit, cursor, brand, garment_type, search, sort } = opts;
 
   // Base type filter (used for total count too)
   const typeFilter: Record<string, unknown> = {};
@@ -142,35 +144,53 @@ export async function listLooks(opts: {
   } else if (type === "runway") {
     typeFilter["source.type"] = { $nin: [...RETAIL_SOURCES] };
   }
-  if (brand) typeFilter["context.brand"] = brand;
+  if (brand) {
+    const brands = brand.split(",").map(b => b.trim());
+    typeFilter["context.brand"] = brands.length > 1 ? { $in: brands } : brands[0];
+  }
 
   // If garment_type filter is set, find look_ids from deconstructions first
   let garmentTypeIds: string[] | undefined;
   if (garment_type) {
-    const normalised = garment_type.toLowerCase();
+    const garmentTypes = garment_type.split(",").map(gt => new RegExp(`^${gt.trim().toLowerCase()}$`, "i"));
     const matching = await deconCol()
-      .find({ "garments.garment_type": { $regex: new RegExp(`^${normalised}$`, "i") } })
+      .find({ "garments.garment_type": { $in: garmentTypes } })
       .project({ look_id: 1 })
       .toArray();
     garmentTypeIds = matching.map((d) => String(d.look_id));
     typeFilter._id = { $in: garmentTypeIds };
   }
 
+  if (search) {
+    const q = new RegExp(search.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), "i");
+    typeFilter.$or = [
+      { brand: q },
+      { "context.brand": q },
+      { name: q },
+      { "native_text.product_name": q },
+      { "native_text.keywords": q },
+      { season: q }
+    ];
+  }
+
+  const sortDirection = sort === "latest" ? -1 : 1;
+  const cursorOp = sortDirection === 1 ? "$gt" : "$lt";
+
   // Page filter adds cursor for pagination
   const pageFilter: Record<string, unknown> = { ...typeFilter };
   if (cursor) {
     const decodedId = decodeCursor(cursor);
-    // _id is a string in canonical_looks — use string $gt for cursor pagination
+    // _id is a string in canonical_looks — use string comparison for cursor pagination
     if (garmentTypeIds) {
-      pageFilter._id = { $in: garmentTypeIds, $gt: decodedId };
+      pageFilter._id = { $in: garmentTypeIds, [cursorOp]: decodedId };
     } else {
-      pageFilter._id = { $gt: decodedId };
+      pageFilter._id = { [cursorOp]: decodedId };
     }
   }
 
   const [total, docs] = await Promise.all([
     looksCol().countDocuments(typeFilter),
-    looksCol().find(pageFilter).sort({ _id: 1 }).limit(limit + 1).toArray(),
+    looksCol().find(pageFilter).sort({ _id: sortDirection }).limit(limit + 1).toArray(),
   ]);
 
   const hasMore = docs.length > limit;

@@ -8,27 +8,28 @@ interface Props {
 
 export function PageHeader({ eyebrow, heading, description }: Props) {
   return (
-    <Box sx={{ mb: 6 }}>
+    <Box sx={{ mb: 4 }}>
       <Typography
         sx={{
-          color: "primary.main",
-          fontSize: 11,
-          fontWeight: 700,
+          color: "#b94a48",
+          fontSize: 12,
+          fontWeight: 600,
           textTransform: "uppercase",
-          letterSpacing: "0.2em",
-          mb: 2,
+          letterSpacing: "0.15em",
+          mb: 1.5,
         }}
       >
         {eyebrow}
       </Typography>
       <Typography
         sx={{
-          fontSize: { xs: 32, md: 48 },
-          fontWeight: 700,
-          letterSpacing: "-0.02em",
+          fontFamily: "'Literata', Georgia, serif",
+          fontSize: { xs: 36, md: 52 },
+          fontWeight: 400,
+          letterSpacing: "-0.01em",
           lineHeight: 1.1,
-          mb: description ? 2.5 : 0,
-          color: "text.primary",
+          mb: description ? 2 : 0,
+          color: "#0a192f",
         }}
       >
         {heading}
@@ -36,16 +37,16 @@ export function PageHeader({ eyebrow, heading, description }: Props) {
       {description && (
         <Typography
           sx={{
-            fontFamily: "'Literata', Georgia, serif",
-            fontSize: 17,
-            lineHeight: 1.7,
+            fontSize: 16,
+            lineHeight: 1.5,
             color: "text.secondary",
-            maxWidth: 560,
+            maxWidth: 800,
           }}
         >
           {description}
         </Typography>
       )}
+      <Box sx={{ borderBottom: "1px solid rgba(0,0,0,0.06)", mt: 3 }} />
     </Box>
   );
 }
