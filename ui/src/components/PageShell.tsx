@@ -195,6 +195,7 @@ export function PageShell({ title, children }: Props) {
 
             <Popover
               open={popoverOpen}
+              // eslint-disable-next-line react-hooks/refs
               anchorEl={anchorRef.current}
               onClose={() => { setPopoverOpen(false); setCreating(false); setNewProjectName(""); }}
               anchorOrigin={{ vertical: "bottom", horizontal: "left" }}

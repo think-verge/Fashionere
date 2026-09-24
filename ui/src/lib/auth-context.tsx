@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 import { api } from "./api/client";
 
@@ -52,9 +53,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const storedProject = localStorage.getItem("fash_project");
     if (token && storedUser) {
       try {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setUser(JSON.parse(storedUser));
         if (storedProject) setActiveProject(JSON.parse(storedProject));
-      } catch {}
+      } catch {
+        /* ignore */
+      }
     }
     setIsLoading(false);
   }, []);

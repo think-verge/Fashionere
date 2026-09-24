@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import {
   Box, Typography, Paper, Button, Chip, Divider, Alert, Skeleton,
   IconButton, Tooltip, CircularProgress, Snackbar,
@@ -57,6 +57,7 @@ export default function LookDetailPage() {
   const { lookId } = useParams<{ lookId: string }>();
   const navigate = useNavigate();
   const { activeProject } = useAuth();
+  const qc = useQueryClient();
 
   const [imageIdx, setImageIdx] = useState(0);
   const [addingKey, setAddingKey] = useState<AddingKey>(null);
@@ -103,7 +104,7 @@ export default function LookDetailPage() {
     const { elementType, data, label } = pendingRetail;
     setPendingRetail(null);
     try {
-      await api.post(`/workspace/${wsId}/elements`, {
+      const { data: updatedWs } = await api.post(`/workspace/${wsId}/elements`, {
         look_id: lookId,
         garment_id: "product",
         garment_type: "product",
@@ -112,6 +113,8 @@ export default function LookDetailPage() {
         source_brand: look.brand,
         row: "product",
       });
+      qc.setQueryData(["workspace", wsId], updatedWs);
+      qc.removeQueries({ queryKey: ["workspaces"] });
       setSnackbarWsId(wsId);
       setSnackbarMsg(`${label} added to workspace`);
     } catch (err: unknown) {
@@ -404,7 +407,6 @@ function GarmentRow({ garment, onOpen }: { garment: Garment; onOpen: () => void 
             <ElementSquare
               label={dominantColor?.name ?? "COLOUR"}
               color={dominantColor?.hex ?? "#f5f0ef"}
-              dark={dominantColor != null}
             >
               {secondColor && (
                 <Box sx={{ position: "absolute", right: 0, top: 0, bottom: 0, width: "40%", bgcolor: secondColor.hex }} />
@@ -489,12 +491,10 @@ function GarmentRow({ garment, onOpen }: { garment: Garment; onOpen: () => void 
 function ElementSquare({
   label,
   color,
-  dark = false,
   children,
 }: {
   label: string;
   color: string;
-  dark?: boolean;
   children?: React.ReactNode;
 }) {
   return (

@@ -2,8 +2,8 @@ import mongoose, { type Document, Schema, type Types } from "mongoose";
 
 export interface IWorkspaceElement {
   element_id: string;
-  look_id: string;
-  garment_id: string;
+  look_id?: string;
+  garment_id?: string;
   garment_type: string;
   element_type: "color" | "fabric" | "pattern" | "silhouette";
   data: Record<string, unknown>;
@@ -11,6 +11,7 @@ export interface IWorkspaceElement {
   canvas_position: { x: number; y: number };
   row: string;
   canvas_row?: number | null;
+  is_custom?: boolean;
 }
 
 export interface IWorkspace extends Document {
@@ -27,8 +28,8 @@ export interface IWorkspace extends Document {
 const elementSchema = new Schema<IWorkspaceElement>(
   {
     element_id: { type: String, required: true },
-    look_id: { type: String, required: true },
-    garment_id: { type: String, required: true },
+    look_id: { type: String, default: "" },
+    garment_id: { type: String, default: "" },
     garment_type: { type: String, required: true },
     element_type: { type: String, enum: ["color", "fabric", "pattern", "silhouette"], required: true },
     data: { type: Schema.Types.Mixed, default: {} },
@@ -36,6 +37,7 @@ const elementSchema = new Schema<IWorkspaceElement>(
     canvas_position: { x: { type: Number, default: 0 }, y: { type: Number, default: 0 } },
     row: { type: String, default: "" },
     canvas_row: { type: Number, default: null },
+    is_custom: { type: Boolean, default: false },
   },
   { _id: false },
 );

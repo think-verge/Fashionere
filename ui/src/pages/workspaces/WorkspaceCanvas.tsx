@@ -5,6 +5,7 @@ import {
   Box, Typography, Paper, Button, Chip, Alert,
   IconButton, Skeleton, Tooltip, CircularProgress,
   Accordion, AccordionSummary, AccordionDetails,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   Popover, MenuItem, Divider,
 } from "@mui/material";
 import {
@@ -34,7 +35,9 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import LayersOutlinedIcon from "@mui/icons-material/LayersOutlined";
+import CloudUploadOutlinedIcon from "@mui/icons-material/CloudUploadOutlined";
 import { PaletteStrip } from "../../components/PaletteStrip";
+import { CustomUploadDialog } from "./CustomUploadDialog";
 import { useAuth } from "../../lib/auth-context";
 import { api } from "../../lib/api/client";
 
@@ -42,8 +45,8 @@ import { api } from "../../lib/api/client";
 
 interface WorkspaceElement {
   element_id: string;
-  look_id: string;
-  garment_id: string;
+  look_id?: string;
+  garment_id?: string;
   garment_type: string;
   element_type: "color" | "fabric" | "pattern" | "silhouette";
   data: Record<string, unknown>;
@@ -51,6 +54,7 @@ interface WorkspaceElement {
   row: string;
   canvas_row?: number | null;
   canvas_position?: { x?: number; y?: number };
+  is_custom?: boolean;
 }
 
 interface Workspace {
@@ -464,9 +468,11 @@ function InventoryPanel({
   elements,
   open,
   onToggle,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   canvasRows,
   onClickSilhouette,
   onClickElement,
+  onUpload,
 }: {
   elements: WorkspaceElement[];
   open: boolean;
@@ -474,6 +480,7 @@ function InventoryPanel({
   canvasRows: Array<{ rowNum: number; label: string }>;
   onClickSilhouette: (elementId: string) => void;
   onClickElement: (elementId: string, anchor: HTMLElement) => void;
+  onUpload: () => void;
 }) {
   const grouped = useMemo(() => {
     const brands = new Map<string, Map<string, WorkspaceElement[]>>();
@@ -539,13 +546,24 @@ function InventoryPanel({
       >
         {open && (
         <>
-          <Box sx={{ px: 2, py: 1.75, borderBottom: "1px solid #f0e4e2", flexShrink: 0 }}>
-            <Typography sx={{ fontSize: 10, fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.15em", color: "text.secondary" }}>
-              Inventory
-            </Typography>
-            <Typography sx={{ fontSize: 12, color: "text.disabled", mt: 0.25 }}>
-              {elements.length} element{elements.length !== 1 ? "s" : ""} · click to add to canvas
-            </Typography>
+          <Box sx={{ px: 2, py: 1.5, borderBottom: "1px solid #f0e4e2", flexShrink: 0, display: "flex", alignItems: "flex-start", justifyContent: "space-between" }}>
+            <Box>
+              <Typography sx={{ fontSize: 10, fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.15em", color: "text.secondary" }}>
+                Inventory
+              </Typography>
+              <Typography sx={{ fontSize: 12, color: "text.disabled", mt: 0.25 }}>
+                {elements.length} element{elements.length !== 1 ? "s" : ""} · click to add
+              </Typography>
+            </Box>
+            <Tooltip title="Upload custom elements">
+              <IconButton
+                size="small"
+                onClick={onUpload}
+                sx={{ color: "primary.main", "&:hover": { bgcolor: "#fff0ef" }, width: 28, height: 28, mt: 0.25 }}
+              >
+                <CloudUploadOutlinedIcon sx={{ fontSize: 16 }} />
+              </IconButton>
+            </Tooltip>
           </Box>
 
           <Box sx={{ flex: 1, overflowY: "auto", py: 0.5 }}>
@@ -685,6 +703,7 @@ export default function WorkspaceCanvas() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [highlightedId, setHighlightedId] = useState<string | null>(null);
   const [rfInstance, setRfInstance] = useState<ReactFlowInstance | null>(null);
+  const [uploadOpen, setUploadOpen] = useState(false);
 
   // Row picker popover state
   const [pendingAssign, setPendingAssign] = useState<{ elementId: string; anchor: HTMLElement } | null>(null);
@@ -712,6 +731,7 @@ export default function WorkspaceCanvas() {
     onSuccess: () => qc.invalidateQueries({ queryKey: ["workspace", id] }),
   });
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const removeEl = useMutation({
     mutationFn: async (elementId: string) => {
       await api.delete(`/workspace/${id}/elements/${elementId}`);
@@ -831,6 +851,7 @@ export default function WorkspaceCanvas() {
     setPendingAssign({ elementId, anchor });
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   function focusNode(elementId: string) {
     const el = canvasElements.find((e) => e.element_id === elementId);
     if (!el || !rfInstance) return;
@@ -862,10 +883,10 @@ export default function WorkspaceCanvas() {
         <Box>
           <Button
             startIcon={<ArrowBackIcon />}
-            onClick={() => nav("/app/workspaces")}
+            onClick={() => nav(`/app/workspace/${id}`)}
             sx={{ color: "text.secondary", mb: 1.5, fontWeight: 500, "&:hover": { color: "primary.main" } }}
           >
-            All Workspaces
+            ← Back to Workspace
           </Button>
           {activeProject && (
             <Typography sx={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.2em", color: "primary.main", mb: 0.5 }}>
@@ -930,6 +951,7 @@ export default function WorkspaceCanvas() {
           canvasRows={canvasRows}
           onClickSilhouette={handleClickSilhouette}
           onClickElement={handleClickElement}
+          onUpload={() => setUploadOpen(true)}
         />
 
         <Box sx={{ flex: 1, position: "relative" }}>
@@ -1186,6 +1208,12 @@ export default function WorkspaceCanvas() {
           </Box>
         )}
       </Popover>
+
+      <CustomUploadDialog
+        open={uploadOpen}
+        onClose={() => setUploadOpen(false)}
+        workspaceId={id!}
+      />
 
       {/* AI Studio */}
       <Box>
