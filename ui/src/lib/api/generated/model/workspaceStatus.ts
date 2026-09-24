@@ -9,7 +9,7 @@
 export type WorkspaceStatus = typeof WorkspaceStatus[keyof typeof WorkspaceStatus];
 
 
-// eslint-disable-next-line @typescript-eslint/no-redeclare
+ 
 export const WorkspaceStatus = {
   draft: 'draft',
   ready: 'ready',

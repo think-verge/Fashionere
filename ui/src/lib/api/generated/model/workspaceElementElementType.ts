@@ -9,7 +9,7 @@
 export type WorkspaceElementElementType = typeof WorkspaceElementElementType[keyof typeof WorkspaceElementElementType];
 
 
-// eslint-disable-next-line @typescript-eslint/no-redeclare
+ 
 export const WorkspaceElementElementType = {
   color: 'color',
   fabric: 'fabric',
