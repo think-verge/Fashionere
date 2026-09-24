@@ -869,7 +869,7 @@ export default function WorkspaceCanvas() {
             onClick={() => nav(`/app/workspace/${id}`)}
             sx={{ color: "text.secondary", mb: 1.5, fontWeight: 500, "&:hover": { color: "primary.main" } }}
           >
-            ← Back to Workspace
+            Back to Workspace
           </Button>
           {activeProject && (
             <Typography sx={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.2em", color: "primary.main", mb: 0.5 }}>
