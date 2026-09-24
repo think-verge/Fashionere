@@ -528,7 +528,7 @@ function InventoryPanel({
         width: open ? 264 : 0,
         minWidth: open ? 264 : 0,
         flexShrink: 0,
-        overflow: "hidden",
+        overflow: "visible",
         transition: "width 0.2s, min-width 0.2s",
         position: "relative",
         borderRight: open ? "1px solid #f0e4e2" : "none",
@@ -557,8 +557,8 @@ function InventoryPanel({
         </IconButton>
       </Box>
 
-      {open && (
-        <>
+      <Box sx={{ width: "100%", height: "100%", overflow: "hidden", position: "relative" }}>
+        <Box sx={{ width: 264, height: "100%", display: "flex", flexDirection: "column" }}>
           <Box sx={{ px: 2, py: 1.5, borderBottom: "1px solid #f0e4e2", flexShrink: 0, display: "flex", alignItems: "flex-start", justifyContent: "space-between" }}>
             <Box>
               <Typography sx={{ fontSize: 10, fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.15em", color: "text.secondary" }}>
@@ -678,8 +678,8 @@ function InventoryPanel({
               ))
             )}
           </Box>
-        </>
-      )}
+        </Box>
+      </Box>
     </Box>
   );
 }
