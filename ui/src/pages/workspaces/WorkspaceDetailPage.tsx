@@ -154,7 +154,7 @@ export default function WorkspaceDetailPage() {
 
   // ── Derived data ───────────────────────────────────────────────────────────
 
-  const elements = ws?.elements ?? [];
+  const elements = useMemo(() => ws?.elements ?? [], [ws?.elements]);
 
   const typeCounts = useMemo(() => {
     const counts: Record<string, number> = { silhouette: 0, fabric: 0, pattern: 0, color: 0 };
@@ -197,7 +197,11 @@ export default function WorkspaceDetailPage() {
   function toggleOne(id: string) {
     setSelected((prev) => {
       const next = new Set(prev);
-      next.has(id) ? next.delete(id) : next.add(id);
+      if (next.has(id)) {
+        next.delete(id);
+      } else {
+        next.add(id);
+      }
       return next;
     });
   }
