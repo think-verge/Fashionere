@@ -8,6 +8,7 @@ import LooksPage from "./pages/looks/LooksPage";
 import LookDetailPage from "./pages/looks/LookDetailPage";
 import GarmentDetailPage from "./pages/looks/GarmentDetailPage";
 import WorkspacesPage from "./pages/workspaces/WorkspacesPage";
+import WorkspaceDetailPage from "./pages/workspaces/WorkspaceDetailPage";
 import WorkspaceCanvas from "./pages/workspaces/WorkspaceCanvas";
 import { TrendsPage } from "./pages/trends/TrendsPage";
 
@@ -25,7 +26,8 @@ export default function App() {
               <Route path="looks/:lookId" element={<LookDetailPage />} />
               <Route path="looks/:lookId/garment/:garmentId" element={<GarmentDetailPage />} />
               <Route path="workspaces" element={<WorkspacesPage />} />
-              <Route path="workspace/:id" element={<WorkspaceCanvas />} />
+              <Route path="workspace/:id" element={<WorkspaceDetailPage />} />
+              <Route path="workspace/:id/builder" element={<WorkspaceCanvas />} />
               <Route path="trends" element={<TrendsPage />} />
             </Route>
           </Route>
