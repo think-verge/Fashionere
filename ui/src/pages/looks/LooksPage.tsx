@@ -56,7 +56,7 @@ export default function LooksPage() {
     },
   });
 
-  const { data, fetchNextPage, hasNextPage, isFetchingNextPage, isLoading } =
+  const { data, fetchNextPage, hasNextPage, isFetchingNextPage, isLoading, isFetching } =
     useInfiniteQuery<LooksResponse>({
       queryKey: ["looks", type, selectedBrand, selectedGarmentType, q, sort],
       queryFn: async ({ pageParam }) => {
@@ -306,15 +306,25 @@ export default function LooksPage() {
         </Box>
       )}
 
-      {isLoading ? (
+      {isLoading || (isFetching && !isFetchingNextPage) ? (
         <Grid container spacing={3}>
           {Array.from({ length: 12 }).map((_, i) => (
             <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }} key={i}>
-              <Card sx={{ borderRadius: "16px", boxShadow: "0 4px 20px rgba(0,0,0,0.03)", overflow: "hidden", border: "1px solid rgba(0,0,0,0.04)" }}>
-                <Skeleton variant="rectangular" height={320} animation="wave" />
-                <CardContent sx={{ p: 2.5 }}>
-                  <Skeleton width="70%" height={24} animation="wave" sx={{ mb: 1 }} />
-                  <Skeleton width="40%" height={16} animation="wave" />
+              <Card sx={{ 
+                height: "100%", 
+                borderRadius: "24px", 
+                bgcolor: "rgba(255, 255, 255, 0.4)", 
+                backdropFilter: "blur(20px)", 
+                boxShadow: "0 8px 32px rgba(160, 140, 130, 0.05)", 
+                border: "1px solid rgba(255,255,255,0.7)", 
+                display: "flex", flexDirection: "column", alignItems: "stretch" 
+              }}>
+                <Box sx={{ position: "relative", bgcolor: "transparent", aspectRatio: "3/4", overflow: "hidden", p: 1.5, pb: 0 }}>
+                  <Skeleton variant="rectangular" sx={{ width: "100%", height: "100%", borderRadius: "16px" }} animation="wave" />
+                </Box>
+                <CardContent sx={{ flex: 1, p: 2.5, "&:last-child": { pb: 2.5 } }}>
+                  <Skeleton width="70%" height={24} animation="wave" sx={{ mb: 1, transform: "none" }} />
+                  <Skeleton width="40%" height={16} animation="wave" sx={{ transform: "none" }} />
                 </CardContent>
               </Card>
             </Grid>
@@ -347,12 +357,8 @@ export default function LooksPage() {
                   boxShadow: "0 8px 32px rgba(160, 140, 130, 0.05)", 
                   border: "1px solid rgba(255,255,255,0.7)", 
                   transition: "all 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
-                  animation: "slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both",
+                  animation: "fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both",
                   animationDelay: `${index * 0.05}s`,
-                  "@keyframes slideUp": {
-                    from: { opacity: 0, transform: "translateY(30px)" },
-                    to: { opacity: 1, transform: "translateY(0)" }
-                  },
                   "&:hover": { 
                     transform: "translateY(-8px) scale(1.01)", 
                     boxShadow: "0 20px 48px rgba(160, 140, 130, 0.15)",
@@ -422,6 +428,28 @@ export default function LooksPage() {
                 </Card>
               </Grid>
             ))}
+            {isFetchingNextPage &&
+              Array.from({ length: 4 }).map((_, i) => (
+                <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }} key={`skeleton-${i}`}>
+                  <Card sx={{ 
+                    height: "100%", 
+                    borderRadius: "24px", 
+                    bgcolor: "rgba(255, 255, 255, 0.4)", 
+                    backdropFilter: "blur(20px)", 
+                    boxShadow: "0 8px 32px rgba(160, 140, 130, 0.05)", 
+                    border: "1px solid rgba(255,255,255,0.7)", 
+                    display: "flex", flexDirection: "column", alignItems: "stretch" 
+                  }}>
+                    <Box sx={{ position: "relative", bgcolor: "transparent", aspectRatio: "3/4", overflow: "hidden", p: 1.5, pb: 0 }}>
+                      <Skeleton variant="rectangular" sx={{ width: "100%", height: "100%", borderRadius: "16px" }} animation="wave" />
+                    </Box>
+                    <CardContent sx={{ flex: 1, p: 2.5, "&:last-child": { pb: 2.5 } }}>
+                      <Skeleton width="70%" height={24} animation="wave" sx={{ mb: 1, transform: "none" }} />
+                      <Skeleton width="40%" height={16} animation="wave" sx={{ transform: "none" }} />
+                    </CardContent>
+                  </Card>
+                </Grid>
+              ))}
           </Grid>
 
           {hasNextPage && (
