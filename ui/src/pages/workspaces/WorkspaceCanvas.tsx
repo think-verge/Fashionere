@@ -738,6 +738,15 @@ export default function WorkspaceCanvas() {
     [id],
   );
 
+  const [prevStatus, setPrevStatus] = useState(ws?.status);
+
+  useEffect(() => {
+    if (prevStatus === "generating" && ws?.status === "ready") {
+      setStage(2);
+    }
+    setPrevStatus(ws?.status);
+  }, [ws?.status, prevStatus]);
+
   const generate = useMutation({
     mutationFn: async () => {
       const { data } = await api.post(`/workspace/${id}/generate`);
@@ -745,7 +754,7 @@ export default function WorkspaceCanvas() {
     },
     onSuccess: () => {
       qc.invalidateQueries({ queryKey: ["workspace", id] });
-      setStage(2);
+      qc.invalidateQueries({ queryKey: ["workspaces"] });
     },
   });
 
@@ -865,17 +874,25 @@ export default function WorkspaceCanvas() {
   const isGenerating = ws.status === "generating";
 
   return (
-    <Box sx={{ overflow: "hidden", width: "100%", height: "100%" }}>
+    <Box sx={{ overflow: "hidden", width: "100%" }}>
       <Box sx={{ 
         display: "flex", 
         alignItems: "flex-start",
         width: "200%", 
-        height: "100%",
         transform: stage === 1 ? "translateX(0)" : "translateX(-50%)", 
         transition: "transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)" 
       }}>
         {/* ================= STAGE 1 ================= */}
-        <Box sx={{ width: "50%", flexShrink: 0, pr: stage === 1 ? 0 : 4, transition: "padding 0.6s", display: "flex", flexDirection: "column" }}>
+        <Box sx={{ 
+          width: "50%", 
+          flexShrink: 0, 
+          pr: stage === 1 ? 0 : 4, 
+          transition: "padding 0.6s", 
+          display: "flex", 
+          flexDirection: "column",
+          height: stage === 1 ? "auto" : 0,
+          overflow: stage === 1 ? "visible" : "hidden"
+        }}>
       {/* Header */}
       <Box sx={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", mb: 3 }}>
         <Box>
@@ -907,21 +924,32 @@ export default function WorkspaceCanvas() {
             )}
           </Typography>
         </Box>
-        <Tooltip
-          title={!anyRowComplete ? "Complete a row (silhouette + colour + fabric + pattern) to unlock" : ""}
-        >
-          <span>
+        <Box sx={{ display: "flex", gap: 2 }}>
+          <Tooltip
+            title={!anyRowComplete ? "Complete a row (silhouette + colour + fabric + pattern) to unlock" : ""}
+          >
+            <span>
+              <Button
+                variant="contained"
+                startIcon={<AutoAwesomeIcon />}
+                disabled={isGenerating || generate.isPending || !anyRowComplete}
+                onClick={() => generate.mutate()}
+                sx={{ mt: 1, borderRadius: "10px", py: 1.5, px: 3 }}
+              >
+                {isGenerating ? "Generating…" : "Generate Collection"}
+              </Button>
+            </span>
+          </Tooltip>
+          {ws.status === "ready" && (
             <Button
-              variant="contained"
-              startIcon={<AutoAwesomeIcon />}
-              disabled={isGenerating || generate.isPending || !anyRowComplete}
-              onClick={() => generate.mutate()}
-              sx={{ mt: 1, borderRadius: "10px", py: 1.5, px: 3 }}
+              variant="outlined"
+              onClick={() => setStage(2)}
+              sx={{ mt: 1, borderRadius: "10px", py: 1.5, px: 3, borderColor: "primary.main", color: "primary.main", "&:hover": { bgcolor: "#fff0ef" } }}
             >
-              {isGenerating ? "Generating…" : "Generate Collection"}
+              View Concepts
             </Button>
-          </span>
-        </Tooltip>
+          )}
+        </Box>
       </Box>
 
       {isGenerating && (
@@ -1105,7 +1133,14 @@ export default function WorkspaceCanvas() {
       </Box>
 
       {/* ================= STAGE 2 ================= */}
-        <Box sx={{ width: "50%", flexShrink: 0, pl: stage === 2 ? 0 : 4, transition: "padding 0.6s" }}>
+        <Box sx={{ 
+          width: "50%", 
+          flexShrink: 0, 
+          pl: stage === 2 ? 0 : 4, 
+          transition: "padding 0.6s",
+          height: stage === 2 ? "auto" : 0,
+          overflow: stage === 2 ? "visible" : "hidden"
+        }}>
           <Box sx={{ mb: 3 }}>
             <Button
               startIcon={<ArrowBackIcon />}
@@ -1115,7 +1150,7 @@ export default function WorkspaceCanvas() {
               Back to Canvas
             </Button>
           </Box>
-          <Stage2GarmentConcepts workspaceId={id} />
+          <Stage2GarmentConcepts workspaceId={id} ws={ws} />
         </Box>
       </Box>
     </Box>

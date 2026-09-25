@@ -130,6 +130,7 @@ export default function WorkspaceDetailPage() {
       return data;
     },
     enabled: !!id,
+    refetchInterval: (query) => (query.state.data?.status === "generating" ? 3000 : false),
   });
 
   // ── Mutations ──────────────────────────────────────────────────────────────
