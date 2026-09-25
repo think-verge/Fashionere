@@ -78,3 +78,20 @@ export async function uploadElement(req: Request, res: Response) {
   );
   res.json(ws);
 }
+
+export async function getVariants(req: Request, res: Response) {
+  const variants = await workspaceService.getVariants(p(req, "id"), req.user!.userId, req.query.stage as string);
+  res.json(variants);
+}
+
+export async function editVariant(req: Request, res: Response) {
+  const { instructions } = req.body as { instructions: string };
+  const variant = await workspaceService.editVariant(p(req, "id"), req.user!.userId, p(req, "variantId"), instructions);
+  res.json(variant);
+}
+
+export async function attachInventory(req: Request, res: Response) {
+  const { inventoryIds } = req.body as { inventoryIds: string[] };
+  const variant = await workspaceService.attachInventory(p(req, "id"), req.user!.userId, p(req, "variantId"), inventoryIds);
+  res.json(variant);
+}

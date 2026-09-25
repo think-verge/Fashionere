@@ -20,6 +20,8 @@ import {
   useEdgesState,
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
+import { Stage2GarmentConcepts } from "./Stage2GarmentConcepts";
+import { Stage3Editorial } from "./Stage3Editorial";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import CloseIcon from "@mui/icons-material/Close";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
@@ -694,6 +696,7 @@ export default function WorkspaceCanvas() {
   const [highlightedId, setHighlightedId] = useState<string | null>(null);
   const [rfInstance, setRfInstance] = useState<ReactFlowInstance | null>(null);
   const [uploadOpen, setUploadOpen] = useState(false);
+  const [stage, setStage] = useState<1 | 2 | 3>(1);
 
   // Row picker popover state
   const [pendingAssign, setPendingAssign] = useState<{ elementId: string; anchor: HTMLElement } | null>(null);
@@ -736,12 +739,25 @@ export default function WorkspaceCanvas() {
     [id],
   );
 
+  const [prevStatus, setPrevStatus] = useState(ws?.status);
+
+  useEffect(() => {
+    if (prevStatus === "generating" && ws?.status === "ready") {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setStage(2);
+    }
+    setPrevStatus(ws?.status);
+  }, [ws?.status, prevStatus]);
+
   const generate = useMutation({
     mutationFn: async () => {
       const { data } = await api.post(`/workspace/${id}/generate`);
       return data;
     },
-    onSuccess: () => qc.invalidateQueries({ queryKey: ["workspace", id] }),
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ["workspace", id] });
+      qc.invalidateQueries({ queryKey: ["workspaces"] });
+    },
   });
 
   // Canvas elements = only those with canvas_row assigned
@@ -860,7 +876,25 @@ export default function WorkspaceCanvas() {
   const isGenerating = ws.status === "generating";
 
   return (
-    <Box sx={{ display: "flex", flexDirection: "column", height: "100%" }}>
+    <Box sx={{ overflow: "hidden", width: "100%" }}>
+      <Box sx={{ 
+        display: "flex", 
+        alignItems: "flex-start",
+        width: "300%", 
+        transform: stage === 1 ? "translateX(0)" : stage === 2 ? "translateX(-33.3333%)" : "translateX(-66.6666%)", 
+        transition: "transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)" 
+      }}>
+        {/* ================= STAGE 1 ================= */}
+        <Box sx={{ 
+          width: "33.3333%", 
+          flexShrink: 0, 
+          pr: stage === 1 ? 0 : 4, 
+          transition: "padding 0.6s", 
+          display: "flex", 
+          flexDirection: "column",
+          height: stage === 1 ? "auto" : 0,
+          overflow: stage === 1 ? "visible" : "hidden"
+        }}>
       {/* Header */}
       <Box sx={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", mb: 3 }}>
         <Box>
@@ -892,21 +926,32 @@ export default function WorkspaceCanvas() {
             )}
           </Typography>
         </Box>
-        <Tooltip
-          title={!anyRowComplete ? "Complete a row (silhouette + colour + fabric + pattern) to unlock" : ""}
-        >
-          <span>
+        <Box sx={{ display: "flex", gap: 2 }}>
+          <Tooltip
+            title={!anyRowComplete ? "Complete a row (silhouette + colour + fabric + pattern) to unlock" : ""}
+          >
+            <span>
+              <Button
+                variant="contained"
+                startIcon={<AutoAwesomeIcon />}
+                disabled={isGenerating || generate.isPending || !anyRowComplete}
+                onClick={() => generate.mutate()}
+                sx={{ mt: 1, borderRadius: "10px", py: 1.5, px: 3 }}
+              >
+                {isGenerating ? "Generating…" : "Generate Collection"}
+              </Button>
+            </span>
+          </Tooltip>
+          {ws.status === "ready" && (
             <Button
-              variant="contained"
-              startIcon={<AutoAwesomeIcon />}
-              disabled={isGenerating || generate.isPending || !anyRowComplete}
-              onClick={() => generate.mutate()}
-              sx={{ mt: 1, borderRadius: "10px", py: 1.5, px: 3 }}
+              variant="outlined"
+              onClick={() => setStage(2)}
+              sx={{ mt: 1, borderRadius: "10px", py: 1.5, px: 3, borderColor: "primary.main", color: "primary.main", "&:hover": { bgcolor: "#fff0ef" } }}
             >
-              {isGenerating ? "Generating…" : "Generate Collection"}
+              View Concepts
             </Button>
-          </span>
-        </Tooltip>
+          )}
+        </Box>
       </Box>
 
       {isGenerating && (
@@ -1085,6 +1130,59 @@ export default function WorkspaceCanvas() {
               {tool.label}
             </Button>
           ))}
+        </Box>
+        </Box>
+      </Box>
+
+      {/* ================= STAGE 2 ================= */}
+        <Box sx={{ 
+          width: "33.3333%", 
+          flexShrink: 0, 
+          pl: stage === 2 ? 0 : 4, 
+          transition: "padding 0.6s",
+          height: stage === 2 ? "auto" : 0,
+          overflow: stage === 2 ? "visible" : "hidden"
+        }}>
+          <Box sx={{ mb: 3 }}>
+            <Button
+              startIcon={<ArrowBackIcon />}
+              onClick={() => {
+                setStage(1);
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              sx={{ color: "text.secondary", fontSize: 13, "&:hover": { bgcolor: "transparent", color: "primary.main" } }}
+            >
+              Back to Canvas
+            </Button>
+          </Box>
+          <Stage2GarmentConcepts workspaceId={id} ws={ws} onNext={() => {
+            setStage(3);
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }} />
+        </Box>
+
+      {/* ================= STAGE 3 ================= */}
+        <Box sx={{ 
+          width: "33.3333%", 
+          flexShrink: 0, 
+          pl: stage === 3 ? 0 : 4, 
+          transition: "padding 0.6s",
+          height: stage === 3 ? "auto" : 0,
+          overflow: stage === 3 ? "visible" : "hidden"
+        }}>
+          <Box sx={{ mb: 3 }}>
+            <Button
+              startIcon={<ArrowBackIcon />}
+              onClick={() => {
+                setStage(2);
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              sx={{ color: "text.secondary", fontSize: 13, "&:hover": { bgcolor: "transparent", color: "primary.main" } }}
+            >
+              Back to Stage 2
+            </Button>
+          </Box>
+          <Stage3Editorial workspaceId={id} ws={ws} />
         </Box>
       </Box>
     </Box>

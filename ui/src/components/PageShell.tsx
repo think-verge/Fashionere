@@ -54,10 +54,6 @@ export function PageShell({ title, children }: Props) {
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     const val = e.target.value;
-    if (location.pathname !== "/app/looks") {
-      navigate(`/app/looks?q=${encodeURIComponent(val)}`);
-      return;
-    }
     if (val) {
       searchParams.set("q", val);
     } else {
