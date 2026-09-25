@@ -121,6 +121,7 @@ export default function WorkspaceDetailPage() {
   const [uploadOpen, setUploadOpen] = useState(false);
   const [editingGarmentId, setEditingGarmentId] = useState<string | null>(null);
   const [deletingIds, setDeletingIds] = useState<Set<string>>(new Set());
+  const [stage, setStage] = useState<1 | 2>(1);
 
   // ── Data fetching ──────────────────────────────────────────────────────────
 
@@ -249,7 +250,15 @@ export default function WorkspaceDetailPage() {
   // ── Render ─────────────────────────────────────────────────────────────────
 
   return (
-    <Box>
+    <Box sx={{ overflow: "hidden", width: "100%", pb: 8 }}>
+      <Box sx={{ 
+        display: "flex", 
+        width: "200%", 
+        transform: stage === 1 ? "translateX(0)" : "translateX(-50%)", 
+        transition: "transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)" 
+      }}>
+        {/* ================= STAGE 1 ================= */}
+        <Box sx={{ width: "50%", flexShrink: 0, pr: stage === 1 ? 0 : 4, transition: "padding 0.6s" }}>
       {/* Header */}
       <Box sx={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", mb: 3, gap: 2 }}>
         <Box>
@@ -281,10 +290,11 @@ export default function WorkspaceDetailPage() {
         <Button
           variant="contained"
           endIcon={<AutoAwesomeOutlinedIcon />}
-          onClick={() => navigate(`/app/workspace/${id}/builder`)}
+          onClick={() => setStage(2)}
+          disabled={elements.length === 0}
           sx={{ borderRadius: "10px", px: 2.5, py: 1.25, flexShrink: 0, mt: 4 }}
         >
-          Open AI Builder
+          Generate Collection
         </Button>
       </Box>
 
@@ -481,10 +491,10 @@ export default function WorkspaceDetailPage() {
           <Button
             variant="contained"
             endIcon={<ArrowForwardIcon />}
-            onClick={() => navigate(`/app/workspace/${id}/builder`)}
+            onClick={() => setStage(2)}
             sx={{ borderRadius: "10px", px: 2.5, py: 1.25, flexShrink: 0 }}
           >
-            Open AI Builder
+            Generate Collection
           </Button>
         </Box>
       )}
@@ -495,8 +505,22 @@ export default function WorkspaceDetailPage() {
         workspaceId={id!}
       />
 
-      {/* Stage 2 Mock Section */}
-      <Stage2GarmentConcepts />
+        </Box>
+
+        {/* ================= STAGE 2 ================= */}
+        <Box sx={{ width: "50%", flexShrink: 0, pl: stage === 2 ? 0 : 4, transition: "padding 0.6s" }}>
+          <Box sx={{ mb: 3 }}>
+            <Button
+              startIcon={<ArrowBackIcon />}
+              onClick={() => setStage(1)}
+              sx={{ color: "text.secondary", fontSize: 13, "&:hover": { bgcolor: "transparent", color: "primary.main" } }}
+            >
+              Back to Elements
+            </Button>
+          </Box>
+          <Stage2GarmentConcepts workspaceId={id} />
+        </Box>
+      </Box>
     </Box>
   );
 }

@@ -12,19 +12,38 @@ interface MockVariant {
   materials: string;
 }
 
-const MOCK_VARIANTS: MockVariant[] = [
-  { id: "1", imageUrl: "https://images.unsplash.com/photo-1621344212727-b3711317ba01?auto=format&fit=crop&q=80&w=600", title: "High-leg maillot", materials: "Coral · crinkle seersucker" },
-  { id: "2", imageUrl: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&q=80&w=600", title: "Wrap sarong dress", materials: "Bleached sand · tropical botanical" },
-  { id: "3", imageUrl: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=600", title: "Pleated midi skirt", materials: "Terracotta · washed linen" },
-  { id: "4", imageUrl: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&q=80&w=600", title: "Knit halter top", materials: "Coral bloom · ribbed knit" },
-  { id: "5", imageUrl: "https://images.unsplash.com/photo-1618244972963-dbee1a7edc95?auto=format&fit=crop&q=80&w=600", title: "Wide leg trouser", materials: "Bleached sand · linen" },
-  { id: "6", imageUrl: "https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&q=80&w=600", title: "Bikini top", materials: "Terracotta · crinkle" },
-  { id: "7", imageUrl: "https://images.unsplash.com/photo-1603681428059-45914620023a?auto=format&fit=crop&q=80&w=600", title: "Cover-up tunic", materials: "Coral bloom · cotton silk" },
-  { id: "8", imageUrl: "https://images.unsplash.com/photo-1550639525-c97d455acf70?auto=format&fit=crop&q=80&w=600", title: "Maxi slip dress", materials: "Bleached sand · silk satin" },
-];
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import { api } from "../../lib/api/client";
+import { CircularProgress } from "@mui/material";
 
-export function Stage2GarmentConcepts() {
+export function Stage2GarmentConcepts({ workspaceId }: { workspaceId?: string }) {
   const scrollRef = useRef<HTMLDivElement>(null);
+  const qc = useQueryClient();
+
+  const { data: variants = [], isLoading } = useQuery<MockVariant[]>({
+    queryKey: ["workspace", workspaceId, "variants"],
+    queryFn: async () => {
+      const { data } = await api.get(`/workspace/${workspaceId}/variants`);
+      return data;
+    },
+    enabled: !!workspaceId,
+  });
+
+  const editVariant = useMutation({
+    mutationFn: async (variantId: string) => {
+      const { data } = await api.post(`/workspace/${workspaceId}/variants/${variantId}/edit`, { instructions: "Make it more vibrant" });
+      return data;
+    },
+    onSuccess: () => qc.invalidateQueries({ queryKey: ["workspace", workspaceId, "variants"] }),
+  });
+
+  const attachInventory = useMutation({
+    mutationFn: async (variantId: string) => {
+      const { data } = await api.post(`/workspace/${workspaceId}/variants/${variantId}/inventory`, { inventoryIds: ["inv-123"] });
+      return data;
+    },
+    onSuccess: () => qc.invalidateQueries({ queryKey: ["workspace", workspaceId, "variants"] }),
+  });
 
   const scrollLeft = () => {
     if (scrollRef.current) scrollRef.current.scrollBy({ left: -400, behavior: "smooth" });
@@ -65,14 +84,23 @@ export function Stage2GarmentConcepts() {
           scrollbarWidth: "none",
         }}
       >
-        {MOCK_VARIANTS.map((variant, index) => (
+        {isLoading && (
+          <Box sx={{ p: 4, display: "flex", justifyContent: "center", width: "100%" }}>
+            <CircularProgress />
+          </Box>
+        )}
+        {!isLoading && variants.map((variant, index) => (
           <Box key={variant.id} sx={{ minWidth: 400, flexShrink: 0 }}>
             <Card sx={{ position: "relative", borderRadius: 0, boxShadow: "none", bgcolor: "transparent" }}>
               <Box sx={{ position: "relative", aspectRatio: "4/5", overflow: "hidden", bgcolor: "#f5f0ef" }}>
                 <CardMedia
                   component="img"
                   image={variant.imageUrl}
-                  sx={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  sx={{ 
+                    width: "100%", height: "100%", objectFit: "cover",
+                    opacity: editVariant.isPending || attachInventory.isPending ? 0.5 : 1,
+                    transition: "opacity 0.3s"
+                  }}
                 />
                 
                 <Chip 
@@ -88,6 +116,7 @@ export function Stage2GarmentConcepts() {
                 <Box sx={{ position: "absolute", top: 12, right: 12, display: "flex", gap: 1 }}>
                   <IconButton 
                     size="small" 
+                    onClick={() => attachInventory.mutate(variant.id)}
                     sx={{ bgcolor: "rgba(255,255,255,0.8)", "&:hover": { bgcolor: "#fff" } }}
                     title="Attach Inventory"
                   >
@@ -95,6 +124,7 @@ export function Stage2GarmentConcepts() {
                   </IconButton>
                   <IconButton 
                     size="small" 
+                    onClick={() => editVariant.mutate(variant.id)}
                     sx={{ bgcolor: "rgba(255,255,255,0.8)", "&:hover": { bgcolor: "#fff" } }}
                     title="Edit Variant"
                   >

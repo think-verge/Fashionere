@@ -118,3 +118,33 @@ export async function uploadElement(
   await ws.save();
   return ws.toObject();
 }
+
+const MOCK_VARIANTS = [
+  { id: "1", imageUrl: "https://images.unsplash.com/photo-1621344212727-b3711317ba01?auto=format&fit=crop&q=80&w=600", title: "High-leg maillot", materials: "Coral · crinkle seersucker" },
+  { id: "2", imageUrl: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&q=80&w=600", title: "Wrap sarong dress", materials: "Bleached sand · tropical botanical" },
+  { id: "3", imageUrl: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=600", title: "Pleated midi skirt", materials: "Terracotta · washed linen" },
+  { id: "4", imageUrl: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&q=80&w=600", title: "Knit halter top", materials: "Coral bloom · ribbed knit" },
+  { id: "5", imageUrl: "https://images.unsplash.com/photo-1618244972963-dbee1a7edc95?auto=format&fit=crop&q=80&w=600", title: "Wide leg trouser", materials: "Bleached sand · linen" },
+  { id: "6", imageUrl: "https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&q=80&w=600", title: "Bikini top", materials: "Terracotta · crinkle" },
+  { id: "7", imageUrl: "https://images.unsplash.com/photo-1603681428059-45914620023a?auto=format&fit=crop&q=80&w=600", title: "Cover-up tunic", materials: "Coral bloom · cotton silk" },
+  { id: "8", imageUrl: "https://images.unsplash.com/photo-1550639525-c97d455acf70?auto=format&fit=crop&q=80&w=600", title: "Maxi slip dress", materials: "Bleached sand · silk satin" },
+];
+
+export async function getVariants(id: string, userId: string) {
+  const ws = await Workspace.findOne({ _id: id, user_id: userId }).lean();
+  if (!ws) throw new ApiError(404, "Workspace not found");
+  await new Promise(r => setTimeout(r, 1500));
+  return MOCK_VARIANTS;
+}
+
+export async function editVariant(id: string, userId: string, variantId: string, instructions: string) {
+  await new Promise(r => setTimeout(r, 1500));
+  const variant = MOCK_VARIANTS.find(v => v.id === variantId) || MOCK_VARIANTS[0];
+  return { ...variant, imageUrl: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&q=80&w=600" }; 
+}
+
+export async function attachInventory(id: string, userId: string, variantId: string, inventoryIds: string[]) {
+  await new Promise(r => setTimeout(r, 1500));
+  const variant = MOCK_VARIANTS.find(v => v.id === variantId) || MOCK_VARIANTS[0];
+  return { ...variant, imageUrl: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&q=80&w=600" }; 
+}
