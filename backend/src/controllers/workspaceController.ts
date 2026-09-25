@@ -80,7 +80,7 @@ export async function uploadElement(req: Request, res: Response) {
 }
 
 export async function getVariants(req: Request, res: Response) {
-  const variants = await workspaceService.getVariants(p(req, "id"), req.user!.userId);
+  const variants = await workspaceService.getVariants(p(req, "id"), req.user!.userId, req.query.stage as string);
   res.json(variants);
 }
 

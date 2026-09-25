@@ -16,7 +16,7 @@ interface MockVariant {
   materials: string;
 }
 
-export function Stage2GarmentConcepts({ workspaceId, ws }: { workspaceId?: string; ws?: any }) {
+export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId?: string; ws?: any; onNext?: () => void }) {
   const qc = useQueryClient();
 
   const { data: variants = [], isLoading } = useQuery<MockVariant[]>({
@@ -154,7 +154,7 @@ export function Stage2GarmentConcepts({ workspaceId, ws }: { workspaceId?: strin
         <Typography sx={{ fontSize: 12, fontWeight: 600, color: "text.secondary", textTransform: "uppercase" }}>
           STAGE 02 — GARMENT CONCEPTS
         </Typography>
-        <Typography sx={{ fontSize: 12, fontWeight: 600, color: "text.secondary", textTransform: "uppercase", cursor: "pointer", "&:hover": { color: "primary.main" } }}>
+        <Typography onClick={onNext} sx={{ fontSize: 12, fontWeight: 600, color: "text.secondary", textTransform: "uppercase", cursor: "pointer", "&:hover": { color: "primary.main" } }}>
           NEXT — EDITORIAL, ON-MODEL →
         </Typography>
       </Box>

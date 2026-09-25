@@ -21,6 +21,7 @@ import {
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
 import { Stage2GarmentConcepts } from "./Stage2GarmentConcepts";
+import { Stage3Editorial } from "./Stage3Editorial";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import CloseIcon from "@mui/icons-material/Close";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
@@ -695,7 +696,7 @@ export default function WorkspaceCanvas() {
   const [highlightedId, setHighlightedId] = useState<string | null>(null);
   const [rfInstance, setRfInstance] = useState<ReactFlowInstance | null>(null);
   const [uploadOpen, setUploadOpen] = useState(false);
-  const [stage, setStage] = useState<1 | 2>(1);
+  const [stage, setStage] = useState<1 | 2 | 3>(1);
 
   // Row picker popover state
   const [pendingAssign, setPendingAssign] = useState<{ elementId: string; anchor: HTMLElement } | null>(null);
@@ -879,13 +880,13 @@ export default function WorkspaceCanvas() {
       <Box sx={{ 
         display: "flex", 
         alignItems: "flex-start",
-        width: "200%", 
-        transform: stage === 1 ? "translateX(0)" : "translateX(-50%)", 
+        width: "300%", 
+        transform: stage === 1 ? "translateX(0)" : stage === 2 ? "translateX(-33.3333%)" : "translateX(-66.6666%)", 
         transition: "transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)" 
       }}>
         {/* ================= STAGE 1 ================= */}
         <Box sx={{ 
-          width: "50%", 
+          width: "33.3333%", 
           flexShrink: 0, 
           pr: stage === 1 ? 0 : 4, 
           transition: "padding 0.6s", 
@@ -1135,7 +1136,7 @@ export default function WorkspaceCanvas() {
 
       {/* ================= STAGE 2 ================= */}
         <Box sx={{ 
-          width: "50%", 
+          width: "33.3333%", 
           flexShrink: 0, 
           pl: stage === 2 ? 0 : 4, 
           transition: "padding 0.6s",
@@ -1151,7 +1152,28 @@ export default function WorkspaceCanvas() {
               Back to Canvas
             </Button>
           </Box>
-          <Stage2GarmentConcepts workspaceId={id} ws={ws} />
+          <Stage2GarmentConcepts workspaceId={id} ws={ws} onNext={() => setStage(3)} />
+        </Box>
+
+      {/* ================= STAGE 3 ================= */}
+        <Box sx={{ 
+          width: "33.3333%", 
+          flexShrink: 0, 
+          pl: stage === 3 ? 0 : 4, 
+          transition: "padding 0.6s",
+          height: stage === 3 ? "auto" : 0,
+          overflow: stage === 3 ? "visible" : "hidden"
+        }}>
+          <Box sx={{ mb: 3 }}>
+            <Button
+              startIcon={<ArrowBackIcon />}
+              onClick={() => setStage(2)}
+              sx={{ color: "text.secondary", fontSize: 13, "&:hover": { bgcolor: "transparent", color: "primary.main" } }}
+            >
+              Back to Stage 2
+            </Button>
+          </Box>
+          <Stage3Editorial workspaceId={id} ws={ws} />
         </Box>
       </Box>
     </Box>
