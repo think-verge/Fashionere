@@ -20,6 +20,7 @@ import {
   useEdgesState,
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
+import { Stage2GarmentConcepts } from "./Stage2GarmentConcepts";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import CloseIcon from "@mui/icons-material/Close";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
@@ -694,6 +695,7 @@ export default function WorkspaceCanvas() {
   const [highlightedId, setHighlightedId] = useState<string | null>(null);
   const [rfInstance, setRfInstance] = useState<ReactFlowInstance | null>(null);
   const [uploadOpen, setUploadOpen] = useState(false);
+  const [stage, setStage] = useState<1 | 2>(1);
 
   // Row picker popover state
   const [pendingAssign, setPendingAssign] = useState<{ elementId: string; anchor: HTMLElement } | null>(null);
@@ -741,7 +743,10 @@ export default function WorkspaceCanvas() {
       const { data } = await api.post(`/workspace/${id}/generate`);
       return data;
     },
-    onSuccess: () => qc.invalidateQueries({ queryKey: ["workspace", id] }),
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ["workspace", id] });
+      setStage(2);
+    },
   });
 
   // Canvas elements = only those with canvas_row assigned
@@ -860,7 +865,16 @@ export default function WorkspaceCanvas() {
   const isGenerating = ws.status === "generating";
 
   return (
-    <Box sx={{ display: "flex", flexDirection: "column", height: "100%" }}>
+    <Box sx={{ overflow: "hidden", width: "100%", height: "100%", pb: 8 }}>
+      <Box sx={{ 
+        display: "flex", 
+        width: "200%", 
+        height: "100%",
+        transform: stage === 1 ? "translateX(0)" : "translateX(-50%)", 
+        transition: "transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)" 
+      }}>
+        {/* ================= STAGE 1 ================= */}
+        <Box sx={{ width: "50%", flexShrink: 0, pr: stage === 1 ? 0 : 4, transition: "padding 0.6s", display: "flex", flexDirection: "column" }}>
       {/* Header */}
       <Box sx={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", mb: 3 }}>
         <Box>
@@ -1085,6 +1099,22 @@ export default function WorkspaceCanvas() {
               {tool.label}
             </Button>
           ))}
+        </Box>
+        </Box>
+      </Box>
+
+      {/* ================= STAGE 2 ================= */}
+        <Box sx={{ width: "50%", flexShrink: 0, pl: stage === 2 ? 0 : 4, transition: "padding 0.6s" }}>
+          <Box sx={{ mb: 3 }}>
+            <Button
+              startIcon={<ArrowBackIcon />}
+              onClick={() => setStage(1)}
+              sx={{ color: "text.secondary", fontSize: 13, "&:hover": { bgcolor: "transparent", color: "primary.main" } }}
+            >
+              Back to Canvas
+            </Button>
+          </Box>
+          <Stage2GarmentConcepts workspaceId={id} />
         </Box>
       </Box>
     </Box>
