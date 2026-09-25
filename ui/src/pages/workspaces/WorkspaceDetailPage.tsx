@@ -18,6 +18,7 @@ import AccountTreeOutlinedIcon from "@mui/icons-material/AccountTreeOutlined";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import { PaletteStrip } from "../../components/PaletteStrip";
 import { CustomUploadDialog } from "./CustomUploadDialog";
+import { Stage2GarmentConcepts } from "./Stage2GarmentConcepts";
 import { api } from "../../lib/api/client";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -493,6 +494,9 @@ export default function WorkspaceDetailPage() {
         onClose={() => setUploadOpen(false)}
         workspaceId={id!}
       />
+
+      {/* Stage 2 Mock Section */}
+      <Stage2GarmentConcepts />
     </Box>
   );
 }
