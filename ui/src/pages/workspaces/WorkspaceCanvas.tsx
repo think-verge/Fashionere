@@ -1146,13 +1146,19 @@ export default function WorkspaceCanvas() {
           <Box sx={{ mb: 3 }}>
             <Button
               startIcon={<ArrowBackIcon />}
-              onClick={() => setStage(1)}
+              onClick={() => {
+                setStage(1);
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
               sx={{ color: "text.secondary", fontSize: 13, "&:hover": { bgcolor: "transparent", color: "primary.main" } }}
             >
               Back to Canvas
             </Button>
           </Box>
-          <Stage2GarmentConcepts workspaceId={id} ws={ws} onNext={() => setStage(3)} />
+          <Stage2GarmentConcepts workspaceId={id} ws={ws} onNext={() => {
+            setStage(3);
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }} />
         </Box>
 
       {/* ================= STAGE 3 ================= */}
@@ -1167,7 +1173,10 @@ export default function WorkspaceCanvas() {
           <Box sx={{ mb: 3 }}>
             <Button
               startIcon={<ArrowBackIcon />}
-              onClick={() => setStage(2)}
+              onClick={() => {
+                setStage(2);
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
               sx={{ color: "text.secondary", fontSize: 13, "&:hover": { bgcolor: "transparent", color: "primary.main" } }}
             >
               Back to Stage 2

@@ -130,20 +130,20 @@ export async function uploadElement(
 }
 
 const STAGE2_VARIANTS = [
-  { id: "1", imageUrl: "https://images.unsplash.com/photo-1591047139829-05216050e8b5?auto=format&fit=crop&q=80&w=600", title: "High-leg maillot", materials: "Coral · crinkle seersucker" },
-  { id: "2", imageUrl: "https://images.unsplash.com/photo-1503342394128-c104d54dba01?auto=format&fit=crop&q=80&w=600", title: "Wrap sarong dress", materials: "Bleached sand · tropical botanical" },
-  { id: "3", imageUrl: "https://images.unsplash.com/photo-1434389678395-618bb9d17dcb?auto=format&fit=crop&q=80&w=600", title: "Pleated midi skirt", materials: "Terracotta · washed linen" },
-  { id: "4", imageUrl: "https://images.unsplash.com/photo-1620799140408-fce6b78c9d4b?auto=format&fit=crop&q=80&w=600", title: "Wide leg trouser", materials: "Bleached sand · linen" },
+  { id: "1", imageUrl: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&q=80&w=600", title: "High-leg maillot", materials: "Coral · crinkle seersucker" },
+  { id: "2", imageUrl: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=600", title: "Wrap sarong dress", materials: "Bleached sand · tropical botanical" },
+  { id: "3", imageUrl: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=600", title: "Pleated midi skirt", materials: "Terracotta · washed linen" },
+  { id: "4", imageUrl: "https://images.unsplash.com/photo-1503342394128-c104d54dba01?auto=format&fit=crop&q=80&w=600", title: "Wide leg trouser", materials: "Bleached sand · linen" },
   
-  { id: "5", imageUrl: "https://images.unsplash.com/photo-1489987701167-8051700684db?auto=format&fit=crop&q=80&w=601", title: "Bikini top", materials: "Terracotta · crinkle" },
-  { id: "6", imageUrl: "https://images.unsplash.com/photo-1576566588028-41fa9b0c99d0?auto=format&fit=crop&q=80&w=601", title: "Cover-up tunic", materials: "Coral bloom · cotton silk" },
-  { id: "7", imageUrl: "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&q=80&w=601", title: "Maxi slip dress", materials: "Bleached sand · silk satin" },
-  { id: "8", imageUrl: "https://images.unsplash.com/photo-1612423285584-6997e0ab4448?auto=format&fit=crop&q=80&w=601", title: "Knit halter top", materials: "Coral bloom · ribbed knit" },
+  { id: "5", imageUrl: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&q=80&w=601", title: "Bikini top", materials: "Terracotta · crinkle" },
+  { id: "6", imageUrl: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=601", title: "Cover-up tunic", materials: "Coral bloom · cotton silk" },
+  { id: "7", imageUrl: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=601", title: "Maxi slip dress", materials: "Bleached sand · silk satin" },
+  { id: "8", imageUrl: "https://images.unsplash.com/photo-1503342394128-c104d54dba01?auto=format&fit=crop&q=80&w=601", title: "Knit halter top", materials: "Coral bloom · ribbed knit" },
 
-  { id: "9", imageUrl: "https://images.unsplash.com/photo-1591047139829-05216050e8b5?auto=format&fit=crop&q=80&w=602", title: "Wrap mini skirt", materials: "Bleached sand · tropical botanical" },
-  { id: "10", imageUrl: "https://images.unsplash.com/photo-1576566588028-41fa9b0c99d0?auto=format&fit=crop&q=80&w=602", title: "Pleated shorts", materials: "Terracotta · washed linen" },
-  { id: "11", imageUrl: "https://images.unsplash.com/photo-1620799140408-fce6b78c9d4b?auto=format&fit=crop&q=80&w=602", title: "Wide leg crop", materials: "Bleached sand · linen" },
-  { id: "12", imageUrl: "https://images.unsplash.com/photo-1489987701167-8051700684db?auto=format&fit=crop&q=80&w=602", title: "Bandeau top", materials: "Terracotta · crinkle" },
+  { id: "9", imageUrl: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&q=80&w=602", title: "Wrap mini skirt", materials: "Bleached sand · tropical botanical" },
+  { id: "10", imageUrl: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=602", title: "Pleated shorts", materials: "Terracotta · washed linen" },
+  { id: "11", imageUrl: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=602", title: "Wide leg crop", materials: "Bleached sand · linen" },
+  { id: "12", imageUrl: "https://images.unsplash.com/photo-1503342394128-c104d54dba01?auto=format&fit=crop&q=80&w=602", title: "Bandeau top", materials: "Terracotta · crinkle" },
 ];
 
 const STAGE3_VARIANTS = [
@@ -178,6 +178,6 @@ export async function editVariant(id: string, userId: string, variantId: string,
 
 export async function attachInventory(id: string, userId: string, variantId: string, inventoryIds: string[]) {
   await new Promise(r => setTimeout(r, 1500));
-  const variant = MOCK_VARIANTS.find(v => v.id === variantId) || MOCK_VARIANTS[0];
+  const variant = STAGE2_VARIANTS.find(v => v.id === variantId) || STAGE2_VARIANTS[0];
   return { ...variant, imageUrl: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&q=80&w=600" }; 
 }

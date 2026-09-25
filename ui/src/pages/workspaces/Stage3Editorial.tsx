@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "../../lib/api/client";
 import { CircularProgress } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 interface MockVariant {
   id: string;
@@ -12,6 +13,7 @@ interface MockVariant {
 }
 
 export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?: any }) {
+  const navigate = useNavigate();
   const { data: variants = [], isLoading } = useQuery<MockVariant[]>({
     queryKey: ["workspace", workspaceId, "variants", "stage3"],
     queryFn: async () => {
@@ -95,11 +97,11 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
           <Typography sx={{ fontSize: 12, color: "text.secondary", letterSpacing: "0.05em", textTransform: "uppercase" }}>hero look</Typography>
         </Box>
         
-        <Box sx={{ display: "flex", flexDirection: { xs: "column", md: "row" }, gap: 4, alignItems: "flex-start" }}>
+        <Box sx={{ display: "flex", flexDirection: { xs: "column", md: "row" }, gap: 4, alignItems: "center" }}>
           <Box sx={{ flex: 1, width: "100%" }}>
-             <img src={variants[0]?.imageUrl} style={{ width: "100%", height: "auto", display: "block" }} alt="Campaign look" />
+             <img src={variants[0]?.imageUrl} style={{ width: "100%", height: "auto", aspectRatio: "3/4", objectFit: "cover", display: "block", borderRadius: "16px" }} alt="Campaign look" />
           </Box>
-          <Box sx={{ flex: 1, pt: { xs: 0, md: 8 } }}>
+          <Box sx={{ flex: 1 }}>
             <Typography sx={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.05em", color: "text.secondary", textTransform: "uppercase", mb: 2 }}>
               LOOK 01 — THE MAILLOT
             </Typography>
@@ -110,6 +112,32 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
               The high-leg maillot in coral crinkle seersucker, shot against a sun-warmed terracotta wall. The palette and mood resolve exactly to the Stage 01 direction — no styling drift.
             </Typography>
           </Box>
+        </Box>
+      </Box>
+
+      {/* 02 Editorial looks */}
+      <Box sx={{ mb: 10 }}>
+        <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", mb: 3 }}>
+          <Typography sx={{ fontSize: 18, color: "text.primary", fontFamily: "'Literata', Georgia, serif" }}>
+            <span style={{ fontSize: 13, fontWeight: 700, fontFamily: "Inter, sans-serif", letterSpacing: "0.05em", marginRight: "12px", color: "text.secondary" }}>
+              02
+            </span>
+            Editorial looks
+          </Typography>
+          <Typography sx={{ fontSize: 12, color: "text.secondary", letterSpacing: "0.05em", textTransform: "uppercase" }}>on-model · in context</Typography>
+        </Box>
+        
+        <Box sx={{ display: "flex", gap: 3 }}>
+          {variants.slice(1, 3).map((v, i) => (
+            <Box key={v.id} sx={{ flex: 1 }}>
+              <Box sx={{ position: "relative" }}>
+                <Box sx={{ position: "absolute", top: 12, left: 12, bgcolor: "rgba(0,0,0,0.6)", color: "#fff", px: 1, py: 0.5, borderRadius: "4px", fontSize: 10, fontWeight: 700 }}>
+                  0{i + 2}
+                </Box>
+                <img src={v.imageUrl} style={{ width: "100%", height: "auto", aspectRatio: "3/4", objectFit: "cover", borderRadius: "16px", display: "block" }} alt={v.title} />
+              </Box>
+            </Box>
+          ))}
         </Box>
       </Box>
 
@@ -127,14 +155,14 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
         
         <Box sx={{ display: "flex", gap: 3 }}>
           <Box sx={{ flex: 1 }}>
-            <img src={variants[0]?.imageUrl} style={{ width: "100%", height: "auto", display: "block" }} alt="Colorway 1" />
+            <img src={variants[0]?.imageUrl} style={{ width: "100%", height: "auto", aspectRatio: "3/4", objectFit: "cover", display: "block", borderRadius: "16px" }} alt="Colorway 1" />
             <Box sx={{ mt: 2 }}>
               <Typography sx={{ fontSize: 13, color: "text.primary", mb: 0.5 }}>Maillot — coral bloom</Typography>
               <Typography sx={{ fontSize: 12, color: "text.secondary" }}>Primary colorway</Typography>
             </Box>
           </Box>
           <Box sx={{ flex: 1 }}>
-            <img src={variants[4]?.imageUrl || variants[1]?.imageUrl} style={{ width: "100%", height: "auto", display: "block" }} alt="Colorway 2" />
+            <img src={variants[4]?.imageUrl || variants[1]?.imageUrl} style={{ width: "100%", height: "auto", aspectRatio: "3/4", objectFit: "cover", display: "block", borderRadius: "16px" }} alt="Colorway 2" />
             <Box sx={{ mt: 2 }}>
               <Typography sx={{ fontSize: 13, color: "text.primary", mb: 0.5 }}>Maillot — terracotta</Typography>
               <Typography sx={{ fontSize: 12, color: "text.secondary" }}>Alternate colorway</Typography>
@@ -148,9 +176,12 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
         <Typography sx={{ fontSize: 12, fontWeight: 600, color: "text.secondary", textTransform: "uppercase" }}>
           STAGE 03 — EDITORIAL
         </Typography>
-        <Typography sx={{ fontSize: 12, fontWeight: 600, color: "text.secondary", textTransform: "uppercase" }}>
+        <Button 
+          onClick={() => navigate("/app/workspaces")}
+          sx={{ fontSize: 12, fontWeight: 600, color: "primary.main", textTransform: "uppercase", "&:hover": { bgcolor: "transparent", color: "primary.dark" } }}
+        >
           COLLECTION DIRECTION COMPLETE ✓
-        </Typography>
+        </Button>
       </Box>
     </Box>
   );
