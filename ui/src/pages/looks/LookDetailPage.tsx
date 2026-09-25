@@ -319,6 +319,14 @@ export default function LookDetailPage() {
                     `Fiber "${f.value}"`,
                   )
                 }
+                onAddSilhouette={(s) =>
+                  requestRetailAdd(
+                    `silhouette:${s.value}`,
+                    "silhouette",
+                    { garment_type: s.value.toLowerCase(), flat_url: null },
+                    `Silhouette "${s.value}"`,
+                  )
+                }
               />
             </>
           ) : (
@@ -561,6 +569,7 @@ function ProductAnalysisCard({
   onAddColors: () => void;
   onAddPattern: (p: AnalysisPattern) => void;
   onAddFiber: (f: AnalysisFiber) => void;
+  onAddSilhouette: (s: AnalysisSilhouette) => void;
 }) {
   return (
     <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
@@ -649,7 +658,15 @@ function ProductAnalysisCard({
               <Typography sx={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.2em", color: "primary.main", mb: 2 }}>Silhouette</Typography>
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
                 {analysis.silhouettes!.map((s, i) => (
-                  <Chip key={i} label={s.value} size="small" sx={{ fontSize: 12, textTransform: "capitalize", bgcolor: "#faf8f7", borderColor: "#f0e4e2" }} variant="outlined" />
+                  <Box key={i} sx={{ display: "flex", alignItems: "center", gap: 0.75 }}>
+                    <Chip label={s.value} size="small" sx={{ fontSize: 12, textTransform: "capitalize", bgcolor: "#faf8f7", borderColor: "#f0e4e2" }} variant="outlined" />
+                    {canAdd && (
+                      <AddBtn
+                        onClick={() => onAddSilhouette(s)}
+                        loading={addingKey === `silhouette:${s.value}`}
+                      />
+                    )}
+                  </Box>
                 ))}
               </Box>
             </Paper>
