@@ -865,9 +865,10 @@ export default function WorkspaceCanvas() {
   const isGenerating = ws.status === "generating";
 
   return (
-    <Box sx={{ overflow: "hidden", width: "100%", height: "100%", pb: 8 }}>
+    <Box sx={{ overflow: "hidden", width: "100%", height: "100%" }}>
       <Box sx={{ 
         display: "flex", 
+        alignItems: "flex-start",
         width: "200%", 
         height: "100%",
         transform: stage === 1 ? "translateX(0)" : "translateX(-50%)", 

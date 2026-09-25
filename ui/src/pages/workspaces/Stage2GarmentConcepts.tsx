@@ -90,9 +90,9 @@ export function Stage2GarmentConcepts({ workspaceId }: { workspaceId?: string })
           </Box>
         )}
         {!isLoading && variants.map((variant, index) => (
-          <Box key={variant.id} sx={{ minWidth: 400, flexShrink: 0 }}>
+          <Box key={variant.id} sx={{ minWidth: 280, flexShrink: 0 }}>
             <Card sx={{ position: "relative", borderRadius: 0, boxShadow: "none", bgcolor: "transparent" }}>
-              <Box sx={{ position: "relative", aspectRatio: "4/5", overflow: "hidden", bgcolor: "#f5f0ef" }}>
+              <Box sx={{ position: "relative", aspectRatio: "4/5", overflow: "hidden", bgcolor: "#f5f0ef", borderRadius: "16px" }}>
                 <CardMedia
                   component="img"
                   image={variant.imageUrl}
