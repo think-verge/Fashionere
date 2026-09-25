@@ -742,6 +742,7 @@ export default function WorkspaceCanvas() {
 
   useEffect(() => {
     if (prevStatus === "generating" && ws?.status === "ready") {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setStage(2);
     }
     setPrevStatus(ws?.status);

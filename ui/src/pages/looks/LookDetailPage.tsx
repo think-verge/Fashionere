@@ -570,7 +570,7 @@ function ProductAnalysisCard({
   onAddColors: () => void;
   onAddPattern: (p: AnalysisPattern) => void;
   onAddFiber: (f: AnalysisFiber) => void;
-  onAddSilhouette: (s: AnalysisSilhouette) => void;
+  onAddSilhouette: (s: AnalysisItem) => void;
 }) {
   return (
     <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>

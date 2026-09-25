@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useRef } from "react";
-import { Box, Typography, Grid, IconButton, Card, CardMedia, CardContent, Chip } from "@mui/material";
+import { Box, Typography, IconButton, Card, CardMedia, CardContent, Chip } from "@mui/material";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../../lib/api/client";
 import { CircularProgress } from "@mui/material";
@@ -70,8 +71,8 @@ export function Stage2GarmentConcepts({ workspaceId, ws }: { workspaceId?: strin
 
   const getLabel = (el: any) => {
     if (el.element_type === "silhouette") return "Silhouette";
-    if (el.element_type === "pattern") return el.data?.pattern || "Pattern";
-    if (el.element_type === "fabric") return el.data?.fabric?.name || el.data?.fabric || "Fabric";
+    if (el.element_type === "pattern") return (el.data as any)?.pattern as string || "Pattern";
+    if (el.element_type === "fabric") return ((el.data as any)?.fabric as any)?.name as string || (el.data as any)?.fabric as string || "Fabric";
     return "";
   };
 
@@ -125,14 +126,14 @@ export function Stage2GarmentConcepts({ workspaceId, ws }: { workspaceId?: strin
         <Box sx={{ minWidth: 150 }}>
           <Typography sx={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.05em", color: "text.primary", mb: 1, textTransform: "uppercase" }}>PATTERN</Typography>
           {patterns.map((el: any) => (
-            <Typography key={el.element_id} sx={{ fontSize: 12, color: "text.secondary", mb: 0.5 }}>{getLabel(el)}</Typography>
+            <Typography key={el.element_id as string} sx={{ fontSize: 12, color: "text.secondary", mb: 0.5 }}>{getLabel(el)}</Typography>
           ))}
           {patterns.length === 0 && <Typography sx={{ fontSize: 12, color: "text.disabled" }}>None selected</Typography>}
         </Box>
         <Box sx={{ minWidth: 150 }}>
           <Typography sx={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.05em", color: "text.primary", mb: 1, textTransform: "uppercase" }}>MATERIAL</Typography>
           {materials.map((el: any) => (
-            <Typography key={el.element_id} sx={{ fontSize: 12, color: "text.secondary", mb: 0.5 }}>{getLabel(el)}</Typography>
+            <Typography key={el.element_id as string} sx={{ fontSize: 12, color: "text.secondary", mb: 0.5 }}>{getLabel(el)}</Typography>
           ))}
           {materials.length === 0 && <Typography sx={{ fontSize: 12, color: "text.disabled" }}>None selected</Typography>}
         </Box>
@@ -143,8 +144,8 @@ export function Stage2GarmentConcepts({ workspaceId, ws }: { workspaceId?: strin
         <SectionCarousel 
           key={idx} 
           section={section} 
-          idx={idx} 
           editVariant={editVariant} 
+          attachInventory={attachInventory}
         />
       ))}
 
@@ -162,7 +163,7 @@ export function Stage2GarmentConcepts({ workspaceId, ws }: { workspaceId?: strin
 }
 
 // Carousel Component for each section
-function SectionCarousel({ section, idx, editVariant }: any) {
+function SectionCarousel({ section, editVariant, attachInventory }: { section: any, editVariant: any, attachInventory: any }) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [selected, setSelected] = useState<Record<string, boolean>>({});
 
@@ -215,7 +216,7 @@ function SectionCarousel({ section, idx, editVariant }: any) {
           scrollbarWidth: "none",
         }}
       >
-        {section.images.map((img: any, i: number) => {
+        {(section.images as MockVariant[]).map((img: MockVariant, i: number) => {
           const isSelected = selected[img.id];
           return (
             <Box key={img.id} sx={{ minWidth: 320, flexShrink: 0, width: 320 }}>
@@ -265,7 +266,7 @@ function SectionCarousel({ section, idx, editVariant }: any) {
                     </IconButton>
                     <IconButton 
                       size="small" 
-                      onClick={(e) => { e.stopPropagation(); /* TODO: Inventory logic */ }}
+                      onClick={(e) => { e.stopPropagation(); (attachInventory as { mutate: (id: string) => void }).mutate(img.id); }}
                       sx={{ bgcolor: "rgba(255,255,255,0.9)", "&:hover": { bgcolor: "#fff" }, boxShadow: "0 2px 8px rgba(0,0,0,0.12)" }}
                       title="Attach Inventory"
                     >
