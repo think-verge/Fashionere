@@ -138,7 +138,7 @@ export async function listLooks(opts: {
   const { type, limit, cursor, brand, garment_type, search, sort } = opts;
 
   // Base type filter (used for total count too)
-  const typeFilter: Record<string, unknown> = {};
+  const typeFilter: Record<string, any> = {};
   if (type === "retail") {
     typeFilter["source.type"] = { $in: [...RETAIL_SOURCES] };
   } else if (type === "runway") {
@@ -197,7 +197,7 @@ export async function listLooks(opts: {
   const cursorOp = sortDirection === 1 ? "$gt" : "$lt";
 
   // Page filter adds cursor for pagination
-  const pageFilter: Record<string, unknown> = { ...typeFilter };
+  const pageFilter: Record<string, any> = { ...typeFilter };
   if (cursor) {
     const decodedId = decodeCursor(cursor);
     // _id is a string in canonical_looks — use string comparison for cursor pagination
