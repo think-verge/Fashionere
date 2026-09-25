@@ -51,7 +51,7 @@ interface Look {
   is_deconstructed?: boolean;
 }
 
-type AddingKey = "colors" | `pattern:${string}` | `fiber:${string}` | null;
+type AddingKey = "colors" | `pattern:${string}` | `fiber:${string}` | `silhouette:${string}` | null;
 
 export default function LookDetailPage() {
   const { lookId } = useParams<{ lookId: string }>();
@@ -63,7 +63,7 @@ export default function LookDetailPage() {
   const [addingKey, setAddingKey] = useState<AddingKey>(null);
   const [pendingRetail, setPendingRetail] = useState<{
     key: AddingKey;
-    elementType: "color" | "fabric" | "pattern";
+    elementType: "color" | "fabric" | "pattern" | "silhouette";
     data: Record<string, unknown>;
     label: string;
   } | null>(null);
@@ -90,7 +90,7 @@ export default function LookDetailPage() {
 
   function requestRetailAdd(
     key: AddingKey,
-    elementType: "color" | "fabric" | "pattern",
+    elementType: "color" | "fabric" | "pattern" | "silhouette",
     elementData: Record<string, unknown>,
     label: string,
   ) {
@@ -562,6 +562,7 @@ function ProductAnalysisCard({
   onAddColors,
   onAddPattern,
   onAddFiber,
+  onAddSilhouette,
 }: {
   analysis: LookAnalysis;
   canAdd: boolean;
@@ -569,7 +570,7 @@ function ProductAnalysisCard({
   onAddColors: () => void;
   onAddPattern: (p: AnalysisPattern) => void;
   onAddFiber: (f: AnalysisFiber) => void;
-  onAddSilhouette: (s: AnalysisSilhouette) => void;
+  onAddSilhouette: (s: AnalysisItem) => void;
 }) {
   return (
     <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
