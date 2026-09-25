@@ -1,5 +1,5 @@
 import { type ReactNode, useRef, useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, useSearchParams } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import {
   Box,
@@ -50,6 +50,21 @@ export function PageShell({ title, children }: Props) {
   const location = useLocation();
   const { user, logout, activeProject, setActiveProject } = useAuth();
   const qc = useQueryClient();
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const val = e.target.value;
+    if (location.pathname !== "/app/looks") {
+      navigate(`/app/looks?q=${encodeURIComponent(val)}`);
+      return;
+    }
+    if (val) {
+      searchParams.set("q", val);
+    } else {
+      searchParams.delete("q");
+    }
+    setSearchParams(searchParams);
+  };
 
   const [popoverOpen, setPopoverOpen] = useState(false);
   const [creating, setCreating] = useState(false);
@@ -344,32 +359,83 @@ export function PageShell({ title, children }: Props) {
         </Box>
       </Drawer>
 
-      <Box sx={{ flex: 1, display: "flex", flexDirection: "column", minWidth: 0 }}>
+      <Box sx={{ flex: 1, display: "flex", flexDirection: "column", minWidth: 0, position: "relative" }}>
         <AppBar
           position="sticky"
           elevation={0}
           sx={{
-            bgcolor: "rgba(255,248,247,0.85)",
-            backdropFilter: "blur(20px)",
-            WebkitBackdropFilter: "blur(20px)",
-            borderBottom: "1px solid #f0e4e2",
-            borderRadius: 0,
+            top: 0,
+            width: "100%",
+            bgcolor: "rgba(255, 255, 255, 0.65)",
+            backdropFilter: "blur(32px) saturate(180%)",
+            WebkitBackdropFilter: "blur(32px) saturate(180%)",
+            borderBottom: "1px solid rgba(255, 255, 255, 0.8)",
             color: "text.primary",
+            boxShadow: "0 12px 40px rgba(160, 140, 130, 0.08)",
+            zIndex: 1100,
+            transition: "all 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
           }}
         >
-          <Toolbar sx={{ px: { xs: 3, sm: 5 }, gap: 1 }}>
-            <Typography variant="body2" sx={{ color: "#999999", fontWeight: 400, fontSize: 13 }}>
+          <Toolbar sx={{ px: { xs: 3, sm: 4 }, minHeight: "56px !important", gap: 1.5 }}>
+            <Box
+              sx={{
+                width: 6,
+                height: 6,
+                borderRadius: "50%",
+                bgcolor: "primary.main",
+                boxShadow: "0 0 10px rgba(189,58,58,0.5)",
+              }}
+            />
+            <Typography variant="body2" sx={{ color: "#a59796", fontWeight: 600, fontSize: 13, letterSpacing: "0.05em" }}>
               FASHIONARE
             </Typography>
-            <Typography sx={{ color: "#dfbfbc", fontSize: 13 }}>/</Typography>
-            <Typography variant="body2" sx={{ color: "text.primary", fontWeight: 500, fontSize: 13 }}>
+            <Typography sx={{ color: "#e2d5d3", fontSize: 14 }}>/</Typography>
+            <Typography variant="body2" sx={{ color: "text.primary", fontWeight: 700, fontSize: 13, letterSpacing: "0.02em" }}>
               {title}
             </Typography>
+
+            <Box sx={{ flexGrow: 1 }} />
+            
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                bgcolor: "#ffffff",
+                border: "1px solid rgba(0,0,0,0.12)",
+                borderRadius: "20px",
+                px: 2,
+                py: 1,
+                width: { xs: "100%", sm: 320 },
+                gap: 1
+              }}
+            >
+              <SearchIcon sx={{ fontSize: 18, color: "text.secondary" }} />
+              <Box
+                component="input"
+                value={searchParams.get("q") || ""}
+                onChange={handleSearch}
+                placeholder="Search silhouette, fabric, color..."
+                sx={{
+                  border: "none",
+                  outline: "none",
+                  bgcolor: "transparent",
+                  width: "100%",
+                  fontSize: 15,
+                  fontFamily: "'Inter', -apple-system, sans-serif",
+                  fontWeight: 400,
+                  letterSpacing: "0.01em",
+                  color: "text.primary",
+                  "&::placeholder": {
+                    color: "text.secondary",
+                  }
+                }}
+              />
+            </Box>
           </Toolbar>
         </AppBar>
         <Box
           component="main"
-          sx={{ flex: 1, px: { xs: 3, sm: 5 }, py: 6, bgcolor: "background.default" }}
+          sx={{ flex: 1, px: { xs: 3, sm: 5 }, pt: 6, pb: 6, bgcolor: "#f7f3f1" }}
         >
           <Box sx={{ maxWidth: 1280, mx: "auto" }}>
             {children}
