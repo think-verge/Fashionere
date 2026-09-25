@@ -150,27 +150,47 @@ export async function listLooks(opts: {
   }
 
   // If garment_type filter is set, find look_ids from deconstructions first
-  let garmentTypeIds: string[] | undefined;
   if (garment_type) {
-    const garmentTypes = garment_type.split(",").map(gt => new RegExp(`^${gt.trim().toLowerCase()}$`, "i"));
+    const types = garment_type.split(",").map(gt => gt.trim());
+    const exactRegexes = types.map(gt => new RegExp(`^${gt}$`, "i"));
+    const partialRegexes = types.map(gt => new RegExp(gt, "i"));
     const matching = await deconCol()
-      .find({ "garments.garment_type": { $in: garmentTypes } })
+      .find({
+        $or: [
+          { "garments.garment_type": { $in: exactRegexes } },
+          { "garments.piece": { $in: partialRegexes } }
+        ]
+      })
       .project({ look_id: 1 })
       .toArray();
-    garmentTypeIds = matching.map((d) => String(d.look_id));
-    typeFilter._id = { $in: garmentTypeIds };
+    const garmentTypeIds = matching.map((d) => String(d.look_id));
+    
+    if (!typeFilter.$and) typeFilter.$and = [];
+    typeFilter.$and.push({
+      $or: [
+        { _id: { $in: garmentTypeIds } },
+        { name: { $in: partialRegexes } },
+        { "native_text.product_name": { $in: partialRegexes } },
+        { tags: { $in: exactRegexes } },
+        { "native_text.keywords": { $in: exactRegexes } },
+        { "context.category_path": { $in: exactRegexes } }
+      ]
+    });
   }
 
   if (search) {
     const q = new RegExp(search.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), "i");
-    typeFilter.$or = [
-      { brand: q },
-      { "context.brand": q },
-      { name: q },
-      { "native_text.product_name": q },
-      { "native_text.keywords": q },
-      { season: q }
-    ];
+    if (!typeFilter.$and) typeFilter.$and = [];
+    typeFilter.$and.push({
+      $or: [
+        { brand: q },
+        { "context.brand": q },
+        { name: q },
+        { "native_text.product_name": q },
+        { "native_text.keywords": q },
+        { season: q }
+      ]
+    });
   }
 
   const sortDirection = sort === "latest" ? -1 : 1;
@@ -181,11 +201,7 @@ export async function listLooks(opts: {
   if (cursor) {
     const decodedId = decodeCursor(cursor);
     // _id is a string in canonical_looks — use string comparison for cursor pagination
-    if (garmentTypeIds) {
-      pageFilter._id = { $in: garmentTypeIds, [cursorOp]: decodedId };
-    } else {
-      pageFilter._id = { [cursorOp]: decodedId };
-    }
+    pageFilter._id = { [cursorOp]: decodedId };
   }
 
   const [total, docs] = await Promise.all([
