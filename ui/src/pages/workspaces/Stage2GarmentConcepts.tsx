@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useRef } from "react";
-import { Box, Typography, IconButton, Card, CardMedia, CardContent, Chip, Skeleton } from "@mui/material";
+import { Box, Typography, IconButton, Card, CardMedia, CardContent, Chip, Skeleton, TextField, Select, MenuItem, Button, Popover } from "@mui/material";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../../lib/api/client";
 import { CircularProgress } from "@mui/material";
@@ -19,6 +19,8 @@ interface MockVariant {
 
 export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId?: string; ws?: any; onNext?: () => void }) {
   const qc = useQueryClient();
+  const [editPrompt, setEditPrompt] = useState("");
+  const [editType, setEditType] = useState("all");
 
   const { data: variants = [], isLoading } = useQuery<MockVariant[]>({
     queryKey: ["workspace", workspaceId, "variants"],
@@ -190,10 +192,28 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
   );
 }
 
-// Carousel Component for each section
 function SectionCarousel({ section, editVariant, attachInventory, isCarousel = true }: { section: any, editVariant: any, attachInventory: any, isCarousel?: boolean }) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [selected, setSelected] = useState<Record<string, boolean>>({});
+
+  // Popover state
+  const [editAnchorEl, setEditAnchorEl] = useState<HTMLElement | null>(null);
+  const [editImgId, setEditImgId] = useState<string | null>(null);
+  const [editPrompt, setEditPrompt] = useState("");
+  const [editType, setEditType] = useState("all");
+
+  const handleEditClick = (e: React.MouseEvent<HTMLElement>, imgId: string) => {
+    e.stopPropagation();
+    setEditAnchorEl(e.currentTarget);
+    setEditImgId(imgId);
+  };
+
+  const closeEdit = () => {
+    setEditAnchorEl(null);
+    setEditImgId(null);
+    setEditPrompt("");
+    setEditType("all");
+  };
 
   const toggleSelect = (id: string) => {
     setSelected(prev => ({ ...prev, [id]: !prev[id] }));
@@ -295,7 +315,7 @@ function SectionCarousel({ section, editVariant, attachInventory, isCarousel = t
                     <Box sx={{ position: "absolute", top: 12, right: 12, display: "flex", gap: 1 }}>
                       <IconButton 
                         size="small" 
-                        onClick={(e) => { e.stopPropagation(); editVariant.mutate(img.id); }}
+                        onClick={(e) => handleEditClick(e, img.id)}
                         sx={{ bgcolor: "rgba(255,255,255,0.9)", "&:hover": { bgcolor: "#fff" }, boxShadow: "0 2px 8px rgba(0,0,0,0.12)" }}
                         title="Edit Variant"
                       >
@@ -342,6 +362,106 @@ function SectionCarousel({ section, editVariant, attachInventory, isCarousel = t
           );
         })}
       </Box>
+
+      {/* Popover Edit Form */}
+      <Popover
+        open={Boolean(editAnchorEl)}
+        anchorEl={editAnchorEl}
+        onClose={closeEdit}
+        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+        transformOrigin={{ vertical: "top", horizontal: "center" }}
+        PaperProps={{
+          sx: {
+            mt: 1,
+            p: 2.5,
+            width: 320,
+            borderRadius: "16px",
+            border: "1px solid #f0e4e2",
+            boxShadow: "0 8px 32px rgba(36,25,24,0.12)",
+          }
+        }}
+      >
+        <Typography sx={{ fontSize: 13, fontWeight: 700, letterSpacing: "0.05em", color: "text.primary", mb: 2, textTransform: "uppercase" }}>
+          Edit AI Prompt
+        </Typography>
+        <TextField
+          fullWidth
+          placeholder='e.g. "Make the sleeves longer..."'
+          value={editPrompt}
+          onChange={(e) => setEditPrompt(e.target.value)}
+          variant="outlined"
+          size="small"
+          multiline
+          rows={2}
+          sx={{
+            mb: 2,
+            "& .MuiOutlinedInput-root": {
+              borderRadius: "8px",
+              bgcolor: "#faf8f7",
+              "& fieldset": { borderColor: "#e8dedd" },
+              "&:hover fieldset": { borderColor: "#dfbfbc" },
+              "&.Mui-focused fieldset": { borderColor: "primary.main" },
+            }
+          }}
+        />
+        <Typography sx={{ fontSize: 11, fontWeight: 700, color: "text.secondary", mb: 1, textTransform: "uppercase" }}>
+          Current Components
+        </Typography>
+        <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap", mb: 2 }}>
+          <Chip label="Silk" size="small" onDelete={() => {}} sx={{ borderRadius: "6px", fontSize: 11 }} />
+          <Chip label="Floral" size="small" onDelete={() => {}} sx={{ borderRadius: "6px", fontSize: 11 }} />
+          <Chip label="V-Neck" size="small" onDelete={() => {}} sx={{ borderRadius: "6px", fontSize: 11 }} />
+        </Box>
+        <Typography sx={{ fontSize: 11, fontWeight: 700, color: "text.secondary", mb: 1, textTransform: "uppercase" }}>
+          Add Component
+        </Typography>
+        <Select
+          fullWidth
+          value={editType}
+          onChange={(e) => setEditType(e.target.value)}
+          size="small"
+          sx={{ 
+            mb: 3,
+            borderRadius: "8px", 
+            bgcolor: "#faf8f7",
+            "& fieldset": { borderColor: "#e8dedd" },
+            "&:hover fieldset": { borderColor: "#dfbfbc" }
+          }}
+        >
+          <MenuItem value="all">Select a component type</MenuItem>
+          <MenuItem value="silhouette">Silhouette</MenuItem>
+          <MenuItem value="palette">Palette</MenuItem>
+          <MenuItem value="fabric">Fabric</MenuItem>
+          <MenuItem value="pattern">Pattern</MenuItem>
+        </Select>
+        <Box sx={{ display: "flex", justifyContent: "space-between", gap: 1 }}>
+          <Button
+            variant="outlined"
+            onClick={closeEdit}
+            sx={{ flex: 1, borderRadius: "8px", color: "text.secondary", borderColor: "#f0e4e2", "&:hover": { borderColor: "text.secondary", bgcolor: "transparent" } }}
+          >
+            Cancel
+          </Button>
+          <Button
+            variant="contained"
+            disableElevation
+            onClick={() => {
+              if (editImgId) editVariant.mutate(editImgId);
+              closeEdit();
+            }}
+            sx={{
+              flex: 1,
+              borderRadius: "8px",
+              bgcolor: "text.primary",
+              color: "#fff",
+              fontWeight: 600,
+              "&:hover": { bgcolor: "primary.main" }
+            }}
+          >
+            Generate ✨
+          </Button>
+        </Box>
+      </Popover>
     </Box>
   );
 }
