@@ -138,7 +138,7 @@ export async function listLooks(opts: {
   const { type, limit, cursor, brand, garment_type, search, sort } = opts;
 
   // Base type filter (used for total count too)
-  const typeFilter: Record<string, unknown> = {};
+  const typeFilter: Record<string, any> = {};
   if (type === "retail") {
     typeFilter["source.type"] = { $in: [...RETAIL_SOURCES] };
   } else if (type === "runway") {
@@ -150,42 +150,58 @@ export async function listLooks(opts: {
   }
 
   // If garment_type filter is set, find look_ids from deconstructions first
-  let garmentTypeIds: string[] | undefined;
   if (garment_type) {
-    const garmentTypes = garment_type.split(",").map(gt => new RegExp(`^${gt.trim().toLowerCase()}$`, "i"));
+    const types = garment_type.split(",").map(gt => gt.trim());
+    const exactRegexes = types.map(gt => new RegExp(`^${gt}$`, "i"));
+    const partialRegexes = types.map(gt => new RegExp(gt, "i"));
     const matching = await deconCol()
-      .find({ "garments.garment_type": { $in: garmentTypes } })
+      .find({
+        $or: [
+          { "garments.garment_type": { $in: exactRegexes } },
+          { "garments.piece": { $in: partialRegexes } }
+        ]
+      })
       .project({ look_id: 1 })
       .toArray();
-    garmentTypeIds = matching.map((d) => String(d.look_id));
-    typeFilter._id = { $in: garmentTypeIds };
+    const garmentTypeIds = matching.map((d) => String(d.look_id));
+    
+    if (!typeFilter.$and) typeFilter.$and = [];
+    typeFilter.$and.push({
+      $or: [
+        { _id: { $in: garmentTypeIds } },
+        { name: { $in: partialRegexes } },
+        { "native_text.product_name": { $in: partialRegexes } },
+        { tags: { $in: exactRegexes } },
+        { "native_text.keywords": { $in: exactRegexes } },
+        { "context.category_path": { $in: exactRegexes } }
+      ]
+    });
   }
 
   if (search) {
     const q = new RegExp(search.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), "i");
-    typeFilter.$or = [
-      { brand: q },
-      { "context.brand": q },
-      { name: q },
-      { "native_text.product_name": q },
-      { "native_text.keywords": q },
-      { season: q }
-    ];
+    if (!typeFilter.$and) typeFilter.$and = [];
+    typeFilter.$and.push({
+      $or: [
+        { brand: q },
+        { "context.brand": q },
+        { name: q },
+        { "native_text.product_name": q },
+        { "native_text.keywords": q },
+        { season: q }
+      ]
+    });
   }
 
   const sortDirection = sort === "latest" ? -1 : 1;
   const cursorOp = sortDirection === 1 ? "$gt" : "$lt";
 
   // Page filter adds cursor for pagination
-  const pageFilter: Record<string, unknown> = { ...typeFilter };
+  const pageFilter: Record<string, any> = { ...typeFilter };
   if (cursor) {
     const decodedId = decodeCursor(cursor);
     // _id is a string in canonical_looks — use string comparison for cursor pagination
-    if (garmentTypeIds) {
-      pageFilter._id = { $in: garmentTypeIds, [cursorOp]: decodedId };
-    } else {
-      pageFilter._id = { [cursorOp]: decodedId };
-    }
+    pageFilter._id = { [cursorOp]: decodedId };
   }
 
   const [total, docs] = await Promise.all([
