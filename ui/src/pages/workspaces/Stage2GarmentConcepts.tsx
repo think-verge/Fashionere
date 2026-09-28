@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useRef } from "react";
-import { Box, Typography, IconButton, Card, CardMedia, CardContent, Chip } from "@mui/material";
+import { Box, Typography, IconButton, Card, CardMedia, CardContent, Chip, Skeleton } from "@mui/material";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../../lib/api/client";
 import { CircularProgress } from "@mui/material";
@@ -14,6 +14,7 @@ interface MockVariant {
   imageUrl: string;
   title: string;
   materials: string;
+  isSkeleton?: boolean;
 }
 
 export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId?: string; ws?: any; onNext?: () => void }) {
@@ -44,13 +45,17 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
     onSuccess: () => qc.invalidateQueries({ queryKey: ["workspace", workspaceId, "variants"] }),
   });
 
-  if (isLoading) {
-    return (
-      <Box sx={{ p: 4, display: "flex", justifyContent: "center", width: "100%", mt: 10 }}>
-        <CircularProgress />
-      </Box>
-    );
-  }
+  // Handle loading with skeletons
+  const showSkeleton = isLoading || ws?.status === "generating";
+  const displayVariants = showSkeleton
+    ? Array.from({ length: 12 }).map((_, i) => ({
+        id: `skeleton-${i}`,
+        imageUrl: "",
+        title: "",
+        materials: "",
+        isSkeleton: true,
+      }))
+    : variants;
 
   // Extract items for CARRIED FROM STAGE 01
   const palettes = ws?.elements?.filter((e: any) => e.element_type === "color") || [];
@@ -77,9 +82,9 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
   };
 
   const sections = [
-    { title: "01 Garment concepts", subtitle: "flat-lay · no body", images: variants.slice(0, 4) },
-    { title: "02 On the form", subtitle: "ghost mannequin", images: variants.slice(4, 8) },
-    { title: "03 Construction details", subtitle: "close-up", images: variants.slice(8, 12) },
+    { title: "01 Garment concepts", subtitle: "flat-lay · no body", images: displayVariants.slice(0, 4) },
+    { title: "02 On the form", subtitle: "ghost mannequin", images: displayVariants.slice(4, 7) },
+    { title: "03 Construction details", subtitle: "close-up", images: displayVariants.slice(7, 10) },
   ];
 
   return (
@@ -111,31 +116,53 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
       <Box sx={{ display: "flex", flexWrap: "wrap", gap: 6, mb: 4 }}>
         <Box sx={{ minWidth: 150 }}>
           <Typography sx={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.05em", color: "text.primary", mb: 1, textTransform: "uppercase" }}>PALETTE</Typography>
-          <Box sx={{ display: "flex", flexWrap: "wrap" }}>
-            {palettes.map(renderColor)}
-            {palettes.length === 0 && <Typography sx={{ fontSize: 12, color: "text.disabled" }}>None selected</Typography>}
-          </Box>
+          {showSkeleton ? (
+            <Skeleton variant="text" width={100} height={24} />
+          ) : (
+            <Box sx={{ display: "flex", flexWrap: "wrap" }}>
+              {palettes.map(renderColor)}
+              {palettes.length === 0 && <Typography sx={{ fontSize: 12, color: "text.disabled" }}>None selected</Typography>}
+            </Box>
+          )}
         </Box>
         <Box sx={{ minWidth: 150 }}>
           <Typography sx={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.05em", color: "text.primary", mb: 1, textTransform: "uppercase" }}>SILHOUETTE</Typography>
-          {silhouettes.map((el: any) => (
-            <Typography key={el.element_id} sx={{ fontSize: 12, color: "text.secondary", mb: 0.5 }}>{getLabel(el)}</Typography>
-          ))}
-          {silhouettes.length === 0 && <Typography sx={{ fontSize: 12, color: "text.disabled" }}>None selected</Typography>}
+          {showSkeleton ? (
+            <Skeleton variant="text" width={100} height={24} />
+          ) : (
+            <>
+              {silhouettes.map((el: any) => (
+                <Typography key={el.element_id} sx={{ fontSize: 12, color: "text.secondary", mb: 0.5 }}>{getLabel(el)}</Typography>
+              ))}
+              {silhouettes.length === 0 && <Typography sx={{ fontSize: 12, color: "text.disabled" }}>None selected</Typography>}
+            </>
+          )}
         </Box>
         <Box sx={{ minWidth: 150 }}>
           <Typography sx={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.05em", color: "text.primary", mb: 1, textTransform: "uppercase" }}>PATTERN</Typography>
-          {patterns.map((el: any) => (
-            <Typography key={el.element_id as string} sx={{ fontSize: 12, color: "text.secondary", mb: 0.5 }}>{getLabel(el)}</Typography>
-          ))}
-          {patterns.length === 0 && <Typography sx={{ fontSize: 12, color: "text.disabled" }}>None selected</Typography>}
+          {showSkeleton ? (
+            <Skeleton variant="text" width={100} height={24} />
+          ) : (
+            <>
+              {patterns.map((el: any) => (
+                <Typography key={el.element_id as string} sx={{ fontSize: 12, color: "text.secondary", mb: 0.5 }}>{getLabel(el)}</Typography>
+              ))}
+              {patterns.length === 0 && <Typography sx={{ fontSize: 12, color: "text.disabled" }}>None selected</Typography>}
+            </>
+          )}
         </Box>
         <Box sx={{ minWidth: 150 }}>
           <Typography sx={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.05em", color: "text.primary", mb: 1, textTransform: "uppercase" }}>MATERIAL</Typography>
-          {materials.map((el: any) => (
-            <Typography key={el.element_id as string} sx={{ fontSize: 12, color: "text.secondary", mb: 0.5 }}>{getLabel(el)}</Typography>
-          ))}
-          {materials.length === 0 && <Typography sx={{ fontSize: 12, color: "text.disabled" }}>None selected</Typography>}
+          {showSkeleton ? (
+            <Skeleton variant="text" width={100} height={24} />
+          ) : (
+            <>
+              {materials.map((el: any) => (
+                <Typography key={el.element_id as string} sx={{ fontSize: 12, color: "text.secondary", mb: 0.5 }}>{getLabel(el)}</Typography>
+              ))}
+              {materials.length === 0 && <Typography sx={{ fontSize: 12, color: "text.disabled" }}>None selected</Typography>}
+            </>
+          )}
         </Box>
       </Box>
 
@@ -146,6 +173,7 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
           section={section} 
           editVariant={editVariant} 
           attachInventory={attachInventory}
+          isCarousel={idx === 0}
         />
       ))}
 
@@ -163,7 +191,7 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
 }
 
 // Carousel Component for each section
-function SectionCarousel({ section, editVariant, attachInventory }: { section: any, editVariant: any, attachInventory: any }) {
+function SectionCarousel({ section, editVariant, attachInventory, isCarousel = true }: { section: any, editVariant: any, attachInventory: any, isCarousel?: boolean }) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [selected, setSelected] = useState<Record<string, boolean>>({});
 
@@ -193,22 +221,25 @@ function SectionCarousel({ section, editVariant, attachInventory }: { section: a
           </Typography>
           <Typography sx={{ fontSize: 12, color: "text.secondary" }}>{section.subtitle}</Typography>
         </Box>
-        <Box sx={{ display: "flex", gap: 1 }}>
-          <IconButton onClick={scrollLeft} size="small" sx={{ border: "1px solid #f0e4e2" }}>
-            <ChevronLeftIcon />
-          </IconButton>
-          <IconButton onClick={scrollRight} size="small" sx={{ border: "1px solid #f0e4e2" }}>
-            <ChevronRightIcon />
-          </IconButton>
-        </Box>
+        {isCarousel && (
+          <Box sx={{ display: "flex", gap: 1 }}>
+            <IconButton onClick={scrollLeft} size="small" sx={{ border: "1px solid #f0e4e2" }}>
+              <ChevronLeftIcon />
+            </IconButton>
+            <IconButton onClick={scrollRight} size="small" sx={{ border: "1px solid #f0e4e2" }}>
+              <ChevronRightIcon />
+            </IconButton>
+          </Box>
+        )}
       </Box>
 
       <Box
-        ref={scrollRef}
+        ref={isCarousel ? scrollRef : undefined}
         sx={{
           display: "flex",
           gap: 3,
-          overflowX: "auto",
+          overflowX: isCarousel ? "auto" : "visible",
+          flexWrap: isCarousel ? "nowrap" : "wrap",
           pb: 2,
           pt: 1,
           px: 1,
@@ -232,19 +263,23 @@ function SectionCarousel({ section, editVariant, attachInventory }: { section: a
                 cursor: "pointer",
                 transition: "all 0.2s ease"
               }}
-              onClick={() => toggleSelect(img.id)}
+              onClick={() => { if (!img.isSkeleton) toggleSelect(img.id); }}
               >
                 <Box sx={{ position: "relative", aspectRatio: "4/5", overflow: "hidden", bgcolor: "#f5f0ef" }}>
-                  <CardMedia
-                    component="img"
-                    image={img.imageUrl}
-                    sx={{ 
-                      position: "absolute", top: 0, left: 0,
-                      width: "100%", height: "100%", objectFit: "cover",
-                      opacity: editVariant.isPending ? 0.5 : 1,
-                      transition: "opacity 0.3s"
-                    }}
-                  />
+                  {img.isSkeleton ? (
+                    <Skeleton variant="rectangular" width="100%" height="100%" sx={{ position: "absolute", top: 0, left: 0 }} />
+                  ) : (
+                    <CardMedia
+                      component="img"
+                      image={img.imageUrl}
+                      sx={{ 
+                        position: "absolute", top: 0, left: 0,
+                        width: "100%", height: "100%", objectFit: "cover",
+                        opacity: editVariant.isPending ? 0.5 : 1,
+                        transition: "opacity 0.3s"
+                      }}
+                    />
+                  )}
                   
                   <Chip 
                     label={`0${i + 1}`} 
@@ -256,38 +291,51 @@ function SectionCarousel({ section, editVariant, attachInventory }: { section: a
                     }} 
                   />
 
-                  <Box sx={{ position: "absolute", top: 12, right: 12, display: "flex", gap: 1 }}>
-                    <IconButton 
-                      size="small" 
-                      onClick={(e) => { e.stopPropagation(); editVariant.mutate(img.id); }}
-                      sx={{ bgcolor: "rgba(255,255,255,0.9)", "&:hover": { bgcolor: "#fff" }, boxShadow: "0 2px 8px rgba(0,0,0,0.12)" }}
-                      title="Edit Variant"
-                    >
-                      <EditIcon fontSize="small" sx={{ color: "text.primary" }} />
-                    </IconButton>
-                    <IconButton 
-                      size="small" 
-                      onClick={(e) => { e.stopPropagation(); (attachInventory as { mutate: (id: string) => void }).mutate(img.id); }}
-                      sx={{ bgcolor: "rgba(255,255,255,0.9)", "&:hover": { bgcolor: "#fff" }, boxShadow: "0 2px 8px rgba(0,0,0,0.12)" }}
-                      title="Attach Inventory"
-                    >
-                      <InventoryIcon fontSize="small" sx={{ color: "text.primary" }} />
-                    </IconButton>
-                  </Box>
+                  {!img.isSkeleton && (
+                    <Box sx={{ position: "absolute", top: 12, right: 12, display: "flex", gap: 1 }}>
+                      <IconButton 
+                        size="small" 
+                        onClick={(e) => { e.stopPropagation(); editVariant.mutate(img.id); }}
+                        sx={{ bgcolor: "rgba(255,255,255,0.9)", "&:hover": { bgcolor: "#fff" }, boxShadow: "0 2px 8px rgba(0,0,0,0.12)" }}
+                        title="Edit Variant"
+                      >
+                        <EditIcon fontSize="small" sx={{ color: "text.primary" }} />
+                      </IconButton>
+                      <IconButton 
+                        size="small" 
+                        onClick={(e) => { e.stopPropagation(); (attachInventory as { mutate: (id: string) => void }).mutate(img.id); }}
+                        sx={{ bgcolor: "rgba(255,255,255,0.9)", "&:hover": { bgcolor: "#fff" }, boxShadow: "0 2px 8px rgba(0,0,0,0.12)" }}
+                        title="Attach Inventory"
+                      >
+                        <InventoryIcon fontSize="small" sx={{ color: "text.primary" }} />
+                      </IconButton>
+                    </Box>
+                  )}
                   
-                  <Box sx={{ 
-                    position: "absolute", bottom: 12, right: 12, 
-                    width: 24, height: 24, borderRadius: "50%", 
-                    border: isSelected ? "none" : "2px solid rgba(255,255,255,0.8)",
-                    bgcolor: isSelected ? "#000" : "rgba(0,0,0,0.2)",
-                    display: "flex", alignItems: "center", justifyContent: "center"
-                  }}>
-                    {isSelected && <Box sx={{ width: 10, height: 10, borderRadius: "50%", bgcolor: "#fff" }} />}
-                  </Box>
+                  {!img.isSkeleton && (
+                    <Box sx={{ 
+                      position: "absolute", bottom: 12, right: 12, 
+                      width: 24, height: 24, borderRadius: "50%", 
+                      border: isSelected ? "none" : "2px solid rgba(255,255,255,0.8)",
+                      bgcolor: isSelected ? "#000" : "rgba(0,0,0,0.2)",
+                      display: "flex", alignItems: "center", justifyContent: "center"
+                    }}>
+                      {isSelected && <Box sx={{ width: 10, height: 10, borderRadius: "50%", bgcolor: "#fff" }} />}
+                    </Box>
+                  )}
                 </Box>
                 <CardContent sx={{ px: 2, py: 2.5 }}>
-                  <Typography sx={{ fontWeight: 600, fontSize: 14, mb: 0.5, color: "text.primary" }}>{img.title}</Typography>
-                  <Typography sx={{ fontSize: 12, color: "text.secondary" }}>{img.materials}</Typography>
+                  {img.isSkeleton ? (
+                    <>
+                      <Skeleton variant="text" width="60%" height={20} sx={{ mb: 0.5 }} />
+                      <Skeleton variant="text" width="40%" height={16} />
+                    </>
+                  ) : (
+                    <>
+                      <Typography sx={{ fontWeight: 600, fontSize: 14, mb: 0.5, color: "text.primary" }}>{img.title}</Typography>
+                      <Typography sx={{ fontSize: 12, color: "text.secondary" }}>{img.materials}</Typography>
+                    </>
+                  )}
                 </CardContent>
               </Card>
             </Box>

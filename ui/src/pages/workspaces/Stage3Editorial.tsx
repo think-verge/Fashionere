@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography, Button, Skeleton } from "@mui/material";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "../../lib/api/client";
 import { CircularProgress } from "@mui/material";
@@ -10,6 +10,7 @@ interface MockVariant {
   imageUrl: string;
   title: string;
   materials: string;
+  isSkeleton?: boolean;
 }
 
 export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?: any }) {
@@ -23,13 +24,16 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
     enabled: !!workspaceId,
   });
 
-  if (isLoading) {
-    return (
-      <Box sx={{ p: 4, display: "flex", justifyContent: "center", width: "100%", mt: 10 }}>
-        <CircularProgress />
-      </Box>
-    );
-  }
+  const showSkeleton = isLoading || ws?.status === "generating";
+  const displayVariants = showSkeleton
+    ? Array.from({ length: 6 }).map((_, i) => ({
+        id: `skeleton-${i}`,
+        imageUrl: "",
+        title: "",
+        materials: "",
+        isSkeleton: true,
+      }))
+    : variants;
 
   return (
     <Box sx={{ mt: 1, mb: 4, maxWidth: "1200px" }}>
@@ -60,28 +64,32 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
       <Box sx={{ display: "flex", flexWrap: "wrap", gap: 6, mb: 8 }}>
         <Box sx={{ minWidth: 150 }}>
           <Typography sx={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.05em", color: "text.primary", mb: 1, textTransform: "uppercase" }}>HERO GARMENT</Typography>
-          <Typography sx={{ fontSize: 12, color: "text.secondary" }}>High-leg maillot</Typography>
+          {showSkeleton ? <Skeleton variant="text" width={100} height={20} /> : <Typography sx={{ fontSize: 12, color: "text.secondary" }}>High-leg maillot</Typography>}
         </Box>
         <Box sx={{ minWidth: 150 }}>
           <Typography sx={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.05em", color: "text.primary", mb: 1, textTransform: "uppercase" }}>SECOND LOOK</Typography>
-          <Typography sx={{ fontSize: 12, color: "text.secondary" }}>Wrap sarong dress</Typography>
+          {showSkeleton ? <Skeleton variant="text" width={100} height={20} /> : <Typography sx={{ fontSize: 12, color: "text.secondary" }}>Wrap sarong dress</Typography>}
         </Box>
         <Box sx={{ minWidth: 150 }}>
           <Typography sx={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.05em", color: "text.primary", mb: 1, textTransform: "uppercase" }}>FABRIC</Typography>
-          <Typography sx={{ fontSize: 12, color: "text.secondary" }}>Crinkle seersucker</Typography>
+          {showSkeleton ? <Skeleton variant="text" width={100} height={20} /> : <Typography sx={{ fontSize: 12, color: "text.secondary" }}>Crinkle seersucker</Typography>}
         </Box>
         <Box sx={{ minWidth: 150 }}>
           <Typography sx={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.05em", color: "text.primary", mb: 1, textTransform: "uppercase" }}>COLORWAYS</Typography>
-          <Box sx={{ display: "flex", gap: 2 }}>
-            <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
-              <Box sx={{ width: 14, height: 14, borderRadius: "50%", bgcolor: "#E28B78", border: "1px solid rgba(0,0,0,0.1)" }} />
-              <Typography sx={{ fontSize: 12, color: "text.secondary" }}>Coral bloom</Typography>
+          {showSkeleton ? (
+            <Skeleton variant="text" width={150} height={20} />
+          ) : (
+            <Box sx={{ display: "flex", gap: 2 }}>
+              <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
+                <Box sx={{ width: 14, height: 14, borderRadius: "50%", bgcolor: "#E28B78", border: "1px solid rgba(0,0,0,0.1)" }} />
+                <Typography sx={{ fontSize: 12, color: "text.secondary" }}>Coral bloom</Typography>
+              </Box>
+              <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
+                <Box sx={{ width: 14, height: 14, borderRadius: "50%", bgcolor: "#C26D4D", border: "1px solid rgba(0,0,0,0.1)" }} />
+                <Typography sx={{ fontSize: 12, color: "text.secondary" }}>Terracotta</Typography>
+              </Box>
             </Box>
-            <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
-              <Box sx={{ width: 14, height: 14, borderRadius: "50%", bgcolor: "#C26D4D", border: "1px solid rgba(0,0,0,0.1)" }} />
-              <Typography sx={{ fontSize: 12, color: "text.secondary" }}>Terracotta</Typography>
-            </Box>
-          </Box>
+          )}
         </Box>
       </Box>
 
@@ -98,8 +106,12 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
         </Box>
         
         <Box sx={{ display: "flex", flexDirection: { xs: "column", md: "row" }, gap: 4, alignItems: "center" }}>
-          <Box sx={{ flex: 1, width: "100%" }}>
-             <img src={variants[0]?.imageUrl} style={{ width: "100%", height: "auto", aspectRatio: "3/4", objectFit: "cover", display: "block", borderRadius: "16px" }} alt="Campaign look" />
+          <Box sx={{ flex: 1, width: "100%", position: "relative" }}>
+             {displayVariants[0]?.isSkeleton ? (
+               <Skeleton variant="rectangular" sx={{ width: "100%", height: "auto", aspectRatio: "3/4", display: "block", borderRadius: "16px" }} />
+             ) : (
+               <img src={displayVariants[0]?.imageUrl} style={{ width: "100%", height: "auto", aspectRatio: "3/4", objectFit: "cover", display: "block", borderRadius: "16px" }} alt="Campaign look" />
+             )}
           </Box>
           <Box sx={{ flex: 1 }}>
             <Typography sx={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.05em", color: "text.secondary", textTransform: "uppercase", mb: 2 }}>
@@ -128,13 +140,17 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
         </Box>
         
         <Box sx={{ display: "flex", gap: 3 }}>
-          {variants.slice(1, 3).map((v, i) => (
+          {displayVariants.slice(1, 3).map((v, i) => (
             <Box key={v.id} sx={{ flex: 1 }}>
               <Box sx={{ position: "relative" }}>
-                <Box sx={{ position: "absolute", top: 12, left: 12, bgcolor: "rgba(0,0,0,0.6)", color: "#fff", px: 1, py: 0.5, borderRadius: "4px", fontSize: 10, fontWeight: 700 }}>
+                <Box sx={{ position: "absolute", top: 12, left: 12, bgcolor: "rgba(0,0,0,0.6)", color: "#fff", px: 1, py: 0.5, borderRadius: "4px", fontSize: 10, fontWeight: 700, zIndex: 1 }}>
                   0{i + 2}
                 </Box>
-                <img src={v.imageUrl} style={{ width: "100%", height: "auto", aspectRatio: "3/4", objectFit: "cover", borderRadius: "16px", display: "block" }} alt={v.title} />
+                {v.isSkeleton ? (
+                  <Skeleton variant="rectangular" sx={{ width: "100%", height: "auto", aspectRatio: "3/4", borderRadius: "16px", display: "block" }} />
+                ) : (
+                  <img src={v.imageUrl} style={{ width: "100%", height: "auto", aspectRatio: "3/4", objectFit: "cover", borderRadius: "16px", display: "block" }} alt={v.title || "Editorial look"} />
+                )}
               </Box>
             </Box>
           ))}
@@ -155,14 +171,22 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
         
         <Box sx={{ display: "flex", gap: 3 }}>
           <Box sx={{ flex: 1 }}>
-            <img src={variants[0]?.imageUrl} style={{ width: "100%", height: "auto", aspectRatio: "3/4", objectFit: "cover", display: "block", borderRadius: "16px" }} alt="Colorway 1" />
+            {displayVariants[0]?.isSkeleton ? (
+              <Skeleton variant="rectangular" sx={{ width: "100%", height: "auto", aspectRatio: "3/4", display: "block", borderRadius: "16px" }} />
+            ) : (
+              <img src={displayVariants[0]?.imageUrl} style={{ width: "100%", height: "auto", aspectRatio: "3/4", objectFit: "cover", display: "block", borderRadius: "16px" }} alt="Colorway 1" />
+            )}
             <Box sx={{ mt: 2 }}>
               <Typography sx={{ fontSize: 13, color: "text.primary", mb: 0.5 }}>Maillot — coral bloom</Typography>
               <Typography sx={{ fontSize: 12, color: "text.secondary" }}>Primary colorway</Typography>
             </Box>
           </Box>
           <Box sx={{ flex: 1 }}>
-            <img src={variants[4]?.imageUrl || variants[1]?.imageUrl} style={{ width: "100%", height: "auto", aspectRatio: "3/4", objectFit: "cover", display: "block", borderRadius: "16px" }} alt="Colorway 2" />
+            {(displayVariants[4] || displayVariants[1])?.isSkeleton ? (
+              <Skeleton variant="rectangular" sx={{ width: "100%", height: "auto", aspectRatio: "3/4", display: "block", borderRadius: "16px" }} />
+            ) : (
+              <img src={displayVariants[4]?.imageUrl || displayVariants[1]?.imageUrl} style={{ width: "100%", height: "auto", aspectRatio: "3/4", objectFit: "cover", display: "block", borderRadius: "16px" }} alt="Colorway 2" />
+            )}
             <Box sx={{ mt: 2 }}>
               <Typography sx={{ fontSize: 13, color: "text.primary", mb: 0.5 }}>Maillot — terracotta</Typography>
               <Typography sx={{ fontSize: 12, color: "text.secondary" }}>Alternate colorway</Typography>

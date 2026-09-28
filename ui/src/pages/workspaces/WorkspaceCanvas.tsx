@@ -477,6 +477,7 @@ function InventoryPanel({
   onClickSilhouette,
   onClickElement,
   onUpload,
+  isGenerating,
 }: {
   elements: WorkspaceElement[];
   open: boolean;
@@ -485,6 +486,7 @@ function InventoryPanel({
   onClickSilhouette: (elementId: string) => void;
   onClickElement: (elementId: string, anchor: HTMLElement) => void;
   onUpload: () => void;
+  isGenerating?: boolean;
 }) {
   const grouped = useMemo(() => {
     const brands = new Map<string, Map<string, WorkspaceElement[]>>();
@@ -580,7 +582,17 @@ function InventoryPanel({
           </Box>
 
           <Box sx={{ flex: 1, overflowY: "auto", py: 0.5 }}>
-            {elements.length === 0 ? (
+            {isGenerating ? (
+              <Box sx={{ px: 2, mt: 2 }}>
+                <Skeleton variant="text" width="60%" height={24} sx={{ mb: 2 }} />
+                <Skeleton variant="text" width="90%" height={20} sx={{ mb: 1, ml: 1 }} />
+                <Skeleton variant="text" width="80%" height={20} sx={{ mb: 1, ml: 1 }} />
+                <Skeleton variant="text" width="85%" height={20} sx={{ mb: 3, ml: 1 }} />
+                <Skeleton variant="text" width="50%" height={24} sx={{ mb: 2 }} />
+                <Skeleton variant="text" width="75%" height={20} sx={{ mb: 1, ml: 1 }} />
+                <Skeleton variant="text" width="80%" height={20} sx={{ mb: 1, ml: 1 }} />
+              </Box>
+            ) : elements.length === 0 ? (
               <Typography sx={{ fontSize: 12, color: "text.disabled", textAlign: "center", mt: 4, px: 2 }}>
                 No elements yet. Browse looks to add elements.
               </Typography>
@@ -880,13 +892,13 @@ export default function WorkspaceCanvas() {
       <Box sx={{ 
         display: "flex", 
         alignItems: "flex-start",
-        width: "300%", 
-        transform: stage === 1 ? "translateX(0)" : stage === 2 ? "translateX(-33.3333%)" : "translateX(-66.6666%)", 
+        width: "200%", 
+        transform: stage === 1 ? "translateX(0)" : "translateX(-50%)", 
         transition: "transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)" 
       }}>
         {/* ================= STAGE 1 ================= */}
         <Box sx={{ 
-          width: "33.3333%", 
+          width: "50%", 
           flexShrink: 0, 
           pr: stage === 1 ? 0 : 4, 
           transition: "padding 0.6s", 
@@ -954,11 +966,7 @@ export default function WorkspaceCanvas() {
         </Box>
       </Box>
 
-      {isGenerating && (
-        <Alert severity="info" sx={{ mb: 3, borderRadius: "12px", border: "1px solid #e3f2fd" }}>
-          Your collection is being generated. This may take a few minutes.
-        </Alert>
-      )}
+      {/* Alert removed per user request */}
 
       {/* Canvas + Inventory */}
       <Paper
@@ -980,10 +988,28 @@ export default function WorkspaceCanvas() {
           onClickSilhouette={handleClickSilhouette}
           onClickElement={handleClickElement}
           onUpload={() => setUploadOpen(true)}
+          isGenerating={isGenerating}
         />
 
         <Box sx={{ flex: 1, position: "relative" }}>
-          {ws.elements.length === 0 ? (
+          {isGenerating ? (
+            <Box
+              sx={{
+                height: "100%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "column",
+                gap: 3,
+                bgcolor: "#faf8f7",
+                p: 6
+              }}
+            >
+              <Skeleton variant="rectangular" width="100%" height={140} sx={{ borderRadius: 3 }} />
+              <Skeleton variant="rectangular" width="100%" height={140} sx={{ borderRadius: 3 }} />
+              <Skeleton variant="rectangular" width="100%" height={140} sx={{ borderRadius: 3 }} />
+            </Box>
+          ) : ws.elements.length === 0 ? (
             <Box
               sx={{
                 height: "100%",
@@ -1111,78 +1137,80 @@ export default function WorkspaceCanvas() {
         </Box>
         <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5 }}>
           {AI_TOOLS.map((tool) => (
-            <Button
-              key={tool.label}
-              variant="outlined"
-              startIcon={isGenerating ? <CircularProgress size={14} /> : tool.icon}
-              disabled={isGenerating || generate.isPending || !anyRowComplete}
-              onClick={() => generate.mutate()}
-              sx={{
-                borderColor: "#f0e4e2",
-                color: "text.secondary",
-                borderRadius: "10px",
-                fontSize: 13,
-                py: 1,
-                px: 2,
-                "&:hover": { borderColor: "primary.main", color: "primary.main", bgcolor: "#fff0ef" },
-              }}
-            >
-              {tool.label}
-            </Button>
+            isGenerating ? (
+              <Skeleton key={tool.label} variant="rectangular" width={150} height={36} sx={{ borderRadius: "10px" }} />
+            ) : (
+              <Button
+                key={tool.label}
+                variant="outlined"
+                startIcon={tool.icon}
+                disabled={generate.isPending || !anyRowComplete}
+                onClick={() => generate.mutate()}
+                sx={{
+                  borderColor: "#f0e4e2",
+                  color: "text.secondary",
+                  borderRadius: "10px",
+                  fontSize: 13,
+                  py: 1,
+                  px: 2,
+                  "&:hover": { borderColor: "primary.main", color: "primary.main", bgcolor: "#fff0ef" },
+                }}
+              >
+                {tool.label}
+              </Button>
+            )
           ))}
         </Box>
         </Box>
       </Box>
 
-      {/* ================= STAGE 2 ================= */}
+      {/* ================= STAGE 2 & 3 ================= */}
         <Box sx={{ 
-          width: "33.3333%", 
+          width: "50%", 
           flexShrink: 0, 
-          pl: stage === 2 ? 0 : 4, 
+          pl: stage > 1 ? 0 : 4, 
           transition: "padding 0.6s",
-          height: stage === 2 ? "auto" : 0,
-          overflow: stage === 2 ? "visible" : "hidden"
+          height: stage > 1 ? "auto" : 0,
+          overflow: stage > 1 ? "visible" : "hidden"
         }}>
-          <Box sx={{ mb: 3 }}>
-            <Button
-              startIcon={<ArrowBackIcon />}
-              onClick={() => {
-                setStage(1);
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-              sx={{ color: "text.secondary", fontSize: 13, "&:hover": { bgcolor: "transparent", color: "primary.main" } }}
-            >
-              Back to Canvas
-            </Button>
-          </Box>
-          <Stage2GarmentConcepts workspaceId={id} ws={ws} onNext={() => {
-            setStage(3);
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }} />
-        </Box>
+          {stage === 2 && (
+            <Box sx={{ animation: "fadeIn 0.5s ease-in-out", "@keyframes fadeIn": { "0%": { opacity: 0 }, "100%": { opacity: 1 } } }}>
+              <Box sx={{ mb: 3 }}>
+                <Button
+                  startIcon={<ArrowBackIcon />}
+                  onClick={() => {
+                    setStage(1);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                  sx={{ color: "text.secondary", fontSize: 13, "&:hover": { bgcolor: "transparent", color: "primary.main" } }}
+                >
+                  Back to Canvas
+                </Button>
+              </Box>
+              <Stage2GarmentConcepts workspaceId={id} ws={ws} onNext={() => {
+                setStage(3);
+                window.scrollTo(0, 0);
+              }} />
+            </Box>
+          )}
 
-      {/* ================= STAGE 3 ================= */}
-        <Box sx={{ 
-          width: "33.3333%", 
-          flexShrink: 0, 
-          pl: stage === 3 ? 0 : 4, 
-          transition: "padding 0.6s",
-          height: stage === 3 ? "auto" : 0,
-          overflow: stage === 3 ? "visible" : "hidden"
-        }}>
-          <Box sx={{ mb: 3 }}>
-            <Button
-              startIcon={<ArrowBackIcon />}
-              onClick={() => {
-                setStage(2);
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-              sx={{ color: "text.secondary", fontSize: 13, "&:hover": { bgcolor: "transparent", color: "primary.main" } }}
-            >
-              Back to Stage 2
-            </Button>
-          </Box>
-          <Stage3Editorial workspaceId={id} ws={ws} />
+          {stage === 3 && (
+            <Box sx={{ animation: "fadeIn 0.5s ease-in-out", "@keyframes fadeIn": { "0%": { opacity: 0 }, "100%": { opacity: 1 } } }}>
+              <Box sx={{ mb: 3 }}>
+                <Button
+                  startIcon={<ArrowBackIcon />}
+                  onClick={() => {
+                    setStage(2);
+                    window.scrollTo(0, 0);
+                  }}
+                  sx={{ color: "text.secondary", fontSize: 13, "&:hover": { bgcolor: "transparent", color: "primary.main" } }}
+                >
+                  Back to Stage 2
+                </Button>
+              </Box>
+              <Stage3Editorial workspaceId={id} ws={ws} />
+            </Box>
+          )}
         </Box>
       </Box>
     </Box>
