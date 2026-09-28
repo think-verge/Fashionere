@@ -3,7 +3,6 @@ import { useState, useRef } from "react";
 import { Box, Typography, IconButton, Card, CardMedia, CardContent, Chip, Skeleton, TextField, Select, MenuItem, Button, Popover } from "@mui/material";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../../lib/api/client";
-import { CircularProgress } from "@mui/material";
 import EditIcon from "@mui/icons-material/Edit";
 import InventoryIcon from "@mui/icons-material/Inventory";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
@@ -19,8 +18,6 @@ interface MockVariant {
 
 export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId?: string; ws?: any; onNext?: () => void }) {
   const qc = useQueryClient();
-  const [editPrompt, setEditPrompt] = useState("");
-  const [editType, setEditType] = useState("all");
 
   const { data: variants = [], isLoading } = useQuery<MockVariant[]>({
     queryKey: ["workspace", workspaceId, "variants"],

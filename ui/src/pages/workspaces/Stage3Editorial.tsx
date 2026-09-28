@@ -2,7 +2,6 @@
 import { Box, Typography, Button, Skeleton } from "@mui/material";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "../../lib/api/client";
-import { CircularProgress } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 interface MockVariant {

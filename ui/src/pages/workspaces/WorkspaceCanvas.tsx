@@ -3,7 +3,7 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import {
   Box, Typography, Paper, Button, Chip, Alert,
-  IconButton, Skeleton, Tooltip, CircularProgress,
+  IconButton, Skeleton, Tooltip,
   Accordion, AccordionSummary, AccordionDetails,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   Popover, MenuItem, Divider,
