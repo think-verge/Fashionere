@@ -219,6 +219,7 @@ def parse_product(raw_doc: dict) -> Look | None:
         context=Context(
             brand="Uniqlo",
             brand_slug="uniqlo",
+            garment_type=normalize_garment_type(name),
             product_id=pid,
             price=price,
             category_path=category_path,

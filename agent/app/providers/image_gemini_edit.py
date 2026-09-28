@@ -17,7 +17,7 @@ _MIME_SUFFIX = {"image/png": ".png", "image/jpeg": ".jpg", "image/webp": ".webp"
 
 
 class GeminiImageEditProvider:
-    def __init__(self, api_key: str, model: str = "gemini-2.5-flash-image") -> None:
+    def __init__(self, api_key: str, model: str = "gemini-flash-latest") -> None:
         if not api_key:
             raise ValueError("GEMINI_API_KEY is required for GeminiImageEditProvider")
         try:

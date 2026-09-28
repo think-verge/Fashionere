@@ -1,10 +1,14 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
 import {
-  Box, Typography, Paper, TextField, IconButton, LinearProgress,
+  Box, Typography, Paper, TextField, IconButton, LinearProgress, Skeleton,
 } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
+import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import { PageShell } from "../../components/PageShell";
+import { api } from "../../lib/api/client";
 
 interface Message {
   role: "user" | "ai";
@@ -55,8 +59,66 @@ export function TrendsPage() {
     }, 1800);
   }
 
+  const { data: garmentTypesData } = useQuery<{ garment_types: string[] }>({
+    queryKey: ["garment-types"],
+    queryFn: async () => {
+      const { data } = await api.get("/retail-trends/garment-types");
+      return data;
+    },
+  });
+
+  const garmentTypes = garmentTypesData?.garment_types?.filter((t) => t !== "unknown") ?? [];
+
   return (
     <PageShell title="Trends">
+      {/* Retail Deconstruction Trends */}
+      <Box sx={{ mb: 6 }}>
+        <Typography sx={{ color: "primary.main", fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.2em", mb: 2 }}>
+          Retail Deconstruction
+        </Typography>
+        <Typography sx={{ fontSize: { xs: 24, md: 32 }, fontWeight: 700, letterSpacing: "-0.02em", lineHeight: 1.1, color: "text.primary", mb: 1 }}>
+          What's trending in retail
+        </Typography>
+        <Typography sx={{ fontFamily: "'Literata', Georgia, serif", fontSize: 15, lineHeight: 1.7, color: "text.secondary", maxWidth: 520, mb: 3 }}>
+          Colours, fabrics, and patterns surfaced from deconstructed retail garments across H&M, Uniqlo, and Zara.
+        </Typography>
+
+        {garmentTypes.length > 0 ? (
+          <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
+            {garmentTypes.map((gt) => (
+              <Paper
+                key={gt}
+                component={Link}
+                to={`/app/trends/retail/${encodeURIComponent(gt)}`}
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 1.5,
+                  px: 3,
+                  py: 2,
+                  borderRadius: "12px",
+                  border: "1px solid #f0e4e2",
+                  textDecoration: "none",
+                  transition: "all 0.15s",
+                  "&:hover": { borderColor: "primary.main", bgcolor: "#fff0ef", transform: "translateY(-1px)" },
+                }}
+              >
+                <TrendingUpIcon sx={{ fontSize: 18, color: "primary.main" }} />
+                <Typography sx={{ fontSize: 15, fontWeight: 600, color: "text.primary", textTransform: "capitalize" }}>
+                  {gt}s
+                </Typography>
+              </Paper>
+            ))}
+          </Box>
+        ) : (
+          <Box sx={{ display: "flex", gap: 2 }}>
+            {[1, 2, 3].map((i) => (
+              <Skeleton key={i} variant="rectangular" width={140} height={48} sx={{ borderRadius: 2 }} />
+            ))}
+          </Box>
+        )}
+      </Box>
+
       {/* Custom header with live indicator */}
       <Box sx={{ mb: 6 }}>
         <Typography sx={{ color: "primary.main", fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.2em", mb: 2 }}>

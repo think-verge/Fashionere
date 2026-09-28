@@ -61,7 +61,7 @@ function buildGarment(g: Record<string, unknown>, lookId: string) {
     garment_id: (g.garment_id ?? g.id) as string,
     look_id: lookId,
     piece: g.piece as string,
-    garment_type: g.garment_type as string,
+    garment_type: ((g.garment_type ?? g.piece ?? "other") as string).toLowerCase(),
     colors: (g.colors ?? []) as Array<{ hex: string; name?: string; role?: string; pantone?: string }>,
     fabrics: rawFabrics.map((f) => ({
       name:        (f.name ?? f.material ?? "") as string,
@@ -109,19 +109,40 @@ export async function listLooksFilters(opts: { type?: string }) {
     typeFilter["source.type"] = { $nin: [...RETAIL_SOURCES] };
   }
 
-  const [brandRaw, garmentTypeRaw] = await Promise.all([
+  const [brandRaw, garmentTypeRaw, piecesRaw] = await Promise.all([
     looksCol().distinct("context.brand", typeFilter),
     deconCol().distinct("garments.garment_type", {}),
+    deconCol().distinct("garments.piece", {}),
   ]);
 
   const brands = (brandRaw as string[])
     .filter((b) => typeof b === "string" && b.length > 0)
     .sort();
-  const garmentTypes = (garmentTypeRaw as string[])
-    .filter((g) => typeof g === "string" && g.length > 0)
-    .map((g) => g.charAt(0).toUpperCase() + g.slice(1).toLowerCase())
-    .filter((v, i, a) => a.indexOf(v) === i)
-    .sort();
+
+  // Combine explicit garment_type values with types inferred from piece names
+  const KNOWN_TYPES = [
+    "jacket", "coat", "blazer", "vest", "sweater", "cardigan",
+    "top", "blouse", "shirt", "t-shirt", "tee",
+    "dress", "skirt", "trousers", "pants", "jeans", "shorts",
+    "accessory", "bag", "scarf", "hat",
+  ];
+  const typeSet = new Set<string>();
+  for (const g of garmentTypeRaw as string[]) {
+    if (typeof g === "string" && g.length > 0) {
+      typeSet.add(g.charAt(0).toUpperCase() + g.slice(1).toLowerCase());
+    }
+  }
+  for (const piece of piecesRaw as string[]) {
+    if (typeof piece !== "string") continue;
+    const lower = piece.toLowerCase();
+    for (const t of KNOWN_TYPES) {
+      if (lower.includes(t)) {
+        typeSet.add(t.charAt(0).toUpperCase() + t.slice(1).toLowerCase());
+        break;
+      }
+    }
+  }
+  const garmentTypes = [...typeSet].sort();
 
   return { brands, garment_types: garmentTypes };
 }
@@ -132,13 +153,14 @@ export async function listLooks(opts: {
   cursor?: string;
   brand?: string;
   garment_type?: string;
+  deconstructed_only?: boolean;
   search?: string;
   sort?: string;
 }) {
-  const { type, limit, cursor, brand, garment_type, search, sort } = opts;
+  const { type, limit, cursor, brand, garment_type, deconstructed_only, search, sort } = opts;
 
   // Base type filter (used for total count too)
-  const typeFilter: Record<string, unknown> = {};
+  const typeFilter: Record<string, any> = {};
   if (type === "retail") {
     typeFilter["source.type"] = { $in: [...RETAIL_SOURCES] };
   } else if (type === "runway") {
@@ -149,43 +171,70 @@ export async function listLooks(opts: {
     typeFilter["context.brand"] = brands.length > 1 ? { $in: brands } : brands[0];
   }
 
-  // If garment_type filter is set, find look_ids from deconstructions first
-  let garmentTypeIds: string[] | undefined;
-  if (garment_type) {
-    const garmentTypes = garment_type.split(",").map(gt => new RegExp(`^${gt.trim().toLowerCase()}$`, "i"));
-    const matching = await deconCol()
-      .find({ "garments.garment_type": { $in: garmentTypes } })
+  // If deconstructed_only, restrict to look_ids that exist in deconstructions
+  if (deconstructed_only) {
+    const deconDocs = await deconCol()
+      .find({ "garments.0": { $exists: true } })
       .project({ look_id: 1 })
       .toArray();
-    garmentTypeIds = matching.map((d) => String(d.look_id));
-    typeFilter._id = { $in: garmentTypeIds };
+    const deconIds = deconDocs.map((d) => String(d.look_id));
+    if (!typeFilter.$and) typeFilter.$and = [];
+    typeFilter.$and.push({ _id: { $in: deconIds } });
+  }
+
+  // If garment_type filter is set, find look_ids from deconstructions first
+  if (garment_type) {
+    const types = garment_type.split(",").map(gt => gt.trim());
+    const exactRegexes = types.map(gt => new RegExp(`^${gt}$`, "i"));
+    const partialRegexes = types.map(gt => new RegExp(gt, "i"));
+    const matching = await deconCol()
+      .find({
+        $or: [
+          { "garments.garment_type": { $in: exactRegexes } },
+          { "garments.piece": { $in: partialRegexes } }
+        ]
+      })
+      .project({ look_id: 1 })
+      .toArray();
+    const garmentTypeIds = matching.map((d) => String(d.look_id));
+    
+    if (!typeFilter.$and) typeFilter.$and = [];
+    typeFilter.$and.push({
+      $or: [
+        { _id: { $in: garmentTypeIds } },
+        { name: { $in: partialRegexes } },
+        { "native_text.product_name": { $in: partialRegexes } },
+        { tags: { $in: exactRegexes } },
+        { "native_text.keywords": { $in: exactRegexes } },
+        { "context.category_path": { $in: exactRegexes } }
+      ]
+    });
   }
 
   if (search) {
     const q = new RegExp(search.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), "i");
-    typeFilter.$or = [
-      { brand: q },
-      { "context.brand": q },
-      { name: q },
-      { "native_text.product_name": q },
-      { "native_text.keywords": q },
-      { season: q }
-    ];
+    if (!typeFilter.$and) typeFilter.$and = [];
+    typeFilter.$and.push({
+      $or: [
+        { brand: q },
+        { "context.brand": q },
+        { name: q },
+        { "native_text.product_name": q },
+        { "native_text.keywords": q },
+        { season: q }
+      ]
+    });
   }
 
   const sortDirection = sort === "latest" ? -1 : 1;
   const cursorOp = sortDirection === 1 ? "$gt" : "$lt";
 
   // Page filter adds cursor for pagination
-  const pageFilter: Record<string, unknown> = { ...typeFilter };
+  const pageFilter: Record<string, any> = { ...typeFilter };
   if (cursor) {
     const decodedId = decodeCursor(cursor);
     // _id is a string in canonical_looks — use string comparison for cursor pagination
-    if (garmentTypeIds) {
-      pageFilter._id = { $in: garmentTypeIds, [cursorOp]: decodedId };
-    } else {
-      pageFilter._id = { [cursorOp]: decodedId };
-    }
+    pageFilter._id = { ...pageFilter._id, [cursorOp]: decodedId };
   }
 
   const [total, docs] = await Promise.all([
