@@ -1,7 +1,7 @@
 import { useSearchParams, useNavigate, Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import {
-  Box, Typography, Paper, Chip, Skeleton, Alert,
+  Box, Typography, Paper, Skeleton, Alert,
 } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";

@@ -106,7 +106,7 @@ async function loadInstances(): Promise<Map<string, Instance[]>> {
 
   const lookIds = decons.map((d) => d.look_id);
   const looks = await looksCol()
-    .find({ _id: { $in: lookIds } })
+    .find({ _id: { $in: lookIds } } as any)
     .project({ "context.brand": 1, "images": 1 })
     .toArray();
 
