@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import {
   Box,
@@ -50,6 +50,9 @@ export default function WorkspacesPage() {
   // Delete confirm state
   const [deleteTarget, setDeleteTarget] = useState<{ id: string; name: string } | null>(null);
 
+  const [searchParams] = useSearchParams();
+  const searchQuery = searchParams.get("q")?.toLowerCase() || "";
+
   const { data: workspaces = [], isLoading, error } = useQuery<Workspace[]>({
     queryKey: ["workspaces", activeProject?.id],
     queryFn: async () => {
@@ -58,7 +61,12 @@ export default function WorkspacesPage() {
       const { data } = await api.get("/workspace", { params });
       return Array.isArray(data) ? data : (data.workspaces ?? []);
     },
+    refetchInterval: (query) => (query.state.data?.some(ws => ws.status === "generating") ? 3000 : false),
   });
+
+  const filteredWorkspaces = workspaces.filter(ws => 
+    ws.name.toLowerCase().includes(searchQuery)
+  );
 
   const createWs = useMutation({
     mutationFn: async () => {
@@ -177,7 +185,7 @@ export default function WorkspacesPage() {
         </Paper>
       ) : error ? (
         <Alert severity="error">Failed to load workspaces.</Alert>
-      ) : workspaces.length === 0 ? (
+      ) : filteredWorkspaces.length === 0 ? (
         <Box sx={{ textAlign: "center", py: 12, border: "1px dashed #f0e4e2", borderRadius: 2 }}>
           <LayersOutlinedIcon sx={{ fontSize: 40, color: "#dfbfbc", mb: 2 }} />
           <Typography sx={{ color: "text.secondary", mb: 1, fontWeight: 500 }}>No workspaces yet</Typography>
@@ -206,7 +214,7 @@ export default function WorkspacesPage() {
               </TableRow>
             </TableHead>
             <TableBody>
-              {workspaces.map((ws) => (
+              {filteredWorkspaces.map((ws) => (
                 <TableRow
                   key={ws._id}
                   hover

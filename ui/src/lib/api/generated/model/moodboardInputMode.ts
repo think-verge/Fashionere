@@ -9,7 +9,7 @@
 export type MoodboardInputMode = typeof MoodboardInputMode[keyof typeof MoodboardInputMode];
 
 
-// eslint-disable-next-line @typescript-eslint/no-redeclare
+ 
 export const MoodboardInputMode = {
   query: 'query',
   catalogue: 'catalogue',

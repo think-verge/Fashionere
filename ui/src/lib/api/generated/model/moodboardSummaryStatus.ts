@@ -9,7 +9,7 @@
 export type MoodboardSummaryStatus = typeof MoodboardSummaryStatus[keyof typeof MoodboardSummaryStatus];
 
 
-// eslint-disable-next-line @typescript-eslint/no-redeclare
+ 
 export const MoodboardSummaryStatus = {
   pending: 'pending',
   running: 'running',

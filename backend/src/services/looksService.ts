@@ -154,70 +154,92 @@ export async function listLooks(opts: {
   brand?: string;
   garment_type?: string;
   deconstructed_only?: boolean;
+  search?: string;
+  sort?: string;
 }) {
-  const { type, limit, cursor, brand, garment_type, deconstructed_only } = opts;
+  const { type, limit, cursor, brand, garment_type, deconstructed_only, search, sort } = opts;
 
   // Base type filter (used for total count too)
-  const typeFilter: Record<string, unknown> = {};
+  const typeFilter: Record<string, any> = {};
   if (type === "retail") {
     typeFilter["source.type"] = { $in: [...RETAIL_SOURCES] };
   } else if (type === "runway") {
     typeFilter["source.type"] = { $nin: [...RETAIL_SOURCES] };
   }
-  if (brand) typeFilter["context.brand"] = brand;
+  if (brand) {
+    const brands = brand.split(",").map(b => b.trim());
+    typeFilter["context.brand"] = brands.length > 1 ? { $in: brands } : brands[0];
+  }
 
   // If deconstructed_only, restrict to look_ids that exist in deconstructions
-  let deconIds: string[] | undefined;
   if (deconstructed_only) {
     const deconDocs = await deconCol()
       .find({ "garments.0": { $exists: true } })
       .project({ look_id: 1 })
       .toArray();
-    deconIds = deconDocs.map((d) => String(d.look_id));
+    const deconIds = deconDocs.map((d) => String(d.look_id));
+    if (!typeFilter.$and) typeFilter.$and = [];
+    typeFilter.$and.push({ _id: { $in: deconIds } });
   }
 
-  // If garment_type filter is set, find look_ids from deconstructions.
-  // Search both garments.garment_type AND garments.piece since many retail
-  // garments only have piece (e.g. "denim jacket") without garment_type.
-  let garmentTypeIds: string[] | undefined;
+  // If garment_type filter is set, find look_ids from deconstructions first
   if (garment_type) {
-    const normalised = garment_type.toLowerCase();
+    const types = garment_type.split(",").map(gt => gt.trim());
+    const exactRegexes = types.map(gt => new RegExp(`^${gt}$`, "i"));
+    const partialRegexes = types.map(gt => new RegExp(gt, "i"));
     const matching = await deconCol()
       .find({
         $or: [
-          { "garments.garment_type": { $regex: new RegExp(`^${normalised}$`, "i") } },
-          { "garments.piece": { $regex: new RegExp(normalised, "i") } },
-        ],
+          { "garments.garment_type": { $in: exactRegexes } },
+          { "garments.piece": { $in: partialRegexes } }
+        ]
       })
       .project({ look_id: 1 })
       .toArray();
-    garmentTypeIds = matching.map((d) => String(d.look_id));
+    const garmentTypeIds = matching.map((d) => String(d.look_id));
+    
+    if (!typeFilter.$and) typeFilter.$and = [];
+    typeFilter.$and.push({
+      $or: [
+        { _id: { $in: garmentTypeIds } },
+        { name: { $in: partialRegexes } },
+        { "native_text.product_name": { $in: partialRegexes } },
+        { tags: { $in: exactRegexes } },
+        { "native_text.keywords": { $in: exactRegexes } },
+        { "context.category_path": { $in: exactRegexes } }
+      ]
+    });
   }
 
-  // Combine id restrictions from deconstructed_only and garment_type
-  const idSets = [deconIds, garmentTypeIds].filter((s): s is string[] => !!s);
-  if (idSets.length === 1) {
-    typeFilter._id = { $in: idSets[0] };
-  } else if (idSets.length === 2) {
-    const intersection = idSets[0].filter((id) => new Set(idSets[1]).has(id));
-    typeFilter._id = { $in: intersection };
+  if (search) {
+    const q = new RegExp(search.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), "i");
+    if (!typeFilter.$and) typeFilter.$and = [];
+    typeFilter.$and.push({
+      $or: [
+        { brand: q },
+        { "context.brand": q },
+        { name: q },
+        { "native_text.product_name": q },
+        { "native_text.keywords": q },
+        { season: q }
+      ]
+    });
   }
+
+  const sortDirection = sort === "latest" ? -1 : 1;
+  const cursorOp = sortDirection === 1 ? "$gt" : "$lt";
 
   // Page filter adds cursor for pagination
-  const pageFilter: Record<string, unknown> = { ...typeFilter };
+  const pageFilter: Record<string, any> = { ...typeFilter };
   if (cursor) {
     const decodedId = decodeCursor(cursor);
-    const existingIn = (typeFilter._id as Record<string, unknown> | undefined)?.$in as string[] | undefined;
-    if (existingIn) {
-      pageFilter._id = { $in: existingIn, $gt: decodedId };
-    } else {
-      pageFilter._id = { $gt: decodedId };
-    }
+    // _id is a string in canonical_looks — use string comparison for cursor pagination
+    pageFilter._id = { ...pageFilter._id, [cursorOp]: decodedId };
   }
 
   const [total, docs] = await Promise.all([
     looksCol().countDocuments(typeFilter),
-    looksCol().find(pageFilter).sort({ _id: 1 }).limit(limit + 1).toArray(),
+    looksCol().find(pageFilter).sort({ _id: sortDirection }).limit(limit + 1).toArray(),
   ]);
 
   const hasMore = docs.length > limit;

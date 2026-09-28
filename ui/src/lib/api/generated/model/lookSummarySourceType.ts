@@ -9,7 +9,7 @@
 export type LookSummarySourceType = typeof LookSummarySourceType[keyof typeof LookSummarySourceType];
 
 
-// eslint-disable-next-line @typescript-eslint/no-redeclare
+ 
 export const LookSummarySourceType = {
   retail: 'retail',
   runway: 'runway',

@@ -9,7 +9,7 @@
 export type SignupRequestRole = typeof SignupRequestRole[keyof typeof SignupRequestRole];
 
 
-// eslint-disable-next-line @typescript-eslint/no-redeclare
+ 
 export const SignupRequestRole = {
   designer: 'designer',
   retail_chain: 'retail_chain',
