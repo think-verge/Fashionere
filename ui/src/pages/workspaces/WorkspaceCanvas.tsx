@@ -5,7 +5,6 @@ import {
   Box, Typography, Paper, Button, Chip, Alert,
   IconButton, Skeleton, Tooltip,
   Accordion, AccordionSummary, AccordionDetails,
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   Popover, MenuItem, Divider,
 } from "@mui/material";
 import {
@@ -746,7 +745,6 @@ export default function WorkspaceCanvas() {
     onSuccess: () => qc.invalidateQueries({ queryKey: ["workspace", id] }),
   });
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const removeEl = useMutation({
     mutationFn: async (elementId: string) => {
       await api.delete(`/workspace/${id}/elements/${elementId}`);

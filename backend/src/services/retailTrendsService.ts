@@ -104,7 +104,7 @@ async function loadInstances(): Promise<Map<string, Instance[]>> {
     .find({ "garments.0": { $exists: true } })
     .toArray()) as unknown as DeconDoc[];
 
-  const lookIds = decons.map((d) => d.look_id);
+  const lookIds = decons.map((d) => new mongoose.Types.ObjectId(d.look_id));
   const looks = await looksCol()
     .find({ _id: { $in: lookIds } })
     .project({ "context.brand": 1, "images": 1 })

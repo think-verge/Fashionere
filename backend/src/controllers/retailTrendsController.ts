@@ -5,7 +5,7 @@ import { ApiError } from "../utils/api-error.js";
 export async function overview(req: Request, res: Response) {
   const garmentType = req.params.garmentType;
   if (!garmentType) throw new ApiError(400, "garmentType is required");
-  const data = await svc.getCategoryOverview(garmentType);
+  const data = await svc.getCategoryOverview(garmentType as string);
   res.json(data);
 }
 
@@ -24,7 +24,7 @@ export async function element(req: Request, res: Response) {
 
 export async function garmentTrends(req: Request, res: Response) {
   const { lookId, garmentId } = req.params;
-  const data = await svc.getElementTrendForGarment(lookId, garmentId);
+  const data = await svc.getElementTrendForGarment(lookId as string, garmentId as string);
   res.json(data);
 }
 

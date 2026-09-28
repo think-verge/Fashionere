@@ -4,7 +4,6 @@ import {
   Box, Typography, Paper, Skeleton, Alert,
 } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import { api } from "../../lib/api/client";
 
 interface TrendElement {
