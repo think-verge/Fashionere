@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Box, Typography, IconButton, Card, CardMedia, CardContent, Chip, Skeleton, TextField, Select, MenuItem, Button, Popover } from "@mui/material";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../../lib/api/client";
@@ -7,6 +7,7 @@ import EditIcon from "@mui/icons-material/Edit";
 import InventoryIcon from "@mui/icons-material/Inventory";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import CloseIcon from "@mui/icons-material/Close";
 
 interface MockVariant {
   id: string;
@@ -195,22 +196,43 @@ function SectionCarousel({ section, editVariant, attachInventory, isCarousel = t
 
   // Popover state
   const [editAnchorEl, setEditAnchorEl] = useState<HTMLElement | null>(null);
+  const [isEditOpen, setIsEditOpen] = useState(false);
   const [editImgId, setEditImgId] = useState<string | null>(null);
   const [editPrompt, setEditPrompt] = useState("");
   const [editType, setEditType] = useState("all");
+  const [popoverPosition, setPopoverPosition] = useState<"bottom" | "top">("bottom");
 
   const handleEditClick = (e: React.MouseEvent<HTMLElement>, imgId: string) => {
     e.stopPropagation();
+    const rect = e.currentTarget.getBoundingClientRect();
+    if (window.innerHeight - rect.bottom < 350 && rect.top > 350) {
+      setPopoverPosition("top");
+    } else {
+      setPopoverPosition("bottom");
+    }
     setEditAnchorEl(e.currentTarget);
     setEditImgId(imgId);
+    setIsEditOpen(true);
   };
 
   const closeEdit = () => {
-    setEditAnchorEl(null);
-    setEditImgId(null);
-    setEditPrompt("");
-    setEditType("all");
+    setIsEditOpen(false);
+    // Do not set editAnchorEl to null here to prevent the Popover from flying away during exit animation.
   };
+
+  useEffect(() => {
+    const handleScroll = (e: Event) => {
+      if (isEditOpen && editAnchorEl) {
+        const popoverEl = document.getElementById("edit-popover");
+        if (popoverEl && popoverEl.contains(e.target as Node)) {
+          return;
+        }
+        closeEdit();
+      }
+    };
+    window.addEventListener("scroll", handleScroll, true);
+    return () => window.removeEventListener("scroll", handleScroll, true);
+  }, [isEditOpen, editAnchorEl]);
 
   const toggleSelect = (id: string) => {
     setSelected(prev => ({ ...prev, [id]: !prev[id] }));
@@ -292,7 +314,7 @@ function SectionCarousel({ section, editVariant, attachInventory, isCarousel = t
                       sx={{ 
                         position: "absolute", top: 0, left: 0,
                         width: "100%", height: "100%", objectFit: "cover",
-                        opacity: editVariant.isPending ? 0.5 : 1,
+                        opacity: editVariant.isPending && editVariant.variables === img.id ? 0.5 : 1,
                         transition: "opacity 0.3s"
                       }}
                     />
@@ -362,23 +384,36 @@ function SectionCarousel({ section, editVariant, attachInventory, isCarousel = t
 
       {/* Popover Edit Form */}
       <Popover
-        open={Boolean(editAnchorEl)}
+        id="edit-popover"
+        open={isEditOpen}
         anchorEl={editAnchorEl}
         onClose={closeEdit}
-        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
-        transformOrigin={{ vertical: "top", horizontal: "center" }}
-        PaperProps={{
-          sx: {
-            mt: 1,
-            p: 2.5,
-            width: 320,
-            borderRadius: "16px",
-            border: "1px solid #f0e4e2",
-            boxShadow: "0 8px 32px rgba(36,25,24,0.12)",
+        anchorOrigin={{ vertical: popoverPosition === "top" ? "top" : "bottom", horizontal: "right" }}
+        transformOrigin={{ vertical: popoverPosition === "top" ? "bottom" : "top", horizontal: "right" }}
+        disableScrollLock
+        slotProps={{
+          paper: {
+            sx: {
+              mt: popoverPosition === "bottom" ? 1.5 : 0,
+              mb: popoverPosition === "top" ? 1.5 : 0,
+              p: 2.5,
+              width: 320,
+              borderRadius: "16px",
+              border: "1px solid #f0e4e2",
+              boxShadow: "0 8px 32px rgba(36,25,24,0.12)",
+              position: "relative",
+            }
           }
         }}
       >
-        <Typography sx={{ fontSize: 13, fontWeight: 700, letterSpacing: "0.05em", color: "text.primary", mb: 2, textTransform: "uppercase" }}>
+        <IconButton
+          size="small"
+          onClick={closeEdit}
+          sx={{ position: "absolute", top: 12, right: 12, color: "text.disabled" }}
+        >
+          <CloseIcon fontSize="small" />
+        </IconButton>
+        <Typography sx={{ fontSize: 13, fontWeight: 700, letterSpacing: "0.05em", color: "text.primary", mb: 2, textTransform: "uppercase", pr: 4 }}>
           Edit AI Prompt
         </Typography>
         <TextField
