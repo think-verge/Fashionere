@@ -45,11 +45,25 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
 
             // e.g. "Fiery Red Silk Dress" | "Silk Dress" | "Coral Custom" | "AI Concept"
             const titleParts = [colorName, fabricLabel, garmentType || brand].filter(Boolean);
-            const title = titleParts.length > 0 ? titleParts.join(" ") : "AI Concept";
+            let rawTitle = titleParts.length > 0 ? titleParts.join(" ") : "AI Concept";
+            
+            // Deduplicate words (e.g. "Black Black knitted..." -> "Black knitted...")
+            const words = rawTitle.split(" ");
+            const uniqueWords = words.filter((w, i) => words.indexOf(w) === i);
+            let title = uniqueWords.join(" ");
+            
+            const editCount = c.accumulated_edits?.length || 0;
+            if (editCount > 0) {
+              title = `${title} (Edited ${editCount})`;
+            }
 
             // Subtitle: fabric • color (skip anything that looks like a UUID)
             const subParts = [fabricLabel || "Custom", colorName].filter(Boolean);
-            const materials = subParts.join(" • ") || "Generated";
+            let materials = subParts.join(" • ") || "Generated";
+            
+            if (editCount > 0) {
+              materials = c.accumulated_edits![editCount - 1];
+            }
 
             return {
               id: c._id,
@@ -127,6 +141,8 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
 
   const sections = [
     { title: "01 Generated concepts", subtitle: "flat-lay · AI studio", images: displayVariants },
+    { title: "02 Selected for refinement", subtitle: "editorial · lookbook", images: [] },
+    { title: "03 Final variations", subtitle: "on-model · e-commerce", images: [] },
   ];
 
   return (
