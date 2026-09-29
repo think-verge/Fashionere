@@ -4,6 +4,11 @@ import type { ICoherence } from "./GenerationJob.js";
 export interface IConcept extends Document {
   workspace_id: Types.ObjectId;
   job_id: Types.ObjectId;
+  parent_concept?: Types.ObjectId | null;
+  root_concept?: Types.ObjectId | null;
+  edit_instruction?: string;
+  accumulated_edits?: string[];
+  edit_type?: "color" | "silhouette" | "pattern" | "detail" | "multi";
   combo: {
     silhouette_id: string;
     silhouette_label: string;
@@ -80,6 +85,11 @@ const conceptSchema = new Schema<IConcept>(
       overridden: { type: Boolean, default: false },
       overridden_by: { type: Schema.Types.ObjectId, ref: "User" },
     },
+    parent_concept: { type: Schema.Types.ObjectId, ref: "Concept", default: null, index: true },
+    root_concept: { type: Schema.Types.ObjectId, ref: "Concept", default: null, index: true },
+    edit_instruction: { type: String, default: null },
+    accumulated_edits: [{ type: String }],
+    edit_type: { type: String, enum: ["color", "silhouette", "pattern", "detail", "multi"], default: null },
     status: {
       type: String,
       enum: ["pending", "generating", "generated", "failed", "approved", "rejected"],
