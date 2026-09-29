@@ -27,13 +27,32 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
       const { data } = await api.get("/concepts", { params: { workspace_id: workspaceId } });
       
       if (data && data.length > 0) {
-        return data.map((c: any) => ({
-          id: c._id,
-          // Assuming proxy setup handles /api/v1 properly or api client includes base URL
-          imageUrl: `/api/v1/concepts/${c._id}/image`,
-          title: c.combo?.silhouette_label || "AI Concept",
-          materials: `${c.combo?.fabric_label || "Cotton"} • ${c.combo?.color?.name || "Black"}`,
-        }));
+        return data.map((c: any) => {
+          const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-/i;
+          const clean = (val: string | undefined) => (!val || UUID_RE.test(val) ? "" : val);
+
+          // Pick the most meaningful garment descriptor available
+          const garmentType = clean(c.combo?.silhouette_garment_type) || clean(c.combo?.silhouette_label) || "";
+          const colorName   = c.combo?.color?.name || "";
+          const fabricLabel = clean(c.combo?.fabric_label) || "";
+          const brand       = clean(c.combo?.silhouette_brand) || "";
+
+          // e.g. "Fiery Red Silk Dress" | "Silk Dress" | "Coral Custom" | "AI Concept"
+          const titleParts = [colorName, fabricLabel, garmentType || brand].filter(Boolean);
+          const title = titleParts.length > 0 ? titleParts.join(" ") : "AI Concept";
+
+          // Subtitle: fabric • color (skip anything that looks like a UUID)
+          const subParts = [fabricLabel || "Custom", colorName].filter(Boolean);
+          const materials = subParts.join(" • ") || "Generated";
+
+          return {
+            id: c._id,
+            imageUrl: `/api/v1/concepts/${c._id}/image`,
+            title: title.charAt(0).toUpperCase() + title.slice(1),
+            materials,
+            isSkeleton: c.status === "generating",
+          };
+        });
       }
 
       // 2. Fallback to mock data backup if no real concepts exist yet
@@ -41,11 +60,15 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
       return mockData;
     },
     enabled: !!workspaceId,
+    refetchInterval: (query) => {
+      const data = query.state.data as MockVariant[] | undefined;
+      return data?.some(v => v.isSkeleton) ? 3000 : false;
+    }
   });
 
   const editVariant = useMutation({
-    mutationFn: async (variantId: string) => {
-      const { data } = await api.post(`/workspace/${workspaceId}/variants/${variantId}/edit`, { instructions: "Make it more vibrant" });
+    mutationFn: async ({ variantId, instruction }: { variantId: string; instruction: string }) => {
+      const { data } = await api.post(`/concepts/${variantId}/refine`, { instruction });
       return data;
     },
     onSuccess: () => qc.invalidateQueries({ queryKey: ["workspace", workspaceId, "variants"] }),
@@ -492,7 +515,9 @@ function SectionCarousel({ section, editVariant, attachInventory, isCarousel = t
             variant="contained"
             disableElevation
             onClick={() => {
-              if (editImgId) editVariant.mutate(editImgId);
+              if (editImgId && editPrompt.trim()) {
+                editVariant.mutate({ variantId: editImgId, instruction: editPrompt.trim() });
+              }
               closeEdit();
             }}
             sx={{

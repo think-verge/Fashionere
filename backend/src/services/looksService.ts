@@ -233,7 +233,6 @@ export async function listLooks(opts: {
   const pageFilter: Record<string, any> = { ...typeFilter };
   if (cursor) {
     const decodedId = decodeCursor(cursor);
-    // _id is a string in canonical_looks — use string comparison for cursor pagination
     pageFilter._id = { ...pageFilter._id, [cursorOp]: decodedId };
   }
 
