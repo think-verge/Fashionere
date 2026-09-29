@@ -9,53 +9,85 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import CloseIcon from "@mui/icons-material/Close";
 
-interface MockVariant {
+interface ConceptCard {
   id: string;
   imageUrl: string;
   title: string;
   materials: string;
+  status: string;
   isSkeleton?: boolean;
+}
+
+interface RawConcept {
+  _id: string;
+  combo: {
+    silhouette_label: string;
+    silhouette_garment_type: string;
+    fabric_label: string;
+    fabric_family: string;
+    pattern_label?: string | null;
+    color: { hex: string; name: string };
+  };
+  image: { gridfs_id?: string };
+  status: string;
+}
+
+function conceptToCard(c: RawConcept): ConceptCard {
+  const parts = [c.combo.fabric_label];
+  if (c.combo.pattern_label) parts.push(c.combo.pattern_label);
+  parts.push(c.combo.color.name);
+  return {
+    id: c._id,
+    imageUrl: c.image.gridfs_id ? `/api/v1/concepts/${c._id}/image` : "",
+    title: `${c.combo.silhouette_garment_type} — ${c.combo.color.name}`,
+    materials: parts.join(" · "),
+    status: c.status,
+  };
 }
 
 export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId?: string; ws?: any; onNext?: () => void }) {
   const qc = useQueryClient();
 
-  const { data: variants = [], isLoading } = useQuery<MockVariant[]>({
-    queryKey: ["workspace", workspaceId, "variants"],
+  const { data: concepts = [], isLoading } = useQuery<ConceptCard[]>({
+    queryKey: ["concepts", workspaceId],
     queryFn: async () => {
-      const { data } = await api.get(`/workspace/${workspaceId}/variants`);
-      return data;
+      const { data } = await api.get("/concepts", { params: { workspace_id: workspaceId } });
+      const raw: RawConcept[] = Array.isArray(data) ? data : (data.concepts ?? []);
+      return raw
+        .filter((c) => c.status !== "failed" && c.status !== "rejected")
+        .map(conceptToCard);
     },
     enabled: !!workspaceId,
   });
 
   const editVariant = useMutation({
-    mutationFn: async (variantId: string) => {
-      const { data } = await api.post(`/workspace/${workspaceId}/variants/${variantId}/edit`, { instructions: "Make it more vibrant" });
+    mutationFn: async (conceptId: string) => {
+      // TODO: Stage 2 refine endpoint (future)
+      const { data } = await api.patch(`/concepts/${conceptId}`, { status: "approved" });
       return data;
     },
-    onSuccess: () => qc.invalidateQueries({ queryKey: ["workspace", workspaceId, "variants"] }),
+    onSuccess: () => qc.invalidateQueries({ queryKey: ["concepts", workspaceId] }),
   });
 
   const attachInventory = useMutation({
-    mutationFn: async (variantId: string) => {
-      const { data } = await api.post(`/workspace/${workspaceId}/variants/${variantId}/inventory`, { inventoryIds: ["inv-123"] });
-      return data;
+    mutationFn: async (conceptId: string) => {
+      // TODO: inventory attachment (future)
+      console.log("Inventory attachment not yet implemented for", conceptId);
+      return {};
     },
-    onSuccess: () => qc.invalidateQueries({ queryKey: ["workspace", workspaceId, "variants"] }),
   });
 
-  // Handle loading with skeletons
   const showSkeleton = isLoading || ws?.status === "generating";
-  const displayVariants = showSkeleton
-    ? Array.from({ length: 12 }).map((_, i) => ({
+  const displayVariants: ConceptCard[] = showSkeleton
+    ? Array.from({ length: 6 }).map((_, i) => ({
         id: `skeleton-${i}`,
         imageUrl: "",
         title: "",
         materials: "",
+        status: "skeleton",
         isSkeleton: true,
       }))
-    : variants;
+    : concepts;
 
   // Extract items for CARRIED FROM STAGE 01
   const palettes = ws?.elements?.filter((e: any) => e.element_type === "color") || [];
@@ -82,9 +114,7 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
   };
 
   const sections = [
-    { title: "01 Garment concepts", subtitle: "flat-lay · no body", images: displayVariants.slice(0, 4) },
-    { title: "02 On the form", subtitle: "ghost mannequin", images: displayVariants.slice(4, 7) },
-    { title: "03 Construction details", subtitle: "close-up", images: displayVariants.slice(7, 10) },
+    { title: "01 Generated concepts", subtitle: "flat-lay · AI studio", images: displayVariants },
   ];
 
   return (
@@ -287,7 +317,7 @@ function SectionCarousel({ section, editVariant, attachInventory, isCarousel = t
           scrollbarWidth: "none",
         }}
       >
-        {(section.images as MockVariant[]).map((img: MockVariant, i: number) => {
+        {(section.images as ConceptCard[]).map((img: ConceptCard, i: number) => {
           const isSelected = selected[img.id];
           return (
             <Box key={img.id} sx={{ minWidth: 320, flexShrink: 0, width: 320 }}>
