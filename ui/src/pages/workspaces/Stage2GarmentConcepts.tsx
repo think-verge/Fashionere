@@ -32,18 +32,6 @@ interface RawConcept {
   status: string;
 }
 
-function conceptToCard(c: RawConcept): ConceptCard {
-  const parts = [c.combo.fabric_label];
-  if (c.combo.pattern_label) parts.push(c.combo.pattern_label);
-  parts.push(c.combo.color.name);
-  return {
-    id: c._id,
-    imageUrl: c.image.gridfs_id ? `/api/v1/concepts/${c._id}/image` : "",
-    title: `${c.combo.silhouette_garment_type} — ${c.combo.color.name}`,
-    materials: parts.join(" · "),
-    status: c.status,
-  };
-}
 
 export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId?: string; ws?: any; onNext?: () => void }) {
   const qc = useQueryClient();
