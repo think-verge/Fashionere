@@ -18,19 +18,7 @@ interface ConceptCard {
   isSkeleton?: boolean;
 }
 
-interface RawConcept {
-  _id: string;
-  combo: {
-    silhouette_label: string;
-    silhouette_garment_type: string;
-    fabric_label: string;
-    fabric_family: string;
-    pattern_label?: string | null;
-    color: { hex: string; name: string };
-  };
-  image: { gridfs_id?: string };
-  status: string;
-}
+
 
 
 export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId?: string; ws?: any; onNext?: () => void }) {
