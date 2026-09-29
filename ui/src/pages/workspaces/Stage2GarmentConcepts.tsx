@@ -45,7 +45,7 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
 
             // e.g. "Fiery Red Silk Dress" | "Silk Dress" | "Coral Custom" | "AI Concept"
             const titleParts = [colorName, fabricLabel, garmentType || brand].filter(Boolean);
-            let rawTitle = titleParts.length > 0 ? titleParts.join(" ") : "AI Concept";
+            const rawTitle = titleParts.length > 0 ? titleParts.join(" ") : "AI Concept";
             
             // Deduplicate words (e.g. "Black Black knitted..." -> "Black knitted...")
             const words = rawTitle.split(" ");
