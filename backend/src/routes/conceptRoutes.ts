@@ -15,3 +15,5 @@ conceptRouter.get("/", asyncHandler(conceptController.listConcepts));
 conceptRouter.get("/:conceptId", asyncHandler(conceptController.getConcept));
 conceptRouter.patch("/:conceptId", asyncHandler(conceptController.updateConcept));
 conceptRouter.get("/:conceptId/image", asyncHandler(conceptController.getConceptImage));
+conceptRouter.post("/:conceptId/refine", asyncHandler(conceptController.refine));
+conceptRouter.get("/:conceptId/variants", asyncHandler(conceptController.getVariants));

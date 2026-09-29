@@ -127,3 +127,24 @@ export async function getConceptImage(req: Request, res: Response) {
   res.set("Content-Type", "image/jpeg");
   stream.pipe(res);
 }
+
+export async function refine(req: Request, res: Response) {
+  const { instruction } = req.body as { instruction: string };
+  if (!instruction?.trim()) {
+    res.status(400).json({ error: "instruction is required" });
+    return;
+  }
+
+  const result = await conceptService.refineConcept(
+    p(req, "conceptId"),
+    req.user!.userId,
+    instruction.trim(),
+  );
+
+  res.status(201).json(result);
+}
+
+export async function getVariants(req: Request, res: Response) {
+  const variants = await conceptService.getVariants(p(req, "conceptId"), req.user!.userId);
+  res.json(variants);
+}

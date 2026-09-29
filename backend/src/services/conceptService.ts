@@ -8,8 +8,10 @@ import { Concept, type IConcept } from "../models/Concept.js";
 import { evaluateCombos, type CoherenceResult } from "./coherenceFilter.js";
 
 const FAL_QUEUE_URL = "https://queue.fal.run/fal-ai/flux-pro/kontext";
+const FAL_SEEDREAM_QUEUE_URL = "https://queue.fal.run/fal-ai/bytedance/seedream/v4/edit";
 const FAL_STATUS_BASE = "https://queue.fal.run/fal-ai/flux-pro/requests";
 const COST_PER_IMAGE = 0.04;
+const COST_SEEDREAM = 0.03;
 const MAX_COMBOS = 10;
 const POLL_INTERVAL_MS = 5000;
 
@@ -200,13 +202,13 @@ function getSilhouetteImageUrl(
   return (d.flat_url ?? d.image_url) as string | null ?? null;
 }
 
-async function submitToFal(imageUrl: string, prompt: string): Promise<string> {
+async function submitToFal(imageUrl: string, prompt: string, guidanceScale = 3.5): Promise<string> {
   const resp = await axios.post(
     FAL_QUEUE_URL,
     {
       image_url: imageUrl,
       prompt,
-      guidance_scale: 3.5,
+      guidance_scale: guidanceScale,
       num_images: 1,
       output_format: "jpeg",
       safety_tolerance: 6,
@@ -214,6 +216,15 @@ async function submitToFal(imageUrl: string, prompt: string): Promise<string> {
     { headers: falHeaders() },
   );
   return resp.data.request_id;
+}
+
+function getGuidanceScale(editType: EditType): number {
+  switch (editType) {
+    case "silhouette": return 8;
+    case "pattern": return 7;
+    case "multi": return 6;
+    default: return 3.5;
+  }
 }
 
 async function pollFalResult(requestId: string): Promise<{ imageUrl: string; inferenceTime: number } | null> {
@@ -285,12 +296,15 @@ export async function generateConcepts(
   manualCombo?: IComboRef,
   maxCombos = MAX_COMBOS,
 ) {
-  const workspace = await Workspace.findOne({ _id: workspaceId, user_id: userId }).lean();
+  const workspace = await Workspace.findOne({ _id: workspaceId, user_id: userId });
   if (!workspace) throw new ApiError(404, "Workspace not found");
 
   if (!workspace.elements?.length) {
     throw new ApiError(400, "Workspace has no ingredients");
   }
+
+  workspace.status = "generating";
+  await workspace.save();
 
   const { silhouettes, fabrics, patterns, colors } = resolveIngredients(workspace.elements);
 
@@ -330,11 +344,13 @@ export async function generateConcepts(
   });
 
   if (cappedPassed.length > 0) {
-    runGeneration(job._id.toString(), cappedPassed, workspace.elements, userId).catch((err) => {
+    runGeneration(job._id.toString(), cappedPassed, workspace.elements, userId, workspaceId).catch((err) => {
       console.error(`Generation failed for job ${job._id}:`, err);
+      Workspace.updateOne({ _id: workspaceId }, { status: "ready" }).catch(() => {});
     });
   } else {
     await GenerationJob.updateOne({ _id: job._id }, { status: "completed", completed_at: new Date() });
+    await Workspace.updateOne({ _id: workspaceId }, { status: "ready" });
   }
 
   return {
@@ -360,6 +376,7 @@ async function runGeneration(
   combos: CoherenceResult[],
   elements: IWorkspaceElement[],
   userId: string,
+  workspaceId?: string,
 ) {
   await GenerationJob.updateOne({ _id: jobId }, { status: "running", started_at: new Date() });
 
@@ -497,6 +514,10 @@ async function runGeneration(
     { status: finalStatus, completed_at: new Date(), total_cost_usd: totalCost },
   );
 
+  if (workspaceId) {
+    await Workspace.updateOne({ _id: workspaceId }, { status: "ready" });
+  }
+
   emitSSE(jobId, "job_done", {
     status: finalStatus,
     total_cost_usd: totalCost,
@@ -619,4 +640,298 @@ export async function getConceptImage(conceptId: string, userId: string) {
 
   const bucket = new mongoose.mongo.GridFSBucket(mongoose.connection.db!, { bucketName: "concepts" });
   return bucket.openDownloadStream(concept.image.gridfs_id);
+}
+
+// ---- Edit type classification ----
+
+type EditType = "color" | "silhouette" | "pattern" | "detail" | "multi";
+
+const COLOR_KEYWORDS = ["color", "colour", "shade", "hue", "dye", "tint", "tone", "navy", "red", "blue", "green", "black", "white", "pink", "beige", "cream", "grey", "gray", "brown", "orange", "yellow", "purple", "burgundy", "maroon", "olive", "teal", "coral", "ivory", "charcoal", "pastel", "darker", "lighter", "brighter", "muted", "vibrant", "saturated", "desaturated"];
+const SILHOUETTE_KEYWORDS = ["sleeve", "sleeves", "collar", "collars", "lapel", "lapels", "hem", "hemline", "length", "longer", "lengthen", "shorter", "shorten", "wider", "widen", "narrower", "narrow", "slim", "slimmer", "oversized", "fitted", "relaxed", "cropped", "crop", "extended", "extend", "flared", "flare", "tapered", "taper", "dropped", "drop", "raised", "raise", "neckline", "cuff", "cuffs", "waist", "waistline", "shoulder", "shoulders", "vent", "slit", "pleat", "pleats", "tuck", "dart"];
+const PATTERN_KEYWORDS = ["pattern", "print", "stripe", "check", "plaid", "tartan", "floral", "geometric", "abstract", "polka", "dot", "houndstooth", "herringbone", "paisley", "animal", "leopard", "zebra", "camo", "camouflage", "solid", "plain", "motif", "tile", "repeat"];
+
+function classifyEditType(instruction: string): EditType {
+  const lower = instruction.toLowerCase();
+  const wordMatch = (kw: string) => new RegExp(`\\b${kw}\\b`).test(lower);
+
+  const colorCount = COLOR_KEYWORDS.filter(wordMatch).length;
+  const silhouetteCount = SILHOUETTE_KEYWORDS.filter(wordMatch).length;
+  const patternCount = PATTERN_KEYWORDS.filter(wordMatch).length;
+
+  // Pattern descriptions naturally include color words ("red tartan plaid").
+  // Only escalate to multi when silhouette is also involved.
+  if (patternCount > 0 && colorCount > 0 && silhouetteCount === 0) return "pattern";
+  if (silhouetteCount > 0 && colorCount > 0 && patternCount === 0) {
+    if (silhouetteCount > colorCount * 2) return "silhouette";
+    if (colorCount > silhouetteCount * 2) return "color";
+    return "multi";
+  }
+
+  const categories = [
+    { type: "color" as EditType, count: colorCount },
+    { type: "silhouette" as EditType, count: silhouetteCount },
+    { type: "pattern" as EditType, count: patternCount },
+  ].filter((c) => c.count > 0);
+
+  if (categories.length === 0) return "detail";
+  if (categories.length === 1) return categories[0].type;
+
+  categories.sort((a, b) => b.count - a.count);
+  if (categories[0].count >= categories[1].count * 2) return categories[0].type;
+  return "multi";
+}
+
+// ---- Accumulated prompt builder ----
+
+function describeCurrentState(combo: IConcept["combo"], accumulatedEdits: string[]): string {
+  if (accumulatedEdits.length > 0) {
+    return `a ${combo.silhouette_garment_type} that has been modified: ${accumulatedEdits.join("; ")}`;
+  }
+  let desc = `a ${combo.silhouette_garment_type} in ${combo.color.name} (${combo.color.hex}) ${combo.fabric_label} fabric`;
+  if (combo.pattern_label) desc += ` with a ${combo.pattern_label} pattern`;
+  return desc;
+}
+
+function buildStructuralRefinePrompt(
+  combo: IConcept["combo"],
+  accumulatedEdits: string[],
+  newInstruction: string,
+): string {
+  const current = describeCurrentState(combo, accumulatedEdits);
+  let prompt = `This image shows ${current}.`;
+  prompt += ` IMPORTANT STRUCTURAL CHANGE REQUIRED: ${newInstruction}.`;
+  prompt += ` This must be a VISIBLE, DRAMATIC change to the garment's shape and proportions — not subtle.`;
+  prompt += ` The modification should be clearly obvious when comparing before and after.`;
+  prompt += ` Preserve the fabric, color, texture, and all other non-structural details exactly.`;
+  prompt += ` No brand logos or text. Flat-lay product shot, clean white background, studio lighting.`;
+  return prompt;
+}
+
+function buildPatternRefinePrompt(
+  combo: IConcept["combo"],
+  accumulatedEdits: string[],
+  newInstruction: string,
+): string {
+  const current = describeCurrentState(combo, accumulatedEdits);
+  let prompt = `This image shows ${current}.`;
+  prompt += ` COMPLETELY REPLACE the surface pattern/print of this garment: ${newInstruction}.`;
+  prompt += ` The new pattern must cover EVERY visible fabric surface of the garment.`;
+  prompt += ` The pattern change must be bold and unmistakable — not a subtle texture shift.`;
+  prompt += ` Keep the exact silhouette, shape, proportions, closures, and construction unchanged.`;
+  prompt += ` No brand logos or text. Flat-lay product shot, clean white background, studio lighting.`;
+  return prompt;
+}
+
+function buildRefinePrompt(
+  combo: IConcept["combo"],
+  accumulatedEdits: string[],
+  newInstruction: string,
+  editType: EditType,
+): string {
+  if (editType === "silhouette") {
+    return buildStructuralRefinePrompt(combo, accumulatedEdits, newInstruction);
+  }
+  if (editType === "pattern") {
+    return buildPatternRefinePrompt(combo, accumulatedEdits, newInstruction);
+  }
+
+  const current = describeCurrentState(combo, accumulatedEdits);
+  let prompt = `This image shows ${current}.`;
+  prompt += ` Now apply this edit: ${newInstruction}.`;
+  prompt += ` Keep all other details of the garment exactly as they are — preserve structural proportions, closures, pockets, and construction lines.`;
+  prompt += ` No brand logos, labels, or text. Unbranded fashion concept.`;
+  prompt += ` Flat-lay product shot on a clean white background, fashion photography, high detail, studio lighting.`;
+  return prompt;
+}
+
+// ---- Seedream submission (for color/silhouette edits) ----
+
+interface FalQueueResponse {
+  request_id: string;
+  status_url: string;
+  response_url: string;
+}
+
+async function submitToSeedream(imageUrl: string, prompt: string): Promise<FalQueueResponse> {
+  const resp = await axios.post(
+    FAL_SEEDREAM_QUEUE_URL,
+    {
+      image_urls: [imageUrl],
+      prompt,
+      image_size: "square",
+      enable_safety_checker: false,
+    },
+    { headers: falHeaders() },
+  );
+  return {
+    request_id: resp.data.request_id,
+    status_url: resp.data.status_url,
+    response_url: resp.data.response_url,
+  };
+}
+
+async function pollFalQueueResult(statusUrl: string, responseUrl: string): Promise<{ imageUrl: string; inferenceTime: number } | null> {
+  const statusResp = await axios.get(statusUrl, { headers: falHeaders(), validateStatus: () => true });
+
+  if (statusResp.status === 200 && statusResp.data.status === "COMPLETED") {
+    const resultResp = await axios.get(responseUrl, { headers: falHeaders() });
+    const data = resultResp.data;
+    const imageUrl = data.images?.[0]?.url ?? data.image?.url ?? null;
+    const inferenceTime = data.metrics?.inference_time ?? 0;
+    return imageUrl ? { imageUrl, inferenceTime } : null;
+  }
+
+  return null;
+}
+
+// ---- Refine pipeline ----
+
+export async function refineConcept(
+  conceptId: string,
+  userId: string,
+  instruction: string,
+) {
+  const parentConcept = await Concept.findById(conceptId);
+  if (!parentConcept) throw new ApiError(404, "Concept not found");
+  if (!parentConcept.image?.gridfs_id) throw new ApiError(400, "Parent concept has no image yet");
+
+  const workspace = await Workspace.findOne({ _id: parentConcept.workspace_id, user_id: userId }).lean();
+  if (!workspace) throw new ApiError(403, "Not authorized");
+
+  const editType = classifyEditType(instruction);
+
+  const rootId = parentConcept.root_concept ?? parentConcept._id;
+  const prevEdits = parentConcept.accumulated_edits ?? [];
+  const accumulatedEdits = [...prevEdits, instruction];
+
+  const prompt = buildRefinePrompt(parentConcept.combo, prevEdits, instruction, editType);
+
+  const parentImageDataUri = await readGridFSAsDataUri(
+    parentConcept.image.gridfs_id.toString(),
+    "concepts",
+  );
+
+  // Only color edits go to Seedream; structural + pattern + detail → Kontext with high guidance
+  const useSeedream = editType === "color";
+  const model = useSeedream ? "fal-ai/bytedance/seedream/v4/edit" : "fal-ai/flux-pro/kontext";
+  const cost = useSeedream ? COST_SEEDREAM : COST_PER_IMAGE;
+
+  const variant = await Concept.create({
+    workspace_id: parentConcept.workspace_id,
+    job_id: parentConcept.job_id,
+    parent_concept: parentConcept._id,
+    root_concept: rootId,
+    edit_instruction: instruction,
+    accumulated_edits: accumulatedEdits,
+    edit_type: editType,
+    combo: parentConcept.combo,
+    image: {},
+    generation: { model, prompt },
+    coherence: parentConcept.coherence,
+    status: "generating",
+  });
+
+  runRefineGeneration(
+    variant._id.toString(),
+    parentImageDataUri,
+    prompt,
+    useSeedream,
+    editType,
+  ).catch((err) => {
+    console.error(`Refine generation failed for variant ${variant._id}:`, err);
+  });
+
+  return {
+    variant_id: variant._id,
+    parent_concept_id: parentConcept._id,
+    root_concept_id: rootId,
+    edit_type: editType,
+    model,
+    estimated_cost_usd: cost,
+    accumulated_edits: accumulatedEdits,
+    status: "generating",
+  };
+}
+
+async function runRefineGeneration(
+  variantId: string,
+  imageDataUri: string,
+  prompt: string,
+  useSeedream: boolean,
+  editType: EditType = "detail",
+) {
+  try {
+    let statusUrl: string;
+    let responseUrl: string;
+    let requestId: string;
+
+    if (useSeedream) {
+      try {
+        const queueResp = await submitToSeedream(imageDataUri, prompt);
+        requestId = queueResp.request_id;
+        statusUrl = queueResp.status_url;
+        responseUrl = queueResp.response_url;
+      } catch (err) {
+        console.warn(`Seedream failed, falling back to Kontext for variant ${variantId}:`, err);
+        const gs = getGuidanceScale(editType);
+        requestId = await submitToFal(imageDataUri, prompt, gs);
+        statusUrl = `${FAL_STATUS_BASE}/${requestId}/status`;
+        responseUrl = `${FAL_STATUS_BASE}/${requestId}`;
+        await Concept.updateOne({ _id: variantId }, { "generation.model": "fal-ai/flux-pro/kontext" });
+      }
+    } else {
+      const gs = getGuidanceScale(editType);
+      requestId = await submitToFal(imageDataUri, prompt, gs);
+      statusUrl = `${FAL_STATUS_BASE}/${requestId}/status`;
+      responseUrl = `${FAL_STATUS_BASE}/${requestId}`;
+    }
+
+    await Concept.updateOne({ _id: variantId }, { "generation.fal_request_id": requestId });
+
+    const MAX_POLL = 60;
+    let attempts = 0;
+
+    while (attempts < MAX_POLL) {
+      await sleep(POLL_INTERVAL_MS);
+      attempts++;
+
+      const result = await pollFalQueueResult(statusUrl, responseUrl).catch(() => null);
+      if (!result) continue;
+
+      const { gridfsId } = await downloadAndStoreImage(result.imageUrl);
+      const cost = useSeedream ? COST_SEEDREAM : COST_PER_IMAGE;
+
+      await Concept.updateOne(
+        { _id: variantId },
+        {
+          "image.gridfs_id": gridfsId,
+          "image.width": 1024,
+          "image.height": 1024,
+          "image.format": "jpeg",
+          "generation.inference_time_s": result.inferenceTime,
+          "generation.cost_usd": cost,
+          status: "generated",
+        },
+      );
+
+      return;
+    }
+
+    await Concept.updateOne({ _id: variantId }, { status: "failed" });
+    console.error(`Variant ${variantId} timed out after ${MAX_POLL} polls`);
+  } catch (err) {
+    await Concept.updateOne({ _id: variantId }, { status: "failed" });
+    throw err;
+  }
+}
+
+export async function getVariants(conceptId: string, userId: string) {
+  const concept = await Concept.findById(conceptId);
+  if (!concept) throw new ApiError(404, "Concept not found");
+
+  const workspace = await Workspace.findOne({ _id: concept.workspace_id, user_id: userId }).lean();
+  if (!workspace) throw new ApiError(403, "Not authorized");
+
+  const rootId = concept.root_concept ?? concept._id;
+  return Concept.find({ root_concept: rootId }).sort({ createdAt: 1 }).lean();
 }
