@@ -773,7 +773,7 @@ export default function WorkspaceCanvas() {
 
   const generate = useMutation({
     mutationFn: async () => {
-      const { data } = await api.post(`/workspace/${id}/generate`);
+      const { data } = await api.post("/concepts/generate", { workspace_id: id, mode: "suggest" });
       return data;
     },
     onSuccess: () => {

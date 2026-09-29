@@ -17,8 +17,19 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
   const { data: variants = [], isLoading } = useQuery<MockVariant[]>({
     queryKey: ["workspace", workspaceId, "variants", "stage3"],
     queryFn: async () => {
-      const { data } = await api.get(`/workspace/${workspaceId}/variants?stage=3`);
-      return data;
+      const { data } = await api.get("/concepts", { params: { workspace_id: workspaceId } });
+      
+      if (data && data.length > 0) {
+        return data.map((c: any) => ({
+          id: c._id,
+          imageUrl: `/api/v1/concepts/${c._id}/image`,
+          title: c.combo?.silhouette_label || "AI Concept",
+          materials: `${c.combo?.fabric_label || "Cotton"} • ${c.combo?.color?.name || "Black"}`,
+        }));
+      }
+
+      const { data: mockData } = await api.get(`/workspace/${workspaceId}/variants?stage=3`);
+      return mockData;
     },
     enabled: !!workspaceId,
   });
