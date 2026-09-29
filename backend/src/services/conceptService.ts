@@ -1,17 +1,11 @@
 import mongoose from "mongoose";
 import axios from "axios";
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
 import { env } from "../config/env.js";
 import { ApiError } from "../utils/api-error.js";
 import { Workspace, type IWorkspaceElement } from "../models/Workspace.js";
 import { GenerationJob, type IComboRef, type IDiscardedCombo } from "../models/GenerationJob.js";
 import { Concept, type IConcept } from "../models/Concept.js";
 import { evaluateCombos, type CoherenceResult } from "./coherenceFilter.js";
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const UPLOADS_DIR = path.resolve(__dirname, "../../uploads");
 
 const FAL_QUEUE_URL = "https://queue.fal.run/fal-ai/flux-pro/kontext";
 const FAL_SEEDREAM_QUEUE_URL = "https://queue.fal.run/fal-ai/bytedance/seedream/v4/edit";
@@ -55,36 +49,7 @@ async function resolveImageForFal(url: string): Promise<string> {
     return readGridFSAsDataUri(gridfsId);
   }
 
-  // Case 2: Local file path or localhost URL → Fal's cloud can't reach localhost,
-  // so read it from disk and return as base64 data URI
-  const isLocalhost = url.startsWith("http://localhost") || url.startsWith("http://127.0.0.1");
-  const isRelativePath = url.startsWith("/uploads") || url.startsWith("uploads");
-
-  if (isLocalhost || isRelativePath) {
-    let filePath: string;
-    if (isLocalhost) {
-      // Strip protocol + host + port, e.g. http://localhost:3001/uploads/... → /uploads/...
-      const parsed = new URL(url);
-      const relPath = parsed.pathname.replace(/^\/uploads\//, "");
-      filePath = path.join(UPLOADS_DIR, relPath);
-    } else {
-      // e.g. /uploads/workspace-elements/abc/file.png
-      const relPath = url.replace(/^\/?(uploads\/)/, "");
-      filePath = path.join(UPLOADS_DIR, relPath);
-    }
-
-    if (!fs.existsSync(filePath)) {
-      throw new Error(`Local upload file not found on disk: ${filePath} (original url: ${url})`);
-    }
-
-    const buffer = fs.readFileSync(filePath);
-    const ext = path.extname(filePath).toLowerCase();
-    const mime = ext === ".png" ? "image/png" : ext === ".webp" ? "image/webp" : "image/jpeg";
-    console.log(`[resolveImageForFal] Converted local upload to base64: ${filePath}`);
-    return `data:${mime};base64,${buffer.toString("base64")}`;
-  }
-
-  // Case 3: External public URL → pass through directly
+  // Case 2: External public URL → pass through directly
   return url;
 }
 

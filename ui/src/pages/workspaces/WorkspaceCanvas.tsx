@@ -762,6 +762,7 @@ export default function WorkspaceCanvas() {
   );
 
   const [prevStatus, setPrevStatus] = useState(ws?.status);
+  const [genProgress, setGenProgress] = useState<{ completed: number; total: number; cost: number } | null>(null);
 
   useEffect(() => {
     if (prevStatus === "generating" && ws?.status === "ready") {
@@ -773,12 +774,50 @@ export default function WorkspaceCanvas() {
 
   const generate = useMutation({
     mutationFn: async () => {
-      const { data } = await api.post("/concepts/generate", { workspace_id: id, mode: "suggest" });
-      return data;
+      const { data } = await api.post("/concepts/generate", {
+        workspace_id: id,
+        mode: "suggest",
+      });
+      return data as {
+        job_id: string;
+        combos_to_generate: number;
+        combos_killed: number;
+        estimated_cost_usd: number;
+        stream_url: string;
+      };
     },
-    onSuccess: () => {
-      qc.invalidateQueries({ queryKey: ["workspace", id] });
-      qc.invalidateQueries({ queryKey: ["workspaces"] });
+    onSuccess: (data) => {
+      if (data.combos_to_generate === 0) {
+        qc.invalidateQueries({ queryKey: ["workspace", id] });
+        return;
+      }
+      setGenProgress({ completed: 0, total: data.combos_to_generate, cost: 0 });
+
+      const evtSource = new EventSource(`/api/v1${data.stream_url}`);
+
+      evtSource.addEventListener("progress", (e) => {
+        const p = JSON.parse(e.data);
+        setGenProgress({ completed: p.completed, total: p.total, cost: p.cost_so_far });
+      });
+
+      evtSource.addEventListener("concept_ready", () => {
+        qc.invalidateQueries({ queryKey: ["concepts", id] });
+      });
+
+      evtSource.addEventListener("job_done", () => {
+        evtSource.close();
+        setGenProgress(null);
+        qc.invalidateQueries({ queryKey: ["workspace", id] });
+        qc.invalidateQueries({ queryKey: ["concepts", id] });
+        setStage(2);
+      });
+
+      evtSource.onerror = () => {
+        evtSource.close();
+        setGenProgress(null);
+        qc.invalidateQueries({ queryKey: ["workspace", id] });
+        qc.invalidateQueries({ queryKey: ["concepts", id] });
+      };
     },
   });
 
@@ -961,11 +1000,15 @@ export default function WorkspaceCanvas() {
               <Button
                 variant="contained"
                 startIcon={<AutoAwesomeIcon />}
-                disabled={isGenerating || generate.isPending || !anyRowComplete}
+                disabled={isGenerating || generate.isPending || !!genProgress || !anyRowComplete}
                 onClick={() => generate.mutate()}
                 sx={{ mt: 1, borderRadius: "10px", py: 1.5, px: 3 }}
               >
-                {isGenerating ? "Generating…" : "Generate Collection"}
+                {genProgress
+                  ? `Generating ${genProgress.completed}/${genProgress.total}…`
+                  : generate.isPending
+                    ? "Starting…"
+                    : "Generate Collection"}
               </Button>
             </span>
           </Tooltip>
@@ -1301,7 +1344,7 @@ export default function WorkspaceCanvas() {
                 key={tool.label}
                 variant="outlined"
                 startIcon={tool.icon}
-                disabled={generate.isPending || !anyRowComplete}
+                disabled={generate.isPending || !!genProgress || !anyRowComplete}
                 onClick={() => generate.mutate()}
                 sx={{
                   borderColor: "#f0e4e2",
