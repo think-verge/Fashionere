@@ -801,6 +801,7 @@ export default function WorkspaceCanvas() {
     onSuccess: (data) => {
       if (data.combos_to_generate === 0) {
         qc.invalidateQueries({ queryKey: ["workspace", id] });
+        setStage(2);
         return;
       }
       setGenProgress({ completed: 0, total: data.combos_to_generate, cost: 0 });
