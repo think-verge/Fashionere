@@ -9,7 +9,7 @@ import { evaluateCombos, type CoherenceResult } from "./coherenceFilter.js";
 
 const FAL_QUEUE_URL = "https://queue.fal.run/fal-ai/flux-pro/kontext";
 const FAL_SEEDREAM_QUEUE_URL = "https://queue.fal.run/fal-ai/bytedance/seedream/v4/edit";
-const FAL_STATUS_BASE = "https://queue.fal.run/fal-ai/flux-pro/requests";
+const FAL_STATUS_BASE = "https://queue.fal.run/fal-ai/flux-pro/kontext/requests";
 const COST_PER_IMAGE = 0.04;
 const COST_SEEDREAM = 0.03;
 const MAX_COMBOS = 10;
@@ -43,10 +43,13 @@ async function readGridFSAsDataUri(gridfsId: string, bucketName = "swatches"): P
 }
 
 async function resolveImageForFal(url: string): Promise<string> {
+  // Case 1: GridFS URL (e.g. ending in a 24-char hex id) → convert to base64 data URI
   const gridfsId = gridfsIdFromUrl(url);
   if (gridfsId) {
     return readGridFSAsDataUri(gridfsId);
   }
+
+  // Case 2: External public URL → pass through directly
   return url;
 }
 
@@ -202,7 +205,7 @@ function getSilhouetteImageUrl(
   return (d.flat_url ?? d.image_url) as string | null ?? null;
 }
 
-async function submitToFal(imageUrl: string, prompt: string, guidanceScale = 3.5): Promise<string> {
+async function submitToFal(imageUrl: string, prompt: string, guidanceScale = 3.5): Promise<{ requestId: string; statusUrl: string; responseUrl: string }> {
   const resp = await axios.post(
     FAL_QUEUE_URL,
     {
@@ -215,7 +218,11 @@ async function submitToFal(imageUrl: string, prompt: string, guidanceScale = 3.5
     },
     { headers: falHeaders() },
   );
-  return resp.data.request_id;
+  return {
+    requestId: resp.data.request_id,
+    statusUrl: resp.data.status_url,
+    responseUrl: resp.data.response_url,
+  };
 }
 
 function getGuidanceScale(editType: EditType): number {
@@ -227,11 +234,11 @@ function getGuidanceScale(editType: EditType): number {
   }
 }
 
-async function pollFalResult(requestId: string): Promise<{ imageUrl: string; inferenceTime: number } | null> {
-  const statusResp = await axios.get(`${FAL_STATUS_BASE}/${requestId}/status`, { headers: falHeaders() });
-  if (statusResp.data.status !== "COMPLETED") return null;
+async function pollFalResult(statusUrl: string, responseUrl: string): Promise<{ imageUrl: string; inferenceTime: number } | null> {
+  const statusResp = await axios.get(statusUrl, { headers: falHeaders(), validateStatus: () => true });
+  if (statusResp.status !== 200 || statusResp.data.status !== "COMPLETED") return null;
 
-  const resultResp = await axios.get(`${FAL_STATUS_BASE}/${requestId}`, { headers: falHeaders() });
+  const resultResp = await axios.get(responseUrl, { headers: falHeaders() });
   const data = resultResp.data;
   const imageUrl = data.images?.[0]?.url ?? data.image?.url ?? null;
   const inferenceTime = data.metrics?.inference_time ?? statusResp.data.metrics?.inference_time ?? 0;
@@ -239,20 +246,39 @@ async function pollFalResult(requestId: string): Promise<{ imageUrl: string; inf
 }
 
 async function downloadAndStoreImage(imageUrl: string): Promise<{ gridfsId: mongoose.Types.ObjectId; size: number }> {
-  const resp = await axios.get(imageUrl, { responseType: "arraybuffer" });
-  const buffer = Buffer.from(resp.data);
+  const MAX_DOWNLOAD_ATTEMPTS = 4;
+  let lastError: unknown;
 
-  const bucket = new mongoose.mongo.GridFSBucket(mongoose.connection.db!, { bucketName: "concepts" });
-  const filename = `concept_${Date.now()}.jpg`;
+  for (let attempt = 1; attempt <= MAX_DOWNLOAD_ATTEMPTS; attempt++) {
+    try {
+      const resp = await axios.get(imageUrl, { responseType: "arraybuffer", timeout: 30_000 });
+      const buffer = Buffer.from(resp.data);
 
-  return new Promise((resolve, reject) => {
-    const uploadStream = bucket.openUploadStream(filename, { contentType: "image/jpeg" });
-    uploadStream.on("error", reject);
-    uploadStream.on("finish", () => {
-      resolve({ gridfsId: uploadStream.id as mongoose.Types.ObjectId, size: buffer.length });
-    });
-    uploadStream.end(buffer);
-  });
+      const bucket = new mongoose.mongo.GridFSBucket(mongoose.connection.db!, { bucketName: "concepts" });
+      const filename = `concept_${Date.now()}.jpg`;
+
+      return await new Promise((resolve, reject) => {
+        const uploadStream = bucket.openUploadStream(filename, { contentType: "image/jpeg" });
+        uploadStream.on("error", reject);
+        uploadStream.on("finish", () => {
+          resolve({ gridfsId: uploadStream.id as mongoose.Types.ObjectId, size: buffer.length });
+        });
+        uploadStream.end(buffer);
+      });
+    } catch (err: any) {
+      lastError = err;
+      const status = err?.response?.status;
+      // Only retry on 5xx (server errors) or network timeouts — not 4xx client errors
+      if (status && status < 500) throw err;
+      if (attempt < MAX_DOWNLOAD_ATTEMPTS) {
+        const delayMs = 2000 * attempt; // 2s, 4s, 6s
+        console.warn(`[downloadAndStoreImage] Attempt ${attempt} failed (${status ?? "network error"}), retrying in ${delayMs}ms...`);
+        await sleep(delayMs);
+      }
+    }
+  }
+
+  throw lastError;
 }
 
 function sleep(ms: number): Promise<void> {
@@ -319,6 +345,20 @@ export async function generateConcepts(
     allCombos = buildComboMatrix(silhouettes, fabrics, patterns, colors);
   }
 
+  // Prevent duplicate generations by filtering out combos that already exist
+  const existingConcepts = await Concept.find({ workspace_id: workspaceId }).lean();
+  allCombos = allCombos.filter((combo) => {
+    return !existingConcepts.some(
+      (ec) =>
+        !ec.parent_concept && // Only check root concepts
+        ec.combo &&
+        ec.combo.silhouette_id === combo.silhouette_id &&
+        ec.combo.fabric_id === combo.fabric_id &&
+        ec.combo.color.hex === combo.color.hex &&
+        (ec.combo.pattern_id ?? null) === (combo.pattern_id ?? null)
+    );
+  });
+
   const matrixSize = allCombos.length;
   const { passed, killed } = evaluateCombos(allCombos);
 
@@ -367,7 +407,7 @@ export async function generateConcepts(
       ...k.combo,
       coherence: k.coherence,
     })),
-    stream_url: `/api/v1/concepts/generate/${job._id}/stream`,
+    stream_url: `/concepts/generate/${job._id}/stream`,
   };
 }
 
@@ -380,7 +420,7 @@ async function runGeneration(
 ) {
   await GenerationJob.updateOne({ _id: jobId }, { status: "running", started_at: new Date() });
 
-  const concepts: Array<{ conceptId: string; requestId: string; combo: CoherenceResult }> = [];
+  const concepts: Array<{ conceptId: string; requestId: string; statusUrl: string; responseUrl: string; combo: CoherenceResult }> = [];
 
   for (const cr of combos) {
     const prompt = buildPrompt(cr.combo);
@@ -413,9 +453,9 @@ async function runGeneration(
     });
 
     try {
-      const requestId = await submitToFal(resolvedImageUrl, prompt);
+      const { requestId, statusUrl, responseUrl } = await submitToFal(resolvedImageUrl, prompt);
       await Concept.updateOne({ _id: concept._id }, { "generation.fal_request_id": requestId });
-      concepts.push({ conceptId: concept._id.toString(), requestId, combo: cr });
+      concepts.push({ conceptId: concept._id.toString(), requestId, statusUrl, responseUrl, combo: cr });
     } catch (err) {
       console.error(`FAL submission failed for concept ${concept._id}:`, err);
       await Concept.updateOne({ _id: concept._id }, { status: "failed" });
@@ -427,6 +467,9 @@ async function runGeneration(
       { _id: jobId },
       { status: "completed", completed_at: new Date(), combos_total: 0 },
     );
+    if (workspaceId) {
+      await Workspace.updateOne({ _id: workspaceId }, { status: "ready" });
+    }
     emitSSE(jobId, "job_done", { status: "completed", total_cost_usd: 0, concepts_count: 0 });
     return;
   }
@@ -447,7 +490,7 @@ async function runGeneration(
       if (!pending.has(c.conceptId)) continue;
 
       try {
-        const result = await pollFalResult(c.requestId);
+        const result = await pollFalResult(c.statusUrl, c.responseUrl);
         if (!result) continue;
 
         const { gridfsId } = await downloadAndStoreImage(result.imageUrl);
@@ -585,7 +628,7 @@ export async function overrideCombos(jobId: string, userId: string, comboRefs: I
       ...r.combo,
       coherence: r.coherence,
     })),
-    stream_url: `/api/v1/concepts/generate/${jobId}/stream`,
+    stream_url: `/concepts/generate/${jobId}/stream`,
   };
 }
 
@@ -874,16 +917,18 @@ async function runRefineGeneration(
       } catch (err) {
         console.warn(`Seedream failed, falling back to Kontext for variant ${variantId}:`, err);
         const gs = getGuidanceScale(editType);
-        requestId = await submitToFal(imageDataUri, prompt, gs);
-        statusUrl = `${FAL_STATUS_BASE}/${requestId}/status`;
-        responseUrl = `${FAL_STATUS_BASE}/${requestId}`;
+        const falResp = await submitToFal(imageDataUri, prompt, gs);
+        requestId = falResp.requestId;
+        statusUrl = falResp.statusUrl;
+        responseUrl = falResp.responseUrl;
         await Concept.updateOne({ _id: variantId }, { "generation.model": "fal-ai/flux-pro/kontext" });
       }
     } else {
       const gs = getGuidanceScale(editType);
-      requestId = await submitToFal(imageDataUri, prompt, gs);
-      statusUrl = `${FAL_STATUS_BASE}/${requestId}/status`;
-      responseUrl = `${FAL_STATUS_BASE}/${requestId}`;
+      const falResp = await submitToFal(imageDataUri, prompt, gs);
+      requestId = falResp.requestId;
+      statusUrl = falResp.statusUrl;
+      responseUrl = falResp.responseUrl;
     }
 
     await Concept.updateOne({ _id: variantId }, { "generation.fal_request_id": requestId });
