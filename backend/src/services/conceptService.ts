@@ -345,6 +345,20 @@ export async function generateConcepts(
     allCombos = buildComboMatrix(silhouettes, fabrics, patterns, colors);
   }
 
+  // Prevent duplicate generations by filtering out combos that already exist
+  const existingConcepts = await Concept.find({ workspace_id: workspaceId }).lean();
+  allCombos = allCombos.filter((combo) => {
+    return !existingConcepts.some(
+      (ec) =>
+        !ec.parent_concept && // Only check root concepts
+        ec.combo &&
+        ec.combo.silhouette_id === combo.silhouette_id &&
+        ec.combo.fabric_id === combo.fabric_id &&
+        ec.combo.color.hex === combo.color.hex &&
+        (ec.combo.pattern_id ?? null) === (combo.pattern_id ?? null)
+    );
+  });
+
   const matrixSize = allCombos.length;
   const { passed, killed } = evaluateCombos(allCombos);
 
@@ -393,7 +407,7 @@ export async function generateConcepts(
       ...k.combo,
       coherence: k.coherence,
     })),
-    stream_url: `/api/v1/concepts/generate/${job._id}/stream`,
+    stream_url: `/concepts/generate/${job._id}/stream`,
   };
 }
 
@@ -453,6 +467,9 @@ async function runGeneration(
       { _id: jobId },
       { status: "completed", completed_at: new Date(), combos_total: 0 },
     );
+    if (workspaceId) {
+      await Workspace.updateOne({ _id: workspaceId }, { status: "ready" });
+    }
     emitSSE(jobId, "job_done", { status: "completed", total_cost_usd: 0, concepts_count: 0 });
     return;
   }
@@ -611,7 +628,7 @@ export async function overrideCombos(jobId: string, userId: string, comboRefs: I
       ...r.combo,
       coherence: r.coherence,
     })),
-    stream_url: `/api/v1/concepts/generate/${jobId}/stream`,
+    stream_url: `/concepts/generate/${jobId}/stream`,
   };
 }
 

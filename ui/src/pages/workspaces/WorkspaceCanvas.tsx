@@ -551,22 +551,34 @@ function InventoryPanel({
         <>
           <Box sx={{ px: 2, py: 1.5, borderBottom: "1px solid #f0e4e2", flexShrink: 0, display: "flex", alignItems: "flex-start", justifyContent: "space-between" }}>
             <Box>
-              <Typography sx={{ fontSize: 10, fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.15em", color: "text.secondary" }}>
-                Inventory
-              </Typography>
-              <Typography sx={{ fontSize: 12, color: "text.disabled", mt: 0.25 }}>
-                {elements.length} element{elements.length !== 1 ? "s" : ""} · click to add
-              </Typography>
+              {isGenerating ? (
+                <Skeleton variant="text" width={80} height={16} />
+              ) : (
+                <Typography sx={{ fontSize: 10, fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.15em", color: "text.secondary" }}>
+                  Inventory
+                </Typography>
+              )}
+              {isGenerating ? (
+                <Skeleton variant="text" width={140} height={18} sx={{ mt: 0.5 }} />
+              ) : (
+                <Typography sx={{ fontSize: 12, color: "text.disabled", mt: 0.25 }}>
+                  {elements.length} element{elements.length !== 1 ? "s" : ""} · click to add
+                </Typography>
+              )}
             </Box>
-            <Tooltip title="Upload custom elements">
-              <IconButton
-                size="small"
-                onClick={onUpload}
-                sx={{ color: "primary.main", "&:hover": { bgcolor: "#fff0ef" }, width: 28, height: 28, mt: 0.25 }}
-              >
-                <CloudUploadOutlinedIcon sx={{ fontSize: 16 }} />
-              </IconButton>
-            </Tooltip>
+            {isGenerating ? (
+              <Skeleton variant="circular" width={28} height={28} sx={{ mt: 0.25 }} />
+            ) : (
+              <Tooltip title="Upload custom elements">
+                <IconButton
+                  size="small"
+                  onClick={onUpload}
+                  sx={{ color: "primary.main", "&:hover": { bgcolor: "#fff0ef" }, width: 28, height: 28, mt: 0.25 }}
+                >
+                  <CloudUploadOutlinedIcon sx={{ fontSize: 16 }} />
+                </IconButton>
+              </Tooltip>
+            )}
           </Box>
 
           <Box sx={{ flex: 1, overflowY: "auto", py: 0.5 }}>
@@ -1012,13 +1024,13 @@ export default function WorkspaceCanvas() {
               </Button>
             </span>
           </Tooltip>
-          {ws.status === "ready" && (
+          {(ws.status === "ready" || ws.status === "generating") && (
             <Button
               variant="outlined"
               onClick={() => setStage(2)}
               sx={{ mt: 1, borderRadius: "10px", py: 1.5, px: 3, borderColor: "primary.main", color: "primary.main", "&:hover": { bgcolor: "#fff0ef" } }}
             >
-              View Concepts
+              View Concepts {ws.status === "generating" ? `(${genProgress ? `${genProgress.completed}/${genProgress.total}` : "…"})` : ""}
             </Button>
           )}
         </Box>
