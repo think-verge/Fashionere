@@ -18,6 +18,7 @@ interface ConceptCard {
   isSkeleton?: boolean;
   isVariant?: boolean;
   parentId?: string;
+  rootId?: string;
   components?: string[];
 }
 
@@ -52,6 +53,7 @@ function mapRaw(c: any): ConceptCard {
     isSkeleton: c.status === "pending" || c.status === "generating",
     isVariant: !!c.parent_concept || (c.accumulated_edits && c.accumulated_edits.length > 0),
     parentId: c.parent_concept,
+    rootId: c.root_concept,
     components: [garmentType, colorName, fabricLabel, clean(c.combo?.pattern_label)].filter(Boolean),
   };
 }
@@ -87,11 +89,19 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
       }))
     : allConcepts.filter(c => !c.isVariant);
 
-  const approvedConcepts = displaySection01.filter(c => c.status === "approved");
+  const baseApproved = displaySection01.filter(c => c.status === "approved");
 
-  // Section 03: variants of approved concepts
-  const approvedIds = new Set(approvedConcepts.map(c => c.id));
-  const finalVariants = allConcepts.filter(c => c.isVariant && c.parentId && approvedIds.has(c.parentId));
+  // Map each approved base concept to its latest variant, so refinements happen "in place"
+  const approvedConcepts = baseApproved.map(base => {
+    // A variant belongs to this base if its rootId matches the base, or its immediate parent is the base
+    const variants = allConcepts.filter(c => c.isVariant && (c.rootId === base.id || c.parentId === base.id));
+    if (variants.length > 0) {
+      // The backend returns concepts sorted by createdAt: -1 (newest first).
+      // So the newest variant is at index 0.
+      return variants[0];
+    }
+    return base;
+  });
 
   // Mutations
   const approveConcept = useMutation({
@@ -228,11 +238,11 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
         actionIcon="approve"
         onAction={(id) => approveConcept.mutate(id)}
         onCardClick={(id) => {
-          const isApproved = approvedConcepts.some(c => c.id === id);
+          const isApproved = baseApproved.some(c => c.id === id);
           if (isApproved) rejectConcept.mutate(id);
           else approveConcept.mutate(id);
         }}
-        selectedIds={approvedConcepts.map(c => c.id)}
+        selectedIds={baseApproved.map(c => c.id)}
         inventoryData={inventoryData}
         isLoading={ws?.status === "generating"}
       />
@@ -243,10 +253,13 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
         subtitle="editorial · lookbook"
         hint="Click ✨ to create a final variation · Click ✗ to remove from selection."
         images={approvedConcepts}
-        isCarousel={false}
+        isCarousel
         actionIcon="refine"
         onAction={(id, instruction) => refineVariant.mutate({ conceptId: id, instruction: instruction ?? "" })}
-        onSecondaryAction={(id) => rejectConcept.mutate(id)}
+        onSecondaryAction={(id) => {
+          const concept = approvedConcepts.find(c => c.id === id);
+          rejectConcept.mutate(concept?.parentId || id);
+        }}
         actionPending={refineVariant.isPending}
         pendingId={refineVariant.variables?.conceptId}
         inventoryData={inventoryData}
@@ -258,7 +271,7 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
         title="03 Final variations"
         subtitle="on-model · e-commerce"
         hint="Refined outputs appear here — ready for production"
-        images={finalVariants}
+        images={[]} // Always empty for now, shows the rectangular placeholder box
         isCarousel={false}
         inventoryData={inventoryData}
         isLoading={ws?.status === "generating"}
