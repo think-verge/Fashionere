@@ -17,8 +17,19 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
   const { data: variants = [], isLoading } = useQuery<MockVariant[]>({
     queryKey: ["workspace", workspaceId, "variants", "stage3"],
     queryFn: async () => {
-      const { data } = await api.get(`/workspace/${workspaceId}/variants?stage=3`);
-      return data;
+      const { data } = await api.get("/concepts", { params: { workspace_id: workspaceId } });
+      
+      if (data && data.length > 0) {
+        return data.map((c: any) => ({
+          id: c._id,
+          imageUrl: `/api/v1/concepts/${c._id}/image`,
+          title: c.combo?.silhouette_label || "AI Concept",
+          materials: `${c.combo?.fabric_label || "Cotton"} • ${c.combo?.color?.name || "Black"}`,
+        }));
+      }
+
+      const { data: mockData } = await api.get(`/workspace/${workspaceId}/variants?stage=3`);
+      return mockData;
     },
     enabled: !!workspaceId,
   });
@@ -35,7 +46,7 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
     : variants;
 
   return (
-    <Box sx={{ mt: 1, mb: 4, maxWidth: "1200px" }}>
+    <Box sx={{ mt: 1, mb: 4, width: "100%" }}>
       {/* HEADER */}
       <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", mb: 0.5 }}>
         <Typography sx={{ fontSize: 12, fontWeight: 600, color: "text.secondary", textTransform: "uppercase" }}>
@@ -93,7 +104,7 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
       </Box>
 
       {/* 01 The Campaign */}
-      <Box sx={{ mb: 10 }}>
+      <Box sx={{ mb: 6 }}>
         <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", mb: 3 }}>
           <Typography sx={{ fontSize: 18, color: "text.primary", fontFamily: "'Literata', Georgia, serif" }}>
             <span style={{ fontSize: 13, fontWeight: 700, fontFamily: "Inter, sans-serif", letterSpacing: "0.05em", marginRight: "12px", color: "text.secondary" }}>
@@ -127,7 +138,7 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
       </Box>
 
       {/* 02 Editorial looks */}
-      <Box sx={{ mb: 10 }}>
+      <Box sx={{ mb: 6 }}>
         <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", mb: 3 }}>
           <Typography sx={{ fontSize: 18, color: "text.primary", fontFamily: "'Literata', Georgia, serif" }}>
             <span style={{ fontSize: 13, fontWeight: 700, fontFamily: "Inter, sans-serif", letterSpacing: "0.05em", marginRight: "12px", color: "text.secondary" }}>
@@ -153,11 +164,18 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
               </Box>
             </Box>
           ))}
+          {displayVariants.slice(1, 3).length === 1 && <Box sx={{ flex: 1 }} />}
+          {displayVariants.slice(1, 3).length === 0 && (
+            <>
+              <Box sx={{ flex: 1 }} />
+              <Box sx={{ flex: 1 }} />
+            </>
+          )}
         </Box>
       </Box>
 
       {/* 03 Colorway study */}
-      <Box sx={{ mb: 10 }}>
+      <Box sx={{ mb: 6 }}>
         <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", mb: 3 }}>
           <Typography sx={{ fontSize: 18, color: "text.primary", fontFamily: "'Literata', Georgia, serif" }}>
             <span style={{ fontSize: 13, fontWeight: 700, fontFamily: "Inter, sans-serif", letterSpacing: "0.05em", marginRight: "12px", color: "text.secondary" }}>
@@ -183,8 +201,10 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
           <Box sx={{ flex: 1 }}>
             {(displayVariants[4] || displayVariants[1])?.isSkeleton ? (
               <Skeleton variant="rectangular" sx={{ width: "100%", height: "auto", aspectRatio: "3/4", display: "block", borderRadius: "16px" }} />
-            ) : (
+            ) : (displayVariants[4] || displayVariants[1]) ? (
               <img src={displayVariants[4]?.imageUrl || displayVariants[1]?.imageUrl} style={{ width: "100%", height: "auto", aspectRatio: "3/4", objectFit: "cover", display: "block", borderRadius: "16px" }} alt="Colorway 2" />
+            ) : (
+              <Box sx={{ width: "100%", height: "auto", aspectRatio: "3/4" }} />
             )}
             <Box sx={{ mt: 2 }}>
               <Typography sx={{ fontSize: 13, color: "text.primary", mb: 0.5 }}>Maillot — terracotta</Typography>
@@ -195,7 +215,7 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
       </Box>
 
       {/* FOOTER */}
-      <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mt: 6, pt: 4, borderTop: "1px solid #f0e4e2" }}>
+      <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mt: 2, pt: 2, borderTop: "1px solid #f0e4e2" }}>
         <Typography sx={{ fontSize: 12, fontWeight: 600, color: "text.secondary", textTransform: "uppercase" }}>
           STAGE 03 — EDITORIAL
         </Typography>

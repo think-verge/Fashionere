@@ -5,7 +5,6 @@ import {
   Box, Typography, Paper, Button, Chip, Alert,
   IconButton, Skeleton, Tooltip,
   Accordion, AccordionSummary, AccordionDetails,
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   Popover, MenuItem, Divider,
 } from "@mui/material";
 import {
@@ -35,9 +34,7 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import LayersOutlinedIcon from "@mui/icons-material/LayersOutlined";
 import CloudUploadOutlinedIcon from "@mui/icons-material/CloudUploadOutlined";
 import { PaletteStrip } from "../../components/PaletteStrip";
@@ -530,55 +527,58 @@ function InventoryPanel({
         width: open ? 264 : 0,
         minWidth: open ? 264 : 0,
         flexShrink: 0,
-        overflow: "visible",
         transition: "width 0.2s, min-width 0.2s",
         position: "relative",
-        borderRight: open ? "1px solid #f0e4e2" : "none",
-        bgcolor: "#faf8f7",
-        display: "flex",
-        flexDirection: "column",
+        // No overflow:hidden here — toggle button must not be clipped when closed
       }}
     >
+      {/* Content box clips its own overflow independently */}
       <Box
-        sx={{ position: "absolute", right: -14, top: "50%", transform: "translateY(-50%)", zIndex: 20 }}
+        sx={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          overflow: "hidden",
+          borderRight: open ? "1px solid #f0e4e2" : "none",
+          bgcolor: "#faf8f7",
+          display: "flex",
+          flexDirection: "column",
+        }}
       >
-        <IconButton
-          size="small"
-          onClick={onToggle}
-          sx={{
-            bgcolor: "#fff",
-            border: "1px solid #f0e4e2",
-            borderRadius: "50%",
-            width: 26,
-            height: 26,
-            boxShadow: "0 2px 8px rgba(36,25,24,0.10)",
-            "&:hover": { bgcolor: "#fff0ef" },
-          }}
-        >
-          {open ? <ChevronLeftIcon sx={{ fontSize: 15 }} /> : <ChevronRightIcon sx={{ fontSize: 15 }} />}
-        </IconButton>
-      </Box>
-
-      <Box sx={{ width: "100%", height: "100%", overflow: "hidden", position: "relative" }}>
-        <Box sx={{ width: 264, height: "100%", display: "flex", flexDirection: "column" }}>
+        {open && (
+        <>
           <Box sx={{ px: 2, py: 1.5, borderBottom: "1px solid #f0e4e2", flexShrink: 0, display: "flex", alignItems: "flex-start", justifyContent: "space-between" }}>
             <Box>
-              <Typography sx={{ fontSize: 10, fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.15em", color: "text.secondary" }}>
-                Inventory
-              </Typography>
-              <Typography sx={{ fontSize: 12, color: "text.disabled", mt: 0.25 }}>
-                {elements.length} element{elements.length !== 1 ? "s" : ""} · click to add
-              </Typography>
+              {isGenerating ? (
+                <Skeleton variant="text" width={80} height={16} />
+              ) : (
+                <Typography sx={{ fontSize: 10, fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.15em", color: "text.secondary" }}>
+                  Inventory
+                </Typography>
+              )}
+              {isGenerating ? (
+                <Skeleton variant="text" width={140} height={18} sx={{ mt: 0.5 }} />
+              ) : (
+                <Typography sx={{ fontSize: 12, color: "text.disabled", mt: 0.25 }}>
+                  {elements.length} element{elements.length !== 1 ? "s" : ""} · click to add
+                </Typography>
+              )}
             </Box>
-            <Tooltip title="Upload custom elements">
-              <IconButton
-                size="small"
-                onClick={onUpload}
-                sx={{ color: "primary.main", "&:hover": { bgcolor: "#fff0ef" }, width: 28, height: 28, mt: 0.25 }}
-              >
-                <CloudUploadOutlinedIcon sx={{ fontSize: 16 }} />
-              </IconButton>
-            </Tooltip>
+            {isGenerating ? (
+              <Skeleton variant="circular" width={28} height={28} sx={{ mt: 0.25 }} />
+            ) : (
+              <Tooltip title="Upload custom elements">
+                <IconButton
+                  size="small"
+                  onClick={onUpload}
+                  sx={{ color: "primary.main", "&:hover": { bgcolor: "#fff0ef" }, width: 28, height: 28, mt: 0.25 }}
+                >
+                  <CloudUploadOutlinedIcon sx={{ fontSize: 16 }} />
+                </IconButton>
+              </Tooltip>
+            )}
           </Box>
 
           <Box sx={{ flex: 1, overflowY: "auto", py: 0.5 }}>
@@ -690,7 +690,28 @@ function InventoryPanel({
               ))
             )}
           </Box>
-        </Box>
+        </>
+      )}
+      </Box>
+      {/* Toggle button — lives outside the clipping box so it's always visible */}
+      <Box
+        sx={{ position: "absolute", right: -14, top: "50%", transform: "translateY(-50%)", zIndex: 20 }}
+      >
+        <IconButton
+          size="small"
+          onClick={onToggle}
+          sx={{
+            bgcolor: "#fff",
+            border: "1px solid #f0e4e2",
+            borderRadius: "50%",
+            width: 26,
+            height: 26,
+            boxShadow: "0 2px 8px rgba(36,25,24,0.10)",
+            "&:hover": { bgcolor: "#fff0ef" },
+          }}
+        >
+          {open ? <ChevronLeftIcon sx={{ fontSize: 15 }} /> : <ChevronRightIcon sx={{ fontSize: 15 }} />}
+        </IconButton>
       </Box>
     </Box>
   );
@@ -712,6 +733,8 @@ export default function WorkspaceCanvas() {
 
   // Row picker popover state
   const [pendingAssign, setPendingAssign] = useState<{ elementId: string; anchor: HTMLElement } | null>(null);
+  // Element detail popover (canvas node click)
+  const [detailPop, setDetailPop] = useState<{ elementId: string; x: number; y: number } | null>(null);
 
   const { data: ws, isLoading } = useQuery<Workspace>({
     queryKey: ["workspace", id],
@@ -734,7 +757,6 @@ export default function WorkspaceCanvas() {
     onSuccess: () => qc.invalidateQueries({ queryKey: ["workspace", id] }),
   });
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const removeEl = useMutation({
     mutationFn: async (elementId: string) => {
       await api.delete(`/workspace/${id}/elements/${elementId}`);
@@ -779,11 +801,16 @@ export default function WorkspaceCanvas() {
     onSuccess: (data) => {
       if (data.combos_to_generate === 0) {
         qc.invalidateQueries({ queryKey: ["workspace", id] });
+        setStage(2);
         return;
       }
       setGenProgress({ completed: 0, total: data.combos_to_generate, cost: 0 });
+      // Invalidate immediately so other pages see the "generating" status
+      qc.invalidateQueries({ queryKey: ["workspace", id] });
+      qc.invalidateQueries({ queryKey: ["workspaces"] });
 
-      const evtSource = new EventSource(`/api/v1${data.stream_url}`);
+      const token = localStorage.getItem("fash_token") ?? "";
+      const evtSource = new EventSource(`/api/v1${data.stream_url}?token=${encodeURIComponent(token)}`);
 
       evtSource.addEventListener("progress", (e) => {
         const p = JSON.parse(e.data);
@@ -815,6 +842,11 @@ export default function WorkspaceCanvas() {
   const canvasElements = useMemo(
     () => ws?.elements.filter((e) => e.canvas_row != null) ?? [],
     [ws],
+  );
+
+  const detailElement = useMemo(
+    () => ws?.elements.find((e) => e.element_id === detailPop?.elementId) ?? null,
+    [ws, detailPop],
   );
 
   // Next available row number
@@ -924,7 +956,7 @@ export default function WorkspaceCanvas() {
 
   if (!ws) return <Alert severity="error">Workspace not found.</Alert>;
 
-  const isGenerating = ws.status === "generating";
+  const isGenerating = ws.status === "generating" || !!genProgress;
 
   return (
     <Box sx={{ overflow: "hidden", width: "100%" }}>
@@ -991,19 +1023,21 @@ export default function WorkspaceCanvas() {
               >
                 {genProgress
                   ? `Generating ${genProgress.completed}/${genProgress.total}…`
-                  : generate.isPending
-                    ? "Starting…"
-                    : "Generate Collection"}
+                  : ws.status === "generating"
+                    ? "Generating…"
+                    : generate.isPending
+                      ? "Starting…"
+                      : "Generate Collection"}
               </Button>
             </span>
           </Tooltip>
-          {ws.status === "ready" && (
+          {(ws.status === "ready" || ws.status === "generating") && (
             <Button
               variant="outlined"
               onClick={() => setStage(2)}
               sx={{ mt: 1, borderRadius: "10px", py: 1.5, px: 3, borderColor: "primary.main", color: "primary.main", "&:hover": { bgcolor: "#fff0ef" } }}
             >
-              View Concepts
+              View Concepts {ws.status === "generating" ? `(${genProgress ? `${genProgress.completed}/${genProgress.total}` : "…"})` : ""}
             </Button>
           )}
         </Box>
@@ -1108,6 +1142,11 @@ export default function WorkspaceCanvas() {
               onNodeDragStop={onNodeDragStop}
               nodeTypes={NODE_TYPES}
               onInit={(instance) => setRfInstance(instance as unknown as ReactFlowInstance)}
+              onNodeClick={(event, node) => {
+                if (node.type === "element-node") {
+                  setDetailPop({ elementId: node.id, x: event.clientX, y: event.clientY });
+                }
+              }}
               fitView
               fitViewOptions={{ padding: 0.3 }}
               proOptions={{ hideAttribution: true }}
@@ -1162,6 +1201,143 @@ export default function WorkspaceCanvas() {
             ))
           )}
         </Box>
+      </Popover>
+
+      {/* Element detail popover */}
+      <Popover
+        open={!!detailPop && !!detailElement}
+        anchorReference="anchorPosition"
+        anchorPosition={detailPop ? { top: detailPop.y + 8, left: detailPop.x + 8 } : undefined}
+        onClose={() => setDetailPop(null)}
+        PaperProps={{
+          sx: {
+            borderRadius: "12px",
+            border: "1px solid #f0e4e2",
+            minWidth: 220,
+            maxWidth: 300,
+            boxShadow: "0 8px 32px rgba(36,25,24,0.12)",
+          },
+        }}
+      >
+        {detailElement && (
+          <Box sx={{ p: 2 }}>
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1.5 }}>
+              <Chip
+                label={detailElement.element_type}
+                color={CHIP_COLORS[detailElement.element_type] ?? "default"}
+                size="small"
+                sx={{ fontSize: 9, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", height: 18 }}
+              />
+              {detailElement.garment_type && (
+                <Typography sx={{ fontSize: 11, color: "text.disabled", textTransform: "capitalize" }}>
+                  {detailElement.garment_type}
+                </Typography>
+              )}
+            </Box>
+
+            {/* Color */}
+            {detailElement.element_type === "color" && (() => {
+              const cols = (detailElement.data?.colors as Array<{ hex?: string; name?: string; family?: string }>) ?? [];
+              return (
+                <>
+                  <PaletteStrip swatches={cols.map((c) => ({ hex: c.hex ?? "#ccc", name: c.name, family: c.family }))} size={20} />
+                  <Box sx={{ mt: 0.75 }}>
+                    {cols.slice(0, 3).map((c, i) => c.name && (
+                      <Typography key={i} sx={{ fontSize: 12, color: "text.secondary", lineHeight: 1.5 }}>{c.name}</Typography>
+                    ))}
+                  </Box>
+                </>
+              );
+            })()}
+
+            {/* Fabric */}
+            {detailElement.element_type === "fabric" && (() => {
+              const f = detailElement.data?.fabric;
+              const label = !f ? "Unknown" : typeof f === "string" ? f : ((f as { name?: string }).name ?? "Fabric");
+              const imgUrl = (detailElement.data?.fabric as { image_url?: string } | undefined)?.image_url ?? (detailElement.data?.image_url as string | undefined);
+              return (
+                <>
+                  {imgUrl && (
+                    <Box component="img" src={imgUrl} sx={{ width: "100%", height: 64, objectFit: "cover", borderRadius: "8px", mb: 1 }} onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
+                  )}
+                  <Typography sx={{ fontSize: 13, fontWeight: 500, textTransform: "capitalize" }}>{label}</Typography>
+                  {(detailElement.data?.fabric as { composition?: string } | undefined)?.composition && (
+                    <Typography sx={{ fontSize: 11, color: "text.disabled", mt: 0.25 }}>
+                      {(detailElement.data.fabric as { composition?: string }).composition}
+                    </Typography>
+                  )}
+                </>
+              );
+            })()}
+
+            {/* Pattern */}
+            {detailElement.element_type === "pattern" && (() => {
+              const patImg = detailElement.data?.image_url as string | undefined;
+              const patName = detailElement.data?.pattern as string | undefined;
+              return (
+                <>
+                  {patImg && (
+                    <Box sx={{ width: "100%", height: 64, borderRadius: "8px", mb: 1, overflow: "hidden", backgroundImage: `url(${patImg})`, backgroundRepeat: "repeat", backgroundSize: "48px" }} />
+                  )}
+                  <Typography sx={{ fontSize: 13, fontWeight: 500, textTransform: "capitalize" }}>{patName ?? "—"}</Typography>
+                </>
+              );
+            })()}
+
+            {/* Silhouette */}
+            {detailElement.element_type === "silhouette" && (() => {
+              const flatUrl = detailElement.data?.flat_url as string | undefined;
+              return flatUrl ? (
+                <Box component="img" src={flatUrl} sx={{ width: "100%", height: 80, objectFit: "contain", borderRadius: "8px", bgcolor: "#f5f0ef" }} onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
+              ) : null;
+            })()}
+
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1, mt: 1.5 }}>
+              <Typography sx={{ fontSize: 11, color: "text.disabled", flex: 1, textTransform: "capitalize" }}>
+                {detailElement.source_brand}
+              </Typography>
+              {detailElement.look_id && (
+                <Typography
+                  component={Link}
+                  to={`/app/looks/${detailElement.look_id}`}
+                  onClick={() => setDetailPop(null)}
+                  sx={{ fontSize: 11, color: "primary.main", textDecoration: "none", "&:hover": { textDecoration: "underline" } }}
+                >
+                  view source →
+                </Typography>
+              )}
+            </Box>
+
+            <Divider sx={{ my: 1.5 }} />
+
+            <Box sx={{ display: "flex", flexDirection: "column", gap: 0.75 }}>
+              {detailElement.canvas_row != null && (
+                <Button
+                  size="small"
+                  startIcon={<LayersOutlinedIcon fontSize="small" />}
+                  onClick={() => {
+                    assignToCanvas.mutate({ elementId: detailElement.element_id, canvasRow: null });
+                    setDetailPop(null);
+                  }}
+                  sx={{ justifyContent: "flex-start", fontSize: 12, color: "text.secondary", py: 0.5, borderRadius: "8px", "&:hover": { bgcolor: "#f5f0ef" } }}
+                >
+                  Remove from canvas
+                </Button>
+              )}
+              <Button
+                size="small"
+                startIcon={<DeleteOutlineIcon fontSize="small" />}
+                onClick={() => {
+                  removeEl.mutate(detailElement.element_id);
+                  setDetailPop(null);
+                }}
+                sx={{ justifyContent: "flex-start", fontSize: 12, color: "error.main", py: 0.5, borderRadius: "8px", "&:hover": { bgcolor: "#fff0ef" } }}
+              >
+                Delete from workspace
+              </Button>
+            </Box>
+          </Box>
+        )}
       </Popover>
 
       <CustomUploadDialog

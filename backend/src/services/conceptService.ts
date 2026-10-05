@@ -1,3 +1,6 @@
+import path from "path";
+import { promises as fsp } from "fs";
+import { fileURLToPath } from "url";
 import mongoose from "mongoose";
 import axios from "axios";
 import { env } from "../config/env.js";
@@ -7,9 +10,12 @@ import { GenerationJob, type IComboRef, type IDiscardedCombo } from "../models/G
 import { Concept, type IConcept } from "../models/Concept.js";
 import { evaluateCombos, type CoherenceResult } from "./coherenceFilter.js";
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const FAL_QUEUE_URL = "https://queue.fal.run/fal-ai/flux-pro/kontext";
 const FAL_SEEDREAM_QUEUE_URL = "https://queue.fal.run/fal-ai/bytedance/seedream/v4/edit";
-const FAL_STATUS_BASE = "https://queue.fal.run/fal-ai/flux-pro/requests";
+const FAL_STATUS_BASE = "https://queue.fal.run/fal-ai/flux-pro/kontext/requests";
 const COST_PER_IMAGE = 0.04;
 const COST_SEEDREAM = 0.03;
 const MAX_COMBOS = 10;
@@ -43,10 +49,24 @@ async function readGridFSAsDataUri(gridfsId: string, bucketName = "swatches"): P
 }
 
 async function resolveImageForFal(url: string): Promise<string> {
+  // Case 1: GridFS asset URL (ends in 24-char hex objectId)
   const gridfsId = gridfsIdFromUrl(url);
   if (gridfsId) {
     return readGridFSAsDataUri(gridfsId);
   }
+
+  // Case 2: Local upload file served at /uploads/... — read from disk as base64
+  // Fal runs in the cloud and cannot reach localhost URLs.
+  if (url.startsWith("/uploads/")) {
+    const rel = url.replace(/^\/uploads\//, "");
+    const filePath = path.join(__dirname, "../../uploads", rel);
+    const buffer = await fsp.readFile(filePath);
+    const ext = path.extname(url).toLowerCase();
+    const mimeType = ext === ".png" ? "image/png" : ext === ".webp" ? "image/webp" : "image/jpeg";
+    return `data:${mimeType};base64,${buffer.toString("base64")}`;
+  }
+
+  // Case 3: External public URL → pass through directly
   return url;
 }
 
@@ -179,13 +199,13 @@ function buildComboMatrix(
 }
 
 function buildPrompt(combo: IComboRef): string {
-  let prompt = `Transform this garment into a new fashion concept: render it in ${combo.color.name} (${combo.color.hex}) ${combo.fabric_label} fabric.`;
+  let prompt = `Transform this ${combo.silhouette_garment_type || "garment"} into a new fashion concept: render it in ${combo.color.name} (${combo.color.hex}) ${combo.fabric_label} fabric.`;
 
   if (combo.pattern_label) {
     prompt += ` Apply a ${combo.pattern_label} pattern on the surface.`;
   }
 
-  prompt += ` Keep the exact silhouette — preserve all structural details, proportions, closures, pockets, and construction lines of the original garment.`;
+  prompt += ` This is a ${combo.silhouette_garment_type || "garment"}. Keep the exact silhouette — preserve all structural details, proportions, closures, pockets, and construction lines of the original garment. Do NOT change it into a jacket or coat unless the original silhouette is a jacket or coat.`;
   prompt += ` Remove all brand logos, labels, and text. This is an unbranded fashion concept.`;
   prompt += ` Flat-lay product shot on a clean white background, fashion photography, high detail, studio lighting.`;
 
@@ -202,7 +222,7 @@ function getSilhouetteImageUrl(
   return (d.flat_url ?? d.image_url) as string | null ?? null;
 }
 
-async function submitToFal(imageUrl: string, prompt: string, guidanceScale = 3.5): Promise<string> {
+async function submitToFal(imageUrl: string, prompt: string, guidanceScale = 3.5): Promise<{ requestId: string; statusUrl: string; responseUrl: string }> {
   const resp = await axios.post(
     FAL_QUEUE_URL,
     {
@@ -215,7 +235,11 @@ async function submitToFal(imageUrl: string, prompt: string, guidanceScale = 3.5
     },
     { headers: falHeaders() },
   );
-  return resp.data.request_id;
+  return {
+    requestId: resp.data.request_id,
+    statusUrl: resp.data.status_url,
+    responseUrl: resp.data.response_url,
+  };
 }
 
 function getGuidanceScale(editType: EditType): number {
@@ -227,11 +251,11 @@ function getGuidanceScale(editType: EditType): number {
   }
 }
 
-async function pollFalResult(requestId: string): Promise<{ imageUrl: string; inferenceTime: number } | null> {
-  const statusResp = await axios.get(`${FAL_STATUS_BASE}/${requestId}/status`, { headers: falHeaders() });
-  if (statusResp.data.status !== "COMPLETED") return null;
+async function pollFalResult(statusUrl: string, responseUrl: string): Promise<{ imageUrl: string; inferenceTime: number } | null> {
+  const statusResp = await axios.get(statusUrl, { headers: falHeaders(), validateStatus: () => true });
+  if (statusResp.status !== 200 || statusResp.data.status !== "COMPLETED") return null;
 
-  const resultResp = await axios.get(`${FAL_STATUS_BASE}/${requestId}`, { headers: falHeaders() });
+  const resultResp = await axios.get(responseUrl, { headers: falHeaders() });
   const data = resultResp.data;
   const imageUrl = data.images?.[0]?.url ?? data.image?.url ?? null;
   const inferenceTime = data.metrics?.inference_time ?? statusResp.data.metrics?.inference_time ?? 0;
@@ -239,20 +263,39 @@ async function pollFalResult(requestId: string): Promise<{ imageUrl: string; inf
 }
 
 async function downloadAndStoreImage(imageUrl: string): Promise<{ gridfsId: mongoose.Types.ObjectId; size: number }> {
-  const resp = await axios.get(imageUrl, { responseType: "arraybuffer" });
-  const buffer = Buffer.from(resp.data);
+  const MAX_DOWNLOAD_ATTEMPTS = 4;
+  let lastError: unknown;
 
-  const bucket = new mongoose.mongo.GridFSBucket(mongoose.connection.db!, { bucketName: "concepts" });
-  const filename = `concept_${Date.now()}.jpg`;
+  for (let attempt = 1; attempt <= MAX_DOWNLOAD_ATTEMPTS; attempt++) {
+    try {
+      const resp = await axios.get(imageUrl, { responseType: "arraybuffer", timeout: 30_000 });
+      const buffer = Buffer.from(resp.data);
 
-  return new Promise((resolve, reject) => {
-    const uploadStream = bucket.openUploadStream(filename, { contentType: "image/jpeg" });
-    uploadStream.on("error", reject);
-    uploadStream.on("finish", () => {
-      resolve({ gridfsId: uploadStream.id as mongoose.Types.ObjectId, size: buffer.length });
-    });
-    uploadStream.end(buffer);
-  });
+      const bucket = new mongoose.mongo.GridFSBucket(mongoose.connection.db!, { bucketName: "concepts" });
+      const filename = `concept_${Date.now()}.jpg`;
+
+      return await new Promise((resolve, reject) => {
+        const uploadStream = bucket.openUploadStream(filename, { contentType: "image/jpeg" });
+        uploadStream.on("error", reject);
+        uploadStream.on("finish", () => {
+          resolve({ gridfsId: uploadStream.id as mongoose.Types.ObjectId, size: buffer.length });
+        });
+        uploadStream.end(buffer);
+      });
+    } catch (err: any) {
+      lastError = err;
+      const status = err?.response?.status;
+      // Only retry on 5xx (server errors) or network timeouts — not 4xx client errors
+      if (status && status < 500) throw err;
+      if (attempt < MAX_DOWNLOAD_ATTEMPTS) {
+        const delayMs = 2000 * attempt; // 2s, 4s, 6s
+        console.warn(`[downloadAndStoreImage] Attempt ${attempt} failed (${status ?? "network error"}), retrying in ${delayMs}ms...`);
+        await sleep(delayMs);
+      }
+    }
+  }
+
+  throw lastError;
 }
 
 function sleep(ms: number): Promise<void> {
@@ -296,6 +339,10 @@ export async function generateConcepts(
   manualCombo?: IComboRef,
   maxCombos = MAX_COMBOS,
 ) {
+  if (!env.FAL_KEY) {
+    throw new ApiError(503, "Image generation is not configured — FAL_KEY missing from environment");
+  }
+
   const workspace = await Workspace.findOne({ _id: workspaceId, user_id: userId });
   if (!workspace) throw new ApiError(404, "Workspace not found");
 
@@ -306,18 +353,52 @@ export async function generateConcepts(
   workspace.status = "generating";
   await workspace.save();
 
-  const { silhouettes, fabrics, patterns, colors } = resolveIngredients(workspace.elements);
-
-  if (!silhouettes.length) throw new ApiError(400, "Workspace has no silhouettes");
-  if (!fabrics.length) throw new ApiError(400, "Workspace has no fabrics");
-  if (!colors.length) throw new ApiError(400, "Workspace has no colors");
-
-  let allCombos: IComboRef[];
+  const canvasElements = workspace.elements.filter(e => e.canvas_row != null);
+  
+  let allCombos: IComboRef[] = [];
   if (mode === "manual" && manualCombo) {
     allCombos = [manualCombo];
+  } else if (canvasElements.length > 0) {
+    // Generate combos per row
+    const rowMap = new Map<number, typeof workspace.elements>();
+    for (const el of canvasElements) {
+      if (!rowMap.has(el.canvas_row!)) rowMap.set(el.canvas_row!, []);
+      rowMap.get(el.canvas_row!)!.push(el);
+    }
+
+    for (const [_, rowElements] of rowMap) {
+      const { silhouettes, fabrics, patterns, colors } = resolveIngredients(rowElements);
+      if (silhouettes.length && fabrics.length && colors.length) {
+        const rowCombos = buildComboMatrix(silhouettes, fabrics, patterns, colors);
+        allCombos.push(...rowCombos);
+      }
+    }
+    
+    if (allCombos.length === 0) {
+      throw new ApiError(400, "Incomplete rows. Each row must have at least one silhouette, one fabric, and one color.");
+    }
   } else {
+    // Fallback if no rows defined (shouldn't happen in new UI)
+    const { silhouettes, fabrics, patterns, colors } = resolveIngredients(workspace.elements);
+    if (!silhouettes.length) throw new ApiError(400, "Workspace has no silhouettes");
+    if (!fabrics.length) throw new ApiError(400, "Workspace has no fabrics");
+    if (!colors.length) throw new ApiError(400, "Workspace has no colors");
     allCombos = buildComboMatrix(silhouettes, fabrics, patterns, colors);
   }
+
+  // Prevent duplicate generations by filtering out combos that already exist
+  const existingConcepts = await Concept.find({ workspace_id: workspaceId }).lean();
+  allCombos = allCombos.filter((combo) => {
+    return !existingConcepts.some(
+      (ec) =>
+        !ec.parent_concept && // Only check root concepts
+        ec.combo &&
+        ec.combo.silhouette_id === combo.silhouette_id &&
+        ec.combo.fabric_id === combo.fabric_id &&
+        ec.combo.color.hex === combo.color.hex &&
+        (ec.combo.pattern_id ?? null) === (combo.pattern_id ?? null)
+    );
+  });
 
   const matrixSize = allCombos.length;
   const { passed, killed } = evaluateCombos(allCombos);
@@ -367,7 +448,7 @@ export async function generateConcepts(
       ...k.combo,
       coherence: k.coherence,
     })),
-    stream_url: `/api/v1/concepts/generate/${job._id}/stream`,
+    stream_url: `/concepts/generate/${job._id}/stream`,
   };
 }
 
@@ -380,7 +461,7 @@ async function runGeneration(
 ) {
   await GenerationJob.updateOne({ _id: jobId }, { status: "running", started_at: new Date() });
 
-  const concepts: Array<{ conceptId: string; requestId: string; combo: CoherenceResult }> = [];
+  const concepts: Array<{ conceptId: string; requestId: string; statusUrl: string; responseUrl: string; combo: CoherenceResult }> = [];
 
   for (const cr of combos) {
     const prompt = buildPrompt(cr.combo);
@@ -413,9 +494,9 @@ async function runGeneration(
     });
 
     try {
-      const requestId = await submitToFal(resolvedImageUrl, prompt);
+      const { requestId, statusUrl, responseUrl } = await submitToFal(resolvedImageUrl, prompt);
       await Concept.updateOne({ _id: concept._id }, { "generation.fal_request_id": requestId });
-      concepts.push({ conceptId: concept._id.toString(), requestId, combo: cr });
+      concepts.push({ conceptId: concept._id.toString(), requestId, statusUrl, responseUrl, combo: cr });
     } catch (err) {
       console.error(`FAL submission failed for concept ${concept._id}:`, err);
       await Concept.updateOne({ _id: concept._id }, { status: "failed" });
@@ -427,6 +508,9 @@ async function runGeneration(
       { _id: jobId },
       { status: "completed", completed_at: new Date(), combos_total: 0 },
     );
+    if (workspaceId) {
+      await Workspace.updateOne({ _id: workspaceId }, { status: "ready" });
+    }
     emitSSE(jobId, "job_done", { status: "completed", total_cost_usd: 0, concepts_count: 0 });
     return;
   }
@@ -447,7 +531,7 @@ async function runGeneration(
       if (!pending.has(c.conceptId)) continue;
 
       try {
-        const result = await pollFalResult(c.requestId);
+        const result = await pollFalResult(c.statusUrl, c.responseUrl);
         if (!result) continue;
 
         const { gridfsId } = await downloadAndStoreImage(result.imageUrl);
@@ -585,7 +669,7 @@ export async function overrideCombos(jobId: string, userId: string, comboRefs: I
       ...r.combo,
       coherence: r.coherence,
     })),
-    stream_url: `/api/v1/concepts/generate/${jobId}/stream`,
+    stream_url: `/concepts/generate/${jobId}/stream`,
   };
 }
 
@@ -738,7 +822,7 @@ function buildRefinePrompt(
   const current = describeCurrentState(combo, accumulatedEdits);
   let prompt = `This image shows ${current}.`;
   prompt += ` Now apply this edit: ${newInstruction}.`;
-  prompt += ` Keep all other details of the garment exactly as they are — preserve structural proportions, closures, pockets, and construction lines.`;
+  prompt += ` Keep all other details of the garment exactly as they are — preserve the original structural proportions and construction lines.`;
   prompt += ` No brand logos, labels, or text. Unbranded fashion concept.`;
   prompt += ` Flat-lay product shot on a clean white background, fashion photography, high detail, studio lighting.`;
   return prompt;
@@ -874,16 +958,18 @@ async function runRefineGeneration(
       } catch (err) {
         console.warn(`Seedream failed, falling back to Kontext for variant ${variantId}:`, err);
         const gs = getGuidanceScale(editType);
-        requestId = await submitToFal(imageDataUri, prompt, gs);
-        statusUrl = `${FAL_STATUS_BASE}/${requestId}/status`;
-        responseUrl = `${FAL_STATUS_BASE}/${requestId}`;
+        const falResp = await submitToFal(imageDataUri, prompt, gs);
+        requestId = falResp.requestId;
+        statusUrl = falResp.statusUrl;
+        responseUrl = falResp.responseUrl;
         await Concept.updateOne({ _id: variantId }, { "generation.model": "fal-ai/flux-pro/kontext" });
       }
     } else {
       const gs = getGuidanceScale(editType);
-      requestId = await submitToFal(imageDataUri, prompt, gs);
-      statusUrl = `${FAL_STATUS_BASE}/${requestId}/status`;
-      responseUrl = `${FAL_STATUS_BASE}/${requestId}`;
+      const falResp = await submitToFal(imageDataUri, prompt, gs);
+      requestId = falResp.requestId;
+      statusUrl = falResp.statusUrl;
+      responseUrl = falResp.responseUrl;
     }
 
     await Concept.updateOne({ _id: variantId }, { "generation.fal_request_id": requestId });

@@ -22,10 +22,9 @@ export async function listLooks(req: Request, res: Response) {
   const cursor = q(req, "cursor");
   const brand = q(req, "brand");
   const garment_type = q(req, "garment_type");
-  const deconstructed_only = q(req, "deconstructed_only") === "true";
   const search = q(req, "q");
   const sort = q(req, "sort");
-  const result = await looksService.listLooks({ type, limit, cursor, brand, garment_type, deconstructed_only, search, sort });
+  const result = await looksService.listLooks({ type, limit, cursor, brand, garment_type, search, sort });
   res.json(result);
 }
 
