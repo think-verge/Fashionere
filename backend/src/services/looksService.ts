@@ -109,8 +109,15 @@ export async function listLooksFilters(opts: { type?: string }) {
     typeFilter["source.type"] = { $nin: [...RETAIL_SOURCES] };
   }
 
+  const deconDocs = await deconCol()
+    .find({ "garments.0": { $exists: true } })
+    .project({ look_id: 1 })
+    .toArray();
+  const deconIds = deconDocs.map((d) => String(d.look_id));
+  const deconFilter = { ...typeFilter, _id: { $in: deconIds } } as Record<string, unknown>;
+
   const [brandRaw, garmentTypeRaw, piecesRaw] = await Promise.all([
-    looksCol().distinct("context.brand", typeFilter),
+    looksCol().distinct("context.brand", deconFilter as any),
     deconCol().distinct("garments.garment_type", {}),
     deconCol().distinct("garments.piece", {}),
   ]);
@@ -153,11 +160,10 @@ export async function listLooks(opts: {
   cursor?: string;
   brand?: string;
   garment_type?: string;
-  deconstructed_only?: boolean;
   search?: string;
   sort?: string;
 }) {
-  const { type, limit, cursor, brand, garment_type, deconstructed_only, search, sort } = opts;
+  const { type, limit, cursor, brand, garment_type, search, sort } = opts;
 
   // Base type filter (used for total count too)
   const typeFilter: Record<string, any> = {};
@@ -171,8 +177,8 @@ export async function listLooks(opts: {
     typeFilter["context.brand"] = brands.length > 1 ? { $in: brands } : brands[0];
   }
 
-  // If deconstructed_only, restrict to look_ids that exist in deconstructions
-  if (deconstructed_only) {
+  // Always restrict to looks that have been deconstructed (≥1 garment in deconstructions)
+  {
     const deconDocs = await deconCol()
       .find({ "garments.0": { $exists: true } })
       .project({ look_id: 1 })

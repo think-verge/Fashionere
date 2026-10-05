@@ -1,3 +1,6 @@
+import path from "path";
+import { promises as fsp } from "fs";
+import { fileURLToPath } from "url";
 import mongoose from "mongoose";
 import axios from "axios";
 import { env } from "../config/env.js";
@@ -6,6 +9,9 @@ import { Workspace, type IWorkspaceElement } from "../models/Workspace.js";
 import { GenerationJob, type IComboRef, type IDiscardedCombo } from "../models/GenerationJob.js";
 import { Concept, type IConcept } from "../models/Concept.js";
 import { evaluateCombos, type CoherenceResult } from "./coherenceFilter.js";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const FAL_QUEUE_URL = "https://queue.fal.run/fal-ai/flux-pro/kontext";
 const FAL_SEEDREAM_QUEUE_URL = "https://queue.fal.run/fal-ai/bytedance/seedream/v4/edit";
@@ -43,13 +49,24 @@ async function readGridFSAsDataUri(gridfsId: string, bucketName = "swatches"): P
 }
 
 async function resolveImageForFal(url: string): Promise<string> {
-  // Case 1: GridFS URL (e.g. ending in a 24-char hex id) → convert to base64 data URI
+  // Case 1: GridFS asset URL (ends in 24-char hex objectId)
   const gridfsId = gridfsIdFromUrl(url);
   if (gridfsId) {
     return readGridFSAsDataUri(gridfsId);
   }
 
-  // Case 2: External public URL → pass through directly
+  // Case 2: Local upload file served at /uploads/... — read from disk as base64
+  // Fal runs in the cloud and cannot reach localhost URLs.
+  if (url.startsWith("/uploads/")) {
+    const rel = url.replace(/^\/uploads\//, "");
+    const filePath = path.join(__dirname, "../../uploads", rel);
+    const buffer = await fsp.readFile(filePath);
+    const ext = path.extname(url).toLowerCase();
+    const mimeType = ext === ".png" ? "image/png" : ext === ".webp" ? "image/webp" : "image/jpeg";
+    return `data:${mimeType};base64,${buffer.toString("base64")}`;
+  }
+
+  // Case 3: External public URL → pass through directly
   return url;
 }
 
@@ -322,6 +339,10 @@ export async function generateConcepts(
   manualCombo?: IComboRef,
   maxCombos = MAX_COMBOS,
 ) {
+  if (!env.FAL_KEY) {
+    throw new ApiError(503, "Image generation is not configured — FAL_KEY missing from environment");
+  }
+
   const workspace = await Workspace.findOne({ _id: workspaceId, user_id: userId });
   if (!workspace) throw new ApiError(404, "Workspace not found");
 
