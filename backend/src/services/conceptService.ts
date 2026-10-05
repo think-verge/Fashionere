@@ -199,13 +199,13 @@ function buildComboMatrix(
 }
 
 function buildPrompt(combo: IComboRef): string {
-  let prompt = `Transform this garment into a new fashion concept: render it in ${combo.color.name} (${combo.color.hex}) ${combo.fabric_label} fabric.`;
+  let prompt = `Transform this ${combo.silhouette_garment_type || "garment"} into a new fashion concept: render it in ${combo.color.name} (${combo.color.hex}) ${combo.fabric_label} fabric.`;
 
   if (combo.pattern_label) {
     prompt += ` Apply a ${combo.pattern_label} pattern on the surface.`;
   }
 
-  prompt += ` Keep the exact silhouette — preserve all structural details, proportions, closures, pockets, and construction lines of the original garment.`;
+  prompt += ` This is a ${combo.silhouette_garment_type || "garment"}. Keep the exact silhouette — preserve all structural details, proportions, closures, pockets, and construction lines of the original garment. Do NOT change it into a jacket or coat unless the original silhouette is a jacket or coat.`;
   prompt += ` Remove all brand logos, labels, and text. This is an unbranded fashion concept.`;
   prompt += ` Flat-lay product shot on a clean white background, fashion photography, high detail, studio lighting.`;
 
@@ -353,16 +353,36 @@ export async function generateConcepts(
   workspace.status = "generating";
   await workspace.save();
 
-  const { silhouettes, fabrics, patterns, colors } = resolveIngredients(workspace.elements);
-
-  if (!silhouettes.length) throw new ApiError(400, "Workspace has no silhouettes");
-  if (!fabrics.length) throw new ApiError(400, "Workspace has no fabrics");
-  if (!colors.length) throw new ApiError(400, "Workspace has no colors");
-
-  let allCombos: IComboRef[];
+  const canvasElements = workspace.elements.filter(e => e.canvas_row != null);
+  
+  let allCombos: IComboRef[] = [];
   if (mode === "manual" && manualCombo) {
     allCombos = [manualCombo];
+  } else if (canvasElements.length > 0) {
+    // Generate combos per row
+    const rowMap = new Map<number, typeof workspace.elements>();
+    for (const el of canvasElements) {
+      if (!rowMap.has(el.canvas_row!)) rowMap.set(el.canvas_row!, []);
+      rowMap.get(el.canvas_row!)!.push(el);
+    }
+
+    for (const [_, rowElements] of rowMap) {
+      const { silhouettes, fabrics, patterns, colors } = resolveIngredients(rowElements);
+      if (silhouettes.length && fabrics.length && colors.length) {
+        const rowCombos = buildComboMatrix(silhouettes, fabrics, patterns, colors);
+        allCombos.push(...rowCombos);
+      }
+    }
+    
+    if (allCombos.length === 0) {
+      throw new ApiError(400, "Incomplete rows. Each row must have at least one silhouette, one fabric, and one color.");
+    }
   } else {
+    // Fallback if no rows defined (shouldn't happen in new UI)
+    const { silhouettes, fabrics, patterns, colors } = resolveIngredients(workspace.elements);
+    if (!silhouettes.length) throw new ApiError(400, "Workspace has no silhouettes");
+    if (!fabrics.length) throw new ApiError(400, "Workspace has no fabrics");
+    if (!colors.length) throw new ApiError(400, "Workspace has no colors");
     allCombos = buildComboMatrix(silhouettes, fabrics, patterns, colors);
   }
 
@@ -802,7 +822,7 @@ function buildRefinePrompt(
   const current = describeCurrentState(combo, accumulatedEdits);
   let prompt = `This image shows ${current}.`;
   prompt += ` Now apply this edit: ${newInstruction}.`;
-  prompt += ` Keep all other details of the garment exactly as they are — preserve structural proportions, closures, pockets, and construction lines.`;
+  prompt += ` Keep all other details of the garment exactly as they are — preserve the original structural proportions and construction lines.`;
   prompt += ` No brand logos, labels, or text. Unbranded fashion concept.`;
   prompt += ` Flat-lay product shot on a clean white background, fashion photography, high detail, studio lighting.`;
   return prompt;

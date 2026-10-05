@@ -805,6 +805,9 @@ export default function WorkspaceCanvas() {
         return;
       }
       setGenProgress({ completed: 0, total: data.combos_to_generate, cost: 0 });
+      // Invalidate immediately so other pages see the "generating" status
+      qc.invalidateQueries({ queryKey: ["workspace", id] });
+      qc.invalidateQueries({ queryKey: ["workspaces"] });
 
       const token = localStorage.getItem("fash_token") ?? "";
       const evtSource = new EventSource(`/api/v1${data.stream_url}?token=${encodeURIComponent(token)}`);
@@ -953,7 +956,7 @@ export default function WorkspaceCanvas() {
 
   if (!ws) return <Alert severity="error">Workspace not found.</Alert>;
 
-  const isGenerating = ws.status === "generating";
+  const isGenerating = ws.status === "generating" || !!genProgress;
 
   return (
     <Box sx={{ overflow: "hidden", width: "100%" }}>
@@ -1020,9 +1023,11 @@ export default function WorkspaceCanvas() {
               >
                 {genProgress
                   ? `Generating ${genProgress.completed}/${genProgress.total}…`
-                  : generate.isPending
-                    ? "Starting…"
-                    : "Generate Collection"}
+                  : ws.status === "generating"
+                    ? "Generating…"
+                    : generate.isPending
+                      ? "Starting…"
+                      : "Generate Collection"}
               </Button>
             </span>
           </Tooltip>

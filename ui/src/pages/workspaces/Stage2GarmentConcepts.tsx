@@ -18,6 +18,7 @@ interface ConceptCard {
   isSkeleton?: boolean;
   isVariant?: boolean;
   parentId?: string;
+  components?: string[];
 }
 
 function mapRaw(c: any): ConceptCard {
@@ -38,7 +39,7 @@ function mapRaw(c: any): ConceptCard {
   const editCount = c.accumulated_edits?.length || 0;
   if (editCount > 0) title = `${title} (Edited ${editCount})`;
 
-  const subParts = [fabricLabel || "Custom", colorName].filter(Boolean);
+  const subParts = [fabricLabel || "Custom", colorName, clean(c.combo?.pattern_label)].filter(Boolean);
   let materials = subParts.join(" • ") || "Generated";
   if (editCount > 0) materials = c.accumulated_edits![editCount - 1];
 
@@ -51,6 +52,7 @@ function mapRaw(c: any): ConceptCard {
     isSkeleton: c.status === "pending" || c.status === "generating",
     isVariant: !!c.parent_concept || (c.accumulated_edits && c.accumulated_edits.length > 0),
     parentId: c.parent_concept,
+    components: [garmentType, colorName, fabricLabel, clean(c.combo?.pattern_label)].filter(Boolean),
   };
 }
 
@@ -593,9 +595,9 @@ function ConceptSection({
           Current Components
         </Typography>
         <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap", mb: 2 }}>
-          <Chip label="Silk" size="small" onDelete={() => {}} sx={{ borderRadius: "6px", fontSize: 11 }} />
-          <Chip label="Floral" size="small" onDelete={() => {}} sx={{ borderRadius: "6px", fontSize: 11 }} />
-          <Chip label="V-Neck" size="small" onDelete={() => {}} sx={{ borderRadius: "6px", fontSize: 11 }} />
+          {images.find(c => c.id === refineId)?.components?.map(comp => (
+            <Chip key={comp} label={comp} size="small" onDelete={() => {}} sx={{ borderRadius: "6px", fontSize: 11 }} />
+          ))}
         </Box>
         <Typography sx={{ fontSize: 11, fontWeight: 700, color: "text.secondary", mb: 1, textTransform: "uppercase" }}>
           Add Component
