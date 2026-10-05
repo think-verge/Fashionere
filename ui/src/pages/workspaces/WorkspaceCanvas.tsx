@@ -806,7 +806,8 @@ export default function WorkspaceCanvas() {
       }
       setGenProgress({ completed: 0, total: data.combos_to_generate, cost: 0 });
 
-      const evtSource = new EventSource(`/api/v1${data.stream_url}`);
+      const token = localStorage.getItem("fash_token") ?? "";
+      const evtSource = new EventSource(`/api/v1${data.stream_url}?token=${encodeURIComponent(token)}`);
 
       evtSource.addEventListener("progress", (e) => {
         const p = JSON.parse(e.data);
