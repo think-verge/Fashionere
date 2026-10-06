@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useState, useRef, useEffect } from "react";
-import { Box, Typography, IconButton, Card, CardMedia, CardContent, Chip, Skeleton, TextField, Button, Popover, Tooltip, Select, MenuItem } from "@mui/material";
+import { useState, useRef, useEffect, type ReactNode } from "react";
+import { Box, Typography, IconButton, Card, CardMedia, CardContent, Chip, Skeleton, TextField, Button, Popover, Tooltip, Select, MenuItem, Checkbox, Dialog, DialogTitle, DialogContent, DialogActions } from "@mui/material";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../../lib/api/client";
 import InventoryIcon from "@mui/icons-material/Inventory";
@@ -8,6 +8,10 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import CloseIcon from "@mui/icons-material/Close";
 import AutoFixHighIcon from "@mui/icons-material/AutoFixHigh";
+import { GarmentConceptsSection } from "./GarmentConceptsSection";
+
+// Four generated shots per garment on FLUX.2 [pro] (~$0.03 each); shown before the designer confirms a move.
+const EST_COST_PER_GARMENT = 0.12;
 
 interface ConceptCard {
   id: string;
@@ -20,6 +24,7 @@ interface ConceptCard {
   parentId?: string;
   rootId?: string;
   components?: string[];
+  finalized?: boolean;
 }
 
 function mapRaw(c: any): ConceptCard {
@@ -55,6 +60,7 @@ function mapRaw(c: any): ConceptCard {
     parentId: c.parent_concept,
     rootId: c.root_concept,
     components: [garmentType, colorName, fabricLabel, clean(c.combo?.pattern_label)].filter(Boolean),
+    finalized: !!c.finalized,
   };
 }
 
@@ -126,6 +132,25 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
       return data;
     },
     onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ["concepts", workspaceId] });
+    },
+  });
+
+  // Moving refined designs from section 02 into section 03 (finalises them and starts their shots)
+  const [moveIds, setMoveIds] = useState<string[]>([]);
+  const [confirmMove, setConfirmMove] = useState(false);
+  const toggleMove = (id: string) =>
+    setMoveIds((prev) => (prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]));
+  const finalizedIds = approvedConcepts.filter((c) => c.finalized).map((c) => c.id);
+  const movableIds = moveIds.filter((id) => approvedConcepts.some((c) => c.id === id && !c.finalized));
+
+  const moveToGarmentConcepts = useMutation({
+    mutationFn: async (conceptIds: string[]) =>
+      (await api.post("/garment-packs/move", { workspace_id: workspaceId, concept_ids: conceptIds })).data,
+    onSuccess: () => {
+      setMoveIds([]);
+      setConfirmMove(false);
+      qc.invalidateQueries({ queryKey: ["garment-concepts", workspaceId] });
       qc.invalidateQueries({ queryKey: ["concepts", workspaceId] });
     },
   });
@@ -264,18 +289,55 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
         pendingId={refineVariant.variables?.conceptId}
         inventoryData={inventoryData}
         isLoading={ws?.status === "generating"}
+        checkedIds={movableIds}
+        lockedIds={finalizedIds}
+        onToggleCheck={toggleMove}
+        headerAction={
+          movableIds.length > 0 && (
+            <Button
+              variant="contained"
+              disableElevation
+              size="small"
+              onClick={() => setConfirmMove(true)}
+              sx={{ borderRadius: "8px", bgcolor: "text.primary", color: "#fff", fontWeight: 600, textTransform: "none", whiteSpace: "nowrap", flexShrink: 0, "&:hover": { bgcolor: "primary.main" } }}
+            >
+              Move to garment concepts ({movableIds.length})
+            </Button>
+          )
+        }
       />
 
       {/* Section 03 */}
-      <ConceptSection
-        title="03 Final variations"
-        subtitle="on-model · e-commerce"
-        hint="Refined outputs appear here — ready for production"
-        images={[]} // Always empty for now, shows the rectangular placeholder box
-        isCarousel={false}
-        inventoryData={inventoryData}
-        isLoading={ws?.status === "generating"}
-      />
+      <GarmentConceptsSection workspaceId={workspaceId} />
+
+      <Dialog open={confirmMove} onClose={() => !moveToGarmentConcepts.isPending && setConfirmMove(false)} slotProps={{ paper: { sx: { borderRadius: "16px", p: 1, maxWidth: 420 } } }}>
+        <DialogTitle sx={{ fontSize: 16, fontWeight: 600 }}>Move {movableIds.length} design{movableIds.length > 1 ? "s" : ""} to garment concepts?</DialogTitle>
+        <DialogContent>
+          <Typography sx={{ fontSize: 13, color: "text.secondary", mb: 1.5 }}>
+            Each design gets a flat-lay, a back view and two close-ups of its most distinctive details, so you can see how it would look in real life.
+          </Typography>
+          <Typography sx={{ fontSize: 13 }}>
+            {movableIds.length * 4} shots · about ${(movableIds.length * EST_COST_PER_GARMENT).toFixed(2)} · ready in about 30 seconds
+          </Typography>
+          {moveToGarmentConcepts.isError && (
+            <Typography sx={{ fontSize: 12, color: "#c62828", mt: 1.5 }}>
+              Couldn't move these designs. {(moveToGarmentConcepts.error as Error)?.message}
+            </Typography>
+          )}
+        </DialogContent>
+        <DialogActions sx={{ px: 3, pb: 2 }}>
+          <Button onClick={() => setConfirmMove(false)} disabled={moveToGarmentConcepts.isPending} sx={{ color: "text.secondary", textTransform: "none" }}>Cancel</Button>
+          <Button
+            variant="contained"
+            disableElevation
+            onClick={() => moveToGarmentConcepts.mutate(movableIds)}
+            disabled={moveToGarmentConcepts.isPending}
+            sx={{ borderRadius: "8px", bgcolor: "text.primary", color: "#fff", fontWeight: 600, textTransform: "none", "&:hover": { bgcolor: "primary.main" } }}
+          >
+            {moveToGarmentConcepts.isPending ? "Moving…" : "Move and generate"}
+          </Button>
+        </DialogActions>
+      </Dialog>
 
       {/* FOOTER */}
       <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mt: 2, pt: 2, borderTop: "1px solid #f0e4e2" }}>
@@ -307,12 +369,18 @@ interface SectionProps {
   selectedIds?: string[];
   inventoryData?: any[];
   isLoading?: boolean;
+  /** Section 02 only: checkbox selection for moving designs to section 03. */
+  checkedIds?: string[];
+  lockedIds?: string[];
+  onToggleCheck?: (id: string) => void;
+  headerAction?: ReactNode;
 }
 
 function ConceptSection({
   title, subtitle, hint, images, isCarousel = true,
   actionIcon, onAction, onSecondaryAction, actionPending, pendingId,
-  onCardClick, selectedIds = [], inventoryData = [], isLoading = false
+  onCardClick, selectedIds = [], inventoryData = [], isLoading = false,
+  checkedIds = [], lockedIds = [], onToggleCheck, headerAction,
 }: SectionProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const isEmpty = images.length === 0 && !isLoading;
@@ -404,12 +472,15 @@ function ConceptSection({
           </Typography>
           <Typography sx={{ fontSize: 12, color: "text.secondary" }}>{subtitle}</Typography>
         </Box>
-        {isCarousel && !isEmpty && (
-          <Box sx={{ display: "flex", gap: 1 }}>
-            <IconButton onClick={scrollLeft} size="small" sx={{ border: "1px solid #f0e4e2" }}><ChevronLeftIcon /></IconButton>
-            <IconButton onClick={scrollRight} size="small" sx={{ border: "1px solid #f0e4e2" }}><ChevronRightIcon /></IconButton>
-          </Box>
-        )}
+        <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
+          {headerAction}
+          {isCarousel && !isEmpty && (
+            <>
+              <IconButton onClick={scrollLeft} size="small" sx={{ border: "1px solid #f0e4e2" }}><ChevronLeftIcon /></IconButton>
+              <IconButton onClick={scrollRight} size="small" sx={{ border: "1px solid #f0e4e2" }}><ChevronRightIcon /></IconButton>
+            </>
+          )}
+        </Box>
       </Box>
 
       {hint && !isEmpty && (
@@ -528,6 +599,28 @@ function ConceptSection({
                       )}
                     </Box>
                   )}
+
+                  {!img.isSkeleton && onToggleCheck && (lockedIds.includes(img.id) ? (
+                    <Chip
+                      label="In garment concepts"
+                      size="small"
+                      sx={{ position: "absolute", bottom: 12, left: 12, bgcolor: "rgba(0,0,0,0.6)", color: "#fff", fontSize: 11, height: 22 }}
+                    />
+                  ) : (
+                    <Tooltip title="Select to move to garment concepts">
+                      <Checkbox
+                        size="small"
+                        checked={checkedIds.includes(img.id)}
+                        onClick={(e) => e.stopPropagation()}
+                        onChange={() => onToggleCheck(img.id)}
+                        inputProps={{ "aria-label": "Select to move to garment concepts" }}
+                        sx={{
+                          position: "absolute", bottom: 8, left: 8, p: 0.5, bgcolor: "rgba(255,255,255,0.9)", borderRadius: "6px",
+                          "&:hover": { bgcolor: "#fff" }, "&.Mui-checked": { color: "text.primary" },
+                        }}
+                      />
+                    </Tooltip>
+                  ))}
 
                   {!img.isSkeleton && actionIcon === "approve" && (
                     <Box sx={{ 
