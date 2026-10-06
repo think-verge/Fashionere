@@ -21,9 +21,7 @@ export function requireAuth(req: Request, _res: Response, next: NextFunction) {
   const bearerToken = req.headers.authorization?.startsWith("Bearer ")
     ? req.headers.authorization.slice(7)
     : undefined;
-  // SSE clients (EventSource) cannot send custom headers — accept token via query param as fallback
-  const queryToken = typeof req.query.token === "string" ? req.query.token : undefined;
-  const token = cookieToken ?? bearerToken ?? queryToken;
+  const token = cookieToken ?? bearerToken;
   if (!token) throw new ApiError(401, "Not authenticated");
 
   try {

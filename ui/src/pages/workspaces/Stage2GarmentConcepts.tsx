@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useRef, useEffect, type ReactNode } from "react";
-import { Box, Typography, IconButton, Card, CardMedia, CardContent, Chip, Skeleton, TextField, Button, Popover, Tooltip, Select, MenuItem, Checkbox, Dialog, DialogTitle, DialogContent, DialogActions } from "@mui/material";
+import { Box, Typography, IconButton, Card, CardContent, Chip, Skeleton, TextField, Button, Popover, Tooltip, Select, MenuItem, Checkbox, Dialog, DialogTitle, DialogContent, DialogActions } from "@mui/material";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../../lib/api/client";
 import InventoryIcon from "@mui/icons-material/Inventory";
@@ -15,7 +15,6 @@ const EST_COST_PER_GARMENT = 0.12;
 
 interface ConceptCard {
   id: string;
-  imageUrl: string;
   title: string;
   materials: string;
   status: string;
@@ -23,8 +22,26 @@ interface ConceptCard {
   isVariant?: boolean;
   parentId?: string;
   rootId?: string;
-  components?: string[];
   finalized?: boolean;
+}
+
+function ConceptImage({ conceptId }: { conceptId: string }) {
+  const [src, setSrc] = useState("");
+
+  useEffect(() => {
+    if (!conceptId || conceptId.startsWith("skeleton")) return;
+    let objectUrl = "";
+    api.get(`/concepts/${conceptId}/image`, { responseType: "blob" })
+      .then(({ data }) => {
+        objectUrl = URL.createObjectURL(data);
+        setSrc(objectUrl);
+      })
+      .catch(() => {});
+    return () => { if (objectUrl) URL.revokeObjectURL(objectUrl); };
+  }, [conceptId]);
+
+  if (!src) return <Skeleton variant="rectangular" sx={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />;
+  return <Box component="img" src={src} sx={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover" }} />;
 }
 
 function mapRaw(c: any): ConceptCard {
@@ -51,7 +68,7 @@ function mapRaw(c: any): ConceptCard {
 
   return {
     id: c._id,
-    imageUrl: `/api/v1/concepts/${c._id}/image`,
+
     title: title.charAt(0).toUpperCase() + title.slice(1),
     materials,
     status: c.status,
@@ -91,7 +108,7 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
 
   const displaySection01: ConceptCard[] = showSkeleton
     ? Array.from({ length: 6 }).map((_, i) => ({
-        id: `skeleton-${i}`, imageUrl: "", title: "", materials: "", status: "skeleton", isSkeleton: true, isVariant: false,
+        id: `skeleton-${i}`, title: "", materials: "", status: "skeleton", isSkeleton: true, isVariant: false,
       }))
     : allConcepts.filter(c => !c.isVariant);
 
@@ -549,11 +566,7 @@ function ConceptSection({
                   {img.isSkeleton ? (
                     <Skeleton variant="rectangular" width="100%" height="100%" sx={{ position: "absolute", top: 0, left: 0 }} />
                   ) : (
-                    <CardMedia
-                      component="img"
-                      image={img.imageUrl}
-                      sx={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover" }}
-                    />
+                    <ConceptImage conceptId={img.id} />
                   )}
 
                   <Chip

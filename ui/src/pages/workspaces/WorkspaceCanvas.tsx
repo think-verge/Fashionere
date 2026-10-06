@@ -815,31 +815,57 @@ export default function WorkspaceCanvas() {
       qc.invalidateQueries({ queryKey: ["workspaces"] });
 
       const token = localStorage.getItem("fash_token") ?? "";
-      const evtSource = new EventSource(`/api/v1${data.stream_url}?token=${encodeURIComponent(token)}`);
-
-      evtSource.addEventListener("progress", (e) => {
-        const p = JSON.parse(e.data);
-        setGenProgress({ completed: p.completed, total: p.total, cost: p.cost_so_far });
-      });
-
-      evtSource.addEventListener("concept_ready", () => {
-        qc.invalidateQueries({ queryKey: ["concepts", id] });
-      });
-
-      evtSource.addEventListener("job_done", () => {
-        evtSource.close();
-        setGenProgress(null);
-        qc.invalidateQueries({ queryKey: ["workspace", id] });
-        qc.invalidateQueries({ queryKey: ["concepts", id] });
-        setStage(2);
-      });
-
-      evtSource.onerror = () => {
-        evtSource.close();
+      const onStreamError = () => {
         setGenProgress(null);
         qc.invalidateQueries({ queryKey: ["workspace", id] });
         qc.invalidateQueries({ queryKey: ["concepts", id] });
       };
+
+      fetch(`/api/v1${data.stream_url}`, {
+        headers: { Authorization: `Bearer ${token}` },
+      }).then(async (resp) => {
+        if (!resp.ok || !resp.body) { onStreamError(); return; }
+
+        const reader = resp.body.getReader();
+        const decoder = new TextDecoder();
+        let buf = "";
+
+        try {
+          while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            buf += decoder.decode(value, { stream: true });
+
+            const messages = buf.split("\n\n");
+            buf = messages.pop() ?? "";
+
+            for (const msg of messages) {
+              if (!msg.trim()) continue;
+              let eventType = "message";
+              let eventData = "";
+              for (const line of msg.split("\n")) {
+                if (line.startsWith("event:")) eventType = line.slice(6).trim();
+                else if (line.startsWith("data:")) eventData = line.slice(5).trim();
+              }
+
+              if (eventType === "progress") {
+                const p = JSON.parse(eventData);
+                setGenProgress({ completed: p.completed, total: p.total, cost: p.cost_so_far });
+              } else if (eventType === "concept_ready") {
+                qc.invalidateQueries({ queryKey: ["concepts", id] });
+              } else if (eventType === "job_done") {
+                setGenProgress(null);
+                qc.invalidateQueries({ queryKey: ["workspace", id] });
+                qc.invalidateQueries({ queryKey: ["concepts", id] });
+                setStage(2);
+                return;
+              }
+            }
+          }
+        } catch {
+          onStreamError();
+        }
+      }).catch(onStreamError);
     },
   });
 
