@@ -102,6 +102,7 @@ export async function listConcepts(req: Request, res: Response) {
     req.user!.userId,
     q(req, "status"),
     q(req, "job_id"),
+    q(req, "finalized") === undefined ? undefined : q(req, "finalized") === "true",
   );
   res.json(concepts);
 }

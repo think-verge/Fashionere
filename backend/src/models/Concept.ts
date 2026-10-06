@@ -9,6 +9,8 @@ export interface IConcept extends Document {
   edit_instruction?: string;
   accumulated_edits?: string[];
   edit_type?: "color" | "silhouette" | "pattern" | "detail" | "multi";
+  finalized?: boolean;
+  finalized_at?: Date | null;
   combo: {
     silhouette_id: string;
     silhouette_label: string;
@@ -90,6 +92,8 @@ const conceptSchema = new Schema<IConcept>(
     edit_instruction: { type: String, default: null },
     accumulated_edits: [{ type: String }],
     edit_type: { type: String, enum: ["color", "silhouette", "pattern", "detail", "multi"], default: null },
+    finalized: { type: Boolean, default: false, index: true },
+    finalized_at: { type: Date, default: null },
     status: {
       type: String,
       enum: ["pending", "generating", "generated", "failed", "approved", "rejected"],

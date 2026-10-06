@@ -9,6 +9,7 @@ import { Workspace, type IWorkspaceElement } from "../models/Workspace.js";
 import { GenerationJob, type IComboRef, type IDiscardedCombo } from "../models/GenerationJob.js";
 import { Concept, type IConcept } from "../models/Concept.js";
 import { evaluateCombos, type CoherenceResult } from "./coherenceFilter.js";
+import { describeError, falHeaders } from "./falQueue.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -20,13 +21,6 @@ const COST_PER_IMAGE = 0.04;
 const COST_SEEDREAM = 0.03;
 const MAX_COMBOS = 10;
 const POLL_INTERVAL_MS = 5000;
-
-function falHeaders() {
-  return {
-    Authorization: `Key ${env.FAL_KEY}`,
-    "Content-Type": "application/json",
-  };
-}
 
 function gridfsIdFromUrl(url: string): string | null {
   const match = url.match(/\/([a-f0-9]{24})$/);
@@ -386,8 +380,8 @@ export async function generateConcepts(
     allCombos = buildComboMatrix(silhouettes, fabrics, patterns, colors);
   }
 
-  // Prevent duplicate generations by filtering out combos that already exist
-  const existingConcepts = await Concept.find({ workspace_id: workspaceId }).lean();
+  // Prevent duplicate generations; failed attempts don't count, so they can be retried
+  const existingConcepts = await Concept.find({ workspace_id: workspaceId, status: { $ne: "failed" } }).lean();
   allCombos = allCombos.filter((combo) => {
     return !existingConcepts.some(
       (ec) =>
@@ -426,7 +420,7 @@ export async function generateConcepts(
 
   if (cappedPassed.length > 0) {
     runGeneration(job._id.toString(), cappedPassed, workspace.elements, userId, workspaceId).catch((err) => {
-      console.error(`Generation failed for job ${job._id}:`, err);
+      console.error(`Generation failed for job ${job._id}:`, describeError(err));
       Workspace.updateOne({ _id: workspaceId }, { status: "ready" }).catch(() => {});
     });
   } else {
@@ -476,7 +470,7 @@ async function runGeneration(
     try {
       resolvedImageUrl = await resolveImageForFal(imageUrl);
     } catch (err) {
-      console.error(`Failed to resolve image for silhouette ${cr.combo.silhouette_id}:`, err);
+      console.error(`Failed to resolve image for silhouette ${cr.combo.silhouette_id}:`, describeError(err));
       continue;
     }
 
@@ -498,7 +492,7 @@ async function runGeneration(
       await Concept.updateOne({ _id: concept._id }, { "generation.fal_request_id": requestId });
       concepts.push({ conceptId: concept._id.toString(), requestId, statusUrl, responseUrl, combo: cr });
     } catch (err) {
-      console.error(`FAL submission failed for concept ${concept._id}:`, err);
+      console.error(`FAL submission failed for concept ${concept._id}:`, describeError(err));
       await Concept.updateOne({ _id: concept._id }, { status: "failed" });
     }
   }
@@ -575,7 +569,7 @@ async function runGeneration(
           cost_so_far: totalCost,
         });
       } catch (err) {
-        console.error(`Poll/store failed for concept ${c.conceptId}:`, err);
+        console.error(`Poll/store failed for concept ${c.conceptId}:`, describeError(err));
         await Concept.updateOne({ _id: c.conceptId }, { status: "failed" });
         pending.delete(c.conceptId);
         completed++;
@@ -659,7 +653,7 @@ export async function overrideCombos(jobId: string, userId: string, comboRefs: I
   );
 
   runGeneration(jobId, overrideResults, workspace.elements, userId).catch((err) => {
-    console.error(`Override generation failed for job ${jobId}:`, err);
+    console.error(`Override generation failed for job ${jobId}:`, describeError(err));
   });
 
   return {
@@ -681,10 +675,11 @@ export async function getJob(jobId: string, userId: string) {
   return job;
 }
 
-export async function listConcepts(workspaceId: string, userId: string, status?: string, jobId?: string) {
+export async function listConcepts(workspaceId: string, userId: string, status?: string, jobId?: string, finalized?: boolean) {
   const filter: Record<string, unknown> = { workspace_id: workspaceId };
   if (status) filter.status = status;
   if (jobId) filter.job_id = jobId;
+  if (finalized !== undefined) filter.finalized = finalized;
 
   const workspace = await Workspace.findOne({ _id: workspaceId, user_id: userId }).lean();
   if (!workspace) throw new ApiError(404, "Workspace not found");
@@ -922,7 +917,7 @@ export async function refineConcept(
     useSeedream,
     editType,
   ).catch((err) => {
-    console.error(`Refine generation failed for variant ${variant._id}:`, err);
+    console.error(`Refine generation failed for variant ${variant._id}:`, describeError(err));
   });
 
   return {
@@ -956,7 +951,7 @@ async function runRefineGeneration(
         statusUrl = queueResp.status_url;
         responseUrl = queueResp.response_url;
       } catch (err) {
-        console.warn(`Seedream failed, falling back to Kontext for variant ${variantId}:`, err);
+        console.warn(`Seedream failed, falling back to Kontext for variant ${variantId}:`, describeError(err));
         const gs = getGuidanceScale(editType);
         const falResp = await submitToFal(imageDataUri, prompt, gs);
         requestId = falResp.requestId;

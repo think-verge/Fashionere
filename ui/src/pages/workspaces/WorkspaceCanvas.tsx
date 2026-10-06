@@ -784,6 +784,11 @@ export default function WorkspaceCanvas() {
     setPrevStatus(ws?.status);
   }, [ws?.status, prevStatus]);
 
+  // Drop focus from the control that switched stages, so it doesn't stay focused off-screen.
+  useEffect(() => {
+    (document.activeElement as HTMLElement | null)?.blur();
+  }, [stage]);
+
   const generate = useMutation({
     mutationFn: async () => {
       const { data } = await api.post("/concepts/generate", {
@@ -959,9 +964,14 @@ export default function WorkspaceCanvas() {
   const isGenerating = ws.status === "generating" || !!genProgress;
 
   return (
-    <Box sx={{ overflow: "hidden", width: "100%" }}>
-      <Box sx={{ 
-        display: "flex", 
+    <Box
+      sx={{ overflow: "hidden", width: "100%" }}
+      // The stages slide via transform inside this clipping box, which must never scroll itself: a
+      // control that keeps focus while sliding off-screen makes the browser scroll it into view.
+      onScroll={(e) => { e.currentTarget.scrollLeft = 0; }}
+    >
+      <Box sx={{
+        display: "flex",
         alignItems: "flex-start",
         width: "200%", 
         transform: stage === 1 ? "translateX(0)" : "translateX(-50%)", 

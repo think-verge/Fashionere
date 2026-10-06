@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import { ApiError } from "../utils/api-error.js";
+import { env } from "../config/env.js";
 
 const RETAIL_SOURCES = new Set(["zara", "hm", "mango", "uniqlo", "cos", "asos"]);
 
@@ -45,10 +46,8 @@ function buildSummary(doc: Record<string, unknown>, garmentCount: number) {
   };
 }
 
-const ASSET_BASE = process.env.ASSET_BASE_URL ?? "http://localhost:8001/api/v1/assets";
-
 function assetUrl(gridfsId: unknown): string | null {
-  return gridfsId ? `${ASSET_BASE}/${String(gridfsId)}` : null;
+  return gridfsId ? `${env.ASSET_BASE_URL}/${String(gridfsId)}` : null;
 }
 
 function buildGarment(g: Record<string, unknown>, lookId: string) {
