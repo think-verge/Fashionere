@@ -1,9 +1,8 @@
 import mongoose from "mongoose";
-
-const ASSET_BASE = process.env.ASSET_BASE_URL ?? "http://localhost:8001/api/v1/assets";
+import { env } from "../config/env.js";
 
 function assetUrl(gridfsId: unknown): string | null {
-  return gridfsId ? `${ASSET_BASE}/${String(gridfsId)}` : null;
+  return gridfsId ? `${env.ASSET_BASE_URL}/${String(gridfsId)}` : null;
 }
 
 const deconCol = () => mongoose.connection.db!.collection("deconstructions");
