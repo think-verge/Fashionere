@@ -3,6 +3,7 @@ import { useState, useRef, useEffect, type ReactNode } from "react";
 import { Box, Typography, IconButton, Card, CardContent, Chip, Skeleton, TextField, Button, Popover, Tooltip, Select, MenuItem, Checkbox, Dialog, DialogTitle, DialogContent, DialogActions } from "@mui/material";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../../lib/api/client";
+import { ConceptImage } from "../../components/ConceptImage";
 import InventoryIcon from "@mui/icons-material/Inventory";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
@@ -23,25 +24,6 @@ interface ConceptCard {
   parentId?: string;
   rootId?: string;
   finalized?: boolean;
-}
-
-function ConceptImage({ conceptId }: { conceptId: string }) {
-  const [src, setSrc] = useState("");
-
-  useEffect(() => {
-    if (!conceptId || conceptId.startsWith("skeleton")) return;
-    let objectUrl = "";
-    api.get(`/concepts/${conceptId}/image`, { responseType: "blob" })
-      .then(({ data }) => {
-        objectUrl = URL.createObjectURL(data);
-        setSrc(objectUrl);
-      })
-      .catch(() => {});
-    return () => { if (objectUrl) URL.revokeObjectURL(objectUrl); };
-  }, [conceptId]);
-
-  if (!src) return <Skeleton variant="rectangular" sx={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />;
-  return <Box component="img" src={src} sx={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover" }} />;
 }
 
 function mapRaw(c: any): ConceptCard {
@@ -566,7 +548,7 @@ function ConceptSection({
                   {img.isSkeleton ? (
                     <Skeleton variant="rectangular" width="100%" height="100%" sx={{ position: "absolute", top: 0, left: 0 }} />
                   ) : (
-                    <ConceptImage conceptId={img.id} />
+                    <ConceptImage conceptId={img.id} sx={{ position: "absolute", top: 0, left: 0 }} />
                   )}
 
                   <Chip

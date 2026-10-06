@@ -3,10 +3,10 @@ import { Box, Typography, Button, Skeleton } from "@mui/material";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "../../lib/api/client";
 import { useNavigate } from "react-router-dom";
+import { ConceptImage } from "../../components/ConceptImage";
 
 interface MockVariant {
   id: string;
-  imageUrl: string;
   title: string;
   materials: string;
   isSkeleton?: boolean;
@@ -22,7 +22,6 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
       if (data && data.length > 0) {
         return data.map((c: any) => ({
           id: c._id,
-          imageUrl: `/api/v1/concepts/${c._id}/image`,
           title: c.combo?.silhouette_label || "AI Concept",
           materials: `${c.combo?.fabric_label || "Cotton"} • ${c.combo?.color?.name || "Black"}`,
         }));
@@ -38,7 +37,6 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
   const displayVariants = showSkeleton
     ? Array.from({ length: 6 }).map((_, i) => ({
         id: `skeleton-${i}`,
-        imageUrl: "",
         title: "",
         materials: "",
         isSkeleton: true,
@@ -117,11 +115,7 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
         
         <Box sx={{ display: "flex", flexDirection: { xs: "column", md: "row" }, gap: 4, alignItems: "center" }}>
           <Box sx={{ flex: 1, width: "100%", position: "relative" }}>
-             {displayVariants[0]?.isSkeleton ? (
-               <Skeleton variant="rectangular" sx={{ width: "100%", height: "auto", aspectRatio: "3/4", display: "block", borderRadius: "16px" }} />
-             ) : (
-               <img src={displayVariants[0]?.imageUrl} style={{ width: "100%", height: "auto", aspectRatio: "3/4", objectFit: "cover", display: "block", borderRadius: "16px" }} alt="Campaign look" />
-             )}
+            <ConceptImage conceptId={displayVariants[0]?.id || ""} sx={{ height: "auto", aspectRatio: "3/4", borderRadius: "16px", display: "block" }} />
           </Box>
           <Box sx={{ flex: 1 }}>
             <Typography sx={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.05em", color: "text.secondary", textTransform: "uppercase", mb: 2 }}>
@@ -156,11 +150,7 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
                 <Box sx={{ position: "absolute", top: 12, left: 12, bgcolor: "rgba(0,0,0,0.6)", color: "#fff", px: 1, py: 0.5, borderRadius: "4px", fontSize: 10, fontWeight: 700, zIndex: 1 }}>
                   0{i + 2}
                 </Box>
-                {v.isSkeleton ? (
-                  <Skeleton variant="rectangular" sx={{ width: "100%", height: "auto", aspectRatio: "3/4", borderRadius: "16px", display: "block" }} />
-                ) : (
-                  <img src={v.imageUrl} style={{ width: "100%", height: "auto", aspectRatio: "3/4", objectFit: "cover", borderRadius: "16px", display: "block" }} alt={v.title || "Editorial look"} />
-                )}
+                <ConceptImage conceptId={v.id} sx={{ height: "auto", aspectRatio: "3/4", borderRadius: "16px", display: "block" }} />
               </Box>
             </Box>
           ))}
@@ -188,21 +178,15 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
         
         <Box sx={{ display: "flex", gap: 3 }}>
           <Box sx={{ flex: 1 }}>
-            {displayVariants[0]?.isSkeleton ? (
-              <Skeleton variant="rectangular" sx={{ width: "100%", height: "auto", aspectRatio: "3/4", display: "block", borderRadius: "16px" }} />
-            ) : (
-              <img src={displayVariants[0]?.imageUrl} style={{ width: "100%", height: "auto", aspectRatio: "3/4", objectFit: "cover", display: "block", borderRadius: "16px" }} alt="Colorway 1" />
-            )}
+            <ConceptImage conceptId={displayVariants[0]?.id || ""} sx={{ height: "auto", aspectRatio: "3/4", borderRadius: "16px", display: "block" }} />
             <Box sx={{ mt: 2 }}>
               <Typography sx={{ fontSize: 13, color: "text.primary", mb: 0.5 }}>Maillot — coral bloom</Typography>
               <Typography sx={{ fontSize: 12, color: "text.secondary" }}>Primary colorway</Typography>
             </Box>
           </Box>
           <Box sx={{ flex: 1 }}>
-            {(displayVariants[4] || displayVariants[1])?.isSkeleton ? (
-              <Skeleton variant="rectangular" sx={{ width: "100%", height: "auto", aspectRatio: "3/4", display: "block", borderRadius: "16px" }} />
-            ) : (displayVariants[4] || displayVariants[1]) ? (
-              <img src={displayVariants[4]?.imageUrl || displayVariants[1]?.imageUrl} style={{ width: "100%", height: "auto", aspectRatio: "3/4", objectFit: "cover", display: "block", borderRadius: "16px" }} alt="Colorway 2" />
+            {(displayVariants[4] || displayVariants[1]) ? (
+              <ConceptImage conceptId={(displayVariants[4] || displayVariants[1])!.id} sx={{ height: "auto", aspectRatio: "3/4", borderRadius: "16px", display: "block" }} />
             ) : (
               <Box sx={{ width: "100%", height: "auto", aspectRatio: "3/4" }} />
             )}

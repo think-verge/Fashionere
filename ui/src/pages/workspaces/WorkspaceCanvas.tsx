@@ -480,7 +480,7 @@ function InventoryPanel({
   open: boolean;
   onToggle: () => void;
   canvasRows: Array<{ rowNum: number; label: string }>;
-  onClickSilhouette: (elementId: string) => void;
+  onClickSilhouette: (elementId: string, anchor: HTMLElement) => void;
   onClickElement: (elementId: string, anchor: HTMLElement) => void;
   onUpload: () => void;
   isGenerating?: boolean;
@@ -627,7 +627,7 @@ function InventoryPanel({
                               key={el.element_id}
                               onClick={(e) => {
                                 if (isSil) {
-                                  onClickSilhouette(el.element_id);
+                                  onClickSilhouette(el.element_id, e.currentTarget as HTMLElement);
                                 } else {
                                   onClickElement(el.element_id, e.currentTarget as HTMLElement);
                                 }
@@ -732,7 +732,12 @@ export default function WorkspaceCanvas() {
   const [stage, setStage] = useState<1 | 2 | 3>(1);
 
   // Row picker popover state
-  const [pendingAssign, setPendingAssign] = useState<{ elementId: string; anchor: HTMLElement } | null>(null);
+  const [pendingAssign, setPendingAssign] = useState<{
+    elementId: string;
+    anchor: HTMLElement;
+    compatibleRows?: Array<{ rowNum: number; label: string }>;
+    showNewRowOption?: boolean;
+  } | null>(null);
   // Element detail popover (canvas node click)
   const [detailPop, setDetailPop] = useState<{ elementId: string; x: number; y: number } | null>(null);
 
@@ -953,11 +958,19 @@ export default function WorkspaceCanvas() {
     [ws, savePositions],
   );
 
-  function handleClickSilhouette(elementId: string) {
-    // Check if this silhouette is already on canvas
+  function handleClickSilhouette(elementId: string, anchor: HTMLElement) {
     const el = ws?.elements.find((e) => e.element_id === elementId);
     if (!el || el.canvas_row != null) return; // already placed
-    assignToCanvas.mutate({ elementId, canvasRow: nextRowNum });
+
+    const rowsWithoutSilhouette = canvasRows.filter(
+      ({ rowNum }) => !ws?.elements.some((e) => e.canvas_row === rowNum && e.element_type === "silhouette"),
+    );
+
+    if (rowsWithoutSilhouette.length > 0) {
+      setPendingAssign({ elementId, anchor, compatibleRows: rowsWithoutSilhouette, showNewRowOption: true });
+    } else {
+      assignToCanvas.mutate({ elementId, canvasRow: nextRowNum });
+    }
   }
 
   function handleClickElement(elementId: string, anchor: HTMLElement) {
@@ -1215,12 +1228,12 @@ export default function WorkspaceCanvas() {
           <Typography sx={{ fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "text.disabled", mb: 1 }}>
             Add to row
           </Typography>
-          {canvasRows.length === 0 ? (
+          {(pendingAssign?.compatibleRows ?? canvasRows).length === 0 ? (
             <Typography sx={{ fontSize: 12, color: "text.secondary", px: 0.5 }}>
               Add a silhouette first to start a row
             </Typography>
           ) : (
-            canvasRows.map(({ rowNum, label }) => (
+            (pendingAssign?.compatibleRows ?? canvasRows).map(({ rowNum, label }) => (
               <MenuItem
                 key={rowNum}
                 dense
@@ -1235,6 +1248,20 @@ export default function WorkspaceCanvas() {
                 Row {rowNum + 1} — {label}
               </MenuItem>
             ))
+          )}
+          {pendingAssign?.showNewRowOption && (
+            <MenuItem
+              dense
+              onClick={() => {
+                if (pendingAssign) {
+                  assignToCanvas.mutate({ elementId: pendingAssign.elementId, canvasRow: nextRowNum });
+                }
+                setPendingAssign(null);
+              }}
+              sx={{ borderRadius: "6px", fontSize: 13, px: 1.25, color: "text.secondary", borderTop: "1px solid #f0e4e2", mt: 0.5 }}
+            >
+              + Create new row
+            </MenuItem>
           )}
         </Box>
       </Popover>
