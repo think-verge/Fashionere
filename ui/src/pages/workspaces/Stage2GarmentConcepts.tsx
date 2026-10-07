@@ -23,6 +23,7 @@ interface ConceptCard {
   isVariant?: boolean;
   parentId?: string;
   rootId?: string;
+  components?: string[];
   finalized?: boolean;
 }
 
