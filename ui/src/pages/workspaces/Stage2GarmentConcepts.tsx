@@ -10,8 +10,9 @@ import CloseIcon from "@mui/icons-material/Close";
 import AutoFixHighIcon from "@mui/icons-material/AutoFixHigh";
 import { GarmentConceptsSection } from "./GarmentConceptsSection";
 
-// Four generated shots per garment on FLUX.2 [pro] (~$0.03 each); shown before the designer confirms a move.
-const EST_COST_PER_GARMENT = 0.12;
+// Three generated shots per garment on FLUX.2 [pro] (~$0.03 each); shown before the designer confirms a move.
+const SHOTS_PER_GARMENT = 3;
+const EST_COST_PER_GARMENT = 0.09;
 
 interface ConceptCard {
   id: string;
@@ -314,10 +315,10 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
         <DialogTitle sx={{ fontSize: 16, fontWeight: 600 }}>Move {movableIds.length} design{movableIds.length > 1 ? "s" : ""} to garment concepts?</DialogTitle>
         <DialogContent>
           <Typography sx={{ fontSize: 13, color: "text.secondary", mb: 1.5 }}>
-            Each design gets a flat-lay, a back view and two close-ups of its most distinctive details, so you can see how it would look in real life.
+            Each design gets a back view and two close-ups of its most distinctive details, alongside its refined front view, so you can see how it would look in real life.
           </Typography>
           <Typography sx={{ fontSize: 13 }}>
-            {movableIds.length * 4} shots · about ${(movableIds.length * EST_COST_PER_GARMENT).toFixed(2)} · ready in about 30 seconds
+            {movableIds.length * SHOTS_PER_GARMENT} shots · about ${(movableIds.length * EST_COST_PER_GARMENT).toFixed(2)} · ready in about 30 seconds
           </Typography>
           {moveToGarmentConcepts.isError && (
             <Typography sx={{ fontSize: 12, color: "#c62828", mt: 1.5 }}>

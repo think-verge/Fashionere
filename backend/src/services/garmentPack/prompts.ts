@@ -31,32 +31,17 @@ export function canonicalGarment(type: string): CanonicalGarment {
   return ALIASES[t] ?? Object.entries(ALIASES).find(([k]) => t.includes(k))?.[1] ?? "generic";
 }
 
-const GROUND =
-  "a seamless warm bone-coloured paper background (#E8DFD0), soft diffused daylight from the top left, a gentle natural contact shadow";
-
 const NO_BRAND = " No logos, brand names, labels, tags, watermarks or text anywhere.";
-
-const FIDELITY =
-  `\nMUST: identical colour, identical print (same motif, scale, density and placement), identical fabric, identical collar, closure and hardware, identical pockets, seams, cuffs and hem as the reference. Seams are tone-on-tone, in thread exactly the fabric colour.` +
-  `\nMUST NOT: add, remove, move or restyle any component; no invented buttons, snaps, rivets, zips, trims, labels or embroidery; no recolouring; no white, light or contrasting stitching unless the reference unmistakably shows it.`;
-
-/** Images: 1 = front technical flat. */
-export function flatLayPrompt(type: string): string {
-  return (
-    `Image 1 is a technical flat of a ${type}. Photograph this exact garment as a photorealistic top-down flat-lay product photograph: real cloth with natural softness and a few subtle, natural creases, laid out neatly and symmetrically, the same view and proportions as image 1, centred with even margins, on ${GROUND}.` +
-    FIDELITY +
-    NO_BRAND
-  );
-}
 
 /** Images: 1 = front technical flat, 2 = crop of the real cuff (optional). */
 export function backFlatPrompt(type: string, hasCuffRef: boolean): string {
   return (
-    `Create the BACK view of the ${type} shown in image 1. Image 1 is the FRONT view. Photograph it as a photorealistic top-down flat-lay, turned over, on ${GROUND}.` +
+    `Create the BACK view of the ${type} shown in image 1. Image 1 is the FRONT view. Show the same garment simply turned over, as a matching companion image to image 1.` +
+    `\nSAME AS IMAGE 1, EXACTLY: the background (same colour and finish), the lighting, exposure, white balance and shadows, the camera angle, scale and framing. Do not re-light, warm up, brighten, darken or recolour anything — the two images must sit side by side as one consistent set.` +
     (hasCuffRef
       ? ` Image 2 shows the real cuff of this garment: both cuffs must look exactly like image 2 — the same plain band of cloth with nothing on it.`
       : "") +
-    `\nMUST: identical colour, print (same motif, scale and density), fabric, silhouette, width, sleeve length, hem length, cuffs and hem finish as image 1. The back is large uninterrupted panels of printed cloth; the only construction lines are ${BACK_SEAMS[canonicalGarment(type)]}. Seams are tone-on-tone fine lines.` +
+    `\nMUST: identical colour and saturation, print (same motif, scale and density), fabric, silhouette, width, sleeve length, hem length, cuffs and hem finish as image 1. The back is large uninterrupted panels of printed cloth; the only construction lines are ${BACK_SEAMS[canonicalGarment(type)]}. Seams are tone-on-tone fine lines.` +
     `\nMUST NOT: no pockets of any kind, pocket flaps, rivets, snaps, buttons, buttonholes, zips, zip pullers, plackets or front openings — those exist only on the front. No buttons or plackets on the cuffs. No lining or inner fabric showing at the hem. No back pockets, extra panels, tabs, straps or decoration. No contrasting or light stitching.` +
     NO_BRAND
   );

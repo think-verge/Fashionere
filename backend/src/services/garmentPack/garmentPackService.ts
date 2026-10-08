@@ -14,11 +14,12 @@ import {
   submitFlux2Edit,
   waitForFalImage,
 } from "../falQueue.js";
-import { backFlatPrompt, closeupPrompt, flatLayPrompt } from "./prompts.js";
+import { backFlatPrompt, closeupPrompt } from "./prompts.js";
 import { analyzeGarment, cropRegion } from "./regions.js";
 
 const BUCKET = "garment_shots";
-const SLOTS: ShotSlot[] = ["flat_lay", "back_flat", "closeup_1", "closeup_2"];
+// The front view is the refined step-2 image itself; only the views it can't show are generated.
+const SLOTS: ShotSlot[] = ["back_flat", "closeup_1", "closeup_2"];
 
 // ---- Live progress (SSE) ----
 
@@ -273,10 +274,7 @@ async function renderShot(packId: string, shotId: Types.ObjectId, front: Buffer)
     await set({ status: "generating", error: null });
     let images: Buffer[];
     let prompt: string;
-    if (shot.slot === "flat_lay") {
-      images = [front];
-      prompt = flatLayPrompt(type);
-    } else if (shot.slot === "back_flat") {
+    if (shot.slot === "back_flat") {
       const cuff = pack.inputs.cuff_region ? await cropRegion(front, pack.inputs.cuff_region) : null;
       images = cuff ? [front, cuff] : [front];
       prompt = backFlatPrompt(type, !!cuff);

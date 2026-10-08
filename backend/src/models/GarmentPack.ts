@@ -1,5 +1,6 @@
 import mongoose, { type Document, Schema, type Types } from "mongoose";
 
+// "flat_lay" is no longer generated (it re-lit and washed out the garment); kept so older packs still validate.
 export type ShotSlot = "flat_lay" | "back_flat" | "closeup_1" | "closeup_2";
 export type FeatureType = "pattern" | "texture" | "hardware" | "trim" | "construction" | "shape";
 export type ShotStatus = "pending" | "generating" | "generated" | "failed";

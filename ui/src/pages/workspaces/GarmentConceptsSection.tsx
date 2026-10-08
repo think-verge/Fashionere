@@ -60,7 +60,8 @@ const SLOT_LABEL: Record<Slot, string> = {
   closeup_1: "Close-up",
   closeup_2: "Close-up",
 };
-const SLOT_ORDER: Slot[] = ["flat_lay", "back_flat", "closeup_1", "closeup_2"];
+// Generated views; the front is the refined step-2 image itself. ("flat_lay" survives only in older packs.)
+const SLOT_ORDER: Slot[] = ["back_flat", "closeup_1", "closeup_2"];
 const BORDER = "#f0e4e2";
 const GROUND = "#f5f0ef";
 
@@ -79,8 +80,7 @@ function framesFor(g: Garment): Frame[] {
       currentId: cur?.id,
     };
   });
-  // Lightbox order: flat-lay first (it's the hero), then the designer's front flat, back, close-ups.
-  return [shots[0], front, ...shots.slice(1)];
+  return [front, ...shots];
 }
 
 function packProgress(g: Garment) {
@@ -271,7 +271,7 @@ function GarmentCard({ garment, onOpen, onRemove, onRegenerateAll, onGenerate }:
         ) : (
           <ShotImage frame={frames[0]} iconSize={36} />
         )}
-        <Chip label="Flat-lay" size="small" sx={{ position: "absolute", bottom: 12, left: 12, bgcolor: "rgba(0,0,0,0.5)", color: "#fff", fontSize: 11, height: 22 }} />
+        <Chip label="Front flat" size="small" sx={{ position: "absolute", bottom: 12, left: 12, bgcolor: "rgba(0,0,0,0.5)", color: "#fff", fontSize: 11, height: 22 }} />
         <IconButton
           className="gc-actions"
           size="small"
