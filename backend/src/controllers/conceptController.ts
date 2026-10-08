@@ -103,6 +103,7 @@ export async function listConcepts(req: Request, res: Response) {
     q(req, "status"),
     q(req, "job_id"),
     q(req, "finalized") === undefined ? undefined : q(req, "finalized") === "true",
+    q(req, "include_undone") === "true",
   );
   res.json(concepts);
 }
@@ -148,4 +149,13 @@ export async function refine(req: Request, res: Response) {
 export async function getVariants(req: Request, res: Response) {
   const variants = await conceptService.getVariants(p(req, "conceptId"), req.user!.userId);
   res.json(variants);
+}
+
+export async function undoRefinement(req: Request, res: Response) {
+  const confirm = (req.body as { confirm?: boolean } | undefined)?.confirm === true;
+  res.json(await conceptService.undoRefinement(p(req, "conceptId"), req.user!.userId, confirm));
+}
+
+export async function redoRefinement(req: Request, res: Response) {
+  res.json(await conceptService.redoRefinement(p(req, "conceptId"), req.user!.userId));
 }

@@ -18,6 +18,8 @@ conceptRouter.patch("/:conceptId", asyncHandler(conceptController.updateConcept)
 conceptRouter.get("/:conceptId/image", asyncHandler(conceptController.getConceptImage));
 conceptRouter.post("/:conceptId/refine", asyncHandler(conceptController.refine));
 conceptRouter.get("/:conceptId/variants", asyncHandler(conceptController.getVariants));
+conceptRouter.post("/:conceptId/undo", asyncHandler(conceptController.undoRefinement));
+conceptRouter.post("/:conceptId/redo", asyncHandler(conceptController.redoRefinement));
 conceptRouter.post("/:conceptId/finalize", asyncHandler(packController.finalize));
 conceptRouter.delete("/:conceptId/finalize", asyncHandler(packController.unfinalize));
 conceptRouter.post("/:conceptId/garment-pack", asyncHandler(packController.startPack));
