@@ -480,7 +480,7 @@ function InventoryPanel({
   open: boolean;
   onToggle: () => void;
   canvasRows: Array<{ rowNum: number; label: string }>;
-  onClickSilhouette: (elementId: string) => void;
+  onClickSilhouette: (elementId: string, anchor: HTMLElement) => void;
   onClickElement: (elementId: string, anchor: HTMLElement) => void;
   onUpload: () => void;
   isGenerating?: boolean;
@@ -627,7 +627,7 @@ function InventoryPanel({
                               key={el.element_id}
                               onClick={(e) => {
                                 if (isSil) {
-                                  onClickSilhouette(el.element_id);
+                                  onClickSilhouette(el.element_id, e.currentTarget as HTMLElement);
                                 } else {
                                   onClickElement(el.element_id, e.currentTarget as HTMLElement);
                                 }
@@ -732,7 +732,12 @@ export default function WorkspaceCanvas() {
   const [stage, setStage] = useState<1 | 2 | 3>(1);
 
   // Row picker popover state
-  const [pendingAssign, setPendingAssign] = useState<{ elementId: string; anchor: HTMLElement } | null>(null);
+  const [pendingAssign, setPendingAssign] = useState<{
+    elementId: string;
+    anchor: HTMLElement;
+    compatibleRows?: Array<{ rowNum: number; label: string }>;
+    showNewRowOption?: boolean;
+  } | null>(null);
   // Element detail popover (canvas node click)
   const [detailPop, setDetailPop] = useState<{ elementId: string; x: number; y: number } | null>(null);
 
@@ -815,31 +820,57 @@ export default function WorkspaceCanvas() {
       qc.invalidateQueries({ queryKey: ["workspaces"] });
 
       const token = localStorage.getItem("fash_token") ?? "";
-      const evtSource = new EventSource(`/api/v1${data.stream_url}?token=${encodeURIComponent(token)}`);
-
-      evtSource.addEventListener("progress", (e) => {
-        const p = JSON.parse(e.data);
-        setGenProgress({ completed: p.completed, total: p.total, cost: p.cost_so_far });
-      });
-
-      evtSource.addEventListener("concept_ready", () => {
-        qc.invalidateQueries({ queryKey: ["concepts", id] });
-      });
-
-      evtSource.addEventListener("job_done", () => {
-        evtSource.close();
-        setGenProgress(null);
-        qc.invalidateQueries({ queryKey: ["workspace", id] });
-        qc.invalidateQueries({ queryKey: ["concepts", id] });
-        setStage(2);
-      });
-
-      evtSource.onerror = () => {
-        evtSource.close();
+      const onStreamError = () => {
         setGenProgress(null);
         qc.invalidateQueries({ queryKey: ["workspace", id] });
         qc.invalidateQueries({ queryKey: ["concepts", id] });
       };
+
+      fetch(`/api/v1${data.stream_url}`, {
+        headers: { Authorization: `Bearer ${token}` },
+      }).then(async (resp) => {
+        if (!resp.ok || !resp.body) { onStreamError(); return; }
+
+        const reader = resp.body.getReader();
+        const decoder = new TextDecoder();
+        let buf = "";
+
+        try {
+          while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            buf += decoder.decode(value, { stream: true });
+
+            const messages = buf.split("\n\n");
+            buf = messages.pop() ?? "";
+
+            for (const msg of messages) {
+              if (!msg.trim()) continue;
+              let eventType = "message";
+              let eventData = "";
+              for (const line of msg.split("\n")) {
+                if (line.startsWith("event:")) eventType = line.slice(6).trim();
+                else if (line.startsWith("data:")) eventData = line.slice(5).trim();
+              }
+
+              if (eventType === "progress") {
+                const p = JSON.parse(eventData);
+                setGenProgress({ completed: p.completed, total: p.total, cost: p.cost_so_far });
+              } else if (eventType === "concept_ready") {
+                qc.invalidateQueries({ queryKey: ["concepts", id] });
+              } else if (eventType === "job_done") {
+                setGenProgress(null);
+                qc.invalidateQueries({ queryKey: ["workspace", id] });
+                qc.invalidateQueries({ queryKey: ["concepts", id] });
+                setStage(2);
+                return;
+              }
+            }
+          }
+        } catch {
+          onStreamError();
+        }
+      }).catch(onStreamError);
     },
   });
 
@@ -927,11 +958,19 @@ export default function WorkspaceCanvas() {
     [ws, savePositions],
   );
 
-  function handleClickSilhouette(elementId: string) {
-    // Check if this silhouette is already on canvas
+  function handleClickSilhouette(elementId: string, anchor: HTMLElement) {
     const el = ws?.elements.find((e) => e.element_id === elementId);
     if (!el || el.canvas_row != null) return; // already placed
-    assignToCanvas.mutate({ elementId, canvasRow: nextRowNum });
+
+    const rowsWithoutSilhouette = canvasRows.filter(
+      ({ rowNum }) => !ws?.elements.some((e) => e.canvas_row === rowNum && e.element_type === "silhouette"),
+    );
+
+    if (rowsWithoutSilhouette.length > 0) {
+      setPendingAssign({ elementId, anchor, compatibleRows: rowsWithoutSilhouette, showNewRowOption: true });
+    } else {
+      assignToCanvas.mutate({ elementId, canvasRow: nextRowNum });
+    }
   }
 
   function handleClickElement(elementId: string, anchor: HTMLElement) {
@@ -1189,12 +1228,12 @@ export default function WorkspaceCanvas() {
           <Typography sx={{ fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "text.disabled", mb: 1 }}>
             Add to row
           </Typography>
-          {canvasRows.length === 0 ? (
+          {(pendingAssign?.compatibleRows ?? canvasRows).length === 0 ? (
             <Typography sx={{ fontSize: 12, color: "text.secondary", px: 0.5 }}>
               Add a silhouette first to start a row
             </Typography>
           ) : (
-            canvasRows.map(({ rowNum, label }) => (
+            (pendingAssign?.compatibleRows ?? canvasRows).map(({ rowNum, label }) => (
               <MenuItem
                 key={rowNum}
                 dense
@@ -1209,6 +1248,20 @@ export default function WorkspaceCanvas() {
                 Row {rowNum + 1} — {label}
               </MenuItem>
             ))
+          )}
+          {pendingAssign?.showNewRowOption && (
+            <MenuItem
+              dense
+              onClick={() => {
+                if (pendingAssign) {
+                  assignToCanvas.mutate({ elementId: pendingAssign.elementId, canvasRow: nextRowNum });
+                }
+                setPendingAssign(null);
+              }}
+              sx={{ borderRadius: "6px", fontSize: 13, px: 1.25, color: "text.secondary", borderTop: "1px solid #f0e4e2", mt: 0.5 }}
+            >
+              + Create new row
+            </MenuItem>
           )}
         </Box>
       </Popover>

@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useRef, useEffect, type ReactNode } from "react";
-import { Box, Typography, IconButton, Card, CardMedia, CardContent, Chip, Skeleton, TextField, Button, Popover, Tooltip, Select, MenuItem, Checkbox, Dialog, DialogTitle, DialogContent, DialogActions } from "@mui/material";
+import { Box, Typography, IconButton, Card, CardContent, Chip, Skeleton, TextField, Button, Popover, Tooltip, Select, MenuItem, Checkbox, Dialog, DialogTitle, DialogContent, DialogActions } from "@mui/material";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../../lib/api/client";
+import { ConceptImage } from "../../components/ConceptImage";
 import InventoryIcon from "@mui/icons-material/Inventory";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
@@ -16,7 +17,6 @@ const EST_COST_PER_GARMENT = 0.09;
 
 interface ConceptCard {
   id: string;
-  imageUrl: string;
   title: string;
   materials: string;
   status: string;
@@ -52,7 +52,7 @@ function mapRaw(c: any): ConceptCard {
 
   return {
     id: c._id,
-    imageUrl: `/api/v1/concepts/${c._id}/image`,
+
     title: title.charAt(0).toUpperCase() + title.slice(1),
     materials,
     status: c.status,
@@ -92,7 +92,7 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
 
   const displaySection01: ConceptCard[] = showSkeleton
     ? Array.from({ length: 6 }).map((_, i) => ({
-        id: `skeleton-${i}`, imageUrl: "", title: "", materials: "", status: "skeleton", isSkeleton: true, isVariant: false,
+        id: `skeleton-${i}`, title: "", materials: "", status: "skeleton", isSkeleton: true, isVariant: false,
       }))
     : allConcepts.filter(c => !c.isVariant);
 
@@ -550,11 +550,7 @@ function ConceptSection({
                   {img.isSkeleton ? (
                     <Skeleton variant="rectangular" width="100%" height="100%" sx={{ position: "absolute", top: 0, left: 0 }} />
                   ) : (
-                    <CardMedia
-                      component="img"
-                      image={img.imageUrl}
-                      sx={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover" }}
-                    />
+                    <ConceptImage conceptId={img.id} sx={{ position: "absolute", top: 0, left: 0 }} />
                   )}
 
                   <Chip
