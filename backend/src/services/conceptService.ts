@@ -675,8 +675,9 @@ export async function getJob(jobId: string, userId: string) {
   return job;
 }
 
-export async function listConcepts(workspaceId: string, userId: string, status?: string, jobId?: string, finalized?: boolean) {
+export async function listConcepts(workspaceId: string, userId: string, status?: string, jobId?: string, finalized?: boolean, includeUndone = false) {
   const filter: Record<string, unknown> = { workspace_id: workspaceId };
+  if (!includeUndone) filter.undone = { $ne: true };
   if (status) filter.status = status;
   if (jobId) filter.job_id = jobId;
   if (finalized !== undefined) filter.finalized = finalized;
@@ -873,6 +874,7 @@ export async function refineConcept(
   const parentConcept = await Concept.findById(conceptId);
   if (!parentConcept) throw new ApiError(404, "Concept not found");
   if (!parentConcept.image?.gridfs_id) throw new ApiError(400, "Parent concept has no image yet");
+  if (parentConcept.undone) throw new ApiError(400, "This version was undone; refine the current version instead");
 
   const workspace = await Workspace.findOne({ _id: parentConcept.workspace_id, user_id: userId }).lean();
   if (!workspace) throw new ApiError(403, "Not authorized");
@@ -1015,4 +1017,52 @@ export async function getVariants(conceptId: string, userId: string) {
 
   const rootId = concept.root_concept ?? concept._id;
   return Concept.find({ root_concept: rootId }).sort({ createdAt: 1 }).lean();
+}
+
+// ---- Undo / redo of refinements ----
+// A design's versions form a chain (root → v1 → v2 …). Section 02 shows the newest version that
+// isn't undone, so undo hides the shown version and redo un-hides it. Nothing is deleted.
+
+async function loadChainForUser(conceptId: string, userId: string) {
+  if (!mongoose.Types.ObjectId.isValid(conceptId)) throw new ApiError(400, "Invalid concept id");
+  const concept = await Concept.findById(conceptId);
+  if (!concept) throw new ApiError(404, "Concept not found");
+  const workspace = await Workspace.findOne({ _id: concept.workspace_id, user_id: userId }).lean();
+  if (!workspace) throw new ApiError(403, "Not authorized");
+  const rootId = concept.root_concept ?? concept._id;
+  // Same rule section 02 uses for the card it shows: newest version that isn't undone or failed.
+  const visible = await Concept.find({ root_concept: rootId, undone: { $ne: true }, status: { $ne: "failed" } })
+    .sort({ createdAt: -1 })
+    .lean();
+  return { concept, rootId, currentId: String(visible[0]?._id ?? rootId) };
+}
+
+export async function undoRefinement(conceptId: string, userId: string, confirmFinalized = false) {
+  const { concept, currentId } = await loadChainForUser(conceptId, userId);
+  if (!concept.parent_concept) throw new ApiError(400, "This is the original design; there's nothing to undo");
+  if (concept.undone) throw new ApiError(409, "This edit is already undone");
+  if (String(concept._id) !== currentId) throw new ApiError(409, "Only the latest edit can be undone");
+  if (concept.finalized && !confirmFinalized) {
+    throw new ApiError(409, "This version is in garment concepts. Undoing it keeps it there but shows the previous version in section 02. Confirm to continue.");
+  }
+
+  concept.undone = true;
+  concept.undone_at = new Date();
+  await concept.save();
+
+  const current = await Concept.findById(concept.parent_concept).lean();
+  return { undone_id: String(concept._id), current };
+}
+
+export async function redoRefinement(conceptId: string, userId: string) {
+  const { concept, currentId } = await loadChainForUser(conceptId, userId);
+  if (!concept.undone) throw new ApiError(409, "This edit isn't undone");
+  if (String(concept.parent_concept) !== currentId) {
+    throw new ApiError(409, "A newer edit was made after this one was undone, so it can't be redone");
+  }
+
+  concept.undone = false;
+  concept.undone_at = null;
+  await concept.save();
+  return { current: concept.toObject() };
 }

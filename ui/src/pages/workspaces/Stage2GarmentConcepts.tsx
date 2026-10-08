@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useRef, useEffect, type ReactNode } from "react";
-import { Box, Typography, IconButton, Card, CardContent, Chip, Skeleton, TextField, Button, Popover, Tooltip, Select, MenuItem, Checkbox, Dialog, DialogTitle, DialogContent, DialogActions } from "@mui/material";
+import { Box, Typography, IconButton, Card, CardContent, Chip, Skeleton, TextField, Button, Popover, Tooltip, Select, MenuItem, Checkbox, Dialog, DialogTitle, DialogContent, DialogActions, Snackbar } from "@mui/material";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "../../lib/api/client";
 import { ConceptImage } from "../../components/ConceptImage";
@@ -9,6 +9,8 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import CloseIcon from "@mui/icons-material/Close";
 import AutoFixHighIcon from "@mui/icons-material/AutoFixHigh";
+import UndoIcon from "@mui/icons-material/Undo";
+import RedoIcon from "@mui/icons-material/Redo";
 import { GarmentConceptsSection } from "./GarmentConceptsSection";
 
 // Three generated shots per garment on FLUX.2 [pro] (~$0.03 each); shown before the designer confirms a move.
@@ -86,7 +88,16 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
     },
   });
 
-  // Removed the duplicate declarations.
+  // Undone versions are hidden from the list above; fetched separately so cards can offer Redo.
+  const { data: undoneConcepts = [] } = useQuery<ConceptCard[]>({
+    queryKey: ["concepts", workspaceId, "undone"],
+    queryFn: async () => {
+      const { data } = await api.get("/concepts", { params: { workspace_id: workspaceId, include_undone: true } });
+      const raw: any[] = Array.isArray(data) ? data : (data?.concepts ?? []);
+      return raw.filter((c) => c.undone).map(mapRaw);
+    },
+    enabled: !!workspaceId,
+  });
   
   const showSkeleton = isLoading || ws?.status === "generating";
 
@@ -133,9 +144,50 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
       return data;
     },
     onSuccess: () => {
+      setUndoNotice(null);
       qc.invalidateQueries({ queryKey: ["concepts", workspaceId] });
     },
   });
+
+  // Undo steps a design back to its previous version; the undone version is kept so it can be redone.
+  const [undoNotice, setUndoNotice] = useState<{ undoneId: string; edit: string } | null>(null);
+  const [confirmUndoId, setConfirmUndoId] = useState<string | null>(null);
+  const [stage2Error, setStage2Error] = useState<string | null>(null);
+  const errorText = (err: unknown) =>
+    (err as { response?: { data?: { detail?: string } } })?.response?.data?.detail ?? (err as Error)?.message ?? "Something went wrong";
+
+  const undoRefinement = useMutation({
+    mutationFn: async ({ conceptId, confirm }: { conceptId: string; confirm?: boolean }) =>
+      (await api.post(`/concepts/${conceptId}/undo`, { confirm: !!confirm })).data as { undone_id: string },
+    onSuccess: (data, vars) => {
+      const edit = approvedConcepts.find((c) => c.id === vars.conceptId)?.materials ?? "Last edit";
+      setConfirmUndoId(null);
+      setUndoNotice({ undoneId: data.undone_id, edit });
+      qc.invalidateQueries({ queryKey: ["concepts", workspaceId] });
+    },
+    onError: (err) => { setConfirmUndoId(null); setStage2Error(errorText(err)); },
+  });
+
+  const redoRefinement = useMutation({
+    mutationFn: async (conceptId: string) => (await api.post(`/concepts/${conceptId}/redo`)).data,
+    onSuccess: () => {
+      setUndoNotice(null);
+      qc.invalidateQueries({ queryKey: ["concepts", workspaceId] });
+    },
+    onError: (err) => { setUndoNotice(null); setStage2Error(errorText(err)); },
+  });
+
+  // A card can redo the newest undone edit made directly on the version it shows (the list is newest first).
+  const redoIds: Record<string, string> = {};
+  for (const card of approvedConcepts) {
+    const undone = undoneConcepts.find((u) => u.parentId === card.id);
+    if (undone) redoIds[card.id] = undone.id;
+  }
+
+  const requestUndo = (id: string) => {
+    if (approvedConcepts.find((c) => c.id === id)?.finalized) setConfirmUndoId(id);
+    else undoRefinement.mutate({ conceptId: id });
+  };
 
   // Moving refined designs from section 02 into section 03 (finalises them and starts their shots)
   const [moveIds, setMoveIds] = useState<string[]>([]);
@@ -282,9 +334,14 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
         isCarousel
         actionIcon="refine"
         onAction={(id, instruction) => refineVariant.mutate({ conceptId: id, instruction: instruction ?? "" })}
+        onUndo={requestUndo}
+        undoPendingId={undoRefinement.isPending ? undoRefinement.variables?.conceptId : undefined}
+        redoIds={redoIds}
+        onRedo={(undoneId) => redoRefinement.mutate(undoneId)}
+        redoPending={redoRefinement.isPending}
         onSecondaryAction={(id) => {
           const concept = approvedConcepts.find(c => c.id === id);
-          rejectConcept.mutate(concept?.parentId || id);
+          rejectConcept.mutate(concept?.rootId || concept?.parentId || id);
         }}
         actionPending={refineVariant.isPending}
         pendingId={refineVariant.variables?.conceptId}
@@ -310,6 +367,51 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
 
       {/* Section 03 */}
       <GarmentConceptsSection workspaceId={workspaceId} />
+
+      <Dialog open={!!confirmUndoId} onClose={() => !undoRefinement.isPending && setConfirmUndoId(null)} slotProps={{ paper: { sx: { borderRadius: "16px", p: 1, maxWidth: 420 } } }}>
+        <DialogTitle sx={{ fontSize: 16, fontWeight: 600 }}>Undo an edit that's in garment concepts?</DialogTitle>
+        <DialogContent>
+          <Typography sx={{ fontSize: 13, color: "text.secondary" }}>
+            This version stays in garment concepts with its shots, but section 02 will go back to the previous version. You can redo right after.
+          </Typography>
+        </DialogContent>
+        <DialogActions sx={{ px: 3, pb: 2 }}>
+          <Button onClick={() => setConfirmUndoId(null)} disabled={undoRefinement.isPending} sx={{ color: "text.secondary", textTransform: "none" }}>Cancel</Button>
+          <Button
+            variant="contained"
+            disableElevation
+            onClick={() => confirmUndoId && undoRefinement.mutate({ conceptId: confirmUndoId, confirm: true })}
+            disabled={undoRefinement.isPending}
+            sx={{ borderRadius: "8px", bgcolor: "text.primary", color: "#fff", fontWeight: 600, textTransform: "none", "&:hover": { bgcolor: "primary.main" } }}
+          >
+            Undo edit
+          </Button>
+        </DialogActions>
+      </Dialog>
+
+      {/* No timer: stays until closed, redone, or replaced by another edit. */}
+      <Snackbar
+        open={!!undoNotice}
+        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+        message={undoNotice ? `Undid "${undoNotice.edit}"` : ""}
+        action={
+          <>
+            <Button size="small" onClick={() => undoNotice && redoRefinement.mutate(undoNotice.undoneId)} disabled={redoRefinement.isPending} sx={{ color: "#fff", fontWeight: 600, textTransform: "none" }}>
+              Redo
+            </Button>
+            <IconButton size="small" aria-label="Close" onClick={() => setUndoNotice(null)} sx={{ color: "#fff" }}>
+              <CloseIcon fontSize="small" />
+            </IconButton>
+          </>
+        }
+      />
+      <Snackbar
+        open={!!stage2Error}
+        autoHideDuration={5000}
+        onClose={() => setStage2Error(null)}
+        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+        message={stage2Error ?? ""}
+      />
 
       <Dialog open={confirmMove} onClose={() => !moveToGarmentConcepts.isPending && setConfirmMove(false)} slotProps={{ paper: { sx: { borderRadius: "16px", p: 1, maxWidth: 420 } } }}>
         <DialogTitle sx={{ fontSize: 16, fontWeight: 600 }}>Move {movableIds.length} design{movableIds.length > 1 ? "s" : ""} to garment concepts?</DialogTitle>
@@ -364,6 +466,13 @@ interface SectionProps {
   actionIcon?: "approve" | "refine";
   onAction?: (id: string, instruction?: string) => void;
   onSecondaryAction?: (id: string) => void;
+  /** Section 02 only: undo the last refinement of a design. */
+  onUndo?: (id: string) => void;
+  undoPendingId?: string;
+  /** Section 02 only: card id → id of the undone edit it can bring back. */
+  redoIds?: Record<string, string>;
+  onRedo?: (undoneId: string) => void;
+  redoPending?: boolean;
   actionPending?: boolean;
   pendingId?: string;
   onCardClick?: (id: string) => void;
@@ -379,7 +488,7 @@ interface SectionProps {
 
 function ConceptSection({
   title, subtitle, hint, images, isCarousel = true,
-  actionIcon, onAction, onSecondaryAction, actionPending, pendingId,
+  actionIcon, onAction, onSecondaryAction, onUndo, undoPendingId, redoIds = {}, onRedo, redoPending, actionPending, pendingId,
   onCardClick, selectedIds = [], inventoryData = [], isLoading = false,
   checkedIds = [], lockedIds = [], onToggleCheck, headerAction,
 }: SectionProps) {
@@ -561,6 +670,38 @@ function ConceptSection({
 
                   {!img.isSkeleton && (
                     <Box sx={{ position: "absolute", top: 12, right: 12, display: "flex", gap: 1 }}>
+                      {onUndo && img.isVariant && (
+                        <Tooltip title="Undo last edit">
+                          <span>
+                            <IconButton
+                              size="small"
+                              aria-label="Undo last edit"
+                              disabled={undoPendingId === img.id}
+                              onClick={(e) => { e.stopPropagation(); onUndo(img.id); }}
+                              sx={{ bgcolor: "rgba(255,255,255,0.9)", "&:hover": { bgcolor: "#fff" }, boxShadow: "0 2px 8px rgba(0,0,0,0.12)" }}
+                            >
+                              <UndoIcon fontSize="small" sx={{ color: "text.primary" }} />
+                            </IconButton>
+                          </span>
+                        </Tooltip>
+                      )}
+
+                      {onRedo && redoIds[img.id] && (
+                        <Tooltip title="Redo edit">
+                          <span>
+                            <IconButton
+                              size="small"
+                              aria-label="Redo edit"
+                              disabled={redoPending}
+                              onClick={(e) => { e.stopPropagation(); onRedo(redoIds[img.id]); }}
+                              sx={{ bgcolor: "rgba(255,255,255,0.9)", "&:hover": { bgcolor: "#fff" }, boxShadow: "0 2px 8px rgba(0,0,0,0.12)" }}
+                            >
+                              <RedoIcon fontSize="small" sx={{ color: "text.primary" }} />
+                            </IconButton>
+                          </span>
+                        </Tooltip>
+                      )}
+
                       {actionIcon === "refine" && onAction && (
                         <Tooltip title="Create final variation (03)">
                           <IconButton

@@ -11,6 +11,9 @@ export interface IConcept extends Document {
   edit_type?: "color" | "silhouette" | "pattern" | "detail" | "multi";
   finalized?: boolean;
   finalized_at?: Date | null;
+  /** Set by undo: the version is hidden and the chain falls back to its parent. Kept so redo can restore it. */
+  undone?: boolean;
+  undone_at?: Date | null;
   combo: {
     silhouette_id: string;
     silhouette_label: string;
@@ -94,6 +97,8 @@ const conceptSchema = new Schema<IConcept>(
     edit_type: { type: String, enum: ["color", "silhouette", "pattern", "detail", "multi"], default: null },
     finalized: { type: Boolean, default: false, index: true },
     finalized_at: { type: Date, default: null },
+    undone: { type: Boolean, default: false, index: true },
+    undone_at: { type: Date, default: null },
     status: {
       type: String,
       enum: ["pending", "generating", "generated", "failed", "approved", "rejected"],
