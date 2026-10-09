@@ -1,4 +1,4 @@
-name: fashionare
+name: fashmux
 root: <%= ENV["PWD"] %>
 startup_window: control
 

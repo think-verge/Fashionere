@@ -181,6 +181,7 @@ def parse_product(raw_doc: dict) -> Look | None:
         context=Context(
             brand="Zara",
             brand_slug="zara",
+            garment_type=garment_type,
             product_id=sku,
             price=price,
             category_path=category_path,

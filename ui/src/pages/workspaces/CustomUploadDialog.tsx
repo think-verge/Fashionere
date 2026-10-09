@@ -68,8 +68,7 @@ export function CustomUploadDialog({
         headers: { "Content-Type": "multipart/form-data" },
       });
       qc.invalidateQueries({ queryKey: ["workspace", workspaceId] });
-      setFile(null);
-      setLabel("");
+      handleClose();
     } catch {
       setError("Upload failed. Check file size (max 10 MB) and try again.");
     } finally {

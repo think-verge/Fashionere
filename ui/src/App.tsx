@@ -11,6 +11,8 @@ import WorkspacesPage from "./pages/workspaces/WorkspacesPage";
 import WorkspaceDetailPage from "./pages/workspaces/WorkspaceDetailPage";
 import WorkspaceCanvas from "./pages/workspaces/WorkspaceCanvas";
 import { TrendsPage } from "./pages/trends/TrendsPage";
+import ElementTrendPage from "./pages/trends/ElementTrendPage";
+import CategoryTrendPage from "./pages/trends/CategoryTrendPage";
 
 export default function App() {
   return (
@@ -29,6 +31,8 @@ export default function App() {
               <Route path="workspace/:id" element={<WorkspaceDetailPage />} />
               <Route path="workspace/:id/builder" element={<WorkspaceCanvas />} />
               <Route path="trends" element={<TrendsPage />} />
+              <Route path="trends/retail/element" element={<ElementTrendPage />} />
+              <Route path="trends/retail/:garmentType" element={<CategoryTrendPage />} />
             </Route>
           </Route>
           <Route path="/" element={<Navigate to="/app/looks" replace />} />

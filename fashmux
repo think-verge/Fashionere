@@ -12,23 +12,23 @@ if ! command -v tmuxinator >/dev/null 2>&1; then
 fi
 
 if [[ "${1:-}" == "kill" || "${1:-}" == "stop" ]]; then
-  tmux kill-session -t fashionare 2>/dev/null && echo "fashmux: session stopped." || echo "fashmux: no running session."
+  tmux kill-session -t fashmux 2>/dev/null && echo "fashmux: session stopped." || echo "fashmux: no running session."
   exit 0
 fi
 
-if tmux has-session -t fashionare 2>/dev/null; then
+if tmux has-session -t fashmux 2>/dev/null; then
   echo "fashmux: session already running, attaching..."
   if [ "$TERM_PROGRAM" == "iTerm.app" ]; then
-    tmux -CC attach -t fashionare
+    tmux -CC attach -t fashmux
   else
-    tmux attach-session -t fashionare
+    tmux attach-session -t fashmux
   fi
   exit 0
 fi
 
 if [ "$TERM_PROGRAM" == "iTerm.app" ]; then
   tmuxinator start local -a false
-  tmux -CC attach -t fashionare
+  tmux -CC attach -t fashmux
 else
   tmuxinator start local
 fi

@@ -33,8 +33,8 @@ class Config:
 
     # models
     GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
-    NORMALIZE_MODEL: str = os.getenv("NORMALIZE_MODEL", "gemini-2.5-flash")
-    NARRATE_MODEL: str = os.getenv("NARRATE_MODEL", "gemini-2.5-pro")
+    NORMALIZE_MODEL: str = os.getenv("NORMALIZE_MODEL", "gemini-flash-latest")
+    NARRATE_MODEL: str = os.getenv("NARRATE_MODEL", "gemini-pro-latest")
 
     # thresholds (DESIGN.md §15)
     CONFIDENCE_MIN: float = _f("CONFIDENCE_MIN", 0.6)

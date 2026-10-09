@@ -4,12 +4,11 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import {
   Box,
   Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper,
-  Typography, Chip, Button, TextField, Alert,
-  IconButton, Menu, MenuItem, Dialog, DialogTitle, DialogContent, DialogActions,
+  Typography, Chip, Button, TextField, Alert, Checkbox,
+  IconButton, Dialog, DialogTitle, DialogContent, DialogActions,
   Tooltip,
 } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
 import EditOutlinedIcon from "@mui/icons-material/EditOutlined";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import LayersOutlinedIcon from "@mui/icons-material/LayersOutlined";
@@ -40,15 +39,16 @@ export default function WorkspacesPage() {
   const [newName, setNewName] = useState("");
   const [creating, setCreating] = useState(false);
 
-  // Per-card menu state
-  const [menuAnchor, setMenuAnchor] = useState<{ el: HTMLElement; wsId: string; wsName: string } | null>(null);
-
   // Rename dialog state
   const [renameTarget, setRenameTarget] = useState<{ id: string; name: string } | null>(null);
   const [renameName, setRenameName] = useState("");
 
   // Delete confirm state
   const [deleteTarget, setDeleteTarget] = useState<{ id: string; name: string } | null>(null);
+
+  // Bulk selection state
+  const [selected, setSelected] = useState<Set<string>>(new Set());
+  const [bulkDeleteOpen, setBulkDeleteOpen] = useState(false);
 
   const [searchParams] = useSearchParams();
   const searchQuery = searchParams.get("q")?.toLowerCase() || "";
@@ -106,23 +106,31 @@ export default function WorkspacesPage() {
     },
   });
 
-  function openMenu(e: React.MouseEvent<HTMLElement>, ws: Workspace) {
-    e.stopPropagation();
-    e.preventDefault();
-    setMenuAnchor({ el: e.currentTarget, wsId: ws._id, wsName: ws.name });
+  const bulkDeleteWs = useMutation({
+    mutationFn: async (ids: string[]) => {
+      await Promise.all(ids.map((id) => api.delete(`/workspace/${id}`)));
+    },
+    onSuccess: () => {
+      setSelected(new Set());
+      setBulkDeleteOpen(false);
+      qc.invalidateQueries({ queryKey: ["workspaces"] });
+    },
+  });
+
+  function toggleSelect(id: string) {
+    setSelected((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id); else next.add(id);
+      return next;
+    });
   }
 
-  function startRename() {
-    if (!menuAnchor) return;
-    setRenameTarget({ id: menuAnchor.wsId, name: menuAnchor.wsName });
-    setRenameName(menuAnchor.wsName);
-    setMenuAnchor(null);
-  }
-
-  function startDelete() {
-    if (!menuAnchor) return;
-    setDeleteTarget({ id: menuAnchor.wsId, name: menuAnchor.wsName });
-    setMenuAnchor(null);
+  function toggleAll() {
+    if (selected.size === filteredWorkspaces.length) {
+      setSelected(new Set());
+    } else {
+      setSelected(new Set(filteredWorkspaces.map((ws) => ws._id)));
+    }
   }
 
   return (
@@ -194,106 +202,159 @@ export default function WorkspacesPage() {
           </Typography>
         </Box>
       ) : (
-        <TableContainer component={Paper} variant="outlined" sx={{ borderRadius: "12px", border: "1px solid #f0e4e2" }}>
-          <Table>
-            <TableHead>
-              <TableRow sx={{ bgcolor: "#faf8f7" }}>
-                <TableCell sx={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "text.secondary", py: 1.5, borderColor: "#f0e4e2" }}>
-                  Name
-                </TableCell>
-                <TableCell sx={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "text.secondary", py: 1.5, borderColor: "#f0e4e2" }}>
-                  Status
-                </TableCell>
-                <TableCell sx={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "text.secondary", py: 1.5, borderColor: "#f0e4e2" }}>
-                  Elements
-                </TableCell>
-                <TableCell sx={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "text.secondary", py: 1.5, borderColor: "#f0e4e2" }}>
-                  Created
-                </TableCell>
-                <TableCell sx={{ borderColor: "#f0e4e2", py: 1.5, width: 80 }} />
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {filteredWorkspaces.map((ws) => (
-                <TableRow
-                  key={ws._id}
-                  hover
-                  onClick={() => navigate(`/app/workspace/${ws._id}`)}
-                  sx={{
-                    cursor: "pointer",
-                    "&:last-child td": { border: 0 },
-                    "& td": { borderColor: "#f0e4e2" },
-                    "&:hover .ws-open-icon": { opacity: 1 },
-                    "&:hover .ws-menu-btn": { opacity: 1 },
-                  }}
-                >
-                  <TableCell sx={{ py: 2 }}>
-                    <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
-                      <Box sx={{ width: 32, height: 32, borderRadius: "8px", bgcolor: "#fff0ef", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                        <LayersOutlinedIcon sx={{ fontSize: 16, color: "primary.main" }} />
-                      </Box>
-                      <Box sx={{ display: "flex", alignItems: "center", gap: 0.75 }}>
-                        <Typography sx={{ fontWeight: 600, fontSize: 14, color: "text.primary" }}>
-                          {ws.name}
-                        </Typography>
-                        <OpenInNewIcon className="ws-open-icon" sx={{ fontSize: 13, color: "primary.main", opacity: 0, transition: "opacity 0.15s" }} />
-                      </Box>
-                    </Box>
-                  </TableCell>
-                  <TableCell sx={{ py: 2 }}>
-                    <Chip
-                      label={ws.status}
-                      color={STATUS_COLOR[ws.status] ?? "default"}
+        <Box>
+          {selected.size > 0 && (
+            <Box sx={{ mb: 1.5, display: "flex", alignItems: "center", gap: 1.5 }}>
+              <Typography sx={{ fontSize: 13, color: "text.secondary" }}>
+                {selected.size} selected
+              </Typography>
+              <Button
+                size="small"
+                color="error"
+                variant="outlined"
+                startIcon={<DeleteOutlineIcon />}
+                onClick={() => setBulkDeleteOpen(true)}
+                sx={{ borderRadius: "8px", fontSize: 13 }}
+              >
+                Delete selected ({selected.size})
+              </Button>
+              <Button
+                size="small"
+                variant="text"
+                onClick={() => setSelected(new Set())}
+                sx={{ borderRadius: "8px", fontSize: 13, color: "text.secondary" }}
+              >
+                Clear
+              </Button>
+            </Box>
+          )}
+          <TableContainer component={Paper} variant="outlined" sx={{ borderRadius: "12px", border: "1px solid #f0e4e2" }}>
+            <Table>
+              <TableHead>
+                <TableRow sx={{ bgcolor: "#faf8f7" }}>
+                  <TableCell padding="checkbox" sx={{ borderColor: "#f0e4e2", pl: 2 }}>
+                    <Checkbox
                       size="small"
-                      variant="outlined"
-                      sx={{ fontSize: 10, textTransform: "capitalize", height: 22 }}
+                      indeterminate={selected.size > 0 && selected.size < filteredWorkspaces.length}
+                      checked={filteredWorkspaces.length > 0 && selected.size === filteredWorkspaces.length}
+                      onChange={toggleAll}
                     />
                   </TableCell>
-                  <TableCell sx={{ py: 2, fontSize: 13, color: "text.secondary" }}>
-                    {ws.elements?.length ?? 0}
+                  <TableCell sx={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "text.secondary", py: 1.5, borderColor: "#f0e4e2" }}>
+                    Name
                   </TableCell>
-                  <TableCell sx={{ py: 2, fontSize: 13, color: "text.secondary" }}>
-                    {ws.createdAt ? new Date(ws.createdAt).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" }) : "—"}
+                  <TableCell sx={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "text.secondary", py: 1.5, borderColor: "#f0e4e2" }}>
+                    Status
                   </TableCell>
-                  <TableCell sx={{ py: 2 }} align="right">
-                    <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
-                      <Tooltip title="Options">
-                        <IconButton
-                          className="ws-menu-btn"
-                          size="small"
-                          onClick={(e) => openMenu(e, ws)}
-                          sx={{
-                            opacity: 0,
-                            transition: "opacity 0.15s",
-                            "&:hover": { bgcolor: "#fff0ef", color: "primary.main" },
-                          }}
-                        >
-                          <MoreVertIcon fontSize="small" />
-                        </IconButton>
-                      </Tooltip>
-                    </Box>
+                  <TableCell sx={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "text.secondary", py: 1.5, borderColor: "#f0e4e2" }}>
+                    Elements
                   </TableCell>
+                  <TableCell sx={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "text.secondary", py: 1.5, borderColor: "#f0e4e2" }}>
+                    Created
+                  </TableCell>
+                  <TableCell sx={{ borderColor: "#f0e4e2", py: 1.5, width: 96 }} />
                 </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
+              </TableHead>
+              <TableBody>
+                {filteredWorkspaces.map((ws) => (
+                  <TableRow
+                    key={ws._id}
+                    hover
+                    selected={selected.has(ws._id)}
+                    onClick={() => navigate(`/app/workspace/${ws._id}`)}
+                    sx={{
+                      cursor: "pointer",
+                      "&:last-child td": { border: 0 },
+                      "& td": { borderColor: "#f0e4e2" },
+                      "&:hover .ws-open-icon": { opacity: 1 },
+                    }}
+                  >
+                    <TableCell padding="checkbox" sx={{ pl: 2 }} onClick={(e) => { e.stopPropagation(); toggleSelect(ws._id); }}>
+                      <Checkbox size="small" checked={selected.has(ws._id)} />
+                    </TableCell>
+                    <TableCell sx={{ py: 2 }}>
+                      <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
+                        <Box sx={{ width: 32, height: 32, borderRadius: "8px", bgcolor: "#fff0ef", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                          <LayersOutlinedIcon sx={{ fontSize: 16, color: "primary.main" }} />
+                        </Box>
+                        <Box sx={{ display: "flex", alignItems: "center", gap: 0.75 }}>
+                          <Typography sx={{ fontWeight: 600, fontSize: 14, color: "text.primary" }}>
+                            {ws.name}
+                          </Typography>
+                          <OpenInNewIcon className="ws-open-icon" sx={{ fontSize: 13, color: "primary.main", opacity: 0, transition: "opacity 0.15s" }} />
+                        </Box>
+                      </Box>
+                    </TableCell>
+                    <TableCell sx={{ py: 2 }}>
+                      <Chip
+                        label={ws.status}
+                        color={STATUS_COLOR[ws.status] ?? "default"}
+                        size="small"
+                        variant="outlined"
+                        sx={{ fontSize: 10, textTransform: "capitalize", height: 22 }}
+                      />
+                    </TableCell>
+                    <TableCell sx={{ py: 2, fontSize: 13, color: "text.secondary" }}>
+                      {ws.elements?.length ?? 0}
+                    </TableCell>
+                    <TableCell sx={{ py: 2, fontSize: 13, color: "text.secondary" }}>
+                      {ws.createdAt ? new Date(ws.createdAt).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" }) : "—"}
+                    </TableCell>
+                    <TableCell sx={{ py: 2 }} align="right" onClick={(e) => e.stopPropagation()}>
+                      <Box sx={{ display: "flex", justifyContent: "flex-end", gap: 0.5 }}>
+                        <Tooltip title="Rename">
+                          <IconButton
+                            size="small"
+                            onClick={() => { setRenameTarget({ id: ws._id, name: ws.name }); setRenameName(ws.name); }}
+                            sx={{ "&:hover": { bgcolor: "#fff0ef", color: "primary.main" } }}
+                          >
+                            <EditOutlinedIcon fontSize="small" />
+                          </IconButton>
+                        </Tooltip>
+                        <Tooltip title="Delete">
+                          <IconButton
+                            size="small"
+                            onClick={() => setDeleteTarget({ id: ws._id, name: ws.name })}
+                            sx={{ "&:hover": { bgcolor: "#ffeaea", color: "error.main" } }}
+                          >
+                            <DeleteOutlineIcon fontSize="small" />
+                          </IconButton>
+                        </Tooltip>
+                      </Box>
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
+        </Box>
       )}
 
-      {/* Per-card options menu */}
-      <Menu
-        anchorEl={menuAnchor?.el}
-        open={!!menuAnchor}
-        onClose={() => setMenuAnchor(null)}
-        PaperProps={{ sx: { borderRadius: "10px", border: "1px solid #f0e4e2", minWidth: 160, boxShadow: "0 4px 20px rgba(36,25,24,0.10)" } }}
+      {/* Bulk delete confirm dialog */}
+      <Dialog
+        open={bulkDeleteOpen}
+        onClose={() => setBulkDeleteOpen(false)}
+        PaperProps={{ sx: { borderRadius: "14px", border: "1px solid #f0e4e2", minWidth: 360 } }}
       >
-        <MenuItem onClick={startRename} sx={{ fontSize: 14, gap: 1.5 }}>
-          <EditOutlinedIcon fontSize="small" sx={{ color: "text.secondary" }} /> Rename
-        </MenuItem>
-        <MenuItem onClick={startDelete} sx={{ fontSize: 14, color: "error.main", gap: 1.5 }}>
-          <DeleteOutlineIcon fontSize="small" /> Delete
-        </MenuItem>
-      </Menu>
+        <DialogTitle sx={{ fontSize: 16, fontWeight: 700 }}>Delete {selected.size} workspace{selected.size > 1 ? "s" : ""}?</DialogTitle>
+        <DialogContent>
+          <Typography sx={{ color: "text.secondary", fontSize: 14 }}>
+            This will permanently delete the selected workspaces and all their elements.
+          </Typography>
+        </DialogContent>
+        <DialogActions sx={{ px: 3, pb: 2.5, gap: 1 }}>
+          <Button onClick={() => setBulkDeleteOpen(false)} sx={{ color: "text.secondary", borderRadius: "8px" }}>Cancel</Button>
+          <Button
+            variant="contained"
+            color="error"
+            disabled={bulkDeleteWs.isPending}
+            onClick={() => bulkDeleteWs.mutate([...selected])}
+            sx={{ borderRadius: "8px" }}
+          >
+            {bulkDeleteWs.isPending ? "Deleting…" : `Delete ${selected.size}`}
+          </Button>
+        </DialogActions>
+      </Dialog>
 
       {/* Rename dialog */}
       <Dialog
