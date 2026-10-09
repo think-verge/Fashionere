@@ -372,21 +372,21 @@ export function PageShell({ title, children }: Props) {
             transition: "all 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
           }}
         >
-          <Toolbar sx={{ px: { xs: 3, sm: 4 }, minHeight: "56px !important", gap: 1.5 }}>
+          <Toolbar sx={{ px: { xs: 3, sm: 4 }, minHeight: "72px !important", gap: 1.5 }}>
             <Box
               sx={{
-                width: 6,
-                height: 6,
+                width: 8,
+                height: 8,
                 borderRadius: "50%",
                 bgcolor: "primary.main",
                 boxShadow: "0 0 10px rgba(189,58,58,0.5)",
               }}
             />
-            <Typography variant="body2" sx={{ color: "#a59796", fontWeight: 600, fontSize: 13, letterSpacing: "0.05em" }}>
+            <Typography variant="body2" sx={{ color: "#a59796", fontWeight: 600, fontSize: 15, letterSpacing: "0.05em" }}>
               FASHIONARE
             </Typography>
-            <Typography sx={{ color: "#e2d5d3", fontSize: 14 }}>/</Typography>
-            <Typography variant="body2" sx={{ color: "text.primary", fontWeight: 700, fontSize: 13, letterSpacing: "0.02em" }}>
+            <Typography sx={{ color: "#e2d5d3", fontSize: 16 }}>/</Typography>
+            <Typography variant="body2" sx={{ color: "text.primary", fontWeight: 700, fontSize: 15, letterSpacing: "0.02em" }}>
               {title}
             </Typography>
 
@@ -398,14 +398,14 @@ export function PageShell({ title, children }: Props) {
                 alignItems: "center",
                 bgcolor: "#ffffff",
                 border: "1px solid rgba(0,0,0,0.12)",
-                borderRadius: "20px",
-                px: 2,
-                py: 1,
-                width: { xs: "100%", sm: 320 },
-                gap: 1
+                borderRadius: "24px",
+                px: 2.5,
+                py: 1.5,
+                width: { xs: "100%", sm: 400 },
+                gap: 1.5
               }}
             >
-              <SearchIcon sx={{ fontSize: 18, color: "text.secondary" }} />
+              <SearchIcon sx={{ fontSize: 20, color: "text.secondary" }} />
               <Box
                 component="input"
                 value={searchParams.get("q") || ""}
@@ -416,7 +416,7 @@ export function PageShell({ title, children }: Props) {
                   outline: "none",
                   bgcolor: "transparent",
                   width: "100%",
-                  fontSize: 15,
+                  fontSize: 16,
                   fontFamily: "'Inter', -apple-system, sans-serif",
                   fontWeight: 400,
                   letterSpacing: "0.01em",
@@ -433,7 +433,7 @@ export function PageShell({ title, children }: Props) {
           component="main"
           sx={{ flex: 1, px: { xs: 3, sm: 5 }, pt: 6, pb: 6, bgcolor: "#f7f3f1" }}
         >
-          <Box sx={{ maxWidth: 1280, mx: "auto" }}>
+          <Box sx={{ width: "100%" }}>
             {children}
           </Box>
         </Box>
