@@ -150,7 +150,7 @@ export default function LookDetailPage() {
     <Box>
       <Button
         startIcon={<ArrowBackIcon />}
-        onClick={() => navigate(-1)}
+        onClick={() => navigate("/app/looks")}
         sx={{ color: "text.secondary", mb: 3, fontWeight: 500, "&:hover": { color: "primary.main" } }}
       >
         Back to Looks
