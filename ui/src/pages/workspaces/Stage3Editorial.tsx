@@ -114,7 +114,7 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
         </Box>
         
         <Box sx={{ display: "flex", flexDirection: { xs: "column", md: "row" }, gap: 4, alignItems: "center" }}>
-          <Box sx={{ flex: 1, width: "100%", position: "relative" }}>
+          <Box sx={{ flex: 1, width: "100%", position: "relative", maxWidth: 500 }}>
             <ConceptImage conceptId={displayVariants[0]?.id || ""} sx={{ height: "auto", aspectRatio: "3/4", borderRadius: "16px", display: "block" }} />
           </Box>
           <Box sx={{ flex: 1 }}>
@@ -143,9 +143,9 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
           <Typography sx={{ fontSize: 12, color: "text.secondary", letterSpacing: "0.05em", textTransform: "uppercase" }}>on-model · in context</Typography>
         </Box>
         
-        <Box sx={{ display: "flex", gap: 3 }}>
+        <Box sx={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: 3 }}>
           {displayVariants.slice(1, 3).map((v, i) => (
-            <Box key={v.id} sx={{ flex: 1 }}>
+            <Box key={v.id}>
               <Box sx={{ position: "relative" }}>
                 <Box sx={{ position: "absolute", top: 12, left: 12, bgcolor: "rgba(0,0,0,0.6)", color: "#fff", px: 1, py: 0.5, borderRadius: "4px", fontSize: 10, fontWeight: 700, zIndex: 1 }}>
                   0{i + 2}
@@ -154,11 +154,11 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
               </Box>
             </Box>
           ))}
-          {displayVariants.slice(1, 3).length === 1 && <Box sx={{ flex: 1 }} />}
+          {displayVariants.slice(1, 3).length === 1 && <Box />}
           {displayVariants.slice(1, 3).length === 0 && (
             <>
-              <Box sx={{ flex: 1 }} />
-              <Box sx={{ flex: 1 }} />
+              <Box />
+              <Box />
             </>
           )}
         </Box>
@@ -176,15 +176,15 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
           <Typography sx={{ fontSize: 12, color: "text.secondary", letterSpacing: "0.05em", textTransform: "uppercase" }}>one silhouette · two colors</Typography>
         </Box>
         
-        <Box sx={{ display: "flex", gap: 3 }}>
-          <Box sx={{ flex: 1 }}>
+        <Box sx={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: 3 }}>
+          <Box>
             <ConceptImage conceptId={displayVariants[0]?.id || ""} sx={{ height: "auto", aspectRatio: "3/4", borderRadius: "16px", display: "block" }} />
             <Box sx={{ mt: 2 }}>
               <Typography sx={{ fontSize: 13, color: "text.primary", mb: 0.5 }}>Maillot — coral bloom</Typography>
               <Typography sx={{ fontSize: 12, color: "text.secondary" }}>Primary colorway</Typography>
             </Box>
           </Box>
-          <Box sx={{ flex: 1 }}>
+          <Box>
             {(displayVariants[4] || displayVariants[1]) ? (
               <ConceptImage conceptId={(displayVariants[4] || displayVariants[1])!.id} sx={{ height: "auto", aspectRatio: "3/4", borderRadius: "16px", display: "block" }} />
             ) : (
