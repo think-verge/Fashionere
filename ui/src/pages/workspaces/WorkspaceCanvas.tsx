@@ -1080,15 +1080,6 @@ export default function WorkspaceCanvas() {
               </Button>
             </span>
           </Tooltip>
-          {(ws.status === "ready" || ws.status === "generating") && (
-            <Button
-              variant="outlined"
-              onClick={() => setStage(2)}
-              sx={{ mt: 1, borderRadius: "10px", py: 1.5, px: 3, borderColor: "primary.main", color: "primary.main", "&:hover": { bgcolor: "#fff0ef" } }}
-            >
-              View Concepts {ws.status === "generating" ? `(${genProgress ? `${genProgress.completed}/${genProgress.total}` : "…"})` : ""}
-            </Button>
-          )}
         </Box>
       </Box>
 

@@ -121,13 +121,19 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
     return base;
   });
 
-  // Mutations
   const approveConcept = useMutation({
     mutationFn: async (conceptId: string) => {
       const { data } = await api.patch(`/concepts/${conceptId}`, { status: "approved" });
       return data;
     },
-    onSuccess: () => qc.invalidateQueries({ queryKey: ["concepts", workspaceId] }),
+    onMutate: async (conceptId) => {
+      await qc.cancelQueries({ queryKey: ["concepts", workspaceId] });
+      const previous = qc.getQueryData(["concepts", workspaceId]);
+      qc.setQueryData(["concepts", workspaceId], (old: any) => old ? old.map((c: any) => c.id === conceptId ? { ...c, status: "approved" } : c) : old);
+      return { previous };
+    },
+    onError: (err, newTodo, context) => qc.setQueryData(["concepts", workspaceId], context?.previous),
+    onSettled: () => qc.invalidateQueries({ queryKey: ["concepts", workspaceId] }),
   });
 
   const rejectConcept = useMutation({
@@ -135,7 +141,14 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
       const { data } = await api.patch(`/concepts/${conceptId}`, { status: "rejected" });
       return data;
     },
-    onSuccess: () => qc.invalidateQueries({ queryKey: ["concepts", workspaceId] }),
+    onMutate: async (conceptId) => {
+      await qc.cancelQueries({ queryKey: ["concepts", workspaceId] });
+      const previous = qc.getQueryData(["concepts", workspaceId]);
+      qc.setQueryData(["concepts", workspaceId], (old: any) => old ? old.map((c: any) => c.id === conceptId ? { ...c, status: "rejected" } : c) : old);
+      return { previous };
+    },
+    onError: (err, newTodo, context) => qc.setQueryData(["concepts", workspaceId], context?.previous),
+    onSettled: () => qc.invalidateQueries({ queryKey: ["concepts", workspaceId] }),
   });
 
   const refineVariant = useMutation({
@@ -312,7 +325,6 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
         subtitle="flat-lay · AI studio"
         hint="Click a card to select it for refinement in section 02"
         images={displaySection01}
-        isCarousel
         actionIcon="approve"
         onAction={(id) => approveConcept.mutate(id)}
         onCardClick={(id) => {
@@ -331,7 +343,6 @@ export function Stage2GarmentConcepts({ workspaceId, ws, onNext }: { workspaceId
         subtitle="editorial · lookbook"
         hint="Click ✨ to create a final variation · Click ✗ to remove from selection."
         images={approvedConcepts}
-        isCarousel
         actionIcon="refine"
         onAction={(id, instruction) => refineVariant.mutate({ conceptId: id, instruction: instruction ?? "" })}
         onUndo={requestUndo}
@@ -507,14 +518,27 @@ function ConceptSection({
   const [isInvOpen, setIsInvOpen] = useState(false);
   const [invId, setInvId] = useState<string | null>(null);
 
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
+
   useEffect(() => {
     const handleScroll = () => {
       if (isRefineOpen) setIsRefineOpen(false);
       if (isInvOpen) setIsInvOpen(false);
+      
+      if (scrollRef.current) {
+        const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+        setCanScrollLeft(scrollLeft > 0);
+        setCanScrollRight(Math.ceil(scrollLeft + clientWidth) < scrollWidth);
+      }
     };
+    
+    // Check initial state
+    handleScroll();
     
     // Listen to window scroll
     window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleScroll, { passive: true });
     
     // Listen to horizontal container scroll
     const el = scrollRef.current;
@@ -522,9 +546,10 @@ function ConceptSection({
     
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
       if (el) el.removeEventListener("scroll", handleScroll);
     };
-  }, [isRefineOpen, isInvOpen]);
+  }, [isRefineOpen, isInvOpen, images.length, isLoading]);
 
   const openRefine = (e: React.MouseEvent<HTMLElement>, id: string) => {
     e.stopPropagation();
@@ -586,8 +611,8 @@ function ConceptSection({
           {headerAction}
           {isCarousel && !isEmpty && (
             <>
-              <IconButton onClick={scrollLeft} size="small" sx={{ border: "1px solid #f0e4e2" }}><ChevronLeftIcon /></IconButton>
-              <IconButton onClick={scrollRight} size="small" sx={{ border: "1px solid #f0e4e2" }}><ChevronRightIcon /></IconButton>
+              <IconButton disabled={!canScrollLeft} onClick={scrollLeft} size="small" sx={{ border: "1px solid #f0e4e2" }}><ChevronLeftIcon /></IconButton>
+              <IconButton disabled={!canScrollRight} onClick={scrollRight} size="small" sx={{ border: "1px solid #f0e4e2" }}><ChevronRightIcon /></IconButton>
             </>
           )}
         </Box>
@@ -616,9 +641,10 @@ function ConceptSection({
             display: "flex", gap: 3,
             overflowX: isCarousel ? "auto" : "visible",
             flexWrap: isCarousel ? "nowrap" : "wrap",
-            pb: 2, pt: 1, px: 1,
+            pb: 3, pt: 2, px: 2,
             "&::-webkit-scrollbar": { display: "none" },
             msOverflowStyle: "none", scrollbarWidth: "none",
+            "&::after": isCarousel ? { content: '""', minWidth: "16px", flexShrink: 0 } : {},
           }}
         >
           {isLoading && images.length === 0 ? (
@@ -781,8 +807,18 @@ function ConceptSection({
                     </>
                   ) : (
                     <>
-                      <Typography sx={{ fontWeight: 600, fontSize: 14, mb: 0.5, color: "text.primary" }}>{img.title}</Typography>
-                      <Typography sx={{ fontSize: 12, color: "text.secondary" }}>{img.materials}</Typography>
+                      <Typography sx={{ 
+                        fontWeight: 600, fontSize: 14, mb: 0.5, color: "text.primary",
+                        minHeight: 42, display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden"
+                      }}>
+                        {img.title}
+                      </Typography>
+                      <Typography sx={{ 
+                        fontSize: 12, color: "text.secondary",
+                        minHeight: 36, display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden"
+                      }}>
+                        {img.materials}
+                      </Typography>
                     </>
                   )}
                 </CardContent>
