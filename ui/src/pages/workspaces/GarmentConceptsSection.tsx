@@ -164,8 +164,12 @@ export function GarmentConceptsSection({ workspaceId }: { workspaceId?: string }
       </Box>
 
       {isLoading ? (
-        <Box sx={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 3 }}>
-          {[0, 1, 2].map((i) => <Skeleton key={i} variant="rounded" sx={{ aspectRatio: "4/5", height: "auto", borderRadius: "24px" }} />)}
+        <Box sx={{ display: "flex", flexWrap: "wrap", gap: 3, pb: 3, pt: 2, px: 2 }}>
+          {[0, 1, 2].map((i) => (
+            <Box key={i} sx={{ width: 300, flexShrink: 0 }}>
+              <Skeleton variant="rounded" sx={{ width: "100%", aspectRatio: "4/5", height: "auto", borderRadius: "24px" }} />
+            </Box>
+          ))}
         </Box>
       ) : garments.length === 0 ? (
         <Box sx={{ height: 200, border: "1.5px dashed #e8dedd", borderRadius: "16px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 1, bgcolor: "#faf8f7" }}>
@@ -179,16 +183,17 @@ export function GarmentConceptsSection({ workspaceId }: { workspaceId?: string }
       ) : (
         <>
           <Typography sx={{ fontSize: 11, color: "text.disabled", mb: 2, fontStyle: "italic" }}>Click a garment to view its shots.</Typography>
-          <Box sx={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 3 }}>
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 3, pb: 3, pt: 2, px: 2 }}>
             {garments.map((g, gi) => (
-              <GarmentCard
-                key={g.concept_id}
-                garment={g}
-                onOpen={(f) => setLightbox({ g: gi, f })}
-                onRemove={() => remove.mutate(g.concept_id)}
-                onRegenerateAll={regenerateSoon}
-                onGenerate={() => generate.mutate(g.concept_id)}
-              />
+              <Box key={g.concept_id} sx={{ width: 305, flexShrink: 0 }}>
+                <GarmentCard
+                  garment={g}
+                  onOpen={(f) => setLightbox({ g: gi, f })}
+                  onRemove={() => remove.mutate(g.concept_id)}
+                  onRegenerateAll={regenerateSoon}
+                  onGenerate={() => generate.mutate(g.concept_id)}
+                />
+              </Box>
             ))}
           </Box>
         </>
@@ -255,7 +260,7 @@ function GarmentCard({ garment, onOpen, onRemove, onRegenerateAll, onGenerate }:
         "&:hover .gc-actions": { opacity: 1 },
       }}
     >
-      <Box sx={{ position: "relative", aspectRatio: "4/5", bgcolor: GROUND, overflow: "hidden" }}>
+      <Box sx={{ position: "relative", aspectRatio: "6/5", bgcolor: GROUND, overflow: "hidden" }}>
         {notStarted ? (
           <Box sx={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 1.5, px: 3 }}>
             <Typography sx={{ fontSize: 12, color: "text.secondary", textAlign: "center" }}>Shots for this design haven't been generated.</Typography>
@@ -300,9 +305,14 @@ function GarmentCard({ garment, onOpen, onRemove, onRegenerateAll, onGenerate }:
         ))}
       </Box>
 
-      <Box sx={{ px: 2, pt: 1.5, pb: 2 }}>
-        <Typography sx={{ fontWeight: 600, fontSize: 14, color: "text.primary" }}>{titleFor(garment)}</Typography>
-        <Typography sx={{ fontSize: 12, color: "text.secondary", mb: 1, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+      <Box sx={{ px: 2, pt: 1.5, pb: 2.5 }}>
+        <Typography sx={{ 
+          fontWeight: 600, fontSize: 14, mb: 0.5, color: "text.primary",
+          minHeight: 42, display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden"
+        }}>
+          {titleFor(garment)}
+        </Typography>
+        <Typography sx={{ fontSize: 12, color: "text.secondary", mb: 1.5, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
           {subtitleFor(garment)}
         </Typography>
         <StatusChip garment={garment} />
@@ -345,7 +355,15 @@ function Lightbox({ garments, position, onMove, onClose, onRegenerate, onSelectV
   const versions = frame.versions ?? [];
 
   return (
-    <Dialog open onClose={onClose} maxWidth="md" fullWidth slotProps={{ paper: { sx: { borderRadius: "20px", p: 2.5 } } }}>
+    <Dialog open onClose={onClose} maxWidth="md" fullWidth slotProps={{ 
+      paper: { 
+        sx: { 
+          borderRadius: "20px", p: 2.5,
+          "&::-webkit-scrollbar": { display: "none" },
+          msOverflowStyle: "none", scrollbarWidth: "none"
+        } 
+      } 
+    }}>
       <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1, mb: 2 }}>
         <Box sx={{ flex: 1, minWidth: 0 }}>
           <Typography sx={{ fontSize: 16, fontWeight: 600 }}>{titleFor(garment)}</Typography>
