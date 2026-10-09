@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { useQuery, useInfiniteQuery } from "@tanstack/react-query";
 import {
-  Box, Grid, Card, CardActionArea, CardMedia, CardContent,
+  Box, Card, CardActionArea, CardMedia, CardContent,
   Typography, Chip, Button, Skeleton, Menu, MenuItem
 } from "@mui/material";
 import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
