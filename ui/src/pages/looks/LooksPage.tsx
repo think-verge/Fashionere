@@ -307,9 +307,9 @@ export default function LooksPage() {
       )}
 
       {isLoading || (isFetching && !isFetchingNextPage) ? (
-        <Box sx={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 3 }}>
+        <Grid container spacing={3}>
           {Array.from({ length: 12 }).map((_, i) => (
-            <Box key={i}>
+            <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }} key={i}>
               <Card sx={{ 
                 height: "100%", 
                 borderRadius: "24px", 
@@ -327,9 +327,9 @@ export default function LooksPage() {
                   <Skeleton width="40%" height={16} animation="wave" sx={{ transform: "none" }} />
                 </CardContent>
               </Card>
-            </Box>
+            </Grid>
           ))}
-        </Box>
+        </Grid>
       ) : looks.length === 0 ? (
         <Box sx={{ textAlign: "center", py: 12, px: 3, bgcolor: "rgba(255,255,255,0.5)", borderRadius: "24px", border: "1px dashed rgba(0,0,0,0.1)" }}>
           <Typography sx={{ color: "text.primary", fontFamily: "'Literata', Georgia, serif", fontSize: 22, fontWeight: 600, mb: 1 }}>
@@ -346,9 +346,9 @@ export default function LooksPage() {
         </Box>
       ) : (
         <>
-          <Box sx={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 3 }}>
+          <Grid container spacing={3}>
             {looks.map((look, index) => (
-              <Box key={look.id}>
+              <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }} key={look.id}>
                 <Card sx={{ 
                   height: "100%", 
                   borderRadius: "24px", 
@@ -426,11 +426,11 @@ export default function LooksPage() {
                     </CardContent>
                   </CardActionArea>
                 </Card>
-              </Box>
+              </Grid>
             ))}
             {isFetchingNextPage &&
               Array.from({ length: 4 }).map((_, i) => (
-                <Box key={`skeleton-${i}`}>
+                <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }} key={`skeleton-${i}`}>
                   <Card sx={{ 
                     height: "100%", 
                     borderRadius: "24px", 
@@ -448,9 +448,9 @@ export default function LooksPage() {
                       <Skeleton width="40%" height={16} animation="wave" sx={{ transform: "none" }} />
                     </CardContent>
                   </Card>
-                </Box>
+                </Grid>
               ))}
-          </Box>
+          </Grid>
 
           {hasNextPage && (
             <Box sx={{ textAlign: "center", mt: 6, mb: 4 }}>
