@@ -82,7 +82,7 @@ interface GarmentTrends {
   patterns: TrendElement[];
 }
 
-type AddingType = "fabric" | "pattern" | "silhouette" | null;
+type AddingType = string | null;
 
 export default function GarmentDetailPage() {
   const { lookId, garmentId } = useParams<{ lookId: string; garmentId: string }>();
