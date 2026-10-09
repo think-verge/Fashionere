@@ -9,6 +9,10 @@ import { costRouter } from "./costRoutes.js";
 import { looksRouter } from "./looksRoutes.js";
 import { workspaceRouter } from "./workspaceRoutes.js";
 import { inventoryRouter } from "./inventoryRoutes.js";
+import { retailTrendsRouter } from "./retailTrendsRoutes.js";
+import { conceptRouter } from "./conceptRoutes.js";
+import { assetRouter } from "./assetRoutes.js";
+import { garmentPackRouter } from "./garmentPackRoutes.js";
 
 export const apiRouter = Router();
 
@@ -22,3 +26,7 @@ apiRouter.use("/cost", costRouter);
 apiRouter.use("/looks", looksRouter);
 apiRouter.use("/workspace", workspaceRouter);
 apiRouter.use("/inventory", inventoryRouter);
+apiRouter.use("/retail-trends", retailTrendsRouter);
+apiRouter.use("/concepts", conceptRouter);
+apiRouter.use("/assets", assetRouter);
+apiRouter.use("/garment-packs", garmentPackRouter);

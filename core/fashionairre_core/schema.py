@@ -171,6 +171,7 @@ class Context(BaseModel):
     category: str | None = None
     designer: str | None = None
     provenance_confidence: ProvConfidence = "unknown"
+    garment_type: str | None = None       # normalized garment category (jacket, dress, coat…)
     product_id: str | None = None        # retailer SKU / product ID (retail sources)
     price: Price | None = None           # retail price at time of scrape
     category_path: list[str] = Field(default_factory=list)  # e.g. ["Women", "Dresses", "Midi"]

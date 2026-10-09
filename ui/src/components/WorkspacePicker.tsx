@@ -48,7 +48,7 @@ export function WorkspacePicker({ open, projectId, onClose, onSelect }: Props) {
       });
       const id = data._id ?? data.id;
       onSelect(id, newName.trim());
-      qc.invalidateQueries({ queryKey: ["workspaces"] });
+      qc.invalidateQueries({ queryKey: ["workspaces", projectId] });
       setNewName("");
       setCreating(false);
     } finally {
@@ -76,8 +76,9 @@ export function WorkspacePicker({ open, projectId, onClose, onSelect }: Props) {
         },
       }}
     >
-      <DialogTitle sx={{ fontSize: 16, fontWeight: 700, pb: 0.5, borderBottom: "1px solid #f0e4e2" }}>
-        Add to workspace
+      <DialogTitle sx={{ pb: 0.5, borderBottom: "1px solid #f0e4e2" }}>
+        <Typography sx={{ fontSize: 16, fontWeight: 700, color: "text.primary" }}>Add to workspace</Typography>
+        <Typography sx={{ fontSize: 12, color: "text.secondary", mt: 0.25 }}>Choose a workspace or create a new one</Typography>
       </DialogTitle>
       <DialogContent sx={{ p: 0 }}>
         {isLoading ? (

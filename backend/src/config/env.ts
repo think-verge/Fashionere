@@ -13,4 +13,8 @@ export const env = {
   CLIENT_ORIGIN: process.env.CLIENT_ORIGIN ?? "http://localhost:5173",
   AGENT_URL: process.env.AGENT_URL ?? "http://localhost:8001",
   NODE_ENV: process.env.NODE_ENV ?? "development",
+  FAL_KEY: process.env.FAL_KEY ?? "",
+  GEMINI_API_KEY: process.env.GEMINI_API_KEY ?? "",
+  GEMINI_MODEL: process.env.GEMINI_MODEL ?? "gemini-flash-latest",
+  ASSET_BASE_URL: process.env.ASSET_BASE_URL ?? "/api/v1/assets",
 };

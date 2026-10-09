@@ -3,9 +3,8 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import {
   Box, Typography, Paper, Button, Chip, Alert,
-  IconButton, Skeleton, Tooltip, CircularProgress,
+  IconButton, Skeleton, Tooltip,
   Accordion, AccordionSummary, AccordionDetails,
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   Popover, MenuItem, Divider,
 } from "@mui/material";
 import {
@@ -35,9 +34,7 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import LayersOutlinedIcon from "@mui/icons-material/LayersOutlined";
 import CloudUploadOutlinedIcon from "@mui/icons-material/CloudUploadOutlined";
 import { PaletteStrip } from "../../components/PaletteStrip";
@@ -477,14 +474,16 @@ function InventoryPanel({
   onClickSilhouette,
   onClickElement,
   onUpload,
+  isGenerating,
 }: {
   elements: WorkspaceElement[];
   open: boolean;
   onToggle: () => void;
   canvasRows: Array<{ rowNum: number; label: string }>;
-  onClickSilhouette: (elementId: string) => void;
+  onClickSilhouette: (elementId: string, anchor: HTMLElement) => void;
   onClickElement: (elementId: string, anchor: HTMLElement) => void;
   onUpload: () => void;
+  isGenerating?: boolean;
 }) {
   const grouped = useMemo(() => {
     const brands = new Map<string, Map<string, WorkspaceElement[]>>();
@@ -528,59 +527,72 @@ function InventoryPanel({
         width: open ? 264 : 0,
         minWidth: open ? 264 : 0,
         flexShrink: 0,
-        overflow: "visible",
         transition: "width 0.2s, min-width 0.2s",
         position: "relative",
-        borderRight: open ? "1px solid #f0e4e2" : "none",
-        bgcolor: "#faf8f7",
-        display: "flex",
-        flexDirection: "column",
+        // No overflow:hidden here — toggle button must not be clipped when closed
       }}
     >
+      {/* Content box clips its own overflow independently */}
       <Box
-        sx={{ position: "absolute", right: -14, top: "50%", transform: "translateY(-50%)", zIndex: 20 }}
+        sx={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          overflow: "hidden",
+          borderRight: open ? "1px solid #f0e4e2" : "none",
+          bgcolor: "#faf8f7",
+          display: "flex",
+          flexDirection: "column",
+        }}
       >
-        <IconButton
-          size="small"
-          onClick={onToggle}
-          sx={{
-            bgcolor: "#fff",
-            border: "1px solid #f0e4e2",
-            borderRadius: "50%",
-            width: 26,
-            height: 26,
-            boxShadow: "0 2px 8px rgba(36,25,24,0.10)",
-            "&:hover": { bgcolor: "#fff0ef" },
-          }}
-        >
-          {open ? <ChevronLeftIcon sx={{ fontSize: 15 }} /> : <ChevronRightIcon sx={{ fontSize: 15 }} />}
-        </IconButton>
-      </Box>
-
-      <Box sx={{ width: "100%", height: "100%", overflow: "hidden", position: "relative" }}>
-        <Box sx={{ width: 264, height: "100%", display: "flex", flexDirection: "column" }}>
+        {open && (
+        <>
           <Box sx={{ px: 2, py: 1.5, borderBottom: "1px solid #f0e4e2", flexShrink: 0, display: "flex", alignItems: "flex-start", justifyContent: "space-between" }}>
             <Box>
-              <Typography sx={{ fontSize: 10, fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.15em", color: "text.secondary" }}>
-                Inventory
-              </Typography>
-              <Typography sx={{ fontSize: 12, color: "text.disabled", mt: 0.25 }}>
-                {elements.length} element{elements.length !== 1 ? "s" : ""} · click to add
-              </Typography>
+              {isGenerating ? (
+                <Skeleton variant="text" width={80} height={16} />
+              ) : (
+                <Typography sx={{ fontSize: 10, fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.15em", color: "text.secondary" }}>
+                  Inventory
+                </Typography>
+              )}
+              {isGenerating ? (
+                <Skeleton variant="text" width={140} height={18} sx={{ mt: 0.5 }} />
+              ) : (
+                <Typography sx={{ fontSize: 12, color: "text.disabled", mt: 0.25 }}>
+                  {elements.length} element{elements.length !== 1 ? "s" : ""} · click to add
+                </Typography>
+              )}
             </Box>
-            <Tooltip title="Upload custom elements">
-              <IconButton
-                size="small"
-                onClick={onUpload}
-                sx={{ color: "primary.main", "&:hover": { bgcolor: "#fff0ef" }, width: 28, height: 28, mt: 0.25 }}
-              >
-                <CloudUploadOutlinedIcon sx={{ fontSize: 16 }} />
-              </IconButton>
-            </Tooltip>
+            {isGenerating ? (
+              <Skeleton variant="circular" width={28} height={28} sx={{ mt: 0.25 }} />
+            ) : (
+              <Tooltip title="Upload custom elements">
+                <IconButton
+                  size="small"
+                  onClick={onUpload}
+                  sx={{ color: "primary.main", "&:hover": { bgcolor: "#fff0ef" }, width: 28, height: 28, mt: 0.25 }}
+                >
+                  <CloudUploadOutlinedIcon sx={{ fontSize: 16 }} />
+                </IconButton>
+              </Tooltip>
+            )}
           </Box>
 
           <Box sx={{ flex: 1, overflowY: "auto", py: 0.5 }}>
-            {elements.length === 0 ? (
+            {isGenerating ? (
+              <Box sx={{ px: 2, mt: 2 }}>
+                <Skeleton variant="text" width="60%" height={24} sx={{ mb: 2 }} />
+                <Skeleton variant="text" width="90%" height={20} sx={{ mb: 1, ml: 1 }} />
+                <Skeleton variant="text" width="80%" height={20} sx={{ mb: 1, ml: 1 }} />
+                <Skeleton variant="text" width="85%" height={20} sx={{ mb: 3, ml: 1 }} />
+                <Skeleton variant="text" width="50%" height={24} sx={{ mb: 2 }} />
+                <Skeleton variant="text" width="75%" height={20} sx={{ mb: 1, ml: 1 }} />
+                <Skeleton variant="text" width="80%" height={20} sx={{ mb: 1, ml: 1 }} />
+              </Box>
+            ) : elements.length === 0 ? (
               <Typography sx={{ fontSize: 12, color: "text.disabled", textAlign: "center", mt: 4, px: 2 }}>
                 No elements yet. Browse looks to add elements.
               </Typography>
@@ -615,7 +627,7 @@ function InventoryPanel({
                               key={el.element_id}
                               onClick={(e) => {
                                 if (isSil) {
-                                  onClickSilhouette(el.element_id);
+                                  onClickSilhouette(el.element_id, e.currentTarget as HTMLElement);
                                 } else {
                                   onClickElement(el.element_id, e.currentTarget as HTMLElement);
                                 }
@@ -678,7 +690,28 @@ function InventoryPanel({
               ))
             )}
           </Box>
-        </Box>
+        </>
+      )}
+      </Box>
+      {/* Toggle button — lives outside the clipping box so it's always visible */}
+      <Box
+        sx={{ position: "absolute", right: -14, top: "50%", transform: "translateY(-50%)", zIndex: 20 }}
+      >
+        <IconButton
+          size="small"
+          onClick={onToggle}
+          sx={{
+            bgcolor: "#fff",
+            border: "1px solid #f0e4e2",
+            borderRadius: "50%",
+            width: 26,
+            height: 26,
+            boxShadow: "0 2px 8px rgba(36,25,24,0.10)",
+            "&:hover": { bgcolor: "#fff0ef" },
+          }}
+        >
+          {open ? <ChevronLeftIcon sx={{ fontSize: 15 }} /> : <ChevronRightIcon sx={{ fontSize: 15 }} />}
+        </IconButton>
       </Box>
     </Box>
   );
@@ -699,7 +732,14 @@ export default function WorkspaceCanvas() {
   const [stage, setStage] = useState<1 | 2 | 3>(1);
 
   // Row picker popover state
-  const [pendingAssign, setPendingAssign] = useState<{ elementId: string; anchor: HTMLElement } | null>(null);
+  const [pendingAssign, setPendingAssign] = useState<{
+    elementId: string;
+    anchor: HTMLElement;
+    compatibleRows?: Array<{ rowNum: number; label: string }>;
+    showNewRowOption?: boolean;
+  } | null>(null);
+  // Element detail popover (canvas node click)
+  const [detailPop, setDetailPop] = useState<{ elementId: string; x: number; y: number } | null>(null);
 
   const { data: ws, isLoading } = useQuery<Workspace>({
     queryKey: ["workspace", id],
@@ -722,7 +762,6 @@ export default function WorkspaceCanvas() {
     onSuccess: () => qc.invalidateQueries({ queryKey: ["workspace", id] }),
   });
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const removeEl = useMutation({
     mutationFn: async (elementId: string) => {
       await api.delete(`/workspace/${id}/elements/${elementId}`);
@@ -740,6 +779,7 @@ export default function WorkspaceCanvas() {
   );
 
   const [prevStatus, setPrevStatus] = useState(ws?.status);
+  const [genProgress, setGenProgress] = useState<{ completed: number; total: number; cost: number } | null>(null);
 
   useEffect(() => {
     if (prevStatus === "generating" && ws?.status === "ready") {
@@ -749,14 +789,88 @@ export default function WorkspaceCanvas() {
     setPrevStatus(ws?.status);
   }, [ws?.status, prevStatus]);
 
+  // Drop focus from the control that switched stages, so it doesn't stay focused off-screen.
+  useEffect(() => {
+    (document.activeElement as HTMLElement | null)?.blur();
+  }, [stage]);
+
   const generate = useMutation({
     mutationFn: async () => {
-      const { data } = await api.post(`/workspace/${id}/generate`);
-      return data;
+      const { data } = await api.post("/concepts/generate", {
+        workspace_id: id,
+        mode: "suggest",
+      });
+      return data as {
+        job_id: string;
+        combos_to_generate: number;
+        combos_killed: number;
+        estimated_cost_usd: number;
+        stream_url: string;
+      };
     },
-    onSuccess: () => {
+    onSuccess: (data) => {
+      if (data.combos_to_generate === 0) {
+        qc.invalidateQueries({ queryKey: ["workspace", id] });
+        setStage(2);
+        return;
+      }
+      setGenProgress({ completed: 0, total: data.combos_to_generate, cost: 0 });
+      // Invalidate immediately so other pages see the "generating" status
       qc.invalidateQueries({ queryKey: ["workspace", id] });
       qc.invalidateQueries({ queryKey: ["workspaces"] });
+
+      const token = localStorage.getItem("fash_token") ?? "";
+      const onStreamError = () => {
+        setGenProgress(null);
+        qc.invalidateQueries({ queryKey: ["workspace", id] });
+        qc.invalidateQueries({ queryKey: ["concepts", id] });
+      };
+
+      fetch(`/api/v1${data.stream_url}`, {
+        headers: { Authorization: `Bearer ${token}` },
+      }).then(async (resp) => {
+        if (!resp.ok || !resp.body) { onStreamError(); return; }
+
+        const reader = resp.body.getReader();
+        const decoder = new TextDecoder();
+        let buf = "";
+
+        try {
+          while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            buf += decoder.decode(value, { stream: true });
+
+            const messages = buf.split("\n\n");
+            buf = messages.pop() ?? "";
+
+            for (const msg of messages) {
+              if (!msg.trim()) continue;
+              let eventType = "message";
+              let eventData = "";
+              for (const line of msg.split("\n")) {
+                if (line.startsWith("event:")) eventType = line.slice(6).trim();
+                else if (line.startsWith("data:")) eventData = line.slice(5).trim();
+              }
+
+              if (eventType === "progress") {
+                const p = JSON.parse(eventData);
+                setGenProgress({ completed: p.completed, total: p.total, cost: p.cost_so_far });
+              } else if (eventType === "concept_ready") {
+                qc.invalidateQueries({ queryKey: ["concepts", id] });
+              } else if (eventType === "job_done") {
+                setGenProgress(null);
+                qc.invalidateQueries({ queryKey: ["workspace", id] });
+                qc.invalidateQueries({ queryKey: ["concepts", id] });
+                setStage(2);
+                return;
+              }
+            }
+          }
+        } catch {
+          onStreamError();
+        }
+      }).catch(onStreamError);
     },
   });
 
@@ -764,6 +878,11 @@ export default function WorkspaceCanvas() {
   const canvasElements = useMemo(
     () => ws?.elements.filter((e) => e.canvas_row != null) ?? [],
     [ws],
+  );
+
+  const detailElement = useMemo(
+    () => ws?.elements.find((e) => e.element_id === detailPop?.elementId) ?? null,
+    [ws, detailPop],
   );
 
   // Next available row number
@@ -839,11 +958,19 @@ export default function WorkspaceCanvas() {
     [ws, savePositions],
   );
 
-  function handleClickSilhouette(elementId: string) {
-    // Check if this silhouette is already on canvas
+  function handleClickSilhouette(elementId: string, anchor: HTMLElement) {
     const el = ws?.elements.find((e) => e.element_id === elementId);
     if (!el || el.canvas_row != null) return; // already placed
-    assignToCanvas.mutate({ elementId, canvasRow: nextRowNum });
+
+    const rowsWithoutSilhouette = canvasRows.filter(
+      ({ rowNum }) => !ws?.elements.some((e) => e.canvas_row === rowNum && e.element_type === "silhouette"),
+    );
+
+    if (rowsWithoutSilhouette.length > 0) {
+      setPendingAssign({ elementId, anchor, compatibleRows: rowsWithoutSilhouette, showNewRowOption: true });
+    } else {
+      assignToCanvas.mutate({ elementId, canvasRow: nextRowNum });
+    }
   }
 
   function handleClickElement(elementId: string, anchor: HTMLElement) {
@@ -873,20 +1000,25 @@ export default function WorkspaceCanvas() {
 
   if (!ws) return <Alert severity="error">Workspace not found.</Alert>;
 
-  const isGenerating = ws.status === "generating";
+  const isGenerating = ws.status === "generating" || !!genProgress;
 
   return (
-    <Box sx={{ overflow: "hidden", width: "100%" }}>
-      <Box sx={{ 
-        display: "flex", 
+    <Box
+      sx={{ overflow: "hidden", width: "100%" }}
+      // The stages slide via transform inside this clipping box, which must never scroll itself: a
+      // control that keeps focus while sliding off-screen makes the browser scroll it into view.
+      onScroll={(e) => { e.currentTarget.scrollLeft = 0; }}
+    >
+      <Box sx={{
+        display: "flex",
         alignItems: "flex-start",
-        width: "300%", 
-        transform: stage === 1 ? "translateX(0)" : stage === 2 ? "translateX(-33.3333%)" : "translateX(-66.6666%)", 
+        width: "200%", 
+        transform: stage === 1 ? "translateX(0)" : "translateX(-50%)", 
         transition: "transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)" 
       }}>
         {/* ================= STAGE 1 ================= */}
         <Box sx={{ 
-          width: "33.3333%", 
+          width: "50%", 
           flexShrink: 0, 
           pr: stage === 1 ? 0 : 4, 
           transition: "padding 0.6s", 
@@ -934,31 +1066,33 @@ export default function WorkspaceCanvas() {
               <Button
                 variant="contained"
                 startIcon={<AutoAwesomeIcon />}
-                disabled={isGenerating || generate.isPending || !anyRowComplete}
+                disabled={isGenerating || generate.isPending || !!genProgress || !anyRowComplete}
                 onClick={() => generate.mutate()}
                 sx={{ mt: 1, borderRadius: "10px", py: 1.5, px: 3 }}
               >
-                {isGenerating ? "Generating…" : "Generate Collection"}
+                {genProgress
+                  ? `Generating ${genProgress.completed}/${genProgress.total}…`
+                  : ws.status === "generating"
+                    ? "Generating…"
+                    : generate.isPending
+                      ? "Starting…"
+                      : "Generate Collection"}
               </Button>
             </span>
           </Tooltip>
-          {ws.status === "ready" && (
+          {(ws.status === "ready" || ws.status === "generating") && (
             <Button
               variant="outlined"
               onClick={() => setStage(2)}
               sx={{ mt: 1, borderRadius: "10px", py: 1.5, px: 3, borderColor: "primary.main", color: "primary.main", "&:hover": { bgcolor: "#fff0ef" } }}
             >
-              View Concepts
+              View Concepts {ws.status === "generating" ? `(${genProgress ? `${genProgress.completed}/${genProgress.total}` : "…"})` : ""}
             </Button>
           )}
         </Box>
       </Box>
 
-      {isGenerating && (
-        <Alert severity="info" sx={{ mb: 3, borderRadius: "12px", border: "1px solid #e3f2fd" }}>
-          Your collection is being generated. This may take a few minutes.
-        </Alert>
-      )}
+      {/* Alert removed per user request */}
 
       {/* Canvas + Inventory */}
       <Paper
@@ -980,10 +1114,28 @@ export default function WorkspaceCanvas() {
           onClickSilhouette={handleClickSilhouette}
           onClickElement={handleClickElement}
           onUpload={() => setUploadOpen(true)}
+          isGenerating={isGenerating}
         />
 
         <Box sx={{ flex: 1, position: "relative" }}>
-          {ws.elements.length === 0 ? (
+          {isGenerating ? (
+            <Box
+              sx={{
+                height: "100%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "column",
+                gap: 3,
+                bgcolor: "#faf8f7",
+                p: 6
+              }}
+            >
+              <Skeleton variant="rectangular" width="100%" height={140} sx={{ borderRadius: 3 }} />
+              <Skeleton variant="rectangular" width="100%" height={140} sx={{ borderRadius: 3 }} />
+              <Skeleton variant="rectangular" width="100%" height={140} sx={{ borderRadius: 3 }} />
+            </Box>
+          ) : ws.elements.length === 0 ? (
             <Box
               sx={{
                 height: "100%",
@@ -1039,6 +1191,11 @@ export default function WorkspaceCanvas() {
               onNodeDragStop={onNodeDragStop}
               nodeTypes={NODE_TYPES}
               onInit={(instance) => setRfInstance(instance as unknown as ReactFlowInstance)}
+              onNodeClick={(event, node) => {
+                if (node.type === "element-node") {
+                  setDetailPop({ elementId: node.id, x: event.clientX, y: event.clientY });
+                }
+              }}
               fitView
               fitViewOptions={{ padding: 0.3 }}
               proOptions={{ hideAttribution: true }}
@@ -1071,12 +1228,12 @@ export default function WorkspaceCanvas() {
           <Typography sx={{ fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "text.disabled", mb: 1 }}>
             Add to row
           </Typography>
-          {canvasRows.length === 0 ? (
+          {(pendingAssign?.compatibleRows ?? canvasRows).length === 0 ? (
             <Typography sx={{ fontSize: 12, color: "text.secondary", px: 0.5 }}>
               Add a silhouette first to start a row
             </Typography>
           ) : (
-            canvasRows.map(({ rowNum, label }) => (
+            (pendingAssign?.compatibleRows ?? canvasRows).map(({ rowNum, label }) => (
               <MenuItem
                 key={rowNum}
                 dense
@@ -1092,7 +1249,158 @@ export default function WorkspaceCanvas() {
               </MenuItem>
             ))
           )}
+          {pendingAssign?.showNewRowOption && (
+            <MenuItem
+              dense
+              onClick={() => {
+                if (pendingAssign) {
+                  assignToCanvas.mutate({ elementId: pendingAssign.elementId, canvasRow: nextRowNum });
+                }
+                setPendingAssign(null);
+              }}
+              sx={{ borderRadius: "6px", fontSize: 13, px: 1.25, color: "text.secondary", borderTop: "1px solid #f0e4e2", mt: 0.5 }}
+            >
+              + Create new row
+            </MenuItem>
+          )}
         </Box>
+      </Popover>
+
+      {/* Element detail popover */}
+      <Popover
+        open={!!detailPop && !!detailElement}
+        anchorReference="anchorPosition"
+        anchorPosition={detailPop ? { top: detailPop.y + 8, left: detailPop.x + 8 } : undefined}
+        onClose={() => setDetailPop(null)}
+        PaperProps={{
+          sx: {
+            borderRadius: "12px",
+            border: "1px solid #f0e4e2",
+            minWidth: 220,
+            maxWidth: 300,
+            boxShadow: "0 8px 32px rgba(36,25,24,0.12)",
+          },
+        }}
+      >
+        {detailElement && (
+          <Box sx={{ p: 2 }}>
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1.5 }}>
+              <Chip
+                label={detailElement.element_type}
+                color={CHIP_COLORS[detailElement.element_type] ?? "default"}
+                size="small"
+                sx={{ fontSize: 9, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", height: 18 }}
+              />
+              {detailElement.garment_type && (
+                <Typography sx={{ fontSize: 11, color: "text.disabled", textTransform: "capitalize" }}>
+                  {detailElement.garment_type}
+                </Typography>
+              )}
+            </Box>
+
+            {/* Color */}
+            {detailElement.element_type === "color" && (() => {
+              const cols = (detailElement.data?.colors as Array<{ hex?: string; name?: string; family?: string }>) ?? [];
+              return (
+                <>
+                  <PaletteStrip swatches={cols.map((c) => ({ hex: c.hex ?? "#ccc", name: c.name, family: c.family }))} size={20} />
+                  <Box sx={{ mt: 0.75 }}>
+                    {cols.slice(0, 3).map((c, i) => c.name && (
+                      <Typography key={i} sx={{ fontSize: 12, color: "text.secondary", lineHeight: 1.5 }}>{c.name}</Typography>
+                    ))}
+                  </Box>
+                </>
+              );
+            })()}
+
+            {/* Fabric */}
+            {detailElement.element_type === "fabric" && (() => {
+              const f = detailElement.data?.fabric;
+              const label = !f ? "Unknown" : typeof f === "string" ? f : ((f as { name?: string }).name ?? "Fabric");
+              const imgUrl = (detailElement.data?.fabric as { image_url?: string } | undefined)?.image_url ?? (detailElement.data?.image_url as string | undefined);
+              return (
+                <>
+                  {imgUrl && (
+                    <Box component="img" src={imgUrl} sx={{ width: "100%", height: 64, objectFit: "cover", borderRadius: "8px", mb: 1 }} onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
+                  )}
+                  <Typography sx={{ fontSize: 13, fontWeight: 500, textTransform: "capitalize" }}>{label}</Typography>
+                  {(detailElement.data?.fabric as { composition?: string } | undefined)?.composition && (
+                    <Typography sx={{ fontSize: 11, color: "text.disabled", mt: 0.25 }}>
+                      {(detailElement.data.fabric as { composition?: string }).composition}
+                    </Typography>
+                  )}
+                </>
+              );
+            })()}
+
+            {/* Pattern */}
+            {detailElement.element_type === "pattern" && (() => {
+              const patImg = detailElement.data?.image_url as string | undefined;
+              const patName = detailElement.data?.pattern as string | undefined;
+              return (
+                <>
+                  {patImg && (
+                    <Box sx={{ width: "100%", height: 64, borderRadius: "8px", mb: 1, overflow: "hidden", backgroundImage: `url(${patImg})`, backgroundRepeat: "repeat", backgroundSize: "48px" }} />
+                  )}
+                  <Typography sx={{ fontSize: 13, fontWeight: 500, textTransform: "capitalize" }}>{patName ?? "—"}</Typography>
+                </>
+              );
+            })()}
+
+            {/* Silhouette */}
+            {detailElement.element_type === "silhouette" && (() => {
+              const flatUrl = detailElement.data?.flat_url as string | undefined;
+              return flatUrl ? (
+                <Box component="img" src={flatUrl} sx={{ width: "100%", height: 80, objectFit: "contain", borderRadius: "8px", bgcolor: "#f5f0ef" }} onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
+              ) : null;
+            })()}
+
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1, mt: 1.5 }}>
+              <Typography sx={{ fontSize: 11, color: "text.disabled", flex: 1, textTransform: "capitalize" }}>
+                {detailElement.source_brand}
+              </Typography>
+              {detailElement.look_id && (
+                <Typography
+                  component={Link}
+                  to={`/app/looks/${detailElement.look_id}`}
+                  onClick={() => setDetailPop(null)}
+                  sx={{ fontSize: 11, color: "primary.main", textDecoration: "none", "&:hover": { textDecoration: "underline" } }}
+                >
+                  view source →
+                </Typography>
+              )}
+            </Box>
+
+            <Divider sx={{ my: 1.5 }} />
+
+            <Box sx={{ display: "flex", flexDirection: "column", gap: 0.75 }}>
+              {detailElement.canvas_row != null && (
+                <Button
+                  size="small"
+                  startIcon={<LayersOutlinedIcon fontSize="small" />}
+                  onClick={() => {
+                    assignToCanvas.mutate({ elementId: detailElement.element_id, canvasRow: null });
+                    setDetailPop(null);
+                  }}
+                  sx={{ justifyContent: "flex-start", fontSize: 12, color: "text.secondary", py: 0.5, borderRadius: "8px", "&:hover": { bgcolor: "#f5f0ef" } }}
+                >
+                  Remove from canvas
+                </Button>
+              )}
+              <Button
+                size="small"
+                startIcon={<DeleteOutlineIcon fontSize="small" />}
+                onClick={() => {
+                  removeEl.mutate(detailElement.element_id);
+                  setDetailPop(null);
+                }}
+                sx={{ justifyContent: "flex-start", fontSize: 12, color: "error.main", py: 0.5, borderRadius: "8px", "&:hover": { bgcolor: "#fff0ef" } }}
+              >
+                Delete from workspace
+              </Button>
+            </Box>
+          </Box>
+        )}
       </Popover>
 
       <CustomUploadDialog
@@ -1111,78 +1419,80 @@ export default function WorkspaceCanvas() {
         </Box>
         <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5 }}>
           {AI_TOOLS.map((tool) => (
-            <Button
-              key={tool.label}
-              variant="outlined"
-              startIcon={isGenerating ? <CircularProgress size={14} /> : tool.icon}
-              disabled={isGenerating || generate.isPending || !anyRowComplete}
-              onClick={() => generate.mutate()}
-              sx={{
-                borderColor: "#f0e4e2",
-                color: "text.secondary",
-                borderRadius: "10px",
-                fontSize: 13,
-                py: 1,
-                px: 2,
-                "&:hover": { borderColor: "primary.main", color: "primary.main", bgcolor: "#fff0ef" },
-              }}
-            >
-              {tool.label}
-            </Button>
+            isGenerating ? (
+              <Skeleton key={tool.label} variant="rectangular" width={150} height={36} sx={{ borderRadius: "10px" }} />
+            ) : (
+              <Button
+                key={tool.label}
+                variant="outlined"
+                startIcon={tool.icon}
+                disabled={generate.isPending || !!genProgress || !anyRowComplete}
+                onClick={() => generate.mutate()}
+                sx={{
+                  borderColor: "#f0e4e2",
+                  color: "text.secondary",
+                  borderRadius: "10px",
+                  fontSize: 13,
+                  py: 1,
+                  px: 2,
+                  "&:hover": { borderColor: "primary.main", color: "primary.main", bgcolor: "#fff0ef" },
+                }}
+              >
+                {tool.label}
+              </Button>
+            )
           ))}
         </Box>
         </Box>
       </Box>
 
-      {/* ================= STAGE 2 ================= */}
+      {/* ================= STAGE 2 & 3 ================= */}
         <Box sx={{ 
-          width: "33.3333%", 
+          width: "50%", 
           flexShrink: 0, 
-          pl: stage === 2 ? 0 : 4, 
+          pl: stage > 1 ? 0 : 4, 
           transition: "padding 0.6s",
-          height: stage === 2 ? "auto" : 0,
-          overflow: stage === 2 ? "visible" : "hidden"
+          height: stage > 1 ? "auto" : 0,
+          overflow: stage > 1 ? "visible" : "hidden"
         }}>
-          <Box sx={{ mb: 3 }}>
-            <Button
-              startIcon={<ArrowBackIcon />}
-              onClick={() => {
-                setStage(1);
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-              sx={{ color: "text.secondary", fontSize: 13, "&:hover": { bgcolor: "transparent", color: "primary.main" } }}
-            >
-              Back to Canvas
-            </Button>
-          </Box>
-          <Stage2GarmentConcepts workspaceId={id} ws={ws} onNext={() => {
-            setStage(3);
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }} />
-        </Box>
+          {stage === 2 && (
+            <Box sx={{ animation: "fadeIn 0.5s ease-in-out", "@keyframes fadeIn": { "0%": { opacity: 0 }, "100%": { opacity: 1 } } }}>
+              <Box sx={{ mb: 3 }}>
+                <Button
+                  startIcon={<ArrowBackIcon />}
+                  onClick={() => {
+                    setStage(1);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                  sx={{ color: "text.secondary", fontSize: 13, "&:hover": { bgcolor: "transparent", color: "primary.main" } }}
+                >
+                  Back to Canvas
+                </Button>
+              </Box>
+              <Stage2GarmentConcepts workspaceId={id} ws={ws} onNext={() => {
+                setStage(3);
+                window.scrollTo(0, 0);
+              }} />
+            </Box>
+          )}
 
-      {/* ================= STAGE 3 ================= */}
-        <Box sx={{ 
-          width: "33.3333%", 
-          flexShrink: 0, 
-          pl: stage === 3 ? 0 : 4, 
-          transition: "padding 0.6s",
-          height: stage === 3 ? "auto" : 0,
-          overflow: stage === 3 ? "visible" : "hidden"
-        }}>
-          <Box sx={{ mb: 3 }}>
-            <Button
-              startIcon={<ArrowBackIcon />}
-              onClick={() => {
-                setStage(2);
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-              sx={{ color: "text.secondary", fontSize: 13, "&:hover": { bgcolor: "transparent", color: "primary.main" } }}
-            >
-              Back to Stage 2
-            </Button>
-          </Box>
-          <Stage3Editorial workspaceId={id} ws={ws} />
+          {stage === 3 && (
+            <Box sx={{ animation: "fadeIn 0.5s ease-in-out", "@keyframes fadeIn": { "0%": { opacity: 0 }, "100%": { opacity: 1 } } }}>
+              <Box sx={{ mb: 3 }}>
+                <Button
+                  startIcon={<ArrowBackIcon />}
+                  onClick={() => {
+                    setStage(2);
+                    window.scrollTo(0, 0);
+                  }}
+                  sx={{ color: "text.secondary", fontSize: 13, "&:hover": { bgcolor: "transparent", color: "primary.main" } }}
+                >
+                  Back to Stage 2
+                </Button>
+              </Box>
+              <Stage3Editorial workspaceId={id} ws={ws} />
+            </Box>
+          )}
         </Box>
       </Box>
     </Box>

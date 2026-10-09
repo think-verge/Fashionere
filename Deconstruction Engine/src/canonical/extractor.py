@@ -93,9 +93,14 @@ class CanonicalVision(BaseModel):
     color_story: list[str]
     themes: list[_Theme]
     details: list[_Detail]
+    best_flatlay_index: int | None = Field(
+        default=None,
+        description="Image index of the best garment-only / flat-lay / studio shot "
+                    "(no model visible). -1 if every image has a model.",
+    )
 
 
-PROMPT = (
+PROMPT_RUNWAY = (
     "You are a fashion technical analyst. Images are numbered from 0 in order. "
     "Split the look FINELY into distinct apparel garments/layers/fabric sections "
     "(e.g. a tweed jacket and a tulle skirt are two garments). For each garment: "
@@ -111,19 +116,53 @@ PROMPT = (
     "garments but DO list them under details. Output must match the JSON schema."
 )
 
+PROMPT_RETAIL = (
+    "You are a fashion technical analyst. These images show a SINGLE retail "
+    "product from an online store. Images are numbered from 0 in order. "
+    "Return EXACTLY ONE garment — the product being sold. Ignore any other "
+    "clothing the model is wearing (styling pieces like trousers, shirts, shoes "
+    "worn for the photoshoot are NOT the product). "
+    "Prefer garment-only / flat-lay / studio images (no model) for fabric and "
+    "pattern source boxes — they give cleaner patches. "
+    "For the garment: piece; color_palette (name, nearest Pantone TCX, "
+    "approximate hex, role); fabrics (name incl. colour, material, weight, "
+    "finish, confidence, one-line description, and source={image_index, "
+    "box[ymin,xmin,ymax,xmax] 0-1000 around a clean patch of ONLY that "
+    "fabric — avoid face/skin/background}); patterns (name, "
+    "type[none|repeat|placement_appliqué], motif, scale, colors, one-line "
+    "description, is_brand_mark, source). Do NOT tag brand logos/monograms/"
+    "crests as patterns — set is_brand_mark true and exclude them. Then "
+    "look-level: silhouette_description (of this product only), color_story, "
+    "themes (mood/theme values), and details (hardware, closures, zippers, "
+    "pockets — with a type). Finally, set best_flatlay_index to the image "
+    "index of the BEST garment-only / flat-lay / studio photograph where NO "
+    "model or person is visible — just the garment on a plain background. "
+    "If every image contains a model, set it to -1. "
+    "Output must match the JSON schema."
+)
 
-def extract(runway_bytes: bytes | None, detail_images: list[bytes], *, quality: bool = False):
-    """Run the vision extraction. Returns (canonical Extraction, raw CanonicalVision)."""
-    # Reuse the legacy engine's cached client + schema-agnostic helpers (read-only).
+PROMPT = PROMPT_RUNWAY
+
+
+def extract(runway_bytes: bytes | None, detail_images: list[bytes],
+            *, quality: bool = False, mode: str = "runway"):
+    """Run the vision extraction. Returns (canonical Extraction, raw CanonicalVision).
+
+    mode: "runway" (multi-garment look) or "retail" (single product).
+    """
     from src.deconstruct import order_images, _part_from_bytes, _ClientHolder
 
     images = order_images(runway_bytes, detail_images)
     if not images:
         return Extraction(), None
 
-    contents: list = [types.Part.from_text(text=PROMPT)]
+    prompt = PROMPT_RETAIL if mode == "retail" else PROMPT_RUNWAY
+    contents: list = [types.Part.from_text(text=prompt)]
     for i, img in enumerate(images):
-        role = "runway" if (i == 0 and runway_bytes) else "detail"
+        if mode == "retail":
+            role = "product" if (i == 0 and runway_bytes) else "detail"
+        else:
+            role = "runway" if (i == 0 and runway_bytes) else "detail"
         contents.append(types.Part.from_text(text=f"Image {i} ({role}):"))
         contents.append(_part_from_bytes(img))
 
