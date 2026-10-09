@@ -117,8 +117,9 @@ export default function LookDetailPage() {
       qc.removeQueries({ queryKey: ["workspaces"] });
       setSnackbarWsId(wsId);
       setSnackbarMsg(`${label} added to workspace`);
-    } catch {
-      setSnackbarMsg("Failed to add — try again");
+    } catch (err: unknown) {
+      const status = (err as { response?: { status?: number } })?.response?.status;
+      setSnackbarMsg(status === 409 ? "Already in this workspace" : "Failed to add — try again");
     } finally {
       setAddingKey(null);
     }
@@ -149,7 +150,7 @@ export default function LookDetailPage() {
     <Box>
       <Button
         startIcon={<ArrowBackIcon />}
-        onClick={() => navigate(-1)}
+        onClick={() => navigate("/app/looks")}
         sx={{ color: "text.secondary", mb: 3, fontWeight: 500, "&:hover": { color: "primary.main" } }}
       >
         Back to Looks
@@ -450,15 +451,18 @@ function GarmentRow({ garment, onOpen }: { garment: Garment; onOpen: () => void 
                   </Typography>
                   {firstPattern.image_url && (
                     <Box
+                      component="img"
+                      src={firstPattern.image_url}
                       sx={{
                         position: "absolute",
                         inset: 0,
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
                         zIndex: 2,
-                        backgroundImage: `url(${firstPattern.image_url})`,
-                        backgroundRepeat: "repeat",
-                        backgroundSize: "36px",
                         opacity: 0.95,
                       }}
+                      onError={(e) => { (e.target as HTMLElement).style.display = "none"; }}
                     />
                   )}
                 </>
