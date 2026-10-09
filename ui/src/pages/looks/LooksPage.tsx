@@ -60,7 +60,7 @@ export default function LooksPage() {
     useInfiniteQuery<LooksResponse>({
       queryKey: ["looks", type, selectedBrand, selectedGarmentType, q, sort],
       queryFn: async ({ pageParam }) => {
-        const params: Record<string, string> = { type, limit: "24" };
+        const params: Record<string, string> = { type, limit: "24", is_deconstructed: "true" };
         if (pageParam) params.cursor = pageParam as string;
         if (selectedBrand.length > 0) params.brand = selectedBrand.join(",");
         if (selectedGarmentType.length > 0) params.garment_type = selectedGarmentType.join(",");

@@ -134,11 +134,18 @@ export async function listLooks(opts: {
   garment_type?: string;
   search?: string;
   sort?: string;
+  is_deconstructed?: boolean;
 }) {
-  const { type, limit, cursor, brand, garment_type, search, sort } = opts;
+  const { type, limit, cursor, brand, garment_type, search, sort, is_deconstructed } = opts;
 
   // Base type filter (used for total count too)
   const typeFilter: Record<string, any> = {};
+
+  if (is_deconstructed) {
+    const deconLookIds = await deconCol().distinct("look_id");
+    typeFilter._id = { $in: deconLookIds.map(String) };
+  }
+
   if (type === "retail") {
     typeFilter["source.type"] = { $in: [...RETAIL_SOURCES] };
   } else if (type === "runway") {

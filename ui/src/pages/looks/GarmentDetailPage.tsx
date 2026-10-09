@@ -50,7 +50,7 @@ interface Look {
   name?: string;
 }
 
-type AddingType = "fabric" | "pattern" | "silhouette" | null;
+type AddingType = string | null;
 
 export default function GarmentDetailPage() {
   const { lookId, garmentId } = useParams<{ lookId: string; garmentId: string }>();
@@ -91,7 +91,8 @@ export default function GarmentDetailPage() {
     label: string,
   ) {
     if (!activeProject || !garment) return;
-    setAddingType(elementType === "color" ? null : elementType as AddingType);
+    const colors = elementData.colors as Array<{ hex: string }> | undefined;
+    setAddingType(elementType === "color" ? `color:${colors?.[0]?.hex}` : elementType as AddingType);
     setPendingElement({ type: elementType, data: elementData, label });
   }
 
@@ -188,63 +189,91 @@ export default function GarmentDetailPage() {
         )}
       </Box>
 
-      <Box sx={{ display: "flex", gap: 3, flexDirection: { xs: "column", md: "row" }, alignItems: "flex-start" }}>
-        {/* Left column: flat illustration */}
+      <Box sx={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: 3, alignItems: "stretch" }}>
+        {/* TECHNICAL FLAT */}
         {garment.flat_url && (
-          <Box sx={{ flexShrink: 0, width: { xs: "100%", md: 240 } }}>
-            <ElementCard
-              title="TECHNICAL FLAT"
-              onAdd={activeProject ? () => requestAdd("silhouette", { flat_url: garment.flat_url, garment_type: garment.garment_type }, "Silhouette") : undefined}
-              adding={addingType === "silhouette"}
-            >
+          <ElementCard
+            title="TECHNICAL FLAT"
+            onAdd={activeProject ? () => requestAdd("silhouette", { flat_url: garment.flat_url, garment_type: garment.garment_type }, "Silhouette") : undefined}
+            adding={addingType === "silhouette"}
+          >
+            <Box sx={{
+              flex: 1,
+              width: "100%",
+              minHeight: 200,
+              bgcolor: "#f5f0ef",
+              borderRadius: "8px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              overflow: "hidden",
+              position: "relative"
+            }}>
               <Box
                 component="img"
                 src={garment.flat_url}
                 alt="Technical flat"
                 sx={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
                   width: "100%",
-                  maxHeight: 320,
-                  objectFit: "contain",
-                  borderRadius: "8px",
-                  bgcolor: "#f5f0ef",
+                  height: "100%",
+                  objectFit: "cover",
                   display: "block",
                 }}
                 onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
               />
-            </ElementCard>
-          </Box>
+            </Box>
+          </ElementCard>
         )}
 
-        {/* Right column: element cards */}
-        <Box sx={{ flex: 1, minWidth: 0, display: "flex", flexDirection: "column", gap: 2 }}>
-          {/* PALETTE */}
+        {/* PALETTE */}
           {garment.colors?.length > 0 && (
             <ElementCard
               title="PALETTE"
-              onAdd={activeProject ? () => requestAdd("color", { colors: garment.colors }, "Color palette") : undefined}
+              onAdd={undefined} // Remove main add button since individual ones are used
               adding={false}
             >
-              <Box sx={{ mb: 2 }}>
-                <PaletteStrip
-                  swatches={garment.colors.map((c) => ({ hex: c.hex, name: c.name, family: undefined }))}
-                  size={32}
-                />
-              </Box>
-              <Box sx={{ display: "flex", flexDirection: "column", gap: 0.75 }}>
+              <Box sx={{ display: "flex", flexDirection: "column", gap: 3, flex: 1 }}>
                 {garment.colors.map((c, i) => (
-                  <Box key={i} sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
-                    <Box sx={{ width: 20, height: 20, borderRadius: "50%", bgcolor: c.hex, border: "1px solid rgba(0,0,0,0.08)", flexShrink: 0 }} />
-                    <Typography sx={{ fontSize: 13, color: "text.primary", fontWeight: 500, flex: 1 }}>
-                      {c.name ?? c.hex}
-                    </Typography>
-                    {c.role && (
-                      <Chip
-                        label={c.role}
+                  <Box key={i} sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+                    <Box sx={{ width: 40, height: 40, borderRadius: "8px", bgcolor: c.hex, border: "1px solid rgba(0,0,0,0.08)", flexShrink: 0 }} />
+                    <Box sx={{ flex: 1, minWidth: 0, display: "flex", flexDirection: "column", gap: 0.25 }}>
+                      <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                        <Typography sx={{ fontSize: 14, fontWeight: 700, color: "text.primary" }}>
+                          {c.name || "Unknown"}
+                        </Typography>
+                        {c.role && (
+                          <Typography sx={{ fontSize: 10, fontWeight: 600, textTransform: "uppercase", color: "text.disabled", letterSpacing: "0.05em" }}>
+                            {c.role}
+                          </Typography>
+                        )}
+                      </Box>
+                      <Typography sx={{ fontSize: 11, color: "text.secondary", fontFamily: "monospace" }}>
+                        {c.hex.toUpperCase()}{c.pantone ? ` · ${c.pantone}` : ""}
+                      </Typography>
+                    </Box>
+                    <Tooltip title="Add color to workspace">
+                      <IconButton
                         size="small"
-                        sx={{ fontSize: 9, fontWeight: 700, textTransform: "capitalize", height: 18, bgcolor: "#faf8f7", borderColor: "#f0e4e2" }}
-                        variant="outlined"
-                      />
-                    )}
+                        onClick={activeProject ? () => requestAdd("color", { colors: [c] }, c.name || "Color") : undefined}
+                        disabled={addingType === `color:${c.hex}` || !activeProject}
+                        sx={{
+                          width: 32,
+                          height: 32,
+                          bgcolor: "#fff0ef",
+                          color: "primary.main",
+                          "&:hover": {
+                            bgcolor: "#ffe4e1",
+                          },
+                          transition: "background-color 0.2s",
+                          flexShrink: 0,
+                        }}
+                      >
+                        {addingType === `color:${c.hex}` ? <CircularProgress size={14} color="inherit" /> : <AddIcon sx={{ fontSize: 18 }} />}
+                      </IconButton>
+                    </Tooltip>
                   </Box>
                 ))}
               </Box>
@@ -266,7 +295,7 @@ export default function GarmentDetailPage() {
                   alt={fabric.name}
                   sx={{
                     width: "100%",
-                    height: 120,
+                    height: 200,
                     objectFit: "cover",
                     borderRadius: "8px",
                     mb: 2,
@@ -312,13 +341,13 @@ export default function GarmentDetailPage() {
                 <Box
                   sx={{
                     width: "100%",
-                    height: 120,
+                    height: 200,
                     borderRadius: "8px",
                     mb: 2,
                     overflow: "hidden",
                     backgroundImage: `url(${pattern.image_url})`,
                     backgroundRepeat: "repeat",
-                    backgroundSize: "96px",
+                    backgroundSize: "120px",
                     bgcolor: "#f5f0ef",
                   }}
                 />
@@ -379,7 +408,6 @@ export default function GarmentDetailPage() {
               </Typography>
             </Paper>
           )}
-        </Box>
       </Box>
 
       {/* Workspace picker */}
@@ -434,13 +462,25 @@ function ElementCard({
 }) {
   return (
     <Paper
+      elevation={0}
       sx={{
-        p: 3,
+        pt: 3.5,
+        px: 3,
+        pb: 3,
         border: "1px solid #f0e4e2",
-        borderRadius: "14px",
+        borderRadius: "16px",
+        display: "flex",
+        flexDirection: "column",
+        height: "100%",
+        bgcolor: "#ffffff",
+        transition: "box-shadow 0.2s, border-color 0.2s",
+        "&:hover": {
+          boxShadow: "0 8px 24px rgba(0,0,0,0.04)",
+          borderColor: "#e8d5d3",
+        }
       }}
     >
-      <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 2 }}>
+      <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 2, minHeight: 32 }}>
         <Typography sx={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.2em", color: "primary.main" }}>
           {title}
         </Typography>
