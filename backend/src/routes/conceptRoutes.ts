@@ -3,6 +3,7 @@ import { asyncHandler } from "../utils/async-handler.js";
 import { requireAuth } from "../middleware/auth.js";
 import * as conceptController from "../controllers/conceptController.js";
 import * as packController from "../controllers/garmentPackController.js";
+import * as shootController from "../controllers/modelShootController.js";
 
 export const conceptRouter = Router();
 
@@ -24,3 +25,5 @@ conceptRouter.post("/:conceptId/finalize", asyncHandler(packController.finalize)
 conceptRouter.delete("/:conceptId/finalize", asyncHandler(packController.unfinalize));
 conceptRouter.post("/:conceptId/garment-pack", asyncHandler(packController.startPack));
 conceptRouter.get("/:conceptId/garment-pack", asyncHandler(packController.getPack));
+conceptRouter.post("/:conceptId/model-shoot", asyncHandler(shootController.startShoot));
+conceptRouter.get("/:conceptId/model-shoot", asyncHandler(shootController.getShootForConcept));

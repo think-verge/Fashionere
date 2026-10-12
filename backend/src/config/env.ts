@@ -16,5 +16,7 @@ export const env = {
   FAL_KEY: process.env.FAL_KEY ?? "",
   GEMINI_API_KEY: process.env.GEMINI_API_KEY ?? "",
   GEMINI_MODEL: process.env.GEMINI_MODEL ?? "gemini-flash-latest",
+  // Judgement-heavy calls (Stage 3 stylist and art director) use the Pro model.
+  GEMINI_PRO_MODEL: process.env.GEMINI_PRO_MODEL ?? "gemini-pro-latest",
   ASSET_BASE_URL: process.env.ASSET_BASE_URL ?? "/api/v1/assets",
 };
