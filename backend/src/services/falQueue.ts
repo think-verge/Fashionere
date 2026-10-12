@@ -38,6 +38,20 @@ export async function submitFlux2Edit(imageUris: string[], prompt: string): Prom
   return { request_id: data.request_id, status_url: data.status_url, response_url: data.response_url };
 }
 
+// Seedream 5.0 Lite edit: chosen for Stage 3 on-model shots after a comparison with FLUX.2 [pro], Kontext and
+// Nano Banana — best garment fidelity (texture, stitching, colour) and the most editorial photographs. ~2 min per image.
+export const SEEDREAM_EDIT_MODEL = "fal-ai/bytedance/seedream/v5/lite/edit";
+export const COST_SEEDREAM_EDIT = 0.035;
+
+export async function submitSeedreamEdit(imageUris: string[], prompt: string): Promise<FalQueueJob> {
+  const { data } = await axios.post(
+    `https://queue.fal.run/${SEEDREAM_EDIT_MODEL}`,
+    { image_urls: imageUris, prompt, image_size: "portrait_4_3", num_images: 1, enable_safety_checker: true },
+    { headers: falHeaders() },
+  );
+  return { request_id: data.request_id, status_url: data.status_url, response_url: data.response_url };
+}
+
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 /** Polls a queued FAL job until it yields an image. Throws on failure or timeout. */

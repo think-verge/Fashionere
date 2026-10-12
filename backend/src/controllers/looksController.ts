@@ -24,7 +24,8 @@ export async function listLooks(req: Request, res: Response) {
   const garment_type = q(req, "garment_type");
   const search = q(req, "q");
   const sort = q(req, "sort");
-  const result = await looksService.listLooks({ type, limit, cursor, brand, garment_type, search, sort });
+  const is_deconstructed = q(req, "is_deconstructed") === "true";
+  const result = await looksService.listLooks({ type, limit, cursor, brand, garment_type, search, sort, is_deconstructed });
   res.json(result);
 }
 

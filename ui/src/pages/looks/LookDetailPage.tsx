@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import {
@@ -79,6 +79,14 @@ export default function LookDetailPage() {
     enabled: !!lookId,
   });
 
+  useEffect(() => {
+    if (!look?.images || look.images.length <= 1) return;
+    const timer = setInterval(() => {
+      setImageIdx((prev) => (prev + 1) % look.images.length);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, [look?.images]);
+
   const { data: garments, isLoading: garmentsLoading } = useQuery<Garment[]>({
     queryKey: ["look-garments", lookId],
     queryFn: async () => {
@@ -158,7 +166,7 @@ export default function LookDetailPage() {
 
       <Box sx={{ display: "flex", gap: { xs: 2, md: 5 }, flexDirection: { xs: "column", md: "row" } }}>
         {/* Left: Image */}
-        <Box sx={{ width: { xs: "100%", md: "40%" }, flexShrink: 0 }}>
+        <Box sx={{ width: { xs: "100%", md: "40%" }, maxWidth: 460, flexShrink: 0 }}>
           <Paper
             sx={{
               overflow: "hidden",
@@ -203,7 +211,11 @@ export default function LookDetailPage() {
           </Paper>
 
           {look.images?.length > 1 && (
-            <Box sx={{ display: "flex", gap: 1, mt: 1.5, overflowX: "auto" }}>
+            <Box sx={{ 
+              display: "flex", gap: 1, mt: 1.5, overflowX: "auto",
+              scrollbarWidth: "none",
+              "&::-webkit-scrollbar": { display: "none" }
+            }}>
               {look.images.slice(0, 8).map((img, i) => (
                 <Box
                   key={i}
@@ -405,7 +417,7 @@ function GarmentRow({ garment, onOpen }: { garment: Garment; onOpen: () => void 
                 <Box
                   component="img"
                   src={garment.flat_url}
-                  sx={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "contain", zIndex: 2 }}
+                  sx={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 2 }}
                   onError={(e) => { (e.target as HTMLElement).style.display = "none"; }}
                 />
               )}
@@ -509,8 +521,8 @@ function ElementSquare({
     <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 0.75 }}>
       <Box
         sx={{
-          width: 72,
-          height: 72,
+          width: 80,
+          height: 80,
           borderRadius: "8px",
           bgcolor: color,
           display: "flex",
@@ -523,7 +535,7 @@ function ElementSquare({
       >
         {children}
       </Box>
-      <Typography sx={{ fontSize: 9, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "text.disabled", textAlign: "center", maxWidth: 72, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+      <Typography sx={{ fontSize: 9, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "text.disabled", textAlign: "center", maxWidth: 80, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
         {label}
       </Typography>
     </Box>
@@ -594,7 +606,7 @@ function ProductAnalysisCard({
           <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2 }}>
             {analysis.colors!.map((c, i) => (
               <Box key={i} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                <Box sx={{ width: 28, height: 28, borderRadius: "50%", bgcolor: c.hex, border: "1px solid rgba(0,0,0,0.08)", flexShrink: 0 }} />
+                <Box sx={{ width: 32, height: 32, borderRadius: "8px", bgcolor: c.hex, border: "1px solid rgba(0,0,0,0.08)", flexShrink: 0 }} />
                 <Box>
                   <Typography sx={{ fontSize: 12, fontWeight: 600, color: "text.primary", lineHeight: 1.2 }}>{c.name ?? c.family}</Typography>
                   {c.role && <Typography sx={{ fontSize: 10, color: "text.secondary", textTransform: "capitalize" }}>{c.role}</Typography>}

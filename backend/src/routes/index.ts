@@ -13,6 +13,7 @@ import { retailTrendsRouter } from "./retailTrendsRoutes.js";
 import { conceptRouter } from "./conceptRoutes.js";
 import { assetRouter } from "./assetRoutes.js";
 import { garmentPackRouter } from "./garmentPackRoutes.js";
+import { modelShootRouter } from "./modelShootRoutes.js";
 
 export const apiRouter = Router();
 
@@ -30,3 +31,4 @@ apiRouter.use("/retail-trends", retailTrendsRouter);
 apiRouter.use("/concepts", conceptRouter);
 apiRouter.use("/assets", assetRouter);
 apiRouter.use("/garment-packs", garmentPackRouter);
+apiRouter.use("/model-shoots", modelShootRouter);
