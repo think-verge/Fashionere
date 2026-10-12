@@ -4,6 +4,7 @@ import type { ICoherence } from "./GenerationJob.js";
 export interface IConcept extends Document {
   workspace_id: Types.ObjectId;
   job_id: Types.ObjectId;
+  tenant_id?: Types.ObjectId | null;
   parent_concept?: Types.ObjectId | null;
   root_concept?: Types.ObjectId | null;
   edit_instruction?: string;
@@ -50,6 +51,7 @@ export interface IConcept extends Document {
 const conceptSchema = new Schema<IConcept>(
   {
     workspace_id: { type: Schema.Types.ObjectId, ref: "Workspace", required: true, index: true },
+    tenant_id: { type: Schema.Types.ObjectId, ref: "Tenant", default: null, index: true },
     job_id: { type: Schema.Types.ObjectId, ref: "GenerationJob", required: true, index: true },
     combo: {
       silhouette_id: { type: String, required: true },

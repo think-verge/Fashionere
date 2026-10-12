@@ -40,6 +40,7 @@ export interface IGarmentShot {
 export interface IGarmentPack extends Document {
   workspace_id: Types.ObjectId;
   user_id: Types.ObjectId;
+  tenant_id?: Types.ObjectId | null;
   concept_id: Types.ObjectId;
   root_concept_id: Types.ObjectId;
   status: PackStatus;
@@ -91,6 +92,7 @@ const garmentPackSchema = new Schema<IGarmentPack>(
   {
     workspace_id: { type: Schema.Types.ObjectId, ref: "Workspace", required: true, index: true },
     user_id: { type: Schema.Types.ObjectId, ref: "User", required: true },
+    tenant_id: { type: Schema.Types.ObjectId, ref: "Tenant", default: null, index: true },
     concept_id: { type: Schema.Types.ObjectId, ref: "Concept", required: true, unique: true },
     root_concept_id: { type: Schema.Types.ObjectId, ref: "Concept", required: true },
     status: { type: String, enum: ["generating", "ready", "partial", "failed"], default: "generating" },

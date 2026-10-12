@@ -12,12 +12,14 @@ function q(req: Request, key: string): string | undefined {
 
 export async function listLooksFilters(req: Request, res: Response) {
   const type = q(req, "type");
-  const result = await looksService.listLooksFilters({ type });
+  const tenantId = req.tenantId || req.user?.tenantId;
+  const result = await looksService.listLooksFilters({ type, tenantId });
   res.json(result);
 }
 
 export async function listLooks(req: Request, res: Response) {
   const type = q(req, "type");
+  const source = q(req, "source");
   const limit = Math.min(parseInt(q(req, "limit") || "24", 10), 100);
   const cursor = q(req, "cursor");
   const brand = q(req, "brand");
@@ -25,21 +27,25 @@ export async function listLooks(req: Request, res: Response) {
   const search = q(req, "q");
   const sort = q(req, "sort");
   const is_deconstructed = q(req, "is_deconstructed") === "true";
-  const result = await looksService.listLooks({ type, limit, cursor, brand, garment_type, search, sort, is_deconstructed });
+  const tenantId = req.tenantId || req.user?.tenantId;
+  const result = await looksService.listLooks({ type, source, limit, cursor, brand, garment_type, search, sort, is_deconstructed, tenantId });
   res.json(result);
 }
 
 export async function getLook(req: Request, res: Response) {
-  const look = await looksService.getLook(p(req, "lookId"));
+  const tenantId = req.tenantId || req.user?.tenantId;
+  const look = await looksService.getLook(p(req, "lookId"), tenantId);
   res.json(look);
 }
 
 export async function getGarments(req: Request, res: Response) {
-  const garments = await looksService.getGarments(p(req, "lookId"));
+  const tenantId = req.tenantId || req.user?.tenantId;
+  const garments = await looksService.getGarments(p(req, "lookId"), tenantId);
   res.json(garments);
 }
 
 export async function getGarment(req: Request, res: Response) {
-  const garment = await looksService.getGarment(p(req, "lookId"), p(req, "garmentId"));
+  const tenantId = req.tenantId || req.user?.tenantId;
+  const garment = await looksService.getGarment(p(req, "lookId"), p(req, "garmentId"), tenantId);
   res.json(garment);
 }
