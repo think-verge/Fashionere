@@ -10,6 +10,7 @@ import { cropRegion } from "../garmentPack/regions.js";
 import {
   ModelShoot,
   type IEditorialCopy,
+  type IEditorialFigure,
   type IGarmentRead,
   type IModelConfig,
   type IModelShoot,
@@ -28,9 +29,14 @@ import {
 } from "../falQueue.js";
 import {
   ART_DIRECTOR_SCHEMA,
-  EDITORIAL_COPY_SCHEMA,
-  editorialCopyPrompt,
+  EDITORIAL_EDITOR_SCHEMA,
+  EDITORIAL_WRITER_SCHEMA,
   GARMENT_READ_SCHEMA,
+  constructionText,
+  editorialEditorPrompt,
+  editorialWriterPrompt,
+  outfitLine,
+  type EditorialText,
   artDirectorPrompt,
   editMainPrompt,
   garmentReadPrompt,
@@ -137,12 +143,39 @@ function shootView(shoot: IModelShoot) {
     outfit: shoot.outfit,
     colours: shoot.garment_read ? { dominant: shoot.garment_read.dominant_colour, accents: shoot.garment_read.accent_colours } : null,
     approved_main_id: shoot.approved_main_id ? String(shoot.approved_main_id) : null,
-    editorial: shoot.editorial ?? null,
+    editorial: editorialView(id, shoot),
     main: { current: current ? imageView(id, current) : null, versions: mains.map((m) => imageView(id, m)) },
     shots: shots.map((s) => imageView(id, s)),
     total_cost_usd: Number(shoot.total_cost_usd.toFixed(3)),
     created_at: shoot.createdAt,
     updated_at: shoot.updatedAt,
+  };
+}
+
+const EDITORIAL_VERSION = 2;
+
+/** The feature with image URLs resolved; copies from an older version count as not written. */
+function editorialView(shootId: string, shoot: IModelShoot) {
+  const e = shoot.editorial;
+  if (!e || e.version !== EDITORIAL_VERSION) return null;
+  const figure = (f: IEditorialFigure) => {
+    const img = shoot.images.id(f.image_id);
+    return img?.status === "generated" ? { caption: f.caption, image_url: imageUrl(shootId, img) } : null;
+  };
+  return {
+    look_name: e.look_name,
+    headline: e.headline,
+    standfirst: e.standfirst,
+    hero_caption: e.hero_caption,
+    opening: e.opening,
+    pull_quote: e.pull_quote,
+    details: e.details.map(figure).filter(Boolean),
+    closing: e.closing,
+    shots: e.shots.map(figure).filter(Boolean),
+    credit_line: e.credit_line,
+    fabric: e.fabric,
+    palette: e.palette,
+    generated_at: e.generated_at,
   };
 }
 
@@ -208,14 +241,14 @@ async function garmentRefs(shoot: IModelShoot) {
   return { front, back: back ? await readGridFSBuffer("garment_shots", back.image!.gridfs_id!) : null, closeups };
 }
 
-async function geminiJson<T>(images: Buffer[], text: string, schema: unknown, temperature: number): Promise<T> {
+async function geminiJson<T>(images: Buffer[], text: string, schema: unknown, temperature: number, model = env.GEMINI_PRO_MODEL): Promise<T> {
   if (!env.GEMINI_API_KEY) throw new Error("GEMINI_API_KEY is not configured");
   const parts = [
     ...(await Promise.all(images.map(forGemini))).map((b) => ({ inline_data: { mime_type: "image/jpeg", data: b.toString("base64") } })),
     { text },
   ];
   const { data } = await axios.post(
-    `https://generativelanguage.googleapis.com/v1beta/models/${env.GEMINI_PRO_MODEL}:generateContent`,
+    `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
     { contents: [{ parts }], generationConfig: { temperature, responseMimeType: "application/json", responseSchema: schema } },
     { headers: { "x-goog-api-key": env.GEMINI_API_KEY, "Content-Type": "application/json" }, timeout: 180_000 },
   );
@@ -299,7 +332,7 @@ async function renderMain(shootId: string, imageId: Types.ObjectId) {
 async function runShots(shootId: string, imageIds: Types.ObjectId[]) {
   try {
     const shoot = await ModelShoot.findById(shootId);
-    if (!shoot?.approved_main_id || !shoot.garment_read) throw new Error("No approved main image");
+    if (!shoot?.approved_main_id) throw new Error("No approved main image");
     const main = shoot.images.id(shoot.approved_main_id);
     if (!main?.image?.gridfs_id) throw new Error("Approved main image is missing");
     const mainBuf = await readGridFSBuffer(BUCKET, main.image.gridfs_id);
@@ -313,7 +346,8 @@ async function runShots(shootId: string, imageIds: Types.ObjectId[]) {
     );
     if (!shots?.length) throw new Error("The art director returned no shots");
 
-    const read = shoot.garment_read;
+    // Re-reads a garment read from an older version, so shots never inherit a since-fixed misreading.
+    const { read } = await ensureGarmentRead(shootId, refs);
     await Promise.allSettled(imageIds.map(async (id, i) => {
       const idea = shots[i % shots.length];
       try {
@@ -356,17 +390,28 @@ function addMainVersion(shoot: IModelShoot, fields: Partial<IShootImage>) {
   return img;
 }
 
-/** Starts a shoot for a finalised garment: generates the first main image. Starting again regenerates it. */
-export async function startShoot(conceptId: string, userId: string, modelConfig?: Partial<IModelConfig>) {
+/** Root of a concept's Stage 2 lineage: the original concept every refinement descends from. */
+const rootOf = (c: { _id: Types.ObjectId; root_concept?: Types.ObjectId | null }) => c.root_concept ?? c._id;
+
+/**
+ * Starts a shoot: generates the first main image. Starting again regenerates it. Allowed for a finalised garment,
+ * and for any variation in the lineage of one, so variations can be compared on the model. `outfit` (optional)
+ * fixes the styling up front — compare passes the focused garment's, so only the garment differs.
+ */
+export async function startShoot(conceptId: string, userId: string, modelConfig?: Partial<IModelConfig>, outfit?: Partial<IOutfit>) {
   if (!mongoose.Types.ObjectId.isValid(conceptId)) throw new ApiError(400, "Invalid concept id");
   const concept = await Concept.findById(conceptId).lean();
   if (!concept) throw new ApiError(404, "Concept not found");
   const workspace = await assertWorkspaceOwner(concept.workspace_id, userId);
-  if (!concept.finalized) throw new ApiError(400, "Move the garment to garment concepts (Stage 2 §03) first");
   if (!concept.image?.gridfs_id) throw new ApiError(400, "Concept has no image yet");
+  if (!concept.finalized) {
+    const root = rootOf(concept);
+    const inStage3 = await Concept.exists({ workspace_id: concept.workspace_id, finalized: true, $or: [{ _id: root }, { root_concept: root }] });
+    if (!inStage3) throw new ApiError(400, "Move the garment to garment concepts (Stage 2 §03) first");
+  }
 
   const existing = await ModelShoot.findOne({ concept_id: concept._id });
-  if (existing) return regenerateMain(String(existing._id), userId, { model_config: modelConfig });
+  if (existing) return regenerateMain(String(existing._id), userId, { model_config: modelConfig, outfit });
 
   const shoot = new ModelShoot({
     workspace_id: concept.workspace_id,
@@ -374,6 +419,7 @@ export async function startShoot(conceptId: string, userId: string, modelConfig?
     concept_id: concept._id,
     garment_type: concept.combo.silhouette_garment_type,
     model_config: cleanConfig(modelConfig, DEFAULT_MODEL_CONFIG),
+    outfit: cleanOutfit(outfit, null),
   });
   const img = addMainVersion(shoot, {});
   await shoot.save();
@@ -451,20 +497,144 @@ export async function generateShots(shootId: string, userId: string, count = DEF
 
 // ---- Editorial ----
 
-/** Writes (or rewrites) the look's magazine copy from its approved main image. Synchronous: ~20s. */
+/** Normalises a Gemini box_2d [ymin, xmin, ymax, xmax] (0–1000); null if it is unusable. */
+function toBox(arr: unknown) {
+  if (!Array.isArray(arr) || arr.length !== 4 || !arr.every((n) => typeof n === "number")) return null;
+  const [ymin, xmin, ymax, xmax] = arr.map((n) => Math.max(0, Math.min(1000, n)));
+  return ymax - ymin >= 20 && xmax - xmin >= 20 ? { ymin, xmin, ymax, xmax } : null;
+}
+
+function storeBuffer(buffer: Buffer, filename: string) {
+  const bucket = new mongoose.mongo.GridFSBucket(mongoose.connection.db!, { bucketName: BUCKET });
+  return new Promise<Types.ObjectId>((resolve, reject) => {
+    const upload = bucket.openUploadStream(filename, { contentType: "image/jpeg" });
+    upload.on("error", reject);
+    upload.on("finish", () => resolve(upload.id as Types.ObjectId));
+    upload.end(buffer);
+  });
+}
+
+/** Drops crops that show a label, tag, logo or text (brand marks must never reach the editorial). Fails open. */
+async function withoutText<T extends { crop: Buffer }>(crops: T[]): Promise<T[]> {
+  if (!crops.length) return crops;
+  try {
+    const { has_text } = await geminiJson<{ has_text: boolean[] }>(
+      crops.map((c) => c.crop),
+      `For each of the ${crops.length} images, in order: does it show any label, tag, logo, lettering or text? Return has_text as ${crops.length} booleans.`,
+      { type: "OBJECT", properties: { has_text: { type: "ARRAY", items: { type: "BOOLEAN" } } }, required: ["has_text"] },
+      0,
+      env.GEMINI_MODEL,
+    );
+    return crops.filter((_, i) => has_text?.[i] === false);
+  } catch (err) {
+    console.warn(`Detail text check failed, keeping all crops: ${describeError(err)}`);
+    return crops;
+  }
+}
+
+/**
+ * Writes (or rewrites) the garment's magazine feature. A writer agent drafts it from the hero photograph, the flat
+ * and up to two shots, and picks four construction details on the flat; the editor agent then rewrites the text to
+ * the house style and checks it against the photographs. Details are crops of the flat, never generated images.
+ * Synchronous: ~40s.
+ */
 export async function writeEditorial(shootId: string, userId: string) {
   const shoot = await loadOwnedShoot(shootId, userId);
   const hero = shoot.approved_main_id ? shoot.images.id(shoot.approved_main_id) : null;
   if (!hero?.image?.gridfs_id) throw new ApiError(400, "Approve a main image before writing the editorial");
-  // Only the photograph: Stage 1 labels (fabric colour, palette) go stale once the designer refines the garment.
-  const copy = await geminiJson<Omit<IEditorialCopy, "generated_at">>(
-    [await readGridFSBuffer(BUCKET, hero.image.gridfs_id)],
-    editorialCopyPrompt(shoot.garment_type),
-    EDITORIAL_COPY_SCHEMA,
+
+  const refs = await garmentRefs(shoot);
+  const { read, outfit } = await ensureGarmentRead(shootId, refs);
+  const heroBuf = await readGridFSBuffer(BUCKET, hero.image.gridfs_id);
+  // Up to two shots from the newest set, preferring different views.
+  const shots = shoot.images
+    .filter((i) => i.kind === "shot" && i.status === "generated" && i.image?.gridfs_id)
+    .sort((a, b) => (b.batch ?? 0) - (a.batch ?? 0))
+    .filter((s, i, all) => all.findIndex((x) => x.view === s.view) === i)
+    .slice(0, 2);
+  const shotBufs = await Promise.all(shots.map((s) => readGridFSBuffer(BUCKET, s.image!.gridfs_id!)));
+  const construction = constructionText(read);
+
+  const draft = await geminiJson<Omit<EditorialText, "detail_captions"> & { details: Array<{ label: string; box_2d: unknown; caption: string }> }>(
+    [heroBuf, refs.front, ...shotBufs],
+    editorialWriterPrompt(shoot.garment_type, construction, outfitLine(outfit), shots.length),
+    EDITORIAL_WRITER_SCHEMA,
     0.8,
   );
-  if (!copy.look_name || !copy.statement?.length) throw new ApiError(502, "The editorial copy could not be written; try again");
-  shoot.editorial = { ...copy, statement: copy.statement.slice(0, 3), generated_at: new Date() };
+  // Crop every candidate from the flat, drop any that shows a label, tag, logo or text, keep the first four.
+  const candidates = await Promise.all(
+    (draft.details ?? []).map((d) => ({ ...d, box: toBox(d.box_2d) })).filter((d) => d.box).slice(0, 6)
+      .map(async (d) => ({ ...d, crop: await cropRegion(refs.front, d.box!) })),
+  );
+  const details = (await withoutText(candidates)).slice(0, 4);
+  if (!draft.look_name || (draft.opening ?? []).length < 2) {
+    throw new ApiError(502, "The editorial could not be written; try again");
+  }
+
+  const draftText: EditorialText = {
+    look_name: draft.look_name, headline: draft.headline, standfirst: draft.standfirst, hero_caption: draft.hero_caption,
+    opening: draft.opening.slice(0, 3), pull_quote: draft.pull_quote, detail_captions: details.map((d) => d.caption),
+    closing: (draft.closing ?? []).slice(0, 2), shot_captions: (draft.shot_captions ?? []).slice(0, shots.length),
+    credit_line: draft.credit_line, fabric: draft.fabric, palette: draft.palette,
+  };
+  // The editor's pass; if it fails or drops structure, the writer's draft stands.
+  let text = draftText;
+  try {
+    const edited = await geminiJson<EditorialText>(
+      [heroBuf, refs.front],
+      editorialEditorPrompt(shoot.garment_type, construction, draftText),
+      EDITORIAL_EDITOR_SCHEMA,
+      0.4,
+    );
+    const sameShape = edited.opening?.length === draftText.opening.length && edited.closing?.length === draftText.closing.length
+      && edited.detail_captions?.length === draftText.detail_captions.length && edited.shot_captions?.length === draftText.shot_captions.length;
+    if (sameShape && edited.headline && edited.standfirst) text = edited;
+    else console.warn(`Model shoot ${shootId}: editor changed the feature's structure; keeping the writer's draft`);
+  } catch (err) {
+    console.warn(`Model shoot ${shootId}: editor pass failed, keeping the writer's draft: ${describeError(err)}`);
+  }
+
+  // Replace the previous feature's detail crops.
+  const oldDetails = shoot.images.filter((i) => i.kind === "detail");
+  const detailFigures: IEditorialFigure[] = [];
+  for (const [i, d] of details.entries()) {
+    const crop = d.crop;
+    const meta = await sharp(crop).metadata();
+    const img = shoot.images.create({
+      kind: "detail", status: "generated", title: d.label,
+      image: { gridfs_id: await storeBuffer(crop, `detail_${shootId}_${i}.jpg`), width: meta.width, height: meta.height },
+    });
+    shoot.images.push(img);
+    detailFigures.push({ image_id: img._id, caption: text.detail_captions[i] ?? d.caption });
+  }
+  for (const old of oldDetails) {
+    shoot.images.pull(old._id);
+    if (old.image?.gridfs_id) {
+      await new mongoose.mongo.GridFSBucket(mongoose.connection.db!, { bucketName: BUCKET }).delete(old.image.gridfs_id).catch(() => undefined);
+    }
+  }
+
+  // The look's name is a proper noun wherever it appears ("The Chestnut jacket", not "The chestnut jacket").
+  const lookName = text.look_name.trim().charAt(0).toUpperCase() + text.look_name.trim().slice(1);
+  const headline = text.headline.replace(new RegExp(`\\b${lookName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i"), lookName);
+  const copy: IEditorialCopy = {
+    version: EDITORIAL_VERSION,
+    look_name: lookName,
+    headline,
+    standfirst: text.standfirst,
+    hero_caption: text.hero_caption,
+    opening: text.opening,
+    pull_quote: text.pull_quote,
+    details: detailFigures,
+    closing: text.closing,
+    shots: shots.map((s, i) => ({ image_id: s._id, caption: text.shot_captions[i] ?? "" })),
+    credit_line: text.credit_line,
+    fabric: text.fabric,
+    palette: text.palette,
+    generated_at: new Date(),
+  };
+  shoot.editorial = copy;
+  shoot.markModified("editorial");
   await shoot.save();
   return shootView(shoot);
 }
@@ -515,6 +685,41 @@ export async function listShoots(workspaceId: string, userId: string) {
         fabric: c.combo.fabric_label,
         accumulated_edits: c.accumulated_edits ?? [],
         front_image_url: `/api/v1/concepts/${c._id}/image`,
+        shoot: shoot ? shootView(shoot) : null,
+      };
+    }),
+  };
+}
+
+/**
+ * The Stage 2 variations of a garment, for the compare view: the garment's whole lineage (the original and every
+ * live refinement), each with its shoot if it has one. Oldest first.
+ */
+export async function listVariations(conceptId: string, userId: string) {
+  if (!mongoose.Types.ObjectId.isValid(conceptId)) throw new ApiError(400, "Invalid concept id");
+  const concept = await Concept.findById(conceptId).lean();
+  if (!concept) throw new ApiError(404, "Concept not found");
+  await assertWorkspaceOwner(concept.workspace_id, userId);
+  const root = rootOf(concept);
+  const variations = await Concept.find({
+    workspace_id: concept.workspace_id,
+    $or: [{ _id: root }, { root_concept: root }],
+    undone: { $ne: true },
+    status: { $in: ["generated", "approved"] },
+    "image.gridfs_id": { $exists: true },
+  }).sort({ createdAt: 1 }).lean();
+  const shoots = await ModelShoot.find({ concept_id: { $in: variations.map((v) => v._id) } });
+  await Promise.all(shoots.map(sweepStale));
+  const byConcept = new Map(shoots.map((s) => [String(s.concept_id), s]));
+  return {
+    concept_id: conceptId,
+    variations: variations.map((v) => {
+      const shoot = byConcept.get(String(v._id));
+      return {
+        concept_id: String(v._id),
+        accumulated_edits: v.accumulated_edits ?? [],
+        finalized: !!v.finalized,
+        front_image_url: `/api/v1/concepts/${v._id}/image`,
         shoot: shoot ? shootView(shoot) : null,
       };
     }),

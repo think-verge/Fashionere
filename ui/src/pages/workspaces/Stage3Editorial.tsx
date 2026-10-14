@@ -2,7 +2,6 @@
 import { Box, Typography, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { ModelShootSection } from "./ModelShootSection";
-import { EditorialSection } from "./EditorialMagazine";
 
 export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?: any }) {
   const navigate = useNavigate();
@@ -24,12 +23,10 @@ export function Stage3Editorial({ workspaceId, ws }: { workspaceId?: string; ws?
         {(ws?.name as string) || "Editorial"}
       </Typography>
       <Typography sx={{ fontSize: 14, color: "text.secondary", mb: 5, maxWidth: 560 }}>
-        Your finalised garments on a model, shot as a studio editorial. Set up the model, perfect the main image, then let the art director build the spread.
+        One garment at a time, on a model in the studio. Set up the model, perfect the main image, let the art director build the shots, then create the garment's own editorial.
       </Typography>
 
-      <ModelShootSection workspaceId={workspaceId} />
-
-      <EditorialSection workspaceId={workspaceId} workspaceName={(ws?.name as string) || "Editorial"} />
+      <ModelShootSection workspaceId={workspaceId} workspaceName={(ws?.name as string) || "Editorial"} />
 
       {/* FOOTER */}
       <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mt: 4, pt: 2, borderTop: "1px solid #f0e4e2" }}>

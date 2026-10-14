@@ -4,8 +4,8 @@ import * as shootService from "../services/modelShoot/modelShootService.js";
 const p = (req: Request, key: string) => req.params[key] as string;
 
 export async function startShoot(req: Request, res: Response) {
-  const { model_config } = (req.body ?? {}) as { model_config?: Record<string, string> };
-  res.status(202).json(await shootService.startShoot(p(req, "conceptId"), req.user!.userId, model_config));
+  const { model_config, outfit } = (req.body ?? {}) as { model_config?: Record<string, string>; outfit?: Record<string, string> };
+  res.status(202).json(await shootService.startShoot(p(req, "conceptId"), req.user!.userId, model_config, outfit));
 }
 
 export async function getShootForConcept(req: Request, res: Response) {
@@ -19,6 +19,15 @@ export async function listShoots(req: Request, res: Response) {
     return;
   }
   res.json(await shootService.listShoots(workspaceId, req.user!.userId));
+}
+
+export async function listVariations(req: Request, res: Response) {
+  const conceptId = typeof req.query.concept_id === "string" ? req.query.concept_id : "";
+  if (!conceptId) {
+    res.status(400).json({ error: "concept_id query parameter is required" });
+    return;
+  }
+  res.json(await shootService.listVariations(conceptId, req.user!.userId));
 }
 
 export async function getShoot(req: Request, res: Response) {

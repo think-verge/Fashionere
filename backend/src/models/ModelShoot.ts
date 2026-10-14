@@ -1,7 +1,7 @@
 import mongoose, { type Document, Schema, type Types } from "mongoose";
 
 export type ShootStatus = "generating" | "ready" | "failed";
-export type ShootImageKind = "main" | "shot";
+export type ShootImageKind = "main" | "shot" | "detail";
 export type ShootImageStatus = "pending" | "generating" | "generated" | "failed";
 export type ShotView = "front" | "three_quarter" | "side" | "back" | "close_detail";
 
@@ -30,13 +30,29 @@ export interface IGarmentRead {
   design: Record<string, string>;
 }
 
-/** The look's magazine copy, written from the approved main image. */
+/** A captioned image in the editorial; points at an image of the shoot (a shot, or a detail crop of the flat). */
+export interface IEditorialFigure {
+  image_id: Types.ObjectId;
+  caption: string;
+}
+
+/**
+ * The garment's magazine feature: written by a writer agent, then rewritten by an editor agent to the house
+ * style (third person, flowing prose, no lists). Version 2; version 1 copies (a first-person "statement") are
+ * treated as not written.
+ */
 export interface IEditorialCopy {
+  version: number;
   look_name: string;
-  title: string;
-  statement: string[];
+  headline: string;
+  standfirst: string;
+  hero_caption: string;
+  opening: string[];
   pull_quote: string;
-  /** Credits, read from the photograph. */
+  details: IEditorialFigure[];
+  closing: string[];
+  shots: IEditorialFigure[];
+  credit_line: string;
   fabric: string;
   palette: string;
   generated_at: Date;
@@ -44,7 +60,8 @@ export interface IEditorialCopy {
 
 /**
  * One image of the shoot. "main" images are versions of the hero shot (is_current marks the one shown);
- * "shot" images are the art-directed editorial shots, generated in batches from the approved main image.
+ * "shot" images are the art-directed editorial shots, generated in batches from the approved main image;
+ * "detail" images are crops of the front flat used by the editorial.
  */
 export interface IShootImage {
   _id: Types.ObjectId;
@@ -96,7 +113,7 @@ const outfitSchema = new Schema<IOutfit>({ top: String, bottoms: String, shoes: 
 
 const imageSchema = new Schema<IShootImage>(
   {
-    kind: { type: String, enum: ["main", "shot"], required: true },
+    kind: { type: String, enum: ["main", "shot", "detail"], required: true },
     version: Number,
     is_current: Boolean,
     batch: Number,
@@ -135,13 +152,8 @@ const modelShootSchema = new Schema<IModelShoot>(
     status: { type: String, enum: ["generating", "ready", "failed"], default: "generating" },
     approved_main_id: { type: Schema.Types.ObjectId, default: null },
     images: [imageSchema],
-    editorial: {
-      type: new Schema<IEditorialCopy>(
-        { look_name: String, title: String, statement: [String], pull_quote: String, fabric: String, palette: String, generated_at: Date },
-        { _id: false },
-      ),
-      default: null,
-    },
+    // Mixed: older shoots hold a version-1 copy of a different shape; the service only reads version 2.
+    editorial: { type: Schema.Types.Mixed, default: null },
     total_cost_usd: { type: Number, default: 0 },
   },
   { timestamps: true },
