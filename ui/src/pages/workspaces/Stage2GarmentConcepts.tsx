@@ -522,31 +522,36 @@ function ConceptSection({
   const [canScrollRight, setCanScrollRight] = useState(true);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (isRefineOpen) setIsRefineOpen(false);
-      if (isInvOpen) setIsInvOpen(false);
-      
+    const updateScrollState = () => {
       if (scrollRef.current) {
         const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
         setCanScrollLeft(scrollLeft > 0);
         setCanScrollRight(Math.ceil(scrollLeft + clientWidth) < scrollWidth);
       }
     };
-    
+
+    // Only real scrolls close popovers; running this on effect re-run would
+    // close a popover the moment it opens.
+    const handleScroll = () => {
+      if (isRefineOpen) setIsRefineOpen(false);
+      if (isInvOpen) setIsInvOpen(false);
+      updateScrollState();
+    };
+
     // Check initial state
-    handleScroll();
-    
+    updateScrollState();
+
     // Listen to window scroll
     window.addEventListener("scroll", handleScroll, { passive: true });
-    window.addEventListener("resize", handleScroll, { passive: true });
-    
+    window.addEventListener("resize", updateScrollState, { passive: true });
+
     // Listen to horizontal container scroll
     const el = scrollRef.current;
     if (el) el.addEventListener("scroll", handleScroll, { passive: true });
-    
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleScroll);
+      window.removeEventListener("resize", updateScrollState);
       if (el) el.removeEventListener("scroll", handleScroll);
     };
   }, [isRefineOpen, isInvOpen, images.length, isLoading]);
