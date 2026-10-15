@@ -9,6 +9,8 @@ export const modelShootRouter = Router();
 modelShootRouter.use(requireAuth);
 
 modelShootRouter.get("/", asyncHandler(shootController.listShoots));
+// Literal path before "/:shootId" so it is not read as a shoot id.
+modelShootRouter.get("/variations", asyncHandler(shootController.listVariations));
 modelShootRouter.get("/:shootId", asyncHandler(shootController.getShoot));
 modelShootRouter.post("/:shootId/main", asyncHandler(shootController.regenerateMain));
 modelShootRouter.post("/:shootId/main/:imageId/select", asyncHandler(shootController.selectMain));

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import {
-  Autocomplete, Box, Button, Chip, CircularProgress, Dialog, IconButton, MenuItem, Select, Skeleton, Snackbar, TextField, Tooltip, Typography,
+  Autocomplete, Box, Button, Chip, CircularProgress, Dialog, IconButton, Menu, MenuItem, Select, Skeleton, Snackbar, TextField, Tooltip, Typography,
 } from "@mui/material";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import CloseIcon from "@mui/icons-material/Close";
@@ -8,9 +8,13 @@ import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
 import { api } from "../../lib/api/client";
 import { ConceptImage } from "../../components/ConceptImage";
+import { CompareVariations } from "./CompareVariations";
+import { EditorialCard, type Editorial } from "./EditorialMagazine";
+import { variationName, variationsQueryKey } from "./stage3Shared";
 
-// Stage 3: the finalised garment on a model. Configure the model → one main image → edit or regenerate it →
-// approve → the art director invents new editorial shots from it (a fresh set every time).
+// Stage 3: one finalised garment at a time, on a model. Configure the model → one main image → edit or regenerate
+// it → approve → the art director invents new editorial shots from it (a fresh set every time) → the garment's own
+// editorial. A switcher picks the garment in focus; "Compare variations" shows its Stage 2 variations side by side.
 
 type ImageStatus = "pending" | "generating" | "generated" | "failed";
 
@@ -37,6 +41,7 @@ interface Shoot {
   model_config: ModelConfig;
   outfit: Outfit | null;
   approved_main_id: string | null;
+  editorial: Editorial | null;
   main: { current: ShootImage | null; versions: ShootImage[] };
   shots: ShootImage[];
   total_cost_usd: number;
@@ -85,10 +90,18 @@ function errorMessage(err: unknown) {
 
 // ─── Section ──────────────────────────────────────────────────────────────────
 
-export function ModelShootSection({ workspaceId }: { workspaceId?: string }) {
+const focusKey = (workspaceId?: string) => `fashionere.stage3.focus.${workspaceId}`;
+
+function readFocus(workspaceId?: string) {
+  try { return localStorage.getItem(focusKey(workspaceId)); } catch { return null; }
+}
+
+export function ModelShootSection({ workspaceId, workspaceName }: { workspaceId?: string; workspaceName: string }) {
   const qc = useQueryClient();
   const queryKey = ["model-shoots", workspaceId];
-  const [selected, setSelected] = useState<string | null>(null);
+  const [selected, setSelected] = useState<string | null>(() => readFocus(workspaceId));
+  const [menuEl, setMenuEl] = useState<HTMLElement | null>(null);
+  const [comparing, setComparing] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
 
   const { data, isLoading } = useQuery<ShootList>({
@@ -100,11 +113,24 @@ export function ModelShootSection({ workspaceId }: { workspaceId?: string }) {
   const garments = data?.garments ?? [];
   const garment = garments.find((g) => g.concept_id === selected) ?? garments[0] ?? null;
 
+  // How many Stage 2 variations the focused garment has, for the compare button.
+  const { data: variations } = useQuery<{ variations: unknown[] }>({
+    queryKey: variationsQueryKey(garment?.concept_id),
+    queryFn: async () => (await api.get("/model-shoots/variations", { params: { concept_id: garment!.concept_id } })).data,
+    enabled: !!garment,
+  });
+  const variationCount = variations?.variations.length ?? 0;
+
+  const focus = (conceptId: string) => {
+    setSelected(conceptId);
+    setMenuEl(null);
+    try { localStorage.setItem(focusKey(workspaceId), conceptId); } catch { /* the focus just won't be remembered */ }
+  };
   const onDone = () => qc.invalidateQueries({ queryKey });
   const onError = (err: unknown) => setNotice(errorMessage(err));
 
   if (isLoading) return <Skeleton variant="rounded" sx={{ height: 420, borderRadius: "16px" }} />;
-  if (!garments.length) {
+  if (!garments.length || !garment) {
     return (
       <Box sx={{ height: 200, border: "1.5px dashed #e8dedd", borderRadius: "16px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 1, bgcolor: "#faf8f7", px: 4 }}>
         <Typography sx={{ fontSize: 13, color: "text.disabled", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.06em" }}>No garments yet</Typography>
@@ -115,37 +141,78 @@ export function ModelShootSection({ workspaceId }: { workspaceId?: string }) {
 
   return (
     <Box>
-      {garments.length > 1 && (
-        <Box sx={{ display: "flex", gap: 1.5, mb: 4, overflowX: "auto", pb: 1 }}>
-          {garments.map((g) => {
-            const active = g.concept_id === garment?.concept_id;
-            return (
-              <Box
-                key={g.concept_id}
-                onClick={() => setSelected(g.concept_id)}
-                sx={{ width: 96, flexShrink: 0, cursor: "pointer", borderRadius: "12px", overflow: "hidden", border: active ? "2px solid #000" : `1px solid ${BORDER}`, bgcolor: "#fff" }}
-              >
-                <Box sx={{ aspectRatio: "1", bgcolor: GROUND }}>
-                  <ConceptImage conceptId={g.concept_id} sx={{ objectFit: "contain" }} />
-                </Box>
-                <Box sx={{ px: 1, py: 0.75 }}>
-                  <Typography sx={{ fontSize: 11, fontWeight: 600, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{titleCase(g.garment_type)}</Typography>
-                  <Typography sx={{ fontSize: 10, color: "text.secondary" }}>{g.shoot ? (g.shoot.status === "generating" ? "Generating…" : `${g.shoot.shots.length} shots`) : "Not shot yet"}</Typography>
-                </Box>
-              </Box>
-            );
-          })}
+      {/* Focus: Stage 3 works on one garment at a time */}
+      <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, flexWrap: "wrap", p: 1.25, border: "1px solid #ecdedb", borderRadius: "14px", bgcolor: "#fff", mb: 4 }}>
+        <Typography sx={{ fontSize: 11, fontWeight: 600, letterSpacing: ".06em", textTransform: "uppercase", color: "#8a817e", pl: 0.5 }}>Working on</Typography>
+        <Box
+          component="button"
+          type="button"
+          aria-haspopup="menu"
+          onClick={(e: React.MouseEvent<HTMLElement>) => setMenuEl(e.currentTarget)}
+          sx={{ display: "flex", alignItems: "center", gap: 1.25, border: "1.5px solid #000", borderRadius: "10px", p: "5px 10px 5px 5px", bgcolor: "#fff", cursor: "pointer", textAlign: "left", maxWidth: "100%", font: "inherit", color: "inherit", "&:focus-visible": { outline: "2px solid #000", outlineOffset: 2 } }}
+        >
+          <Box sx={{ width: 38, height: 38, flexShrink: 0, borderRadius: "6px", overflow: "hidden" }}>
+            <ConceptImage conceptId={garment.concept_id} sx={{ objectFit: "contain" }} />
+          </Box>
+          <Box sx={{ minWidth: 0 }}>
+            <Typography sx={{ fontSize: 13, fontWeight: 600, lineHeight: 1.2 }}>{titleCase(garment.garment_type)}</Typography>
+            <Typography sx={{ fontSize: 11.5, color: "text.secondary", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", maxWidth: 260 }}>{variationName(garment)}</Typography>
+          </Box>
+          <Typography component="span" sx={{ fontSize: 12, color: "text.secondary", ml: 0.5 }}>▾</Typography>
         </Box>
-      )}
+        <Menu anchorEl={menuEl} open={!!menuEl} onClose={() => setMenuEl(null)} slotProps={{ paper: { sx: { borderRadius: "12px", minWidth: 280 } } }}>
+          {garments.map((g) => (
+            <MenuItem key={g.concept_id} selected={g.concept_id === garment.concept_id} onClick={() => focus(g.concept_id)} sx={{ gap: 1.25 }}>
+              <Box sx={{ width: 34, height: 34, flexShrink: 0, borderRadius: "5px", overflow: "hidden", border: `1px solid ${BORDER}` }}>
+                <ConceptImage conceptId={g.concept_id} sx={{ objectFit: "contain" }} />
+              </Box>
+              <Box sx={{ minWidth: 0 }}>
+                <Typography sx={{ fontSize: 12.5, fontWeight: 600 }}>{titleCase(g.garment_type)}</Typography>
+                <Typography sx={{ fontSize: 11, color: "text.secondary" }}>
+                  {variationName(g)} · {g.shoot ? (g.shoot.status === "generating" ? "generating" : `${g.shoot.shots.length} shots`) : "not shot yet"}
+                </Typography>
+              </Box>
+            </MenuItem>
+          ))}
+        </Menu>
+        <Box sx={{ flex: 1 }} />
+        <Button
+          variant="outlined"
+          disabled={variationCount < 2}
+          onClick={() => setComparing(true)}
+          sx={{ borderRadius: "8px", textTransform: "none", color: "text.primary", borderColor: "#e6d9d6" }}
+        >
+          {variationCount < 2 ? "No other variations" : `Compare variations (${variationCount})`}
+        </Button>
+      </Box>
 
-      {garment && (
-        <GarmentShoot
-          key={garment.concept_id}
-          garment={garment}
-          defaults={data!.default_model_config}
+      <GarmentShoot
+        key={garment.concept_id}
+        garment={garment}
+        defaults={data!.default_model_config}
+        costPerImage={data!.cost_per_image_usd}
+        onDone={onDone}
+        onError={onError}
+      />
+
+      <EditorialCard
+        key={`editorial-${garment.concept_id}`}
+        garment={garment}
+        others={garments.filter((g) => g.concept_id !== garment.concept_id)}
+        workspaceName={workspaceName}
+        onChanged={onDone}
+        onFocus={focus}
+      />
+
+      {comparing && (
+        <CompareVariations
+          open
+          onClose={() => setComparing(false)}
+          focusId={garment.concept_id}
+          modelConfig={(garment.shoot?.model_config as unknown as Record<string, string>) ?? null}
+          outfit={(garment.shoot?.outfit as unknown as Record<string, string>) ?? null}
           costPerImage={data!.cost_per_image_usd}
-          onDone={onDone}
-          onError={onError}
+          onFocus={focus}
         />
       )}
 
