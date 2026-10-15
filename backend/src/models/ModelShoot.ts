@@ -90,6 +90,7 @@ export interface IShootImage {
 export interface IModelShoot extends Document {
   workspace_id: Types.ObjectId;
   user_id: Types.ObjectId;
+  tenant_id?: Types.ObjectId | null;
   concept_id: Types.ObjectId;
   garment_type: string;
   model_config: IModelConfig;
@@ -138,6 +139,7 @@ const modelShootSchema = new Schema<IModelShoot>(
   {
     workspace_id: { type: Schema.Types.ObjectId, ref: "Workspace", required: true, index: true },
     user_id: { type: Schema.Types.ObjectId, ref: "User", required: true },
+    tenant_id: { type: Schema.Types.ObjectId, ref: "Tenant", default: null, index: true },
     concept_id: { type: Schema.Types.ObjectId, ref: "Concept", required: true, unique: true },
     garment_type: { type: String, required: true },
     model_config: { type: modelConfigSchema, required: true },

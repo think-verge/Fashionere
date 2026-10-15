@@ -9,6 +9,7 @@
     "start": "node dist/src/server.js",
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "openapi": "tsx scripts/export-openapi.ts",
+    "migrate:tenants": "tsx scripts/migrate-tenants.ts",
     "test": "vitest run"
   },
   "dependencies": {

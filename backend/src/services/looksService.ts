@@ -4,8 +4,9 @@ import { env } from "../config/env.js";
 
 const RETAIL_SOURCES = new Set(["zara", "hm", "mango", "uniqlo", "cos", "asos"]);
 
-function sourceType(doc: Record<string, unknown>): "retail" | "runway" {
+function sourceType(doc: Record<string, unknown>): "retail" | "runway" | "shopify" {
   const srcType = (doc.source as Record<string, unknown> | undefined)?.type as string | undefined;
+  if (srcType?.toLowerCase() === "shopify") return "shopify";
   if (srcType && RETAIL_SOURCES.has(srcType.toLowerCase())) return "retail";
   const brand = (
     (doc.context as Record<string, unknown> | undefined)?.brand_slug
@@ -33,6 +34,7 @@ function allImageUrls(doc: Record<string, unknown>): string[] {
 function buildSummary(doc: Record<string, unknown>, garmentCount: number) {
   const ctx = (doc.context as Record<string, unknown> | undefined) ?? {};
   const nativeText = (doc.native_text as Record<string, unknown> | undefined) ?? {};
+  const tenantId = (doc.tenant_id as string | undefined) ?? null;
   return {
     id: String(doc._id),
     brand: (ctx.brand ?? doc.brand ?? "") as string,
@@ -40,6 +42,8 @@ function buildSummary(doc: Record<string, unknown>, garmentCount: number) {
     season: (ctx.season ?? doc.season ?? "") as string,
     year: ((ctx.year ?? doc.year ?? 0) as number),
     source_type: sourceType(doc),
+    tenant_id: tenantId,
+    is_private: !!tenantId,
     thumbnail: primaryImage(doc),
     garment_count: garmentCount,
     is_deconstructed: garmentCount > 0,
@@ -98,14 +102,58 @@ function decodeCursor(cursor: string): string {
 const looksCol = () => mongoose.connection.db!.collection("canonical_looks");
 const deconCol = () => mongoose.connection.db!.collection("deconstructions");
 
-export async function listLooksFilters(opts: { type?: string }) {
-  const { type } = opts;
+export function buildTenantFilter(tenantId?: string | null, source?: string | null): Record<string, unknown> {
+  // If user explicitly asks for "my_shopify" or "shopify"
+  if (source === "shopify" || source === "my_shopify") {
+    if (!tenantId) {
+      // Unauthenticated or no tenant -> cannot see any private shopify looks
+      return { _id: { $in: [] } };
+    }
+    return {
+      "source.type": "shopify",
+      tenant_id: tenantId,
+    };
+  }
 
-  const typeFilter: Record<string, unknown> = {};
+  // If user explicitly asks for "catalog" (public catalog looks only)
+  if (source === "catalog") {
+    return {
+      $or: [
+        { tenant_id: null },
+        { tenant_id: { $exists: false } },
+      ],
+      "source.type": { $ne: "shopify" },
+    };
+  }
+
+  // General "All" query: public canonical looks OR looks belonging to this specific tenant
+  if (tenantId) {
+    return {
+      $or: [
+        { tenant_id: null },
+        { tenant_id: { $exists: false } },
+        { tenant_id: tenantId },
+      ],
+    };
+  }
+
+  // Fallback if no tenant context: public looks only
+  return {
+    $or: [
+      { tenant_id: null },
+      { tenant_id: { $exists: false } },
+    ],
+  };
+}
+
+export async function listLooksFilters(opts: { type?: string; tenantId?: string }) {
+  const { type, tenantId } = opts;
+
+  const typeFilter: Record<string, unknown> = buildTenantFilter(tenantId);
   if (type === "retail") {
     typeFilter["source.type"] = { $in: [...RETAIL_SOURCES] };
   } else if (type === "runway") {
-    typeFilter["source.type"] = { $nin: [...RETAIL_SOURCES] };
+    typeFilter["source.type"] = { $nin: [...RETAIL_SOURCES, "shopify"] };
   }
 
   const deconDocs = await deconCol()
@@ -155,6 +203,7 @@ export async function listLooksFilters(opts: { type?: string }) {
 
 export async function listLooks(opts: {
   type?: string;
+  source?: string;
   limit: number;
   cursor?: string;
   brand?: string;
@@ -162,11 +211,15 @@ export async function listLooks(opts: {
   search?: string;
   sort?: string;
   is_deconstructed?: boolean;
+  tenantId?: string;
 }) {
-  const { type, limit, cursor, brand, garment_type, search, sort, is_deconstructed } = opts;
+  const { type, source, limit, cursor, brand, garment_type, search, sort, is_deconstructed, tenantId } = opts;
+
+  // Base tenant visibility filter
+  const tenantFilter = buildTenantFilter(tenantId, source);
 
   // Base type filter (used for total count too)
-  const typeFilter: Record<string, any> = {};
+  const typeFilter: Record<string, any> = { ...tenantFilter };
 
   if (is_deconstructed) {
     const deconLookIds = await deconCol().distinct("look_id");
@@ -176,7 +229,7 @@ export async function listLooks(opts: {
   if (type === "retail") {
     typeFilter["source.type"] = { $in: [...RETAIL_SOURCES] };
   } else if (type === "runway") {
-    typeFilter["source.type"] = { $nin: [...RETAIL_SOURCES] };
+    typeFilter["source.type"] = { $nin: [...RETAIL_SOURCES, "shopify"] };
   }
   if (brand) {
     const brands = brand.split(",").map(b => b.trim());
@@ -277,10 +330,16 @@ export async function listLooks(opts: {
   };
 }
 
-export async function getLook(lookId: string) {
+export async function getLook(lookId: string, tenantId?: string | null) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const d = await looksCol().findOne({ _id: lookId as any }) as Record<string, unknown> | null;
   if (!d) throw new ApiError(404, "Look not found");
+
+  // Multi-tenant check: if look is private to a tenant, only that tenant can access it
+  const lookTenantId = (d.tenant_id as string | undefined) ?? null;
+  if (lookTenantId && (!tenantId || String(lookTenantId) !== String(tenantId))) {
+    throw new ApiError(404, "Look not found");
+  }
 
   const decon = await deconCol().findOne({ look_id: lookId });
   const garments = ((decon as Record<string, unknown> | null)?.garments as Array<Record<string, unknown>>) ?? [];
@@ -304,6 +363,8 @@ export async function getLook(lookId: string) {
     category: (categoryPath?.[categoryPath.length - 1] ?? ctx.category ?? "") as string,
     name: (nativeText.product_name ?? d.name ?? "") as string,
     source_type: sourceType(d),
+    tenant_id: lookTenantId,
+    is_private: !!lookTenantId,
     images: allImageUrls(d),
     tags: keywords,
     analysis: isStructuredAnalysis ? (rawTags as Record<string, unknown>) : null,
@@ -311,14 +372,20 @@ export async function getLook(lookId: string) {
   };
 }
 
-export async function getGarments(lookId: string) {
+export async function getGarments(lookId: string, tenantId?: string | null) {
+  // Enforce access control on parent look first
+  await getLook(lookId, tenantId);
+
   const decon = await deconCol().findOne({ look_id: lookId });
   if (!decon) return [];
   const garments = ((decon as Record<string, unknown>).garments as Array<Record<string, unknown>>) ?? [];
   return garments.map((g) => buildGarment(g, lookId));
 }
 
-export async function getGarment(lookId: string, garmentId: string) {
+export async function getGarment(lookId: string, garmentId: string, tenantId?: string | null) {
+  // Enforce access control on parent look first
+  await getLook(lookId, tenantId);
+
   const decon = await deconCol().findOne({ look_id: lookId });
   if (!decon) throw new ApiError(404, "Garment not found");
   const garments = ((decon as Record<string, unknown>).garments as Array<Record<string, unknown>>) ?? [];

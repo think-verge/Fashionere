@@ -37,6 +37,7 @@ export interface IPassedCombo {
 export interface IGenerationJob extends Document {
   workspace_id: Types.ObjectId;
   user_id: Types.ObjectId;
+  tenant_id?: Types.ObjectId | null;
   mode: "manual" | "suggest";
   combos_total: number;
   combos_completed: number;
@@ -121,6 +122,7 @@ const generationJobSchema = new Schema<IGenerationJob>(
   {
     workspace_id: { type: Schema.Types.ObjectId, ref: "Workspace", required: true, index: true },
     user_id: { type: Schema.Types.ObjectId, ref: "User", required: true },
+    tenant_id: { type: Schema.Types.ObjectId, ref: "Tenant", default: null, index: true },
     mode: { type: String, enum: ["manual", "suggest"], required: true },
     combos_total: { type: Number, default: 0 },
     combos_completed: { type: Number, default: 0 },

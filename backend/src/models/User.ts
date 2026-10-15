@@ -7,6 +7,7 @@ export interface IUser extends Document {
   role: "designer" | "retail_chain";
   sources: string[];
   garment_interests: string[];
+  tenant_id?: mongoose.Types.ObjectId | null;
   onboarding_complete: boolean;
   createdAt: Date;
   updatedAt: Date;
@@ -18,6 +19,7 @@ const userSchema = new Schema<IUser>(
     password: { type: String, required: true },
     name: { type: String, required: true, trim: true },
     role: { type: String, enum: ["designer", "retail_chain"], default: "designer" },
+    tenant_id: { type: Schema.Types.ObjectId, ref: "Tenant", default: null, index: true },
     sources: [{ type: String }],
     garment_interests: [{ type: String }],
     onboarding_complete: { type: Boolean, default: false },

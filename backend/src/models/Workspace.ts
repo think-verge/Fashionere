@@ -18,6 +18,7 @@ export interface IWorkspace extends Document {
   name: string;
   project_id: Types.ObjectId;
   user_id: Types.ObjectId;
+  tenant_id?: Types.ObjectId | null;
   status: "draft" | "ready" | "generating";
   elements: IWorkspaceElement[];
   canvas_meta: Record<string, unknown>;
@@ -47,6 +48,7 @@ const workspaceSchema = new Schema<IWorkspace>(
     name: { type: String, required: true, trim: true },
     project_id: { type: Schema.Types.ObjectId, ref: "Project", required: true },
     user_id: { type: Schema.Types.ObjectId, ref: "User", required: true },
+    tenant_id: { type: Schema.Types.ObjectId, ref: "Tenant", default: null, index: true },
     status: { type: String, enum: ["draft", "ready", "generating"], default: "draft" },
     elements: [elementSchema],
     canvas_meta: { type: Schema.Types.Mixed, default: {} },
