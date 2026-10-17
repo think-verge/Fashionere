@@ -41,6 +41,7 @@ import { PaletteStrip } from "../../components/PaletteStrip";
 import { CustomUploadDialog } from "./CustomUploadDialog";
 import { useAuth } from "../../lib/auth-context";
 import { api } from "../../lib/api/client";
+import { isInBuilder } from "../../lib/elements";
 
 // ─── Data model ──────────────────────────────────────────────────────────────
 
@@ -49,13 +50,16 @@ interface WorkspaceElement {
   look_id?: string;
   garment_id?: string;
   garment_type: string;
-  element_type: "color" | "fabric" | "pattern" | "silhouette";
+  element_type: "color" | "fabric" | "pattern" | "silhouette" | "shot";
   data: Record<string, unknown>;
   source_brand: string;
   row: string;
   canvas_row?: number | null;
   canvas_position?: { x?: number; y?: number };
   is_custom?: boolean;
+  folder_id?: string | null;
+  /** Moved to the AI builder from the moodboard (absent on legacy elements = in builder). */
+  in_builder?: boolean;
 }
 
 interface Workspace {
@@ -594,7 +598,7 @@ function InventoryPanel({
               </Box>
             ) : elements.length === 0 ? (
               <Typography sx={{ fontSize: 12, color: "text.disabled", textAlign: "center", mt: 4, px: 2 }}>
-                No elements yet. Browse looks to add elements.
+                Nothing here yet. Move looks or folders from your moodboard.
               </Typography>
             ) : (
               [...grouped.entries()].map(([brand, garments]) => (
@@ -769,6 +773,17 @@ export default function WorkspaceCanvas() {
     onSuccess: () => qc.invalidateQueries({ queryKey: ["workspace", id] }),
   });
 
+  // Take an element back out of the builder; it stays filed in the moodboard.
+  const unbuild = useMutation({
+    mutationFn: async (elementId: string) => {
+      await api.post(`/workspace/${id}/builder/remove`, { element_ids: [elementId] });
+    },
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ["workspace", id] });
+      qc.invalidateQueries({ queryKey: ["folders", id] });
+    },
+  });
+
   const savePositions = useCallback(
     async (elements: WorkspaceElement[]) => {
       try {
@@ -873,6 +888,17 @@ export default function WorkspaceCanvas() {
       }).catch(onStreamError);
     },
   });
+
+  // Inventory = elements moved here from the moodboard (shots and moodboard-only items stay out)
+  const builderElements = useMemo(() => ws?.elements.filter(isInBuilder) ?? [], [ws]);
+
+  // Generation needs at least one silhouette, colour and fabric among the builder elements
+  const missingTypes = useMemo(
+    () => (["silhouette", "color", "fabric"] as const)
+      .filter((t) => !builderElements.some((e) => e.element_type === t))
+      .map((t) => (t === "color" ? "colour" : t)),
+    [builderElements],
+  );
 
   // Canvas elements = only those with canvas_row assigned
   const canvasElements = useMemo(
@@ -1046,14 +1072,19 @@ export default function WorkspaceCanvas() {
             {ws.name}
           </Typography>
           <Typography sx={{ color: "text.secondary", fontSize: 14, mt: 0.5 }}>
-            {ws.elements.length} element{ws.elements.length !== 1 ? "s" : ""}
+            {builderElements.length} element{builderElements.length !== 1 ? "s" : ""}
             {anyRowComplete && (
               <Box component="span" sx={{ color: "success.main", ml: 1 }}>· Ready to generate</Box>
             )}
             {canvasElements.length > 0 && !anyRowComplete && (
               <Box component="span" sx={{ color: "text.disabled", ml: 1 }}>· Complete a row to generate</Box>
             )}
-            {canvasElements.length === 0 && ws.elements.length > 0 && (
+            {builderElements.length > 0 && missingTypes.length > 0 && (
+              <Box component="span" sx={{ color: "warning.main", ml: 1 }}>
+                · Move a {missingTypes.join(" and ")} from your moodboard to generate
+              </Box>
+            )}
+            {canvasElements.length === 0 && builderElements.length > 0 && (
               <Box component="span" sx={{ color: "text.disabled", ml: 1 }}>· Start by adding a silhouette</Box>
             )}
           </Typography>
@@ -1098,7 +1129,7 @@ export default function WorkspaceCanvas() {
         }}
       >
         <InventoryPanel
-          elements={ws.elements}
+          elements={builderElements}
           open={sidebarOpen}
           onToggle={() => setSidebarOpen((v) => !v)}
           canvasRows={canvasRows}
@@ -1126,7 +1157,7 @@ export default function WorkspaceCanvas() {
               <Skeleton variant="rectangular" width="100%" height={140} sx={{ borderRadius: 3 }} />
               <Skeleton variant="rectangular" width="100%" height={140} sx={{ borderRadius: 3 }} />
             </Box>
-          ) : ws.elements.length === 0 ? (
+          ) : builderElements.length === 0 ? (
             <Box
               sx={{
                 height: "100%",
@@ -1139,18 +1170,20 @@ export default function WorkspaceCanvas() {
               }}
             >
               <Typography sx={{ color: "text.secondary", fontFamily: "'Literata', Georgia, serif", fontSize: 18, mb: 0.5 }}>
-                No elements yet
+                Nothing in the AI builder yet
               </Typography>
-              <Typography sx={{ color: "text.disabled", fontSize: 14, mb: 2 }}>
-                Browse looks and add silhouette, colour, fabric, or pattern elements.
+              <Typography sx={{ color: "text.disabled", fontSize: 14, mb: 2, textAlign: "center", maxWidth: 360 }}>
+                {ws.elements.length > 0
+                  ? "Open your moodboard and move a look or folder here to start building."
+                  : "Add looks to this workspace, then move the ones you want to build with."}
               </Typography>
               <Button
                 variant="outlined"
                 startIcon={<SearchOutlinedIcon />}
-                onClick={() => nav("/app/looks")}
+                onClick={() => nav(ws.elements.length > 0 ? `/app/workspace/${id}` : "/app/looks")}
                 sx={{ borderColor: "#f0e4e2", color: "text.secondary", borderRadius: "10px", "&:hover": { borderColor: "#dfbfbc", bgcolor: "#fff0ef" } }}
               >
-                Browse Looks
+                {ws.elements.length > 0 ? "Open moodboard" : "Browse Looks"}
               </Button>
             </Box>
           ) : canvasElements.length === 0 ? (
@@ -1378,6 +1411,19 @@ export default function WorkspaceCanvas() {
                   Remove from canvas
                 </Button>
               )}
+              {detailElement.folder_id && (
+                <Button
+                  size="small"
+                  startIcon={<LayersOutlinedIcon fontSize="small" />}
+                  onClick={() => {
+                    unbuild.mutate(detailElement.element_id);
+                    setDetailPop(null);
+                  }}
+                  sx={{ justifyContent: "flex-start", fontSize: 12, color: "text.secondary", py: 0.5, borderRadius: "8px", "&:hover": { bgcolor: "#f5f0ef" } }}
+                >
+                  Remove from AI builder
+                </Button>
+              )}
               <Button
                 size="small"
                 startIcon={<DeleteOutlineIcon fontSize="small" />}
@@ -1398,6 +1444,7 @@ export default function WorkspaceCanvas() {
         open={uploadOpen}
         onClose={() => setUploadOpen(false)}
         workspaceId={id!}
+        defaultToBuilder
       />
 
       {/* AI Studio */}

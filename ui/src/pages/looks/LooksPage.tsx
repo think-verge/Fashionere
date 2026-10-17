@@ -3,13 +3,15 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { useQuery, useInfiniteQuery } from "@tanstack/react-query";
 import {
   Box, Card, CardActionArea, CardMedia, CardContent,
-  Typography, Chip, Button, Skeleton, Menu, MenuItem
+  Typography, Chip, Button, Skeleton, Menu, MenuItem, Checkbox, Tooltip, Paper
 } from "@mui/material";
+import PlaylistAddIcon from "@mui/icons-material/PlaylistAdd";
 import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
 import FilterListIcon from "@mui/icons-material/FilterList";
 import { PageHeader } from "../../components/PageHeader";
 import { useAuth } from "../../lib/auth-context";
 import { api } from "../../lib/api/client";
+import { AddLooksToWorkspace } from "../../components/AddLooksToWorkspace";
 
 interface LookSummary {
   id: string;
@@ -35,7 +37,10 @@ interface FiltersResponse {
 
 export default function LooksPage() {
   const navigate = useNavigate();
-  const { user } = useAuth();
+  const { user, activeProject } = useAuth();
+  const [picked, setPicked] = useState<string[]>([]);
+  const [addOpen, setAddOpen] = useState(false);
+  const togglePick = (id: string) => setPicked((p) => (p.includes(id) ? p.filter((x) => x !== id) : [...p, id]));
   const type = user?.role === "retail_chain" ? "retail" : "runway";
 
   const [selectedBrand, setSelectedBrand] = useState<string[]>([]);
@@ -350,11 +355,12 @@ export default function LooksPage() {
             {looks.map((look, index) => (
               <Box key={look.id}>
                 <Card sx={{ 
+                  position: "relative",
                   height: "100%", 
                   borderRadius: "24px", 
                   bgcolor: "rgba(255, 255, 255, 0.4)", 
                   backdropFilter: "blur(20px)", 
-                  boxShadow: "0 8px 32px rgba(160, 140, 130, 0.05)", 
+                  boxShadow: picked.includes(look.id) ? "0 0 0 2px #000" : "0 8px 32px rgba(160, 140, 130, 0.05)", 
                   border: "1px solid rgba(255,255,255,0.7)", 
                   transition: "all 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
                   animation: "fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both",
@@ -369,6 +375,20 @@ export default function LooksPage() {
                     transform: "scale(1.08)"
                   }
                 }}>
+                  {activeProject && (
+                    <Tooltip title="Select to add to a workspace">
+                      <Checkbox
+                        size="small"
+                        checked={picked.includes(look.id)}
+                        onChange={() => togglePick(look.id)}
+                        inputProps={{ "aria-label": `Select ${look.name || look.brand}` }}
+                        sx={{
+                          position: "absolute", top: 20, left: 20, zIndex: 2, p: 0.5, bgcolor: "rgba(255,255,255,0.92)", borderRadius: "8px",
+                          "&:hover": { bgcolor: "#fff" }, "&.Mui-checked": { color: "text.primary" },
+                        }}
+                      />
+                    </Tooltip>
+                  )}
                   <CardActionArea onClick={() => navigate(`/app/looks/${look.id}`)} sx={{ height: "100%", display: "flex", flexDirection: "column", alignItems: "stretch" }}>
                     <Box sx={{ position: "relative", bgcolor: "transparent", aspectRatio: "3/4", overflow: "hidden", p: 1.5, pb: 0 }}>
                       <Box sx={{ width: "100%", height: "100%", borderRadius: "16px", overflow: "hidden", position: "relative", bgcolor: "#f5f0ef" }}>
@@ -481,6 +501,35 @@ export default function LooksPage() {
             </Box>
           )}
         </>
+      )}
+
+      {picked.length > 0 && activeProject && (
+        <Paper
+          elevation={8}
+          sx={{
+            position: "fixed", bottom: 24, left: "50%", transform: "translateX(-50%)", zIndex: 1200,
+            display: "flex", alignItems: "center", gap: 2, px: 2.5, py: 1.25, borderRadius: "999px",
+          }}
+        >
+          <Typography sx={{ fontSize: 13, fontWeight: 600 }}>{picked.length} look{picked.length !== 1 ? "s" : ""} selected</Typography>
+          <Button size="small" onClick={() => setPicked([])} sx={{ color: "text.secondary", textTransform: "none" }}>Clear</Button>
+          <Button
+            size="small" variant="contained" disableElevation startIcon={<PlaylistAddIcon />}
+            onClick={() => setAddOpen(true)}
+            sx={{ borderRadius: "999px", textTransform: "none", fontWeight: 600 }}
+          >
+            Add to workspace
+          </Button>
+        </Paper>
+      )}
+      {activeProject && (
+        <AddLooksToWorkspace
+          open={addOpen}
+          projectId={activeProject.id}
+          lookIds={picked}
+          onClose={() => setAddOpen(false)}
+          onDone={() => setPicked([])}
+        />
       )}
     </Box>
   );

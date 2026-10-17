@@ -16,25 +16,17 @@ import AutoAwesomeOutlinedIcon from "@mui/icons-material/AutoAwesomeOutlined";
 import TableRowsOutlinedIcon from "@mui/icons-material/TableRowsOutlined";
 import AccountTreeOutlinedIcon from "@mui/icons-material/AccountTreeOutlined";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
+import FolderOutlinedIcon from "@mui/icons-material/FolderOutlined";
 import { PaletteStrip } from "../../components/PaletteStrip";
 import { CustomUploadDialog } from "./CustomUploadDialog";
 import { api } from "../../lib/api/client";
+import { MoodboardView } from "./MoodboardView";
+import {
+  TYPE_ICONS, getColors, getElementLabel, getPreviewUrl, isInBuilder,
+  type WorkspaceElement,
+} from "../../lib/elements";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
-
-interface WorkspaceElement {
-  element_id: string;
-  look_id?: string;
-  garment_id?: string;
-  garment_type: string;
-  element_type: "color" | "fabric" | "pattern" | "silhouette";
-  data: Record<string, unknown>;
-  source_brand: string;
-  row: string;
-  canvas_row?: number | null;
-  canvas_position?: { x?: number; y?: number };
-  is_custom?: boolean;
-}
 
 interface Workspace {
   _id: string;
@@ -45,13 +37,6 @@ interface Workspace {
 }
 
 // ─── Constants ────────────────────────────────────────────────────────────────
-
-const TYPE_ICONS: Record<string, string> = {
-  color: "🎨",
-  fabric: "🪢",
-  pattern: "✦",
-  silhouette: "👗",
-};
 
 const TYPE_CHIP_COLOR: Record<string, "warning" | "info" | "secondary" | "default" | "success"> = {
   color: "warning",
@@ -75,39 +60,6 @@ const REQUIRED_TYPES = ["silhouette", "color", "fabric", "pattern"] as const;
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
-function getElementLabel(el: WorkspaceElement): string {
-  switch (el.element_type) {
-    case "color": {
-      const colors = (el.data?.colors as Array<{ name?: string; hex?: string }> | undefined) ?? [];
-      if (colors.length === 0) return "Color palette";
-      return colors.slice(0, 2).map((c) => c.name || c.hex || "").filter(Boolean).join(", ") || "Color palette";
-    }
-    case "fabric": {
-      const f = el.data?.fabric;
-      if (!f) return "Fabric";
-      if (typeof f === "string") return f;
-      return (f as { name?: string }).name ?? "Fabric";
-    }
-    case "pattern":
-      return (el.data?.pattern as string | undefined) ?? "Pattern";
-    case "silhouette":
-      return "Technical flat";
-    default:
-      return el.element_type;
-  }
-}
-
-function getPreviewUrl(el: WorkspaceElement): string | null {
-  if (el.element_type === "silhouette") return (el.data?.flat_url as string) ?? null;
-  if (el.element_type === "fabric") return (el.data?.fabric as { image_url?: string } | undefined)?.image_url ?? (el.data?.image_url as string) ?? null;
-  if (el.element_type === "pattern") return (el.data?.image_url as string) ?? null;
-  return null;
-}
-
-function getColors(el: WorkspaceElement) {
-  return (el.data?.colors as Array<{ hex?: string; name?: string; family?: string }> | undefined) ?? [];
-}
-
 // ─── Main page ────────────────────────────────────────────────────────────────
 
 export default function WorkspaceDetailPage() {
@@ -116,8 +68,9 @@ export default function WorkspaceDetailPage() {
   const qc = useQueryClient();
 
   const [selected, setSelected] = useState<Set<string>>(new Set());
-  const [viewMode, setViewMode] = useState<"flat" | "grouped">("grouped");
+  const [viewMode, setViewMode] = useState<"folders" | "flat" | "grouped">("folders");
   const [uploadOpen, setUploadOpen] = useState(false);
+  const [uploadFolderId, setUploadFolderId] = useState<string | undefined>(undefined);
   const [editingGarmentId, setEditingGarmentId] = useState<string | null>(null);
   const [deletingIds, setDeletingIds] = useState<Set<string>>(new Set());
 
@@ -155,7 +108,10 @@ export default function WorkspaceDetailPage() {
 
   // ── Derived data ───────────────────────────────────────────────────────────
 
-  const elements = useMemo(() => ws?.elements ?? [], [ws?.elements]);
+  // Moodboard-only "shot" images aren't elements you build with; they live in the folder view.
+  const allElements = useMemo(() => ws?.elements ?? [], [ws?.elements]);
+  const elements = useMemo(() => allElements.filter((e) => e.element_type !== "shot"), [allElements]);
+  const builderCount = useMemo(() => allElements.filter(isInBuilder).length, [allElements]);
 
   const typeCounts = useMemo(() => {
     const counts: Record<string, number> = { silhouette: 0, fabric: 0, pattern: 0, color: 0 };
@@ -210,8 +166,11 @@ export default function WorkspaceDetailPage() {
   async function handleBulkDelete() {
     const ids = Array.from(selected);
     setDeletingIds(new Set(ids));
-    const remaining = elements.filter((e) => !selected.has(e.element_id));
-    await updateElements.mutateAsync(remaining);
+    // Per-element deletes: a PUT of the remaining list would be merged with the
+    // server's moodboard-only elements and silently bring deleted ones back.
+    await Promise.all(ids.map((elId) => api.delete(`/workspace/${id}/elements/${elId}`)));
+    await qc.invalidateQueries({ queryKey: ["workspace", id] });
+    qc.invalidateQueries({ queryKey: ["folders", id] });
     setSelected(new Set());
     setDeletingIds(new Set());
   }
@@ -274,7 +233,7 @@ export default function WorkspaceDetailPage() {
             />
           </Box>
           <Typography sx={{ fontSize: 13, color: "text.secondary" }}>
-            {elements.length} element{elements.length !== 1 ? "s" : ""}
+            {elements.length} element{elements.length !== 1 ? "s" : ""} · {builderCount} in AI builder
             {completeRows > 0 && ` · ${completeRows} complete row${completeRows !== 1 ? "s" : ""}`}
           </Typography>
         </Box>
@@ -326,6 +285,11 @@ export default function WorkspaceDetailPage() {
           size="small"
           sx={{ "& .MuiToggleButton-root": { border: "1px solid #f0e4e2", borderRadius: "8px !important", px: 1.5, py: 0.5 } }}
         >
+          <ToggleButton value="folders">
+            <Tooltip title="Moodboard folders">
+              <FolderOutlinedIcon sx={{ fontSize: 16 }} />
+            </Tooltip>
+          </ToggleButton>
           <ToggleButton value="grouped">
             <Tooltip title="Group by garment type">
               <AccountTreeOutlinedIcon sx={{ fontSize: 16 }} />
@@ -341,7 +305,7 @@ export default function WorkspaceDetailPage() {
         <Button
           startIcon={<CloudUploadOutlinedIcon />}
           size="small"
-          onClick={() => setUploadOpen(true)}
+          onClick={() => { setUploadFolderId(undefined); setUploadOpen(true); }}
           sx={{ borderRadius: "8px", border: "1px solid #f0e4e2", color: "text.secondary", fontSize: 13, "&:hover": { borderColor: "primary.main", color: "primary.main", bgcolor: "#fff0ef" } }}
         >
           Upload custom
@@ -362,18 +326,27 @@ export default function WorkspaceDetailPage() {
         )}
       </Box>
 
+      {/* Moodboard — folders by day */}
+      {viewMode === "folders" && (
+        <MoodboardView
+          workspaceId={id!}
+          elements={allElements}
+          onUpload={(folderId) => { setUploadFolderId(folderId); setUploadOpen(true); }}
+        />
+      )}
+
       {/* Empty state */}
-      {elements.length === 0 && (
+      {viewMode !== "folders" && elements.length === 0 && (
         <Box sx={{ textAlign: "center", py: 12, border: "1px dashed #f0e4e2", borderRadius: "12px" }}>
           <Typography sx={{ fontSize: 40, mb: 2 }}>🪣</Typography>
           <Typography sx={{ color: "text.secondary", fontWeight: 500, mb: 1 }}>No elements yet</Typography>
           <Typography sx={{ color: "text.disabled", fontSize: 14, mb: 3 }}>
-            Add elements from looks or upload your own custom designs.
+            Add whole looks from the Looks page or upload your own custom designs.
           </Typography>
           <Button
             variant="contained"
             startIcon={<CloudUploadOutlinedIcon />}
-            onClick={() => setUploadOpen(true)}
+            onClick={() => { setUploadFolderId(undefined); setUploadOpen(true); }}
             sx={{ borderRadius: "10px" }}
           >
             Upload custom
@@ -493,6 +466,7 @@ export default function WorkspaceDetailPage() {
         open={uploadOpen}
         onClose={() => setUploadOpen(false)}
         workspaceId={id!}
+        defaultFolderId={uploadFolderId}
       />
     </Box>
   );

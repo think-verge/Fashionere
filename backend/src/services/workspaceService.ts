@@ -1,7 +1,10 @@
 import { v4 as uuidv4 } from "uuid";
 import { Workspace } from "../models/Workspace.js";
+import { Folder } from "../models/Folder.js";
 import { ApiError } from "../utils/api-error.js";
 import type { IWorkspaceElement } from "../models/Workspace.js";
+import { ensureDateFolder, resolveElementFolder } from "./folderService.js";
+import { elementKey, todayString } from "./folderLayout.js";
 
 export async function listWorkspaces(userId: string, projectId?: string) {
   const filter: Record<string, unknown> = { user_id: userId };
@@ -15,8 +18,11 @@ export async function getWorkspace(id: string, userId: string) {
   return ws;
 }
 
-export async function createWorkspace(userId: string, projectId: string, name: string) {
-  return Workspace.create({ name, project_id: projectId, user_id: userId, elements: [] });
+export async function createWorkspace(userId: string, projectId: string, name: string, tz?: string) {
+  const ws = await Workspace.create({ name, project_id: projectId, user_id: userId, elements: [] });
+  // Ready for looks straight away: today's folder (with its five element folders) exists from the start.
+  await ensureDateFolder(ws._id, ws.user_id, ws.name, todayString(tz));
+  return ws;
 }
 
 export async function renameWorkspace(id: string, userId: string, name: string) {
@@ -29,41 +35,74 @@ export async function renameWorkspace(id: string, userId: string, name: string) 
   return ws;
 }
 
-export async function appendElement(id: string, userId: string, element: Partial<IWorkspaceElement>) {
+export async function appendElement(
+  id: string,
+  userId: string,
+  element: Partial<IWorkspaceElement> & { folder_id?: string; new_folder_name?: string; tz?: string; in_builder?: boolean },
+) {
   const ws = await Workspace.findOne({ _id: id, user_id: userId });
   if (!ws) throw new ApiError(404, "Workspace not found");
   const el: IWorkspaceElement = {
     element_id: element.element_id ?? uuidv4(),
-    look_id: element.look_id!,
-    garment_id: element.garment_id!,
-    garment_type: element.garment_type!,
+    look_id: element.look_id ?? "",
+    garment_id: element.garment_id ?? "",
+    garment_type: element.garment_type ?? "custom",
     element_type: element.element_type!,
     data: element.data ?? {},
     source_brand: element.source_brand ?? "",
     canvas_position: element.canvas_position ?? { x: 0, y: 0 },
     row: element.row ?? element.garment_type ?? "",
     canvas_row: element.canvas_row ?? null,
+    is_custom: element.is_custom ?? false,
   };
-  const isDuplicate = ws.elements.some(
-    (e) =>
-      e.look_id === el.look_id &&
-      e.garment_id === el.garment_id &&
-      e.element_type === el.element_type,
-  );
-  if (isDuplicate) throw new ApiError(409, "This element is already in the workspace");
-  ws.elements.push(el);
-  await ws.save();
-  return ws.toObject();
+  const key = elementKey(el);
+  if (ws.elements.some((e) => elementKey(e) === key)) {
+    throw new ApiError(409, "This element is already in the workspace");
+  }
+  el.folder_id = await resolveElementFolder({
+    workspaceId: id,
+    userId,
+    elementType: el.element_type,
+    folderId: element.folder_id,
+    newFolderName: element.new_folder_name,
+    tz: element.tz,
+  });
+  el.in_builder = element.in_builder ?? false;
+  el.added_at = new Date();
+  await Workspace.updateOne({ _id: id }, { $push: { elements: el } });
+  return (await Workspace.findById(id).lean())!;
 }
 
+/**
+ * Replace the element list (used by the builder canvas for rows/positions).
+ * Moodboard state is server-owned: folder/in_builder/added_at are kept from the
+ * stored element, and moodboard-only elements the client doesn't know about
+ * (shots, anything not in the builder) are preserved.
+ */
 export async function replaceElements(id: string, userId: string, elements: IWorkspaceElement[]) {
+  const current = await Workspace.findOne({ _id: id, user_id: userId }).lean();
+  if (!current) throw new ApiError(404, "Workspace not found");
+  const stored = new Map(current.elements.map((e) => [e.element_id, e]));
+  const incomingIds = new Set(elements.map((e) => e.element_id));
+
+  const merged: IWorkspaceElement[] = elements.map((e) => {
+    const s = stored.get(e.element_id);
+    return s
+      ? { ...e, folder_id: s.folder_id ?? null, in_builder: s.in_builder, added_at: s.added_at }
+      : e;
+  });
+  for (const s of current.elements) {
+    if (!incomingIds.has(s.element_id) && (s.element_type === "shot" || s.in_builder === false)) {
+      merged.push(s);
+    }
+  }
+
   const ws = await Workspace.findOneAndUpdate(
     { _id: id, user_id: userId },
-    { elements, updatedAt: new Date() },
+    { elements: merged, updatedAt: new Date() },
     { new: true },
   ).lean();
-  if (!ws) throw new ApiError(404, "Workspace not found");
-  return ws;
+  return ws!;
 }
 
 export async function removeElement(id: string, userId: string, elementId: string) {
@@ -97,6 +136,7 @@ export async function setGenerating(id: string, userId: string) {
 export async function deleteWorkspace(id: string, userId: string) {
   const ws = await Workspace.findOneAndDelete({ _id: id, user_id: userId });
   if (!ws) throw new ApiError(404, "Workspace not found");
+  await Folder.deleteMany({ workspace_id: id });
 }
 
 export async function uploadElement(
@@ -106,6 +146,7 @@ export async function uploadElement(
   file: Express.Multer.File,
   label?: string,
   garmentType?: string,
+  folder?: { folder_id?: string; new_folder_name?: string; tz?: string; in_builder?: boolean },
 ) {
   const ws = await Workspace.findOne({ _id: id, user_id: userId });
   if (!ws) throw new ApiError(404, "Workspace not found");
@@ -119,6 +160,15 @@ export async function uploadElement(
     elementType === "pattern"   ? { pattern: name, image_url: fileUrl } :
     {};
 
+  const folderId = await resolveElementFolder({
+    workspaceId: id,
+    userId,
+    elementType: elementType as IWorkspaceElement["element_type"],
+    folderId: folder?.folder_id,
+    newFolderName: folder?.new_folder_name,
+    tz: folder?.tz,
+  });
+
   ws.elements.push({
     element_id: uuidv4(),
     look_id: "",
@@ -131,6 +181,9 @@ export async function uploadElement(
     row: garmentType || "custom",
     canvas_row: null,
     is_custom: true,
+    folder_id: folderId,
+    in_builder: folder?.in_builder ?? true,
+    added_at: new Date(),
   });
   await ws.save();
   return ws.toObject();

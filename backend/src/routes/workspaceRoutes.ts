@@ -36,6 +36,13 @@ workspaceRouter.post("/:id/elements", asyncHandler(workspaceController.appendEle
 workspaceRouter.put("/:id/elements", asyncHandler(workspaceController.replaceElements));
 workspaceRouter.delete("/:id/elements/:elementId", asyncHandler(workspaceController.removeElement));
 workspaceRouter.post("/:id/elements/upload", upload.single("file"), asyncHandler(workspaceController.uploadElement));
+workspaceRouter.get("/:id/folders", asyncHandler(workspaceController.listFolders));
+workspaceRouter.post("/:id/folders", asyncHandler(workspaceController.createFolder));
+workspaceRouter.patch("/:id/folders/:folderId", asyncHandler(workspaceController.renameFolder));
+workspaceRouter.delete("/:id/folders/:folderId", asyncHandler(workspaceController.deleteFolder));
+workspaceRouter.post("/:id/looks", asyncHandler(workspaceController.addLook));
+workspaceRouter.post("/:id/builder/move", asyncHandler(workspaceController.moveToBuilder));
+workspaceRouter.post("/:id/builder/remove", asyncHandler(workspaceController.removeFromBuilder));
 workspaceRouter.post("/:id/generate", asyncHandler(workspaceController.generate));
 workspaceRouter.get("/:id/variants", asyncHandler(workspaceController.getVariants));
 workspaceRouter.post("/:id/variants/:variantId/edit", asyncHandler(workspaceController.editVariant));
