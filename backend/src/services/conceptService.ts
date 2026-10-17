@@ -10,6 +10,7 @@ import { GenerationJob, type IComboRef, type IDiscardedCombo } from "../models/G
 import { Concept, type IConcept } from "../models/Concept.js";
 import { evaluateCombos, type CoherenceResult } from "./coherenceFilter.js";
 import { describeError, falHeaders } from "./falQueue.js";
+import { isInBuilder } from "./folderLayout.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -340,21 +341,23 @@ export async function generateConcepts(
   const workspace = await Workspace.findOne({ _id: workspaceId, user_id: userId });
   if (!workspace) throw new ApiError(404, "Workspace not found");
 
-  if (!workspace.elements?.length) {
-    throw new ApiError(400, "Workspace has no ingredients");
+  // Only elements moved to the AI builder take part in generation.
+  const builderElements = (workspace.elements ?? []).filter(isInBuilder);
+  if (!builderElements.length) {
+    throw new ApiError(400, "Move some elements to the AI builder first");
   }
 
   workspace.status = "generating";
   await workspace.save();
 
-  const canvasElements = workspace.elements.filter(e => e.canvas_row != null);
+  const canvasElements = builderElements.filter(e => e.canvas_row != null);
   
   let allCombos: IComboRef[] = [];
   if (mode === "manual" && manualCombo) {
     allCombos = [manualCombo];
   } else if (canvasElements.length > 0) {
     // Generate combos per row
-    const rowMap = new Map<number, typeof workspace.elements>();
+    const rowMap = new Map<number, typeof builderElements>();
     for (const el of canvasElements) {
       if (!rowMap.has(el.canvas_row!)) rowMap.set(el.canvas_row!, []);
       rowMap.get(el.canvas_row!)!.push(el);
@@ -373,7 +376,7 @@ export async function generateConcepts(
     }
   } else {
     // Fallback if no rows defined (shouldn't happen in new UI)
-    const { silhouettes, fabrics, patterns, colors } = resolveIngredients(workspace.elements);
+    const { silhouettes, fabrics, patterns, colors } = resolveIngredients(builderElements);
     if (!silhouettes.length) throw new ApiError(400, "Workspace has no silhouettes");
     if (!fabrics.length) throw new ApiError(400, "Workspace has no fabrics");
     if (!colors.length) throw new ApiError(400, "Workspace has no colors");
@@ -419,7 +422,7 @@ export async function generateConcepts(
   });
 
   if (cappedPassed.length > 0) {
-    runGeneration(job._id.toString(), cappedPassed, workspace.elements, userId, workspaceId).catch((err) => {
+    runGeneration(job._id.toString(), cappedPassed, builderElements, userId, workspaceId).catch((err) => {
       console.error(`Generation failed for job ${job._id}:`, describeError(err));
       Workspace.updateOne({ _id: workspaceId }, { status: "ready" }).catch(() => {});
     });

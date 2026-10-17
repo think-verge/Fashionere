@@ -297,7 +297,8 @@
               "color",
               "fabric",
               "pattern",
-              "silhouette"
+              "silhouette",
+              "shot"
             ]
           },
           "data": {
@@ -326,6 +327,20 @@
           },
           "row": {
             "type": "string"
+          },
+          "canvas_row": {
+            "type": "number",
+            "nullable": true
+          },
+          "is_custom": {
+            "type": "boolean"
+          },
+          "folder_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "in_builder": {
+            "type": "boolean"
           }
         },
         "required": [
@@ -338,6 +353,86 @@
           "source_brand",
           "canvas_position",
           "row"
+        ]
+      },
+      "WorkspaceLook": {
+        "type": "object",
+        "properties": {
+          "look_id": {
+            "type": "string"
+          },
+          "date_folder_id": {
+            "type": "string"
+          },
+          "added_at": {
+            "type": "string"
+          },
+          "thumbnail": {
+            "type": "string",
+            "nullable": true
+          },
+          "brand": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "look_id",
+          "date_folder_id",
+          "added_at"
+        ]
+      },
+      "FolderNode": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "parent_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "looks_root",
+              "date",
+              "custom",
+              "shots",
+              "silhouettes",
+              "palettes",
+              "fabrics",
+              "patterns"
+            ]
+          },
+          "system": {
+            "type": "boolean"
+          },
+          "date": {
+            "type": "string",
+            "nullable": true
+          },
+          "count": {
+            "type": "number"
+          },
+          "in_builder_count": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "id",
+          "parent_id",
+          "name",
+          "kind",
+          "system",
+          "date",
+          "count",
+          "in_builder_count"
         ]
       },
       "Workspace": {
@@ -368,6 +463,15 @@
             "items": {
               "$ref": "#/components/schemas/WorkspaceElement"
             }
+          },
+          "looks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/WorkspaceLook"
+            }
+          },
+          "schema_version": {
+            "type": "number"
           },
           "canvas_meta": {
             "type": "object",
@@ -1651,6 +1755,373 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/Workspace"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/workspace/{id}/folders": {
+      "get": {
+        "tags": [
+          "Workspace"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Folder tree with counts",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "folders": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/FolderNode"
+                      }
+                    },
+                    "looks": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/WorkspaceLook"
+                      }
+                    }
+                  },
+                  "required": [
+                    "folders",
+                    "looks"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Workspace"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created; the five element folders are created inside"
+          }
+        }
+      }
+    },
+    "/api/v1/workspace/{id}/folders/{folderId}": {
+      "patch": {
+        "tags": [
+          "Workspace"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "name": "folderId",
+            "in": "path"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Workspace"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "name": "folderId",
+            "in": "path"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Deleted"
+          }
+        }
+      }
+    },
+    "/api/v1/workspace/{id}/looks": {
+      "post": {
+        "tags": [
+          "Workspace"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "look_id": {
+                    "type": "string"
+                  },
+                  "folder_id": {
+                    "type": "string"
+                  },
+                  "tz": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "look_id"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Look filed into the dated folder",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "workspace": {
+                      "$ref": "#/components/schemas/Workspace"
+                    },
+                    "added": {
+                      "type": "number"
+                    },
+                    "skipped": {
+                      "type": "number"
+                    },
+                    "already_in_workspace": {
+                      "type": "boolean"
+                    },
+                    "folder_id": {
+                      "type": "string"
+                    },
+                    "folder_name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "workspace",
+                    "added",
+                    "skipped",
+                    "already_in_workspace",
+                    "folder_id",
+                    "folder_name"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/workspace/{id}/builder/move": {
+      "post": {
+        "tags": [
+          "Workspace"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "look_id": {
+                    "type": "string"
+                  },
+                  "folder_id": {
+                    "type": "string"
+                  },
+                  "element_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Moved to the AI builder",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "workspace": {
+                      "$ref": "#/components/schemas/Workspace"
+                    },
+                    "changed": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "workspace",
+                    "changed"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/workspace/{id}/builder/remove": {
+      "post": {
+        "tags": [
+          "Workspace"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "look_id": {
+                    "type": "string"
+                  },
+                  "folder_id": {
+                    "type": "string"
+                  },
+                  "element_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Removed from the AI builder",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "workspace": {
+                      "$ref": "#/components/schemas/Workspace"
+                    },
+                    "changed": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "workspace",
+                    "changed"
+                  ]
                 }
               }
             }

@@ -1,5 +1,7 @@
 import type { Request, Response } from "express";
 import * as workspaceService from "../services/workspaceService.js";
+import * as folderService from "../services/folderService.js";
+import * as lookFiling from "../services/lookFilingService.js";
 
 function p(req: Request, key: string): string {
   return req.params[key] as string;
@@ -59,10 +61,14 @@ export async function deleteWorkspace(req: Request, res: Response) {
 }
 
 export async function uploadElement(req: Request, res: Response) {
-  const { element_type, label, garment_type } = req.body as {
+  const { element_type, label, garment_type, folder_id, new_folder_name, tz, in_builder } = req.body as {
     element_type: string;
     label?: string;
     garment_type?: string;
+    folder_id?: string;
+    new_folder_name?: string;
+    tz?: string;
+    in_builder?: string;
   };
   if (!req.file) {
     res.status(400).json({ error: "No file uploaded" });
@@ -75,6 +81,7 @@ export async function uploadElement(req: Request, res: Response) {
     req.file,
     label,
     garment_type,
+    { folder_id, new_folder_name, tz, in_builder: in_builder === undefined ? undefined : in_builder === "true" },
   );
   res.json(ws);
 }
@@ -94,4 +101,40 @@ export async function attachInventory(req: Request, res: Response) {
   const { inventoryIds } = req.body as { inventoryIds: string[] };
   const variant = await workspaceService.attachInventory(p(req, "id"), req.user!.userId, p(req, "variantId"), inventoryIds);
   res.json(variant);
+}
+
+export async function listFolders(req: Request, res: Response) {
+  res.json(await folderService.listFolders(p(req, "id"), req.user!.userId));
+}
+
+export async function createFolder(req: Request, res: Response) {
+  const { name } = req.body as { name: string };
+  res.status(201).json(await folderService.createFolder(p(req, "id"), req.user!.userId, name));
+}
+
+export async function renameFolder(req: Request, res: Response) {
+  const { name } = req.body as { name: string };
+  res.json(await folderService.renameFolder(p(req, "id"), req.user!.userId, p(req, "folderId"), name));
+}
+
+export async function deleteFolder(req: Request, res: Response) {
+  await folderService.deleteFolder(p(req, "id"), req.user!.userId, p(req, "folderId"));
+  res.status(204).send();
+}
+
+export async function addLook(req: Request, res: Response) {
+  const { look_id, folder_id, tz } = req.body as { look_id?: string; folder_id?: string; tz?: string };
+  if (!look_id) {
+    res.status(400).json({ error: "look_id is required" });
+    return;
+  }
+  res.json(await lookFiling.addLookToWorkspace(p(req, "id"), req.user!.userId, look_id, { tz, folderId: folder_id }));
+}
+
+export async function moveToBuilder(req: Request, res: Response) {
+  res.json(await lookFiling.setInBuilder(p(req, "id"), req.user!.userId, req.body ?? {}, true));
+}
+
+export async function removeFromBuilder(req: Request, res: Response) {
+  res.json(await lookFiling.setInBuilder(p(req, "id"), req.user!.userId, req.body ?? {}, false));
 }

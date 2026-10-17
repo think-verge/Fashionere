@@ -13,6 +13,9 @@ import StorefrontIcon from "@mui/icons-material/Storefront";
 import HourglassEmptyIcon from "@mui/icons-material/HourglassEmpty";
 import LaunchIcon from "@mui/icons-material/Launch";
 import { api } from "../../lib/api/client";
+import { AddLooksToWorkspace } from "../../components/AddLooksToWorkspace";
+import { browserTimeZone } from "../../lib/elements";
+import PlaylistAddIcon from "@mui/icons-material/PlaylistAdd";
 import { useAuth } from "../../lib/auth-context";
 import { WorkspacePicker } from "../../components/WorkspacePicker";
 
@@ -71,6 +74,7 @@ export default function LookDetailPage() {
   const { lookId } = useParams<{ lookId: string }>();
   const navigate = useNavigate();
   const { activeProject } = useAuth();
+  const [addLookOpen, setAddLookOpen] = useState(false);
   const qc = useQueryClient();
 
   const [imageIdx, setImageIdx] = useState(0);
@@ -134,6 +138,7 @@ export default function LookDetailPage() {
         data,
         source_brand: look.brand,
         row: "product",
+        tz: browserTimeZone(),
       });
       qc.setQueryData(["workspace", wsId], updatedWs);
       qc.removeQueries({ queryKey: ["workspaces"] });
@@ -384,6 +389,22 @@ export default function LookDetailPage() {
             </Box>
           )}
 
+          <Box sx={{ mb: 3 }}>
+            <Button
+              variant="contained"
+              disableElevation
+              startIcon={<PlaylistAddIcon />}
+              disabled={!activeProject || !lookId}
+              onClick={() => setAddLookOpen(true)}
+              sx={{ borderRadius: "10px", textTransform: "none", fontWeight: 600 }}
+            >
+              Add whole look to workspace
+            </Button>
+            <Typography sx={{ fontSize: 12, color: "text.secondary", mt: 0.75 }}>
+              Files its shots, silhouettes, colours, fabrics and patterns into today's moodboard folder.
+            </Typography>
+          </Box>
+
           <Divider sx={{ borderColor: "#f0e4e2", mb: 3 }} />
 
           {/* Garment rows or product analysis */}
@@ -461,6 +482,15 @@ export default function LookDetailPage() {
           )}
         </Box>
       </Box>
+
+      {activeProject && lookId && (
+        <AddLooksToWorkspace
+          open={addLookOpen}
+          projectId={activeProject.id}
+          lookIds={[lookId]}
+          onClose={() => setAddLookOpen(false)}
+        />
+      )}
 
       {/* Workspace picker for retail elements */}
       {activeProject && (
