@@ -56,7 +56,7 @@ export function CustomUploadDialog({
 
   const { data: folderData } = useQuery<{ folders: FolderNode[] }>({
     queryKey: ["folders", workspaceId],
-    queryFn: async () => (await api.get(`/workspace/${workspaceId}/folders`)).data,
+    queryFn: async () => (await api.get(`/workspace/${workspaceId}/folders`, { params: { tz: browserTimeZone() } })).data,
     enabled: open && !!workspaceId,
   });
   const destinations = (folderData?.folders ?? []).filter((f) => f.kind === "date" || f.kind === "custom");

@@ -111,8 +111,13 @@ export async function deleteFolder(workspaceId: string, userId: string, folderId
 }
 
 /** All folders of a workspace with element counts (client assembles the tree). */
-export async function listFolders(workspaceId: string, userId: string) {
+export async function listFolders(workspaceId: string, userId: string, tz?: string) {
   const ws = await requireWorkspace(workspaceId, userId);
+  // A workspace with no day folder yet (created before folders existed, or empty) gets today's,
+  // so there is always somewhere to add looks. Workspaces that already have one are left alone.
+  if (!(await Folder.exists({ workspace_id: workspaceId, kind: { $in: ["date", "custom"] } }))) {
+    await ensureDateFolder(ws._id, ws.user_id, ws.name, todayString(tz));
+  }
   const folders = await Folder.find({ workspace_id: workspaceId }).sort({ date: -1, createdAt: 1 }).lean();
   const counts = new Map<string, { count: number; in_builder: number }>();
   for (const e of ws.elements) {

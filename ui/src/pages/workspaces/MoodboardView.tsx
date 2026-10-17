@@ -17,7 +17,7 @@ import EditOutlinedIcon from "@mui/icons-material/EditOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import { api } from "../../lib/api/client";
 import {
-  TYPE_ICONS, getColors, getElementLabel, getPreviewUrl, isInBuilder,
+  TYPE_ICONS, browserTimeZone, getColors, getElementLabel, getPreviewUrl, isInBuilder,
   type FolderNode, type WorkspaceElement, type WorkspaceLook,
 } from "../../lib/elements";
 
@@ -48,7 +48,7 @@ export function MoodboardView({ workspaceId, elements, onUpload }: Props) {
 
   const { data, isLoading } = useQuery<FoldersResponse>({
     queryKey: ["folders", workspaceId],
-    queryFn: async () => (await api.get(`/workspace/${workspaceId}/folders`)).data,
+    queryFn: async () => (await api.get(`/workspace/${workspaceId}/folders`, { params: { tz: browserTimeZone() } })).data,
     enabled: !!workspaceId,
   });
   const folders = useMemo(() => data?.folders ?? [], [data]);
