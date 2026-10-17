@@ -23,8 +23,8 @@ export async function getWorkspace(req: Request, res: Response) {
 }
 
 export async function createWorkspace(req: Request, res: Response) {
-  const { name, project_id } = req.body as { name: string; project_id: string };
-  const ws = await workspaceService.createWorkspace(req.user!.userId, project_id, name);
+  const { name, project_id, tz } = req.body as { name: string; project_id: string; tz?: string };
+  const ws = await workspaceService.createWorkspace(req.user!.userId, project_id, name, tz);
   res.status(201).json(ws);
 }
 
@@ -104,7 +104,7 @@ export async function attachInventory(req: Request, res: Response) {
 }
 
 export async function listFolders(req: Request, res: Response) {
-  res.json(await folderService.listFolders(p(req, "id"), req.user!.userId));
+  res.json(await folderService.listFolders(p(req, "id"), req.user!.userId, q(req, "tz")));
 }
 
 export async function createFolder(req: Request, res: Response) {

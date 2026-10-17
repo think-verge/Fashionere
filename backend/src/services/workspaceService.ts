@@ -3,8 +3,8 @@ import { Workspace } from "../models/Workspace.js";
 import { Folder } from "../models/Folder.js";
 import { ApiError } from "../utils/api-error.js";
 import type { IWorkspaceElement } from "../models/Workspace.js";
-import { resolveElementFolder } from "./folderService.js";
-import { elementKey } from "./folderLayout.js";
+import { ensureDateFolder, resolveElementFolder } from "./folderService.js";
+import { elementKey, todayString } from "./folderLayout.js";
 
 export async function listWorkspaces(userId: string, projectId?: string) {
   const filter: Record<string, unknown> = { user_id: userId };
@@ -18,8 +18,11 @@ export async function getWorkspace(id: string, userId: string) {
   return ws;
 }
 
-export async function createWorkspace(userId: string, projectId: string, name: string) {
-  return Workspace.create({ name, project_id: projectId, user_id: userId, elements: [] });
+export async function createWorkspace(userId: string, projectId: string, name: string, tz?: string) {
+  const ws = await Workspace.create({ name, project_id: projectId, user_id: userId, elements: [] });
+  // Ready for looks straight away: today's folder (with its five element folders) exists from the start.
+  await ensureDateFolder(ws._id, ws.user_id, ws.name, todayString(tz));
+  return ws;
 }
 
 export async function renameWorkspace(id: string, userId: string, name: string) {

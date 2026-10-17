@@ -7,6 +7,7 @@ import {
 } from "@mui/material";
 import LayersOutlinedIcon from "@mui/icons-material/LayersOutlined";
 import AddIcon from "@mui/icons-material/Add";
+import { browserTimeZone } from "../lib/elements";
 import { api } from "../lib/api/client";
 
 interface Workspace {
@@ -43,6 +44,7 @@ export function WorkspacePicker({ open, projectId, onClose, onSelect }: Props) {
     setCreatingPending(true);
     try {
       const { data } = await api.post("/workspace", {
+        tz: browserTimeZone(),
         name: newName.trim(),
         project_id: projectId,
       });
