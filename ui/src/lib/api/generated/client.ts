@@ -16,6 +16,7 @@ import type {
   GetApiV1Trends200Item,
   GetApiV1TrendsId200,
   GetApiV1TrendsParams,
+  GetApiV1WorkspaceIdFolders200,
   GetApiV1WorkspaceParams,
   Look,
   LookListResponse,
@@ -24,12 +25,20 @@ import type {
   PatchApiV1MoodboardsIdBody,
   PatchApiV1ProjectsIdBody,
   PatchApiV1UsersMeBody,
+  PatchApiV1WorkspaceIdFoldersFolderIdBody,
   PostApiV1MoodboardsFromCatalogueBody,
   PostApiV1MoodboardsFromImageBody,
   PostApiV1MoodboardsFromQueryBody,
   PostApiV1ProjectsBody,
   PostApiV1ProjectsIdMoodboardsBody,
   PostApiV1WorkspaceBody,
+  PostApiV1WorkspaceIdBuilderMove200,
+  PostApiV1WorkspaceIdBuilderMoveBody,
+  PostApiV1WorkspaceIdBuilderRemove200,
+  PostApiV1WorkspaceIdBuilderRemoveBody,
+  PostApiV1WorkspaceIdFoldersBody,
+  PostApiV1WorkspaceIdLooks200,
+  PostApiV1WorkspaceIdLooksBody,
   Project,
   SignupRequest,
   User,
@@ -343,6 +352,86 @@ const postApiV1WorkspaceIdElements = (
       );
     }
   
+const getApiV1WorkspaceIdFolders = (
+    id: string,
+ ) => {
+      return customInstance<GetApiV1WorkspaceIdFolders200>(
+      {url: `/api/v1/workspace/${id}/folders`, method: 'GET'
+    },
+      );
+    }
+  
+const postApiV1WorkspaceIdFolders = (
+    id: string,
+    postApiV1WorkspaceIdFoldersBody: PostApiV1WorkspaceIdFoldersBody,
+ ) => {
+      return customInstance<void>(
+      {url: `/api/v1/workspace/${id}/folders`, method: 'POST',
+      headers: {'Content-Type': 'application/json', },
+      data: postApiV1WorkspaceIdFoldersBody
+    },
+      );
+    }
+  
+const patchApiV1WorkspaceIdFoldersFolderId = (
+    id: string,
+    folderId: string,
+    patchApiV1WorkspaceIdFoldersFolderIdBody: PatchApiV1WorkspaceIdFoldersFolderIdBody,
+ ) => {
+      return customInstance<void>(
+      {url: `/api/v1/workspace/${id}/folders/${folderId}`, method: 'PATCH',
+      headers: {'Content-Type': 'application/json', },
+      data: patchApiV1WorkspaceIdFoldersFolderIdBody
+    },
+      );
+    }
+  
+const deleteApiV1WorkspaceIdFoldersFolderId = (
+    id: string,
+    folderId: string,
+ ) => {
+      return customInstance<void>(
+      {url: `/api/v1/workspace/${id}/folders/${folderId}`, method: 'DELETE'
+    },
+      );
+    }
+  
+const postApiV1WorkspaceIdLooks = (
+    id: string,
+    postApiV1WorkspaceIdLooksBody: PostApiV1WorkspaceIdLooksBody,
+ ) => {
+      return customInstance<PostApiV1WorkspaceIdLooks200>(
+      {url: `/api/v1/workspace/${id}/looks`, method: 'POST',
+      headers: {'Content-Type': 'application/json', },
+      data: postApiV1WorkspaceIdLooksBody
+    },
+      );
+    }
+  
+const postApiV1WorkspaceIdBuilderMove = (
+    id: string,
+    postApiV1WorkspaceIdBuilderMoveBody: PostApiV1WorkspaceIdBuilderMoveBody,
+ ) => {
+      return customInstance<PostApiV1WorkspaceIdBuilderMove200>(
+      {url: `/api/v1/workspace/${id}/builder/move`, method: 'POST',
+      headers: {'Content-Type': 'application/json', },
+      data: postApiV1WorkspaceIdBuilderMoveBody
+    },
+      );
+    }
+  
+const postApiV1WorkspaceIdBuilderRemove = (
+    id: string,
+    postApiV1WorkspaceIdBuilderRemoveBody: PostApiV1WorkspaceIdBuilderRemoveBody,
+ ) => {
+      return customInstance<PostApiV1WorkspaceIdBuilderRemove200>(
+      {url: `/api/v1/workspace/${id}/builder/remove`, method: 'POST',
+      headers: {'Content-Type': 'application/json', },
+      data: postApiV1WorkspaceIdBuilderRemoveBody
+    },
+      );
+    }
+  
 const postApiV1WorkspaceIdGenerate = (
     id: string,
  ) => {
@@ -361,7 +450,7 @@ const getApiV1InventoryGarments = (
       );
     }
   
-return {postApiV1AuthSignup,postApiV1AuthLogin,postApiV1AuthLogout,getApiV1AuthMe,patchApiV1UsersMe,getApiV1Moodboards,postApiV1MoodboardsFromQuery,postApiV1MoodboardsFromCatalogue,postApiV1MoodboardsFromImage,getApiV1MoodboardsId,patchApiV1MoodboardsId,deleteApiV1MoodboardsId,getApiV1Catalogue,getApiV1Trends,getApiV1TrendsId,getApiV1Projects,postApiV1Projects,getApiV1ProjectsId,patchApiV1ProjectsId,deleteApiV1ProjectsId,postApiV1ProjectsIdMoodboards,postApiV1CostEstimate,getApiV1Looks,getApiV1LooksLookId,getApiV1LooksLookIdGarments,getApiV1LooksLookIdGarmentsGarmentId,getApiV1Workspace,postApiV1Workspace,getApiV1WorkspaceId,postApiV1WorkspaceIdElements,postApiV1WorkspaceIdGenerate,getApiV1InventoryGarments}};
+return {postApiV1AuthSignup,postApiV1AuthLogin,postApiV1AuthLogout,getApiV1AuthMe,patchApiV1UsersMe,getApiV1Moodboards,postApiV1MoodboardsFromQuery,postApiV1MoodboardsFromCatalogue,postApiV1MoodboardsFromImage,getApiV1MoodboardsId,patchApiV1MoodboardsId,deleteApiV1MoodboardsId,getApiV1Catalogue,getApiV1Trends,getApiV1TrendsId,getApiV1Projects,postApiV1Projects,getApiV1ProjectsId,patchApiV1ProjectsId,deleteApiV1ProjectsId,postApiV1ProjectsIdMoodboards,postApiV1CostEstimate,getApiV1Looks,getApiV1LooksLookId,getApiV1LooksLookIdGarments,getApiV1LooksLookIdGarmentsGarmentId,getApiV1Workspace,postApiV1Workspace,getApiV1WorkspaceId,postApiV1WorkspaceIdElements,getApiV1WorkspaceIdFolders,postApiV1WorkspaceIdFolders,patchApiV1WorkspaceIdFoldersFolderId,deleteApiV1WorkspaceIdFoldersFolderId,postApiV1WorkspaceIdLooks,postApiV1WorkspaceIdBuilderMove,postApiV1WorkspaceIdBuilderRemove,postApiV1WorkspaceIdGenerate,getApiV1InventoryGarments}};
 export type PostApiV1AuthSignupResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['postApiV1AuthSignup']>>>
 export type PostApiV1AuthLoginResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['postApiV1AuthLogin']>>>
 export type PostApiV1AuthLogoutResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['postApiV1AuthLogout']>>>
@@ -392,5 +481,12 @@ export type GetApiV1WorkspaceResult = NonNullable<Awaited<ReturnType<ReturnType<
 export type PostApiV1WorkspaceResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['postApiV1Workspace']>>>
 export type GetApiV1WorkspaceIdResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['getApiV1WorkspaceId']>>>
 export type PostApiV1WorkspaceIdElementsResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['postApiV1WorkspaceIdElements']>>>
+export type GetApiV1WorkspaceIdFoldersResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['getApiV1WorkspaceIdFolders']>>>
+export type PostApiV1WorkspaceIdFoldersResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['postApiV1WorkspaceIdFolders']>>>
+export type PatchApiV1WorkspaceIdFoldersFolderIdResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['patchApiV1WorkspaceIdFoldersFolderId']>>>
+export type DeleteApiV1WorkspaceIdFoldersFolderIdResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['deleteApiV1WorkspaceIdFoldersFolderId']>>>
+export type PostApiV1WorkspaceIdLooksResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['postApiV1WorkspaceIdLooks']>>>
+export type PostApiV1WorkspaceIdBuilderMoveResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['postApiV1WorkspaceIdBuilderMove']>>>
+export type PostApiV1WorkspaceIdBuilderRemoveResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['postApiV1WorkspaceIdBuilderRemove']>>>
 export type PostApiV1WorkspaceIdGenerateResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['postApiV1WorkspaceIdGenerate']>>>
 export type GetApiV1InventoryGarmentsResult = NonNullable<Awaited<ReturnType<ReturnType<typeof getCentoireAPI>['getApiV1InventoryGarments']>>>

@@ -10,6 +10,7 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import AddIcon from "@mui/icons-material/Add";
 import { useAuth } from "../../lib/auth-context";
 import { api } from "../../lib/api/client";
+import { browserTimeZone } from "../../lib/elements";
 import { WorkspacePicker } from "../../components/WorkspacePicker";
 
 interface FabricEntry {
@@ -150,6 +151,7 @@ export default function GarmentDetailPage() {
         data,
         source_brand: look?.brand ?? "",
         row: garment.garment_type || garment.piece || "other",
+        tz: browserTimeZone(),
       });
       qc.setQueryData(["workspace", wsId], updatedWs);
       qc.removeQueries({ queryKey: ["workspaces"] });

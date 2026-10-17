@@ -100,11 +100,41 @@ const WorkspaceElementSchema = registry.register(
     look_id: z.string(),
     garment_id: z.string(),
     garment_type: z.string(),
-    element_type: z.enum(["color", "fabric", "pattern", "silhouette"]),
+    element_type: z.enum(["color", "fabric", "pattern", "silhouette", "shot"]),
     data: z.record(z.unknown()),
     source_brand: z.string(),
     canvas_position: z.object({ x: z.number(), y: z.number() }),
     row: z.string(),
+    canvas_row: z.number().nullable().optional(),
+    is_custom: z.boolean().optional(),
+    folder_id: z.string().nullable().optional(),
+    in_builder: z.boolean().optional(),
+  }),
+);
+
+const WorkspaceLookSchema = registry.register(
+  "WorkspaceLook",
+  z.object({
+    look_id: z.string(),
+    date_folder_id: z.string(),
+    added_at: z.string(),
+    thumbnail: z.string().nullable().optional(),
+    brand: z.string().optional(),
+    title: z.string().optional(),
+  }),
+);
+
+const FolderNodeSchema = registry.register(
+  "FolderNode",
+  z.object({
+    id: z.string(),
+    parent_id: z.string().nullable(),
+    name: z.string(),
+    kind: z.enum(["looks_root", "date", "custom", "shots", "silhouettes", "palettes", "fabrics", "patterns"]),
+    system: z.boolean(),
+    date: z.string().nullable(),
+    count: z.number(),
+    in_builder_count: z.number(),
   }),
 );
 
@@ -117,6 +147,8 @@ const WorkspaceSchema = registry.register(
     user_id: z.string(),
     status: z.enum(["draft", "ready", "generating"]),
     elements: z.array(WorkspaceElementSchema),
+    looks: z.array(WorkspaceLookSchema).optional(),
+    schema_version: z.number().optional(),
     canvas_meta: z.record(z.unknown()),
     createdAt: z.string().datetime(),
     updatedAt: z.string().datetime(),
@@ -389,6 +421,51 @@ export function registerPaths() {
     method: "post", path: "/api/v1/workspace/{id}/elements", tags: ["Workspace"],
     request: { params: z.object({ id: z.string() }), body: { content: { "application/json": { schema: WorkspaceElementSchema } } } },
     responses: { 200: { description: "OK", content: { "application/json": { schema: WorkspaceSchema } } } },
+  });
+  const idParams = z.object({ id: z.string() });
+  const json = <T extends z.ZodTypeAny>(schema: T) => ({ content: { "application/json": { schema } } });
+  const MoveBody = z.object({
+    look_id: z.string().optional(),
+    folder_id: z.string().optional(),
+    element_ids: z.array(z.string()).optional(),
+  });
+  registry.registerPath({
+    method: "get", path: "/api/v1/workspace/{id}/folders", tags: ["Workspace"],
+    request: { params: idParams },
+    responses: { 200: { description: "Folder tree with counts", ...json(z.object({ folders: z.array(FolderNodeSchema), looks: z.array(WorkspaceLookSchema) })) } },
+  });
+  registry.registerPath({
+    method: "post", path: "/api/v1/workspace/{id}/folders", tags: ["Workspace"],
+    request: { params: idParams, body: json(z.object({ name: z.string() })) },
+    responses: { 201: { description: "Created; the five element folders are created inside" } },
+  });
+  registry.registerPath({
+    method: "patch", path: "/api/v1/workspace/{id}/folders/{folderId}", tags: ["Workspace"],
+    request: { params: z.object({ id: z.string(), folderId: z.string() }), body: json(z.object({ name: z.string() })) },
+    responses: { 200: { description: "OK" } },
+  });
+  registry.registerPath({
+    method: "delete", path: "/api/v1/workspace/{id}/folders/{folderId}", tags: ["Workspace"],
+    request: { params: z.object({ id: z.string(), folderId: z.string() }) },
+    responses: { 204: { description: "Deleted" } },
+  });
+  registry.registerPath({
+    method: "post", path: "/api/v1/workspace/{id}/looks", tags: ["Workspace"],
+    request: { params: idParams, body: json(z.object({ look_id: z.string(), folder_id: z.string().optional(), tz: z.string().optional() })) },
+    responses: { 200: { description: "Look filed into the dated folder", ...json(z.object({
+      workspace: WorkspaceSchema, added: z.number(), skipped: z.number(),
+      already_in_workspace: z.boolean(), folder_id: z.string(), folder_name: z.string(),
+    })) } },
+  });
+  registry.registerPath({
+    method: "post", path: "/api/v1/workspace/{id}/builder/move", tags: ["Workspace"],
+    request: { params: idParams, body: json(MoveBody) },
+    responses: { 200: { description: "Moved to the AI builder", ...json(z.object({ workspace: WorkspaceSchema, changed: z.number() })) } },
+  });
+  registry.registerPath({
+    method: "post", path: "/api/v1/workspace/{id}/builder/remove", tags: ["Workspace"],
+    request: { params: idParams, body: json(MoveBody) },
+    responses: { 200: { description: "Removed from the AI builder", ...json(z.object({ workspace: WorkspaceSchema, changed: z.number() })) } },
   });
   registry.registerPath({
     method: "post", path: "/api/v1/workspace/{id}/generate", tags: ["Workspace"],
