@@ -7,7 +7,9 @@ import {
 } from "@mui/material";
 import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
 import FilterListIcon from "@mui/icons-material/FilterList";
+import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import { PageHeader } from "../../components/PageHeader";
+import { RequestBrandDialog } from "../../components/RequestBrandDialog";
 import { useAuth } from "../../lib/auth-context";
 import { api } from "../../lib/api/client";
 
@@ -42,6 +44,7 @@ export default function LooksPage() {
   const [selectedBrand, setSelectedBrand] = useState<string[]>([]);
   const [selectedGarmentType, setSelectedGarmentType] = useState<string[]>([]);
   const [filtersOpen, setFiltersOpen] = useState(false);
+  const [requestBrandOpen, setRequestBrandOpen] = useState(false);
   const [sortAnchor, setSortAnchor] = useState<null | HTMLElement>(null);
   const [sort, setSort] = useState("latest");
   
@@ -188,6 +191,35 @@ export default function LooksPage() {
             }}
           >
             Filters {hasFilters && <Box sx={{ width: 6, height: 6, borderRadius: "50%", bgcolor: "primary.main", ml: 1 }} />}
+          </Button>
+
+          <Button
+            variant="outlined"
+            size="small"
+            startIcon={<AutoAwesomeIcon fontSize="small" />}
+            onClick={() => setRequestBrandOpen(true)}
+            sx={{
+              color: "text.primary",
+              borderColor: "#e5d7d3",
+              fontSize: 13,
+              fontWeight: 600,
+              borderRadius: "20px",
+              px: 2,
+              py: 0.75,
+              textTransform: "none",
+              bgcolor: "rgba(255, 255, 255, 0.6)",
+              backdropFilter: "blur(8px)",
+              boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
+              "&:hover": {
+                borderColor: "primary.main",
+                bgcolor: "#fff0ef",
+                color: "primary.main",
+                transform: "translateY(-1px)",
+                boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+              },
+            }}
+          >
+            Request Brand
           </Button>
 
           <Typography sx={{ color: "text.secondary", fontSize: 13, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" }}>
@@ -547,6 +579,12 @@ export default function LooksPage() {
           )}
         </>
       )}
+
+      <RequestBrandDialog
+        open={requestBrandOpen}
+        onClose={() => setRequestBrandOpen(false)}
+        defaultType={type}
+      />
     </Box>
   );
 }

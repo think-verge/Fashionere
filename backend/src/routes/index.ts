@@ -16,6 +16,7 @@ import { garmentPackRouter } from "./garmentPackRoutes.js";
 import { modelShootRouter } from "./modelShootRoutes.js";
 import { adminRouter } from "./adminRoutes.js";
 import { inviteRouter } from "./inviteRoutes.js";
+import { brandRequestRouter } from "./brandRequestRoutes.js";
 
 export const apiRouter = Router();
 
@@ -36,3 +37,4 @@ apiRouter.use("/garment-packs", garmentPackRouter);
 apiRouter.use("/model-shoots", modelShootRouter);
 apiRouter.use("/admin", adminRouter);
 apiRouter.use("/invites", inviteRouter);
+apiRouter.use("/brand-requests", brandRequestRouter);

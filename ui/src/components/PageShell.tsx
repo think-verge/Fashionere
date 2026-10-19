@@ -30,6 +30,7 @@ import FolderIcon from "@mui/icons-material/FolderOutlined";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import AddIcon from "@mui/icons-material/Add";
 import AdminPanelSettingsOutlinedIcon from "@mui/icons-material/AdminPanelSettingsOutlined";
+import AutoAwesomeOutlinedIcon from "@mui/icons-material/AutoAwesomeOutlined";
 import { useAuth } from "../lib/auth-context";
 import { api } from "../lib/api/client";
 
@@ -288,7 +289,10 @@ export function PageShell({ title, children }: Props) {
           const navItems = [
             ...BASE_NAV_ITEMS,
             ...(user?.role === "admin"
-              ? [{ label: "Tenant Invites", path: "/app/admin/invites", icon: <AdminPanelSettingsOutlinedIcon /> }]
+              ? [
+                  { label: "Tenant Invites", path: "/app/admin/invites", icon: <AdminPanelSettingsOutlinedIcon /> },
+                  { label: "Brand Requests", path: "/app/admin/brand-requests", icon: <AutoAwesomeOutlinedIcon /> },
+                ]
               : []),
           ];
           return (

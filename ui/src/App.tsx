@@ -14,6 +14,7 @@ import { TrendsPage } from "./pages/trends/TrendsPage";
 import ElementTrendPage from "./pages/trends/ElementTrendPage";
 import CategoryTrendPage from "./pages/trends/CategoryTrendPage";
 import { AdminInvitesPage } from "./pages/admin/AdminInvitesPage";
+import { AdminBrandRequestsPage } from "./pages/admin/AdminBrandRequestsPage";
 import { InviteLandingPage } from "./pages/invite/InviteLandingPage";
 
 export default function App() {
@@ -38,6 +39,7 @@ export default function App() {
               <Route path="trends/retail/element" element={<ElementTrendPage />} />
               <Route path="trends/retail/:garmentType" element={<CategoryTrendPage />} />
               <Route path="admin/invites" element={<AdminInvitesPage />} />
+              <Route path="admin/brand-requests" element={<AdminBrandRequestsPage />} />
             </Route>
           </Route>
           <Route path="/" element={<Navigate to="/app/looks" replace />} />
