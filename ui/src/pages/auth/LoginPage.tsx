@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate, Link as RouterLink } from "react-router-dom";
+import { useNavigate, useSearchParams, Link as RouterLink } from "react-router-dom";
 import {
   Box, Typography, TextField, Button, Alert, Link,
   IconButton, InputAdornment,
@@ -51,6 +51,7 @@ function LabeledInput({
 
 export function LoginPage() {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const { login } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -64,7 +65,16 @@ export function LoginPage() {
     setLoading(true);
     try {
       await login(email, password);
-      navigate("/app/looks");
+
+      const redirectParam = searchParams.get("redirect");
+      const pendingInvite = sessionStorage.getItem("pending_tenant_invite");
+      if (redirectParam) {
+        navigate(redirectParam);
+      } else if (pendingInvite) {
+        navigate(`/invite/${pendingInvite}`);
+      } else {
+        navigate("/app/looks");
+      }
     } catch (err) {
       setError(err instanceof Error ? err.message : "Login failed");
     } finally {

@@ -18,3 +18,9 @@ export function requireTenant(req, res, next) {
   if (!req.user.tenantId && !req.tenantId) throw new ApiError(403, "Tenant context required");
   next();
 }
+
+export function requireAdmin(req, res, next) {
+  if (!req.user) throw new ApiError(401, "Not authenticated");
+  if (req.user.role !== "admin") throw new ApiError(403, "Admin access required");
+  next();
+}

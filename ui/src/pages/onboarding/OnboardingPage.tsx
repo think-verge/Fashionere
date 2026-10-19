@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import {
   Box, Typography, Button, Chip, TextField, Alert,
   Stepper, Step, StepLabel, Paper, Link,
@@ -17,16 +17,25 @@ const GARMENT_TYPES = ["Jacket", "Coat", "Dress", "Trousers", "Skirt", "Top", "S
 
 export default function OnboardingPage() {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const emailParam = searchParams.get("email");
+  const inviteParam = searchParams.get("invite");
   const { signup } = useAuth();
   const [step, setStep] = useState(0);
   const [role, setRole] = useState<"designer" | "retail_chain" | null>(null);
   const [sources, setSources] = useState<string[]>([]);
   const [interests, setInterests] = useState<string[]>([]);
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState(emailParam || "");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (inviteParam) {
+      sessionStorage.setItem("pending_tenant_invite", inviteParam);
+    }
+  }, [inviteParam]);
 
   const availableSources = role === "retail_chain" ? RETAIL_SOURCES : DESIGNER_SOURCES;
 
@@ -51,7 +60,13 @@ export default function OnboardingPage() {
         sources: sources.map((s) => s.toLowerCase().replace(/[^a-z0-9]/g, "")),
         garment_interests: interests.map((g) => g.toLowerCase()),
       });
-      navigate("/app/looks");
+
+      const pendingInvite = inviteParam || sessionStorage.getItem("pending_tenant_invite");
+      if (pendingInvite) {
+        navigate(`/invite/${pendingInvite}`);
+      } else {
+        navigate("/app/looks");
+      }
     } catch (err) {
       setError(err instanceof Error ? err.message : "Sign up failed");
     } finally {

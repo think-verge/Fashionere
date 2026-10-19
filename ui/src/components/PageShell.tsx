@@ -29,12 +29,13 @@ import LogoutIcon from "@mui/icons-material/LogoutOutlined";
 import FolderIcon from "@mui/icons-material/FolderOutlined";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import AddIcon from "@mui/icons-material/Add";
+import AdminPanelSettingsOutlinedIcon from "@mui/icons-material/AdminPanelSettingsOutlined";
 import { useAuth } from "../lib/auth-context";
 import { api } from "../lib/api/client";
 
 const DRAWER_WIDTH = 288;
 
-const NAV_ITEMS = [
+const BASE_NAV_ITEMS = [
   { label: "Looks", path: "/app/looks", icon: <SearchIcon /> },
   { label: "Workspaces", path: "/app/workspaces", icon: <LayersIcon /> },
   { label: "Trends", path: "/app/trends", icon: <TrendingUpIcon /> },
@@ -171,7 +172,7 @@ export function PageShell({ title, children }: Props) {
               Role
             </Typography>
             <Typography sx={{ fontSize: 13, fontWeight: 500, color: "text.secondary", mb: 2 }}>
-              {user.role === "retail_chain" ? "Retail Chain" : "Fashion Designer"}
+              {user.role === "admin" ? "Administrator" : user.role === "retail_chain" ? "Retail Chain" : "Fashion Designer"}
             </Typography>
 
             {/* Project selector */}
@@ -283,41 +284,51 @@ export function PageShell({ title, children }: Props) {
         <Divider sx={{ borderColor: "#f0e4e2", mx: 2 }} />
 
         {/* Nav */}
-        <List sx={{ flex: 1, px: 1.5, py: 1.5, display: "flex", flexDirection: "column", gap: 0.25 }}>
-          {NAV_ITEMS.map((item) => {
-            const active = isActive(item.path);
-            return (
-              <ListItem key={item.path} disablePadding>
-                <ListItemButton
-                  onClick={() => navigate(item.path)}
-                  sx={{
-                    borderRadius: "12px",
-                    px: 2,
-                    py: 1.25,
-                    bgcolor: active ? "primary.main" : "transparent",
-                    color: active ? "#ffffff" : "#58413f",
-                    "&:hover": {
-                      bgcolor: active ? "primary.main" : "#fff0ef",
-                    },
-                    "& .MuiListItemIcon-root": {
-                      color: active ? "#ffffff" : "#58413f",
-                    },
-                  }}
-                >
-                  <ListItemIcon sx={{ minWidth: 36 }}>{item.icon}</ListItemIcon>
-                  <ListItemText
-                    primary={item.label}
-                    primaryTypographyProps={{
-                      variant: "body2",
-                      fontWeight: active ? 600 : 500,
-                      fontSize: 14,
-                    }}
-                  />
-                </ListItemButton>
-              </ListItem>
-            );
-          })}
-        </List>
+        {(() => {
+          const navItems = [
+            ...BASE_NAV_ITEMS,
+            ...(user?.role === "admin"
+              ? [{ label: "Tenant Invites", path: "/app/admin/invites", icon: <AdminPanelSettingsOutlinedIcon /> }]
+              : []),
+          ];
+          return (
+            <List sx={{ flex: 1, px: 1.5, py: 1.5, display: "flex", flexDirection: "column", gap: 0.25 }}>
+              {navItems.map((item) => {
+                const active = isActive(item.path);
+                return (
+                  <ListItem key={item.path} disablePadding>
+                    <ListItemButton
+                      onClick={() => navigate(item.path)}
+                      sx={{
+                        borderRadius: "12px",
+                        px: 2,
+                        py: 1.25,
+                        bgcolor: active ? "primary.main" : "transparent",
+                        color: active ? "#ffffff" : "#58413f",
+                        "&:hover": {
+                          bgcolor: active ? "primary.main" : "#fff0ef",
+                        },
+                        "& .MuiListItemIcon-root": {
+                          color: active ? "#ffffff" : "#58413f",
+                        },
+                      }}
+                    >
+                      <ListItemIcon sx={{ minWidth: 36 }}>{item.icon}</ListItemIcon>
+                      <ListItemText
+                        primary={item.label}
+                        primaryTypographyProps={{
+                          variant: "body2",
+                          fontWeight: active ? 600 : 500,
+                          fontSize: 14,
+                        }}
+                      />
+                    </ListItemButton>
+                  </ListItem>
+                );
+              })}
+            </List>
+          );
+        })()}
 
         {/* Bottom user section */}
         <Divider sx={{ borderColor: "#f0e4e2" }} />

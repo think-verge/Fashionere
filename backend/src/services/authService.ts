@@ -6,8 +6,8 @@ import { Project } from "../models/Project.js";
 import { Tenant } from "../models/Tenant.js";
 import { ApiError } from "../utils/api-error.js";
 
-function signToken(userId: string, email: string, tenantId?: string) {
-  return jwt.sign({ userId, email, tenantId }, env.JWT_SECRET, { expiresIn: "7d" });
+function signToken(userId: string, email: string, tenantId?: string, role?: string) {
+  return jwt.sign({ userId, email, tenantId, role }, env.JWT_SECRET, { expiresIn: "7d" });
 }
 
 function serializeUser(user: InstanceType<typeof User>) {
@@ -94,7 +94,7 @@ export async function signup(
     tags: [],
   });
 
-  const token = signToken(user.id, user.email, tenantId);
+  const token = signToken(user.id, user.email, tenantId, user.role);
   return { token, user: serializeUser(user), project: serializeProject(project) };
 }
 
@@ -108,7 +108,7 @@ export async function login(email: string, password: string) {
   const tenantId = await ensureUserTenant(user);
   const project = await Project.findOne({ userId: user._id });
 
-  const token = signToken(user.id, user.email, tenantId);
+  const token = signToken(user.id, user.email, tenantId, user.role);
   return {
     token,
     user: serializeUser(user),

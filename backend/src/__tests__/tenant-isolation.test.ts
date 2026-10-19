@@ -1,7 +1,7 @@
 import { describe, it, expect, vi } from "vitest";
 import type { Request, Response, NextFunction } from "express";
 import { ApiError } from "../utils/api-error.js";
-import { requireTenant } from "../middleware/auth.js";
+import { requireTenant, requireAdmin } from "../middleware/auth.js";
 import { buildTenantFilter } from "../services/looksService.js";
 
 describe("Tenant Middleware and Context Enforcement", () => {
@@ -41,6 +41,28 @@ describe("Tenant Middleware and Context Enforcement", () => {
     expect(() => requireTenant(req, res, next)).not.toThrow();
     expect(next).toHaveBeenCalledOnce();
   });
+
+  it("requireAdmin rejects unauthenticated or non-admin requests", () => {
+    const reqNoUser = {} as Request;
+    const res = {} as Response;
+    const next = vi.fn() as NextFunction;
+    expect(() => requireAdmin(reqNoUser, res, next)).toThrow(ApiError);
+
+    const reqDesigner = {
+      user: { userId: "u1", email: "d@test.com", role: "designer" },
+    } as unknown as Request;
+    expect(() => requireAdmin(reqDesigner, res, next)).toThrow(ApiError);
+  });
+
+  it("requireAdmin allows users with admin role", () => {
+    const reqAdmin = {
+      user: { userId: "u1", email: "admin@fashionere.app", role: "admin" },
+    } as unknown as Request;
+    const res = {} as Response;
+    const next = vi.fn() as NextFunction;
+    expect(() => requireAdmin(reqAdmin, res, next)).not.toThrow();
+    expect(next).toHaveBeenCalledOnce();
+  });
 });
 
 describe("Multi-Tenant Data Isolation and Filter Security", () => {
@@ -77,5 +99,22 @@ describe("Multi-Tenant Data Isolation and Filter Security", () => {
       ],
       "source.type": { $ne: "shopify" },
     });
+  });
+
+  it("gives unrestricted visibility to admin across all tenant looks", () => {
+    const adminFilter = buildTenantFilter({ role: "admin" });
+    expect(adminFilter).toEqual({});
+  });
+
+  it("allows Tenant B to query shared looks from Tenant A when granted access", () => {
+    const sharedFilter = buildTenantFilter({
+      tenantId: "tenant_B",
+      accessibleTenantIds: ["tenant_B", "tenant_A"],
+    });
+    expect(sharedFilter.$or).toEqual([
+      { tenant_id: null },
+      { tenant_id: { $exists: false } },
+      { tenant_id: { $in: ["tenant_B", "tenant_A"] } },
+    ]);
   });
 });

@@ -4,7 +4,7 @@ export interface IUser extends Document {
   email: string;
   password: string;
   name: string;
-  role: "designer" | "retail_chain";
+  role: "designer" | "retail_chain" | "admin";
   sources: string[];
   garment_interests: string[];
   tenant_id?: mongoose.Types.ObjectId | null;
@@ -18,7 +18,7 @@ const userSchema = new Schema<IUser>(
     email: { type: String, required: true, unique: true, lowercase: true, trim: true },
     password: { type: String, required: true },
     name: { type: String, required: true, trim: true },
-    role: { type: String, enum: ["designer", "retail_chain"], default: "designer" },
+    role: { type: String, enum: ["designer", "retail_chain", "admin"], default: "designer" },
     tenant_id: { type: Schema.Types.ObjectId, ref: "Tenant", default: null, index: true },
     sources: [{ type: String }],
     garment_interests: [{ type: String }],

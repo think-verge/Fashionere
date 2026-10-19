@@ -14,6 +14,8 @@ import { conceptRouter } from "./conceptRoutes.js";
 import { assetRouter } from "./assetRoutes.js";
 import { garmentPackRouter } from "./garmentPackRoutes.js";
 import { modelShootRouter } from "./modelShootRoutes.js";
+import { adminRouter } from "./adminRoutes.js";
+import { inviteRouter } from "./inviteRoutes.js";
 
 export const apiRouter = Router();
 
@@ -32,3 +34,5 @@ apiRouter.use("/concepts", conceptRouter);
 apiRouter.use("/assets", assetRouter);
 apiRouter.use("/garment-packs", garmentPackRouter);
 apiRouter.use("/model-shoots", modelShootRouter);
+apiRouter.use("/admin", adminRouter);
+apiRouter.use("/invites", inviteRouter);

@@ -36,7 +36,8 @@ interface FiltersResponse {
 export default function LooksPage() {
   const navigate = useNavigate();
   const { user } = useAuth();
-  const type = user?.role === "retail_chain" ? "retail" : "runway";
+  const [adminType, setAdminType] = useState<"runway" | "retail">("runway");
+  const type = user?.role === "admin" ? adminType : user?.role === "retail_chain" ? "retail" : "runway";
 
   const [selectedBrand, setSelectedBrand] = useState<string[]>([]);
   const [selectedGarmentType, setSelectedGarmentType] = useState<string[]>([]);
@@ -89,6 +90,70 @@ export default function LooksPage() {
         heading="Curated Looks"
         description="Browse and deconstruct looks from your selected sources. Add elements to a workspace to start building your collection."
       />
+
+      {/* Admin Source Switcher Toggle */}
+      {user?.role === "admin" && (
+        <Box sx={{ mb: 3 }}>
+          <Box
+            sx={{
+              display: "inline-flex",
+              bgcolor: "#f5eee9",
+              borderRadius: "24px",
+              p: "4px",
+              border: "1px solid #eaded8",
+            }}
+          >
+            <Button
+              size="small"
+              onClick={() => {
+                setAdminType("runway");
+                setSelectedBrand([]);
+                setSelectedGarmentType([]);
+              }}
+              sx={{
+                borderRadius: "20px",
+                px: 2.5,
+                py: 0.6,
+                fontSize: 13,
+                fontWeight: 600,
+                textTransform: "none",
+                bgcolor: adminType === "runway" ? "primary.main" : "transparent",
+                color: adminType === "runway" ? "#ffffff" : "text.secondary",
+                boxShadow: adminType === "runway" ? "0 2px 8px rgba(175, 44, 44, 0.25)" : "none",
+                "&:hover": {
+                  bgcolor: adminType === "runway" ? "primary.main" : "rgba(0,0,0,0.04)",
+                },
+              }}
+            >
+              Runway Looks
+            </Button>
+            <Button
+              size="small"
+              onClick={() => {
+                setAdminType("retail");
+                setSelectedBrand([]);
+                setSelectedGarmentType([]);
+              }}
+              sx={{
+                borderRadius: "20px",
+                px: 2.5,
+                py: 0.6,
+                fontSize: 13,
+                fontWeight: 600,
+                textTransform: "none",
+                bgcolor: adminType === "retail" ? "primary.main" : "transparent",
+                color: adminType === "retail" ? "#ffffff" : "text.secondary",
+                boxShadow: adminType === "retail" ? "0 2px 8px rgba(175, 44, 44, 0.25)" : "none",
+                "&:hover": {
+                  bgcolor: adminType === "retail" ? "primary.main" : "rgba(0,0,0,0.04)",
+                },
+              }}
+            >
+              Retail Trends
+            </Button>
+          </Box>
+        </Box>
+      )}
 
       {/* Top Action Bar */}
       <Box sx={{ mb: filtersOpen ? 2 : 4 }}>

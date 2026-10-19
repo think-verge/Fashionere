@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import { ApiError } from "../utils/api-error.js";
 import { env } from "../config/env.js";
+import { Tenant } from "../models/Tenant.js";
 
 const RETAIL_SOURCES = new Set(["zara", "hm", "mango", "uniqlo", "cos", "asos"]);
 
@@ -102,16 +103,71 @@ function decodeCursor(cursor: string): string {
 const looksCol = () => mongoose.connection.db!.collection("canonical_looks");
 const deconCol = () => mongoose.connection.db!.collection("deconstructions");
 
-export function buildTenantFilter(tenantId?: string | null, source?: string | null): Record<string, unknown> {
+export async function getAccessibleTenantIds(tenantId?: string | null): Promise<string[]> {
+  if (!tenantId) return [];
+  try {
+    const tenants = await Tenant.find({
+      $or: [
+        { _id: tenantId },
+        { shared_with_tenants: tenantId },
+      ],
+    }).select("_id").lean();
+    return tenants.map((t) => String(t._id));
+  } catch {
+    return [tenantId];
+  }
+}
+
+export interface TenantFilterOpts {
+  tenantId?: string | null;
+  source?: string | null;
+  role?: string | null;
+  accessibleTenantIds?: string[];
+}
+
+export function buildTenantFilter(
+  tenantIdOrOpts?: string | null | TenantFilterOpts,
+  legacySource?: string | null,
+): Record<string, unknown> {
+  let opts: TenantFilterOpts = {};
+  if (typeof tenantIdOrOpts === "object" && tenantIdOrOpts !== null) {
+    opts = tenantIdOrOpts;
+  } else {
+    opts = { tenantId: tenantIdOrOpts, source: legacySource };
+  }
+
+  const { tenantId, source, role, accessibleTenantIds } = opts;
+
+  // Admin has unrestricted view across all tenants
+  if (role === "admin") {
+    if (source === "shopify" || source === "my_shopify") {
+      return { "source.type": "shopify" };
+    }
+    if (source === "catalog") {
+      return {
+        $or: [
+          { tenant_id: null },
+          { tenant_id: { $exists: false } },
+        ],
+        "source.type": { $ne: "shopify" },
+      };
+    }
+    return {};
+  }
+
+  const allowedTenants = (accessibleTenantIds && accessibleTenantIds.length > 0)
+    ? accessibleTenantIds
+    : (tenantId ? [tenantId] : []);
+
   // If user explicitly asks for "my_shopify" or "shopify"
   if (source === "shopify" || source === "my_shopify") {
-    if (!tenantId) {
+    if (!allowedTenants.length) {
       // Unauthenticated or no tenant -> cannot see any private shopify looks
       return { _id: { $in: [] } };
     }
     return {
       "source.type": "shopify",
-      tenant_id: tenantId,
+      tenant_id: allowedTenants.length === 1 ? allowedTenants[0] : { $in: allowedTenants },
     };
   }
 
@@ -126,13 +182,13 @@ export function buildTenantFilter(tenantId?: string | null, source?: string | nu
     };
   }
 
-  // General "All" query: public canonical looks OR looks belonging to this specific tenant
-  if (tenantId) {
+  // General "All" query: public canonical looks OR looks belonging to this specific tenant / shared tenants
+  if (allowedTenants.length > 0) {
     return {
       $or: [
         { tenant_id: null },
         { tenant_id: { $exists: false } },
-        { tenant_id: tenantId },
+        { tenant_id: allowedTenants.length === 1 ? allowedTenants[0] : { $in: allowedTenants } },
       ],
     };
   }
@@ -146,10 +202,11 @@ export function buildTenantFilter(tenantId?: string | null, source?: string | nu
   };
 }
 
-export async function listLooksFilters(opts: { type?: string; tenantId?: string }) {
-  const { type, tenantId } = opts;
+export async function listLooksFilters(opts: { type?: string; tenantId?: string; role?: string }) {
+  const { type, tenantId, role } = opts;
 
-  const typeFilter: Record<string, unknown> = buildTenantFilter(tenantId);
+  const accessibleTenantIds = await getAccessibleTenantIds(tenantId);
+  const typeFilter: Record<string, unknown> = buildTenantFilter({ tenantId, role, accessibleTenantIds });
   if (type === "retail") {
     typeFilter["source.type"] = { $in: [...RETAIL_SOURCES] };
   } else if (type === "runway") {
@@ -212,11 +269,13 @@ export async function listLooks(opts: {
   sort?: string;
   is_deconstructed?: boolean;
   tenantId?: string;
+  role?: string;
 }) {
-  const { type, source, limit, cursor, brand, garment_type, search, sort, is_deconstructed, tenantId } = opts;
+  const { type, source, limit, cursor, brand, garment_type, search, sort, is_deconstructed, tenantId, role } = opts;
 
   // Base tenant visibility filter
-  const tenantFilter = buildTenantFilter(tenantId, source);
+  const accessibleTenantIds = await getAccessibleTenantIds(tenantId);
+  const tenantFilter = buildTenantFilter({ tenantId, source, role, accessibleTenantIds });
 
   // Base type filter (used for total count too)
   const typeFilter: Record<string, any> = { ...tenantFilter };
@@ -330,15 +389,18 @@ export async function listLooks(opts: {
   };
 }
 
-export async function getLook(lookId: string, tenantId?: string | null) {
+export async function getLook(lookId: string, tenantId?: string | null, role?: string | null) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const d = await looksCol().findOne({ _id: lookId as any }) as Record<string, unknown> | null;
   if (!d) throw new ApiError(404, "Look not found");
 
-  // Multi-tenant check: if look is private to a tenant, only that tenant can access it
+  // Multi-tenant check: if look is private to a tenant, only that tenant, admin, or shared tenants can access it
   const lookTenantId = (d.tenant_id as string | undefined) ?? null;
-  if (lookTenantId && (!tenantId || String(lookTenantId) !== String(tenantId))) {
-    throw new ApiError(404, "Look not found");
+  if (lookTenantId && role !== "admin") {
+    const allowed = await getAccessibleTenantIds(tenantId);
+    if (!allowed.includes(String(lookTenantId))) {
+      throw new ApiError(404, "Look not found");
+    }
   }
 
   const decon = await deconCol().findOne({ look_id: lookId });
@@ -372,9 +434,9 @@ export async function getLook(lookId: string, tenantId?: string | null) {
   };
 }
 
-export async function getGarments(lookId: string, tenantId?: string | null) {
+export async function getGarments(lookId: string, tenantId?: string | null, role?: string | null) {
   // Enforce access control on parent look first
-  await getLook(lookId, tenantId);
+  await getLook(lookId, tenantId, role);
 
   const decon = await deconCol().findOne({ look_id: lookId });
   if (!decon) return [];
@@ -382,9 +444,9 @@ export async function getGarments(lookId: string, tenantId?: string | null) {
   return garments.map((g) => buildGarment(g, lookId));
 }
 
-export async function getGarment(lookId: string, garmentId: string, tenantId?: string | null) {
+export async function getGarment(lookId: string, garmentId: string, tenantId?: string | null, role?: string | null) {
   // Enforce access control on parent look first
-  await getLook(lookId, tenantId);
+  await getLook(lookId, tenantId, role);
 
   const decon = await deconCol().findOne({ look_id: lookId });
   if (!decon) throw new ApiError(404, "Garment not found");

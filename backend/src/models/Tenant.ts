@@ -8,6 +8,7 @@ export interface ITenant extends Document {
   status: "active" | "suspended";
   shopify_connected: boolean;
   shopify_shop_domain?: string | null;
+  shared_with_tenants: Types.ObjectId[];
   createdAt: Date;
   updatedAt: Date;
 }
@@ -21,6 +22,7 @@ const tenantSchema = new Schema<ITenant>(
     status: { type: String, enum: ["active", "suspended"], default: "active" },
     shopify_connected: { type: Boolean, default: false },
     shopify_shop_domain: { type: String, default: null },
+    shared_with_tenants: [{ type: Schema.Types.ObjectId, ref: "Tenant" }],
   },
   { timestamps: true },
 );

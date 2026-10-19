@@ -6,7 +6,7 @@ interface User {
   id: string;
   name: string;
   email: string;
-  role: "designer" | "retail_chain";
+  role: "designer" | "retail_chain" | "admin";
   sources: string[];
   garment_interests: string[];
   onboarding_complete: boolean;

@@ -6,6 +6,7 @@ import { ApiError } from "../utils/api-error.js";
 export interface AuthPayload {
   userId: string;
   email: string;
+  role?: "designer" | "retail_chain" | "admin";
   tenantId?: string;
 }
 
@@ -44,6 +45,16 @@ export function requireTenant(req: Request, _res: Response, next: NextFunction) 
   }
   if (!req.user.tenantId && !req.tenantId) {
     throw new ApiError(403, "Tenant context required");
+  }
+  next();
+}
+
+export function requireAdmin(req: Request, _res: Response, next: NextFunction) {
+  if (!req.user) {
+    throw new ApiError(401, "Not authenticated");
+  }
+  if (req.user.role !== "admin") {
+    throw new ApiError(403, "Admin access required");
   }
   next();
 }

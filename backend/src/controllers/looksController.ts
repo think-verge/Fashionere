@@ -13,7 +13,8 @@ function q(req: Request, key: string): string | undefined {
 export async function listLooksFilters(req: Request, res: Response) {
   const type = q(req, "type");
   const tenantId = req.tenantId || req.user?.tenantId;
-  const result = await looksService.listLooksFilters({ type, tenantId });
+  const role = req.user?.role;
+  const result = await looksService.listLooksFilters({ type, tenantId, role });
   res.json(result);
 }
 
@@ -28,24 +29,28 @@ export async function listLooks(req: Request, res: Response) {
   const sort = q(req, "sort");
   const is_deconstructed = q(req, "is_deconstructed") === "true";
   const tenantId = req.tenantId || req.user?.tenantId;
-  const result = await looksService.listLooks({ type, source, limit, cursor, brand, garment_type, search, sort, is_deconstructed, tenantId });
+  const role = req.user?.role;
+  const result = await looksService.listLooks({ type, source, limit, cursor, brand, garment_type, search, sort, is_deconstructed, tenantId, role });
   res.json(result);
 }
 
 export async function getLook(req: Request, res: Response) {
   const tenantId = req.tenantId || req.user?.tenantId;
-  const look = await looksService.getLook(p(req, "lookId"), tenantId);
+  const role = req.user?.role;
+  const look = await looksService.getLook(p(req, "lookId"), tenantId, role);
   res.json(look);
 }
 
 export async function getGarments(req: Request, res: Response) {
   const tenantId = req.tenantId || req.user?.tenantId;
-  const garments = await looksService.getGarments(p(req, "lookId"), tenantId);
+  const role = req.user?.role;
+  const garments = await looksService.getGarments(p(req, "lookId"), tenantId, role);
   res.json(garments);
 }
 
 export async function getGarment(req: Request, res: Response) {
   const tenantId = req.tenantId || req.user?.tenantId;
-  const garment = await looksService.getGarment(p(req, "lookId"), p(req, "garmentId"), tenantId);
+  const role = req.user?.role;
+  const garment = await looksService.getGarment(p(req, "lookId"), p(req, "garmentId"), tenantId, role);
   res.json(garment);
 }
