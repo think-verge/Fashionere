@@ -95,9 +95,10 @@ export function AdminInvitesPage() {
       setCreatedUrl(data.invite_url);
       setToast({ msg: "Invitation created successfully!", severity: "success" });
     },
-    onError: (err: any) => {
+    onError: (err: unknown) => {
+      const error = err as { response?: { data?: { message?: string; detail?: string } }; message?: string };
       setToast({
-        msg: err.response?.data?.message || err.message || "Failed to create invitation",
+        msg: error.response?.data?.detail || error.response?.data?.message || error.message || "Failed to create invitation",
         severity: "error",
       });
     },
@@ -112,9 +113,10 @@ export function AdminInvitesPage() {
       qc.invalidateQueries({ queryKey: ["admin-invites"] });
       setToast({ msg: "Invitation revoked", severity: "success" });
     },
-    onError: (err: any) => {
+    onError: (err: unknown) => {
+      const error = err as { response?: { data?: { message?: string; detail?: string } }; message?: string };
       setToast({
-        msg: err.response?.data?.message || err.message || "Failed to revoke invitation",
+        msg: error.response?.data?.detail || error.response?.data?.message || error.message || "Failed to revoke invitation",
         severity: "error",
       });
     },

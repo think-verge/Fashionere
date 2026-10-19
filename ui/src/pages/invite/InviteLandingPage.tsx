@@ -6,7 +6,6 @@ import {
   Typography,
   Button,
   Paper,
-  Chip,
   CircularProgress,
   Alert,
 } from "@mui/material";
@@ -60,9 +59,10 @@ export function InviteLandingPage() {
       sessionStorage.removeItem("pending_tenant_invite");
       setAcceptedSuccess(true);
     },
-    onError: (err: any) => {
+    onError: (err: unknown) => {
+      const error = err as { response?: { data?: { detail?: string; message?: string } }; message?: string };
       setErrorMessage(
-        err.response?.data?.detail || err.response?.data?.message || err.message || "Failed to accept invitation. Please try again."
+        error.response?.data?.detail || error.response?.data?.message || error.message || "Failed to accept invitation. Please try again."
       );
     },
   });
@@ -76,7 +76,7 @@ export function InviteLandingPage() {
   }
 
   if (isError || !preview) {
-    const errText = (error as any)?.response?.data?.message || "This invitation link is invalid or has expired.";
+    const errText = (error as { response?: { data?: { message?: string } } })?.response?.data?.message || "This invitation link is invalid or has expired.";
     return (
       <Box sx={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", bgcolor: "#faf8f7", p: 3 }}>
         <Paper
