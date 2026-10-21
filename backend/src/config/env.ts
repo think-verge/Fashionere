@@ -19,4 +19,8 @@ export const env = {
   // Judgement-heavy calls (Stage 3 stylist and art director) use the Pro model.
   GEMINI_PRO_MODEL: process.env.GEMINI_PRO_MODEL ?? "gemini-pro-latest",
   ASSET_BASE_URL: process.env.ASSET_BASE_URL ?? "/api/v1/assets",
+  SHOPIFY_API_KEY: process.env.SHOPIFY_API_KEY ?? "fashionere_shopify_api_key",
+  SHOPIFY_API_SECRET: process.env.SHOPIFY_API_SECRET ?? "fashionere_shopify_api_secret",
+  SHOPIFY_SCOPES: process.env.SHOPIFY_SCOPES ?? "read_products,read_product_listings",
+  SHOPIFY_APP_URL: process.env.SHOPIFY_APP_URL ?? (process.env.CLIENT_ORIGIN ? "http://localhost:3001" : "http://localhost:3001"),
 };

@@ -17,6 +17,7 @@ import { modelShootRouter } from "./modelShootRoutes.js";
 import { adminRouter } from "./adminRoutes.js";
 import { inviteRouter } from "./inviteRoutes.js";
 import { brandRequestRouter } from "./brandRequestRoutes.js";
+import { shopifyRouter } from "./shopifyRoutes.js";
 
 export const apiRouter = Router();
 
@@ -38,3 +39,5 @@ apiRouter.use("/model-shoots", modelShootRouter);
 apiRouter.use("/admin", adminRouter);
 apiRouter.use("/invites", inviteRouter);
 apiRouter.use("/brand-requests", brandRequestRouter);
+apiRouter.use("/shopify", shopifyRouter);
+apiRouter.use("/integrations/shopify", shopifyRouter);
