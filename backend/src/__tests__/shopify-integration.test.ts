@@ -14,6 +14,7 @@ import {
   getShopifyStatus,
   handleShopifyWebhook,
   GRAPHQL_PRODUCTS_QUERY,
+  computeProductContentHash,
 } from "../services/shopifyService.js";
 import { Tenant } from "../models/Tenant.js";
 import { ShopifyConnection } from "../models/ShopifyConnection.js";
@@ -276,13 +277,36 @@ describe("Shopify Integration Service (Ticket #171)", () => {
         variables: { first: 50, after: "cursor_page_1" },
       });
 
-      // Verify canonical_looks upsert
+      // Verify canonical_looks upsert matching Ticket #172 input contract
       expect(mockUpdateOne).toHaveBeenCalledTimes(2);
       const firstUpsert = mockUpdateOne.mock.calls[0];
       expect(firstUpsert[0].tenant_id).toBe(dummyTenantId);
       expect(firstUpsert[0]["source.shopify_product_id"]).toBe("1001");
       expect(firstUpsert[1].$set.brand).toBe("Acne Studios");
       expect(firstUpsert[1].$set.image_url).toBe("https://img.test/coat.jpg");
+      expect(firstUpsert[1].$set.deconstruction_status).toBe("pending");
+      expect(firstUpsert[1].$set.is_deconstructed).toBe(false);
+      expect(firstUpsert[1].$set.content_hash).toBeDefined();
+      expect(firstUpsert[1].$set.images).toHaveLength(1);
+      expect(firstUpsert[1].$set.variants).toHaveLength(1);
+    });
+
+    it("computes reproducible content hash for product deduplication (Ticket #172 TODO #7)", () => {
+      const prodA = {
+        title: "Trench Coat",
+        body_html: "Wool",
+        images: [{ src: "https://img.test/1.jpg" }],
+        variants: [{ title: "M", price: "400.00", sku: "TC-M" }],
+      };
+      const hash1 = computeProductContentHash(prodA);
+      const hash2 = computeProductContentHash(prodA);
+      expect(hash1).toBe(hash2);
+
+      const hashDifferent = computeProductContentHash({
+        ...prodA,
+        title: "Trench Coat Updated",
+      });
+      expect(hash1).not.toBe(hashDifferent);
     });
   });
 

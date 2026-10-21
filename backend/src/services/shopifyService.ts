@@ -198,6 +198,29 @@ export function verifyWebhookHmac(rawBody: string | Buffer, hmacHeader?: string)
 }
 
 /**
+ * Computes a SHA-256 content hash of product title, description, images, and variants.
+ * Used as a cost guardrail (Ticket #172 TODO #7) to dedupe already-processed products.
+ */
+export function computeProductContentHash(product: {
+  title?: string;
+  body_html?: string;
+  images?: any[];
+  variants?: any[];
+}): string {
+  const content = JSON.stringify({
+    title: product.title || "",
+    description: product.body_html || "",
+    images: (product.images || []).map((img) => img.src || img.url || ""),
+    variants: (product.variants || []).map((v) => ({
+      title: v.title,
+      price: v.price,
+      sku: v.sku,
+    })),
+  });
+  return crypto.createHash("sha256").update(content).digest("hex");
+}
+
+/**
  * Constructs the Shopify OAuth authorization URL.
  */
 export function buildAuthorizationUrl(
@@ -440,8 +463,27 @@ export async function syncShopifyCatalog(
 
   for (const prod of products) {
     const productIdStr = String(prod.id);
-    const imageUrl = prod.image?.src || prod.images?.[0]?.src || "";
+    const rawImages = prod.images && prod.images.length > 0 ? prod.images : prod.image ? [prod.image] : [];
+    const imagesList = rawImages.map((img: any) => ({
+      id: String(img.id || ""),
+      url: img.src || img.url || "",
+      alt: img.alt || img.altText || "",
+      width: img.width,
+      height: img.height,
+    }));
+    const imageUrl = imagesList[0]?.url || "";
     const variants = prod.variants ?? [];
+    const tagsList = Array.isArray(prod.tags)
+      ? prod.tags
+      : typeof prod.tags === "string"
+      ? prod.tags.split(",").map((t: string) => t.trim()).filter(Boolean)
+      : [];
+    const contentHash = computeProductContentHash({
+      title: prod.title,
+      body_html: prod.body_html,
+      images: imagesList,
+      variants,
+    });
 
     const lookDoc = {
       tenant_id: tenant._id,
@@ -460,8 +502,20 @@ export async function syncShopifyCatalog(
       },
       image_url: imageUrl,
       thumbnail: imageUrl,
+      images: imagesList,
+      variants: variants.map((v: any) => ({
+        id: String(v.id || ""),
+        title: v.title || "",
+        price: v.price || "",
+        sku: v.sku || "",
+        inventory_quantity: v.inventory_quantity,
+      })),
+      tags: tagsList,
+      product_type: prod.product_type || "Apparel",
       garment_count: Math.max(1, variants.length),
-      is_deconstructed: true,
+      content_hash: contentHash,
+      deconstruction_status: "pending",
+      is_deconstructed: false,
       updated_at: new Date(),
     };
 
@@ -515,8 +569,27 @@ export async function handleShopifyWebhook(
     case "products/update": {
       if (!tenantId) return { handled: false };
       const productIdStr = String(payload.id);
-      const imageUrl = payload.image?.src || payload.images?.[0]?.src || "";
+      const rawImages = payload.images ?? (payload.image ? [payload.image] : []);
+      const imagesList = rawImages.map((img: any) => ({
+        id: String(img.id || ""),
+        url: img.src || img.url || "",
+        alt: img.alt || img.altText || "",
+        width: img.width,
+        height: img.height,
+      }));
+      const imageUrl = imagesList[0]?.url || payload.image?.src || "";
       const variants = payload.variants ?? [];
+      const tagsList = Array.isArray(payload.tags)
+        ? payload.tags
+        : typeof payload.tags === "string"
+        ? payload.tags.split(",").map((t: string) => t.trim()).filter(Boolean)
+        : [];
+      const contentHash = computeProductContentHash({
+        title: payload.title,
+        body_html: payload.body_html,
+        images: imagesList,
+        variants,
+      });
 
       await collection.updateOne(
         {
@@ -542,8 +615,20 @@ export async function handleShopifyWebhook(
             },
             image_url: imageUrl,
             thumbnail: imageUrl,
+            images: imagesList,
+            variants: variants.map((v: any) => ({
+              id: String(v.id || ""),
+              title: v.title || "",
+              price: v.price || "",
+              sku: v.sku || "",
+              inventory_quantity: v.inventory_quantity,
+            })),
+            tags: tagsList,
+            product_type: payload.product_type || "Apparel",
             garment_count: Math.max(1, variants.length),
-            is_deconstructed: true,
+            content_hash: contentHash,
+            deconstruction_status: "pending",
+            is_deconstructed: false,
             updated_at: new Date(),
           },
           $setOnInsert: { created_at: new Date() },
