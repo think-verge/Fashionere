@@ -18,7 +18,14 @@ export function createApp() {
       credentials: true,
     }),
   );
-  app.use(express.json({ limit: "10mb" }));
+  app.use(
+    express.json({
+      limit: "10mb",
+      verify: (req: any, _res, buf) => {
+        req.rawBody = buf;
+      },
+    })
+  );
   app.use(cookieParser());
 
   // Serve agent-generated static images (mock SVGs + real images from providers)

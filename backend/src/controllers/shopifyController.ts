@@ -91,3 +91,30 @@ export async function disconnect(req: Request, res: Response) {
   const result = await shopifyService.disconnectShopify(tenantId);
   res.json(result);
 }
+
+/**
+ * Webhook receiver for Shopify store events (products/create, update, delete, app/uninstalled, GDPR).
+ * POST /api/v1/shopify/webhooks
+ */
+export async function handleWebhook(req: Request, res: Response) {
+  const topic = (req.headers["x-shopify-topic"] as string)?.toLowerCase();
+  const shop = req.headers["x-shopify-shop-domain"] as string;
+  const hmacHeader = req.headers["x-shopify-hmac-sha256"] as string;
+
+  if (!topic || !shop) {
+    throw new ApiError(
+      400,
+      "Missing required Shopify webhook headers (x-shopify-topic, x-shopify-shop-domain)"
+    );
+  }
+
+  const rawBody = (req as any).rawBody || JSON.stringify(req.body);
+
+  if (env.NODE_ENV === "production" && !shopifyService.verifyWebhookHmac(rawBody, hmacHeader)) {
+    throw new ApiError(401, "Shopify Webhook HMAC verification failed");
+  }
+
+  const result = await shopifyService.handleShopifyWebhook(topic, shop, req.body);
+  res.status(200).json({ ok: true, ...result });
+}
+

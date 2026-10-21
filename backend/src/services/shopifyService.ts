@@ -2,6 +2,7 @@ import crypto from "node:crypto";
 import axios from "axios";
 import mongoose from "mongoose";
 import { Tenant, type ITenant } from "../models/Tenant.js";
+import { ShopifyConnection, type IShopifyConnection } from "../models/ShopifyConnection.js";
 import { ApiError } from "../utils/api-error.js";
 import { env } from "../config/env.js";
 
@@ -35,9 +36,52 @@ export interface ShopifyProduct {
   variants?: ShopifyProductVariant[];
 }
 
+export const GRAPHQL_PRODUCTS_QUERY = `
+  query GetProductsCatalog($first: Int!, $after: String) {
+    products(first: $first, after: $after) {
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+      edges {
+        cursor
+        node {
+          id
+          title
+          descriptionHtml
+          vendor
+          productType
+          tags
+          images(first: 10) {
+            edges {
+              node {
+                id
+                url
+                altText
+                width
+                height
+              }
+            }
+          }
+          variants(first: 20) {
+            edges {
+              node {
+                id
+                title
+                price
+                sku
+                inventoryQuantity
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+
 /**
  * Validates and sanitizes a Shopify store domain.
- * Accepts "my-shop", "my-shop.myshopify.com", "https://my-shop.myshopify.com".
  */
 export function sanitizeShopDomain(rawShop: string): string {
   if (!rawShop) {
@@ -94,15 +138,16 @@ export function verifyOAuthState(stateString: string): string {
     }
 
     return tenantId;
-  } catch (err: any) {
-    throw new ApiError(400, `OAuth state validation failed: ${err.message}`);
+  } catch (err: unknown) {
+    const error = err as Error;
+    throw new ApiError(400, `OAuth state validation failed: ${error.message}`);
   }
 }
 
 /**
  * Validates Shopify HMAC signature for query parameters.
  */
-export function verifyShopifyHmac(query: Record<string, any>): boolean {
+export function verifyShopifyHmac(query: Record<string, unknown>): boolean {
   const hmac = query.hmac;
   if (!hmac || typeof hmac !== "string") return false;
 
@@ -112,7 +157,7 @@ export function verifyShopifyHmac(query: Record<string, any>): boolean {
     .sort();
 
   for (const k of keys) {
-    const val = Array.isArray(query[k]) ? query[k].join(",") : query[k];
+    const val = Array.isArray(query[k]) ? (query[k] as string[]).join(",") : String(query[k]);
     params.push(`${k}=${val}`);
   }
 
@@ -126,6 +171,26 @@ export function verifyShopifyHmac(query: Record<string, any>): boolean {
     return crypto.timingSafeEqual(
       Buffer.from(hmac, "hex"),
       Buffer.from(generatedHash, "hex")
+    );
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Verifies Shopify Webhook HMAC header (Base64 encoded).
+ */
+export function verifyWebhookHmac(rawBody: string | Buffer, hmacHeader?: string): boolean {
+  if (!hmacHeader) return false;
+  const hash = crypto
+    .createHmac("sha256", env.SHOPIFY_API_SECRET)
+    .update(rawBody)
+    .digest("base64");
+
+  try {
+    return crypto.timingSafeEqual(
+      Buffer.from(hmacHeader, "utf8"),
+      Buffer.from(hash, "utf8")
     );
   } catch {
     return false;
@@ -160,18 +225,17 @@ export async function handleOAuthCallback(query: {
   shop?: string;
   state?: string;
   hmac?: string;
-  [key: string]: any;
-}): Promise<{ tenant: ITenant; shop: string }> {
-  const { code, shop: rawShop, state, hmac } = query;
+  [key: string]: unknown;
+}): Promise<{ tenant: ITenant; connection: IShopifyConnection; shop: string }> {
+  const { code, shop: rawShop, state } = query;
 
-  if (!code || !rawShop || !state) {
+  if (!code || !rawShop || !state || typeof code !== "string" || typeof rawShop !== "string" || typeof state !== "string") {
     throw new ApiError(400, "Missing required OAuth parameters: code, shop, or state");
   }
 
   const shop = sanitizeShopDomain(rawShop);
   const tenantId = verifyOAuthState(state);
 
-  // Validate HMAC in production or when valid secret is configured
   if (env.NODE_ENV === "production" && !verifyShopifyHmac(query)) {
     throw new ApiError(401, "Shopify HMAC signature verification failed");
   }
@@ -183,7 +247,6 @@ export async function handleOAuthCallback(query: {
 
   let accessToken = `shpat_sandbox_${crypto.randomBytes(16).toString("hex")}`;
 
-  // Exchange authorization code for permanent access token
   try {
     const tokenResponse = await axios.post(
       `https://${shop}/admin/oauth/access_token`,
@@ -197,23 +260,34 @@ export async function handleOAuthCallback(query: {
     if (tokenResponse.data?.access_token) {
       accessToken = tokenResponse.data.access_token;
     }
-  } catch (err: any) {
-    // In local development or mock environments, fallback gracefully to test token
+  } catch (err: unknown) {
+    const error = err as Error;
     if (env.NODE_ENV === "production") {
-      throw new ApiError(502, `Failed to exchange code with Shopify: ${err.message}`);
+      throw new ApiError(502, `Failed to exchange code with Shopify: ${error.message}`);
     }
   }
 
+  const scopes = env.SHOPIFY_SCOPES.split(",").map((s) => s.trim());
+
+  // Store in dedicated ShopifyConnection model (TODO #2)
+  const connection = await ShopifyConnection.findOneAndUpdate(
+    { tenant_id: tenant._id },
+    {
+      tenant_id: tenant._id,
+      shop_domain: shop,
+      access_token: accessToken,
+      scopes,
+      status: "active",
+      sync_error: null,
+    },
+    { upsert: true, new: true }
+  );
+
   tenant.shopify_connected = true;
   tenant.shopify_shop_domain = shop;
-  tenant.shopify_access_token = accessToken;
-  tenant.shopify_scopes = env.SHOPIFY_SCOPES.split(",").map((s) => s.trim());
-  tenant.shopify_connected_at = new Date();
-  tenant.shopify_sync_status = "idle";
-  tenant.shopify_sync_error = null;
   await tenant.save();
 
-  return { tenant, shop };
+  return { tenant, connection, shop };
 }
 
 /**
@@ -223,15 +297,16 @@ export async function getShopifyStatus(tenantId: string) {
   const tenant = await Tenant.findById(tenantId).lean();
   if (!tenant) throw new ApiError(404, "Tenant not found");
 
+  const connection = await ShopifyConnection.findOne({ tenant_id: tenantId }).lean();
+
   return {
-    connected: Boolean(tenant.shopify_connected),
-    shop_domain: tenant.shopify_shop_domain ?? null,
-    connected_at: tenant.shopify_connected_at ?? null,
-    catalog_synced_at: tenant.shopify_catalog_synced_at ?? null,
-    sync_status: tenant.shopify_sync_status ?? "idle",
-    sync_error: tenant.shopify_sync_error ?? null,
-    product_count: tenant.shopify_product_count ?? 0,
-    scopes: tenant.shopify_scopes ?? [],
+    connected: Boolean(tenant.shopify_connected && connection?.status === "active"),
+    shop_domain: connection?.shop_domain ?? tenant.shopify_shop_domain ?? null,
+    status: connection?.status ?? (tenant.shopify_connected ? "active" : "disconnected"),
+    last_synced_at: connection?.last_synced_at ?? null,
+    sync_error: connection?.sync_error ?? null,
+    product_count: connection?.product_count ?? 0,
+    scopes: connection?.scopes ?? [],
   };
 }
 
@@ -242,19 +317,23 @@ export async function disconnectShopify(tenantId: string) {
   const tenant = await Tenant.findById(tenantId);
   if (!tenant) throw new ApiError(404, "Tenant not found");
 
+  await ShopifyConnection.findOneAndUpdate(
+    { tenant_id: tenant._id },
+    {
+      status: "disconnected",
+      access_token: "",
+    }
+  );
+
   tenant.shopify_connected = false;
   tenant.shopify_shop_domain = null;
-  tenant.shopify_access_token = null;
-  tenant.shopify_scopes = [];
-  tenant.shopify_sync_status = "idle";
-  tenant.shopify_sync_error = null;
   await tenant.save();
 
   return { success: true, message: "Shopify store disconnected successfully" };
 }
 
 /**
- * Ingests/syncs products from the connected Shopify store into tenant-scoped looks.
+ * Ingests/syncs products using Shopify Admin GraphQL API with cursor pagination (TODO #4).
  */
 export async function syncShopifyCatalog(
   tenantId: string
@@ -262,41 +341,96 @@ export async function syncShopifyCatalog(
   const tenant = await Tenant.findById(tenantId);
   if (!tenant) throw new ApiError(404, "Tenant not found");
 
-  if (!tenant.shopify_connected || !tenant.shopify_shop_domain) {
+  const connection = await ShopifyConnection.findOne({ tenant_id: tenant._id });
+  if (!connection || connection.status !== "active") {
     throw new ApiError(400, "Shopify store is not connected for this organization");
   }
 
-  tenant.shopify_sync_status = "syncing";
-  tenant.shopify_sync_error = null;
-  await tenant.save();
+  connection.status = "syncing";
+  connection.sync_error = null;
+  await connection.save();
 
   let products: ShopifyProduct[] = [];
-  const shop = tenant.shopify_shop_domain;
+  const shop = connection.shop_domain;
+  const accessToken = connection.access_token;
 
   try {
-    if (tenant.shopify_access_token && !tenant.shopify_access_token.startsWith("shpat_sandbox_")) {
-      const response = await axios.get(
-        `https://${shop}/admin/api/2024-01/products.json?limit=250`,
-        {
-          headers: {
-            "X-Shopify-Access-Token": tenant.shopify_access_token,
+    if (accessToken && !accessToken.startsWith("shpat_sandbox_")) {
+      let cursor: string | null = null;
+      let hasNextPage = true;
+
+      // Cursor pagination loop
+      while (hasNextPage) {
+        const response: any = await axios.post(
+          `https://${shop}/admin/api/2024-01/graphql.json`,
+          {
+            query: GRAPHQL_PRODUCTS_QUERY,
+            variables: { first: 50, after: cursor },
           },
-          timeout: 10000,
+          {
+            headers: {
+              "Content-Type": "application/json",
+              "X-Shopify-Access-Token": accessToken,
+            },
+            timeout: 12000,
+          }
+        );
+
+        // Rate limit / cost backoff handling
+        const cost = response.data?.extensions?.cost;
+        if (cost?.throttleStatus?.currentlyAvailable < 50) {
+          await new Promise((resolve) => setTimeout(resolve, 1000));
         }
-      );
-      products = response.data?.products ?? [];
+
+        const data: any = response.data?.data?.products;
+        if (!data) break;
+
+        for (const edge of data.edges ?? []) {
+          const node = edge.node;
+          const numericId = node.id.replace(/^gid:\/\/shopify\/Product\//, "");
+          const images = (node.images?.edges ?? []).map((imgEdge: any) => ({
+            id: imgEdge.node.id,
+            src: imgEdge.node.url,
+            alt: imgEdge.node.altText,
+            width: imgEdge.node.width,
+            height: imgEdge.node.height,
+          }));
+          const variants = (node.variants?.edges ?? []).map((varEdge: any) => ({
+            id: varEdge.node.id,
+            title: varEdge.node.title,
+            price: varEdge.node.price,
+            sku: varEdge.node.sku,
+            inventory_quantity: varEdge.node.inventoryQuantity,
+          }));
+
+          products.push({
+            id: numericId,
+            title: node.title,
+            body_html: node.descriptionHtml,
+            vendor: node.vendor,
+            product_type: node.productType,
+            tags: Array.isArray(node.tags) ? node.tags.join(", ") : node.tags,
+            images,
+            image: images[0],
+            variants,
+          });
+        }
+
+        hasNextPage = data.pageInfo?.hasNextPage ?? false;
+        cursor = data.pageInfo?.endCursor ?? null;
+      }
     }
-  } catch (err: any) {
-    // If live API cannot be reached, fallback in non-production to fixtures
+  } catch (err: unknown) {
+    const error = err as Error;
     if (env.NODE_ENV === "production") {
-      tenant.shopify_sync_status = "failed";
-      tenant.shopify_sync_error = err.message;
-      await tenant.save();
-      throw new ApiError(502, `Failed to fetch products from Shopify: ${err.message}`);
+      connection.status = "error";
+      connection.sync_error = error.message;
+      await connection.save();
+      throw new ApiError(502, `Failed to query products from Shopify GraphQL API: ${error.message}`);
     }
   }
 
-  // Provide realistic fashion products if in mock/sandbox mode
+  // Provide realistic fixtures for sandbox / test runs
   if (products.length === 0) {
     products = getMockShopifyProducts(tenant.name);
   }
@@ -347,16 +481,120 @@ export async function syncShopifyCatalog(
     importedCount++;
   }
 
-  tenant.shopify_catalog_synced_at = new Date();
-  tenant.shopify_sync_status = "synced";
-  tenant.shopify_product_count = importedCount;
-  await tenant.save();
+  connection.last_synced_at = new Date();
+  connection.status = "active";
+  connection.product_count = importedCount;
+  await connection.save();
 
   return {
     success: true,
     imported_count: importedCount,
     products,
   };
+}
+
+/**
+ * Handles incoming webhooks from Shopify (TODO #7 & #9).
+ */
+export async function handleShopifyWebhook(
+  topic: string,
+  shop: string,
+  payload: Record<string, any>
+): Promise<{ handled: boolean; action?: string }> {
+  const collection = looksCol();
+
+  const connection = await ShopifyConnection.findOne({ shop_domain: shop });
+  if (!connection && !topic.includes("redact") && topic !== "app/uninstalled") {
+    return { handled: false };
+  }
+
+  const tenantId = connection?.tenant_id;
+
+  switch (topic) {
+    case "products/create":
+    case "products/update": {
+      if (!tenantId) return { handled: false };
+      const productIdStr = String(payload.id);
+      const imageUrl = payload.image?.src || payload.images?.[0]?.src || "";
+      const variants = payload.variants ?? [];
+
+      await collection.updateOne(
+        {
+          tenant_id: tenantId,
+          "source.type": "shopify",
+          "source.shopify_product_id": productIdStr,
+        },
+        {
+          $set: {
+            tenant_id: tenantId,
+            name: payload.title,
+            title: payload.title,
+            description: payload.body_html?.replace(/<[^>]*>/g, "") || "",
+            brand: payload.vendor || "Shopify Store",
+            season: "Shopify Catalog",
+            year: new Date().getFullYear(),
+            type: "retail",
+            source: {
+              type: "shopify",
+              shopify_product_id: productIdStr,
+              shopify_shop: shop,
+              product_type: payload.product_type || "Apparel",
+            },
+            image_url: imageUrl,
+            thumbnail: imageUrl,
+            garment_count: Math.max(1, variants.length),
+            is_deconstructed: true,
+            updated_at: new Date(),
+          },
+          $setOnInsert: { created_at: new Date() },
+        },
+        { upsert: true }
+      );
+      return { handled: true, action: "product_upserted" };
+    }
+
+    case "products/delete": {
+      if (!tenantId) return { handled: false };
+      const productIdStr = String(payload.id);
+      await collection.deleteOne({
+        tenant_id: tenantId,
+        "source.type": "shopify",
+        "source.shopify_product_id": productIdStr,
+      });
+      return { handled: true, action: "product_deleted" };
+    }
+
+    case "app/uninstalled": {
+      if (connection) {
+        connection.status = "disconnected";
+        connection.access_token = "";
+        await connection.save();
+      }
+      if (tenantId) {
+        await Tenant.findByIdAndUpdate(tenantId, { shopify_connected: false });
+      }
+      return { handled: true, action: "app_uninstalled" };
+    }
+
+    // Shopify GDPR mandatory webhooks (TODO #9)
+    case "customers/data_request":
+    case "customers/redact": {
+      return { handled: true, action: "gdpr_acknowledged" };
+    }
+
+    case "shop/redact": {
+      if (tenantId) {
+        await collection.deleteMany({
+          tenant_id: tenantId,
+          "source.type": "shopify",
+        });
+      }
+      return { handled: true, action: "shop_redacted" };
+    }
+
+    default:
+      return { handled: false };
+  }
 }
 
 /**

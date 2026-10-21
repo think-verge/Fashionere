@@ -5,11 +5,13 @@ import { asyncHandler } from "../utils/async-handler.js";
 
 export const shopifyRouter = Router();
 
-// Public callback endpoint hit directly by Shopify during OAuth redirect
+// Public endpoints hit directly by Shopify
 shopifyRouter.get("/callback", asyncHandler(shopifyController.handleCallback));
+shopifyRouter.post("/webhooks", asyncHandler(shopifyController.handleWebhook));
 
 // Tenant-authenticated routes
 shopifyRouter.get("/auth", requireAuth, requireTenant, asyncHandler(shopifyController.initiateAuth));
 shopifyRouter.get("/status", requireAuth, requireTenant, asyncHandler(shopifyController.getStatus));
 shopifyRouter.post("/sync", requireAuth, requireTenant, asyncHandler(shopifyController.syncCatalog));
 shopifyRouter.post("/disconnect", requireAuth, requireTenant, asyncHandler(shopifyController.disconnect));
+
