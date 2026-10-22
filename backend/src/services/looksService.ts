@@ -155,6 +155,17 @@ export function buildTenantFilter(
     return {};
   }
 
+function toTenantQuery(idOrIds: string | string[]) {
+  const ids = (Array.isArray(idOrIds) ? idOrIds : [idOrIds]).filter(Boolean);
+  if (ids.length === 1 && !mongoose.isValidObjectId(ids[0])) {
+    return ids[0];
+  }
+  const stringIds = ids.map((id) => String(id));
+  const objectIds = ids.filter((id) => mongoose.isValidObjectId(id)).map((id) => new mongoose.Types.ObjectId(id));
+  const combined = [...stringIds, ...objectIds];
+  return { $in: combined };
+}
+
   const allowedTenants = (accessibleTenantIds && accessibleTenantIds.length > 0)
     ? accessibleTenantIds
     : (tenantId ? [tenantId] : []);
@@ -167,7 +178,7 @@ export function buildTenantFilter(
     }
     return {
       "source.type": "shopify",
-      tenant_id: allowedTenants.length === 1 ? allowedTenants[0] : { $in: allowedTenants },
+      tenant_id: toTenantQuery(allowedTenants),
     };
   }
 
@@ -188,7 +199,7 @@ export function buildTenantFilter(
       $or: [
         { tenant_id: null },
         { tenant_id: { $exists: false } },
-        { tenant_id: allowedTenants.length === 1 ? allowedTenants[0] : { $in: allowedTenants } },
+        { tenant_id: toTenantQuery(allowedTenants) },
       ],
     };
   }
