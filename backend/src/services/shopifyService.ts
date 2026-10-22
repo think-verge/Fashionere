@@ -231,6 +231,16 @@ export function buildAuthorizationUrl(
   const state = generateOAuthState(tenantId);
   const redirectUri = `${env.SHOPIFY_APP_URL}/api/v1/shopify/callback`;
 
+  // For sandbox / test store handles, bypass external Shopify web servers
+  // and complete the OAuth handshake locally via the callback route
+  const isSandbox = shop.includes("sandbox") || shop.includes("test");
+  if (isSandbox) {
+    const authUrl = `${redirectUri}?code=mock_sandbox_code&shop=${encodeURIComponent(
+      shop
+    )}&state=${encodeURIComponent(state)}`;
+    return { authUrl, shop, state };
+  }
+
   const authUrl = `https://${shop}/admin/oauth/authorize?client_id=${encodeURIComponent(
     env.SHOPIFY_API_KEY
   )}&scope=${encodeURIComponent(env.SHOPIFY_SCOPES)}&redirect_uri=${encodeURIComponent(
