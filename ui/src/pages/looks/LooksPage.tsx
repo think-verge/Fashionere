@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { useQuery, useInfiniteQuery, useQueryClient } from "@tanstack/react-query";
 import {
@@ -22,6 +22,7 @@ import SyncIcon from "@mui/icons-material/Sync";
 import HourglassEmptyIcon from "@mui/icons-material/HourglassEmpty";
 import { PageHeader } from "../../components/PageHeader";
 import { ShopifyConnectDialog, type ShopifyStatus } from "../../components/ShopifyConnectDialog";
+import { useAuth } from "../../lib/auth-context";
 import { api } from "../../lib/api/client";
 
 interface LookSummary {
@@ -51,15 +52,38 @@ interface FiltersResponse {
 
 export default function LooksPage() {
   const navigate = useNavigate();
+  const { user } = useAuth();
   const qc = useQueryClient();
   const [searchParams] = useSearchParams();
+
+  const storedRole = (() => {
+    try {
+      return JSON.parse(localStorage.getItem("fash_user") || "{}").role;
+    } catch {
+      return undefined;
+    }
+  })();
+  const userRole = (user as unknown as { role?: string })?.role || storedRole;
+  const isAdmin = userRole === "admin";
+  const isRetail = userRole === "retail_chain";
+  const defaultCategory: "runway" | "retail" = isRetail ? "retail" : "runway";
 
   const shopifyParam = searchParams.get("shopify");
   const shopParam = searchParams.get("shop");
 
-  const [sourceCategory, setSourceCategory] = useState<"all" | "runway" | "retail" | "shopify">(() =>
-    shopifyParam === "connected" ? "shopify" : "all"
+  const [sourceCategory, setSourceCategory] = useState<"runway" | "retail" | "shopify">(() =>
+    shopifyParam === "connected" ? "shopify" : defaultCategory
   );
+
+  useEffect(() => {
+    if (shopifyParam === "connected") return;
+    if (isRetail && sourceCategory === "runway") {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setSourceCategory("retail");
+    } else if (!isAdmin && !isRetail && sourceCategory === "retail") {
+      setSourceCategory("runway");
+    }
+  }, [isRetail, isAdmin, sourceCategory, shopifyParam]);
 
   const [selectedBrand, setSelectedBrand] = useState<string[]>([]);
   const [selectedGarmentType, setSelectedGarmentType] = useState<string[]>([]);
@@ -92,8 +116,7 @@ export default function LooksPage() {
       if (sourceCategory === "shopify") {
         return { brands: [], garment_types: [] };
       }
-      const filterParams = sourceCategory === "all" ? {} : { type: sourceCategory };
-      const { data } = await api.get("/looks/filters", { params: filterParams });
+      const { data } = await api.get("/looks/filters", { params: { type: sourceCategory } });
       return data;
     },
   });
@@ -106,8 +129,6 @@ export default function LooksPage() {
         if (sourceCategory === "shopify") {
           params.type = "shopify";
           params.source = "shopify";
-        } else if (sourceCategory === "all") {
-          params.is_deconstructed = "true";
         } else {
           params.type = sourceCategory;
           params.is_deconstructed = "true";
@@ -174,77 +195,59 @@ export default function LooksPage() {
             gap: "2px",
           }}
         >
-          <Button
-            size="small"
-            onClick={() => {
-              setSourceCategory("all");
-              clearFilters();
-            }}
-            sx={{
-              borderRadius: "20px",
-              px: 2.5,
-              py: 0.6,
-              fontSize: 13,
-              fontWeight: 600,
-              textTransform: "none",
-              bgcolor: sourceCategory === "all" ? "primary.main" : "transparent",
-              color: sourceCategory === "all" ? "#ffffff" : "text.secondary",
-              boxShadow: sourceCategory === "all" ? "0 2px 8px rgba(175, 44, 44, 0.25)" : "none",
-              "&:hover": {
-                bgcolor: sourceCategory === "all" ? "primary.main" : "rgba(0,0,0,0.04)",
-              },
-            }}
-          >
-            All Looks
-          </Button>
+          {/* Runway tab: visible to Admins and Fashion Designers */}
+          {(isAdmin || !isRetail) && (
+            <Button
+              size="small"
+              onClick={() => {
+                setSourceCategory("runway");
+                clearFilters();
+              }}
+              sx={{
+                borderRadius: "20px",
+                px: 2.5,
+                py: 0.6,
+                fontSize: 13,
+                fontWeight: 600,
+                textTransform: "none",
+                bgcolor: sourceCategory === "runway" ? "primary.main" : "transparent",
+                color: sourceCategory === "runway" ? "#ffffff" : "text.secondary",
+                boxShadow: sourceCategory === "runway" ? "0 2px 8px rgba(175, 44, 44, 0.25)" : "none",
+                "&:hover": {
+                  bgcolor: sourceCategory === "runway" ? "primary.main" : "rgba(0,0,0,0.04)",
+                },
+              }}
+            >
+              Runway Looks
+            </Button>
+          )}
 
-          <Button
-            size="small"
-            onClick={() => {
-              setSourceCategory("runway");
-              clearFilters();
-            }}
-            sx={{
-              borderRadius: "20px",
-              px: 2.5,
-              py: 0.6,
-              fontSize: 13,
-              fontWeight: 600,
-              textTransform: "none",
-              bgcolor: sourceCategory === "runway" ? "primary.main" : "transparent",
-              color: sourceCategory === "runway" ? "#ffffff" : "text.secondary",
-              boxShadow: sourceCategory === "runway" ? "0 2px 8px rgba(175, 44, 44, 0.25)" : "none",
-              "&:hover": {
-                bgcolor: sourceCategory === "runway" ? "primary.main" : "rgba(0,0,0,0.04)",
-              },
-            }}
-          >
-            Runway
-          </Button>
-
-          <Button
-            size="small"
-            onClick={() => {
-              setSourceCategory("retail");
-              clearFilters();
-            }}
-            sx={{
-              borderRadius: "20px",
-              px: 2.5,
-              py: 0.6,
-              fontSize: 13,
-              fontWeight: 600,
-              textTransform: "none",
-              bgcolor: sourceCategory === "retail" ? "primary.main" : "transparent",
-              color: sourceCategory === "retail" ? "#ffffff" : "text.secondary",
-              boxShadow: sourceCategory === "retail" ? "0 2px 8px rgba(175, 44, 44, 0.25)" : "none",
-              "&:hover": {
-                bgcolor: sourceCategory === "retail" ? "primary.main" : "rgba(0,0,0,0.04)",
-              },
-            }}
-          >
-            Retail Trends
-          </Button>
+          {/* Retail Trends tab: visible to Admins and Retail Chain users */}
+          {(isAdmin || isRetail) && (
+            <Button
+              size="small"
+              onClick={() => {
+                setSourceCategory("retail");
+                clearFilters();
+              }}
+              sx={{
+                borderRadius: "20px",
+                px: 2.5,
+                py: 0.6,
+                fontSize: 13,
+                fontWeight: 600,
+                textTransform: "none",
+                bgcolor: sourceCategory === "retail" ? "primary.main" : "transparent",
+                color: sourceCategory === "retail" ? "#ffffff" : "text.secondary",
+                boxShadow: sourceCategory === "retail" ? "0 2px 8px rgba(175, 44, 44, 0.25)" : "none",
+                "&:hover": {
+                  bgcolor: sourceCategory === "retail" ? "primary.main" : "rgba(0,0,0,0.04)",
+                },
+              }}
+            >
+              Retail Trends
+            </Button>
+          )}
 
           <Button
             size="small"
