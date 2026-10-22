@@ -58,8 +58,6 @@ export default function LooksPage() {
   const qc = useQueryClient();
   const [searchParams] = useSearchParams();
 
-  const [requestBrandOpen, setRequestBrandOpen] = useState(false);
-
   const storedRole = (() => {
     try {
       return JSON.parse(localStorage.getItem("fash_user") || "{}").role;
