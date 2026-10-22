@@ -4,8 +4,9 @@ import { env } from "../config/env.js";
 
 const RETAIL_SOURCES = new Set(["zara", "hm", "mango", "uniqlo", "cos", "asos"]);
 
-function sourceType(doc: Record<string, unknown>): "retail" | "runway" {
+function sourceType(doc: Record<string, unknown>): "retail" | "runway" | "shopify" {
   const srcType = (doc.source as Record<string, unknown> | undefined)?.type as string | undefined;
+  if (srcType === "shopify") return "shopify";
   if (srcType && RETAIL_SOURCES.has(srcType.toLowerCase())) return "retail";
   const brand = (
     (doc.context as Record<string, unknown> | undefined)?.brand_slug
@@ -18,31 +19,38 @@ function sourceType(doc: Record<string, unknown>): "retail" | "runway" {
 
 function primaryImage(doc: Record<string, unknown>): string | undefined {
   const imgs = doc.images as Array<Record<string, unknown>> | undefined;
-  if (!imgs?.length) return undefined;
-  // prefer role=runway image, fall back to first
-  const runway = imgs.find((i) => i.role === "runway");
-  return ((runway ?? imgs[0])?.url ?? (runway ?? imgs[0])?.src) as string | undefined;
+  if (imgs?.length) {
+    // prefer role=runway image, fall back to first
+    const runway = imgs.find((i) => (i.role as string) === "runway");
+    return ((runway ?? imgs[0])?.url ?? (runway ?? imgs[0])?.src) as string | undefined;
+  }
+  return ((doc.image_url ?? doc.thumbnail) as string) || undefined;
 }
 
 function allImageUrls(doc: Record<string, unknown>): string[] {
   const imgs = doc.images as Array<Record<string, unknown>> | undefined;
-  if (!imgs?.length) return [];
-  return imgs.map((i) => (i.url ?? i.src) as string).filter(Boolean);
+  if (imgs?.length) {
+    return imgs.map((i) => (i.url ?? i.src) as string).filter(Boolean);
+  }
+  const single = (doc.image_url ?? doc.thumbnail) as string | undefined;
+  return single ? [single] : [];
 }
 
 function buildSummary(doc: Record<string, unknown>, garmentCount: number) {
   const ctx = (doc.context as Record<string, unknown> | undefined) ?? {};
   const nativeText = (doc.native_text as Record<string, unknown> | undefined) ?? {};
+  const variants = (doc.variants as Array<Record<string, unknown>> | undefined) ?? [];
   return {
     id: String(doc._id),
     brand: (ctx.brand ?? doc.brand ?? "") as string,
-    name: (nativeText.product_name ?? doc.name ?? "") as string,
+    name: (nativeText.product_name ?? doc.name ?? doc.title ?? "") as string,
     season: (ctx.season ?? doc.season ?? "") as string,
     year: ((ctx.year ?? doc.year ?? 0) as number),
     source_type: sourceType(doc),
     thumbnail: primaryImage(doc),
-    garment_count: garmentCount,
-    is_deconstructed: garmentCount > 0,
+    garment_count: garmentCount || variants.length,
+    is_deconstructed: garmentCount > 0 || !!doc.is_deconstructed,
+    deconstruction_status: (doc.deconstruction_status as string | undefined) ?? (garmentCount > 0 ? "done" : null),
   };
 }
 
@@ -155,6 +163,7 @@ export async function listLooksFilters(opts: { type?: string }) {
 
 export async function listLooks(opts: {
   type?: string;
+  source?: string;
   limit: number;
   cursor?: string;
   brand?: string;
@@ -163,7 +172,7 @@ export async function listLooks(opts: {
   sort?: string;
   is_deconstructed?: boolean;
 }) {
-  const { type, limit, cursor, brand, garment_type, search, sort, is_deconstructed } = opts;
+  const { type, source, limit, cursor, brand, garment_type, search, sort, is_deconstructed } = opts;
 
   // Base type filter (used for total count too)
   const typeFilter: Record<string, any> = {};
@@ -176,7 +185,9 @@ export async function listLooks(opts: {
   if (type === "retail") {
     typeFilter["source.type"] = { $in: [...RETAIL_SOURCES] };
   } else if (type === "runway") {
-    typeFilter["source.type"] = { $nin: [...RETAIL_SOURCES] };
+    typeFilter["source.type"] = { $nin: [...RETAIL_SOURCES, "shopify"] };
+  } else if (type === "shopify") {
+    typeFilter["source.type"] = "shopify";
   }
   if (brand) {
     const brands = brand.split(",").map(b => b.trim());
@@ -184,7 +195,8 @@ export async function listLooks(opts: {
   }
 
   // Always restrict to looks that have been deconstructed (≥1 garment in deconstructions)
-  {
+  // EXCEPT when querying for shopify catalog looks
+  if (source !== "shopify" && source !== "my_shopify" && type !== "shopify") {
     const deconDocs = await deconCol()
       .find({ "garments.0": { $exists: true } })
       .project({ look_id: 1 })
@@ -296,26 +308,57 @@ export async function getLook(lookId: string) {
     : (rawTags as string[] | undefined) ?? (nativeText.keywords as string[] ?? []);
   const categoryPath = (ctx.category_path as string[] | undefined);
 
+  const src = (d.source as Record<string, unknown> | undefined) ?? {};
+  const shopifyShop = (src.shopify_shop ?? d.shopify_shop) as string | undefined;
+  const handle = (src.handle ?? d.handle) as string | undefined;
+  const productUrl = (src.online_store_url ?? d.product_url ?? (shopifyShop && handle ? `https://${shopifyShop}/products/${handle}` : null)) as string | null;
+
   return {
     id: lookId,
     brand: (ctx.brand ?? d.brand ?? "") as string,
     season: (ctx.season ?? d.season ?? "") as string,
     year: ((ctx.year ?? d.year ?? 0) as number),
     category: (categoryPath?.[categoryPath.length - 1] ?? ctx.category ?? "") as string,
-    name: (nativeText.product_name ?? d.name ?? "") as string,
+    name: (nativeText.product_name ?? d.name ?? d.title ?? "") as string,
     source_type: sourceType(d),
     images: allImageUrls(d),
     tags: keywords,
     analysis: isStructuredAnalysis ? (rawTags as Record<string, unknown>) : null,
-    is_deconstructed: garments.length > 0,
+    is_deconstructed: garments.length > 0 || !!d.is_deconstructed,
+    deconstruction_status: (d.deconstruction_status as string | undefined) ?? (garments.length > 0 ? "done" : null),
+    description: (d.description as string | undefined) ?? "",
+    variants: (d.variants as Array<Record<string, unknown>> | undefined) ?? [],
+    product_url: productUrl,
   };
 }
 
 export async function getGarments(lookId: string) {
+  const look = await getLook(lookId);
   const decon = await deconCol().findOne({ look_id: lookId });
-  if (!decon) return [];
-  const garments = ((decon as Record<string, unknown>).garments as Array<Record<string, unknown>>) ?? [];
-  return garments.map((g) => buildGarment(g, lookId));
+  if (decon) {
+    const garments = ((decon as Record<string, unknown>).garments as Array<Record<string, unknown>>) ?? [];
+    return garments.map((g) => buildGarment(g, lookId));
+  }
+
+  // Fallback for Shopify looks before AI deconstruction completes: provide garments from variants
+  if (look.variants && look.variants.length > 0) {
+    return look.variants.map((v: Record<string, unknown>, idx: number) => ({
+      garment_id: `${lookId}_v${idx + 1}`,
+      look_id: lookId,
+      piece: (v.title as string) || look.name || "Garment",
+      garment_type: (look.category || "Apparel").toLowerCase(),
+      colors: [],
+      fabrics: [],
+      patterns: [],
+      flat_url: null,
+      composition: [],
+      image_url: look.images?.[0] || null,
+      price: v.price as string | undefined,
+      sku: v.sku as string | undefined,
+    }));
+  }
+
+  return [];
 }
 
 export async function getGarment(lookId: string, garmentId: string) {

@@ -9,6 +9,9 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
 import DrawOutlinedIcon from "@mui/icons-material/DrawOutlined";
 import AddIcon from "@mui/icons-material/Add";
+import StorefrontIcon from "@mui/icons-material/Storefront";
+import HourglassEmptyIcon from "@mui/icons-material/HourglassEmpty";
+import LaunchIcon from "@mui/icons-material/Launch";
 import { api } from "../../lib/api/client";
 import { useAuth } from "../../lib/auth-context";
 import { WorkspacePicker } from "../../components/WorkspacePicker";
@@ -49,6 +52,17 @@ interface Look {
   category?: string;
   analysis?: LookAnalysis | null;
   is_deconstructed?: boolean;
+  source_type?: "retail" | "runway" | "shopify";
+  deconstruction_status?: "pending" | "processing" | "done" | "failed" | null;
+  description?: string;
+  variants?: Array<{
+    id?: string;
+    title?: string;
+    price?: string;
+    sku?: string;
+    inventory_quantity?: number;
+  }>;
+  product_url?: string | null;
 }
 
 type AddingKey = "colors" | `pattern:${string}` | `fiber:${string}` | `silhouette:${string}` | null;
@@ -178,7 +192,30 @@ export default function LookDetailPage() {
               position: "relative",
             }}
           >
-            {look.is_deconstructed && (
+            {look.source_type === "shopify" ? (
+              <Box
+                sx={{
+                  position: "absolute",
+                  top: 14,
+                  left: 14,
+                  bgcolor: "rgba(32, 34, 35, 0.88)",
+                  color: "#95bf47",
+                  fontSize: 10,
+                  fontWeight: 800,
+                  letterSpacing: "0.12em",
+                  px: 1.5,
+                  py: 0.5,
+                  borderRadius: "6px",
+                  backdropFilter: "blur(8px)",
+                  border: "1px solid rgba(149, 191, 71, 0.4)",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 0.5,
+                }}
+              >
+                <StorefrontIcon sx={{ fontSize: 13 }} /> SHOPIFY · PRIVATE LOOK
+              </Box>
+            ) : look.is_deconstructed && (
               <Box
                 sx={{
                   position: "absolute",
@@ -264,6 +301,79 @@ export default function LookDetailPage() {
             <Typography sx={{ fontSize: 13, color: "text.secondary", mb: 2, textTransform: "uppercase", letterSpacing: "0.08em" }}>
               {look.brand}
             </Typography>
+          )}
+
+          {/* Link back to Shopify product */}
+          {look.product_url && (
+            <Box sx={{ mb: 2 }}>
+              <Button
+                variant="outlined"
+                size="small"
+                startIcon={<LaunchIcon sx={{ fontSize: "14px !important" }} />}
+                href={look.product_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  borderRadius: "16px",
+                  borderColor: "rgba(0,0,0,0.12)",
+                  color: "text.primary",
+                  fontSize: 12,
+                  fontWeight: 600,
+                  textTransform: "none",
+                  py: 0.5,
+                  px: 1.8,
+                  "&:hover": { borderColor: "text.primary", bgcolor: "rgba(0,0,0,0.04)" },
+                }}
+              >
+                View in Shopify Store
+              </Button>
+            </Box>
+          )}
+
+          {/* Shopify-specific Description & Variants */}
+          {look.description && (
+            <Typography sx={{ fontSize: 14, color: "text.secondary", lineHeight: 1.6, mb: 2 }}>
+              {look.description}
+            </Typography>
+          )}
+
+          {look.variants && look.variants.length > 0 && (
+            <Box sx={{ mb: 2.5 }}>
+              <Typography sx={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.12em", color: "text.secondary", mb: 1 }}>
+                Product Variants ({look.variants.length})
+              </Typography>
+              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+                {look.variants.map((v, i) => (
+                  <Chip
+                    key={i}
+                    label={`${v.title || "Standard"}${v.price ? ` · $${v.price}` : ""}${v.sku ? ` (${v.sku})` : ""}`}
+                    size="small"
+                    sx={{
+                      borderRadius: "10px",
+                      bgcolor: "#f5eee9",
+                      color: "text.primary",
+                      fontWeight: 500,
+                      fontSize: 12,
+                    }}
+                  />
+                ))}
+              </Box>
+            </Box>
+          )}
+
+          {/* Deconstruction Status Notice */}
+          {look.source_type === "shopify" && look.deconstruction_status === "pending" && (
+            <Box sx={{ p: 2, mb: 3, borderRadius: "14px", bgcolor: "#fffbe6", border: "1px solid #ffe58f", display: "flex", alignItems: "flex-start", gap: 1.5 }}>
+              <HourglassEmptyIcon sx={{ color: "#d46b08", mt: 0.2, fontSize: 20 }} />
+              <Box>
+                <Typography sx={{ fontWeight: 700, fontSize: 13, color: "#d46b08" }}>
+                  AI Deconstruction Pending
+                </Typography>
+                <Typography sx={{ fontSize: 12, color: "#873800", mt: 0.3 }}>
+                  This product is imported from your Shopify catalog. Agentic AI deconstruction (Ticket #172) will automatically segment its silhouettes, colors, and textiles into individual garments.
+                </Typography>
+              </Box>
+            </Box>
           )}
 
           {look.tags?.length > 0 && (
