@@ -155,6 +155,17 @@ export function buildTenantFilter(
     return {};
   }
 
+function toTenantQuery(idOrIds: string | string[]) {
+  const ids = (Array.isArray(idOrIds) ? idOrIds : [idOrIds]).filter(Boolean);
+  if (ids.length === 1 && !mongoose.isValidObjectId(ids[0])) {
+    return ids[0];
+  }
+  const stringIds = ids.map((id) => String(id));
+  const objectIds = ids.filter((id) => mongoose.isValidObjectId(id)).map((id) => new mongoose.Types.ObjectId(id));
+  const combined = [...stringIds, ...objectIds];
+  return { $in: combined };
+}
+
   const allowedTenants = (accessibleTenantIds && accessibleTenantIds.length > 0)
     ? accessibleTenantIds
     : (tenantId ? [tenantId] : []);
@@ -167,7 +178,7 @@ export function buildTenantFilter(
     }
     return {
       "source.type": "shopify",
-      tenant_id: allowedTenants.length === 1 ? allowedTenants[0] : { $in: allowedTenants },
+      tenant_id: toTenantQuery(allowedTenants),
     };
   }
 
@@ -188,7 +199,7 @@ export function buildTenantFilter(
       $or: [
         { tenant_id: null },
         { tenant_id: { $exists: false } },
-        { tenant_id: allowedTenants.length === 1 ? allowedTenants[0] : { $in: allowedTenants } },
+        { tenant_id: toTenantQuery(allowedTenants) },
       ],
     };
   }
@@ -390,8 +401,12 @@ export async function listLooks(opts: {
 }
 
 export async function getLook(lookId: string, tenantId?: string | null, role?: string | null) {
+  const query = mongoose.isValidObjectId(lookId)
+    ? { $or: [{ _id: lookId as any }, { _id: new mongoose.Types.ObjectId(lookId) as any }] }
+    : { _id: lookId as any };
+
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const d = await looksCol().findOne({ _id: lookId as any }) as Record<string, unknown> | null;
+  const d = await looksCol().findOne(query) as Record<string, unknown> | null;
   if (!d) throw new ApiError(404, "Look not found");
 
   // Multi-tenant check: if look is private to a tenant, only that tenant, admin, or shared tenants can access it
@@ -403,7 +418,10 @@ export async function getLook(lookId: string, tenantId?: string | null, role?: s
     }
   }
 
-  const decon = await deconCol().findOne({ look_id: lookId });
+  const deconQuery = mongoose.isValidObjectId(lookId)
+    ? { $or: [{ look_id: lookId }, { look_id: new mongoose.Types.ObjectId(lookId) as any }] }
+    : { look_id: lookId };
+  const decon = await deconCol().findOne(deconQuery);
   const garments = ((decon as Record<string, unknown> | null)?.garments as Array<Record<string, unknown>>) ?? [];
   const ctx = (d.context as Record<string, unknown> | undefined) ?? {};
 
@@ -436,9 +454,11 @@ export async function getLook(lookId: string, tenantId?: string | null, role?: s
 
 export async function getGarments(lookId: string, tenantId?: string | null, role?: string | null) {
   // Enforce access control on parent look first
-  await getLook(lookId, tenantId, role);
-
-  const decon = await deconCol().findOne({ look_id: lookId });
+  const look = await getLook(lookId, tenantId, role);
+  const deconQuery = mongoose.isValidObjectId(lookId)
+    ? { $or: [{ look_id: lookId }, { look_id: new mongoose.Types.ObjectId(lookId) as any }] }
+    : { look_id: lookId };
+  const decon = await deconCol().findOne(deconQuery);
   if (!decon) return [];
   const garments = ((decon as Record<string, unknown>).garments as Array<Record<string, unknown>>) ?? [];
   return garments.map((g) => buildGarment(g, lookId));
@@ -446,10 +466,35 @@ export async function getGarments(lookId: string, tenantId?: string | null, role
 
 export async function getGarment(lookId: string, garmentId: string, tenantId?: string | null, role?: string | null) {
   // Enforce access control on parent look first
-  await getLook(lookId, tenantId, role);
+  const look = await getLook(lookId, tenantId, role);
 
-  const decon = await deconCol().findOne({ look_id: lookId });
-  if (!decon) throw new ApiError(404, "Garment not found");
+  const deconQuery = mongoose.isValidObjectId(lookId)
+    ? { $or: [{ look_id: lookId }, { look_id: new mongoose.Types.ObjectId(lookId) as any }] }
+    : { look_id: lookId };
+  const decon = await deconCol().findOne(deconQuery);
+  if (!decon) {
+    const variants = (look as any).variants as Array<Record<string, unknown>> | undefined;
+    if (variants && variants.length > 0) {
+      const match = variants.find((v: Record<string, unknown>, idx: number) => `${lookId}_v${idx + 1}` === garmentId);
+      if (match) {
+        return {
+          garment_id: garmentId,
+          look_id: lookId,
+          piece: (match.title as string) || look.name || "Garment",
+          garment_type: (look.category || "Apparel").toLowerCase(),
+          colors: [],
+          fabrics: [],
+          patterns: [],
+          flat_url: null,
+          composition: [],
+          image_url: look.images?.[0] || null,
+          price: match.price as string | undefined,
+          sku: match.sku as string | undefined,
+        };
+      }
+    }
+    throw new ApiError(404, "Garment not found");
+  }
   const garments = ((decon as Record<string, unknown>).garments as Array<Record<string, unknown>>) ?? [];
   const raw = garments.find((g) => (g.garment_id ?? g.id) === garmentId);
   if (!raw) throw new ApiError(404, "Garment not found");

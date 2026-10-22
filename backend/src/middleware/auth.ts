@@ -2,6 +2,8 @@ import type { Request, Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
 import { env } from "../config/env.js";
 import { ApiError } from "../utils/api-error.js";
+import { User } from "../models/User.js";
+import { ensureUserTenant } from "../services/authService.js";
 
 export interface AuthPayload {
   userId: string;
@@ -19,7 +21,7 @@ declare global {
   }
 }
 
-export function requireAuth(req: Request, _res: Response, next: NextFunction) {
+export async function requireAuth(req: Request, _res: Response, next: NextFunction) {
   const cookieToken = req.cookies?.token as string | undefined;
   const bearerToken = req.headers.authorization?.startsWith("Bearer ")
     ? req.headers.authorization.slice(7)
@@ -32,16 +34,40 @@ export function requireAuth(req: Request, _res: Response, next: NextFunction) {
     req.user = payload;
     if (payload.tenantId) {
       req.tenantId = payload.tenantId;
+    } else if (payload.userId) {
+      try {
+        const user = await User.findById(payload.userId);
+        if (user) {
+          const tenantId = await ensureUserTenant(user);
+          req.tenantId = tenantId;
+          req.user.tenantId = tenantId;
+        }
+      } catch {
+        /* ignore fallback lookup errors */
+      }
     }
     next();
-  } catch {
+  } catch (err) {
+    if (err instanceof ApiError) throw err;
     throw new ApiError(401, "Invalid or expired token");
   }
 }
 
-export function requireTenant(req: Request, _res: Response, next: NextFunction) {
+export async function requireTenant(req: Request, _res: Response, next: NextFunction) {
   if (!req.user) {
     throw new ApiError(401, "Not authenticated");
+  }
+  if (!req.user.tenantId && !req.tenantId && req.user.userId) {
+    try {
+      const user = await User.findById(req.user.userId);
+      if (user) {
+        const tenantId = await ensureUserTenant(user);
+        req.tenantId = tenantId;
+        req.user.tenantId = tenantId;
+      }
+    } catch {
+      /* ignore */
+    }
   }
   if (!req.user.tenantId && !req.tenantId) {
     throw new ApiError(403, "Tenant context required");

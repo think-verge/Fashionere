@@ -39,8 +39,7 @@ async function run() {
       console.log(`Found existing Tenant ${tenant.name} (${tenant._id}) for user ${user.email}`);
     }
 
-    user.tenant_id = tenant._id;
-    await user.save();
+    await User.findByIdAndUpdate(user._id, { tenant_id: tenant._id });
     migratedCount++;
   }
 
