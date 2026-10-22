@@ -57,7 +57,7 @@ export async function ensureUserTenant(user: InstanceType<typeof User>) {
   }
 
   user.tenant_id = tenant._id;
-  await user.save();
+  await User.findByIdAndUpdate(user._id, { tenant_id: tenant._id });
   return String(tenant._id);
 }
 
