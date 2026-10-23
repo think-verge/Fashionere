@@ -15,6 +15,7 @@ import LayersOutlinedIcon from "@mui/icons-material/LayersOutlined";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import { PageHeader } from "../../components/PageHeader";
 import { useAuth } from "../../lib/auth-context";
+import { browserTimeZone } from "../../lib/elements";
 import { api } from "../../lib/api/client";
 
 interface Workspace {
@@ -73,6 +74,7 @@ export default function WorkspacesPage() {
       const projectId = activeProject?.id;
       if (!projectId) throw new Error("No active project");
       const { data } = await api.post("/workspace", {
+        tz: browserTimeZone(),
         name: newName.trim() || "New Workspace",
         project_id: projectId,
       });

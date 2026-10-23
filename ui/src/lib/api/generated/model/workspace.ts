@@ -7,6 +7,7 @@
  */
 import type { WorkspaceStatus } from './workspaceStatus';
 import type { WorkspaceElement } from './workspaceElement';
+import type { WorkspaceLook } from './workspaceLook';
 import type { WorkspaceCanvasMeta } from './workspaceCanvasMeta';
 
 export interface Workspace {
@@ -16,6 +17,8 @@ export interface Workspace {
   user_id: string;
   status: WorkspaceStatus;
   elements: WorkspaceElement[];
+  looks?: WorkspaceLook[];
+  schema_version?: number;
   canvas_meta: WorkspaceCanvasMeta;
   createdAt: string;
   updatedAt: string;

@@ -19,4 +19,10 @@ export interface WorkspaceElement {
   source_brand: string;
   canvas_position: WorkspaceElementCanvasPosition;
   row: string;
+  /** @nullable */
+  canvas_row?: number | null;
+  is_custom?: boolean;
+  /** @nullable */
+  folder_id?: string | null;
+  in_builder?: boolean;
 }

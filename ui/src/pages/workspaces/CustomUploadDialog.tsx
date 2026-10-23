@@ -1,17 +1,30 @@
 import { useState } from "react";
-import { useQueryClient } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import {
   Box, Typography, Button, Alert,
   IconButton, Dialog, DialogTitle, DialogContent, DialogActions,
-  Tab, Tabs, TextField, LinearProgress,
+  Tab, Tabs, TextField, LinearProgress, Checkbox, FormControlLabel,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import CloudUploadOutlinedIcon from "@mui/icons-material/CloudUploadOutlined";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
+import FolderOutlinedIcon from "@mui/icons-material/FolderOutlined";
+import CreateNewFolderOutlinedIcon from "@mui/icons-material/CreateNewFolderOutlined";
 import { api } from "../../lib/api/client";
+import { browserTimeZone, type FolderNode } from "../../lib/elements";
 
 const UPLOAD_TABS = ["silhouette", "fabric", "pattern", "color"] as const;
 type UploadTab = (typeof UPLOAD_TABS)[number];
+
+/** Which element folder inside a day/custom folder each upload tab files into. */
+const TAB_FOLDER: Record<UploadTab, string> = {
+  silhouette: "silhouettes",
+  fabric: "fabrics",
+  pattern: "patterns",
+  color: "color palettes",
+};
+
+const NEW_FOLDER = "__new__";
 
 const TAB_LABELS: Record<UploadTab, string> = {
   silhouette: "👗 Silhouette",
@@ -24,12 +37,60 @@ export function CustomUploadDialog({
   open,
   onClose,
   workspaceId,
+  defaultFolderId,
+  defaultToBuilder = false,
 }: {
   open: boolean;
   onClose: () => void;
   workspaceId: string;
+  /** Pre-selected destination (a folder id). Defaults to today's folder. */
+  defaultFolderId?: string;
+  /** Also move the upload to the AI builder (on by default when uploading from the builder). */
+  defaultToBuilder?: boolean;
 }) {
   const qc = useQueryClient();
+  // "" = today's folder (created automatically), NEW_FOLDER = create one
+  const [folderChoice, setFolderChoice] = useState<string>("");
+  const [newFolderName, setNewFolderName] = useState("");
+  const [toBuilder, setToBuilder] = useState(defaultToBuilder);
+
+  const { data: folderData } = useQuery<{ folders: FolderNode[] }>({
+    queryKey: ["folders", workspaceId],
+    queryFn: async () => (await api.get(`/workspace/${workspaceId}/folders`, { params: { tz: browserTimeZone() } })).data,
+    enabled: open && !!workspaceId,
+  });
+  const destinations = (folderData?.folders ?? []).filter((f) => f.kind === "date" || f.kind === "custom");
+
+  // Re-seed the destination each time the dialog opens (state adjusted during render).
+  const [wasOpen, setWasOpen] = useState(false);
+  if (open !== wasOpen) {
+    setWasOpen(open);
+    if (open) {
+      setFolderChoice(defaultFolderId ?? "");
+      setNewFolderName("");
+      setToBuilder(defaultToBuilder);
+    }
+  }
+
+  // A child folder (e.g. "fabrics") chosen elsewhere resolves to its parent group.
+  const allFolders = folderData?.folders ?? [];
+  const chosenGroup = (() => {
+    const f = allFolders.find((x) => x.id === folderChoice);
+    return f && f.kind !== "date" && f.kind !== "custom" ? (f.parent_id ?? "") : folderChoice;
+  })();
+
+  const folderFields = () => ({
+    ...(chosenGroup === NEW_FOLDER
+      ? { new_folder_name: newFolderName.trim() }
+      : chosenGroup ? { folder_id: chosenGroup } : {}),
+    tz: browserTimeZone(),
+    in_builder: toBuilder,
+  });
+  const folderInvalid = chosenGroup === NEW_FOLDER && !newFolderName.trim();
+  const refreshAll = () => {
+    qc.invalidateQueries({ queryKey: ["workspace", workspaceId] });
+    qc.invalidateQueries({ queryKey: ["folders", workspaceId] });
+  };
   const [tab, setTab] = useState<UploadTab>("silhouette");
   const [file, setFile] = useState<File | null>(null);
   const [label, setLabel] = useState("");
@@ -64,10 +125,11 @@ export function CustomUploadDialog({
       fd.append("file", file);
       fd.append("element_type", tab);
       if (label.trim()) fd.append("label", label.trim());
+      for (const [k, v] of Object.entries(folderFields())) if (v !== undefined) fd.append(k, String(v));
       await api.post(`/workspace/${workspaceId}/elements/upload`, fd, {
         headers: { "Content-Type": "multipart/form-data" },
       });
-      qc.invalidateQueries({ queryKey: ["workspace", workspaceId] });
+      refreshAll();
       handleClose();
     } catch {
       setError("Upload failed. Check file size (max 10 MB) and try again.");
@@ -89,8 +151,10 @@ export function CustomUploadDialog({
         source_brand: "custom",
         is_custom: true,
         data: { colors: colorList },
+        ...folderFields(),
       });
-      qc.invalidateQueries({ queryKey: ["workspace", workspaceId] });
+      refreshAll();
+      if (chosenGroup === NEW_FOLDER) setFolderChoice("");
       setColorList([]);
       setColorHex("#a93533");
       setColorName("");
@@ -271,6 +335,51 @@ export function CustomUploadDialog({
             )}
           </Box>
         )}
+
+        <Box sx={{ mt: 2.5, pt: 2, borderTop: "1px solid #f0e4e2" }}>
+          <Typography sx={{ fontSize: 11, fontWeight: 800, letterSpacing: "0.12em", textTransform: "uppercase", color: "text.secondary", mb: 1 }}>
+            Save to folder
+          </Typography>
+          <Box sx={{ maxHeight: 168, overflowY: "auto", border: "1px solid #f0e4e2", borderRadius: "10px", bgcolor: "#faf8f7" }}>
+            {[{ id: "", name: "Today's folder", sub: "Created automatically" } as const, ...destinations.map((d) => ({ id: d.id, name: d.name, sub: "" })), { id: NEW_FOLDER, name: "New folder…", sub: "" } as const].map((opt) => {
+              const active = chosenGroup === opt.id;
+              return (
+                <Box
+                  key={opt.id || "today"}
+                  role="button"
+                  tabIndex={0}
+                  aria-pressed={active}
+                  onClick={() => setFolderChoice(opt.id)}
+                  onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && setFolderChoice(opt.id)}
+                  sx={{ display: "flex", alignItems: "center", gap: 1, px: 1.5, py: 0.9, cursor: "pointer", bgcolor: active ? "#fff0ef" : "transparent", "&:hover": { bgcolor: active ? "#fff0ef" : "#f5f0ef" } }}
+                >
+                  {opt.id === NEW_FOLDER
+                    ? <CreateNewFolderOutlinedIcon sx={{ fontSize: 17, color: "primary.main" }} />
+                    : <FolderOutlinedIcon sx={{ fontSize: 17, color: active ? "primary.main" : "text.secondary" }} />}
+                  <Box sx={{ minWidth: 0, flex: 1 }}>
+                    <Typography sx={{ fontSize: 13, fontWeight: active ? 700 : 500 }} noWrap>{opt.name}</Typography>
+                    {active && opt.id !== NEW_FOLDER && (
+                      <Typography sx={{ fontSize: 11, color: "text.secondary" }}>→ {TAB_FOLDER[tab]}</Typography>
+                    )}
+                  </Box>
+                </Box>
+              );
+            })}
+          </Box>
+          {chosenGroup === NEW_FOLDER && (
+            <TextField
+              fullWidth size="small" autoFocus label="New folder name" value={newFolderName}
+              onChange={(e) => setNewFolderName(e.target.value)}
+              helperText="shots, silhouettes, color palettes, fabrics and patterns folders are created inside"
+              sx={{ mt: 1.5, "& .MuiOutlinedInput-root fieldset": { borderColor: "#f0e4e2" } }}
+            />
+          )}
+          <FormControlLabel
+            sx={{ mt: 0.5, ml: 0 }}
+            control={<Checkbox size="small" checked={toBuilder} onChange={(e) => setToBuilder(e.target.checked)} />}
+            label={<Typography sx={{ fontSize: 13 }}>Also add to the AI builder</Typography>}
+          />
+        </Box>
       </DialogContent>
 
       <DialogActions sx={{ px: 3, pb: 2.5, gap: 1 }}>
@@ -278,7 +387,7 @@ export function CustomUploadDialog({
         {tab !== "color" ? (
           <Button
             variant="contained"
-            disabled={!file || (tab === "fabric" && !label.trim()) || uploading}
+            disabled={!file || (tab === "fabric" && !label.trim()) || uploading || folderInvalid}
             onClick={handleUpload}
             sx={{ borderRadius: "8px", minWidth: 100 }}
           >
@@ -287,7 +396,7 @@ export function CustomUploadDialog({
         ) : (
           <Button
             variant="contained"
-            disabled={colorList.length === 0 || savingColor}
+            disabled={colorList.length === 0 || savingColor || folderInvalid}
             onClick={handleSaveColor}
             sx={{ borderRadius: "8px", minWidth: 100 }}
           >
