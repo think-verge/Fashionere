@@ -128,7 +128,12 @@ export async function addLook(req: Request, res: Response) {
     res.status(400).json({ error: "look_id is required" });
     return;
   }
-  res.json(await lookFiling.addLookToWorkspace(p(req, "id"), req.user!.userId, look_id, { tz, folderId: folder_id }));
+  res.json(await lookFiling.addLookToWorkspace(p(req, "id"), req.user!.userId, look_id, {
+    tz,
+    folderId: folder_id,
+    tenantId: req.tenantId || req.user?.tenantId,
+    role: req.user?.role,
+  }));
 }
 
 export async function moveToBuilder(req: Request, res: Response) {

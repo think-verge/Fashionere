@@ -70,7 +70,10 @@ for (const ws of await workspaces.find({}).toArray()) {
     const lookIds = [...new Set(before.filter((e) => e.look_id).map((e) => e.look_id))];
     const looks = [];
     for (const id of lookIds) {
-      const doc = await looksCol.findOne({ _id: id }).catch(() => null);
+      // Shopify looks use ObjectId ids; catalogue looks use string ids
+      const doc = await looksCol.findOne(mongoose.isValidObjectId(id)
+        ? { $or: [{ _id: id }, { _id: new mongoose.Types.ObjectId(id) }] }
+        : { _id: id }).catch(() => null);
       if (!doc) continue;
       const imgs = (doc.images ?? []).map((i) => i.url ?? i.src).filter(Boolean);
       const brand = doc.context?.brand ?? doc.brand ?? "";

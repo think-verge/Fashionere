@@ -18,13 +18,19 @@ export async function addLookToWorkspace(
   workspaceId: string,
   userId: string,
   lookId: string,
-  opts: { tz?: string; folderId?: string } = {},
+  opts: { tz?: string; folderId?: string; tenantId?: string | null; role?: string | null } = {},
 ) {
   const ws = await Workspace.findOne({ _id: workspaceId, user_id: userId });
   if (!ws) throw new ApiError(404, "Workspace not found");
 
-  const [look, garments] = await Promise.all([getLook(lookId), getGarments(lookId)]);
-  if (!garments.length && !look.analysis) {
+  // Same tenant/role visibility as the Looks pages: private looks of other tenants 404.
+  const [look, garments] = await Promise.all([
+    getLook(lookId, opts.tenantId, opts.role),
+    getGarments(lookId, opts.tenantId, opts.role),
+  ]);
+  // Shopify looks that haven't been deconstructed yet only have variant stubs (no flat/colours/fabrics).
+  const hasContent = garments.some((g) => g.flat_url || g.colors?.length || g.fabrics?.length || g.patterns?.length);
+  if (!hasContent && !look.analysis) {
     throw new ApiError(422, "This look hasn't been deconstructed yet");
   }
 
