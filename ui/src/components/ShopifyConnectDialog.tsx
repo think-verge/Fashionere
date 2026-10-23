@@ -363,8 +363,8 @@ export function ShopifyConnectDialog({ open, onClose, onSyncComplete }: ShopifyC
 
             <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
               <TextField
-                label="Shopify Store Domain or Name"
-                placeholder="e.g. acne-studios or my-brand.myshopify.com"
+                label="Shopify Store Domain or URL"
+                placeholder="e.g. https://vedix.com/ or acne-studios"
                 value={shopDomain}
                 onChange={(e) => setShopDomain(e.target.value)}
                 size="small"
@@ -374,7 +374,7 @@ export function ShopifyConnectDialog({ open, onClose, onSyncComplete }: ShopifyC
                     sx: { borderRadius: "12px" },
                   },
                 }}
-                helperText="Enter your *.myshopify.com handle or full URL"
+                helperText="Enter your store URL (e.g. https://vedix.com/), handle, or *.myshopify.com domain"
               />
             </Box>
 

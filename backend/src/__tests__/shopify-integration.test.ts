@@ -93,8 +93,8 @@ describe("Shopify Integration Service (Ticket #171)", () => {
   });
 
   describe("Authorization URL Construction", () => {
-    it("constructs a valid Shopify authorize URL", () => {
-      const result = buildAuthorizationUrl(dummyTenantId, "acne-studios");
+    it("constructs a valid Shopify authorize URL", async () => {
+      const result = await buildAuthorizationUrl(dummyTenantId, "acne-studios");
       expect(result.shop).toBe("acne-studios.myshopify.com");
       expect(result.authUrl).toContain("https://acne-studios.myshopify.com/admin/oauth/authorize");
       expect(result.authUrl).toContain("client_id=");

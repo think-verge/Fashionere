@@ -18,7 +18,7 @@ export async function initiateAuth(req: Request, res: Response) {
     throw new ApiError(400, "Missing required 'shop' query parameter (e.g. your-store.myshopify.com)");
   }
 
-  const { authUrl, shop } = shopifyService.buildAuthorizationUrl(tenantId, rawShop);
+  const { authUrl, shop } = await shopifyService.buildAuthorizationUrl(tenantId, rawShop);
 
   // If request accepts HTML/redirect, redirect directly; otherwise return JSON URL
   if (req.accepts("html") && req.headers["sec-fetch-dest"] === "document") {
