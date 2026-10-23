@@ -22,5 +22,7 @@ export const env = {
   SHOPIFY_API_KEY: process.env.SHOPIFY_API_KEY ?? "fashionere_shopify_api_key",
   SHOPIFY_API_SECRET: process.env.SHOPIFY_API_SECRET ?? "fashionere_shopify_api_secret",
   SHOPIFY_SCOPES: process.env.SHOPIFY_SCOPES ?? "read_products,read_product_listings",
-  SHOPIFY_APP_URL: process.env.SHOPIFY_APP_URL ?? (process.env.CLIENT_ORIGIN ? "http://localhost:3001" : "http://localhost:3001"),
+  SHOPIFY_APP_URL: (process.env.SHOPIFY_APP_URL && !process.env.SHOPIFY_APP_URL.includes("your-live-domain.com") && !process.env.SHOPIFY_APP_URL.includes("your-domain.com"))
+    ? process.env.SHOPIFY_APP_URL
+    : "http://localhost:3001",
 };

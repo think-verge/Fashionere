@@ -81,7 +81,11 @@ export const GRAPHQL_PRODUCTS_QUERY = `
 `;
 
 /**
- * Validates and sanitizes a Shopify store domain.
+ * Validates and sanitizes a Shopify store domain or URL.
+ * Supports:
+ * - Simple handles: "vedix" -> "vedix.myshopify.com"
+ * - *.myshopify.com domains: "vedix-store.myshopify.com"
+ * - Custom storefront domains: "vedix.com" or "https://vedix.com/"
  */
 export function sanitizeShopDomain(rawShop: string): string {
   if (!rawShop) {
@@ -91,20 +95,77 @@ export function sanitizeShopDomain(rawShop: string): string {
   let shop = rawShop.trim().toLowerCase();
   shop = shop.replace(/^https?:\/\//, "");
   shop = shop.replace(/\/.*$/, "");
+  shop = shop.replace(/:[0-9]+$/, "");
 
   if (!shop.includes(".")) {
     shop = `${shop}.myshopify.com`;
   }
 
-  const shopRegex = /^[a-zA-Z0-9][a-zA-Z0-9\-]*\.myshopify\.com$/;
-  if (!shopRegex.test(shop)) {
+  const domainRegex = /^[a-zA-Z0-9][a-zA-Z0-9\-_.]*\.[a-zA-Z]{2,}$/;
+  if (!domainRegex.test(shop)) {
     throw new ApiError(
       400,
-      `Invalid Shopify domain '${rawShop}'. Must be in format 'your-store.myshopify.com'`
+      `Invalid store domain '${rawShop}'. Please enter a valid store domain or URL (e.g. vedix.com or your-store.myshopify.com)`
     );
   }
 
   return shop;
+}
+
+/**
+ * Fetches public products from a Shopify store's /products.json feed.
+ * Allows connecting any public Shopify store without requiring merchant OAuth credentials.
+ */
+export async function fetchPublicShopifyProducts(shopDomain: string): Promise<ShopifyProduct[] | null> {
+  const urls = [
+    `https://${shopDomain}/products.json?limit=50`,
+    `http://${shopDomain}/products.json?limit=50`,
+  ];
+
+  for (const url of urls) {
+    try {
+      const res = await fetch(url, {
+        headers: {
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+          "Accept": "application/json, text/plain, */*",
+          "Accept-Language": "en-US,en;q=0.9",
+        },
+        signal: AbortSignal.timeout(8000),
+      });
+
+      if (!res.ok) continue;
+
+      const data: any = await res.json();
+      if (data?.products && Array.isArray(data.products) && data.products.length > 0) {
+        return data.products.map((p: any) => ({
+          id: String(p.id),
+          title: p.title || "Untitled Product",
+          body_html: p.body_html || "",
+          vendor: p.vendor || "",
+          product_type: p.product_type || "Apparel",
+          tags: Array.isArray(p.tags) ? p.tags.join(", ") : (p.tags || ""),
+          images: (p.images || []).map((img: any) => ({
+            id: String(img.id || ""),
+            src: img.src || img.url || "",
+            alt: img.alt || p.title || "",
+            width: img.width,
+            height: img.height,
+          })),
+          variants: (p.variants || []).map((v: any) => ({
+            id: String(v.id || ""),
+            title: v.title || "Default Title",
+            price: v.price != null ? String(v.price) : undefined,
+            sku: v.sku || undefined,
+            inventory_quantity: v.inventory_quantity,
+          })),
+        }));
+      }
+    } catch {
+      // try next protocol
+    }
+  }
+
+  return null;
 }
 
 /**
@@ -221,19 +282,159 @@ export function computeProductContentHash(product: {
 }
 
 /**
- * Constructs the Shopify OAuth authorization URL.
+ * Upserts imported Shopify products into MongoDB canonical_looks collection for the tenant.
  */
-export function buildAuthorizationUrl(
+export async function saveProductsToCatalog(
+  tenant: ITenant,
+  shop: string,
+  products: ShopifyProduct[]
+): Promise<number> {
+  const collection = looksCol();
+  let importedCount = 0;
+
+  for (const prod of products) {
+    const productIdStr = String(prod.id);
+    const rawImages = prod.images && prod.images.length > 0 ? prod.images : prod.image ? [prod.image] : [];
+    const imagesList = rawImages.map((img: any) => ({
+      id: String(img.id || ""),
+      url: img.src || img.url || "",
+      alt: img.alt || img.altText || "",
+      width: img.width,
+      height: img.height,
+    }));
+    const imageUrl = imagesList[0]?.url || "";
+    const variants = prod.variants ?? [];
+    const tagsList = Array.isArray(prod.tags)
+      ? prod.tags
+      : typeof prod.tags === "string"
+      ? prod.tags.split(",").map((t: string) => t.trim()).filter(Boolean)
+      : [];
+    const contentHash = computeProductContentHash({
+      title: prod.title,
+      body_html: prod.body_html,
+      images: imagesList,
+      variants,
+    });
+
+    const lookDoc = {
+      tenant_id: tenant._id,
+      name: prod.title,
+      title: prod.title,
+      description: prod.body_html?.replace(/<[^>]*>/g, "") || "",
+      brand: prod.vendor || tenant.name,
+      season: "Shopify Catalog",
+      year: new Date().getFullYear(),
+      type: "retail",
+      source: {
+        type: "shopify",
+        shopify_product_id: productIdStr,
+        shopify_shop: shop,
+        product_type: prod.product_type || "Apparel",
+      },
+      image_url: imageUrl,
+      thumbnail: imageUrl,
+      images: imagesList,
+      variants: variants.map((v: any) => ({
+        id: String(v.id || ""),
+        title: v.title || "",
+        price: v.price || "",
+        sku: v.sku || "",
+        inventory_quantity: v.inventory_quantity,
+      })),
+      tags: tagsList,
+      product_type: prod.product_type || "Apparel",
+      garment_count: Math.max(1, variants.length),
+      content_hash: contentHash,
+      deconstruction_status: "pending",
+      is_deconstructed: false,
+      updated_at: new Date(),
+    };
+
+    await collection.updateOne(
+      {
+        tenant_id: tenant._id,
+        "source.type": "shopify",
+        "source.shopify_product_id": productIdStr,
+      },
+      {
+        $set: lookDoc,
+        $setOnInsert: { created_at: new Date() },
+      },
+      { upsert: true }
+    );
+
+    importedCount++;
+  }
+
+  return importedCount;
+}
+
+/**
+ * Constructs the Shopify OAuth authorization URL or directly imports from public /products.json.
+ */
+export async function buildAuthorizationUrl(
   tenantId: string,
   rawShop: string
-): { authUrl: string; shop: string; state: string } {
+): Promise<{ authUrl: string; shop: string; state: string; isPublicFeed?: boolean; imported_count?: number }> {
   const shop = sanitizeShopDomain(rawShop);
   const state = generateOAuthState(tenantId);
-  const redirectUri = `${env.SHOPIFY_APP_URL}/api/v1/shopify/callback`;
+  const isSandbox = shop.includes("sandbox") || shop.includes("test");
+
+  // If this store exposes a public /products.json feed, ingest it directly without requiring OAuth credentials
+  if (!isSandbox) {
+    try {
+      const publicProducts = await fetchPublicShopifyProducts(shop);
+      if (publicProducts && publicProducts.length > 0) {
+        const tenant = await Tenant.findById(tenantId);
+        if (tenant) {
+          await ShopifyConnection.deleteMany({
+            $or: [{ tenant_id: tenant._id }, { shop_domain: shop }],
+          });
+
+          await ShopifyConnection.create({
+            tenant_id: tenant._id,
+            shop_domain: shop,
+            access_token: `public_feed_${crypto.randomBytes(8).toString("hex")}`,
+            scopes: ["read_products"],
+            status: "active",
+            product_count: publicProducts.length,
+            last_synced_at: new Date(),
+            sync_error: null,
+          });
+
+          tenant.shopify_connected = true;
+          tenant.shopify_shop_domain = shop;
+          tenant.shopify_connected_at = new Date();
+          tenant.shopify_catalog_synced_at = new Date();
+          tenant.shopify_sync_status = "synced";
+          tenant.shopify_sync_error = null;
+          tenant.shopify_product_count = publicProducts.length;
+          await tenant.save();
+
+          const importedCount = await saveProductsToCatalog(tenant, shop, publicProducts);
+
+          const authUrl = `${env.CLIENT_ORIGIN}/app/looks?shopify=connected&shop=${encodeURIComponent(
+            shop
+          )}&imported=${importedCount}&tenant=${encodeURIComponent(tenant.name)}`;
+
+          return { authUrl, shop, state, isPublicFeed: true, imported_count: importedCount };
+        }
+      }
+    } catch {
+      // Fall through to OAuth redirect
+    }
+  }
+
+  const rawAppUrl = env.SHOPIFY_APP_URL || "";
+  const isPlaceholderUrl = !rawAppUrl || rawAppUrl.includes("your-live-domain.com") || rawAppUrl.includes("your-domain.com") || rawAppUrl.includes("example.com");
+  const appBaseUrl = (isPlaceholderUrl || (isSandbox && env.NODE_ENV !== "production"))
+    ? "http://localhost:3001"
+    : rawAppUrl;
+
+  const redirectUri = `${appBaseUrl}/api/v1/shopify/callback`;
 
   // For sandbox / test store handles, bypass external Shopify web servers
   // and complete the OAuth handshake locally via the callback route
-  const isSandbox = shop.includes("sandbox") || shop.includes("test");
   if (isSandbox) {
     const authUrl = `${redirectUri}?code=mock_sandbox_code&shop=${encodeURIComponent(
       shop
@@ -278,46 +479,55 @@ export async function handleOAuthCallback(query: {
     throw new ApiError(404, "Tenant not found for OAuth session");
   }
 
+  const isSandbox = shop.includes("sandbox") || shop.includes("test") || code === "mock_sandbox_code";
   let accessToken = `shpat_sandbox_${crypto.randomBytes(16).toString("hex")}`;
 
-  try {
-    const tokenResponse = await axios.post(
-      `https://${shop}/admin/oauth/access_token`,
-      {
-        client_id: env.SHOPIFY_API_KEY,
-        client_secret: env.SHOPIFY_API_SECRET,
-        code,
-      },
-      { timeout: 8000 }
-    );
-    if (tokenResponse.data?.access_token) {
-      accessToken = tokenResponse.data.access_token;
-    }
-  } catch (err: unknown) {
-    const error = err as Error;
-    if (env.NODE_ENV === "production") {
-      throw new ApiError(502, `Failed to exchange code with Shopify: ${error.message}`);
+  if (!isSandbox) {
+    try {
+      const tokenResponse = await axios.post(
+        `https://${shop}/admin/oauth/access_token`,
+        {
+          client_id: env.SHOPIFY_API_KEY,
+          client_secret: env.SHOPIFY_API_SECRET,
+          code,
+        },
+        { timeout: 8000 }
+      );
+      if (tokenResponse.data?.access_token) {
+        accessToken = tokenResponse.data.access_token;
+      }
+    } catch (err: unknown) {
+      const error = err as Error;
+      if (env.NODE_ENV === "production") {
+        throw new ApiError(502, `Failed to exchange code with Shopify: ${error.message}`);
+      }
     }
   }
 
   const scopes = env.SHOPIFY_SCOPES.split(",").map((s) => s.trim());
 
   // Store in dedicated ShopifyConnection model (TODO #2)
-  const connection = await ShopifyConnection.findOneAndUpdate(
-    { tenant_id: tenant._id },
-    {
-      tenant_id: tenant._id,
-      shop_domain: shop,
-      access_token: accessToken,
-      scopes,
-      status: "active",
-      sync_error: null,
-    },
-    { upsert: true, new: true }
-  );
+  // Delete any conflicting previous connection for this tenant or shop to respect unique indices
+  await ShopifyConnection.deleteMany({
+    $or: [{ tenant_id: tenant._id }, { shop_domain: shop }],
+  });
+
+  const connection = await ShopifyConnection.create({
+    tenant_id: tenant._id,
+    shop_domain: shop,
+    access_token: accessToken,
+    scopes,
+    status: "active",
+    sync_error: null,
+  });
 
   tenant.shopify_connected = true;
   tenant.shopify_shop_domain = shop;
+  tenant.shopify_access_token = accessToken;
+  tenant.shopify_scopes = scopes;
+  tenant.shopify_connected_at = new Date();
+  tenant.shopify_sync_status = "idle";
+  tenant.shopify_sync_error = null;
   await tenant.save();
 
   return { tenant, connection, shop };
@@ -388,7 +598,12 @@ export async function syncShopifyCatalog(
   const accessToken = connection.access_token;
 
   try {
-    if (accessToken && !accessToken.startsWith("shpat_sandbox_")) {
+    if (accessToken?.startsWith("public_feed_")) {
+      const publicProducts = await fetchPublicShopifyProducts(shop);
+      if (publicProducts && publicProducts.length > 0) {
+        products = publicProducts;
+      }
+    } else if (accessToken && !accessToken.startsWith("shpat_sandbox_")) {
       let cursor: string | null = null;
       let hasNextPage = true;
 
@@ -468,87 +683,19 @@ export async function syncShopifyCatalog(
     products = getMockShopifyProducts(tenant.name);
   }
 
-  const collection = looksCol();
-  let importedCount = 0;
-
-  for (const prod of products) {
-    const productIdStr = String(prod.id);
-    const rawImages = prod.images && prod.images.length > 0 ? prod.images : prod.image ? [prod.image] : [];
-    const imagesList = rawImages.map((img: any) => ({
-      id: String(img.id || ""),
-      url: img.src || img.url || "",
-      alt: img.alt || img.altText || "",
-      width: img.width,
-      height: img.height,
-    }));
-    const imageUrl = imagesList[0]?.url || "";
-    const variants = prod.variants ?? [];
-    const tagsList = Array.isArray(prod.tags)
-      ? prod.tags
-      : typeof prod.tags === "string"
-      ? prod.tags.split(",").map((t: string) => t.trim()).filter(Boolean)
-      : [];
-    const contentHash = computeProductContentHash({
-      title: prod.title,
-      body_html: prod.body_html,
-      images: imagesList,
-      variants,
-    });
-
-    const lookDoc = {
-      tenant_id: tenant._id,
-      name: prod.title,
-      title: prod.title,
-      description: prod.body_html?.replace(/<[^>]*>/g, "") || "",
-      brand: prod.vendor || tenant.name,
-      season: "Shopify Catalog",
-      year: new Date().getFullYear(),
-      type: "retail",
-      source: {
-        type: "shopify",
-        shopify_product_id: productIdStr,
-        shopify_shop: shop,
-        product_type: prod.product_type || "Apparel",
-      },
-      image_url: imageUrl,
-      thumbnail: imageUrl,
-      images: imagesList,
-      variants: variants.map((v: any) => ({
-        id: String(v.id || ""),
-        title: v.title || "",
-        price: v.price || "",
-        sku: v.sku || "",
-        inventory_quantity: v.inventory_quantity,
-      })),
-      tags: tagsList,
-      product_type: prod.product_type || "Apparel",
-      garment_count: Math.max(1, variants.length),
-      content_hash: contentHash,
-      deconstruction_status: "pending",
-      is_deconstructed: false,
-      updated_at: new Date(),
-    };
-
-    await collection.updateOne(
-      {
-        tenant_id: tenant._id,
-        "source.type": "shopify",
-        "source.shopify_product_id": productIdStr,
-      },
-      {
-        $set: lookDoc,
-        $setOnInsert: { created_at: new Date() },
-      },
-      { upsert: true }
-    );
-
-    importedCount++;
-  }
+  const importedCount = await saveProductsToCatalog(tenant, shop, products);
 
   connection.last_synced_at = new Date();
   connection.status = "active";
   connection.product_count = importedCount;
   await connection.save();
+
+  tenant.shopify_catalog_synced_at = new Date();
+  tenant.shopify_sync_status = "synced";
+  tenant.shopify_product_count = importedCount;
+  if (typeof (tenant as any).save === "function") {
+    await (tenant as any).save();
+  }
 
   return {
     success: true,
