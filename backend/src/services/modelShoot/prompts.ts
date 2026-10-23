@@ -80,11 +80,36 @@ function refsLine(closeupCount: number, first = 1) {
     : ".";
 }
 
-/** The main (hero) image: the configured model wearing the garment, full length, in the studio. */
-export function mainPrompt(type: string, cfg: IModelConfig, read: IGarmentRead, outfit: IOutfit, closeupCount: number) {
+/** Where the model's identity references sit among the images of a generation (1-based). */
+export interface IdentityImages {
+  /** A close-up of her face. */
+  face: number;
+  /** A full-length photograph of her, for body shape and proportions. */
+  body: number;
+}
+
+/**
+ * Who the model is, by image: her look must never be re-invented from the text description. Only identity comes
+ * from these images; hair, clothing, pose and setting still come from the prompt, so changing one of them changes
+ * only that.
+ */
+function identityLine(id: IdentityImages) {
+  return (
+    `\nTHE MODEL IS THE PERSON IN IMAGES ${id.face} AND ${id.body}: image ${id.face} is a close-up of her face, image ${id.body} shows her full length.` +
+    ` Cast exactly this person — identical face, features, skin tone, body shape and proportions; she must be recognisably the same person.` +
+    ` Use images ${id.face} and ${id.body} ONLY for who she is: her hair, clothing, pose and setting come from this description, not from those images.`
+  );
+}
+
+/**
+ * The main (hero) image: the configured model wearing the garment, full length, in the studio. With `identity`,
+ * the model is a person already cast (same face and body); without it she is cast from the description.
+ */
+export function mainPrompt(type: string, cfg: IModelConfig, read: IGarmentRead, outfit: IOutfit, closeupCount: number, identity?: IdentityImages) {
   return (
     `A magazine fashion editorial photograph, shot in a studio. A ${cfg.height} ${cfg.gender} fashion model, ${cfg.age}, clothing size ${cfg.size}, ${cfg.skin_tone} skin, ${cfg.hair},` +
     ` standing naturally and still, facing the camera, calm direct gaze, arms relaxed at the sides. Full length, head to toe, with the whole outfit in frame.` +
+    (identity ? identityLine(identity) : "") +
     `\nThe model is wearing EXACTLY the ${type} shown in image 1 (front view)${refsLine(closeupCount)}` +
     `\n${garmentRules(type, read)}` +
     `\nRest of the outfit: ${outfitLine(outfit)}. Nothing covers or hides the ${type}.` +
@@ -266,7 +291,7 @@ export const EDITORIAL_EDITOR_SCHEMA = {
 };
 
 /** One editorial shot from the approved main image. Back views use the back flat as the garment reference. */
-export function shotPrompt(type: string, idea: ShotIdea, read: IGarmentRead, useBack: boolean, closeupCount: number) {
+export function shotPrompt(type: string, idea: ShotIdea, read: IGarmentRead, useBack: boolean, closeupCount: number, faceImage?: number) {
   return (
     `Image 1 is the approved main photograph from a fashion magazine editorial. Create a NEW photograph from the same shoot: the SAME model (identical face, skin tone, hair, body),` +
     ` the SAME complete outfit (identical pieces, colours and fabrics), the SAME studio backdrop and light, and the ${type} styled as in image 1 (how open, how it is tied).` +
@@ -274,6 +299,9 @@ export function shotPrompt(type: string, idea: ShotIdea, read: IGarmentRead, use
     flatIsAuthority(type, 2) +
     (useBack
       ? ` From behind, the back must look exactly like image 2: front details (front fastenings, front pockets, the front of a tie or knot) are NOT visible and must not be moved onto the back.`
+      : "") +
+    (faceImage
+      ? `\nImage ${faceImage} is a close-up of the model's face from image 1: in this photograph her face must match it exactly — same features, skin tone and hairstyle — from whatever angle she is seen.`
       : "") +
     `\nThis photograph — "${idea.title}": framing: ${idea.framing}. Pose: ${idea.pose}. Camera: ${idea.camera}.` +
     `\n${garmentRules(type, read)}` +

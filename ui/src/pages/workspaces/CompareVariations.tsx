@@ -32,10 +32,12 @@ function imageFor(v: Variation, mode: Mode): VariationImage | null {
   return s.shots.find((x) => x.view === view && x.image_url) ?? null;
 }
 
-export function CompareVariations({ open, onClose, focusId, modelConfig, outfit, costPerImage, onFocus }: {
+export function CompareVariations({ open, onClose, focusId, focusShootId, modelConfig, outfit, costPerImage, onFocus }: {
   open: boolean;
   onClose: () => void;
   focusId: string;
+  /** The focused garment's shoot: variations are shot on the same model (same face and body). */
+  focusShootId: string | null;
   modelConfig: Record<string, string> | null;
   outfit: Record<string, string> | null;
   costPerImage: number;
@@ -60,7 +62,11 @@ export function CompareVariations({ open, onClose, focusId, modelConfig, outfit,
   };
   const shoot = useMutation({
     mutationFn: (conceptId: string) =>
-      api.post(`/concepts/${conceptId}/model-shoot`, { model_config: modelConfig ?? undefined, outfit: outfit ?? undefined }),
+      api.post(`/concepts/${conceptId}/model-shoot`, {
+        model_config: modelConfig ?? undefined,
+        outfit: outfit ?? undefined,
+        identity_from_shoot: focusShootId ?? undefined,
+      }),
     onSuccess: () => qc.invalidateQueries({ queryKey: key }),
     onError: fail,
   });

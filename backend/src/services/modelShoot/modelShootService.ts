@@ -298,6 +298,61 @@ async function renderToStore(shootId: string, imageId: Types.ObjectId, refs: Buf
   await ModelShoot.updateOne({ _id: shootId }, { $inc: { total_cost_usd: COST_SEEDREAM_EDIT } });
 }
 
+// ---- Model identity ----
+
+/** Changing any of these casts a new model; every other change (hair, size, outfit…) keeps the same person. */
+const IDENTITY_FIELDS = ["gender", "age", "skin_tone"] as const;
+
+type IdentitySource = { shoot_id: Types.ObjectId; image_id: Types.ObjectId };
+
+/**
+ * The model in a main image, as identity references: a close-up of her face (cropped once, cached on the image)
+ * and the full-length photograph. Null if the image is missing.
+ */
+async function identityOf(src: IdentitySource): Promise<{ face: Buffer; body: Buffer } | null> {
+  const shoot = await ModelShoot.findById(src.shoot_id);
+  const img = shoot?.images.id(src.image_id);
+  if (!img?.image?.gridfs_id) return null;
+  const body = await readGridFSBuffer(BUCKET, img.image.gridfs_id);
+  if (img.face?.gridfs_id) return { face: await readGridFSBuffer(BUCKET, img.face.gridfs_id), body };
+
+  const { width = 1024, height = 1536 } = await sharp(body).metadata();
+  let box = null as ReturnType<typeof toBox>;
+  try {
+    const r = await geminiJson<{ box_2d: number[] }>(
+      [body],
+      "Return box_2d [ymin, xmin, ymax, xmax] (0-1000) of the person's head, from the top of the hair to the chin.",
+      { type: "OBJECT", properties: { box_2d: { type: "ARRAY", items: { type: "INTEGER" } } }, required: ["box_2d"] },
+      0,
+      env.GEMINI_MODEL,
+    );
+    box = toBox(r.box_2d);
+  } catch (err) {
+    console.warn(`Face box for ${src.image_id} failed, using the top-centre fallback: ${describeError(err)}`);
+  }
+  // Full-length studio framing puts the head in the top-centre; the fallback crops there.
+  box ??= { ymin: 0, xmin: 330, ymax: 180, xmax: 670 };
+  const side = Math.round(Math.min(Math.max(((box.xmax - box.xmin) / 1000) * width, ((box.ymax - box.ymin) / 1000) * height) * 1.4, width, height));
+  const left = Math.round(Math.min(Math.max(((box.xmin + box.xmax) / 2000) * width - side / 2, 0), width - side));
+  const top = Math.round(Math.min(Math.max(((box.ymin + box.ymax) / 2000) * height - side / 2, 0), height - side));
+  const face = await sharp(body).extract({ left, top, width: side, height: side }).resize(768, 768).jpeg({ quality: 92 }).toBuffer();
+  const id = await storeBuffer(face, `face_${src.shoot_id}_${src.image_id}.jpg`);
+  await setImage(String(src.shoot_id), src.image_id, { face: { gridfs_id: id } });
+  return { face, body };
+}
+
+/** The model on screen: the current main version if generated, else the newest generated one. */
+function shownModelImage(shoot: IModelShoot) {
+  const mains = shoot.images.filter((i) => i.kind === "main" && i.status === "generated");
+  return mains.find((i) => i.is_current) ?? mains.sort((a, b) => (b.version ?? 0) - (a.version ?? 0))[0] ?? null;
+}
+
+/** The model a shoot stands for (compare variations): the approved main image, else the one on screen. */
+function currentModelImage(shoot: IModelShoot) {
+  const approved = shoot.approved_main_id ? shoot.images.id(shoot.approved_main_id) : null;
+  return approved?.status === "generated" ? approved : shownModelImage(shoot);
+}
+
 async function renderMain(shootId: string, imageId: Types.ObjectId) {
   try {
     await setImage(shootId, imageId, { status: "generating", error: null });
@@ -315,8 +370,11 @@ async function renderMain(shootId: string, imageId: Types.ObjectId) {
       images = [await readGridFSBuffer(BUCKET, base.image.gridfs_id), refs.front];
       prompt = editMainPrompt(shoot.garment_type, img.instruction, read);
     } else {
-      images = [refs.front, ...refs.closeups];
-      prompt = mainPrompt(shoot.garment_type, img.model_config ?? shoot.model_config, read, img.outfit ?? outfit, refs.closeups.length);
+      // A regenerate keeps the model already cast (same face and body); a first image or a re-cast invents her.
+      const model = img.identity_ref ? await identityOf(img.identity_ref) : null;
+      images = [refs.front, ...refs.closeups, ...(model ? [model.face, model.body] : [])];
+      const identity = model ? { face: refs.closeups.length + 2, body: refs.closeups.length + 3 } : undefined;
+      prompt = mainPrompt(shoot.garment_type, img.model_config ?? shoot.model_config, read, img.outfit ?? outfit, refs.closeups.length, identity);
     }
     await setImage(shootId, imageId, { outfit: img.outfit ?? outfit });
     await renderToStore(shootId, imageId, images, prompt, `main_${shootId}_v${img.version}.jpg`);
@@ -337,6 +395,8 @@ async function runShots(shootId: string, imageIds: Types.ObjectId[]) {
     if (!main?.image?.gridfs_id) throw new Error("Approved main image is missing");
     const mainBuf = await readGridFSBuffer(BUCKET, main.image.gridfs_id);
     const refs = await garmentRefs(shoot);
+    // Her face, as its own reference: in a full-length photograph it is too small to survive new angles.
+    const model = await identityOf({ shoot_id: shoot._id, image_id: main._id });
 
     const { shots } = await geminiJson<{ shots: ShotIdea[] }>(
       [mainBuf, refs.front],
@@ -354,7 +414,8 @@ async function runShots(shootId: string, imageIds: Types.ObjectId[]) {
         await setImage(shootId, id, { status: "generating", title: idea.title, view: idea.view, framing: idea.framing, pose: idea.pose, camera: idea.camera });
         const useBack = idea.view === "back" && !!refs.back;
         const images = useBack ? [mainBuf, refs.back!] : [mainBuf, refs.front, ...refs.closeups];
-        const prompt = shotPrompt(shoot.garment_type, idea, read, useBack, useBack ? 0 : refs.closeups.length);
+        if (model) images.push(model.face);
+        const prompt = shotPrompt(shoot.garment_type, idea, read, useBack, useBack ? 0 : refs.closeups.length, model ? images.length : undefined);
         await renderToStore(shootId, id, images, prompt, `shot_${shootId}_${id}.jpg`);
       } catch (err) {
         const error = describeError(err);
@@ -398,7 +459,13 @@ const rootOf = (c: { _id: Types.ObjectId; root_concept?: Types.ObjectId | null }
  * and for any variation in the lineage of one, so variations can be compared on the model. `outfit` (optional)
  * fixes the styling up front — compare passes the focused garment's, so only the garment differs.
  */
-export async function startShoot(conceptId: string, userId: string, modelConfig?: Partial<IModelConfig>, outfit?: Partial<IOutfit>) {
+export async function startShoot(
+  conceptId: string,
+  userId: string,
+  modelConfig?: Partial<IModelConfig>,
+  outfit?: Partial<IOutfit>,
+  identityFromShoot?: string,
+) {
   if (!mongoose.Types.ObjectId.isValid(conceptId)) throw new ApiError(400, "Invalid concept id");
   const concept = await Concept.findById(conceptId).lean();
   if (!concept) throw new ApiError(404, "Concept not found");
@@ -410,8 +477,19 @@ export async function startShoot(conceptId: string, userId: string, modelConfig?
     if (!inStage3) throw new ApiError(400, "Move the garment to garment concepts (Stage 2 §03) first");
   }
 
+  // Compare variations: the same model as another shoot of this workspace, not a newly cast one.
+  let identity: IdentitySource | null = null;
+  if (identityFromShoot) {
+    const source = await loadOwnedShoot(identityFromShoot, userId);
+    if (String(source.workspace_id) !== String(concept.workspace_id)) throw new ApiError(400, "That shoot belongs to another workspace");
+    const img = currentModelImage(source);
+    if (!img) throw new ApiError(400, "That shoot has no main image to take the model from yet");
+    identity = { shoot_id: source._id, image_id: img._id };
+    modelConfig = { ...source.model_config, ...(modelConfig ?? {}) };
+  }
+
   const existing = await ModelShoot.findOne({ concept_id: concept._id });
-  if (existing) return regenerateMain(String(existing._id), userId, { model_config: modelConfig, outfit });
+  if (existing) return regenerateMain(String(existing._id), userId, { model_config: modelConfig, outfit }, identity);
 
   const shoot = new ModelShoot({
     workspace_id: concept.workspace_id,
@@ -421,7 +499,7 @@ export async function startShoot(conceptId: string, userId: string, modelConfig?
     model_config: cleanConfig(modelConfig, DEFAULT_MODEL_CONFIG),
     outfit: cleanOutfit(outfit, null),
   });
-  const img = addMainVersion(shoot, {});
+  const img = addMainVersion(shoot, { identity_ref: identity });
   await shoot.save();
   void renderMain(String(shoot._id), img._id);
   return { ...shootView(shoot), estimated_cost_usd: COST_SEEDREAM_EDIT };
@@ -435,6 +513,7 @@ export async function regenerateMain(
   shootId: string,
   userId: string,
   body: { model_config?: Partial<IModelConfig>; outfit?: Partial<IOutfit>; instruction?: string },
+  identityFrom?: IdentitySource | null,
 ) {
   const shoot = await loadOwnedShoot(shootId, userId);
   assertIdle(shoot);
@@ -448,8 +527,15 @@ export async function regenerateMain(
     if (current?.status !== "generated") throw new ApiError(400, "There is no generated main image to edit");
     fields = { instruction, based_on: current._id, model_config: current.model_config, outfit: current.outfit };
   } else {
+    const before = Object.fromEntries(IDENTITY_FIELDS.map((k) => [k, shoot.model_config[k]]));
     shoot.model_config = cleanConfig(body.model_config, shoot.model_config);
     shoot.outfit = cleanOutfit(body.outfit, shoot.outfit);
+    // Keep the model on screen unless the designer re-cast her (gender, age or skin tone changed).
+    const recast = IDENTITY_FIELDS.some((k) => before[k] !== shoot.model_config[k]);
+    const current = shownModelImage(shoot);
+    fields = {
+      identity_ref: identityFrom ?? (!recast && current ? { shoot_id: shoot._id, image_id: current._id } : null),
+    };
   }
   const img = addMainVersion(shoot, fields);
   await shoot.save();

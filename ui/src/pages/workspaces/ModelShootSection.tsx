@@ -209,6 +209,7 @@ export function ModelShootSection({ workspaceId, workspaceName }: { workspaceId?
           open
           onClose={() => setComparing(false)}
           focusId={garment.concept_id}
+          focusShootId={garment.shoot?.id ?? null}
           modelConfig={(garment.shoot?.model_config as unknown as Record<string, string>) ?? null}
           outfit={(garment.shoot?.outfit as unknown as Record<string, string>) ?? null}
           costPerImage={data!.cost_per_image_usd}
@@ -305,7 +306,7 @@ function GarmentShoot({ garment, defaults, costPerImage, onDone, onError }: {
         </Box>
 
         <Box sx={{ flex: 1, minWidth: 0, display: "flex", flexDirection: "column", gap: 3 }}>
-          <Panel title="Model">
+          <Panel title="Model" note={shoot ? "changing gender, age or skin tone casts a new model; other changes keep her" : undefined}>
             <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" }, gap: 1.5 }}>
               {CONFIG_FIELDS.map((f) => (
                 <Autocomplete
