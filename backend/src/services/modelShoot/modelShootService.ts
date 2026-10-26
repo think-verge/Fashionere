@@ -39,6 +39,7 @@ import {
   type EditorialText,
   artDirectorPrompt,
   editMainPrompt,
+  garmentSwapPrompt,
   garmentReadPrompt,
   mainPrompt,
   shotPrompt,
@@ -364,7 +365,14 @@ async function renderMain(shootId: string, imageId: Types.ObjectId) {
 
     let images: Buffer[];
     let prompt: string;
-    if (img.instruction && img.based_on) {
+    if (img.swap_from) {
+      // Compare variations: the focused garment's photograph, re-dressed in this variation.
+      const source = await ModelShoot.findById(img.swap_from.shoot_id);
+      const base = source?.images.id(img.swap_from.image_id);
+      if (!base?.image?.gridfs_id) throw new Error("The photograph to re-dress is missing");
+      images = [await readGridFSBuffer(BUCKET, base.image.gridfs_id), refs.front, ...refs.closeups];
+      prompt = garmentSwapPrompt(shoot.garment_type, read, refs.closeups.length);
+    } else if (img.instruction && img.based_on) {
       const base = shoot.images.id(img.based_on);
       if (!base?.image?.gridfs_id) throw new Error("The version being edited has no image");
       images = [await readGridFSBuffer(BUCKET, base.image.gridfs_id), refs.front];
@@ -477,7 +485,7 @@ export async function startShoot(
     if (!inStage3) throw new ApiError(400, "Move the garment to garment concepts (Stage 2 §03) first");
   }
 
-  // Compare variations: the same model as another shoot of this workspace, not a newly cast one.
+  // Compare variations: re-dress the other shoot's photograph in this variation (same model, pose and outfit).
   let identity: IdentitySource | null = null;
   if (identityFromShoot) {
     const source = await loadOwnedShoot(identityFromShoot, userId);
@@ -486,6 +494,7 @@ export async function startShoot(
     if (!img) throw new ApiError(400, "That shoot has no main image to take the model from yet");
     identity = { shoot_id: source._id, image_id: img._id };
     modelConfig = { ...source.model_config, ...(modelConfig ?? {}) };
+    outfit = outfit ?? img.outfit ?? source.outfit ?? undefined;
   }
 
   const existing = await ModelShoot.findOne({ concept_id: concept._id });
@@ -499,7 +508,7 @@ export async function startShoot(
     model_config: cleanConfig(modelConfig, DEFAULT_MODEL_CONFIG),
     outfit: cleanOutfit(outfit, null),
   });
-  const img = addMainVersion(shoot, { identity_ref: identity });
+  const img = addMainVersion(shoot, { identity_ref: identity, swap_from: identity });
   await shoot.save();
   void renderMain(String(shoot._id), img._id);
   return { ...shootView(shoot), estimated_cost_usd: COST_SEEDREAM_EDIT };
@@ -547,8 +556,14 @@ export async function regenerateMain(
   if (instruction.length > 500) throw new ApiError(400, "instruction must be under 500 characters");
 
   let fields: Partial<IShootImage> = {};
-  let mode: "edit" | "new_take" | "recast";
-  if (instruction) {
+  let mode: "edit" | "new_take" | "recast" | "swap";
+  if (identityFrom) {
+    // Compare variations on a variation that already has a shoot: re-dress the focused photograph again.
+    shoot.model_config = cleanConfig(body.model_config, shoot.model_config);
+    shoot.outfit = cleanOutfit(body.outfit, shoot.outfit);
+    fields = { identity_ref: identityFrom, swap_from: identityFrom };
+    mode = "swap";
+  } else if (instruction) {
     const current = shoot.images.find((i) => i.kind === "main" && i.is_current);
     if (current?.status !== "generated") throw new ApiError(400, "There is no generated main image to edit");
     fields = { instruction, based_on: current._id, model_config: current.model_config, outfit: current.outfit };
@@ -563,7 +578,7 @@ export async function regenerateMain(
     const cfgChanged = CONFIG_KEYS.filter((k) => differs(baseCfg?.[k], shoot.model_config[k]));
     const outfitChanged = OUTFIT_KEYS.filter((k) => differs(baseOutfit?.[k], shoot.outfit?.[k]));
     const recast = cfgChanged.some((k) => (IDENTITY_FIELDS as readonly string[]).includes(k));
-    const editOnly = !!shown && !identityFrom && !recast && (cfgChanged.length > 0 || outfitChanged.length > 0)
+    const editOnly = !!shown && !recast && (cfgChanged.length > 0 || outfitChanged.length > 0)
       && cfgChanged.every((k) => EDITABLE_CONFIG.includes(k));
 
     if (editOnly) {
@@ -575,7 +590,7 @@ export async function regenerateMain(
       };
       mode = "edit";
     } else {
-      fields = { identity_ref: identityFrom ?? (!recast && shown ? { shoot_id: shoot._id, image_id: shown._id } : null) };
+      fields = { identity_ref: !recast && shown ? { shoot_id: shoot._id, image_id: shown._id } : null };
       mode = recast ? "recast" : "new_take";
     }
   }

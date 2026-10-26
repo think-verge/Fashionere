@@ -129,6 +129,22 @@ function flatIsAuthority(type: string, flat: number) {
   );
 }
 
+/**
+ * Compare variations: re-dress an existing photograph in another variation of the garment. Only the garment
+ * changes, so two photographs differ by nothing but the design.
+ */
+export function garmentSwapPrompt(type: string, read: IGarmentRead, closeupCount: number) {
+  return (
+    `Image 1 is a fashion editorial photograph. Replace the ${type} the model is wearing with the ${type} shown in image 2 (front view)${refsLine(closeupCount, 2)}` +
+    `\nChange ONLY the ${type}. Keep everything else in image 1 exactly as it is: the same model (face, hair, skin, body), the same pose and expression,` +
+    ` the rest of the outfit, the framing, the studio and the light. The new ${type} is worn the same way as the one it replaces and fits her naturally.` +
+    flatIsAuthority(type, 2) +
+    `\n${garmentRules(type, read)}` +
+    `\n${WARDROBE_RULES}` +
+    ` Photorealistic. No logos, text or watermarks.`
+  );
+}
+
 /** A designer's edit of the current main image: change only what was asked. */
 export function editMainPrompt(type: string, instruction: string, read: IGarmentRead) {
   return (
