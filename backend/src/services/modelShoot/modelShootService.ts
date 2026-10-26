@@ -505,9 +505,34 @@ export async function startShoot(
   return { ...shootView(shoot), estimated_cost_usd: COST_SEEDREAM_EDIT };
 }
 
+const CONFIG_KEYS = Object.keys(DEFAULT_MODEL_CONFIG) as (keyof IModelConfig)[];
+const OUTFIT_KEYS = ["top", "bottoms", "shoes", "accessories"] as const;
+/** Model fields an edit of the image on screen can change by itself; size and height need a new take. */
+const EDITABLE_CONFIG: (keyof IModelConfig)[] = ["hair"];
+
+const isNone = (v?: string | null) => !v || v.trim().toLowerCase() === "none";
+const differs = (a?: string | null, b?: string | null) => (isNone(a) ? "" : a!.trim().toLowerCase()) !== (isNone(b) ? "" : b!.trim().toLowerCase());
+
+/** The designer's field changes as one plain edit instruction ("Change her hair to…. Change the shoes to…."). */
+function changesInstruction(type: string, cfg: IModelConfig, outfit: IOutfit | null, cfgChanged: (keyof IModelConfig)[], outfitChanged: (typeof OUTFIT_KEYS)[number][]) {
+  const lines: string[] = [];
+  if (cfgChanged.includes("hair")) lines.push(`Change her hair to ${cfg.hair}.`);
+  for (const k of outfitChanged) {
+    const v = outfit?.[k];
+    if (k === "top") lines.push(isNone(v) ? `Remove the top worn under the ${type}.` : `Change the top worn under the ${type} to ${v}.`);
+    if (k === "bottoms") lines.push(isNone(v) ? "Remove the trousers or skirt." : `Change the bottoms to ${v}.`);
+    if (k === "shoes") lines.push(isNone(v) ? "Remove the shoes." : `Change the shoes to ${v}.`);
+    if (k === "accessories") lines.push(isNone(v) ? "Remove all accessories and jewellery." : `Change the accessories to ${v}.`);
+  }
+  return lines.join(" ");
+}
+
 /**
- * A new version of the main image. With `instruction`, edits the current version ("make the trousers navy");
- * otherwise regenerates from scratch with the (optionally updated) model config and outfit.
+ * A new version of the main image.
+ * - With `instruction`: edits the version on screen ("make the trousers navy").
+ * - With changed fields: if only the hair or outfit pieces changed, edits the version on screen so nothing else
+ *   moves; if gender, age or skin tone changed, casts a new model; otherwise (size, height, or no change at all)
+ *   a new take of the same model.
  */
 export async function regenerateMain(
   shootId: string,
@@ -522,25 +547,42 @@ export async function regenerateMain(
   if (instruction.length > 500) throw new ApiError(400, "instruction must be under 500 characters");
 
   let fields: Partial<IShootImage> = {};
+  let mode: "edit" | "new_take" | "recast";
   if (instruction) {
     const current = shoot.images.find((i) => i.kind === "main" && i.is_current);
     if (current?.status !== "generated") throw new ApiError(400, "There is no generated main image to edit");
     fields = { instruction, based_on: current._id, model_config: current.model_config, outfit: current.outfit };
+    mode = "edit";
   } else {
-    const before = Object.fromEntries(IDENTITY_FIELDS.map((k) => [k, shoot.model_config[k]]));
+    // Compare with the version on screen, which is what the designer is changing.
+    const shown = shownModelImage(shoot);
+    const baseCfg = shown?.model_config ?? shoot.model_config;
+    const baseOutfit = shown?.outfit ?? shoot.outfit;
     shoot.model_config = cleanConfig(body.model_config, shoot.model_config);
     shoot.outfit = cleanOutfit(body.outfit, shoot.outfit);
-    // Keep the model on screen unless the designer re-cast her (gender, age or skin tone changed).
-    const recast = IDENTITY_FIELDS.some((k) => before[k] !== shoot.model_config[k]);
-    const current = shownModelImage(shoot);
-    fields = {
-      identity_ref: identityFrom ?? (!recast && current ? { shoot_id: shoot._id, image_id: current._id } : null),
-    };
+    const cfgChanged = CONFIG_KEYS.filter((k) => differs(baseCfg?.[k], shoot.model_config[k]));
+    const outfitChanged = OUTFIT_KEYS.filter((k) => differs(baseOutfit?.[k], shoot.outfit?.[k]));
+    const recast = cfgChanged.some((k) => (IDENTITY_FIELDS as readonly string[]).includes(k));
+    const editOnly = !!shown && !identityFrom && !recast && (cfgChanged.length > 0 || outfitChanged.length > 0)
+      && cfgChanged.every((k) => EDITABLE_CONFIG.includes(k));
+
+    if (editOnly) {
+      fields = {
+        instruction: changesInstruction(shoot.garment_type, shoot.model_config, shoot.outfit, cfgChanged, outfitChanged),
+        based_on: shown!._id,
+        model_config: shoot.model_config,
+        outfit: shoot.outfit ?? undefined,
+      };
+      mode = "edit";
+    } else {
+      fields = { identity_ref: identityFrom ?? (!recast && shown ? { shoot_id: shoot._id, image_id: shown._id } : null) };
+      mode = recast ? "recast" : "new_take";
+    }
   }
   const img = addMainVersion(shoot, fields);
   await shoot.save();
   void renderMain(shootId, img._id);
-  return { ...shootView(shoot), estimated_cost_usd: COST_SEEDREAM_EDIT };
+  return { ...shootView(shoot), mode, estimated_cost_usd: COST_SEEDREAM_EDIT };
 }
 
 export async function selectMainVersion(shootId: string, imageId: string, userId: string) {

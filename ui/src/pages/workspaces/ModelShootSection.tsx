@@ -33,6 +33,8 @@ interface ShootImage {
   status: ImageStatus;
   image_url: string | null;
   error: string | null;
+  model_config: ModelConfig | null;
+  outfit: Outfit | null;
 }
 
 interface Shoot {
@@ -78,6 +80,23 @@ const OUTFIT_FIELDS: Array<{ key: keyof Outfit; label: string }> = [
   { key: "shoes", label: "Shoes" },
   { key: "accessories", label: "Accessories" },
 ];
+
+// What applying the panel's settings will do, compared with the image on screen (mirrors the backend's rule):
+// only hair or outfit pieces changed → edit that image; gender, age or skin tone → a new model; else a new take.
+type ChangeMode = "edit" | "recast" | "new_take";
+const IDENTITY_KEYS: (keyof ModelConfig)[] = ["gender", "age", "skin_tone"];
+const FIELD_LABEL: Record<string, string> = { hair: "hair", top: "top", bottoms: "bottoms", shoes: "shoes", accessories: "accessories", size: "size", height: "height", gender: "gender", age: "age", skin_tone: "skin tone" };
+const norm = (v?: string | null) => (!v || v.trim().toLowerCase() === "none" ? "" : v.trim().toLowerCase());
+
+function changePlan(base: ShootImage | null, cfg: ModelConfig, outfit: Outfit | null): { mode: ChangeMode; changed: string[] } {
+  if (!base?.model_config || base.status !== "generated") return { mode: "new_take", changed: [] };
+  const cfgChanged = (Object.keys(cfg) as (keyof ModelConfig)[]).filter((k) => norm(base.model_config![k]) !== norm(cfg[k]));
+  const outfitChanged = outfit && base.outfit ? (Object.keys(outfit) as (keyof Outfit)[]).filter((k) => norm(base.outfit![k]) !== norm(outfit[k])) : [];
+  const changed = [...cfgChanged, ...outfitChanged].map((k) => FIELD_LABEL[k] ?? k);
+  if (cfgChanged.some((k) => IDENTITY_KEYS.includes(k))) return { mode: "recast", changed };
+  if (changed.length && cfgChanged.every((k) => k === "hair")) return { mode: "edit", changed };
+  return { mode: "new_take", changed };
+}
 
 const busy = (s: { status: ImageStatus }) => s.status === "pending" || s.status === "generating";
 const titleCase = (t: string) => (t ? t.charAt(0).toUpperCase() + t.slice(1) : "Garment");
@@ -266,6 +285,15 @@ function GarmentShoot({ garment, defaults, costPerImage, onDone, onError }: {
   const mainReady = main?.status === "generated";
   const approved = !!shoot?.approved_main_id && shoot.approved_main_id === main?.id;
   const cost = (n: number) => `$${(n * costPerImage).toFixed(2)}`;
+  const plan = changePlan(main, config, outfit);
+  const planLabel = plan.mode === "edit" ? "Apply changes" : plan.mode === "recast" ? "Cast a new model" : "New take, same model";
+  const planNote = plan.mode === "edit"
+    ? `Edits the current image; only the ${plan.changed.join(", ")} change.`
+    : plan.mode === "recast"
+      ? `${plan.changed.filter((c) => ["gender", "age", "skin tone"].includes(c)).join(", ")} changed, so a new model is cast.`
+      : plan.changed.length
+        ? `A new photograph of the same model, since ${plan.changed.join(", ")} changed.`
+        : "A fresh photograph of the same model in the same outfit.";
 
   return (
     <Box>
@@ -353,9 +381,12 @@ function GarmentShoot({ garment, defaults, costPerImage, onDone, onError }: {
                 {pending ? <CircularProgress size={16} sx={{ color: "#fff" }} /> : `Generate main image · ${cost(1)}`}
               </Button>
             ) : (
-              <Button variant="outlined" disabled={locked} onClick={() => regenerate.mutate()} sx={outlineSx}>
-                Regenerate with these settings · {cost(1)}
-              </Button>
+              <>
+                <Button variant={plan.mode === "edit" ? "contained" : "outlined"} disableElevation disabled={locked} onClick={() => regenerate.mutate()} sx={plan.mode === "edit" ? actionSx : outlineSx}>
+                  {planLabel} · {cost(1)}
+                </Button>
+                {!generating && <Typography sx={{ fontSize: 12, color: "text.secondary", flex: 1, minWidth: 200 }}>{planNote}</Typography>}
+              </>
             )}
             {generating && <Typography sx={{ fontSize: 12, color: "text.secondary" }}>Generating… about 1–2 minutes per image.</Typography>}
           </Box>
