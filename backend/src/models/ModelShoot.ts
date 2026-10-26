@@ -28,6 +28,8 @@ export interface IGarmentRead {
   dominant_colour: string;
   accent_colours: string;
   design: Record<string, string>;
+  /** Not stored: the variation's Stage 2 refinements ("Make the sleeves longer"), attached at generation time. */
+  refinements?: string[];
 }
 
 /** A captioned image in the editorial; points at an image of the shoot (a shot, or a detail crop of the flat). */

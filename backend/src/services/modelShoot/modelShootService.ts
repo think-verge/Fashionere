@@ -57,7 +57,8 @@ const MAX_SHOTS = 6;
 const STALE_MS = 10 * 60 * 1000;
 // Bump when the garment read changes; older reads are redone on the next generation.
 // v2: read from the front flat and its own crops only, never generated close-ups.
-const GARMENT_READ_VERSION = 2;
+// v3: also records how the garment is fastened and tied on the flat (worn_as).
+const GARMENT_READ_VERSION = 3;
 
 export const DEFAULT_MODEL_CONFIG: IModelConfig = {
   gender: "female",
@@ -239,7 +240,9 @@ async function garmentRefs(shoot: IModelShoot) {
   const back = current.find((s) => s.slot === "back_flat" && s.status === "generated" && s.image?.gridfs_id);
   const regions = current.filter((s) => (s.slot === "closeup_1" || s.slot === "closeup_2") && s.region).map((s) => s.region!);
   const closeups = await Promise.all(regions.map((r) => cropRegion(front, r)));
-  return { front, back: back ? await readGridFSBuffer("garment_shots", back.image!.gridfs_id!) : null, closeups };
+  // The variation's Stage 2 refinements: the changes that define it must survive every generation.
+  const refinements = (concept.accumulated_edits ?? []).filter((e: string) => !!e?.trim());
+  return { front, back: back ? await readGridFSBuffer("garment_shots", back.image!.gridfs_id!) : null, closeups, refinements };
 }
 
 async function geminiJson<T>(images: Buffer[], text: string, schema: unknown, temperature: number, model = env.GEMINI_PRO_MODEL): Promise<T> {
@@ -361,7 +364,8 @@ async function renderMain(shootId: string, imageId: Types.ObjectId) {
     const img = shoot?.images.id(imageId);
     if (!shoot || !img) return;
     const refs = await garmentRefs(shoot);
-    const { read, outfit } = await ensureGarmentRead(shootId, refs);
+    const { read: stored, outfit } = await ensureGarmentRead(shootId, refs);
+    const read = { ...stored, refinements: refs.refinements };
 
     let images: Buffer[];
     let prompt: string;
@@ -405,17 +409,19 @@ async function runShots(shootId: string, imageIds: Types.ObjectId[]) {
     const refs = await garmentRefs(shoot);
     // Her face, as its own reference: in a full-length photograph it is too small to survive new angles.
     const model = await identityOf({ shoot_id: shoot._id, image_id: main._id });
+    // Re-reads a garment read from an older version, so shots never inherit a since-fixed misreading.
+    const { read: stored } = await ensureGarmentRead(shootId, refs);
+    const read = { ...stored, refinements: refs.refinements };
+    const hair = (main.model_config ?? shoot.model_config)?.hair;
 
+    // The art director knows the construction, so poses never invent pockets or hide the details.
     const { shots } = await geminiJson<{ shots: ShotIdea[] }>(
       [mainBuf, refs.front],
-      artDirectorPrompt(shoot.garment_type, imageIds.length, !!refs.back),
+      artDirectorPrompt(shoot.garment_type, imageIds.length, !!refs.back, constructionText(read)),
       ART_DIRECTOR_SCHEMA,
       0.9,
     );
     if (!shots?.length) throw new Error("The art director returned no shots");
-
-    // Re-reads a garment read from an older version, so shots never inherit a since-fixed misreading.
-    const { read } = await ensureGarmentRead(shootId, refs);
     await Promise.allSettled(imageIds.map(async (id, i) => {
       const idea = shots[i % shots.length];
       try {
@@ -423,7 +429,7 @@ async function runShots(shootId: string, imageIds: Types.ObjectId[]) {
         const useBack = idea.view === "back" && !!refs.back;
         const images = useBack ? [mainBuf, refs.back!] : [mainBuf, refs.front, ...refs.closeups];
         if (model) images.push(model.face);
-        const prompt = shotPrompt(shoot.garment_type, idea, read, useBack, useBack ? 0 : refs.closeups.length, model ? images.length : undefined);
+        const prompt = shotPrompt(shoot.garment_type, idea, read, useBack, useBack ? 0 : refs.closeups.length, model ? images.length : undefined, hair);
         await renderToStore(shootId, id, images, prompt, `shot_${shootId}_${id}.jpg`);
       } catch (err) {
         const error = describeError(err);
