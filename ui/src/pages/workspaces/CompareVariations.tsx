@@ -7,7 +7,8 @@ import { ConceptImage } from "../../components/ConceptImage";
 import { variationName, variationsQueryKey } from "./stage3Shared";
 
 // Compare the Stage 2 variations of the garment in focus, on the same model, side by side. A variation without a
-// shoot is shot with the focused garment's model and outfit, so the only difference between columns is the garment.
+// shoot is made by re-dressing the focused garment's photograph in it (same model, pose, outfit and light), so the
+// only difference between columns is the garment.
 
 interface VariationImage { id: string; view: string | null; status: string; image_url: string | null }
 interface VariationShoot {
@@ -32,10 +33,12 @@ function imageFor(v: Variation, mode: Mode): VariationImage | null {
   return s.shots.find((x) => x.view === view && x.image_url) ?? null;
 }
 
-export function CompareVariations({ open, onClose, focusId, modelConfig, outfit, costPerImage, onFocus }: {
+export function CompareVariations({ open, onClose, focusId, focusShootId, modelConfig, outfit, costPerImage, onFocus }: {
   open: boolean;
   onClose: () => void;
   focusId: string;
+  /** The focused garment's shoot: variations are shot on the same model (same face and body). */
+  focusShootId: string | null;
   modelConfig: Record<string, string> | null;
   outfit: Record<string, string> | null;
   costPerImage: number;
@@ -60,7 +63,11 @@ export function CompareVariations({ open, onClose, focusId, modelConfig, outfit,
   };
   const shoot = useMutation({
     mutationFn: (conceptId: string) =>
-      api.post(`/concepts/${conceptId}/model-shoot`, { model_config: modelConfig ?? undefined, outfit: outfit ?? undefined }),
+      api.post(`/concepts/${conceptId}/model-shoot`, {
+        model_config: modelConfig ?? undefined,
+        outfit: outfit ?? undefined,
+        identity_from_shoot: focusShootId ?? undefined,
+      }),
     onSuccess: () => qc.invalidateQueries({ queryKey: key }),
     onError: fail,
   });
@@ -84,7 +91,7 @@ export function CompareVariations({ open, onClose, focusId, modelConfig, outfit,
         <Box sx={{ minWidth: 0 }}>
           <Typography sx={{ fontSize: 11, fontWeight: 600, letterSpacing: ".06em", textTransform: "uppercase", color: "#8a817e" }}>Compare variations</Typography>
           <Typography sx={{ fontFamily: "'Literata', Georgia, serif", fontSize: { xs: 24, md: 30 }, my: 0.5 }}>Same model, different variations</Typography>
-          <Typography sx={{ fontSize: 13, color: "text.secondary" }}>Every variation of this garment from Stage 2, shot on the same model and in the same studio. Choose the one to take forward.</Typography>
+          <Typography sx={{ fontSize: 13, color: "text.secondary" }}>Every variation of this garment from Stage 2 on the same model, in the same pose and outfit, so only the garment differs. Choose the one to take forward.</Typography>
         </Box>
         <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
           <ToggleButtonGroup size="small" exclusive value={mode} onChange={(_, m: Mode | null) => m && setMode(m)} aria-label="What to compare">
@@ -132,10 +139,10 @@ export function CompareVariations({ open, onClose, focusId, modelConfig, outfit,
                         <Typography sx={{ fontSize: 12.5, color: "text.secondary" }}>No {MODE_LABEL[mode].toLowerCase()} for this variation yet.</Typography>
                       ) : (
                         <Box>
-                          <Typography sx={{ fontSize: 12.5, color: "text.secondary", mb: 1.5 }}>Shoot this variation on the same model to compare it.</Typography>
+                          <Typography sx={{ fontSize: 12.5, color: "text.secondary", mb: 1.5 }}>Dress the model from the garment in focus in this variation: same pose, outfit and light.</Typography>
                           <Button variant="outlined" size="small" disabled={shoot.isPending} onClick={() => shoot.mutate(v.concept_id)}
                             sx={{ borderRadius: "8px", textTransform: "none", color: "text.primary", borderColor: "#e6d9d6", bgcolor: "#fff" }}>
-                            Generate on-model · ${costPerImage.toFixed(2)}
+                            Try it on · ${costPerImage.toFixed(2)}
                           </Button>
                         </Box>
                       )}

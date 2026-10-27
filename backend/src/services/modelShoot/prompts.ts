@@ -7,7 +7,7 @@ import type { IGarmentRead, IModelConfig, IOutfit, ShotView } from "../../models
 
 const S = { type: "STRING" };
 
-export const DESIGN_KEYS = ["fastenings", "ties_belts", "collar", "sleeves_cuffs", "hem", "pockets", "other_details"] as const;
+export const DESIGN_KEYS = ["fastenings", "ties_belts", "collar", "sleeves_cuffs", "hem", "pockets", "other_details", "worn_as"] as const;
 
 /** Garment read + stylist: colours, fixed construction, and a suggested outfit around the garment. */
 export function garmentReadPrompt(type: string, gender: string, closeupCount: number) {
@@ -17,7 +17,8 @@ export function garmentReadPrompt(type: string, gender: string, closeupCount: nu
     `\n2. DESIGN — the garment's fixed construction, with type, count and placement; "none" where not applicable.` +
     ` Describe ONLY what is clearly visible. Never infer hidden, concealed or optional features ("concealed zipper", "can also be buckled"); if you are not sure something is there, leave it out:` +
     ` fastenings; ties_belts (each tie or belt: continuous or separate, where it attaches, how it is tied as designed); collar; sleeves_cuffs (length, cuff construction);` +
-    ` hem (shape, where it falls); pockets; other_details (pleats, yokes, tabs, trims, topstitching).` +
+    ` hem (shape, where it falls); pockets; other_details (pleats, yokes, tabs, trims, topstitching);` +
+    ` worn_as (exactly how it is fastened and tied as shown, e.g. "zipped to the collar", "all buttons fastened, belt tied in a knot at centre front", "worn open").` +
     `\n3. STYLING — define the rest of a ${gender} model's look so it is cohesive and the garment is the focus.` +
     ` Supporting pieces contrast with the garment's dominant colour, never match it: choose a contrasting neutral that complements it (e.g. navy or charcoal against brown, cream against black).` +
     ` Use "none" for any slot not needed (e.g. no top or bottoms with a dress or jumpsuit; no inner top unless the garment shows one).` +
@@ -41,9 +42,9 @@ export const GARMENT_READ_SCHEMA = {
 
 const isSet = (v?: string | null) => !!v && v.trim().toLowerCase() !== "none";
 
-function designLines(read: IGarmentRead) {
+function designLines(read: IGarmentRead, skip: string[] = []) {
   return Object.entries(read.design ?? {})
-    .filter(([, v]) => isSet(v))
+    .filter(([k, v]) => isSet(v) && !skip.includes(k))
     .map(([k, v]) => `- ${k.replace(/_/g, " ")}: ${v}`)
     .join("\n");
 }
@@ -53,11 +54,32 @@ export function constructionText(read: IGarmentRead) {
   return designLines(read);
 }
 
-function garmentRules(type: string, read: IGarmentRead) {
+/**
+ * How the garment is fastened and tied in this generation:
+ * - "flat": as designed — exactly as on the garment reference (a new main image, a variation try-on);
+ * - "image1": as in the photograph being continued (shots keep the approved image's styling);
+ * - "edit": as in the photograph, unless the designer's instruction restyles it ("wear it open").
+ */
+export type Fastening = "flat" | "image1" | "edit";
+
+function fasteningLine(read: IGarmentRead, fastening: Fastening) {
+  const wornAs = isSet(read.design?.worn_as) ? ` (${read.design.worn_as})` : "";
+  if (fastening === "flat") return `\nWORN AS DESIGNED${wornAs}: fastened, closed and tied exactly as on the garment reference — never opened, unzipped, unbuttoned or untied.`;
+  if (fastening === "image1") return `\nFastened, closed and tied exactly as in image 1.`;
+  return `\nFastened, closed and tied as in image 1, unless the instruction above changes it.`;
+}
+
+function garmentRules(type: string, read: IGarmentRead, fastening: Fastening) {
+  const refinements = (read.refinements ?? []).filter(Boolean);
   return (
-    `THE ${type.toUpperCase()}'S DESIGN IS FIXED — exact colours (${read.dominant_colour}, with ${read.accent_colours}; do not lighten, desaturate or shift the hue), identical print scale and placement, identical fabric and:\n${designLines(read)}` +
+    `THE ${type.toUpperCase()}'S DESIGN IS FIXED — exact colours (${read.dominant_colour}, with ${read.accent_colours}; do not lighten, desaturate or shift the hue), identical print scale and placement, identical fabric and:\n${designLines(read, ["worn_as"])}` +
+    (refinements.length
+      ? `\nTHIS VARIATION IS DEFINED BY THESE CHANGES, already shown on the garment reference: ${refinements.join("; ")}.` +
+        ` Render them exactly as on the reference, at the same scale — never lost, never exaggerated beyond it (e.g. longer sleeves end where the reference's do, with the same cuffs).`
+      : "") +
     `\nNever add, remove, split or move any fastening, tie, belt, pocket, tab, trim or seam, or change the collar, cuffs, hem shape or length.` +
-    ` No zippers, buckles, snaps, rings or hardware that are not visible on the garment reference.`
+    ` No zippers, buckles, snaps, rings or hardware that are not visible on the garment reference.` +
+    fasteningLine(read, fastening)
   );
 }
 
@@ -80,13 +102,38 @@ function refsLine(closeupCount: number, first = 1) {
     : ".";
 }
 
-/** The main (hero) image: the configured model wearing the garment, full length, in the studio. */
-export function mainPrompt(type: string, cfg: IModelConfig, read: IGarmentRead, outfit: IOutfit, closeupCount: number) {
+/** Where the model's identity references sit among the images of a generation (1-based). */
+export interface IdentityImages {
+  /** A close-up of her face. */
+  face: number;
+  /** A full-length photograph of her, for body shape and proportions. */
+  body: number;
+}
+
+/**
+ * Who the model is, by image: her look must never be re-invented from the text description. Only identity comes
+ * from these images; hair, clothing, pose and setting still come from the prompt, so changing one of them changes
+ * only that.
+ */
+function identityLine(id: IdentityImages) {
+  return (
+    `\nTHE MODEL IS THE PERSON IN IMAGES ${id.face} AND ${id.body}: image ${id.face} is a close-up of her face, image ${id.body} shows her full length.` +
+    ` Cast exactly this person — identical face, features, skin tone, body shape and proportions; she must be recognisably the same person.` +
+    ` Use images ${id.face} and ${id.body} ONLY for who she is: her hair, clothing, pose and setting come from this description, not from those images.`
+  );
+}
+
+/**
+ * The main (hero) image: the configured model wearing the garment, full length, in the studio. With `identity`,
+ * the model is a person already cast (same face and body); without it she is cast from the description.
+ */
+export function mainPrompt(type: string, cfg: IModelConfig, read: IGarmentRead, outfit: IOutfit, closeupCount: number, identity?: IdentityImages) {
   return (
     `A magazine fashion editorial photograph, shot in a studio. A ${cfg.height} ${cfg.gender} fashion model, ${cfg.age}, clothing size ${cfg.size}, ${cfg.skin_tone} skin, ${cfg.hair},` +
     ` standing naturally and still, facing the camera, calm direct gaze, arms relaxed at the sides. Full length, head to toe, with the whole outfit in frame.` +
+    (identity ? identityLine(identity) : "") +
     `\nThe model is wearing EXACTLY the ${type} shown in image 1 (front view)${refsLine(closeupCount)}` +
-    `\n${garmentRules(type, read)}` +
+    `\n${garmentRules(type, read, "flat")}` +
     `\nRest of the outfit: ${outfitLine(outfit)}. Nothing covers or hides the ${type}.` +
     `\n${WARDROBE_RULES}` +
     `\n${SETTING}`
@@ -104,25 +151,45 @@ function flatIsAuthority(type: string, flat: number) {
   );
 }
 
+/**
+ * Compare variations: re-dress an existing photograph in another variation of the garment. Only the garment
+ * changes, so two photographs differ by nothing but the design.
+ */
+export function garmentSwapPrompt(type: string, read: IGarmentRead, closeupCount: number) {
+  return (
+    `Image 1 is a fashion editorial photograph. Replace the ${type} the model is wearing with the ${type} shown in image 2 (front view)${refsLine(closeupCount, 2)}` +
+    `\nChange ONLY the ${type}. Keep everything else in image 1 exactly as it is: the same model (face, hair, skin, body), the same pose and expression,` +
+    ` the rest of the outfit, the framing, the studio and the light. The new ${type} fits her naturally.` +
+    flatIsAuthority(type, 2) +
+    `\n${garmentRules(type, read, "flat")}` +
+    `\n${WARDROBE_RULES}` +
+    ` Photorealistic. No logos, text or watermarks.`
+  );
+}
+
 /** A designer's edit of the current main image: change only what was asked. */
 export function editMainPrompt(type: string, instruction: string, read: IGarmentRead) {
   return (
     `Image 1 is a fashion editorial photograph; image 2 is the ${type} the model wears. Edit image 1: ${instruction.trim()}` +
     `\nChange only that. Keep everything else identical — the same model, face, pose, framing, studio, light and the rest of the outfit.` +
     flatIsAuthority(type, 2) +
-    `\n${garmentRules(type, read)}` +
+    `\n${garmentRules(type, read, "edit")}` +
     `\n${WARDROBE_RULES}` +
     ` Photorealistic. No logos, text or watermarks.`
   );
 }
 
 /** Art director: new shot ideas for every batch — nothing predefined. */
-export function artDirectorPrompt(type: string, count: number, hasBack: boolean) {
+export function artDirectorPrompt(type: string, count: number, hasBack: boolean, construction: string) {
   return (
     `You are the art director of a fashion magazine editorial. Image 1 is the approved main photograph of the model wearing the hero ${type}; image 2 is the garment itself.` +
-    ` Invent ${count} NEW photographs for the same editorial story — fresh ideas, not standard catalogue poses — that together make a varied magazine spread:` +
+    `\nThe ${type}'s construction:\n${construction}` +
+    `\nInvent ${count} NEW photographs for the same editorial story — fresh ideas, not standard catalogue poses — that together make a varied magazine spread:` +
     ` a mix of framings (e.g. a close crop, waist-up, full length) and angles, each one showing the garment clearly and flatteringly.` +
-    ` Poses are natural, relaxed and tasteful; hands never hide the garment's details.` +
+    `\nPOSE RULES: standing poses only — no sitting, kneeling, crouching, lying or leaning on furniture;` +
+    ` hands may go into pockets only where the construction above lists pockets; nothing (hands, arms, hair, a bag) covers the closure, belt or tie, pockets or hem;` +
+    ` her face stays visible and recognisable — no extreme upward gaze and no head turned fully away, except in a back view;` +
+    ` a close framing crops above the eyes or below the chin, never across the face. Poses are natural, relaxed and tasteful.` +
     ` Same model, same complete outfit, same studio and light as image 1.` +
     (hasBack ? ` At most one shot may be a back view.` : ` No back views.`) +
     ` For each: title (2-4 words), view (front | three_quarter | side | back | close_detail), framing (what is in frame), pose (body, hands, gaze), camera (angle, lens feel).`
@@ -266,7 +333,7 @@ export const EDITORIAL_EDITOR_SCHEMA = {
 };
 
 /** One editorial shot from the approved main image. Back views use the back flat as the garment reference. */
-export function shotPrompt(type: string, idea: ShotIdea, read: IGarmentRead, useBack: boolean, closeupCount: number) {
+export function shotPrompt(type: string, idea: ShotIdea, read: IGarmentRead, useBack: boolean, closeupCount: number, faceImage?: number, hair?: string) {
   return (
     `Image 1 is the approved main photograph from a fashion magazine editorial. Create a NEW photograph from the same shoot: the SAME model (identical face, skin tone, hair, body),` +
     ` the SAME complete outfit (identical pieces, colours and fabrics), the SAME studio backdrop and light, and the ${type} styled as in image 1 (how open, how it is tied).` +
@@ -275,8 +342,13 @@ export function shotPrompt(type: string, idea: ShotIdea, read: IGarmentRead, use
     (useBack
       ? ` From behind, the back must look exactly like image 2: front details (front fastenings, front pockets, the front of a tie or knot) are NOT visible and must not be moved onto the back.`
       : "") +
+    (faceImage
+      ? `\nImage ${faceImage} is a close-up of the model's face from image 1: in this photograph her face must match it exactly — same features, skin tone and hairstyle — from whatever angle she is seen.`
+      : "") +
+    (hair ? `\nHer hair is exactly as in image 1 (${hair}); do not restyle it.` : "") +
     `\nThis photograph — "${idea.title}": framing: ${idea.framing}. Pose: ${idea.pose}. Camera: ${idea.camera}.` +
-    `\n${garmentRules(type, read)}` +
+    ` If the framing crops her face, crop above the eyes or below the chin, never across the face.` +
+    `\n${garmentRules(type, read, "image1")}` +
     `\n${WARDROBE_RULES}` +
     `\nHigh-end fashion magazine photography, photorealistic, natural skin texture, sharp focus on the garment. No logos, text or watermarks.`
   );

@@ -28,6 +28,8 @@ export interface IGarmentRead {
   dominant_colour: string;
   accent_colours: string;
   design: Record<string, string>;
+  /** Not stored: the variation's Stage 2 refinements ("Make the sleeves longer"), attached at generation time. */
+  refinements?: string[];
 }
 
 /** A captioned image in the editorial; points at an image of the shoot (a shot, or a detail crop of the flat). */
@@ -72,6 +74,18 @@ export interface IShootImage {
   /** Main: the edit the designer asked for, and the version it was applied to. */
   instruction?: string | null;
   based_on?: Types.ObjectId | null;
+  /**
+   * Main: the image whose model this version must show (same face and body). Null when the model is cast fresh —
+   * the first image of a shoot, or after the designer changes gender, age or skin tone.
+   */
+  identity_ref?: { shoot_id: Types.ObjectId; image_id: Types.ObjectId } | null;
+  /**
+   * Main: the photograph this version re-dresses — usually the approved image of another variation's shoot, for
+   * Compare variations. Only the garment is swapped; model, pose, outfit, framing and light stay as they are.
+   */
+  swap_from?: { shoot_id: Types.ObjectId; image_id: Types.ObjectId } | null;
+  /** Main: a cached close-up of the model's face, the identity reference passed to later generations. */
+  face?: { gridfs_id?: Types.ObjectId } | null;
   /** Shot: the art director's idea. */
   title?: string | null;
   view?: ShotView | null;
@@ -120,6 +134,15 @@ const imageSchema = new Schema<IShootImage>(
     batch: Number,
     instruction: { type: String, default: null },
     based_on: { type: Schema.Types.ObjectId, default: null },
+    identity_ref: {
+      type: new Schema({ shoot_id: Schema.Types.ObjectId, image_id: Schema.Types.ObjectId }, { _id: false }),
+      default: null,
+    },
+    swap_from: {
+      type: new Schema({ shoot_id: Schema.Types.ObjectId, image_id: Schema.Types.ObjectId }, { _id: false }),
+      default: null,
+    },
+    face: { type: new Schema({ gridfs_id: Schema.Types.ObjectId }, { _id: false }), default: null },
     title: { type: String, default: null },
     view: { type: String, enum: ["front", "three_quarter", "side", "back", "close_detail", null], default: null },
     framing: { type: String, default: null },

@@ -4,8 +4,12 @@ import * as shootService from "../services/modelShoot/modelShootService.js";
 const p = (req: Request, key: string) => req.params[key] as string;
 
 export async function startShoot(req: Request, res: Response) {
-  const { model_config, outfit } = (req.body ?? {}) as { model_config?: Record<string, string>; outfit?: Record<string, string> };
-  res.status(202).json(await shootService.startShoot(p(req, "conceptId"), req.user!.userId, model_config, outfit));
+  const { model_config, outfit, identity_from_shoot } = (req.body ?? {}) as {
+    model_config?: Record<string, string>;
+    outfit?: Record<string, string>;
+    identity_from_shoot?: string;
+  };
+  res.status(202).json(await shootService.startShoot(p(req, "conceptId"), req.user!.userId, model_config, outfit, identity_from_shoot));
 }
 
 export async function getShootForConcept(req: Request, res: Response) {
